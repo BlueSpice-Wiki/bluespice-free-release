@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Vitorvicentevalente"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informação sobre BlueSpice.",
+	"bs-bluespiceabout-about-bluespice": "Sobre BlueSpice",
+	"bluespiceabout": "Sobre BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "ver a página especial \"{{int:bs-bluespiceabout-sobre-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "Acesso à página especial [[Special:BlueSpiceAbout]]"
+}

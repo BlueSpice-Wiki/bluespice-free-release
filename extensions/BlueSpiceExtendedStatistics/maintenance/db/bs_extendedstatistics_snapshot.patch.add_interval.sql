@@ -1,0 +1,1 @@
+ALTER TABLE /*$wgDBprefix*/bs_extendedstatistics_snapshot ADD COLUMN `ess_interval` VARCHAR (255) NOT NULL DEFAULT 'day' AFTER `ess_type`;

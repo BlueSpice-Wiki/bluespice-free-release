@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"A Chinese Wikipedian",
+			"Hydra",
+			"Liuxinyu970226",
+			"VulpesVulpes825",
+			"沈澄心",
+			"落花有意12138"
+		]
+	},
+	"bs-authors-desc": "显示页面作者的个人资料图片",
+	"prefs-authors": "此页面作者",
+	"bs-authors-title": "$1位{{GENDER:$2|作者}}",
+	"bs-authors-profileimage": "描述图像",
+	"bs-authors-profileimage-change": "更改描述图像",
+	"bs-authors-show-all-authors": "更多作者可用",
+	"bs-authors-navigation-link-title": "此页面的作者",
+	"bs-authors-navigation-link-text": "作者",
+	"apihelp-bs-pageauthors-store-summary": "列出提供在上下文里的所有页面作者",
+	"bs-authors-info-dialog": "此页面的作者",
+	"bs-authors-info-dialog-grid-column-author": "作者",
+	"bs-authors-info-dialog-grid-column-type": "作者类型"
+}

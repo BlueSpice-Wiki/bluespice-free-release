@@ -1,0 +1,283 @@
+{
+	"name": "UserProfile",
+	"version": "1.1.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[http://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "http://www.hallowelt.com",
+	"descriptionmsg": "userprofile-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0"
+	},
+	"MessagesDirs": {
+		"UserProfile": "i18n"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\UserProfile\\": "src/",
+		"MediaWiki\\Extension\\UserProfile\\Tests\\": "tests/phpunit"
+	},
+	"attributes": {
+		"UserProfile": {
+			"Fields": {
+				"department": {
+					"msgKey": "userprofile-field-department",
+					"formDefinition": {
+						"type": "text"
+					}
+				},
+				"function": {
+					"msgKey": "userprofile-field-function",
+					"formDefinition": {
+						"type": "text"
+					}
+				},
+				"location": {
+					"msgKey": "userprofile-field-location",
+					"formDefinition": {
+						"type": "text"
+					}
+				},
+				"phone": {
+					"url": "tel:{value}",
+					"msgKey": "userprofile-field-phone",
+					"formDefinition": {
+						"type": "text",
+						"widget_validate": "^[^a-zA-Z]*$"
+					}
+				}
+			},
+			"ImageProviders": {}
+		},
+		"BlueSpiceFoundation": {
+			"PermissionRegistry": {
+				"userprofile-edit-other": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
+				}
+			}
+		},
+		"BlueSpicePrivacy": {
+			"Handlers": [
+				"\\MediaWiki\\Extension\\UserProfile\\Privacy\\Handler"
+			]
+		},
+		"BlueSpiceSMWConnector": {
+			"ExtraPropertyRegistry": {
+				"socialprofilefields": "\\MediaWiki\\Extension\\UserProfile\\UserProfilePropertyValueProvider::factory"
+			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"TagDefinitions": [
+				"ext.userProfile.visualEditorTagDefinition"
+			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"user-profile": {
+					"class": "\\MediaWiki\\Extension\\UserProfile\\ContentDroplets\\ProfileDroplet"
+				}
+			}
+		}
+	},
+	"AvailableRights": [
+		"userprofile-edit-other"
+	],
+	"GroupPermissions": {
+		"*": {
+			"userprofile-edit-other": false
+		},
+		"user": {
+			"userprofile-edit-other": false
+		},
+		"sysop": {
+			"userprofile-edit-other": true
+		}
+	},
+	"ResourceModules": {
+		"ext.userProfile.bootstrap": {
+			"scripts": [
+				"bootstrap.js"
+			]
+		},
+		"ext.userProfile.styles": {
+			"styles": [
+				"main.less"
+			]
+		},
+		"ext.userProfile.main": {
+			"scripts": [
+				"ui/ProfilePanel.js",
+				"init.js"
+			],
+			"messages": [
+				"userprofile-general-error",
+				"userprofile-user-not-exist-error",
+				"userprofile-edit-image",
+				"userprofile-view-profile",
+				"userprofile-edit-profile",
+				"userprofile-profile-image-alt",
+				"userprofile-profile-name-title",
+				"userprofile-profile-username-title",
+				"userprofile-profile-panel-aria-label",
+				"userprofile-editor-aria-label"
+			],
+			"dependencies": [
+				"ext.userProfile.bootstrap",
+				"oojs-ui",
+				"oojs-ui.styles.icons-editing-core",
+				"ext.userProfile.styles"
+			]
+		},
+		"ext.userProfile.editor": {
+			"scripts": [
+				"form/ProfileEditorForm.js",
+				"ui/ProfileEditorPanel.js",
+				"init.js"
+			],
+			"styles": [
+				"main.less"
+			],
+			"messages": [
+				"userprofile-editor-toolbar-cancel",
+				"userprofile-editor-toolbar-save"
+			],
+			"dependencies": [
+				"ext.userProfile.bootstrap",
+				"ext.forms.formelements.bootstrap",
+				"ext.forms.standalone"
+			]
+		},
+		"ext.userProfile.visualEditorTagDefinition": {
+			"scripts": [
+				"visualEditorTagDefinition.js"
+			],
+			"styles": "droplet.css",
+			"dependencies": [
+				"ext.userProfile.bootstrap"
+			],
+			"class": "MediaWiki\\Extension\\UserProfile\\ResourceModule\\BSVECModule",
+			"messages": [
+				"userprofile-droplet-name",
+				"userprofile-droplet-name-description",
+				"userprofile-ve-attr-user-label",
+				"userprofile-ve-attr-user-help",
+				"userprofile-ve-attr-framed-label",
+				"userprofile-ve-attr-orientation-label",
+				"userprofile-ve-attr-orientation-horizontal",
+				"userprofile-ve-attr-orientation-vertical",
+				"userprofile-ve-attr-fields",
+				"userprofile-ve-attr-fields-label-help"
+			]
+		},
+		"ext.userProfile.profileImage.bootstrap": {
+			"scripts": [
+				"profileImage.js",
+				"ui/profileImage/ProfileImageProvider.js",
+				{
+					"name": "providerRlModules.js",
+					"callback": "MediaWiki\\Extension\\UserProfile\\Extension::getProfileImageProviderRLModules"
+				}
+			],
+			"messages": [
+				"userprofile-changeuserimage-title",
+				"userprofile-editor-toolbar-cancel"
+			],
+			"dependencies": [
+				"ext.userProfile.bootstrap",
+				"oojs-ui"
+			]
+		},
+		"ext.userProfile.userInfoPopup": {
+			"scripts": [
+				"ui/UserInfoPopup.js"
+			],
+			"dependencies": [
+				"ext.userProfile.bootstrap",
+				"oojs-ui"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "UserProfile/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [ "addModules", "renderProfileSlot" ],
+		"MediaWikiServices": [ "addProfileSlot", "commentStreamsAvatar" ],
+		"OutputPageBeforeHTML": "renderProfileSlot",
+		"SkinTemplateNavigation::Universal": "renderProfileSlot",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "renderProfileSlot",
+		"ParserFirstCallInit": "addTag",
+		"UserProfileBeforeSetProfileData": "handleExternalProfileData",
+		"UserProfileGetProfileData": "handleExternalProfileData",
+		"GetPreferences": "addPreferences",
+		"LoadExtensionSchemaUpdates": "runMigration",
+		"MWStakeDynamicFileDispatcherRegisterModule": "registerDynamicFileModule"
+	},
+	"HookHandlers": {
+		"addProfileSlot": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\AddProfileSlot"
+		},
+		"renderProfileSlot": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\RenderProfileSlot",
+			"services": [ "PermissionManager", "UserFactory", "UserProfile.Manager" ]
+		},
+		"addTag": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\AddTag",
+			"services": [ "MWStake.InputProcessor", "UserFactory", "UserProfile.Manager" ]
+		},
+		"handleExternalProfileData": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\HandleExternalProfileData",
+			"services": [ "UserFactory", "ContentLanguage", "MWStake.DynamicFileDispatcher.Factory" ]
+		},
+		"addPreferences": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\AddPreferences"
+		},
+		"runMigration": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\RunMigration"
+		},
+		"registerDynamicFileModule": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\RegisterDynamicFileModule",
+			"services": [ "UserFactory", "UserProfile.ImageProviderFactory" ]
+		},
+		"addModules": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\AddModules",
+			"services": [ "UserProfile.FieldRegistry" ]
+		},
+		"commentStreamsAvatar": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\CommentStreamsAvatar"
+		}
+	},
+	"RestRoutes": [ {
+		"path": "/userprofile/v1/{user}",
+		"class": "MediaWiki\\Extension\\UserProfile\\Rest\\RetrieveProfileDataHandler",
+		"services": [ "UserProfile.Manager", "UserFactory" ]
+	}, {
+		"method": "POST",
+		"path": "/userprofile/v1/{user}",
+		"class": "MediaWiki\\Extension\\UserProfile\\Rest\\SaveProfileDataHandler",
+		"services": [ "UserProfile.Manager", "UserFactory", "MainConfig" ]
+	} ],
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"config": {
+		"UserProfileFields": {
+			"value": {}
+		}
+	},
+	"callback": "MediaWiki\\Extension\\UserProfile\\Extension::onRegistration",
+	"ContentHandlers": {
+		"user-profile": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Content\\ProfileContentHandler"
+		}
+	},
+	"Actions": {
+		"editprofiledata": "MediaWiki\\Extension\\UserProfile\\Action\\EditProfileData"
+	},
+	"manifest_version": 2
+}

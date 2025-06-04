@@ -1,0 +1,849 @@
+{
+	"name": "BlueSpiceFoundation",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceFoundation",
+	"descriptionmsg": "bluespicefoundation-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceFoundation": {
+					"extPath": "/BlueSpiceFoundation"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"Logo": "\\BlueSpice\\ConfigDefinition\\Logo::getInstance",
+				"FileExtensions": "\\BlueSpice\\ConfigDefinition\\FileExtensions::getInstance",
+				"ImageExtensions": "\\BlueSpice\\ConfigDefinition\\ImageExtensions::getInstance",
+				"Favicon": "\\BlueSpice\\ConfigDefinition\\Favicon::getInstance"
+			},
+			"EntityRegistry": {},
+			"GraphicalListRegistry": {},
+			"ExtendedSiteToolRegistry": {},
+			"AdminToolRegistry": {},
+			"PageInfoElementRegistry": {},
+			"PageHeaderBeforeContentRegistry": {},
+			"TagRegistry": {},
+			"PermissionRegistry": {},
+			"RoleRegistry": {
+				"admin": "\\BlueSpice\\Permission\\Role\\Admin::factory",
+				"editor": "\\BlueSpice\\Permission\\Role\\Editor::factory",
+				"reader": "\\BlueSpice\\Permission\\Role\\Reader::factory",
+				"author": "\\BlueSpice\\Permission\\Role\\Author::factory",
+				"reviewer": "\\BlueSpice\\Permission\\Role\\Reviewer::factory",
+				"accountmanager": "\\BlueSpice\\Permission\\Role\\AccountManager::factory",
+				"structuremanager": "\\BlueSpice\\Permission\\Role\\StructureManager::factory",
+				"maintenanceadmin": "\\BlueSpice\\Permission\\Role\\MaintenanceAdmin::factory",
+				"commenter": "\\BlueSpice\\Permission\\Role\\Commenter::factory",
+				"accountselfcreate": "\\BlueSpice\\Permission\\Role\\AccountSelfCreate::factory",
+				"autocreateaccount": "\\BlueSpice\\Permission\\Role\\AutoCreateAccount::factory",
+				"bot": "\\BlueSpice\\Permission\\Role\\Bot::factory"
+			},
+			"RendererRegistry": {
+				"list": "\\BlueSpice\\Renderer\\SimpleList::factory",
+				"linklist": "\\BlueSpice\\Renderer\\LinkList::factory",
+				"userimage": "\\BlueSpice\\Renderer\\UserImage::factory",
+				"groupimage": "\\BlueSpice\\Renderer\\GroupImage::factory",
+				"entity": "\\BlueSpice\\Renderer\\Entity::factory"
+			},
+			"SkinDataRendererRegistry": {
+				"bs_navigation_site": "\\BlueSpice\\Renderer\\TreeNavigation",
+				"bs_navigation_globalactions_general": "\\BlueSpice\\Renderer\\SimpleList",
+				"bs_navigation_globalactions_admin": "\\BlueSpice\\Renderer\\SimpleList"
+			},
+			"SettingPathRegistry": {
+				"feature": "bs-setting-path-feature",
+				"extension": "bs-setting-path-extension",
+				"package": "bs-setting-path-package",
+				"system": "bs-setting-path-system",
+				"dataanalysis": "bs-setting-path-dataanalysis",
+				"editor": "bs-setting-path-editor",
+				"search": "bs-setting-path-search",
+				"personalisation": "bs-setting-path-personalisation",
+				"skinning": "bs-setting-path-skinning",
+				"customizing": "bs-setting-path-customizing",
+				"contentstructuring": "bs-setting-path-contentstructuring",
+				"communication": "bs-setting-path-communication",
+				"administration": "bs-setting-path-administration",
+				"qualityassurance": "bs-setting-path-qualityassurance",
+				"export": "bs-setting-path-export"
+			},
+			"RunJobsTriggerHandlerRegistry": {},
+			"AlertProviderRegistry": {
+				"bs-readonly-warning": "\\BlueSpice\\AlertProvider\\ReadOnlyWarning::factory",
+				"bs-testsystem-warning": "\\BlueSpice\\AlertProvider\\TestsystemWarning::factory"
+			},
+			"LessVarsRegistry": {},
+			"TargetCacheRegistry": {
+				"title": "\\BlueSpice\\TargetCache\\Title"
+			},
+			"TargetCacheTitleRegistry": {
+				"pageprops": "\\BlueSpice\\TargetCacheHandler"
+			},
+			"PermissionLockdownRegistry": {
+				"namespaces": "\\BlueSpice\\Permission\\Lockdown\\Module\\Namespaces::getInstance",
+				"groups": "\\BlueSpice\\Permission\\Lockdown\\Module\\Groups::getInstance"
+			},
+			"PermissionLockdownGroupModuleRegistry": {},
+			"TaskRegistry": {
+				"wikipage-setlanguagelinks": "\\BlueSpice\\Task\\WikiPage\\SetLanguageLinks::factory",
+				"wikipage-setcategories": "\\BlueSpice\\Task\\WikiPage\\SetCategories::factory",
+				"wikipage-addcategories": "\\BlueSpice\\Task\\WikiPage\\AddCategories::factory",
+				"wikipage-removecategories": "\\BlueSpice\\Task\\WikiPage\\RemoveCategories::factory"
+			},
+			"TemplateHanderRegistry": {
+				"mustache": "\\BlueSpice\\Template\\Mustache::factory"
+			},
+			"JSConfigVars": {},
+			"SecondaryDataUpdateRegistry": {}
+		},
+		"BlueSpicePrivacy": {
+			"CookieConsentNativeMWCookies": {
+				"notificationFlag": {
+					"group": "necessary",
+					"addPrefix": true
+				}
+			}
+		},
+		"PDFCreator": {
+			"StylesheetsProvider": {
+				"BlueSpiceFoundationIconFontsStyles": {
+					"class": "BlueSpice\\Integration\\PDFCreator\\StylesheetsProvider\\IconFontsStyles"
+				}
+			}
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"SpecialPages": {
+		"SpecialCredits": "\\BlueSpice\\Special\\Credits",
+		"WikiAdmin": "SpecialWikiAdmin"
+	},
+	"APIModules": {
+		"bs-user-store": "BSApiUserStore",
+		"bs-category-store": "BSApiCategoryStore",
+		"bs-adminuser-store": "BSApiAdminUserStore",
+		"bs-group-store": "BSApiGroupStore",
+		"bs-interwiki-store": "BSApiInterwikiStore",
+		"bs-wikipage-tasks": "BSApiWikiPageTasks",
+		"bs-wikipage-store": "BSApiWikiPageStore",
+		"bs-wikisubpage-treestore": "BSApiWikiSubPageTreeStore",
+		"bs-titlequery-store": "BSApiTitleQueryStore",
+		"bs-ping-tasks": "BSApiPingTasks",
+		"bs-upload-license-store": "BSApiUploadLicenseStore",
+		"bs-category-treestore": "BSApiCategoryTreeStore",
+		"bs-watchlist-store": "BlueSpice\\Api\\Store\\Watchlist",
+		"bs-recentchanges-store": "BlueSpice\\Api\\Store\\RecentChanges",
+		"bs-task": "\\BlueSpice\\Api\\Task",
+		"bs-js-var-config": "\\BlueSpice\\Api\\JSConfigVarsApi",
+		"bs-templatelinks-store": "\\BlueSpice\\Api\\Store\\Templatelinks",
+		"bs-categorylinks-store": "\\BlueSpice\\Api\\Store\\Categorylinks",
+		"bs-linker": "\\BlueSpice\\Api\\Linker"
+	},
+	"GroupPermissions": {
+		"*": {
+			"wikiadmin": false,
+			"editor": false
+		},
+		"user": {
+			"wikiadmin": false,
+			"editor": false
+		},
+		"sysop": {
+			"wikiadmin": true,
+			"editor": false
+		}
+	},
+	"AvailableRights": [
+		"wikiadmin",
+		"editor"
+	],
+	"ResourceModules": {
+		"ext.bluespice": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"scripts": [
+				"bluespice/bluespice.js",
+				"bluespice/bluespice.extensionManager.js",
+				"bluespice/bluespice.util.js",
+				"bluespice/bluespice.wikiText.js",
+				"bluespice/bluespice.string.js",
+				"bluespice/bluespice.xhr.js",
+				"bluespice/bluespice.ping.js",
+				"bluespice/bluespice.tooltip.js",
+				"bluespice/bluespice.api.js",
+				"bluespice/bluespice.treepanel.js",
+				"bluespice/bluespice.alerts.js",
+				"bluespice/bluespice.loadIndicator.js",
+				"bluespice/bluespice.deferredNotifications.js",
+				"bluespice/bluespice.config.js"
+			],
+			"messages": [
+				"bs-years-duration",
+				"bs-months-duration",
+				"bs-weeks-duration",
+				"bs-days-duration",
+				"bs-hours-duration",
+				"bs-mins-duration",
+				"bs-secs-duration",
+				"bs-two-units-ago",
+				"bs-one-unit-ago",
+				"bs-now",
+				"confirm",
+				"bs-title-success",
+				"bs-title-warning"
+			],
+			"dependencies": [
+				"mediawiki.cookie",
+				"mediawiki.api",
+				"mwstake.component.alertbanners"
+			]
+		},
+		"ext.bluespice.oojs": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"scripts": [
+				"bluespice.oojs/bluespice.ui.js",
+				"bluespice.oojs/ui/widget/StoreComboBoxInput.js",
+				"bluespice.oojs/ui/widget/StoreApiBoundComboBoxInput.js",
+				"bluespice.oojs/ui/widget/TitleComboBoxInput.js",
+				"bluespice.oojs/ui/widget/UserPicker.js",
+				"bluespice.oojs/ui/widget/KeyValueInputWidget.js",
+				"bluespice.oojs/ui/widget/JsonArrayInputWidget.js",
+				"bluespice.oojs/ui/widget/ObjectInputWidget.js",
+				"bluespice.oojs/ui/widget/KeyObjectInputWidget.js",
+				"bluespice.oojs/ui/dialog/SimpleMessageDialog.js",
+				"bluespice.oojs/ui/dialog/AlertDialog.js",
+				"bluespice.oojs/ui/dialog/ConfirmDialog.js",
+				"bluespice.oojs/ui/dialog/PromptDialog.js"
+			],
+			"styles": [
+				"bluespice.oojs/bluespice.ui.less"
+			],
+			"dependencies": [
+				"mediawiki.api",
+				"oojs-ui",
+				"ext.oOJSPlus.widgets",
+				"ext.bluespice"
+			],
+			"messages": [
+				"bs-ooui-key-value-input-widget-error-message",
+				"bs-ooui-key-value-input-widget-key-label",
+				"bs-ooui-key-value-input-widget-value-label",
+				"bs-ooui-key-value-input-widget-add-button-label",
+				"bs-ooui-key-value-input-widget-add-form-label",
+				"bs-ooui-key-value-input-widget-no-values-label",
+				"bs-ooui-key-value-input-widget-section-label",
+				"bs-ooui-key-value-input-widget-add-section-label",
+				"bs-ui-generic-save",
+				"bs-ui-generic-cancel",
+				"bs-ui-generic-yes",
+				"bs-ui-generic-no",
+				"bs-ui-generic-close"
+			]
+		},
+		"ext.bluespice.oojs.exportDialog": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"scripts": [
+				"bluespice.oojs/ui/dialog/ExportPagesDialog.js"
+			],
+			"messages": [
+				"bs-pageexport-list-name-label",
+				"bs-pageexport-list-format-label",
+				"bs-pageexport-list-format-plain-label",
+				"bs-pageexport-list-format-link-label",
+				"bs-pageexport-overwrite-label",
+				"bs-pagecollection-prefix",
+				"bs-export-search-summary-text",
+				"bs-ui-generic-save",
+				"bs-ui-generic-cancel",
+				"bs-ui-generic-close",
+				"bs-exportpages-dialog-title",
+				"bs-exportpages-success-text"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			]
+		},
+		"ext.bluespice.styles": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"styles": [
+				"bluespice/bluespice.css",
+				"bluespice/bluespice.icons.css",
+				"bluespice/bluespice.ui.basic.less",
+				"bluespice/bluespice.treepanel.less",
+				"bluespice/bluespice.loadIndicator.less",
+				"bluespice/bluespice.loadPlaceholder.less"
+			],
+			"class": "\\BlueSpice\\ResourceModule\\LessVars"
+		},
+		"ext.bluespice.html.formfields.sortable": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"scripts": [
+				"bluespice/bluespice.html.formfields.sortable.js"
+			],
+			"styles": [
+				"bluespice/bluespice.html.formfields.sortable.css"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.html.formfields": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"scripts": [
+				"bluespice/bluespice.html.formfields.namespacemultiselect.js"
+			],
+			"styles": [
+				"bluespice/bluespice.html.formfields.less"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.html.formfields.multiselect": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"scripts": [
+				"bluespice/bluespice.html.formfields.multiselect.js"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.compat.vector.styles": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"styles": [
+				"bluespice.compat/bluespice.compat.vector.fixes.css"
+			]
+		},
+		"ext.bluespice.testsystem": {
+			"localBasePath": "resources",
+			"remoteExtPath": "BlueSpiceFoundation/resources",
+			"scripts": "bluespice/bluespice.testsystem.js"
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpice": [
+			"i18n/core"
+		],
+		"BlueSpiceCredits": [
+			"i18n/credits"
+		],
+		"BlueSpiceDiagnostics": [
+			"i18n/diagnostics"
+		],
+		"BlueSpice.Validator": [
+			"i18n/validator"
+		],
+		"BlueSpice.API": [
+			"i18n/api"
+		],
+		"BlueSpice.Upload": [
+			"i18n/upload"
+		],
+		"BlueSpice.FileRepo": [
+			"i18n/filerepo"
+		],
+		"BlueSpice.Installer": [
+			"i18n/installer"
+		],
+		"BlueSpice.Settings": [
+			"i18n/settings"
+		],
+		"BlueSpice.OOUI": [
+			"i18n/ooui"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"CreditsAlias": "languages/BlueSpice.Credits.alias.php",
+		"WikiAdminAlias": "languages/BlueSpice.WikiAdmin.alias.php"
+	},
+	"HookHandlers": {
+		"mediawikiservices": {
+			"class": "\\BlueSpice\\HookHandler\\MediaWikiServices"
+		},
+		"common-user-interface": {
+			"class": "\\BlueSpice\\HookHandler\\CommonUserInterface",
+			"@note": "For some reason this service is not available at time of initalization",
+			"@services": [ "ConfigFactory " ]
+		},
+		"addUserImage": {
+			"class": "\\BlueSpice\\HookHandler\\AddUserImageToUserStore",
+			"services": [
+				"UserFactory", "BSRendererFactory"
+			]
+		},
+		"permissionLockdown": {
+			"class": "\\BlueSpice\\HookHandler\\PermissionLockdown",
+			"services": [
+				"MainConfig", "PermissionManager", "TitleFactory", "RevisionLookup", "BSUtilityFactory"
+			]
+		}
+	},
+	"Hooks": {
+		"SetupAfterCache": [
+			"\\BlueSpice\\Hook\\SetupAfterCache\\AddParamDefinitions::callback"
+		],
+		"SoftwareInfo": "BlueSpice\\Hook\\SoftwareInfo\\AddBlueSpice::callback",
+		"BeforePageDisplay": [
+			"\\BlueSpice\\Hook\\BeforePageDisplay\\AddResources::callback",
+			"\\BlueSpice\\Hook\\BeforePageDisplay\\AddLoadingIndicator::callback"
+		],
+		"HtmlPageLinkRendererEnd": [
+			"BlueSpice\\Hook\\HtmlPageLinkRendererEnd\\AddDataUserName::callback",
+			"BlueSpice\\Hook\\HtmlPageLinkRendererEnd\\AddDataTitle::callback"
+		],
+		"LinkerMakeMediaLinkFile": "\\BlueSpice\\Hook\\LinkerMakeMediaLinkFile\\AddDataAttributes::callback",
+		"ThumbnailBeforeProduceHTML": "\\BlueSpice\\Hook\\ThumbnailBeforeProduceHTML\\AddDataAttributes::callback",
+		"MakeGlobalVariablesScript": [
+			"\\BlueSpice\\Hook\\MakeGlobalVariablesScript\\AddTaskAPIPermissions::callback",
+			"\\BlueSpice\\Hook\\MakeGlobalVariablesScript\\AddDeferredNotifications::callback"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"BlueSpice\\Hook\\LoadExtensionSchemaUpdates\\AddBlueSpice3SettingsAndMigrationMaintenanceScript::callback",
+			"BlueSpice\\Hook\\LoadExtensionSchemaUpdates\\AddBlueSpiceUserPropertiesMigrationMaintenanceScript::callback"
+		],
+		"ParserFirstCallInit": [
+			"BlueSpice\\Hook\\ParserFirstCallInit\\AddTags::callback"
+		],
+		"ExtensionTypes": "\\BlueSpice\\Hook\\ExtensionTypes\\AddBlueSpice::callback",
+		"PageSaveComplete": [
+			"\\BlueSpice\\Hook\\PageSaveComplete\\InvalidateArticleHelper::callback",
+			"\\BlueSpice\\Hook\\PageSaveComplete\\InvalidateTargetCacheTitle::callback"
+		],
+		"ArticleDeleteComplete": "\\BlueSpice\\Hook\\ArticleDeleteComplete\\InvalidateTargetCacheTitle::callback",
+		"PageMoveComplete": "\\BlueSpice\\Hook\\PageMoveComplete\\InvalidateTargetCacheTitle::callback",
+		"ResourceLoaderGetConfigVars": [
+			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddVersion::callback",
+			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddBSGConfig::callback",
+			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddGraphicalListRegistry::callback",
+			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddExtendedSiteToolsRegistry::callback",
+			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddAssetsPaths::callback",
+			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddPingVars::callback"
+		],
+		"getUserPermissionsErrors": [
+			"\\BlueSpice\\Hook\\GetUserPermissionsErrors\\ApplyLockdown::callback"
+		],
+		"SearchableNamespaces": [
+			"BlueSpice\\Hook\\SearchableNamespaces\\ApplySearchableNamespacesLockdown::callback"
+		],
+		"SearchGetNearMatchComplete": [
+			"BlueSpice\\Hook\\SearchGetNearMatchComplete\\ApplyNearMatchLockdown::callback"
+		],
+		"BeforeParserFetchTemplateRevisionRecord": [
+			"permissionLockdown"
+		],
+		"BeforeParserFetchFileAndTitle": "permissionLockdown",
+		"ApiBeforeMain": [
+			"permissionLockdown"
+		],
+		"TitleReadWhitelist": "\\BlueSpice\\Hook\\TitleReadWhitelist\\AddFooterLinks::callback",
+		"MediaWikiServices": "mediawikiservices",
+		"MWStakeCommonUILessVarsInit": "common-user-interface",
+		"MWStakeCommonWebAPIsQueryStoreResult": "addUserImage"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"PermissionConfig": {
+			"value": []
+		},
+		"UIPermissionBlacklist": {
+			"value": [
+				"reupload", "reupload-shared", "minoredit",
+				"deletedhistory", "editinterface", "importupload",
+				"patrol", "autopatrol", "proxyunbannable", "trackback",
+				"unwatchedpages", "autoconfirmed", "upload_by_url",
+				"ipblock-exempt", "blockemail", "purge", "emailconfirmed",
+				"nominornewtalk"
+			]
+		},
+		"MaintenanceUserName": {
+			"value": "BSMaintenance"
+		},
+		"RunJobsTriggerHandlerOptions": {
+			"value": {
+				"*": {
+					"basetime": [ 1, 0, 0 ],
+					"once-a-week-day": "sunday"
+				}
+			}
+		},
+		"CreditsProgrammers": {
+			"value": [
+				"Arwed Beck",
+				"Benedikt Hofmann",
+				"Daniel Lynge",
+				"Daniel Riedmüller",
+				"Daniel Vogel",
+				"Dejan Savuljesku",
+				"Dmitry Shevliakov",
+				"Erwin Forster",
+				"Fabian Stelzer",
+				"Gerhard Diller",
+				"Gökhan Geyik",
+				"Hamish Slater",
+				"Hua Jing",
+				"Jan Göttlich",
+				"Jenya Punchenko",
+				"Josef Konrad",
+				"Karl Waldmannstetter",
+				"Leonid Verhovskij",
+				"Mannfred Dennerlein",
+				"Marc Reymann",
+				"Markus Glaser",
+				"Mathias Scheer",
+				"Maximilian Kopka",
+				"Miriam Schlindwein",
+				"Oleksandr Pinchuck",
+				"Patric Wirth",
+				"Pavlo Yashchenko",
+				"Peter Böhm",
+				"Peter Starzer",
+				"Philipp Miguel Pirzer",
+				"Radovan Kubani",
+				"Robert Vogel",
+				"Sebastian Ulbricht",
+				"Shivam Shukla",
+				"Stefan Kuehn",
+				"Stefan Widmann",
+				"Stephan Muggli",
+				"Thomas Lorenz",
+				"Tobias Davids",
+				"Tobias Weichart",
+				"Zoran Dori"
+			]
+		},
+		"CreditsDesignAndTesting": {
+			"value": [
+				"Alexander Ziegltrum",
+				"Angelika Müller",
+				"Anja Ebersbach",
+				"Astrid Scheffler",
+				"Christian Graf",
+				"Christina Glaser",
+				"Dardan Diugan",
+				"David Schweiger",
+				"Florian Bäckmann",
+				"Karl Skodnik",
+				"Laetitia Huyghe",
+				"Ljubica Sireta",
+				"Luisa Roth",
+				"Margit Link-Rodrigue",
+				"Michael Rödl",
+				"Michael Scherm",
+				"Monique Gähl",
+				"Nathalie Köpff",
+				"Richard Heigl",
+				"Sabine Gürtler",
+				"Sabrina Dürr",
+				"Thomas Schnakenberg",
+				"Tobias Kornprobst",
+				"Verena Hösl"
+			]
+		},
+		"CreditsContributors": {
+			"value": [
+				"Aaron Schulz",
+				"Abijeet Patro",
+				"Acamicamacaraca",
+				"addshore",
+				"Alangi Derick",
+				"Albert221",
+				"Alexander Vorwerk",
+				"Alexandre Emsenhuber",
+				"Amire80",
+				"Amir E. Aharoni",
+				"Amir Sarabadani",
+				"Ammar",
+				"Ammarpad",
+				"amritsreekumar",
+				"Andre Klapper",
+				"Antoine Musso",
+				"aploe",
+				"Aryeh Gregor",
+				"Aude",
+				"Basil Hershberger",
+				"Bill Pirkle",
+				"Bill Traynor",
+				"Brad Jorsch",
+				"Brion Vibber",
+				"Chad Horohoe",
+				"chaud",
+				"Chiefgeek157",
+				"Christian Aistleitner",
+				"cicalese",
+				"C. Scott Ananian",
+				"Daimona Eaytoy",
+				"daniel",
+				"DannyS712",
+				"David Sn",
+				"Demon",
+				"Derick Alangi",
+				"Dmitry Shevliakov",
+				"dragandanicic0@gmail.com",
+				"Dreamy Jazz",
+				"Dringsim",
+				"DrishyaR",
+				"Ed Sanders",
+				"Federico Leva",
+				"Florian",
+				"Florianschmidtwelzow",
+				"Fomafix",
+				"frankie",
+				"Frederic Mohr",
+				"Gergő Tisza",
+				"Gerhard Diller",
+				"Guycn2",
+				"Hashar",
+				"hexmode",
+				"Holger Knust",
+				"idakuch",
+				"Jack D. Pond",
+				"Jack Phoenix",
+				"James D. Forrester",
+				"James Montalvo",
+				"jamesmontalvo3",
+				"Jayprakash12345",
+				"Jenya Punchenko",
+				"Jeroen De Dauw",
+				"Jforrester",
+				"jhsoby",
+				"Jon Harald Søby",
+				"Jon Robson",
+				"Justin Du",
+				"Klein Muçi",
+				"Krinkle",
+				"Kunal Mehta",
+				"Legoktm",
+				"Leon",
+				"Lucas Savva",
+				"Lucas Werkmeister",
+				"Lucien Murray-Pitts",
+				"Manfred Dennerlein",
+				"MarcoAurelio",
+				"Mark A. Hershberger",
+				"Markus Gebert",
+				"MaxSem",
+				"Max Semenik",
+				"Meowcat",
+				"MtDu",
+				"Nikerabbit",
+				"Nikita Rana",
+				"Novem Linguae",
+				"oetterer",
+				"OmkarJ",
+				"Ori Livneh",
+				"Paladox",
+				"Patrick Gaus",
+				"peter-ovchyn",
+				"Phantom42",
+				"Philipp Kolmann",
+				"Pppery",
+				"Prateek Saxena",
+				"ptrcnull",
+				"Purodha",
+				"QChris",
+				"Rafid Aslam",
+				"Raimond Spekking",
+				"Raymond",
+				"RazeSoldier",
+				"Reedy",
+				"Richard Armstrong",
+				"Ricordisamoa",
+				"rlot",
+				"Roan Kattouw",
+				"Rohan-cod",
+				"Rohitt Vashishtha",
+				"Roman Stolar",
+				"sahil",
+				"Sam Reed",
+				"Sanjay Thiyagarajan",
+				"Scott Shambarger",
+				"Siebrand Mazeland",
+				"Stang",
+				"Subin Siby",
+				"Taavi Väänänen",
+				"Techwizzie",
+				"TGC",
+				"Thalia",
+				"TheSandDoctor",
+				"Thiemo Kreuz",
+				"Thomas Daniels",
+				"Timo Tijhof",
+				"Tim Starling",
+				"Tobias Oetterer",
+				"Translation updater bot",
+				"Tulsi Bhagat",
+				"Umherirrender",
+				"vladshapik",
+				"Wandji69",
+				"Warmelink",
+				"withoutaname",
+				"Wout Gevaert",
+				"Yuki Shira",
+				"Yuriy Shnitkovskiy",
+				"ZabeMath",
+				"Zach",
+				"Zoranzoki21"
+			]
+		},
+		"CreditsTranslation": {
+			"value": [
+				"Miriam Schlindwein",
+				"Laetitia Huyghe",
+				"Raimond Spekking",
+				"Siebrand Mazeland",
+				"Stephan Muggli",
+				"Verena Hösl"
+			]
+		},
+		"LessVars": {
+			"value": {}
+		},
+		"ExtensionAttributeRegistryOverrides": {
+			"description": [
+				"Key is the full extension attribute name, e.g. `BlueSpiceFoundationLessVarsRegistry`",
+				"Value is a array that supports three keys:",
+				"`set`: Contains an associative array that completely replaces the original value of the attribute.",
+				"`merge`: Contains an associative array the will be merged with the original value of the attribute. Will not be evaluated if `set` is defined.",
+				"`remove`: Contains a indexed array of keys that should be removed from the original value of the attribute. Will not be evaluated if `set` is defined."
+			],
+			"value": {}
+		},
+		"PingOnInit": {
+			"descriptionmsg": "bs-ping-on-init-desc",
+			"public": true,
+			"value": false
+		},
+		"HttpRequestDefaultOptions": {
+			"description": [
+				"Default connection options for all HTTP requests made via HttpRequestFactory"
+			],
+			"public": false,
+			"value": []
+		},
+		"UseRealNameForUserLinks": {
+			"description": "Replace the user name with the real name in user links",
+			"public": true,
+			"value": true
+		}
+	},
+	"ConfigRegistry": {
+		"bsg": "BlueSpice\\Config::newInstance"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\Tests\\": "tests/phpunit/"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\": "src/"
+	},
+	"AutoloadClasses": {
+		"BsCore": "includes/Core.class.php",
+		"BsValidator": "includes/validator/BSValidator.class.php",
+		"BsValidatorPlugin": "includes/validator/BSValidatorPlugin.php",
+		"BsValidatorResponse": "includes/validator/BSValidatorResponse.php",
+		"BsValidatorEmailPlugin": "includes/validator/plugins/BsValidator/BsValidatorEmailPlugin.class.php",
+		"BsValidatorUrlPlugin": "includes/validator/plugins/BsValidator/BsValidatorUrlPlugin.class.php",
+		"BsValidatorPositiveIntegerPlugin": "includes/validator/plugins/BsValidator/BsValidatorPositiveIntegerPlugin.class.php",
+		"BsValidatorIntegerRangePlugin": "includes/validator/plugins/BsValidator/BsValidatorIntegerRangePlugin.class.php",
+		"BsValidatorArgCountPlugin": "includes/validator/plugins/BsValidator/BsValidatorArgCountPlugin.class.php",
+		"BsValidatorCategoryPlugin": "includes/validator/plugins/BsValidator/BsValidatorCategoryPlugin.class.php",
+		"BsValidatorSetItemPlugin": "includes/validator/plugins/BsValidator/BsValidatorSetItemPlugin.class.php",
+		"BsValidatorMwGroupnamePlugin": "includes/validator/plugins/BsValidator/BsValidatorMwGroupnamePlugin.class.php",
+		"BsValidatorMwNamespacePlugin": "includes/validator/plugins/BsValidator/BsValidatorMwNamespacePlugin.class.php",
+		"BsValidatorMwUsernamePlugin": "includes/validator/plugins/BsValidator/BsValidatorMwUsernamePlugin.class.php",
+		"BSTreeNode": "includes/tree/BSTreeNode.php",
+		"BSTreeRenderer": "includes/tree/BSTreeRenderer.php",
+		"BsException": "includes/Exception.class.php",
+		"BSTitleListParam": "includes/paramdefinition/BSTitleListParam.php",
+		"BSCategoryListParam": "includes/paramdefinition/BSCategoryListParam.php",
+		"BSTitleParser": "includes/parser/BSTitleParser.php",
+		"BSCategoryParser": "includes/parser/BSCategoryParser.php",
+		"BSTitleValidator": "includes/validator/BSTitleValidator.php",
+		"BSNamespaceListParam": "includes/paramdefinition/BSNamespaceListParam.php",
+		"BSNamespaceParser": "includes/parser/BSNamespaceParser.php",
+		"BSNamespaceValidator": "includes/validator/BSNamespaceValidator.php",
+		"BSStandardAPIResponse": "includes/api/BSStandardAPIResponse.php",
+		"BSExtendedApiContext": "includes/api/BSExtendedApiContext.php",
+		"BSApiFormatJson": "includes/api/BSApiFormatJson.php",
+		"BSApiBase": "includes/api/BSApiBase.php",
+		"BSApiTasksBase": "includes/api/BSApiTasksBase.php",
+		"BSApiExtJSStoreBase": "includes/api/BSApiExtJSStoreBase.php",
+		"BSApiExtJSDBTableStoreBase": "includes/api/BSApiExtJSDBTableStoreBase.php",
+		"BSApiUserStore": "includes/api/BSApiUserStore.php",
+		"BSApiCategoryStore": "includes/api/BSApiCategoryStore.php",
+		"BSApiAdminUserStore": "includes/api/BSApiAdminUserStore.php",
+		"BSApiGroupStore": "includes/api/BSApiGroupStore.php",
+		"BSApiInterwikiStore": "includes/api/BSApiInterwikiStore.php",
+		"JsonLicenses": "includes/JsonLicenses.php",
+		"BSApiUploadLicenseStore": "includes/api/BSApiUploadLicenseStore.php",
+		"BSApiWikiPageTasks": "includes/api/BSApiWikiPageTasks.php",
+		"BSApiWikiPageStore": "includes/api/BSApiWikiPageStore.php",
+		"BSApiWikiSubPageTreeStore": "includes/api/BSApiWikiSubPageTreeStore.php",
+		"BSApiTitleQueryStore": "includes/api/BSApiTitleQueryStore.php",
+		"BSApiCategoryTreeStore": "includes/api/BSApiCategoryTreeStore.php",
+		"BSApiPingTasks": "includes/api/BSApiPingTasks.php",
+		"BsInvalidNamespaceException": "includes/exception/InvalidNamespaceException.class.php",
+		"BSInvalidParamException": "includes/exception/BSInvalidParamException.php",
+		"HTMLFormEx": "includes/html/htmlformfields/HTMLFormEx.php",
+		"HTMLInfoFieldOverride": "includes/html/htmlformfields/HTMLInfoFieldOverride.php",
+		"HTMLTextFieldOverride": "includes/html/htmlformfields/HTMLTextFieldOverride.php",
+		"HTMLIntFieldOverride": "includes/html/htmlformfields/HTMLIntFieldOverride.php",
+		"HTMLStaticImageFieldOverride": "includes/html/htmlformfields/HTMLStaticImageFieldOverride.php",
+		"HTMLCheckFieldOverride": "includes/html/htmlformfields/HTMLCheckFieldOverride.php",
+		"HTMLMultiSelectEx": "includes/html/htmlformfields/HTMLMultiSelectEx.php",
+		"XmlMultiSelect": "includes/html/htmlformfields/XmlMultiSelect.php",
+		"HTMLMultiSelectPlusAdd": "includes/html/htmlformfields/HTMLMultiSelectPlusAdd.php",
+		"HTMLMultiSelectSortList": "includes/html/htmlformfields/HTMLMultiSelectSortList.php",
+		"BsArticleHelper": "includes/utility/ArticleHelper.class.php",
+		"BsCacheHelper": "includes/utility/CacheHelper.class.php",
+		"BsConnectionHelper": "includes/utility/ConnectionHelper.class.php",
+		"BsDOMHelper": "includes/utility/DOMHelper.class.php",
+		"BsFormatConverter": "includes/utility/FormatConverter.class.php",
+		"BsFileSystemHelper": "includes/utility/FileSystemHelper.class.php",
+		"BsGroupHelper": "includes/utility/GroupHelper.class.php",
+		"BsNamespaceHelper": "includes/utility/NamespaceHelper.class.php",
+		"BsPageContentProvider": "includes/utility/PageContentProvider.class.php",
+		"BsStringHelper": "includes/utility/StringHelper.class.php",
+		"BsTagFinder": "includes/utility/TagFinder.class.php",
+		"ViewBaseElement": "includes/outputhandler/views/view.BaseElement.php",
+		"ViewBaseForm": "includes/outputhandler/views/view.BaseForm.php",
+		"ViewFormElement": "includes/outputhandler/views/view.FormElement.php",
+		"ViewFormElementButton": "includes/outputhandler/views/view.FormElementButton.php",
+		"ViewFormElementFieldset": "includes/outputhandler/views/view.FormElementFieldset.php",
+		"ViewFormElementInput": "includes/outputhandler/views/view.FormElementInput.php",
+		"ViewFormElementLabel": "includes/outputhandler/views/view.FormElementLabel.php",
+		"ViewFormElementSelectbox": "includes/outputhandler/views/view.FormElementSelectbox.php",
+		"ViewTagElement": "includes/outputhandler/views/view.TagElement.php",
+		"ViewWidget": "includes/outputhandler/views/view.Widget.php",
+		"SpecialWikiAdmin": "includes/specials/SpecialWikiAdmin.class.php",
+		"BsPARAM": "includes/common/BsPARAM.php",
+		"BsPARAMTYPE": "includes/common/BsPARAMTYPE.php",
+		"BsPARAMOPTION": "includes/common/BsPARAMOPTION.php",
+		"BSTemplateHelper": "includes/TemplateHelper.php",
+		"BSTasksApiSpec": "includes/utility/BSTasksApiSpec.php",
+		"BSMigrateSettings": "maintenance/BSMigrateSettings.php",
+		"BSMigrateUserProperties": "maintenance/BSMigrateUserProperties.php"
+	},
+	"manifest_version": 2,
+	"load_composer_autoloader": true,
+	"callback": "\\BlueSpice\\Foundation::onRegistry"
+}

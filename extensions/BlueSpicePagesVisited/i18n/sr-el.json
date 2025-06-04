@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-pagesvisited-desc": "Pruža personalizovan spisak poslednje posećenih stranica",
+	"prefs-pagesvisited": "Posećene stranice",
+	"bs-pagesvisited-widget-title": "Posećene stranice",
+	"bs-pagesvisited-error-nsnotvalid": "Dati {{PLURAL:$1|imenski prostor|imenski prostori}} <code>$2</code> {{PLURAL:$1|nije|nisu}} ispravni.",
+	"bs-pagesvisited-pref-widgetlimit": "Ograničenje unosa:",
+	"bs-pagesvisited-pref-widgetns": "Imenski prostori:",
+	"bs-pagesvisited-pref-widgetsortodr": "Poređaj po:",
+	"bs-pagesvisited-pref-sort-time": "Vreme",
+	"bs-pagesvisited-pref-sort-pagename": "Naslov",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Prikazuje spisak skoro posećenih stranica. Ovaj spisak je moguće podešavati po parametrima.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Posećene stranice",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Broj",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Postavi broj stranica za prikaz na spisku",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Maksimalna dužina naslova",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Postavi maksimalan broj naslova pre nego što je odsečen naslov",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Redosled",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Postavi redosled kojim se prikazuju stranice",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Imenski prostori",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Prikaži samo stranice iz ovih imenskih prostora",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Vreme",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Ime stranice",
+	"bs-pagesvisited-droplet-name": "Posećene stranice",
+	"bs-pagesvisited-droplet-description": "Spisak posećenih stranica",
+	"bs-pagesvisited-label-anon-user": "Da bi ste videli stranice koje ste posetili, prijavite se na svoj nalog"
+}

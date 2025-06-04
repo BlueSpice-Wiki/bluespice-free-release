@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200",
+			"Nokeoo"
+		]
+	},
+	"bs-insertcategory-desc": "Dialogas, kategorijos nuorodos įvedimui",
+	"bs-insertcategory-insertcat": "Įterpti kategoriją",
+	"prefs-insertcategory": "Įterpti kategoriją",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Redaguoti šio puslapio kategorijas",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Redaguoti šio puslapio kategorijas",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Atidaryti dialogo langą, kad būtų galima keisti šio puslapio kategorijas",
+	"bs-insertcategory-edit-dialog-button-label": "Keisti",
+	"bs-insertcategory-edit-dialog-title": "Redaguoti kategorijas",
+	"bs-insertcategory-edit-dialog-button-submit": "Atlikta",
+	"bs-insertcategory-edit-dialog-button-cancel": "Atšaukti",
+	"bs-insertcategory-edit-dialog-input-label": "Priskirtos kategorijos",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Šios kategorijos nėra apibrėžtos puslapio viki teksto turinyje. Greičiausiai jos nustatyti iš šablono.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Nepavyko gauti puslapio kategorijų",
+	"bs-insertcategory-no-categories": "Nėra priskirtų kategorijų",
+	"bs-insertcategory-edit-dialog-tree-view": "Rodyti visas kategorijas"
+}

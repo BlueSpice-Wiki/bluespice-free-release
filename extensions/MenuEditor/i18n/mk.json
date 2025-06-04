@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Vlad5250"
+		]
+	},
+	"menueditor-desc": "Графички уредник за страници во мени",
+	"menueditor-ui-menu-wiki-link-label": "Викиврска",
+	"menueditor-ui-menu-wiki-link-label-edit": "Уреди викиврска",
+	"menueditor-ui-menu-wiki-link-help": "Врска до викистраница",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Врска",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Уреди врска",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Одредби на врската.<br>Целта може да биде:<ul><li>клуч на порака која дава име на страница</li><li>надворешна врска</li><li>Име на страницата на вики</li><li>меѓувики-врска</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Текст или клуч на порака",
+	"menueditor-ui-menu-raw-text-label-edit": "Уреди текст или клуч на порака",
+	"menueditor-ui-menu-keyword-label": "Клучен збор",
+	"menueditor-ui-menu-keyword-label-edit": "Уреди клучен збор",
+	"menueditor-ui-menu-keyword-help": "Еден од расположливите '''клучни зборови''' кој ќе прикаже соодветен посреднички елемент",
+	"menueditor-ui-form-field-keyword": "Клучен збор",
+	"menueditor-ui-form-field-text": "Текст или клуч на порака",
+	"menueditor-ui-form-field-target": "Цел на врската",
+	"menueditor-ui-form-field-label": "Натпис на врската",
+	"menueditor-ui-dialog-action-done": "Готово",
+	"menueditor-ui-dialog-action-cancel": "Откажи",
+	"menueditor-ui-node-type-selector-label": "Вид јазол",
+	"menueditor-ui-submit": "Зачувај",
+	"menueditor-ui-cancel": "Откажи",
+	"menueditor-ui-redlink-notice": "Ова мени сè уште не постои!",
+	"menueditor-action-menueditsource": "Уреди извор",
+	"menueditor-action-menuedit": "Уреди",
+	"menueditor-ui-dialog-title": "Уреди елемент",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Уреди клучен збор",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Клучен збор",
+	"menueditor-toolbar-cancel": "Откажи уредување",
+	"menueditor-toolbar-add-label": "Додај елемент",
+	"menueditor-ui-edit-label": "Уреди",
+	"menueditor-ui-add-sub-element-label": "Додај поделемент",
+	"menueditor-footerlinks-banner-text": "Некои врски може да бидат ставени автоматски од додаток. Погледајте ја поставеноста на додатокот за да дознаете повеќе.",
+	"menueditor-toolbar-save": "Зачувај",
+	"menueditor-ui-cancel-confirmation": "Дали сигурно сакате да го откажете уредувањето? Со тоа ќе ги изгубите сите незачувани измени."
+}

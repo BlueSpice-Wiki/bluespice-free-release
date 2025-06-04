@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Okras"
+		]
+	},
+	"notifyme-desc": "Уведомления",
+	"prefs-notifications": "Уведомления",
+	"notifyme-ui-subscriptionset-category-label": "Категория",
+	"notifyme-mail-template-edit-help-category-colors": "Цвета",
+	"notifyme-mail-template-edit-help-header-example": "Пример",
+	"notifyme-mail-greeting": "Привет",
+	"notifyme-link-label-history": "Посмотреть историю страницы",
+	"notifyme-notification-center-filter-label-namespaces": "Пространства имён",
+	"notifyme-notification-center-filter-label-categories": "Категории",
+	"notifyme-notification-center-timestamp-ago": "$1 назад"
+}

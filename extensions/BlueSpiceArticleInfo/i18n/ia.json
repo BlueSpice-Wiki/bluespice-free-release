@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-articleinfo-desc": "Forni information sur un pagina in le barra de stato",
+	"prefs-articleinfo": "Information sur le pagina",
+	"bs-articleinfo-newrevision-info-text-reload": "Il ha un nove version de iste pagina disponibile. Per favor [[:$1|recarga]] le pagina pro vider le contento actual.",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "Intervallo de actualisation (in secundas)",
+	"bs-articleinfo-pref-checkrevisioninterval-help-label": "Defini le frequentia de actualisation del valor “Ultime modification”. In addition, a cata intervallo, es verificate si le pagina ha nove versiones."
+}

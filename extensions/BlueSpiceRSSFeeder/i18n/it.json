@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Selven",
+			"Stefano"
+		]
+	},
+	"rssfeeder": "Feeder RSS",
+	"apihelp-bs-rssfeeder-tasks-summary": "Fornisce attività comuni per il RSSFeeder",
+	"bs-rssfeeder-pagetext": "Puoi iscriverti ai seguenti feed RSS:",
+	"bs-rssfeeder-recent-changes": "Ultime modifiche",
+	"bs-rssfeeder-pages": "Pagina",
+	"bs-rssfeeder-submit": "Mostra",
+	"bs-rssfeeder-invalid-url": "Indica un URL valido.",
+	"action-rssfeeder-viewspecialpage": "visualizzare la pagina speciale \"{{int:rssfeeder}}\"",
+	"bs-rssstandards-title-page": "Pagina",
+	"bs-rssstandards-title-own": "I miei contributi",
+	"bs-rssstandards-title-cat": "Categoria",
+	"bs-rssstandards-title-watch": "Osservati speciali",
+	"bs-rssstandards-link-text-watch": "Cambiamenti recenti {{PLURAL:$1|dell'ultimo giorno|degli ultimi $1 giorni}}.",
+	"bs-rssstandards-changes-from": "Modifiche {{GENDER:$1|di}}: $1",
+	"right-rssfeeder-viewspecialpage": "Accede alla pagina speciale [[Special:RSSFeeder]]",
+	"bs-rssstandards-title-rc": "Ultime modifiche",
+	"bs-rssfeeder-rcunique-checkbox": "Nascondi duplicati"
+}

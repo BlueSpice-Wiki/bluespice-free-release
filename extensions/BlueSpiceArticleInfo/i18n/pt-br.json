@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Felipe L. Ewald",
+			"Luckas"
+		]
+	},
+	"bs-articleinfo-desc": "Fornece informação sobre uma página na barra de status",
+	"prefs-articleinfo": "Informações da página",
+	"bs-articleinfo-newrevision-info-text-reload": "Está disponível uma nova versão desta página. [[:$1|Recarregue]] a página para ver o conteúdo atual, por favor."
+}

@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"enhancedupload-attachments-add-new-media-button-title": "Aggiungi nuovi file al wiki",
+	"enhancedupload-attachments-tag-grid-remove-title": "Rimuovi",
+	"enhancedupload-attachments-confirm-remove": "Rimuovi il file \"$1\" dall'elenco?",
+	"enhancedupload-config-alignment-label": "Allineamento immagine:",
+	"enhancedupload-config-type-label": "Tipo immagine:",
+	"enhancedupload-config-height-label": "Altezza immagine:",
+	"enhancedupload-config-width-label": "Larghezza immagine:",
+	"enhancedupload-config-extensions-label": "Consenti tipi MIME non corrispondenti (potenziale rischio per la sicurezza)",
+	"enhancedupload-config-extensions-help": "Consente il caricamento di estensioni di file con tipi MIME non corrispondenti. Avviso: potenziale rischio per la sicurezza.",
+	"enhancedupload-droplet-attachments-name": "Allegati",
+	"enhancedupload-upload-warning-exists": "Questo nome file esiste già",
+	"enhancedupload-upload-warning-duplicate": "Questo file è un duplicato",
+	"enhancedupload-upload-error-duplicate": "Un file identico a questo file ($1) è stato precedentemente cancellato.",
+	"enhancedupload-upload-error-badfilename": "Il nome file $1 contiene caratteri non validi.",
+	"enhancedupload-upload-error-unhandled": "Si è verificata un'eccezione non gestita.",
+	"enhancedupload-single-file-dlg-title": "Nuova versione di \"$1\"",
+	"enhancedupload-preview-widget-remove-label": "Rimuovi $1"
+}

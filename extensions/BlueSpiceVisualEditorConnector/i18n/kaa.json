@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajiniyaz Nurniyazov"
+		]
+	},
+	"bs-visualeditorconnector-text-style-tool-align-center-label": "Ortaǵa tegislew",
+	"bs-visualeditorconnector-align-center-annotation-desc": "Saylanǵan tekstti ortaǵa jaylastıradı",
+	"bs-visualeditorconnector-text-style-indent-label": "Abzac",
+	"bs-visualeditorconnector-indent-annotation-desc": "Saylanǵan tekstti shekleydi"
+}

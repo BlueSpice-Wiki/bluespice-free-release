@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chaduvari",
+			"V Bhavya"
+		]
+	},
+	"enhancedupload-config-alignment-label": "బొమ్మ ఎలైన్‌మెంటు:",
+	"enhancedupload-config-type-label": "బొమ్మ రకం:",
+	"enhancedupload-config-height-label": "బొమ్మ ఎత్తు:",
+	"enhancedupload-config-height-help": "విజువల్ ఎడిటరులో డ్రాగ్ అండ్ డ్రాప్ బొమ్మల ఎత్తు సెట్టింగు. వెడల్పుకు తగినట్లు ఆటోమాటిగ్గా మారేలా 'ఆటో' అని సెట్ చేసి ఉంటుంది. రెండూ 'ఆటో' అని సెట్ చేసి ఉంటే డిఫాల్టు సైజును వాడుతుంది.",
+	"enhancedupload-config-width-label": "బొమ్మ వెడల్పు:",
+	"enhancedupload-config-width-help": "విజువల్ ఎడిటరులో డ్రాగ్ అండ్ డ్రాప్ బొమ్మల వెడల్పు, ఎత్తుకు తగినట్లు ఆటోమాటిగ్గా మారేలా 'ఆటో' అని సెట్ చేసి ఉంటుంది. రెండూ 'ఆటో' అని సెట్ చేసి ఉంటే డిఫాల్టు సైజును వాడుతుంది.",
+	"enhancedupload-droplet-attachments-name": "జోడింపులు",
+	"enhancedupload-upload-warning-exists": "ఈ ఫైలు పేరు ఇప్పటికే ఉంది",
+	"enhancedupload-upload-warning-was-deleted": "ఈ ఫైలు పేరు గతంలో తొలగించబడింది."
+}

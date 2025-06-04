@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dvorapa",
+			"Fraxinus.cs",
+			"H4nek",
+			"Jrobicek"
+		]
+	},
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorie",
+	"bs-statistics-aggregated-report-filter-date-start": "Počáteční datum",
+	"bs-statistics-aggregated-report-filter-interval-day": "Den",
+	"bs-statistics-aggregated-report-filter-interval-week": "Týden",
+	"bs-statistics-aggregated-report-filter-interval-month": "Měsíc",
+	"bs-statistics-aggregated-report-filter-interval-year": "Rok",
+	"bs-statistics-aggregated-report-filter-namespace": "Jmenný prostor",
+	"bs-statistics-aggregated-report-filter-page": "Stránka",
+	"bs-statistics-aggregated-report-filter-user": "Uživatel",
+	"bs-statistics-aggregated-report-filter-user-multi": "Uživatelé",
+	"bs-statistics-aggregated-report-loading": "Načítají se data…"
+}

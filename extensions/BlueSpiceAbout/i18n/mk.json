@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Vlad5250"
+		]
+	},
+	"bs-bluespiceabout-desc": "Информации за BlueSpice.",
+	"bs-bluespiceabout-about-bluespice": "За BlueSpice",
+	"bluespiceabout": "За BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "погл. службената страница „{{int:bs-bluespiceabout-about-bluespice}}“",
+	"right-bluespiceabout-viewspecialpage": "Пристап до службената страница [[Special:BlueSpiceAbout]]"
+}

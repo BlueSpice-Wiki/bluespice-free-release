@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alojz.tic",
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-readers-desc": "Ustvari seznam ljudi, ki berejo stran",
+	"prefs-readers": "Bralci",
+	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Bralec}}|{{GENDER:$2|Bralci|Bralke|Bralci_ke}}}}",
+	"readers-user": "Strani {{GENDER:$1|branje}}: $1",
+	"readers": "Bralci \"$1\"",
+	"bs-readers-contentactions-label": "Prikaži bralce",
+	"bs-readers-pagenotexists": "Stran ne obstaja.",
+	"bs-readers-pref-active": "Aktiviraj bralce",
+	"bs-readers-emptyinput": "Podana ni bila nobena stran.",
+	"bs-readers-header-username": "Uporabniško ime",
+	"bs-readers-header-readerspath": "Bralec",
+	"bs-readers-header-ts": "Datum",
+	"bs-readers-header-page": "Stran",
+	"apihelp-bs-readers-data-store-summary": "Pridobi informacije o bralcih določene strani.",
+	"apihelp-bs-readers-users-store-summary": "Pridobi informacije o vseh bralcih določene strani.",
+	"apihelp-bs-readers-page-readers-store-summary": "Pridobi vse bralce vseh strani",
+	"apihelp-bs-readers-revision-readers-store-summary": "Pridobi vse bralce vseh redakcij strani",
+	"apihelp-bs-readers-tasks-summary": "Zagotavlja običajne operacije za bralce",
+	"action-viewreaders": "pregledovanje bralcev strani",
+	"action-viewrevisionreaders": "pregledovanje bralcev posameznih redakcij strani",
+	"right-viewreaders": "Pregledovanje bralcev strani",
+	"right-viewrevisionreaders": "Ogled bralcev redakcij posamezne strani",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – $2 {{GENDER:$3|ste}} prebrali stran $1",
+	"bs-readers-header-read-by": "Prebral_a",
+	"bs-readers-header-revision-id": "ID redakcije",
+	"bs-readers-header-revision-date": "Datum redakcije",
+	"bs-readers-header-read-on": "Prebrano",
+	"revisionreaders": "Bralci po redakciji strani »$1«",
+	"bs-readers-info-dialog": "Bralci te strani",
+	"bs-readers-info-dialog-column-readers": "Bralci"
+}

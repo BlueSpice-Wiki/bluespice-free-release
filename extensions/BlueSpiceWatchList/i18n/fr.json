@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-watchlist-desc": "Ajoute un widget et une balise de liste de suivi",
+	"bs-watchlist-pref-sort-time": "Horodatage",
+	"bs-watchlist-pref-sort-title": "Titre",
+	"bs-watchlist-tag-watchlist-desc": "Affiche les articles qui ont des modifications les plus récentes et qui sont sur votre liste de suivi.",
+	"bs-watchlist-window-watchlist-title": "Liste de suivi",
+	"bs-watchlist-window-watchlist-intro": "Ceci est un aperçu de toutes les pages de votre liste de suivi. Vous pouvez également aller voir la [[Special:Watchlist|page classique de la liste de suivi]].",
+	"bs-watchlist-grid-watchlist-column-link-header": "Page",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "Modifications non relues",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "Inspecter les modifications",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "Page de discussion",
+	"bs-watchlist-grid-watchlist-label-filter": "Filtre",
+	"bs-watchlist-ve-watchlistinspector-title": "Liste de suivi",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Nombre",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Le nombre d’entrées sur la liste de suivi doit être affiché.",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Longueur de titre maximale",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Nombre de lettres qui doivent figurer dans le titre. Peut être un nombre compris entre 5 et 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Ordre",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Affiche la liste triée par heure ou par nom de page.",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Nom de page",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Heure",
+	"bs-watchlist-tag-watchlist-no-user": "La liste de suivi ne peut pas être affichée car aucun utilisateur n’est connecté.",
+	"bs-watchlist-tag-watchlist-no-entries": "Aucun changement sur les pages à afficher dans la liste de suivi.",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Aide sur le nom de page",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Aide sur l’heure",
+	"bs-watchlist-droplet-name": "Liste de suivi",
+	"bs-watchlist-droplet-description": "Dernières modifications des pages incluses dans la liste de suivi"
+}

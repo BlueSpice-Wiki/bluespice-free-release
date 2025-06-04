@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Nike",
+			"Pyscowicz"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label": "Wikilinkki",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Linkki",
+	"menueditor-ui-menu-keyword-label": "Avainsana",
+	"menueditor-ui-form-field-keyword": "Avainsana",
+	"menueditor-ui-form-field-target": "Linkin kohde",
+	"menueditor-ui-dialog-action-done": "Valmis",
+	"menueditor-ui-dialog-action-cancel": "Peruuta",
+	"menueditor-ui-submit": "Tallenna",
+	"menueditor-ui-cancel": "Peruuta",
+	"menueditor-action-menueditsource": "Muokkaa wikitekstiä",
+	"menueditor-action-menuedit": "Muokkaa",
+	"menueditor-ui-edit-label": "Muokkaa"
+}

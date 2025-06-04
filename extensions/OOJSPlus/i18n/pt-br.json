@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"McDutchie"
+		]
+	},
+	"oojsplus-desc": "Fornece widgets e funções de utilidade para o OOJS",
+	"oojsplus-color-picker-color-blue": "Azul",
+	"oojsplus-color-picker-color-red": "Vermelho",
+	"oojsplus-color-picker-color-green": "Verde",
+	"oojsplus-color-picker-color-yellow": "Amarelo",
+	"oojsplus-color-picker-color-orangered": "Laranja vermelho",
+	"oojsplus-color-picker-color-olive": "Verde-oliva",
+	"oojsplus-color-picker-color-pink": "Rosa",
+	"oojsplus-color-picker-clear-label": "Limpar a cor",
+	"oojsplus-color-picker-label": "Selecionador de cores",
+	"oojsplus-data-delete-row-prompt": "Tem certeza de que deseja excluir esta linha?",
+	"oojsplus-data-paginator-page-total-count-label": "{{PLURAL:$1|$1 linha|$1 linhas}}",
+	"oojsplusdemos": "Demonstrações do OOJSPlus",
+	"oojsplus-data-tree-item-remove-label": "Remover",
+	"oojsplus-data-tree-item-add-label": "Adicionar novo subitem",
+	"oojsplus-stepprogressbar-default-final-label": "Feito",
+	"oojsplus-dialog-action-done": "Feito",
+	"oojsplus-dialog-action-delete": "Excluir",
+	"oojsplus-dialog-action-create": "Criar",
+	"oojsplus-dialog-action-add": "Adicionar",
+	"oojsplus-dialog-action-cancel": "Cancelar",
+	"oojsplus-data-grid-filter-label": "Filtrar",
+	"oojsplus-data-grid-filter-clear": "Limpar",
+	"oojsplus-data-grid-filter-number-value": "Valor",
+	"oojsplus-data-paginator-next": "Próxima página",
+	"oojsplus-data-paginator-previous": "Página anterior",
+	"oojsplus-data-grid-toolbar-reload-label": "Recarregar"
+}

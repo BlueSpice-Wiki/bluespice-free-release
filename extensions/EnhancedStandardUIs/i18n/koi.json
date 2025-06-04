@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Римма"
+		]
+	},
+	"enhanced-standard-uis-desc": "Сетӧ пырӧтчись интерфейссэз Медиавикикӧт ӧткодь пырӧтчись интерфейссэзлӧ",
+	"enhanced-standard-uis-history-grid-header-revision-label": "Веськӧтӧм",
+	"enhanced-standard-uis-history-grid-header-author-label": "Вежӧма",
+	"enhanced-standard-uis-history-grid-header-size-label": "Ыжда",
+	"enhanced-standard-uis-history-grid-header-summary-label": "Дженыт юӧр",
+	"enhanced-standard-uis-history-grid-header-tags-label": "Пассэз",
+	"enhanced-standard-uis-history-grid-header-undo-title": "Дугӧтны",
+	"enhanced-standard-uis-history-grid-header-hide-revision-title": "Дзебны версия",
+	"enhanced-standard-uis-history-compare-tool-title": "Ордчӧтны версияэз"
+}

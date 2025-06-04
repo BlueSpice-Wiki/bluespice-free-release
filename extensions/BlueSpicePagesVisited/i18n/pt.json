@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Vitorvicentevalente"
+		]
+	},
+	"bs-pagesvisited-desc": "Fornece uma lista personalizada das últimas páginas visitadas",
+	"prefs-pagesvisited": "Páginas visitadas",
+	"bs-pagesvisited-widget-title": "Páginas visitadas",
+	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|O domínio|os domínios}} <code>$2</code> não {{PLURAL:$1|é válido|são válidos}}.",
+	"bs-pagesvisited-pref-widgetlimit": "Limite de entradas:",
+	"bs-pagesvisited-pref-widgetns": "Domínios:",
+	"bs-pagesvisited-pref-widgetsortodr": "Ordenar por:",
+	"bs-pagesvisited-pref-sort-time": "Hora",
+	"bs-pagesvisited-pref-sort-pagename": "Título",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Apresenta uma lista de páginas que visitou. Esta lista pode ser restringida por parâmetros.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Páginas visitadas",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Número",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Definir o número de páginas mostradas na lista",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Comprimento máximo do título",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Definir o número máximo de caracteres antes que um título seja truncado",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Ordem",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Definir a ordem em que as páginas são apresentadas",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Espaços nominais",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Mostrar somente páginas destes espaços nominais",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Hora",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nome da página",
+	"bs-pagesvisited-droplet-name": "Páginas visitadas",
+	"bs-pagesvisited-droplet-description": "Lista de páginas visitadas",
+	"bs-pagesvisited-label-anon-user": "Para ver as páginas que visitou, inicie uma sessão na sua conta"
+}

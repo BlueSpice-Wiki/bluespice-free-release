@@ -1,0 +1,113 @@
+{
+	"name": "BlueSpiceInsertCategory",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceInsertCategory",
+	"author": [
+		"Markus Glaser",
+		"Sebastian Ulbricht",
+		"Stefan Widmann"
+	],
+	"descriptionmsg": "bs-insertcategory-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceInsertCategory": {
+					"className": "\\BlueSpice\\InsertCategory\\Extension",
+					"extPath": "/BlueSpiceInsertCategory"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"InsertCategoryWithParents": "\\BlueSpice\\InsertCategory\\ConfigDefinition\\WithParents::getInstance",
+				"InsertCategoryUploadPanelIntegration": "\\BlueSpice\\InsertCategory\\ConfigDefinition\\UploadPanelIntegration::getInstance"
+			}
+		},
+		"BlueSpiceDiscovery": {
+			"MetaItemProviderRegistry": {
+				"categories": {
+					"class": "\\BlueSpice\\InsertCategory\\MetaItemProvider\\Categories"
+				}
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceInsertCategory": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\InsertCategory\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\InsertCategory\\Tests\\": "tests/phpunit/"
+	},
+	"ResourceModules": {
+		"ext.bluespice.insertcategory.editor.dialog.bootstrap": {
+			"scripts": [
+				"bluespice.insertCategoryEditor.js"
+			]
+		},
+		"ext.bluespice.insertcategory.editor.dialog.scripts": {
+			"scripts": [
+				"ui/dialog/CategoryEditor.js"
+			],
+			"messages": [
+				"bs-insertcategory-edit-dialog-title",
+				"bs-insertcategory-edit-dialog-button-submit",
+				"bs-insertcategory-edit-dialog-button-cancel",
+				"bs-insertcategory-edit-dialog-input-label",
+				"bs-insertcategory-edit-dialog-implicit-categories-label",
+				"bs-insertcategory-edit-dialog-implicit-categories-help",
+				"bs-insertcategory-edit-dialog-page-categories-get-error-message",
+				"bs-insertcategory-edit-dialog-tree-view"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"mediawiki.api",
+				"oojs",
+				"oojs-ui",
+				"ext.oOJSPlus.widgets",
+				"ext.oOJSPlus.data"
+			]
+		},
+		"ext.bluespice.insertcategory.discovery.styles": {
+			"styles": [
+				"bluespice.insertcategory.discovery.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceInsertCategory/resources"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"InsertCategoryWithParents": {
+			"value": false,
+			"descriptionmsg": "bs-insertcategory-pref-withparents"
+		},
+		"InsertCategoryUploadPanelIntegration": {
+			"value": false,
+			"descriptionmsg": "bs-insertcategory-pref-uploadpanelintegration"
+		}
+	},
+	"HookHandlers": {
+		"addInsertCategoryAction": {
+			"class": "\\BlueSpice\\InsertCategory\\HookHandler\\AddInsertCategoryAction",
+			"services": [ "PermissionManager", "WikiPageFactory" ]
+		}
+	},
+	"Hooks": {
+		"SkinTemplateNavigation::Universal": "addInsertCategoryAction",
+		"BeforePageDisplay": "\\BlueSpice\\InsertCategory\\Hook\\BeforePageDisplay\\AddResources::callback"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

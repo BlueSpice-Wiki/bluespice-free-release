@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16",
+			"GpieroMW",
+			"Macofe",
+			"PeppeAeco",
+			"Selven"
+		]
+	},
+	"bs-insertcategory-desc": "Finestra di dialogo per inserire un collegamento ad una categoria",
+	"bs-insertcategory-insertcat": "Inserire la categoria",
+	"prefs-insertcategory": "Inserire la categoria",
+	"bs-insertcategory-pref-withparents": "Inserisci categoria con i suoi livelli superiori",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Modifica le categorie di questa pagina",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Modifica le categorie di questa pagina",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Aprire la finestra di dialogo per modificare le categorie di questa pagina",
+	"bs-insertcategory-edit-dialog-button-label": "Modifica",
+	"bs-insertcategory-edit-dialog-title": "Modifica le categorie",
+	"bs-insertcategory-edit-dialog-button-submit": "Fatto",
+	"bs-insertcategory-edit-dialog-button-cancel": "Annulla",
+	"bs-insertcategory-edit-dialog-input-label": "Categorie assegnate",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Categorie implicite",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Queste categorie non sono definite nel contenuto del wikitesto della pagina. Molto probabilmente sono impostate all'interno di un template.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Impossibile recuperare le categorie delle pagine",
+	"bs-insertcategory-no-categories": "Nessuna categoria assegnata",
+	"bs-insertcategory-edit-dialog-tree-view": "Mostrare tutte le categorie"
+}

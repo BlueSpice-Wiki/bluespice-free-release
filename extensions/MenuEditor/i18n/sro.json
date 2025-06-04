@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"F Samaritani"
+		]
+	},
+	"menueditor-ui-dialog-action-cancel": "Annudda",
+	"menueditor-ui-submit": "Sarva",
+	"menueditor-ui-cancel": "Annudda",
+	"menueditor-action-menueditsource": "Muda su còdixi wiki",
+	"menueditor-action-menuedit": "Muda"
+}

@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kizule",
+			"Milicevic01"
+		]
+	},
+	"contentdroplets-droplet-text-box-important": "Важна порука",
+	"contentdroplets-droplet-text-box-note": "Напомена",
+	"contentdroplets-droplet-text-box-tip": "Савет",
+	"contentdroplets-droplet-text-box-neutral": "Порука",
+	"contentdroplets-category-label-featured": "Изабрано",
+	"contentdroplets-category-label-content": "Садржај",
+	"contentdroplets-category-label-media": "Медији",
+	"contentdroplets-category-label-data": "Подаци",
+	"contentdroplets-category-label-navigation": "Навигација",
+	"contentdroplets-category-label-lists": "Спискови",
+	"contentdroplets-category-label-export": "Извоз",
+	"contentdroplets-category-label-all": "Све",
+	"contentdroplets-droplet-text-box-header-label": "Наслов",
+	"contentdroplets-droplet-text-box-text-label": "Текст",
+	"contentdroplets-droplet-text-box-show-icon-label": "Прикажи иконицу",
+	"contentdroplets-droplet-text-box-type-label": "Тип кутијице",
+	"contentdroplets-droplet-icon-font-size-label": "Величина фонта",
+	"contentdroplets-droplet-icon-color-label": "Боја",
+	"contentdroplets-droplet-icon-orientation-label": "Вертикална оријентација",
+	"contentdroplets-droplet-icon-name": "Икона",
+	"contentdroplets-droplet-icon-description": "Убацује иконицу",
+	"contentdroplet-dialog-action-close": "Откажи",
+	"contentdroplet-dialog-action-insert": "Уметни",
+	"contentdroplets-droplet-code-name": "Кôд"
+}

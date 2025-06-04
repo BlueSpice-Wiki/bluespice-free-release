@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-articleinfo-desc": "Provides information about a page in status bar",
+	"prefs-articleinfo": "Page information",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "Update interval (seconds)",
+	"bs-articleinfo-newrevision-info-text-reload": "There is a new version of this page available. Please [[:$1|reload]] the page to view the current content.",
+	"bs-articleinfo-pref-checkrevisioninterval-help-label": "Sets how often the \"Last edit\" value updates. At each interval, the page is also checked for new revisions"
+}

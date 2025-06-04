@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"Kly",
+			"Liuxinyu970226"
+		]
+	},
+	"bs-whoisonline-desc": "顯示目前上線的使用者清單",
+	"bs-whoisonline-nousers": "沒有人登入。",
+	"bs-whoisonline-widget-title": "誰在線上？",
+	"prefs-whoisonline": "誰在線上？",
+	"bs-whoisonline-pref-limitcount": "顯示使用者的最大數量：",
+	"bs-whoisonline-pref-orderby": "排序方式：",
+	"bs-whoisonline-pref-orderby-time": "執行時間",
+	"bs-whoisonline-pref-orderby-name": "名稱",
+	"bs-whoisonline-collection-type-userlogin": "使用者登入",
+	"bs-whoisonline-collection-var-login": "登入",
+	"bs-whoisonline-statistics-report-login-duration": "登入持續時間",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "登入持續時間（秒）",
+	"bs-whoisonline-tag-whoisonlinecount-description": "顯示最近 10 分鐘內登入的使用者人數",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "誰在線上計數",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "顯示最近 10 分鐘內登入的使用者人數。當使用者將游標懸停在相關連結上時，會輸出一個泡泡對話框",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "誰在線上彈跳視窗",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "登入數",
+	"bs-whoisonline-statistics-report-login-number": "登入",
+	"bs-whoisonline-droplet-count-name": "已登入使用者數",
+	"bs-whoisonline-droplet-count-description": "目前已登入使用者數",
+	"bs-whoisonline-droplet-popup-name": "已登入使用者清單",
+	"bs-whoisonline-droplet-popup-description": "目前已登入所有使用者清單的彈跳視窗"
+}

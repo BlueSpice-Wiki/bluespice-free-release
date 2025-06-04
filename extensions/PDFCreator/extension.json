@@ -1,0 +1,610 @@
+{
+	"name": "PDFCreator",
+	"version": "1.1.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"Daniel Vogel",
+		"Miriam Schlindwein",
+		"[http://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:PDFCreator",
+	"namemsg": "pdfcreator-name",
+	"descriptionmsg": "pdfcreator-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"attributes": {
+		"MWStakeContentProvisioner": {
+			"ContentManifests": {
+				"DefaultContentProvisioner": [
+					"extensions/PDFCreator/data/Content/PDFCreator/manifest.json"
+				]
+			}
+		},
+		"PDFCreator": {
+			"ModuleProvider": {
+				"batch": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Module\\Batch",
+					"services": [
+						"PDFCreator.PageSpecFactory", "PDFCreator.ExportPageFactory", "PDFCreator.TemplateProviderFactory",
+						"PDFCreator.BackendFactory", "PDFCreator.TargetFactory", "PDFCreator.MetaDataFactory",
+						"PDFCreator.ExportHtmlBuilder", "PDFCreator.PreProcessorFactory", "PDFCreator.ProcessorFactory",
+						"PDFCreator.PostProcessorFactory",
+						"PDFCreator.StylesheetsFactory", "PDFCreator.StyleBlocksFactory",
+						"PDFCreator.MediaWikiCommonCssProvider",
+						"MainConfig", "TitleFactory", "RedirectLookup"
+					]
+				}
+			},
+			"HtmlProvider": {
+				"intro": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\HtmlProvider\\Intro",
+					"services": [
+						"TitleFactory", "PDFCreator.PageParamsFactory",
+						"PDFCreator.WikiTemplateParser", "PDFCreator.MustacheTemplateParser"
+					]
+				},
+				"outro": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\HtmlProvider\\Outro",
+					"services": [
+						"TitleFactory", "PDFCreator.PageParamsFactory",
+						"PDFCreator.WikiTemplateParser", "PDFCreator.MustacheTemplateParser"
+					]
+				},
+				"raw": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\HtmlProvider\\Raw",
+					"services": [
+						"TitleFactory", "PDFCreator.PageParamsFactory",
+						"PDFCreator.WikiTemplateParser", "PDFCreator.MustacheTemplateParser"
+					]
+				},
+				"page": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\HtmlProvider\\Page",
+					"services": [
+						"TitleFactory", "PDFCreator.PageParamsFactory", "PDFCreator.WikiTemplateParser",
+						"PDFCreator.MustacheTemplateParser", "RevisionRenderer", "RevisionLookup", "HookContainer"
+					]
+				}
+			},
+			"TemplateProvider": {
+				"wiki": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\TemplateProvider\\Wiki",
+					"services": [ "MainConfig", "PDFCreator.Util", "RevisionLookup", "TitleFactory" ]
+				}
+			},
+			"BackendProvider": {
+				"open-html-2-pdf": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Backend\\OpenHtml2Pdf",
+					"services": [ "MainConfig" ]
+				}
+			},
+			"TargetProvider": {
+				"filesystem": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Target\\Filesystem",
+					"services": [ "MainConfig" ]
+				},
+				"download": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Target\\Download"
+				}
+			},
+			"PreProcessors": {
+				"excludeExport": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\PreProcessor\\ExcludeExportProcessor"
+				}
+			},
+			"Processors": {
+				"tables": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\TableProcessor"
+				},
+				"coverbackground": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\Coverbackground",
+					"services": [ "MainConfig", "RepoGroup", "TitleFactory" ]
+				},
+				"images": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\ImageProcessor",
+					"services": [ "TitleFactory", "MainConfig", "RepoGroup" ]
+				},
+				"attachments": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\AttachmentProcessor",
+					"services": [ "TitleFactory", "MainConfig", "RepoGroup" ]
+				},
+				"pagelinker": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\PageLinkerProcessor",
+					"services": [ "TitleFactory" ]
+				},
+				"wikilinker": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\WikiLinkerProcessor",
+					"services": [ "TitleFactory" ]
+				},
+				"suppresslinks": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\SuppressLinks"
+				}
+			},
+			"PostProcessors": {},
+			"MetaDataProvider": {},
+			"StylesheetsProvider": {},
+			"StyleBlocksProvider": {},
+			"PageParamsProvider": {
+				"user": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\PageParams\\User",
+					"services": [ "UserFactory" ]
+				},
+				"export-date": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\PageParams\\ExportDate",
+					"services": [ "ContentLanguage" ]
+				},
+				"page-count": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\PageParams\\PageCount"
+				},
+				"title": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\PageParams\\Title"
+				},
+				"logo": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\PageParams\\Logo",
+					"services": [ "MainConfig" ]
+				}
+			},
+			"ExportModeConfig": {
+				"page": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\ExportMode\\Page",
+					"services": [ "MainConfig", "TitleFactory" ]
+				},
+				"pageWithSubpages": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\ExportMode\\PageWithSubpages",
+					"services": [ "MainConfig", "TitleFactory" ]
+				},
+				"pageWithLinkedPages": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\ExportMode\\PageWithLinkedPages",
+					"services": [ "MainConfig", "TitleFactory", "DBLoadBalancer", "NamespaceInfo" ]
+				}
+			},
+			"ExportPluginModules": []
+		},
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.pdfcreator.export.nodes"
+			]
+		},
+		"BlueSpiceFoundation": {
+			"ConfigDefinitionRegistry": {
+				"PDFCreatorSuppressNamespace": "\\MediaWiki\\Extension\\PDFCreator\\ConfigDefinition\\SuppressNamespace::getInstance",
+				"PDFCreatorDefaultTemplate": "\\MediaWiki\\Extension\\PDFCreator\\ConfigDefinition\\DefaultPDFTemplate::getInstance",
+				"PDFCreatorCoverbackground": "\\MediaWiki\\Extension\\PDFCreator\\ConfigDefinition\\Coverbackground::getInstance"
+			}
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"pagebreak": {
+					"class": "\\MediaWiki\\Extension\\PDFCreator\\ContentDroplets\\PageBreak"
+				},
+				"noexport": {
+					"class": "\\MediaWiki\\Extension\\PDFCreator\\ContentDroplets\\NoExport"
+				}
+			}
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"MessagesDirs": {
+		"PDFCreator": "i18n"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\PDFCreator\\": "src/"
+	},
+	"ExtensionMessagesFiles": {
+		"PDFTemplatesOverviewAlias": "languages/SpecialPDFTemplatesOverview.alias.php"
+	},
+	"SpecialPages": {
+		"PDFTemplatesOverview": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Special\\PDFTemplatesOverview",
+			"services": [ "PermissionManager", "TitleFactory" ]
+		}
+	},
+	"ResourceModules": {
+		"ext.pdfcreator.skeleton.styles": {
+			"styles": [
+				"styles/pdfcreator.skeleton.css"
+			]
+		},
+		"ext.pdfcreator.templates": {
+			"packageFiles": [
+				"ext.pdfcreator.js"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui-windows"
+			]
+		},
+		"ext.pdfcreator.edit": {
+			"class": "MediaWiki\\Extension\\VueJsPlus\\Module\\VueJsPlusModule",
+			"packageFiles": [
+				"ext.pdfcreator.edit.js",
+				{
+					"name": "addToolbarOffset.json",
+					"config": { "offset": "PDFCreatorToolbarOffset" }
+				},
+				"ui/EditorToolbar.vue",
+				{
+					"name": "ui/helpConfig.json",
+					"callback": "MediaWiki\\Extension\\PDFCreator\\ClientConfig::getHelpConfig"
+				},
+				"api/Api.js"
+			],
+			"vueJsPlusComponents": [
+				"Toolbar"
+			],
+			"styles": [
+				"styles/pdfcreator.edit.css"
+			],
+			"messages": [
+				"pdfcreator-tab-panel-header-label",
+				"pdfcreator-tab-panel-body-label",
+				"pdfcreator-tab-panel-footer-label",
+				"pdfcreator-tab-panel-coverpage-label",
+				"pdfcreator-tab-panel-main-label",
+				"pdfcreator-editor-error-label",
+				"pdfcreator-editor-error-missing-content",
+				"pdfcreator-tab-panel-intro-label",
+				"pdfcreator-tab-panel-outro-label",
+				"pdfcreator-editor-action-save-label",
+				"pdfcreator-editor-action-help-label",
+				"pdfcreator-help-table-column-param-key",
+				"pdfcreator-help-table-column-param-desc",
+				"pdfcreator-tab-panel-options-label"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui-windows",
+				"vue",
+				"@wikimedia/codex"
+			]
+		},
+		"ext.pdfcreator.export.api": {
+			"packageFiles": [
+				"api/Api.js"
+			]
+		},
+		"ext.pdfcreator.export": {
+			"packageFiles": [
+				"ext.pdfcreator.export.js",
+				{
+					"name": "exportconfig.json",
+					"callback": "\\MediaWiki\\Extension\\PDFCreator\\ClientConfig::getTemplateConfig"
+				},
+				"ui/dialog/ExportDialog.js",
+				"api/Api.js"
+			],
+			"messages": [
+				"cancel",
+				"pdfcreator-dialog-export-title",
+				"pdfcreator-dialog-export-action-export-label",
+				"pdfcreator-dialog-export-mode-selection-label",
+				"pdfcreator-dialog-export-template-selection-label"
+			],
+			"dependencies": [
+				"oojs",
+				"ext.pdfcreator.widgets"
+			]
+		},
+		"ext.pdfcreator.tag.export": {
+			"packageFiles": [
+				"ext.pdfcreator.export.tag.js",
+				"api/Api.js"
+			],
+			"messages": [
+				"pdfcreator-notification-pdf-creation-done"
+			]
+		},
+		"ext.pdfcreator.export.nodes": {
+			"scripts": [
+				"ve/ce/ext.pdfcreator.ce.ExcludeExportStartNode.js",
+				"ve/dm/ext.pdfcreator.dm.ExcludeExportStartNode.js",
+				"ve/ce/ext.pdfcreator.ce.ExcludeExportEndNode.js",
+				"ve/dm/ext.pdfcreator.dm.ExcludeExportEndNode.js",
+				"ve/ui/ext.pdfcreator.ui.ExcludeExportTool.js",
+				"ve/ce/ext.pdfcreator.ce.ExportPDFNode.js",
+				"ve/dm/ext.pdfcreator.dm.ExportPDFNode.js",
+				"ve/ui/ext.pdfcreator.ui.ExportPDFInspector.js",
+				"ve/ui/ext.pdfcreator.ui.ExportPDFInspectorTool.js",
+				"ve/ce/ext.pdfcreator.ce.PageBreakNode.js",
+				"ve/dm/ext.pdfcreator.dm.PageBreakNode.js",
+				"ve/ui/ext.pdfcreator.ui.PageBreakInspectorTool.js"
+			],
+			"styles": [
+				"styles/pdfcreator.ve.styles.css"
+			],
+			"messages": [
+				"pdfcreator-exclude-export-tool-title",
+				"pdfcreator-export-pdf-inspector-title",
+				"pdfcreator-export-pdf-inspector-page-layout-label",
+				"pdfcreator-export-pdf-inspector-export-mode-label",
+				"pdfcreator-export-pdf-inspector-export-template-label",
+				"pdfcreator-export-pdf-inspector-export-link-label",
+				"pdfcreator-export-pdf-inspector-export-tool-title",
+				"pdfcreator-page-break-tool-title"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore",
+				"ext.pdfcreator.widgets",
+				"ext.oOJSPlus.widgets"
+			]
+		},
+		"ext.pdfcreator.widgets": {
+			"packageFiles": [
+				"ui/widgets/ext.pdfcreator.widgets.js",
+				"ui/widgets/ModeSelector.js",
+				{
+					"name": "ui/widgets/modeconfig.json",
+					"callback": "\\MediaWiki\\Extension\\PDFCreator\\ClientConfig::getModeConfig"
+				},
+				"ui/widgets/TemplateSelector.js",
+				{
+					"name": "ui/widgets/exportconfig.json",
+					"callback": "\\MediaWiki\\Extension\\PDFCreator\\ClientConfig::getTemplateConfig"
+				}
+			],
+			"dependencies": [
+				"oojs-ui-core"
+			]
+		},
+		"ext.pdfcreator.tag.viewmode.styles": {
+			"styles": [
+				"styles/pdfcreator.tag.viewmode.css"
+			]
+		},
+		"ext.pdfcreator.droplets.styles": {
+			"styles": [
+				"styles/pdfcreator.droplets.css"
+			]
+		},
+		"ext.pdfcreator.special.overview": {
+			"packageFiles": [
+				"ext.pdfcreator.special.overview.js",
+				"ui/panel/TemplatesPanel.js",
+				"ui/dialog/DeleteDialog.js",
+				"ui/dialog/DuplicateDialog.js",
+				"ui/dialog/NoEditDialog.js"
+			],
+			"styles": [
+				"styles/pdfcreator.special.overview.css"
+			],
+			"messages": [
+				"pdfcreator-template-dlg-template-name-error-label",
+				"pdfcreator-template-duplicate-dlg-title",
+				"pdfcreator-template-duplicate-dlg-action-copy",
+				"pdfcreator-template-duplicate-dlg-new-title",
+				"pdfcreator-template-delete-dlg-title",
+				"pdfcreator-template-delete-dlg-action-delete",
+				"pdfcreator-template-delete-dlg-confirm-text",
+				"pdfcreator-panel-templates-overview-column-templates-label",
+				"pdfcreator-panel-templates-overview-column-edit-title",
+				"pdfcreator-panel-templates-overview-column-edit-label",
+				"pdfcreator-panel-templates-overview-column-copy-title",
+				"pdfcreator-panel-templates-overview-column-copy-label",
+				"pdfcreator-panel-templates-overview-column-delete-title",
+				"pdfcreator-panel-templates-overview-column-delete-label",
+				"pdfcreator-template-edit-source-dlg-title",
+				"pdfcreator-template-edit-source-dlg-action-edit",
+				"pdfcreator-template-edit-source-dlg-no-compatibility-label"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"ext.oOJSPlus.data"
+			]
+		},
+		"ext.pdfcreator.template.edit": {
+			"packageFiles": [
+				"ext.pdfcreator.template.edit.js"
+			]
+		},
+		"ext.pdfcreator.template.edit.dialog": {
+			"packageFiles": [
+				"ui/dialog/EditDialog.js",
+				"ui/booklet/EditBooklet.js",
+				"ui/booklet/pages/SectionPage.js",
+				"ui/widgets/ParamsCombobox.js",
+				"ui/booklet/pages/Outro.js",
+				"ui/booklet/pages/Intro.js",
+				"ui/booklet/pages/Footer.js",
+				"ui/booklet/pages/General.js",
+				"ui/booklet/pages/Header.js",
+				"ui/booklet/pages/Selection.js",
+				"ui/booklet/pages/Upload.js",
+				"ui/widgets/SelectTemplateSectionWidget.js"
+			],
+			"styles": [
+				"styles/pdfcreator.edit.dialog.css"
+			],
+			"messages": [
+				"pdfcreator-template-edit-dlg-title",
+				"pdfcreator-template-edit-dlg-action-next",
+				"pdfcreator-template-edit-dlg-action-save",
+				"pdfcreator-template-edit-dlg-action-upload",
+				"pdfcreator-template-edit-dlg-action-back",
+				"pdfcreator-template-edit-dlg-upload-error-unhandled",
+				"pdfcreator-template-edit-dlg-upload-error-duplicate",
+				"pdfcreator-select-template-widget-configure-btn-label",
+				"pdfcreator-template-edit-dlg-footer-page-heading",
+				"pdfcreator-template-edit-dlg-footer-page-desc",
+				"pdfcreator-template-edit-dlg-footer-left-label",
+				"pdfcreator-template-edit-dlg-footer-middle-label",
+				"pdfcreator-template-edit-dlg-footer-right-label",
+				"pdfcreator-template-edit-dlg-text-input-help-label",
+				"pdfcreator-template-edit-dlg-general-page-heading",
+				"pdfcreator-template-edit-dlg-general-page-desc",
+				"pdfcreator-template-edit-dlg-general-size-label",
+				"pdfcreator-template-edit-dlg-general-size-btn-portrait-label",
+				"pdfcreator-template-edit-dlg-general-size-btn-landscape-label",
+				"pdfcreator-template-edit-dlg-general-template-input-label",
+				"pdfcreator-template-edit-dlg-general-properties-label",
+				"pdfcreator-template-edit-dlg-general-toc-label",
+				"pdfcreator-template-edit-dlg-general-ns-prefix-label",
+				"pdfcreator-template-edit-dlg-general-attachments-label",
+				"pdfcreator-template-edit-dlg-general-links-label",
+				"pdfcreator-template-edit-dlg-template-desc-label",
+				"pdfcreator-template-dlg-template-name-error-label",
+				"pdfcreator-template-edit-dlg-header-upload-btn-label",
+				"pdfcreator-template-edit-dlg-header-btn-left-align-label",
+				"pdfcreator-template-edit-dlg-header-btn-right-align-label",
+				"pdfcreator-template-edit-dlg-header-page-heading",
+				"pdfcreator-template-edit-dlg-header-page-desc",
+				"pdfcreator-template-edit-dlg-header-image-label",
+				"pdfcreator-template-edit-dlg-header-text-label",
+				"pdfcreator-template-edit-dlg-header-layout-label",
+				"pdfcreator-template-edit-dlg-header-preview-text",
+				"pdfcreator-template-edit-dlg-intro-upload-btn-label",
+				"pdfcreator-template-edit-dlg-intro-page-heading",
+				"pdfcreator-template-edit-dlg-intro-page-desc",
+				"pdfcreator-template-edit-dlg-intro-background-image-label",
+				"pdfcreator-template-edit-dlg-intro-title-label",
+				"pdfcreator-template-edit-dlg-intro-text-label",
+				"pdfcreator-template-edit-dlg-outro-page-heading",
+				"pdfcreator-template-edit-dlg-outro-page-desc",
+				"pdfcreator-template-edit-dlg-outro-input-text-label",
+				"pdfcreator-template-edit-dlg-header-label",
+				"pdfcreator-template-edit-dlg-footer-label",
+				"pdfcreator-template-edit-dlg-intro-label",
+				"pdfcreator-template-edit-dlg-outro-label",
+				"pdfcreator-template-edit-dlg-selection-page-desc",
+				"pdfcreator-template-edit-dlg-upload-select-btn-text-label",
+				"pdfcreator-template-edit-dlg-upload-label",
+				"pdfcreator-template-edit-dlg-header-file-select-label",
+				"pdfcreator-template-edit-dlg-header-custom-file-select",
+				"pdfcreator-template-edit-dlg-intro-file-select-label",
+				"pdfcreator-template-edit-dlg-intro-custom-file-select",
+				"pdfcreator-template-edit-dlg-general-redirect-label",
+				"pdfcreator-template-edit-dlg-title-create",
+				"pdfcreator-template-edit-dlg-general-page-heading-edit"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.widgets"
+			]
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "runDatabaseUpdates",
+		"ContentHandlerDefaultModelFor": "setPDFContentModel",
+		"MediaWikiServices": "setPDFContentModel",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "discovery-skin",
+		"ParserFirstCallInit": [ "excludeStart", "excludeEnd", "exportPDF", "pagebreak" ],
+		"SkinTemplateNavigation::Universal": "addNewTemplate",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "addNewTemplate"
+	},
+	"HookHandlers": {
+		"setPDFContentModel": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Hook\\SetPDFContentModel"
+		},
+		"runDatabaseUpdates": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Hook\\RunDatabaseUpdates"
+		},
+		"discovery-skin": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Hook\\BlueSpiceDiscoverySkinHandler",
+			"services": [ "NamespaceInfo", "PermissionManager" ]
+		},
+		"excludeStart": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Hook\\ParserFirstCallInit\\NoExportStart"
+		},
+		"excludeEnd": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Hook\\ParserFirstCallInit\\NoExportEnd"
+		},
+		"exportPDF": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Hook\\ParserFirstCallInit\\ExportPDF",
+			"services": [ "TitleFactory" ]
+		},
+		"pagebreak": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Hook\\ParserFirstCallInit\\PageBreak"
+		},
+		"addNewTemplate": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\Hook\\AddNewTemplate",
+			"services": [ "PermissionManager", "TitleFactory" ]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "PDFCreator/resources"
+	},
+	"ContentHandlers": {
+		"pdfcreator_template": {
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\MediaWiki\\ContentHandler\\PDFCreatorTemplateHandler"
+		}
+	},
+	"RestRoutes": [
+		{
+			"method": "GET",
+			"path": "/pdfcreator/getrelevantmodes/{pageid}",
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\Rest\\GetExportConfig",
+			"services": [ "TitleFactory", "PDFCreator.ExportModeFactory" ]
+		},
+		{
+			"method": "POST",
+			"path": "/pdfcreator/savetemplate/{pagetitle}",
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\Rest\\SaveTemplateEdit",
+			"services": [ "PDFCreator.Util", "WikiPageFactory", "FormatterFactory" ]
+		},
+		{
+			"method": "GET",
+			"path": "/pdfcreator/export/{pageid}/{data}",
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\Rest\\Export",
+			"services": [
+				"TitleFactory",
+				"PDFCreator.ExportSpecificationFactory",
+				"PDFCreator.ExportModeFactory",
+				"PDFCreator",
+				"PermissionManager"
+			]
+		},
+		{
+			"method": "GET",
+			"path": "/pdfcreator/templates",
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\Rest\\GetTemplates",
+			"services": [ "PDFCreator.Util", "TitleFactory" ]
+		},
+		{
+			"method": "GET",
+			"path": "/pdfcreator/templatevalues/{templatename}",
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\Rest\\GetEditTemplateValues",
+			"services": [ "PDFCreator.TemplateValueExtractor", "PDFCreator.PageParamsFactory" ]
+		},
+		{
+			"method": "POST",
+			"path": "/pdfcreator/saveedit/{templatename}",
+			"class": "\\MediaWiki\\Extension\\PDFCreator\\Rest\\SaveEditTemplateValues",
+			"services": [ "PDFCreator.TemplateValueInsertor", "FormatterFactory" ]
+		}
+	],
+	"config": {
+		"PDFCreatorBackend": {
+			"value": "open-html-2-pdf"
+		},
+		"PDFCreatorToolbarOffset": {
+			"value": 123,
+			"public": true
+		},
+		"PDFCreatorTemplateProvider": {
+			"value": "wiki",
+			"descriptionmsg": "pdfcreator-config-template-provider",
+			"public": true
+		},
+		"PDFCreatorOpenHtml2PdfServiceUrl": {
+			"value": "http://127.0.0.1:8080/Html2PDF/v1"
+		},
+		"PDFCreatorDefaultTemplate": {
+			"value": "StandardPDF"
+		},
+		"PDFCreatorCoverbackground": {
+			"value": ""
+		},
+		"PDFCreatorSuppressNamespace": {
+			"value": false
+		}
+	},
+	"manifest_version": 2,
+	"load_composer_autoloader": true
+}

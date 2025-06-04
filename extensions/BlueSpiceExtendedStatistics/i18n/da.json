@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-statistics-datasource-label": "Datakilde",
+	"bs-statistics-targets-label": "Mål",
+	"bs-statistics-paging-page-size": "Sidestørrelse",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorier",
+	"bs-statistics-aggregated-report-filter-date-start": "Startdato",
+	"bs-statistics-aggregated-report-filter-date-end": "Slutdato",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dag",
+	"bs-statistics-aggregated-report-filter-interval-week": "Uge",
+	"bs-statistics-aggregated-report-filter-interval-month": "Måned",
+	"bs-statistics-aggregated-report-filter-interval-year": "År",
+	"bs-statistics-aggregated-report-filter-namespace": "Navnerum",
+	"bs-statistics-aggregated-report-filter-namespaces": "Navnerum",
+	"bs-statistics-aggregated-report-filter-page": "Side",
+	"bs-statistics-aggregated-report-filter-user": "Bruger",
+	"bs-statistics-aggregated-report-filter-user-multi": "Brugere",
+	"bs-statistics-ve-progressinspector-title": "Fremskridt",
+	"bs-statistics-ve-progress-attr-width-label": "Bredde"
+}

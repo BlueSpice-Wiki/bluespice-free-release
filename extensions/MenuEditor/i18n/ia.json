@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"menueditor-desc": "Editor graphic pro paginas de menu",
+	"menueditor-ui-menu-wiki-link-label": "Ligamine wiki",
+	"menueditor-ui-menu-wiki-link-label-edit": "Modificar ligamine wiki",
+	"menueditor-ui-menu-wiki-link-help": "Ligar a un pagina wiki",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Ligamine",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Modificar ligamine",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Specification del ligamine.<br>Le destination pote esser:<ul><li>un clave de message que se resolve in un nomine de pagina</li><li>un ligamine externe</li><li>le nomine del pagina sur le wiki</li><li>un ligamine interwiki</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Texto o clave de message",
+	"menueditor-ui-menu-raw-text-label-edit": "Modificar texto o clave de message",
+	"menueditor-ui-menu-keyword-label": "Parola-clave",
+	"menueditor-ui-menu-keyword-label-edit": "Modificar le parola-clave",
+	"menueditor-ui-menu-keyword-help": "Un del '''parolas-clave''' disponibile, le qual monstrara le widget appropriate",
+	"menueditor-ui-form-field-keyword": "Parola-clave",
+	"menueditor-ui-form-field-text": "Texto o clave de message",
+	"menueditor-ui-form-field-target": "Destination del ligamine",
+	"menueditor-ui-form-field-label": "Etiquetta del ligamine",
+	"menueditor-ui-dialog-action-done": "Facite",
+	"menueditor-ui-dialog-action-cancel": "Cancellar",
+	"menueditor-ui-node-type-selector-label": "Typo de nodo",
+	"menueditor-ui-submit": "Salveguardar",
+	"menueditor-ui-cancel": "Cancellar",
+	"menueditor-ui-redlink-notice": "Iste menu non existe ancora.",
+	"menueditor-action-menueditsource": "Modificar fonte",
+	"menueditor-action-menuedit": "Modificar",
+	"menueditor-ui-dialog-title": "Modificar elemento",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Modificar le parola-clave",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Parola-clave",
+	"menueditor-toolbar-cancel": "Cancellar modification",
+	"menueditor-toolbar-add-label": "Adder elemento",
+	"menueditor-ui-edit-label": "Modificar",
+	"menueditor-ui-add-sub-element-label": "Adder subelemento",
+	"menueditor-footerlinks-banner-text": "Alcun ligamines pote esser addite automaticamente per extensiones. Per favor examina le configuration del extension pro apprender plus.",
+	"menueditor-toolbar-save": "Salveguardar"
+}

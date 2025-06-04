@@ -1,0 +1,64 @@
+[
+	{
+		"name": "bs_saferedit",
+		"columns": [
+			{
+				"name": "se_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "se_user_name",
+				"comment": "foreign key to user.user_name",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"default": null
+				}
+			},
+			{
+				"name": "se_page_title",
+				"comment": "foreign key to page.page_title",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"default": null
+				}
+			},
+			{
+				"name": "se_page_namespace",
+				"comment": "foreign key to page.page_namespace",
+				"type": "integer",
+				"options": {
+					"length": 11,
+					"default": 0
+				}
+			},
+			{
+				"name": "se_edit_section",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"default": -1
+				}
+			},
+			{
+				"name": "se_timestamp",
+				"comment": "YmdHis",
+				"type": "mwtimestamp",
+				"options": {
+					"default": null
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [
+			"se_id"
+		]
+	}
+]

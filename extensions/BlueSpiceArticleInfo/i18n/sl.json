@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-articleinfo-desc": "Prikazuje informacije o strani v vrstici stanja",
+	"prefs-articleinfo": "Podatki o strani",
+	"bs-articleinfo-newrevision-info-text-reload": "Na voljo je nova različica te strani. Za ogled trenutne vsebine [[:$1|znova naložite]] stran."
+}

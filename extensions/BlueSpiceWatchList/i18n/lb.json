@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Les Meloures",
+			"Robby",
+			"Volvox"
+		]
+	},
+	"bs-watchlist-pref-sort-time": "Zäit",
+	"bs-watchlist-pref-sort-title": "Titel",
+	"bs-watchlist-ve-watchlistinspector-title": "Iwwerwaachungslëscht",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Maximal Längt vum Titel",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Reiefolleg",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Numm vun der Säit",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Zäit",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Numm vun der Säit Hëllef",
+	"bs-watchlist-droplet-name": "Iwwerwaachungslëscht",
+	"bs-watchlist-droplet-description": "Lescht Ännerungen op Säiten, déi op der Iwwerwaachungslëscht stinn"
+}

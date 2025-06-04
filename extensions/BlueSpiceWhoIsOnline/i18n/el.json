@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"bs-whoisonline-desc": "Εμφανίζει μια λίστα χρηστών που είναι προς το παρόν συνδεδεμένοι",
+	"bs-whoisonline-nousers": "Κανένας δεν είναι συνδεδεμένος.",
+	"bs-whoisonline-pref-limitcount": "Μέγιστος αριθμός εμφανιζόμενων χρηστών:",
+	"bs-whoisonline-pref-orderby": "Ταξινόμηση κατά:",
+	"bs-whoisonline-pref-orderby-name": "Όνομα"
+}

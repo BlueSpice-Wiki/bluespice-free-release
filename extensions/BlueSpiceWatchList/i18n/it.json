@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"GpieroMW",
+			"Matteocng",
+			"Selven"
+		]
+	},
+	"bs-watchlist-pref-sort-time": "Ora",
+	"bs-watchlist-pref-sort-title": "Titolo",
+	"bs-watchlist-tag-watchlist-desc": "Mostra le voci che hanno le modifiche più recenti e sono nella tua lista di osservazione.",
+	"bs-watchlist-ve-watchlistinspector-title": "Osservati speciali",
+	"bs-watchlist-droplet-name": "Osservati speciali"
+}

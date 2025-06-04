@@ -1,0 +1,44 @@
+{
+	"name": "FilterSpecialPages",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]",
+		"Leonid Verhovskij"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:FilterSpecialPages",
+	"descriptionmsg": "filterspecialpages-desc",
+	"version": "3.0.0",
+	"license-name": "GPL-3.0+",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.43.0"
+	},
+	"AutoloadClasses": {
+		"FilterSpecialPages": "FilterSpecialPages.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "FilterSpecialPages::onBeforePageDisplay"
+	},
+	"MessagesDirs": {
+		"FilterSpecialPages": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.filterspecialpages": {
+			"scripts": [
+				"resources/ext.filterspecialpages.js"
+			],
+			"messages": [
+				"filterspecialpages-hint-label"
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "FilterSpecialPages"
+	},
+	"manifest_version": 2
+}

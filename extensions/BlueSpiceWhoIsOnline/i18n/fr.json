@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Mahabarata",
+			"SnowedEarth",
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92",
+			"Yasten"
+		]
+	},
+	"bs-whoisonline-desc": "Affiche une liste d’utilisateurs actuellement en ligne",
+	"bs-whoisonline-nousers": "Personne n’est connecté.",
+	"bs-whoisonline-widget-title": "Qui est en ligne ?",
+	"prefs-whoisonline": "Qui est en ligne ?",
+	"bs-whoisonline-pref-limitcount": "Nombre maximum d’utilisateurs affichés :",
+	"bs-whoisonline-pref-orderby": "Trier par :",
+	"bs-whoisonline-pref-maxidletime-label": "Délai d'inactivité (en seconde)",
+	"bs-whoisonline-pref-orderby-time": "Durée de fonctionnement",
+	"bs-whoisonline-pref-orderby-name": "Nom",
+	"bs-whoisonline-pref-interval-label": "Intervalle de mise à jour (en seconde)",
+	"bs-whoisonline-collection-type-userlogin": "Connexion de l’utilisateur",
+	"bs-whoisonline-collection-var-login": "Identifiant",
+	"bs-whoisonline-statistics-report-login-duration": "Durée de connexion",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Durée de connexion (en sec.)",
+	"bs-whoisonline-pref-interval-help-label": "Nombre de secondes après lesquelles la liste des utilisateurs est mise à jour",
+	"bs-whoisonline-pref-maxidletime-help-label": "Nombre de secondes d'inactivité après lesquelles un utilisateur est indiqué comme hors ligne",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Affiche le nombre d’utilisateurs qui se sont connectés lors des 10 dernières minutes",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Compteur de qui est en ligne",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Affiche tous les utilisateurs qui se sont connectés lors des 10 dernières minutes. La sortie est une bulle de dialogue quand un utilisateur survole le lien associé.",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Fenêtre surgissante de qui est en ligne",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Nombre de connexions",
+	"bs-whoisonline-statistics-report-login-number": "Connexions",
+	"bs-whoisonline-droplet-count-name": "Nombre d’utilisateurs connectés",
+	"bs-whoisonline-droplet-count-description": "Nombre d’utilisateurs actuellement connectés",
+	"bs-whoisonline-droplet-popup-name": "Liste des utilisateurs connectés",
+	"bs-whoisonline-droplet-popup-description": "Panneau affichant une liste de tous les utilisateurs actuellement connectés"
+}

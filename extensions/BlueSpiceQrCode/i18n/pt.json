@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"bs-qr-code-extension-description": "Apresenta um código QR com uma hiperligação para a página atual na barra de ferramentas.",
+	"bs-qr-code-action-qr-code-title": "Abrir diálogo com código QR",
+	"bs-qr-code-action-qr-code-text": "Código QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Código QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Código QR para $1",
+	"bs-qr-code-api-no-page": "Parâmetro 'page' vazio",
+	"apihelp-bs-qr-code-summary": "Obter código QR para uma página na forma de URI de dados em base 64",
+	"apihelp-bs-qr-code-param-revid": "Identificador de revisão da página para gerar uma hiperligação permanente",
+	"apihelp-bs-qr-code-param-page": "Nome da página para gerar um URI de dados em base 64",
+	"apihelp-bs-qr-code-param-size": "Tamanho do código QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Chamada de API por omissão",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Chamada de API para determinada revisão",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Chamada de API com tamanho personalizado"
+}

@@ -1,0 +1,103 @@
+[
+	{
+		"name": "bs_readers",
+		"comment": "BlueSpice: Readers - Stores information on users activities",
+		"columns": [
+			{
+				"name": "readers_id",
+				"type": "integer",
+				"options": {
+					"length": 30,
+					"unsigned": true,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "readers_user_id",
+				"type": "integer",
+				"options": {
+					"length": 30,
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "readers_user_name",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "readers_page_id",
+				"type": "integer",
+				"options": {
+					"length": 30,
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "readers_rev_id",
+				"type": "integer",
+				"options": {
+					"length": 30,
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "readers_ts",
+				"type": "string",
+				"options": {
+					"length": 16,
+					"notnull": true,
+					"default": ""
+				}
+			}
+		],
+		"indexes": [
+			{
+				"name": "readers_user_id",
+				"columns": [
+					"readers_user_id"
+				],
+				"unique": false
+			},
+			{
+				"name": "readers_page_id",
+				"columns": [
+					"readers_page_id"
+				],
+				"unique": false
+			},
+			{
+				"name": "readers_rev_id",
+				"columns": [
+					"readers_rev_id"
+				],
+				"unique": false
+			},
+			{
+				"name": "readers_user_name",
+				"columns": [
+					"readers_user_name"
+				],
+				"unique": false
+			},
+			{
+				"name": "readers_ts",
+				"columns": [
+					"readers_ts"
+				],
+				"unique": false
+			}
+		],
+		"pk": [
+			"readers_id"
+		]
+	}
+]

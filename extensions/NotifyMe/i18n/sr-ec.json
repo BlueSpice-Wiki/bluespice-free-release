@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"notifyme-ui-email-frequency-weekly-desc": "Седмични резиме обавештења",
+	"notifyme-mail-template-edit-help-category-colors": "Боје",
+	"notifyme-mail-template-edit-help-header-example": "Пример",
+	"notifyme-event-page-create": "{{GENDER:$1|направио|направила}} је страницу $2",
+	"notifyme-event-page-create-bot": "Страница $1 је направљена",
+	"notifyme-link-label-history": "Прикажи историју странице",
+	"notifyme-event-page-delete": "{{GENDER:$1|избрисао|избрисала}} страницу $2",
+	"notifyme-notification-center-filter-label-namespaces": "Именски простори",
+	"notifyme-notification-center-filter-label-categories": "Категорије",
+	"notifyme-notification-center-filter-label-categories-none": "Нема категорије",
+	"notifyme-event-discussion-edit-bot": "Нови пост на Вашој дискусионој страници $1",
+	"notifyme-event-page-linked-bot": "Ваша страница $1 је повезана са страницом $2",
+	"notifyme-event-page-edit-revert": "{{GENDER:$1|вратио|вратила}} Вашу измену странице $2",
+	"notifyme-notifications-group-mark-group-as-unread-label": "Означи групу непрочитаном",
+	"notifyme-notification-center-help-menu-mark-all-read-label": "Означи све прочитаним",
+	"notifyme-notification-center-mark-as-unread-circle-title": "Означи непрочитаним",
+	"notifyme-notification-center-no-new-notifications-label": "Нема нових обавештења"
+}

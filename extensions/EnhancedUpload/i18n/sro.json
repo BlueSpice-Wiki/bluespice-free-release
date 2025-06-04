@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"F Samaritani"
+		]
+	},
+	"enhancedupload-details-categories-label": "Categorias",
+	"enhancedupload-upload-button-label": "Càrriga",
+	"enhancedupload-cancel-button-label": "Annudda",
+	"enhancedupload-attachments-tag-grid-file-label": "Documentu",
+	"enhancedupload-attachments-tag-grid-category-label": "Categorias",
+	"enhancedupload-attachments-media-dialog-cancel-title": "Annudda",
+	"enhancedupload-attachments-media-dialog-add-title": "Aciungi",
+	"enhancedupload-upload-media-dialog-cancel-title": "Annudda",
+	"enhancedupload-upload-media-dialog-upload-title": "Càrriga",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Annudda",
+	"enhancedupload-attachments-media-dialog-details-upload": "Càrriga",
+	"enhancedupload-ve-attachmentinspector-categories": "Categorias",
+	"enhancedupload-attachments-tag-grid-details-title": "Minudas"
+}

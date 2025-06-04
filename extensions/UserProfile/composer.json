@@ -1,0 +1,36 @@
+{
+	"name": "mediawiki/user-profile",
+	"type": "mediawiki-extension",
+	"license": "GPL-3.0-only",
+	"description": "User profile UI",
+	"extra": {
+		"installer-name": "UserProfile"
+	},
+	"require": {
+		"composer/installers": "~1.0|~2",
+		"mwstake/mediawiki-component-inputprocessor": "~1",
+		"mwstake/mediawiki-component-dynamicfiledispatcher": "~1"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "38.0.0",
+		"mediawiki/minus-x": "1.1.0",
+		"php-parallel-lint/php-console-highlighter": "0.5.0",
+		"php-parallel-lint/php-parallel-lint": "1.4.0"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"minus-x check .",
+			"phpcs -p -s"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		]
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	}
+}

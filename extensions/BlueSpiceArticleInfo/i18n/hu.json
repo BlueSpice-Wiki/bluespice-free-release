@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-articleinfo-desc": "Információt ad egy lapról az állapotsorban",
+	"prefs-articleinfo": "Lapinformáció",
+	"bs-articleinfo-newrevision-info-text-reload": "Elérhető a lap új verziója. Az aktuális tartalom megtekintéséhez [[:$1|töltsd be újra]] a lapot."
+}

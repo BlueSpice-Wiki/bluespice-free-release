@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"GpieroMW",
+			"Matteocng",
+			"Selven"
+		]
+	},
+	"bs-pagesvisited-desc": "Fornisce un elenco personalizzato delle ultime pagine visitate",
+	"prefs-pagesvisited": "Pagine visitate",
+	"bs-pagesvisited-widget-title": "Pagine visitate",
+	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|Il|I}} namespace <code>$2</code> non {{PLURAL:$1|è valido|sono validi}}.",
+	"bs-pagesvisited-pref-widgetlimit": "Limite di ingressi:",
+	"bs-pagesvisited-pref-widgetns": "Namespace:",
+	"bs-pagesvisited-pref-widgetsortodr": "Ordina per:",
+	"bs-pagesvisited-pref-sort-time": "Ora",
+	"bs-pagesvisited-pref-sort-pagename": "Titolo",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Mostra un elenco delle pagine visitate recentemente. Questo elenco può essere ristretto con dei parametri.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Pagine visitate",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Conteggio",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Imposta il numero di pagine da mostrare nell'elenco",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Lunghezza massima del titolo",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Imposta il massimo numero di caratteri ammesso per un titolo",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Ordina",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Imposta l'ordine di visualizzazione delle pagine",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Namespace",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Mostra solo pagine da questi namespace",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Ora",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nome della pagina"
+}

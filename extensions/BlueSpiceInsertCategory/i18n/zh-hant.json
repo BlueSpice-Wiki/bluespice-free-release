@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cookai1205",
+			"Cwlin0416",
+			"Diskdance",
+			"EagerLin",
+			"Kly",
+			"LNDDYL",
+			"Tranve",
+			"Willy1018",
+			"Winston Sung",
+			"捍粵者"
+		]
+	},
+	"bs-insertcategory-desc": "對話方塊中輸入分類連結",
+	"bs-insertcategory-insertcat": "插入分類",
+	"prefs-insertcategory": "插入分類",
+	"bs-insertcategory-pref-withparents": "插入分類與其父分類",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "編輯此頁面的分類",
+	"bs-insertcategory-edit-dialog-button-tooltip": "編輯此頁面的分類",
+	"bs-insertcategory-edit-dialog-button-aria-label": "開啟對話框來編輯此頁面的分類",
+	"bs-insertcategory-edit-dialog-button-label": "編輯",
+	"bs-insertcategory-edit-dialog-title": "編輯分類",
+	"bs-insertcategory-edit-dialog-button-submit": "完成",
+	"bs-insertcategory-edit-dialog-button-cancel": "取消",
+	"bs-insertcategory-edit-dialog-input-label": "已分配的分類",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "固有分類",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "這些分類尚未以頁面的 wikitext 內容定義。它們有可能是從模版所設定。",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "無法檢索頁面分類",
+	"bs-insertcategory-no-categories": "沒有分配分類",
+	"bs-insertcategory-edit-dialog-tree-view": "顯示所有分類"
+}

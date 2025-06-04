@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Pyscowicz"
+		]
+	},
+	"bs-usermanager-idnotexist": "Käyttäjää ei ole olemassa.",
+	"bs-usermanager-invalid-pwd": "Salasana on virheellinen.",
+	"bs-usermanager-invalid-email-gen": "Sähköpostiosoite on virheellinen.",
+	"bs-usermanager-text": "Käyttäjät",
+	"bs-usermanager-user-exists": "Nimiavaruus on jo olemassa.",
+	"bs-usermanager-headerusername": "Käyttäjänimi",
+	"bs-usermanager-headerrealname": "Oikea nimi",
+	"bs-usermanager-headeremail": "Sähköpostiosoite",
+	"bs-usermanager-headergroups": "Ryhmät",
+	"bs-usermanager-titleadduser": "Lisää käyttäjä",
+	"bs-usermanager-titleeditdetails": "Muokkaa käyttäjää",
+	"bs-usermanager-labelnewpassword": "Salasana",
+	"bs-usermanager-labelpasswordcheck": "Vahvista salasana",
+	"bs-usermanager-no-self-block": "Et voi poistaa itseäsi.",
+	"bs-usermanager-block-error": "{{GENDER:$1|Käyttäjää}} $1 ei voida poistaa.",
+	"bs-usermanager-headerenabled": "Käytössä",
+	"bs-usermanager-endisable": "Ota käyttöön/poista käytöstä",
+	"bs-usermanager-confirmdisableuser": "Haluatko todella poistaa {{PLURAL:$1|tämän käyttäjän|nämä $1 käyttäjää}}?",
+	"bs-usermanager-editgroups": "Muokkaa ryhmiä",
+	"bs-usermanager-editpassword": "Vaihda salasana",
+	"bs-usermanager-multipleuserselected": "Voit muuttaa salasanan vain yhdelle käyttäjälle kerrallaan"
+}

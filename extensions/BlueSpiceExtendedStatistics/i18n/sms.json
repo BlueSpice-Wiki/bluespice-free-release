@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-statistics-paging-page-size": "Seeid šorradvuõtt",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategoria",
+	"bs-statistics-aggregated-report-filter-date-start": "Äʹlǧǧempeiʹvv",
+	"bs-statistics-aggregated-report-filter-interval-day": "Peiʹvv",
+	"bs-statistics-aggregated-report-filter-interval-week": "Neäʹttel",
+	"bs-statistics-aggregated-report-filter-interval-month": "Määnpââʹjj",
+	"bs-statistics-aggregated-report-filter-interval-year": "Eeʹǩǩ",
+	"bs-statistics-aggregated-report-filter-page": "Seidd",
+	"bs-statistics-aggregated-report-filter-user": "Õõʹnni",
+	"bs-statistics-aggregated-report-filter-user-multi": "Õõʹnni",
+	"bs-statistics-ve-progress-attr-width-label": "Kobddâdvuõtt"
+}

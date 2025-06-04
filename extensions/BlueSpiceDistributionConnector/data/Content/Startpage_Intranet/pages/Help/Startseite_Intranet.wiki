@@ -1,0 +1,48 @@
+<templatestyles src="Startseite/styles.css" />
+<div id="startpage">
+{{{{NAMESPACE}}:{{PAGENAME}}/Bannerbox}}
+<div style="margin:20px 0">
+{{{{NAMESPACE}}:{{PAGENAME}}/Bildkarten}}
+</div>
+<div class="sectionflexcontainer col2 frame">
+<div>
+==Ankündigungen==
+{{{{NAMESPACE}}:{{PAGENAME}}/Ankündigungen}}
+</div>
+<div>
+==Veranstaltungen==
+{{{{NAMESPACE}}:{{PAGENAME}}/Veranstaltungen}}
+</div>
+</div>
+<div class="sectionflexcontainer col3 background">
+<div>
+==Verkauf==
+{{{{NAMESPACE}}:{{PAGENAME}}/Verkauf}}
+</div>
+<div>
+==Produktion==
+{{{{NAMESPACE}}:{{PAGENAME}}/Produktion}}
+</div>
+<div>
+==Personal==
+{{{{NAMESPACE}}:{{PAGENAME}}/Personal}}
+</div>
+</div>
+<div class="sectionflexcontainer col2 frame">
+<div>
+==Protokolle==
+{{{{NAMESPACE}}:{{PAGENAME}}/Protokolle}}
+</div>
+<div>
+==Kontakt==
+{{{{NAMESPACE}}:{{PAGENAME}}/Kontakt}}
+</div>
+</div>
+<div style="margin-top:10px">
+<bs:tagcloud renderer="text" store="category" width="100%" showcount="true" minsize="5" maxsize="30" exclude="BPMN, Imported vocabulary, Pages using DynamicPageList3 parser tag, Pages using DynamicPageList parser function" />
+</div>
+</div>
+{{Dropdown|ddid=edit|Content={{#subpages:{{FULLPAGENAME}}|kidsonly=yes}}}}
+__NOTOC__
+__HIDETITLE__
+<no-comment-streams />

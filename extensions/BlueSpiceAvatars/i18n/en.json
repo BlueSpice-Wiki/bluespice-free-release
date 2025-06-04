@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Marc Reymann <reymann@hallowelt.biz>",
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-avatars-desc": "Provides generic and individual user pictures",
+	"bs-avatars-pref-generator": "Generator:",
+	"bs-avatars-pref-userimage-img-alt": "Your current user image",
+	"bs-avatars-upload-complete": "The picture was uploaded.",
+	"bs-avatars-generate-complete": "A new avatar was generated.",
+	"bs-avatars-upload-label": "Picture",
+	"bs-avatars-generate-new-label": "Generate new avatar",
+	"bs-avatars-file-upload-fieldset-title": "Upload a new image",
+	"bs-avatars-auto-generate-fieldset-title": "Auto generate avatar",
+	"apihelp-bs-avatars-tasks-summary": "Uploading, generating and setting user avatars",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Parameter \"username\" is required and must contain a valid username",
+	"bs-avatars-pref-generator-help": "The avatar image is generated when a user does not upload a profile picture. InstantAvatar: Generates an avatar image based on using the initials of the real name or the username fields. Identicon: Generates an avatar image based on parts of the user's ID",
+	"bs-avatars-upload-button": "Upload",
+	"bs-avatars-generate-button": "Generate",
+	"bs-avatars-generic-cancel": "Cancel",
+	"bs-avatars-generate-description": "Generate new automatic avatar. This will permanently replace any uploaded profile image (if set)"
+}

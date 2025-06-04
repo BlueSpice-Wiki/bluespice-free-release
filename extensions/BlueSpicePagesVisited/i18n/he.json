@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Guycn2"
+		]
+	},
+	"bs-pagesvisited-desc": "אספקת רשימה מותאמת אישית של הדפים האחרונים שנצפו",
+	"prefs-pagesvisited": "דפים שנצפו",
+	"bs-pagesvisited-widget-title": "דפים שנצפו",
+	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|מרחב השם שסופק|מרחבי השם שסופקו}} <code>$2</code> {{PLURAL:$1|אינו תקין|אינם תקינים}}.",
+	"bs-pagesvisited-pref-widgetlimit": "הגבלת הרשומות:",
+	"bs-pagesvisited-pref-widgetns": "מרחבי שם:",
+	"bs-pagesvisited-pref-widgetsortodr": "מיון לפי:",
+	"bs-pagesvisited-pref-sort-time": "זמן",
+	"bs-pagesvisited-pref-sort-pagename": "כותרת",
+	"bs-pagesvisited-tag-pagesvisited-desc": "הצגת רשימה של הדפים שנצפו לאחרונה. אפשר לצמצם את הרשימה הזאת לפי פרמטרים.",
+	"bs-pagesvisited-ve-pagesvisited-title": "דפים שנצפו",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "מספר",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "הגדרת מספר הדפים שמוצגים ברשימה",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "אורך כותרת מרבי",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "הגדרת המספר המרבי של תווים לפני שהכותרת נחתכת",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "סדר",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "הגדרת סדר הצגת הדפים",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "מרחבי שם",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "להציג רק דפים ממרחבי השם האלה",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "זמן",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "שם דף",
+	"bs-pagesvisited-droplet-name": "ביקרת בדפים",
+	"bs-pagesvisited-droplet-description": "רשימה עם דפים שביקרת בהם",
+	"bs-pagesvisited-label-anon-user": "כדי לראות דפים שביקרת בהם, נא להיכנס לחשבונך"
+}

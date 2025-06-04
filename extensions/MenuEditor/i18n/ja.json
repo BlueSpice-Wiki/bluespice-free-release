@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore"
+		]
+	},
+	"menueditor-ui-menu-two-fold-link-spec-label": "リンク",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "リンクを編集",
+	"menueditor-ui-menu-keyword-label": "キーワード",
+	"menueditor-ui-menu-keyword-label-edit": "キーワードを編集",
+	"menueditor-ui-form-field-keyword": "キーワード",
+	"menueditor-ui-dialog-action-done": "完了",
+	"menueditor-ui-dialog-action-cancel": "キャンセル",
+	"menueditor-ui-submit": "保存",
+	"menueditor-ui-cancel": "キャンセル",
+	"menueditor-action-menueditsource": "ソースを編集",
+	"menueditor-action-menuedit": "編集",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "キーワードを編集",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "キーワード",
+	"menueditor-toolbar-cancel": "編集をキャンセル",
+	"menueditor-ui-edit-label": "編集"
+}

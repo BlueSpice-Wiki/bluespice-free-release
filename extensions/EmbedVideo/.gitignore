@@ -1,0 +1,10 @@
+*.kate-swp
+*~
+.*.swp
+.DS_Store
+.svn
+/vendor
+/composer.lock
+/node_modules
+/.eslintcache
+/package-lock.json

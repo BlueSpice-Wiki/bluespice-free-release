@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos",
+			"Krisztina",
+			"R-Joe"
+		]
+	},
+	"bs-usermanager-idnotexist": "A felhasználó nem létezik",
+	"bs-usermanager-invalid-pwd": "Érvénytelen jelszó.",
+	"bs-usermanager-invalid-email-gen": "E-mail cím érvénytelen.",
+	"bs-usermanager-text": "Felhasználók",
+	"bs-usermanager-user-exists": "A felhasználónév már létezik.",
+	"bs-usermanager-headerusername": "Felhasználónév",
+	"bs-usermanager-headerrealname": "Valódi név",
+	"bs-usermanager-headeremail": "E-mail",
+	"bs-usermanager-headerregistration": "Regisztráció",
+	"bs-usermanager-headergroups": "Csoportok",
+	"bs-usermanager-titleadduser": "Felhasználó hozzáadása",
+	"bs-usermanager-titleeditdetails": "Felhasználó szerkesztése",
+	"bs-usermanager-labelnewpassword": "Jelszó",
+	"bs-usermanager-labelpasswordcheck": "Jelszó megerősítése",
+	"bs-usermanager-no-self-block": "Nem tudja letiltani magát.",
+	"bs-usermanager-endisable": "Be/kikapcsolás",
+	"bs-usermanager-group-add-not-allowed": "Felhasználók hozzáadása a csoporthoz $1 nem megengedettek.",
+	"bs-usermanager-group-remove-not-allowed": "Felhasználók eltávolítása a csoport $1 nem megengedett.",
+	"bs-usermanager-editgroups": "Csoportok szerkesztése",
+	"bs-usermanager-editpassword": "Jelszó megváltoztatása",
+	"bs-usermanager-multipleuserselected": "Egyszerre csak egy felhasználó jelszavát változtathatja meg",
+	"action-usermanager-editpassword": "felhasználók jelszavainak módosítása",
+	"bs-usermanager-label-password-change-strategy": "Módszer",
+	"bs-usermanager-label-password-change-strategy-pw": "Jelszó módosítása közvetlenül",
+	"bs-usermanager-no-mail": "A kiválasztott felhasználónak nincs megerősített e-mail címe"
+}

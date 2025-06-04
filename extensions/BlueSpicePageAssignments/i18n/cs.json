@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fraxinus.cs",
+			"Jrobicek"
+		]
+	},
+	"pageassignments": "Přiřazení",
+	"managepageassignments": "Správa přiřazení",
+	"bs-pageassignments-text": "Přiřazení",
+	"bs-pageassignments-dlg-title": "Přiřazení",
+	"bs-pageassignments-dlg-fldlabel": "Přiřazení",
+	"bs-pageassignments-menu-label": "Nastavte přiřazení stránek",
+	"bs-pageassignments-column-assignments": "Přiřazení",
+	"echo-category-title-bs-pageassignments-action-cat": "Přiřazení stránek",
+	"echo-pref-tooltip-bs-pageassignments-action-cat": "Upozorněte mě, když jsem (nebo je skupina, do které patřím) přiřazena ke stránce, nebo je můj úkol odstraněn",
+	"prefs-pageassignments": "Přiřazení stránek",
+	"action-pageassignments": "upravit přiřazení stránky",
+	"prefs-pageassign": "Přiřazení",
+	"bs-pageassignments-sesp-pageassignments-alias": "Přiřazení",
+	"bs-pageassignments-sesp-pageassignments-desc": "Přiřazení",
+	"bs-usagetracker-pageassignments": "stránky s přiřazeními",
+	"bs-pageassignments-secure-nsm-label": "Zabezpečené přiřazení stránek",
+	"bs-pageassignments-collection-type-assignedpages": "Přiřazení",
+	"bs-pageassignments-pageheader-label": "Přiřazení",
+	"bs-pageassignments-statistics-report-assigned-pages": "Přiřazené stránky",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Přiřazeno",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nepřiřazeno",
+	"bs-pageassignments-dialog-input-placeholder": "Přidat úlohy…",
+	"bs-pageassignment-info-dialog": "Přiřazení",
+	"bs-pageassignments-event-assignment-add-key-desc": "Přiřazeno ke stránce",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Přiřadit",
+	"bs-pageassignments-header-action-edit": "Upravit",
+	"bs-pageassignments-title-edit": "Upravit úkoly",
+	"bs-pageassignments-title-delete": "Smazat přiřazení"
+}

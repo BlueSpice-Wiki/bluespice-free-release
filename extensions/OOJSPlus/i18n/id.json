@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"NFarras",
+			"Veracious"
+		]
+	},
+	"oojsplus-dialog-action-create": "Buat",
+	"oojsplus-data-grid-toolbar-reload-label": "Muat ulang"
+}

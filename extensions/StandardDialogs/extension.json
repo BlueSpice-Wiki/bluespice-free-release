@@ -1,0 +1,326 @@
+{
+	"name": "StandardDialogs",
+	"version": "3.0.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:StandardDialogs",
+	"descriptionmsg": "standarddialogs-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"attributes": {
+		"EnhancedStandardUIs": {
+			"AllPagesPluginModules": [
+				"ext.standardDialogs.allpages"
+			],
+			"FilelistPluginModules": [
+				"ext.standardDialogs.filelist"
+			]
+		},
+		"CognitiveProcessDesigner": {
+			"ProcessOverviewPluginModules": [
+				"ext.standardDialogs.cpd"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"StandardDialogs": "i18n"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\StandardDialogs\\": "src/"
+	},
+	"ResourceModules": {
+		"ext.standardDialogs": {
+			"packageFiles": [
+				"ext.standardDialogs.js",
+				{
+					"name": "deleteDialogMsg.json",
+					"callback": "MediaWiki\\Extension\\StandardDialogs\\ClientConfig::makeDeleteDialogMsgJson"
+				},
+				{
+					"name": "pageInfoPanelModuleRegistry.json",
+					"callback": "MediaWiki\\Extension\\StandardDialogs\\ClientConfig::makePageInfoPanelModuleRegistryJson"
+				}
+			],
+			"dependencies": [
+				"oojs"
+			]
+		},
+		"ext.standardDialogs.ui.DeleteDialog": {
+			"scripts": [
+				"StandardDialogs.ui/BaseDialog.js",
+				"StandardDialogs.ui/DeleteDialog.js"
+			],
+			"messages": [
+				"standarddialogs-delete-btn",
+				"standarddialogs-delete-title",
+				"delete-confirm",
+				"delete-legend",
+				"deletecomment",
+				"deleteotherreason",
+				"watchthis",
+				"deletepage",
+				"delete-edit-reasonlist",
+				"historywarning",
+				"word-separator",
+				"history",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel",
+				"standarddialogs-delete-subpages",
+				"standarddialogs-confirm-mass-deletion"
+			],
+			"dependencies": [
+				"oojs-ui-windows"
+			]
+		},
+		"ext.standardDialogs.ui.MoveDialog": {
+			"scripts": [
+				"StandardDialogs.ui/BaseDialog.js",
+				"StandardDialogs.ui/MoveDialog.js"
+			],
+			"messages": [
+				"standarddialogs-move-btn",
+				"standarddialogs-move-title",
+				"move-page",
+				"move-page-legend",
+				"newtitle",
+				"movereason",
+				"move-leave-redirect",
+				"move-watch",
+				"movepagebtn",
+				"move-subpages",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel",
+				"standarddialogs-validation-page-exist-info-label"
+			],
+			"dependencies": [
+				"oojs-ui-windows",
+				"mediawiki.widgets",
+				"ext.oOJSPlus.widgets"
+			]
+		},
+		"ext.standardDialogs.ui.ProtectDialog": {
+			"scripts": [
+				"StandardDialogs.ui/BaseDialog.js",
+				"StandardDialogs.ui/ProtectDialog.js"
+			],
+			"messages": [
+				"standarddialogs-protect-btn",
+				"standarddialogs-protect-title",
+				"protect",
+				"protect-title",
+				"protect-legend",
+				"protectexpiry",
+				"restriction-edit",
+				"restriction-move",
+				"protect-othertime",
+				"protect-unchain-permissions",
+				"protectcomment",
+				"protect-otherreason",
+				"protect-default",
+				"standarddialogs-protect-level-editor",
+				"protect-level-sysop",
+				"protect-expiry-options",
+				"protect-dropdown",
+				"protect-otherreason-op",
+				"watchthis",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel"
+			],
+			"dependencies": [
+				"oojs-ui-windows"
+			]
+		},
+		"ext.standardDialogs.ui.RefreshDialog": {
+			"scripts": [
+				"StandardDialogs.ui/BaseDialog.js",
+				"StandardDialogs.ui/RefreshDialog.js"
+			],
+			"messages": [
+				"standarddialogs-purge-btn",
+				"standarddialogs-purge-title",
+				"confirm-purge-title",
+				"confirm_purge_button",
+				"confirm-purge-top",
+				"confirm-purge-bottom",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel"
+			],
+			"dependencies": [
+				"oojs-ui-windows"
+			]
+		},
+		"ext.standardDialogs.ui.DuplicateDialog": {
+			"scripts": [
+				"StandardDialogs.ui/BaseDialog.js",
+				"StandardDialogs.ui/DuplicateDialog.js"
+			],
+			"messages": [
+				"standarddialogs-copy-btn",
+				"standarddialogs-copy-title",
+				"standarddialogs-copy-page-legend",
+				"standarddialogs-copy-page-new",
+				"standarddialogs-copy-subpages",
+				"standarddialogs-copy-discussion",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel",
+				"standarddialogs-validation-page-exist-info-label"
+			],
+			"dependencies": [
+				"oojs-ui-windows",
+				"mediawiki.widgets",
+				"ext.oOJSPlus.widgets"
+			]
+		},
+		"ext.standardDialogs.ui.PageInformationDialog": {
+			"scripts": [
+				"StandardDialogs.ui/PageInformationDialog.js",
+				"StandardDialogs.ui/Pages/BasePage.js",
+				"StandardDialogs.ui/Pages/BasicInformationPage.js",
+				"StandardDialogs.ui/Pages/HistoryInformationPage.js",
+				"StandardDialogs.ui/Pages/PropertiesInformationPage.js"
+			],
+			"styles": [
+				"StandardDialogs.ui/Pages/page-information-table.css"
+			],
+			"messages": [
+				"standarddialogs-page-info-title",
+				"standarddialogs-page-info-close",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel",
+				"standarddialogs-page-info-general",
+				"standarddialogs-page-info-history",
+				"standarddialogs-page-info-properties",
+				"standarddialogs-page-info-page-title",
+				"standarddialogs-page-info-page-length",
+				"standarddialogs-page-info-page-id",
+				"standarddialogs-page-info-page-language",
+				"standarddialogs-page-info-page-model",
+				"standarddialogs-page-info-page-watch",
+				"standarddialogs-page-info-page-redirects",
+				"standarddialogs-page-info-page-contributors",
+				"standarddialogs-page-info-page-last-edit",
+				"standarddialogs-page-info-page-last-editor",
+				"standarddialogs-page-info-page-templates",
+				"standarddialogs-page-info-page-categories",
+				"standarddialogs-page-info-page-internal",
+				"standarddialogs-page-info-page-external",
+				"standarddialogs-page-info-page-images",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel",
+				"standarddialogs-page-info-page-no-images-label",
+				"standarddialogs-page-info-page-no-templates-label",
+				"standarddialogs-page-info-page-no-categories-label",
+				"standarddialogs-page-info-page-no-links-label",
+				"standarddialogs-page-info-page-no-extlinks-label"
+			],
+			"dependencies": [
+				"oojs-ui-windows",
+				"ext.oOJSPlus.widgets"
+			]
+		},
+		"ext.standardDialogs.ui.NewPageDialog": {
+			"scripts": [
+				"StandardDialogs.ui/BaseDialog.js",
+				"StandardDialogs.ui/NewPageDialog.js"
+			],
+			"messages": [
+				"standarddialogs-new-page-title",
+				"standarddialogs-new-page-label",
+				"create",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel",
+				"standarddialogs-new-page-not-exist-label",
+				"standarddialogs-validation-page-exist-info-label"
+			],
+			"dependencies": [
+				"oojs-ui-windows",
+				"mediawiki.widgets",
+				"ext.oOJSPlus.widgets"
+			]
+		},
+		"ext.standardDialogs.ui.NewSubpageDialog": {
+			"scripts": [
+				"StandardDialogs.ui/BaseDialog.js",
+				"widgets/SubpageTitleWidget.js",
+				"StandardDialogs.ui/NewSubpageDialog.js"
+			],
+			"messages": [
+				"standarddialogs-new-subpage-title",
+				"standarddialogs-new-subpage-label",
+				"create",
+				"standarddialogs-btn-done",
+				"standarddialogs-btn-cancel",
+				"standarddialogs-validation-page-exist-info-label"
+			],
+			"dependencies": [
+				"oojs-ui-windows",
+				"mediawiki.widgets",
+				"ext.oOJSPlus.widgets"
+			]
+		},
+		"ext.standardDialogs.allpages": {
+			"packageFiles": [
+				"ext.standardDialogs.allpages.js",
+				{
+					"name": "pageInfoPanelModuleRegistry.json",
+					"callback": "MediaWiki\\Extension\\StandardDialogs\\ClientConfig::makePageInfoPanelModuleRegistryJson"
+				}
+			]
+		},
+		"ext.standardDialogs.filelist": {
+			"packageFiles": [
+				"ext.standardDialogs.filelist.js",
+				{
+					"name": "deleteDialogMsg.json",
+					"callback": "MediaWiki\\Extension\\StandardDialogs\\ClientConfig::makeDeleteDialogMsgJson"
+				}
+			]
+		},
+		"ext.standardDialogs.books.deleteAction": {
+			"packageFiles": [
+				"ext.standardDialogs.books.deleteAction.js",
+				{
+					"name": "deleteDialogMsg.json",
+					"callback": "MediaWiki\\Extension\\StandardDialogs\\ClientConfig::makeDeleteDialogMsgJson"
+				}
+			]
+		},
+		"ext.standardDialogs.cpd": {
+			"packageFiles": [
+				"ext.standardDialogs.cpd.js",
+				{
+					"name": "pageInfoPanelModuleRegistry.json",
+					"callback": "MediaWiki\\Extension\\StandardDialogs\\ClientConfig::makePageInfoPanelModuleRegistryJson"
+				}
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "StandardDialogs/resources"
+	},
+	"HookHandlers": {
+		"skin": {
+			"class": "\\MediaWiki\\Extension\\StandardDialogs\\HookHandler\\Skin",
+			"services": [ "PermissionManager", "NamespaceInfo" ]
+		},
+		"discovery-skin": {
+			"class": "\\MediaWiki\\Extension\\StandardDialogs\\HookHandler\\DiscoverySkin"
+		},
+		"bs-books-overview-page-actions": {
+			"class": "\\MediaWiki\\Extension\\StandardDialogs\\HookHandler\\BookshelfDeleteAction"
+		}
+	},
+	"Hooks": {
+		"SkinTemplateNavigation::Universal": "skin",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
+		"BSBookshelfBooksOverviewBeforeSetBookActions": "bs-books-overview-page-actions"
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"pdfcreator-tab-panel-header-label": "ہیڈر",
+	"pdfcreator-tab-panel-footer-label": "فُٹر",
+	"pdfcreator-tab-panel-main-label": "تفصیل",
+	"pdfcreator-pdf-param-currentpagenumber-label": "ورقہ",
+	"pdfcreator-export-mode-page-label": "ورقہ",
+	"pdfcreator-export-pdf-inspector-title": "ٻاہر بھیڄو",
+	"pdfcreator-help-table-column-param-key": "پیرامیٹر",
+	"pdfcreator-help-table-column-param-desc": "تفصیل",
+	"pdfcreator-template-edit-dlg-action-back": "پچھوں",
+	"pdfcreator-template-duplicate-dlg-action-copy": "نقل کرو"
+}

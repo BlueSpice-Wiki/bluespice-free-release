@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dejan Savuljesku <savuljesku@hallowelt.com>",
+			"Metalhead64",
+			"Mschlindwein"
+		]
+	},
+	"bs-usersidebar-desc": "Anpassbares persönliches Navigationsmenü",
+	"bs-edit-user-mm-link-text": "Benutzermenü bearbeiten",
+	"bs-edit-user-mm-link-title": "Benutzermenü bearbeiten",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Schlüsselwort bearbeiten",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Schlüsselwort",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Schlüsselwort bearbeiten",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Schlüsselwort"
+}

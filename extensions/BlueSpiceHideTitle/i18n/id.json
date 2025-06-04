@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arifin.wijaya",
+			"Veracious"
+		]
+	},
+	"bs-hidetitle-desc": "Tambahkan kata ajaib <code><nowiki>__HIDETITLE__</nowiki></code> untuk menyembunyikan judul halaman",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Tampilkan",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Sembunyikan",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Visibilitas judul",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Anda dapat menentukan di sini apakah judul akan ditampilkan atau tidak."
+}

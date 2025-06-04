@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"vuejsplus-desc": "VueJs 元件的收集",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "摺疊",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "展開",
+	"vuejsplus-data-grid-option-sort-string-asc": "升序排序",
+	"vuejsplus-data-grid-option-sort-string-desc": "降序排序",
+	"vuejsplus-data-grid-option-filter-string": "尋找",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "找到 {{PLURAL:$1|1|$1}} 個列",
+	"vuejsplus-data-grid-option-button-aria-label": "欄位$1選項",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "已勾選",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "取消勾選",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "不確定",
+	"vuejsplus-data-grid-option-filter-date-from-label": "開始日期",
+	"vuejsplus-data-grid-option-filter-date-to-label": "結束日期"
+}

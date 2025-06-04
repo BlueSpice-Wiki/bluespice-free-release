@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Carma Citrawati",
+			"Chinamoonroll",
+			"Joseagush"
+		]
+	},
+	"bs-distributionconnector-workflows-form-groupname": "Seka",
+	"bs-distributionconnector-workflows-form-instructions": "Tata cara nganggén",
+	"bs-distributionconnector-workflows-form-username": "Sang anganggé",
+	"bs-distributionconnector-workflows-form-comment": "Panampen",
+	"bs-distributionconnector-workflows-form-placeholder-comment": "Panampen",
+	"bs-distributionconnector-checkpermissions-label-user": "Sang anganggé",
+	"bs-distributionconnector-checkpermissions-label-title": "Murda"
+}

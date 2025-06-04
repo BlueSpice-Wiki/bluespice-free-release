@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-countthings-words-label": "Palori",
+	"bs-countthings-files-label": "File",
+	"bs-countthings-pages-label": "Pàggini",
+	"bs-countthings-ve-countcharacters-mode-all": "tuttu",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "palori",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "pàggini",
+	"bs-countthings-ve-countcharacters-input-label": "Pàggini",
+	"bs-countthings-error-not-exist": "La pàggina \"$1\" nun esisti.",
+	"bs-countthings-tag-countusers-desc": "Ammustra lu nùmmiri di l'utenti riggistrati."
+}

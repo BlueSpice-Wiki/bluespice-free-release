@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alirezaaa",
+			"Ebrahim",
+			"Ebraminio",
+			"FarsiNevis",
+			"Jeeputer"
+		]
+	},
+	"bs-insertcategory-desc": "پنجره محاوره‌ای برای واردکردن پیوند یک رده",
+	"bs-insertcategory-insertcat": "درج رده",
+	"prefs-insertcategory": "درج رده",
+	"bs-insertcategory-pref-withparents": "درج رده همراه والدینش",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "ویرایش رده‌های این صفحه",
+	"bs-insertcategory-edit-dialog-button-tooltip": "ویرایش رده‌های این صفحه",
+	"bs-insertcategory-edit-dialog-button-aria-label": "برای ویرایش رده‌های این صفحه، جعبه را باز کنید",
+	"bs-insertcategory-edit-dialog-button-label": "ویرایش",
+	"bs-insertcategory-edit-dialog-title": "ویرایش رده‌ها",
+	"bs-insertcategory-edit-dialog-button-submit": "انجام شد",
+	"bs-insertcategory-edit-dialog-button-cancel": "لغو",
+	"bs-insertcategory-edit-dialog-input-label": "رده‌های اختصاص‌یافته",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "رده‌های ضمنی",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "ناتوان در واکشی رده‌های صفحه",
+	"bs-insertcategory-no-categories": "هیچ رده‌ای معین نشده است",
+	"bs-insertcategory-edit-dialog-tree-view": "نمایش همهٔ رده‌ها"
+}

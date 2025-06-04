@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Subi",
+			"Xabier Armendaritz"
+		]
+	},
+	"bs-interwikilinks-label": "Interwiki loturak",
+	"bs-interwikilinks-link-created": "Interwiki esteka sortu da.",
+	"bs-interwikilinks-link-added": "Interwiki esteka gehitu da.",
+	"bs-interwikilinks-link-deleted": "Interwiki esteka ezabatu da.",
+	"interwikilinks": "Interwiki loturak"
+}

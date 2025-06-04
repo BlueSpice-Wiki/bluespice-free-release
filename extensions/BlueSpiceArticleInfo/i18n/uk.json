@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alexander Yukal",
+			"Base",
+			"Piramidion",
+			"Ата"
+		]
+	},
+	"bs-articleinfo-desc": "Надає інформацію про сторінку у рядку стану",
+	"prefs-articleinfo": "Інформація про сторінку",
+	"bs-articleinfo-newrevision-info-text-reload": "Доступна нова версія цієї сторінки. Будь ласка, [[:$1|перезавантажте]] сторінку, щоб переглянути її поточний вміст."
+}

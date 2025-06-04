@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"1917 Ekim Devrimi",
+			"Kumkumuk",
+			"Mirzali"
+		]
+	},
+	"bs-avatars-desc": "Jenerik u xısusi resimê karberi dano",
+	"bs-avatars-pref-generator": "Generator:",
+	"bs-avatars-pref-userimage-img-alt": "Mewcud resımê karberi",
+	"bs-avatars-upload-complete": "Resim bar bıyo.",
+	"bs-avatars-generate-complete": "Avataro newe vırazi ya",
+	"bs-avatars-upload-label": "Resım",
+	"bs-avatars-generate-new-label": "Avataro newe vıraze",
+	"bs-avatars-file-upload-fieldset-title": "Resım bar ke",
+	"bs-avatars-auto-generate-fieldset-title": "Otomatik avatar vıraz",
+	"apihelp-bs-avatars-tasks-summary": "Avatarê karberi barkerdış, vıraştış u eyar kerdış",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Parametrey \"namey karberi \" lazımo u ravêrde yew namey karberi ihtiwa wa bıkero.",
+	"bs-avatars-generic-cancel": "Bıtexelne"
+}

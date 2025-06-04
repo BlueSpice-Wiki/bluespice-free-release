@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alojz.tic",
+			"Eleassar",
+			"Skalcaa",
+			"Yerpo"
+		]
+	},
+	"bs-interwikilinks-desc": "Adminstratorski vmesnik za dodajanje, urejanje in brisanje povezav med vikiji.",
+	"bs-interwikilinks-invalid-pfx-spc": "Predpona je neveljavna. Prosimo, ne uporabljajte presledkov.",
+	"bs-interwikilinks-invalid-url-spc": "URL ni veljaven. Prosimo, ne uporabljajte presledkov.",
+	"bs-interwikilinks-label": "Interviki povezave",
+	"bs-interwikilinks-link-created": "Interwiki povezava je ustvarjena.",
+	"bs-interwikilinks-link-added": "Interwiki povezava je bila dodana.",
+	"bs-interwikilinks-link-deleted": "Interwiki povezava je bila izbrisana.",
+	"bs-interwikilinks-nooldpfx": "Prejšnja predpona ni bila najdena.",
+	"bs-interwikilinks-nopfx": "Prosimo, priskrbite predpono.",
+	"bs-interwikilinks-nourl": "Prosimo, priskrbite URL.",
+	"bs-interwikilinks-pfxtoolong": "Predpona je predolga. Prosimo, uporabite največ 32 znakov.",
+	"bs-interwikilinks-pfxexists": "Ta predpona že obstaja.",
+	"bs-interwikilinks-headerprefix": "Predpona",
+	"bs-interwikilinks-headerurl": "URL",
+	"bs-interwikilinks-titleaddinterwikilink": "Dodajanje interwiki povezave",
+	"bs-interwikilinks-titleeditinterwikilink": "Urejanje interwiki povezave",
+	"bs-interwikilinks-labelprefix": "Predpona",
+	"bs-interwikilinks-labelurl": "URL",
+	"bs-interwikilinks-titledeleteinterwikilink": "Brisanje interwiki povezave",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Ali to interwiki povezavo res želite izbrisati?",
+	"bs-interwikilinks-insertlink-tabtitle": "Povezava v drug viki",
+	"bs-interwikilinks-insertlink-labelprefix": "Predpona",
+	"bs-interwikilink-select-a-prefix": "Izberite predpono",
+	"bs-interwikilinks-link-edited": "Interwiki povezava je bila spremenjena",
+	"apihelp-bs-interwikilinks-tasks-summary": "Zagotavlja opravila za razširitev InterWikiLinks.",
+	"action-interwikilinks-viewspecialpage": "ogled posebne strani »{{int:bs-interwikilinks-label}}«",
+	"interwikilinks": "Interviki povezave",
+	"right-interwikilinks-viewspecialpage": "Dostop do posebne strani [[Special:InterWikiLinks]]"
+}

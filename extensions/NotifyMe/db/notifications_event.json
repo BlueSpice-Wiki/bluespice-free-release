@@ -1,0 +1,65 @@
+[
+	{
+		"name": "notifications_event",
+		"columns": [
+			{
+				"name": "ne_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "ne_key",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": false
+				}
+			},
+			{
+				"name": "ne_agent",
+				"type": "integer",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "ne_timestamp",
+				"type": "mwtimestamp",
+				"options": {
+					"notnull": false
+				}
+			},
+			{
+				"name": "ne_payload",
+				"type": "blob",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "ne_process",
+				"type": "binary",
+				"options": {
+					"length": 128,
+					"notnull": false
+				}
+			},
+			{
+				"name": "ne_process_result",
+				"type": "binary",
+				"options": {
+					"length": 10,
+					"notnull": false,
+					"default": ""
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [ "ne_id" ]
+	}
+]

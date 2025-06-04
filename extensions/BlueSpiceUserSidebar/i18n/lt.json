@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"bs-usersidebar-desc": "Pritaikomas asmeninis naršymo meniu",
+	"bs-edit-user-mm-link-text": "Redaguoti naudotojo meniu",
+	"bs-edit-user-mm-link-title": "Redaguoti naudotojo meniu",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Redaguoti raktinį žodį",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Raktinis žodis",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Redaguoti raktinį žodį",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Raktinis žodis"
+}

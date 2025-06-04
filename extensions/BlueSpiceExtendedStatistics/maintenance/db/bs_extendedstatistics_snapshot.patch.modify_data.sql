@@ -1,0 +1,1 @@
+ALTER TABLE /*$wgDBprefix*/bs_extendedstatistics_snapshot MODIFY ess_data LONGBLOB;

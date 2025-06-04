@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-usermanager-idnotexist": "Иштта декъашхо вац(йац).",
+	"bs-usermanager-invalid-pwd": "Пароль нийса йац.",
+	"bs-usermanager-label": "Аккаунташна урхалладар",
+	"bs-usermanager-text": "Декъашхой",
+	"bs-usermanager-headerusername": "Декъашхочун цӀе",
+	"bs-usermanager-headeremail": "Электронан пошт",
+	"bs-usermanager-headergroups": "Тобанаш",
+	"bs-usermanager-titleadduser": "ТӀетоха декъашхо",
+	"bs-usermanager-labelnewpassword": "Пароль",
+	"bs-usermanager-editgroups": "Тобанаш тайар",
+	"bs-usermanager-editpassword": "Хийца пароль",
+	"action-usermanager-editpassword": "Декъашхочун паролаш хийца",
+	"right-usermanager-editpassword": "белхан [[Special:UserManager]] агӀонгахь мега декъашхойн паролаш хийца."
+}

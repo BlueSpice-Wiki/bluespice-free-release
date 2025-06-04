@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Can",
+			"Hedda"
+		]
+	},
+	"filterspecialpages-desc": "[{{canonicalurl:Special:SpecialPages}} Özel:ÖzelSayfalar] içindeki girdileri filtrelemek için bir alan ekler.",
+	"filterspecialpages-hint-label": "Sayfa bul"
+}

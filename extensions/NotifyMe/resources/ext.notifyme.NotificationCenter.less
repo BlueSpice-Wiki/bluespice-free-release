@@ -1,0 +1,345 @@
+/** NotificationCenter **/
+
+#notifications-overview {
+	display: flex;
+}
+
+.notifications-ui-panel-NotificationCenter {
+	width: 76%;
+	margin-left: 10px;
+}
+
+.notifications-ui-panel-NotificationCenter .oo-ui-tabPanelLayout {
+	padding: 20px 0;
+}
+
+.notifications-ui-panel-NotificationCenter .oo-ui-menuLayout-menu {
+	transition: none;
+
+	&.sticky {
+		position: fixed;
+		top: 0;
+		padding-top: 65px;
+		z-index: 1;
+	}
+}
+
+.notifications-ui-panel-NotificationCenter .oo-ui-menuLayout-menu.sticky + .oo-ui-menuLayout-content {
+	padding-top: 40px;
+}
+
+.notifications-ui-panel-NotificationCenter-TabSelectWidget {
+	overflow: visible;
+
+	& .oo-ui-tabOptionWidget {
+		width: 150px;
+	}
+}
+
+/** Accessibility hint for TabSelectWidget **/
+
+/*
+ * Hide, when not keyboard focussed.
+ * Copied from "resources/src/mediawiki.special.preferences.ooui/tabs.js"
+ */
+.client-js .notifications-ui-widget-TabSelectWidget-navigation-hint:not( :focus ) {
+	height: 0;
+	overflow: hidden;
+}
+
+/** NotificationTab **/
+
+.oojsplus-widget-no-content-placeholder .oo-ui-icon-no-notifications {
+	background-image: url( ./../images/icon_no_notifications.svg );
+	background-color: rgba( 62, 83, 137, 0.1 );
+	background-size: 80px;
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	margin: 30px auto 15px;
+	height: 120px;
+	width: 120px;
+}
+
+.notifications-ui-panel-NotificationTab-status-bar-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.notifications-ui-panel-NotificationTab-loading .oo-ui-progressBarWidget {
+	margin: auto;
+}
+
+/** DatedNotificationsWidget **/
+
+.notifications-ui-widget-DatedNotificationsWidget {
+	margin-bottom: 30px;
+}
+
+.notifications-ui-widget-DatedNotificationsWidget-date-label {
+	/** We need "important" here to override default "h2" styles, to stick to design **/
+	font-size: 16pt !important;
+	font-weight: bold;
+	margin-top: 0 !important;
+	margin-bottom: 10px !important;
+	margin-left: 10px !important;
+}
+
+.notifications-ui-widget-DatedNotificationsWidget-mark-as-read-button {
+	& .oo-ui-labelElement-label {
+		color: #777575;
+		font-weight: 600;
+	}
+	position: absolute;
+	right: 0;
+	margin-left: 20px;
+	margin-bottom: 4px;
+}
+
+/** FilterWidget **/
+
+.notifications-ui-widget-FilterWidget {
+	display: inline-block;
+	width: 23%;
+	margin-left: 10px !important;
+	margin-right: 5px !important;
+}
+
+.notifications-ui-widget-FilterWidget { // stylelint-disable-line no-duplicate-selectors
+	& .notifications-ui-widget-FilterWidget-item-count {
+		font-weight: bold;
+		color: #777575;
+	}
+
+	& ul {
+		padding-left: 0;
+		margin-left: 0;
+		list-style-type: none;
+	}
+
+	& .notifications-ui-widget-FilterWidget-sublist li {
+		padding-left: 32px;
+	}
+
+	& .notifications-ui-widget-FilterWidget-item {
+		display: flex;
+		justify-content: space-between;
+		cursor: pointer;
+		padding: 4px 15px;
+	}
+
+	& .notifications-ui-widget-FilterWidget-sublist-title {
+		font-weight: bold;
+		cursor: default;
+		padding: 4px 15px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	& .notifications-ui-widget-FilterWidget-sublist {
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	& .notifications-ui-widget-FilterWidget-item:hover {
+		background-color: #f1f1f1;
+	}
+
+	& .notifications-ui-widget-FilterWidget-item-active {
+		background-color: #eaf3ff;
+
+		& .notifications-ui-widget-FilterWidget-item-count {
+			color: #716e6e;
+		}
+	}
+
+	& .notifications-ui-widget-FilterWidget-item-active .notifications-ui-widget-FilterWidget-item-label {
+		color: #466cb5;
+		font-weight: bold;
+	}
+}
+
+/** NotificationItemWidget **/
+
+.notifications-ui-widget-NotificationItemWidget-notification-content {
+	position: relative;
+	min-height: 100px;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+
+.notifications-ui-widget-NotificationItemWidget-notification-content .oojsplus-user-widget {
+	width: auto;
+}
+
+.notifications-ui-widget-NotificationItemWidget-markAsReadButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.notifications-ui-widget-NotificationItemWidget-secondary-links-wrapper {
+	margin-top: 10px;
+	margin-left: 68px;
+
+	& .oo-ui-iconWidget {
+		min-height: initial;
+		height: 17px;
+	}
+}
+
+.notifications-ui-widget-NotificationItemWidget-secondary-link-wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.notifications-ui-widget-NotificationItemWidget-secondary-link {
+	margin-left: 10px;
+}
+
+.notifications-ui-widget-NotificationItemWidget-notification-content-in-group {
+	margin-left: 30px;
+}
+
+.notifications-ui-widget-NotificationItemWidget-notification-content .oo-ui-iconWidget {
+	opacity: 0.6;
+}
+
+.notifications-ui-widget-NotificationItemWidget-content-message {
+	.notifications-ui-widget-NotificationItemWidget-content-message-first-line {
+		/** TODO: Uncomment when icons will get returned **/
+		/** margin-left: 30px; **/
+		margin-right: 20px;
+		display: unset;
+
+		.notifications-ui-widget-NotificationItemWidget-content-message-header,
+		.notifications-ui-widget-NotificationItemWidget-user-widget {
+			display: inline;
+			vertical-align: middle;
+			margin-left: 0;
+		}
+
+		.notifications-ui-widget-NotificationItemWidget-content-message-header {
+			padding-top: 5px;
+			padding-left: 5px;
+		}
+	}
+
+	.notifications-ui-widget-NotificationItemWidget-icon-wrapper {
+		display: none;
+		position: absolute;
+		top: 13px;
+		left: 10px;
+	}
+
+	.notifications-ui-widget-NotificationItemWidget-content-message-secondary {
+		display: block;
+		margin: 10px 0 30px 30px;
+	}
+}
+
+.notifications-ui-widget-NotificationItemWidget-content-message-header {
+	margin: 2px 30px 0 5px;
+}
+
+.notifications-ui-widget-NotificationItemWidget-content-message-timestamp {
+	position: absolute;
+	bottom: 16px;
+	right: 7px;
+}
+
+.notifications-ui-widget-NotificationItemWidget-user-widget {
+	min-width: initial;
+	margin-right: 0 !important;
+	margin-left: 10px;
+	white-space: nowrap;
+}
+
+.notifications-ui-widget-NotificationItemWidget-timestamp {
+	font-style: italic;
+	font-weight: bold;
+	color: #777575;
+}
+
+/** NotificationGroupWidget **/
+
+.notifications-ui-widget-NotificationGroupWidget-notifications {
+	display: none;
+
+	&-expanded {
+		display: block;
+	}
+}
+
+.notifications-ui-widget-NotificationGroupWidget-expand-wrapper {
+	margin-top: 20px;
+	margin-left: -6px;
+
+	& .oo-ui-iconElement-icon {
+		opacity: 0.6 !important;
+	}
+
+	& .oo-ui-labelElement-label {
+		margin-left: 10px;
+		font-weight: normal;
+	}
+}
+
+/** HelpMenuWidget **/
+
+.notifications-ui-widget-HelpMenuWidget {
+	position: absolute;
+	bottom: 2px;
+	right: 0;
+}
+
+/** PaginationWidget **/
+
+.notifications-ui-widget-PaginationWidget {
+	display: flex;
+	justify-content: end;
+	margin-bottom: 20px;
+}
+
+.notifications-ui-widget-PaginationWidget-row span:first-child {
+	margin-right: 15px;
+}
+
+.notifications-ui-widget-PaginationWidget-label {
+	margin-right: 15px;
+}
+
+/** ToggleReadCircleButtonWidget **/
+
+.notifications-ui-widget-ToggleReadCircleButtonWidget {
+	&-circle {
+		border-radius: 50%;
+		min-width: 13px;
+		min-height: 13px;
+
+		// Mark as read
+		background-color: #36c;
+		border: 0;
+
+		// Mark as unread
+		&-unread {
+			background-color: #eaecf0;
+			border: 1px solid #ccc;
+		}
+	}
+
+	// Override OOUI specific rule for frameless buttons that adds a ~2.5em padding-top
+	&.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement.oo-ui-buttonElement-frameless > .oo-ui-buttonElement-button {
+		padding-top: 0;
+	}
+
+	&:hover .notifications-ui-widget-ToggleReadCircleButtonWidget-circle {
+		// Mark as read
+		background-color: #447ff5;
+
+		// Mark as unread
+		&-unread {
+			background-color: #c8ccd1;
+		}
+	}
+}

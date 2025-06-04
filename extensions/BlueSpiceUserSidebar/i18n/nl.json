@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie",
+			"Romaine",
+			"Siebrand"
+		]
+	},
+	"bs-usersidebar-desc": "Aanpasbaar persoonlijk navigatiemenu",
+	"bs-edit-user-mm-link-text": "Gebruikersmenu bewerken",
+	"bs-edit-user-mm-link-title": "Gebruikersmenu bewerken",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Sleutelwoord bewerken",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Trefwoord",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Sleutelwoord bewerken",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Trefwoord"
+}

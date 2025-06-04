@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sagan",
+			"З. ӘЙЛЕ",
+			"Рустам Нурыев"
+		]
+	},
+	"bs-authors-desc": "Бит авторҙарының профиль һүрәтен күрһәтә",
+	"prefs-authors": "Был бит авторҙары",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Автор}}|Авторҙар}}",
+	"bs-authors-profileimage": "Профиль рәсеме",
+	"bs-authors-profileimage-change": "Профиль рәсемен үҙгәртергә",
+	"bs-authors-show-all-authors": "Башҡа авторҙар ҙа бар"
+}

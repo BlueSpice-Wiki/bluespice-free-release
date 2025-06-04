@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"bs-avatars-desc": "Brängk alljemeine un spezjälle Bellder vun Metmaacher.",
+	"bs-avatars-pref-generator": "Jennerahtor:",
+	"bs-avatars-upload-complete": "Dat Belld wohd huhjelahde.",
+	"bs-avatars-generate-complete": "Ene neueje Avvataa wood automattesch opjeboud.",
+	"bs-avatars-upload-label": "Belld",
+	"bs-avatars-generate-new-label": "Donn ene neueje Avvataa automattesch opboue",
+	"bs-avatars-file-upload-fieldset-title": "Belld huhlahde",
+	"bs-avatars-auto-generate-fieldset-title": "Ene Avvataa automattesch opboue"
+}

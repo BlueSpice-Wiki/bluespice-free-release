@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Սերգեյ Սաֆարյան"
+		]
+	},
+	"contentdroplets-droplet-text-box-important": "Կարևոր հաղորդագրություն",
+	"contentdroplets-droplet-text-box-tip": "Հուշում",
+	"contentdroplets-droplet-text-box-header-label": "Վերնագիր",
+	"contentdroplets-droplet-text-box-show-icon-label": "Ցույց տալ պատկերակը",
+	"contentdroplets-droplet-icon-font-size-label": "Տառաչափ",
+	"contentdroplets-droplet-icon-color-label": "Գույն",
+	"contentdroplets-droplet-icon-orientation-label": "Ուղղահայաց կողմնորոշում",
+	"contentdroplet-dialog-action-close": "Չեղարկել",
+	"contentdroplets-droplet-code-name": "Կոդ"
+}

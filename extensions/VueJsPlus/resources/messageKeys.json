@@ -1,0 +1,14 @@
+[
+	"vuejsplus-data-grid-option-sort-string-asc",
+	"vuejsplus-data-grid-option-sort-string-desc",
+	"vuejsplus-data-grid-option-filter-string",
+	"vuejsplus-data-grid-aria-live-filtered-rows",
+	"vuejsplus-data-grid-option-button-aria-label",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked",
+	"vuejsplus-data-grid-option-filter-date-from-label",
+	"vuejsplus-data-grid-option-filter-date-to-label",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label"
+]

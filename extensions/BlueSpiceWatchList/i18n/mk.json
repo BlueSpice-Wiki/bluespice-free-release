@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Vlad5250"
+		]
+	},
+	"bs-watchlist-desc": "Додава елемент и ознака за список на набљудувања",
+	"bs-watchlist-pref-sort-time": "Време",
+	"bs-watchlist-pref-sort-title": "Наслов",
+	"bs-watchlist-tag-watchlist-desc": "Прикажува список на страници кои имаат најскорешни промени и се во вашите набљудувани."
+}

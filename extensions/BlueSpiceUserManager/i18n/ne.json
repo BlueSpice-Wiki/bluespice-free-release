@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bada Kaji",
+			"Drjpoudel",
+			"पर्वत सुबेदी",
+			"बडा काजी",
+			"बिप्लब आनन्द",
+			"सरोज कुमार ढकाल"
+		]
+	},
+	"bs-usermanager-desc": "प्रयोगकर्ताहरू जोड्ने, सम्पादन गर्ने तथा मेट्ने प्रवन्धक अवतरण",
+	"bs-usermanager-idnotexist": "यो प्रयोगकर्ता अस्तित्वमा छैन।",
+	"bs-usermanager-invalid-pwd": "प्रवेश शब्द मान्य छैन।",
+	"bs-usermanager-invalid-email-gen": "इमेल ठेगाना अमान्य छ।",
+	"bs-usermanager-label": "प्रयोगकर्ता प्रबन्धक",
+	"bs-usermanager-user-exists": "यो प्रयोगकर्तानाम पहिले देखि समावेस छ।",
+	"bs-usermanager-headerusername": "प्रयोगकर्ता नाम",
+	"bs-usermanager-headerrealname": "वास्तविक नाम",
+	"bs-usermanager-headeremail": "इमेल",
+	"bs-usermanager-headerregistration": "दर्ता",
+	"bs-usermanager-headergroups": "समूहहरू",
+	"bs-usermanager-titleadduser": "प्रयोगर्ता जोड्ने",
+	"bs-usermanager-titleeditdetails": "प्रयोगकर्ता सम्पादन गर्नुहोस्",
+	"bs-usermanager-labelnewpassword": "प्रवेश शब्द",
+	"bs-usermanager-labelpasswordcheck": "प्रवेश शब्द निश्चित गर्नुहोस्",
+	"bs-usermanager-no-self-desysop": "तपाईँ आफुले आफ्नो प्रवन्धक अधिकार फिर्ता गर्न सक्नुहुन्न।",
+	"bs-usermanager-endisable": "सक्षम/असक्षम",
+	"bs-usermanager-titledisableuser": "असक्षम गरिएका प्रयाेगकर्ताहरू",
+	"bs-usermanager-editpassword": "प्रवेश शब्द परिवर्तन गर्नुहाेस्"
+}

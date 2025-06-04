@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"SnowedEarth",
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-pagesvisited-desc": "Fournit une liste personnalisée des dernières pages visitées",
+	"prefs-pagesvisited": "Pages visitées",
+	"bs-pagesvisited-widget-title": "Pages visitées",
+	"bs-pagesvisited-error-nsnotvalid": "L{{PLURAL:$1|’|es}} espace{{PLURAL:$1||s}} de noms <code>$2</code> n{{PLURAL:$1|’est|e sont}} pas valide{{PLURAL:$1||s}}.",
+	"bs-pagesvisited-pref-widgetlimit": "Limite des entrées :",
+	"bs-pagesvisited-pref-widgetns": "Espaces de noms :",
+	"bs-pagesvisited-pref-widgetsortodr": "Trier par :",
+	"bs-pagesvisited-pref-sort-time": "Horodatage",
+	"bs-pagesvisited-pref-sort-pagename": "Titre",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Affiche une liste de pages récemment visitées. Cette liste peut être filtrée par des paramètres.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Pages visitées",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Nombre",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Fixer le nombre de pages affichées dans la liste",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Longueur maximale du titre",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Fixer le nombre maximal de caractères avant qu’un titre soit tronqué",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Ordre",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Fixer l’ordre dans lequel les pages sont affichées",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Espaces de noms",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Afficher seulement les pages de ces espaces de noms",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Heure",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nom de la page",
+	"bs-pagesvisited-droplet-name": "Pages visitées",
+	"bs-pagesvisited-droplet-description": "Liste de pages visitées",
+	"bs-pagesvisited-label-anon-user": "Pour voir les pages que vous avez visitées, veuillez vous connecter à votre compte"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="svg8" version="1.1" viewBox="0 0 157.955 60" height="60mm" width="157.955mm" sodipodi:docname="placeholder_cloud.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1009" id="namedview8" showgrid="false" inkscape:zoom="0.61977039" inkscape:cx="-78.128801" inkscape:cy="160.62992" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="layer1" />
+  <defs id="defs2" />
+  <metadata id="metadata5">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g transform="translate(-0.66465783,-237.35959)" id="layer1">
+    <path style="fill:#a9a9a9;fill-opacity:1;stroke-width:0.8848775" id="path2" d="m 103.00487,262.20671 a 23.633564,23.633564 0 0 0 -44.890063,-4.74467 16.540187,16.540187 0 1 0 -1.91867,32.97171 h 44.894803 a 14.177304,14.177304 0 0 0 1.91393,-28.22704 z" inkscape:connector-curvature="0" />
+  </g>
+</svg>

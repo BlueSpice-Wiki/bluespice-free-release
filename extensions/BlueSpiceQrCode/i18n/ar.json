@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Asma",
+			"FiberAhmed",
+			"Meno25",
+			"أَحمد",
+			"ديفيد"
+		]
+	},
+	"bs-qr-code-extension-description": "يعرض رمز استجابة سريعة مع رابط إلى الصفحة الحالية في شريط الأدوات.",
+	"bs-qr-code-action-qr-code-title": "فتح مربع الحوار باستخدام رمز الاستجابة السريعة",
+	"bs-qr-code-action-qr-code-text": "رمز الاستجابة السريعة",
+	"bs-qr-code-action-qr-code-dialog-title": "رمز الاستجابة السريعة",
+	"bs-qr-code-action-qr-code-dialog-alt": "رمز الاستجابة السريعة لـ $1",
+	"bs-qr-code-api-no-page": "المعلمة \"صفحة\" فارغة",
+	"apihelp-bs-qr-code-summary": "الحصول على رمز الاستجابة السريعة كقاعدة بيانات URI للصفحة",
+	"apihelp-bs-qr-code-param-revid": "معرّف المراجعة للصفحة لإنشاء رابط ثابت",
+	"apihelp-bs-qr-code-param-page": "اسم الصفحة للصفحة لتوليد بيانات Base64 URI",
+	"apihelp-bs-qr-code-param-size": "حجم رمز الاستجابة السريعة",
+	"apihelp-bs-qr-code-example-bs-qr-code": "استدعاء API الافتراضي",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "استدعاء API لمراجعة معينة",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "استدعاء API مع حجم مخصص",
+	"bs-qr-code-alt-text": "رمز الاستجابة السريعة لـ $1",
+	"bs-qr-code-tag-qrcode-desc": "يدمج رمز الاستجابة السريعة المرتبط في ويكي صفحة",
+	"bs-qr-code-tag-qrcode-title": "رمز الاستجابة السريعة",
+	"bs-qr-code-tag-attr-page-label": "صفحة",
+	"bs-qr-code-tag-attr-page-help": "سيتم تضمين اسم الصفحة في رابط رمز الاستجابة السريعة. لاستخدام اسم الصفحة الحالية ، اترك هذا الحقل فارغًا",
+	"bs-qr-code-tag-attr-query-label": "معامل",
+	"bs-qr-code-tag-attr-query-help": "سيتم إضافة معلمات إضافية إلى عنوان URL الخاص برمز الاستجابة السريعة. يتضمن هذا معلمات مثل \"action = edit\" أو \"oldid = 1\"",
+	"bs-qr-code-tag-attr-desc-label": "وصف",
+	"bs-qr-code-tag-attr-desc-help": "وصف متعلق برمز الاستجابة السريعة. لعرض رمز الاستجابة السريعة فقط ، اترك هذا الحقل فارغًا",
+	"bs-qr-code-tag-attr-size-label": "الحجم",
+	"bs-qr-code-tag-attr-size-help": "قم بتغيير حجم رمز الاستجابة السريعة المضمن",
+	"bs-qr-code-droplet-name": "رمز الاستجابة السريعة",
+	"bs-qr-code-droplet-desc": "يُدرج رمز الاستجابة السريعة في ويكيبيج",
+	"bs-qr-code-tag-attr-size-option-small": "صغير",
+	"bs-qr-code-tag-attr-size-option-medium": "متوسط",
+	"bs-qr-code-tag-attr-size-option-large": "كبير"
+}

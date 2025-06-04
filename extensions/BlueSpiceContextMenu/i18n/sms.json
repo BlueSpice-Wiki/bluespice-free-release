@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-contextmenu-page-edit": "Muuʹtt seeid",
+	"bs-contextmenu-page-delete": "Jaukkâd seeid",
+	"bs-contextmenu-page-move": "Seeʹrd seeid",
+	"bs-contextmenu-page-history": "Čuäʹjet seeid historia",
+	"bs-contextmenu-page-protect": "Suõjjâd seeid",
+	"bs-contextmenu-page-info": "Čuäʹjet seeid teâđaid",
+	"bs-contextmenu-media-reupload": "Ruõkk ođđ versio",
+	"bs-contextmenu-user-mail": "Vuõlttâd e-pååʹšt",
+	"bs-contextmenu-file-download": "Laadd teâttõõzz"
+}

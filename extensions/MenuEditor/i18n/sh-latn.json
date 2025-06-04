@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"menueditor-desc": "Grafički uređivač za stranice izbornika",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Link",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Uredi link",
+	"menueditor-ui-dialog-action-done": "Gotovo",
+	"menueditor-ui-dialog-action-cancel": "Otkaži",
+	"menueditor-ui-submit": "Sačuvaj",
+	"menueditor-ui-cancel": "Otkaži",
+	"menueditor-ui-redlink-notice": "Ovaj izbornik još ne postoji!",
+	"menueditor-action-menueditsource": "Uredi kôd",
+	"menueditor-action-menuedit": "Uredi",
+	"menueditor-ui-dialog-title": "Uredi element",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Ključna riječ",
+	"menueditor-toolbar-cancel": "Otkaži uređivanje"
+}

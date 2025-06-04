@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piramidion",
+			"Vlad5250"
+		]
+	},
+	"bs-usagetracker-desc": "Містить статистичні дані про використання розширення",
+	"apihelp-bs-usagetracker-store-summary": "Зберігає статистичні дані про використання розширення"
+}

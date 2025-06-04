@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tofeiku"
+		]
+	},
+	"bs-countthings-droplet-articles-name": "Bilangan laman",
+	"bs-countthings-droplet-characters-name": "Bilangan aksara",
+	"bs-countthings-droplet-files-name": "Bilangan fail",
+	"bs-countthings-droplet-user-name": "Bilangan pengguna"
+}

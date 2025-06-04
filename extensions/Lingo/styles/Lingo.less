@@ -1,0 +1,103 @@
+/*
+ * Stylesheet for the markup of glossary terms in wiki pages.
+ *
+ * This file is part of the MediaWiki extension Lingo.
+ *
+ * @copyright 2011 - 2018, Stephan Gambke
+ * @license GPL-2.0-or-later
+ *
+ * The Lingo extension is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option) any
+ * later version.
+ *
+ * The Lingo extension is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @author Stephan Gambke
+ *
+ * @file
+ * @ingroup Lingo
+ */
+
+@media screen {
+	a.mw-lingo-term {
+		/* stylelint-disable-next-line declaration-no-important */
+		color: inherit !important;
+		/* stylelint-disable-next-line declaration-no-important */
+		text-decoration: none !important;
+		cursor: default;
+		border-bottom: 1px dotted #bbf;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: rgba( 0, 0, 0, 0.1 );
+			text-decoration: none;
+		}
+	}
+}
+
+.mw-lingo-tooltip {
+	display: none;
+	/* qtip light */
+	color: #454545;
+	background-color: #fff;
+	border: 1px solid #e2e2e2;
+	/* qtip shadow */
+	-webkit-box-shadow: 1px 1px 3px 1px rgba( 0, 0, 0, 0.15 );
+	-moz-box-shadow: 1px 1px 3px 1px rgba( 0, 0, 0, 0.15 );
+	box-shadow: 1px 1px 3px 1px rgba( 0, 0, 0, 0.15 );
+	/* qtip rounded */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.mw-lingo-definition {
+	position: relative;
+
+	&:not( :last-child ) {
+		margin-bottom: 0.5em;
+	}
+}
+
+.mw-lingo-definition-text {
+	display: inline-block;
+	padding-right: 8px; // Keep space for the link icon
+
+	p,
+	ul {
+		margin: 0;
+	}
+}
+
+.mw-lingo-definition-link {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	transform: translateY( -100% );
+	display: inline-block;
+
+	& > a::after {
+		padding-left: 5px;
+		content: /*@embed*/ url( linkicon.png );
+	}
+
+	span.mw-lingo-definition-link-container {
+		// Visually hidden - but not for screen readers
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect( 0, 0, 0, 0 );
+		border: 0;
+	}
+}

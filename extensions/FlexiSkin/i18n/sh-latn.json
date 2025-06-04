@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"flexiskin-extension-desc": "Omogućava prilagođavanje izgleda/teme",
+	"flexiskin-label": "Izgled",
+	"right-flexiskin-viewspecialpage": "Pregled [[Special:FlexiSkin|posebne stranice]] za prilagođavanje izgleda",
+	"action-flexiskin-viewspecialpage": "pregled [[Special:FlexiSkin|posebne stranice]] za prilagođavanje izgleda",
+	"right-flexiskin-api": "Korištenje priložnikâ u ''Fleksi izgledu''",
+	"action-flexiskin-api": "korištenje priložnikâ u ''Fleksi izgledu''"
+}

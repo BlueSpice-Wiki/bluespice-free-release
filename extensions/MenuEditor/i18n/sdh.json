@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"TerranBoy"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label": "بەسیار ویکی",
+	"menueditor-ui-menu-wiki-link-label-edit": "دەسکاری بەسیار ویکی",
+	"menueditor-ui-menu-two-fold-link-spec-label": "بەسیار",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "دەسکاری بەسیار",
+	"menueditor-ui-menu-keyword-label": "کلیلەوشە",
+	"menueditor-ui-menu-keyword-label-edit": "دەسکاری کلیلەوشە",
+	"menueditor-ui-form-field-keyword": "کلیلەوشە",
+	"menueditor-ui-dialog-action-cancel": "هەڵوەشاننەوە",
+	"menueditor-ui-node-type-selector-label": "جوور گریە",
+	"menueditor-ui-submit": "پاشەکەفت",
+	"menueditor-ui-cancel": "هەڵوەشاننەوە",
+	"menueditor-action-menueditsource": "دەسکاری سەرچاوە",
+	"menueditor-action-menuedit": "دەسکاری",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "دەسکاری کلیلەوشە",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "کلیلەوشە",
+	"menueditor-toolbar-cancel": "هەڵوەشاننەوەێ دەسکاری",
+	"menueditor-ui-edit-label": "دەسکاری"
+}

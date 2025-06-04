@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200",
+			"Nokeoo"
+		]
+	},
+	"bs-watchlist-desc": "Prideda stebimųjų valdiklį su žyme",
+	"bs-watchlist-pref-sort-time": "Laiką",
+	"bs-watchlist-pref-sort-title": "Pavadinimą",
+	"bs-watchlist-tag-watchlist-desc": "Rodo straipsnius, kurie yra neseniai pakeisti ir yra jūsų stebimųjų sąraše.",
+	"bs-watchlist-window-watchlist-title": "Stebimųjų sąrašas",
+	"bs-watchlist-window-watchlist-intro": "Tai visų jūsų stebimųjų sąrašo puslapių apžvalga. Taip pat galite pereiti į [[Special:Watchlist|klasikinį klasikinį stebimųjų sąrašo puslapį]].",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "Neperžiūrėti pakeitimai",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "Patikrinti pakeitimus",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "Aptarimo puslapis",
+	"bs-watchlist-grid-watchlist-label-filter": "Filtras",
+	"bs-watchlist-ve-watchlistinspector-title": "Stebimųjų sąrašas",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Skaičius",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Turėtų būti rodomas stebėjimo sąraše esančių įrašų skaičius",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Maksimalus pavadinimo ilgis",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Raidžių, kurios turi būti rodomos antraštėje, skaičius. Gali būti skaičius nuo 5 iki 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Tvarka",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Rodo sąrašą, surūšiuotą pagal laiką arba puslapio pavadinimą",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Puslapio pavadinimas",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Laikas",
+	"bs-watchlist-tag-watchlist-no-user": "Stebėjimo sąrašo negalima rodyti, nes nė vienas naudotojas nėra prisijungęs",
+	"bs-watchlist-tag-watchlist-no-entries": "Jokių pakeitimų puslapiuose, kurie būtų rodomi stebėjimo sąraše",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Puslapio pavadinimo pagalba",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Laiko pagalba",
+	"bs-watchlist-droplet-name": "Stebimųjų sąrašas",
+	"bs-watchlist-droplet-description": "Naujausi į stebėjimo sąrašą įtrauktų puslapių pakeitimai"
+}

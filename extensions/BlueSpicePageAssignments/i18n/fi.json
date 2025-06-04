@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Pyscowicz",
+			"Silvonen"
+		]
+	},
+	"bs-pageassignments-text": "Tehtävät",
+	"bs-pageassignments-assignee-special-everyone-label": "Kaikki",
+	"bs-pageassignments-assignee-type-everyone": "Kaikki",
+	"bs-pageassignments-assignee-type-user": "Käyttäjä",
+	"bs-pageassignments-assignee-type-group": "Ryhmä",
+	"bs-pageassignments-collection-var-namespacename": "Nimiavaruus"
+}

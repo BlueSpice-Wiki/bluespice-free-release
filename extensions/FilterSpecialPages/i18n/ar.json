@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"filterspecialpages-desc": "إدراج حقل لتصفية الإدخالات في [{{canonicalurl: Special: SpecialPages}} Special: SpecialPages].",
+	"filterspecialpages-hint-label": "ابحث عن الصفحة"
+}

@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Banjo",
+			"Elisardojm"
+		]
+	},
+	"bs-permissionmanager-desc": "Interface administrativa para xestionar permisos de usuarios",
+	"prefs-permissionmanager": "Xestor de permisos",
+	"bs-permissionmanager-label": "Xestor de permisos",
+	"bs-permissionmanager-grouping-global": "Permisos independentes do espazo de nomes",
+	"bs-permissionmanager-grouping-local": "Permisos específicos do espazo de nomes",
+	"bs-permissionmanager-header-permissions": "Permisos",
+	"bs-permissionmanager-header-global": "Wiki",
+	"bs-permissionmanager-btn-save-label": "Gardar",
+	"bs-permissionmanager-pref-enablerealitycheck": "Activar a comprobación de permisos",
+	"bs-permissionmanager-error-lockout": "Polo menos un grupo debe ter o permiso \"$1\".\nNon se puideron guardar os cambios.",
+	"log-name-bs-permission-manager": "Rexistro do xestor de permisos",
+	"log-description-bs-permission-manager": "Este é un rexistro dos cambios nos permisos de grupo.",
+	"log-show-hide-bs-permission-manager": "$1 o rexistro do xestor de permisos",
+	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|cambiou}} os permisos do grupo $4",
+	"permissionmanager": "Xestor de permisos",
+	"bs-permissionmanager-affected-by-explicit": "Bloqueado por $1",
+	"bs-permissionmanager-affected-by-inherited": "Herdado de $1",
+	"bs-permissionmanager-affected-by-notset": "Sen definir",
+	"bs-permissionmanager-affected-by-explicitlyset": "Definido explícitamente",
+	"bs-permissionmanager-affected-by-setonwiki": "Definido a nivel da wiki",
+	"bs-permissionmanager-group-all": "todos",
+	"bs-permissionmanager-header-role": "Rol",
+	"bs-permissionmanager-namespace-picker": "Espazos de nomes"
+}

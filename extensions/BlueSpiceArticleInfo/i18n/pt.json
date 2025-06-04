@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fúlvio",
+			"Hamilton Abreu",
+			"Imperadeiro98",
+			"Ldacosta",
+			"Vitorvicentevalente"
+		]
+	},
+	"bs-articleinfo-desc": "Fornece informação acerca de uma página na barra de status",
+	"prefs-articleinfo": "Informações da página",
+	"bs-articleinfo-newrevision-info-text-reload": "Está disponível uma nova versão desta página. [[:$1|Recarregue]] a página para ver o conteúdo atual, por favor."
+}

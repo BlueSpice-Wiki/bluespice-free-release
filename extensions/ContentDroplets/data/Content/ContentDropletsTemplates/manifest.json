@@ -1,0 +1,33 @@
+{
+	"Template:Textbox": {
+		"lang": "en",
+		"target_title": "Template:Textbox",
+		"content_path": "/pages/Template/Textbox.wiki",
+		"sha1": "2906908ee8cfb1eff6f1fb919fd2159f57ac8d87",
+		"old_sha1": [
+			"ef0c4f677f4040c2aca884e13bc13b619bcaba13",
+			"83565108195f6e6d11c5be0fac06a72ae2b8f029"
+		]
+	},
+	"Template:Textbox/styles.css": {
+		"lang": "en",
+		"target_title": "Template:Textbox/styles.css",
+		"content_path": "/pages/Template/Textboxstyles.css.wiki",
+		"sha1": "0a6310b5bb3a998499747a9688bb9cc34e8524d4",
+		"old_sha1": [
+			"331cd30d063747b523489c3b7b764f62b027caff"
+		]
+	},
+	"Template:Icon": {
+		"lang": "en",
+		"target_title": "Template:Icon",
+		"content_path": "/pages/Template/Icon.wiki",
+		"sha1": "ac73eacf145c8fab216aa7e276dcd8ec2fde4075",
+		"old_sha1": [
+			"8fca523ca12b068e7ddff20606f3164daeea9bc9",
+			"3b6f578c30e7c2da384b9bd331916d61697cd37a",
+			"466502f9138868abf623833c76ed36039612d610",
+			"ca7a1226ee145ff53d25457d27aaadb1d6a95b34"
+		]
+	}
+}

@@ -1,0 +1,10 @@
+[
+	{
+		"resourceModule": "ext.bluespice.visualEditorConnector.colors",
+		"maxSize": "1.6 kB"
+	},
+	{
+		"resourceModule": "ext.bluespice.visualEditorConnector.tables",
+		"maxSize": "0.7 kB"
+	}
+]

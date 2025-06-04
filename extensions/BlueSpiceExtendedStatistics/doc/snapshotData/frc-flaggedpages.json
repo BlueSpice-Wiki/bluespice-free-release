@@ -1,0 +1,20 @@
+{
+	"members": {
+		"draft": "{{randint|0,1000}}",
+		"stable": "{{randint|0,1000}}",
+		"namespace": {
+			"key": "{{{namespace}}}",
+			"value": {
+				"draft": "{{randint|0,200}}",
+				"stable": "{{randint|0,200}}"
+			}
+		},
+		"categories": {
+			"key": "{{{category}}}",
+			"value": {
+				"draft": "{{randint|0,200}}",
+				"stable": "{{randint|0,200}}"
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"bs-usersidebar-desc": "Menu de navegação pessoal personalizável",
+	"bs-edit-user-mm-link-text": "Editar menu do utilizador",
+	"bs-edit-user-mm-link-title": "Editar menu do utilizador",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Editar palavra-chave",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Palavra-chave",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Editar palavra-chave",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Palavra-chave"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mehtab ahmed"
+		]
+	},
+	"standarddialogs-page-info-general": "عام",
+	"standarddialogs-page-info-page-title": "عنوان",
+	"standarddialogs-page-info-page-language": "ٻولي",
+	"standarddialogs-page-info-page-redirects": "چورڻا",
+	"standarddialogs-page-info-page-categories": "زمرا",
+	"standarddialogs-new-page-label": "صفحي جو نالو",
+	"standarddialogs-move-btn": "چوريو",
+	"standarddialogs-protect-title": "\"$1\" صفحي کي تحفظيو",
+	"standarddialogs-purge-btn": "تازو ڪريو"
+}

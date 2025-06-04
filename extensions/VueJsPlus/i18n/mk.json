@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"vuejsplus-desc": "Збирка на составници на VueJs",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Собери",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Прикажи",
+	"vuejsplus-data-grid-option-sort-string-asc": "Подреди нагорно",
+	"vuejsplus-data-grid-option-sort-string-desc": "Подреди надолно",
+	"vuejsplus-data-grid-option-filter-string": "Најди",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "Пронајдов {{PLURAL:$1|еден ред|$1 реда}}",
+	"vuejsplus-data-grid-option-button-aria-label": "Можности за столб $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Проверено",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Непроверено",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Неутрално",
+	"vuejsplus-data-grid-option-filter-date-from-label": "Од датумот",
+	"vuejsplus-data-grid-option-filter-date-to-label": "До датумот"
+}

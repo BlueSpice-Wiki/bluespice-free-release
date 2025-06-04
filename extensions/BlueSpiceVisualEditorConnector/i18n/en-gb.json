@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piano1forte2"
+		]
+	},
+	"bs-visualeditorconnector-text-style-tool-color-label": "Text colour",
+	"bs-visualeditorconnector-color-annotation-desc": "Adds colours to text by assigning \"colour\" or \"class\" property",
+	"bs-vec-table-border-color": "Border colour"
+}

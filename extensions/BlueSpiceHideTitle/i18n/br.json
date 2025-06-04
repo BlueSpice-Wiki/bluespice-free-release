@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adriendelucca",
+			"Fulup"
+		]
+	},
+	"bs-hidetitle-desc": "Ouzhpennañ a ra ar ger burzhudus <code><nowiki>__HIDETITLE__</nowiki></code> evit kuzhat titl ar bajenn",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Diskouez",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Kuzhat",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Gwelusted an titl"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stacy Lavuha"
+		]
+	},
+	"enhanced-standard-uis-desc": "Hutoa violesura vya mtumiaji kwa violesura vya kawaida vya mtumiaji.",
+	"enhanced-standard-uis-history-grid-header-revision-label": "Masahihisho",
+	"enhanced-standard-uis-history-grid-header-author-label": "Imebadilishwa na",
+	"enhanced-standard-uis-history-grid-header-size-label": "Ukubwa",
+	"enhanced-standard-uis-history-grid-header-summary-label": "Muhtasari",
+	"enhanced-standard-uis-history-grid-header-tags-label": "Lebo",
+	"enhanced-standard-uis-history-grid-header-undo-title": "Tengua",
+	"enhanced-standard-uis-history-grid-header-hide-revision-title": "Ficha masahihisho",
+	"enhanced-standard-uis-history-compare-tool-title": "Linganisha  matoleo"
+}

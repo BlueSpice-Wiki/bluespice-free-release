@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Batyrbek.kz"
+		]
+	},
+	"pdfcreator-template-edit-dlg-action-upload": "Жүктеп салу",
+	"pdfcreator-template-edit-dlg-upload-error-duplicate": "Осы файлға ($1) ұқсас файл бұған дейін жойылып қойған",
+	"pdfcreator-template-edit-dlg-intro-upload-btn-label": "Осы беттің фоны үшін сурет жүктеп салу",
+	"pdfcreator-template-edit-dlg-upload-select-btn-text-label": "Сурет таңдау",
+	"pdfcreator-template-edit-dlg-upload-label": "Сурет жүктеп салу"
+}

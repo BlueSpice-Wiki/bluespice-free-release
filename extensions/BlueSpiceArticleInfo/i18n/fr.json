@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eneelk",
+			"Gomoko",
+			"JLTRY",
+			"Jhammock",
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-articleinfo-desc": "Fournit des informations sur une page dans la barre d’état",
+	"prefs-articleinfo": "Informations sur la page",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "Intervalle de mise à jour (en secondes)",
+	"bs-articleinfo-newrevision-info-text-reload": "Il y a une nouvelle version disponible de cette page. Veuillez la [[:$1|recharger]] pour afficher le nouveau contenu.",
+	"bs-articleinfo-pref-checkrevisioninterval-help-label": "Définit la fréquence à laquelle la valeur « Dernière modification » est mise à jour. À chaque intervalle, la page est également vérifiée pour détecter de nouvelles révisions"
+}

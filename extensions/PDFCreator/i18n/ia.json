@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"pdfcreator-name": "Creator de PDF",
+	"pdfcreator-desc": "Crear files PDF de paginas wiki",
+	"pdfcreator-tab-panel-header-label": "Titulo",
+	"pdfcreator-tab-panel-body-label": "Contento",
+	"pdfcreator-tab-panel-footer-label": "Pede de pagina",
+	"pdfcreator-tab-panel-coverpage-label": "Pagina de copertura",
+	"pdfcreator-tab-panel-main-label": "Description",
+	"pdfcreator-editor-error-label": "Le scheda <strong>$1</strong> contine un error in <strong>linea $2</strong>: $3",
+	"pdfcreator-editor-error-missing-content": "<code>{{{content}}}</code> manca in scheda “Content”",
+	"pdfcreator-tab-panel-styles-label": "Stilos",
+	"pdfcreator-pdf-disclaimer": "Iste PDF ha essite create automaticamente",
+	"pdfcreator-pdf-export-time": "Exportar",
+	"pdfcreator-pdf-param-currentpagenumber-label": "Pagina",
+	"pdfcreator-pdf-param-totalpagescount-label": "de",
+	"pdfcreator-tab-panel-intro-label": "Prefacio del documento",
+	"pdfcreator-tab-panel-outro-label": "Appendice del documento",
+	"pdfcreator-editor-action-save-label": "Salveguardar",
+	"pdfcreator-editor-action-help-label": "Adjuta",
+	"pdfcreator-config-template-provider": "Configurar le fornitor de patronos de PDFCreator",
+	"pdfcreator-export-mode-page-label": "Pagina",
+	"pdfcreator-dialog-export-title": "Exportation",
+	"pdfcreator-dialog-export-action-export-label": "Exportar",
+	"pdfcreator-dialog-export-mode-selection-label": "Modo",
+	"pdfcreator-dialog-export-template-selection-label": "Patrono",
+	"pdfcreator-export-plugin-mode-option-subpages-label": "Pagina con subpaginas",
+	"pdfcreator-export-plugin-mode-option-recursive-label": "Pagina con paginas ligate",
+	"pdfcreator-toc-page-label": "Tabula de contento",
+	"pdfcreator-config-default-pdf-template": "Le patrono de exportation predefinite pro paginas",
+	"pdfcreator-config-default-pdf-template-help": "Configura le patrono predefinite pro le exportation de paginas. Le patrono debe exister como subpagina de MediaWiki:PDFCreator",
+	"pdfcreator-dialog-button-title": "Aperir dialogo Exportar",
+	"pdfcreator-dialog-button-text": "Exportar",
+	"pdfcreator-config-suppress-namespace": "Celar le prefixo del spatios de nomines in PDF",
+	"pdfcreator-config-suppress-namespace-help": "Remove le prefixo del spatio de nomines in titulos e in le parametro de patrono “title” in le sortita PDF"
+}

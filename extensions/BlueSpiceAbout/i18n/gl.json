@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm",
+			"Toliño"
+		]
+	},
+	"bs-bluespiceabout-desc": "Información sobre BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "Sobre BlueSpice",
+	"bluespiceabout": "Sobre BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "ver a páxina especial \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "Acceso á páxina especial [[Special:BlueSpiceAbout]]"
+}

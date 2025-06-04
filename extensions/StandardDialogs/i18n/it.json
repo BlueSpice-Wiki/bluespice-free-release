@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16"
+		]
+	},
+	"standarddialogs-new-page-not-exist-label": "La pagina non esiste",
+	"standarddialogs-move-btn": "Sposta",
+	"standarddialogs-page-info-page-no-images-label": "Questa pagina non contiene immagini o file (inclusi file audio e video)",
+	"standarddialogs-page-info-page-no-templates-label": "Questa pagina non contiene template",
+	"standarddialogs-page-info-page-no-categories-label": "Questa pagina non contiene categorie",
+	"standarddialogs-page-info-page-no-links-label": "Questa pagina non contiene collegamenti",
+	"standarddialogs-page-info-page-no-extlinks-label": "Questa pagina non contiene collegamenti esterni"
+}

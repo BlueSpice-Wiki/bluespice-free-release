@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"McDutchie",
+			"QZanden",
+			"Romaine",
+			"Rots61",
+			"Siebrand"
+		]
+	},
+	"bs-hidetitle-desc": "Voegt het magische woord <code><nowiki>__HIDETITLE__</nowiki></code> toe om de titel van de pagina te verbergen.",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Weergeven",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Verbergen",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Zichtbaarheid van de titel",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Hier kunt u aangeven of de titel al dan niet getoond moet worden."
+}

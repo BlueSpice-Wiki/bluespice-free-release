@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-hidetitle-desc": "Doda čarobno besedo <code><nowiki>_HIDETITLE_</nowiki></code> za skritje naslova strani",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Pokaži",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Skrij",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Vidnost naslova",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Tukaj lahko določite, ali naj bo naslov prikazan ali skrit."
+}

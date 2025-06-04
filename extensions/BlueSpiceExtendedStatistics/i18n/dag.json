@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jahinfo"
+		]
+	},
+	"bs-statistics-aggregated-report-filter-category-multi": "Pubu",
+	"bs-statistics-aggregated-report-filter-date-start": "Dabisili sheli din pili",
+	"bs-statistics-aggregated-report-filter-date-end": "Naabu dali/dabilsili",
+	"bs-statistics-aggregated-report-filter-interval": "Folinga",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dabisili",
+	"bs-statistics-aggregated-report-filter-interval-week": "Bakoi",
+	"bs-statistics-aggregated-report-filter-interval-month": "Goli",
+	"bs-statistics-aggregated-report-filter-interval-year": "Yuuni",
+	"bs-statistics-aggregated-report-filter-namespace": "Yuli polo",
+	"bs-statistics-aggregated-report-filter-page": "Yaɣ'li",
+	"bs-statistics-aggregated-report-filter-user": "ŋun su",
+	"bs-statistics-aggregated-report-filter-user-multi": "Ban su"
+}

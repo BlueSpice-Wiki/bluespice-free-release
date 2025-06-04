@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"AnupamM",
+			"Eulalio",
+			"No se",
+			"Rajadinho"
+		]
+	},
+	"enhanced-standard-uis-history-grid-header-undo-title": "Deshacer",
+	"enhancedfilelist": "Lista de archivos",
+	"enhanced-standard-uis-filelist-grid-file-title": "Nombre del archivo",
+	"enhanced-standard-uis-filelist-grid-size-title": "Tamaño",
+	"enhanced-standard-uis-filelist-grid-categories-title": "Categorías",
+	"enhanced-standard-uis-filelist-grid-comment-title": "Comentario",
+	"enhanced-standard-uis-filelist-grid-info-title": "Información",
+	"enhanced-standard-uis-filelist-panel-search-placeholder-label": "Buscar archivos",
+	"enhanced-standard-uis-filelist-panel-new-file-label": "Archivo nuevo",
+	"enhanced-standard-uis-filelist-panel-list-label": "Lista",
+	"enhanced-standard-uis-filelist-dialog-info": "Información del archivo",
+	"enhanced-standard-uis-filelist-dialog-action-close-title": "Cerrar",
+	"enhanced-standard-uis-filelist-dialog-history-grid-version": "Versión",
+	"enhanced-standard-uis-filelist-dialog-page-data-label": "Metadatos",
+	"enhanced-standard-uis-allpages-filter-pages-label": "Filtrar páginas",
+	"enhanced-standard-uis-allpages-namespace-list-label": "Lista de espacios de nombres",
+	"enhanced-standard-uis-paginator-aria-label": "Paginación",
+	"enhanced-standard-uis-allpages-watch-label": "Ver página $1"
+}

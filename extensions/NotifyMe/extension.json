@@ -1,0 +1,432 @@
+{
+	"name": "NotifyMe",
+	"version": "2.0.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[http://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "http://www.hallowelt.com",
+	"descriptionmsg": "notifyme-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"MessagesDirs": {
+		"NotifyMe": "i18n"
+	},
+	"ExtensionMessagesFiles": {
+		"NotifyMeAliases": "languages/SpecialPages.alias.php"
+	},
+	"callback": "\\MediaWiki\\Extension\\NotifyMe\\Extension::onRegistration",
+	"attributes": {
+		"NotifyMe": {
+			"Buckets": {
+				"content-low-freq": {
+					"label": "notifyme-bucket-content-low-freq-label",
+					"description": "notifyme-bucket-content-low-freq-desc"
+				},
+				"content-high-freq": {
+					"label": "notifyme-bucket-content-high-freq-label",
+					"description": "notifyme-bucket-content-high-freq-desc"
+				},
+				"qm": {
+					"label": "notifyme-bucket-qm-label",
+					"description": "notifyme-bucket-qm-desc"
+				},
+				"personal": {
+					"label": "notifyme-bucket-personal",
+					"description": "notifyme-bucket-personal-desc",
+					"mandatory": true
+				}
+			},
+			"Events": {
+				"page-create": {
+					"spec": {
+						"class": "\\MediaWiki\\Extension\\NotifyMe\\Event\\CreatePageEvent"
+					},
+					"buckets": [ "content-low-freq" ],
+					"description": "notifyme-event-page-create-desc"
+				},
+				"page-edit": {
+					"spec": {
+						"class": "\\MediaWiki\\Extension\\NotifyMe\\Event\\EditPageEvent"
+					},
+					"buckets": [ "content-high-freq" ],
+					"description": "notifyme-event-page-edit-desc"
+				},
+				"page-move": {
+					"spec": {
+						"class": "\\MediaWiki\\Extension\\NotifyMe\\Event\\MovePageEvent"
+					},
+					"buckets": [ "content-low-freq" ],
+					"description": "notifyme-event-page-move-desc"
+				},
+				"page-delete": {
+					"spec": {
+						"class": "\\MediaWiki\\Extension\\NotifyMe\\Event\\DeletePageEvent"
+					},
+					"buckets": [ "content-low-freq" ],
+					"description": "notifyme-event-page-delete-desc"
+				},
+				"page-linked": {
+					"spec": {
+						"class": "\\MediaWiki\\Extension\\NotifyMe\\Event\\PageLinkedEvent"
+					},
+					"buckets": [ "personal" ]
+				},
+				"user-group-added": {
+					"spec": {
+						"class": "\\MediaWiki\\Extension\\NotifyMe\\Event\\UserGroupAddedEvent"
+					},
+					"buckets": [ "personal" ]
+				},
+				"user-group-removed": {
+					"spec": {
+						"class": "\\MediaWiki\\Extension\\NotifyMe\\Event\\UserGroupRemovedEvent"
+					},
+					"buckets": [ "personal" ]
+				},
+				"page-edit-revert": {
+					"spec": {
+						"class": "\\MediaWiki\\Extension\\NotifyMe\\Event\\EditRevertedEvent"
+					},
+					"buckets": [ "personal" ]
+				}
+			},
+			"Channels": {
+				"web": {
+					"class": "\\MediaWiki\\Extension\\NotifyMe\\Channel\\WebChannel",
+					"services": [ "NotifyMe.WebQueryStore", "NotifyMe.Logger" ]
+				},
+				"email": {
+					"class": "\\MediaWiki\\Extension\\NotifyMe\\Channel\\EmailChannel",
+					"services": [
+						"NotifyMe.Store", "NotifyMe.Serializer", "NotifyMe.MailContentProvider",
+						"NotifyMe.SubscriptionConfigurator", "NotifyMe.Logger", "MainConfig",
+						"UserOptionsLookup", "ContentLanguage"
+					]
+				}
+			},
+			"SubscriberProviders": {
+				"manual-subscriptions": {
+					"class": "\\MediaWiki\\Extension\\NotifyMe\\SubscriberProvider\\ManualSubscriberProvider",
+					"args": [ "NotifyMeManualSubscriberProviderSets" ],
+					"services": [ "UserFactory", "DBLoadBalancer", "NotifyMe.SubscriptionConfigurator", "ObjectFactory", "NotifyMe.Buckets" ]
+				}
+			},
+			"ManualSubscriberProviderSets": {
+				"ns": {
+					"class": "\\MediaWiki\\Extension\\NotifyMe\\SubscriberProvider\\ManualProvider\\SubscriptionSet\\NamespaceSet"
+				},
+				"category": {
+					"class": "\\MediaWiki\\Extension\\NotifyMe\\SubscriberProvider\\ManualProvider\\SubscriptionSet\\CategorySet",
+					"services": [ "TitleFactory" ]
+				},
+				"watchlist": {
+					"class": "\\MediaWiki\\Extension\\NotifyMe\\SubscriberProvider\\ManualProvider\\SubscriptionSet\\WatchlistSet",
+					"services": [ "WatchedItemStore" ]
+				}
+			}
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\NotifyMe\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\NotifyMe\\Tests\\": "tests/phpunit"
+	},
+	"ResourceModules": {
+		"ext.notifyme.subscription-preferences": {
+			"scripts": [
+				"ui/preferences/EmailChannelPreferences.js",
+				"ext.notifyme.subscription-preferences.js"
+			],
+			"messages": [
+				"notifyme-ui-email-frequency-instant",
+				"notifyme-ui-email-frequency-instant-desc",
+				"notifyme-ui-email-frequency-daily",
+				"notifyme-ui-email-frequency-daily-desc",
+				"notifyme-ui-email-frequency-weekly",
+				"notifyme-ui-email-frequency-weekly-desc",
+				"notifyme-ui-email-frequency-label"
+			],
+			"dependencies": [
+				"ext.notifyme.subscription",
+				"ext.notifyme.preferences.bootstrap",
+				"ext.notifyme.subscription.set.bootstrap"
+			]
+		},
+		"ext.notifyme.bootstrap": {
+			"scripts": [
+				"ext.notifyme.bootstrap.js"
+			],
+			"dependencies": [
+				"oojs"
+			]
+		},
+		"ext.notifyme.subscription": {
+			"scripts": [
+				"ui/dialog/SubscriptionSetEditor.js",
+				"ui/panel/IndividualSubscriptions.js",
+				"ui/panel/SubscriptionManager.js"
+			],
+			"messages": [
+				"notifyme-ui-subscription-manager-configuration",
+				"notifyme-ui-dialog-set-editor-title",
+				"notifyme-ui-dialog-set-editor-type",
+				"notifyme-ui-dialog-set-editor-bucket",
+				"notifyme-ui-dialog-set-editor-channels-prefixed",
+				"notifyme-ui-dialog-set-editor-channels-hint",
+				"notifyme-ui-subscription-set-add",
+				"notifyme-ui-subscription-set-duplicate",
+				"notifyme-ui-subscription-set-label",
+				"notifyme-ui-subscription-manager-type",
+				"notifyme-ui-subscription-manager-type-none-desc",
+				"notifyme-ui-subscription-manager-type-none",
+				"notifyme-ui-subscription-manager-type-manual",
+				"notifyme-ui-subscription-manager-type-manual-desc",
+				"notifyme-ui-dialog-set-editor-cancel",
+				"notifyme-ui-dialog-set-editor-create",
+				"notifyme-ui-subscription-set-empty",
+				"notifyme-ui-dialog-popup-table-event-label",
+				"notifyme-ui-dialog-popup-table-desc-label",
+				"notifyme-ui-dialog-popup-header-label"
+			],
+			"styles": [
+				"styles.less"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.widgets",
+				"spark-md5"
+			]
+		},
+		"ext.notifyme.subscription.set": {
+			"scripts": [
+				"ui/subscriptionSet/editor/NamespaceSetEditor.js",
+				"ui/subscriptionSet/editor/CategorySetEditor.js",
+				"ui/subscriptionSet/Namespace.js",
+				"ui/subscriptionSet/Category.js",
+				"ui/subscriptionSet/Watchlist.js"
+			],
+			"messages": [
+				"notifyme-ui-subscriptionset-editor-category-label",
+				"notifyme-ui-subscriptionset-editor-namespace-label",
+				"notifyme-ui-subscriptionset-category-label",
+				"notifyme-ui-subscriptionset-namespace-label",
+				"notifyme-ui-subscriptionset-watchlist-label"
+			],
+			"styles": [
+				"styles.less"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.widgets",
+				"mediawiki.widgets"
+			]
+		},
+		"ext.notifyme.preferences.bootstrap": {
+			"scripts": [
+				"ui/preferences/ChannelPreferences.js"
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"ext.notifyme.subscription.set.bootstrap": {
+			"scripts": [
+				"ui/subscriptionSet/editor/SubscriptionSetEditor.js",
+				"ui/subscriptionSet/SubscriptionSet.js"
+			],
+			"messages": [
+				"notifyme-ui-edit",
+				"notifyme-ui-delete",
+				"notifyme-ui-delivery-web-email",
+				"notifyme-ui-delivery-web"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"oojs-ui.styles.icons-alerts"
+			]
+		},
+		"ext.notifyme.notification.center": {
+			"scripts": [
+				"ui/panel/NotificationCenter.js",
+				"ui/panel/NotificationTab.js",
+				"ui/widget/DatedNotificationsWidget.js",
+				"ui/widget/HelpMenuWidget.js",
+				"ui/widget/NotificationItemWidget.js",
+				"ui/widget/NotificationGroupWidget.js",
+				"ui/widget/PaginationWidget.js",
+				"ui/widget/ToggleReadCircleButtonWidget.js",
+				"ui/widget/Filter/FilterWidget.js"
+			],
+			"styles": [
+				"ext.notifyme.NotificationCenter.less"
+			],
+			"messages": [
+				"notifyme-notification-center-tab-label-unread",
+				"notifyme-notification-center-tab-label-read",
+				"notifyme-notification-center-tab-label-all",
+				"notifyme-notifications-group-mark-group-as-unread-label",
+				"notifyme-notifications-group-mark-group-as-read-label",
+				"notifyme-notifications-group-expander-label-expanded",
+				"notifyme-notifications-group-expander-label-collapsed",
+				"notifyme-notification-center-help-menu-aria-label",
+				"notifyme-notification-center-help-menu-mark-all-read-label",
+				"notifyme-notification-center-help-menu-preferences-label",
+				"notifyme-notification-center-mark-as-read-circle-title",
+				"notifyme-notification-center-mark-as-unread-circle-title",
+				"notifyme-notification-center-no-new-notifications-label",
+				"notifyme-notification-center-pagination-aria-next",
+				"notifyme-notification-center-pagination-aria-previous",
+				"notifyme-notification-center-navigation-hint",
+				"notifyme-notification-center-filter-item-aria-label"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"moment",
+				"ext.oOJSPlus.widgets",
+				"oojs-ui.styles.icons-movement"
+			]
+		},
+		"ext.notifyme.specialPage": {
+			"scripts": [
+				"ext.notifyme.specialPage.js"
+			]
+		},
+		"ext.notifyme.mailTemplate": {
+			"scripts": [
+				"ext.notifyme.mailTemplate.js"
+			]
+		},
+		"ext.notifyme.mailTemplateHelp": {
+			"scripts": [
+				"ui/widget/MailEditingHelp.js",
+				"ext.notifyme.mailTemplateHelp.js"
+			],
+			"styles": [
+				"ext.notifyme.mailTemplateHelp.less"
+			],
+			"messages": [
+				"notifyme-mail-template-edit-help-int",
+				"notifyme-mail-template-edit-help-logo",
+				"notifyme-mail-template-edit-help-category-params",
+				"notifyme-mail-template-edit-help-category-logo",
+				"notifyme-mail-template-edit-help-category-int",
+				"notifyme-mail-template-edit-help-category-colors",
+				"notifyme-mail-template-edit-help-header-variable",
+				"notifyme-mail-template-edit-help-header-description",
+				"notifyme-mail-template-edit-help-header-example",
+				"notifyme-mail-template-edit-help-button-label",
+				"notifyme-mail-template-edit-help-colors",
+				"notifyme-schema-group-notifications",
+				"notifyme-mail-template-edit-help-header-notifications"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.notifyme.bootstrap"
+			]
+		},
+		"ext.notifyme.megamenu.styles": {
+			"styles": [
+				"ext.notifyme.megamenu.less"
+			]
+		},
+		"ext.notifyme.megamenu": {
+			"scripts": [
+				"ext.notifyme.megamenu.js"
+			],
+			"messages": [
+				"notifyme-notifications-mega-menu-no-notifications",
+				"notifyme-notifications-mega-menu-all-notifications-label",
+				"notifyme-navbar-button-aria-label-unread-notifications"
+			],
+			"dependencies": [
+				"moment"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "NotifyMe/resources"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "runDatabaseUpdates",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "commonUserInterface",
+		"GetPreferences": "addSubscriptionCenter",
+		"UserGetDefaultOptions": "addSubscriptionCenter",
+		"BeforePageDisplay": "addBootstrap",
+		"ContentHandlerDefaultModelFor": "setMailContentModel",
+		"MediaWikiServices": [ "setMailContentModel", "registerCrons" ],
+		"CodeEditorGetPageLanguage": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\SetMailContentModel::onCodeEditorGetPageLanguage",
+		"UserMailerTransformMessage": "handleNonNotificationMails",
+		"PageSaveComplete": "triggerEvents",
+		"PageMoveComplete": "triggerEvents",
+		"PageDeleteComplete": "triggerEvents",
+		"LinksUpdateComplete": "triggerEvents",
+		"UserGroupsChanged": "triggerEvents"
+	},
+	"SpecialPages": {
+		"NotificationCenter": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Special\\NotificationCenter"
+		},
+		"NotificationTester": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Special\\NotificationTester",
+			"services": [ "NotifyMe.Tester", "UserFactory", "TitleFactory" ]
+		}
+	},
+	"HookHandlers": {
+		"runDatabaseUpdates": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\RunDatabaseUpdates"
+		},
+		"addSubscriptionCenter": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\AddSubscriptionCenter",
+			"services": [ "NotifyMe.SubscriptionConfigurator", "NotifyMe.SubscriberManager" ]
+		},
+		"addBootstrap": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\AddBootstrap"
+		},
+		"setMailContentModel": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\SetMailContentModel"
+		},
+		"handleNonNotificationMails": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\ForeignMail\\Transformer",
+			"services": [ "NotifyMe.MailContentProvider" ]
+		},
+		"triggerEvents": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\TriggerEvents",
+			"services": [ "MWStake.Notifier", "NotifyMe.EventFactory", "UserFactory", "TitleFactory", "RevisionLookup" ]
+		},
+		"commonUserInterface": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\CommonUserInterface"
+		},
+		"registerCrons": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\RegisterCrons"
+		}
+	},
+	"RestRoutes": [
+		{
+			"path": "/notifications/web",
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\Rest\\RetrieveWebNotificationsHandler",
+			"services": [ "HookContainer", "NotifyMe.Store", "NotifyMe.WebQueryStore", "DBLoadBalancer", "NotifyMe.Serializer" ]
+		},
+		{
+			"method": "POST",
+			"path": "/notifications/web/status",
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\Rest\\ChangeWebNotificationStatus",
+			"services": [ "NotifyMe.Store" ]
+		}
+	],
+	"ContentHandlers": {
+		"mail_template": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\ContentHandler\\MailTemplateHandler"
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hwangjy9",
+			"Ykhwong"
+		]
+	},
+	"bs-whoisonline-nousers": "아무도 로그인하지 않았습니다.",
+	"bs-whoisonline-widget-title": "접속한 사용자",
+	"prefs-whoisonline": "접속한 사용자",
+	"bs-whoisonline-pref-orderby": "정렬 기준:",
+	"bs-whoisonline-pref-maxidletime-label": "오프라인 타임아웃 (초)",
+	"bs-whoisonline-pref-orderby-time": "가동 시간",
+	"bs-whoisonline-pref-orderby-name": "이름",
+	"bs-whoisonline-pref-interval-label": "업데이트 간격(초)",
+	"bs-whoisonline-collection-type-userlogin": "사용자 로그인",
+	"bs-whoisonline-collection-var-login": "로그인",
+	"bs-whoisonline-pref-maxidletime-help-label": "사용자가 오프라인으로 표시한 이후 비활동 초 단위 시간",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "로그인 수",
+	"bs-whoisonline-statistics-report-login-number": "로그인"
+}

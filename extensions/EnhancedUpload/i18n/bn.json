@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yahya",
+			"আজিজ",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"enhancedupload": "আপলোড",
+	"enhancedupload-list-header-warning": "সতর্কতা",
+	"enhancedupload-attachments-tag-grid-details-title": "বিস্তারিত",
+	"enhancedupload-tab-updated-upload": "হালনাগাদকৃত ফাইলসমূহ",
+	"enhancedupload-updated-dialog-label": "\"$1\" ফাইলটি হালনাগাদ করা হয়েছে৷",
+	"enhancedupload-finished-dialog-action-close": "বন্ধ করুন",
+	"enhancedupload-config-type-label": "চিত্রের ধরন:",
+	"enhancedupload-config-height-label": "চিত্রের উচ্চতা:",
+	"enhancedupload-upload-warning-exists": "এই ফাইলের নামটি ইতিমধ্যেই বিদ্যমান",
+	"enhancedupload-upload-warning-duplicate": "এই ফাইলটি একটি ডুপ্লিকেট",
+	"enhancedupload-upload-warning-was-deleted": "এই ফাইলের নামটি পূর্বে মুছে ফেলা হয়েছে।",
+	"enhancedupload-single-file-dlg-title": "\"$1\"-এর নতুন সংস্করণ",
+	"enhancedupload-toggle-details-button-hide-label": "বিস্তারিত লুকান",
+	"enhancedupload-toggle-details-button-show-label": "বিস্তারিত দেখান",
+	"enhancedupload-preview-widget-remove-label": "$1 সরান"
+}

@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio",
+			"Fitoschido",
+			"Macofe"
+		]
+	},
+	"bs-whoisonline-desc": "Muestra una lista de usuarios que están actualmente en línea",
+	"bs-whoisonline-nousers": "Nadie está conectado.",
+	"bs-whoisonline-widget-title": "¿Quién está en línea?",
+	"prefs-whoisonline": "¿Quién está en línea?",
+	"bs-whoisonline-pref-limitcount": "Número máximo de usuarios mostrados:",
+	"bs-whoisonline-pref-orderby": "Ordenar por:",
+	"bs-whoisonline-pref-orderby-time": "Tiempo de actividad",
+	"bs-whoisonline-pref-orderby-name": "Nombre",
+	"bs-whoisonline-collection-type-userlogin": "Acceso de usuario",
+	"bs-whoisonline-collection-var-login": "Acceso",
+	"bs-whoisonline-statistics-report-login-duration": "Duración del inicio de sesión",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Duración del inicio de sesión (seg)",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Muestra el número de usuarios que se han conectado en los últimos 10 minutos",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "¿Quién está en línea?",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Muestra todos los usuarios que se han conectado en los últimos 10 minutos. La salida es un cuadro de diálogo cuando un usuario pasa por encima del enlace relacionado",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Who is online popup"
+}

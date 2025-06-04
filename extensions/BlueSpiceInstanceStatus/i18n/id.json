@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veracious"
+		]
+	},
+	"bs-instancestatus-instance-status-bs-version-label": "Versi BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "Kuota pengguna",
+	"bs-instancestatus-instance-status-last-update-label": "Terakhir diperbarui",
+	"bs-instancestatus-instance-status-no-info": "Tidak tersedia",
+	"bs-instancestatus-instance-status-sales-contact-label": "Kontak BlueSpice",
+	"bs-instancestatus-overview-loader": "Mengumpulkan informasi wiki ...",
+	"bs-instancestatus-instance-status-main-label": "Umum"
+}

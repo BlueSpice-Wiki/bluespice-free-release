@@ -1,0 +1,11 @@
+{
+	"@metadata" : {
+	},
+	"pageheader-desc" : "Fournit une interface utilisateur supplémentaire avant le contenu de la page",
+	"pageheader-pageinfosentence-no-item-label" : "Pas d'information sur l'état",
+	"pageheader-pageinfosentence-no-item-tooltip" : "Aucune information sur l'état de cette page",
+	"pageheader-pageinfosentence" : "Cette page est à $1",
+	"pageheader-pageinfosentence-item-separator" : "et",
+	"pageheader-pageinfosentence-item-separator-greater-two" : ",",
+	"pageheader-pageinfosentence-item-class-separator" : "mais"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daniel vogel"
+		]
+	},
+	"vuejsplus-desc": "Description of VueJsPlus for [[Special:Version]]",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Aria label for button to toggle expanded tree element",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Aria label for button to toggle collapsed tree element",
+	"vuejsplus-data-grid-option-sort-string-asc": "Label for button with sort ascending function",
+	"vuejsplus-data-grid-option-sort-string-desc": "Label for button with sort descending function",
+	"vuejsplus-data-grid-option-filter-string": "Label for text input with string filter function",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "Aria live counter for filtered rows",
+	"vuejsplus-data-grid-option-button-aria-label": "Aria label for column with button function to toggle a menu",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Alt text for image to indicate boolean value true",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Alt text for image to indicate boolean value false",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Alt text for image to indicate tristate value neutral/undefined",
+	"vuejsplus-data-grid-option-filter-date-from-label": "Label for date filter start date",
+	"vuejsplus-data-grid-option-filter-date-to-label": "Label for date filter end date"
+}

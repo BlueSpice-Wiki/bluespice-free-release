@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"AA800",
+			"Alshamiri1",
+			"FiberAhmed",
+			"Meno25",
+			"أَحمد",
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-watchlist-desc": "يضيف عنصر تحكم ووسم قائمة المراقبة",
+	"bs-watchlist-pref-sort-time": "الوقت",
+	"bs-watchlist-pref-sort-title": "العنوان",
+	"bs-watchlist-tag-watchlist-desc": "يعرض المقالات التي تحتوي على أحدث التغييرات وموجودة في قائمة مراقبتك.",
+	"bs-watchlist-window-watchlist-title": "قائمة المراقبة",
+	"bs-watchlist-window-watchlist-intro": "هذه نظرة عامة على جميع صفحات قائمة مراقبتك، يمكنك أيضًا التبديل إلى [[Special:Watchlist|صفحة قائمة المراقبة الكلاسيكية]].",
+	"bs-watchlist-grid-watchlist-column-link-header": "الصفحة",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "تغييرات غير مقروءة",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "فحص التغييرات",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "صفحة النقاش",
+	"bs-watchlist-grid-watchlist-label-filter": "المرشح",
+	"bs-watchlist-ve-watchlistinspector-title": "قائمة المراقبة",
+	"bs-watchlist-ve-watchlist-attr-count-label": "عدد",
+	"bs-watchlist-tag-watchlist-attr-count-help": "يجب إظهار عدد الإدخالات في قائمة المراقبة",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "الحد الأقصى لطول العنوان",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "عدد الحروف التي يجب إظهارها في العنوان. يمكن أن يكون رقمًا بين 5 و 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "ترتيب",
+	"bs-watchlist-tag-watchlist-attr-order-help": "يظهر قائمة مرتبة حسب الوقت أو اسم الصفحة",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "اسم الصفحة",
+	"bs-watchlist-ve-watchlist-attr-time-label": "الوقت",
+	"bs-watchlist-tag-watchlist-no-user": "لا يمكن عرض قائمة المراقبة لأنه لم يتم تسجيل دخول أي مستخدم",
+	"bs-watchlist-tag-watchlist-no-entries": "لا توجد تغييرات على الصفحات لتظهر في قائمة المراقبة",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Pagename المساعدة",
+	"bs-watchlist-tag-watchlist-attr-time-help": "مساعدة الوقت",
+	"bs-watchlist-droplet-name": "قائمة المراقبة",
+	"bs-watchlist-droplet-description": "أحدث التغييرات على الصفحات المدرجة في قائمة المراقبة"
+}

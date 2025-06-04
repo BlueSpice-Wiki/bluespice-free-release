@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Markus Glaser <glaser@hallowelt.com>"
+		]
+	},
+	"bs-usagetracker-desc": "Holds statistical data about extension use",
+	"apihelp-bs-usagetracker-store-summary": "Holds statistical data about extension use"
+}

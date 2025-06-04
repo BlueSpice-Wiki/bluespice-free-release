@@ -1,0 +1,124 @@
+.attachments-loader .oo-ui-progressBarWidget {
+	margin: 0 auto;
+}
+
+.attachments-filelist {
+	padding: 20px;
+	background-color: #fafafc;
+	border-radius: 10px;
+	min-height: 150px;
+	clear: both;
+	width: 100%;
+	border: 2px solid transparent;
+}
+
+.attachments-filelist .drag-file {
+	border: 1px dashed #252525;
+	background-color: #fff;
+	opacity: 0.75;
+}
+
+.attachments-filelist h2 {
+	margin: 0;
+	display: inline;
+}
+
+.attachments-filelist > p {
+	display: none;
+}
+
+.attachments-filelist > ul {
+	height: 0;
+	visibility: hidden;
+	margin: 0;
+}
+
+.attachments-filelist.loading > ul {
+	visibility: hidden;
+	height: auto;
+}
+
+.ve-activated .attachments-filelist > ul {
+	visibility: visible;
+}
+
+/* stylelint-disable declaration-no-important */
+.attachments-filelist .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header th.oojsplus-data-gridWidget-cell {
+	border-bottom: 1px solid #a5a5a5;
+	border-right-color: transparent !important;
+}
+/* stylelint-enable declaration-no-important */
+
+.attachments-filelist .oojsplus-data-gridWidget {
+	background-color: #fafafc;
+}
+
+.attachments-filelist .oojsplus-data-gridWidget .oojsplus-data-gridWidget-table .oojsplus-data-gridWidget-header th .header-button {
+	font-size: 0.875rem;
+}
+
+.attachments-filelist .drag-file .oojsplus-data-gridWidget {
+	background-color: #fff;
+}
+
+.attachments-filelist .oojsplus-data-gridWidget-cell {
+	padding-top: 8px;
+}
+
+.attachments-filelist .oojsplus-data-gridWidget-cell a.oo-ui-buttonElement-button,
+.attachments-filelist .oojsplus-data-gridWidget-cell a.oo-ui-buttonElement-button:hover {
+	color: var( --link-fg );
+	font-weight: normal;
+}
+
+.attachments-filelist .oojsplus-data-paginator {
+	background-color: transparent;
+}
+
+.attachments-filelist .enhancedUpload-widget .heading,
+.attachments-filelist .enhancedUpload-widget .details-widget {
+	display: none;
+}
+
+.attachments-filelist .attachments-header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.attachments-header .add-existing-button {
+	right: 0;
+}
+
+.attachments-filelist .add-existing-button.oo-ui-buttonWidget:last-child {
+	margin: auto 0;
+}
+
+.attachments-add-dialog .mw-widget-titleSearchWidget {
+	position: relative;
+}
+
+.attachments-filelist .attachments-loader {
+	height: 0;
+}
+
+.attachments-filelist.loading .attachments-loader {
+	height: 30px;
+}
+
+.attachments-filelist .oojsplus-data-gridWidget-delete .oo-ui-indicatorElement-indicator {
+	width: 17px;
+}
+
+.attachments-filelist .action-cell .oo-ui-iconElement-icon {
+	width: 17px;
+	min-width: 17px;
+}
+
+.attachments-filelist .enhancedUpload-widget {
+	display: none;
+}
+
+.attachments-filelist .oo-ui-popupWidget-body-padded > :first-child {
+	margin: 10px;
+}

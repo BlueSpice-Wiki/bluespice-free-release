@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tensama0415",
+			"Ykhwong"
+		]
+	},
+	"filterspecialpages-hint-label": "문서 찾기",
+	"filterspecialpages-desc": "[{{canonicalurl:Special:SpecialPages}} Special:SpecialPages]의 항목을 필터링하기 위한 필드를 삽입합니다."
+}

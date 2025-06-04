@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"bs-permissionmanager-header-global": "Wiki",
+	"bs-permissionmanager-btn-save-label": "Konservez",
+	"bs-permissionmanager-group-all": "omna",
+	"bs-permissionmanager-namespace-picker": "'Namespaces'"
+}

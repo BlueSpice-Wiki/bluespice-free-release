@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"Can",
+			"Sadrettin",
+			"Sayginer"
+		]
+	},
+	"bs-whoisonline-desc": "Çevrimiçi durumda olan kullanıcıların listesini görüntüler.",
+	"bs-whoisonline-nousers": "Hiç kimse oturum açmamış.",
+	"bs-whoisonline-widget-title": "Kim çevrimiçi?",
+	"prefs-whoisonline": "Kim çevrimiçi?",
+	"bs-whoisonline-pref-limitcount": "Maksimum gösterilen kullanıcı sayısı:",
+	"bs-whoisonline-pref-orderby": "Sıralama ölçütü:",
+	"bs-whoisonline-pref-orderby-time": "Çalışma süresi",
+	"bs-whoisonline-pref-orderby-name": "Ad",
+	"bs-whoisonline-collection-type-userlogin": "Kullanıcı girişi",
+	"bs-whoisonline-collection-var-login": "Oturum aç",
+	"bs-whoisonline-statistics-report-login-duration": "Giriş süresi",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Giriş süresi (saniye)",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Son 10 dakika içinde giriş yapmış kullanıcı sayısını gösterir",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Çevrimiçi olanlar sayısı",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Son 10 dakika içinde giriş yapmış bütün kullanıcıları göster. Çıktı, kullanıcının ilgili bağlantının üzerine imleci getirdiğinde ortaya çıkan konuşma balonudur",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Çevrimiçi olanların açılır-penceresi"
+}

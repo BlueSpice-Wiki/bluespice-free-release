@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Markus Glaser <glaser@hallowelt.com>"
+		]
+	},
+	"bs-usagetracker-desc": "Description of UsageTracker extension",
+	"apihelp-bs-usagetracker-store-summary": "{{doc-apihelp-summary|bs-usagetracker-store}}"
+}

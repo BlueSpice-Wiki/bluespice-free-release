@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"ArenaL5",
+			"Elisardojm"
+		]
+	},
+	"bs-saferedit-desc": "Da avisos se outros usuarios están editando a páxina",
+	"bs-saferedit-user-editing": "$1 está {{GENDER:$1|editando}} a páxina",
+	"bs-saferedit-someone-editing": "A páxina está a ser editada"
+}

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jopparn",
+			"Lokal Profil",
+			"Mjälten",
+			"Sabelöga",
+			"WikiPhoenix"
+		]
+	},
+	"bs-whoisonline-desc": "Visar en lista över användare som är online nu",
+	"bs-whoisonline-nousers": "Ingen är inloggad.",
+	"bs-whoisonline-widget-title": "Vem är online?",
+	"prefs-whoisonline": "Vem är online?",
+	"bs-whoisonline-pref-limitcount": "Maximalt antal användare som visas:",
+	"bs-whoisonline-pref-orderby": "Sortera efter:",
+	"bs-whoisonline-pref-orderby-time": "Drifttid",
+	"bs-whoisonline-pref-orderby-name": "Namn",
+	"bs-whoisonline-collection-type-userlogin": "Användarinloggning",
+	"bs-whoisonline-collection-var-login": "Logga in"
+}

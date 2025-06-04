@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"vuejsplus-desc": "مجموعة من مكونات VueJs",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "اطو",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "وسع",
+	"vuejsplus-data-grid-option-sort-string-asc": "رتب تصاعديا",
+	"vuejsplus-data-grid-option-sort-string-desc": "تنازليا",
+	"vuejsplus-data-grid-option-filter-string": "ابحث",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "تم العثور على {{PLURAL:$1|صف واحد|$1 صف}}",
+	"vuejsplus-data-grid-option-button-aria-label": "خيارات العمود $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "تم فحصه",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "غير مفحوص",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "محايد",
+	"vuejsplus-data-grid-option-filter-date-from-label": "من تاريخ",
+	"vuejsplus-data-grid-option-filter-date-to-label": "حتى الآن"
+}

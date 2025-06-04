@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Macofe",
+			"Tofeiku"
+		]
+	},
+	"bs-contextmenu-pref-modus-just-right-mouse": "Klik butang kanan tetikus (Menekan CTRL akan memaparkan menu konteks browser lalai)",
+	"bs-contextmenu-pref-modus-ctrl-and-right-mouse": "Klik butang kanan tetikus sambil menekan CTRL (Sekadar klik butang kanan tetikus akan memaparkan menu browser lalai)",
+	"bs-contextmenu-page-history": "Lihat sejarah laman",
+	"bs-contextmenu-file-download": "Muat turun fail"
+}

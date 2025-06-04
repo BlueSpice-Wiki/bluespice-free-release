@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arifin.wijaya",
+			"Diki Ananta",
+			"Sumbukompor",
+			"Veracious"
+		]
+	},
+	"bs-insertcategory-desc": "Dialog untuk memasukkan pranala kategori",
+	"bs-insertcategory-insertcat": "Masukkan kategori",
+	"prefs-insertcategory": "Masukkan kategori",
+	"bs-insertcategory-pref-withparents": "Masukkan kategori dengan induknya",
+	"bs-insertcategory-edit-dialog-button-label": "Sunting",
+	"bs-insertcategory-edit-dialog-title": "Sunting kategori",
+	"bs-insertcategory-edit-dialog-button-submit": "Berhasil",
+	"bs-insertcategory-edit-dialog-button-cancel": "Batal"
+}

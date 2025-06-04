@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-usersidebar-desc": "Prilagodljiv osebni navigacijski meni",
+	"bs-edit-user-mm-link-text": "Uredi uporabniški meni",
+	"bs-edit-user-mm-link-title": "Uredi uporabniški meni",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Uredi ključno besedo",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Ključna beseda",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Uredi ključno besedo",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Ključna beseda"
+}

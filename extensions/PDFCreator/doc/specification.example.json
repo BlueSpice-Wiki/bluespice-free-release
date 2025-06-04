@@ -1,0 +1,22 @@
+{
+	"module": "batch",
+	"template-provider": "wiki",
+	"target": "filesystem",
+	"backend": "open-html-2-pdf",
+	"params": {
+		"template": "MyTemplate",
+		"title": "Test export",
+		"filesystem-path": "/tmp",
+		"filename": "Test.pdf"
+	},
+	"pages": [
+		{
+			"type": "page",
+			"target": "Main_Page",
+			"label": "My label",
+			"params": {
+				"status": "Implemented for future development, not used yet"
+			}
+		}
+	]
+}

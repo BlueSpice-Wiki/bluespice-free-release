@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-countthings-chars-label": "Хьаьркаш",
+	"bs-countthings-words-label": "Дешнаш",
+	"bs-countthings-files-label": "Файлаш",
+	"bs-countthings-pages-label": "АгӀонаш",
+	"bs-countthings-ve-countthingsinspector-mode": "Раж",
+	"bs-countthings-ve-countcharacters-mode-all": "массо а",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "хьаьркаш",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "дешнаш",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "хьаьркаш а, дешнаш а",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "агӀонаш",
+	"bs-countthings-ve-countcharacters-input-label": "АгӀонаш",
+	"bs-countthings-error-no-input": "АгӀо билгалйина йац",
+	"bs-countthings-error-invalid-mode": "\"$1\" раж лелош йац. Дехар до, лелайе \"chars\", \"words\" йа \"pages\".",
+	"bs-countthings-error-not-exist": "«$1» агӀо йац",
+	"bs-countthings-droplet-files-name": "Файлийн дукхалла",
+	"bs-countthings-droplet-files-description": "Чуйаьхна йерриге файлийн дукхалла гойту",
+	"bs-countthings-droplet-user-name": "Декъашхойн дукхалла"
+}

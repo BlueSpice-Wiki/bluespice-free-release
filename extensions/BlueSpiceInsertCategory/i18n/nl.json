@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"Jeroen N",
+			"Mainframe98",
+			"McDutchie",
+			"Ndecouck",
+			"SPQRobin",
+			"Siebrand",
+			"Sjoerddebruin"
+		]
+	},
+	"bs-insertcategory-desc": "Het dialoogvenster voor het invoeren van een categoriekoppeling",
+	"bs-insertcategory-insertcat": "Categorie invoegen",
+	"prefs-insertcategory": "Categorie invoegen",
+	"bs-insertcategory-pref-withparents": "Categorie invoegen met haar ouders",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Bewerk de categorieën van deze pagina",
+	"bs-insertcategory-edit-dialog-button-tooltip": "De categorieën van deze pagina bewerken",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Dialoogvenster openen om de categorieën van deze pagina te bewerken",
+	"bs-insertcategory-edit-dialog-button-label": "Bewerken",
+	"bs-insertcategory-edit-dialog-title": "Categorieën bewerken",
+	"bs-insertcategory-edit-dialog-button-submit": "Afgerond",
+	"bs-insertcategory-edit-dialog-button-cancel": "Annuleren",
+	"bs-insertcategory-edit-dialog-input-label": "Toegewezen categorieën",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Impliciete categorieën",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Die categorieën zijn niet opgegeven in de wikitekstinhoud van de pagina. Waarschijnlijk worden ze vanuit een sjabloon ingesteld.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Kan paginacategorieën niet ophalen",
+	"bs-insertcategory-no-categories": "Geen categorieën toegewezen",
+	"bs-insertcategory-edit-dialog-tree-view": "Alle categorieën weergeven",
+	"bs-insertcategory-pref-withparents-help": "Voegt zowel de categorie zelf als de bovenliggende categorieën toe aan de pagina",
+	"bs-insertcategory-pref-uploadintegration": "Paginacategorieën in de uploaddialoog gebruiken",
+	"bs-insertcategory-pref-uploadintegration-help": "Stelt de paginacategorieën in als de standaardoptie in het uploaddialoogvenster"
+}

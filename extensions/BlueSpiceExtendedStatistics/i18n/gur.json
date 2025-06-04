@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adignyoke",
+			"Akakiiri",
+			"Akandee1"
+		]
+	},
+	"bs-statistics-aggregated-report-filter-category-multi": "Bɔseko",
+	"bs-statistics-aggregated-report-filter-date-start": "Pɔsega daarɛ",
+	"bs-statistics-aggregated-report-filter-date-end": "Ba'asegɔ daarɛ",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dabeserɛ",
+	"bs-statistics-aggregated-report-filter-interval-week": "Bakɔ",
+	"bs-statistics-aggregated-report-filter-interval-month": "Ŋmarega",
+	"bs-statistics-aggregated-report-filter-interval-year": "Yuunɛ",
+	"bs-statistics-aggregated-report-filter-namespace": "Yu'urɛfole",
+	"bs-statistics-aggregated-report-filter-namespaces": "Yu'urɛ fola",
+	"bs-statistics-aggregated-report-filter-page": "Pɛgerɛ",
+	"bs-statistics-aggregated-report-filter-user": "Tintona",
+	"bs-statistics-aggregated-report-filter-user-multi": "Itiba",
+	"bs-statistics-aggregated-report-error": "Tuure n wa'am!"
+}

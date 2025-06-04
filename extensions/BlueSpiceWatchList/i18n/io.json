@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"bs-watchlist-pref-sort-time": "Horo",
+	"bs-watchlist-pref-sort-title": "Titulo",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Maxima grandeso di titulo",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Quanto di literi qui mustas montresar en la titulo, de 5 til 500."
+}

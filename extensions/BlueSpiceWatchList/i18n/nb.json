@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"bs-watchlist-desc": "Legger til en overvåkningslistewidget og -tagg",
+	"bs-watchlist-pref-sort-time": "Tid",
+	"bs-watchlist-pref-sort-title": "Tittel",
+	"bs-watchlist-tag-watchlist-desc": "Viser artiklene som har de nyligste endringene og er på overvåkningslista di.",
+	"bs-watchlist-ve-watchlistinspector-title": "Overvåkningsliste",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Antall",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Antall oppføringer på overvåkningslisten bør vises",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Maksimal tittellengde",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Rekkefølge",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Sidenavn",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Tid",
+	"bs-watchlist-tag-watchlist-no-user": "Overvåkningslisten kan ikke vises fordi ingen bruker er logget inn",
+	"bs-watchlist-droplet-name": "Overvåkningsliste"
+}

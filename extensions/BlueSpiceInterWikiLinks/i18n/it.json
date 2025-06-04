@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Ankabel",
+			"Beta16",
+			"GpieroMW",
+			"Stefano"
+		]
+	},
+	"bs-interwikilinks-invalid-pfx-spc": "Il prefisso non è valido. Si prega di non utilizzare spazi.",
+	"bs-interwikilinks-invalid-url-spc": "L'URL non è valido. Si prega di non utilizzare spazi.",
+	"bs-interwikilinks-label": "Collegamenti interwiki",
+	"bs-interwikilinks-link-created": "Il collegamento interwiki è stato creato.",
+	"bs-interwikilinks-nooldpfx": "Il prefisso precedente non è stato trovato.",
+	"bs-interwikilinks-nopfx": "Si prega di fornire un prefisso.",
+	"bs-interwikilinks-nourl": "Fornire un URL",
+	"bs-interwikilinks-pfxtoolong": "Il prefisso è troppo lungo. Si prega di utilizzare un massimo di 32 caratteri.",
+	"bs-interwikilinks-pfxexists": "Questo prefisso esiste già.",
+	"bs-interwikilinks-headerprefix": "Prefisso",
+	"bs-interwikilinks-labelprefix": "Prefisso",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Sei sicuro di voler cancellare questo collegamento interwiki?",
+	"bs-interwikilinks-link-edited": "Il collegamento interwiki è stato modificato",
+	"apihelp-bs-interwikilinks-tasks-summary": "Fornisce le attività per l'estensione InterWikiLinks.",
+	"action-interwikilinks-viewspecialpage": "visualizzare la pagina speciale \"{{int:bs-interwikilinks-label}}\"",
+	"interwikilinks": "Collegamenti interwiki",
+	"right-interwikilinks-viewspecialpage": "Accede alla pagina speciale [[Special:InterWikiLinks]]"
+}

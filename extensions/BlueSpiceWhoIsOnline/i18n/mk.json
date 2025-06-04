@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Vlad5250"
+		]
+	},
+	"bs-whoisonline-desc": "Прикажува список на корисници што се моментално на линија",
+	"bs-whoisonline-nousers": "Никој не е најавен.",
+	"bs-whoisonline-widget-title": "Кој е на линија?",
+	"prefs-whoisonline": "Кој е на линија?",
+	"bs-whoisonline-pref-limitcount": "Највеќе корисници за приказ:",
+	"bs-whoisonline-pref-orderby": "Подреди по:",
+	"bs-whoisonline-pref-orderby-time": "Време на линија",
+	"bs-whoisonline-pref-orderby-name": "Име",
+	"bs-whoisonline-collection-type-userlogin": "Корисничка најава",
+	"bs-whoisonline-collection-var-login": "Најава"
+}

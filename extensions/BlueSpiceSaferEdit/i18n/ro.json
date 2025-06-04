@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Trotinel Iftode"
+		]
+	},
+	"bs-saferedit-pref-edit-interval": "Interval pentru verificarea editării (secunde)",
+	"bs-saferedit-pref-edit-interval-help": "Specifică cât de des, în secunde, se verifică dacă o altă persoană editează pagina (implicit: 3 secunde)",
+	"bs-saferedit-pref-show-editinguser": "Afișează editorul curent",
+	"bs-saferedit-pref-show-editinguser-help": "Adaugă numele utilizatorului care editează pagina în partea de sus a paginii"
+}

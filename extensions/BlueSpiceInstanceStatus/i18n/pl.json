@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"WaldiSt"
+		]
+	},
+	"bs-instancestatus-desc": "Dodaje przegląd stanu instancji wiki",
+	"instancestatus": "Stan instancji",
+	"bs-instancestatus-instance-status-bs-version-label": "Wersja BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "Limit użytkownika",
+	"bs-instancestatus-instance-status-created-label": "Instancja utworzona w dniu",
+	"bs-instancestatus-instance-status-no-info": "Niedostępne",
+	"bs-instancestatus-instance-status-sales-contact-label": "Kontakt z BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "Skontaktuj się tutaj: [Kontakt BlueSpice $1 ]",
+	"bs-instancestatus-overview-loader": "Zbieranie informacji z wiki..."
+}

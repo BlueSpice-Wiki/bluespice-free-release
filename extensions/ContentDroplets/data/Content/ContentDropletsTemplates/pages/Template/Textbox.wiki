@@ -1,0 +1,8 @@
+<includeonly><templatestyles src="Textbox/styles.css" /><div class="cd-textbox cd-textbox-{{{boxtype}}}><div class="icon-col {{#switch: {{{icon}}}|yes=has-icon|ja=has-icon}}"></div><div class="text-col"><span class="boxheader">{{{header}}}</span><span class="boxtext>{{{text}}}</span></div></div></includeonly>
+<noinclude>
+Kopiervorlage:
+<pre>
+{{Textbox|boxtype = |icon=|header =| text =}}
+</pre>
+
+</noinclude>

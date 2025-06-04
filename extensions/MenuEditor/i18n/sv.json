@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"menueditor-desc": "Grafisk redigerare för menysidor",
+	"menueditor-ui-menu-wiki-link-label": "Wikilänk",
+	"menueditor-ui-menu-wiki-link-label-edit": "Redigera wikilänk",
+	"menueditor-ui-menu-wiki-link-help": "Länk till en wikisida",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Länk",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Redigera länk",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Länkspecifikation.<br>Mål kan vara:<ul><li>ett meddelandenyckel som lösas till en sidnamn</li><li>en extern länk</li><li>Namnet på en sida på wikin</li><li>interwiki-länk</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Text eller meddelandenyckel",
+	"menueditor-ui-menu-raw-text-label-edit": "Redigera text eller meddelandenyckel",
+	"menueditor-ui-menu-keyword-label": "Nyckelord",
+	"menueditor-ui-menu-keyword-label-edit": "Redigera nyckelord",
+	"menueditor-ui-menu-keyword-help": "En av de tillgängliga '''nyckelorden''', som kommer visa lämpliga widgetar",
+	"menueditor-ui-form-field-keyword": "Nyckelord",
+	"menueditor-ui-form-field-text": "Text eller en meddelandenyckel",
+	"menueditor-ui-form-field-target": "Länkmål",
+	"menueditor-ui-form-field-label": "Länketikett",
+	"menueditor-ui-dialog-action-done": "Klar",
+	"menueditor-ui-dialog-action-cancel": "Avbryt",
+	"menueditor-ui-node-type-selector-label": "Nodtyp",
+	"menueditor-ui-submit": "Spara",
+	"menueditor-ui-cancel": "Avbryt",
+	"menueditor-ui-redlink-notice": "Menyn finns ännu inte",
+	"menueditor-action-menueditsource": "Redigera källa",
+	"menueditor-action-menuedit": "Redigera",
+	"menueditor-ui-dialog-title": "Redigera element",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Redigera nyckelord",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Nyckelord",
+	"menueditor-toolbar-cancel": "Avbryt redigering"
+}

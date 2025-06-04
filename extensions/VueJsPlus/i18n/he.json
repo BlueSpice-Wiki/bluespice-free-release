@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"vuejsplus-desc": "אוסף רכיבי VueJs",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "הסתרה",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "הצגה",
+	"vuejsplus-data-grid-option-sort-string-asc": "מיון בסדר עולה",
+	"vuejsplus-data-grid-option-sort-string-desc": "מיון בסדר יורד",
+	"vuejsplus-data-grid-option-filter-string": "למצוא",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|נמצאה שורה אחת|נמצאו $1 שורות}}",
+	"vuejsplus-data-grid-option-button-aria-label": "אפשרויות העמודה $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "מסומן",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "לא מסומן",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "ניטרלי",
+	"vuejsplus-data-grid-option-filter-date-from-label": "מתאריך",
+	"vuejsplus-data-grid-option-filter-date-to-label": "עד תאריך"
+}

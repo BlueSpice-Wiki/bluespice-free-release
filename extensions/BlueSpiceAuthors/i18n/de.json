@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64",
+			"Mglaser",
+			"Smuggli",
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-authors-desc": "Zeigt Profilbilder für Autoren einer Seite an",
+	"prefs-authors": "Autoren dieser Seite",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Autor|Autorin}}|Autoren}}",
+	"bs-authors-profileimage": "Profilbild",
+	"bs-authors-profileimage-change": "Profilbild ändern",
+	"bs-authors-show-all-authors": "Weitere Autoren vorhanden",
+	"bs-authors-navigation-link-title": "Autoren dieser Seite",
+	"bs-authors-navigation-link-text": "Autoren",
+	"apihelp-bs-pageauthors-store-summary": "Listet alle Autoren einer gegebenen Seite im Kontext auf",
+	"bs-authors-info-dialog": "Autoren dieser Seite",
+	"bs-authors-info-dialog-grid-column-author": "Autor",
+	"bs-authors-info-dialog-grid-column-type": "Autorentyp"
+}

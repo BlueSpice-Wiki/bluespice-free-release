@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-whoisonline-desc": "Prikaže seznam trenutno prijavljenih uporabnikov",
+	"bs-whoisonline-nousers": "Nihče ni prijavljen.",
+	"bs-whoisonline-widget-title": "Kdo je prijavljen?",
+	"prefs-whoisonline": "Kdo je prijavljen?",
+	"bs-whoisonline-pref-limitcount": "Najvišje število prikazanih uporabnikov:",
+	"bs-whoisonline-pref-orderby": "Razvrsti po:",
+	"bs-whoisonline-pref-orderby-time": "Čas delovanja",
+	"bs-whoisonline-pref-orderby-name": "Ime",
+	"bs-whoisonline-collection-type-userlogin": "Prijava uporabnika",
+	"bs-whoisonline-collection-var-login": "Prijava",
+	"bs-whoisonline-statistics-report-login-duration": "Trajanje prijave",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Trajanje prijave (s)",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Prikazuje število vseh uporabnikov, ki so se prijavili v zadnjih 10 minutah.",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Število prisotnih na spletu",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Prikazuje vse uporabnike, ki so se prijavili v zadnjih 10 minutah. Rezultat je govorni oblaček, ko uporabnik premakne miškin kazalec nad povezano povezavo.",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Pojavno okno »Prisotni na spletu«",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Število prijav",
+	"bs-whoisonline-statistics-report-login-number": "Prijave",
+	"bs-whoisonline-droplet-count-name": "Število prijavljenih uporabnikov",
+	"bs-whoisonline-droplet-count-description": "Število trenutno prijavljenih uporabnikov",
+	"bs-whoisonline-droplet-popup-name": "Seznam prijavljenih uporabnikov",
+	"bs-whoisonline-droplet-popup-description": "Pojavno okno s seznamom vseh uporabnikov, ki so trenutno prijavljeni"
+}

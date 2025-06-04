@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-setting-path-feature": "Fonctionnalité",
+	"bs-setting-path-extension": "Extension",
+	"bs-setting-path-package": "Paquet",
+	"bs-setting-path-system": "Système",
+	"bs-setting-path-dataanalysis": "Analyse de données",
+	"bs-setting-path-editor": "Rédacteur",
+	"bs-setting-path-search": "Recherche et navigation",
+	"bs-setting-path-personalisation": "Personnalisation",
+	"bs-setting-path-skinning": "Habillage",
+	"bs-setting-path-customizing": "Personnalisation",
+	"bs-setting-path-contentstructuring": "Structuration du contenu",
+	"bs-setting-path-communication": "Communication",
+	"bs-setting-path-administration": "Administration",
+	"bs-setting-path-qualityassurance": "Assurance qualité",
+	"bs-setting-path-export": "Exporter"
+}

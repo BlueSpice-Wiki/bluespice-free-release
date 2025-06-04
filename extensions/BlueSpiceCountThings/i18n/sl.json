@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-countthings-desc": "Omogoča statistiko vsebine",
+	"bs-countthings-chars-label": "Znaki",
+	"bs-countthings-words-label": "Besede",
+	"bs-countthings-files-label": "Datoteke",
+	"bs-countthings-pages-label": "Strani",
+	"bs-countthings-ve-countcharacters-title": "Štetje znakov",
+	"bs-countthings-ve-countarticles-title": "Štetje člankov",
+	"bs-countthings-ve-countfiles-title": "Štetje datotek",
+	"bs-countthings-ve-countusers-title": "Štetje uporabnikov",
+	"bs-countthings-ve-countthingsinspector-mode": "Način",
+	"bs-countthings-ve-countcharacters-mode-all": "vse",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "znaki",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "besede",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "znaki in besede",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "strani",
+	"bs-countthings-ve-countcharacters-input-label": "Strani",
+	"bs-countthings-error-no-input": "Ni podane strani.",
+	"bs-countthings-error-invalid-mode": "Način \"$1\" ni veljaven. Prosimo, uporabite \"chars\", \"words\" ali \"pages\".",
+	"bs-countthings-error-not-exist": "Stran \"$1\" ne obstaja.",
+	"bs-countthings-tag-countarticles-desc": "Prikaže število člankov v tem vikiju.",
+	"bs-countthings-tag-countusers-desc": "Prikaže število registriranih uporabnikov.",
+	"bs-countthings-tag-countfiles-desc": "Prikaže število datotek v vikiju.",
+	"bs-countthings-tag-countcharacters-desc": "Ustvari metapodatke iz vsebine navedenega članka. Izhod je infopolje, ki ga lahko vključite v članek. S parametrom »mode« lahko prikažete različne vrste informacij.",
+	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: Kaj naj se šteje? <code>chars</code> (znaki), <code>words</code> (besede) ali <code>pages</code> (strani).",
+	"bs-countthings-droplet-articles-name": "Število strani",
+	"bs-countthings-droplet-articles-description": "Prikaže število strani",
+	"bs-countthings-droplet-characters-name": "Število znakov",
+	"bs-countthings-droplet-characters-description": "Prikaže število znakov ali besed na viki strani",
+	"bs-countthings-droplet-files-name": "Število datotek",
+	"bs-countthings-droplet-files-description": "Prikaže število vseh naloženih datotek",
+	"bs-countthings-droplet-user-name": "Število uporabnikov",
+	"bs-countthings-droplet-user-description": "Prikaže število vseh uporabnikov"
+}

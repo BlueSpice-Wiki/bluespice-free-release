@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"HanV",
+			"McDutchie"
+		]
+	},
+	"bs-instancestatus-desc": "Voegt een overzicht toe van de status van de wiki-instantie",
+	"instancestatus": "Instantiestatus",
+	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice-versie",
+	"bs-instancestatus-instance-status-user-quota-label": "Gebruikersquotum",
+	"bs-instancestatus-instance-status-last-update-label": "Laatst bijgewerkt op",
+	"bs-instancestatus-instance-status-created-label": "Instantie gemaakt op",
+	"bs-instancestatus-instance-status-no-info": "Niet beschikbaar",
+	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice contact",
+	"bs-instancestatus-instance-status-sales-contact": "Neem hier contact op: [$1 BlueSpice-contact]",
+	"bs-instancestatus-overview-loader": "Wiki-informatie verzamelen…",
+	"bs-instancestatus-instance-status-main-label": "Algemeen"
+}

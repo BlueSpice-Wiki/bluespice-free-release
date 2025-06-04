@@ -1,0 +1,17 @@
+#contentDroplet {
+	top: 58px;
+}
+
+#contentDroplet .oo-ui-pageLayout > .oo-ui-horizontalLayout {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ve-ui-toolbarDialog-content #contentDroplet.oo-ui-bookletLayout {
+	height: 300px;
+}
+
+/* hide toolbar element in dialogs visual editor */
+.oo-ui-dialog-content .oo-ui-tool-name-contentdroplet-toolbar .oo-ui-tool-link {
+	display: none;
+}

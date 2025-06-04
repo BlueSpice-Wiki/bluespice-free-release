@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yahya",
+			"আজিজ",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label": "উইকি সংযোগ",
+	"menueditor-ui-menu-wiki-link-label-edit": "উইকি সংযোগ সম্পাদনা করুন",
+	"menueditor-ui-menu-two-fold-link-spec-label": "সংযোগ",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "সংযোগ সম্পাদনা করুন",
+	"menueditor-ui-menu-raw-text-label-edit": "পাঠ্য বা বার্তা বোতাম সম্পাদনা করুন",
+	"menueditor-ui-menu-keyword-label": "মূলশব্দ",
+	"menueditor-ui-menu-keyword-label-edit": "মুখ্যশব্দ সম্পাদনা করুন",
+	"menueditor-ui-form-field-keyword": "মূলশব্দ",
+	"menueditor-ui-dialog-action-done": "সম্পন্ন",
+	"menueditor-ui-dialog-action-cancel": "বাতিল",
+	"menueditor-ui-submit": "সংরক্ষণ",
+	"menueditor-ui-cancel": "বাতিল",
+	"menueditor-ui-redlink-notice": "এই পাতাটি এখনো বিদ্যমান নয়!",
+	"menueditor-action-menueditsource": "উৎস সম্পাদনা",
+	"menueditor-action-menuedit": "সম্পাদনা",
+	"menueditor-ui-dialog-title": "উপাদান সম্পাদনা করুন",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "মুখ্যশব্দ সম্পাদনা করুন",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "মুখ্যশব্দ",
+	"menueditor-toolbar-cancel": "সম্পাদনা বাতিল করুন",
+	"menueditor-ui-edit-label": "সম্পাদনা"
+}

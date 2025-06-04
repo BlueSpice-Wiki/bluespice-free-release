@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hwboehm",
+			"Metalhead64",
+			"Mirzali"
+		]
+	},
+	"bs-usagetracker-desc": "Enthält statistische Daten über die Nutzung der Erweiterung",
+	"apihelp-bs-usagetracker-store-summary": "Enthält statistische Daten zur Verwendung von Erweiterungen"
+}

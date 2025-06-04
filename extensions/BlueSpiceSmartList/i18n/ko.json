@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hwangjy9",
+			"Osnard",
+			"Revi",
+			"SeoJeongHo",
+			"Ykhwong"
+		]
+	},
+	"bs-smartlist-desc": "위키의 가장 최근 다섯 편집을 목록으로 표시",
+	"prefs-smartlist": "스마트 리스트",
+	"bs-smartlist-recent-changes": "최근 바뀜",
+	"bs-smartlist-no-entries": "결과가 없습니다.",
+	"bs-smartlist-invalid-namespaces": "지정된 {{PLURAL:$1|이름공간은}} 유효하지 않습니다: $2.",
+	"bs-smartlist-sort-asc": "오름차순",
+	"bs-smartlist-sort-desc": "내림차순",
+	"bs-smartlist-day": "일",
+	"bs-smartlist-week": "주",
+	"bs-smartlist-month": "월",
+	"bs-smartlist-time": "시간",
+	"bs-smartlist-title": "제목",
+	"bs-smartlist-mostvisitedpages": "조회수가 가장 많은 문서",
+	"bs-smartlist-mosteditedpages": "가장 자주 편집한 문서",
+	"bs-smartlist-mostactiveusers": "가장 활동적인 사용자 (편집별)",
+	"bs-smartlist-lastedits": "내 편집",
+	"bs-smartlist-noedits": "편집이 없습니다.",
+	"bs-smartlist-mostactiveusersdesc": "편집별로 정렬된 가장 활동이 많은 사용자 목록입니다.",
+	"bs-smartlist-mosteditedpagesdesc": "편집별로 정렬된 가장 많이 편집된 문서 목록입니다.",
+	"bs-smartlist-mostvisitedpagesdesc": "조회수별로 정렬된 가장 조회수가 많은 문서 목록입니다.",
+	"bs-smartlist-lasteditsdesc": "편집한 문서 목록입니다.",
+	"bs-smartlist-hitcounter-missing": "확장 기능 <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>를 설치해야 합니다.",
+	"bs-smartlist-ve-recentchanges-title": "최근 바뀜",
+	"bs-smartlist-ve-whatlinkshere-title": "이 문서의 링크"
+}

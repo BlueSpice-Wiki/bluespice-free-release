@@ -1,0 +1,110 @@
+{
+	"name": "BlueSpiceCustomMenu",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceCustomMenu",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"Patric Wirth"
+	],
+	"descriptionmsg": "bs-custommenu-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceCustomMenu": {
+					"className": "\\BlueSpice\\CustomMenu\\Extension",
+					"extPath": "/BlueSpiceCustomMenu"
+				}
+			},
+			"RendererRegistry": {
+				"custommenu": "\\BlueSpice\\CustomMenu\\Renderer\\Menu::factory",
+				"custommenuitem": "\\BlueSpice\\CustomMenu\\Renderer\\Menu\\Item::factory",
+				"custommenuheader": "\\BlueSpice\\CustomMenu\\Renderer\\Menu\\Header::factory",
+				"custommenuheaderitem": "\\BlueSpice\\CustomMenu\\Renderer\\Menu\\Header\\Item::factory"
+			}
+		},
+		"BlueSpiceCustomMenu": {
+			"Registry": {
+				"header": "\\BlueSpice\\CustomMenu\\CustomMenu\\Header::getInstance"
+			}
+		},
+		"MenuEditor": {
+			"Menus": {
+				"custommenu": {
+					"class": "BlueSpice\\CustomMenu\\MenuEditor\\Header",
+					"services": [
+						"MWStakeWikitextParserFactory"
+					]
+				}
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceCustomMenu": [
+			"i18n"
+		]
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"AutoloadNamespaces": {
+		"BlueSpice\\CustomMenu\\": "src/"
+	},
+	"ResourceModules": {
+		"ext.bluespice.custom-menu.styles": {
+			"styles": {
+				"bluespice.custom-menu.styles.css": { "media": "all and ( min-width: 768px )" }
+			}
+		},
+		"ext.bluespice.custom-menu.menueditor": {
+			"scripts": [
+				"menueditor/HeaderTree.js"
+			],
+			"dependencies": [
+				"ext.menuEditor.tree"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceCustomMenu/resources"
+	},
+	"AutoloadClasses": {
+		"MenuParser": "includes/MenuParser.php",
+		"BSCustomMenuMigrateTopBarMenu": "maintenance/BSCustomMenuMigrateTopBarMenu.php"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"CustomMenuHeaderNumberOfLevels": {
+			"value": 2
+		},
+		"CustomMenuHeaderNumberOfMainEntries": {
+			"value": 10
+		},
+		"CustomMenuHeaderNumberOfSubEntries": {
+			"value": 10
+		}
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\CustomMenu\\HookHandler\\CommonUserInterface"
+		}
+	},
+	"Hooks": {
+		"EditFormPreloadText": "\\BlueSpice\\CustomMenu\\Hook\\EditFormPreloadText\\PreloadHeaderMenu::callback",
+		"ArticleDeleteComplete": "\\BlueSpice\\CustomMenu\\Hook\\ArticleDeleteComplete\\InvalidateHeaderMenu::callback",
+		"PageSaveComplete": "\\BlueSpice\\CustomMenu\\Hook\\PageSaveComplete\\InvalidateHeaderMenu::callback",
+		"PageMoveComplete": "\\BlueSpice\\CustomMenu\\Hook\\PageMoveComplete\\InvalidateHeaderMenu::callback",
+		"LoadExtensionSchemaUpdates": "\\BlueSpice\\CustomMenu\\Hook\\LoadExtensionSchemaUpdates\\AddMigrateTopBarMenu::callback",
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\CustomMenu\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfCustomMegaMenus::callback",
+		"OutputPageBodyAttributes": "\\BlueSpice\\CustomMenu\\Hook\\OutputPageBodyAttributes\\AddOutputPageBodyClass::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
+	},
+	"manifest_version": 2
+}

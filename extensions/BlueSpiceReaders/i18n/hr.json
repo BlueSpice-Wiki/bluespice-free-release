@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bugoslav"
+		]
+	},
+	"apihelp-bs-readers-revision-readers-store-summary": "Pribavi popis svih čitatelja/čitateljica svih izmjena stranice",
+	"right-viewrevisionreaders": "Pregled čitatelja izmjena pojedine stranice",
+	"bs-readers-header-revision-id": "ID izmjene",
+	"revisionreaders": "Čitatelji/ce po izmjeni stranice »$1«"
+}

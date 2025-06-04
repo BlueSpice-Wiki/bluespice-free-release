@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"enhancedupload": "اپلوڈ",
+	"enhancedupload-list-header-warning": "ݙراوا",
+	"enhancedupload-attachments-tag-grid-remove-title": "ہٹاؤ",
+	"enhancedupload-config-type-label": "تصویر قسم:",
+	"enhancedupload-config-height-label": "تصویر اُوچائی",
+	"enhancedupload-droplet-attachments-name": "نتھیاں",
+	"enhancedupload-upload-warning-exists": "ایہ فائل ناں پہلے ہی موجود ہے",
+	"enhancedupload-upload-warning-was-deleted": "ایہ فائل ناں پہلے مٹایا ہویا ہائی۔",
+	"enhancedupload-toggle-details-button-hide-label": "تفصیلاں لُکاؤ",
+	"enhancedupload-toggle-details-button-show-label": "تفصیل ݙکھاؤ",
+	"enhancedupload-preview-widget-remove-label": "$1 ہٹاؤ"
+}

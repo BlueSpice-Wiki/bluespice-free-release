@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rachmat.Wahidi",
+			"Rachmat04",
+			"Veracious"
+		]
+	},
+	"bs-countthings-tag-countarticles-desc": "Tampilkan jumlah artikel dalam wiki ini.",
+	"bs-countthings-tag-countusers-desc": "Tampilkan jumlah pengguna terdaftar.",
+	"bs-countthings-droplet-articles-name": "Jumlah halaman",
+	"bs-countthings-droplet-files-name": "Jumlah berkas"
+}

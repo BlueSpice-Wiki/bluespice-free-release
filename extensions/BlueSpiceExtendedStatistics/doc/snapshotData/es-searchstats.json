@@ -1,0 +1,15 @@
+{
+	"members": {
+		"terms": {
+			"key": "{{{term}}}",
+			"value": "{{randint|0,1000}}"
+		},
+		"users": {
+			"key": "{{{user}}}",
+			"value": {
+				"key": "{{{term}}}",
+				"value": "{{randint|0,1000}}"
+			}
+		}
+	}
+}

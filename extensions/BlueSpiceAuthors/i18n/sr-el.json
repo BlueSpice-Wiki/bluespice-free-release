@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-authors-desc": "Prikazuje profilnu sliku autora stranice",
+	"prefs-authors": "Autori ove stranice",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Autor}}|Autori}}",
+	"bs-authors-profileimage": "Profilna slika",
+	"bs-authors-profileimage-change": "Promeni profilnu sliku",
+	"bs-authors-show-all-authors": "Dostupno je više autora",
+	"bs-authors-navigation-link-title": "Autori ove stranice",
+	"bs-authors-navigation-link-text": "Autori",
+	"bs-authors-info-dialog": "Autori ove stranice"
+}

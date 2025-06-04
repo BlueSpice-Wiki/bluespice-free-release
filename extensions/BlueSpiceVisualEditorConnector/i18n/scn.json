@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-visualeditorconnector-upload-type-original": "Orìgginali",
+	"bs-visualeditorconnector-upload-type-simple": "Sìmprici",
+	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "Annulla canciamentu",
+	"bs-visualeditorconnector-inspector-tab-common-name": "Cumuni",
+	"bs-visualeditorconnector-text-style-tool-color-label": "Culuri dû testu",
+	"bs-vec-dialog-action-done": "Fattu",
+	"bs-vec-dialog-action-safe": "Annulla",
+	"bs-vec-dialog-create-table-title": "Nzirisci tabbella",
+	"bs-vec-dialog-media-change-file": "Cancia file",
+	"bs-visualeditor-linkcontext-label-change": "Cancia etichetta",
+	"bs-visualeditor-linkcontext-label-label": "Etichetta",
+	"bs-vec-table-style-cell-text-hor-align-left": "Manca",
+	"bs-vec-table-border-none": "Nuḍḍu",
+	"bs-vec-table-border-left": "Manca",
+	"bs-vec-table-border-all": "Tutti",
+	"bs-vec-table-border-solid": "Sòlidu"
+}

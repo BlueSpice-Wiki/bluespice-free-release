@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"bs-countthings-chars-label": "სიმბოლოეფი",
+	"bs-countthings-words-label": "ზიტყვეფი",
+	"bs-countthings-files-label": "ფაილეფი",
+	"bs-countthings-pages-label": "ხასჷლეფი",
+	"bs-countthings-ve-countcharacters-title": "სიმბოლოეფიშ კოროცხუა",
+	"bs-countthings-ve-countarticles-title": "სტატიეფიშ კოროცხუა",
+	"bs-countthings-ve-countfiles-title": "ფაილეფიშ კოროცხუა",
+	"bs-countthings-ve-countusers-title": "მახვარებუეფიშ კოროცხუა",
+	"bs-countthings-ve-countthingsinspector-mode": "რეჟიმი",
+	"bs-countthings-ve-countcharacters-mode-all": "არძა",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "სიმბოლოეფი",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "ზიტყვეფი",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "სიმბოლოეფი დო ზიტყვეფი",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "ხასჷლეფი",
+	"bs-countthings-ve-countcharacters-input-label": "ხასჷლეფი"
+}

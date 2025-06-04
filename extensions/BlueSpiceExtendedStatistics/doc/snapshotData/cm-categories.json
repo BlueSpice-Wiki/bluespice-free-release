@@ -1,0 +1,23 @@
+{
+	"members": {
+		"all": {
+			"key": "{{{category}}}",
+			"value": {
+				"pages": "{{randint|0,1000}}",
+				"subcats": "{{randint|0,20}}",
+				"files": "{{randint|0,10}}"
+			}
+		},
+		"namespaces": {
+			"key": "{{{namespace}}}",
+			"value": {
+				"key": "{{{category}}}",
+				"value": {
+					"pages": "{{randint|0,200}}",
+					"subcats": "{{randint|0,20}}",
+					"files": "{{randint|0,10}}"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cedric31",
+			"Nicolas Eynaud"
+		]
+	},
+	"bs-avatars-pref-generator": "Generador",
+	"bs-avatars-pref-userimage-img-alt": "La vòstra imatge utilizaire actuala",
+	"bs-avatars-upload-complete": "L'imatge es estat telecargat.",
+	"bs-avatars-upload-label": "Fòto",
+	"bs-avatars-file-upload-fieldset-title": "Telecargar l'imatge"
+}

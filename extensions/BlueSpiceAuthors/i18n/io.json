@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Autoro}}|Autori}}",
+	"bs-authors-navigation-link-text": "Autori"
+}

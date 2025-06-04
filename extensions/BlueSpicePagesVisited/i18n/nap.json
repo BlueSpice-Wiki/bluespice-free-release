@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chelin"
+		]
+	},
+	"bs-pagesvisited-desc": "Furnì na lista personalizzata 'e ll'urdeme paggene visite",
+	"prefs-pagesvisited": "Paggene viste",
+	"bs-pagesvisited-widget-title": "Paggene viste",
+	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|'O|'E}} namespace <code>$2</code> nun {{PLURAL:$1|è valido|so' valide}}.",
+	"bs-pagesvisited-pref-widgetlimit": "Limite 'e trasute:",
+	"bs-pagesvisited-pref-widgetns": "Namespace:",
+	"bs-pagesvisited-pref-widgetsortodr": "Ordina pe:",
+	"bs-pagesvisited-pref-sort-time": "Ora",
+	"bs-pagesvisited-pref-sort-pagename": "Titulo",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Fà vede na lista d\"e paggene viste 'e reciente. Chesta lista può sta ristretta cu d\"e parametre."
+}

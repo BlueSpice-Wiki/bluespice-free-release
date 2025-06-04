@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"prefs-authors": "თე ხასჷლაშ ავტორეფი",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|ავტორი}}|ავტორეფი}}",
+	"bs-authors-profileimage": "პროფილიშ სურათი",
+	"bs-authors-profileimage-change": "პროფილიშ სურათიშ თირუა",
+	"bs-authors-navigation-link-title": "თე ხასჷლაშ ავტორეფი",
+	"bs-authors-navigation-link-text": "ავტორეფი",
+	"bs-authors-info-dialog": "ათე ხასჷლაშ ავტორეფი"
+}

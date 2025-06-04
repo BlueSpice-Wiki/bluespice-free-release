@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"David1010",
+			"Გიო ოქრო"
+		]
+	},
+	"bs-ns_main": "(გვერდები)",
+	"bs-ns_all": "(ყველა)",
+	"bs-tab_navigation": "ნავიგაცია",
+	"bs-userbar_loginswitch_logout": "გასვლა",
+	"bs-userbar_loginswitch_login": "შესვლა",
+	"bs-extended-search-textfield-defaultvalue": "ძიება...",
+	"bs-extended-search-textfield-tooltip": "ვიკის ძიება",
+	"bs-years-duration": "{{PLURAL:$1|ერთი წლის|$1 წლის}}",
+	"bs-months-duration": "{{PLURAL:$1|ერთი თვის|$1 თვის}}",
+	"bs-weeks-duration": "{{PLURAL:$1|ერთი კვირის|$1 კვირის}}",
+	"bs-days-duration": "{{PLURAL:$1|ერთი დღის|$1 დღის}}",
+	"bs-hours-duration": "{{PLURAL:$1|ერთი საათის|$1 საათის}}",
+	"bs-mins-duration": "{{PLURAL:$1|ერთი წუთის|$1 წუთის}}",
+	"bs-secs-duration": "{{PLURAL:$1|ერთი წამის|$1 წამის}}",
+	"bs-two-units-ago": "$1 და $2 წინ",
+	"bs-one-unit-ago": "$1 წინ",
+	"bs-now": "ახლა",
+	"bs-email-greeting-receiver": "{{GENDER:$1|გამარჯობა ბ-ნო $2|გამარჯობა ქ-ნო $2|გამარჯობა $2}},"
+}

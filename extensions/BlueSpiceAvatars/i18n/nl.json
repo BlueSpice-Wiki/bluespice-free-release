@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esketti",
+			"Mainframe98",
+			"Mar(c)",
+			"McDutchie",
+			"Ribert",
+			"Romaine",
+			"SPQRobin",
+			"Siebrand",
+			"Sjoerddebruin",
+			"Southparkfan"
+		]
+	},
+	"bs-avatars-desc": "Biedt algemene en individuele gebruikersfoto's",
+	"bs-avatars-pref-generator": "Generator:",
+	"bs-avatars-pref-userimage-img-alt": "Uw huidige gebruikersafbeelding",
+	"bs-avatars-upload-complete": "De afbeelding is geüpload.",
+	"bs-avatars-generate-complete": "Er is een nieuwe avatar gegenereerd.",
+	"bs-avatars-upload-label": "Foto",
+	"bs-avatars-generate-new-label": "Nieuwe avatar genereren",
+	"bs-avatars-file-upload-fieldset-title": "Nieuwe afbeelding uploaden",
+	"bs-avatars-auto-generate-fieldset-title": "Automatisch avatar genereren",
+	"apihelp-bs-avatars-tasks-summary": "Gebruikersavatars uploaden, genereren en instellen",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Parameter \"username\" is vereist en moet een geldige gebruikersnaam bevatten",
+	"bs-avatars-pref-generator-help": "De avatar-afbeelding wordt gegenereerd wanneer een gebruiker geen profielfoto uploadt. InstantAvatar genereert een avatar-afbeelding op basis van de initialen van de echte naam of de gebruikersnaamvelden. Identicon genereert een avatar-afbeelding op basis van delen van de identificatiecode van de gebruiker",
+	"bs-avatars-upload-button": "Uploaden",
+	"bs-avatars-generate-button": "Aanmaken",
+	"bs-avatars-generic-cancel": "Annuleren",
+	"bs-avatars-generate-description": "Een nieuwe automatische avatar genereren. Hierdoor wordt een eventueel al geüploade profielafbeelding definitief vervangen (indien ingesteld)."
+}

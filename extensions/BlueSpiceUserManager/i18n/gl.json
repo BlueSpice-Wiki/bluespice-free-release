@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"ArenaL5",
+			"Banjo",
+			"Elisardojm",
+			"Toliño"
+		]
+	},
+	"bs-usermanager-desc": "Interface administrativa para engadir, editar e eliminar usuarios",
+	"bs-usermanager-idnotexist": "Ese usuario non existe.",
+	"bs-usermanager-invalid-pwd": "O contrasinal non é válido.",
+	"bs-usermanager-invalid-email-gen": "O enderezo de correo electrónico non é válido.",
+	"bs-usermanager-label": "Administrador de usuarios",
+	"bs-usermanager-user-exists": "O nome de usuario xa existe.",
+	"bs-usermanager-headerusername": "Nome de usuario",
+	"bs-usermanager-headerrealname": "Nome real",
+	"bs-usermanager-headeremail": "Correo electrónico",
+	"bs-usermanager-headergroups": "Grupos",
+	"bs-usermanager-titleadduser": "Engadir usuario",
+	"bs-usermanager-titleeditdetails": "Editar usuario",
+	"bs-usermanager-labelnewpassword": "Contrasinal",
+	"bs-usermanager-labelpasswordcheck": "Confirme o contrasinal",
+	"bs-usermanager-no-self-desysop": "Non pode retirar o permiso de \"sysop\" a sí mesmo.",
+	"bs-usermanager-no-self-block": "Non pode desactivarse a si mesmo.",
+	"bs-usermanager-block-error": "Non se puido desactivar {{GENDER:$1|ó usuario|á usuaria}} $1.",
+	"bs-usermanager-unblock-error": "Non se puido activar {{GENDER:$1|ó usuario|á usuaria}} $1.",
+	"bs-usermanager-headerenabled": "Activado",
+	"bs-usermanager-log-user-disabled": "Desactivouse {{GENDER:$1|ó usuario|á usuaria}} $1 mediante UserManager.",
+	"bs-usermanager-endisable": "Activar/desactivar",
+	"bs-usermanager-confirmdisableuser": "Realmente quere desactivar {{PLURAL:$1|este usuario|estes $1 usuarios}}?",
+	"bs-usermanager-confirmenableuser": "Realmente quere activar {{PLURAL:$1|este usuario|estes $1 usuarios}}?",
+	"bs-usermanager-titledisableuser": "Bloquear un usuario",
+	"bs-usermanager-titleenableuser": "Desbloquear un usuario",
+	"usermanager": "Administrador de usuarios",
+	"bs-usermanager-group-add-not-allowed": "Non tes permisos para engadir usuarios ó grupo $1",
+	"bs-usermanager-group-remove-not-allowed": "Non tes permisos para eliminar usuarios do grupo $1",
+	"bs-usermanager-editgroups": "Editar grupos",
+	"bs-usermanager-editpassword": "Cambiar o contrasinal",
+	"bs-usermanager-multipleuserselected": "Só podes cambiar o contrasinal dun usuario ó mesmo tempo"
+}

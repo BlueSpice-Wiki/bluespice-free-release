@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Kizule",
+			"Milicevic01",
+			"Aca"
+		]
+	},
+	"bs-ooui-field-tagmultiselect-input-placeholder": "Додајте нов...",
+	"bs-ooui-key-value-input-widget-key-label": "Кључ",
+	"bs-ooui-key-value-input-widget-value-label": "Вредност",
+	"bs-ooui-key-value-input-widget-add-button-label": "Додај",
+	"bs-ooui-key-value-input-widget-add-form-label": "Додај нови унос",
+	"bs-ooui-key-value-input-widget-error-message": "Сва неопходна поља морају да буду попуњена.",
+	"bs-ooui-key-value-input-widget-no-values-label": "Нема постављених вредности.",
+	"bs-ooui-btn-dismiss-alert-title": "Одбаци",
+	"bs-ooui-key-value-input-widget-section-label": "Одељак",
+	"bs-ooui-key-value-input-widget-add-section-label": "Додај нови одељак",
+	"bs-ui-generic-save": "Сачувај",
+	"bs-ui-generic-cancel": "Откажи",
+	"bs-ui-generic-yes": "Да",
+	"bs-ui-generic-no": "Не",
+	"bs-ui-generic-close": "Затвори",
+	"bs-pageexport-list-format-plain-label": "Чист текст",
+	"bs-pageexport-list-format-link-label": "Веза",
+	"bs-pageexport-overwrite-label": "Пресними",
+	"bs-pagecollection-prefix": "Збирка страница"
+}

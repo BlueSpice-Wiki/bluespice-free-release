@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bosogo"
+		]
+	},
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|автор}}|автор}}",
+	"bs-authors-navigation-link-text": "Авторлор"
+}

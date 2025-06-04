@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joquliina",
+			"MITO",
+			"Nike",
+			"Pyscowicz",
+			"Silvonen"
+		]
+	},
+	"bs-statistics-button-label-apply": "Käytä suodattimia",
+	"bs-statistics-label-bar-chart": "Pylväskaavio",
+	"bs-statistics-label-line-chart": "Viivakaavio",
+	"bs-statistics-targets-label": "Kohteet",
+	"bs-statistics-paging-page-size": "Sivun koko",
+	"bs-statistics-aggregated-report-filter-interval-day": "Päivä",
+	"bs-statistics-aggregated-report-filter-interval-week": "Viikko",
+	"bs-statistics-aggregated-report-filter-interval-month": "Kuukausi",
+	"bs-statistics-aggregated-report-filter-interval-year": "Vuosi",
+	"bs-statistics-aggregated-report-filter-namespace": "Nimiavaruus",
+	"bs-statistics-aggregated-report-filter-namespaces": "Nimiavaruudet",
+	"bs-statistics-aggregated-report-filter-page": "Sivu",
+	"bs-statistics-aggregated-report-filter-user": "Käyttäjä",
+	"bs-statistics-aggregated-report-filter-user-multi": "Käyttäjät",
+	"bs-statistics-ve-progressinspector-title": "Edistyminen",
+	"bs-statistics-ve-progress-attr-width-label": "Leveys"
+}

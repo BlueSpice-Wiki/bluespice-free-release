@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Salvemm el lombard"
+		]
+	},
+	"bs-statistics-tag-progress-desc": "Insgenera ona sbarra de progress. El valor el dipend de l'aspet d'on certo test che 'l se troeuva in del corp e d'on limet de sora stabilid de l'utent.",
+	"bs-statistics-ve-progressinspector-title": "Progress",
+	"bs-statistics-ve-progress-attr-basecount-label": "Cunt fondamental",
+	"bs-statistics-ve-progress-attr-width-label": "Larghezza"
+}

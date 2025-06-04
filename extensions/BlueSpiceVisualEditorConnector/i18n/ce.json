@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-visualeditorconnector-upload-type-original": "Оригинал",
+	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "Йухабаха хийцамаш",
+	"bs-visualeditorconnector-cancel-edit": "Йухабаха хийцамаш. Ӏалашбина боцу хийцамаш йухабохура бу",
+	"bs-visualeditor-nsm-label": "БӀаьран редактор",
+	"bs-visualeditorconnector-inspector-tab-common-name": "Викиларма",
+	"bs-visualeditorconnector-inspector-tab-advanced-name": "Кхин тӀе",
+	"bs-visualeditorconnector-dialog-media-meta-link": "Файлах хаам болу агӀонан тӀе хьажорг",
+	"bs-vec-dialog-action-safe": "Йухайаккха",
+	"bs-visualeditor-linkcontext-label-change": "Хийца билгало",
+	"bs-visualeditor-linkcontext-label-label": "Билгало"
+}

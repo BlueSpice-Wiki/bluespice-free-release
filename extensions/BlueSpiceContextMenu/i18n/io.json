@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"bs-contextmenu-page-edit": "Redaktar pagino",
+	"bs-contextmenu-page-delete": "Efacez pagino",
+	"bs-contextmenu-file-download": "Deskargar arkivo"
+}

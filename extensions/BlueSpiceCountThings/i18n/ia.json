@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-countthings-desc": "Forni statisticas a base de contento",
+	"bs-countthings-chars-label": "Characteres",
+	"bs-countthings-words-label": "Parolas",
+	"bs-countthings-files-label": "Files",
+	"bs-countthings-pages-label": "Paginas",
+	"bs-countthings-ve-countcharacters-title": "Contar characteres",
+	"bs-countthings-ve-countarticles-title": "Contar articulos",
+	"bs-countthings-ve-countfiles-title": "Contar files",
+	"bs-countthings-ve-countusers-title": "Contar usatores",
+	"bs-countthings-ve-countthingsinspector-mode": "Modo",
+	"bs-countthings-ve-countcharacters-mode-all": "totes",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "characteres",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "parolas",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "characteres e parolas",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "paginas",
+	"bs-countthings-ve-countcharacters-input-label": "Paginas",
+	"bs-countthings-error-no-input": "Nulle pagina fornite.",
+	"bs-countthings-error-invalid-mode": "Le modo \"$1\" non es valide. Per favor usa \"chars\" (characteres), \"words\" (parolas) o \"pages\" (paginas).",
+	"bs-countthings-error-not-exist": "Le pagina \"$1\" non existe.",
+	"bs-countthings-tag-countarticles-desc": "Monstra le numero de articulos in le wiki.",
+	"bs-countthings-tag-countusers-desc": "Monstra le numero de usatores registrate.",
+	"bs-countthings-tag-countfiles-desc": "Monstra le numero de files in le wiki.",
+	"bs-countthings-tag-countcharacters-desc": "Genera metadatos sur le contento del articulo indicate. Le resultato es un quadro informative que pote esser integrate in un articulo. Con le parametro \"mode\", differente typos de information pote esser monstrate.",
+	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: Lo que debe esser contate: <code>chars</code> (characteres), <code>words</code> (parolas) o <code>pages</code> (paginas).",
+	"bs-countthings-droplet-articles-name": "Numero de paginas",
+	"bs-countthings-droplet-articles-description": "Monstra le numero de paginas",
+	"bs-countthings-droplet-characters-name": "Numero de characteres",
+	"bs-countthings-droplet-characters-description": "Monstra le numero de characteres o parolas in un pagina wiki",
+	"bs-countthings-droplet-files-name": "Numero de files",
+	"bs-countthings-droplet-files-description": "Monstra le numero de tote le files incargate",
+	"bs-countthings-droplet-user-name": "Numero de usatores",
+	"bs-countthings-droplet-user-description": "Monstra le numero de tote le usatores"
+}

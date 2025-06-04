@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"GpieroMW",
+			"Macofe",
+			"Selven"
+		]
+	},
+	"bs-readers-desc": "Crea un elenco di persone che leggono una pagina",
+	"prefs-readers": "Lettori",
+	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Lettore}}|Lettori}}",
+	"readers-user": "Pagine {{GENDER:$1|lette}} da: $1",
+	"readers": "Lettori di \"$1\"",
+	"bs-readers-contentactions-label": "Mostra lettori",
+	"bs-readers-pagenotexists": "La pagina non esiste.",
+	"bs-readers-pref-active": "Attivare lettori",
+	"bs-readers-emptyinput": "Nessuna pagina fornita.",
+	"bs-readers-header-username": "Nome utente",
+	"bs-readers-header-readerspath": "Lettore",
+	"bs-readers-header-ts": "Data",
+	"bs-readers-header-page": "Pagina",
+	"action-viewreaders": "visualizzare i lettori di pagine",
+	"right-viewreaders": "Visualizza i lettori di una pagina",
+	"bs-readers-header-read-by": "Letto da",
+	"bs-readers-header-revision-id": "ID versione",
+	"bs-readers-header-revision-date": "Data versione",
+	"bs-readers-header-read-on": "Letto il",
+	"revisionreaders": "Lettori per versione di \"$1\"",
+	"bs-readers-info-dialog": "Lettori di questa pagina",
+	"bs-readers-info-dialog-column-readers": "Lettori"
+}

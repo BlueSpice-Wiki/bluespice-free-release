@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Psubhashish"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label": "ଉଇକି ଲିଙ୍କ",
+	"menueditor-ui-menu-wiki-link-label-edit": "ଉଇକି ଲିଙ୍କ ସମ୍ପାଦନା କରନ୍ତୁ",
+	"menueditor-ui-menu-wiki-link-help": "ଉଇକି ପୃଷ୍ଠାଟିଏ ସହ ଲିଙ୍କକରନ୍ତୁ",
+	"menueditor-ui-menu-two-fold-link-spec-label": "ଲିଙ୍କ",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "ଲିଙ୍କ ସମ୍ପାଦନା କରନ୍ତୁ",
+	"menueditor-ui-menu-keyword-label": "ମୁଖ୍ୟ ଶବ୍ଦ",
+	"menueditor-ui-menu-keyword-label-edit": "ମୁଖ୍ଯଶବ୍ଦ ସମ୍ପାଦନ କରନ୍ତୁ",
+	"menueditor-ui-form-field-keyword": "ମୁଖ୍ୟ ଶବ୍ଦ",
+	"menueditor-ui-form-field-target": "ଲକ୍ଷ୍ୟ ଲିଙ୍କ",
+	"menueditor-ui-form-field-label": "ନାମ ଲିଙ୍କକରନ୍ତୁ",
+	"menueditor-ui-dialog-action-done": "ହୋଇଗଲା",
+	"menueditor-ui-dialog-action-cancel": "ନାକଚ",
+	"menueditor-ui-node-type-selector-label": "ନୋଡ୍ ପ୍ରକାର",
+	"menueditor-ui-submit": "ସାଇତିବେ",
+	"menueditor-ui-cancel": "ନାକଚ",
+	"menueditor-action-menueditsource": "ଉତ୍ସ ସମ୍ପାଦନା",
+	"menueditor-action-menuedit": "ସମ୍ପାଦନା",
+	"menueditor-ui-dialog-title": "ଉପାଦାନ ସମ୍ପାଦନା କରନ୍ତୁ",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "ମୁଖ୍ଯଶବ୍ଦ ସମ୍ପାଦନ କରନ୍ତୁ",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "ମୁଖ୍ୟ ଶବ୍ଦ",
+	"menueditor-toolbar-cancel": "ସମ୍ପାଦନ ବାତିଲ କରନ୍ତୁ",
+	"menueditor-toolbar-add-label": "ଉପାଦାନ ଯୋଡ଼ନ୍ତୁ",
+	"menueditor-ui-edit-label": "ସମ୍ପାଦନା",
+	"menueditor-ui-add-sub-element-label": "ଉପ-ଉପାଦାନ ଯୋଡ଼ନ୍ତୁ"
+}

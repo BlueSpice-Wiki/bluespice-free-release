@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-insertcategory-insertcat": "Nzirisci la catigurìa",
+	"prefs-insertcategory": "Nzirisci la catigurìa",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Cancia li catigurìi di sta pàggina",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Cancia li catigurìi di sta pàggina",
+	"bs-insertcategory-edit-dialog-button-label": "Cancia",
+	"bs-insertcategory-edit-dialog-title": "Cancia li catigurìi",
+	"bs-insertcategory-edit-dialog-button-submit": "Fattu",
+	"bs-insertcategory-edit-dialog-button-cancel": "Annulla"
+}

@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"আফতাবুজ্জামান",
+			"জয়শ্রীরাম সরকার"
+		]
+	},
+	"enhanced-standard-uis-desc": "মিডিয়াউইকির মানক ব্যবহারকারী ইন্টারফেসের জন্য ব্যবহারকারী ইন্টারফেস প্রদান করে",
+	"enhanced-standard-uis-history-grid-header-revision-label": "পুনঃপরীক্ষা",
+	"enhanced-standard-uis-history-grid-header-author-label": "পরিবর্তন করেছেন",
+	"enhanced-standard-uis-history-grid-header-size-label": "আকার",
+	"enhanced-standard-uis-history-grid-header-summary-label": "সারাংশ",
+	"enhanced-standard-uis-history-grid-header-tags-label": "ট্যাগসমূহ",
+	"enhanced-standard-uis-history-grid-header-undo-title": "পূর্বাবস্থা",
+	"enhanced-standard-uis-history-grid-header-hide-revision-title": "সংস্করণ লুকান",
+	"enhanced-standard-uis-history-compare-tool-title": "সংস্করণ তুলনা করুন",
+	"enhanced-standard-uis-history-grid-header-diff-label": "পার্থক্য",
+	"enhancedallpages": "সব পাতা",
+	"enhanced-standard-uis-allpages-paginator-first": "প্রথম",
+	"enhanced-standard-uis-allpages-paginator-previous": "পূর্ববর্তী",
+	"enhanced-standard-uis-allpages-paginator-next": "পরবর্তী",
+	"enhanced-standard-uis-allpages-paginator-last": "সর্বশেষ",
+	"enhanced-standard-uis-allpages-redirect-title": "পুনর্নির্দেশ",
+	"enhanced-standard-uis-allpages-filter-results-label": "$1টি {{PLURAL:$1|ফলাফল}} পাওয়া গেছে",
+	"enhanced-standard-uis-filelist-grid-preview-title": "প্রাকদর্শন",
+	"enhanced-standard-uis-filter-results-label": "$1টি {{PLURAL:$1|ফলাফল}} পাওয়া গেছে",
+	"enhanced-standard-uis-allpages-redirect-label": "$1 (পুনর্নির্দেশ)",
+	"enhancedspecialpages": "বিশেষ পাতাসমূহ"
+}

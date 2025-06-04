@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-tagcloud-desc": "Prikaže različne oblake oznak",
+	"bs-tagcloud-error-tagtype": "Predložena vrednost »$1« ni veljavna shramba.",
+	"bs-tagcloud-error-tagrenderer": "Predložena vrednost »$1« ni veljaven upodabljalnik.",
+	"bs-tagcloud-tag-tagcloud-name": "Oblak oznak",
+	"bs-tagcloud-tag-tagcloud-title": "Oblak oznak",
+	"bs-tagcloud-tag-tagcloud-desc": "Upodobi oblak oznak na podlagi kategorij ali iskalnih izrazov",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Vrsta",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "Izberite, kako naj bo prikazan oblak oznak",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Besedilo",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Seznam",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "Shramba",
+	"bs-tagcloud-tag-tagcloud-attr-store-help": "Izberite, kateri podatki naj se uporabijo",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Kategorije",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Iskalni izrazi",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Širina",
+	"bs-tagcloud-tag-tagcloud-attr-width-help": "Širina oblaka oznak v odstotkih",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Prikaži število",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Prikaž število predmetov v oklepajih",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Najmanjša velikost pisave",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Velikost pisave za vnos z najmanj predmeti",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Največja velikost pisave",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Velikost pisave za vnos z največ predmeti",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Izključi strani",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "V oblaku oznak ne prikaži teh strani. Za več strani uporabite seznam, ločen z vejico, npr. »Glavna stran, Test, MojaStran«.",
+	"bs-tagcloud-droplet-name": "Oblak oznak",
+	"bs-tagcloud-droplet-description": "Oblak oznak na podlagi kategorij ali iskalnih poizvedb"
+}

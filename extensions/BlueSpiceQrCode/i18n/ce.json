@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-qr-code-tag-attr-page-label": "АгӀо",
+	"bs-qr-code-tag-attr-query-label": "Параметр",
+	"bs-qr-code-tag-attr-desc-label": "Цуьнах лаьцна",
+	"bs-qr-code-tag-attr-size-label": "Барам",
+	"bs-qr-code-droplet-name": "QR-код"
+}

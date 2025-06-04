@@ -1,0 +1,55 @@
+{
+	"name": "BlueSpiceUsageTracker",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceUsageTracker",
+	"author": "Markus Glaser",
+	"descriptionmsg": "bs-usagetracker-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceUsageTracker": {
+					"className": "\\BS\\UsageTracker\\Extension",
+					"extPath": "/BlueSpiceUsageTracker"
+				}
+			}
+		}
+	},
+	"APIModules": {
+		"bs-usagetracker-store": "BS\\UsageTracker\\Api\\UsageTrackerStore"
+	},
+	"MessagesDirs": {
+		"BlueSpiceUsageTracker": [
+			"i18n"
+		]
+	},
+	"TestAutoloadNamespaces": {
+		"BS\\UsageTracker\\Tests\\": "tests/phpunit/",
+		"BlueSpice\\UsageTracker\\Tests\\": "tests/phpunit/"
+	},
+	"AutoloadNamespaces": {
+		"BS\\UsageTracker\\": "src/",
+		"BlueSpice\\UsageTracker\\": "src/"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "BS\\UsageTracker\\Hook\\LoadExtensionSchemaUpdates\\AddUsageTrackerTable::callback",
+		"BSUsageTrackerRegisterCollectors": [
+			"BlueSpice\\UsageTracker\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfCategories::callback",
+			"BlueSpice\\UsageTracker\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfUsersPerGroup::callback",
+			"BlueSpice\\UsageTracker\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfPagesByPageProperty::callback",
+			"BlueSpice\\UsageTracker\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfPageContentModels::callback"
+		]
+	},
+	"JobClasses": {
+		"usageTrackerCollectJob": "BS\\UsageTracker\\Jobs\\UsageTrackerCollectJob"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

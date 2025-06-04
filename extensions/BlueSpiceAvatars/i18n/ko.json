@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"HDNua",
+			"Hwangjy9",
+			"Tyey",
+			"Ykhwong",
+			"아라"
+		]
+	},
+	"bs-avatars-pref-generator": "생성자:",
+	"bs-avatars-pref-userimage-img-alt": "현재 사용자 그림",
+	"bs-avatars-upload-complete": "사진이 업로드되었습니다.",
+	"bs-avatars-generate-complete": "새 아바타가 만들어졌습니다.",
+	"bs-avatars-upload-label": "사진",
+	"bs-avatars-generate-new-label": "새 아바타 만들기",
+	"bs-avatars-file-upload-fieldset-title": "새 이미지 올리기",
+	"bs-avatars-auto-generate-fieldset-title": "아바타 자동 생성",
+	"apihelp-bs-avatars-tasks-summary": "사용자 아바타의 업로드, 생성, 설정",
+	"bs-avatars-tag-profileimage-error-invalidusername": "\"username\" 변수는 필수이며 유효한 사용자 이름이 포함되어야 합니다",
+	"bs-avatars-upload-button": "업로드",
+	"bs-avatars-generate-button": "생성",
+	"bs-avatars-generic-cancel": "취소"
+}

@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Movses",
+			"NataChe",
+			"Samflint",
+			"Ата"
+		]
+	},
+	"bs-whoisonline-desc": "Виводить список користувачів, які зараз онлайн",
+	"bs-whoisonline-nousers": "Ніхто не ввійшов у систему.",
+	"bs-whoisonline-widget-title": "Хто на сайті?",
+	"prefs-whoisonline": "Хто на сайті?",
+	"bs-whoisonline-pref-limitcount": "Максимальна кількість показаних користувачів:",
+	"bs-whoisonline-pref-orderby": "Впорядкувати за:",
+	"bs-whoisonline-pref-orderby-time": "Час безперервної робити:",
+	"bs-whoisonline-pref-orderby-name": "Ім'я",
+	"bs-whoisonline-collection-type-userlogin": "Ім'я користувача",
+	"bs-whoisonline-collection-var-login": "Увійти",
+	"bs-whoisonline-statistics-report-login-duration": "Тривалість входу",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Тривалість входу (с)",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Показує кількість користувачів, які увійшли протягом останніх 10 хвилин",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Лічильник тих, хто в мережі",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Показує всіх користувачів, які ввійшли в систему протягом останніх 10 хвилин. Коли користувач наводить курсор на пов’язане посилання, результатом є спливаюча підказка",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Спливаюче вікно «Хто в мережі»"
+}

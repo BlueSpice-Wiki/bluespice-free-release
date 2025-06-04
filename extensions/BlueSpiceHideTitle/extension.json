@@ -1,0 +1,81 @@
+{
+	"name": "BlueSpiceHideTitle",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceHideTitle",
+	"author": [
+		"Markus Glaser",
+		"Peter Boehm"
+	],
+	"descriptionmsg": "bs-hidetitle-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceHideTitle": {
+					"className": "\\BlueSpice\\HideTitle\\Extension",
+					"extPath": "/BlueSpiceHideTitle"
+				}
+			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"PluginModules": [
+				"ext.bluespice.hideTitle.visualEditorPlugin"
+			]
+		},
+		"BlueSpiceHideTitle": {
+			"CssSelectorModules": {
+				"default": {
+					"class": "\\BlueSpice\\HideTitle\\DefaultCssSelectorModule"
+				}
+			}
+		}
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\HideTitle\\": "src/"
+	},
+	"MessagesDirs": {
+		"BlueSpiceHideTitle": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"HideTitleMagic": "languages/HideTitle.i18n.magic.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.hidetitle.styles": {
+			"class": "\\BlueSpice\\HideTitle\\ResourceLoader\\AddResources"
+		},
+		"ext.bluespice.hideTitle.visualEditorPlugin": {
+			"scripts": [
+				"bs.hidetitle/ui/plugin/MWMetaDialog.js",
+				"bs.hidetitle/dm/BSHideTitleMetaItem.js",
+				"bluespice.hideTitle.visualEditorPlugin.js"
+			],
+			"messages": [
+				"bs-hidetitle-ve-dialog-meta-settings-showtitle",
+				"bs-hidetitle-ve-dialog-meta-settings-hidetitle",
+				"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label",
+				"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceHideTitle/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "\\BlueSpice\\HideTitle\\Hook\\BeforePageDisplay\\AddModules::callback",
+		"GetDoubleUnderscoreIDs": "\\BlueSpice\\HideTitle\\Hook\\GetDoubleUnderscoreIDs\\AddHideTitle::callback",
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\HideTitle\\Hook\\BSUsageTrackerRegisterCollectors\\AddHideTitleTag::callback",
+		"OutputPageBodyAttributes": "\\BlueSpice\\HideTitle\\Hook\\OutputPageBodyAttributes\\HideTitleBodyClass::onOutputPageBodyAttributes"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

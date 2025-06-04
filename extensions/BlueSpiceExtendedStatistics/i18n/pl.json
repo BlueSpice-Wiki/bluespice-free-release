@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"Rail",
+			"Railfail536",
+			"WaldiSt"
+		]
+	},
+	"bs-statistics-desc": "Moduł statystyki BlueSpice",
+	"extendedstatisticssnapshots": "Migawki",
+	"bs-statistics-datasource-label": "Źródło danych",
+	"bs-statistics-targets-label": "Cele",
+	"bs-statistics-paging-page-size": "Rozmiar strony",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorie",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dzień",
+	"bs-statistics-aggregated-report-filter-interval-week": "Tydzień",
+	"bs-statistics-aggregated-report-filter-interval-month": "Miesiąc",
+	"bs-statistics-aggregated-report-filter-interval-year": "Rok",
+	"bs-statistics-aggregated-report-filter-namespace": "Przestrzeń nazw",
+	"bs-statistics-aggregated-report-filter-namespaces": "Przestrzenie nazw",
+	"bs-statistics-aggregated-report-filter-page": "Strona",
+	"bs-statistics-aggregated-report-filter-user": "Użytkownik",
+	"bs-statistics-aggregated-report-filter-user-multi": "Użytkownicy",
+	"bs-statistics-aggregated-report-error": "Wystąpił błąd!",
+	"bs-statistics-ve-progress-attr-width-label": "Szerokość",
+	"bs-statistics-droplet-progress-name": "Postęp"
+}

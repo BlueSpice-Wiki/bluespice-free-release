@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"bs-qr-code-extension-description": "Visar en QR-kod med en länk till den nuvarande sidan i verktygsfältet.",
+	"bs-qr-code-action-qr-code-text": "QR-kod",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-kod",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-kod för $1",
+	"apihelp-bs-qr-code-summary": "Hämta QR-kod som base64 data-URI för en sida"
+}

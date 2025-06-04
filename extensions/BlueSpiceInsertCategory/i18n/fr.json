@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"JLTRY",
+			"Thibaut120094",
+			"Urhixidur",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-insertcategory-desc": "Boîte de dialogue pour entrer un lien de catégorie",
+	"bs-insertcategory-insertcat": "Insérer une catégorie",
+	"prefs-insertcategory": "Insérer une catégorie",
+	"bs-insertcategory-pref-withparents": "Insérer une catégorie avec ses parents",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Modifier les catégories de cette page",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Modifier les catégories de cette page",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Ouvrir le dialogue pour modifier les catégories de cette page",
+	"bs-insertcategory-edit-dialog-button-label": "Modifier",
+	"bs-insertcategory-edit-dialog-title": "Modifier les catégories",
+	"bs-insertcategory-edit-dialog-button-submit": "Fait",
+	"bs-insertcategory-edit-dialog-button-cancel": "Annuler",
+	"bs-insertcategory-edit-dialog-input-label": "Catégories attribuées",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Catégories implicites",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Ces catégories ne sont pas définies dans le contenu en wikicode de la page. Très vraisemblablement, elles sont définies depuis un modèle.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Impossible de récupérer les catégories de page",
+	"bs-insertcategory-no-categories": "Aucune catégorie affectée",
+	"bs-insertcategory-edit-dialog-tree-view": "Afficher toutes les catégories",
+	"bs-insertcategory-pref-withparents-help": "Ajoute à la fois la catégorie elle-même et ses catégories parentes à la page",
+	"bs-insertcategory-pref-uploadintegration": "Utiliser les catégories de pages dans la boîte de dialogue de téléchargement",
+	"bs-insertcategory-pref-uploadintegration-help": "Définit les catégories de pages comme option par défaut dans la boîte de dialogue de téléchargement"
+}

@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"bs-usermanager-desc": "Schnettschtäll för Metmaacher ze verwallde: derbeidonn, ändere, fottschmiiße.",
+	"bs-usermanager-idnotexist": "Heh dä Metmaacher jidd_et nit.",
+	"bs-usermanager-invalid-pwd": "Dat Paßwoot jeiht nit.",
+	"bs-usermanager-invalid-email-gen": "De Addräß för de <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i> es onjöltesch.",
+	"bs-usermanager-label": "Metmaacher verwallde",
+	"bs-usermanager-user-exists": "Ene metmaacher met däm Nahme jiddet alt.",
+	"bs-usermanager-headerusername": "Metmaacher_Nahme",
+	"bs-usermanager-headerrealname": "Der „reeschteje“ Nahme",
+	"bs-usermanager-headeremail": "De <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i>-Adräß",
+	"bs-usermanager-headergroups": "Jroppe",
+	"bs-usermanager-titleadduser": "Donn ene Metmaacher derbei",
+	"bs-usermanager-titleeditdetails": "Donn ene Metmaacher ändere",
+	"bs-usermanager-labelnewpassword": "Et Paßwoot",
+	"bs-usermanager-labelpasswordcheck": "Norr_ens dat Paßwoot",
+	"bs-usermanager-no-self-desysop": "Do kann der sällver nit et Wikki_Köhbeß_Rääsch fott nämme."
+}

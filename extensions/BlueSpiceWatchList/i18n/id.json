@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rachmat.Wahidi",
+			"Rachmat04",
+			"Syman51",
+			"Veracious"
+		]
+	},
+	"bs-watchlist-tag-watchlist-desc": "Tampilkan artikel yang memiliki perubahan baru terkini dan dalam pantauan Anda.",
+	"bs-watchlist-ve-watchlistinspector-title": "Daftar pantauan",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Jumlah",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Bantuan hitung",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Maksimal panjang judul",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Bantuan maksimal panjang judul",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Minta",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Minta bantuan",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Nama halaman",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Waktu",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Nama halaman bantuan",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Bantuan waktu",
+	"bs-watchlist-droplet-name": "Daftar pantauan"
+}

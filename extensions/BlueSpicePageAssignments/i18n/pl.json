@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"Msz2001",
+			"Rail",
+			"Railfail536",
+			"WaldiSt"
+		]
+	},
+	"bs-pageassignments-api-error": "Wystąpił błąd",
+	"bs-pageassignments-api-error-no-page": "Nie określono strony",
+	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|przypisał|przypisała}} stronę „$3” do {{GENDER:$4|użytkownika|użytkowniczki}} „$4”",
+	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|usunął|usunęła}} przypisanie strony „$3” do {{GENDER:$4|użytkownika|użytkowniczki}} „$4”",
+	"bs-pageassignments-notification-reason": "Powody tego powiadomienia:",
+	"bs-pageassignments-notification-reason-group": "Należysz do {{PLURAL:$1|tej grupy|tych grup}}: $2",
+	"bs-pageassignments-assignee-special-everyone-label": "Wszyscy",
+	"bs-pageassignments-assignee-type-everyone": "Wszyscy",
+	"bs-pageassignments-assignee-type-user": "Użytkownik",
+	"bs-pageassignments-assignee-type-group": "Grupa",
+	"bs-pageassignments-collection-var-namespacename": "Przestrzeń nazw",
+	"bs-pageassignments-collection-var-assignedpages": "Przypisane strony",
+	"bs-pageassignments-collection-var-unassignedpages": "Nieprzypisane strony",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Liczba stron",
+	"bs-pageassignments-notification-pagereview-body": "$1 ocenił stronę $2 ."
+}

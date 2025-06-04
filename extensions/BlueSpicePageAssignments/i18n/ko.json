@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jerrykim306",
+			"Nuevo Paso",
+			"Suleiman the Magnificent Television",
+			"Ykhwong",
+			"Yunbj"
+		]
+	},
+	"bs-pageassignments-desc": "사용자나 그룹을 페이지에 할당할 수 있게 합니다",
+	"bs-pageassignments-pref-assignedusersadditionalpermissions": "할당된 사용자의 추가 권한",
+	"bs-pageassignments-column-title": "페이지 제목",
+	"bs-pageassignments-column-assignee-type": "유형",
+	"bs-pageassignments-api-error": "오류가 발생했습니다",
+	"bs-pageassignments-api-error-no-page": "페이지가 지정되지 않음",
+	"logentry-bs-pageassignments-add-group": "$1님이 \"$4\" 그룹을 \"$3\" 문서로 {{GENDER:$2|할당했습니다}}",
+	"bs-pageassignments-notification-reason": "이 알림의 이유:",
+	"bs-pageassignments-notification-reason-user": "당신은 문서에 직접 할당되어 있습니다",
+	"bs-pageassignments-notification-reason-group": "당신은 다음 {{PLURAL:$1|그룹}}의 일원입니다: $2",
+	"prefs-pageassign": "과제",
+	"apihelp-bs-pageassignable-store-summary": "할당된 사용자의 목록을 반환합니다",
+	"apihelp-bs-mypageassignment-store-summary": "현재 사용자에 할당된 문서를 반환합니다",
+	"bs-pageassignments-assignee-special-everyone-label": "모두",
+	"bs-pageassignments-assignee-type-everyone": "모두",
+	"bs-pageassignments-assignee-type-user": "사용자",
+	"bs-pageassignments-assignee-type-group": "그룹",
+	"bs-pageassignments-group-lockdown-reason": "$1 문서에 할당되어 있지 않습니다",
+	"bs-pageassignments-collection-var-namespacename": "이름공간",
+	"bs-pageassignments-statistics-report-assigned-pages": "할당된 문서",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "할당됨",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "할당되지 않음",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "문서 수",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "할당",
+	"bs-pageassignments-header-action-edit": "편집",
+	"bs-pageassignments-header-action-delete": "삭제",
+	"bs-pageassignments-title-edit": "편집 할당",
+	"bs-pageassignments-title-delete": "과제를 삭제",
+	"bs-pageassignments-show-unassigned-pages": "할당되지 않은 페이지 표시"
+}

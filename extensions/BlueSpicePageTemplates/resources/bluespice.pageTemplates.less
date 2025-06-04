@@ -1,0 +1,85 @@
+.bs-pt-item:hover {
+	border-color: @bs-color-neutral;
+}
+
+.bs-pt-items {
+	margin-left: 2rem;
+	margin-top: 0;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+}
+
+.bs-ns-items {
+	margin-left: 2rem;
+	margin-top: 0;
+	flex-flow: row wrap;
+	position: relative;
+}
+
+.bs-pt-item {
+	cursor: pointer;
+}
+
+#bs-tag-container .card-title,
+#bs-ns-container .card-title,
+#bs-default-container .card-title {
+	margin: 0;
+	padding-top: 0;
+}
+
+#mw-content-text {
+	#bs-tag-container,
+	#bs-ns-container {
+		h3 {
+			margin-bottom: 0;
+		}
+	}
+}
+
+#bs-tag-container .row,
+#bs-ns-container .row {
+	margin-top: 0;
+}
+
+.bs-pt-item .badge {
+	margin-left: 0.5em;
+	margin-bottom: 0.25em;
+	margin-top: 0.25em;
+	float: right;
+}
+
+.bs-pt-item.empty {
+	margin-left: 2rem;
+}
+
+.bs-pt-link::before {
+	content: '\f016 ';
+	font-family: 'fontawesome';
+	margin-right: 0.2em;
+}
+
+.bs-pt-item.template::before {
+	content: '\f0f6 ';
+}
+
+#bs-pt-head {
+	label {
+		margin: 0.5em;
+	}
+}
+
+.bs-pt-sect {
+	margin-bottom: 2em;
+}
+
+#bs-default-container {
+	margin-top: 2em;
+	margin-bottom: 2.35em;
+}
+
+.template-namespace-tag-picker,
+.template-search-field {
+	display: inline-block;
+	/* Adjust the styles as needed for each element */
+}

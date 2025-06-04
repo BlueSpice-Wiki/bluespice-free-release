@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"standarddialogs-copy-page-legend": "نقل کرو",
+	"standarddialogs-page-info-close": "بند کرو",
+	"standarddialogs-page-info-general": "عمومی",
+	"standarddialogs-page-info-history": "چھیکڑی تبدیلی",
+	"standarddialogs-page-info-page-title": "عنوان",
+	"standarddialogs-page-info-page-language": "زبان",
+	"standarddialogs-page-info-page-templates": "سانچے",
+	"standarddialogs-page-info-page-external": "ٻاہرلے جوڑ",
+	"standarddialogs-move-btn": "ٹورو",
+	"standarddialogs-protect-btn": "حفاظت کرو",
+	"standarddialogs-purge-btn": "تازہ کرو",
+	"standarddialogs-btn-done": "تھی ڳیا",
+	"standarddialogs-btn-cancel": "منسوخ"
+}

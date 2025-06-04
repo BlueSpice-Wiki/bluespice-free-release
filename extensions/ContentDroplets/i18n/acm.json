@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"MRidhaAJ"
+		]
+	},
+	"contentdroplets-droplet-text-box-warning": "رسالة تحذير",
+	"contentdroplets-droplet-text-box-important": "رساله مهمه",
+	"contentdroplets-droplet-text-box-tip": "تلميح",
+	"contentdroplets-droplet-text-box-neutral": "رساله",
+	"contentdroplets-category-label-media": "ميديا",
+	"contentdroplets-category-label-data": "بيانات",
+	"contentdroplets-category-label-navigation": "تصفح",
+	"contentdroplets-category-label-lists": "قوائم",
+	"contentdroplets-category-label-export": "صدر",
+	"contentdroplets-category-label-all": "كلشي",
+	"contentdroplets-droplet-icon-color-label": "لون",
+	"contentdroplet-dialog-action-close": "الغي",
+	"contentdroplet-dialog-action-insert": "حط",
+	"contentdroplets-droplet-code-name": "كود"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-readers-desc": "Pravi spisak ljudi koji su pročitali stranicu",
+	"prefs-readers": "Čitaoci",
+	"bs-readers-header-username": "Korisničko ime",
+	"bs-readers-header-ts": "Datum",
+	"bs-readers-header-page": "Stranica",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Čitate}} stranicu $1 na $2",
+	"bs-readers-header-revision-id": "ID izmene",
+	"bs-readers-header-revision-date": "Datum izmene"
+}

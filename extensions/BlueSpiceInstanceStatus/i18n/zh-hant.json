@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arielyurusova",
+			"Winston Sung"
+		]
+	},
+	"instancestatus": "實例狀態",
+	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice版本",
+	"bs-instancestatus-instance-status-user-quota-label": "使用者配額",
+	"bs-instancestatus-instance-status-created-label": "實例建立於",
+	"bs-instancestatus-instance-status-no-info": "無法使用",
+	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice聯絡人",
+	"bs-instancestatus-overview-loader": "正在收集wiki資訊…",
+	"bs-instancestatus-instance-status-main-label": "綜合"
+}

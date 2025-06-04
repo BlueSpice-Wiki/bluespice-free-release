@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"menueditor-desc": "Grafični urejevalnik strani menijev",
+	"menueditor-ui-menu-wiki-link-label": "Viki povezava",
+	"menueditor-ui-menu-wiki-link-label-edit": "Uredi viki povezavo",
+	"menueditor-ui-menu-wiki-link-help": "Povezava na viki stran",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Povezava",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Uredi povezavo",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Specifikacija povezave.<br>Cilj je lahko:<ul><li>ključ sporočila, ki se razreši na ime strani</li><li>zunanja povezava</li><li>ime strani v vikiju</li><li>interviki povezava</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Besedilo ali ključ sporočila",
+	"menueditor-ui-menu-raw-text-label-edit": "Uredi besedilo ali ključ sporočila",
+	"menueditor-ui-menu-keyword-label": "Ključna beseda",
+	"menueditor-ui-menu-keyword-label-edit": "Uredi ključno besedo",
+	"menueditor-ui-menu-keyword-help": "Ena od razpoložljivih '''ključnih besed''', ki bodo prikazale ustrezni gradnik",
+	"menueditor-ui-form-field-keyword": "Ključna beseda",
+	"menueditor-ui-form-field-text": "Besedilo ali ključ sporočila",
+	"menueditor-ui-form-field-target": "Cilj povezave",
+	"menueditor-ui-form-field-label": "Oznaka povezave",
+	"menueditor-ui-dialog-action-done": "Končano",
+	"menueditor-ui-dialog-action-cancel": "Prekliči",
+	"menueditor-ui-node-type-selector-label": "Vrsta vozlišča",
+	"menueditor-ui-submit": "Shrani",
+	"menueditor-ui-cancel": "Prekliči",
+	"menueditor-ui-redlink-notice": "Ta meni še ne obstaja!",
+	"menueditor-action-menueditsource": "Uredi vir",
+	"menueditor-action-menuedit": "Uredi",
+	"menueditor-ui-dialog-title": "Uredi element",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Uredi ključno besedo",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Ključna beseda",
+	"menueditor-toolbar-cancel": "Prekliči urejanje",
+	"menueditor-toolbar-add-label": "Dodaj element",
+	"menueditor-ui-edit-label": "Uredi",
+	"menueditor-ui-add-sub-element-label": "Dodaj podelement",
+	"menueditor-footerlinks-banner-text": "Nekatere povzave lahko samodejno dodajo razširitve. Prosimo, preverite konfiguracijo razširitve, da izveste več."
+}

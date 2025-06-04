@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"filterspecialpages-desc": "插入欄位來篩選在[{{canonicalurl:Special:SpecialPages}} Special:特殊頁面]的項目。",
+	"filterspecialpages-hint-label": "尋找頁面"
+}

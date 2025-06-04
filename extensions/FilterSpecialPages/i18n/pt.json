@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"filterspecialpages-desc": "Insere um campo para filtrar entradas com [{{canonicalurl:Special:SpecialPages}} Especial:Páginas especiais].",
+	"filterspecialpages-hint-label": "Encontrar página"
+}

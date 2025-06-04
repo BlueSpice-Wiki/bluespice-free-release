@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"AVIADOR",
+			"Alberrg",
+			"Astroemi",
+			"DiegoAmbrocio",
+			"Fitoschido",
+			"Jakeukalane",
+			"Macofe"
+		]
+	},
+	"bs-readers-desc": "Crea una lista de las personas que leen una página",
+	"prefs-readers": "Lectores",
+	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Lector|Lectora}}|Lectores}}",
+	"readers-user": "Páginas {{GENDER:$1|leídas}} por: $1",
+	"readers": "Lectores de \"$1\"",
+	"bs-readers-contentactions-label": "Mostrar lectores",
+	"bs-readers-pagenotexists": "No existe la página.",
+	"bs-readers-pref-active": "Activar lectores",
+	"bs-readers-emptyinput": "No se proporcionó ninguna página.",
+	"bs-readers-header-username": "Nombre de usuario",
+	"bs-readers-header-readerspath": "Lector",
+	"bs-readers-header-ts": "Fecha",
+	"bs-readers-header-page": "Página",
+	"apihelp-bs-readers-data-store-summary": "Obtener información del lector de una página específica.",
+	"apihelp-bs-readers-tasks-summary": "Proporciona operaciones comunes para los lectores",
+	"action-viewreaders": "ver los lectores de páginas",
+	"action-viewrevisionreaders": "ver los lectores de las revisiones de una sola página",
+	"right-viewreaders": "Ver los lectores de una página",
+	"right-viewrevisionreaders": "Ver los lectores de las revisiones de una sola página",
+	"bs-readers-header-read-by": "Leído por",
+	"bs-readers-header-revision-id": "Identificación de la revisión",
+	"bs-readers-header-revision-date": "Fecha de revisión",
+	"bs-readers-header-read-on": "Leída el",
+	"revisionreaders": "Lectores por revisión $1",
+	"bs-readers-info-dialog": "Lectores de esta página"
+}

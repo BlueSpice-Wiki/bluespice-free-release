@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Kizule",
+			"Milicevic01",
+			"Zoranzoki21",
+			"Сербијана",
+			"Aca"
+		]
+	},
+	"bs-avatars-desc": "Пружа генеричке и појединачне корисничке слике",
+	"bs-avatars-pref-generator": "Генератор:",
+	"bs-avatars-pref-userimage-img-alt": "Ваша тренутна корисничка слика",
+	"bs-avatars-upload-complete": "Слика је отпремљена.",
+	"bs-avatars-generate-complete": "Нови аватар је креиран.",
+	"bs-avatars-upload-label": "Слика",
+	"bs-avatars-generate-new-label": "Генериши нови аватар",
+	"bs-avatars-file-upload-fieldset-title": "Отпреми нову слику",
+	"bs-avatars-auto-generate-fieldset-title": "Аутоматско генерисање аватара",
+	"apihelp-bs-avatars-tasks-summary": "Отпремање, генерисање и постављање кориснике слике",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Параметар \"username\" је препоручен и мора да садржи валидно корисничко име.",
+	"bs-avatars-generic-cancel": "Откажи"
+}

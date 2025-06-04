@@ -1,0 +1,70 @@
+{
+	"name": "BlueSpiceArticleInfo",
+	"version": "5.1.0",
+	"license-name": "GPL-3.0-only",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceArticleInfo",
+	"author": [
+		"Markus Glaser",
+		"Stephan Muggli"
+	],
+	"descriptionmsg": "bs-articleinfo-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceArticleInfo": {
+					"className": "\\BlueSpice\\ArticleInfo\\Extension",
+					"extPath": "/BlueSpiceArticleInfo"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"ArticleInfoCheckRevisionInterval": "\\BlueSpice\\ArticleInfo\\ConfigDefinition\\CheckRevisionInterval::getInstance"
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceArticleInfo": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\ArticleInfo\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\ArticleInfo\\Tests\\": "tests/phpunit/"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"ArticleInfoCheckRevisionInterval": {
+			"value": 10,
+			"descriptionmsg": "bs-articleinfo-pref-checkrevisioninterval-label",
+			"public": true
+		}
+	},
+	"ResourceModules": {
+		"ext.bluespice.articleinfo.general": {
+			"scripts": [
+				"bluespice.articleInfo.general.js"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceArticleInfo/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "\\BlueSpice\\ArticleInfo\\Hook\\BeforePageDisplay\\AddModules::callback",
+		"BsAdapterAjaxPingResult": "\\BlueSpice\\ArticleInfo\\Hook\\BsAdapterAjaxPingResult\\HandleArticleInfo::callback"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

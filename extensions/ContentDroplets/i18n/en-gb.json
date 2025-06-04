@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piano1forte2",
+			"Reedy"
+		]
+	},
+	"contentdroplets-droplet-text-box-success-desc": "Adds coloured panel for a success note",
+	"contentdroplets-droplet-text-box-warning-desc": "Adds coloured panel for a warning note",
+	"contentdroplets-droplet-text-box-important-desc": "Adds coloured panel for an important note",
+	"contentdroplets-droplet-text-box-note-desc": "Adds coloured panel for a note",
+	"contentdroplets-droplet-text-box-tip-desc": "Adds coloured panel for a tip",
+	"contentdroplets-droplet-icon-color-label": "Colour"
+}

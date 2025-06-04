@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"standarddialogs-copy-page-new": "Uđđâ siijđo nommâ",
+	"standarddialogs-page-info-page-language": "Kielâ",
+	"standarddialogs-page-info-page-templates": "Myenstereh",
+	"standarddialogs-page-info-page-categories": "Luokah",
+	"standarddialogs-page-info-page-images": "Koveh",
+	"standarddialogs-new-page-title": "Räähti uđđâ siijđo",
+	"standarddialogs-new-page-label": "Sijđonommâ",
+	"standarddialogs-create-button-new-page-text": "Uđđâ sijđo",
+	"standarddialogs-create-button-new-page-title": "Räähti uđđâ siijđo",
+	"standarddialogs-delete-btn": "Siho",
+	"standarddialogs-btn-cancel": "Jooskâ"
+}

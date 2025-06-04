@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"bs-avatars-desc": "Dèje fote genereche e individuale de l'utende",
+	"bs-avatars-pref-generator": "Generatore:",
+	"bs-avatars-pref-userimage-img-alt": "L'immaggina toje de mò",
+	"bs-avatars-upload-complete": "L'immaggine ha state carecate.",
+	"bs-avatars-generate-complete": "'N'avatar nuéve ha state generate.",
+	"bs-avatars-upload-label": "Fote",
+	"bs-avatars-generate-new-label": "Genere 'nu stemme nuève",
+	"bs-avatars-file-upload-fieldset-title": "Fote carecate",
+	"bs-avatars-auto-generate-fieldset-title": "Stemme auto generate",
+	"apihelp-bs-avatars-tasks-summary": "Carecamende, generazione e 'mbostazione de l'avatar de l'utende",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Parametre \"username\" jè richieste e adda tenè 'nu nome utende valide",
+	"bs-avatars-pref-generator-help": "L'immaggine avatar jè generate quanne 'n'utende non ge careche 'na fote d'u profile. InstantAvatar: genere 'n'immaggine avatar ca se base sus a l'ause de le iniziale d'u nome reale o de le cambe d'u nome utende. Identicon: genere 'n'immaggine avatar ca se base sus a le stuèzze de l'ID de l'utende."
+}

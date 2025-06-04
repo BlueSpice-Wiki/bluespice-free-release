@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piramidion",
+			"Vlad5250"
+		]
+	},
+	"bs-bluespiceabout-desc": "Інформація про BlueSpice.",
+	"bs-bluespiceabout-about-bluespice": "Про BlueSpice",
+	"bluespiceabout": "Про BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "перегляд спеціальної сторінки «{{int:bs-bluespiceabout-about-bluespice}}»",
+	"right-bluespiceabout-viewspecialpage": "доступ до спеціальної сторінки [[Special:BlueSpiceAbout]]"
+}

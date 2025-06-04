@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-pagesvisited-desc": "Forni un lista personalisate del ultime paginas visitate",
+	"prefs-pagesvisited": "Paginas visitate",
+	"bs-pagesvisited-widget-title": "Paginas visitate",
+	"bs-pagesvisited-error-nsnotvalid": "Le spatio{{PLURAL:$1||s}} de nomines <code>$2</code> non es valide.",
+	"bs-pagesvisited-pref-widgetlimit": "Limite de entratas:",
+	"bs-pagesvisited-pref-widgetns": "Spatios de nomines:",
+	"bs-pagesvisited-pref-widgetsortodr": "Ordinar per:",
+	"bs-pagesvisited-pref-sort-time": "Hora",
+	"bs-pagesvisited-pref-sort-pagename": "Titulo",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Monstra un lista de paginas recentemente visitate. iste lista pote esser restringite per parametros.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Paginas visitate",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Numero",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Fixar le numero de paginas monstrate in le lista",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Longitude maximal del titulo",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Fixar le numero maximal de characteres ante que un titulo es truncate",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Ordine",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Fixar le ordine in le qual le paginas es monstrate",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Spatios de nomines",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Monstrar solmente le paginas de iste spatios de nomines",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Hora",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nomine de pagina",
+	"bs-pagesvisited-droplet-name": "Paginas visitate",
+	"bs-pagesvisited-droplet-description": "Lista con paginas visitate",
+	"bs-pagesvisited-label-anon-user": "Pro vider le paginas que tu ha visitate, per favor aperi session a tu conto"
+}

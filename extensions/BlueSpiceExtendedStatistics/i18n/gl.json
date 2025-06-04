@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"ArenaL5",
+			"Banjo",
+			"Elisardojm",
+			"Iváns",
+			"Xabier Cid"
+		]
+	},
+	"bs-statistics-desc": "Módulo de estatísticas para BlueSpice",
+	"bs-statistics-aggregated-report-filter-interval-day": "Día",
+	"bs-statistics-aggregated-report-filter-interval-week": "Semana",
+	"bs-statistics-aggregated-report-filter-interval-month": "Mes",
+	"bs-statistics-aggregated-report-filter-interval-year": "Ano",
+	"bs-statistics-aggregated-report-filter-page": "Páxina"
+}

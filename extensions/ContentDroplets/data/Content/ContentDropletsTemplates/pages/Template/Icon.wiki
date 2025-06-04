@@ -1,0 +1,1 @@
+<span {{#ifeq:{{#sub:{{{1|bi bi-clock}}}|0|2}}|bi|class="{{{1|bi bi-clock}}}"|}} style="{{#if:{{{2|}}}|font-size:{{{2|}}};|}}{{#if:{{{3|}}}|color:{{{3|}}};|}}{{#if:{{{4|}}}|vertical-align:{{{4|}}};|vertical-align:middle;}}>{{#ifeq:{{#sub:{{{1|}}}|0|2}}|fa|{{#fas:{{{1|}}}}}|}}</span>

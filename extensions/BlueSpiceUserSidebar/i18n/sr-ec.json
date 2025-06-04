@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Kizule"
+		]
+	},
+	"bs-usersidebar-desc": "Прилагодљив мени за личну навигацију",
+	"bs-edit-user-mm-link-text": "Измени кориснички мени",
+	"bs-edit-user-mm-link-title": "Измени кориснички мени",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Измени кључну реч",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Кључна реч",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Измени кључну реч",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Кључна реч"
+}

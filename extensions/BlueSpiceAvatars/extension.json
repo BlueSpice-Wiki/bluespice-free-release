@@ -1,0 +1,131 @@
+{
+	"name": "BlueSpiceAvatars",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceAvatars",
+	"author": [
+		"Marc Reymann",
+		"Patric Wirth"
+	],
+	"descriptionmsg": "bs-avatars-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0",
+			"UserProfile": "*"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceAvatars": {
+					"className": "\\BlueSpice\\Avatars\\Extension",
+					"extPath": "/BlueSpiceAvatars"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"AvatarsGenerator": "\\BlueSpice\\Avatars\\ConfigDefinition\\AvatarsGenerator::getInstance"
+			},
+			"TagRegistry": {
+				"profileimage": "\\BlueSpice\\Avatars\\Tag\\ProfileImage"
+			}
+		},
+		"BlueSpicePrivacy": {
+			"Handlers": [
+				"\\BlueSpice\\Avatars\\Privacy\\Handler"
+			]
+		},
+		"BlueSpiceAvatars": {
+			"AvatarGeneratorRegistry": {
+				"Identicon": "\\BlueSpice\\Avatars\\AvatarGenerator\\Identicon::factory",
+				"InstantAvatar": "\\BlueSpice\\Avatars\\AvatarGenerator\\InstantAvatar::factory"
+			}
+		},
+		"UserProfile": {
+			"ImageProviders": {
+				"generate-image": {
+					"class": "\\BlueSpice\\Avatars\\UserProfile\\ImageProvider\\GenerateImage",
+					"services": [ "BSAvatarsAvatarGenerator" ]
+				},
+				"upload-image": {
+					"class": "\\BlueSpice\\Avatars\\UserProfile\\ImageProvider\\UploadImage",
+					"services": [ "BSAvatarsAvatarGenerator" ]
+				}
+			}
+		},
+		"PDFCreator": {
+			"PreProcessors": {
+				"BSProfileImage": {
+					"class": "BlueSpice\\Avatars\\Integration\\PDFCreator\\PreProcessor\\ImageProcessor",
+					"services": [
+						"UrlUtils", "UserFactory",
+						"UserProfile.ImageProviderFactory", "TitleFactory"
+					]
+				}
+			}
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"APIModules": {
+		"bs-avatars-tasks": "BSApiAvatarsTasks"
+	},
+	"MessagesDirs": {
+		"BlueSpiceAvatars": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"BSApiAvatarsTasks": "includes/api/BSApiAvatarsTasks.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\Avatars\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\Avatars\\Test\\": "tests/phpunit/"
+	},
+	"ResourceModules": {
+		"ext.bluespice.userProfile.generateImageProvider": {
+			"scripts": [
+				"ui/GenerateAvatarDialog.js",
+				"ui/GenerateProvider.js"
+			],
+			"messages": [
+				"bs-avatars-generate-button",
+				"bs-avatars-generate-new-label",
+				"bs-avatars-generic-cancel",
+				"bs-avatars-generate-description"
+			]
+		},
+		"ext.bluespice.userProfile.uploadImageProvider": {
+			"scripts": [
+				"ui/UploadImageDialog.js",
+				"ui/UploadProvider.js"
+			],
+			"messages": [
+				"bs-avatars-generic-cancel",
+				"bs-avatars-upload-button",
+				"bs-avatars-file-upload-fieldset-title"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceAvatars/resources"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"AvatarsGenerator": {
+			"value": "InstantAvatar"
+		}
+	},
+	"HookHandlers": {
+	},
+	"Hooks": {
+		"UploadVerifyFile": "\\BlueSpice\\Avatars\\Hook\\UploadVerifyFile\\PreventUserImageOverwrite::callback",
+		"SetupAfterCache": "\\BlueSpice\\Avatars\\Hook\\SetupAfterCache\\AddForeignFileRepo::callback"
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"bs-contextmenu-page-edit": "ხასჷლაშ რედაქტირაფა",
+	"bs-contextmenu-page-delete": "ხასჷლაშ ლასუა",
+	"bs-contextmenu-page-move": "ხასჷლაშ გინოღალა",
+	"bs-contextmenu-page-history": "ხასჷლაშ ისტორიაშ ძირაფა",
+	"bs-contextmenu-page-protect": "ხასჷლაშ თხილუა",
+	"bs-contextmenu-page-info": "ხასჷლაშ ინფორმაციაშ ძირაფა",
+	"bs-contextmenu-media-reupload": "ახალი ვერსიაშ ეხარგუა",
+	"bs-contextmenu-user-mail": "ელექტრონული ფოსტაშ ჯღონუა",
+	"bs-contextmenu-user-talk": "ნაჭარაშ დოტება სხუნუაშ ხასჷლას",
+	"bs-contextmenu-file-download": "ფაილიშ გჷმოხარგუა"
+}

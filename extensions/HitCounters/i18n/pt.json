@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Vitorvicentevalente",
+			"Mbs262"
+		]
+	},
+	"hitcounters-desc": "Fornece estatísticas de visualização por página",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|visualização|visualizações}}",
+	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|visualização|visualizações}} &ndash; {{PLURAL:$2|1 carácter|$2 caracteres}}",
+	"hitcounters-pop-page-line-len-id": "identificador: $3 &ndash; $1 {{PLURAL:$1|visualização|visualizações}} &ndash; {{PLURAL:$2|1 carácter|$2 caracteres}}",
+	"hitcounters-pop-page-line-id": "identificador: $3 &ndash; $1 {{PLURAL:$1|visualização|visualizações}}",
+	"popularpages": "Páginas populares",
+	"hitcounters-pageinfo-views": "Número de visualizações",
+	"hitcounters-statistics-header-views": "Ver estatísticas",
+	"hitcounters-statistics-views-total": "Total de visualizações",
+	"hitcounters-statistics-views-total-desc": "Não estão incluídas as visualizações de páginas não existentes e de páginas especiais",
+	"hitcounters-statistics-views-peredit": "Visualizações por edição",
+	"hitcounters-statistics-mostpopular": "Páginas mais visualizadas",
+	"abusefilter-edit-builder-vars-page-views": "Visualizações da página ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visualizações da página de origem ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Visualizações da página de destino ($1)"
+}

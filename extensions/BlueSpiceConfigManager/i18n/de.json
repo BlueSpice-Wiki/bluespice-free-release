@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daniel Riedmüller <daniel.riedmueller@hallowelt.com>",
+			"Hwboehm",
+			"Metalhead64",
+			"Mschlindwein",
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Vhoesl"
+		]
+	},
+	"bs-bluespiceconfigmanager-admintool-label": "Konfigurationsverwaltung",
+	"action-bluespiceconfigmanager-viewspecialpage": "die Spezialseite „{{int:bluespiceconfigmanager}}“ anzusehen",
+	"bluespiceconfigmanager": "Konfigurationsverwaltung",
+	"bs-configmanager-text": "Konfiguration",
+	"bs-configmanager-desc": "Bietet die Möglichkeit für Administratoren, das ganze Wiki mit einer einzigen Spezialseite zu konfigurieren",
+	"bs-configmanager-discardchanges": "Änderungen verwerfen?",
+	"bs-configmanager-noentry": "Keinen Eintrag gefunden",
+	"bs-configmanager-mainpath": "Anzeigemodus",
+	"bs-configmanager-search": "Suche",
+	"apihelp-bs-configmanager-tasks-summary": "Verwaltet Aufgaben",
+	"apihelp-bs-configmanager-store-summary": "Verwaltet Speicher",
+	"right-bluespiceconfigmanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:BlueSpiceConfigManager]]",
+	"log-name-bs-config-manager": "Konfigurationsverwaltungs-Logbuch",
+	"log-description-bs-config-manager": "Logbuch von Änderungen in der Konfigurationsverwaltung.",
+	"log-show-hide-bs-config-manager": "$1 Konfigurationsverwaltungs-Logbuch",
+	"logeventslist-bs-config-manager-log": "Konfigurationsverwaltungs-Logbuch",
+	"logentry-bs-config-manager-modify": "$1 änderte die Einstellung für $4 von $5 zu $6",
+	"bs-configmanager-discard-open-changes": "Es gibt nicht gespeicherte Änderungen. Offene Änderungen verwerfen?",
+	"bs-configmanager-notify-configuration-saved": "Konfiguration gespeichert"
+}

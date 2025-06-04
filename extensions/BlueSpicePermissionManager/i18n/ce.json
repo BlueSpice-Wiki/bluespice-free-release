@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-permissionmanager-header-permissions": "Магор",
+	"bs-permissionmanager-header-global": "Вики",
+	"bs-permissionmanager-btn-save-label": "Ӏалашйан",
+	"bs-permissionmanager-group-all": "йерриге",
+	"bs-permissionmanager-header-role": "Роль",
+	"bs-premissionmanager-reset-button-label": "Кхосса",
+	"bs-permissionmanager-namespace-picker": "ЦӀерийн меттиг"
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"JLTRY",
+			"Ltrlg",
+			"Pierpao",
+			"Thibaut120094",
+			"Verdy p"
+		]
+	},
+	"bs-saferedit-desc": "Fournit des avertissements quand d’autres utilisateurs sont en train de modifier la même page",
+	"bs-saferedit-user-editing": "$1{{GENDER:$1|}} {{PLURAL:$2|est|sont}} en train de modifier la page",
+	"bs-saferedit-someone-editing": "La page est en cours de modification",
+	"bs-saferedit-pref-edit-interval": "Intervalle de vérification des modifications (secondes)",
+	"bs-saferedit-pref-edit-interval-help": "Spécifie la fréquence, en secondes, à laquelle vérifier si une autre personne modifie la page (par défaut : 3 secondes)",
+	"bs-saferedit-pref-show-editinguser": "Afficher l'éditeur actuel",
+	"bs-saferedit-pref-show-editinguser-help": "Ajoute le nom de l'utilisateur qui modifie actuellement la page en haut de la page"
+}

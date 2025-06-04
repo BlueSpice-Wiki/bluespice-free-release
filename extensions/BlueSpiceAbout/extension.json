@@ -1,0 +1,131 @@
+{
+	"name": "BlueSpiceAbout",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceAbout",
+	"author": [
+		"Markus Glaser",
+		"Peter Böhm",
+		"Leonid Verhovskij"
+	],
+	"descriptionmsg": "bs-bluespiceabout-desc",
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceAbout": {
+					"className": "\\BlueSpice\\About\\Extension",
+					"extPath": "/BlueSpiceAbout"
+				}
+			},
+			"AdminToolRegistry": {
+				"bs-bluespiceabout": "BlueSpice\\About\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"bluespiceabout-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"accountselfcreate",
+						"admin",
+						"author",
+						"bot",
+						"commenter",
+						"editor",
+						"maintenanceadmin",
+						"reader",
+						"reviewer",
+						"structuremanager"
+					]
+				}
+			}
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"SpecialPages": {
+		"BlueSpiceAbout": "SpecialBlueSpiceAbout"
+	},
+	"MessagesDirs": {
+		"BlueSpiceAbout": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"BlueSpiceAboutAlias": "includes/specials/SpecialBlueSpiceAbout.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\About\\": "src/"
+	},
+	"AutoloadClasses": {
+		"SpecialBlueSpiceAbout": "includes/specials/SpecialBlueSpiceAbout.php"
+	},
+	"GroupPermissions": {
+		"*": {
+			"bluespiceabout-viewspecialpage": false
+		},
+		"user": {
+			"bluespiceabout-viewspecialpage": true
+		},
+		"sysop": {
+			"bluespiceabout-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"bluespiceabout-viewspecialpage"
+	],
+	"ResourceModules": {
+		"ext.bluespice.about.banner.newsletter": {
+			"scripts": [
+				"ext.bluespice.about.banner.newsletter.js",
+				"ui/BannerNewsletter.js"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"oojs-ui"
+			]
+		},
+		"ext.bluespice.about.banner.newsletter.styles": {
+			"styles": [
+				"ext.bluespice.about.banner.newsletter.less"
+			]
+		},
+		"ext.bluespice.about.banner.rating": {
+			"scripts": [
+				"ext.bluespice.about.banner.rating.js",
+				"ui/BannerRating.js"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"oojs-ui"
+			]
+		},
+		"ext.bluespice.about.banner.rating.styles": {
+			"styles": [
+				"ext.bluespice.about.banner.rating.less"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceAbout/resources"
+	},
+	"Hooks": {
+		"GetPreferences": "userPreference",
+		"BeforePageDisplay": "addBanner"
+	},
+	"HookHandlers": {
+		"addBanner": {
+			"class": "BlueSpice\\About\\HookHandlers\\BeforePageDisplay\\AddBanners"
+		},
+		"userPreference": {
+			"class": "BlueSpice\\About\\HookHandlers\\GetPreferences\\UserPreference"
+		}
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

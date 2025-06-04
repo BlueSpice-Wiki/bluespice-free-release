@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos"
+		]
+	},
+	"flexiskin-ui-plugin-color-settings-label": "Kolori dil ''layout''",
+	"flexiskin-ui-plugin-navbar-colors-label": "Koloro dil titulo",
+	"flexiskin-ui-plugin-colors-foreground-sidebar-primary-label": "Avana parto di latera strio (''sidebar'')",
+	"flexiskin-ui-plugin-footer-colors-label": "Kolori di pagino-pedo"
+}

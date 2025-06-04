@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Erelon",
+			"Guycn2",
+			"Ronel1",
+			"Steeve815"
+		]
+	},
+	"bs-avatars-desc": "אספקת תמונות משתמש כלליות ואישיות",
+	"bs-avatars-pref-generator": "מחולל:",
+	"bs-avatars-pref-userimage-img-alt": "תמונת המשתמש הנוכחית שלך",
+	"bs-avatars-upload-complete": "התמונה הועלתה.",
+	"bs-avatars-generate-complete": "נוצרה תמונה מייצגת חדשה.",
+	"bs-avatars-upload-label": "תמונה",
+	"bs-avatars-generate-new-label": "יצירת תמונה מייצגת חדשה",
+	"bs-avatars-file-upload-fieldset-title": "העלאת תמונה חדשה",
+	"bs-avatars-auto-generate-fieldset-title": "לחולל תמונת מייצגת אוטומטית",
+	"apihelp-bs-avatars-tasks-summary": "העלאה, חילול, והגדרה של תמונות משתמש",
+	"bs-avatars-tag-profileimage-error-invalidusername": "הפרמטר \"username\" נדרש וחייב להכיל שם משתמש תקין",
+	"bs-avatars-pref-generator-help": "התמונה המייצגת מחוללת כאשר משתמש לא מעלה תמונת פרופיל. InstantAvatar: מייצר תמונה מייצגת על סמך ראשי התיבות של השם האמיתי או של שם המשתמש. Identicon: מייצר תמונה מייצגת על סמך חלקים של מזהה המשתמש",
+	"bs-avatars-upload-button": "העלאה",
+	"bs-avatars-generate-button": "חילול",
+	"bs-avatars-generic-cancel": "ביטול",
+	"bs-avatars-generate-description": "יצירת תמונה מייצגת אוטומטית חדשה. זה יחליף לצמיתות כל תמונת פרופיל שהועלתה (אם הוגדרה)"
+}

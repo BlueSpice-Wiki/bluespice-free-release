@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-interwikilinks-label": "Interwiki-liiŋk",
+	"bs-interwikilinks-headerurl": "URL",
+	"bs-interwikilinks-titleaddinterwikilink": "Lââʹzzet interwiki-liiŋk",
+	"bs-interwikilinks-titleeditinterwikilink": "Muuʹtt interwiki-liiŋk",
+	"bs-interwikilinks-labelurl": "URL",
+	"bs-interwikilinks-titledeleteinterwikilink": "Jaukkâd interwiki-liiŋk",
+	"action-interwikilinks-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-interwikilinks-label}}\"",
+	"interwikilinks": "Interwiki-liiŋk"
+}

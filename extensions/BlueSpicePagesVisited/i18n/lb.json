@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"bs-pagesvisited-desc": "Stellt eng personaliséiert Lëscht vun de leschte besichte Säiten",
+	"prefs-pagesvisited": "Besicht Säiten",
+	"bs-pagesvisited-widget-title": "Besicht Säiten",
+	"bs-pagesvisited-pref-widgetns": "Nummraim:",
+	"bs-pagesvisited-pref-widgetsortodr": "Zortéieren no:",
+	"bs-pagesvisited-pref-sort-time": "Zäit",
+	"bs-pagesvisited-pref-sort-pagename": "Titel",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Weist eng Lëscht vu Säiten déi rezent besicht goufen. Dës Lëscht kann duerch Parametere limitéiert ginn.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Besicht Säiten",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Zuel",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Reiefolleg",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Nummraim",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Zäit",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Numm vun der Säit"
+}

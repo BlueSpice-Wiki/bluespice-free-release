@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Erelon",
+			"Ex-Diktator",
+			"Guycn2",
+			"Steeve815"
+		]
+	},
+	"bs-insertcategory-desc": "תיבת דו־שיח להוספת קישורים לקטגוריות",
+	"bs-insertcategory-insertcat": "הוספת קטגוריה",
+	"prefs-insertcategory": "הוספת קטגוריה",
+	"bs-insertcategory-pref-withparents": "הוספת קטגוריה יחד עם קטגוריות ההורה שלה",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "עריכת הקטגוריות של הדף",
+	"bs-insertcategory-edit-dialog-button-tooltip": "עריכת הקטגוריות של הדף",
+	"bs-insertcategory-edit-dialog-button-aria-label": "פתיחת תיבת דו־שיח לעריכת הקטגוריות של הדף הזה",
+	"bs-insertcategory-edit-dialog-button-label": "עריכה",
+	"bs-insertcategory-edit-dialog-title": "עריכת קטגוריות",
+	"bs-insertcategory-edit-dialog-button-submit": "סיום",
+	"bs-insertcategory-edit-dialog-button-cancel": "ביטול",
+	"bs-insertcategory-edit-dialog-input-label": "הקטגוריות שהוקצו",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "קטגוריות משתמעות",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "הקטגוריות האלו אינן מוגדרות בקוד הוויקי של הדף. הן כנראה מוגדרות בתבנית.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "לא ניתן לאחזר את קטגוריות הדף",
+	"bs-insertcategory-no-categories": "אין קטגוריות משויכות",
+	"bs-insertcategory-edit-dialog-tree-view": "הצגת כל הקטגוריות",
+	"bs-insertcategory-pref-withparents-help": "הוספת הקטגוריה עצמה וגם קטגוריות ההורה שלה",
+	"bs-insertcategory-pref-uploadintegration": "להשתמש בקטגוריות דפים בתיבת הדו־שיח להעלאה",
+	"bs-insertcategory-pref-uploadintegration-help": "הגדרת קטגוריות הדפים כאפשרות ברירת המחדל בתיבת הדו־שיח להעלאה"
+}

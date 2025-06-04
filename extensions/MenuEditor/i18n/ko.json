@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label": "위키 링크",
+	"menueditor-ui-menu-wiki-link-label-edit": "위키 링크 편집",
+	"menueditor-ui-menu-wiki-link-help": "위키 문서의 링크",
+	"menueditor-ui-menu-two-fold-link-spec-label": "링크",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "링크 편집",
+	"menueditor-ui-menu-raw-text-label": "텍스트 또는 메시지 키",
+	"menueditor-ui-menu-raw-text-label-edit": "텍스트 또는 메시지 키 편집",
+	"menueditor-ui-menu-keyword-label": "키워드",
+	"menueditor-ui-menu-keyword-label-edit": "키워드 편집",
+	"menueditor-ui-form-field-keyword": "키워드",
+	"menueditor-ui-form-field-text": "텍스트 또는 메시지 키",
+	"menueditor-ui-dialog-action-done": "완료",
+	"menueditor-ui-dialog-action-cancel": "취소",
+	"menueditor-ui-submit": "저장",
+	"menueditor-ui-cancel": "취소",
+	"menueditor-action-menueditsource": "원본 편집",
+	"menueditor-action-menuedit": "편집",
+	"menueditor-ui-dialog-title": "요소 편집",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "키워드 편집",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "키워드",
+	"menueditor-toolbar-cancel": "편집 취소",
+	"menueditor-toolbar-save": "저장"
+}

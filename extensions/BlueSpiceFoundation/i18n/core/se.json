@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
+		]
+	},
+	"bs-ns_all": "(buot)",
+	"bs-userbar_loginswitch_logout": "Čálit olggos",
+	"bs-userbar_loginswitch_login": "Čálit sisa",
+	"bs-extended-search-textfield-defaultvalue": "Oza...",
+	"bs-extended-search-textfield-tooltip": "Oza wikis",
+	"bs-navigation-contact": "Váldde oktavuođa",
+	"bs-ns": "Nammagomuvuohta",
+	"bs-graphicallist-action-close": "Gidde",
+	"bs-graphicallist-action-preview": "Ovdačájáhus",
+	"bs-notifications-agent-anon": "anonyma geavaheaddji"
+}

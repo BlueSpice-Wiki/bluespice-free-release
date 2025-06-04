@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Duke of Wikipädia",
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Juan90264"
+		]
+	},
+	"bs-usersidebar-desc": "Menu de navegação pessoal personalizável",
+	"bs-edit-user-mm-link-text": "Editar menu do usuário",
+	"bs-edit-user-mm-link-title": "Editar menu do usuário",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Editar palavra-chave",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Palavra-chave",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Editar palavra-chave",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Palavras-chave"
+}

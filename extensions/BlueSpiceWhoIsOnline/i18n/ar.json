@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alshamiri1",
+			"Meno25",
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-whoisonline-desc": "يعرض قائمة المستخدمين المتصلين بالإنترنت حاليا",
+	"bs-whoisonline-nousers": "لا أحد مسجل للدخول.",
+	"bs-whoisonline-widget-title": "من على الإنترنت؟",
+	"prefs-whoisonline": "من على الإنترنت؟",
+	"bs-whoisonline-pref-limitcount": "الحد الأقصى لعدد المستخدمين الظاهرين:",
+	"bs-whoisonline-pref-orderby": "ترتيب حسب:",
+	"bs-whoisonline-pref-maxidletime-label": "مهلة عدم الاتصال بالإنترنت (ثواني)",
+	"bs-whoisonline-pref-orderby-time": "مدة التشغيل",
+	"bs-whoisonline-pref-orderby-name": "الاسم",
+	"bs-whoisonline-pref-interval-label": "فترة التحديث (بالثواني)",
+	"bs-whoisonline-collection-type-userlogin": "تسجيل دخول المستخدم",
+	"bs-whoisonline-collection-var-login": "تسجيل الدخول",
+	"bs-whoisonline-statistics-report-login-duration": "فترة تسجيل الولوج",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "مدة تسجيل الدخول (بالثانية)",
+	"bs-whoisonline-pref-interval-help-label": "عدد الثواني التي يتم بعدها تحديث قائمة المستخدمين",
+	"bs-whoisonline-pref-maxidletime-help-label": "عدد ثواني عدم النشاط التي بعدها يتم وضع علامة على المستخدم بأنه غير متصل بالإنترنت",
+	"bs-whoisonline-tag-whoisonlinecount-description": "يظهر عدد المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "من هو على الإنترنت العد",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "يظهر كل المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق. الإخراج عبارة عن فقاعة كلامية عندما يقوم المستخدم بتمرير الماوس فوق الارتباط ذي الصلة",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "من هو على الإنترنت المنبثقة",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "عدد مرات تسجيل الدخول",
+	"bs-whoisonline-statistics-report-login-number": "تسجيل الدخول",
+	"bs-whoisonline-droplet-count-name": "عدد المستخدمين الذين قاموا بتسجيل الدخول",
+	"bs-whoisonline-droplet-count-description": "عدد المستخدمين المسجلين دخول حاليا",
+	"bs-whoisonline-droplet-popup-name": "قائمة المستخدمين الذين قاموا بتسجيل الدخول",
+	"bs-whoisonline-droplet-popup-description": "نافذة منبثقة تحتوي على قائمة بجميع المستخدمين الذين قاموا بتسجيل الدخول حاليًا"
+}

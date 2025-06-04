@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dejan Savuljesku <savuljesku@hallowelt.com>"
+		]
+	},
+	"bs-usersidebar-desc": "Customizable personal navigation menu",
+	"bs-edit-user-mm-link-text": "Edit user menu",
+	"bs-edit-user-mm-link-title": "Edit user menu",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Edit keyword",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Keyword",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Edit keyword",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Keyword"
+}

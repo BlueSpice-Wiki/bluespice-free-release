@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label": "Wiki-Link",
+	"menueditor-ui-menu-wiki-link-label-edit": "Wikilink änneren",
+	"menueditor-ui-menu-wiki-link-help": "Link op eng Wikisäit",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Link",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Link änneren",
+	"menueditor-ui-menu-raw-text-label": "Text oder e Schlëssel vun engem Message",
+	"menueditor-ui-menu-keyword-label": "Schlësselwuert",
+	"menueditor-ui-menu-keyword-label-edit": "Schlësselwuert änneren",
+	"menueditor-ui-form-field-keyword": "Schlësselwuert",
+	"menueditor-ui-form-field-text": "Text oder e Schlëssel vun engem Message",
+	"menueditor-ui-form-field-target": "Zil vum Link",
+	"menueditor-ui-form-field-label": "Etikett vum Link",
+	"menueditor-ui-dialog-action-done": "Fäerdeg",
+	"menueditor-ui-dialog-action-cancel": "Ofbriechen",
+	"menueditor-ui-submit": "Späicheren",
+	"menueditor-ui-cancel": "Ofbriechen",
+	"menueditor-ui-redlink-notice": "Dëse Menü gëtt et nach net!",
+	"menueditor-action-menueditsource": "Quelltext änneren",
+	"menueditor-action-menuedit": "Änneren",
+	"menueditor-ui-dialog-title": "Element änneren",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Schlësselwuert änneren",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Schlësselwuert",
+	"menueditor-toolbar-cancel": "Ännerung ofbriechen",
+	"menueditor-toolbar-add-label": "Element derbäisetzen",
+	"menueditor-ui-edit-label": "Änneren",
+	"menueditor-ui-add-sub-element-label": "Ënnerelement derbäisetzen",
+	"menueditor-toolbar-save": "Späicheren",
+	"menueditor-ui-cancel-confirmation": "Sidd Dir sécher, datt Dir d'Ännerung annuléiere wëllt? All net gespäichert Ännerunge gi verluer."
+}

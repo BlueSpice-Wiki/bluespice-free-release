@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-countthings-chars-label": "Miârk",
+	"bs-countthings-words-label": "Sääʹn",
+	"bs-countthings-files-label": "Teâttõõzz",
+	"bs-countthings-pages-label": "Seeid",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "miârk",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "miârk da sääʹn"
+}

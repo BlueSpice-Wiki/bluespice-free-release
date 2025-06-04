@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-watchlist-desc": "Doda gradnik in oznako nadzornega seznama",
+	"bs-watchlist-pref-sort-time": "Čas",
+	"bs-watchlist-pref-sort-title": "Naslov",
+	"bs-watchlist-tag-watchlist-desc": "Prikaže članke, ki imajo najnovejše spremembe in so na vašem nadzornem seznamu.",
+	"bs-watchlist-window-watchlist-title": "Nadzorni seznam",
+	"bs-watchlist-window-watchlist-intro": "To je pregled vseh strani na vašem nadzornem seznamu. Preklopite lahko tudi na [[Special:Watchlist|klasični nadzorni seznam]].",
+	"bs-watchlist-grid-watchlist-column-link-header": "Stran",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "Neprebrane spremembe",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "Preglej spremembe",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "Pogovorna stran",
+	"bs-watchlist-grid-watchlist-label-filter": "Filter",
+	"bs-watchlist-ve-watchlistinspector-title": "Nadzorni seznam",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Število",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Prikazano bi moralo biti število vnosov na nadzornem seznamu",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Največja dolžina naslova",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Število črk naslova, ki naj bodo prikazane. Lahko je število od 5 do 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Vrstni red",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Prikaže seznam, razvrščen po času ali imenu strani",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Ime strani",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Čas",
+	"bs-watchlist-tag-watchlist-no-user": "Spiska nadzorov ni mogoče prikazati, ker ni prijavljen noben uporabnik",
+	"bs-watchlist-tag-watchlist-no-entries": "Na straneh ni sprememb za prikaz na nadzornem seznamu",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Pomoč za ime strani",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Pomoč za čas",
+	"bs-watchlist-droplet-name": "Nadzorni seznam",
+	"bs-watchlist-droplet-description": "Zadnje spremembe strani, ki so vključene na nadzorni seznam"
+}

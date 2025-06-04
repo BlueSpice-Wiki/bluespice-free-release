@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226",
+			"Mglaser",
+			"Robby",
+			"Shirayuki",
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-countthings-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of count things extension",
+	"bs-countthings-chars-label": "Table headline for characters\n{{Identical|Character}}",
+	"bs-countthings-words-label": "Table headline for words\n{{Identical|Word}}",
+	"bs-countthings-files-label": "Table headline for files\n{{Identical|Page}}",
+	"bs-countthings-pages-label": "Table headline for pages\n{{Identical|Page}}",
+	"bs-countthings-ve-countcharacters-title": "Title for InsertMagic for Count characters",
+	"bs-countthings-ve-countarticles-title": "Title for InsertMagic for Count articles",
+	"bs-countthings-ve-countfiles-title": "Title for InsertMagic for Count files",
+	"bs-countthings-ve-countusers-title": "Title for InsertMagic for Count users",
+	"bs-countthings-ve-countthingsinspector-mode": "Description of modes for CountCharacters",
+	"bs-countthings-ve-countcharacters-mode-all": "Description of mode for CountCharacters to display all",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "Description of mode for CountCharacters to display only characters",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "Description of mode for CountCharacters to display only words",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "Description of mode for CountCharacters to display characters and words",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "Description of mode for CountCharacters to display only pages\n{{Identical|Page}}",
+	"bs-countthings-ve-countcharacters-input-label": "Label for input field to List of Pages\n{{Identical|Page}}",
+	"bs-countthings-error-no-input": "Error message that no page was provided.",
+	"bs-countthings-error-invalid-mode": "{{doc-important|Do not translate <code>chars</code>, <code>words</code> and <code>pages</code>}}\nError message that the given mode is invalid. Valid modes are <code>chars</code>, <code>words</code>, or <code>pages</code>.\n*$1 is the given mode which is invalid.",
+	"bs-countthings-error-not-exist": "Error message that the given page does not exist.\n*$1 is the page which does not exist.",
+	"bs-countthings-tag-countarticles-desc": "Used in InsertMagic extension, tag description for displays the number of pages.\n{{Related|Bs-tag-desc}}",
+	"bs-countthings-tag-countusers-desc": "Used in InsertMagic extension, tag description for displays the number of users.\n{{Related|Bs-tag-desc}}",
+	"bs-countthings-tag-countfiles-desc": "Used in InsertMagic extension, tag description for displays the number of files.\n{{Related|Bs-tag-desc}}",
+	"bs-countthings-tag-countcharacters-desc": "Used in InsertMagic extension, tag description for displays statistics of the given page content. Available configuration attribute:\n{{Related|Bs-tag-desc}}",
+	"bs-countthings-tag-countcharacters-desc-param-mode": "Description of the tag attribute <code>mode</code>, which specifies what items shall be counted on the article including the tag.",
+	"bs-countthings-droplet-articles-name": "Title of droplet for tag Count articles",
+	"bs-countthings-droplet-articles-description": "Description of droplet for tag Count articles",
+	"bs-countthings-droplet-characters-name": "Title of droplet for tag Count characters",
+	"bs-countthings-droplet-characters-description": "Description of droplet for tag Count characters",
+	"bs-countthings-droplet-files-name": "Title of droplet for tag Count files",
+	"bs-countthings-droplet-files-description": "Description of droplet for tag Count files",
+	"bs-countthings-droplet-user-name": "Title of droplet for tag Count user",
+	"bs-countthings-droplet-user-description": "Description of droplet for tag Count user"
+}

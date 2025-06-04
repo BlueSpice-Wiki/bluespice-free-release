@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"bs-statistics-desc": "Statistik-Modul fir BlueSpice",
+	"aggregatedstatistic": "Snapshot-Statistiken",
+	"extendedstatisticssnapshots": "Schnappschëss",
+	"bs-statistics-button-label-apply": "Filteren uwenden",
+	"bs-statistics-label-bar-chart": "Balkendiagramm",
+	"bs-statistics-label-line-chart": "Linnendiagramm",
+	"bs-statistics-datasource-label": "Source vun den Donnéeën",
+	"bs-statistics-targets-label": "Ziler",
+	"bs-statistics-paging-page-size": "Gréisst vun der Säit",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorien",
+	"bs-statistics-aggregated-report-filter-date-start": "Ufanksdatum",
+	"bs-statistics-aggregated-report-filter-date-end": "Schlussdatum",
+	"bs-statistics-aggregated-report-filter-interval": "Intervall",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dag",
+	"bs-statistics-aggregated-report-filter-interval-week": "Woch",
+	"bs-statistics-aggregated-report-filter-interval-month": "Mount",
+	"bs-statistics-aggregated-report-filter-interval-year": "Joer",
+	"bs-statistics-aggregated-report-filter-namespace": "Nummraum",
+	"bs-statistics-aggregated-report-filter-namespaces": "Nummraim",
+	"bs-statistics-aggregated-report-filter-page": "Säit",
+	"bs-statistics-aggregated-report-filter-user": "Benotzer",
+	"bs-statistics-aggregated-report-filter-user-multi": "Benotzer",
+	"bs-statistics-aggregated-report-error": "Et ass e Feeler geschitt!",
+	"bs-statistics-aggregated-report-loading": "Donnéeë gi gelueden...",
+	"bs-statistics-ve-progressinspector-title": "Fortschrëtt",
+	"bs-statistics-ve-progress-attr-width-label": "Breet"
+}

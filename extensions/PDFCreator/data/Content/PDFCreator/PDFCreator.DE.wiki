@@ -1,0 +1,7 @@
+== PDF Vorlagen ==
+
+Hier findest du eine Übersicht über die bestehenden PDF Vorlagen.
+Um eine Vorlage zu bearbeiten, kannst du die Seite bearbeiten.
+
+== Übersicht der Vorlagen ==
+{{Special:Prefixindex|prefix=MediaWiki:PDFCreator/|hideredirects=1|stripprefix=1}}

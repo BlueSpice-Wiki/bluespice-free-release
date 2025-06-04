@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Vlad5250"
+		]
+	},
+	"bs-statistics-desc": "Статистички модул за BlueSpice",
+	"aggregatedstatistic": "Статистика на снимките",
+	"extendedstatisticssnapshots": "Снимки",
+	"bs-statistics-button-label-apply": "Примени филтри",
+	"bs-statistics-label-bar-chart": "Столбен дијаграм",
+	"bs-statistics-label-line-chart": "Линиски дијаграм",
+	"bs-statistics-datasource-label": "Извор на податоци",
+	"bs-statistics-aggregationmode-label": "Агрегациски режим",
+	"bs-statistics-aggregationfield-label": "Агрегациско поле",
+	"bs-statistics-aggregationtype-label": "Вид на агрегација",
+	"bs-statistics-targets-label": "Цели"
+}

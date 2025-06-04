@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Recolher",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Expandir",
+	"vuejsplus-data-grid-option-sort-string-asc": "Ordenar por ordem ascendente",
+	"vuejsplus-data-grid-option-sort-string-desc": "Ordenar por ordem descendente",
+	"vuejsplus-data-grid-option-filter-string": "Procurar",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Marcada",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Desmarcada",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Neutro",
+	"vuejsplus-data-grid-option-filter-date-from-label": "Da data",
+	"vuejsplus-data-grid-option-filter-date-to-label": "Para data"
+}

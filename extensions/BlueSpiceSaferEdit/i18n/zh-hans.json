@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"GuoPC",
+			"Liuxinyu970226",
+			"佛壁灯"
+		]
+	},
+	"bs-saferedit-desc": "在其他用户编辑页面时显示警告",
+	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|正在}}{{GENDER:$1|编辑}}页面",
+	"bs-saferedit-someone-editing": "此页面正在编辑"
+}

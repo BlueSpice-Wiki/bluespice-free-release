@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"Kly",
+			"Liuxinyu970226",
+			"Willy1018",
+			"Winston Sung"
+		]
+	},
+	"bs-pagesvisited-desc": "提供最近訪問頁面的個人化清單",
+	"prefs-pagesvisited": "已造訪的頁面",
+	"bs-pagesvisited-widget-title": "已造訪的頁面",
+	"bs-pagesvisited-error-nsnotvalid": "提供的{{PLURAL:$1|命名空間|命名空間}} <code>$2</code> {{PLURAL:$1|無效|無效}}。",
+	"bs-pagesvisited-pref-widgetlimit": "項目上限：",
+	"bs-pagesvisited-pref-widgetns": "命名空間：",
+	"bs-pagesvisited-pref-widgetsortodr": "排序方式：",
+	"bs-pagesvisited-pref-sort-time": "時間",
+	"bs-pagesvisited-pref-sort-pagename": "標題",
+	"bs-pagesvisited-tag-pagesvisited-desc": "顯示近期訪問頁面的清單。清單可以透過參數來限制。",
+	"bs-pagesvisited-ve-pagesvisited-title": "已造訪的頁面",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "次數",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "設定清單中顯示的頁數",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "最大標題長度",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "設定標題的最多字元長度",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "排序",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "設定頁面的顯示順序",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "命名空間",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "僅顯示來自這些命名空間的頁面",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "時間",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "頁面名稱",
+	"bs-pagesvisited-droplet-name": "已造訪的頁面",
+	"bs-pagesvisited-droplet-description": "已造訪頁面的清單",
+	"bs-pagesvisited-label-anon-user": "若要查看您造訪過的頁面，請登入您的帳號"
+}

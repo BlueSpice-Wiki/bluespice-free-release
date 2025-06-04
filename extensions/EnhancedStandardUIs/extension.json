@@ -1,0 +1,344 @@
+{
+	"name": "EnhancedStandardUIs",
+	"version": "2.0.0",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:EnhancedStandardUIs",
+	"descriptionmsg": "enhanced-standard-uis-desc",
+	"license-name": "GPL-3.0-only",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\EnhancedStandardUIs\\": "src/"
+	},
+	"attributes": {
+		"EnhancedStandardUIs": {
+			"HistoryPagePlugins": {},
+			"AllPagesPluginModules": [],
+			"FilelistPluginModules": []
+		},
+		"BlueSpiceFoundation": {
+			"PermissionRegistry": {
+				"enhancedstandarduis-viewuncustomizedspecialpageslist": {
+					"type": "global",
+					"roles": [
+						"accountselfcreate",
+						"commenter",
+						"author",
+						"editor",
+						"reviewer",
+						"structuremanager",
+						"accountmanager",
+						"admin",
+						"bot",
+						"maintenanceadmin"
+					]
+				}
+			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"PluginModules": [
+				"ext.enhancedstandarduis.ve.fileGrid"
+			]
+		}
+	},
+	"AvailableRights": [
+		"enhancedstandarduis-viewuncustomizedspecialpageslist"
+	],
+	"GroupPermissions": {
+		"*": {
+			"enhancedstandarduis-viewuncustomizedspecialpageslist": true
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"EnhancedAllPagesAlias": "languages/EnhancedAllPages.i18n.alias.php",
+		"EnhancedFilelist": "languages/EnhancedFilelist.i18n.alias.php",
+		"EnhancedSpecialPages": "languages/EnhancedSpecialPages.i18n.alias.php"
+	},
+	"MessagesDirs": {
+		"EnhancedStandardUIs": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+		"EnhancedAllPages": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedAllPages",
+		"EnhancedFilelist": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedFilelist",
+		"EnhancedSpecialPages": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedSpecialPages"
+	},
+	"config": {
+		"EnhancedUIsVersionHistoryToolbarOffset": {
+			"value": 0,
+			"public": true
+		},
+		"EnhancedUIsAllPagesPaginatorOffset": {
+			"value": 0,
+			"public": true
+		},
+		"EnhancedUIsAllPagesOverride": {
+			"value": false
+		},
+		"EnhancedUIsFilelistOverride": {
+			"value": false
+		},
+		"EnhancedUIsSpecialSpecialPagesOverride": {
+			"value": false
+		},
+		"EnhancedUIsVersionHistoryDiffMode": {
+			"value": "visual",
+			"public": true
+		}
+	},
+	"Hooks": {
+		"GetPreferences": "userpreference",
+		"MWStakeCommonWebAPIsQueryStoreResult": [
+			"addTitleWatchInfo",
+			"addFilePath"
+		],
+		"SpecialPage_initList": "special-pages",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "registerGlobalActions"
+	},
+	"HookHandlers": {
+		"userpreference": {
+			"class": "\\MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\UserPreference"
+		},
+		"addTitleWatchInfo": {
+			"class": "\\MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\AddTitleWatchInfo",
+			"services": [ "WatchlistManager", "TitleFactory" ]
+		},
+		"addFilePath": {
+			"class": "\\MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\AddFileImagePath",
+			"services": [ "TitleFactory", "RepoGroup" ]
+		},
+		"special-pages": {
+			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\OverwriteSpecialPages",
+			"services": [ "MainConfig" ]
+		},
+		"registerGlobalActions": {
+			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\RegisterGlobalActions"
+		}
+	},
+	"DefaultUserOptions": {
+		"history-show-revision": 1,
+		"history-show-author": 1,
+		"history-show-diff": 1,
+		"history-show-size": 0,
+		"history-show-summary": 1,
+		"history-show-tags": 0,
+		"allpages-show-talk": 0,
+		"allpages-show-non-content": 0,
+		"allpages-show-redirect": 1,
+		"filelist-show-preview": 1,
+		"filelist-show-title": 1,
+		"filelist-show-author": 1,
+		"filelist-show-formatted_ts": 1,
+		"filelist-show-file_extension": 0,
+		"filelist-show-file_size": 0,
+		"filelist-show-categories": 1,
+		"filelist-show-comment": 0
+	},
+	"ResourceModules": {
+		"ext.enhancedstandarduis.history": {
+			"packageFiles": [
+				"ext.enhancedUI.historyAction.js",
+				{
+					"name": "addToolbarOffset.json",
+					"callback": "MediaWiki\\Extension\\EnhancedStandardUIs\\AddVersionHistoryToolbarOffset::makeConfigJson"
+				},
+				"panel/HistoryPanel.js",
+				{
+					"name": "panel/viewmode.json",
+					"config": { "mode": "EnhancedUIsVersionHistoryDiffMode" }
+				},
+				"widget/HistoryToolbar.js",
+				"widget/HistoryGrid.js"
+			],
+			"styles": [
+				"stylesheets/ext.enhancedUI.historyAction.css"
+			],
+			"messages": [
+				"size-bytes",
+				"enhanced-standard-uis-history-grid-header-revision-label",
+				"enhanced-standard-uis-history-grid-header-author-label",
+				"enhanced-standard-uis-history-grid-header-size-label",
+				"enhanced-standard-uis-history-grid-header-summary-label",
+				"enhanced-standard-uis-history-grid-header-tags-label",
+				"enhanced-standard-uis-history-grid-header-undo-title",
+				"enhanced-standard-uis-history-grid-header-hide-revision-title",
+				"enhanced-standard-uis-history-compare-tool-title",
+				"enhanced-standard-uis-history-grid-header-diff-label"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data",
+				"oojs-ui.styles.icons-editing-core"
+			]
+		},
+		"ext.enhancedstandarduis.special.allpages": {
+			"packageFiles": [
+				"ext.enhancedUI.special.allpages.js",
+				{
+					"name": "addOffset.json",
+					"callback": "MediaWiki\\Extension\\EnhancedStandardUIs\\AddAllPagesPaginatorOffset::makeConfigJson"
+				},
+				"panel/AllPagesPanel.js",
+				"widget/NamespacesMenu.js",
+				"widget/NamespaceOptionWidget.js",
+				"widget/Paginator.js",
+				"data/PagesTree.js",
+				"data/PagesTreeItem.js",
+				"data/store/Store.js"
+			],
+			"styles": {
+				"stylesheets/ext.enhancedUI.special.allpages.css": {},
+				"stylesheets/ext.enhancedUI.special.allpages.sm.css": { "media": "all and ( max-width: 767px )" }
+			},
+			"messages": [
+				"enhanced-standard-uis-allpages-include-talk-ns",
+				"enhanced-standard-uis-allpages-include-non-content-ns",
+				"enhanced-standard-uis-allpages-include-redirect",
+				"enhanced-standard-uis-allpages-config-ns",
+				"enhanced-standard-uis-allpages-config",
+				"addedwatchtext-short",
+				"removedwatchtext-short",
+				"enhanced-standard-uis-allpages-paginator-first",
+				"enhanced-standard-uis-allpages-paginator-previous",
+				"enhanced-standard-uis-allpages-paginator-next",
+				"enhanced-standard-uis-allpages-paginator-last",
+				"enhanced-standard-uis-allpages-redirect-title",
+				"enhanced-standard-uis-allpages-namespace-list-label",
+				"enhanced-standard-uis-paginator-aria-label",
+				"enhanced-standard-uis-allpages-watch-label",
+				"enhanced-standard-uis-allpages-unwatch-label",
+				"enhanced-standard-uis-allpages-pageinfo-label",
+				"enhanced-standard-uis-allpages-filter-results-label",
+				"enhanced-standard-uis-allpages-untitled",
+				"enhanced-standard-uis-allpages-redirect-label",
+				"enhanced-standard-uis-allpages-empty-namespaces-text",
+				"enhanced-standard-uis-allpages-empty-pages-text"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			]
+		},
+		"ext.enhancedstandarduis.special.filelist": {
+			"es6": true,
+			"packageFiles": [
+				"ext.enhancedUI.special.filelist.js",
+				"panel/FilelistPanel.js",
+				"widget/FilelistGrid.js",
+				"widget/Paginator.js",
+				"vue/Card.vue",
+				{
+					"name": "vue/icons.json",
+					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
+					"callbackParam": [
+						"cdxIconCopy"
+					]
+				},
+				{
+					"name": "panel/pluginModules.json",
+					"callback": "MediaWiki\\Extension\\EnhancedStandardUIs\\FilelistPluginModules::getModules"
+				},
+				"dialog/FileInfoDialog.js",
+				"booklet/FileInfoBooklet.js",
+				"booklet/pages/DataPage.js",
+				"booklet/pages/HistoryPage.js",
+				"booklet/pages/PreviewPage.js"
+			],
+			"styles": [
+				"stylesheets/ext.enhancedUI.special.filelist.css"
+			],
+			"messages": [
+				"enhanced-standard-uis-filelist-grid-file-title",
+				"enhanced-standard-uis-filelist-grid-author-title",
+				"enhanced-standard-uis-filelist-grid-date-title",
+				"enhanced-standard-uis-filelist-grid-type-title",
+				"enhanced-standard-uis-filelist-grid-size-title",
+				"enhanced-standard-uis-filelist-grid-categories-title",
+				"enhanced-standard-uis-filelist-grid-comment-title",
+				"enhanced-standard-uis-filelist-grid-info-title",
+				"enhanced-standard-uis-filelist-grid-reupload-title",
+				"enhanced-standard-uis-filelist-grid-delete-title",
+				"enhanced-standard-uis-filelist-panel-search-placeholder-label",
+				"enhanced-standard-uis-filelist-panel-new-file-label",
+				"enhanced-standard-uis-filelist-panel-tiles-label",
+				"enhanced-standard-uis-filelist-panel-list-label",
+				"enhanced-standard-uis-paginator-aria-label",
+				"enhanced-standard-uis-allpages-paginator-first",
+				"enhanced-standard-uis-allpages-paginator-previous",
+				"enhanced-standard-uis-allpages-paginator-next",
+				"enhanced-standard-uis-allpages-paginator-last",
+				"enhanced-standard-uis-filelist-dialog-info",
+				"enhanced-standard-uis-filelist-dialog-action-close-title",
+				"enhanced-standard-uis-filelist-dialog-action-done-label",
+				"enhanced-standard-uis-filelist-dialog-action-file-label",
+				"enhanced-standard-uis-filelist-dialog-history-grid-version",
+				"enhanced-standard-uis-filelist-dialog-page-preview-label",
+				"enhanced-standard-uis-filelist-dialog-page-history-label",
+				"enhanced-standard-uis-filelist-dialog-page-data-label",
+				"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label",
+				"enhanced-standard-uis-filelist-notify-copy-clipboard",
+				"enhanced-standard-uis-filelist-grid-preview-title"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"@wikimedia/codex",
+				"ext.oOJSPlus.data",
+				"oojs-ui.styles.icons-editing-list"
+			]
+		},
+		"ext.enhancedstandarduis.api": {
+			"packageFiles": [
+				"api/Api.js"
+			]
+		},
+		"ext.enhancedstandarduis.ve.fileGrid": {
+			"scripts": [
+				"ve.plugin/MediaDialogFileGrid.js",
+				"ext.enhancedUI.ve.fileGrid.js"
+			],
+			"styles": [
+				"ext.enhancedUI.ve.fileGrid.less"
+			],
+			"messages": [
+				"enhanced-standard-uis-ve-filegrid-title"
+			],
+			"dependencies": [
+				"ext.enhancedstandarduis.special.filelist"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "EnhancedStandardUIs/resources"
+	},
+	"Actions": {
+		"history": "MediaWiki\\Extension\\EnhancedStandardUIs\\Action\\EnhancedHistoryAction"
+	},
+	"RestRoutes": [
+		{
+			"path": "/standarduis/file-metadata/{filename}",
+			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\Rest\\GetMetadata",
+			"services": [ "TitleFactory", "RepoGroup" ]
+		},
+		{
+			"path": "/standarduis/namespaces",
+			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\Rest\\GetNamespaces",
+			"services": [
+				"TitleFactory",
+				"PermissionManager",
+				"DBLoadBalancer",
+				"NamespaceInfo",
+				"LanguageFactory"
+			]
+		}
+	],
+	"manifest_version": 2,
+	"load_composer_autoloader": true
+}

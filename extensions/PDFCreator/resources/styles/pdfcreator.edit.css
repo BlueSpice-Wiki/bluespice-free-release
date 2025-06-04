@@ -1,0 +1,28 @@
+/* stylelint-disable selector-max-id */
+#contentSub {
+	display: none;
+}
+/* stylelint-enable selector-max-id */
+
+textarea:invalid {
+	border: 2px solid #d73333;
+}
+
+/* stylelint-disable declaration-property-unit-disallowed-list */
+.pdf-creator-template-tab-fieldset .ace_editor {
+	font-size: 13px;
+	font-family: monospace, monospace;
+}
+/* stylelint-enable declaration-property-unit-disallowed-list */
+
+.pdf-creator-template-tab .pdf-creator-template-tab-content {
+	padding: 0;
+}
+
+.pdf-creator-template-loading {
+	display: none;
+}
+
+.pdfcreator-loading-save {
+	margin: 10px auto;
+}

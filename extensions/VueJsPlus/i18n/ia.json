@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"vuejsplus-desc": "Collection de componentes VueJs",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Contraher",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Expander",
+	"vuejsplus-data-grid-option-sort-string-asc": "Ordine ascendente",
+	"vuejsplus-data-grid-option-sort-string-desc": "Ordine descendente",
+	"vuejsplus-data-grid-option-filter-string": "Cercar",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|Un linea|$1 lineas}} trovate",
+	"vuejsplus-data-grid-option-button-aria-label": "Optiones del columna $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Marcate",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Non marcate",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Neutral",
+	"vuejsplus-data-grid-option-filter-date-from-label": "A partir del data",
+	"vuejsplus-data-grid-option-filter-date-to-label": "Usque al data"
+}

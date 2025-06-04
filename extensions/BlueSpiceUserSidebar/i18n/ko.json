@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"bs-usersidebar-desc": "사용자 지정이 가능한 개인 둘러보기 메뉴",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "키워드 편집",
+	"menueditor-ui-menu-keyword-usersidebar-label": "키워드",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "키워드 편집",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "키워드"
+}

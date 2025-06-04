@@ -1,0 +1,35 @@
+.allpages-filter-cnt .oo-ui-fieldLayout-body {
+	display: block;
+}
+
+.allpages-filter-cnt .oo-ui-fieldLayout-body .oo-ui-fieldLayout-field {
+	width: 100%;
+}
+
+.enhanced-ui-allpages-panel-menu {
+	width: 100%;
+	position: relative;
+	z-index: 3;
+	background-repeat: no-repeat;
+}
+
+.enhanced-ui-allpages-panel-menu.collapsed {
+	width: 50px;
+}
+
+.enhanced-ui-allpages-panel-menu + .enhanced-ui-allpages-panel-content {
+	display: none;
+}
+
+.enhanced-ui-allpages-panel-menu.collapsed + .enhanced-ui-allpages-panel-content {
+	width: 100%;
+	display: block;
+}
+
+.enhanced-ui-allpages-panel-menu.collapsed > div {
+	display: none;
+}
+
+.enhanced-ui-allpages-columns {
+	columns: 1;
+}

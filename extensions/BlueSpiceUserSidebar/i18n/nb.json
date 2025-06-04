@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"EdoAug",
+			"Jon Harald Søby"
+		]
+	},
+	"bs-usersidebar-desc": "Personlig navigasjonsmeny som kan tilpasses",
+	"bs-edit-user-mm-link-text": "Rediger brukermeny",
+	"bs-edit-user-mm-link-title": "Rediger brukermeny",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Rediger nøkkelord",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Nøkkelord",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Rediger nøkkelord",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Nøkkelord"
+}

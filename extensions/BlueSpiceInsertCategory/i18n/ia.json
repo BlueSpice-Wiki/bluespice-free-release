@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe",
+			"McDutchie"
+		]
+	},
+	"bs-insertcategory-desc": "Dialogo pro entrar un ligamine de categoria",
+	"bs-insertcategory-insertcat": "Inserer categoria",
+	"prefs-insertcategory": "Inserer categoria",
+	"bs-insertcategory-pref-withparents": "Inserer categoria con su genitores",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Modificar le categorias de iste pagina",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Modificar le categorias de iste pagina",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Aperir dialogo pro modificar le categorias de iste pagina",
+	"bs-insertcategory-edit-dialog-button-label": "Modificar",
+	"bs-insertcategory-edit-dialog-title": "Modificar categorias",
+	"bs-insertcategory-edit-dialog-button-submit": "Facite",
+	"bs-insertcategory-edit-dialog-button-cancel": "Cancellar",
+	"bs-insertcategory-edit-dialog-input-label": "Categorias assignate",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Categorias implicite",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Iste categorias non es definite in le wikitexto del pagina. Probabilemente illos proveni de un patrono includite.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Non pote recuperar le categorias del pagina",
+	"bs-insertcategory-no-categories": "Nulle categoria assignate",
+	"bs-insertcategory-edit-dialog-tree-view": "Monstrar tote le categorias",
+	"bs-insertcategory-pref-withparents-help": "Adde le categoria mesme e su categorias genitores al pagina",
+	"bs-insertcategory-pref-uploadintegration": "Usar le categorias de pagina in le dialogo de incargamento",
+	"bs-insertcategory-pref-uploadintegration-help": "Defini le categorias de pagina como option predefinite in le dialogo de incargamento"
+}

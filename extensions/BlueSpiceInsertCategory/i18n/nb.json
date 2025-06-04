@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"EdoAug",
+			"Jon Harald Søby"
+		]
+	},
+	"bs-insertcategory-desc": "Dialogvindu for å skrive inn kategorilenke",
+	"bs-insertcategory-insertcat": "Sett inn kategori",
+	"prefs-insertcategory": "Sett inn kategori",
+	"bs-insertcategory-pref-withparents": "Sett inn kategori med dens overordnede kategorier",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Rediger kategoriene til denne siden",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Rediger kategoriene til denne siden",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Åpne en dialog for å redigere kategoriene til denne siden",
+	"bs-insertcategory-edit-dialog-button-label": "Rediger",
+	"bs-insertcategory-edit-dialog-title": "Rediger kategorier",
+	"bs-insertcategory-edit-dialog-button-submit": "Ferdig",
+	"bs-insertcategory-edit-dialog-button-cancel": "Avbryt",
+	"bs-insertcategory-edit-dialog-input-label": "Tildelte kategorier",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Implisitte kategorier",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Kategorier som ikke er definert i wikitekstinnholdet til siden. Kommer sannsynligvis fra en mal.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Kan ikke hente sidekategorier",
+	"bs-insertcategory-no-categories": "Ingen kategorier tildelt",
+	"bs-insertcategory-edit-dialog-tree-view": "Vis alle kategorier"
+}

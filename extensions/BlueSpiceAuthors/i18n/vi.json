@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dinhxuanduyet",
+			"SongNgu.xyz"
+		]
+	},
+	"bs-authors-desc": "Hiển thị ảnh hồ sơ của tác giả của một trang",
+	"prefs-authors": "Tác giả của trang này",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Tác giả}}|Các tác giả}}",
+	"bs-authors-profileimage": "Hình thẻ",
+	"bs-authors-profileimage-change": "Thay đổi hình thẻ",
+	"bs-authors-show-all-authors": "Thêm tác giả hợp lệ",
+	"bs-authors-navigation-link-title": "Tác giả của trang này",
+	"bs-authors-navigation-link-text": "Tác giả",
+	"apihelp-bs-pageauthors-store-summary": "Liệt kê tất cả các tác giả của một trang được cung cấp trong ngữ cảnh",
+	"bs-authors-info-dialog": "Tác giả của trang này",
+	"bs-authors-info-dialog-grid-column-author": "Tác giả",
+	"bs-authors-info-dialog-grid-column-type": "Loại tác giả"
+}

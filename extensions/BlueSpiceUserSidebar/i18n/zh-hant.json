@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"bs-usersidebar-desc": "可自訂化個人導航選單",
+	"bs-edit-user-mm-link-text": "編輯使用者選單",
+	"bs-edit-user-mm-link-title": "編輯使用者選單",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "編輯關鍵字",
+	"menueditor-ui-menu-keyword-usersidebar-label": "關鍵字",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "編輯關鍵字",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "關鍵字"
+}

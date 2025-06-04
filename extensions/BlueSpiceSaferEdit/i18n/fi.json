@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|on|ovat}} {{GENDER:$1|muokkaamassa}} sivua",
+	"bs-saferedit-someone-editing": "Sivua muokataan"
+}

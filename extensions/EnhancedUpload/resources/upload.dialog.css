@@ -1,0 +1,27 @@
+.upload-dialog .buttonField {
+	display: none;
+}
+
+.upload-dialog .enhancedUpload-widget .thumbnail-items {
+	border: 0.05px solid #00000020;
+	border-radius: 5px;
+	padding: 2px;
+	margin: 5px 15px;
+	width: 7.5em;
+	height: 75px;
+	position: relative;
+}
+
+.upload-dialog .enhancedUpload-widget .thumbnail-preview {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.upload-dialog .enhancedUpload-widget .thumbnail-icon {
+	opacity: 0.5;
+}
+
+.upload-dialog .enhancedUpload-widget .thumbnail-icon .oo-ui-icon-attachment {
+	width: 5.5em;
+}

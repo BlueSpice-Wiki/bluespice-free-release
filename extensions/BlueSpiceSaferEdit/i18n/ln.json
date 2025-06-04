@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"BOKOBA VEROLY"
+		]
+	},
+	"bs-saferedit-pref-edit-interval": "Intervalle mpo na vérification ya édition (secondes) .",
+	"bs-saferedit-pref-edit-interval-help": "Elakisi mbala boni, na basegonde, mpo na kotala soki moto mosusu azali kobongisa lokasa (na libunga: basegonde 3)",
+	"bs-saferedit-pref-show-editinguser": "Mosali ya sika",
+	"bs-saferedit-pref-show-editinguser-help": "Ebakisi nkombo ya moto oyo azali kobongisa lokasa na likolo ya lokasa"
+}

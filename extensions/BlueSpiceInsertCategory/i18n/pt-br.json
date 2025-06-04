@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Duke of Wikipädia",
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Felipe L. Ewald",
+			"Juan90264",
+			"YuriNikolai"
+		]
+	},
+	"bs-insertcategory-desc": "Campo para digitar um link de categoria",
+	"bs-insertcategory-insertcat": "Inserir categoria",
+	"prefs-insertcategory": "Inserir categoria",
+	"bs-insertcategory-pref-withparents": "Inserir categoria com seus parentes",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Edite as categorias desta página",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Edite as categorias desta página",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Abra a caixa de diálogo para editar as categorias desta página",
+	"bs-insertcategory-edit-dialog-button-label": "Editar",
+	"bs-insertcategory-edit-dialog-title": "Editar categorias",
+	"bs-insertcategory-edit-dialog-button-submit": "Feito",
+	"bs-insertcategory-edit-dialog-button-cancel": "Cancelar",
+	"bs-insertcategory-edit-dialog-input-label": "Categorias atribuídas",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Categorias implícitas",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Essas categorias não estão definidas no conteúdo do wikitext da página. O mais provável é que eles sejam definidos dentro de um modelo.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Não é possível recuperar categorias de página",
+	"bs-insertcategory-no-categories": "Nenhuma categoria atribuída",
+	"bs-insertcategory-edit-dialog-tree-view": "Mostrar todas as categorias"
+}

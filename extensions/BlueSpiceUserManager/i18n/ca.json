@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Edustus",
+			"Fitoschido",
+			"SMP",
+			"Vfc"
+		]
+	},
+	"bs-usermanager-headeremail": "Adreça electrònica",
+	"bs-usermanager-headergroups": "Grups",
+	"bs-usermanager-titleadduser": "Afegir usuari",
+	"bs-usermanager-titleeditdetails": "Editar l'usuari",
+	"bs-usermanager-labelnewpassword": "Contrasenya",
+	"bs-usermanager-labelpasswordcheck": "Confirma la contrasenya"
+}

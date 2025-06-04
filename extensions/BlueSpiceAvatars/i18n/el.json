@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jimkats",
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"bs-avatars-desc": "Παρέχει γενικές και ατομικές εικόνες χρήστη",
+	"bs-avatars-pref-generator": "Δημιουργός:",
+	"bs-avatars-pref-userimage-img-alt": "Η τρέχουσα εικόνα χρήστη σας",
+	"bs-avatars-upload-complete": "Η εικόνα ανεβάστηκε.",
+	"bs-avatars-generate-complete": "Δημιουργήθηκε ένα νέο άβαταρ.",
+	"bs-avatars-upload-label": "εικόνα",
+	"bs-avatars-generate-new-label": "Δημιουργία νέου άβαταρ"
+}

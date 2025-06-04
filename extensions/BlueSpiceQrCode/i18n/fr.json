@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Gomoko",
+			"Verdy p"
+		]
+	},
+	"bs-qr-code-extension-description": "Affiche un code QR avec un lien vers la page actuelle dans la barre d’outils.",
+	"bs-qr-code-action-qr-code-title": "Ouvrir une fenêtre de dialogue avec le code QR",
+	"bs-qr-code-action-qr-code-text": "Code QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Code QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Code QR pour $1",
+	"bs-qr-code-api-no-page": "Le paramètre « page » est vide.",
+	"apihelp-bs-qr-code-summary": "Obtenir le code QR pour une page sous forme d’URI de données codées en base64.",
+	"apihelp-bs-qr-code-param-revid": "Identifiant de version de la page pour générer un lien permanent",
+	"apihelp-bs-qr-code-param-page": "Nom de page de la page pour générer l’URI de données codées en base64",
+	"apihelp-bs-qr-code-param-size": "Taille du code QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Appel API par défaut",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Appel API pour un identifiant de version particulier",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Appel API avec une taille personnalisée",
+	"bs-qr-code-alt-text": "Code QR pour $1",
+	"bs-qr-code-tag-qrcode-desc": "Incorpore un code QR lié dans une page wiki",
+	"bs-qr-code-tag-qrcode-title": "Code QR",
+	"bs-qr-code-tag-attr-page-label": "Page",
+	"bs-qr-code-tag-attr-page-help": "Nom de la page à inclure dans le lien du code QR (pour utiliser le nom de la page actuelle, laissez ce champ vide)",
+	"bs-qr-code-tag-attr-query-label": "Paramètre",
+	"bs-qr-code-tag-attr-query-help": "Paramètres supplémentaires à ajouter à l’URL du code QR (cela inclut des paramètres tels que « action=edit » ou « oldid=1 »)",
+	"bs-qr-code-tag-attr-desc-label": "Description",
+	"bs-qr-code-tag-attr-desc-help": "Une description associée au code QR (pour afficher uniquement le code QR, laissez ce champ vide)",
+	"bs-qr-code-tag-attr-size-label": "Taille",
+	"bs-qr-code-tag-attr-size-help": "Modifier la taille du code QR incorporé",
+	"bs-qr-code-droplet-name": "Code QR",
+	"bs-qr-code-droplet-desc": "Insère un code QR dans une page wiki",
+	"bs-qr-code-tag-attr-size-option-small": "petite",
+	"bs-qr-code-tag-attr-size-option-medium": "moyenne",
+	"bs-qr-code-tag-attr-size-option-large": "grande"
+}

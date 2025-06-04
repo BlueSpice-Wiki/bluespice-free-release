@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Plaga med"
+		]
+	},
+	"bs-qr-code-action-qr-code-text": "QR-код",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-код",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-код для $1",
+	"apihelp-bs-qr-code-param-size": "Памер QR-кода",
+	"bs-qr-code-alt-text": "QR-код для $1",
+	"bs-qr-code-tag-qrcode-title": "QR-код",
+	"bs-qr-code-droplet-name": "QR-код"
+}

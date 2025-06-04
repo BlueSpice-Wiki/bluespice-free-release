@@ -1,0 +1,100 @@
+.ext-notifyme-config-panel {
+	margin-top: 20px;
+}
+
+.ext-notifyme-subscriptionSet {
+	width: 30%;
+	margin-top: 10px;
+	margin-right: 10px;
+	min-width: 320px;
+	position: relative;
+	background-color: #e9e9ee;
+	padding: 20px;
+	display: inline-block;
+
+	.ext-notifyme-subscriptionSet-header {
+		margin-bottom: 10px;
+
+		.tile-label {
+			display: block;
+			max-width: 70%;
+			font-size: 1.2em;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		.tile-value {
+			display: block;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+	}
+
+	.ext-notifyme-subscriptionSet-buttons {
+		position: absolute;
+		right: 20px;
+		top: 15px;
+
+		.oo-ui-buttonWidget {
+			margin-right: 0 !important;
+		}
+	}
+
+	.ext-notifyme-subscriptionSet-delivery {
+		margin-top: 10px;
+
+		.oo-ui-labelWidget {
+			font-size: 0.85rem;
+			opacity: 0.7;
+		}
+
+		.ext-notifyme-subscriptionSet-delivery-icons {
+			float: right;
+
+			.oo-ui-iconWidget {
+				opacity: 0.3;
+				background-size: 20px;
+
+				&:last-of-type {
+					/* To align with buttons */
+					padding-right: 2.2rem;
+				}
+			}
+		}
+	}
+}
+
+.subscription-set-add-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.ext-notifyme-ui-dialog-set-editor-bucket-picker {
+	.oo-ui-radioOptionWidget {
+		.oo-ui-radioInputWidget {
+			vertical-align: middle !important;
+		}
+	}
+
+	.ext-notifyme-ui-dialog-set-editor-bucket-label {
+		label {
+			margin: 0;
+		}
+
+		.oo-ui-popupButtonWidget {
+			margin: 0;
+
+			.oo-ui-iconElement a {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+
+.ext-notifyme-ui-dialog-event-desc-panel,
+.ext-notifyme-ui-dialog-event-desc-panel label {
+	font-size: 0.8rem;
+}

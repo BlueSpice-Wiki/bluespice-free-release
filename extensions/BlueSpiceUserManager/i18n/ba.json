@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bashkorttan",
+			"Sagan",
+			"Азат Хәлилов",
+			"З. ӘЙЛЕ",
+			"Ләйсән"
+		]
+	},
+	"bs-usermanager-desc": "Ҡатнашыусыларҙы өҫтәү, төҙәтеү һәм юйыу өсөн хаким интерфейсы",
+	"bs-usermanager-idnotexist": "Был ҡатнашыусы юҡ.",
+	"bs-usermanager-invalid-pwd": "Серһүҙ дөрөҫ түгел.",
+	"bs-usermanager-invalid-email-gen": "Электрон почтаның яраҡһыҙ адресы.",
+	"bs-usermanager-label": "Иҫәп яҙмалары менән идара итеү",
+	"bs-usermanager-user-exists": "Бындай исемле ҡатнашыусы бар инде.",
+	"bs-usermanager-headerusername": "Ҡатнашыусы исеме",
+	"bs-usermanager-headerrealname": "Ысын исем",
+	"bs-usermanager-headeremail": "Электрон почта",
+	"bs-usermanager-headergroups": "Төркөмдәр",
+	"bs-usermanager-titleadduser": "Ҡатнашыусыны өҫтәргә",
+	"bs-usermanager-titleeditdetails": "Ҡатнашыусыны мөхәррирләргә",
+	"bs-usermanager-labelnewpassword": "Серһүҙ",
+	"bs-usermanager-labelpasswordcheck": "Серһүҙҙе раҫлағыҙ",
+	"bs-usermanager-no-self-desysop": "Хаким хоҡуғын үҙегеҙ һала алмайһығыҙ."
+}

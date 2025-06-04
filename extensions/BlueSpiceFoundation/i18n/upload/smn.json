@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"bs-upload-uploaddialogtitle": "Vuorkkii tiätuvuárhá",
+	"bs-upload-uploadbuttontext": "Laađâ",
+	"bs-upload-uploadfilefieldlabel": "Tiätuvuárkkánommâ",
+	"bs-upload-uploadfileemptytext": "Lasseet uđđâ tiätuvuárhá...",
+	"bs-upload-license": "Liiseens",
+	"bs-upload-uploadwatchthislabel": "Tarkkuu taam tiätuvuárhá",
+	"bs-upload-categories": "Luokah",
+	"bs-upload-error": "Feilâ",
+	"bs-upload-descfilelabel": "Kuvvim"
+}

@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"menueditor-desc": "Grafinis meniu puslapių redaktorius",
+	"menueditor-ui-menu-wiki-link-label": "Viki nuoroda",
+	"menueditor-ui-menu-wiki-link-label-edit": "Redaguoti vikį nuorodą",
+	"menueditor-ui-menu-wiki-link-help": "Nuoroda į vikį puslapį",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Nuoroda",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Redaguoti nuorodą",
+	"menueditor-ui-menu-keyword-label": "Raktinis žodis",
+	"menueditor-ui-menu-keyword-label-edit": "Redaguoti raktinį žodį",
+	"menueditor-ui-menu-keyword-help": "Vienas iš galimų '''raktinių žodžių''', rodantis atitinkamą valdiklį",
+	"menueditor-ui-form-field-keyword": "Raktinis žodis",
+	"menueditor-ui-form-field-target": "Nuorodos tikslas",
+	"menueditor-ui-form-field-label": "Nuorodos etiketė",
+	"menueditor-ui-dialog-action-done": "Atlikta",
+	"menueditor-ui-dialog-action-cancel": "Atšaukti",
+	"menueditor-ui-submit": "Išsaugoti",
+	"menueditor-ui-cancel": "Atšaukti",
+	"menueditor-ui-redlink-notice": "Šis meniu dar neegzistuoja!",
+	"menueditor-action-menueditsource": "Redaguoti šaltinį",
+	"menueditor-action-menuedit": "Redaguoti",
+	"menueditor-ui-dialog-title": "Redaguoti elementą",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Redaguoti raktinį žodį",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Raktinis žodis",
+	"menueditor-toolbar-cancel": "Atšaukti redagavimą",
+	"menueditor-toolbar-add-label": "Pridėti elementą",
+	"menueditor-ui-edit-label": "Redaguoti",
+	"menueditor-ui-add-sub-element-label": "Pridėti papildomą elementą"
+}

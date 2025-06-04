@@ -1,0 +1,52 @@
+.oojsplus-data-gridWidget-cell.action-cell:not( .selection-cell ) > span {
+	opacity: 0;
+}
+
+.oojsplus-data-gridWidget-row:hover .oojsplus-data-gridWidget-cell.action-cell > span,
+.oojsplus-data-gridWidget-row .oojsplus-data-gridWidget-cell.action-cell > span:has( a:focus-visible ) {
+	opacity: 1;
+}
+
+/* stylelint-disable declaration-no-important */
+#enhanced-history-cnt .oojsplus-data-gridWidget-column-header[ data-field='undo' ] {
+	/* oojs style is added with important */
+	border-right: 0 !important;
+}
+/* stylelint-enable declaration-no-important */
+
+.enhanced-history-diff-minus .text-cell[ data-column='diff' ] {
+	color: #8b0000;
+}
+
+.enhanced-history-diff-plus .text-cell[ data-column='diff' ] {
+	color: #006400;
+}
+
+.enhanced-history-toolbar {
+	position: relative;
+}
+
+#enhanced-history-cnt .static-controls:nth-child( 1 ) {
+	display: none;
+}
+
+/* strikethrough & itlaic */
+.enhanced-history-revision-strikethrough .url-cell[ data-column='revision' ] .oojsplus-ui-widget-linkwidget-label,
+.enhanced-history-author-strikethrough .user-cell[ data-column='author' ] .user-display,
+.enhanced-history-summary-strikethrough .text-cell[ data-column='summary' ] .oo-ui-labelElement-label {
+	text-decoration: line-through;
+	font-style: italic;
+}
+
+/* greyed-out text */
+.enhanced-history-revision-grey .url-cell[ data-column='revision' ] .oojsplus-ui-widget-linkwidget-label,
+.enhanced-history-author-grey .user-cell[ data-column='author' ] .user-display,
+.enhanced-history-summary-grey .text-cell[ data-column='summary' ] .oo-ui-labelElement-label {
+	color: #a5a5a5;
+}
+
+/* prevent interaction on greyed-out revision links */
+.enhanced-history-revision-grey .url-cell[ data-column='revision' ] .oojsplus-ui-widget-linkwidget-label {
+	cursor: default;
+	pointer-events: none;
+}

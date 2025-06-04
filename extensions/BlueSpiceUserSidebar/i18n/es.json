@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amitie 10g",
+			"DiegoAmbrocio",
+			"Fitoschido"
+		]
+	},
+	"bs-usersidebar-desc": "Menú de navegación personal adaptable",
+	"bs-edit-user-mm-link-text": "Editar el menú de usuario",
+	"bs-edit-user-mm-link-title": "Editar el menú de usuario",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Editar palabra clave",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Palabra clave",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Editar palabra clave",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Palabra clave"
+}

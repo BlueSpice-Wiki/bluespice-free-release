@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-hidetitle-desc": "Adde le parola magic <code><nowiki>__HIDETITLE__</nowiki></code> pro celar le titulo del pagina",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Monstrar",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Celar",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Visibilitate del titulo",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Tu pote indicar hic si le titulo essera monstrate o non."
+}

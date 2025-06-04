@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dimension",
+			"GuoPC",
+			"Liuxinyu970226",
+			"Shimamura Sakura",
+			"列维劳德"
+		]
+	},
+	"bs-avatars-desc": "提供通用和个人用户图片",
+	"bs-avatars-pref-generator": "生成器：",
+	"bs-avatars-pref-userimage-img-alt": "您当前的用户图片",
+	"bs-avatars-upload-complete": "图片已上传。",
+	"bs-avatars-generate-complete": "生成新的头像。",
+	"bs-avatars-upload-label": "图片",
+	"bs-avatars-generate-new-label": "生成新头像",
+	"bs-avatars-file-upload-fieldset-title": "图片上传",
+	"bs-avatars-auto-generate-fieldset-title": "自动生成头像",
+	"apihelp-bs-avatars-tasks-summary": "上传、生成与设置用户头像",
+	"bs-avatars-tag-profileimage-error-invalidusername": "用户名为空或无效",
+	"bs-avatars-pref-generator-help": "用户未上传个人头像时会自动生成替身头像。InstantAvatar: 基于用户真实姓名或用户名生成替身头像。Identicon: 基于用户的 ID 的部分片段生成替身头像"
+}

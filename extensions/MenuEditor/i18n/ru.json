@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Pacha Tchernof",
+			"Person or Persons Unknown",
+			"Vlad5250"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label-edit": "Редактировать вики-ссылку",
+	"menueditor-ui-menu-wiki-link-help": "Ссылка на вики-страницу",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Ссылка",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Редактировать ссылку",
+	"menueditor-ui-menu-raw-text-label-edit": "Изменить текст или ключ сообщения",
+	"menueditor-ui-menu-keyword-label": "Ключевое слово",
+	"menueditor-ui-menu-keyword-label-edit": "Изменить ключевое слово",
+	"menueditor-ui-form-field-keyword": "Ключевое слово",
+	"menueditor-ui-dialog-action-done": "Готово",
+	"menueditor-ui-dialog-action-cancel": "Отмена",
+	"menueditor-ui-submit": "Сохранить",
+	"menueditor-ui-cancel": "Отмена",
+	"menueditor-action-menuedit": "Править",
+	"menueditor-ui-dialog-title": "Редактировать элемент",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Изменить ключевое слово",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Ключевое слово",
+	"menueditor-toolbar-cancel": "Отменить изменения",
+	"menueditor-toolbar-add-label": "Добавить элемент",
+	"menueditor-ui-edit-label": "Править",
+	"menueditor-ui-add-sub-element-label": "Добавить подэлемент",
+	"menueditor-toolbar-save": "Сохранить"
+}

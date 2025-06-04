@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mehtab ahmed"
+		]
+	},
+	"bs-statistics-aggregated-report-filter-category-multi": "زمرا",
+	"bs-statistics-aggregated-report-filter-date-start": "شروع ٿيڻ جي تاريخ",
+	"bs-statistics-aggregated-report-filter-date-end": "پڄاڻيءَ جي تاريخ",
+	"bs-statistics-aggregated-report-filter-interval-day": "ڏينھن",
+	"bs-statistics-aggregated-report-filter-interval-week": "هفتو",
+	"bs-statistics-aggregated-report-filter-interval-month": "مھينو",
+	"bs-statistics-aggregated-report-filter-namespace": "نانءُپولار",
+	"bs-statistics-aggregated-report-filter-namespaces": "نانءُپولارَ",
+	"bs-statistics-aggregated-report-filter-page": "صفحو",
+	"bs-statistics-aggregated-report-filter-user-multi": "واپرائيندڙَ",
+	"bs-statistics-ve-progressinspector-title": "اڳڀرائي"
+}

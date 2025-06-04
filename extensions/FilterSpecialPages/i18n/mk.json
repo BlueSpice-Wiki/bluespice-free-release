@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"filterspecialpages-desc": "Вметнува поле за филтрирање на ставки во [{{canonicalurl:Special:SpecialPages}} Специјална:СлужбениСтраници].",
+	"filterspecialpages-hint-label": "Најди страница"
+}

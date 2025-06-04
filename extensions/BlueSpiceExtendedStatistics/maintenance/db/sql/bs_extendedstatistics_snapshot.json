@@ -1,0 +1,45 @@
+[
+	{
+		"name": "bs_extendedstatistics_snapshot",
+		"comment": "BlueSpice: ExtendedStatistics - Stores snapshot data",
+		"columns": [
+			{
+				"name": "ess_type",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "ess_interval",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "ess_data",
+				"type": "blob",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "ess_secondary_data",
+				"type": "blob",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "ess_timestamp",
+				"type": "mwtimestamp",
+				"options": { }
+			}
+		],
+		"indexes": [],
+		"pk": []
+	}
+]

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Asma",
+			"Hedda"
+		]
+	},
+	"bs-instancestatus-desc": "Viki örneği durumuna genel bir bakış ekler",
+	"instancestatus": "Örnek durumu",
+	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice versiyonu",
+	"bs-instancestatus-instance-status-user-quota-label": "Kullanıcı kotası",
+	"bs-instancestatus-instance-status-last-update-label": "Son güncelleme tarihi",
+	"bs-instancestatus-instance-status-created-label": "Örnek oluşturulma tarihi",
+	"bs-instancestatus-instance-status-no-info": "Mevcut Değil",
+	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice iletişim",
+	"bs-instancestatus-instance-status-sales-contact": "Buradan iletişime geçin: [$1 BlueSpice iletişim]",
+	"bs-instancestatus-overview-loader": "Viki bilgileri toplanıyor...",
+	"bs-instancestatus-instance-status-main-label": "Genel"
+}

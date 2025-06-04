@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly",
+			"Winston Sung"
+		]
+	},
+	"bs-qr-code-extension-description": "顯示連結至在工具列的目前頁面的 QR 碼。",
+	"bs-qr-code-action-qr-code-title": "開啟QR碼對話框",
+	"bs-qr-code-action-qr-code-text": "QR碼",
+	"bs-qr-code-action-qr-code-dialog-title": "QR碼",
+	"bs-qr-code-action-qr-code-dialog-alt": "$1的 QR 碼",
+	"bs-qr-code-api-no-page": "參數「page」為空",
+	"apihelp-bs-qr-code-summary": "取得 QR 碼作為頁面的 base64 資料 URI",
+	"apihelp-bs-qr-code-param-revid": "用於產生固定連結的頁面之修訂 ID",
+	"apihelp-bs-qr-code-param-page": "產生 base64 資料 URI 的頁面之頁面名稱",
+	"apihelp-bs-qr-code-param-size": "QR碼尺寸",
+	"apihelp-bs-qr-code-example-bs-qr-code": "預設 API 呼叫",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "某 revid 的 API 呼叫",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "自定義 size 的 API 呼叫",
+	"bs-qr-code-alt-text": "$1的 QR 碼",
+	"bs-qr-code-tag-qrcode-desc": "在 wiki 頁面中嵌入連結的 QR 碼",
+	"bs-qr-code-tag-qrcode-title": "QR 碼",
+	"bs-qr-code-tag-attr-page-label": "頁面",
+	"bs-qr-code-tag-attr-page-help": "要包含在 QR 碼連結裡的頁面名稱。若要使用目前頁面名稱，請將此欄位留空",
+	"bs-qr-code-tag-attr-query-label": "參數",
+	"bs-qr-code-tag-attr-query-help": "要添加到 QR 碼 URL 的其他參數。包括像「action=edit」或「oldid=1」這樣的參數",
+	"bs-qr-code-tag-attr-desc-label": "描述",
+	"bs-qr-code-tag-attr-desc-help": "與 QR 碼相關的描述。如果要僅顯示 QR 碼，請將此欄位留空",
+	"bs-qr-code-tag-attr-size-label": "大小",
+	"bs-qr-code-tag-attr-size-help": "更改嵌入的 QR 碼大小",
+	"bs-qr-code-droplet-name": "QR 碼",
+	"bs-qr-code-droplet-desc": "在 wiki 頁面中插入 QR 碼",
+	"bs-qr-code-tag-attr-size-option-small": "小",
+	"bs-qr-code-tag-attr-size-option-medium": "中",
+	"bs-qr-code-tag-attr-size-option-large": "大"
+}

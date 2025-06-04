@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lakejason0",
+			"LittlePaw365",
+			"Wzl19371"
+		]
+	},
+	"menueditor-desc": "用于菜单页面的图形编辑器",
+	"menueditor-ui-menu-wiki-link-label": "wiki链接",
+	"menueditor-ui-menu-wiki-link-label-edit": "编辑wiki链接",
+	"menueditor-ui-menu-wiki-link-help": "链接到一个wiki页面",
+	"menueditor-ui-menu-two-fold-link-spec-label": "链接",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "编辑链接",
+	"menueditor-ui-menu-two-fold-link-spec-help": "链接格式。<br>目标可以是：<ul><li>可解析到一个页面名称的系统消息键名</li><li>外部链接</li><li>wiki上的某个页面的名称</li><li>跨wiki链接</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "文本或系统消息键名",
+	"menueditor-ui-menu-raw-text-label-edit": "编辑文本或系统消息键名",
+	"menueditor-ui-menu-keyword-label": "关键词",
+	"menueditor-ui-menu-keyword-label-edit": "编辑关键词",
+	"menueditor-ui-menu-keyword-help": "会显示适当小组件的可用'''关键词'''之一",
+	"menueditor-ui-form-field-keyword": "关键词",
+	"menueditor-ui-form-field-text": "文本或系统消息键名",
+	"menueditor-ui-form-field-target": "链接目标",
+	"menueditor-ui-form-field-label": "链接文本",
+	"menueditor-ui-dialog-action-done": "完成",
+	"menueditor-ui-dialog-action-cancel": "取消",
+	"menueditor-ui-node-type-selector-label": "节点类型",
+	"menueditor-ui-submit": "保存",
+	"menueditor-ui-cancel": "取消",
+	"menueditor-ui-redlink-notice": "此菜单尚不存在！",
+	"menueditor-action-menueditsource": "编辑源代码",
+	"menueditor-action-menuedit": "编辑",
+	"menueditor-ui-dialog-title": "编辑元素"
+}

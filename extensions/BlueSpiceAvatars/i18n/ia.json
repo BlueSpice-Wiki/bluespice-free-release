@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-avatars-desc": "Forni imagines de usator generic e individual",
+	"bs-avatars-pref-generator": "Generator:",
+	"bs-avatars-pref-userimage-img-alt": "Tu imagine de usator actual",
+	"bs-avatars-upload-complete": "Le imagine ha essite incargate.",
+	"bs-avatars-generate-complete": "Un nove avatar ha essite generate.",
+	"bs-avatars-upload-label": "Imagine",
+	"bs-avatars-generate-new-label": "Generar nove avatar",
+	"bs-avatars-file-upload-fieldset-title": "Incargar un nove imagine",
+	"bs-avatars-auto-generate-fieldset-title": "Generar automaticamente un avatar",
+	"apihelp-bs-avatars-tasks-summary": "Incargar, generar e fixar avatares de usator",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Le parametro \"username\" es obligatori e debe continer un nomine de usator valide",
+	"bs-avatars-pref-generator-help": "Le imagine avatar se genera si un usator non incarga un imagine de profilo. InstantAvatar: Genera un imagine avatar a base del initiales del nomine real o del nomine de usator. Identicon: Genera un imagine avatar a base de partes del ID del usator",
+	"bs-avatars-upload-button": "Incargar",
+	"bs-avatars-generate-button": "Generar",
+	"bs-avatars-generic-cancel": "Cancellar",
+	"bs-avatars-generate-description": "Generar un nove avatar automatic. Isto reimplacia permanentemente le imagine de profilo ja incargate (si es presente)."
+}

@@ -1,0 +1,301 @@
+@import 'ext.blueSpiceExtendedSearch.variables.less';
+
+/* Search form */
+.p-search#bs-extendedsearch-box,
+.p-search#bs-extendedsearch-mobile-box {
+	form {
+		.form-group {
+			position: relative;
+
+			.bs-extendedsearch-autocomplete-wrapper {
+				display: table;
+
+				.bs-extendedsearch-autocomplete-pill {
+					padding-left: 8px;
+					padding-right: 8px;
+					background-color: @autocomplete-pill-background-color;
+					font-weight: bold;
+					color: white;
+					display: table-cell;
+					width: 1%;
+					white-space: nowrap;
+				}
+
+				.bs-extendedsearch-autocomplete-clear {
+					display: table-cell !important;
+					background-color: white !important;
+					width: 1%;
+					white-space: nowrap;
+					padding-left: 5px;
+					padding-right: 10px;
+					border: 1px solid #ccc;
+					border-radius: 0 5px 5px 0;
+					border-left: none; /* stylelint-disable-line declaration-property-value-disallowed-list */
+				}
+
+				input#bs-extendedsearch-input,
+				input#bs-extendedsearch-mobile-input {
+					&:focus {
+						/* Remove "outline" when focused - just keep the same border color */
+						border-color: rgb( 204, 204, 204 ); /* stylelint-disable-line function-disallowed-list */
+					}
+				}
+			}
+		}
+	}
+
+	&.clear-present {
+		input#bs-extendedsearch-input,
+		input#bs-extendedsearch-mobile-input {
+			border-right: none !important; /* stylelint-disable-line declaration-property-value-disallowed-list */
+			border-radius: 0 !important;
+		}
+	}
+}
+
+/* Popup */
+.bs-extendedsearch-autocomplete-popup {
+	background-color: white;
+	border: 1px solid @autocomplete-border-color;
+	position: absolute;
+	left: 0;
+	border-radius: 3px;
+	width: 100%;
+	max-height: 400px;
+	z-index: 99;
+	padding: 10px 0 0 10px;
+	height: auto;
+
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: @scrollbar-handle-color;
+	}
+
+	.bs-extendedsearch-autocomplete-popup-primary {
+		vertical-align: top;
+		height: inherit;
+		max-height: 100%;
+		overflow: hidden auto;
+		display: inline-block;
+		font-size: 1em;
+		width: 100%;
+		padding: 10px 0 5px 0;
+
+		> label {
+			font-variant-caps: all-petite-caps;
+			letter-spacing: 0.15rem;
+			padding-bottom: 10px;
+			padding-left: 10px;
+		}
+
+		.bs-extendedsearch-autocomplete-popup-no-results {
+			padding: 10px;
+		}
+
+		.bs-extendedsearch-recentlyfound-ignore-button {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			a span.oo-ui-iconElement-icon.oo-ui-icon-close {
+				background-size: 14px;
+				opacity: 0.6;
+			}
+		}
+
+		.bs-recently-found-suggestion {
+			max-width: 90%;
+			display: inline-block;
+		}
+	}
+
+	.bs-extendedsearch-autocomplete-popup-secondary {
+		border-top: 1px solid @autocomplete-border-color;
+		margin: 5px;
+		padding-top: 5px;
+	}
+
+	.quiet-subpage {
+		padding: 5px 5px 5px 10px;
+		font-size: 0.8em;
+		color: #8d8c8c;
+
+		span.text {
+			margin-right: 10px;
+		}
+	}
+
+	.bs-extendedsearch-autocomplete-popup-item {
+		padding: 5px 5px 5px 8px;
+		position: relative;
+		cursor: pointer;
+		display: flex;
+
+		&.bs-autocomplete-result-selected {
+			background-color: @autocomplete-selected-background-color;
+		}
+
+		&:hover {
+			background-color: @autocomplete-selected-background-color;
+		}
+
+		a {
+			display: inline-block;
+			color: @bs-color-link;
+
+			&:hover,
+			&:focus {
+				color: @bs-color-link-hover;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.bs-extendedsearch-autocomplete-popup-no-results {
+		padding: 15px;
+	}
+
+	.bs-extendedsearch-result-original-title {
+		label {
+			font-size: 0.9em;
+		}
+	}
+
+	.bs-extendedsearch-autocomplete-popup-item-header {
+		vertical-align: middle;
+		display: flex;
+		flex-grow: 1;
+		margin-right: 10px;
+		font-size: 0.9375rem;
+		color: @autocomplete-pill-background-color;
+
+		.bs-extendedsearch-autocomplete-popup-item-header-path {
+			font-size: 0.9em;
+			color: @autocomplete-results-path-color;
+
+			.bs-extendedsearch-autocomplete-popup-item-header-path-source {
+				background-color: @autocomplete-pill-background-color;
+				color: white;
+				padding: 0 5px;
+				border-radius: 5px;
+				margin-right: 5px;
+			}
+
+			.bs-extendedsearch-autocomplete-popup-item-header-path-ns {
+				margin-right: 5px;
+				font-weight: bold;
+			}
+
+			.bs-extendedsearch-autocomplete-popup-item-header-breadcrumbs::before {
+				content: '·';
+				margin-right: 5px;
+			}
+		}
+
+		.oo-ui-icon-share {
+			margin-left: 5px;
+			min-height: 15px;
+			height: 15px;
+			min-width: 15px;
+			width: 15px;
+			opacity: 0.6;
+		}
+	}
+
+	.bs-extendedsearch-autocomplete-popup-item-header-image {
+		width: 40px;
+		height: 40px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: flex;
+		vertical-align: middle;
+		margin-right: 10px;
+		border-radius: 5px;
+	}
+
+	.bs-extendedsearch-autocomplete-popup-context {
+		> label {
+			font-variant-caps: all-petite-caps;
+			letter-spacing: 0.15rem;
+			padding-bottom: 10px;
+		}
+
+		&.has-items {
+			padding-bottom: 5px;
+			border-bottom: 1px solid @autocomplete-border-color;
+			margin-bottom: 5px;
+		}
+
+		.bs-extendedsearch-autocomplete-popup-context-option {
+			width: 100%;
+			margin: 0 !important;
+			padding: 0 10px 5px 0 !important;
+			display: flex;
+			flex-wrap: wrap;
+
+			&.bs-autocomplete-result-selected {
+				background-color: @autocomplete-selected-background-color;
+			}
+
+			&:hover {
+				background-color: @autocomplete-selected-background-color;
+
+				a {
+					background-color: transparent !important;
+				}
+			}
+
+			.oo-ui-buttonElement-button {
+				flex-grow: 1;
+
+				a {
+					background-color: transparent;
+					padding-left: 2.8em;
+					white-space: break-spaces;
+					color: #3f3f3f;
+					font-weight: normal;
+				}
+			}
+
+			.oo-ui-iconElement-icon {
+				opacity: 0.4 !important;
+			}
+
+			.bs-extendedsearch-autocomplete-popup-context-option-label {
+				padding: 5px;
+				color: @autocomplete-pill-background-color;
+				white-space: break-spaces;
+			}
+		}
+	}
+}
+
+/* Special values for mobile popup */
+#bs-extendedsearch-mobile-box {
+	.bs-extendedsearch-autocomplete-wrapper {
+		.bs-extendedsearch-autocomplete-pill {
+			line-height: 0px !important; /* stylelint-disable-line declaration-property-unit-disallowed-list */
+			vertical-align: middle;
+		}
+	}
+
+	.bs-extendedsearch-autocomplete-popup {
+		max-height: 70vh;
+
+		.bs-extendedsearch-autocomplete-popup-primary {
+			width: 100%;
+		}
+	}
+}
+
+#bs-extendedsearch-box .bs-extendedsearch-autocomplete-popup a.bs-extendedsearch-autocomplete-popup-primary-item-header:focus {
+	text-decoration: underline;
+}
+
+.bs-extendedsearch-autocomplete-popup-item-header-redirect a {
+	width: unset !important;
+}

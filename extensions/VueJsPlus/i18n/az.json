@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nemoralis"
+		]
+	},
+	"vuejsplus-desc": "VueJs komponentlərinin kolleksiyası",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Bağla",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Göstər",
+	"vuejsplus-data-grid-option-sort-string-asc": "Artan ardıcıllıq",
+	"vuejsplus-data-grid-option-sort-string-desc": "Azalan ardıcıllıq",
+	"vuejsplus-data-grid-option-filter-string": "Axtar",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|Bir sıra|$1 sıra}} tapıldı",
+	"vuejsplus-data-grid-option-button-aria-label": "$1 sütun seçimləri"
+}

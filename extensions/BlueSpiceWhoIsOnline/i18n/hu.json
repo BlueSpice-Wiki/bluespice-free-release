@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Csega",
+			"Krisztina"
+		]
+	},
+	"bs-whoisonline-desc": "Megjeleníti az online felhasználók listáját",
+	"bs-whoisonline-nousers": "Senki sincs bejelentkezve.",
+	"bs-whoisonline-widget-title": "Online felhasználók",
+	"prefs-whoisonline": "Online felhasználók",
+	"bs-whoisonline-pref-limitcount": "A megjelenített felhasználók maximális száma:",
+	"bs-whoisonline-pref-orderby": "Rendezés:",
+	"bs-whoisonline-pref-orderby-time": "Futási idő",
+	"bs-whoisonline-pref-orderby-name": "Név",
+	"bs-whoisonline-collection-type-userlogin": "Felhasználói bejelentkezés",
+	"bs-whoisonline-collection-var-login": "Bejelentkezés",
+	"bs-whoisonline-statistics-report-login-duration": "Bejelentkezés hossza",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Bejelentkezés hossza (mp)",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Az elmúlt 10 percben bejelentkezett felhasználók száma.",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Ki van online száma",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Megjeleníti az összes felhasználót, aki az elmúlt 10 percben be volt jelentkezve. A kimenet egy szövegbuborék, amikor a felhasználó a kapcsolódó hivatkozás fölé viszi az egérmutatót",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Ki van online felugró ablak",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Bejelentkezések száma",
+	"bs-whoisonline-statistics-report-login-number": "Bejelentkezések",
+	"bs-whoisonline-droplet-count-name": "A bejelentkezett felhasználók száma",
+	"bs-whoisonline-droplet-count-description": "Jelenleg bejelentkezett felhasználók száma",
+	"bs-whoisonline-droplet-popup-name": "A bejelentkezett felhasználók listája",
+	"bs-whoisonline-droplet-popup-description": "Felugró ablak az összes jelenleg bejelentkezett felhasználó listájával"
+}

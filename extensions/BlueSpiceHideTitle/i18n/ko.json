@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hwangjy9",
+			"Tensama0415",
+			"Yearning",
+			"Ykhwong"
+		]
+	},
+	"bs-hidetitle-desc": "문서 제목을 가리기 위해 <code><nowiki>__HIDETITLE__</nowiki></code>을 추가합니다",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "보이기",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "숨기기",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "제목 가시성",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "제목 표시 여부를 여기에서 정의할 수 있습니다."
+}

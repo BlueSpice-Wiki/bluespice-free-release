@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"bs-avatars-pref-userimage-img-alt": "თქვან ასიანი მახვარებუშ სურათი",
+	"bs-avatars-upload-complete": "სურათიქ გეიხარგუ.",
+	"bs-avatars-generate-complete": "ახალ ავატარი გენერირაფილი რე.",
+	"bs-avatars-upload-label": "სურათი",
+	"bs-avatars-generate-new-label": "ახალი ავატარიშ გენერირაფა",
+	"bs-avatars-file-upload-fieldset-title": "სურათიშ ეხარგუა"
+}

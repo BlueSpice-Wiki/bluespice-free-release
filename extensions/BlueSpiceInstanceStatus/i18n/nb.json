@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"EdoAug",
+			"Jon Harald Søby"
+		]
+	},
+	"bs-instancestatus-instance-status-user-quota-label": "Brukerkvote",
+	"bs-instancestatus-instance-status-no-info": "Ikke tilgjengelig",
+	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice-kontakt",
+	"bs-instancestatus-instance-status-sales-contact": "Ta kontakt her: [$1 BlueSpice-kontakt]",
+	"bs-instancestatus-overview-loader": "Samler wiki-informasjon ...",
+	"bs-instancestatus-instance-status-main-label": "Generelt"
+}

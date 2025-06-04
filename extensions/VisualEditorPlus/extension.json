@@ -1,0 +1,79 @@
+{
+	"name": "VisualEditorPlus",
+	"version": "2.1.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[http://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "http://www.hallowelt.com",
+	"descriptionmsg": "visualeditorplus-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0"
+	},
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules":
+				[
+					"ext.visualEditorPlus",
+					"ext.visualEditorPlus.inlineTextInspector"
+				]
+		}
+	},
+	"MessagesDirs": {
+		"VisualEditorPlus": "i18n"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\VisualEditorPlus\\": "src/"
+	},
+	"ResourceModules": {
+		"ext.visualEditorPlus.bootstrap": {
+			"scripts": [
+				"ext.visualEditorPlus.bootstrap.js"
+			]
+		},
+		"ext.visualEditorPlus.registry": {
+			"scripts": [
+				"ext.visualEditorPlus.registry.js"
+			],
+			"dependencies": [
+				"oojs",
+				"ext.visualEditorPlus.bootstrap"
+			]
+		},
+		"ext.visualEditorPlus.inlineTextInspector": {
+			"scripts": [
+				"ext.visualEditorPlus.inlineTextInspector/InlineTextInspectorElement.js",
+				"ext.visualEditorPlus.inlineTextInspector/InlineTextInspector.js",
+				"ext.visualEditorPlus.inlineTextInspector/bootstrap.js"
+			],
+			"styles": [
+				"ext.visualEditorPlus.inlineTextInspector/styles.less"
+			],
+			"dependencies": [
+				"ext.visualEditor.core",
+				"ext.visualEditorPlus.registry"
+			]
+		},
+		"ext.visualEditorPlus": {
+			"scripts": [
+				"ext.visualEditorPlus/ui/WrapperSequenceBase.js",
+				"ext.visualEditorPlus/ui/BackTickCodeSequence.js",
+				"ext.visualEditorPlus/ui/TildeStrikeThroughSequence.js",
+				"ext.visualEditorPlus/ui/UnderlineItalicSequence.js",
+				"ext.visualEditorPlus.replacementSequences.js",
+				"ext.visualEditorPlus.updateVEToolbar.js"
+			],
+			"dependencies": [
+				"ext.visualEditor.core"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "VisualEditorPlus/resources"
+	},
+	"Hooks": {
+	},
+	"manifest_version": 2,
+	"load_composer_autoloader": true
+}

@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-qr-code-extension-description": "Monstra un codice QR con un ligamine al pagina actual in le barra de utensiles.",
+	"bs-qr-code-action-qr-code-title": "Aperir un dialogo con codice QR",
+	"bs-qr-code-action-qr-code-text": "Codice QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Codice QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Codice QR pro $1",
+	"bs-qr-code-api-no-page": "Le parametro 'page' es vacue",
+	"apihelp-bs-qr-code-summary": "Obtener le codice QR pro un pagina in forma de URI de datos codificate in base64",
+	"apihelp-bs-qr-code-param-revid": "ID de version de un pagina pro generar un permaligamine",
+	"apihelp-bs-qr-code-param-page": "Nomine del pagina pro generar le URI de datos codificate in base64",
+	"apihelp-bs-qr-code-param-size": "Dimension del codice QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Appello API predefinite",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Appello API pro un certe 'revid'",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Appello API con dimension personalisate",
+	"bs-qr-code-alt-text": "Codice QR pro $1",
+	"bs-qr-code-tag-qrcode-desc": "Incorpora un codice QR ligate in un pagina wiki",
+	"bs-qr-code-tag-qrcode-title": "Codice QR",
+	"bs-qr-code-tag-attr-page-label": "Pagina",
+	"bs-qr-code-tag-attr-page-help": "Le nomine del pagina a includer in le ligamine del codice QR. Pro usar le nomine del pagina actual, lassa iste campo vacue.",
+	"bs-qr-code-tag-attr-query-label": "Parametro",
+	"bs-qr-code-tag-attr-query-help": "Altere parametros a adder al URL del codice QR. Isto include parametros como \"action=edit\" o \"oldid=1\".",
+	"bs-qr-code-tag-attr-desc-label": "Description",
+	"bs-qr-code-tag-attr-desc-help": "Un description associate al codice QR. Pro monstrar solmente le codice QR, lassa iste campo vacue.",
+	"bs-qr-code-tag-attr-size-label": "Dimension",
+	"bs-qr-code-tag-attr-size-help": "Cambiar le dimension del codice QR incorporate",
+	"bs-qr-code-droplet-name": "Codice QR",
+	"bs-qr-code-droplet-desc": "Insere un codice QR in un pagina qiki",
+	"bs-qr-code-tag-attr-size-option-small": "micre",
+	"bs-qr-code-tag-attr-size-option-medium": "medie",
+	"bs-qr-code-tag-attr-size-option-large": "grande"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label-edit": "Խմբագրել վիքի հղումը",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Հղում",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Խմբագրել հղումը",
+	"menueditor-ui-dialog-action-done": "Արված է",
+	"menueditor-ui-submit": "Հիշել",
+	"menueditor-ui-cancel": "Չեղարկել",
+	"menueditor-action-menuedit": "Խմբագրել",
+	"menueditor-ui-dialog-title": "Խմբագրել տարրը",
+	"menueditor-ui-edit-label": "Խմբագրել"
+}

@@ -1,0 +1,24 @@
+<span style="margin-bottom: 10px">{{int:notifyme-mail-greeting}} {{#target_user}}{{display_name}}{{/target_user}},</span>
+{{#agent_is_bot}}
+    <p>{{{message}}}</p>
+{{/agent_is_bot}}
+{{^agent_is_bot}}
+    <p>{{#agent}}<a href="{{user_page}}">{{display_name}}</a>{{/agent}} {{{message}}}</p>
+{{/agent_is_bot}}
+
+{{links_intro}}<br>
+<div style="margin-top: 10px">
+    {{#links}}
+        {{#primary}}<a style="color: #ffffff;background-color: #0073e6;padding: 5px 20px;text-decoration: none;border-radius: 5px;display: inline-block;margin: 5px;" href="{{url}}">{{label}}</a>{{/primary}}
+        {{^primary}}<a style="text-decoration: none;padding: 5px;border-radius: 5px;display: inline-block;margin: 5px;" href="{{url}}">{{label}}</a>{{/primary}}
+    {{/links}}
+</div>
+
+<div style="margin-top: 60px;padding: 20px;background-color:@notifications-mail-color-background;font-size: 0.8rem;">
+    <span>{{int:notifyme-mail-reception-reason}}</span>
+    <ul>
+        {{#source_providers}}
+            <li><a href="{{link}}">{{description}}</a></li>
+        {{/source_providers}}
+    </ul>
+</div>

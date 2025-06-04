@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fraxinus.cs"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label-edit": "Upravit odkaz na wiki",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Upravit odkaz",
+	"menueditor-ui-menu-keyword-label-edit": "Upravit klíčové slovo",
+	"menueditor-ui-dialog-title": "Upravit prvek"
+}

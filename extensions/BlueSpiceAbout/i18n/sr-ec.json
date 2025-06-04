@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Kizule",
+			"Zoranzoki21",
+			"Aca"
+		]
+	},
+	"bs-bluespiceabout-desc": "Информације о BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "О BlueSpice-у",
+	"bluespiceabout": "О BlueSpice-у",
+	"action-bluespiceabout-viewspecialpage": "Погледај специјалну страницу \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "приступ посебној страници [[Special:BlueSpiceAbout]]"
+}

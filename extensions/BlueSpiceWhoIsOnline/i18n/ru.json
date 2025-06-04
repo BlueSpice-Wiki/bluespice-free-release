@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"HarpyWar",
+			"Katunchik",
+			"Meshkov.a",
+			"Okras",
+			"Pacha Tchernof",
+			"Shuba"
+		]
+	},
+	"bs-whoisonline-desc": "Отображает список участников_ниц, которые сейчас онлайн",
+	"bs-whoisonline-nousers": "Никто не вошёл в систему.",
+	"bs-whoisonline-widget-title": "Кто онлайн?",
+	"prefs-whoisonline": "Кто онлайн?",
+	"bs-whoisonline-pref-limitcount": "Максимальное количество показываемых участников_ниц:",
+	"bs-whoisonline-pref-orderby": "Сортировка по:",
+	"bs-whoisonline-pref-orderby-time": "Время «в сети»",
+	"bs-whoisonline-pref-orderby-name": "Имя",
+	"bs-whoisonline-collection-var-login": "Логин"
+}

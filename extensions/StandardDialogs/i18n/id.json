@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"NFarras",
+			"Veracious"
+		]
+	},
+	"standarddialogs-page-info-page-images": "Gambar",
+	"standarddialogs-new-page-title": "Buat laman baru",
+	"standarddialogs-new-subpage-title": "Buat subhalaman baru untuk \"$1\"",
+	"standarddialogs-create-button-new-page-title": "Buat laman baru",
+	"standarddialogs-create-button-new-subpage-title": "Buat subhalaman baru"
+}

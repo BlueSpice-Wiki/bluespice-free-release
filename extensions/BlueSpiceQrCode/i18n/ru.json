@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac",
+			"Vlad5250",
+			"Yurina Tatiana"
+		]
+	},
+	"bs-qr-code-action-qr-code-text": "QR-код",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-код",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-код для $1",
+	"apihelp-bs-qr-code-param-size": "Размер QR-кода",
+	"bs-qr-code-alt-text": "QR-код для $1",
+	"bs-qr-code-tag-qrcode-title": "QR-код",
+	"bs-qr-code-tag-attr-page-label": "Страница",
+	"bs-qr-code-tag-attr-query-label": "Параметр",
+	"bs-qr-code-tag-attr-desc-label": "Описание",
+	"bs-qr-code-tag-attr-desc-help": "Описание, связанное с QR-кодом. Чтобы отображался только QR-код, оставьте это поле пустым",
+	"bs-qr-code-tag-attr-size-label": "Размер",
+	"bs-qr-code-droplet-name": "QR-код",
+	"bs-qr-code-tag-attr-size-option-small": "маленький",
+	"bs-qr-code-tag-attr-size-option-medium": "средний",
+	"bs-qr-code-tag-attr-size-option-large": "большой"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Umherirrender"
+		]
+	},
+	"filterspecialpages-desc": "{{desc|name=FilterSpecialPages|url=https://www.mediawiki.org/wiki/Extension:FilterSpecialPages}}",
+	"filterspecialpages-hint-label": "Hint Label for filter inputer field"
+}

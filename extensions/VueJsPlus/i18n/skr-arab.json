@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "ولھیٹو",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "ودھاؤ",
+	"vuejsplus-data-grid-option-sort-string-asc": "ترتیب صعودی",
+	"vuejsplus-data-grid-option-filter-string": "لبھو",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "غیر جانبدار",
+	"vuejsplus-data-grid-option-filter-date-from-label": "شروع تریخ"
+}

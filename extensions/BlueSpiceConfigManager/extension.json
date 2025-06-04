@@ -1,0 +1,149 @@
+{
+	"name": "BlueSpiceConfigManager",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceConfigManager",
+	"author": [
+		"Patric Wirth"
+	],
+	"descriptionmsg": "bs-configmanager-desc",
+	"license-name": "GPL-3.0-only",
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceConfigManager": {
+					"className": "\\BlueSpice\\ConfigManager\\Extension",
+					"extPath": "/BlueSpiceConfigManager"
+				}
+			},
+			"AdminToolRegistry": {
+				"bs-config-manager": "BlueSpice\\ConfigManager\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"bluespiceconfigmanager-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin",
+						"structuremanager"
+					]
+				}
+			}
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceConfigManager": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\ConfigManager\\": "src/"
+	},
+	"ExtensionMessagesFiles": {
+		"BlueSpiceConfigManagerAlias": "languages/ConfigManager.alias.php"
+	},
+	"APIModules": {
+		"bs-configmanager-tasks": "\\BlueSpice\\ConfigManager\\Api\\Task\\ConfigManager",
+		"bs-configmanager-store": "\\BlueSpice\\ConfigManager\\Api\\Store\\ConfigManager"
+	},
+	"SpecialPages": {
+		"BlueSpiceConfigManager": "\\BlueSpice\\ConfigManager\\Special\\ConfigManager"
+	},
+	"GroupPermissions": {
+		"*": {
+			"bluespiceconfigmanager-viewspecialpage": false
+		},
+		"user": {
+			"bluespiceconfigmanager-viewspecialpage": false
+		},
+		"sysop": {
+			"bluespiceconfigmanager-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"bluespiceconfigmanager-viewspecialpage"
+	],
+	"LogTypes": [
+		"bs-config-manager"
+	],
+	"FilterLogTypes": {
+		"bs-config-manager": true
+	},
+	"LogActionsHandlers": {
+		"bs-config-manager/*": "LogFormatter"
+	},
+	"ResourceModules": {
+		"ext.bluespice.configmanager": {
+			"packageFiles": [
+				"bluespice.configmanager.js",
+				{
+					"name": "pathNames.json",
+					"callback": "\\BlueSpice\\ConfigManager\\ClientConfig::getPathNames"
+				},
+				{
+					"name": "offset.json",
+					"callback": "\\BlueSpice\\ConfigManager\\ClientConfig::getToolbarOffset"
+				},
+				"ui/panel/ConfigManager.js",
+				"ui/pages/ConfigPage.js",
+				"ui/toolbar/ConfigToolbar.js",
+				"ui/booklet/ConfigBooklet.js",
+				"ui/widget/OutlineSelectWidget.js"
+			],
+			"messages": [
+				"bs-configmanager-noentry",
+				"bs-configmanager-mainpath",
+				"bs-configmanager-search",
+				"bs-configmanager-discard-open-changes",
+				"bs-configmanager-notify-configuration-saved"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.bluespice.oojs",
+				"ext.bluespice.configmanager.messages",
+				"oojs-ui-core",
+				"ext.oOJSPlus.data"
+			]
+		},
+		"ext.bluespice.configmanager.styles": {
+			"styles": "bluespice.configmanager.css"
+		},
+		"ext.bluespice.configmanager.messages": {
+			"class": "\\BlueSpice\\ConfigManager\\ResourceLoader\\Messages"
+		},
+		"ext.bluespice.configManager.skeleton": {
+			"styles": "bluespice.configmanager.skeleton.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceConfigManager/resources"
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\ConfigManager\\HookHandler\\CommonUserInterface"
+		}
+	},
+	"Hooks": {
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"ConfigManagerLogExcludeList": {
+			"value": [
+				"DistributionConnectorEventBusEventServices"
+			]
+		},
+		"ConfigManagerToolbarOffset": {
+			"value": 64
+		}
+	},
+	"manifest_version": 2,
+	"load_composer_autoloader": true
+}

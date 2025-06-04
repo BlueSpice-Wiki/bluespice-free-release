@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bgo eiu"
+		]
+	},
+	"standarddialogs-copy-btn": "کاپی کرو",
+	"standarddialogs-copy-page-legend": "کاپی کرو",
+	"standarddialogs-copy-page-new": "نویں صفحے دا ناں",
+	"standarddialogs-page-info-page-title": "سرخی",
+	"standarddialogs-page-info-page-language": "بولی",
+	"standarddialogs-page-info-page-contributors": "لیکھک",
+	"standarddialogs-page-info-page-categories": "گٹھاں",
+	"standarddialogs-page-info-page-images": "تصویراں",
+	"standarddialogs-new-page-title": "نواں صفحہ بناؤ",
+	"standarddialogs-new-page-label": "صفحے دا ناں",
+	"standarddialogs-create-button-new-page-text": "نواں صفحہ",
+	"standarddialogs-delete-btn": "مٹاؤ",
+	"standarddialogs-btn-done": "ہوگیا",
+	"standarddialogs-btn-cancel": "رد کرو"
+}

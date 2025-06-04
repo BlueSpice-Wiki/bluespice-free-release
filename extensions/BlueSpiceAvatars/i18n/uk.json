@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion",
+			"Vlad5250",
+			"Ата"
+		]
+	},
+	"bs-avatars-desc": "Містить загальні та індивідуальні зображення користувача",
+	"bs-avatars-pref-generator": "Генератор:",
+	"bs-avatars-pref-userimage-img-alt": "Ваше поточне зображення користувача",
+	"bs-avatars-upload-complete": "Зображення завантажено.",
+	"bs-avatars-generate-complete": "Створено новий аватар.",
+	"bs-avatars-upload-label": "Зображення",
+	"bs-avatars-generate-new-label": "Створити новий аватар",
+	"bs-avatars-file-upload-fieldset-title": "Завантажити нове зображення",
+	"bs-avatars-auto-generate-fieldset-title": "Автоматичне створення аватара",
+	"apihelp-bs-avatars-tasks-summary": "Завантаження, генерування і налаштування користувацьких аватарів",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Параметр «username» обов'язковий і має містити дійсне ім'я користувача",
+	"bs-avatars-pref-generator-help": "Зображення аватара створюється, коли користувач не завантажує зображення профілю. InstantAvatar: Створює зображення аватара на основі ініціалів справжнього імені або полів імені користувача. Ідентифікатор: створює зображення аватара на основі частин ідентифікатора користувача"
+}

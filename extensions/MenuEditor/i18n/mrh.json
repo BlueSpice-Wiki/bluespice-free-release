@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Teitei Para"
+		]
+	},
+	"menueditor-ui-menu-two-fold-link-spec-label": "Link",
+	"menueditor-ui-menu-raw-text-label": "Châ acv bietapa châhbi",
+	"menueditor-ui-dialog-action-done": "Patlô",
+	"menueditor-ui-node-type-selector-label": "Node pho",
+	"menueditor-ui-submit": "Pachô",
+	"menueditor-ui-cancel": "Châvei",
+	"menueditor-action-menueditsource": "Hnawh rohpathi",
+	"menueditor-action-menuedit": "Taopathi"
+}

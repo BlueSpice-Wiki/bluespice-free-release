@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"oojsplus-data-tree-item-remove-label": "Sihko",
+	"oojsplus-dialog-action-delete": "Sihko",
+	"oojsplus-dialog-action-cancel": "Gaskkalduhte",
+	"oojsplus-data-grid-filter-label": "Silli",
+	"oojsplus-data-grid-filter-clear": "Gurre",
+	"oojsplus-data-paginator-next": "Čuovvovaš siidu",
+	"oojsplus-data-grid-selection-column-label": "Vállje",
+	"oojsplus-toolbar-save": "Vurke"
+}

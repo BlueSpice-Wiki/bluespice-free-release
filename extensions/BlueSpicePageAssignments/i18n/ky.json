@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bosogo"
+		]
+	},
+	"bs-pageassignments-column-title": "Барактын аталышы",
+	"bs-pageassignments-assignee-type-user": "Колдонуучу",
+	"bs-pageassignments-assignee-type-group": "Топ"
+}

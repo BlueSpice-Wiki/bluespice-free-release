@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sturban",
+			"WikiPhoenix"
+		]
+	},
+	"bs-articleinfo-desc": "Tillhandahåller information om en sida i statusfältet",
+	"prefs-articleinfo": "Sidinformation",
+	"bs-articleinfo-newrevision-info-text-reload": "En ny version av denna sida är tillgänglig. [[:$1|Uppdatera]] sidan för att visa det aktuella innehållet."
+}

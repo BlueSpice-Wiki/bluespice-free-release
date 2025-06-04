@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ"
+		]
+	},
+	"bs-statistics-paging-page-size": "ಪುಟದ ಗಾತ್ರ",
+	"bs-statistics-aggregated-report-filter-category-multi": "ವರ್ಗಗಳು",
+	"bs-statistics-aggregated-report-filter-date-start": "ಆರಂಭದ ದಿನಾಂಕ",
+	"bs-statistics-aggregated-report-filter-date-end": "ಮುಕ್ತಾಯದ ದಿನಾಂಕ",
+	"bs-statistics-aggregated-report-filter-interval-day": "ದಿನ",
+	"bs-statistics-aggregated-report-filter-interval-week": "ವಾರ",
+	"bs-statistics-aggregated-report-filter-interval-month": "ತಿಂಗಳು",
+	"bs-statistics-aggregated-report-filter-interval-year": "ವರ್ಷ",
+	"bs-statistics-aggregated-report-filter-namespace": "ನಾಮವರ್ಗ",
+	"bs-statistics-aggregated-report-filter-namespaces": "ನಾಮವರ್ಗಗಳು",
+	"bs-statistics-aggregated-report-filter-page": "ಪುಟ",
+	"bs-statistics-aggregated-report-filter-user": "ಬಳಕೆದಾರ",
+	"bs-statistics-aggregated-report-filter-user-multi": "ಬಳಕೆದಾರರು",
+	"bs-statistics-aggregated-report-error": "ಒಂದು ದೋಷ ಸಂಭವಿಸಿದೆ!"
+}

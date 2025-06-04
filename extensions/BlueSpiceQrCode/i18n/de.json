@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Josef Konrad",
+			"Metalhead64"
+		]
+	},
+	"bs-qr-code-extension-description": "In der Werkzeugleiste wird ein QR-Code mit dem Link zur aktuellen Seite eingefügt.",
+	"bs-qr-code-action-qr-code-title": "Öffne Dialog mit QR Code",
+	"bs-qr-code-action-qr-code-text": "QR Code",
+	"bs-qr-code-action-qr-code-dialog-title": "QR Code",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR Code für $1",
+	"bs-qr-code-api-no-page": "Paramater 'page' ist ein leerer String",
+	"apihelp-bs-qr-code-summary": "QR Code als base64 data URI für eine Seite",
+	"apihelp-bs-qr-code-param-revid": "Revision ID der Seite zum generierren eines permalink",
+	"apihelp-bs-qr-code-param-page": "Name der Seite zum generieren der Base64 data URI",
+	"apihelp-bs-qr-code-param-size": "Größe des QR Code",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Standard API Aufruf",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "API Aufruf für eine bestimmte revid",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API Aufruf mit anderer Größe",
+	"bs-qr-code-alt-text": "QR-Code für $1",
+	"bs-qr-code-tag-qrcode-desc": "Fügt einen verlinkten QR-Code in die Wikiseite ein",
+	"bs-qr-code-tag-qrcode-title": "QR Code",
+	"bs-qr-code-tag-attr-page-label": "Seite",
+	"bs-qr-code-tag-attr-page-help": "Seitenname, der in den QR-Code-Link aufgenommen werden soll. Um den aktuellen Seitennamen zu verwenden, dieses Feld leer lassen",
+	"bs-qr-code-tag-attr-query-label": "Parameter",
+	"bs-qr-code-tag-attr-query-help": "Zusätzliche Parameter, die der QR-Code-URL hinzugefügt werden sollen. Dazu gehören Parameter wie \"action=edit\" oder \"oldid=1\".",
+	"bs-qr-code-tag-attr-desc-label": "Beschreibung",
+	"bs-qr-code-tag-attr-desc-help": "Eine Beschreibung, die sich auf den QR-Code bezieht. Um nur den QR-Code anzuzeigen, dieses Feld leer lassen",
+	"bs-qr-code-tag-attr-size-label": "Größe",
+	"bs-qr-code-tag-attr-size-help": "Verändert die Größe des eingebundenen QR-Codes",
+	"bs-qr-code-droplet-name": "QR-Code",
+	"bs-qr-code-droplet-desc": "Fügt einen QR-Code in der Wikiseite ein",
+	"bs-qr-code-tag-attr-size-option-small": "klein",
+	"bs-qr-code-tag-attr-size-option-medium": "mittel",
+	"bs-qr-code-tag-attr-size-option-large": "groß"
+}

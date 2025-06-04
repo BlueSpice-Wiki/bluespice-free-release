@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-instancestatus-desc": "Doda pregled stanja instance vikija",
+	"instancestatus": "Stanje instance",
+	"bs-instancestatus-instance-status-bs-version-label": "Različica BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "Uporabniška kvota",
+	"bs-instancestatus-instance-status-last-update-label": "Zadnja posodobitev:",
+	"bs-instancestatus-instance-status-created-label": "Instanca, ustvarjena dne",
+	"bs-instancestatus-instance-status-no-info": "Ni na voljo",
+	"bs-instancestatus-instance-status-sales-contact-label": "Stik BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "Stopite v stik tukaj: [$1 stik BlueSpice]",
+	"bs-instancestatus-overview-loader": "Zbiranje vikiinformacij ...",
+	"bs-instancestatus-instance-status-main-label": "Splošno"
+}

@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
+		]
+	},
+	"bs-visualeditorconnector-upload-type-original": "آرنی",
+	"bs-visualeditorconnector-upload-type-simple": "ساده",
+	"bs-visualeditorconnector-upload-type-one-click": "یو کلیک",
+	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "سمون ناگارل",
+	"bs-visualeditor-nsm-label": "ليدنيز سمون",
+	"bs-visualeditorconnector-inspector-tab-advanced-name": "پرمختللی",
+	"bs-visualeditorconnector-ve-style-option-description": "لښتيال ډول ټاکل",
+	"bs-visualeditorconnector-ve-style-option": "لښتيال ډول",
+	"bs-visualeditorconnector-text-style-tool-color-label": "ليک رنگ",
+	"bs-vec-table-style-cell-text-hor-align-left": "کيڼ",
+	"bs-vec-table-style-cell-text-hor-align-center": "منځ",
+	"bs-vec-table-style-cell-text-hor-align-right": "ښي",
+	"bs-vec-ve-table-width-value-auto": "خپلکاره",
+	"bs-vec-table-border-clear-all": "ټول ډولونه بیاځايناستول",
+	"bs-vec-table-border-none": "هيڅ",
+	"bs-vec-table-border-left": "کيڼ",
+	"bs-vec-table-border-top": "پورته",
+	"bs-vec-table-border-right": "ښي",
+	"bs-vec-table-border-bottom": "لاندې",
+	"bs-vec-table-border-all": "ټول",
+	"bs-visualeditor-save-label": "خوندي کول",
+	"bs-visualeditorconnector-upload-type": "د پورته کولو ډول"
+}

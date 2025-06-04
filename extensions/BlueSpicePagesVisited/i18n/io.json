@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"bs-pagesvisited-pref-widgetns": "'Namespaces:'",
+	"bs-pagesvisited-pref-widgetsortodr": "Ordinar segun:",
+	"bs-pagesvisited-pref-sort-pagename": "Titulo",
+	"bs-pagesvisited-ve-pagesvisited-title": "Pagini vizitita",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Quanteso",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Ajustez la quanto di pagini montrata en la listo",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Maxima grandeso por tituli",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Ajustez la maxima quanto di karakteri ante tranchar ula titulo",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Ordinar",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Establisez l'ordino en qua la pagini montresos",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "'Namespaces'",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Nur montrez pagini de ca ''namespaces''",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Tempo",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nomo di la pagino"
+}

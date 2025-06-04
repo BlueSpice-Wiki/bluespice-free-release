@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-usermanager-idnotexist": "Denne bruger findes ikke.",
+	"bs-usermanager-invalid-email-gen": "Denne e-mailadresse er ugyldig.",
+	"bs-usermanager-text": "Brugere",
+	"bs-usermanager-user-exists": "Brugernavnet findes allerede.",
+	"bs-usermanager-headerusername": "Brugernavn",
+	"bs-usermanager-headerregistration": "Registrering",
+	"bs-usermanager-headergroups": "Grupper",
+	"bs-usermanager-titleadduser": "Tilføj bruger",
+	"bs-usermanager-titleeditdetails": "Rediger bruger",
+	"bs-usermanager-labelnewpassword": "Adgangskode",
+	"bs-usermanager-labelpasswordcheck": "Bekræft adgangskode",
+	"bs-usermanager-headerenabled": "Aktiveret",
+	"bs-usermanager-endisable": "Aktiver/deaktiver",
+	"bs-usermanager-titledisableuser": "Deaktiver bruger",
+	"bs-usermanager-titleenableuser": "Aktiver bruger",
+	"bs-usermanager-group-add-not-allowed": "Du har ikke tilladelse til at tilføje brugere til gruppen $1",
+	"bs-usermanager-editgroups": "Rediger grupper",
+	"bs-usermanager-editpassword": "Skift adgangskode",
+	"action-usermanager-editpassword": "ændre brugeres adgangskoder",
+	"bs-usermanager-label-password-change-strategy": "Metode"
+}

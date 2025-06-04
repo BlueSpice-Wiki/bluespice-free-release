@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-bluespiceabout-desc": "Informacije o BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "O BlueSpice-u",
+	"bluespiceabout": "O BlueSpice-u",
+	"action-bluespiceabout-viewspecialpage": "Pogledaj specijalnu stranicu \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "pristup posebnoj stranici [[Special:BlueSpiceAbout]]"
+}

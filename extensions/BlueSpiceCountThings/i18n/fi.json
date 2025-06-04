@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joquliina",
+			"Pyscowicz",
+			"Silvonen"
+		]
+	},
+	"bs-countthings-ve-countcharacters-mode-all": "kaikki",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "merkit",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "sanat",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "merkit ja sanat",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "sivut",
+	"bs-countthings-error-no-input": "Ei annettua sivua.",
+	"bs-countthings-droplet-articles-name": "Sivujen määrä"
+}

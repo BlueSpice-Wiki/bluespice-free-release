@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arifin.wijaya",
+			"Diki Ananta",
+			"MarioMS",
+			"Sumbukompor",
+			"Veracious"
+		]
+	},
+	"bs-avatars-desc": "Menyediakan gambar pengguna generik dan individual",
+	"bs-avatars-pref-generator": "Generator:",
+	"bs-avatars-pref-userimage-img-alt": "Gambar pengguna Anda saat ini",
+	"bs-avatars-upload-complete": "Gambar telah diunggah.",
+	"bs-avatars-generate-complete": "Avatar baru telah dibuat.",
+	"bs-avatars-upload-label": "Gambar",
+	"bs-avatars-generate-new-label": "Hasilkan avatar baru",
+	"bs-avatars-file-upload-fieldset-title": "Unggah gambar",
+	"bs-avatars-auto-generate-fieldset-title": "Hasilkan avatar secara otomatis"
+}

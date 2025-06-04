@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"bs-pageassignments-column-title": "Säitentitel",
+	"bs-pageassignments-column-assignee-type": "Typ",
+	"bs-pageassignments-api-error": "Et ass e Feeler geschitt",
+	"bs-pageassignments-api-error-no-page": "Säit net uginn",
+	"bs-pageassignments-notification-reason": "Grënn fir dës Notifikatioun",
+	"bs-pageassignments-notification-reason-group": "Dir sidd Member {{PLURAL:$1|vum Grupp|vun de Gruppen}}: $2",
+	"bs-pageassignments-assignee-special-everyone-label": "Jiddwereen",
+	"bs-pageassignments-assignee-type-everyone": "Jiddwereen",
+	"bs-pageassignments-assignee-type-user": "Benotzer",
+	"bs-pageassignments-assignee-type-group": "Grupp",
+	"bs-pageassignments-collection-var-namespacename": "Nummraum",
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Zuel vun de Säiten",
+	"bs-pageassignments-header-action-delete": "Läschen"
+}

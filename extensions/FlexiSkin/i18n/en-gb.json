@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dreamy Jazz",
+			"Piano1forte2",
+			"Reedy"
+		]
+	},
+	"flexiskin-ui-plugin-color-presets-label": "Colour presets",
+	"flexiskin-ui-plugin-colors-background-label": "Background colours",
+	"flexiskin-ui-plugin-colors-background-primary-label": "Colour 1",
+	"flexiskin-ui-plugin-colors-background-secondary-label": "Colour 2",
+	"flexiskin-ui-plugin-colors-background-tertiary-label": "Colour 3",
+	"flexiskin-ui-plugin-colors-background-quaternary-label": "Colour 4",
+	"flexiskin-ui-plugin-colors-foreground-label": "Foreground colours",
+	"flexiskin-ui-plugin-colors-foreground-primary-label": "Colour 1",
+	"flexiskin-ui-plugin-colors-foreground-secondary-label": "Colour 2",
+	"flexiskin-ui-plugin-colors-foreground-tertiary-label": "Colour 3",
+	"flexiskin-ui-plugin-colors-foreground-quaternary-label": "Colour 4",
+	"flexiskin-ui-plugin-color-presets-custom-header": "Custom colour scheme",
+	"flexiskin-ui-plugin-color-presets-custom-dirty-warning": "If you switch to a preset, custom colour changes will be lost. Are you sure you want to continue?",
+	"flexiskin-ui-plugin-color-presets-customize-label": "customise...",
+	"flexiskin-ui-plugin-colors-foreground-content-label": "Content colour",
+	"flexiskin-ui-plugin-content-header-color-label": "Colour",
+	"flexiskin-ui-plugin-content-colors-label": "Colours",
+	"flexiskin-ui-plugin-color-settings-label": "Layout colours",
+	"flexiskin-ui-plugin-navbar-colors-label": "Header colour",
+	"flexiskin-ui-plugin-sidebar-primary-colors-label": "Sidebar colours",
+	"flexiskin-ui-plugin-footer-colors-label": "Footer colours"
+}

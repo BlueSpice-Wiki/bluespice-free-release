@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"bs-articleinfo-desc": "Gir informasjon om en side i statusfeltet",
+	"prefs-articleinfo": "Sideinformasjon",
+	"bs-articleinfo-newrevision-info-text-reload": "En ny versjon av siden er tilgjengelig. [[:$1|Last siden på nytt]] for å vise det nåværende innholdet."
+}

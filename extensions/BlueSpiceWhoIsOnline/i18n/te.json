@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"V Bhavya",
+			"Veeven"
+		]
+	},
+	"bs-whoisonline-pref-orderby-name": "పేరు",
+	"bs-whoisonline-droplet-count-name": "లాగిన్ చేసిన వినియోగదారుల సంఖ్య",
+	"bs-whoisonline-droplet-count-description": "ప్రస్తుతం లాగిన్ చేసిన వినియోగదారుల సంఖ్య",
+	"bs-whoisonline-droplet-popup-name": "లాగిన్ చేసిన వినియోగదారుల జాబితా",
+	"bs-whoisonline-droplet-popup-description": "ప్రస్తుతం లాగిన్ అయిన వినియోగదారులందరి జాబితాతో పాప్-అప్"
+}

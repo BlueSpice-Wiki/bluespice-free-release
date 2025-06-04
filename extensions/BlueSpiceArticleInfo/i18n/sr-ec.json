@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Acamicamacaraca",
+			"BadDog",
+			"Kizule",
+			"Milicevic01",
+			"Zoranzoki21"
+		]
+	},
+	"bs-articleinfo-desc": "Пружа информације о страници у статусној траци",
+	"prefs-articleinfo": "Информације о страници",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "Интервал ажурирања у секундама",
+	"bs-articleinfo-newrevision-info-text-reload": "Постоји нова верзија ове странице. Молимо [[:$1|освежите]] страницу да би сте видели њен тренутни садржај."
+}

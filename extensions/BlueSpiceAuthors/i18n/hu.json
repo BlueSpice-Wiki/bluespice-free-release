@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina",
+			"Misibacsi"
+		]
+	},
+	"bs-authors-desc": "Megjeleníti a lap szerzőinek profilképét",
+	"prefs-authors": "A lap szerzői",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Szerző}}|Szerzők}}",
+	"bs-authors-profileimage": "Profilkép",
+	"bs-authors-profileimage-change": "Profilkép módosítása",
+	"bs-authors-show-all-authors": "További szerzők elérhetők",
+	"bs-authors-navigation-link-title": "A lap szerzői",
+	"bs-authors-navigation-link-text": "Szerzők",
+	"apihelp-bs-pageauthors-store-summary": "Listázza a lap összes szerzőjét a megadott kontextusból",
+	"bs-authors-info-dialog": "A lap szerzői"
+}

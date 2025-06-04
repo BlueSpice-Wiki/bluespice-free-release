@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Liuxinyu970226",
+			"Nemo bis",
+			"Robby",
+			"Shirayuki",
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-whoisonline-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of who is online extension",
+	"bs-whoisonline-nousers": "Text for nobody is logged in.",
+	"bs-whoisonline-widget-title": "Widget headline for who is online?\n {{Identical|Who is online?}}",
+	"prefs-whoisonline": "Used in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], headline for who is online section.",
+	"bs-whoisonline-pref-limitcount": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for maximum number of users shown:",
+	"bs-whoisonline-pref-orderby": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for sort by:\n{{Identical|Sort by}}",
+	"bs-whoisonline-pref-maxidletime-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for time in seconds until a user is marked as offline. See {{msg-mw|Bs-whoisonline-pref-maxidletime-help-label}}.",
+	"bs-whoisonline-pref-orderby-time": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], option label for uptime.\n\n\"Uptime\" is internally called \"onlinetime\" (Online time).\n{{Identical|Uptime}}",
+	"bs-whoisonline-pref-orderby-name": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], option label for name\n{{Identical|Name}}",
+	"bs-whoisonline-pref-interval-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for update interval in seconds:",
+	"bs-whoisonline-collection-type-userlogin": "Label for source type \"userlogin\" in entry field \"type\"\n{{Identical|User login}}",
+	"bs-whoisonline-collection-var-login": "Label for entry field \"login\"\n{{Identical|Login}}",
+	"bs-whoisonline-statistics-report-login-duration": "Statistics report name",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Label for the \"value\" axis",
+	"bs-whoisonline-pref-interval-help-label": "Description for config variable \"WhoIsOnlineInterval\"",
+	"bs-whoisonline-pref-maxidletime-help-label": "Description for config variable \"WhoIsOnlineMaxIdleTime\"",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Description for whoisonline tag",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Title for whoisonline tag",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Description for whoisonlinepopup tag",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Title for whoisonlinepopup tag",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Label for the \"value\" axis",
+	"bs-whoisonline-statistics-report-login-number": "Statistics report name",
+	"bs-whoisonline-droplet-count-name": "Title of droplet for tag WhoIsOnlineCount",
+	"bs-whoisonline-droplet-count-description": "Description of droplet for tag WhoIsOnlineCount",
+	"bs-whoisonline-droplet-popup-name": "Title of droplet for tag WhoIsOnlinePopup",
+	"bs-whoisonline-droplet-popup-description": "Description of droplet for tag WhoIsOnlinePopup"
+}

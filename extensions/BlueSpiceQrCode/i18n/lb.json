@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"bs-qr-code-action-qr-code-text": "QR-Code",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-Code",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-Code fir $1",
+	"apihelp-bs-qr-code-param-size": "Gréisst vum QR-Code",
+	"bs-qr-code-alt-text": "QR-Code fir $1",
+	"bs-qr-code-tag-qrcode-title": "QR-Code",
+	"bs-qr-code-tag-attr-page-label": "Säit",
+	"bs-qr-code-tag-attr-query-label": "Parameter",
+	"bs-qr-code-tag-attr-desc-label": "Beschreiwung",
+	"bs-qr-code-tag-attr-size-label": "Gréisst",
+	"bs-qr-code-droplet-name": "QR-Code",
+	"bs-qr-code-tag-attr-size-option-small": "kleng",
+	"bs-qr-code-tag-attr-size-option-medium": "mëttel",
+	"bs-qr-code-tag-attr-size-option-large": "grouss"
+}

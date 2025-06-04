@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Გიო ოქრო"
+		]
+	},
+	"menueditor-desc": "გრაფიკული რედაქტორი მენიუს გვერდებისთვის",
+	"menueditor-ui-menu-wiki-link-label": "ვიკიბმული",
+	"menueditor-ui-menu-wiki-link-label-edit": "ვიკიბმულის რედაქტირება",
+	"menueditor-ui-menu-wiki-link-help": "ბმული ვიკიგვერდზე",
+	"menueditor-ui-menu-two-fold-link-spec-label": "ბმული",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "ბმულის რედაქტირება",
+	"menueditor-ui-menu-two-fold-link-spec-help": "ბმულის მახასიათებლები.<br>სამიზნე შეიძლება იყოს:<ul><li>შეტყობინების გასაღები, რომელიც გარდაიქმნება გვერდის სათაურად</li><li>გარე ბმული</li><li>ვიკის გვერდის სათაური</li><li>ინტერვიკი (ვიკითშორისი) ბმული</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "ტექსტი ან შეტყობინების გასაღები",
+	"menueditor-ui-menu-raw-text-label-edit": "ტექსტის ან შეტყობინების გასაღების რედაქტირება",
+	"menueditor-ui-menu-keyword-label": "საკვანძო სიტყვა",
+	"menueditor-ui-menu-keyword-label-edit": "საკვანძო სიტყვის რედაქტირება",
+	"menueditor-ui-menu-keyword-help": "ერთ-ერთი ხელმისაწვდომი '''საკვანძო სიტყვა''', რომელიც აჩვენებს შესაბამის ვიჯეტს",
+	"menueditor-ui-form-field-keyword": "საკვანძო სიტყვა",
+	"menueditor-ui-form-field-text": "ტექსტი ან შეტყობინების გასაღები",
+	"menueditor-ui-form-field-target": "ბმულის სამიზნე",
+	"menueditor-ui-form-field-label": "ბმულის ტექსტი",
+	"menueditor-ui-dialog-action-done": "გაკეთდა",
+	"menueditor-ui-dialog-action-cancel": "გაუქმება",
+	"menueditor-ui-node-type-selector-label": "კვანძის ტიპი",
+	"menueditor-ui-submit": "შენახვა",
+	"menueditor-ui-cancel": "გაუქმება",
+	"menueditor-ui-redlink-notice": "ეს მენიუ ჯერ არ არსებობს!",
+	"menueditor-action-menueditsource": "წყაროს რედაქტირება",
+	"menueditor-action-menuedit": "რედაქტირება",
+	"menueditor-ui-dialog-title": "ელემენტის რედაქტირება",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "საკვანძო სიტყვის რედაქტირება",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "საკვანძო სიტყვა",
+	"menueditor-toolbar-cancel": "რედაქტირების გაუქმება"
+}

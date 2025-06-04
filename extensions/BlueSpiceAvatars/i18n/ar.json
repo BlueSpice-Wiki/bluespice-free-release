@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr-Taher",
+			"Meno25",
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-avatars-desc": "يوفر الصور العامة والفردية للمستخدم",
+	"bs-avatars-pref-generator": "المولد:",
+	"bs-avatars-pref-userimage-img-alt": "صورة المستخدم الحالية الخاصة بك",
+	"bs-avatars-upload-complete": "رفعت الصورة.",
+	"bs-avatars-generate-complete": "تم إنشاء صورة رمزية جديدة.",
+	"bs-avatars-upload-label": "الصورة",
+	"bs-avatars-generate-new-label": "توليد صورة رمزية جديدة",
+	"bs-avatars-file-upload-fieldset-title": "رفع صورة جديدة",
+	"bs-avatars-auto-generate-fieldset-title": "توليد تلقائي للصورة الرمزية",
+	"apihelp-bs-avatars-tasks-summary": "رفع وتوليد وإعداد الصور الرمزية للمستخدم",
+	"bs-avatars-tag-profileimage-error-invalidusername": "الوسيط \"اسم المستخدم\" مطلوب ويجب أن يحتوي على اسم مستخدم صالح",
+	"bs-avatars-pref-generator-help": "يتم إنشاء الصورة الرمزية عندما لا يُحمّل المستخدم صورةً شخصية. InstantAvatar: يُنشئ صورة رمزية بناءً على استخدام الأحرف الأولى من اسمه الحقيقي أو حقول اسم المستخدم. Identicon: يُنشئ صورة رمزية بناءً على أجزاء من مُعرّف المستخدم.",
+	"bs-avatars-upload-button": "رفع",
+	"bs-avatars-generate-button": "إنشاء",
+	"bs-avatars-generic-cancel": "إلغاء",
+	"bs-avatars-generate-description": "إنشاء صورة رمزية جديدة تلقائيًا. سيؤدي هذا إلى استبدال أي صورة شخصية تم تحميلها بشكل دائم (إذا تم ضبطها)"
+}

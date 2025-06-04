@@ -1,0 +1,479 @@
+{
+	"name": "EnhancedUpload",
+	"version": "4.0.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[https://www.hallowelt.com Hallo Welt! GmbH]",
+		"Miriam Schlindwein",
+		"Patric Wirth"
+	],
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:EnhancedUpload",
+	"descriptionmsg": "enhancedupload-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"callback": "mwsInitComponents",
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"MessagesDirs": {
+		"EnhancedUpload": "i18n"
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"ConfigDefinitionRegistry": {
+				"EnhancedUploadDragDropImagesAlignment": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesAlignment::getInstance",
+				"EnhancedUploadDragDropImagesType": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesType::getInstance",
+				"EnhancedUploadDragDropImagesHeight": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesHeight::getInstance",
+				"EnhancedUploadDragDropImagesWidth": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\DragDropImagesWidth::getInstance",
+				"EnhancedUploadAllowMismatchedMimeTypes": "\\MediaWiki\\Extension\\EnhancedUpload\\ConfigDefinition\\AllowMismatchedMimeTypes::getInstance"
+			}
+		},
+		"EnhancedUpload": {
+			"UploadFormPluginModules": []
+		},
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.enhancedUpload.attachments.visualEditor",
+				"ext.enhancedUpload.ve.bootstrap"
+			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"attachment": {
+					"class": "\\MediaWiki\\Extension\\EnhancedUpload\\ContentDroplets\\AttachmentDroplet"
+				}
+			}
+		},
+		"EnhancedStandardUIs": {
+			"FilelistPluginModules": [
+				"ext.enhancedUpload.filelist"
+			]
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"EnhancedUploadAlias": "languages/EnhancedUpload.i18n.alias.php"
+	},
+	"SpecialPages": {
+		"EnhancedUpload": "MediaWiki\\Extension\\EnhancedUpload\\Special\\EnhancedUpload"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\EnhancedUpload\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\EnhancedUpload\\Tests\\": "tests/phpunit"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "tag",
+		"MimeMagicImproveFromExtension": "addMimeType",
+		"BeforePageDisplay": "addModules",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
+		"SkinTemplateNavigation::Universal": "addContentActions",
+		"SpecialPage_initList": "special-upload"
+	},
+	"HookHandlers": {
+		"tag": {
+			"class": "\\MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\Tag",
+			"services": [
+				"TitleFactory"
+			]
+		},
+		"addModules": {
+			"class": "MediaWiki\\Extension\\EnhancedUpload\\Hook\\BeforePageDisplay\\AddModules"
+		},
+		"addMimeType": {
+			"class": "MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\AddMimeType",
+			"services": [ "MainConfig" ]
+		},
+		"discovery-skin": {
+			"class": "MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\DiscoverySkin"
+		},
+		"addContentActions": {
+			"class": "MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\AddContentActions",
+			"services": [
+				"PermissionManager"
+			]
+		},
+		"special-upload": {
+			"class": "MediaWiki\\Extension\\EnhancedUpload\\Hook\\SpecialPage_initList\\OverwriteSpecialUpload"
+		}
+	},
+	"RestRoutes": [
+		{
+			"path": "/enhancedupload/addattachments/{pageId}/{counter}",
+			"method": "POST",
+			"class": "\\MediaWiki\\Extension\\EnhancedUpload\\Rest\\SetAttachments",
+			"services": [
+				"EnhancedUploadAttachmentTagModifier",
+				"TitleFactory",
+				"PermissionManager"
+			]
+		},
+		{
+			"path": "/enhancedupload/removeattachments/{pageId}/{counter}",
+			"method": "POST",
+			"class": "\\MediaWiki\\Extension\\EnhancedUpload\\Rest\\RemoveAttachments",
+			"services": [
+				"EnhancedUploadAttachmentTagModifier",
+				"TitleFactory",
+				"PermissionManager"
+			]
+		}
+	],
+	"ResourceModules": {
+		"ext.enhancedUpload": {
+			"packageFiles": [
+				"enhancedUpload.js",
+				{
+					"name": "pluginModules.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\EnhancedUploadPluginModules::getPluginModules"
+				}
+			],
+			"dependencies": [
+				"ext.enhancedUpload.uploadWidget"
+			]
+		},
+		"ext.enhancedUpload.special.skeleton.styles": {
+			"styles": [
+				"ext.enhancedUpload.skeleton.css"
+			]
+		},
+		"ext.enhancedUpload.uploadWidget": {
+			"packageFiles": [
+				"ui/UploadWidget.js",
+				{
+					"name": "ui/pluginModules.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\EnhancedUploadPluginModules::getPluginModules"
+				}
+			],
+			"messages": [
+				"enhancedupload-upload-warning-exists",
+				"enhancedupload-upload-warning-duplicate",
+				"enhancedupload-upload-warning-was-deleted",
+				"enhancedupload-toggle-details-button-hide-label",
+				"enhancedupload-toggle-details-button-show-label",
+				"enhancedupload-reset-button-label"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.enhancedUpload.widgets",
+				"ext.enhancedUpload.detailsUploadWidget",
+				"ext.enhancedUpload.paramsProcessor"
+			]
+		},
+		"ext.enhancedUpload.widgets": {
+			"scripts": [
+				"ui/panel/Preview.js",
+				"ui/panel/PreviewWidget.js",
+				"ui/dialog/UploadFinishedDialog.js",
+				"ui/panel/FailedList.js",
+				"ui/panel/FinishedList.js",
+				"ui/panel/WarningList.js"
+			],
+			"styles": [
+				"ext.enhancedUpload.css"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.widgets",
+				"mediawiki.widgets",
+				"ext.oOJSPlus.data",
+				"mediawiki.language.months",
+				"mediawiki.user",
+				"mediawiki.Title",
+				"mediawiki.util"
+			],
+			"messages": [
+				"enhancedupload-details-header-label",
+				"enhancedupload-details-namespace-label",
+				"enhancedupload-details-categories-label",
+				"enhancedupload-details-description-label",
+				"enhancedupload-upload-button-label",
+				"enhancedupload-cancel-button-label",
+				"enhancedupload-finished-dialog-title",
+				"enhancedupload-failed-dialog-title",
+				"enhancedupload-failed-dialog-label",
+				"enhancedupload-alert-missing-files",
+				"enhancedupload-list-header-filetype",
+				"enhancedupload-list-header-filename",
+				"enhancedupload-list-header-error",
+				"enhancedupload-list-header-warning",
+				"enhancedupload-list-header-link",
+				"enhancedupload-finished-dialog-label",
+				"enhancedupload-tab-failed-upload",
+				"enhancedupload-tab-successfull-upload",
+				"enhancedupload-tab-warnings-upload",
+				"enhancedupload-warning-dialog-label",
+				"enhancedupload-preview-widget-label",
+				"enhancedupload-tab-updated-upload",
+				"enhancedupload-updated-dialog-label",
+				"enhancedupload-finished-dialog-action-close",
+				"enhancedupload-attachments-tag-grid-remove-title",
+				"enhancedupload-preview-widget-remove-label"
+			]
+		},
+		"ext.enhancedupload.attachments.bootstrap": {
+			"scripts": [
+				"attachments.bootstrap.js"
+			],
+			"styles": "enhancedUpload.droplet.css",
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"ext.enhancedupload.attachments": {
+			"scripts": [
+				"ui/AttachmentsWidget.js"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.data",
+				"ext.enhancedUpload.uploadWidget",
+				"ext.oOJSPlus.widgets"
+			],
+			"messages": [
+				"enhancedupload-attachments-add-media-button-title",
+				"enhancedupload-attachments-add-new-media-button-title",
+				"enhancedupload-attachments-tag-grid-file-label",
+				"enhancedupload-attachments-tag-grid-size-label",
+				"enhancedupload-attachments-tag-grid-version-label",
+				"enhancedupload-attachments-tag-grid-category-label",
+				"enhancedupload-attachments-tag-no-attached-files",
+				"enhancedupload-attachments-tag-grid-editor-label",
+				"enhancedupload-attachments-tag-grid-details-title",
+				"enhancedupload-attachments-tag-grid-remove-title",
+				"enhancedupload-attachments-confirm-remove"
+			]
+		},
+		"ext.enhancedupload.attachments.styles": {
+			"styles": [
+				"attachments.css"
+			]
+		},
+		"ext.enhancedUpload.attachments.api": {
+			"scripts": [
+				"api/Api.js"
+			]
+		},
+		"ext.enhancedUpload.ve.bootstrap": {
+			"packageFiles": [
+				"ext.enhancedUpload.ve.bootstrap.js",
+				{
+					"name": "pluginModules.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\EnhancedUploadPluginModules::getPluginModules"
+				}
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"ext.enhancedUpload.ve.transferHandler": {
+			"packageFiles": [
+				"ui/dataTransferHandler/enhancedUpload.MediaTransferHandler.js",
+				{
+					"name": "ui/dataTransferHandler/config.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\ClientConfig::makeConfigJson"
+				}
+			],
+			"dependencies": [
+				"ext.enhancedUpload.ve.mediaDialog"
+			]
+		},
+		"ext.enhancedUpload.ve.mediaDialog": {
+			"packageFiles": [
+				"ui/dialog/VEInsertMediaDialog.js",
+				{
+					"name": "ui/dialog/insertMediaConfig.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\InsertMediaConfig::makeConfigJson"
+				}
+			],
+			"dependencies": [
+				"ext.visualEditor.mwimage",
+				"oojs-ui",
+				"ext.visualEditor.mwlink",
+				"ext.enhancedUpload.paramsProcessor",
+				"ext.oOJSPlus.widgets"
+			],
+			"messages": [
+				"enhancedupload-ve-dialog-title",
+				"enhancedupload-ve-dialog-filename-label",
+				"enhancedupload-ve-dialog-title-exists",
+				"enhancedupload-ve-dialog-duplicate-confirm",
+				"enhancedupload-upload-error-duplicate",
+				"enhancedupload-upload-error-badfilename",
+				"enhancedupload-upload-error-unhandled",
+				"enhancedupload-details-categories-label"
+			]
+		},
+		"ext.enhancedUpload.attachments.addMediaDialog": {
+			"scripts": [
+				"ui/dialog/AddExistingMediaDialog.js"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.widgets"
+			],
+			"messages": [
+				"enhancedupload-attachments-media-dialog-title",
+				"enhancedupload-attachments-media-dialog-cancel-title",
+				"enhancedupload-attachments-media-dialog-add-title",
+				"enhancedupload-attachments-media-dialog-label"
+			]
+		},
+		"ext.enhancedUpload.detailsUploadWidget": {
+			"scripts": [
+				"ui/widget/DetailsUploadWidget.js",
+				"ui/dialog/DetailsDialog.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.widgets"
+			],
+			"messages": [
+				"enhancedupload-attachments-media-dialog-details-cancel",
+				"enhancedupload-attachments-media-dialog-details-upload",
+				"enhancedupload-attachments-media-dialog-details-settings"
+			]
+		},
+		"ext.enhancedUpload.upload.dialog": {
+			"packageFiles": [
+				"ui/dialog/UploadFilesDialog.js",
+				{
+					"name": "ui/dialog/pluginModules.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\EnhancedUploadPluginModules::getPluginModules"
+				}
+			],
+			"dependencies": [
+				"ext.enhancedUpload.upload.booklet"
+			],
+			"styles": [
+				"upload.dialog.css"
+			],
+			"messages": [
+				"enhancedupload-upload-media-dialog-title",
+				"enhancedupload-upload-media-dialog-cancel-title",
+				"enhancedupload-upload-media-dialog-upload-title",
+				"enhancedupload-upload-media-dialog-done-title"
+			]
+		},
+		"ext.enhancedUpload.uploadDialog.bootstrap": {
+			"scripts": [
+				"upload.bootstrap.js"
+			]
+		},
+		"ext.enhancedUpload.upload.booklet": {
+			"scripts": [
+				"ui/booklet/UploadBooklet.js",
+				"ui/booklet/pages/UploadPage.js",
+				"ui/booklet/pages/ResultPage.js"
+			],
+			"dependencies": [
+				"ext.enhancedUpload.uploadWidget",
+				"ext.enhancedUpload.widgets"
+			]
+		},
+		"ext.enhancedUpload.attachments.visualEditor": {
+			"scripts": [
+				"ve/ve.ce.AttachmentNode.js",
+				"ve/ve.dm.AttachmentNode.js",
+				"ve/ve.ui.AttachmentInspector.js",
+				"ve/ve.ui.AttachmentInspectorTool.js"
+			],
+			"messages": [
+				"enhancedupload-ve-attachment-title",
+				"enhancedupload-ve-attachmentinspector-title",
+				"enhancedupload-ve-attachmentinspector-prefix",
+				"enhancedupload-ve-attachmentinspector-categories",
+				"enhancedupload-ve-attachmentinspector-desc",
+				"enhancedupload-ve-attachmentinspector-options",
+				"enhancedupload-ve-attachmentinspector-grid-version",
+				"enhancedupload-ve-attachmentinspector-grid-editor",
+				"enhancedupload-ve-attachmentinspector-grid-size",
+				"enhancedupload-ve-attachmentinspector-grid-categories"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore"
+			]
+		},
+		"ext.enhancedUpload.paramsProcessor": {
+			"scripts": [
+				"ParamsProcessor.js",
+				"UiParamsProcessor.js"
+			],
+			"dependencies": [
+				"mediawiki.widgets"
+			]
+		},
+		"ext.enhancedUpload.filelist": {
+			"packageFiles": [
+				"ext.enhancedUpload.filelist.bootstrap.js"
+			]
+		},
+		"ext.enhancedUpload.singleupload.dialog": {
+			"packageFiles": [
+				"ui/dialog/UploadSingleFileDialog.js",
+				{
+					"name": "ui/dialog/pluginModules.json",
+					"callback": "MediaWiki\\Extension\\EnhancedUpload\\EnhancedUploadPluginModules::getPluginModules"
+				}
+			],
+			"dependencies": [
+				"ext.enhancedUpload.uploadWidget",
+				"ext.enhancedUpload.widgets"
+			],
+			"styles": [
+				"singlefileupload.dialog.css"
+			],
+			"messages": [
+				"enhancedupload-upload-media-dialog-title",
+				"enhancedupload-upload-media-dialog-cancel-title",
+				"enhancedupload-upload-media-dialog-upload-title",
+				"enhancedupload-upload-media-dialog-done-title",
+				"enhancedupload-single-file-dlg-title",
+				"uploaderror"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "EnhancedUpload/resources"
+	},
+	"QUnitTestModule": {
+		"localBasePath": "",
+		"remoteExtPath": "EnhancedUpload",
+		"scripts": [
+			"tests/qunit/ext.enhancedUpload.paramsProcessor.test.js"
+		],
+		"dependencies": [
+			"ext.enhancedUpload.paramsProcessor"
+		]
+	},
+	"config": {
+		"EnhancedUploadOverrideStandardUpload": {
+			"value": false
+		},
+		"EnhancedUploadDragDropImagesAlignment": {
+			"value": "right",
+			"public": true
+		},
+		"EnhancedUploadDragDropImagesType": {
+			"value": "thumb",
+			"public": true
+		},
+		"EnhancedUploadDragDropImagesHeight": {
+			"value": "auto",
+			"public": true
+		},
+		"EnhancedUploadDragDropImagesWidth": {
+			"value": "300",
+			"public": true
+		},
+		"EnhancedUploadAllowMismatchedMimeTypes": {
+			"value": false,
+			"public": true
+		}
+	},
+	"manifest_version": 2,
+	"load_composer_autoloader": true
+}

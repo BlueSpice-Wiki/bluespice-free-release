@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-instancestatus-desc": "Adde un vista general del stato del instantia wiki",
+	"instancestatus": "Stato del instantia",
+	"bs-instancestatus-instance-status-bs-version-label": "Version de BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "Quota de usator",
+	"bs-instancestatus-instance-status-last-update-label": "Ultime actualisation le",
+	"bs-instancestatus-instance-status-created-label": "Instantia create le",
+	"bs-instancestatus-instance-status-no-info": "Non disponibile",
+	"bs-instancestatus-instance-status-sales-contact-label": "Contacto BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "Contacta nos hic: [$1 Contacto BlueSpice]",
+	"bs-instancestatus-overview-loader": "Collige information wiki…",
+	"bs-instancestatus-instance-status-main-label": "General"
+}
