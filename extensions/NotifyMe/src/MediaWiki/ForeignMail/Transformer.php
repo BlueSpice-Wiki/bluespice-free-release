@@ -35,7 +35,7 @@ class Transformer implements UserMailerTransformMessageHook {
 	 * @return bool
 	 */
 	private function isPlainText( array $headers ) {
-		return strpos( $headers['Content-type'] ?? 'text/plain', 'text/plain' ) !== false;
+		return str_contains( $headers['Content-type'] ?? $headers['Content-Type'] ?? 'text/plain', 'text/plain' );
 	}
 
 	/**

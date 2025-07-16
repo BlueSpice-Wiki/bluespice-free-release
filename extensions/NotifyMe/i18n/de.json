@@ -3,6 +3,7 @@
 		"authors": [
 			"Brettchenweber",
 			"McDutchie",
+			"Vhoesl",
 			"[http://www.hallowelt.com Hallo Welt! GmbH]"
 		]
 	},
@@ -118,10 +119,10 @@
 	"notifyme-event-page-create": "{{GENDER:$1|hat}} Seite $2 erstellt",
 	"notifyme-event-page-create-bot": "Seite $1 wurde erstellt",
 	"notifyme-link-label-history": "siehe Versionsgeschichte",
-	"notifyme-event-page-edit": "{{GENDER:$1|hat}} Seite $2 bearbeitet",
+	"notifyme-event-page-edit": "{{GENDER:$1|hat}} die Seite $2 bearbeitet.",
 	"notifyme-event-page-edit-bot": "Seite $1 wurde bearbeitet",
 	"notifyme-event-page-edit-group": "Seite $1 wurde $2-mal bearbeitet",
-	"notifyme-links-intro-edit": "Du kannst die Änderungen auf der Seite direkt über den folgenden Link einsehen",
+	"notifyme-links-intro-edit": "Du kannst die Änderungen auf der Seite direkt über den folgenden Link einsehen:",
 	"notifyme-event-page-move-bot": "Seite $1 wurde nach $2 verschoben",
 	"notifyme-event-page-delete-bot": "Seite $1 wurde gelöscht",
 	"notifyme-event-page-move": "{{GENDER:$1|hat}} Seite $2 nach $3 verschoben",
@@ -205,5 +206,6 @@
 	"notifyme-ui-dialog-popup-table-event-label": "Ereignis",
 	"notifyme-ui-dialog-popup-table-desc-label": "Beschreibung",
 	"notifyme-ui-dialog-popup-header-label": "Diese Ereignisse lösen Benachrichtigungen aus:",
-	"notifyme-event-page-edit-desc": "Eine Seite wurde von einem anderen Benutzer bearbeitet"
+	"notifyme-event-page-edit-desc": "Eine Seite wurde von einem anderen Benutzer bearbeitet",
+	"notifyme-ui-delivery-label": "Zustellung"
 }

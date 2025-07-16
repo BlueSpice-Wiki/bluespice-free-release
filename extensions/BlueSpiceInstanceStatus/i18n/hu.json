@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-instancestatus-desc": "Áttekintést nyújt a wiki rendszer állapotáról",
+	"instancestatus": "Rendszer állapot",
+	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice verzió",
+	"bs-instancestatus-instance-status-user-quota-label": "Felhasználói kvóta",
+	"bs-instancestatus-instance-status-last-update-label": "Utolsó frissítés",
+	"bs-instancestatus-instance-status-created-label": "Rendszer létrehozva ekkor:",
+	"bs-instancestatus-instance-status-no-info": "Nem elérhető",
+	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice kapcsolat",
+	"bs-instancestatus-instance-status-sales-contact": "Kapcsolatfelvétel itt: [ $1 BlueSpice kapcsolat]",
+	"bs-instancestatus-overview-loader": "Wikipédia-információk gyűjtése...",
+	"bs-instancestatus-instance-status-main-label": "Általános"
+}

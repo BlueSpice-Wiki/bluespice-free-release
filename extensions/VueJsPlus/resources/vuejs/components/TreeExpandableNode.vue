@@ -16,10 +16,9 @@
 					type="checkbox"
 					:aria-labelledby="itemId"
 					:name="name"
-					:value="isSelected"
-					:checked="isSelected"
+					v-model="internalSelected"
 					class="vuejsplus-data-tree-item-checkbox"
-					@change="toggleCheckbox"
+					@change="handleCheckboxChange"
 				><a :id="itemId" :href="href" :class="nodeClass">{{ label }}</a>
 			</div>
 		</div>
@@ -29,13 +28,12 @@
 			role="tree"
 			:aria-labelledby="itemId">
 			<component
-				:is="item.type"
-				v-for="( item, index ) in children"
-				:key="index"
-				:item="item"
+				:is="childItem.type"
+				v-for="( childItem, childIndex ) in children"
+				:key="childIndex"
+				:item="childItem"
 				:selectable="isSelectable"
-				:selected="item.selected"
-				@update:model-value="updateModelValue"
+				:selected="childItem.selected" @update:model-value="updateModelValue"
 			></component>
 		</ul>
 	</li>
@@ -56,10 +54,9 @@
 					type="checkbox"
 					:aria-labelledby="itemId"
 					:name="name"
-					:value="isSelected"
-					:checked="isSelected"
+					v-model="internalSelected"
 					class="vuejsplus-data-tree-item-checkbox"
-					@change="toggleCheckbox"
+					@change="handleCheckboxChange"
 				><span :id="itemId" :class="nodeClass">{{ label }}</span>
 			</div>
 		</div>
@@ -69,13 +66,12 @@
 			role="tree"
 			:aria-labelledby="itemId">
 			<component
-				:is="item.type"
-				v-for="( item, index ) in children"
-				:key="index"
-				:item="item"
+				:is="childItem.type"
+				v-for="( childItem, childIndex ) in children"
+				:key="childIndex"
+				:item="childItem"
 				:selectable="isSelectable"
-				:selected="item.selected"
-				@update:model-value="updateModelValue"
+				:selected="childItem.selected" @update:model-value="updateModelValue"
 			></component>
 		</ul>
 	</li>
@@ -100,12 +96,12 @@
 			role="tree"
 			:aria-labelledby="itemId">
 			<component
-				:is="item.type"
-				v-for="( item, index ) in children"
-				:key="index"
-				:item="item"
+				:is="childItem.type"
+				v-for="( childItem, childIndex ) in children"
+				:key="childIndex"
+				:item="childItem"
 				:selectable="isSelectable"
-				:selected="item.selected"
+				:selected="childItem.selected"
 			></component>
 		</ul>
 	</li>
@@ -130,12 +126,12 @@
 			role="tree"
 			:aria-labelledby="itemId">
 			<component
-				:is="item.type"
-				v-for="( item, index ) in children"
-				:key="index"
-				:item="item"
+				:is="childItem.type"
+				v-for="( childItem, childIndex ) in children"
+				:key="childIndex"
+				:item="childItem"
 				:selectable="isSelectable"
-				:selected="item.selected"
+				:selected="childItem.selected"
 			></component>
 		</ul>
 	</li>
@@ -152,8 +148,8 @@ module.exports = exports = {
 	},
 	props: {
 		item: {
-			type: Array,
-			default: []
+			type: Object,
+			default: () => ( {} )
 		},
 		selectable: {
 			type: Boolean,
@@ -226,6 +222,7 @@ module.exports = exports = {
 			itemId: this.item.id,
 			treeId: this.item.id + '-tree',
 			nodeClass: nodeClass,
+			internalSelected: this.selected,
 			href: href,
 			isSelected: this.selected,
 			treeClass: classes.join( ' ' ),
@@ -241,61 +238,72 @@ module.exports = exports = {
 			update: 0
 		};
 	},
-	methods: {
-		updateModelValue: function ( data ) {
-			if ( data.selected === true ) {
-				this.$emit(
-					'update:model-value',
-					data
-				);
+	watch: {
+		selected: {
+			immediate: true,
+			handler( newSelected ) {
+				if ( this.internalSelected !== newSelected ) {
+					this.internalSelected = newSelected;
+					this.setChildrenSelected( this.children, newSelected );
+				}
 			}
 		},
-		toggleCheckbox: function ( event ) {
-			const cb = $( event.target );
-			let isSelected = false;
-			if ( $( cb ).prop( 'checked' ) === true ) {
-				isSelected = true;
-			}
-
-			for ( let index = 0; index < this.item.children.length; index++ ) {
-				this.item.children[ index ].selected = isSelected;
-				this.update++; // required to update children
-			}
-
-			this.item.selected = isSelected;
-			this.isSelected = isSelected; // required to update children view
+		internalSelected( newSelected ) {
+			this.item.selected = newSelected;
+			this.setChildrenSelected( this.children, newSelected );
 
 			this.$emit(
 				'update:model-value',
 				{
-					selected: isSelected,
+					selected: newSelected,
 					name: this.item.name,
 					path: this.item.path
 				}
 			);
+		}
+	},
+	methods: {
+		updateModelValue: function ( data ) {
+			this.$emit(
+				'update:model-value',
+				data
+			);
+		},
+		handleCheckboxChange: function () {
+		},
+		setChildrenSelected( children, selectedStatus ) {
+			if ( !children || children.length === 0 ) {
+				return;
+			}
+			children.forEach( child => {
+				if ( child.hasOwnProperty( 'selected' ) ) {
+					child.selected = selectedStatus;
+				}
+			} );
 		},
 		toggleTree: function ( event ) {
 			const btn = event.target;
-
-			if ( $( btn ).parents( '.vuejsplus-data-tree-item' ).length < 1 ) {
-				return;
-			}
-
 			const item = $( btn ).parents( '.vuejsplus-data-tree-item' ).first();
 
-			if ( $( btn ).attr( 'aria-expanded' ) === 'true' ) {
-				const ariaLabelCollapsed = mw.message( 'vuejsplus-data-tree-expand-btn-collapsed-aria-label' ).toString();
-				$( btn ).attr( 'aria-expanded', 'false' );
-				$( btn ).attr( 'aria-label', ariaLabelCollapsed );
-				$( btn ).removeClass( 'expanded' );
-				$( item ).find( '.vuejsplus-data-tree-expandable' ).first().removeClass( 'show' );
-			} else {
-				const ariaLabelExpanded = mw.message( 'vuejsplus-data-tree-expand-btn-expanded-aria-label' ).toString();
-				$( btn ).attr( 'aria-expanded', 'true' );
-				$( btn ).attr( 'aria-label', ariaLabelExpanded );
+			const isCurrentlyExpanded = $( btn ).attr( 'aria-expanded' ) === 'true';
+			const newExpandedStatus = !isCurrentlyExpanded;
+
+			const ariaLabel = newExpandedStatus
+				? mw.message( 'vuejsplus-data-tree-expand-btn-expanded-aria-label' ).text()
+				: mw.message( 'vuejsplus-data-tree-expand-btn-collapsed-aria-label' ).text();
+
+			$( btn ).attr( 'aria-expanded', newExpandedStatus.text() );
+			$( btn ).attr( 'aria-label', ariaLabel );
+
+			if ( newExpandedStatus ) {
 				$( btn ).addClass( 'expanded' );
 				$( item ).find( '.vuejsplus-data-tree-expandable' ).first().addClass( 'show' );
+			} else {
+				$( btn ).removeClass( 'expanded' );
+				$( item ).find( '.vuejsplus-data-tree-expandable' ).first().removeClass( 'show' );
 			}
+			this.item.expanded = newExpandedStatus;
+			this.isExpanded = newExpandedStatus;
 		}
 	}
 };

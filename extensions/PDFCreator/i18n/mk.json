@@ -150,5 +150,7 @@
 	"pdfcreator-template-edit-dlg-general-page-heading-edit": "Уреди PDF-предлошка",
 	"pdfcreator-dump-namespaces-mail-body-text": "Именските простори на $1 се извезени како PDF на $2.",
 	"pdfcreator-dump-namespaces-mail-body-text-done": "готово",
-	"pdfcreator-dump-namespaces-mail-body-text-fail": "неуспех"
+	"pdfcreator-dump-namespaces-mail-body-text-fail": "неуспех",
+	"pdfcreator-tag-no-export-start-ve-label": "Изземи од PDF — почеток",
+	"pdfcreator-tag-no-export-end-ve-label": "Изземи од PDF — крај"
 }

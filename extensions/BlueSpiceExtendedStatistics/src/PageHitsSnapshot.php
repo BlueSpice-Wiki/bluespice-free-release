@@ -19,13 +19,11 @@ class PageHitsSnapshot extends Snapshot {
 			$data[$page] = array_merge( [
 				'hits' => 0,
 				'hitDiff' => 0,
-				'growth' => $this->calcGrowth( $props['hits'], $props['hitDiff'] ?? 0 )
+				'growth' => $this->calcGrowth( $props['hits'], $props['hitDiff'] )
 			], $props );
 		}
 
 		parent::__construct( $date, self::TYPE, $data, $interval );
-
-		$this->validate();
 	}
 
 	/**
@@ -58,25 +56,5 @@ class PageHitsSnapshot extends Snapshot {
 		}
 
 		return (int)$total;
-	}
-
-	/**
-	 * @return void
-	 * @throws InvalidArgumentException
-	 */
-	private function validate(): void {
-		foreach ( $this->data as $props ) {
-			if (
-				!isset( $props['hits'] ) || !isset( $props['hitDiff'] ) || !isset( $props['growth'] )
-			) {
-				throw new InvalidArgumentException( "Invalid data for PageHitsSnapshot" );
-			}
-
-			// hitDiff cant be negative
-			if ( $props['hitDiff'] < 0 ) {
-				$json = json_encode( $props );
-				throw new InvalidArgumentException( "Invalid data for PageHitsSnapshot. hitDiff is negative: $json" );
-			}
-		}
 	}
 }

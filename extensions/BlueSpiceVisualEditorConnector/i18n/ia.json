@@ -85,5 +85,8 @@
 	"bs-visualeditor-save-label": "Salveguardar",
 	"bs-visualeditorconnector-upload-type": "Typo de incargamento",
 	"bs-visualeditorconnector-upload-type-help": "Original: Derecto de incargamento es verificate. Nomine de file, spatio de nomines e categoria es modificabile. Description es obligatori.\nSimple: Derecto de incargamento non es verificate. Nomine de file, spatio de nomines e categoria es modificabile. Description es optional.\nUn clic: Derecto de incargamento non es verificate. Nomine de file e categoria non es modificabile. Le spatio de nomines es modificabile.",
-	"bs-visualeditorconnector-tab-file": "Ligar a un file"
+	"bs-visualeditorconnector-tab-file": "Ligar a un file",
+	"bs-visualeditor-request-entity-too-large": "Le file es troppo grande pro esser incargate.",
+	"bs-visualeditorconnector-dialog-table-title": "Tabella",
+	"bs-visualeditorconnector-dialog-action-insert": "Inserer"
 }

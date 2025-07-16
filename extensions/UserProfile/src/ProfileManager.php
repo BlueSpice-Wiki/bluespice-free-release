@@ -70,7 +70,17 @@ class ProfileManager {
 	 * @return array
 	 */
 	public function getProfileData( UserIdentity $user, Authority $requester, bool $forEditing = false ): array {
-		$data = [];
+		$data = $this->getRawProfileData( $user );
+
+		$this->hookContainer->run( 'UserProfileGetProfileData', [ &$data, $user, $requester ] );
+		return $this->censorData( $data, $user, $requester, $forEditing );
+	}
+
+	/**
+	 * @param UserIdentity $user
+	 * @return array
+	 */
+	public function getRawProfileData( UserIdentity $user ): array {
 		$user = $this->userFactory->newFromUserIdentity( $user );
 		$wp = $this->wikiPageFactory->newFromTitle( $user->getUserPage() );
 		$rev = $wp->getRevisionRecord();
@@ -78,16 +88,14 @@ class ProfileManager {
 			try {
 				$content = $rev->getContent( SLOT_ROLE_USER_PROFILE );
 				if ( $content instanceof JsonContent && $content->isValid() ) {
-					$data = json_decode( $content->getText(), true );
-
+					return json_decode( $content->getText(), true );
 				}
 			} catch ( RevisionAccessException $ex ) {
-				// No slot, ignore
+				return [];
 			}
 		}
 
-		$this->hookContainer->run( 'UserProfileGetProfileData', [ &$data, $user, $requester ] );
-		return $this->censorData( $data, $user, $requester, $forEditing );
+		return [];
 	}
 
 	/**

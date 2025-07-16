@@ -111,22 +111,18 @@ class GenerateSnapshot extends Maintenance {
 	 */
 	private function aggregate( $interval ) {
 		$range = null;
-		$stepDownInterval = null;
 		$identifier = null;
 		switch ( $interval ) {
 			case Snapshot::INTERVAL_WEEK:
 				$range = SnapshotDateRange::newLastWeek();
-				$stepDownInterval = Snapshot::INTERVAL_DAY;
 				$identifier = $range->getFrom()->format( 'W' );
 				break;
 			case Snapshot::INTERVAL_MONTH:
 				$range = SnapshotDateRange::newLastMonth();
-				$stepDownInterval = Snapshot::INTERVAL_DAY;
 				$identifier = $range->getFrom()->format( 'F' );
 				break;
 			case Snapshot::INTERVAL_YEAR:
 				$range = SnapshotDateRange::newLastYear();
-				$stepDownInterval = Snapshot::INTERVAL_MONTH;
 				$identifier = $range->getFrom()->format( 'Y' );
 				break;
 		}
@@ -138,9 +134,7 @@ class GenerateSnapshot extends Maintenance {
 		 */
 		foreach ( $this->providerFactory->getAll() as $key => $provider ) {
 			$this->output( "Processing provider $key..." );
-			$snapshots = $this->snapshotStore->getSnapshotForRange(
-				$range, $key, $stepDownInterval
-			);
+			$snapshots = $this->snapshotStore->getSnapshotForRange( $range, $key );
 			if ( empty( $snapshots ) ) {
 				$this->output( "Found no snapshots for past $interval, skipping\n" );
 				continue;

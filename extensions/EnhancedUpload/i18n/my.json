@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Msuantak"
+			"Msuantak",
+			"Sithu015"
 		]
 	},
 	"enhancedupload-droplet-attachments-name": "ပူတွဲဖိုင်များ",
-	"enhancedupload-droplet-attachments-description": "ပူးတွဲပါဖိုင်များစုစည်းရာနေရာ"
+	"enhancedupload-droplet-attachments-description": "ပူးတွဲပါဖိုင်များစုစည်းရာနေရာ",
+	"enhancedupload-ve-file-dialog-title": "ဖိုင်",
+	"enhancedupload-ve-file-dialog-filename-label": "ဖိုင်အမည်"
 }

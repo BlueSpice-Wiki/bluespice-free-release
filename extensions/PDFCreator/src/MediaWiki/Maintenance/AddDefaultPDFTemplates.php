@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\PDFCreator\MediaWiki\Maintenance;
 
+use Exception;
 use MediaWiki\CommentStore\CommentStoreComment;
 use MediaWiki\Content\CssContent;
 use MediaWiki\Content\JsonContent;
@@ -10,7 +11,6 @@ use MediaWiki\Maintenance\LoggedUpdateMaintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\User\User;
-use MWException;
 
 require_once __DIR__ . '/../../../../../maintenance/Maintenance.php';
 
@@ -25,7 +25,7 @@ class AddDefaultPDFTemplates extends LoggedUpdateMaintenance {
 
 	/**
 	 * @return bool|void
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	protected function doDBUpdates() {
 		$this->output( "Adding default pdf templates...\n" );

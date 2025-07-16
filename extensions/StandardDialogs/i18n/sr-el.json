@@ -2,5 +2,13 @@
 	"@metadata": {
 		"authors": []
 	},
-	"standarddialogs-new-page-not-exist-label": "Stranica ne postoji"
+	"standarddialogs-new-page-not-exist-label": "Stranica ne postoji",
+	"standarddialogs-purge-btn": "Osveži",
+	"standarddialogs-delete-subpages": "Obriši podstranice",
+	"standarddialogs-confirm-mass-deletion": "Ovo će obrisati $1 {{PLURAL:$1|stranicu|stranice}}. Sigurno?",
+	"standarddialogs-page-info-page-no-images-label": "Ova stranica nema datoteke",
+	"standarddialogs-page-info-page-no-templates-label": "Ova stranica nema šablone",
+	"standarddialogs-page-info-page-no-categories-label": "Ova stranica nema kategorije",
+	"standarddialogs-page-info-page-no-links-label": "Ova stranica nema veze",
+	"standarddialogs-page-info-page-no-extlinks-label": "Ova stranica nema spoljašnje veze"
 }

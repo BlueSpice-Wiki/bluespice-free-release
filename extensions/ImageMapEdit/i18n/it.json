@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"imagemapedit-desc": "Consente la creazione interattiva di immagini incorporate con mappe immagine.",
+	"imagemapedit-circle": "cerchio",
+	"imagemapedit-coordinates": "Coordinate",
+	"imagemapedit-deletecoordinates": "Cancella tutte le coordinate",
+	"imagemapedit-hidetextbox": "Nascondi casella di testo",
+	"imagemapedit-imagedescription": "Descrizione immagine",
+	"imagemapedit-infolinkposition": "Posizione del collegamento informativo",
+	"imagemapedit-linktarget": "Destinazione collegamento",
+	"imagemapedit-linktitle": "Titolo del collegamento",
+	"imagemapedit-newarea": "Crea nuova area",
+	"imagemapedit-nolink": "nessun collegamento informativo",
+	"imagemapedit-preferences": "Preferenze generali",
+	"imagemapedit-rectchoose1": "Selezionare con il tasto sinistro del mouse",
+	"imagemapedit-rectright": "Destra",
+	"imagemapedit-bottomleft": "in basso a sinistra",
+	"imagemapedit-bottomright": "in basso a destra",
+	"imagemapedit-imagealttext": "Testo alternativo",
+	"imagemapedit-imagedisplayposition-left": "allinea a sinistra",
+	"imagemapedit-imagedisplayposition-center": "centro",
+	"imagemapedit-imagedisplayposition-right": "allinea a destra",
+	"imagemapedit-imagedisplaytype-thumbnail": "miniatura",
+	"imagemapedit-imagedisplaytype-border": "bordo",
+	"imagemapedit-imagedisplaytype-frameless": "senza cornice",
+	"imagemapedit-notspecified": "non specificato",
+	"imagemapedit-topleft": "in alto a sinistra",
+	"imagemapedit-topright": "in alto a destra"
+}

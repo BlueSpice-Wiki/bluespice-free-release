@@ -8,9 +8,8 @@
 				class="vuejsplus-data-tree-item-checkbox"
 				:aria-labelledby="itemId"
 				:name="name"
-				:value="isSelected"
-				:checked="isSelected"
-				@change="toggleCheckbox"
+				v-model="internalSelected"
+				@change="handleCheckboxChange"
 			><a :id="itemId" :href="href" :class="nodeClass">{{ label }}</a>
 		</div>
 	</li>
@@ -23,9 +22,8 @@
 				class="vuejsplus-data-tree-item-checkbox"
 				:aria-labelledby="itemId"
 				:name="name"
-				:value="isSelected"
-				:checked="isSelected"
-				@change="toggleCheckbox"
+				v-model="internalSelected"
+				@change="handleCheckboxChange"
 			><span :id="itemId" :class="nodeClass">{{ label }}</span>
 		</div>
 	</li>
@@ -50,7 +48,8 @@ module.exports = exports = {
 	},
 	props: {
 		item: {
-			type: Array
+			type: Object,
+			default: () => ( {} )
 		},
 		selectable: {
 			type: Boolean,
@@ -98,6 +97,7 @@ module.exports = exports = {
 			itemId: this.item.id,
 			nodeClass: nodeClass,
 			href: href,
+			internalSelected: this.selected,
 			isSelected: this.selected,
 			textNode: textNode,
 			linkNode: linkNode,
@@ -105,25 +105,27 @@ module.exports = exports = {
 			selectableLinkNode: selectableLinkNode
 		};
 	},
-	methods: {
-		toggleCheckbox: function ( event ) {
-			const cb = $( event.target );
-			let isSelected = false;
-			if ( $( cb ).prop( 'checked' ) === true ) {
-				isSelected = true;
+	watch: {
+		selected: {
+			immediate: true,
+			handler( newSelected ) {
+				this.internalSelected = newSelected;
 			}
-
-			this.item.selected = isSelected;
-			this.isSelected = isSelected; // required to update the view
-
+		},
+		internalSelected( newSelected ) {
+			this.item.selected = newSelected;
 			this.$emit(
 				'update:model-value',
 				{
-					selected: isSelected,
+					selected: newSelected,
 					name: this.item.name,
 					path: this.item.path
 				}
 			);
+		}
+	},
+	methods: {
+		handleCheckboxChange: function () {
 		}
 	}
 };

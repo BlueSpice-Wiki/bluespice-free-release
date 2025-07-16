@@ -19,7 +19,6 @@
 	"bs-visualeditorconnector-ve-style-option": "Table style",
 	"bs-visualeditorconnector-upload-dialog-type": "Workflow for uploading files in MediaDialog",
 	"bs-visualeditorconnector-text-style-tool-color-label": "Text color",
-	"bs-visualeditorconnector-color-annotation-desc": "Adds colors to text by assigning \"color\" or \"class\" property",
 	"bs-visualeditorconnector-dialog-media-link": "Link this file",
 	"bs-visualeditorconnector-dialog-media-meta-link": "Link file description page",
 	"bs-visualeditorconnector-dialog-media-embed": "Embed this file",
@@ -38,7 +37,6 @@
 	"bs-vec-dialog-table-create-number-of-columns": "Number of columns",
 	"bs-vec-dialog-action-done": "Done",
 	"bs-vec-dialog-action-safe": "Cancel",
-	"bs-vec-dialog-create-table-title": "Insert table",
 	"bs-vec-widget-text-direction-tooltip": "Vertical text",
 	"bs-vec-row-duplicate-has-merged": "Selected row contains cells that span over multiple rows, and therefore cannot be duplicated.",
 	"bs-vec-dialog-media-change-file": "Change file",
@@ -92,5 +90,7 @@
 	"bs-visualeditorconnector-upload-type": "Upload type",
 	"bs-visualeditorconnector-upload-type-help": "Original: Upload-right is verified. File name, namespace and category are editable. Description is required.\nSimple: Upload-right is not verified. File name, namespace and category are editable. Description is optional.\nOne click: Upload-right is not verified. File name and category are not editable. The namespace is editable.",
 	"bs-visualeditorconnector-tab-file": "Link to file",
-	"bs-visualeditor-request-entity-too-large": "The file is too large to upload."
+	"bs-visualeditor-request-entity-too-large": "The file is too large to upload.",
+	"bs-visualeditorconnector-dialog-table-title": "Table",
+	"bs-visualeditorconnector-dialog-action-insert": "Insert"
 }

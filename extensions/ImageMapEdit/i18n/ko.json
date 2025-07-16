@@ -1,8 +1,27 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tensama0415"
+			"Tensama0415",
+			"Ykhwong"
 		]
 	},
-	"imagemapedit-desc": "브라우저에서 이미지 맵을 생성합니다."
+	"imagemapedit-desc": "브라우저에서 이미지 맵을 생성합니다.",
+	"imagemapedit-position": "위치",
+	"imagemapedit-bottomleft": "왼쪽 아래",
+	"imagemapedit-bottomright": "오른쪽 아래",
+	"imagemapedit-imagealttext": "대체 텍스트",
+	"imagemapedit-imagedisplaydimensions": "표시 크기",
+	"imagemapedit-imagedisplayposition": "표시 위치",
+	"imagemapedit-imagedisplayposition-left": "왼쪽 정렬",
+	"imagemapedit-imagedisplayposition-center": "가운데",
+	"imagemapedit-imagedisplayposition-right": "오른쪽 정렬",
+	"imagemapedit-imagedisplaytype": "표시 유형",
+	"imagemapedit-imagedisplaytype-thumbnail": "섬네일",
+	"imagemapedit-imagedisplaytype-border": "테두리",
+	"imagemapedit-imagedisplaytype-frameless": "프레임 없음",
+	"imagemapedit-infolinkposition": "정보 링크 위치",
+	"imagemapedit-nolink": "정보 링크 없음",
+	"imagemapedit-notspecified": "지정되지 않음",
+	"imagemapedit-topleft": "왼쪽 위",
+	"imagemapedit-topright": "오른쪽 위"
 }

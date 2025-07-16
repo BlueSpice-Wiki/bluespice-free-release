@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Krisztina"
+			"Krisztina",
+			"Tacsipacsi"
 		]
 	},
 	"bs-visualeditorconnector-desc": "Összeköti a BlueSpice-t a VisualEditor-ral",

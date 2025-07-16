@@ -67,5 +67,7 @@
 	"bs-vec-table-border-dotted": "점선",
 	"bs-vec-table-border-double": "겹선",
 	"bs-vec-insert-softhyphen-title": "소프트 하이픈",
-	"bs-visualeditor-save-label": "저장"
+	"bs-visualeditor-save-label": "저장",
+	"bs-visualeditorconnector-dialog-table-title": "표",
+	"bs-visualeditorconnector-dialog-action-insert": "넣기"
 }

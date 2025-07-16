@@ -18,5 +18,7 @@
 	"enhancedupload-finished-dialog-action-close": "닫기",
 	"enhancedupload-upload-error-badfilename": "$1 파일 이름에 유효하지 않은 문자가 포함되어 있습니다.",
 	"enhancedupload-upload-error-unhandled": "처리되지 않은 예외가 발생했습니다.",
-	"enhancedupload-preview-widget-remove-label": "$1 제거"
+	"enhancedupload-preview-widget-remove-label": "$1 제거",
+	"enhancedupload-ve-file-dialog-title": "파일",
+	"enhancedupload-ve-file-dialog-filename-label": "파일 이름"
 }

@@ -23,7 +23,6 @@
 	"bs-visualeditorconnector-ve-style-option": "Label for the table css class selection input in VE",
 	"bs-visualeditorconnector-upload-dialog-type": "Configuration variable determining upload dialog's behaviour",
 	"bs-visualeditorconnector-text-style-tool-color-label": "Label for the tool \"color\" in the text style popup",
-	"bs-visualeditorconnector-color-annotation-desc": "Description of ve.ui.ColorAnnotation class",
 	"bs-visualeditorconnector-dialog-media-link": "Label for button to link the selected file",
 	"bs-visualeditorconnector-dialog-media-meta-link": "Label for button to link the selected file's meta page",
 	"bs-visualeditorconnector-dialog-media-embed": "Label for button to embed the selected file",
@@ -42,7 +41,6 @@
 	"bs-vec-dialog-table-create-number-of-columns": "Label for input for specifying number of columns a table should have, in table creation dialog",
 	"bs-vec-dialog-action-done": "Process dialog \"save\" action button",
 	"bs-vec-dialog-action-safe": "Process dialog \"safe\" action button\n{{Identical|Cancel}}",
-	"bs-vec-dialog-create-table-title": "Title for the dialog that inserts the table",
 	"bs-vec-widget-text-direction-tooltip": "Label for table style tool that changes text orientation in a table cell",
 	"bs-vec-row-duplicate-has-merged": "Warning when user tries to duplicated row containing multi-row cells",
 	"bs-vec-dialog-media-change-file": "Process dialog \"change\" action button",
@@ -96,5 +94,7 @@
 	"bs-visualeditorconnector-upload-type": "Label for preference to set the upload type in VisualEditor",
 	"bs-visualeditorconnector-upload-type-help": "Description for config variable \"VisualEditorConnectorUploadDialogType\"",
 	"bs-visualeditorconnector-tab-file": "The title of the tab containing the picker for a file link",
-	"bs-visualeditor-request-entity-too-large": "Error message when \"Request Entity Too Large\" exception occurs"
+	"bs-visualeditor-request-entity-too-large": "Error message when \"Request Entity Too Large\" exception occurs",
+	"bs-visualeditorconnector-dialog-table-title": "Title for the dialog that inserts the table",
+	"bs-visualeditorconnector-dialog-action-insert": "Process dialog \"insert\" action button\n{{Identical:Insert}}"
 }

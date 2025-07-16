@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"contentdroplets-droplet-text-box-important": "Važna poruka",
+	"contentdroplets-droplet-text-box-note": "Napomena",
+	"contentdroplets-droplet-text-box-tip": "Savet",
+	"contentdroplets-droplet-text-box-neutral": "Poruka",
+	"contentdroplets-category-label-featured": "Izabrano",
+	"contentdroplets-category-label-content": "Sadržaj",
+	"contentdroplets-category-label-media": "Mediji",
+	"contentdroplets-category-label-data": "Podaci",
+	"contentdroplets-category-label-navigation": "Navigacija",
+	"contentdroplets-category-label-lists": "Spiskovi",
+	"contentdroplets-category-label-export": "Izvoz",
+	"contentdroplets-category-label-all": "Sve",
+	"contentdroplets-droplet-text-box-header-label": "Naslov",
+	"contentdroplets-droplet-text-box-text-label": "Tekst",
+	"contentdroplets-droplet-text-box-show-icon-label": "Prikaži ikonicu",
+	"contentdroplets-droplet-text-box-type-label": "Tip kutijice",
+	"contentdroplets-droplet-icon-font-size-label": "Veličina fonta",
+	"contentdroplets-droplet-icon-color-label": "Boja",
+	"contentdroplets-droplet-icon-orientation-label": "Vertikalna orijentacija",
+	"contentdroplets-droplet-icon-name": "Ikona",
+	"contentdroplets-droplet-icon-description": "Ubacuje ikonicu",
+	"contentdroplet-dialog-action-close": "Otkaži",
+	"contentdroplet-dialog-action-insert": "Umetni",
+	"contentdroplets-droplet-code-name": "Kôd"
+}

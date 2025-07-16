@@ -36,5 +36,6 @@
 	"menueditor-ui-edit-label": "Modificar",
 	"menueditor-ui-add-sub-element-label": "Adder subelemento",
 	"menueditor-footerlinks-banner-text": "Alcun ligamines pote esser addite automaticamente per extensiones. Per favor examina le configuration del extension pro apprender plus.",
-	"menueditor-toolbar-save": "Salveguardar"
+	"menueditor-toolbar-save": "Salveguardar",
+	"menueditor-ui-cancel-confirmation": "Es tu secur de voler cancellar le modification? Tote le modificationes non salveguardate essera perdite."
 }

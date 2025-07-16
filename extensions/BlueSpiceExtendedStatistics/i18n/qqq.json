@@ -30,6 +30,7 @@
 	"apihelp-query+statistics-reports-example": "{{doc-apihelp-example|query+statistics-reports}}",
 	"apihelp-query+statistics-reports-param-type": "{{doc-apihelp-param|query+statistics-reports|type}}",
 	"apihelp-query+statistics-reports-param-filter": "{{doc-apihelp-param|query+statistics-reports|filter}}",
+	"apihelp-query+statistics-reports-param-aggregate": "{{doc-apihelp-param|query+statistics-reports|aggregate}}",
 	"bs-statistics-aggregated-report-picker-label": "Field label",
 	"bs-statistics-aggregated-report-no-date": "Notice when no report data is available for given filters",
 	"bs-statistics-aggregated-report-filter-category-multi": "Filter name\n{{identical|Category}}",

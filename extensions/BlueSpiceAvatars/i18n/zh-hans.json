@@ -3,6 +3,7 @@
 		"authors": [
 			"Dimension",
 			"GuoPC",
+			"Key0121",
 			"Liuxinyu970226",
 			"Shimamura Sakura",
 			"列维劳德"
@@ -15,7 +16,7 @@
 	"bs-avatars-generate-complete": "生成新的头像。",
 	"bs-avatars-upload-label": "图片",
 	"bs-avatars-generate-new-label": "生成新头像",
-	"bs-avatars-file-upload-fieldset-title": "图片上传",
+	"bs-avatars-file-upload-fieldset-title": "上传新图像",
 	"bs-avatars-auto-generate-fieldset-title": "自动生成头像",
 	"apihelp-bs-avatars-tasks-summary": "上传、生成与设置用户头像",
 	"bs-avatars-tag-profileimage-error-invalidusername": "用户名为空或无效",

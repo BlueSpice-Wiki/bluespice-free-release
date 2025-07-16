@@ -22,5 +22,6 @@
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "Pagename help",
 	"bs-watchlist-tag-watchlist-attr-time-help": "Time help",
 	"bs-watchlist-droplet-name": "Watchlist",
-	"bs-watchlist-droplet-description": "Latest changes to pages included in the watchlist"
+	"bs-watchlist-droplet-description": "Latest changes to pages included in the watchlist",
+	"bs-watchlist-usersidebar-title": "Watchlist"
 }

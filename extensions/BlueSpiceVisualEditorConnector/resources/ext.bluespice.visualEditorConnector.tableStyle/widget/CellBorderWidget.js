@@ -37,6 +37,8 @@ bs.vec.ui.widget.CellBorderWidget.prototype.executeAction = function () {
 		return;
 	}
 
+	this.ensureSurfaceActivation();
+
 	// Get value and set
 	this.contextItem.execCommand( 'cellBorder', { value: this.value } );
 };
@@ -48,5 +50,44 @@ bs.vec.ui.widget.CellBorderWidget.prototype.togglePopup = function () {
 		$mainPopup.css( 'overflow', 'visible' );
 	} else {
 		$mainPopup.css( 'overflow', 'hidden' );
+	}
+};
+
+/**
+ * Activates the VE surface by forcing a no-op transaction.
+ *
+ * Ensures that style commands (e.g., cell borders) are tracked as real changes,
+ * allowing saving and persisting them when switching to source mode.
+ */
+bs.vec.ui.widget.CellBorderWidget.prototype.ensureSurfaceActivation = function () {
+	if ( this.activated ) {
+		return;
+	}
+	this.activated = true;
+
+	const surfaceModel = this.contextItem.context.getSurface().getModel();
+	const selection = surfaceModel.getSelection();
+
+	if ( selection instanceof ve.dm.TableSelection ) {
+		const doc = surfaceModel.getDocument();
+		const range = selection.getOuterRanges( doc )[ 0 ];
+
+		// Add dummy attribute
+		surfaceModel.change(
+			ve.dm.TransactionBuilder.static.newFromAttributeChanges(
+				doc,
+				range.start,
+				{ 'data-bs-ve-temp': '1' }
+			)
+		);
+
+		// Remove dummy attribute
+		surfaceModel.change(
+			ve.dm.TransactionBuilder.static.newFromAttributeChanges(
+				doc,
+				range.start,
+				{ 'data-bs-ve-temp': null }
+			)
+		);
 	}
 };

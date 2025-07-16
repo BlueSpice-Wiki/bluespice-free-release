@@ -17,6 +17,9 @@ class RegisterCrons implements MediaWikiServicesHook {
 	 * @return void
 	 */
 	public function onMediaWikiServices( $services ) {
+		if ( defined( 'MW_PHPUNIT_TEST' ) || defined( 'MW_QUIBBLE_CI' ) ) {
+			return;
+		}
 		/** @var WikiCronManager $cronManager */
 		$cronManager = $services->getService( 'MWStake.WikiCronManager' );
 		$cronManager->registerCron( 'notifyme-send-daily', '0 7 * * *', new ManagedProcess( [

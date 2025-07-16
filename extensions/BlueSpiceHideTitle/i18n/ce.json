@@ -6,5 +6,6 @@
 	},
 	"bs-hidetitle-desc": "ТӀетуху магин дош <code><nowiki>__HIDETITLE__</nowiki></code>, агӀонан корта къайлабоккхуш",
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Гайта",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Къайлайаккха"
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Къайлайаккха",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Корта гуш хилар"
 }

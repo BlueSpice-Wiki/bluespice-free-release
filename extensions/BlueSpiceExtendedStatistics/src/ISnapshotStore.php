@@ -10,7 +10,7 @@ interface ISnapshotStore {
 	 * @return array
 	 */
 	public function getSnapshotForRange(
-		SnapshotDateRange $range, $type = null, $interval = 'day'
+		SnapshotDateRange $range, $type = null, $interval = Snapshot::INTERVAL_DAY
 	): array;
 
 	/**
@@ -29,7 +29,7 @@ interface ISnapshotStore {
 	 * @param string $interval
 	 * @return bool
 	 */
-	public function hasSnapshot( SnapshotDate $date, $type, $interval = 'day' );
+	public function hasSnapshot( SnapshotDate $date, $type, $interval = Snapshot::INTERVAL_DAY );
 
 	/**
 	 * @param Snapshot $snapshot

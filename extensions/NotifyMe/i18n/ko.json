@@ -108,5 +108,11 @@
 	"notifyme-link-label-view-page": "문서 보기",
 	"notifyme-event-page-move-bot": "$1 문서가 $2(으)로 이동되었습니다",
 	"notifyme-ui-dialog-popup-table-event-label": "이벤트",
-	"notifyme-ui-dialog-popup-table-desc-label": "설명"
+	"notifyme-ui-dialog-popup-table-desc-label": "설명",
+	"notifyme-notification-tester-field-event": "이벤트",
+	"notifyme-notification-tester-event": "이벤트 키",
+	"notifyme-event-page-missing-desc": "''이 이벤트에 대한 설명이 아직 없습니다''",
+	"notifyme-event-page-create-desc": "다른 사용자가 문서를 만들었습니다.",
+	"notifyme-event-page-delete-desc": "다른 사용자가 문서를 삭제했습니다.",
+	"notifyme-event-page-move-desc": "다른 사용자가 문서를 이동했습니다."
 }

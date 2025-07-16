@@ -23,8 +23,14 @@ OO.inheritClass( bs.vec.ui.dialog.TableAdditionalOptions, OO.ui.ProcessDialog );
 bs.vec.ui.dialog.TableAdditionalOptions.static.name = 'tableAdditionalOptions';
 
 bs.vec.ui.dialog.TableAdditionalOptions.static.actions = [
-	{ action: 'save', label: OO.ui.deferMsg( 'bs-vec-dialog-action-done' ), flags: 'primary' },
-	{ label: OO.ui.deferMsg( 'bs-vec-dialog-action-safe' ), flags: 'safe' }
+	{
+		action: 'save', label: OO.ui.deferMsg( 'bs-vec-dialog-action-done' ),
+		flags: [ 'primary', 'progressive' ]
+	},
+	{
+		title: OO.ui.deferMsg( 'bs-vec-dialog-action-safe' ),
+		flags: [ 'safe', 'close' ]
+	}
 ];
 
 bs.vec.ui.dialog.TableAdditionalOptions.static.title = '';

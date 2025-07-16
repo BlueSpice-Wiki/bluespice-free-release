@@ -5,5 +5,15 @@
 		]
 	},
 	"bs-watchlist-pref-sort-time": "Хан",
-	"bs-watchlist-pref-sort-title": "Корта"
+	"bs-watchlist-pref-sort-title": "Корта",
+	"bs-watchlist-ve-watchlistinspector-title": "Тергаме могӀам",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Дукхалла",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Максималан цӀеран йохалла",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Къепе",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "АгӀонан цӀе",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Хан",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Документан цӀарах лаьцна гӀоьнан хаамаш",
+	"bs-watchlist-tag-watchlist-attr-time-help": "ГӀоьналлин: Хан",
+	"bs-watchlist-droplet-name": "Тергаме могӀам",
+	"bs-watchlist-usersidebar-title": "Тергаме могӀам"
 }

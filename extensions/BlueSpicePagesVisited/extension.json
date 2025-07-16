@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpicePagesVisited",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePagesVisited",
 	"author": [
 		"Robert Vogel",
@@ -38,12 +38,6 @@
 			]
 		},
 		"BlueSpiceUserSidebar": {
-			"Widgets": {
-				"PAGESVISITED": {
-					"callback": "\\BlueSpice\\PagesVisited\\Panel\\PagesVisited::factory",
-					"default": true
-				}
-			},
 			"WidgetRegistry": {
 				"PAGESVISITED": "\\BlueSpice\\PagesVisited\\UserSidebar\\Widget\\PagesVisited::factory"
 			}

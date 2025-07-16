@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"imagemapedit-bottomleft": "на дну лево",
+	"imagemapedit-bottomright": "на дну десно",
+	"imagemapedit-circle": "круг",
+	"imagemapedit-coordinates": "Координате",
+	"imagemapedit-default": "подразумевано",
+	"imagemapedit-deletecoordinates": "Обриши све координате",
+	"imagemapedit-imagedescription": "Опис слике",
+	"imagemapedit-import": "Увези",
+	"imagemapedit-optional": "необавезно",
+	"imagemapedit-preferences": "Општа подешавања",
+	"imagemapedit-rectbottom": "дно",
+	"imagemapedit-rectleft": "Лево",
+	"imagemapedit-rectright": "Десно",
+	"imagemapedit-topleft": "на врху лево",
+	"imagemapedit-topright": "на врху десно",
+	"imagemapedit-imagedisplayposition-center": "средина",
+	"imagemapedit-imagedisplaytype-thumbnail": "минијатура",
+	"imagemapedit-imagedisplaytype-border": "оивичено",
+	"imagemapedit-imagedisplaytype-frameless": "без оквира"
+}

@@ -10,5 +10,6 @@
 	"bs-authors-show-all-authors": "Dostupno je više autora",
 	"bs-authors-navigation-link-title": "Autori ove stranice",
 	"bs-authors-navigation-link-text": "Autori",
-	"bs-authors-info-dialog": "Autori ove stranice"
+	"bs-authors-info-dialog": "Autori ove stranice",
+	"bs-authors-info-dialog-grid-column-author": "Autor"
 }

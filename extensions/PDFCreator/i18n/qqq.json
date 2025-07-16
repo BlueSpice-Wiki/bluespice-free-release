@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Daniel Vogel",
+			"McDutchie",
 			"Miriam Schlindwein"
 		]
 	},
@@ -72,7 +73,7 @@
 	"pdfcreator-template-edit-dlg-action-save": "Label for the save button in the PDF template edit dialog\n{{Identical|Save}}",
 	"pdfcreator-template-edit-dlg-action-upload": "Label for the upload button in the PDF template edit dialog\n{{Identical|Upload}}",
 	"pdfcreator-template-edit-dlg-action-back": "Label for the back button in the PDF template edit dialog\n{{Identical|Back}}",
-	"pdfcreator-template-edit-dlg-upload-error-unhandled": "Error message shown when an unhandled exception occurs during file upload",
+	"pdfcreator-template-edit-dlg-upload-error-unhandled": "Error message shown when an unhandled exception (i.e., an error that the system doesn't know how to handle, an unknown error) occurs during file upload",
 	"pdfcreator-template-edit-dlg-upload-error-duplicate": "Error message shown when trying to upload a duplicate file. Parameters:\n* $1 - The name of the file",
 	"pdfcreator-select-template-widget-configure-btn-label": "Label for the configure button in the template selection widget\n{{Identical|Configure}}",
 	"pdfcreator-template-edit-dlg-footer-page-heading": "Heading for the footer configuration page in the template edit dialog",

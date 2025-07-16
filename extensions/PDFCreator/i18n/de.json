@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"*surak*",
 			"Brettchenweber",
 			"Daniel Vogel",
+			"McDutchie",
 			"Miriam Schlindwein",
 			"Mschlindwein"
 		]
@@ -135,7 +137,7 @@
 	"pdfcreator-panel-templates-overview-column-delete-label": "Löschen",
 	"pdfcreator-template-edit-source-dlg-title": "PDF-Vorlage bearbeiten",
 	"pdfcreator-template-edit-source-dlg-action-edit": "Quelltext bearbeiten",
-	"pdfcreator-template-edit-source-dlg-no-compatibility-label": "Die Vorlage \"$1\" kann aufgrund folgender Abweichungen nur im Quelltextmodus bearbeitet werden:",
+	"pdfcreator-template-edit-source-dlg-no-compatibility-label": "Die Vorlage $1 scheint manuell bearbeitet zu sein und kann daher nicht über das Dialogfenster bearbeitet werden.",
 	"pdfcreator-edit-template-values-invalid-template": "Kein gültiger PDF-Vorlagentitel",
 	"pdfcreator-edit-template-values-header-error": "Die Kopfzeile stimmt nicht mit der Tabellen- und Klassenstruktur überein",
 	"pdfcreator-edit-template-values-footer-error": "Die Fußzeile stimmt nicht mit der Tabellen- und Klassenstruktur überein",
@@ -151,5 +153,8 @@
 	"pdfcreator-template-edit-dlg-title-create": "PDF-Vorlage erstellen",
 	"pdfcreator-template-edit-dlg-general-page-heading-edit": "PDF-Vorlage bearbeiten",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF-Ausschluss - Start",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF-Ausschluss - Ende"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF-Ausschluss - Ende",
+	"pdfcreator-dump-namespaces-mail-body-text": "Die Namespaces von $1 wurden am $2 als PDF exportiert.",
+	"pdfcreator-dump-namespaces-mail-body-text-done": "fertig",
+	"pdfcreator-dump-namespaces-mail-body-text-fail": "fehlgeschlagen"
 }

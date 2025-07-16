@@ -58,5 +58,6 @@
 	"standarddialogs-page-info-page-no-templates-label": "בדף הזה אין תבניות",
 	"standarddialogs-page-info-page-no-categories-label": "בדף הזה אין קטגוריות",
 	"standarddialogs-page-info-page-no-links-label": "בדף הזה אין קישורים",
-	"standarddialogs-page-info-page-no-extlinks-label": "בדף הזה אין קישורים חיצוניים"
+	"standarddialogs-page-info-page-no-extlinks-label": "בדף הזה אין קישורים חיצוניים",
+	"standarddialogs-validation-page-exist-info-label": "דף עם הכותרת הזאת כבר קיים. נא לבחור שם אחר."
 }

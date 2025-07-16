@@ -4,11 +4,11 @@ namespace BlueSpice\InstanceStatus\Rest;
 
 use BlueSpice\InstanceStatus\StatusReport;
 use MediaWiki\Config\ConfigFactory;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use MWException;
-use RequestContext;
 use Wikimedia\IPUtils;
 
 class StatusCheckHandler extends SimpleHandler {

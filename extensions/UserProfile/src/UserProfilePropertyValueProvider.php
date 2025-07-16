@@ -27,19 +27,17 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 		);
 		$userFactory = MediaWikiServices::getInstance()->getUserFactory();
 		$propertyValueProviders = [];
-		$public = $fieldRegistry->getPublicFields(
-			$userFactory->newAnonymous()
-		);
+		$fields = array_merge( $fieldRegistry->getBuiltInFields(), $fieldRegistry->getCustomFields() );
 		$blacklist = [ 'username', 'imageUrl' ];
-		foreach ( $public as $field ) {
-			if ( in_array( $field, $blacklist ) ) {
+		foreach ( $fields as $fieldKey => $data ) {
+			if ( in_array( $fieldKey, $blacklist ) ) {
 				continue;
 			}
-			$smwName = preg_replace( '/\PL/u', '', strtoupper( $field ) );
+			$smwName = preg_replace( '/\PL/u', '', strtoupper( $fieldKey ) );
 			if ( empty( $smwName ) ) {
 				continue;
 			}
-			$propertyValueProviders[] = new self( $field, $smwName, $fieldRegistry->getField( $field ), $manager );
+			$propertyValueProviders[] = new self( $fieldKey, $smwName, $data, $manager );
 		}
 
 		return $propertyValueProviders;

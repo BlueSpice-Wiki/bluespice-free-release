@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"menueditor-toolbar-add-label": "Dodaj element",
+	"menueditor-ui-edit-label": "Uredi",
+	"menueditor-toolbar-save": "Sačuvaj",
+	"menueditor-ui-cancel-confirmation": "Sigurno želite da otkažete izmenu? Sve nesačuvane izmene će biti izgubljene."
+}

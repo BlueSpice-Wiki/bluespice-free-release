@@ -13,9 +13,13 @@
 	"bs-avatars-generate-complete": "Új avatar jött létre.",
 	"bs-avatars-upload-label": "Kép",
 	"bs-avatars-generate-new-label": "Új avatar létrehozása",
-	"bs-avatars-file-upload-fieldset-title": "Kép feltöltése",
+	"bs-avatars-file-upload-fieldset-title": "Új kép feltöltése",
 	"bs-avatars-auto-generate-fieldset-title": "Avatar automatikus generálása",
 	"apihelp-bs-avatars-tasks-summary": "Felhasználói avatarok feltöltése, generálása és beállítása",
-	"bs-avatars-tag-profileimage-error-invalidusername": "A \"felhasználónév\" paraméter megadása kötelező, és érvényes felhasználónevet kell tartalmaznia",
-	"bs-avatars-pref-generator-help": "Az avatar képet akkor generál, ha a felhasználó nem tölt fel profilképet. InstantAvatar: Avatarképet hoz létre a valódi név vagy a felhasználónév kezdőbetűi alapján. Azonosító: Avatarképet hoz létre a felhasználói azonosító egyes részei alapján."
+	"bs-avatars-tag-profileimage-error-invalidusername": "A „username” paraméter megadása kötelező, és érvényes felhasználónevet kell tartalmaznia",
+	"bs-avatars-pref-generator-help": "Avatar képet akkor generál, ha a felhasználó nem tölt fel profilképet. InstantAvatar: Avatarképet hoz létre a valódi név vagy a felhasználónév kezdőbetűi alapján. Azonosító: Avatarképet hoz létre a felhasználói azonosító egyes részei alapján.",
+	"bs-avatars-upload-button": "Feltöltés",
+	"bs-avatars-generate-button": "Generálás",
+	"bs-avatars-generic-cancel": "Mégse",
+	"bs-avatars-generate-description": "Új automatikus avatar generálása. Ez véglegesen felülírja a feltöltött profilképet (ha be van állítva)."
 }

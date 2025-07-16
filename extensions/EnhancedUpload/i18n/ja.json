@@ -4,6 +4,7 @@
 			"Kokage si",
 			"MathXplore",
 			"Mugenpman",
+			"Shirayuki",
 			"もなー(偽物)"
 		]
 	},
@@ -62,11 +63,11 @@
 	"enhancedupload-config-type-label": "画像の種類",
 	"enhancedupload-config-type-help": "ビジュアルエディタで画像をドラッグ アンド ドロップするための入力設定",
 	"enhancedupload-config-height-label": "画像の高さ:",
-	"enhancedupload-config-height-help": "ビジュアル エディターで画像をドラッグ アンド ドロップするための高さの設定。幅に合わせてスケーリングするには、「auto」に設定します。両方が「auto」に設定されている場合、デフォルトのサイズが使用されます。",
+	"enhancedupload-config-height-help": "ビジュアルエディターで画像をドラッグ & ドロップする際の高さの設定です。幅に応じてスケーリングするには「auto」を設定します。幅と高さの両方に「auto」を設定している場合は、既定のサイズが使用されます。",
 	"enhancedupload-config-width-label": "画像の幅",
-	"enhancedupload-config-width-help": "ビジュアル エディタで画像をドラッグ アンド ドロップするための幅の設定 高さに合わせて拡大縮小するには、「auto」に設定します。両方が「auto」に設定されている場合、デフォルトのサイズが使用されます。",
+	"enhancedupload-config-width-help": "ビジュアルエディターで画像をドラッグ & ドロップする際の幅の設定です。高さに応じてスケーリングするには「auto」を設定します。幅と高さの両方に「auto」を設定している場合は、既定のサイズが使用されます。",
 	"enhancedupload-droplet-attachments-name": "添付ファイル",
 	"enhancedupload-droplet-attachments-description": "添付ファイルを整理するための領域",
-	"enhancedupload-upload-warning-exists": "このファイルはすでに存在します",
+	"enhancedupload-upload-warning-exists": "このファイル名は既に存在します",
 	"enhancedupload-upload-warning-duplicate": "このファイルは重複しています"
 }

@@ -16,12 +16,12 @@ use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserIdentity;
-use MWException;
 use MWStake\MediaWiki\Component\Events\BotAgent;
 use MWStake\MediaWiki\Component\Events\Delivery\NotificationStatus;
 use MWStake\MediaWiki\Component\Events\EventLink;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;
 use MWStake\MediaWiki\Component\Events\Notification;
+use RuntimeException;
 use stdClass;
 use Throwable;
 
@@ -234,7 +234,7 @@ final class NotificationSerializer {
 	 * @param UserIdentity $user For which user to serialize the notification
 	 *
 	 * @return array
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	public function serializeForOutput( Notification $notification, UserIdentity $user ): array {
 		$lang = $this->getUserLanguage( $user );
@@ -288,7 +288,7 @@ final class NotificationSerializer {
 	 * @param UserIdentity $user For which user to serialize the notification
 	 *
 	 * @return array
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	public function serializeNotificationGroupForOutput( NotificationGroup $group, UserIdentity $user ): array {
 		$lang = $this->getUserLanguage( $user );
@@ -416,12 +416,12 @@ final class NotificationSerializer {
 	 * @param INotificationEvent $event
 	 *
 	 * @return string
-	 * @throws MWException
+	 * @throws RuntimeException
 	 */
 	public function serializeEvent( INotificationEvent $event ): string {
 		set_error_handler( static function ( $errno, $errstr ) use ( $event ) {
 			$class = get_class( $event );
-			throw new MWException( "Serialization of event $class failed: $errstr ($errno)" );
+			throw new RuntimeException( "Serialization of event $class failed: $errstr ($errno)" );
 		}, E_WARNING | E_NOTICE );
 
 		$serializableSpec = $this->eventFactory->getSerializableSpec( $event );
@@ -478,7 +478,7 @@ final class NotificationSerializer {
 	 * @param Language $lang
 	 *
 	 * @return array
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	private function serializeLinks( array $links, Language $lang ): array {
 		$isPrimary = true;
@@ -497,7 +497,7 @@ final class NotificationSerializer {
 	 * @param UserIdentity $user
 	 *
 	 * @return Language
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	private function getUserLanguage( UserIdentity $user ): Language {
 		$langCode = $this->userOptionsLookup->getOption( $user, 'language' );

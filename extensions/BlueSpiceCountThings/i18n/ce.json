@@ -20,5 +20,16 @@
 	"bs-countthings-error-not-exist": "«$1» агӀо йац",
 	"bs-countthings-droplet-files-name": "Файлийн дукхалла",
 	"bs-countthings-droplet-files-description": "Чуйаьхна йерриге файлийн дукхалла гойту",
-	"bs-countthings-droplet-user-name": "Декъашхойн дукхалла"
+	"bs-countthings-droplet-user-name": "Декъашхойн дукхалла",
+	"bs-countthings-ve-countarticles-title": "Йаззамаш ларар",
+	"bs-countthings-ve-countfiles-title": "Файлаш ларар",
+	"bs-countthings-ve-countusers-title": "Декъашхой ларар",
+	"bs-countthings-droplet-articles-name": "АгӀонийн дукхалла",
+	"bs-countthings-droplet-articles-description": "АгӀонийн дукхалла гойту",
+	"bs-countthings-droplet-characters-name": "Хьаьркийн дукхалла",
+	"bs-countthings-desc": "Чулацаман анализ йеш статистика ло",
+	"bs-countthings-ve-countcharacters-title": "Хьаьркийн дагардар",
+	"bs-countthings-tag-countarticles-desc": "Гойту вики чохь йаззамаш мел бу.",
+	"bs-countthings-tag-countusers-desc": "Гойту дӀайазбинчу декъашхойн дукхалла.",
+	"bs-countthings-tag-countfiles-desc": "Гойту вики чохь файлаш мел йу."
 }

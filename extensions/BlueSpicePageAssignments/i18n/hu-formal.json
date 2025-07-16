@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-pageassignments-event-assignment-add-bot": "Ön hozzá lett rendelve a(z) $1 laphoz",
+	"bs-pageassignments-event-assignment-links-intro": "Kérjük, látogassa meg az alábbi linken található lapot a hozzárendelés megtekintéséhez",
+	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|eltávolította}} a hozzárendelését a(z) $2 lapon",
+	"bs-pageassignments-event-assignment-remove-bot": "A hozzárendelését eltávolították a(z) $1 lapról"
+}

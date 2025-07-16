@@ -1,0 +1,88 @@
+.ime-fieldset {
+	margin: 0.5ex;
+	padding: 0.5ex 1ex;
+}
+
+.ime-fieldset > legend {
+	position: absolute;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect( 1px, 1px, 1px, 1px );
+	clip-path: inset( 50% );
+	white-space: nowrap;
+}
+
+.ime-fieldset-halfwidth {
+	float: inline-start;
+}
+
+.ime-fieldset-halfwidth > select[ name='area' ] {
+	float: inline-start;
+	height: 10em;
+	margin: 0.5ex;
+	width: 10em;
+}
+
+.ime-fieldset-div-floatleft div {
+	float: inline-start;
+	margin-right: 1em;
+}
+
+.ime-fieldset-div-floatleft select {
+	width: 8em;
+}
+
+form[ name='ime' ] fieldset fieldset legend {
+	padding: 0 0.5ex;
+	font-weight: bold;
+	margin-bottom: 0.1ex;
+}
+
+form[ name='ime' ] a {
+	padding: 0 0.5ex;
+}
+
+/* stylelint-disable selector-max-id */
+#imeProps {
+	margin: 0.5ex;
+	padding: 0 1ex 1ex;
+}
+
+#imeProps > div {
+	float: inline-start;
+	margin: 0.5ex;
+	padding: 0 1ex 1ex;
+}
+
+#ime_areaLink,
+#ime_areaTitle {
+	width: 10em;
+}
+
+#ime_imageDisplayDimensions {
+	width: 8em;
+}
+
+#imePropsRect > input,
+#imePropsCircle > input {
+	width: 4em;
+}
+
+#imePropsPolyCoords {
+	font-size: 0.8em;
+	max-width: 20em;
+}
+
+#imeImport > textarea {
+	width: 100%;
+	margin: 0;
+	height: 10em;
+	display: block;
+}
+
+#imeResult {
+	display: block;
+	line-height: 1.2em;
+}

@@ -9,6 +9,6 @@
 	"bs-bluespiceabout-desc": "Információ a BlueSpice-ról.",
 	"bs-bluespiceabout-about-bluespice": "A BlueSpice-ról",
 	"bluespiceabout": "A BlueSpice-ról",
-	"action-bluespiceabout-viewspecialpage": "tekintsd meg a \"{{int:bs-bluespiceabout-about-bluespice}}\" speciális oldalt",
+	"action-bluespiceabout-viewspecialpage": "„{{int:bs-bluespiceabout-about-bluespice}}” speciális oldal megtekintése",
 	"right-bluespiceabout-viewspecialpage": "Hozzáférés a speciális oldalhoz [[Special:BlueSpiceAbout]]"
 }

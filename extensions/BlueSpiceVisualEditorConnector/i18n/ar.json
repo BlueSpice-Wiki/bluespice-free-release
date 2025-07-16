@@ -87,5 +87,8 @@
 	"bs-visualeditor-save-label": "حفظ",
 	"bs-visualeditorconnector-upload-type": "نوع الرفع",
 	"bs-visualeditorconnector-upload-type-help": "الأصل: تم التحقق من صحة Upload-right. يمكن تعديل اسم الملف والمساحة والفئة. الوصف مطلوب.\nSimple: لم يتم التحقق من صحة Upload-right. يمكن تعديل اسم الملف والمساحة والفئة. الوصف اختياري.\nنقرة واحدة: لم يتم التحقق من صحة Upload-right. لا يمكن تعديل اسم الملف والفئة. المساحة قابلة للتحرير.",
-	"bs-visualeditorconnector-tab-file": "رابط للملف"
+	"bs-visualeditorconnector-tab-file": "رابط للملف",
+	"bs-visualeditor-request-entity-too-large": "الملف كبير جدًا بحيث لا يمكن تحميله.",
+	"bs-visualeditorconnector-dialog-table-title": "جدول",
+	"bs-visualeditorconnector-dialog-action-insert": "إدراج"
 }

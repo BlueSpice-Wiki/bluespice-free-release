@@ -6,5 +6,7 @@
 	},
 	"bs-articleinfo-desc": "Információt ad egy lapról az állapotsorban",
 	"prefs-articleinfo": "Lapinformáció",
-	"bs-articleinfo-newrevision-info-text-reload": "Elérhető a lap új verziója. Az aktuális tartalom megtekintéséhez [[:$1|töltsd be újra]] a lapot."
+	"bs-articleinfo-newrevision-info-text-reload": "Elérhető a lap új verziója. Az aktuális tartalom megtekintéséhez [[:$1|töltsd be újra]] a lapot.",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "Frissítési intervallum (másodperc)",
+	"bs-articleinfo-pref-checkrevisioninterval-help-label": "Beállítja, hogy milyen gyakran frissül az „Utolsó szerkesztés” érték. Ilyenkor a rendszer a lapot új verziók szempontjából is ellenőrzi."
 }

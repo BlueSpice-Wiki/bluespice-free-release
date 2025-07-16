@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Rail",
 			"Rzuwig"
 		]
 	},
-	"enhancedupload-attachments-tag-grid-details-title": "Szczegóły"
+	"enhancedupload-attachments-tag-grid-details-title": "Szczegóły",
+	"enhancedupload-ve-file-dialog-title": "Plik"
 }

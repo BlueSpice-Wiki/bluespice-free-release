@@ -1,8 +1,41 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csega"
+			"Csega",
+			"Krisztina",
+			"Tacsipacsi"
 		]
 	},
-	"bs-countthings-pages-label": "Lapok"
+	"bs-countthings-pages-label": "Lapok",
+	"bs-countthings-desc": "Tartalom alapú statisztikákat biztosít",
+	"bs-countthings-chars-label": "Karakterek",
+	"bs-countthings-words-label": "Szavak",
+	"bs-countthings-files-label": "Fájlok",
+	"bs-countthings-ve-countcharacters-title": "Karakterek számlálása",
+	"bs-countthings-ve-countarticles-title": "Szócikkek számlálása",
+	"bs-countthings-ve-countfiles-title": "Fájlok számlálása",
+	"bs-countthings-ve-countusers-title": "Felhasználók számlálása",
+	"bs-countthings-ve-countthingsinspector-mode": "Mód",
+	"bs-countthings-ve-countcharacters-mode-all": "mind",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "karakterek",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "szavak",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "karakterek és szavak",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "lapok",
+	"bs-countthings-ve-countcharacters-input-label": "Lapok",
+	"bs-countthings-error-no-input": "Nincs megadva lap.",
+	"bs-countthings-error-invalid-mode": "A(z) „$1” mód érvénytelen. Használható módok: „chars”, „words”, „pages”.",
+	"bs-countthings-error-not-exist": "A(z) „$1” lap nem létezik.",
+	"bs-countthings-tag-countarticles-desc": "Megjeleníti a wikin található szócikkek számát.",
+	"bs-countthings-tag-countusers-desc": "Megjeleníti a regisztrált felhasználók számát.",
+	"bs-countthings-tag-countfiles-desc": "Megjeleníti a wikin található fájlok számát.",
+	"bs-countthings-tag-countcharacters-desc": "Metaadatokat generál a jelzett szócikk tartalmáról. A kimenet egy információs doboz, amely integrálható egy szócikkbe. A „mode” paraméterrel különböző típusú információk jeleníthetők meg.",
+	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: Mit számoljon: <code>diagramok</code> (karakterek), <code>words</code> (szavak) vagy <code>pages</code> (lapok).",
+	"bs-countthings-droplet-articles-name": "Lapok száma",
+	"bs-countthings-droplet-articles-description": "Lapok számának megjelenítése",
+	"bs-countthings-droplet-characters-name": "Karakterek száma",
+	"bs-countthings-droplet-characters-description": "Megjeleníti a karakterek vagy szavak számát egy wiki lapon.",
+	"bs-countthings-droplet-files-name": "Fájlok száma",
+	"bs-countthings-droplet-files-description": "Megjeleníti az összes feltöltött fájl számát",
+	"bs-countthings-droplet-user-name": "Felhasználók száma",
+	"bs-countthings-droplet-user-description": "Megjeleníti az összes felhasználó számát"
 }

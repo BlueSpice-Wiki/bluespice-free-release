@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Derugon",
 			"DreZhsh",
 			"Gomoko",
 			"Mahabarata",
@@ -123,5 +124,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Largeur",
 	"bs-statistics-ve-progress-attr-width-help": "Largeur de la barre de progression en pixels",
 	"bs-statistics-droplet-progress-name": "Avancement",
-	"bs-statistics-droplet-progress-description": "Visualise la progression des variables de mesure données"
+	"bs-statistics-droplet-progress-description": "Visualise la progression des variables de mesure données",
+	"apihelp-query+statistics-reports-param-aggregate": "Si les statistiques doivent être agrégées ou non"
 }

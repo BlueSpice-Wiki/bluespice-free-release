@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceUserSidebar",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Dejan Savuljesku"
@@ -18,7 +18,6 @@
 			}
 		},
 		"BlueSpiceUserSidebar": {
-			"Widgets": {},
 			"WidgetRegistry": {}
 		},
 		"MenuEditor": {
@@ -103,7 +102,7 @@
 	},
 	"config": {
 		"MenuEditorUserSidebarAllowedKeywords": {
-			"value": [ "PAGESVISITED", "YOUREDITS" ]
+			"value": [ "PAGESVISITED", "YOUREDITS", "WATCHLIST" ]
 		}
 	},
 	"manifest_version": 2

@@ -46,6 +46,9 @@ class RenderProfileSlot implements
 		$this->profileManager = $profileManager;
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
 		if ( $this->profileOwner && $this->profileOwner->getRealName() ) {
 			$out->setPageTitle( $this->profileOwner->getRealName() );

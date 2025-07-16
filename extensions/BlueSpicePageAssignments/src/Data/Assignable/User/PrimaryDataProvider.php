@@ -66,13 +66,6 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	}
 
 	/**
-	 * @return string[]
-	 */
-	protected function getTableNames() {
-		return array_merge( parent::getTableNames(), [ 'user_groups' ] );
-	}
-
-	/**
 	 *
 	 * @param \stdClass $row
 	 */

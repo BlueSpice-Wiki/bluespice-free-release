@@ -1,6 +1,6 @@
 {
 	"name": "PDFCreator",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Daniel Vogel",
@@ -93,6 +93,9 @@
 			"PreProcessors": {
 				"excludeExport": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\PreProcessor\\ExcludeExportProcessor"
+				},
+				"objects": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\PreProcessor\\ObjectProcessor"
 				}
 			},
 			"Processors": {
@@ -121,6 +124,9 @@
 				},
 				"suppresslinks": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\SuppressLinks"
+				},
+				"input-select": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\InputSelectProcessor"
 				}
 			},
 			"PostProcessors": {},

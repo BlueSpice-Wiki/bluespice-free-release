@@ -1,11 +1,11 @@
 {
 	"name": "NotifyMe",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
 	],
-	"url": "http://www.hallowelt.com",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:NotifyMe",
 	"descriptionmsg": "notifyme-desc",
 	"requires": {
 		"MediaWiki": ">= 1.43.0",

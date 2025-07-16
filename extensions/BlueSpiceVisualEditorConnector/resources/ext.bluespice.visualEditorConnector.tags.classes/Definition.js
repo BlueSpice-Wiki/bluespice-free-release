@@ -79,6 +79,10 @@ bs.vec.util.tag.Definition.prototype.setValues = function ( inspector, attrs, cf
 					val.map( ( item ) => ( { data: item.trim(), label: '' } ) )
 				);
 				break;
+			case 'groups':
+				const groups = attrs[ name ] ? attrs[ name ].split( attributes[ i ].valueSeparator || ',' ) : []; // eslint-disable-line no-case-declarations
+				inspector[ inputName ].setValue( groups );
+				break;
 			default:
 				inspector[ inputName ].setValue(
 					attrs[ name ] || attributes[ i ].default
@@ -105,7 +109,7 @@ bs.vec.util.tag.Definition.prototype.updateMwData = function ( inspector, mwData
 				inspector[ attributes[ i ].name + 'Input' ].getValue() == false ? // eslint-disable-line eqeqeq
 					'false' :
 					'true';
-		} else if ( attributes[ i ].type === 'multiselect' ) {
+		} else if ( attributes[ i ].type === 'multiselect' || attributes[ i ].type === 'groups' ) {
 			const value = inspector[ attributes[ i ].name + 'Input' ].getValue();
 			mwData.attrs[ attributes[ i ].name ] = value.join( attributes[ i ].valueSeparator || ',' );
 		} else if ( inspector[ attributes[ i ].name + 'Input' ].getValue() ) {

@@ -29,8 +29,13 @@ namespace MediaWiki\Extension\DynamicPageList3;
 
 use MediaWiki\Extension\DynamicPageList3\Lister\Lister;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\PageReference;
 use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\ParserOptions;
+use MediaWiki\Parser\StripState;
 use MediaWiki\Title\Title;
+use ReflectionClass;
+use ReflectionException;
 
 class LST {
 
@@ -91,7 +96,6 @@ class LST {
 	 * @param Parser $parser
 	 * @param string $text
 	 * @param string $part1
-	 * @param int $skiphead
 	 * @param bool $recursionCheck
 	 * @param int $maxLength
 	 * @param string $link
@@ -103,7 +107,6 @@ class LST {
 		$parser,
 		$text,
 		$part1,
-		$skiphead = 0,
 		$recursionCheck = true,
 		$maxLength = -1,
 		$link = '',
@@ -123,7 +126,7 @@ class LST {
 
 			// Handle recursion here, so we can break cycles.
 			if ( $recursionCheck == false ) {
-				$text = $parser->preprocess( $text, $parser->getPage(), $parser->getOptions() );
+				$text = self::callParserPreprocess( $parser, $text, $parser->getPage(), $parser->getOptions() );
 				self::close( $parser, $part1 );
 			}
 
@@ -149,13 +152,11 @@ class LST {
 	 * Generate a regex to match the section(s) we're interested in.
 	 *
 	 * @param string $sec
-	 * @param string $to
 	 * @param bool &$any
 	 * @return string
 	 */
-	private static function createSectionPattern( $sec, $to, &$any ) {
+	private static function createSectionPattern( $sec, &$any ) {
 		$any = false;
-		$to_sec = ( $to == '' ) ? $sec : $to;
 
 		if ( $sec[0] == '*' ) {
 			$any = true;
@@ -168,50 +169,11 @@ class LST {
 			$sec = preg_quote( $sec, '/' );
 		}
 
-		if ( $to_sec[0] == '*' ) {
-			if ( $to_sec == '**' ) {
-				$to_sec = '[^\/>"' . "']+";
-			} else {
-				$to_sec = str_replace( '/', '\/', substr( $to_sec, 1 ) );
-			}
-		} else {
-			$to_sec = preg_quote( $to_sec, '/' );
-		}
-
 		$ws = "(?:\s+[^>]+)?";
 
 		return "/<section$ws\s+(?i:begin)=['\"]?" . "($sec)" .
 			"['\"]?$ws\/?>(.*?)\n?<section$ws\s+(?:[^>]+\s+)?(?i:end)=" .
 			"['\"]?\\1['\"]?" . "$ws\/?>/s";
-	}
-
-	/**
-	 * Count headings in skipped text.
-	 *
-	 * Count skipped headings, so parser can skip them, to
-	 * prevent wrong heading links.
-	 *
-	 * @param string $text
-	 * @param int $limit Cutoff point in the text to stop searching
-	 * @return int Number of matches
-	 */
-	private static function countHeadings( $text, $limit ) {
-		$pat = '^(={1,6}).+\1\s*$()';
-
-		$count = 0;
-		$offset = 0;
-		$m = [];
-
-		while ( preg_match( "/$pat/im", $text, $m, PREG_OFFSET_CAPTURE, $offset ) ) {
-			if ( $m[2][1] > $limit ) {
-				break;
-			}
-
-			$count++;
-			$offset = $m[2][1];
-		}
-
-		return $count;
 	}
 
 	/**
@@ -249,7 +211,6 @@ class LST {
 	 * @param Parser $parser
 	 * @param string $page
 	 * @param string $sec
-	 * @param string $to
 	 * @param bool $recursionCheck
 	 * @param bool $trim
 	 * @param array $skipPattern
@@ -259,7 +220,6 @@ class LST {
 		$parser,
 		$page = '',
 		$sec = '',
-		$to = '',
 		$recursionCheck = true,
 		$trim = false,
 		$skipPattern = []
@@ -272,14 +232,14 @@ class LST {
 		}
 
 		$any = false;
-		$pat = self::createSectionPattern( $sec, $to, $any );
+		$pat = self::createSectionPattern( $sec, $any );
 
 		preg_match_all( $pat, $text, $m, PREG_PATTERN_ORDER );
 
 		foreach ( $m[2] as $nr => $piece ) {
 			$piece = self::parse(
 				$parser, $piece, "#lst:{$page}|{$sec}",
-				0, $recursionCheck, -1, '', $trim, $skipPattern
+				$recursionCheck, -1, '', $trim, $skipPattern
 			);
 
 			if ( $any ) {
@@ -450,15 +410,13 @@ class LST {
 
 		if ( self::text( $parser, $page, $title, $text ) == false ) {
 			$output[0] = $text;
-
 			return $output;
 		}
 
 		// throw away comments
 		$text = preg_replace( '/<!--.*?-->/s', '', $text );
-
 		return self::extractHeadingFromText(
-			$parser, $page, $title, $text,
+			$parser, $page, $text,
 			$sec, $to, $sectionHeading,
 			$recursionCheck, $maxLength,
 			$link, $trim, $skipPattern
@@ -470,7 +428,6 @@ class LST {
 	 *
 	 * @param Parser $parser
 	 * @param string $page
-	 * @param Title|string $title
 	 * @param string $text
 	 * @param string $sec
 	 * @param string $to
@@ -485,7 +442,6 @@ class LST {
 	public static function extractHeadingFromText(
 		$parser,
 		$page,
-		$title,
 		$text,
 		$sec,
 		$to,
@@ -570,7 +526,7 @@ class LST {
 				$piece = substr( $text, 0, $m[1][1] - 1 );
 				$output[0] = self::parse(
 					$parser, $piece, "#lsth:{$page}|{$sec}",
-					0, $recursionCheck, $maxLength,
+					$recursionCheck, $maxLength,
 					$link, $trim, $skipPattern
 				);
 
@@ -594,7 +550,7 @@ class LST {
 				}
 			}
 
-			if ( !$end_off ) {
+			if ( ( $end_off ?? null ) === null ) {
 				if ( $nr != 0 ) {
 					$pat = '^(={1,6})\s*[^\s\n=][^\n=]*\s*\1\s*$';
 				} else {
@@ -609,11 +565,7 @@ class LST {
 				}
 			}
 
-			$nhead = self::countHeadings( $text, $begin_off );
-
-			wfDebug( "LSTH: head offset = $nhead" );
-
-			if ( $end_off ) {
+			if ( $end_off ?? false ) {
 				if ( $end_off == -1 ) {
 					return $output;
 				}
@@ -650,7 +602,7 @@ class LST {
 				// output n-th section and done
 				$output[0] = self::parse(
 					$parser, $piece, "#lsth:{$page}|{$sec}",
-					$nhead, $recursionCheck, $maxLength,
+					$recursionCheck, $maxLength,
 					$link, $trim, $skipPattern
 				);
 				break;
@@ -661,7 +613,7 @@ class LST {
 					// output last section and done
 					$output[0] = self::parse(
 						$parser, $piece, "#lsth:{$page}|{$sec}",
-						$nhead, $recursionCheck, $maxLength,
+						$recursionCheck, $maxLength,
 						$link, $trim, $skipPattern
 					);
 					break;
@@ -670,7 +622,7 @@ class LST {
 				// output section by name and continue search for another section with the same name
 				$output[$n++] = self::parse(
 					$parser, $piece, "#lsth:{$page}|{$sec}",
-					$nhead, $recursionCheck, $maxLength,
+					$recursionCheck, $maxLength,
 					$link, $trim, $skipPattern
 				);
 			}
@@ -804,7 +756,7 @@ class LST {
 				}
 			} else {
 				// put a red link into the output
-				$output[0] = $parser->preprocess(
+				$output[0] = self::callParserPreprocess( $parser,
 					'{{' . $defaultTemplate . '|%PAGE%=' .
 					$page . '|%TITLE%=' . $title->getText() .
 					'|%DATE%=' . $date . '|%USER%=' . $user . '}}',
@@ -823,7 +775,7 @@ class LST {
 		// loop for all template invocations
 		$firstCall = true;
 
-		foreach ( $tCalls as $iii => $tCall ) {
+		foreach ( $tCalls as $tCall ) {
 			if ( $n == -2 ) {
 				$n++;
 				continue;
@@ -875,7 +827,10 @@ class LST {
 										)
 									)
 								) . '}}';
-							$output[++$n] = $parser->preprocess( $argChain, $parser->getPage(), $parser->getOptions() );
+
+							$output[++$n] = self::callParserPreprocess(
+								$parser, $argChain, $parser->getPage(), $parser->getOptions()
+							);
 						}
 						break;
 					}
@@ -1035,5 +990,70 @@ class LST {
 	public static function spaceOrUnderscore( $pattern ) {
 		// returns a pettern that matches underscores as well as spaces
 		return str_replace( ' ', '[ _]', $pattern );
+	}
+
+	/**
+	 * Preprocess given text according to the globally-configured method
+	 *
+	 * The default method uses Parser::preprocess() which does the job, but clears the internal cache every time.
+	 * The improved method uses Parser::recursivePreprocess() that saves a decent amount of processing time
+	 * by preserving the internal cache leveraging the repetitive call pattern.
+	 *
+	 * Parser::preprocess() was mainly called from LST::includeTemplate() for the same template(s) with different
+	 * set of arguments for each article found. In the original implementation using Parser::preprocess(),
+	 * the internal cache is cleared at each call and parsing the same template text into template DOM is repeated
+	 * multiple times.
+	 *
+	 * Using Parser::recursivePreprocess() prevents the cache clear, and thus repetitive calls reuse the
+	 * previously generated template DOM which brings a decent performance improvement when called multiple times.
+	 */
+	protected static function callParserPreprocess(
+		Parser $parser,
+		string $text,
+		?PageReference $page,
+		ParserOptions $options
+	): string {
+		if ( Config::getSetting( 'recursivePreprocess' ) ) {
+			self::softResetParser( $parser );
+			$parser->setOutputType( OT_PREPROCESS );
+
+			$text = $parser->recursivePreprocess( $text );
+			return $text;
+		}
+
+		return $parser->preprocess( $text, $page, $options );
+	}
+
+	/**
+	 * Reset Parser's internal counters to avoid kicking in the limits when rendering long lists of results.
+	 */
+	private static function softResetParser( Parser $parser ): void {
+		self::setParserProperties( $parser, [
+			'mStripState' => new StripState( $parser ),
+			'mIncludeSizes' => [
+				'post-expand' => 0,
+				'arg' => 0,
+			],
+			'mPPNodeCount' => 0,
+			'mHighestExpansionDepth' => 0,
+			'mExpensiveFunctionCount' => 0,
+		] );
+	}
+
+	private static function setParserProperties( Parser $parser, array $properties ): void {
+		static $reflectionCache = [];
+		foreach ( $properties as $property => $value ) {
+			if ( !array_key_exists( $property, $reflectionCache ) ) {
+				try {
+					$reflectionCache[$property] = ( new ReflectionClass( Parser::class ) )->getProperty( $property );
+				} catch ( ReflectionException ) {
+					$reflectionCache[$property] = null;
+				}
+			}
+
+			if ( $reflectionCache[$property] ) {
+				$reflectionCache[$property]->setValue( $parser, $value );
+			}
+		}
 	}
 }

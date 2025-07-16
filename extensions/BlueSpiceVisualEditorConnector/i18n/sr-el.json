@@ -32,5 +32,6 @@
 	"bs-vec-table-border-right": "Desno",
 	"bs-vec-table-border-bottom": "Dno",
 	"bs-vec-table-border-all": "Sve",
-	"bs-visualeditorconnector-upload-type": "Vrsta otpremanja"
+	"bs-visualeditorconnector-upload-type": "Vrsta otpremanja",
+	"bs-visualeditor-save-label": "Sačuvaj"
 }

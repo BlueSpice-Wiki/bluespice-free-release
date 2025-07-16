@@ -43,7 +43,8 @@
 			"春春眠眠",
 			"青子守歌",
 			"Yaakiyu.jp",
-			"Foomin10"
+			"Foomin10",
+			"Shulmj"
 		]
 	},
 	"preferences": "個人設定",
@@ -57,7 +58,7 @@
 	"savedprefs": "個人設定を保存しました。",
 	"prefs-back-title": "個人設定に戻る",
 	"prefs-tabs-navigation-hint": "ヒント: ← キーと → キーで、タブ一覧内のタブ間を移動できます。",
-	"prefs-sections-navigation-hint": "ヒント: Tab および Shift + Tab キーを使って、個人設定セクション間を移動することができます。",
+	"prefs-sections-navigation-hint": "ヒント: Tab および Shift + Tab キーを使用して、個人設定のセクション間を移動できます。",
 	"prefs-personal": "利用者情報",
 	"prefs-description-personal": "あなたの見た目、繋がりとコミュニケーションを設定します。",
 	"prefs-info": "基本情報",
@@ -260,7 +261,7 @@
 	"prefs-searchmisc": "一般",
 	"searchlimit-label": "各ページに表示する検索結果の数",
 	"searchlimit-help": "最大数: $1",
-	"search-thumbnail-extra-namespaces-label": "Special:Searchでサムネイルを表示する",
+	"search-thumbnail-extra-namespaces-label": "特別:検索 でサムネイルを表示する",
 	"search-thumbnail-extra-namespaces-message": "{{#special:search}}ページの結果で$1{{PLURAL:$2|名前空間}}のサムネイルを表示します。",
 	"prefs-advancedsearchoptions": "詳細設定",
 	"prefs-reset-intro": "このページを使用すると、自分の個人設定をこのサイトの初期設定に戻せます。\nこの操作は取り消せません。",

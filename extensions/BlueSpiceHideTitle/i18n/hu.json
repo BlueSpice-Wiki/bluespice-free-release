@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-hidetitle-desc": "Hozzáadja a varázsszót: <code><nowiki>__HIDETITLE__</nowiki></code> így a lap címe elrejthető",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Megjelenítés",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Elrejtés",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Cím láthatósága",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Beállíthatod, hogy a cím megjelenjen-e vagy sem."
+}

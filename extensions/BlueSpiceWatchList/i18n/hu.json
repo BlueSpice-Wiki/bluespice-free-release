@@ -22,13 +22,14 @@
 	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Cím max hossza",
 	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "A címben feltüntetendő betűk száma. 5 és 500 közötti szám lehet.",
 	"bs-watchlist-ve-watchlist-attr-order-label": "Rendezés",
-	"bs-watchlist-tag-watchlist-attr-order-help": "Lista megjelenítése idő vagy oldal név alapján",
-	"bs-watchlist-ve-watchlist-attr-pagename-label": "Oldalnév",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Lista megjelenítése idő vagy lap neve alapján",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Lapnév",
 	"bs-watchlist-ve-watchlist-attr-time-label": "Idő",
 	"bs-watchlist-tag-watchlist-no-user": "A figyelőlista nem jeleníthető meg mert nincs bejelentkezett felhasználó",
-	"bs-watchlist-tag-watchlist-no-entries": "Nincs változás a figyelőlistán megjelenő oldalakon",
-	"bs-watchlist-tag-watchlist-attr-pagename-help": "Oldalnév súgó",
+	"bs-watchlist-tag-watchlist-no-entries": "Nincs változás a figyelőlistán megjelenő lapokon",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Lapnév súgó",
 	"bs-watchlist-tag-watchlist-attr-time-help": "Idő súgó",
 	"bs-watchlist-droplet-name": "Figyelőlista",
-	"bs-watchlist-droplet-description": "Legutóbbi változások a figyelőlistán megjelenő oldalakon"
+	"bs-watchlist-droplet-description": "Legutóbbi változások a figyelőlistán megjelenő lapokon",
+	"bs-watchlist-usersidebar-title": "Figyelőlista"
 }

@@ -123,5 +123,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "العرض",
 	"bs-statistics-ve-progress-attr-width-help": "عرض شريط التقدم بالبكسل",
 	"bs-statistics-droplet-progress-name": "التقدم",
-	"bs-statistics-droplet-progress-description": "يصور التقدم مقابل متغيرات القياس المحددة"
+	"bs-statistics-droplet-progress-description": "يصور التقدم مقابل متغيرات القياس المحددة",
+	"apihelp-query+statistics-reports-param-aggregate": "ما إذا كان سيتم تجميع الإحصائيات"
 }

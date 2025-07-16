@@ -20,7 +20,7 @@ class ExportProcessorFactory {
 
 	/**
 	 * @param string $module
-	 * @return array
+	 * @return IProcessor[]
 	 */
 	public function getProcessors( string $module ): array {
 		$registry = ExtensionRegistry::getInstance()->getAttribute(
@@ -38,7 +38,7 @@ class ExportProcessorFactory {
 			$positionA = $a->getPosition();
 			$positionB = $b->getPosition();
 
-			return $positionA > $positionB ? 1 : 0;
+			return $positionA <=> $positionB;
 		} );
 		return $processors;
 	}

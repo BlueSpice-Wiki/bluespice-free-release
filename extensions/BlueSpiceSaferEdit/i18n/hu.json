@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-saferedit-desc": "Figyelmeztetést ad, ha más felhasználók szerkesztik a lapot",
+	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|szerkeszti|szerkesztik}} {{GENDER:$1|}} ezt a lapot",
+	"bs-saferedit-someone-editing": "Ezt a lapot szerkesztik",
+	"bs-saferedit-pref-edit-interval": "Szerkesztés-ellenőrzés intervalluma (másodperc)",
+	"bs-saferedit-pref-edit-interval-help": "Meghatározza, hogy milyen gyakran (másodpercben) ellenőrizze a rendszer, hogy más személy szerkeszti-e a lapot (alapértelmezett: 3 másodperc)",
+	"bs-saferedit-pref-show-editinguser": "Aktuális szerkesztő megjelenítése",
+	"bs-saferedit-pref-show-editinguser-help": "Hozzáadja a lapot jelenleg szerkesztő felhasználó nevét a lap tetejéhez"
+}

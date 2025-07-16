@@ -107,7 +107,17 @@
 	}
 
 	function _transformToHtml( fromWikiText ) { // eslint-disable-line no-underscore-dangle
-		return _transform( 'wikitext', fromWikiText );
+		const dfd = $.Deferred();
+		_transform( 'wikitext', fromWikiText ).done( ( html ) => {
+			// Remove legacy returned IDs
+			// leads to not editable elements in UI
+			// ERM41142
+			const cleaned = html.replace( /<span[^>]*typeof=["']mw:FallbackId["'][^>]*><\/span>/g, '' );
+
+			dfd.resolve( cleaned );
+		} );
+
+		return dfd.promise();
 	}
 
 	function _transform( from, content ) { // eslint-disable-line no-underscore-dangle

@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceVisualEditorConnector",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceVisualEditorConnector",
 	"author": [
 		"Markus Glaser"
@@ -332,7 +332,8 @@
 				"bs-vec-dialog-table-create-number-of-columns",
 				"bs-vec-dialog-action-done",
 				"bs-vec-dialog-action-safe",
-				"bs-vec-dialog-create-table-title",
+				"bs-visualeditorconnector-dialog-table-title",
+				"bs-visualeditorconnector-dialog-action-insert",
 				"bs-vec-widget-text-direction-tooltip",
 				"bs-vec-row-duplicate-has-merged",
 				"bs-vec-table-style-cell-text-vert-align",
@@ -392,8 +393,7 @@
 				"ext.bluespice.visualEditorConnector.styleInspector/Inspector.js"
 			],
 			"messages": [
-				"bs-visualeditorconnector-text-style-tool-color-label",
-				"bs-visualeditorconnector-color-annotation-desc"
+				"bs-visualeditorconnector-text-style-tool-color-label"
 			],
 			"dependencies": [
 				"oojs-ui",
@@ -595,7 +595,8 @@
 		"NamespaceManagerBeforePersistSettings": "writeNamespaceConfiguration",
 		"UnitTestsList": "\\BlueSpice\\VisualEditorConnector\\Hook\\UnitTestsList\\DisableFlaggedRevsTests::callback",
 		"MessagesPreLoad": "overrideMessage",
-		"MessageCacheFetchOverrides": "changeMessages"
+		"MessageCacheFetchOverrides": "changeMessages",
+		"APIAfterExecute": "removeTocPlaceholder"
 	},
 	"HookHandlers": {
 		"writeNamespaceConfiguration": {
@@ -607,6 +608,9 @@
 		},
 		"changeMessages": {
 			"class": "\\BlueSpice\\VisualEditorConnector\\Hook\\Messages\\MessageCacheFetchGetOverrides"
+		},
+		"removeTocPlaceholder": {
+			"class": "\\BlueSpice\\VisualEditorConnector\\Hook\\RemoveTocPlaceholder"
 		}
 	},
 	"manifest_version": 2

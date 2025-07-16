@@ -14,5 +14,6 @@
 	"bs-visualeditorconnector-dialog-media-embed": "Osadź ten plik",
 	"bs-vec-dialog-media-change-file": "Zmień plik",
 	"bs-visualeditor-linkcontext-label-change": "Zmień etykietę",
-	"bs-visualeditor-linkcontext-label-label": "Etykieta"
+	"bs-visualeditor-linkcontext-label-label": "Etykieta",
+	"bs-visualeditorconnector-dialog-action-insert": "Wstaw"
 }

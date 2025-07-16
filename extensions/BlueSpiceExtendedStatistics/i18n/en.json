@@ -22,6 +22,7 @@
 	"apihelp-query+statistics-reports-example": "Provide all reports for type \"mytype\", for dates 2021-09-14 and 2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "Type of statistics (report key)",
 	"apihelp-query+statistics-reports-param-filter": "JSON encoded filter data",
+	"apihelp-query+statistics-reports-param-aggregate": "Whether to aggregate the statistics",
 	"bs-statistics-aggregated-report-picker-label": "Report type",
 	"bs-statistics-aggregated-report-no-date": "No data for current filter set, please change filter values",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categories",

@@ -10,5 +10,10 @@
 	"prefs-whoisonline": "Цхьа вуй/юй зӀенехь?",
 	"bs-whoisonline-pref-orderby": "Къастам бе:",
 	"bs-whoisonline-pref-orderby-time": "Белхан хан",
-	"bs-whoisonline-pref-orderby-name": "ЦӀе"
+	"bs-whoisonline-pref-orderby-name": "ЦӀе",
+	"bs-whoisonline-collection-type-userlogin": "Декъашхочун логин",
+	"bs-whoisonline-collection-var-login": "ЧугӀо",
+	"bs-whoisonline-statistics-report-login-duration": "Чубовларан хан",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Чубовларан хан (сек)",
+	"bs-whoisonline-statistics-report-login-number": "Логинаш"
 }

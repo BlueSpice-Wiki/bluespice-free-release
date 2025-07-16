@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-usagetracker-desc": "Statisztikai adatokat tárol a bővítmények használatáról",
+	"apihelp-bs-usagetracker-store-summary": "Statisztikai adatokat tárol a bővítmények használatáról"
+}

@@ -9,8 +9,8 @@
 			"Yaakiyu.jp"
 		]
 	},
-	"flexiskin-extension-desc": "スキンのカスタマイズが可能",
-	"flexiskin-label": "スキン",
+	"flexiskin-extension-desc": "外装をカスタマイズできるようにする",
+	"flexiskin-label": "外装",
 	"right-flexiskin-viewspecialpage": "外装をカスタマイズするための[[Special:FlexiSkin|特別ページ]]を閲覧",
 	"action-flexiskin-viewspecialpage": "外装をカスタマイズするための[[Special:FlexiSkin|特別ページ]]の閲覧",
 	"right-flexiskin-api": "FlexiSkin API を使用",

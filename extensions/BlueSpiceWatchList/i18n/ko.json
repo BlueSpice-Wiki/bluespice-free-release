@@ -11,5 +11,6 @@
 	"bs-watchlist-pref-sort-title": "제목",
 	"bs-watchlist-ve-watchlistinspector-title": "감시 목록",
 	"bs-watchlist-ve-watchlist-attr-count-label": "개수",
-	"bs-watchlist-ve-watchlist-attr-order-label": "순서"
+	"bs-watchlist-ve-watchlist-attr-order-label": "순서",
+	"bs-watchlist-usersidebar-title": "주시문서 목록"
 }

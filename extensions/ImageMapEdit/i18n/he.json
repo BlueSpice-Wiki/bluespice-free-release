@@ -1,8 +1,30 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"YaronSh"
 		]
 	},
-	"imagemapedit-desc": "יצירת מפות תמונה בדפדפן."
+	"imagemapedit-desc": "יצירת מפות תמונה בדפדפן.",
+	"imagemapedit-circle": "עיגול",
+	"imagemapedit-coordinates": "נקודות ציון",
+	"imagemapedit-default": "ברירת המחדל",
+	"imagemapedit-deletearea": "מחיקת האזור שנבחר",
+	"imagemapedit-deletecoordinates": "מחיקת כל נקודות הציון",
+	"imagemapedit-display-interface": "הטמעת תמונה עם מפת תמונה",
+	"imagemapedit-editarea": "עריכת אזור",
+	"imagemapedit-hidetextbox": "הסתרת תיבת טקסט",
+	"imagemapedit-imagedescription": "תיאור התמונה",
+	"imagemapedit-import": "יבוא",
+	"imagemapedit-linktarget": "יעד הקישור",
+	"imagemapedit-linktitle": "כותרת הקישור",
+	"imagemapedit-newarea": "יצירת אזור חדש",
+	"imagemapedit-optional": "רשות",
+	"imagemapedit-preferences": "העדפות כלליות",
+	"imagemapedit-position": "מיקום",
+	"imagemapedit-radius": "רדיוס",
+	"imagemapedit-rectleft": "שמאל",
+	"imagemapedit-rectright": "ימין",
+	"imagemapedit-recttop": "עליון",
+	"imagemapedit-showtextbox": "הצגת תיבת טקסט"
 }

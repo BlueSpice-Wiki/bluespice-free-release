@@ -1,11 +1,18 @@
 {
 	"name": "mediawiki/menu-editor",
 	"type": "mediawiki-extension",
+	"description": "Graphical editor for menu pages",
+	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "https://www.hallowelt.com"
+		}
+	],
 	"extra": {
 		"installer-name": "MenuEditor"
 	},
-	"description": "Graphical editor for menu pages",
-	"license": "GPL-3.0-only",
 	"require": {
 		"composer/installers": "~1.0|~2",
 		"mwstake/mediawiki-component-wikitext": "~7"

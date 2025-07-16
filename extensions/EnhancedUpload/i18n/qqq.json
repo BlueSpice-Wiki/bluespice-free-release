@@ -31,8 +31,6 @@
 	"enhancedupload-tab-successfull-upload": "Tab title for files where upload was sucessfull",
 	"enhancedupload-tab-warnings-upload": "Tab title for file where warnings occured",
 	"enhancedupload-warning-dialog-label": "An warning message that tells how many files could not be uploaded with warning\n\nParameters:\n* $1 - a positive number for the plural rule",
-	"enhancedupload-ve-dialog-title": "Title for dialog to upload and insert file to content",
-	"enhancedupload-ve-dialog-filename-label": "Label for input to insert file name",
 	"enhancedupload-ve-dialog-title-exists": "Label to insert new file name if filename already exists",
 	"enhancedupload-preview-widget-label": "Label for preview widget which contains files selected for upload",
 	"enhancedupload-attachments-add-media-button-title": "Title for button which opens dialog to add existing file to a list",
@@ -95,5 +93,7 @@
 	"enhancedupload-toggle-details-button-hide-label": "Label for a button that hides additional details.",
 	"enhancedupload-toggle-details-button-show-label": "Label for a button that shows additional details.",
 	"enhancedupload-preview-widget-remove-label": "Label for icon to remove preview widget\nParameters:\n* $1 - file name",
-	"enhancedupload-reset-button-label": "Label for button to reset upload files"
+	"enhancedupload-reset-button-label": "Label for button to reset upload files",
+	"enhancedupload-ve-file-dialog-title": "Title for dialog to upload and insert file to content",
+	"enhancedupload-ve-file-dialog-filename-label": "Label for input to insert file name"
 }

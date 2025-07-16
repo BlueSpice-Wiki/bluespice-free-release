@@ -1,6 +1,6 @@
 {
 	"name": "ImageMapEdit",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"author": [
 		"Marc Reymann",
 		"Peter Schlömer",
@@ -26,18 +26,74 @@
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"ImageMapEdit": "src/ImageMapEdit.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ImageMapEdit\\": "src/"
 	},
 	"ResourceModules": {
 		"ext.imagemapedit": {
 			"scripts": [
-				"ime.js",
-				"ime.rl.js"
+				"ime.js"
 			],
+			"styles": {
+				"ime.css": {}
+			},
 			"dependencies": [
+				"mediawiki.template.mustache",
 				"oojs-ui",
 				"oojs-ui.styles.icons-editing-advanced"
+			],
+			"templates": [
+				"ImageMapEdit.mustache"
+			],
+			"messages": [
+				"imagemapedit-bottomleft",
+				"imagemapedit-bottomright",
+				"imagemapedit-circle",
+				"imagemapedit-circlechoose1",
+				"imagemapedit-circlechoose2",
+				"imagemapedit-coordinates",
+				"imagemapedit-deletearea",
+				"imagemapedit-deletecoordinates",
+				"imagemapedit-display-interface",
+				"imagemapedit-editarea",
+				"imagemapedit-error-imagenotfound",
+				"imagemapedit-generatedwikicode",
+				"imagemapedit-hidetextbox",
+				"imagemapedit-imagealttext",
+				"imagemapedit-imagedescription",
+				"imagemapedit-imagedisplaydimensions",
+				"imagemapedit-imagedisplayposition",
+				"imagemapedit-imagedisplayposition-left",
+				"imagemapedit-imagedisplayposition-center",
+				"imagemapedit-imagedisplayposition-right",
+				"imagemapedit-imagedisplaytype",
+				"imagemapedit-imagedisplaytype-thumbnail",
+				"imagemapedit-imagedisplaytype-border",
+				"imagemapedit-imagedisplaytype-frameless",
+				"imagemapedit-import",
+				"imagemapedit-importareas",
+				"imagemapedit-infolinkposition",
+				"imagemapedit-linktarget",
+				"imagemapedit-linktitle",
+				"imagemapedit-newarea",
+				"imagemapedit-nolink",
+				"imagemapedit-notspecified",
+				"imagemapedit-optional",
+				"imagemapedit-poly",
+				"imagemapedit-polychoose",
+				"imagemapedit-preferences",
+				"imagemapedit-position",
+				"imagemapedit-radius",
+				"imagemapedit-rect",
+				"imagemapedit-rectbottom",
+				"imagemapedit-rectchoose1",
+				"imagemapedit-rectchoose2",
+				"imagemapedit-rectleft",
+				"imagemapedit-rectright",
+				"imagemapedit-recttop",
+				"imagemapedit-showtextbox",
+				"imagemapedit-topleft",
+				"imagemapedit-topright"
 			]
 		}
 	},
@@ -46,8 +102,8 @@
 		"remoteExtPath": "ImageMapEdit/resources"
 	},
 	"Hooks": {
-		"OutputPageBeforeHTML": "ImageMapEdit::onOutputPageBeforeHTML",
-		"BeforePageDisplay": "ImageMapEdit::onBeforePageDisplay"
+		"OutputPageBeforeHTML": "MediaWiki\\Extension\\ImageMapEdit\\ImageMapEdit::onOutputPageBeforeHTML",
+		"BeforePageDisplay": "MediaWiki\\Extension\\ImageMapEdit\\ImageMapEdit::onBeforePageDisplay"
 	},
 	"manifest_version": 2
 }

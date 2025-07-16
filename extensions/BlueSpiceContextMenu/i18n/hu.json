@@ -1,9 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csega"
+			"Csega",
+			"Krisztina"
 		]
 	},
 	"bs-contextmenu-page-delete": "Lap törlése",
-	"bs-contextmenu-page-info": "Oldalinfó megtekintése"
+	"bs-contextmenu-page-info": "Oldalinfó megtekintése",
+	"bs-contextmenu-page-edit": "Lap szerkesztése",
+	"bs-contextmenu-page-move": "Lap áthelyezése",
+	"bs-contextmenu-page-history": "Laptörténet megtekintése",
+	"bs-contextmenu-media-reupload": "Új verzió feltöltése",
+	"bs-contextmenu-user-mail": "E-mail küldése",
+	"bs-contextmenu-user-talk": "Üzenet hagyása a vitalapon",
+	"bs-contextmenu-file-download": "Fájl letöltése",
+	"bs-contextmenu-open-in-new-tab": "Megnyitás új ablakban"
 }

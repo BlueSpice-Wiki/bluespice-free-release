@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceWatchList",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceWatchList",
 	"author": "Robert Vogel",
 	"descriptionmsg": "bs-watchlist-desc",
@@ -25,11 +25,8 @@
 			}
 		},
 		"BlueSpiceUserSidebar": {
-			"Widgets": {
-				"WATCHLIST": {
-					"callback": "\\BlueSpice\\WatchList\\Panel\\WatchList::factory",
-					"default": true
-				}
+			"WidgetRegistry": {
+				"WATCHLIST": "\\BlueSpice\\WatchList\\UserSidebar\\Widget\\WatchList::factory"
 			}
 		},
 		"BlueSpiceDiscovery": {

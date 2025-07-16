@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-readers-desc": "Létrehoz egy listát azokról, akik olvasták a lapot",
+	"prefs-readers": "Olvasók",
+	"bs-readers-title": "{{PLURAL:$1| {{GENDER:$2| Olvasó}}|Olvasók}}",
+	"readers-user": "{{GENDER:$1| által olvasott}} lapok: $1",
+	"readers": "A(z) „$1” olvasói",
+	"bs-readers-contentactions-label": "Olvasók megjelenítése",
+	"bs-readers-pagenotexists": "A lap nem létezik.",
+	"bs-readers-pref-active": "Olvasók aktiválása",
+	"bs-readers-emptyinput": "Nincs megadva lap.",
+	"bs-readers-header-username": "Felhasználónév",
+	"bs-readers-header-readerspath": "Olvasó",
+	"bs-readers-header-ts": "Dátum",
+	"bs-readers-header-page": "Lap",
+	"apihelp-bs-readers-data-store-summary": "Egy adott lap olvasói információinak lekérdezése.",
+	"apihelp-bs-readers-users-store-summary": "Egy adott lap összes olvasói információinak lekérdezése.",
+	"right-viewreaders": "Egy lap olvasóinak megtekintése",
+	"right-viewrevisionreaders": "Egy lapváltozat olvasóinak megtekintése",
+	"bs-readers-header-read-by": "Olvasta",
+	"bs-readers-header-revision-id": "Változat ID",
+	"bs-readers-header-revision-date": "Változat dátuma",
+	"bs-readers-header-read-on": "Olvasva",
+	"bs-readers-info-dialog": "A lap olvasói",
+	"bs-readers-info-dialog-column-readers": "Olvasók",
+	"bs-readers-permission-error": "Jogosultsági hiba"
+}

@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\NotifyMe\Channel;
 
 use Exception;
+use LogicException;
 use MailAddress;
 use MediaWiki\Config\Config;
 use MediaWiki\Extension\NotifyMe\Channel\Email\DigestCreator;
@@ -16,7 +17,6 @@ use MediaWiki\Message\Message;
 use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
-use MWException;
 use MWStake\MediaWiki\Component\Events\Delivery\IExternalChannel;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;
 use MWStake\MediaWiki\Component\Events\ITitleEvent;
@@ -95,7 +95,7 @@ class EmailChannel implements IExternalChannel {
 	public function deliver( Notification $notification ): bool {
 		$user = $notification->getTargetUser();
 		if ( !$this->canReceiveMail( $user ) ) {
-			throw new MWException( 'User ' . $user->getName() . ' cannot receive mail' );
+			throw new LogicException( 'User ' . $user->getName() . ' cannot receive mail' );
 		}
 		if (
 			!$this->userWantsImmediateEmail( $user ) &&
@@ -115,7 +115,7 @@ class EmailChannel implements IExternalChannel {
 	 * @param string $digestType
 	 *
 	 * @return void|null
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	public function digest( User $user, array $notifications, string $digestType ) {
 		if ( !$this->canReceiveMail( $user ) ) {
@@ -220,7 +220,7 @@ class EmailChannel implements IExternalChannel {
 	 * @param User $user
 	 *
 	 * @return void
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	private function send( array $mail, User $user ) {
 		$from = new MailAddress(

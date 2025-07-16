@@ -39,14 +39,14 @@
 	"bs-vec-table-style-cell-text-vert-align-bottom": "Ënnen",
 	"bs-vec-table-style-cell-text-vert-align-top": "Uewen",
 	"bs-vec-table-style-cell-text-vert-align-middle": "An der Mëtt",
-	"bs-vec-table-style-cell-text-hor-align-left": "Lenks",
+	"bs-vec-table-style-cell-text-hor-align-left": "Lénks",
 	"bs-vec-table-style-cell-text-hor-align-center": "Mëtt",
 	"bs-vec-table-style-cell-text-hor-align-right": "Riets",
 	"bs-vec-ve-table-width-label": "Breet vun der Tabell",
 	"bs-vec-ve-table-width-value-auto": "Automatesch",
 	"bs-vec-table-border-clear-all": "All Stylen zrécksetzen",
 	"bs-vec-table-border-none": "Keng",
-	"bs-vec-table-border-left": "Lenks",
+	"bs-vec-table-border-left": "Lénks",
 	"bs-vec-table-border-top": "Uewen",
 	"bs-vec-table-border-right": "Riets",
 	"bs-vec-table-border-bottom": "Ënnen",
@@ -60,5 +60,8 @@
 	"bs-vec-table-border-double": "Duebel",
 	"bs-visualeditor-save-label": "Späicheren",
 	"bs-visualeditorconnector-upload-type": "Eropluedtyp",
-	"bs-visualeditorconnector-tab-file": "Link op de Fichier"
+	"bs-visualeditorconnector-tab-file": "Link op de Fichier",
+	"bs-visualeditor-request-entity-too-large": "De Fichier ass ze grouss fir eropgelueden ze ginn.",
+	"bs-visualeditorconnector-dialog-table-title": "Tabell",
+	"bs-visualeditorconnector-dialog-action-insert": "Drasetzen"
 }

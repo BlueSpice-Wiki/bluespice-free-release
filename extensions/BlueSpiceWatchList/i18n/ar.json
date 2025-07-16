@@ -5,6 +5,7 @@
 			"Alshamiri1",
 			"FiberAhmed",
 			"Meno25",
+			"Mohammed Qays",
 			"أَحمد",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح"
@@ -35,5 +36,6 @@
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "Pagename المساعدة",
 	"bs-watchlist-tag-watchlist-attr-time-help": "مساعدة الوقت",
 	"bs-watchlist-droplet-name": "قائمة المراقبة",
-	"bs-watchlist-droplet-description": "أحدث التغييرات على الصفحات المدرجة في قائمة المراقبة"
+	"bs-watchlist-droplet-description": "أحدث التغييرات على الصفحات المدرجة في قائمة المراقبة",
+	"bs-watchlist-usersidebar-title": "قائمة المراقبة"
 }

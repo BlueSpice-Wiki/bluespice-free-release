@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csega"
+			"Csega",
+			"Krisztina"
 		]
 	},
 	"prefs-pagesvisited": "Meglátogatott oldalak",
@@ -9,5 +10,23 @@
 	"bs-pagesvisited-pref-widgetns": "Névterek:",
 	"bs-pagesvisited-pref-widgetsortodr": "Rendezés:",
 	"bs-pagesvisited-pref-sort-time": "Idő",
-	"bs-pagesvisited-pref-sort-pagename": "Cím"
+	"bs-pagesvisited-pref-sort-pagename": "Cím",
+	"bs-pagesvisited-desc": "Személyre szabott listát készít a legutóbb meglátogatott oldalakról",
+	"bs-pagesvisited-error-nsnotvalid": "A megadott {{PLURAL:$1|névtér|névterek}} <code>$2</code> {{PLURAL:$1|nem érvényes|nem érvényesek}} .",
+	"bs-pagesvisited-pref-widgetlimit": "Bejegyzés korlát",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Megjeleníti a nemrég meglátogatott oldalak listáját. Ez a lista paraméterekkel szűkíthető.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Meglátogatott oldalak",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Számláló",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Add meg a listában megjelenített oldalak számát",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Cím maximális hossza",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Maximális karakterszám megadása, aminél a címet levágja",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Rendezés",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Az oldalak megjelenítési sorrendjének beállítása",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Névterek",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Csak ezekből a névterekből származó oldalak megjelenítése",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Idő",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Oldalnév",
+	"bs-pagesvisited-droplet-name": "Meglátogatott oldalak",
+	"bs-pagesvisited-droplet-description": "Látogatott oldalak listája",
+	"bs-pagesvisited-label-anon-user": "A meglátogatott oldalak megtekintéséhez jelentkezz be a felhasználói fiókba"
 }
