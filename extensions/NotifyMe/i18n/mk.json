@@ -203,5 +203,7 @@
 	"notifyme-ui-dialog-popup-table-event-label": "Настан",
 	"notifyme-ui-dialog-popup-table-desc-label": "Опис",
 	"notifyme-ui-dialog-popup-header-label": "Овие настани покренуваат известувања:",
-	"notifyme-event-page-edit-desc": "Уредена е страница од друг корисник"
+	"notifyme-event-page-edit-desc": "Уредена е страница од друг корисник",
+	"notifyme-ui-delivery-label": "Достава",
+	"prefs-subs": "Претплати на известувања"
 }

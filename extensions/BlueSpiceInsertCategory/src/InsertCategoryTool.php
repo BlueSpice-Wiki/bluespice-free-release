@@ -53,7 +53,7 @@ class InsertCategoryTool extends Literal {
 			!$this->permissionManager->userCan( 'edit', $user, $title );
 		if ( $title && $title->canExist() ) {
 			$content = $this->wikiPageFactory->newFromTitle( $title )->getContent();
-			$this->btnDisabled = $this->btnDisabled && $content instanceof WikitextContent;
+			$this->btnDisabled = $this->btnDisabled || !( $content instanceof WikitextContent );
 		}
 
 		parent::__construct(

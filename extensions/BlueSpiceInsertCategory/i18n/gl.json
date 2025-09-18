@@ -2,11 +2,27 @@
 	"@metadata": {
 		"authors": [
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"bs-insertcategory-desc": "Xanela para engadir unha ligazón a unha categoría",
-	"bs-insertcategory-insertcat": "Inserir categoría",
-	"prefs-insertcategory": "Inserir categoría",
-	"bs-insertcategory-pref-withparents": "Inserir categoría cos seus pais"
+	"bs-insertcategory-desc": "Xanela para introducir unha ligazón a unha categoría",
+	"bs-insertcategory-insertcat": "Inserir unha categoría",
+	"prefs-insertcategory": "Inserir unha categoría",
+	"bs-insertcategory-pref-withparents": "Inserir categoría cos seus pais",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Editar as categorías desta páxina",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Editar as categorías desta páxina",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Abrir a xanela para editar as categorías desta páxina",
+	"bs-insertcategory-edit-dialog-button-label": "Editar",
+	"bs-insertcategory-edit-dialog-title": "Editar as categorías",
+	"bs-insertcategory-edit-dialog-button-submit": "Feito",
+	"bs-insertcategory-edit-dialog-button-cancel": "Cancelar",
+	"bs-insertcategory-edit-dialog-input-label": "Categorías asignadas",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Categorías implícitas",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Esas categorías non están definidas dentro do texto wiki da páxina. O máis probable é que estean definidas a través dun modelo.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Non se poden recuperar as categorías da páxina",
+	"bs-insertcategory-no-categories": "Non hai categorías asignadas",
+	"bs-insertcategory-edit-dialog-tree-view": "Mostrar todas as categorías",
+	"bs-insertcategory-pref-uploadintegration": "Usar as categorías da páxina na xanela de subida",
+	"bs-insertcategory-pref-uploadintegration-help": "Define as categorías da páxina como a opción predeterminada na xanela de subida"
 }

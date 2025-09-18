@@ -1,6 +1,6 @@
 {
 	"name": "ContentDroplets",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
@@ -133,7 +133,8 @@
 				"bootstrap.js",
 				"object/Droplet.js",
 				"object/CustomInspectorDroplet.js",
-				"object/TransclusionDroplet.js"
+				"object/TransclusionDroplet.js",
+				"object/ParserFunctionDroplet.js"
 			],
 			"dependencies": [
 				"ext.visualEditor.mwtransclusion",

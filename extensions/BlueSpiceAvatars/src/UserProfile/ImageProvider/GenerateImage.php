@@ -48,7 +48,7 @@ class GenerateImage implements IProfileImageProvider {
 	 */
 	private function generateFile( UserIdentity $user, array $params ) {
 		$file = $this->generator->getAvatarFile( $user );
-		if ( !$file->exists() ) {
+		if ( !$file || !$file->exists() ) {
 			$this->generator->generate( $user );
 		}
 

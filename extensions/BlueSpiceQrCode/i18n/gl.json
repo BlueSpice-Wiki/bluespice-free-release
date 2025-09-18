@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"bs-qr-code-extension-description": "Mostra un código QR cunha ligazón á páxina actual na barra de ferramentas.",
+	"bs-qr-code-action-qr-code-title": "Abrir un diálogo co código QR",
+	"bs-qr-code-action-qr-code-text": "Código QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Código QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Código QR para «$1»",
+	"bs-qr-code-api-no-page": "O parámetro «page» está baleiro",
+	"apihelp-bs-qr-code-summary": "Obter o código QR dunha páxina como un URI de datos en base 64",
+	"apihelp-bs-qr-code-param-revid": "Identificador de revisión da páxina para xerar unha ligazón permanente",
+	"apihelp-bs-qr-code-param-page": "Nome da páxina para xerar o URI de datos en base 64",
+	"apihelp-bs-qr-code-param-size": "Tamaño do código QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Chamada á API predeterminada",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Chamada á API para un determinado identificador de revisión",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Chamada á API cun tamaño personalizado",
+	"bs-qr-code-alt-text": "Código QR para «$1»",
+	"bs-qr-code-tag-qrcode-desc": "Incrusta un código QR ligado nunha páxina wiki",
+	"bs-qr-code-tag-qrcode-title": "Código QR",
+	"bs-qr-code-tag-attr-page-label": "Páxina",
+	"bs-qr-code-tag-attr-page-help": "Nome da páxina que se incluirá na ligazón do código QR. Para usar o nome da páxina actual, deixa este campo baleiro.",
+	"bs-qr-code-tag-attr-query-label": "Parámetro",
+	"bs-qr-code-tag-attr-query-help": "Parámetros adicionais que se engadirán ao enderezo URL do código QR. Isto inclúe parámetros como «action=edit» ou «oldid=1».",
+	"bs-qr-code-tag-attr-desc-label": "Descrición",
+	"bs-qr-code-tag-attr-desc-help": "Unha descrición relacionada co código QR. Para mostrar só o código QR, deixa este campo baleiro.",
+	"bs-qr-code-tag-attr-size-label": "Tamaño",
+	"bs-qr-code-tag-attr-size-help": "Cambiar o tamaño do código QR incrustado",
+	"bs-qr-code-droplet-name": "Código QR",
+	"bs-qr-code-droplet-desc": "Insire un código QR nunha páxina wiki",
+	"bs-qr-code-tag-attr-size-option-small": "pequeno",
+	"bs-qr-code-tag-attr-size-option-medium": "mediano",
+	"bs-qr-code-tag-attr-size-option-large": "grande"
+}

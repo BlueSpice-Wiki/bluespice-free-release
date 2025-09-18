@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"notifyme-desc": "Известия",
+	"prefs-notifications": "Известия",
+	"notifyme-notifications-mega-menu-title": "Известия",
+	"notifyme-notification-tester-field-event": "Събитие",
+	"notifyme-notification-center-filter-title": "Известия",
+	"notifyme-navbar-button-title": "Известия",
+	"notifyme-navbar-button-aria-label": "Известия",
+	"notifyme-ui-dialog-popup-table-event-label": "Събитие"
+}

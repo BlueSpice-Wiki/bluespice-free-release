@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"bs-usersidebar-desc": "Menú de navegación persoal personalizable",
+	"bs-edit-user-mm-link-text": "Editar o menú de usuario",
+	"bs-edit-user-mm-link-title": "Editar o menú de usuario",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Editar a palabra clave",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Palabra clave",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Editar a palabra clave",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Palabra clave"
+}

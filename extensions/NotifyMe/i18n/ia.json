@@ -203,5 +203,7 @@
 	"notifyme-ui-dialog-popup-table-event-label": "Evento",
 	"notifyme-ui-dialog-popup-table-desc-label": "Description",
 	"notifyme-ui-dialog-popup-header-label": "Iste eventos actiona notificationes:",
-	"notifyme-event-page-edit-desc": "Un pagina ha essite modificate per un altere usator"
+	"notifyme-event-page-edit-desc": "Un pagina ha essite modificate per un altere usator",
+	"notifyme-ui-delivery-label": "Livration",
+	"prefs-subs": "Abonamentos a notificationes"
 }

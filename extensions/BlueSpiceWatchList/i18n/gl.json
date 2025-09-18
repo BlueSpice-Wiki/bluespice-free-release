@@ -1,11 +1,28 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"bs-watchlist-desc": "Engade un widget e unha marca de lista de vixilancia",
+	"bs-watchlist-desc": "Engade un complemento e unha etiqueta de lista de vixilancia",
 	"bs-watchlist-pref-sort-time": "Hora",
 	"bs-watchlist-pref-sort-title": "Título",
-	"bs-watchlist-tag-watchlist-desc": "Amosa os artigos que teñen as modificacións máis recentes e están na súa lista de seguimento."
+	"bs-watchlist-tag-watchlist-desc": "Amosa os artigos que teñen as modificacións máis recentes e están na túa lista de vixilancia.",
+	"bs-watchlist-ve-watchlistinspector-title": "Lista de vixilancia",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Contaxe",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Deberíase mostrar o número de entradas na lista de vixilancia",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Lonxitude máxima do título",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Número de letras que deben aparecer no título. Pode ser un número entre 5 e 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Orde",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Mostra a lista ordenada por hora ou por nome da páxina",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Nome da páxina",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Hora",
+	"bs-watchlist-tag-watchlist-no-user": "Non se pode mostrar a lista de vixilancia porque ningún usuario iniciou sesión",
+	"bs-watchlist-tag-watchlist-no-entries": "Non hai cambios nas páxinas para mostralos na lista de vixilancia",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Axuda co nome da páxina",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Axuda coa hora",
+	"bs-watchlist-droplet-name": "Lista de vixilancia",
+	"bs-watchlist-droplet-description": "Últimos cambios feitos nas páxinas incluídas na lista de vixilancia",
+	"bs-watchlist-usersidebar-title": "Lista de vixilancia"
 }

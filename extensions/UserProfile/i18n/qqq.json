@@ -14,7 +14,7 @@
 	"userprofile-edit-summary": "Summary message for user profile edits",
 	"userprofile-user-not-found": "Error message when user does not exist",
 	"userprofile-unauthorized": "Error message when user is not allowed to edit the profile",
-	"user-profile-pref-mail-public" : "Preference label for the user profile email visibility",
+	"userprofile-pref-mail-public": "Preference label for the user profile email visibility",
 	"userprofile-field-numberofedits": "Field label",
 	"userprofile-field-joined": "Field label",
 	"userprofile-field-email": "Field label",
@@ -49,6 +49,5 @@
 	"userprofile-ve-attr-orientation-horizontal": "VE tag inspector field option",
 	"userprofile-ve-attr-orientation-vertical": "VE tag inspector field option",
 	"userprofile-ve-attr-fields": "VE tag inspector field label",
-	"userprofile-ve-attr-fields-label-help": "Help text for the VE tag inspector field label",
-	"userprofile-ve-attr-fields-all": "VE tag inspector field value placeholder"
+	"userprofile-ve-attr-fields-label-help": "Help text for the VE tag inspector field label"
 }

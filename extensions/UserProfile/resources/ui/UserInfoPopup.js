@@ -9,8 +9,8 @@ ext.userProfile.ui.UserInfoPopup = function ( cfg, $floatableContainer ) {
 	this.userPanel = cfg.userPanel || null;
 
 	cfg = cfg || {};
-	cfg = $.extend( {
-		$floatableContainer	: $floatableContainer,
+	cfg = Object.assign( {
+		$floatableContainer: $floatableContainer,
 		$content: this.content.$element,
 		padded: false,
 		align: 'forwards'
@@ -27,7 +27,7 @@ ext.userProfile.ui.UserInfoPopup.prototype.makeContent = function () {
 		this.content.$element.append( this.userPanel.$element );
 		return;
 	}
-	mw.loader.using( 'ext.userProfile.main', function() {
+	mw.loader.using( 'ext.userProfile.main', () => {
 		const userpanel = new ext.userProfile.ui.ProfilePanel( {
 			user: this.username,
 			isOwn: false,
@@ -40,5 +40,5 @@ ext.userProfile.ui.UserInfoPopup.prototype.makeContent = function () {
 		this.content.$element.append( userpanel.$element );
 		userpanel.initialize();
 		this.emit( 'infoReady', userpanel );
-	}.bind( this ) );
+	} );
 };

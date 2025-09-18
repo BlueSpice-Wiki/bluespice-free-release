@@ -6,5 +6,7 @@
 	},
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "ত্রিমাত্রিক",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "বিষয়শ্রেণীসমূহ",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "প্রস্থ"
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "প্রস্থ",
+	"bs-tagcloud-tag-tagcloud-tab-common": "সাধারণ",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "উচ্চতর"
 }

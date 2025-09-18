@@ -186,3 +186,11 @@
 	columns: 2;
 	column-gap: 20px;
 }
+
+#enhanced-allpages-skeleton-tree {
+	margin-top: 75px;
+}
+
+#enhanced-allpages-skeleton-tree.hidden {
+	display: none;
+}

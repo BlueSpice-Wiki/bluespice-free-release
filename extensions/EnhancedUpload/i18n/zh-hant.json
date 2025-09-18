@@ -91,5 +91,8 @@
 	"enhancedupload-single-file-dlg-title": "新版本的「$1」",
 	"enhancedupload-toggle-details-button-hide-label": "隱藏詳細資料",
 	"enhancedupload-toggle-details-button-show-label": "顯示詳細資料",
-	"enhancedupload-preview-widget-remove-label": "移除"
+	"enhancedupload-preview-widget-remove-label": "移除$1",
+	"enhancedupload-reset-button-label": "重設",
+	"enhancedupload-ve-file-dialog-title": "檔案",
+	"enhancedupload-ve-file-dialog-filename-label": "檔案名稱"
 }

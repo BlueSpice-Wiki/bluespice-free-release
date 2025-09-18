@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"JeffreyKim"
+		]
+	},
+	"bs-usersidebar-desc": "可自訂嘅個人導覽選單",
+	"bs-edit-user-mm-link-text": "編輯用戶選單",
+	"bs-edit-user-mm-link-title": "編輯用戶選單",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "編輯關鍵字",
+	"menueditor-ui-menu-keyword-usersidebar-label": "關鍵字",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "編輯關鍵字",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "關鍵字"
+}

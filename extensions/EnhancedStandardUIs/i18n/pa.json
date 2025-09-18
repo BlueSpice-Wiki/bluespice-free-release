@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cabal"
+			"Cabal",
+			"Kuldeepburjbhalaike"
 		]
 	},
 	"enhanced-standard-uis-history-grid-header-revision-label": "ਦੁਹਰਾਅ",
@@ -44,7 +45,7 @@
 	"enhanced-standard-uis-filelist-dialog-page-preview-label": "ਝਾਤ",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "ਫਾਇਲ ਦੀ ਕੜੀ ਨੂੰ ਚੂੰਢੀ-ਤਖਤੀ 'ਤੇ ਲਿਖਿਆ ਗਿਆ",
 	"enhanced-standard-uis-allpages-filter-pages-label": "ਛਾਨਣੀ",
-	"enhanced-standard-uis-allpages-namespace-list-label": "ਨਾਂ-ਥਾਂ ਸੂਚੀ",
+	"enhanced-standard-uis-allpages-namespace-list-label": "ਨਾਮ-ਸਥਾਨ",
 	"enhanced-standard-uis-allpages-watch-label": "ਸਫ਼ੇ $1 ਤੇ ਨਿਗ੍ਹਾ ਰੱਖੋ",
 	"enhanced-standard-uis-allpages-unwatch-label": "ਸਫ਼ੇ $1 ਤੇ ਨਿਗ੍ਹਾ ਨਾ ਰੱਖੋ",
 	"enhanced-standard-uis-allpages-pageinfo-label": "$1 ਲਈ ਸਫ਼ੇ ਦੀ ਜਾਣਕਾਰੀ ਵਿਖਾਓ",

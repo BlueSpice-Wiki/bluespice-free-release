@@ -51,7 +51,7 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "No metadata available for this file",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "File link copied to clipboard",
 	"enhanced-standard-uis-allpages-filter-pages-label": "Filter",
-	"enhanced-standard-uis-allpages-namespace-list-label": "Namespace list",
+	"enhanced-standard-uis-allpages-namespace-list-label": "Namespace",
 	"enhanced-standard-uis-paginator-aria-label": "Pagination",
 	"enhanced-standard-uis-allpages-watch-label": "Watch page $1",
 	"enhanced-standard-uis-allpages-unwatch-label": "Unwatch page $1",
@@ -68,5 +68,13 @@
 	"action-enhancedstandarduis-viewuncustomizedspecialpageslist": "view certain special pages on the list [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages], that are hidden for users of pure reader role",
 	"enhanced-standard-uis-ve-filegrid-title": "Advanced search",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "No namespaces available",
-	"enhanced-standard-uis-allpages-empty-pages-text": "There are currently no pages in this namespace"
+	"enhanced-standard-uis-allpages-empty-pages-text": "There are currently no pages in this namespace",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "contains {{PLURAL:$1|one page| $1 pages}}",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Subpages",
+	"enhancedpreferences": "Preferences",
+	"enhanced-pref-username": "{{GENDER:$1|Username}}",
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|Member}} of {{PLURAL:$1|group|groups}}",
+	"enhanced-standard-uis-preferences-date-label": "Select display format",
+	"enhanced-standard-uis-prefs-panel-search-label": "Search",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Information about the file"
 }

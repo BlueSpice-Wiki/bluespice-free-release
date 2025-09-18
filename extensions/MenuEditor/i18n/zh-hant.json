@@ -36,5 +36,7 @@
 	"menueditor-toolbar-add-label": "新增元素",
 	"menueditor-ui-edit-label": "編輯",
 	"menueditor-ui-add-sub-element-label": "新增子元素",
-	"menueditor-footerlinks-banner-text": "某些連結可能會透過擴充功能而自動添加。請檢查擴充的配置以了解更多資訊。"
+	"menueditor-footerlinks-banner-text": "某些連結可能會透過擴充功能而自動添加。請檢查擴充的配置以了解更多資訊。",
+	"menueditor-toolbar-save": "儲存",
+	"menueditor-ui-cancel-confirmation": "您確定要取消編輯嗎？所有未儲存的內容將會被捨棄。"
 }

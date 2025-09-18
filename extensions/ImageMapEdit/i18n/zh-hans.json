@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Anterdc99",
+			"GuoPC",
 			"Hua Jing",
 			"Huajing",
 			"Peterxy12"
@@ -34,11 +35,11 @@
 	"imagemapedit-imagedisplaytype-frameless": "无边框",
 	"imagemapedit-import": "导入",
 	"imagemapedit-importareas": "从已有的ImageMap图片嵌入代码导入图像映射区域",
-	"imagemapedit-infolinkposition": "图片信息链接位置",
+	"imagemapedit-infolinkposition": "信息链接位置",
 	"imagemapedit-linktarget": "链接",
 	"imagemapedit-linktitle": "链接标题",
 	"imagemapedit-newarea": "创建新区域",
-	"imagemapedit-nolink": "不显示图片信息链接",
+	"imagemapedit-nolink": "无信息链接",
 	"imagemapedit-notspecified": "未指定",
 	"imagemapedit-optional": "选填",
 	"imagemapedit-poly": "poly（多边形区域）",

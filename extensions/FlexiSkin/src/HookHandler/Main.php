@@ -51,6 +51,10 @@ class Main implements MediaWikiServicesHook, BeforePageDisplayHook, UserLoadAfte
 	 * @inheritDoc
 	 */
 	public function onMediaWikiServices( $container ) {
+		if ( defined( 'MW_QUIBBLE_CI' ) ) {
+			return;
+		}
+
 		$container->addServiceManipulator(
 			'MainConfig',
 			static function ( Config $mainConfig ): Config {

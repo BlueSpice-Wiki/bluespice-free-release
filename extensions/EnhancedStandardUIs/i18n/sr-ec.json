@@ -50,7 +50,7 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-label": "Метаподаци",
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "Нема метаподатака за ову датотеку",
 	"enhanced-standard-uis-allpages-filter-pages-label": "Филтер",
-	"enhanced-standard-uis-allpages-namespace-list-label": "Списак именских простора",
+	"enhanced-standard-uis-allpages-namespace-list-label": "Именски простор",
 	"enhanced-standard-uis-allpages-watch-label": "Надгледај страницу $1",
 	"enhanced-standard-uis-allpages-unwatch-label": "Прекини надгледање странице $1",
 	"enhanced-standard-uis-allpages-pageinfo-label": "Прикажи информације о страници $1",
@@ -63,5 +63,9 @@
 	"enhanced-standard-uis-allpages-untitled": "Без наслова",
 	"enhancedspecialpages": "Посебне странице",
 	"enhanced-standard-uis-ve-filegrid-title": "Напредна претрага",
-	"enhanced-standard-uis-allpages-empty-namespaces-text": "Нема доступног именског простора"
+	"enhanced-standard-uis-allpages-empty-namespaces-text": "Нема доступног именског простора",
+	"enhancedpreferences": "Подешавања",
+	"enhanced-pref-username": "{{GENDER:$1|Корисничко име}}",
+	"enhanced-standard-uis-prefs-panel-search-label": "Претрага",
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|Члан|Чланица}} {{PLURAL:$1|групе|група}}"
 }

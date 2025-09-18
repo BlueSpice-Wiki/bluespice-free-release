@@ -45,10 +45,12 @@ StandardDialogs.ui.BasicInformationPage.prototype.setup = function () {
 					$( '<tr>' ).append(
 						$( '<th>' ).text( mw.message( 'standarddialogs-page-info-page-model' ).plain() ),
 						$( '<td>' ).text( me.pageInfo[ p ].contentmodel ) ) );
-				contentTable.append(
-					$( '<tr>' ).append(
-						$( '<th>' ).text( mw.message( 'standarddialogs-page-info-page-watch' ).plain() ),
-						$( '<td>' ).text( me.pageInfo[ p ].watchers ) ) );
+				if ( me.pageInfo[ p ].watchers ) {
+					contentTable.append(
+						$( '<tr>' ).append(
+							$( '<th>' ).text( mw.message( 'standarddialogs-page-info-page-watch' ).plain() ),
+							$( '<td>' ).text( me.pageInfo[ p ].watchers ) ) );
+				}
 				const redirects = me.getRedirectLinks( p );
 				contentTable.append(
 					$( '<tr>' ).append(

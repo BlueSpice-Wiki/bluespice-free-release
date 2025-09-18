@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Olve Utne"
+			"Olve Utne",
+			"Yupik"
 		]
 	},
 	"bs-tagcloud-desc": "Vuoset umas märrkabalvajt",
-	"bs-tagcloud-tag-tagcloud-name": "Märrkaballva"
+	"bs-tagcloud-tag-tagcloud-name": "Märrkaballva",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Täkksta"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"Neriah",
 			"YaronSh"
 		]
 	},
@@ -26,5 +27,10 @@
 	"imagemapedit-rectleft": "שמאל",
 	"imagemapedit-rectright": "ימין",
 	"imagemapedit-recttop": "עליון",
-	"imagemapedit-showtextbox": "הצגת תיבת טקסט"
+	"imagemapedit-showtextbox": "הצגת תיבת טקסט",
+	"imagemapedit-imagedisplayposition-center": "מרכז",
+	"imagemapedit-imagedisplayposition-right": "יישור לימין",
+	"imagemapedit-imagedisplaytype-thumbnail": "ממוזער",
+	"imagemapedit-imagedisplaytype-border": "גבול",
+	"imagemapedit-imagedisplaytype-frameless": "ללא מסגרת"
 }

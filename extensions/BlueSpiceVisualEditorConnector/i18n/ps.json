@@ -71,5 +71,21 @@
 	"bs-vec-table-inspector-row": "کتار",
 	"bs-visualeditorconnector-upload-type-help": "آر: د راپورته‌کولو رښته تاييد‌شوې. \nد دوتنې نوم، نوم‌تشيال او وېشنيزه د سمون وړ دي. څرگنداوی اړين دی.\nساده: راپورته‌کولو رښته تاييد‌شوې نه ده. \nد دوتنې نوم، نوم‌تشيال او وېشنيزه د سمون وړ دي. څرگنداوی اختياري دی.\nيو کليک: راپورته‌کولو رښته تاييد‌شوې نه ده. د دوتنې نوم او وېشنيزه د سمون وړ نه دي. نوم‌تشيال د سمون وړ دی.",
 	"bs-visualeditorconnector-tab-file": "د دوتنې وېبتړ",
-	"bs-visualeditor-request-entity-too-large": "دوتنه د پورته‌کولو لپاره ډېره لويه ده."
+	"bs-visualeditor-request-entity-too-large": "دوتنه د پورته‌کولو لپاره ډېره لويه ده.",
+	"bs-vec-table-inspector-cell": "خانه",
+	"bs-vec-table-style-column-width": "ستون پراخوالی",
+	"bs-vec-table-style-row-height": "کتار لوړوالی (پيکسل)",
+	"bs-vec-contextitem-cell-style-add-options-title": "خانې خوښنې",
+	"bs-vec-contextitem-column-style-add-options-title": "ستون خوښنې",
+	"bs-vec-contextitem-row-style-add-options-title": "کتار خوښنې",
+	"bs-vec-contextitem-row-duplicate": "غبرگونی کتار",
+	"bs-vec-contextitem-column-duplicate": "غبرگونی ستون",
+	"bs-vec-dialog-table-create-number-of-rows": "د کارونو شمېر",
+	"bs-vec-dialog-table-create-number-of-columns": "د ستونونو شمېر",
+	"bs-vec-row-duplicate-has-merged": "ټاکل شوی کتار هغه خانې لري چې په څو کتارونو کې پوښل کېږي، او له همدې امله نشي کولی غبرگوني شي.",
+	"bs-vec-table-border-borders": "د خانې پولې",
+	"bs-vec-table-border-width": "پولې پراخوالی",
+	"bs-vec-table-border-styles": "پولې ښودبڼه",
+	"bs-vec-table-border-color": "پولې رنگ",
+	"bs-visualeditorconnector-indent-annotation-desc": "د ټاکلي ليک څنگ‌ليک"
 }

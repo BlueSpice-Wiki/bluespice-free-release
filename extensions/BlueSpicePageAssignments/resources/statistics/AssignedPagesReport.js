@@ -9,6 +9,8 @@
 
 	bs.pageAssignments.report.AssignedPagesReport.static.label = mw.message( 'bs-pageassignments-statistics-report-assigned-pages' ).text();
 
+	bs.pageAssignments.report.AssignedPagesReport.static.desc = mw.message( 'bs-pageassignments-statistics-report-assigned-pages-desc' ).text();
+
 	bs.pageAssignments.report.AssignedPagesReport.prototype.getFilters = function () {
 		return [
 			new bs.aggregatedStatistics.filter.NamespaceCategoryFilter( { onlyContentNamespaces: false } )

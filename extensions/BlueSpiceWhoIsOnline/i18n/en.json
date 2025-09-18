@@ -26,6 +26,7 @@
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Who is online popup",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Number of logins",
 	"bs-whoisonline-statistics-report-login-number": "Logins",
+	"bs-whoisonline-statistics-report-login-number-desc": "Daily logins during the selected period",
 	"bs-whoisonline-droplet-count-name": "Number of users logged in",
 	"bs-whoisonline-droplet-count-description": "Number of currently logged in users",
 	"bs-whoisonline-droplet-popup-name": "List of users logged in",

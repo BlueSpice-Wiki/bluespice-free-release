@@ -36,5 +36,6 @@
 	"bs-readers-header-read-on": "Prebrano",
 	"revisionreaders": "Bralci po redakciji strani »$1«",
 	"bs-readers-info-dialog": "Bralci te strani",
-	"bs-readers-info-dialog-column-readers": "Bralci"
+	"bs-readers-info-dialog-column-readers": "Bralci",
+	"bs-readers-permission-error": "Napaka dovoljenja"
 }

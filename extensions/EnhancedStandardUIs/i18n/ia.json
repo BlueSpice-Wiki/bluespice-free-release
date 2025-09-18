@@ -51,7 +51,7 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "Necun metadatos disponibile pro iste file",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "Ligamine al file copiate al area de transferentia",
 	"enhanced-standard-uis-allpages-filter-pages-label": "Filtrar",
-	"enhanced-standard-uis-allpages-namespace-list-label": "Lista de spatios de nomines",
+	"enhanced-standard-uis-allpages-namespace-list-label": "Spatio de nomines",
 	"enhanced-standard-uis-paginator-aria-label": "Pagination",
 	"enhanced-standard-uis-allpages-watch-label": "Observar pagina $1",
 	"enhanced-standard-uis-allpages-unwatch-label": "Disobservar pagina $1",
@@ -68,5 +68,12 @@
 	"action-enhancedstandarduis-viewuncustomizedspecialpageslist": "vider certe paginas special in le lista [{{canonicalurl:Special:SpecialPages}} Special:Paginas special] le quales es celate pro le usatores con rolo de lectura sol",
 	"enhanced-standard-uis-ve-filegrid-title": "Recerca avantiate",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "Necun spatio de nomines disponibile",
-	"enhanced-standard-uis-allpages-empty-pages-text": "Il non ha actualmente alcun pagina in iste spatio de nomines"
+	"enhanced-standard-uis-allpages-empty-pages-text": "Il non ha actualmente alcun pagina in iste spatio de nomines",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "contine {{PLURAL:$1|un sol pagina| $1 paginas}}",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Subpaginas",
+	"enhancedpreferences": "Preferentias",
+	"enhanced-pref-username": "{{GENDER:$1|Nomine de usator}}",
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|Membro}} del {{PLURAL:$1|gruppo|gruppos}}",
+	"enhanced-standard-uis-preferences-date-label": "Selige formato de visualisation",
+	"enhanced-standard-uis-prefs-panel-search-label": "Cercar"
 }

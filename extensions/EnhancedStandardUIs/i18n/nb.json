@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Yupik"
 		]
 	},
 	"enhancedfilelist": "Filliste",
@@ -30,5 +31,6 @@
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "Fillenke kopiert til utklippstavlen.",
 	"enhanced-standard-uis-allpages-watch-label": "Overvåk siden $1",
 	"enhanced-standard-uis-allpages-unwatch-label": "Avslutt overvåking av siden $1",
-	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|resultat|resultater}} funnet"
+	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|resultat|resultater}} funnet",
+	"enhanced-standard-uis-history-grid-header-size-label": "Størrelse"
 }

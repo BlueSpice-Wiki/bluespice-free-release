@@ -21,15 +21,19 @@ OO.inheritClass( ext.enhancedUI.data.PagesTreeItem, OOJSPlus.ui.data.tree.Item )
 ext.enhancedUI.data.PagesTreeItem.prototype.possiblyAddExpander = function () {
 	if ( !this.leaf && !this.expander ) {
 		this.expander = new OOJSPlus.ui.widget.ButtonWidget( {
+			role: 'button',
 			framed: false,
 			icon: this.expanded ? this.style.IconCollapse : this.style.IconExpand,
+			label: mw.message( 'enhanced-standard-uis-allpages-page-tree-item-expander-label' ).text(),
+			invisibleLabel: true,
 			classes: [ 'oojsplus-data-tree-expander' ]
 		} );
+
 		this.expander.$button.attr( 'aria-expanded', this.expanded );
 		this.expander.connect( this, {
 			click: 'onExpanderClick'
 		} );
-		this.$element.prepend( this.expander.$element );
+		this.$wrapper.prepend( this.expander.$element );
 	} else if ( this.expander ) {
 		this.expander.$element.remove();
 		this.expander = null;

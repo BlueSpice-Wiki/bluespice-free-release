@@ -7,5 +7,8 @@
 		]
 	},
 	"bs-articleinfo-desc": "Proporciona información sobre unha páxina na barra de estado",
-	"prefs-articleinfo": "Información da páxina"
+	"prefs-articleinfo": "Información da páxina",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "Intervalo de actualización (segundos)",
+	"bs-articleinfo-newrevision-info-text-reload": "Hai dispoñible unha versión nova desta páxina. [[:$1|Recarga]] a páxina para ver o contido actual.",
+	"bs-articleinfo-pref-checkrevisioninterval-help-label": "Define a frecuencia coa que se actualiza o valor da «Última edición». En cada intervalo, a páxina tamén se comproba para detectar revisións novas."
 }

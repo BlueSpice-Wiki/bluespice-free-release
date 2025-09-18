@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb"
 		]
 	},
 	"bs-tagcloud-desc": "Apresenta várias nuvens de etiquetas",
@@ -30,5 +31,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluir páginas",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Não mostrar estas páginas na nuvem de etiquetas. Para especificar mais páginas, use uma lista separada por vírgulas; por exemplo, \"Página principal, Teste, AMinhaPágina\"",
 	"bs-tagcloud-droplet-name": "Nuvem de etiquetas",
-	"bs-tagcloud-droplet-description": "Nuvem de etiquetas com base em categorias ou nas consultas de pesquisas"
+	"bs-tagcloud-droplet-description": "Nuvem de etiquetas com base em categorias ou nas consultas de pesquisas",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Comum",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avançado"
 }

@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceDistributionConnector",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.1",
+	"version": "5.1.2",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceDistributionConnector",
 	"author": [
 		"Robert Vogel",
@@ -332,10 +332,13 @@
 			],
 			"messages": [
 				"bs-distributionconnector-statistics-report-page-hits",
+				"bs-distributionconnector-statistics-report-page-hits-desc",
 				"bs-distributionconnector-statistics-report-page-hits-axis-label",
 				"bs-distributionconnector-statistics-report-page-trends",
+				"bs-distributionconnector-statistics-report-page-trends-desc",
 				"bs-distributionconnector-statistics-report-page-trends-axis-value",
 				"bs-distributionconnector-statistics-report-page-hits-relation",
+				"bs-distributionconnector-statistics-report-page-hits-relation-desc",
 				"bs-distributionconnector-statistics-report-page-hits-relation-axis-label"
 			]
 		},

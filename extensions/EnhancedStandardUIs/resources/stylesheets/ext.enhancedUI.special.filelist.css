@@ -28,3 +28,17 @@
 .enhanced-filelist-tools-btn-select .oo-ui-fieldLayout-header {
 	display: none;
 }
+
+.fileinfo-dialog .wikitable {
+	width: 100%;
+}
+
+.fileinfo-dialog .wikitable tr > td:first-child {
+	width: 30%;
+}
+
+.metadata-langlist {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}

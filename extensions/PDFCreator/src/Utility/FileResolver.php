@@ -8,16 +8,19 @@ use MediaWiki\Config\Config;
 use MediaWiki\Title\TitleFactory;
 use RepoGroup;
 
+/*
+ * @stable to extend
+ */
 class FileResolver {
 
 	/** @var Config */
-	private $config;
+	protected $config;
 
 	/** @var RepoGroup */
-	private $repoGroup;
+	protected $repoGroup;
 
 	/** @var TitleFactory */
-	private $titleFactory;
+	protected $titleFactory;
 
 	/**
 	 * @param Config $config

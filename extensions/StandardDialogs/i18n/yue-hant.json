@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yueman"
+		]
+	},
+	"standarddialogs-page-info-close": "閂",
+	"standarddialogs-move-btn": "搬",
+	"standarddialogs-move-title": "搬版「$1」",
+	"standarddialogs-protect-btn": "保護",
+	"standarddialogs-btn-cancel": "取消"
+}

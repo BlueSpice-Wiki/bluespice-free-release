@@ -1,17 +1,32 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"bs-pagesvisited-desc": "Proporciona unha lista personalizada das últimas páxinas visitadas",
+	"bs-pagesvisited-desc": "Ofrece unha lista personalizada das últimas páxinas visitadas",
 	"prefs-pagesvisited": "Páxinas visitadas",
 	"bs-pagesvisited-widget-title": "Páxinas visitadas",
 	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|O espazo|Os espazos}} de nomes <code>$2</code> non {{PLURAL:$1|é válido|son válidos}}.",
 	"bs-pagesvisited-pref-widgetlimit": "Límite de entradas:",
 	"bs-pagesvisited-pref-widgetns": "Espazos de nomes:",
 	"bs-pagesvisited-pref-widgetsortodr": "Ordenar por:",
-	"bs-pagesvisited-pref-sort-time": "Tempo",
+	"bs-pagesvisited-pref-sort-time": "Hora",
 	"bs-pagesvisited-pref-sort-pagename": "Título",
-	"bs-pagesvisited-tag-pagesvisited-desc": "Amosa unha lista das páxinas visitadas recentemente. Esta lista pode restrinxirse con parámetros."
+	"bs-pagesvisited-tag-pagesvisited-desc": "Amosa unha lista das páxinas visitadas recentemente. Esta lista pode restrinxirse con parámetros.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Páxinas visitadas",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Cantidade",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Definir o número de páxinas que se mostran na lista",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Lonxitude máxima do título",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Definir o número máximo de caracteres antes de cortar un título",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Orde",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Definir a orde na que se mostran as páxinas",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Espazos de nomes",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Mostrar só as páxinas destes espazos de nomes",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Hora",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nome da páxina",
+	"bs-pagesvisited-droplet-name": "Páxinas visitadas",
+	"bs-pagesvisited-droplet-description": "Lista das páxinas visitadas",
+	"bs-pagesvisited-label-anon-user": "Para ver as páxinas que visitaches, inicia sesión na túa conta"
 }

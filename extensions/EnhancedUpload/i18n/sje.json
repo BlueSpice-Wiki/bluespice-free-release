@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Olve Utne"
+			"Olve Utne",
+			"Yupik"
 		]
 	},
 	"enhancedupload-details-description-label": "Gåvådibme",
 	"enhancedupload-upload-media-dialog-done-title": "Ållånam",
-	"enhancedupload-ve-attachmentinspector-desc": "Gåvådibme"
+	"enhancedupload-ve-attachmentinspector-desc": "Gåvådibme",
+	"enhancedupload-attachments-tag-grid-size-label": "Sturrudak"
 }

@@ -15,7 +15,7 @@ class AddPreferences implements GetPreferencesHook {
 		$preferences['user-profile-mail-public'] = [
 			'section' => 'personal/email',
 			'type' => 'check',
-			'label-message' => 'user-profile-pref-mail-public',
+			'label-message' => 'userprofile-pref-mail-public',
 		];
 		$preferences['userimage-profileimage'] = [
 			'raw' => true,

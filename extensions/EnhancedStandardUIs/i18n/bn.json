@@ -25,5 +25,8 @@
 	"enhanced-standard-uis-filelist-grid-preview-title": "প্রাকদর্শন",
 	"enhanced-standard-uis-filter-results-label": "$1টি {{PLURAL:$1|ফলাফল}} পাওয়া গেছে",
 	"enhanced-standard-uis-allpages-redirect-label": "$1 (পুনর্নির্দেশ)",
-	"enhancedspecialpages": "বিশেষ পাতাসমূহ"
+	"enhancedspecialpages": "বিশেষ পাতাসমূহ",
+	"enhanced-standard-uis-allpages-namespace-list-label": "নামস্থান",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "{{PLURAL:$1|একটি|$1টি}} পাতা রয়েছে",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "উপপাতা"
 }

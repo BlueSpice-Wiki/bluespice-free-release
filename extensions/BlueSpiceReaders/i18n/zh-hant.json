@@ -41,5 +41,6 @@
 	"bs-readers-header-read-on": "閱讀於",
 	"revisionreaders": "「$1」修訂的讀者",
 	"bs-readers-info-dialog": "此頁面的讀者",
-	"bs-readers-info-dialog-column-readers": "讀者"
+	"bs-readers-info-dialog-column-readers": "讀者",
+	"bs-readers-permission-error": "權限錯誤"
 }

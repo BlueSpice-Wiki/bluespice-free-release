@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Derugon",
 			"Gomoko",
 			"JLTRY",
 			"Mahabarata",
@@ -209,5 +210,7 @@
 	"notifyme-ui-dialog-popup-table-event-label": "Événement",
 	"notifyme-ui-dialog-popup-table-desc-label": "Description",
 	"notifyme-ui-dialog-popup-header-label": "Ces événements déclenchent des notifications :",
-	"notifyme-event-page-edit-desc": "Une page a été modifiée par un autre utilisateur"
+	"notifyme-event-page-edit-desc": "Une page a été modifiée par un autre utilisateur",
+	"notifyme-ui-delivery-label": "Livraison",
+	"prefs-subs": "Abonnements aux notifications"
 }

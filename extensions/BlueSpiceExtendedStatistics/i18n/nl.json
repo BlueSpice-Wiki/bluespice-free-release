@@ -122,5 +122,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Breedte",
 	"bs-statistics-ve-progress-attr-width-help": "Breedte van voortgangsbalk in pixels",
 	"bs-statistics-droplet-progress-name": "Voortgang",
-	"bs-statistics-droplet-progress-description": "Visualiseert de voortgang aan de hand van bepaalde meetvariabelen"
+	"bs-statistics-droplet-progress-description": "Visualiseert de voortgang aan de hand van bepaalde meetvariabelen",
+	"apihelp-query+statistics-reports-param-aggregate": "Of de statistieken moeten worden samengevoegd"
 }

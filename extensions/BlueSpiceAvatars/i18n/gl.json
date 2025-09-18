@@ -8,11 +8,18 @@
 	},
 	"bs-avatars-desc": "Proporciona imaxes de usuario xenéricas e individuais",
 	"bs-avatars-pref-generator": "Xerador:",
-	"bs-avatars-upload-complete": "A imaxe subiuse.",
+	"bs-avatars-upload-complete": "Subiuse a imaxe.",
 	"bs-avatars-generate-complete": "Xerouse unha nova imaxe de perfil.",
 	"bs-avatars-upload-label": "Imaxe",
 	"bs-avatars-generate-new-label": "Xerar unha nova imaxe de perfil",
-	"bs-avatars-file-upload-fieldset-title": "Carga de imaxe",
-	"bs-avatars-auto-generate-fieldset-title": "Xerar o avatar automaticamente",
-	"apihelp-bs-avatars-tasks-summary": "Subindo, xerando e instalando os avatares de usuario"
+	"bs-avatars-file-upload-fieldset-title": "Subir unha imaxe nova",
+	"bs-avatars-auto-generate-fieldset-title": "Xerar a imaxe de perfil automaticamente",
+	"apihelp-bs-avatars-tasks-summary": "Subindo, xerando e configurando as imaxes de perfil do usuario",
+	"bs-avatars-pref-userimage-img-alt": "A túa imaxe de usuario actual",
+	"bs-avatars-tag-profileimage-error-invalidusername": "O parámetro «username» é obrigatorio e debe conter un nome de usuario válido",
+	"bs-avatars-pref-generator-help": "A imaxe de perfil xérase cando un usuario non sube unha foto de perfil. InstantAvatar: xera unha imaxe de perfil baseada nas iniciais do nome real ou nos campos do nome de usuario. Identicon: xera unha imaxe de perfil baseada en partes do identificador do usuario.",
+	"bs-avatars-upload-button": "Subir",
+	"bs-avatars-generate-button": "Xerar",
+	"bs-avatars-generic-cancel": "Cancelar",
+	"bs-avatars-generate-description": "Xerar unha nova imaxe de perfil automática. Isto substituirá permanentemente calquera imaxe de perfil subida (se está configurada)"
 }

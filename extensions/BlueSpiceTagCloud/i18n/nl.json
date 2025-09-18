@@ -32,5 +32,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Pagina's uitsluiten",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Deze pagina's niet in de woordwolk weergeven. Gebruik voor meer pagina's een door komma's gescheiden lijst, bv. \"Hoofdpagina, Test, MijnPagina\"",
 	"bs-tagcloud-droplet-name": "Woordwolk",
-	"bs-tagcloud-droplet-description": "Woordwolk op basis van categorieën of zoekopdrachten"
+	"bs-tagcloud-droplet-description": "Woordwolk op basis van categorieën of zoekopdrachten",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Gemeenschappelijk",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Geavanceerd"
 }

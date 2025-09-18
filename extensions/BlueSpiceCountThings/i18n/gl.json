@@ -3,6 +3,7 @@
 		"authors": [
 			"Banjo",
 			"Elisardojm",
+			"Toliño",
 			"Xabier Cid"
 		]
 	},
@@ -21,11 +22,21 @@
 	"bs-countthings-ve-countcharacters-mode-wordsonly": "palabras",
 	"bs-countthings-ve-countcharacters-mode-pagesonly": "páxinas",
 	"bs-countthings-ve-countcharacters-input-label": "Páxinas",
-	"bs-countthings-error-no-input": "Non se proporcionou unha páxina.",
-	"bs-countthings-error-invalid-mode": "O modo \"$1\" é inválido. Por favor, utilice \"caracteres\", \"palabras\" ou \"páxinas\".",
-	"bs-countthings-error-not-exist": "A páxina \"$1\" non existe.",
-	"bs-countthings-tag-countarticles-desc": "Amosa o número de artigos na wiki.",
+	"bs-countthings-error-no-input": "Non se proporcionou ningunha páxina.",
+	"bs-countthings-error-invalid-mode": "O modo «$1» non é válido. Utiliza «chars», «words» ou «pages».",
+	"bs-countthings-error-not-exist": "A páxina «$1» non existe.",
+	"bs-countthings-tag-countarticles-desc": "Amosa o número de artigos no wiki.",
 	"bs-countthings-tag-countusers-desc": "Amosa o número de usuarios rexistrados.",
-	"bs-countthings-tag-countcharacters-desc": "Xera metadata do contido do artigo indicado. A saída é unha caixa de información que pode integrarse nun artigo. Co parámetro \"mode\" poden visualizarse distintos tipos de información.",
-	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>modo</code>: Deben contarse <code>caracteres</code> (caracteres), <code>palabras</code> (palabras) ou <code>páxinas</code> (páxinas)."
+	"bs-countthings-tag-countcharacters-desc": "Xera metadatos sobre o contido do artigo indicado. A saída é unha caixa de información que se pode integrar nun artigo. Co parámetro «mode» poden visualizarse distintos tipos de información.",
+	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: o que se debe contar como <code>chars</code> (caracteres), <code>words</code> (palabras) ou <code>pages</code> (páxinas).",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "caracteres e palabras",
+	"bs-countthings-tag-countfiles-desc": "Amosa o número de ficheiros no wiki.",
+	"bs-countthings-droplet-articles-name": "Número de páxinas",
+	"bs-countthings-droplet-articles-description": "Amosa o número de páxinas",
+	"bs-countthings-droplet-characters-name": "Número de caracteres",
+	"bs-countthings-droplet-characters-description": "Amosa o número de caracteres ou palabras nunha páxina do wiki",
+	"bs-countthings-droplet-files-name": "Número de ficheiros",
+	"bs-countthings-droplet-files-description": "Amosa o número total de ficheiros subidos",
+	"bs-countthings-droplet-user-name": "Número de usuarios",
+	"bs-countthings-droplet-user-description": "Amosa o número total de usuarios"
 }

@@ -46,6 +46,7 @@ class CreateAvatarHTML extends Maintenance {
 			$user_id = $id->user_id;
 			$user_name = $user->getName();
 			$user_real_name = $user->getRealName();
+			$user_real_name = htmlspecialchars( $user_real_name );
 
 			$this->output( "<img src=\"/SWPedia/index.php?action=ajax&title=-"
 					. "&rs=SecureFileStore::getFile"

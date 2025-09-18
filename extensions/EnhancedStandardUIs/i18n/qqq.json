@@ -68,5 +68,13 @@
 	"action-enhancedstandarduis-viewuncustomizedspecialpageslist": "{{doc-action|enhancedstandarduis-viewuncustomizedspecialpageslist}}",
 	"enhanced-standard-uis-ve-filegrid-title": "Title for the tab in VisualEditor media dialog",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "Label if no namespaces can be shown",
-	"enhanced-standard-uis-allpages-empty-pages-text": "Label if no pages are in this namespace"
+	"enhanced-standard-uis-allpages-empty-pages-text": "Label if no pages are in this namespace",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "Title for badge to show how many pages are in a namespace\n* $1 - number of pages in a namespace",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Label for expand button to show subpages of a page",
+	"enhancedpreferences": "Title for Special:EnhancedPreferences",
+	"enhanced-pref-username": "Username field in [[Special:Preferences]].\nParameters:\n* $1 - username",
+	"enhanced-prefs-memberingroups": "Usergroups list shown in preferences nParameters:\n* $1 - number of groups\n* $2 - username",
+	"enhanced-standard-uis-preferences-date-label": "Label for date format radio group",
+	"enhanced-standard-uis-prefs-panel-search-label": "Label for search input field\n{{Identical:Search}}",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Aria label for dialog to select preview, meta data and version history of a file"
 }

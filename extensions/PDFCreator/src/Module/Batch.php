@@ -108,6 +108,9 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	/** @var string */
 	protected $workspace;
 
+	/** @var bool */
+	protected $embedPageToc;
+
 	/**
 	 * @param PageSpecFactory $pageSpecFactory
 	 * @param ExportPageFactory $exportPageFactory
@@ -133,7 +136,7 @@ class Batch implements IExportModule, LoggerAwareInterface {
 		ExportHtmlBuilder $exportHtmlBuilder, ExportPreProcessorFactory $exportPreProcessorFactory,
 		ExportProcessorFactory $exportProcessorFactory, ExportPostProcessorFactory $exportPostProcessorFactory,
 		StylesheetsFactory $stylesheetsFactory, StyleBlocksFactory $styleBlocksFactory,
-		MediaWikiCommonCssProvider $mediaWikiCommonCssProvider,	Config $config,
+		MediaWikiCommonCssProvider $mediaWikiCommonCssProvider, Config $config,
 		TitleFactory $titleFactory, RedirectLookup $redirectLookup
 	) {
 		$this->pageSpecFactory = $pageSpecFactory;
@@ -209,13 +212,13 @@ class Batch implements IExportModule, LoggerAwareInterface {
 		);
 
 		// add toc page
-		$embedPageToc = false;
-		if ( isset( $config['embed-page-toc'] )
-			&& BoolValueGet::from( $config['embed-page-toc'] ) === true
+		$this->embedPageToc = false;
+		if ( isset( $optionParams['embed-page-toc'] )
+			&& BoolValueGet::from( $optionParams['embed-page-toc'] ) === true
 		) {
-			$embedPageToc = true;
+			$this->embedPageToc = true;
+			$this->addTocPage( $pages, $context, $this->embedPageToc, $this->template );
 		}
-		$this->addTocPage( $pages, $context, $embedPageToc, $this->template );
 
 		// add intro page
 		if ( $this->template->getIntro() !== '' ) {
@@ -515,6 +518,13 @@ class Batch implements IExportModule, LoggerAwareInterface {
 		if ( isset( $params['title'] ) ) {
 			$docTitle = $params['title'];
 		}
+		if ( !$this->embedPageToc ) {
+			$styleblocks = array_merge(
+				[ '.pdfcreator-type-page .toc { display:none; }' ],
+				$styleblocks
+			);
+		}
+
 		$html = $this->exportHtmlBuilder->execute(
 			$pages, $stylesheets, $styleblocks, $meta, $docTitle,
 			$bookmarksXML, $this->getName(), $this->logger
@@ -604,10 +614,7 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	 * @return string
 	 */
 	protected function getBookmarksXML( array $pages, ExportContext $context ): string {
-		if ( count( $pages ) > 1 ) {
-			$xmlBuilder = new BookmarksXMLBuilder();
-			return $xmlBuilder->execute( $pages );
-		}
-		return '';
+		$xmlBuilder = new BookmarksXMLBuilder();
+		return $xmlBuilder->execute( $pages );
 	}
 }

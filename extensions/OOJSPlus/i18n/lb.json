@@ -53,7 +53,7 @@
 	"oojsplus-data-grid-date-filter-announce-gt": "Nom $1",
 	"oojsplus-data-grid-date-filter-announce-eq": "Um $1",
 	"oojsplus-data-grid-filter-boolean-true": "Jo",
-	"oojsplus-data-grid-filter-boolean-false": "Neen",
+	"oojsplus-data-grid-filter-boolean-false": "Nee",
 	"oojsplus-data-grid-collapse-expand": "Opklappen",
 	"oojsplus-data-grid-collapse-collapse": "Zesummeklappen",
 	"oojsplus-toolbar-cancel": "Ofbriechen",
@@ -64,5 +64,7 @@
 	"oojsplus-data-grid-filter-date-on": "Um",
 	"oojsplus-data-grid-filter-date-after": "Nom",
 	"oojsplus-data-grid-filter-date-before": "Virum",
-	"oojsplus-data-grid-no-results": "Et gëtt nach keng Anträg"
+	"oojsplus-data-grid-no-results": "Et gëtt nach keng Anträg",
+	"oojsplus-data-navigation-tree-expander-label": "Ënnersäiten",
+	"oojsplus-data-tree-expander-label": "Ënnermenü"
 }

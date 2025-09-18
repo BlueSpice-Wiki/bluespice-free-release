@@ -6,5 +6,6 @@
 	},
 	"bs-qr-code-action-qr-code-text": "QR-koodd",
 	"bs-qr-code-action-qr-code-dialog-title": "QR-koodd",
-	"apihelp-bs-qr-code-param-size": "QR-koodd šorradvuõtt"
+	"apihelp-bs-qr-code-param-size": "QR-koodd šorradvuõtt",
+	"bs-qr-code-tag-attr-size-label": "Šorradvuõtt"
 }

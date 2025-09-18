@@ -82,7 +82,8 @@ bs.vec.ui.CellBorderStyle.prototype.executeAction = function ( subject, args ) {
 
 	for ( const prop in merged ) {
 		if (
-			existing.hasOwnProperty( prop ) && args.hasOwnProperty( prop ) &&
+			existing.hasOwnProperty( prop ) &&
+			args.hasOwnProperty( prop ) &&
 			typeof existing[ prop ] === 'object'
 		) {
 			if ( args[ prop ] === null ) {
@@ -94,22 +95,22 @@ bs.vec.ui.CellBorderStyle.prototype.executeAction = function ( subject, args ) {
 				continue;
 			}
 			if ( typeof args[ prop ] === 'object' ) {
-				merged[ prop ] = Object.assign( Object.assign( {}, existing[ prop ] ), args[ prop ] );
+				const newStyle = args[ prop ].style;
+				const oldStyle = existing[ prop ].style;
+				const forceVisible = newStyle === 'init' || newStyle === 'solid';
+				const isVisible = oldStyle !== 'none';
 
-				// This is a hacky solution for setting border style. We use border-style property
-				// for hiding borders as well for setting actual styles. We must take care of this
-				// when changing styles, so that only visible borders are changed, leaving invisibles with border-style: none
-				if ( args[ prop ].hasOwnProperty( 'style' ) && args[ prop ].style === 'init' ) {
-					// This happens on changing the visible borders of a cell, eg. from top-only to left-only
-					// Any style set on that top border cannot be transferred to new border, so we init it to 'solid'
+				// Preserve 'none' sides when applying non-forcing styles (e.g. 'dotted')
+				if ( !forceVisible && !isVisible ) {
+					merged[ prop ] = Object.assign( {}, existing[ prop ] );
+					continue;
+				}
+
+				// Apply style update if forcing visibility or side is already visible
+				merged[ prop ] = Object.assign( {}, existing[ prop ], args[ prop ] );
+				if ( newStyle === 'init' ) {
+					// New visible sides are initialised to 'solid' since prior styles can't transfer
 					merged[ prop ].style = 'solid';
-				} else if (
-					// If, however, we try to change style on already visible borders, do not touch borders that are invisible
-					args[ prop ].hasOwnProperty( 'style' ) &&
-					existing[ prop ].hasOwnProperty( 'style' ) &&
-					existing[ prop ].style === 'none'
-				) {
-					merged[ prop ].style = 'none';
 				}
 			}
 		}

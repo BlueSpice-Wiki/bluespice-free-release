@@ -32,5 +32,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "استبعاد الصفحات",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "لا تعرض هذه الصفحات في سحابة الوسم، لمزيد من الصفحات; استخدم قائمة مفصولة بفواصل، مثل \"الصفحة الرئيسية، تجربة، صفحتي\"",
 	"bs-tagcloud-droplet-name": "سحابة وسم",
-	"bs-tagcloud-droplet-description": "سحابة الوسم على أساس الفئات أو استفسارات البحث"
+	"bs-tagcloud-droplet-description": "سحابة الوسم على أساس الفئات أو استفسارات البحث",
+	"bs-tagcloud-tag-tagcloud-tab-common": "شائع",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "متقدم"
 }

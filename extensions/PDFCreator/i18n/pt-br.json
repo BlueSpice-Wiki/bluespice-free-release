@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"pdfcreator-name": "Criador da PDF",
+	"pdfcreator-tab-panel-header-label": "Cabeçalho",
+	"pdfcreator-tab-panel-body-label": "Conteúdo",
+	"pdfcreator-tab-panel-footer-label": "Rodapé",
+	"pdfcreator-tab-panel-main-label": "Descrição",
+	"pdfcreator-tab-panel-styles-label": "Estilos",
+	"pdfcreator-pdf-export-time": "Exportar",
+	"pdfcreator-pdf-param-currentpagenumber-label": "Página",
+	"pdfcreator-pdf-param-totalpagescount-label": "de",
+	"pdfcreator-editor-action-save-label": "Salvar",
+	"pdfcreator-editor-action-help-label": "Ajuda",
+	"pdfcreator-export-mode-page-label": "Página",
+	"pdfcreator-dialog-export-title": "Exportar",
+	"pdfcreator-dialog-export-action-export-label": "Exportar",
+	"pdfcreator-dialog-export-mode-selection-label": "Modo",
+	"pdfcreator-dialog-export-template-selection-label": "Predefinição",
+	"pdfcreator-toc-page-label": "Índice",
+	"pdfcreator-dialog-button-text": "Exportar",
+	"pdfcreator-config-suppress-namespace": "Ocultar prefixos do espaço nominal no PDF",
+	"pdfcreator-panel-templates-overview-column-edit-label": "Editar",
+	"pdfcreator-panel-templates-overview-column-copy-label": "Copiar",
+	"pdfcreator-panel-templates-overview-column-delete-label": "Excluir",
+	"pdfcreator-template-edit-source-dlg-action-edit": "Editar código-fonte",
+	"pdfcreator-dump-namespaces-mail-body-text-done": "feito"
+}

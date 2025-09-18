@@ -74,6 +74,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Label for entry field \"unassignedpages\"\n{{Identical|Unassigned pages}}",
 	"bs-pageassignments-pageheader-label": "Label for list with assignments in page header. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-statistics-report-assigned-pages": "Statistics report name",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Statistics report description",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Label for the \"assigned\" axis",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Label for the \"unassigned\" axis",
 	"bs-pageassignments-dialog-input-placeholder": "Placeholder for assignment lookup field. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",

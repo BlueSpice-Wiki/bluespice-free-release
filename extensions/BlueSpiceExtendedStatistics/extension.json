@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceExtendedStatistics",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.1",
+	"version": "5.1.2",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceExtendedStatistics",
 	"author": [
 		"Markus Glaser",
@@ -172,6 +172,7 @@
 		},
 		"ext.bluespice.aggregatedstatistics.tools": {
 			"scripts": [
+				"bluespice.aggregatedstatistics.menuoptionwidget.js",
 				"report/Charts/Barchart.js",
 				"report/Charts/GroupBarchart.js",
 				"report/Charts/Bubblechart.js",

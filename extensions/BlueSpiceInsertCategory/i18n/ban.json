@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chinamoonroll"
+		]
+	},
+	"bs-insertcategory-edit-dialog-title": "Uah kategori",
+	"bs-insertcategory-edit-dialog-input-label": "Kategori katetapang",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Kategori implisit"
+}

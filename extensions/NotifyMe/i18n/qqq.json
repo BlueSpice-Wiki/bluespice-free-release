@@ -209,5 +209,6 @@
 	"notifyme-ui-dialog-popup-table-desc-label": "Label for table header column which contains event descriptions",
 	"notifyme-ui-dialog-popup-header-label": "Label for popup which lists all events with description",
 	"notifyme-event-page-edit-desc": "Description when page edit event is triggered",
-	"notifyme-ui-delivery-label": "Label for the delivery method selection in the notification settings.\n\nThis is used in the [[Special:Preferences]] page."
+	"notifyme-ui-delivery-label": "Label for the delivery method selection in the notification settings.\n\nThis is used in the [[Special:Preferences]] page.",
+	"prefs-subs": "Header label for subscription section on [[Special:Preferences]]"
 }

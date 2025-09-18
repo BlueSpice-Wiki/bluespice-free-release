@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yueman"
+		]
+	},
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|作者}}|作者}}",
+	"bs-authors-navigation-link-text": "作者"
+}

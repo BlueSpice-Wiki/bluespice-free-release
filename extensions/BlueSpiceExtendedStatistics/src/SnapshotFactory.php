@@ -31,6 +31,8 @@ class SnapshotFactory {
 	 * In case of missing props or negative hitDiff
 	 * correct the data to prevent errors
 	 *
+	 * Unset entries which are not valid data, like legacy total key
+	 *
 	 * Previously an exception was thrown
 	 *
 	 * ERM36709
@@ -40,7 +42,12 @@ class SnapshotFactory {
 	 * @return void
 	 */
 	private function bandAidData( array &$data ): void {
-		foreach ( $data as &$props ) {
+		foreach ( $data as $key => &$props ) {
+			if ( !is_array( $props ) ) {
+				unset( $data[ $key ] );
+				continue;
+			}
+
 			if ( !isset( $props[ 'hits' ] ) ) {
 				$props[ 'hits' ] = 0;
 			}

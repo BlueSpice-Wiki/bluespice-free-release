@@ -34,5 +34,6 @@
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "Hulp bij paginanaam",
 	"bs-watchlist-tag-watchlist-attr-time-help": "Hulp bij tijd",
 	"bs-watchlist-droplet-name": "Volglijst",
-	"bs-watchlist-droplet-description": "Laatste wijzigingen aan pagina's die zijn opgenomen in de volglijst"
+	"bs-watchlist-droplet-description": "Laatste wijzigingen aan pagina's die zijn opgenomen in de volglijst",
+	"bs-watchlist-usersidebar-title": "Volglijst"
 }

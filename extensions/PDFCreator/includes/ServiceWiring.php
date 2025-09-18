@@ -124,8 +124,7 @@ return [
 	},
 	'PDFCreator.ExportHtmlBuilder' => static function ( MediaWikiServices $services ): ExportHtmlBuilder {
 		return new ExportHtmlBuilder(
-			$services->getService( 'PDFCreator.MetaDataFactory' ),
-			$services->getService( 'PDFCreator.StyleBlocksFactory' )
+			$services->getContentLanguage(),
 		);
 	},
 	'PDFCreator' => static function ( MediaWikiServices $services ): PDFCreator {

@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\PDFCreator\PreProcessor;
 use MediaWiki\Extension\PDFCreator\IPreProcessor;
 use MediaWiki\Extension\PDFCreator\Utility\ExcludeExportUpdater;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
+use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 
 class ExcludeExportProcessor implements IPreProcessor {
 

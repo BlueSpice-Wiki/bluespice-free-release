@@ -77,6 +77,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Nicht zugewiesene Seiten",
 	"bs-pageassignments-pageheader-label": "Zuweisungen",
 	"bs-pageassignments-statistics-report-assigned-pages": "Zugewiesene Seiten",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Zugewiesene und nicht zugewiesene Seiten im gewählten Zeitraum, filterbar nach Kategorie und Namensraum",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Zugewiesen",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Nicht zugewiesen",
 	"bs-pageassignments-dialog-input-placeholder": "Zuweisungen hinzufügen …",

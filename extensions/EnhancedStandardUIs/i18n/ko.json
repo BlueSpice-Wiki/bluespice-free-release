@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Markingdots",
+			"YeBoy371",
 			"Ykhwong"
 		]
 	},
@@ -34,9 +35,11 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-label": "메타데이터",
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "이 파일에 사용할 수 있는 메타데이터가 없습니다",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "파일 링크가 클립보드에 복사되었습니다",
-	"enhanced-standard-uis-allpages-namespace-list-label": "이름공간 목록",
+	"enhanced-standard-uis-allpages-namespace-list-label": "이름공간",
 	"enhanced-standard-uis-allpages-redirect-label": "$1 (넘겨주기)",
 	"enhancedspecialpages": "특수 문서",
 	"enhanced-standard-uis-ve-filegrid-title": "고급 검색",
-	"enhanced-standard-uis-allpages-empty-namespaces-text": "사용 가능한 이름 공간이 없음"
+	"enhanced-standard-uis-allpages-empty-namespaces-text": "사용 가능한 이름 공간이 없음",
+	"enhancedpreferences": "환경 설정",
+	"enhanced-standard-uis-prefs-panel-search-label": "검색"
 }

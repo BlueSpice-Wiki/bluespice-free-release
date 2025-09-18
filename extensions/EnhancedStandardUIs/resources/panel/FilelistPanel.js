@@ -68,6 +68,7 @@ ext.enhancedUI.panel.FilelistPanel.prototype.setupWidgets = function () {
 			preview: 'onGridPreview'
 		} );
 		this.$element.append( this.grid.$element );
+		this.emit( 'gridLoaded' );
 	} );
 };
 
@@ -273,6 +274,9 @@ ext.enhancedUI.panel.FilelistPanel.prototype.onInputChange = function ( value ) 
 ext.enhancedUI.panel.FilelistPanel.prototype.closeFilters = function () {
 	// Make sure to close all grid filter popups
 	// Useful in case grid is getting hidden
+	if ( !this.grid ) {
+		return;
+	}
 	for ( const columnId in this.grid.columns ) {
 		if ( this.grid.columns[ columnId ].filterButton ) {
 			this.grid.columns[ columnId ].filterButton.getPopup().toggle( false );

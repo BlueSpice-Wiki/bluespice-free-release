@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Kategoriijat",
-	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Ohcansánit"
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Ohcansánit",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Teaksta"
 }

@@ -31,5 +31,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Label of the \"exclude\" attribute input field in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Help message for the \"exclude\" attribute input field  in the VisualEditor tag inspector",
 	"bs-tagcloud-droplet-name": "Title of droplet for tag TagCloud",
-	"bs-tagcloud-droplet-description": "Description of droplet for tag TagCloud"
+	"bs-tagcloud-droplet-description": "Description of droplet for tag TagCloud",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Label for the VE inspector tab",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Label for the VE inspector tab"
 }

@@ -33,5 +33,6 @@
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "頁面名稱說明",
 	"bs-watchlist-tag-watchlist-attr-time-help": "時間說明",
 	"bs-watchlist-droplet-name": "監視清單",
-	"bs-watchlist-droplet-description": "包含在監視清單中頁面的最新更改"
+	"bs-watchlist-droplet-description": "包含在監視清單中頁面的最新更改",
+	"bs-watchlist-usersidebar-title": "監視清單"
 }

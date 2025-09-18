@@ -38,12 +38,12 @@
 	"standarddialogs-new-page-title": "Nieuwe pagina maken",
 	"standarddialogs-new-page-label": "Paginanaam",
 	"standarddialogs-new-page-not-exist-label": "De pagina bestaat niet",
-	"standarddialogs-new-subpage-title": "Nieuwe deelpagina voor \"$1\" aanmaken",
+	"standarddialogs-new-subpage-title": "Nieuwe subpagina voor “$1” aanmaken",
 	"standarddialogs-new-subpage-label": "Deelpaginanaam",
 	"standarddialogs-create-button-new-page-text": "Nieuwe pagina",
 	"standarddialogs-create-button-new-page-title": "Nieuwe pagina maken",
-	"standarddialogs-create-button-new-subpage-text": "Nieuwe deelpagina",
-	"standarddialogs-create-button-new-subpage-title": "Nieuwe deelpagina maken",
+	"standarddialogs-create-button-new-subpage-text": "Nieuwe subpagina",
+	"standarddialogs-create-button-new-subpage-title": "Nieuwe subpagina maken",
 	"standarddialogs-delete-btn": "Verwijderen",
 	"standarddialogs-delete-title": "Pagina \"$1\" verwijderen",
 	"standarddialogs-move-btn": "Hernoemen",
@@ -61,5 +61,6 @@
 	"standarddialogs-page-info-page-no-templates-label": "Deze pagina bevat geen sjablonen",
 	"standarddialogs-page-info-page-no-categories-label": "Deze pagina bevat geen categorieën",
 	"standarddialogs-page-info-page-no-links-label": "Deze pagina bevat geen koppelingen",
-	"standarddialogs-page-info-page-no-extlinks-label": "Deze pagina bevat geen externe koppelingen"
+	"standarddialogs-page-info-page-no-extlinks-label": "Deze pagina bevat geen externe koppelingen",
+	"standarddialogs-validation-page-exist-info-label": "Er is al een pagina met deze titel. Kies een andere naam."
 }

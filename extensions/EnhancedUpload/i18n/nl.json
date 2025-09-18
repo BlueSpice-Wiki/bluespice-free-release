@@ -92,5 +92,8 @@
 	"enhancedupload-single-file-dlg-title": "Nieuwe versie van “$1”",
 	"enhancedupload-toggle-details-button-hide-label": "Details verbergen",
 	"enhancedupload-toggle-details-button-show-label": "Details weergeven",
-	"enhancedupload-preview-widget-remove-label": "“$1” verwijderen"
+	"enhancedupload-preview-widget-remove-label": "“$1” verwijderen",
+	"enhancedupload-reset-button-label": "Opnieuw instellen",
+	"enhancedupload-ve-file-dialog-title": "Bestand",
+	"enhancedupload-ve-file-dialog-filename-label": "Bestandsnaam"
 }

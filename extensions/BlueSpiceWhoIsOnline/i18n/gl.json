@@ -1,15 +1,34 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"bs-whoisonline-desc": "Muestra unha lista de usuarios que están actualmente en liña",
-	"bs-whoisonline-nousers": "Niguén está conectado.",
+	"bs-whoisonline-desc": "Mostra unha lista dos usuarios que están en liña actualmente",
+	"bs-whoisonline-nousers": "Ninguén ten a sesión iniciada.",
 	"bs-whoisonline-widget-title": "Quen está en liña?",
 	"prefs-whoisonline": "Quen está en liña?",
 	"bs-whoisonline-pref-limitcount": "Número máximo de usuarios amosados:",
 	"bs-whoisonline-pref-orderby": "Ordenar por:",
 	"bs-whoisonline-pref-orderby-time": "Duración",
-	"bs-whoisonline-pref-orderby-name": "Nome"
+	"bs-whoisonline-pref-orderby-name": "Nome",
+	"bs-whoisonline-pref-maxidletime-label": "Tempo de espera de inactividade (segundos)",
+	"bs-whoisonline-pref-interval-label": "Intervalo de actualización (segundos)",
+	"bs-whoisonline-collection-type-userlogin": "Inicio de sesión de usuario",
+	"bs-whoisonline-collection-var-login": "Iniciar sesión",
+	"bs-whoisonline-statistics-report-login-duration": "Duración do inicio de sesión",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Duración do inicio de sesión (segundos)",
+	"bs-whoisonline-pref-interval-help-label": "O número de segundos despois dos cales se actualiza a lista de usuarios",
+	"bs-whoisonline-pref-maxidletime-help-label": "O número de segundos de inactividade despois dos cales un usuario se marca como sen conexión",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Mostra o número de usuarios que iniciaron sesión nos últimos 10 minutos",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Contador de quen está en liña",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Mostra todos os usuarios que iniciaron sesión nos últimos 10 minutos. A saída é unha burbulla de diálogo cando un usuario pasa o cursor por riba da ligazón relacionada.",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Ventá emerxente de quen está en liña",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Número de inicios de sesión",
+	"bs-whoisonline-statistics-report-login-number": "Inicios de sesión",
+	"bs-whoisonline-droplet-count-name": "Número de usuarios que iniciaron sesión",
+	"bs-whoisonline-droplet-count-description": "Número de usuarios coa sesión iniciada nestes intres",
+	"bs-whoisonline-droplet-popup-name": "Lista de usuarios que iniciaron sesión",
+	"bs-whoisonline-droplet-popup-description": "Ventá emerxente cunha lista de todos os usuarios coa sesión iniciada nestes intres"
 }

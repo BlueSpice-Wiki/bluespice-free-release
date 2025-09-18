@@ -37,6 +37,8 @@
 
 	bs.aggregatedStatistics.report.ReportBase.static.label = '';
 
+	bs.aggregatedStatistics.report.ReportBase.static.desc = '';
+
 	bs.aggregatedStatistics.report.ReportBase.static.tagName = 'div';
 
 	// PUBLIC

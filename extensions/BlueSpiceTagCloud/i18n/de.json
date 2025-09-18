@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Metalhead64",
-			"Patric Wirth"
+			"MoritzMT20",
+			"Patric Wirth",
+			"Russianbabe1978"
 		]
 	},
 	"bs-tagcloud-desc": "Zeigt verschiedene Tag-Clouds",
@@ -31,5 +33,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Seiten ausnehmen",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Zeigt diese Seiten nicht in der Tag Cloud an. Für mehrere Seiten kann eine kommasepartierte Liste verwendet werden, z.B. \"Hauptseite, Test, MeineSeite\"",
 	"bs-tagcloud-droplet-name": "Wortwolke",
-	"bs-tagcloud-droplet-description": "Wortwolke basierend auf Kategorien oder Suchanfragen"
+	"bs-tagcloud-droplet-description": "Wortwolke basierend auf Kategorien oder Suchanfragen",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Erweitert",
+	"bs-tagcloud-tag-tagcloud-tab-common": "öffentliche Grünfläche (brit.)"
 }

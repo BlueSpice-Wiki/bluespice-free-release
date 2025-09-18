@@ -13,7 +13,11 @@ $( function () {
 				if ( !registry.registry.hasOwnProperty( key ) ) {
 					continue;
 				}
-				options.push( new OO.ui.MenuOptionWidget( { data: key, label: registry.registry[ key ].static.label } ) );
+				options.push( new bs.aggregatedStatistics.MenuOptionWidget( {
+					data: key,
+					label: registry.registry[ key ].static.label,
+					desc: registry.registry[ key ].static.desc
+				} ) );
 			}
 			dropdown.getMenu().addItems( options ); // eslint-disable-line no-use-before-define
 			dropdown.setDisabled( false ); // eslint-disable-line no-use-before-define

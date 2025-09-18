@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Neriah",
 			"YaronSh",
 			"ערן"
 		]
@@ -134,5 +135,8 @@
 	"pdfcreator-template-edit-dlg-general-ns-prefix-label": "הצגת קידומת מרחב שם",
 	"pdfcreator-template-edit-dlg-general-links-label": "השבתת קישורים ב־PDF",
 	"pdfcreator-template-edit-dlg-header-upload-btn-label": "העלאת תמונה ככותרת בתבנית PDF",
-	"pdfcreator-template-duplicate-dlg-title": "העתקת תבנית PDF"
+	"pdfcreator-template-duplicate-dlg-title": "העתקת תבנית PDF",
+	"pdfcreator-pageparam-export-date": "הצגת תאריך הייצוא",
+	"pdfcreator-pageparam-export-time": "הצגת זמן הייצוא",
+	"pdfcreator-pageparam-title": "הצגת כותרת הדף"
 }

@@ -40,17 +40,8 @@ ext.enhancedUI.ve.MediaDialogFileGrid.prototype.onSearchTabsSet = function ( sel
 		this.component.searchTabs.toggleMenu( true );
 		this.component.actions.setMode( 'select' );
 		this.component.search.runLayoutQueue();
-
-		if ( !this.fileRepoGrid ) {
-			this.initFileRepoGrid();
-		} else {
-			// Reset size on tab switch when already loaded
-			this.onFileRepoGridLoaded();
-		}
-	} else {
-		this.component.setBodyHeight( null );
-		this.component.updateSize();
 	}
+	this.component.updateSize();
 };
 
 ext.enhancedUI.ve.MediaDialogFileGrid.prototype.onBeforePanelSwitch = function ( panel ) {
@@ -64,6 +55,9 @@ ext.enhancedUI.ve.MediaDialogFileGrid.prototype.onPanelSwitch = function ( panel
 	if ( panel === 'search' && this.presetTab === 'enhanced-stadard-uis-ve-filegrid-panel' ) {
 		this.component.searchTabs.setTabPanel( this.presetTab );
 		this.presetTab = null;
+	}
+	if ( !this.fileRepoGrid ) {
+		this.initFileRepoGrid();
 	}
 	if ( this.fileRepoGrid ) {
 		this.fileRepoGrid.closeFilters();
@@ -80,9 +74,13 @@ ext.enhancedUI.ve.MediaDialogFileGrid.prototype.initFileRepoGrid = function () {
 		$overlay: this.component.$overlay,
 		mediaDialog: true
 	} );
-	this.fileRepoGrid.grid.connect( this, {
-		rowSelected: 'onFileRepoGridSelect',
-		datasetChange: 'onFileRepoGridLoaded'
+	this.fileRepoGrid.connect( this, {
+		gridLoaded: () => {
+			this.fileRepoGrid.grid.connect( this, {
+				rowSelected: 'onFileRepoGridSelect',
+				datasetChange: 'onFileRepoGridLoaded'
+			} );
+		}
 	} );
 	this.advancedSearchTab.$element.html( this.fileRepoGrid.$element );
 };
@@ -103,10 +101,4 @@ ext.enhancedUI.ve.MediaDialogFileGrid.prototype.onFileRepoGridSelect = function 
 		thumbwidth: 80
 	};
 	this.component.chooseImageInfo( imageInfo );
-};
-
-ext.enhancedUI.ve.MediaDialogFileGrid.prototype.onFileRepoGridLoaded = function () {
-	const height = this.fileRepoGrid.grid.$element.height() + 100;
-	this.component.setBodyHeight( height > 910 ? height : 910 );
-	this.component.updateSize();
 };

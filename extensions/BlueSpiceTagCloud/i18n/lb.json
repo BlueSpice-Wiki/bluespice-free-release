@@ -13,5 +13,6 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Kategorien",
 	"bs-tagcloud-tag-tagcloud-attr-width-label": "Breet",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Zuel weisen",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Säiten ausschléissen"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Säiten ausschléissen",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Erweidert"
 }

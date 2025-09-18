@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"bs-tagcloud-desc": "Mostra varias nubes de etiquetas",
+	"bs-tagcloud-error-tagtype": "O valor dado, «$1», non é un almacén válido.",
+	"bs-tagcloud-error-tagrenderer": "O valor dado, «$1», non é un renderizador válido.",
+	"bs-tagcloud-tag-tagcloud-name": "Nube de etiquetas",
+	"bs-tagcloud-tag-tagcloud-title": "Nube de etiquetas",
+	"bs-tagcloud-tag-tagcloud-desc": "Renderiza unha nube de etiquetas segundo as categorías ou os termos de procura",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Tipo",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "Selecciona como se debe renderizar a nube de etiquetas",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Texto",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Lista",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "Almacén",
+	"bs-tagcloud-tag-tagcloud-attr-store-help": "Selecciona que datos usar",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categorías",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Termos de procura",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Ancho",
+	"bs-tagcloud-tag-tagcloud-attr-width-help": "Ancho da nube de etiquetas en porcentaxe",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Mostrar a cantidade",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Mostrar o número de elementos entre parénteses",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Tamaño de letra mínimo",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Tamaño da fonte para a entrada co menor número de elementos",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Tamaño de letra máximo",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Tamaño da fonte para a entrada co maior número de elementos",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluír as páxinas",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Non mostrar estas páxinas na nube de etiquetas. Para especificar máis páxinas, usa unha lista separada por comas; por exemplo, «Páxina principal, Proba, A miña páxina».",
+	"bs-tagcloud-droplet-name": "Nube de etiquetas",
+	"bs-tagcloud-droplet-description": "Nube de etiquetas segundo as categorías ou os termos de procura",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Común",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avanzado"
+}

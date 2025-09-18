@@ -6,7 +6,6 @@ use DOMDocument;
 use DOMElement;
 use DOMXPath;
 use MediaWiki\Config\Config;
-use MediaWiki\Extension\NSFileRepo\Integration\PDFCreator\Utility\FileResolver as NSFileRepoFileResolver;
 use MediaWiki\Title\TitleFactory;
 use RepoGroup;
 
@@ -89,10 +88,10 @@ class ImageFinder {
 	}
 
 	/**
-	 * @param FileResolver|NSFileRepoFileResolver $fileResolver
+	 * @param FileResolver $fileResolver
 	 * @param DOMElement $element
 	 */
-	protected function handleImageElement( mixed $fileResolver, DOMElement $element ): void {
+	protected function handleImageElement( FileResolver $fileResolver, DOMElement $element ): void {
 		$file = $fileResolver->execute( $element, 'src' );
 		if ( !$file ) {
 			return;
