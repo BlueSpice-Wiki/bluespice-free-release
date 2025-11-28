@@ -12,6 +12,7 @@ use MediaWiki\Extension\NotifyMe\Grouping\NotificationGroup;
 use MediaWiki\Language\Language;
 use MediaWiki\Languages\LanguageFactory;
 use MediaWiki\Message\Message;
+use MediaWiki\Parser\Sanitizer;
 use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
@@ -400,7 +401,7 @@ final class NotificationSerializer {
 			if ( isset( $value['public'] ) && !$value['public'] ) {
 				return null;
 			}
-			$value['desc'] = Message::newFromKey( $value['desc'] )->plain();
+			$value['desc'] = Message::newFromKey( $value['desc'] )->text();
 			$value['example'] = htmlspecialchars( $value['example'] ?? '' );
 			if ( isset( $value['schemaKey'] ) ) {
 				$value['items'] = $this->getPublicSchemaFor( $value['schemaKey'] );
@@ -530,7 +531,7 @@ final class NotificationSerializer {
 		if ( !( $user instanceof User ) ) {
 			$user = $this->userFactory->newFromUserIdentity( $user );
 		}
-		$realName = $user->getRealName();
+		$realName = Sanitizer::stripAllTags( $user->getRealName() );
 
 		return [
 			'display_name' => $realName ?: $user->getName(),

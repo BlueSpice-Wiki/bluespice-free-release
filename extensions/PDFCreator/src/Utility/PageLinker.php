@@ -35,10 +35,11 @@ class PageLinker {
 		for ( $index = 0; $index < count( $pages ); $index++ ) {
 			$page = $pages[$index];
 
-			foreach ( $this->idMap as $uniqueId => $hrefs ) {
-				$dom = $page->getDOMDocument();
-				$uniqueIdMaker->execute( $dom, $uniqueId, $hrefs );
-			}
+			$uniquePageId = $page->getUniqueId();
+
+			$dom = $page->getDOMDocument();
+
+			$uniqueIdMaker->execute( $dom, $uniquePageId, $this->idMap );
 		}
 
 		return $pages;
@@ -57,8 +58,7 @@ class PageLinker {
 
 		$uniqueId = $page->getUniqueId();
 		$this->idMap[$uniqueId] = [
-			$title->getLocalURL(),
-			$title->getFullURL()
+			$title->getLocalURL()
 		];
 	}
 

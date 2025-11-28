@@ -58,5 +58,12 @@
 	"standarddialogs-page-info-page-no-categories-label": "Оваа страница не содржи категории",
 	"standarddialogs-page-info-page-no-links-label": "Оваа страница не содржи врски",
 	"standarddialogs-page-info-page-no-extlinks-label": "Оваа страница не содржи надворешни врски",
-	"standarddialogs-validation-page-exist-info-label": "Веќе постои страница со тој наслов. Изберете друг."
+	"standarddialogs-validation-page-exist-info-label": "Веќе постои страница со тој наслов. Изберете друг.",
+	"standarddialogs-delete-btn-label": "Избриши",
+	"standarddialogs-move-btn-label": "Премести",
+	"standarddialogs-copy-btn-label": "Копирај",
+	"standarddialogs-new-page-btn-label": "Создај",
+	"standarddialogs-new-subpage-btn-label": "Создај",
+	"standarddialogs-protect-btn-label": "Заштити",
+	"standarddialogs-purge-btn-label": "Превчитај"
 }

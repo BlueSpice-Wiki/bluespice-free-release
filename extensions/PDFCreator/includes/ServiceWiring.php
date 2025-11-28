@@ -140,7 +140,8 @@ return [
 	},
 	'PDFCreator.ExportModeFactory' => static function ( MediaWikiServices $services ): ModeFactory {
 		return new ModeFactory(
-			$services->getObjectFactory()
+			$services->getObjectFactory(),
+			RequestContext::getMain()
 		);
 	},
 	'PDFCreator.MediaWikiCommonCssProvider' => static function (

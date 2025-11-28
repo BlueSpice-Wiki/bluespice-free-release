@@ -4,6 +4,7 @@ StandardDialogs.ui = StandardDialogs.ui || {};
 StandardDialogs.ui.NewPageDialog = function StandardDialogsUiNewPageDialog( config ) {
 	StandardDialogs.ui.NewPageDialog.super.call( this, config );
 };
+
 OO.inheritClass( StandardDialogs.ui.NewPageDialog, StandardDialogs.ui.BaseDialog );
 
 StandardDialogs.ui.NewPageDialog.static.name = 'ext-standard-dialogs-new-page';
@@ -14,6 +15,11 @@ StandardDialogs.ui.NewPageDialog.prototype.makeSetupProcessData = function () {
 
 	return data;
 };
+
+StandardDialogs.ui.NewPageDialog.prototype.getPrimaryActionLabel = function () {
+	return mw.message( 'standarddialogs-new-page-btn-label' ).plain();
+};
+
 StandardDialogs.ui.NewPageDialog.prototype.getFormItems = function () {
 	const title = new mw.Title( this.pageName );
 	let prefix = '';

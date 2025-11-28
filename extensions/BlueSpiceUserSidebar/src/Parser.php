@@ -64,9 +64,7 @@ class Parser {
 				$section = $widget->getHeaderMessage()->text();
 				$links = $widget->getLinks();
 			}
-			if ( empty( $links ) ) {
-				continue;
-			}
+
 			$this->parsed[$title->getFullText()][$section] = $links;
 		}
 

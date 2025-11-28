@@ -97,9 +97,14 @@ class InstantAvatar {
 		}
 
 		// Draw the first few chars of the name
-		imageTTFText( $this->avatar, $this->fontSize, 0,
-			4, $this->height - $this->fontSize / 2,
-			$textColor, $this->fontFace,
+		imageTTFText(
+			$this->avatar,
+			$this->fontSize,
+			0,
+			4,
+			(int)round( $this->height - $this->fontSize / 2 ),
+			$textColor,
+			$this->fontFace,
 			# HW: made this unicode safe
 			mb_substr( $name, 0, $this->chars )
 		);

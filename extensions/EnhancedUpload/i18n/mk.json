@@ -94,5 +94,6 @@
 	"enhancedupload-preview-widget-remove-label": "Отстрани $1",
 	"enhancedupload-reset-button-label": "Одново",
 	"enhancedupload-ve-file-dialog-title": "Податотека",
-	"enhancedupload-ve-file-dialog-filename-label": "Име на податотеката"
+	"enhancedupload-ve-file-dialog-filename-label": "Име на податотеката",
+	"enhancedupload-warning-dialog-upload-label": "За {{PLURAL:$1|оваа подигната податотека|овие подигнати податотеки}} {{PLURAL:$1|се јави предупредување|се јавија предупредувања}}"
 }

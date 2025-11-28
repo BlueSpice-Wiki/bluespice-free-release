@@ -82,13 +82,15 @@ class Export extends SimpleHandler {
 			$relevantTitle = $this->titleFactory->newFromText( $data['relevantTitle'] );
 		}
 
+		$mode = isset( $data['mode'] ) ? $data['mode'] : 'page';
+
 		$params = [
+			'mode' => $mode,
 			'template' => isset( $data['template'] ) ? $data['template'] : null,
 			'title' => $relevantTitle->getPrefixedDBkey(),
 			'filename' => $relevantTitle->getPrefixedDBkey() . '.pdf'
 		];
 
-		$mode = isset( $data['mode'] ) ? $data['mode'] : 'page';
 		$modeProvider = $this->modeFactory->getModeProvider( $mode );
 		$pages = $modeProvider->getExportPages( $this->exportTitle, $data );
 		if ( $mode === 'page' || $mode === 'pageWithLinkedPages' || $mode === 'pageWithSubpages' ) {
@@ -147,12 +149,12 @@ class Export extends SimpleHandler {
 			$response->setHeader( 'X-Error-Details', 'Empty pdf content' );
 			return $response;
 		}
-
+		$encodedFilename = rawurlencode( $filename );
 		$response = $this->getResponseFactory()->create();
 		$response->setHeader( 'Content-Type', 'application/pdf' );
-		$response->setHeader( 'Content-Disposition', 'attachment; filename="' . $filename . '"' );
+		$response->setHeader( 'Content-Disposition', 'attachment; filename="' . $encodedFilename . '"' );
 		$response->setHeader( 'Content-Length', strlen( $pdfData ) );
-		$response->setHeader( 'X-Filename', $filename );
+		$response->setHeader( 'X-Filename', $encodedFilename );
 		$response->getBody()->write( $pdfData );
 
 		$response->getBody()->rewind();

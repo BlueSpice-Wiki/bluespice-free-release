@@ -60,7 +60,7 @@ class Handler implements IPrivacyHandler {
 		$label = Message::newFromKey( 'bs-avatars-upload-label' );
 		return Status::newGood( [
 			Transparency::DATA_TYPE_PERSONAL => [
-				"{$label->plain()}: {$config->get( 'Server' )}$url"
+				"{$label->text()}: {$config->get( 'Server' )}$url"
 			]
 		] );
 	}

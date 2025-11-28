@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"enhancedupload-cancel-button-label": "Отказ",
+	"enhancedupload-attachments-media-dialog-cancel-title": "Отказ",
+	"enhancedupload-upload-media-dialog-cancel-title": "Отказ",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Отказ",
+	"enhancedupload-finished-dialog-action-close": "Затваряне"
+}

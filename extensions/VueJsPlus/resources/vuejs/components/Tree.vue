@@ -184,52 +184,57 @@ function prepareNode( node, isSelectable, isSelected, isExpandable, isExpanded, 
 .vuejsplus-data-tree-cnt {
 	padding-top: 0.5em;
 }
+
 ul.vuejsplus-data-tree {
 	list-style: none;
 	padding-left: 0;
 	margin-left: 1em;
 	margin-top: 0;
 }
-ul.vuejsplus-data-tree {
-	list-style: none;
-	padding-left: 5px;
-	margin-left: 1.5em;
-}
+
 ul.vuejsplus-data-tree.vuejsplus-data-tree-expandable {
 	margin-left: 3.5em;
 }
+
 ul.vuejsplus-data-tree > li {
-    position: relative;
+	position: relative;
 	margin-bottom: 0;
 }
+
 ul.vuejsplus-data-tree > li::before,
 ul.vuejsplus-data-tree > li::after {
-    content: "";
-    position: absolute;
-    left: -0.5em;
+	content: '';
+	position: absolute;
+	left: -0.5em;
 }
+
 ul.vuejsplus-data-tree > li::before {
-    border-top: 1px dotted #000;
-    top: 0.75em;
-    width: 0.75em;
-    height: 0;
+	border-top: 1px dotted #000;
+	top: 0.75em;
+	width: 0.75em;
+	height: 0;
 }
+
 ul.vuejsplus-data-tree > li::after {
-    border-left: 1px dotted #000;
-    height: 100%;
-    width: 0px;
-    top: 4px;
+	border-left: 1px dotted #000;
+	height: 100%;
+	width: 0;
+	top: 4px;
 }
+
 ul.vuejsplus-data-tree > li:last-child {
 	padding-bottom: 0.5em;
 }
+
 ul.vuejsplus-data-tree > li:last-child::after {
-    height: 8px;
+	height: 8px;
 }
+
 .vuejsplus-data-tree-item > div:not( :has( input ) ) {
 	padding-left: 5px;
 }
-ul.vuejsplus-data-tree.vuejsplus-data-tree-selectable input[type='checkbox'] {
+
+ul.vuejsplus-data-tree.vuejsplus-data-tree-selectable input[ type='checkbox' ] {
 	margin-right: 0.5em;
 	cursor: pointer;
 	width: 1.5625em;
@@ -239,10 +244,11 @@ ul.vuejsplus-data-tree.vuejsplus-data-tree-selectable input[type='checkbox'] {
 	position: relative;
 	z-index: 1;
 }
+
 .vuejsplus-data-tree-item-checkbox + span::before,
 .vuejsplus-data-tree-item-checkbox + a::before {
 	cursor: pointer;
-	transition: background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;
+	transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
 	content: '';
 	background-color: #fff;
 	background-origin: border-box;
@@ -262,9 +268,9 @@ ul.vuejsplus-data-tree.vuejsplus-data-tree-selectable input[type='checkbox'] {
 
 .vuejsplus-data-tree-item-checkbox:checked + span::before,
 .vuejsplus-data-tree-item-checkbox:checked + a::before {
-	background-color: #3366cc;
-	border-color: #3366cc;
-	background-image: url("../../../../resources/src/mediawiki.ui.checkbox/images/checkbox-checked.svg");
+	background-color: #36c;
+	border-color: #36c;
+	background-image: url( ../../../../resources/src/mediawiki.ui.checkbox/images/checkbox-checked.svg );
 	background-size: 90% 90%;
 }
 </style>

@@ -34,12 +34,7 @@ class ExportPreProcessorFactory {
 				$processors[] = $processor;
 			}
 		}
-		usort( $processors, static function ( IPreProcessor $a, IPreProcessor $b ) {
-			$positionA = method_exists( $a, 'getPosition' ) ? $a->getPosition() : 50;
-			$positionB = method_exists( $b, 'getPosition' ) ? $b->getPosition() : 50;
 
-			return $positionA <=> $positionB;
-		} );
 		return $processors;
 	}
 }

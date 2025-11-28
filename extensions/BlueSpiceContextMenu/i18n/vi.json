@@ -1,10 +1,28 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ioe2015"
+			"Ioe2015",
+			"Nvdtn19"
 		]
 	},
 	"bs-contextmenu-desc": "Cung cấp bảng chọn ngữ cảnh cho các liên kết khác nhau",
 	"prefs-contextmenu": "Bảng chọn ngữ cảnh",
-	"bs-contextmenu-pref-modus": "Mở bảng chọn ngữ cảnh bằng (không dành cho di động)"
+	"bs-contextmenu-pref-modus": "Mở bảng chọn ngữ cảnh bằng (không dành cho di động)",
+	"bs-contextmenu-pref-modus-just-right-mouse": "Nháy chuột phải (Chuột phải + CTRL sẽ hiển thị menu ngữ cảnh mặc định của trình duyệt)",
+	"bs-contextmenu-pref-modus-ctrl-and-right-mouse": "Nháy chuột phải và nhấn CTRL (chỉ nháy chuột phải sẽ hiển thị menu ngữ cảnh mặc định của trình duyệt)",
+	"bs-contextmenu-page-edit": "Sửa trang",
+	"bs-contextmenu-page-delete": "Xóa trang",
+	"bs-contextmenu-page-move": "Di chuyển trang",
+	"bs-contextmenu-page-history": "Xem lịch sử trang",
+	"bs-contextmenu-page-protect": "Khóa trang",
+	"bs-contextmenu-page-purge": "Tẩy bộ nhớ đệm và xem trang",
+	"bs-contextmenu-page-info": "Xem thông tin trang",
+	"bs-contextmenu-media-reupload": "Tải lên phiên bản mới",
+	"bs-contextmenu-media-view-page": "Xem trang mô tả và lịch sử tập tin",
+	"bs-contextmenu-user-mail": "Gửi thư",
+	"bs-contextmenu-user-talk": "Để lại tin nhắn trên trang thảo luận",
+	"bs-contextmenu-file-download": "Tải xuống tập tin",
+	"apihelp-bs-contextmenu-tasks-summary": "Hiện các mục menu ngữ cảnh trong trình đơn",
+	"bs-contextmenu-open-in-new-tab": "Mở trong thẻ mới",
+	"bs-contextmenu-no-items": "Không có mục menu ngữ cảnh"
 }

@@ -54,5 +54,18 @@
 	"standarddialogs-btn-cancel": "取消",
 	"standarddialogs-protect-level-editor": "仅允许编辑者和管理员",
 	"standarddialogs-delete-subpages": "删除子页面",
-	"standarddialogs-confirm-mass-deletion": "这会删除$1个{{PLURAL:$1|页面}}。您确定吗？"
+	"standarddialogs-confirm-mass-deletion": "这会删除$1个{{PLURAL:$1|页面}}。您确定吗？",
+	"standarddialogs-page-info-page-no-images-label": "此页面不包含图像或文件（包括音频和视频文件）",
+	"standarddialogs-page-info-page-no-templates-label": "此页面不包含模板",
+	"standarddialogs-page-info-page-no-categories-label": "此页面不包含分类",
+	"standarddialogs-page-info-page-no-links-label": "此页面不包含链接",
+	"standarddialogs-page-info-page-no-extlinks-label": "此页面不包含外部链接",
+	"standarddialogs-validation-page-exist-info-label": "同样标题的页面已存在，请选择其他名称。",
+	"standarddialogs-delete-btn-label": "删除",
+	"standarddialogs-move-btn-label": "移动",
+	"standarddialogs-copy-btn-label": "复制",
+	"standarddialogs-new-page-btn-label": "创建",
+	"standarddialogs-new-subpage-btn-label": "创建",
+	"standarddialogs-protect-btn-label": "保护",
+	"standarddialogs-purge-btn-label": "刷新"
 }

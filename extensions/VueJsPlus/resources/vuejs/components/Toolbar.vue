@@ -128,36 +128,44 @@ function sortTools( tools ) {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid #c8ccd1;
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
 	background-color: #fff;
 }
+
 .vuejsplus-toolbar.vuejsplus-toolbar-floating {
 	position: fixed;
 	z-index: 5;
 }
+
 .left,
 .vuejsplus-toolbar-items {
 	display: inline-flex;
 	list-style: none;
+	/* stylelint-disable-next-line declaration-no-important */
 	margin: 0 !important;
 }
+
 .vuejsplus-toolbar-items li {
 	margin-bottom: 0;
 }
+
 .vuejsplus-toolbar-items.left {
 	justify-content: flex-start;
 }
+
 .vuejsplus-toolbar-items.right {
 	justify-content: flex-end;
 }
+
 .one-slot-only .vuejsplus-toolbar-items {
 	width: 100%;
 }
+
 .vuejsplus-toolbar-tool-cancel {
-	background-image: url( '../../../VueJsPlus/resources/images/Codex_icon_close.svg');
+	background-image: url( ../../../VueJsPlus/resources/images/Codex_icon_close.svg );
 	background-repeat: no-repeat;
 	display: block;
-    background-position: center;
-    width: 42px;
+	background-position: center;
+	width: 42px;
 }
 </style>

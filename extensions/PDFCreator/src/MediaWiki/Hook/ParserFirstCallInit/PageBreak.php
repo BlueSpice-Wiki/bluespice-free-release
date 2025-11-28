@@ -36,7 +36,7 @@ class PageBreak implements ParserFirstCallInitHook {
 		$out = Html::element(
 			'div',
 			[ 'class' => 'pagebreak' ],
-			Message::newFromKey( 'pdfcreator-tag-pagebreak-label' )->plain()
+			Message::newFromKey( 'pdfcreator-tag-pagebreak-label' )->text()
 		);
 		return $out;
 	}

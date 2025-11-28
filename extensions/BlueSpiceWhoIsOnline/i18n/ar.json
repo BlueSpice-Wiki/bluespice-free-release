@@ -32,5 +32,6 @@
 	"bs-whoisonline-droplet-count-name": "عدد المستخدمين الذين قاموا بتسجيل الدخول",
 	"bs-whoisonline-droplet-count-description": "عدد المستخدمين المسجلين دخول حاليا",
 	"bs-whoisonline-droplet-popup-name": "قائمة المستخدمين الذين قاموا بتسجيل الدخول",
-	"bs-whoisonline-droplet-popup-description": "نافذة منبثقة تحتوي على قائمة بجميع المستخدمين الذين قاموا بتسجيل الدخول حاليًا"
+	"bs-whoisonline-droplet-popup-description": "نافذة منبثقة تحتوي على قائمة بجميع المستخدمين الذين قاموا بتسجيل الدخول حاليًا",
+	"bs-whoisonline-statistics-report-login-number-desc": "تسجيلات الدخول اليومية خلال الفترة المحددة"
 }

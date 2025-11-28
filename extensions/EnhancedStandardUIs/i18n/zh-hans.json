@@ -3,6 +3,7 @@
 		"authors": [
 			"Googology",
 			"GuoPC",
+			"Libamidi",
 			"沈澄心"
 		]
 	},
@@ -23,7 +24,7 @@
 	"enhanced-standard-uis-allpages-config": "配置",
 	"enhanced-standard-uis-allpages-redirect-title": "重定向",
 	"enhanced-standard-uis-allpages-filter-pages-label": "过滤器",
-	"enhanced-standard-uis-allpages-namespace-list-label": "命名空间列表",
+	"enhanced-standard-uis-allpages-namespace-list-label": "命名空间",
 	"enhanced-standard-uis-paginator-aria-label": "分页",
 	"enhanced-standard-uis-allpages-unwatch-label": "取消监视页面$1"
 }

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Marphy 123"
+		]
+	},
+	"standarddialogs-delete-btn-label": "Kuvidisa",
+	"standarddialogs-move-btn-label": "Kwenda",
+	"standarddialogs-copy-btn-label": "Kopi",
+	"standarddialogs-new-page-btn-label": "Kusala",
+	"standarddialogs-new-subpage-btn-label": "Kusala",
+	"standarddialogs-protect-btn-label": "Tanina",
+	"standarddialogs-purge-btn-label": "Kupema"
+}

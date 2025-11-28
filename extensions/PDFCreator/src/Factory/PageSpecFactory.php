@@ -51,7 +51,7 @@ class PageSpecFactory implements LoggerAwareInterface {
 	 * @param LoggerInterface $logger
 	 * @return void
 	 */
-	public function setLogger( LoggerInterface $logger ) {
+	public function setLogger( LoggerInterface $logger ): void {
 		$this->logger = $logger;
 	}
 
@@ -85,6 +85,8 @@ class PageSpecFactory implements LoggerAwareInterface {
 	 * @return PageSpec|null
 	 */
 	public function newFromSpec( array $data, array $options ): ?PageSpec {
+		$title = null;
+
 		if ( !isset( $data['params'] ) || $data['params'] === '' ) {
 			$params = [];
 		} else {
@@ -103,9 +105,10 @@ class PageSpecFactory implements LoggerAwareInterface {
 			$title = $this->titleFactory->newFromDBKey( $data['target'] );
 			if ( !$title ) {
 				$target = null;
+			} else {
+				$title = $this->getRedirectTarget( $title, $options );
+				$target = $title->getPrefixedDBkey();
 			}
-			$title = $this->getRedirectTarget( $title, $options );
-			$target = $title->getPrefixedDBkey();
 		}
 
 		$revId = null;
@@ -137,21 +140,22 @@ class PageSpecFactory implements LoggerAwareInterface {
 		if ( isset( $props[$id] ) ) {
 			return $props[$id];
 		}
-		if ( $this->doSuppressNamespace( $options ) ) {
-			return $title->getText();
+		if ( $this->showNamespace( $options ) ) {
+			return $title->getPrefixedText();
 		}
-		return $title->getPrefixedText();
+		return $title->getText();
 	}
 
 	/**
 	 * @param array $options
 	 * @return bool
 	 */
-	private function doSuppressNamespace( array $options ): bool {
-		if ( isset( $options['suppress-namespace'] ) ) {
-			return BoolValueGet::from( $options['suppress-namespace'] );
+	private function showNamespace( array $options ): bool {
+		if ( isset( $options['nsPrefix'] ) ) {
+			return BoolValueGet::from( $options['nsPrefix'] );
 		}
-		return $this->config->get( 'PDFCreatorSuppressNamespace' );
+
+		return false;
 	}
 
 	/**

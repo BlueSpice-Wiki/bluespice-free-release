@@ -16,15 +16,15 @@ use MediaWiki\Extension\PDFCreator\Factory\StylesheetsFactory;
 use MediaWiki\Extension\PDFCreator\Factory\TemplateProviderFactory;
 use MediaWiki\Extension\PDFCreator\IExportBackend;
 use MediaWiki\Extension\PDFCreator\IExportModule;
-use MediaWiki\Extension\PDFCreator\IExportStatus;
 use MediaWiki\Extension\PDFCreator\IExportTarget;
+use MediaWiki\Extension\PDFCreator\ISpecificationAware;
 use MediaWiki\Extension\PDFCreator\ITargetResult;
 use MediaWiki\Extension\PDFCreator\ITemplateProvider;
+use MediaWiki\Extension\PDFCreator\IWorkspaceAware;
 use MediaWiki\Extension\PDFCreator\Utility\BookmarksXMLBuilder;
 use MediaWiki\Extension\PDFCreator\Utility\BoolValueGet;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
 use MediaWiki\Extension\PDFCreator\Utility\ExportHtmlBuilder;
-use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 use MediaWiki\Extension\PDFCreator\Utility\ExportResources;
 use MediaWiki\Extension\PDFCreator\Utility\ExportResult;
 use MediaWiki\Extension\PDFCreator\Utility\ExportSpecification;
@@ -111,6 +111,9 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	/** @var bool */
 	protected $embedPageToc;
 
+	/** @var ExportSpecification|null */
+	private ExportSpecification|null $specification;
+
 	/**
 	 * @param PageSpecFactory $pageSpecFactory
 	 * @param ExportPageFactory $exportPageFactory
@@ -155,6 +158,7 @@ class Batch implements IExportModule, LoggerAwareInterface {
 		$this->config = $config;
 		$this->titleFactory = $titleFactory;
 		$this->redirectLookup = $redirectLookup;
+		$this->specification = null;
 	}
 
 	/**
@@ -167,9 +171,12 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	/**
 	 * @param ExportSpecification $specification
 	 * @param ExportContext $context
-	 * @return IExportStatus
+	 *
+	 * @return ExportResult
 	 */
 	public function execute( ExportSpecification $specification, ExportContext $context ): ExportResult {
+		$this->specification = $specification;
+
 		// relevant title
 		$relevantTitle = $this->getRelevantTitle(
 			$specification->getPageSpecs(), $context, $specification->getParams()
@@ -205,10 +212,14 @@ class Batch implements IExportModule, LoggerAwareInterface {
 		);
 
 		// prepare pages
-		/** @var ExportPage[] */
 		$pages = $this->getPages(
 			$specification->getPageSpecs(), $optionParams, $this->template, $context,
 			$this->workspace, $specification->getParams()
+		);
+
+		// pre process pages
+		$this->preProcessPages(
+			$specification->getModule(), $pages, $images, $attachments, $context, $optionParams
 		);
 
 		// add toc page
@@ -239,9 +250,6 @@ class Batch implements IExportModule, LoggerAwareInterface {
 		}
 
 		// process pages
-		$this->preProcessPages(
-			$specification->getModule(), $pages, $images, $attachments, $context, $optionParams
-		);
 		$this->processPages(
 			$specification->getModule(), $pages, $images, $attachments, $context, $optionParams
 		);
@@ -279,7 +287,11 @@ class Batch implements IExportModule, LoggerAwareInterface {
 		}
 
 		$targetResult = $target->execute( $pdfData, $specification->getParams() );
-		$status = rmdir( $this->workspace );
+		if ( !isset( $optionParams['debug'] )
+			|| BoolValueGet::from( $optionParams['debug'] ) !== true
+		) {
+			$status = rmdir( $this->workspace );
+		}
 
 		$exportStatus = new ExportStatus( true );
 		return $this->getExportResult( $exportStatus, $targetResult );
@@ -463,6 +475,12 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	): void {
 		$preProcessors = $this->exportPreProcessorFactory->getProcessors( $module );
 		foreach ( $preProcessors as $processor ) {
+			if ( $this->specification && $processor instanceof ISpecificationAware ) {
+				$processor->setExportSpecification( $this->specification );
+			}
+			if ( $this->workspace && $processor instanceof IWorkspaceAware ) {
+				$processor->setWorkspace( $this->workspace );
+			}
 			$processor->execute( $pages, $images, $attachments, $context, $this->getName(), $params );
 		}
 	}
@@ -481,6 +499,12 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	): void {
 		$processors = $this->exportProcessorFactory->getProcessors( $module );
 		foreach ( $processors as $processor ) {
+			if ( $this->specification && $processor instanceof ISpecificationAware ) {
+				$processor->setExportSpecification( $this->specification );
+			}
+			if ( $this->workspace && $processor instanceof IWorkspaceAware ) {
+				$processor->setWorkspace( $this->workspace );
+			}
 			$processor->execute( $pages, $images, $attachments, $context, $this->getName(), $params );
 		}
 	}
@@ -497,6 +521,12 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	): void {
 		$postProcessors = $this->exportPostProcessorFactory->getProcessors( $module );
 		foreach ( $postProcessors as $processor ) {
+			if ( $this->specification && $processor instanceof ISpecificationAware ) {
+				$processor->setExportSpecification( $this->specification );
+			}
+			if ( $this->workspace && $processor instanceof IWorkspaceAware ) {
+				$processor->setWorkspace( $this->workspace );
+			}
 			$processor->execute( $html, $context, $this->getName(), $params );
 		}
 	}

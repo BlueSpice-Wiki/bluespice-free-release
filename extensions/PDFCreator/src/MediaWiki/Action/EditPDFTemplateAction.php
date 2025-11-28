@@ -62,7 +62,7 @@ class EditPDFTemplateAction extends EditAction {
 
 			$tabPanels[] = new TabPanelLayout( $slot, [
 				'classes' => [ 'pdf-creator-template-tab-content' ],
-				'label' => wfMessage( 'pdfcreator-tab-panel-' . $slot . '-label' )->plain(),
+				'label' => wfMessage( 'pdfcreator-tab-panel-' . $slot . '-label' )->text(),
 				'content' => new FieldsetLayout( [
 					'classes' => [ 'pdf-creator-template-tab-fieldset' ],
 					'items' => [

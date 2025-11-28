@@ -10,7 +10,7 @@ class RegisterMetaFields extends NamespaceManagerGetMetaFields {
 		$this->metaFields[] = [
 			'name' => 'pageassignments-secure',
 			'type' => 'boolean',
-			'label' => wfMessage( 'bs-pageassignments-secure-nsm-label' )->plain(),
+			'label' => wfMessage( 'bs-pageassignments-secure-nsm-label' )->text(),
 			'filter' => [
 				'type' => 'boolean'
 			]

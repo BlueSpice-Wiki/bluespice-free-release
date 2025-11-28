@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GuoPC",
 			"Lakejason0",
 			"LittlePaw365",
 			"Wzl19371"
@@ -30,5 +31,14 @@
 	"menueditor-ui-redlink-notice": "此菜单尚不存在！",
 	"menueditor-action-menueditsource": "编辑源代码",
 	"menueditor-action-menuedit": "编辑",
-	"menueditor-ui-dialog-title": "编辑元素"
+	"menueditor-ui-dialog-title": "编辑元素",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "编辑关键词",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "关键词",
+	"menueditor-toolbar-cancel": "取消编辑",
+	"menueditor-toolbar-add-label": "添加元素",
+	"menueditor-ui-edit-label": "编辑",
+	"menueditor-ui-add-sub-element-label": "添加子元素",
+	"menueditor-footerlinks-banner-text": "某些链接可能会由扩展程序自动添加。请检查扩展程序配置以了解更多信息。",
+	"menueditor-toolbar-save": "保存",
+	"menueditor-ui-cancel-confirmation": "您确定要取消编辑吗？所有未保存的更改都将丢失。"
 }

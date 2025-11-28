@@ -68,7 +68,7 @@ class DigestCreator {
 		$digestHeader = Message::newFromKey( "notifyme-digest-header-$type" )
 			->params( $this->config->get( 'Sitename' ) )->setContext( $context );
 		$content = [
-			'digestHeader' => $digestHeader->plain(),
+			'digestHeader' => $digestHeader->text(),
 			'target_user' => $user->getRealName() ?: $user->getName(),
 			'notifications' => $this->serialize( $grouped, $user ),
 			'subscription_center_link' => SpecialPage::getTitleFor(

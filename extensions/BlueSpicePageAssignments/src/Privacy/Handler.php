@@ -94,7 +94,7 @@ class Handler implements IPrivacyHandler {
 					'bs-pageassignments-privacy-transparency-working-assignments',
 					implode( ', ', $titles ),
 					count( $titles )
-				)->plain()
+				)->text()
 			]
 		] );
 	}

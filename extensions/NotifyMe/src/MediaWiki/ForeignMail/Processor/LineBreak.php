@@ -95,9 +95,11 @@ class LineBreak implements IProcessor {
 			$line
 		);
 		$res = preg_replace( '/\s+/', ' ', trim( $res ) );
-		// Put whitespace after each delimiter after text continues
+		// Add a space after delimiters if followed by an uppercase letter
 		$res = preg_replace(
-			'/([' . implode( '', static::DELIMITERS ) . '])([^<\s0-9])/', '$1 $2', $res
+			'/([' . implode( '', static::DELIMITERS ) . '])(\p{Lu})/u',
+			'$1 $2',
+			$res
 		);
 
 		return preg_replace_callback(

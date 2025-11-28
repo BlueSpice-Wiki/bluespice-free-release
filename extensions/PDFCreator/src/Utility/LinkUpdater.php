@@ -4,18 +4,17 @@ namespace MediaWiki\Extension\PDFCreator\Utility;
 
 use DOMElement;
 use DOMXPath;
-use MediaWiki\Title\TitleFactory;
+use MediaWiki\Utils\UrlUtils;
 
+/**
+ * Unused. Will be deleted as soon as possible.
+ */
 class LinkUpdater {
 
-	/** @var TitleFactory */
-	private $titleFactory;
-
 	/**
-	 * @param TitleFactory $titleFactory
+	 * @param UrlUtils $urlUtils
 	 */
-	public function __construct( TitleFactory $titleFactory ) {
-		$this->titleFactory = $titleFactory;
+	public function __construct( private readonly UrlUtils $urlUtils ) {
 	}
 
 	/**
@@ -37,21 +36,18 @@ class LinkUpdater {
 		$dom = $page->getDOMDocument();
 		$xpath = new DOMXPath( $dom );
 
-		$elements = $xpath->query( "//a[@title and not(contains(@class, 'media'))]" );
+		$elements = $xpath->query( "//a[@href and not(contains(@class, 'media'))]" );
 		foreach ( $elements as $element ) {
 			if ( $element instanceof DOMElement === false ) {
 				continue;
 			}
 
-			if ( !$element->hasAttribute( 'title' ) ) {
+			$href = $this->urlUtils->expand( $element->getAttribute( 'href' ) );
+			if ( !$href ) {
 				continue;
 			}
-			$titleAttr = $element->getAttribute( 'title' );
-			$title = $this->titleFactory->newFromText( $titleAttr );
-			if ( !$title ) {
-				continue;
-			}
-			$element->setAttribute( 'href', $title->getFullURL() );
+
+			$element->setAttribute( 'href', $href );
 		}
 	}
 }

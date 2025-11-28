@@ -1,10 +1,11 @@
 <?php
 
-namespace MediaWiki\Extension\PDFCreator\PreProcessor;
+namespace MediaWiki\Extension\PDFCreator\Processor;
 
 use DOMElement;
+use DOMException;
 use DOMXPath;
-use MediaWiki\Extension\PDFCreator\IPreProcessor;
+use MediaWiki\Extension\PDFCreator\IProcessor;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
 use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 
@@ -18,7 +19,7 @@ use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
  * - Replaces them with <img> elements using the same source.
  * - Copies relevant attributes: id, title, style, class.
  */
-class ObjectProcessor implements IPreProcessor {
+class ObjectProcessor implements IProcessor {
 
 	/**
 	 * @param ExportPage[] &$pages
@@ -27,7 +28,9 @@ class ObjectProcessor implements IPreProcessor {
 	 * @param ExportContext|null $context
 	 * @param string $module
 	 * @param array $params
+	 *
 	 * @return void
+	 * @throws DOMException
 	 */
 	public function execute(
 		array &$pages, array &$images, array &$attachments,
@@ -61,7 +64,7 @@ class ObjectProcessor implements IPreProcessor {
 	 * @inheritDoc
 	 */
 	public function getPosition(): int {
-		return 10;
+		return 20;
 	}
 
 }

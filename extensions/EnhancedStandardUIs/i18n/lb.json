@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GilPe",
 			"Robby",
 			"Volvox"
 		]
@@ -9,7 +10,7 @@
 	"enhanced-standard-uis-history-grid-header-revision-label": "Versioun",
 	"enhanced-standard-uis-history-grid-header-author-label": "Geännert vun",
 	"enhanced-standard-uis-history-grid-header-size-label": "Gréisst",
-	"enhanced-standard-uis-history-grid-header-summary-label": "Resumé",
+	"enhanced-standard-uis-history-grid-header-summary-label": "Resümmee",
 	"enhanced-standard-uis-history-grid-header-tags-label": "Markéierungen",
 	"enhanced-standard-uis-history-grid-header-undo-title": "Réckgängeg maachen",
 	"enhanced-standard-uis-history-grid-header-hide-revision-title": "Versioun verstoppen",
@@ -21,10 +22,10 @@
 	"enhanced-standard-uis-allpages-include-redirect": "Viruleedunge weisen",
 	"enhanced-standard-uis-allpages-config-ns": "Nummraimauswiel konfiguréieren",
 	"enhanced-standard-uis-allpages-config": "Konfiguratioun",
-	"enhanced-standard-uis-allpages-paginator-first": "Éischt",
-	"enhanced-standard-uis-allpages-paginator-previous": "Vireg",
-	"enhanced-standard-uis-allpages-paginator-next": "Nächst",
-	"enhanced-standard-uis-allpages-paginator-last": "Lescht",
+	"enhanced-standard-uis-allpages-paginator-first": "Éischt Säit",
+	"enhanced-standard-uis-allpages-paginator-previous": "Vireg Säit",
+	"enhanced-standard-uis-allpages-paginator-next": "Nächst Säit",
+	"enhanced-standard-uis-allpages-paginator-last": "Lescht Säit",
 	"enhanced-standard-uis-allpages-redirect-title": "Viruleedung",
 	"enhanced-standard-uis-filelist-grid-author-title": "Auteur",
 	"enhanced-standard-uis-filelist-grid-date-title": "Datum",
@@ -57,5 +58,12 @@
 	"enhancedpreferences": "Astellungen",
 	"enhanced-pref-username": "{{GENDER:$1|Benotzernumm}}",
 	"enhanced-standard-uis-prefs-panel-search-label": "Sichen",
-	"enhanced-prefs-memberingroups": "{{GENDER:$2|Member}} vun {{PLURAL:$1|der Grupp|de Gruppen}}"
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|Member}} vun {{PLURAL:$1|der Grupp|de Gruppen}}",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Informatiounen iwwer de Fichier",
+	"enhanced-standard-uis-prefs-reset-dlg-action-label": "Zerécksetzen",
+	"enhanced-standard-uis-prefs-reset-dlg-confirm-label": "Sidd Dir sécher, datt Dir Är Astellungen op d'Standardwäerter zerécksetze wëllt? Dat kann net réckgängeg gemaach ginn.",
+	"enhanced-standard-uis-prefs-reset-not-allowed-label": "Dir sidd net berechtegt fir Är Astellungen zeréckzesetzen",
+	"enhanced-standard-uis-prefs-reset-notify": "D'Astellunge goufen op d'Standardwäerter zeréckgesat",
+	"enhanced-standard-uis-paginator-page-aria-label": "Säit $1",
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Säiten ugefaange mat $1"
 }

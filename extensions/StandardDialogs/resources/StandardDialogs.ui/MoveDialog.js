@@ -15,6 +15,10 @@ StandardDialogs.ui.MoveDialog.prototype.makeSetupProcessData = function () {
 	return data;
 };
 
+StandardDialogs.ui.MoveDialog.prototype.getPrimaryActionLabel = function () {
+	return mw.message( 'standarddialogs-move-btn-label' ).plain();
+};
+
 StandardDialogs.ui.MoveDialog.prototype.getFormItems = function () {
 	this.mainInput = this.targetTitle = new OOJSPlus.ui.widget.TitleInputWidget( {
 		id: this.elementId + '-tf-target',

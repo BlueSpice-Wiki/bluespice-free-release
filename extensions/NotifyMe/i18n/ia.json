@@ -189,8 +189,8 @@
 	"notifyme-notification-center-timestamp-ago": "$1 retro",
 	"notifyme-notification-center-no-new-notifications-label": "Il non ha nove notificationes",
 	"notifyme-navbar-button-aria-label-unread-notifications": "Tu ha $1 notification{{PLURAL:$1||es}} non legite",
-	"notifyme-notification-center-pagination-aria-next": "Sequente",
-	"notifyme-notification-center-pagination-aria-previous": "Precedente",
+	"notifyme-notification-center-pagination-aria-next": "Pagina sequente",
+	"notifyme-notification-center-pagination-aria-previous": "Pagina precedente",
 	"notifyme-notification-center-navigation-hint": "Consilio: Tu pote usar le claves de sagitta sinistre e dextre pro navigar inter le schedas in le lista.",
 	"notifyme-notification-center-filter-item-aria-label": "Filtro $1",
 	"notifyme-bucket-content-low-freq-label": "Eventos minus frequente",
@@ -205,5 +205,8 @@
 	"notifyme-ui-dialog-popup-header-label": "Iste eventos actiona notificationes:",
 	"notifyme-event-page-edit-desc": "Un pagina ha essite modificate per un altere usator",
 	"notifyme-ui-delivery-label": "Livration",
-	"prefs-subs": "Abonamentos a notificationes"
+	"prefs-subs": "Abonamentos a notificationes",
+	"notifyme-notification-filter-count-aria-label": "contine {{PLURAL:$1|un notification|$1 notificationes}}",
+	"notifyme-notification-filter-aria-label": "Filtro de notificationes",
+	"notifyme-notification-center-pagination-number-aria-label": "Notificationes de $1 a $2 monstrate"
 }

@@ -88,6 +88,7 @@ module.exports = defineComponent( {
 		&:hover {
 			background-color: #fff;
 		}
+
 		&:focus-visible {
 			background-color: #fff;
 			border: 1px solid #36c;

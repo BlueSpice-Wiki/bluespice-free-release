@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"JLTRY",
 			"Verdy p",
 			"Wladek92"
 		]
@@ -12,5 +13,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Modifier le mot-clé",
 	"menueditor-ui-menu-keyword-usersidebar-label": "Mot-clé",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Modifier le mot-clé",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "Mot-clé"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Mot-clé",
+	"bs-usersidebar-empty-menu-label": "Aucune entrée disponible"
 }

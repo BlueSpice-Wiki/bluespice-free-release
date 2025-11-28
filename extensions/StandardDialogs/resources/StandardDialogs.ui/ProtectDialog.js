@@ -15,6 +15,10 @@ StandardDialogs.ui.ProtectDialog.prototype.makeSetupProcessData = function () {
 	return data;
 };
 
+StandardDialogs.ui.ProtectDialog.prototype.getPrimaryActionLabel = function () {
+	return mw.message( 'standarddialogs-protect-btn-label' ).plain();
+};
+
 StandardDialogs.ui.ProtectDialog.prototype.getFormItems = function () {
 	const options = this.getStandardExpiryDates();
 	const optionsReason = this.getStandardReasons();

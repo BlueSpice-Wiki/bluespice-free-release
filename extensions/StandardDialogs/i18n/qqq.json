@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"McDutchie",
 			"Miriam Schlindwein",
 			"Patric Wirth",
 			"Robby",
@@ -62,5 +63,12 @@
 	"standarddialogs-page-info-page-no-categories-label": "Text for table cell, which is used when page contains no categories which can be listed",
 	"standarddialogs-page-info-page-no-links-label": "Text for table cell, which is used when page contains no links which can be listed",
 	"standarddialogs-page-info-page-no-extlinks-label": "Text for table cell, which is used when page contains no external links which can be listed",
-	"standarddialogs-validation-page-exist-info-label": "Label for validation of title input. Shown if page title already exists"
+	"standarddialogs-validation-page-exist-info-label": "Label for validation of title input. Shown if page title already exists",
+	"standarddialogs-delete-btn-label": "Label for primary action button of delete dialog.\n{{Identical|Delete}}",
+	"standarddialogs-move-btn-label": "Label for primary action button of move dialog. Refers to moving (i.e. renaming) a wiki page.\n{{Identical|Move}}",
+	"standarddialogs-copy-btn-label": "Label for primary action button of copy dialog.\n{{Identical|Copy}}",
+	"standarddialogs-new-page-btn-label": "Label for primary action button of new page dialog.\n{{Identical|Create}}",
+	"standarddialogs-new-subpage-btn-label": "Label for primary action button of new page dialog.\n{{Identical|Create}}",
+	"standarddialogs-protect-btn-label": "Label for primary action button of protect dialog.\n{{Identical|Protect}}",
+	"standarddialogs-purge-btn-label": "Label for primary action button of purge dialog"
 }

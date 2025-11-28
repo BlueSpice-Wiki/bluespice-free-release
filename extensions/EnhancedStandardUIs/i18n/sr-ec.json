@@ -67,5 +67,7 @@
 	"enhancedpreferences": "Подешавања",
 	"enhanced-pref-username": "{{GENDER:$1|Корисничко име}}",
 	"enhanced-standard-uis-prefs-panel-search-label": "Претрага",
-	"enhanced-prefs-memberingroups": "{{GENDER:$2|Члан|Чланица}} {{PLURAL:$1|групе|група}}"
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|Члан|Чланица}} {{PLURAL:$1|групе|група}}",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Информације о датотеци",
+	"enhanced-standard-uis-paginator-page-aria-label": "Страница $1"
 }

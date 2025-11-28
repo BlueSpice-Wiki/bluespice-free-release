@@ -10,5 +10,6 @@
 	"bs-saferedit-pref-edit-interval": "Interval for edit check (seconds)",
 	"bs-saferedit-pref-edit-interval-help": "Specifies how often, in seconds, to check if another person is editing the page (default: 3 seconds)",
 	"bs-saferedit-pref-show-editinguser": "Show current editor",
-	"bs-saferedit-pref-show-editinguser-help": "Adds the name of the user who is currently editing the page to the top of the page"
+	"bs-saferedit-pref-show-editinguser-help": "Adds the name of the user who is currently editing the page to the top of the page",
+	"bs-saferedit-anonymous-editor": "Anonymous user"
 }

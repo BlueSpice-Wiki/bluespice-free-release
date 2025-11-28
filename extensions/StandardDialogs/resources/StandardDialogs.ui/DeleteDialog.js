@@ -17,6 +17,10 @@ StandardDialogs.ui.DeleteDialog.prototype.makeSetupProcessData = function () {
 	return data;
 };
 
+StandardDialogs.ui.DeleteDialog.prototype.getPrimaryActionLabel = function () {
+	return mw.message( 'standarddialogs-delete-btn-label' ).plain();
+};
+
 StandardDialogs.ui.DeleteDialog.prototype.getFormItems = function () {
 	this.mainInput = this.reasonCombo = new OO.ui.TextInputWidget( {
 		id: this.elementId + '-cbx-reason'

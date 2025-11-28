@@ -11,5 +11,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "تحرير الكلمة الأساسية",
 	"menueditor-ui-menu-keyword-usersidebar-label": "الكلمة الرئيسية",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "تحرير الكلمة الأساسية",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "الكلمة الرئيسية"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "الكلمة الرئيسية",
+	"bs-usersidebar-empty-menu-label": "لا توجد إدخالات متاحة"
 }

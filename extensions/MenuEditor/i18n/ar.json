@@ -3,6 +3,7 @@
 		"authors": [
 			"Alshamiri1",
 			"Meno25",
+			"Mohammed Qays",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
@@ -22,7 +23,7 @@
 	"menueditor-ui-form-field-text": "نص أو مفتاح رسالة",
 	"menueditor-ui-form-field-target": "رابط الهدف",
 	"menueditor-ui-form-field-label": "تسمية الرابط",
-	"menueditor-ui-dialog-action-done": "تم",
+	"menueditor-ui-dialog-action-done": "نُفّذ",
 	"menueditor-ui-dialog-action-cancel": "إلغاء",
 	"menueditor-ui-node-type-selector-label": "نوع العقدة",
 	"menueditor-ui-submit": "احفظ",

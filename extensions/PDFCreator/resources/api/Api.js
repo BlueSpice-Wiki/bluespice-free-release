@@ -70,7 +70,7 @@ ext.pdfcreator.api.Api.prototype.export = function ( id, data ) {
 
 	this.doExport( 'export/' + id + '/' + JSON.stringify( data ), 'GET' )
 		.done( async ( response, statusText, jqXHR ) => {
-			const filename = jqXHR.getResponseHeader( 'X-Filename' ) || mw.config.get( 'wgPageName' ) + '.pdf';
+			const filename = decodeURIComponent( jqXHR.getResponseHeader( 'X-Filename' ) ) || mw.config.get( 'wgPageName' ) + '.pdf';
 
 			const url = window.URL.createObjectURL( response );
 			const a = document.createElement( 'a' );

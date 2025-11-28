@@ -13,6 +13,7 @@ use MediaWiki\Language\RawMessage;
 use MediaWiki\MainConfigNames;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
+use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Revision\RevisionRecord;
 use Wikimedia\Rdbms\IResultWrapper;
@@ -163,7 +164,7 @@ class EnhancedHistoryAction extends HistoryAction {
 				// Parsing it will result in very odd behavior,
 				// e.g. images are being displayed, while tables are not
 				// Therefore we completely omit parsing the summary for the first revision
-				$entry['summary'] = $row->rev_comment_text;
+				$entry['summary'] = Sanitizer::stripAllTags( $row->rev_comment_text );
 			} else {
 				$summary = new RawMessage( $row->rev_comment_text );
 				$entry['summary'] = $hasPermission || !$deletedFields['summary']

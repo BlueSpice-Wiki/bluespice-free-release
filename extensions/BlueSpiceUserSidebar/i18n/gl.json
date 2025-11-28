@@ -10,5 +10,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Editar a palabra clave",
 	"menueditor-ui-menu-keyword-usersidebar-label": "Palabra clave",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Editar a palabra clave",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "Palabra clave"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Palabra clave",
+	"bs-usersidebar-empty-menu-label": "Non hai entradas dispoñibles"
 }

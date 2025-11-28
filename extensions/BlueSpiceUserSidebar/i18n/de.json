@@ -12,5 +12,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Schlüsselwort bearbeiten",
 	"menueditor-ui-menu-keyword-usersidebar-label": "Schlüsselwort",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Schlüsselwort bearbeiten",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "Schlüsselwort"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Schlüsselwort",
+	"bs-usersidebar-empty-menu-label": "Keine Einträge vorhanden"
 }

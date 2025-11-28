@@ -52,5 +52,11 @@
 	"standarddialogs-btn-done": "Fäerdeg",
 	"standarddialogs-btn-cancel": "Ofbriechen",
 	"standarddialogs-protect-level-editor": "Nëmme fir Editeuren an Administrateuren erlaben",
-	"standarddialogs-delete-subpages": "Ënnersäite läschen"
+	"standarddialogs-delete-subpages": "Ënnersäite läschen",
+	"standarddialogs-delete-btn-label": "Läschen",
+	"standarddialogs-move-btn-label": "Réckelen",
+	"standarddialogs-copy-btn-label": "Kopéieren",
+	"standarddialogs-new-page-btn-label": "Uleeën",
+	"standarddialogs-new-subpage-btn-label": "Uleeën",
+	"standarddialogs-purge-btn-label": "Nei lueden"
 }

@@ -64,6 +64,3 @@ module.exports = exports = {
 };
 
 </script>
-
-<style lang="css">
-</style>

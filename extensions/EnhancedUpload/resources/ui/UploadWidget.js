@@ -308,7 +308,7 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 					const catEditParams = {
 						action: 'edit',
 						title: 'File:' + params.filename,
-						appendtext: categories
+						appendtext: params.comment + '\n' + categories
 					};
 					const editCategoriesDfd = me.doCategoriesEdit( catEditParams );
 					$.when.apply( me, editCategoriesDfd ).done( () => {

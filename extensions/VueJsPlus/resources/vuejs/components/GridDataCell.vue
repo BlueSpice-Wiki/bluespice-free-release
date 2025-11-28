@@ -127,6 +127,7 @@ module.exports = exports = {
 .vuejsplus-data-grid-boolean-cell {
 	text-align: center;
 }
+
 .vuejsplus-data-grid-boolean-cell img {
 	max-height: 1em;
 }

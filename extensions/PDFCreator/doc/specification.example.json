@@ -1,21 +1,27 @@
 {
 	"module": "batch",
-	"template-provider": "wiki",
 	"target": "filesystem",
-	"backend": "open-html-2-pdf",
 	"params": {
-		"template": "MyTemplate",
+		"mode": "page",
+		"user": "WikiSysop",
 		"title": "Test export",
 		"filesystem-path": "/tmp",
-		"filename": "Test.pdf"
+		"filename": "Test.pdf",
+		"relevantTitle": "Main_Page",
+		"template": "StandardPDF"
+	},
+	"options": {
+		"debug": true,
+		"attachments": true,
+		"embed-page-toc": true,
+		"title-show-namespace": true
 	},
 	"pages": [
 		{
 			"type": "page",
-			"target": "Main_Page",
-			"label": "My label",
+			"target": "ABC:Page_1",
 			"params": {
-				"status": "Implemented for future development, not used yet"
+				"rev-id": 234
 			}
 		}
 	]

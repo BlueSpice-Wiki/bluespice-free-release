@@ -4,10 +4,13 @@ namespace MediaWiki\Extension\PDFCreator\Processor;
 
 use MediaWiki\Extension\PDFCreator\IProcessor;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
-use MediaWiki\Extension\PDFCreator\Utility\LinkUpdater;
+use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 use MediaWiki\Extension\PDFCreator\Utility\PageLinker;
 use MediaWiki\Title\TitleFactory;
 
+/**
+ * This class has to run after
+ */
 class PageLinkerProcessor implements IProcessor {
 
 	/** @var TitleFactory */
@@ -35,15 +38,12 @@ class PageLinkerProcessor implements IProcessor {
 	): void {
 		$pageLinker = new PageLinker( $this->titleFactory );
 		$pages = $pageLinker->execute( $pages );
-
-		$linkUpdater = new LinkUpdater( $this->titleFactory );
-		$pages = $linkUpdater->execute( $pages );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getPosition(): int {
-		return 80;
+		return 70;
 	}
 }

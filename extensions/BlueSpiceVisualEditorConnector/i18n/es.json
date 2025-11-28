@@ -16,7 +16,7 @@
 	"bs-visualeditor-nsm-label": "Editor visual",
 	"bs-visualeditorconnector-inspector-tab-common-name": "Comunes",
 	"bs-visualeditorconnector-inspector-tab-advanced-name": "Avanzadas",
-	"bs-visualeditorconnector-ve-style-option-description": "Elige el tipo de tabla",
+	"bs-visualeditorconnector-ve-style-option-description": "{{#FORMAL:Elige|Elija}} el tipo de tabla",
 	"bs-visualeditorconnector-ve-style-option": "Estilo de tabla",
 	"bs-visualeditorconnector-text-style-tool-color-label": "Color del texto",
 	"bs-visualeditorconnector-dialog-media-link": "Enlazar este archivo",

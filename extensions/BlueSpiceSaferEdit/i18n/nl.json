@@ -15,5 +15,6 @@
 	"bs-saferedit-pref-edit-interval": "Interval voor bewerkingscontrole (seconden)",
 	"bs-saferedit-pref-edit-interval-help": "Geeft aan hoe vaak, in seconden, er gecontroleerd moet worden of iemand anders de pagina aan het bewerken is (standaard: 3 seconden)",
 	"bs-saferedit-pref-show-editinguser": "Huidige bewerker weergeven",
-	"bs-saferedit-pref-show-editinguser-help": "Voegt de naam van de gebruiker die momenteel de pagina bewerkt bovenaan de pagina toe"
+	"bs-saferedit-pref-show-editinguser-help": "Voegt de naam van de gebruiker die momenteel de pagina bewerkt bovenaan de pagina toe",
+	"bs-saferedit-anonymous-editor": "Anonieme gebruiker"
 }

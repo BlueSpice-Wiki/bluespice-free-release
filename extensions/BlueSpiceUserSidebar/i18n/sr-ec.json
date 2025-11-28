@@ -3,7 +3,8 @@
 		"authors": [
 			"Aca",
 			"BadDog",
-			"Kizule"
+			"Kizule",
+			"Milicevic01"
 		]
 	},
 	"bs-usersidebar-desc": "Прилагодљив мени за личну навигацију",
@@ -12,5 +13,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Измени кључну реч",
 	"menueditor-ui-menu-keyword-usersidebar-label": "Кључна реч",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Измени кључну реч",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "Кључна реч"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Кључна реч",
+	"bs-usersidebar-empty-menu-label": "Нема доступних уноса"
 }

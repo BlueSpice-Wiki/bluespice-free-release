@@ -5,11 +5,13 @@ namespace MediaWiki\Extension\PDFCreator\Backend;
 use GuzzleHttp\Client;
 use MediaWiki\Config\Config;
 use MediaWiki\Extension\PDFCreator\IExportBackend;
+use MediaWiki\Extension\PDFCreator\Utility\BoolValueGet;
 use MediaWiki\Extension\PDFCreator\Utility\ExportResources;
 use MediaWiki\Logger\LoggerFactory;
+use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
 
-class OpenHtml2Pdf implements IExportBackend {
+class OpenHtml2Pdf implements IExportBackend, LoggerAwareInterface {
 
 	/** @var Config */
 	private $config;
@@ -73,7 +75,7 @@ class OpenHtml2Pdf implements IExportBackend {
 		file_put_contents( $tmpHtmlFilename, $resources->getHtml() );
 
 		$this->doUpload( $token, [ $tmpHtmlFilename ] );
-		if ( !isset( $params['debug'] ) ) {
+		if ( !isset( $params['debug'] ) || BoolValueGet::from( $params['debug'] ) !== true ) {
 			unlink( $tmpHtmlFilename );
 		}
 
@@ -106,7 +108,7 @@ class OpenHtml2Pdf implements IExportBackend {
 	 * @param LoggerInterface $logger
 	 * @return void
 	 */
-	public function setLogger( LoggerInterface $logger ) {
+	public function setLogger( LoggerInterface $logger ): void {
 		$this->logger = $logger;
 	}
 
@@ -122,9 +124,15 @@ class OpenHtml2Pdf implements IExportBackend {
 		}
 		$postData = $this->getInitiaUploadPostData( $token, $type );
 
+		// 50MB
+		$thresholdSize = 50 * 1024 * 1024;
+		// 100 files
+		$thresholdCount = 100;
+		$totalSize = 0;
+		$totalCount = 0;
 		foreach ( $files as $name => $path ) {
 			if ( !file_exists( $path ) ) {
-				echo "Missing $type/$path\n";
+				$this->logger->warning( "Missing $type/$path" );
 				continue;
 			}
 
@@ -135,7 +143,15 @@ class OpenHtml2Pdf implements IExportBackend {
 				// File arrays should have a name => path strucure
 				$filename = basename( $path );
 			}
-			echo "Uploading $type/$filename\n";
+			$this->logger->info( "Uploading $type/$filename" );
+			$newSize = $totalSize + filesize( $path );
+			$newCount = $totalCount + 1;
+			if ( $newSize > $thresholdSize || $newCount > $thresholdCount ) {
+				$this->doPostUpload( $type, $postData );
+				$postData = $this->getInitiaUploadPostData( $token, $type );
+				$totalSize = 0;
+				$totalCount = 0;
+			}
 
 			$postData[] = [
 				'name' => $filename,
@@ -146,22 +162,32 @@ class OpenHtml2Pdf implements IExportBackend {
 				'name' => "{$filename}_name",
 				'contents' => $filename
 			];
+			$totalSize = $newSize;
+			$totalCount = $newCount;
 		}
-		$uploadUrl = $this->uploadUrl;
+		if ( $totalCount > 0 ) {
+			$this->doPostUpload( $type, $postData );
+		}
+	}
 
-		$response = $this->guzzle->request( 'POST', $uploadUrl, [
+	/**
+	 * @param string $type
+	 * @param array $postData
+	 * @return void
+	 */
+	private function doPostUpload( string $type, array $postData ): void {
+		$response = $this->guzzle->request( 'POST', $this->uploadUrl, [
 			'multipart' => $postData
 		] );
 		$body = $response->getBody();
 		$json = json_decode( $body, true );
 		if ( $json['success'] !== true ) {
-			// TODO: Handle error
-			echo "Failed to upload $type\n";
+			$this->logger->error( "Failed to upload $type" );
 		} else {
-			"Uplad sucessfully $type\n";
+			$this->logger->info( "Uploaded successfully $type" );
 		}
 
-		echo json_encode( $json, JSON_PRETTY_PRINT ) . "\n";
+		$this->logger->debug( json_encode( $json, JSON_PRETTY_PRINT ) );
 	}
 
 	/**

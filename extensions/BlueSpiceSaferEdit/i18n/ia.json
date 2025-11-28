@@ -14,5 +14,6 @@
 	"bs-saferedit-pref-edit-interval": "Intervallo pro le controlo de modification (in secundas)",
 	"bs-saferedit-pref-edit-interval-help": "Specifica le frequentia, in secundas, pro verificar si un altere persona modifica le pagina (valor predefinite: 3 secundas)",
 	"bs-saferedit-pref-show-editinguser": "Monstrar le redactor actual",
-	"bs-saferedit-pref-show-editinguser-help": "Adde al initio del pagina le nomine del usator qui modifica actualmente le pagina"
+	"bs-saferedit-pref-show-editinguser-help": "Adde al initio del pagina le nomine del usator qui modifica actualmente le pagina",
+	"bs-saferedit-anonymous-editor": "Usator anonyme"
 }

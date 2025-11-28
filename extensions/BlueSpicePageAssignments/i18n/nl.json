@@ -91,5 +91,6 @@
 	"bs-pageassignments-header-action-delete": "Verwijderen",
 	"bs-pageassignments-title-edit": "Toewijzingen bewerken",
 	"bs-pageassignments-title-delete": "Toewijzingen intrekken",
-	"bs-pageassignments-show-unassigned-pages": "Niet-toegewezen pagina’s weergeven"
+	"bs-pageassignments-show-unassigned-pages": "Niet-toegewezen pagina’s weergeven",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Toegewezen en niet toegewezen pagina’s in de geselecteerde periode, te filteren op categorie en naamruimte"
 }

@@ -53,8 +53,8 @@ class AddNewTemplate implements SkinTemplateNavigation__UniversalHook, BlueSpice
 		$title = $sktemplate->getTitle();
 		if ( $title->isSpecial( 'PDFTemplatesOverview' ) ) {
 			$links['actions']['pdfcreator-create-new-template'] = [
-				'text' => $sktemplate->msg( 'pdfcreator-action-create-template-text' )->plain(),
-				'title' => $sktemplate->msg( 'pdfcreator-action-create-template-title' )->plain(),
+				'text' => $sktemplate->msg( 'pdfcreator-action-create-template-text' )->text(),
+				'title' => $sktemplate->msg( 'pdfcreator-action-create-template-title' )->text(),
 				'href' => '',
 				'class' => 'new-template-action',
 				'id' => 'ca-pdfcreator-create-new-template',

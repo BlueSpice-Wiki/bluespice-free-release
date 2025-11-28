@@ -10,5 +10,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Edit keyword",
 	"menueditor-ui-menu-keyword-usersidebar-label": "Keyword",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Edit keyword",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "Keyword"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Keyword",
+	"bs-usersidebar-empty-menu-label": "No entries available"
 }

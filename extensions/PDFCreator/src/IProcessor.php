@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\PDFCreator;
 
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
+use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 
 interface IProcessor {
 

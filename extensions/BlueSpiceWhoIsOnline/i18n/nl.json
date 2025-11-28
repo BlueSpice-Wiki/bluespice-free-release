@@ -33,5 +33,6 @@
 	"bs-whoisonline-droplet-count-name": "Aantal ingelogde gebruikers",
 	"bs-whoisonline-droplet-count-description": "Aantal momenteel ingelogde gebruikers",
 	"bs-whoisonline-droplet-popup-name": "Lijst met ingelogde gebruikers",
-	"bs-whoisonline-droplet-popup-description": "Pop-up met een lijst van alle gebruikers die momenteel zijn aangemeld"
+	"bs-whoisonline-droplet-popup-description": "Pop-up met een lijst van alle gebruikers die momenteel zijn aangemeld",
+	"bs-whoisonline-statistics-report-login-number-desc": "Dagelijkse aanmeldingen gedurende de geselecteerde periode"
 }

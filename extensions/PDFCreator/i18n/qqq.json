@@ -35,8 +35,6 @@
 	"pdfcreator-toc-page-label": "Label for pdf page with table of contents",
 	"pdfcreator-dialog-button-title": "Button title to open export dialog",
 	"pdfcreator-dialog-button-text": "Aria label for button to export page",
-	"pdfcreator-config-suppress-namespace": "Label for input field to set config variable to suppress page namespace in pdf",
-	"pdfcreator-config-suppress-namespace-help": "Help text for input field to suppress page namespace in pdf",
 	"pdfcreator-config-default-pdf-template": "Label for input field to set config variable for default export template",
 	"pdfcreator-config-default-pdf-template-help": "Help text for input field to set default export template",
 	"pdfcreator-config-coverbackground": "Label for input field to set config variable for cover background image for PDF templates",

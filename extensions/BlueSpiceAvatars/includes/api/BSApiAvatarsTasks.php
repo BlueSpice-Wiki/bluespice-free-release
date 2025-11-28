@@ -64,7 +64,7 @@ class BSApiAvatarsTasks extends BSApiTasksBase {
 			throw new MWException( 'FATAL: Avatar thumbs could no be deleted!' );
 		}
 
-		$oResponse->message = $this->msg( 'bs-avatars-upload-complete' )->plain();
+		$oResponse->message = $this->msg( 'bs-avatars-upload-complete' )->text();
 		$oResponse->success = true;
 		return $oResponse;
 	}
@@ -83,11 +83,12 @@ class BSApiAvatarsTasks extends BSApiTasksBase {
 
 		$oUser = $this->getUser();
 		\BlueSpice\Avatars\Extension::unsetUserImage( $oUser );
+		/** @var Generator */
 		$generator = $this->services->getService( 'BSAvatarsAvatarGenerator' );
 		$generator->generate( $oUser, [ Generator::PARAM_OVERWRITE => true ] );
 
 		$oResponse->success = true;
-		$oResponse->message = $this->msg( 'bs-avatars-generate-complete' )->plain();
+		$oResponse->message = $this->msg( 'bs-avatars-generate-complete' )->text();
 		return $oResponse;
 	}
 

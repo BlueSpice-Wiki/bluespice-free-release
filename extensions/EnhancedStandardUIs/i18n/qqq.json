@@ -73,8 +73,18 @@
 	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Label for expand button to show subpages of a page",
 	"enhancedpreferences": "Title for Special:EnhancedPreferences",
 	"enhanced-pref-username": "Username field in [[Special:Preferences]].\nParameters:\n* $1 - username",
-	"enhanced-prefs-memberingroups": "Usergroups list shown in preferences nParameters:\n* $1 - number of groups\n* $2 - username",
+	"enhanced-prefs-memberingroups": "Usergroups list shown in preferences \nParameters:\n* $1 - number of groups\n* $2 - username",
 	"enhanced-standard-uis-preferences-date-label": "Label for date format radio group",
 	"enhanced-standard-uis-prefs-panel-search-label": "Label for search input field\n{{Identical:Search}}",
-	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Aria label for dialog to select preview, meta data and version history of a file"
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Aria label for dialog to select preview, meta data and version history of a file",
+	"enhanced-standard-uis-prefs-reset-dlg-title": "Title for dialog to confirm reset to default preferences",
+	"enhanced-standard-uis-prefs-reset-dlg-action-label": "Label for action in dialog to reset preferences",
+	"enhanced-standard-uis-prefs-reset-dlg-confirm-label": "Confirmation label when user wants to reset user preferences to default",
+	"enhanced-standard-uis-prefs-reset-button-label": "Button label to reset to default preferences",
+	"enhanced-standard-uis-prefs-reset-not-allowed-label": "API error if user has no permission to edit user preferences",
+	"enhanced-standard-uis-prefs-reset-notify": "Notification message shown after preferences have been reset to default",
+	"enhanced-standard-uis-prefs-menu-aria-label": "Aria label for select options on Special:EnhancedPreferences to select a section with preferences",
+	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Aria label for button select widget to select view mode of files",
+	"enhanced-standard-uis-paginator-page-aria-label": "Aria label for page buttons in paginator.\nParameters:\n* $1 - number of page",
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Aria label for section headings on Special:Pages.\nParameters:\n* $1 - index letter"
 }

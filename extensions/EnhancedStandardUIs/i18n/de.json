@@ -3,6 +3,7 @@
 		"authors": [
 			"Justman10000",
 			"Miriam Schlindwein",
+			"Mschlindwein",
 			"PretzelRocky"
 		]
 	},
@@ -22,10 +23,10 @@
 	"enhanced-standard-uis-allpages-include-redirect": "Weiterleitungen anzeigen",
 	"enhanced-standard-uis-allpages-config-ns": "Namensraumauswahl konfigurieren",
 	"enhanced-standard-uis-allpages-config": "Konfiguration",
-	"enhanced-standard-uis-allpages-paginator-first": "Erste",
-	"enhanced-standard-uis-allpages-paginator-previous": "Vorherige",
-	"enhanced-standard-uis-allpages-paginator-next": "Nächste",
-	"enhanced-standard-uis-allpages-paginator-last": "Letzte",
+	"enhanced-standard-uis-allpages-paginator-first": "Erste Seite",
+	"enhanced-standard-uis-allpages-paginator-previous": "Vorherige Seite",
+	"enhanced-standard-uis-allpages-paginator-next": "Nächste Seite",
+	"enhanced-standard-uis-allpages-paginator-last": "Letzte Seite",
 	"enhanced-standard-uis-allpages-redirect-title": "Weiterleitung",
 	"enhancedfilelist": "Dateiliste",
 	"enhanced-standard-uis-filelist-grid-file-title": "Dateiname",
@@ -78,5 +79,15 @@
 	"enhanced-prefs-memberingroups": "{{GENDER:$2|Mitglied}} der {{PLURAL:$1|Gruppe|Gruppen}}",
 	"enhanced-standard-uis-preferences-date-label": "Anzeigeformat auswählen",
 	"enhanced-standard-uis-prefs-panel-search-label": "Suche",
-	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Informationen zur Datei"
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Informationen zur Datei",
+	"enhanced-standard-uis-prefs-reset-dlg-title": "Auf Standardeinstellungen zurücksetzen",
+	"enhanced-standard-uis-prefs-reset-dlg-action-label": "Zurücksetzen",
+	"enhanced-standard-uis-prefs-reset-dlg-confirm-label": "Bist du dir sicher, dass du die Einstellungen auf die Standardeinstellungen zurücksetzen möchtest? Dies kann nicht rückgängig gemacht werden.",
+	"enhanced-standard-uis-prefs-reset-button-label": "Auf Standardeinstellungen zurücksetzen",
+	"enhanced-standard-uis-prefs-reset-not-allowed-label": "Du bist nicht berechtigt die Benutzereinstellungen zurückzusetzen",
+	"enhanced-standard-uis-prefs-reset-notify": "Die Einstellungen wurden auf die Standardeinstellungen zurückgesetzt",
+	"enhanced-standard-uis-prefs-menu-aria-label": "Abschnitte der Einstellungen",
+	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Ansichtsmodus auswählen",
+	"enhanced-standard-uis-paginator-page-aria-label": "Seite $1",
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Seiten beginnend mit $1"
 }

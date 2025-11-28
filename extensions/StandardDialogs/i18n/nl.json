@@ -62,5 +62,12 @@
 	"standarddialogs-page-info-page-no-categories-label": "Deze pagina bevat geen categorieën",
 	"standarddialogs-page-info-page-no-links-label": "Deze pagina bevat geen koppelingen",
 	"standarddialogs-page-info-page-no-extlinks-label": "Deze pagina bevat geen externe koppelingen",
-	"standarddialogs-validation-page-exist-info-label": "Er is al een pagina met deze titel. Kies een andere naam."
+	"standarddialogs-validation-page-exist-info-label": "Er is al een pagina met deze titel. Kies een andere naam.",
+	"standarddialogs-delete-btn-label": "Verwijderen",
+	"standarddialogs-move-btn-label": "Hernoemen",
+	"standarddialogs-copy-btn-label": "Kopiëren",
+	"standarddialogs-new-page-btn-label": "Aanmaken",
+	"standarddialogs-new-subpage-btn-label": "Aanmaken",
+	"standarddialogs-protect-btn-label": "Beveiligen",
+	"standarddialogs-purge-btn-label": "Vernieuwen"
 }

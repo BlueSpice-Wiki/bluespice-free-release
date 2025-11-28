@@ -104,7 +104,7 @@ class VueJsPlusModule extends FileModule {
 	 * @param Context $context
 	 */
 	private function setup( $context ) {
-		if ( $this->setupComplete ) {
+		if ( $this->setupComplete || defined( 'MW_QUIBBLE_CI' ) ) {
 			return;
 		}
 		$files = $this->getVueJSPlusFiles( $context );

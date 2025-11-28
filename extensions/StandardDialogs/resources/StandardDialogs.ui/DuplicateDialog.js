@@ -18,6 +18,10 @@ StandardDialogs.ui.DuplicateDialog.prototype.makeSetupProcessData = function () 
 	return data;
 };
 
+StandardDialogs.ui.DuplicateDialog.prototype.getPrimaryActionLabel = function () {
+	return mw.message( 'standarddialogs-copy-btn-label' ).plain();
+};
+
 StandardDialogs.ui.DuplicateDialog.prototype.getFormItems = function () {
 	this.mainInput = this.targetTitle = new OOJSPlus.ui.widget.TitleInputWidget( {
 		id: this.elementId + '-tf-target',

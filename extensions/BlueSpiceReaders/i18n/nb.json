@@ -35,5 +35,7 @@
 	"bs-readers-header-revision-date": "Sideversjonsdato",
 	"bs-readers-header-read-on": "Lest",
 	"revisionreaders": "Lesere etter sideversjon av «$1»",
-	"bs-readers-info-dialog": "Lesere av denne siden"
+	"bs-readers-info-dialog": "Lesere av denne siden",
+	"bs-readers-info-dialog-column-readers": "Lesere",
+	"bs-readers-permission-error": "Tillatelsesfeil"
 }

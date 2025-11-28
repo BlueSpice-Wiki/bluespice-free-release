@@ -51,17 +51,21 @@ StandardDialogs.ui.BaseDialog.prototype.makeSetupProcessData = function () {
 		actions: [
 			{
 				action: 'done',
-				label: mw.message( 'standarddialogs-btn-done' ).plain(),
+				label: this.getPrimaryActionLabel(),
 				flags: [ 'primary', 'progressive' ],
 				id: this.elementId + '-btn-done'
 			},
 			{
-				label: mw.message( 'standarddialogs-btn-cancel' ).plain(),
-				flags: 'safe',
+				title: mw.message( 'standarddialogs-btn-cancel' ).plain(),
+				flags: [ 'safe', 'close' ],
 				id: this.elementId + '-btn-cancel'
 			}
 		]
 	};
+};
+
+StandardDialogs.ui.BaseDialog.prototype.getPrimaryActionLabel = function () {
+	return mw.message( 'standarddialogs-btn-done' ).plain();
 };
 
 // Stub to be overwritten by subclass

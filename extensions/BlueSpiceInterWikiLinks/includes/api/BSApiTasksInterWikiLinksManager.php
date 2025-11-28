@@ -117,7 +117,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		if ( !empty( $oldPrefix ) && !$this->interWikiLinkExists( $oldPrefix ) ) {
 			$return->errors[] = [
 				'id' => 'iweditprefix',
-				'message' => wfMessage( 'bs-interwikilinks-nooldpfx' )->plain()
+				'message' => wfMessage( 'bs-interwikilinks-nooldpfx' )->text()
 			];
 		} elseif ( !empty( $prefix )
 			&& $this->interWikiLinkExists( $prefix )
@@ -125,7 +125,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 			) {
 			$return->errors[] = [
 				'id' => 'iweditprefix',
-				'message' => wfMessage( 'bs-interwikilinks-pfxexists' )->plain()
+				'message' => wfMessage( 'bs-interwikilinks-pfxexists' )->text()
 			];
 		}
 		if ( !empty( $return->errors ) ) {
@@ -135,13 +135,13 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		if ( !$oPrefix && empty( $url ) ) {
 			$return->errors[] = [
 				'id' => 'iwediturl',
-				'message' => wfMessage( 'bs-interwikilinks-nourl' )->plain()
+				'message' => wfMessage( 'bs-interwikilinks-nourl' )->text()
 			];
 		}
 		if ( !$oPrefix && empty( $prefix ) ) {
 			$return->errors[] = [
 				'id' => 'iweditprefix',
-				'message' => wfMessage( 'bs-interwikilinks-nopfx' )->plain()
+				'message' => wfMessage( 'bs-interwikilinks-nopfx' )->text()
 			];
 		}
 		if ( !empty( $url ) ) {
@@ -161,7 +161,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 					'id' => 'iwediturl',
 					'message' => wfMessage(
 						'bs-interwikilinks-invalid-url-spc'
-					)->plain()
+					)->text()
 				];
 			}
 		}
@@ -171,7 +171,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 					'id' => 'iweditprefix',
 					'message' => wfMessage(
 						'bs-interwikilinks-pfxtoolong'
-					)->plain()
+					)->text()
 				];
 			}
 
@@ -184,7 +184,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 					'id' => 'iweditprefix',
 					'message' => wfMessage(
 						'bs-interwikilinks-invalid-pfx-spc'
-					)->plain()
+					)->text()
 				];
 				break;
 			}
@@ -213,7 +213,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 			$return->success = true;
 			$return->message = wfMessage(
 				'bs-interwikilinks-link-created'
-			)->plain();
+			)->text();
 
 			\BlueSpice\InterWikiLinks\Extension::purgeTitles( $prefix );
 			$this->services->getInterwikiLookup()->invalidateCache( $prefix );
@@ -230,7 +230,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		$return->success = true;
 		$return->message = wfMessage(
 			'bs-interwikilinks-link-edited'
-		)->plain();
+		)->text();
 
 		\BlueSpice\InterWikiLinks\Extension::purgeTitles( $oldPrefix );
 		$this->services->getInterwikiLookup()->invalidateCache( $oldPrefix );
@@ -253,7 +253,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		if ( empty( $prefix ) ) {
 			$return->errors[] = [
 				'id' => 'iweditprefix',
-				'message' => wfMessage( 'bs-interwikilinks-nopfx' )->plain()
+				'message' => wfMessage( 'bs-interwikilinks-nopfx' )->text()
 			];
 			return $return;
 		}
@@ -261,7 +261,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		if ( !$this->interWikiLinkExists( $prefix ) ) {
 			$return->errors[] = [
 				'id' => 'iweditprefix',
-				'message' => wfMessage( 'bs-interwikilinks-nooldpfx' )->plain()
+				'message' => wfMessage( 'bs-interwikilinks-nooldpfx' )->text()
 			];
 			return $return;
 		}
@@ -275,7 +275,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 		if ( $return->success ) {
 			$return->message = wfMessage(
 				'bs-interwikilinks-link-deleted'
-			)->plain();
+			)->text();
 		}
 
 		// Make sure to invalidate as much as possible!

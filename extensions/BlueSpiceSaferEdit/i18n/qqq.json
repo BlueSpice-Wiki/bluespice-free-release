@@ -15,5 +15,6 @@
 	"bs-saferedit-pref-edit-interval": "Label for config variable \"SaferEditInterval\"",
 	"bs-saferedit-pref-edit-interval-help": "Description for config variable \"SaferEditInterval\"",
 	"bs-saferedit-pref-show-editinguser": "Label for config variable \"SaferEditShowNameOfEditingUser\"",
-	"bs-saferedit-pref-show-editinguser-help": "Description for config variable \"SaferEditShowNameOfEditingUser\""
+	"bs-saferedit-pref-show-editinguser-help": "Description for config variable \"SaferEditShowNameOfEditingUser\"",
+	"bs-saferedit-anonymous-editor": "Label for anonymous editor"
 }

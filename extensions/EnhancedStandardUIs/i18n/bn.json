@@ -28,5 +28,6 @@
 	"enhancedspecialpages": "বিশেষ পাতাসমূহ",
 	"enhanced-standard-uis-allpages-namespace-list-label": "নামস্থান",
 	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "{{PLURAL:$1|একটি|$1টি}} পাতা রয়েছে",
-	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "উপপাতা"
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "উপপাতা",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "ফাইল সম্পর্কে তথ্য"
 }
