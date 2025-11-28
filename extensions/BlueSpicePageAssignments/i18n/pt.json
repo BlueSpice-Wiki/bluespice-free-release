@@ -75,5 +75,9 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas",
 	"bs-pageassignments-notification-pagereview-summary": "$1 reviu $3",
 	"bs-pageassignments-notification-pagereview-subject": "Revisão da página $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 reviu a página $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 reviu a página $2.",
+	"bs-pageassignments-column-assignee-type": "Tipo",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Atribuir",
+	"bs-pageassignments-header-action-edit": "Editar",
+	"bs-pageassignments-header-action-delete": "Eliminar"
 }

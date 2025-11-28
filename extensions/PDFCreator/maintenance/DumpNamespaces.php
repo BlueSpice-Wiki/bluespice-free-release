@@ -294,7 +294,7 @@ class DumpNamespaces extends Maintenance {
 			}
 			$options = [];
 			$specs[] = new ExportSpecification(
-				'batch', 'page', '', 'filesystem', '', $pageSpecs, $params, $options
+				'batch', 'page', 'filesystem', '', $pageSpecs, $params, $options
 			);
 		}
 		return $specs;

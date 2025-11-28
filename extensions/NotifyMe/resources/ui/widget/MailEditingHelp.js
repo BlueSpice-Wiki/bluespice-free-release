@@ -59,7 +59,7 @@ ext.notifyme.ui.widget.MailEditingHelp.prototype.makePage = function ( type, dat
 
 		const headerMsg = mw.message( 'notifyme-mail-template-edit-help-' + this.type ); // eslint-disable-line mediawiki/msg-doc
 		if ( headerMsg.exists() ) {
-			this.$element.append( headerMsg.plain() );
+			this.$element.append( headerMsg.text() );
 		}
 		const renderFunction = 'render' + this.type.charAt( 0 ).toUpperCase() + this.type.slice( 1 );
 		if ( typeof parent[ renderFunction ] === 'function' ) {

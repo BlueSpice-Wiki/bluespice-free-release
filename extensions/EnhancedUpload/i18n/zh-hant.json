@@ -94,5 +94,6 @@
 	"enhancedupload-preview-widget-remove-label": "移除$1",
 	"enhancedupload-reset-button-label": "重設",
 	"enhancedupload-ve-file-dialog-title": "檔案",
-	"enhancedupload-ve-file-dialog-filename-label": "檔案名稱"
+	"enhancedupload-ve-file-dialog-filename-label": "檔案名稱",
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|這個|這些}}上傳檔案出現{{PLURAL:$1|一個警告|警告}}"
 }

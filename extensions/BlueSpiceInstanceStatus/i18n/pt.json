@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mansil alfalb"
+		]
+	},
+	"instancestatus": "Estado da instância",
+	"bs-instancestatus-instance-status-bs-version-label": "Versão de BlueSpice",
+	"bs-instancestatus-instance-status-no-info": "Indisponível",
+	"bs-instancestatus-instance-status-main-label": "Geral"
+}

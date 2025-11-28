@@ -160,7 +160,8 @@
 			"EGobi",
 			"Jessicamss93",
 			"BraunOBruno",
-			"ACheJu"
+			"ACheJu",
+			"Rkieferbaum"
 		]
 	},
 	"sunday": "domingo",
@@ -231,8 +232,6 @@
 	"index-category": "Páginas indexadas",
 	"noindex-category": "Páginas não indexadas",
 	"broken-file-category": "Páginas com ligações inválidas para arquivos",
-	"categoryviewer-pagedlinks": "($1) ($2)",
-	"category-header-numerals": "$1–$2",
 	"about": "Sobre",
 	"article": "Página de conteúdo",
 	"newwindow": "(abre numa nova janela)",
@@ -3320,7 +3319,6 @@
 	"mcrundo-changed": "Esta página foi alterada desde que começou a ver as diferenças. Reveja a nova mudança, por favor.",
 	"mcrundo-parse-failed": "Falha ao analisar a nova revisão: $1",
 	"semicolon-separator": ";&#32;",
-	"comma-separator": ",&#32;",
 	"colon-separator": ":&#32;",
 	"ellipsis": "...",
 	"percent": "$1%",

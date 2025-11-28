@@ -60,8 +60,19 @@ class ExportPageFactory implements LoggerAwareInterface {
 			$dom = $provider->getDOMDocument( $pageSpec, $template, $context, $workspace );
 		}
 
+		$label = $pageSpec->getLabel();
+		$heading = $dom->getElementById( $pageSpec->getUniqueId() );
+
+		$headings = $dom->getElementsByTagName( 'h1' );
+		foreach ( $headings as $heading ) {
+			$class = $heading->getAttribute( 'class' );
+			if ( str_contains( $class, 'firstHeading' ) ) {
+				$label = $heading->nodeValue;
+			}
+		}
+
 		return new ExportPage(
-			$pageSpec->getType(), $dom, $pageSpec->getLabel(),
+			$pageSpec->getType(), $dom, $label,
 			$pageSpec->getPrefixedDBKey(), $pageSpec->getParams(), $pageSpec->getUniqueId()
 		);
 	}

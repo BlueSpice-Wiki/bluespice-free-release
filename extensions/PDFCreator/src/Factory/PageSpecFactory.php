@@ -118,12 +118,21 @@ class PageSpecFactory implements LoggerAwareInterface {
 
 		$label = '';
 		if ( isset( $data['label'] ) && $data['label'] !== '' ) {
-			$label = $data['label'];
+			$label = htmlspecialchars( $data['label'] );
+			$params['force-label'] = true;
 		} elseif ( $title instanceof Title ) {
 			$label = $this->getLabelFromTitle( $title, $options );
 		}
 		if ( $label === '' ) {
 			return null;
+		}
+
+		if ( $title instanceof Title ) {
+			$props = $this->pageProps->getProperties( $title, 'displaytitle' );
+			$id = $title->getId();
+			if ( isset( $props[$id] ) ) {
+				$params['display-title'] = $props[$id];
+			}
 		}
 
 		return new PageSpec( $type, $label, $target, $revId, $params );
@@ -135,11 +144,6 @@ class PageSpecFactory implements LoggerAwareInterface {
 	 * @return string
 	 */
 	private function getLabelFromTitle( Title $title, array $options ): string {
-		$props = $this->pageProps->getProperties( $title, 'displaytitle' );
-		$id = $title->getId();
-		if ( isset( $props[$id] ) ) {
-			return $props[$id];
-		}
 		if ( $this->showNamespace( $options ) ) {
 			return $title->getPrefixedText();
 		}

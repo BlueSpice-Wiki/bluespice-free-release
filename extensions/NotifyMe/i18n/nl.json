@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
 	"notifyme-desc": "Meldingen",
@@ -189,8 +190,8 @@
 	"notifyme-notification-center-timestamp-ago": "$1 geleden",
 	"notifyme-notification-center-no-new-notifications-label": "Er zijn geen nieuwe meldingen",
 	"notifyme-navbar-button-aria-label-unread-notifications": "U hebt $1 ongelezen melding{{PLURAL:$1||en}}",
-	"notifyme-notification-center-pagination-aria-next": "Volgende",
-	"notifyme-notification-center-pagination-aria-previous": "Vorige",
+	"notifyme-notification-center-pagination-aria-next": "Volgende pagina",
+	"notifyme-notification-center-pagination-aria-previous": "Vorige pagina",
 	"notifyme-notification-center-navigation-hint": "Tip: u kunt de pijltjestoetsen naar links en naar rechts gebruiken om te navigeren tussen de tabbladen in de lijst.",
 	"notifyme-notification-center-filter-item-aria-label": "Filter $1",
 	"notifyme-bucket-content-low-freq-label": "Gebeurtenissen die minder vaak voorkomen",
@@ -207,5 +208,6 @@
 	"notifyme-ui-delivery-label": "Aflevering",
 	"prefs-subs": "Meldingsabonnementen",
 	"notifyme-notification-filter-count-aria-label": "bevat {{PLURAL:$1|één melding|$1 meldingen}}",
-	"notifyme-notification-filter-aria-label": "Meldingsfilter"
+	"notifyme-notification-filter-aria-label": "Meldingsfilter",
+	"notifyme-notification-center-pagination-number-aria-label": "Meldingen $1 tot $2 worden weergegeven"
 }

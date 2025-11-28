@@ -32,7 +32,7 @@ ext.pdfcreator.ui.dialog.ExportDialog.static.actions = [
 	},
 	{
 		label: mw.message( 'cancel' ).text(),
-		flags: 'safe'
+		flags: [ 'safe', 'close' ]
 	}
 ];
 

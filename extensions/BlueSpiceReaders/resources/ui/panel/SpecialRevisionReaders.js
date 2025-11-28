@@ -37,26 +37,26 @@ ext.bluespice.readers.ui.panel.SpecialRevisionReaders.prototype.setupGridConfig 
 		style: 'differentiate-rows',
 		columns: {
 			readers_user_name: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-readers-header-read-by' ).plain(),
+				headerText: mw.message( 'bs-readers-header-read-by' ).text(),
 				type: 'user',
 				showImage: true,
 				sortable: true,
 				filter: { type: 'user' }
 			},
 			readers_rev_id: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-readers-header-revision-id' ).plain(),
+				headerText: mw.message( 'bs-readers-header-revision-id' ).text(),
 				type: 'number',
 				sortable: true,
 				filter: { type: 'number' }
 			},
 			rev_datetime: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-readers-header-revision-date' ).plain(),
+				headerText: mw.message( 'bs-readers-header-revision-date' ).text(),
 				type: 'date',
 				sortable: true,
 				filter: { type: 'date' }
 			},
 			readers_ts: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-readers-header-read-on' ).plain(),
+				headerText: mw.message( 'bs-readers-header-read-on' ).text(),
 				type: 'date',
 				sortable: true,
 				filter: { type: 'date' },

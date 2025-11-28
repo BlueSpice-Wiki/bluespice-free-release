@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mansil alfalb"
+		]
+	},
+	"enhanced-standard-uis-allpages-paginator-first": "Primeira página",
+	"enhanced-standard-uis-allpages-paginator-previous": "Página anterior",
+	"enhanced-standard-uis-allpages-paginator-next": "Página seguinte",
+	"enhanced-standard-uis-allpages-paginator-last": "Última página",
+	"enhanced-standard-uis-paginator-page-aria-label": "Página $1",
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Páginas começando com $1"
+}

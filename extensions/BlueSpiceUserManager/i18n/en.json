@@ -8,7 +8,6 @@
 	"bs-usermanager-idnotexist": "This user does not exist.",
 	"bs-usermanager-invalid-pwd": "The password is invalid.",
 	"bs-usermanager-invalid-email-gen": "The email address is invalid.",
-	"bs-usermanager-label": "User manager",
 	"bs-usermanager-text": "Users",
 	"bs-usermanager-user-exists": "The username already exists.",
 	"bs-usermanager-headerusername": "Username",
@@ -52,5 +51,7 @@
 	"bs-usermanager-showenabled": "Show active users",
 	"bs-usermanager-mass-enable": "Activate users",
 	"bs-usermanager-mass-disable": "Deactivate users",
-	"bs-usermanager-error-generic": "An error occurred"
+	"bs-usermanager-error-generic": "An error occurred",
+	"bs-usermanager-invalid-realname": "The real name is invalid",
+	"bs-usermanager-password-repeat-mismatch-label": "The passwords do not match. Please check your entry."
 }

@@ -20,10 +20,10 @@
 		}
 
 		const typeFilter = {
-			label: mw.message( 'bs-extendedsearch-search-center-filter-type-label' ).plain(),
+			label: mw.message( 'bs-extendedsearch-search-center-filter-type-label' ).text(),
 			filter: {
-				label: mw.message( 'bs-extendedsearch-search-center-filter-type-label' ).plain(),
-				valueLabel: mw.message( 'bs-extendedsearch-search-center-filter-type-with-values-label' ).plain(),
+				label: mw.message( 'bs-extendedsearch-search-center-filter-type-label' ).text(),
+				valueLabel: mw.message( 'bs-extendedsearch-search-center-filter-type-with-values-label' ).text(),
 				hasHiddenLabelKey: 'bs-extendedsearch-search-center-filter-has-hidden',
 				id: 'type',
 				options: [],
@@ -35,7 +35,7 @@
 			const type = availableTypes[ idx ];
 			let message = type;
 			if ( mw.message( 'bs-extendedsearch-source-type-' + type + '-label' ).exists() ) { // eslint-disable-line mediawiki/msg-doc
-				message = mw.message( 'bs-extendedsearch-source-type-' + type + '-label' ).plain(); // eslint-disable-line mediawiki/msg-doc
+				message = mw.message( 'bs-extendedsearch-source-type-' + type + '-label' ).text(); // eslint-disable-line mediawiki/msg-doc
 			}
 
 			typeFilter.filter.options.push( {
@@ -63,8 +63,8 @@
 			const rawFilter = rawFilters[ filterId ];
 			// TODO: Change this with some mechanism to get label keys
 			const labelFilterId = filterId.replace( '.', '-' );
-			const label = rawFilter.label || mw.message( 'bs-extendedsearch-search-center-filter-' + labelFilterId + '-label' ).plain(); // eslint-disable-line mediawiki/msg-doc
-			const valueLabel = rawFilter.valueLabel || mw.message( 'bs-extendedsearch-search-center-filter-' + labelFilterId + '-with-values-label' ).plain(); // eslint-disable-line mediawiki/msg-doc
+			const label = rawFilter.label || mw.message( 'bs-extendedsearch-search-center-filter-' + labelFilterId + '-label' ).text(); // eslint-disable-line mediawiki/msg-doc
+			const valueLabel = rawFilter.valueLabel || mw.message( 'bs-extendedsearch-search-center-filter-' + labelFilterId + '-with-values-label' ).text(); // eslint-disable-line mediawiki/msg-doc
 			const filter = {
 				label: label,
 				group: rawFilter.group || 'root',
@@ -254,6 +254,7 @@
 
 		const queryData = bs.extendedSearch.utils.getFragment();
 		if ( $.isEmptyObject( queryData ) || searchBar.$searchBox.val() === '' ) {
+			mw.hook( 'bs.extendedsearch.searchcenter.getResults' ).fire( $searchCnt, { total: 0, results: [] }, {} );
 			bs.extendedSearch.SearchCenter.removeLoading();
 			$resultCnt.append( new bs.extendedSearch.ResultMessage( {
 				mode: 'help'
@@ -268,6 +269,7 @@
 		$( d ).trigger( 'BSExtendedSearchSearchCenterExecSearch', [ queryData, bs.extendedSearch.SearchCenter ] );
 
 		searchPromise.done( ( response ) => {
+			mw.hook( 'bs.extendedsearch.searchcenter.getResults' ).fire( $searchCnt, response, queryData );
 			if ( response.exception ) {
 				bs.extendedSearch.SearchCenter.removeLoading();
 				$resultCnt.trigger( 'resultsReady' );

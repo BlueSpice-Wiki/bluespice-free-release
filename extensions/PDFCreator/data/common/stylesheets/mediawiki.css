@@ -547,3 +547,8 @@ select > option[selected] {
 .noprint {
 	display: none;
 }
+
+.pdf-correct-image-width {
+	max-width: 100%;
+	height: auto;
+}

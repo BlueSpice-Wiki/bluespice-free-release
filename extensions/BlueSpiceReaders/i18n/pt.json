@@ -3,6 +3,7 @@
 		"authors": [
 			"Hamilton Abreu",
 			"Macofe",
+			"Mansil alfalb",
 			"Vitorvicentevalente"
 		]
 	},
@@ -34,5 +35,7 @@
 	"bs-readers-header-revision-date": "Data da revisão",
 	"bs-readers-header-read-on": "Lida em",
 	"revisionreaders": "Leitores por revisão de \"$1\"",
-	"bs-readers-info-dialog": "Leitores desta página"
+	"bs-readers-info-dialog": "Leitores desta página",
+	"bs-readers-info-dialog-column-readers": "Leitores",
+	"bs-readers-permission-error": "Erro de permissão"
 }

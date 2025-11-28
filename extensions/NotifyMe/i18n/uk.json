@@ -91,5 +91,18 @@
 	"notifyme-schema-user-timestamp": "Часова мітка сповіщення, відформатована відповідно до налаштувань цільового користувача",
 	"notifyme-schema-target-user": "Користувач, якому призначене сповіщення",
 	"notifyme-schema-source-providers": "Список постачальників джерел, які ініціювали сповіщення (пояснює, чому користувач отримав сповіщення)",
-	"notifyme-schema-source-providers-key": "Ключ постачальника джерела"
+	"notifyme-schema-source-providers-key": "Ключ постачальника джерела",
+	"notifyme-schema-source-providers-description": "Опис постачальника джерела",
+	"notifyme-schema-source-providers-link": "Посилання на місце, де користувач може змінити налаштування (якщо застосовно)",
+	"notifyme-mail-template-edit-help-colors": "Доступні такі змінні кольорів. Вони будуть автоматично підлаштовані відповідно до кольорів оформлення вікі.",
+	"notifyme-mail-template-edit-help-int": "Повідомлення інтернаціоналізації можна використовувати в контенті через<pre><nowiki> {{int:ключ-повідомлення}}</nowiki></pre>",
+	"notifyme-mail-template-edit-help-logo": "Щоб додати логотип вашої вікі, який встановлено в оформленні, використовуйте<pre>&lt;img src=\"{{logo}}\" alt=\"Логотип вікі\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-category-params": "Змінні вмісту",
+	"notifyme-mail-template-edit-help-category-logo": "Логотип",
+	"notifyme-mail-template-edit-help-category-int": "Інтернаціоналізація",
+	"notifyme-mail-template-edit-help-category-colors": "Кольори",
+	"notifyme-mail-template-edit-help-header-variable": "Змінна",
+	"notifyme-mail-template-edit-help-header-description": "Опис",
+	"notifyme-mail-template-edit-help-header-example": "Приклад",
+	"notifyme-mail-template-edit-help-button-label": "Допомога з вмістом пошти"
 }

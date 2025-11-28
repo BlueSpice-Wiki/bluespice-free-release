@@ -27,13 +27,13 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.setupGridConfig = functi
 		style: 'differentiate-rows',
 		columns: {
 			iw_prefix: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-interwikilinks-headerprefix' ).plain(),
+				headerText: mw.message( 'bs-interwikilinks-headerprefix' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' }
 			},
 			iw_url: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-interwikilinks-headerurl' ).plain(),
+				headerText: mw.message( 'bs-interwikilinks-headerurl' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' }
@@ -108,7 +108,7 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.getToolbarActions = func
 	return [
 		this.getAddAction( {
 			icon: 'add',
-			title: mw.message( 'bs-interwikilinks-titleaddinterwikilink' ).plain(),
+			title: mw.message( 'bs-interwikilinks-titleaddinterwikilink' ).text(),
 			displayBothIconAndLabel: true
 		} )
 	];
@@ -124,13 +124,13 @@ OOJSPlus.ui.panel.ManagerGrid.prototype.getInitialAbilities = function () {
 ext.bluespice.interwikilinks.ui.panel.Manager.prototype.onAction = async function ( action, row ) {
 	if ( action === 'add' ) {
 		this.showInterwikilinksDialog( {
-			title: mw.message( 'bs-interwikilinks-titleaddinterwikilink' ).plain()
+			title: mw.message( 'bs-interwikilinks-titleaddinterwikilink' ).text()
 		} );
 	}
 	if ( action === 'edit' ) {
 		this.showInterwikilinksDialog(
 			{
-				title: mw.message( 'bs-interwikilinks-titleeditinterwikilink' ).plain(),
+				title: mw.message( 'bs-interwikilinks-titleeditinterwikilink' ).text(),
 				prefix: row.iw_prefix,
 				url: row.iw_url,
 				oldPrefix: row.iw_prefix
@@ -141,8 +141,8 @@ ext.bluespice.interwikilinks.ui.panel.Manager.prototype.onAction = async functio
 		bs.util.confirm(
 			'GMremove',
 			{
-				title: mw.message( 'bs-interwikilinks-titledeleteinterwikilink' ).plain(),
-				text: mw.message( 'bs-interwikilinks-confirmdeleteinterwikilink' ).plain()
+				title: mw.message( 'bs-interwikilinks-titledeleteinterwikilink' ).text(),
+				text: mw.message( 'bs-interwikilinks-confirmdeleteinterwikilink' ).text()
 			},
 			{
 				ok: () => {

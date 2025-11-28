@@ -6,3 +6,7 @@ vendor/**
 
 composer.lock
 composer.phar
+
+/*
+!/.vsls.json
+!/README*~

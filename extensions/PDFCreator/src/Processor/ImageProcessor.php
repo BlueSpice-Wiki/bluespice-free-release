@@ -55,8 +55,8 @@ class ImageProcessor implements IProcessor {
 		);
 		$results = $imageFinder->execute( $pages, $images );
 
-		$AttachmentUrlUpdater = new ImageUrlUpdater( $this->titleFactory );
-		$AttachmentUrlUpdater->execute( $pages, $results );
+		$imageUrlUpdater = new ImageUrlUpdater();
+		$imageUrlUpdater->execute( $pages, $results );
 
 		$imageWidthUpdater = new ImageWidthUpdater();
 		$imageWidthUpdater->execute( $pages );

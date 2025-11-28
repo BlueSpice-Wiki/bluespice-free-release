@@ -85,5 +85,6 @@
 	"enhancedupload-upload-warning-duplicate": "Ta datoteka je dvojnik",
 	"enhancedupload-upload-warning-was-deleted": "To datotečno ime je že bilo izbrisano.",
 	"enhancedupload-upload-error-duplicate": "Datoteka, ki je enaka tej datoteki ($1), je že bila izbrisana.",
-	"enhancedupload-upload-error-unhandled": "Prišlo je do neobravnavane izjeme."
+	"enhancedupload-upload-error-unhandled": "Prišlo je do neobravnavane izjeme.",
+	"enhancedupload-preview-widget-remove-label": "Odstrani $1"
 }

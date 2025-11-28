@@ -175,7 +175,13 @@ class TemplateValueInsertor {
 			return false;
 		}
 
-		$logoContent = $headerData['useWikiLogo'] ? '{{{logo}}}' : '[[File:' . $headerData['headerImage'] . ']]';
+		$logoContent = '';
+		if ( $headerData['useWikiLogo'] ) {
+			$logoContent = '{{{logo}}}';
+		} elseif ( $headerData['headerImage'] ) {
+			$logoContent = '[[File:' . $headerData['headerImage'] . ']]';
+		}
+
 		[ $logoIndex, $titleIndex ] = $headerData['leftAlign'] ? [ 0, 1 ] : [ 1, 0 ];
 
 		$this->replaceChildNodes(

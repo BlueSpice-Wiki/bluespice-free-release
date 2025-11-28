@@ -9,6 +9,7 @@ use MediaWiki\Extension\PDFCreator\Utility\AttachmentUrlUpdater;
 use MediaWiki\Extension\PDFCreator\Utility\BoolValueGet;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
 use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
+use MediaWiki\Extension\PDFCreator\Utility\WikiFileResource;
 use MediaWiki\Title\TitleFactory;
 use RepoGroup;
 
@@ -54,9 +55,10 @@ class AttachmentProcessor implements IProcessor {
 		$attachmentFinder = new AttachmentFinder(
 			$this->titleFactory, $this->config, $this->repoGroup
 		);
+
 		$results = $attachmentFinder->execute( $pages, $attachments );
 
-		$attachmentUrlUpdater = new AttachmentUrlUpdater( $this->titleFactory );
+		$attachmentUrlUpdater = new AttachmentUrlUpdater();
 		$attachmentUrlUpdater->execute( $pages, $results );
 
 		/** @var WikiFileResource */

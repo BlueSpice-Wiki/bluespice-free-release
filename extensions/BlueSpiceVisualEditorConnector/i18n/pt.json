@@ -88,5 +88,6 @@
 	"bs-visualeditorconnector-upload-type": "Tipo de carregamento",
 	"bs-visualeditorconnector-upload-type-help": "Original: o direito de carregamento é verificado. O nome do ficheiro, o espaço nominal e a categoria são editáveis. A descrição é obrigatória.\nSimples: o direito de carregamento não é verificado. O nome do ficheiro, o espaço nominal e a categoria são editáveis. A descrição é opcional.\nUm clique: o direito de carregamento não é verificado. O nome do ficheiro e a categoria não são editáveis. O espaço nominal é editável.",
 	"bs-visualeditorconnector-dialog-table-title": "Tabela",
-	"bs-visualeditorconnector-dialog-action-insert": "Inserir"
+	"bs-visualeditorconnector-dialog-action-insert": "Inserir",
+	"bs-visualeditor-save-label": "Guardar"
 }

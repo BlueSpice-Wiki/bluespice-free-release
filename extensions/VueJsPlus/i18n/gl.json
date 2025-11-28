@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"vuejsplus-desc": "Colección de compoñentes de VueJs",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Encartar",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Despregar",
+	"vuejsplus-data-grid-option-sort-string-asc": "Orde ascendente",
+	"vuejsplus-data-grid-option-sort-string-desc": "Orde descendente",
+	"vuejsplus-data-grid-option-filter-string": "Procurar",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|Atopouse unha fila|Atopáronse $1 filas}}",
+	"vuejsplus-data-grid-option-button-aria-label": "Opcións de columna $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Marcada",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Desmarcada",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Neutral",
+	"vuejsplus-data-grid-option-filter-date-from-label": "Desde a data",
+	"vuejsplus-data-grid-option-filter-date-to-label": "Ata a data"
+}

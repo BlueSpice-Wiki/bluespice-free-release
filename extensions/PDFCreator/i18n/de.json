@@ -154,5 +154,7 @@
 	"pdfcreator-tag-no-export-end-ve-label": "PDF-Ausschluss - Ende",
 	"pdfcreator-dump-namespaces-mail-body-text": "Die Namespaces von $1 wurden am $2 als PDF exportiert.",
 	"pdfcreator-dump-namespaces-mail-body-text-done": "fertig",
-	"pdfcreator-dump-namespaces-mail-body-text-fail": "fehlgeschlagen"
+	"pdfcreator-dump-namespaces-mail-body-text-fail": "fehlgeschlagen",
+	"pdfcreator-global-action-overview": "PDF-Vorlagen",
+	"pdfcreator-global-action-overview-desc": "Übersicht über alle PDF-Vorlagen im Wiki"
 }

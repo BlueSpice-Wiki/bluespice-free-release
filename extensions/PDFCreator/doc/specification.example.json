@@ -14,7 +14,7 @@
 		"debug": true,
 		"attachments": true,
 		"embed-page-toc": true,
-		"title-show-namespace": true
+		"nsPrefix": true
 	},
 	"pages": [
 		{

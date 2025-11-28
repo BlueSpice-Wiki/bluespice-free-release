@@ -70,7 +70,7 @@ class Raw implements IHtmlProvider {
 			$this->pageParamsFactory->getParams( $context->getPageIdentity(), $context->getUserIdentity() ),
 			$template->getParams()
 		);
-		$pageParams['title'] = htmlspecialchars( $pageSpec->getLabel() );
+		$pageParams['title'] = $pageSpec->getLabel();
 
 		$classes = [
 			'pdfcreator-page',

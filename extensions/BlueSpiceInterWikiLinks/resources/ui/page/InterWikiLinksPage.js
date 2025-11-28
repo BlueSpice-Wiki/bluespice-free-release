@@ -2,7 +2,7 @@ bs.util.registerNamespace( 'bs.interwikilinks.ui.page' );
 
 bs.interwikilinks.ui.page.InterWikiLinksPage = function ( cfg ) {
 	cfg = cfg || {};
-	this.title = cfg.data.title || mw.message( 'bs-interwikilinks-titleaddinterwikilink' ).plain();
+	this.title = cfg.data.title || mw.message( 'bs-interwikilinks-titleaddinterwikilink' ).text();
 	this.oldPrefix = cfg.data.oldPrefix || '';
 
 	bs.interwikilinks.ui.page.InterWikiLinksPage.parent.call( this, 'interwikilinks', cfg );
@@ -19,11 +19,11 @@ bs.interwikilinks.ui.page.InterWikiLinksPage.prototype.getItems = function () {
 	} );
 
 	this.prefixLayout = new OO.ui.FieldLayout( this.prefix, {
-		label: mw.message( 'bs-interwikilinks-labelprefix' ).plain(),
+		label: mw.message( 'bs-interwikilinks-labelprefix' ).text(),
 		align: 'top'
 	} );
 	this.urlLayout = new OO.ui.FieldLayout( this.url, {
-		label: mw.message( 'bs-interwikilinks-labelurl' ).plain(),
+		label: mw.message( 'bs-interwikilinks-labelurl' ).text(),
 		align: 'top'
 	} );
 

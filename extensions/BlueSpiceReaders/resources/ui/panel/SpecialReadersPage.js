@@ -27,14 +27,14 @@ ext.bluespice.readers.ui.panel.SpecialReadersPage.prototype.setupGridConfig = fu
 		style: 'differentiate-rows',
 		columns: {
 			user_name: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-readers-header-username' ).plain(),
+				headerText: mw.message( 'bs-readers-header-username' ).text(),
 				type: 'user',
 				showImage: true,
 				sortable: true,
 				filter: { type: 'user' }
 			},
 			user_ts: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-readers-header-ts' ).plain(),
+				headerText: mw.message( 'bs-readers-header-ts' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'date' },

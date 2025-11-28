@@ -12,7 +12,7 @@
 		bs.readers.info.ReadersInformationPage.super.prototype.setupOutlineItem.apply( this, arguments );
 
 		if ( this.outlineItem ) {
-			this.outlineItem.setLabel( mw.message( 'bs-readers-info-dialog' ).plain() );
+			this.outlineItem.setLabel( mw.message( 'bs-readers-info-dialog' ).text() );
 		}
 	};
 
