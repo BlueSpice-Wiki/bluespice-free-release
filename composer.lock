@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "54a9100c58326aeb89dba15a971a2a04",
+    "content-hash": "6913f73c602ada284dd430219ef77b96",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -66,12 +66,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAbout.git",
-                "reference": "9321754355c7d96ccddaf012a5d2a94ba61e239c"
+                "reference": "ffd9a5a9aca913bb6b044156887b584d354eb468"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAbout/zipball/9321754355c7d96ccddaf012a5d2a94ba61e239c",
-                "reference": "9321754355c7d96ccddaf012a5d2a94ba61e239c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAbout/zipball/ffd9a5a9aca913bb6b044156887b584d354eb468",
+                "reference": "ffd9a5a9aca913bb6b044156887b584d354eb468",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +119,7 @@
                 }
             ],
             "description": "Information about BlueSpice",
-            "time": "2025-07-18T13:08:11+00:00"
+            "time": "2025-09-23T12:01:28+00:00"
         },
         {
             "name": "bluespice/articleinfo",
@@ -127,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceArticleInfo",
-                "reference": "15bbecd59b7e172232a3dc257c13eea739cdba4b"
+                "reference": "22ef26e22644f4c8578172f669abed68f46a10d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceArticleInfo/zipball/15bbecd59b7e172232a3dc257c13eea739cdba4b",
-                "reference": "15bbecd59b7e172232a3dc257c13eea739cdba4b",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceArticleInfo/zipball/22ef26e22644f4c8578172f669abed68f46a10d8",
+                "reference": "22ef26e22644f4c8578172f669abed68f46a10d8",
                 "shasum": ""
             },
             "require": {
@@ -177,7 +177,7 @@
                 }
             ],
             "description": "Provides information about a page in status bar",
-            "time": "2025-07-19T20:07:23+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/authors",
@@ -185,12 +185,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAuthors.git",
-                "reference": "ef1a12e5081a77fc350a1098ce49afb97a1235bb"
+                "reference": "745353130b4bab29f76ea4c31f45c04715cfde81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAuthors/zipball/ef1a12e5081a77fc350a1098ce49afb97a1235bb",
-                "reference": "ef1a12e5081a77fc350a1098ce49afb97a1235bb",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAuthors/zipball/745353130b4bab29f76ea4c31f45c04715cfde81",
+                "reference": "745353130b4bab29f76ea4c31f45c04715cfde81",
                 "shasum": ""
             },
             "require": {
@@ -240,7 +240,7 @@
                 }
             ],
             "description": "Displays the profile picture for authors of a page",
-            "time": "2025-08-11T20:19:22+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/avatars",
@@ -248,12 +248,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAvatars.git",
-                "reference": "9bc90599348b3497748c7e8e5b2bee0652254da7"
+                "reference": "64b65b30e8c8b60095ea27b34fe7cb5e5f40a8a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAvatars/zipball/9bc90599348b3497748c7e8e5b2bee0652254da7",
-                "reference": "9bc90599348b3497748c7e8e5b2bee0652254da7",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAvatars/zipball/64b65b30e8c8b60095ea27b34fe7cb5e5f40a8a5",
+                "reference": "64b65b30e8c8b60095ea27b34fe7cb5e5f40a8a5",
                 "shasum": ""
             },
             "require": {
@@ -298,7 +298,7 @@
                 }
             ],
             "description": "Provides generic and individual user pictures",
-            "time": "2025-09-16T08:46:03+00:00"
+            "time": "2025-10-22T09:06:09+00:00"
         },
         {
             "name": "bluespice/checklist",
@@ -306,12 +306,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceChecklist.git",
-                "reference": "6c96bb23191a487dbce55f7b554762423086db62"
+                "reference": "a88013adbd3fefb01f461e520e062e36dbcc61df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceChecklist/zipball/6c96bb23191a487dbce55f7b554762423086db62",
-                "reference": "6c96bb23191a487dbce55f7b554762423086db62",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceChecklist/zipball/a88013adbd3fefb01f461e520e062e36dbcc61df",
+                "reference": "a88013adbd3fefb01f461e520e062e36dbcc61df",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +356,7 @@
                 }
             ],
             "description": "BlueSpiceChecklist provides checklist functionality",
-            "time": "2025-08-18T20:19:07+00:00"
+            "time": "2025-10-22T11:49:26+00:00"
         },
         {
             "name": "bluespice/configmanager",
@@ -364,12 +364,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceConfigManager",
-                "reference": "f803ab8d8ae7eaa270a280483c23a7b5d6e87bb5"
+                "reference": "71671c0cdcd243b21fe198686fc5aa5af89d27c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceConfigManager/zipball/f803ab8d8ae7eaa270a280483c23a7b5d6e87bb5",
-                "reference": "f803ab8d8ae7eaa270a280483c23a7b5d6e87bb5",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceConfigManager/zipball/71671c0cdcd243b21fe198686fc5aa5af89d27c7",
+                "reference": "71671c0cdcd243b21fe198686fc5aa5af89d27c7",
                 "shasum": ""
             },
             "require": {
@@ -414,7 +414,7 @@
                 }
             ],
             "description": "Administration interface for configurations.",
-            "time": "2025-08-21T20:20:12+00:00"
+            "time": "2025-09-23T08:35:20+00:00"
         },
         {
             "name": "bluespice/contextmenu",
@@ -422,12 +422,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceContextMenu.git",
-                "reference": "914acd1f89971497576113c77efdd84c3f2ccea6"
+                "reference": "d5d157803908e1e79417b26e579a1b584fa61cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceContextMenu/zipball/914acd1f89971497576113c77efdd84c3f2ccea6",
-                "reference": "914acd1f89971497576113c77efdd84c3f2ccea6",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceContextMenu/zipball/d5d157803908e1e79417b26e579a1b584fa61cf3",
+                "reference": "d5d157803908e1e79417b26e579a1b584fa61cf3",
                 "shasum": ""
             },
             "require": {
@@ -477,7 +477,7 @@
                 }
             ],
             "description": "Provides context menus for various links",
-            "time": "2025-08-21T20:20:12+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/countthings",
@@ -485,12 +485,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceCountThings.git",
-                "reference": "4d204a9153d277c123a1f0b59a597884e6303111"
+                "reference": "f162c8a7aa936c38a8539a0c6c0e18f7696613ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCountThings/zipball/4d204a9153d277c123a1f0b59a597884e6303111",
-                "reference": "4d204a9153d277c123a1f0b59a597884e6303111",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCountThings/zipball/f162c8a7aa936c38a8539a0c6c0e18f7696613ee",
+                "reference": "f162c8a7aa936c38a8539a0c6c0e18f7696613ee",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +535,7 @@
                 }
             ],
             "description": "Provides content based statistics",
-            "time": "2025-07-23T20:07:33+00:00"
+            "time": "2025-09-23T12:01:29+00:00"
         },
         {
             "name": "bluespice/custommenu",
@@ -543,12 +543,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceCustomMenu.git",
-                "reference": "6a7f9ca479b45ee129e6c795ab7a0385ccf31314"
+                "reference": "9cf3966d7385eb0271faaa7a466a80aa781d1b07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCustomMenu/zipball/6a7f9ca479b45ee129e6c795ab7a0385ccf31314",
-                "reference": "6a7f9ca479b45ee129e6c795ab7a0385ccf31314",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCustomMenu/zipball/9cf3966d7385eb0271faaa7a466a80aa781d1b07",
+                "reference": "9cf3966d7385eb0271faaa7a466a80aa781d1b07",
                 "shasum": ""
             },
             "require": {
@@ -594,7 +594,7 @@
                 }
             ],
             "description": "Provides customizable menus",
-            "time": "2025-08-18T20:19:07+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/discovery-skin",
@@ -602,12 +602,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-skins-BlueSpiceDiscovery.git",
-                "reference": "ef82eb9cf95b42d3eeaf866d133c54ccff17fda6"
+                "reference": "6346716f2053c9a541ab9a1960142ddd10fcb5e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-skins-BlueSpiceDiscovery/zipball/ef82eb9cf95b42d3eeaf866d133c54ccff17fda6",
-                "reference": "ef82eb9cf95b42d3eeaf866d133c54ccff17fda6",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-skins-BlueSpiceDiscovery/zipball/6346716f2053c9a541ab9a1960142ddd10fcb5e1",
+                "reference": "6346716f2053c9a541ab9a1960142ddd10fcb5e1",
                 "shasum": ""
             },
             "require": {
@@ -671,7 +671,7 @@
                 "skin",
                 "wiki"
             ],
-            "time": "2025-07-03T13:17:40+00:00"
+            "time": "2025-10-20T13:17:46+00:00"
         },
         {
             "name": "bluespice/distributionconnector",
@@ -679,12 +679,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector.git",
-                "reference": "4ceb8907224aefa8d610e9995fa4bb4cbd5bd9d6"
+                "reference": "062d4e8fa6e708a2b4b33670edaed8db2fff212d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector/zipball/4ceb8907224aefa8d610e9995fa4bb4cbd5bd9d6",
-                "reference": "4ceb8907224aefa8d610e9995fa4bb4cbd5bd9d6",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector/zipball/062d4e8fa6e708a2b4b33670edaed8db2fff212d",
+                "reference": "062d4e8fa6e708a2b4b33670edaed8db2fff212d",
                 "shasum": ""
             },
             "require": {
@@ -735,7 +735,7 @@
                 }
             ],
             "description": "Connect BlueSpice with some extensions",
-            "time": "2025-08-28T10:09:54+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/emoticons",
@@ -743,12 +743,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceEmoticons.git",
-                "reference": "6d7f17a737bbe67f62221ef5911b77bf0e73d83c"
+                "reference": "b5548f7b8a8ff896cab3b1e3e80777c41def69ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceEmoticons/zipball/6d7f17a737bbe67f62221ef5911b77bf0e73d83c",
-                "reference": "6d7f17a737bbe67f62221ef5911b77bf0e73d83c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceEmoticons/zipball/b5548f7b8a8ff896cab3b1e3e80777c41def69ec",
+                "reference": "b5548f7b8a8ff896cab3b1e3e80777c41def69ec",
                 "shasum": ""
             },
             "require": {
@@ -793,7 +793,7 @@
                 }
             ],
             "description": "Renders emoticons in a text as images",
-            "time": "2025-08-20T20:19:41+00:00"
+            "time": "2025-09-23T12:01:29+00:00"
         },
         {
             "name": "bluespice/extendedsearch",
@@ -801,12 +801,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch.git",
-                "reference": "e30b5674e5dca0822293fb77e19f9e61346125b2"
+                "reference": "1d915e18eeb69e532e4d1cd03efb52bbaddd410c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch/zipball/e30b5674e5dca0822293fb77e19f9e61346125b2",
-                "reference": "e30b5674e5dca0822293fb77e19f9e61346125b2",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch/zipball/1d915e18eeb69e532e4d1cd03efb52bbaddd410c",
+                "reference": "1d915e18eeb69e532e4d1cd03efb52bbaddd410c",
                 "shasum": ""
             },
             "require": {
@@ -858,7 +858,7 @@
                 }
             ],
             "description": "OpenSearch search backend for BlueSpice MediaWiki",
-            "time": "2025-09-09T10:39:33+00:00"
+            "time": "2025-10-22T11:06:43+00:00"
         },
         {
             "name": "bluespice/extendedstatistics",
@@ -866,17 +866,16 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics.git",
-                "reference": "0d911a47246075d1c66d5558a0e8d8fa63cc952f"
+                "reference": "5575539dbcb92acd4ef0fad482ac28b71559e6ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics/zipball/0d911a47246075d1c66d5558a0e8d8fa63cc952f",
-                "reference": "0d911a47246075d1c66d5558a0e8d8fa63cc952f",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics/zipball/5575539dbcb92acd4ef0fad482ac28b71559e6ab",
+                "reference": "5575539dbcb92acd4ef0fad482ac28b71559e6ab",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0|~2",
-                "phpoffice/phpspreadsheet": "1.29.*"
+                "composer/installers": "~1.0|~2"
             },
             "require-dev": {
                 "mediawiki/mediawiki-codesniffer": "45.0.0",
@@ -922,7 +921,7 @@
                 }
             ],
             "description": "Statistics module for BlueSpice",
-            "time": "2025-08-28T09:20:05+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/foundation",
@@ -930,12 +929,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceFoundation",
-                "reference": "a899d4a0ebdda95b1f4d31959a4a4691729396c3"
+                "reference": "c7a6d24f82413ab48526e03d4a3ba0bad9bab764"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceFoundation/zipball/a899d4a0ebdda95b1f4d31959a4a4691729396c3",
-                "reference": "a899d4a0ebdda95b1f4d31959a4a4691729396c3",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceFoundation/zipball/c7a6d24f82413ab48526e03d4a3ba0bad9bab764",
+                "reference": "c7a6d24f82413ab48526e03d4a3ba0bad9bab764",
                 "shasum": ""
             },
             "require": {
@@ -999,7 +998,7 @@
                 "issues": "https://sourceforge.net/projects/bluespice/support",
                 "wiki": "https://help.bluespice.com"
             },
-            "time": "2025-08-25T20:20:02+00:00"
+            "time": "2025-10-22T11:13:40+00:00"
         },
         {
             "name": "bluespice/hidetitle",
@@ -1007,12 +1006,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceHideTitle.git",
-                "reference": "7085424095f754590ae5b7c44c30476f30c307c2"
+                "reference": "e6007e97c96b7ce5e69f840516accc8bd21d1c73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceHideTitle/zipball/7085424095f754590ae5b7c44c30476f30c307c2",
-                "reference": "7085424095f754590ae5b7c44c30476f30c307c2",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceHideTitle/zipball/e6007e97c96b7ce5e69f840516accc8bd21d1c73",
+                "reference": "e6007e97c96b7ce5e69f840516accc8bd21d1c73",
                 "shasum": ""
             },
             "require": {
@@ -1060,7 +1059,7 @@
                 }
             ],
             "description": "Adds the magic word to hide the title of the page",
-            "time": "2025-08-20T20:19:41+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/insertcategory",
@@ -1068,12 +1067,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInsertCategory.git",
-                "reference": "e7a06fb0aca2612cc7adb2656442aac740e3d867"
+                "reference": "af1d36285ce4b94baf11646202808699841efbe0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInsertCategory/zipball/e7a06fb0aca2612cc7adb2656442aac740e3d867",
-                "reference": "e7a06fb0aca2612cc7adb2656442aac740e3d867",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInsertCategory/zipball/af1d36285ce4b94baf11646202808699841efbe0",
+                "reference": "af1d36285ce4b94baf11646202808699841efbe0",
                 "shasum": ""
             },
             "require": {
@@ -1121,7 +1120,7 @@
                 }
             ],
             "description": "Dialog to enter a category link",
-            "time": "2025-08-26T20:19:30+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/instancestatus",
@@ -1129,12 +1128,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus",
-                "reference": "7c69f5a84fd0112c51a9cf4fcc575aad7c40a0ac"
+                "reference": "0d617a28380dc95ecbfcf83b26096027dc596e2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus/zipball/7c69f5a84fd0112c51a9cf4fcc575aad7c40a0ac",
-                "reference": "7c69f5a84fd0112c51a9cf4fcc575aad7c40a0ac",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus/zipball/0d617a28380dc95ecbfcf83b26096027dc596e2e",
+                "reference": "0d617a28380dc95ecbfcf83b26096027dc596e2e",
                 "shasum": ""
             },
             "require": {
@@ -1178,7 +1177,7 @@
                     "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "time": "2025-07-30T20:21:20+00:00"
+            "time": "2025-09-23T12:01:29+00:00"
         },
         {
             "name": "bluespice/interwikilinks",
@@ -1186,12 +1185,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks.git",
-                "reference": "1f793edddba509d6b5df35bf7bf00d9dfe4a98f5"
+                "reference": "c3351db17c6c38061f3103690f61d003d470b5f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks/zipball/1f793edddba509d6b5df35bf7bf00d9dfe4a98f5",
-                "reference": "1f793edddba509d6b5df35bf7bf00d9dfe4a98f5",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks/zipball/c3351db17c6c38061f3103690f61d003d470b5f7",
+                "reference": "c3351db17c6c38061f3103690f61d003d470b5f7",
                 "shasum": ""
             },
             "require": {
@@ -1239,7 +1238,7 @@
                 }
             ],
             "description": "Administration interface for adding, editing and deleting interwiki links",
-            "time": "2025-08-20T20:19:41+00:00"
+            "time": "2025-10-22T11:46:26+00:00"
         },
         {
             "name": "bluespice/namespacemanager",
@@ -1247,12 +1246,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager.git",
-                "reference": "92c796f3d88649def1e83a0a21ec7918f14616a3"
+                "reference": "47501e2fb2de65f6a979f117fbd4541fa2fae3b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager/zipball/92c796f3d88649def1e83a0a21ec7918f14616a3",
-                "reference": "92c796f3d88649def1e83a0a21ec7918f14616a3",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager/zipball/47501e2fb2de65f6a979f117fbd4541fa2fae3b0",
+                "reference": "47501e2fb2de65f6a979f117fbd4541fa2fae3b0",
                 "shasum": ""
             },
             "require": {
@@ -1298,7 +1297,7 @@
                 }
             ],
             "description": "BlueSpiceNamespaceManager Administration interface for adding, editing and deleting namespaces",
-            "time": "2025-08-20T20:19:41+00:00"
+            "time": "2025-10-22T12:02:35+00:00"
         },
         {
             "name": "bluespice/pageaccess",
@@ -1306,12 +1305,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageAccess.git",
-                "reference": "14ef2cebd1dc850ba3b85e7c28dad101d24f4f7d"
+                "reference": "63c2c7522b6c1df7d88d08e969bf25c01f9e18b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAccess/zipball/14ef2cebd1dc850ba3b85e7c28dad101d24f4f7d",
-                "reference": "14ef2cebd1dc850ba3b85e7c28dad101d24f4f7d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAccess/zipball/63c2c7522b6c1df7d88d08e969bf25c01f9e18b0",
+                "reference": "63c2c7522b6c1df7d88d08e969bf25c01f9e18b0",
                 "shasum": ""
             },
             "require": {
@@ -1361,7 +1360,7 @@
                 }
             ],
             "description": "Controls access on page level",
-            "time": "2025-07-23T20:07:33+00:00"
+            "time": "2025-10-20T13:17:44+00:00"
         },
         {
             "name": "bluespice/pageassignments",
@@ -1369,12 +1368,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageAssignments.git",
-                "reference": "93e8be23a0c73d63b7f0a35260ee52c61ded5ce7"
+                "reference": "2b7b8f557c52ffaa0f39bd309bc21e98e19b98ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAssignments/zipball/93e8be23a0c73d63b7f0a35260ee52c61ded5ce7",
-                "reference": "93e8be23a0c73d63b7f0a35260ee52c61ded5ce7",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAssignments/zipball/2b7b8f557c52ffaa0f39bd309bc21e98e19b98ab",
+                "reference": "2b7b8f557c52ffaa0f39bd309bc21e98e19b98ab",
                 "shasum": ""
             },
             "require": {
@@ -1421,7 +1420,7 @@
                 }
             ],
             "description": "Enables you to assign users or groups to a page",
-            "time": "2025-08-28T09:51:34+00:00"
+            "time": "2025-10-22T12:17:40+00:00"
         },
         {
             "name": "bluespice/pagesvisited",
@@ -1429,12 +1428,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePagesVisited.git",
-                "reference": "173e9b47ee957e865709be601cb35cba0d4431a9"
+                "reference": "436fa8c55cf15ebcc60f010e869b5a2eb287f37a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePagesVisited/zipball/173e9b47ee957e865709be601cb35cba0d4431a9",
-                "reference": "173e9b47ee957e865709be601cb35cba0d4431a9",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePagesVisited/zipball/436fa8c55cf15ebcc60f010e869b5a2eb287f37a",
+                "reference": "436fa8c55cf15ebcc60f010e869b5a2eb287f37a",
                 "shasum": ""
             },
             "require": {
@@ -1484,7 +1483,7 @@
                 }
             ],
             "description": "Provides a personalized list of the last visited pages",
-            "time": "2025-09-03T13:00:27+00:00"
+            "time": "2025-09-23T12:01:29+00:00"
         },
         {
             "name": "bluespice/pagetemplates",
@@ -1492,12 +1491,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageTemplates.git",
-                "reference": "94fe656f5540b13f14cbc7547d5326264b0bcaf8"
+                "reference": "0b3619d1dd361788834b2de63f68e9abac8fe3fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageTemplates/zipball/94fe656f5540b13f14cbc7547d5326264b0bcaf8",
-                "reference": "94fe656f5540b13f14cbc7547d5326264b0bcaf8",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageTemplates/zipball/0b3619d1dd361788834b2de63f68e9abac8fe3fc",
+                "reference": "0b3619d1dd361788834b2de63f68e9abac8fe3fc",
                 "shasum": ""
             },
             "require": {
@@ -1548,7 +1547,7 @@
                 }
             ],
             "description": "Displays a list of templates marked as page templates",
-            "time": "2025-08-20T20:19:41+00:00"
+            "time": "2025-10-22T07:21:05+00:00"
         },
         {
             "name": "bluespice/permissionmanager",
@@ -1556,12 +1555,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePermissionManager.git",
-                "reference": "32c154240d2109d389d6592b44359a99e1f15d16"
+                "reference": "9e8c4936076bc33396f5beb5b2196d28681a30b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePermissionManager/zipball/32c154240d2109d389d6592b44359a99e1f15d16",
-                "reference": "32c154240d2109d389d6592b44359a99e1f15d16",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePermissionManager/zipball/9e8c4936076bc33396f5beb5b2196d28681a30b3",
+                "reference": "9e8c4936076bc33396f5beb5b2196d28681a30b3",
                 "shasum": ""
             },
             "require": {
@@ -1612,7 +1611,7 @@
                 }
             ],
             "description": "Administration interface for editing user rights",
-            "time": "2025-08-20T20:19:42+00:00"
+            "time": "2025-10-22T12:21:05+00:00"
         },
         {
             "name": "bluespice/qrcode",
@@ -1620,12 +1619,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceQrCode",
-                "reference": "a1bb16c8ebd2b0a2932528168bf272dea3bd2ab0"
+                "reference": "26010e8d67ff69a69aa1e074fc5b04aa1c7b9d3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceQrCode/zipball/a1bb16c8ebd2b0a2932528168bf272dea3bd2ab0",
-                "reference": "a1bb16c8ebd2b0a2932528168bf272dea3bd2ab0",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceQrCode/zipball/26010e8d67ff69a69aa1e074fc5b04aa1c7b9d3d",
+                "reference": "26010e8d67ff69a69aa1e074fc5b04aa1c7b9d3d",
                 "shasum": ""
             },
             "require": {
@@ -1672,7 +1671,7 @@
                 }
             ],
             "description": "Add a qr code with link to the current page in toolbox.",
-            "time": "2025-08-25T20:20:02+00:00"
+            "time": "2025-09-23T12:01:29+00:00"
         },
         {
             "name": "bluespice/readers",
@@ -1680,12 +1679,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceReaders.git",
-                "reference": "57230d0eea5ff1fc7563bcfd047ab55fe3e04e9d"
+                "reference": "e820f04ae96dce0925913c87e6c44a8d25b394da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceReaders/zipball/57230d0eea5ff1fc7563bcfd047ab55fe3e04e9d",
-                "reference": "57230d0eea5ff1fc7563bcfd047ab55fe3e04e9d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceReaders/zipball/e820f04ae96dce0925913c87e6c44a8d25b394da",
+                "reference": "e820f04ae96dce0925913c87e6c44a8d25b394da",
                 "shasum": ""
             },
             "require": {
@@ -1735,7 +1734,7 @@
                 }
             ],
             "description": "Creates a list of the people who read a page",
-            "time": "2025-08-21T20:20:13+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "bluespice/rssfeeder",
@@ -1743,12 +1742,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder",
-                "reference": "2fe9745070409926facfaa9f0c26e38566b0dfcd"
+                "reference": "086581ca1da7c0290066313fc2fc3dbf79640f63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder/zipball/2fe9745070409926facfaa9f0c26e38566b0dfcd",
-                "reference": "2fe9745070409926facfaa9f0c26e38566b0dfcd",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder/zipball/086581ca1da7c0290066313fc2fc3dbf79640f63",
+                "reference": "086581ca1da7c0290066313fc2fc3dbf79640f63",
                 "shasum": ""
             },
             "require": {
@@ -1798,7 +1797,7 @@
                 }
             ],
             "description": "Create your own RSS feed",
-            "time": "2025-07-25T00:33:21+00:00"
+            "time": "2025-10-22T12:48:41+00:00"
         },
         {
             "name": "bluespice/saferedit",
@@ -1806,12 +1805,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceSaferEdit.git",
-                "reference": "d592834dcaaa23f6bed348db5be457eafc19b8fd"
+                "reference": "17f033510eb58ba6fc38c0ae637a309df117730e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSaferEdit/zipball/d592834dcaaa23f6bed348db5be457eafc19b8fd",
-                "reference": "d592834dcaaa23f6bed348db5be457eafc19b8fd",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSaferEdit/zipball/17f033510eb58ba6fc38c0ae637a309df117730e",
+                "reference": "17f033510eb58ba6fc38c0ae637a309df117730e",
                 "shasum": ""
             },
             "require": {
@@ -1856,7 +1855,7 @@
                 }
             ],
             "description": "Intermediate saving of wiki edits",
-            "time": "2025-07-25T00:34:59+00:00"
+            "time": "2025-10-21T20:19:35+00:00"
         },
         {
             "name": "bluespice/smartlist",
@@ -1864,12 +1863,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceSmartList.git",
-                "reference": "82224a64a3d8686388fa009287f1fc1be5e8eb6b"
+                "reference": "1dae390537414cf0f75ed37e3f31f5f3b8e0269a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSmartList/zipball/82224a64a3d8686388fa009287f1fc1be5e8eb6b",
-                "reference": "82224a64a3d8686388fa009287f1fc1be5e8eb6b",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSmartList/zipball/1dae390537414cf0f75ed37e3f31f5f3b8e0269a",
+                "reference": "1dae390537414cf0f75ed37e3f31f5f3b8e0269a",
                 "shasum": ""
             },
             "require": {
@@ -1917,7 +1916,7 @@
                 }
             ],
             "description": "Displays the last five changes of the wiki in a list",
-            "time": "2025-08-25T20:20:02+00:00"
+            "time": "2025-10-22T12:51:59+00:00"
         },
         {
             "name": "bluespice/tagcloud",
@@ -1925,12 +1924,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceTagCloud",
-                "reference": "b55e4b5e16229af9e613440c325b6a57ff1c0ebe"
+                "reference": "0bf386af04e2a3f85ac0b31eebf22214e04e8fbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceTagCloud/zipball/b55e4b5e16229af9e613440c325b6a57ff1c0ebe",
-                "reference": "b55e4b5e16229af9e613440c325b6a57ff1c0ebe",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceTagCloud/zipball/0bf386af04e2a3f85ac0b31eebf22214e04e8fbc",
+                "reference": "0bf386af04e2a3f85ac0b31eebf22214e04e8fbc",
                 "shasum": ""
             },
             "require": {
@@ -1975,7 +1974,7 @@
                 }
             ],
             "description": "Displays various tag clouds",
-            "time": "2025-08-25T20:20:02+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "bluespice/usagetracker",
@@ -1983,12 +1982,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUsageTracker",
-                "reference": "9fcb6e8c4bb4bd04c874045fa63b456ab1063d96"
+                "reference": "f8f9fc73878728495f911531accd01222e395a2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUsageTracker/zipball/9fcb6e8c4bb4bd04c874045fa63b456ab1063d96",
-                "reference": "9fcb6e8c4bb4bd04c874045fa63b456ab1063d96",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUsageTracker/zipball/f8f9fc73878728495f911531accd01222e395a2d",
+                "reference": "f8f9fc73878728495f911531accd01222e395a2d",
                 "shasum": ""
             },
             "require": {
@@ -2033,7 +2032,7 @@
                 }
             ],
             "description": "Holds statistical data about extension use",
-            "time": "2025-08-20T20:19:42+00:00"
+            "time": "2025-09-23T12:01:30+00:00"
         },
         {
             "name": "bluespice/usermanager",
@@ -2041,12 +2040,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUserManager.git",
-                "reference": "ff7a9e690d692fcd2463bfe225b5d2234fa8abcb"
+                "reference": "94ed593e4bfa66829b8708f4b179404a30c8e97b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserManager/zipball/ff7a9e690d692fcd2463bfe225b5d2234fa8abcb",
-                "reference": "ff7a9e690d692fcd2463bfe225b5d2234fa8abcb",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserManager/zipball/94ed593e4bfa66829b8708f4b179404a30c8e97b",
+                "reference": "94ed593e4bfa66829b8708f4b179404a30c8e97b",
                 "shasum": ""
             },
             "require": {
@@ -2096,7 +2095,7 @@
                 }
             ],
             "description": "Administration interface for adding, editing and deleting users",
-            "time": "2025-08-25T20:20:02+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "bluespice/usersidebar",
@@ -2104,12 +2103,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUserSidebar.git",
-                "reference": "2cf9a35068dcfecb060b26714900dbdec8d30fc0"
+                "reference": "30d0311e30019af6c64e2cd95e081fa86a31b56b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserSidebar/zipball/2cf9a35068dcfecb060b26714900dbdec8d30fc0",
-                "reference": "2cf9a35068dcfecb060b26714900dbdec8d30fc0",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserSidebar/zipball/30d0311e30019af6c64e2cd95e081fa86a31b56b",
+                "reference": "30d0311e30019af6c64e2cd95e081fa86a31b56b",
                 "shasum": ""
             },
             "require": {
@@ -2155,7 +2154,7 @@
                 }
             ],
             "description": "Adds the \"Focus\" section to the left navigation",
-            "time": "2025-08-08T20:19:18+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "bluespice/visualeditorconnector",
@@ -2163,12 +2162,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector",
-                "reference": "8c20001a8168fe194421803aa24efefe7dcb0e35"
+                "reference": "9d947a47640e9cc607443ce65a85e7901b3da726"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector/zipball/8c20001a8168fe194421803aa24efefe7dcb0e35",
-                "reference": "8c20001a8168fe194421803aa24efefe7dcb0e35",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector/zipball/9d947a47640e9cc607443ce65a85e7901b3da726",
+                "reference": "9d947a47640e9cc607443ce65a85e7901b3da726",
                 "shasum": ""
             },
             "require": {
@@ -2213,7 +2212,7 @@
                 }
             ],
             "description": "Enable VisualEditor for BlueSpice extensions",
-            "time": "2025-08-14T10:10:05+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "bluespice/watchlist",
@@ -2221,12 +2220,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceWatchList",
-                "reference": "d86a5b87b4de448fa04327571dd8b99de31c79e2"
+                "reference": "a3f880b8cf5a133c9900574751b9fadb17bd7ed4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWatchList/zipball/d86a5b87b4de448fa04327571dd8b99de31c79e2",
-                "reference": "d86a5b87b4de448fa04327571dd8b99de31c79e2",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWatchList/zipball/a3f880b8cf5a133c9900574751b9fadb17bd7ed4",
+                "reference": "a3f880b8cf5a133c9900574751b9fadb17bd7ed4",
                 "shasum": ""
             },
             "require": {
@@ -2276,7 +2275,7 @@
                 }
             ],
             "description": "Adds a watchlist widget and tag",
-            "time": "2025-08-21T20:20:13+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "bluespice/whoisonline",
@@ -2284,12 +2283,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline",
-                "reference": "f94595a77c5020a167b904c71e768fb7885bd275"
+                "reference": "a21d34abf5d29147df160ff7f73d49fc4fba55cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline/zipball/f94595a77c5020a167b904c71e768fb7885bd275",
-                "reference": "f94595a77c5020a167b904c71e768fb7885bd275",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline/zipball/a21d34abf5d29147df160ff7f73d49fc4fba55cf",
+                "reference": "a21d34abf5d29147df160ff7f73d49fc4fba55cf",
                 "shasum": ""
             },
             "require-dev": {
@@ -2336,7 +2335,7 @@
                 }
             ],
             "description": "Displays a list of users who are currently online",
-            "time": "2025-09-16T08:41:48+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "christian-riesen/base32",
@@ -2547,85 +2546,6 @@
                 }
             ],
             "time": "2021-09-13T08:19:44+00:00"
-        },
-        {
-            "name": "composer/pcre",
-            "version": "3.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/pcre.git",
-                "reference": "b2bed4734f0cc156ee1fe9c0da2550420d99a21e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/pcre/zipball/b2bed4734f0cc156ee1fe9c0da2550420d99a21e",
-                "reference": "b2bed4734f0cc156ee1fe9c0da2550420d99a21e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4 || ^8.0"
-            },
-            "conflict": {
-                "phpstan/phpstan": "<1.11.10"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^1.12 || ^2",
-                "phpstan/phpstan-strict-rules": "^1 || ^2",
-                "phpunit/phpunit": "^8 || ^9"
-            },
-            "type": "library",
-            "extra": {
-                "phpstan": {
-                    "includes": [
-                        "extension.neon"
-                    ]
-                },
-                "branch-alias": {
-                    "dev-main": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Composer\\Pcre\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                }
-            ],
-            "description": "PCRE wrapping library that offers type-safe preg_* replacements.",
-            "keywords": [
-                "PCRE",
-                "preg",
-                "regex",
-                "regular expression"
-            ],
-            "support": {
-                "issues": "https://github.com/composer/pcre/issues",
-                "source": "https://github.com/composer/pcre/tree/3.3.2"
-            },
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/composer",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-11-12T16:29:46+00:00"
         },
         {
             "name": "composer/semver",
@@ -3248,67 +3168,6 @@
             "time": "2025-08-07T09:30:38+00:00"
         },
         {
-            "name": "ezyang/htmlpurifier",
-            "version": "v4.18.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "cb56001e54359df7ae76dc522d08845dc741621b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/cb56001e54359df7ae76dc522d08845dc741621b",
-                "reference": "cb56001e54359df7ae76dc522d08845dc741621b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
-            },
-            "require-dev": {
-                "cerdic/css-tidy": "^1.7 || ^2.0",
-                "simpletest/simpletest": "dev-master"
-            },
-            "suggest": {
-                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
-                "ext-bcmath": "Used for unit conversion and imagecrash protection",
-                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
-                "ext-tidy": "Used for pretty-printing HTML"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "library/HTMLPurifier.composer.php"
-                ],
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
-                "exclude-from-classmap": [
-                    "/library/HTMLPurifier/Language/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Edward Z. Yang",
-                    "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com"
-                }
-            ],
-            "description": "Standards compliant HTML filter written in PHP",
-            "homepage": "http://htmlpurifier.org/",
-            "keywords": [
-                "html"
-            ],
-            "support": {
-                "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.18.0"
-            },
-            "time": "2024-11-01T03:51:45+00:00"
-        },
-        {
             "name": "guzzlehttp/guzzle",
             "version": "7.9.2",
             "source": {
@@ -3639,12 +3498,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-FilterSpecialPages.git",
-                "reference": "6abe0f3c24c47b06752e61f6a91b7ef227895b8e"
+                "reference": "0bfccfb518cb8f1b00d3630ddad83b1042ca9457"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FilterSpecialPages/zipball/6abe0f3c24c47b06752e61f6a91b7ef227895b8e",
-                "reference": "6abe0f3c24c47b06752e61f6a91b7ef227895b8e",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FilterSpecialPages/zipball/0bfccfb518cb8f1b00d3630ddad83b1042ca9457",
+                "reference": "0bfccfb518cb8f1b00d3630ddad83b1042ca9457",
                 "shasum": ""
             },
             "require": {
@@ -3681,7 +3540,7 @@
                     "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "time": "2025-07-18T13:08:12+00:00"
+            "time": "2025-09-23T12:01:31+00:00"
         },
         {
             "name": "jakobo/hotp-php",
@@ -3849,190 +3708,6 @@
             "time": "2015-07-23T23:12:45+00:00"
         },
         {
-            "name": "maennchen/zipstream-php",
-            "version": "3.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "6187e9cc4493da94b9b63eb2315821552015fca9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/6187e9cc4493da94b9b63eb2315821552015fca9",
-                "reference": "6187e9cc4493da94b9b63eb2315821552015fca9",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "ext-zlib": "*",
-                "php-64bit": "^8.1"
-            },
-            "require-dev": {
-                "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "^3.16",
-                "guzzlehttp/guzzle": "^7.5",
-                "mikey179/vfsstream": "^1.6",
-                "php-coveralls/php-coveralls": "^2.5",
-                "phpunit/phpunit": "^10.0",
-                "vimeo/psalm": "^5.0"
-            },
-            "suggest": {
-                "guzzlehttp/psr7": "^2.4",
-                "psr/http-message": "^2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ZipStream\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Paul Duncan",
-                    "email": "pabs@pablotron.org"
-                },
-                {
-                    "name": "Jonatan Männchen",
-                    "email": "jonatan@maennchen.ch"
-                },
-                {
-                    "name": "Jesse Donat",
-                    "email": "donatj@gmail.com"
-                },
-                {
-                    "name": "András Kolesár",
-                    "email": "kolesar@kolesar.hu"
-                }
-            ],
-            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
-            "keywords": [
-                "stream",
-                "zip"
-            ],
-            "support": {
-                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
-                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/maennchen",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-10-10T12:33:01+00:00"
-        },
-        {
-            "name": "markbaker/complex",
-            "version": "3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MarkBaker/PHPComplex.git",
-                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
-                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2 || ^8.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
-                "phpcompatibility/php-compatibility": "^9.3",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
-                "squizlabs/php_codesniffer": "^3.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Complex\\": "classes/src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Baker",
-                    "email": "mark@lange.demon.co.uk"
-                }
-            ],
-            "description": "PHP Class for working with complex numbers",
-            "homepage": "https://github.com/MarkBaker/PHPComplex",
-            "keywords": [
-                "complex",
-                "mathematics"
-            ],
-            "support": {
-                "issues": "https://github.com/MarkBaker/PHPComplex/issues",
-                "source": "https://github.com/MarkBaker/PHPComplex/tree/3.0.2"
-            },
-            "time": "2022-12-06T16:21:08+00:00"
-        },
-        {
-            "name": "markbaker/matrix",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MarkBaker/PHPMatrix.git",
-                "reference": "728434227fe21be27ff6d86621a1b13107a2562c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/728434227fe21be27ff6d86621a1b13107a2562c",
-                "reference": "728434227fe21be27ff6d86621a1b13107a2562c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
-                "phpcompatibility/php-compatibility": "^9.3",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phploc/phploc": "^4.0",
-                "phpmd/phpmd": "2.*",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
-                "sebastian/phpcpd": "^4.0",
-                "squizlabs/php_codesniffer": "^3.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Matrix\\": "classes/src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Baker",
-                    "email": "mark@demon-angel.eu"
-                }
-            ],
-            "description": "PHP Class for working with matrices",
-            "homepage": "https://github.com/MarkBaker/PHPMatrix",
-            "keywords": [
-                "mathematics",
-                "matrix",
-                "vector"
-            ],
-            "support": {
-                "issues": "https://github.com/MarkBaker/PHPMatrix/issues",
-                "source": "https://github.com/MarkBaker/PHPMatrix/tree/3.0.1"
-            },
-            "time": "2022-12-02T22:17:43+00:00"
-        },
-        {
             "name": "mck89/peast",
             "version": "v1.16.3",
             "source": {
@@ -4100,12 +3775,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-ContentDroplets.git",
-                "reference": "40d6ff27eaacc61585e9f91d8b6261acf16297f2"
+                "reference": "4a50fcf0f55304d81d3590790e749ba0a4d28625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ContentDroplets/zipball/40d6ff27eaacc61585e9f91d8b6261acf16297f2",
-                "reference": "40d6ff27eaacc61585e9f91d8b6261acf16297f2",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ContentDroplets/zipball/4a50fcf0f55304d81d3590790e749ba0a4d28625",
+                "reference": "4a50fcf0f55304d81d3590790e749ba0a4d28625",
                 "shasum": ""
             },
             "require": {
@@ -4151,7 +3826,7 @@
                     "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "time": "2025-07-22T14:23:50+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "mediawiki/enhanced-standard-uis",
@@ -4159,12 +3834,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-EnhancedStandardUIs.git",
-                "reference": "b9b6f73598770cdaa562bf6cc5c117dee08d5906"
+                "reference": "4de88deb8a1f22ccb32f6d025798e508831ad1dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedStandardUIs/zipball/b9b6f73598770cdaa562bf6cc5c117dee08d5906",
-                "reference": "b9b6f73598770cdaa562bf6cc5c117dee08d5906",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedStandardUIs/zipball/4de88deb8a1f22ccb32f6d025798e508831ad1dc",
+                "reference": "4de88deb8a1f22ccb32f6d025798e508831ad1dc",
                 "shasum": ""
             },
             "require": {
@@ -4208,7 +3883,7 @@
                     "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "time": "2025-09-02T14:27:04+00:00"
+            "time": "2025-10-22T20:20:32+00:00"
         },
         {
             "name": "mediawiki/enhanced-upload",
@@ -4216,12 +3891,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-EnhancedUpload",
-                "reference": "ace4848f6ce1bedf82d5dba3980c8b2ef80102f1"
+                "reference": "ff48534af263a582a45c55f23e9148c6239af959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedUpload/zipball/ace4848f6ce1bedf82d5dba3980c8b2ef80102f1",
-                "reference": "ace4848f6ce1bedf82d5dba3980c8b2ef80102f1",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedUpload/zipball/ff48534af263a582a45c55f23e9148c6239af959",
+                "reference": "ff48534af263a582a45c55f23e9148c6239af959",
                 "shasum": ""
             },
             "require": {
@@ -4272,7 +3947,7 @@
                 "mediawiki",
                 "wiki"
             ],
-            "time": "2025-08-22T07:38:56+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "mediawiki/flexiskin",
@@ -4280,12 +3955,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-FlexiSkin.git",
-                "reference": "0ed1e5e78bd14e87703e676c3cfd40a738fe9ac2"
+                "reference": "94d8684a80ee6d469531280933bbd1ce979dda00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FlexiSkin/zipball/0ed1e5e78bd14e87703e676c3cfd40a738fe9ac2",
-                "reference": "0ed1e5e78bd14e87703e676c3cfd40a738fe9ac2",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FlexiSkin/zipball/94d8684a80ee6d469531280933bbd1ce979dda00",
+                "reference": "94d8684a80ee6d469531280933bbd1ce979dda00",
                 "shasum": ""
             },
             "require": {
@@ -4327,7 +4002,7 @@
                 }
             ],
             "description": "Adds skin themes",
-            "time": "2025-06-05T10:41:26+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "mediawiki/font-awesome",
@@ -4411,12 +4086,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-ImageMapEdit",
-                "reference": "b2865b2eefdd55467239c28df26ef2d06ac9d18e"
+                "reference": "ce094afba0c5412d729e5020eac941a7b7df7467"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ImageMapEdit/zipball/b2865b2eefdd55467239c28df26ef2d06ac9d18e",
-                "reference": "b2865b2eefdd55467239c28df26ef2d06ac9d18e",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ImageMapEdit/zipball/ce094afba0c5412d729e5020eac941a7b7df7467",
+                "reference": "ce094afba0c5412d729e5020eac941a7b7df7467",
                 "shasum": ""
             },
             "require": {
@@ -4458,7 +4133,7 @@
                 }
             ],
             "description": "Create image maps in the browser.",
-            "time": "2025-08-29T20:18:55+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "mediawiki/invite-signup",
@@ -4520,16 +4195,16 @@
         },
         {
             "name": "mediawiki/lingo",
-            "version": "dev-REL1_43",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-Lingo.git",
-                "reference": "638ff8d0b5a2e3974ddc54d68f21970f74d333cf"
+                "reference": "f87ea047c6665c4c8d7435d23a3b454d127447a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-Lingo/zipball/638ff8d0b5a2e3974ddc54d68f21970f74d333cf",
-                "reference": "638ff8d0b5a2e3974ddc54d68f21970f74d333cf",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-Lingo/zipball/f87ea047c6665c4c8d7435d23a3b454d127447a0",
+                "reference": "f87ea047c6665c4c8d7435d23a3b454d127447a0",
                 "shasum": ""
             },
             "require": {
@@ -4592,7 +4267,7 @@
                 "issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-lingo/",
                 "irc": "irc://irc.libera.chat/mediawiki"
             },
-            "time": "2025-09-09T06:17:00+00:00"
+            "time": "2024-12-12T09:20:40+00:00"
         },
         {
             "name": "mediawiki/loops",
@@ -4613,12 +4288,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-MenuEditor",
-                "reference": "0baef91b7c4b46ed403b14a8e2b023183e9286ca"
+                "reference": "733b99c7846b6aa41a687cfd6577c763a408798c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-MenuEditor/zipball/0baef91b7c4b46ed403b14a8e2b023183e9286ca",
-                "reference": "0baef91b7c4b46ed403b14a8e2b023183e9286ca",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-MenuEditor/zipball/733b99c7846b6aa41a687cfd6577c763a408798c",
+                "reference": "733b99c7846b6aa41a687cfd6577c763a408798c",
                 "shasum": ""
             },
             "require": {
@@ -4660,7 +4335,7 @@
                 }
             ],
             "description": "Graphical editor for menu pages",
-            "time": "2025-08-21T20:20:13+00:00"
+            "time": "2025-10-20T13:17:45+00:00"
         },
         {
             "name": "mediawiki/notify-me",
@@ -4668,12 +4343,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-NotifyMe.git",
-                "reference": "5d3489660b34443ae09d7f559ae2458762cd8437"
+                "reference": "3316830b6d8c2b0f853535464c07d6d966675209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-NotifyMe/zipball/5d3489660b34443ae09d7f559ae2458762cd8437",
-                "reference": "5d3489660b34443ae09d7f559ae2458762cd8437",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-NotifyMe/zipball/3316830b6d8c2b0f853535464c07d6d966675209",
+                "reference": "3316830b6d8c2b0f853535464c07d6d966675209",
                 "shasum": ""
             },
             "require": {
@@ -4724,7 +4399,7 @@
                 }
             ],
             "description": "...",
-            "time": "2025-08-18T20:19:08+00:00"
+            "time": "2025-10-22T20:20:32+00:00"
         },
         {
             "name": "mediawiki/oojsplus",
@@ -4732,12 +4407,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-OOJSPlus.git",
-                "reference": "73999c7710ae0cf58d93bb9795f106b0cbc26408"
+                "reference": "1291382a49648b76f1ae8f941e56259970fa4b91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-OOJSPlus/zipball/73999c7710ae0cf58d93bb9795f106b0cbc26408",
-                "reference": "73999c7710ae0cf58d93bb9795f106b0cbc26408",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-OOJSPlus/zipball/1291382a49648b76f1ae8f941e56259970fa4b91",
+                "reference": "1291382a49648b76f1ae8f941e56259970fa4b91",
                 "shasum": ""
             },
             "require": {
@@ -4786,7 +4461,7 @@
                 "mediawiki",
                 "wiki"
             ],
-            "time": "2025-08-21T12:04:02+00:00"
+            "time": "2025-10-21T20:19:35+00:00"
         },
         {
             "name": "mediawiki/page-header",
@@ -4794,7 +4469,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hallowelt.com:BlueSpice/mediawiki-extensions-pageheader.git",
-                "reference": "0d699f5359180d2f5507226c71d5643314cb68d3"
+                "reference": "5145933ab7d75e6b97457cc730c072882068c3c5"
             },
             "require": {
                 "composer/installers": "~1.0|~2",
@@ -4849,7 +4524,7 @@
                 "mediawiki",
                 "wiki"
             ],
-            "time": "2025-07-18T13:08:13+00:00"
+            "time": "2025-09-23T12:01:31+00:00"
         },
         {
             "name": "mediawiki/pdf-creator",
@@ -4857,12 +4532,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-PDFCreator.git",
-                "reference": "5fa5a6851e6b0466ab83a7b1919fadc46aa0ad8c"
+                "reference": "19cf8133f8c609d0b78bb8a53427d01a8b3f65d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-PDFCreator/zipball/5fa5a6851e6b0466ab83a7b1919fadc46aa0ad8c",
-                "reference": "5fa5a6851e6b0466ab83a7b1919fadc46aa0ad8c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-PDFCreator/zipball/19cf8133f8c609d0b78bb8a53427d01a8b3f65d1",
+                "reference": "19cf8133f8c609d0b78bb8a53427d01a8b3f65d1",
                 "shasum": ""
             },
             "require": {
@@ -4910,7 +4585,7 @@
             "keywords": [
                 "pdf"
             ],
-            "time": "2025-09-03T14:17:59+00:00"
+            "time": "2025-10-22T13:18:18+00:00"
         },
         {
             "name": "mediawiki/renameuser",
@@ -4947,12 +4622,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-StandardDialogs",
-                "reference": "6bca68e6e8e15c5140fb661f3a626a86fe44032c"
+                "reference": "3fa6d8c3c720d514af90d175a16ce890c6e51ae6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-StandardDialogs/zipball/6bca68e6e8e15c5140fb661f3a626a86fe44032c",
-                "reference": "6bca68e6e8e15c5140fb661f3a626a86fe44032c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-StandardDialogs/zipball/3fa6d8c3c720d514af90d175a16ce890c6e51ae6",
+                "reference": "3fa6d8c3c720d514af90d175a16ce890c6e51ae6",
                 "shasum": ""
             },
             "require": {
@@ -4992,7 +4667,7 @@
                     "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "time": "2025-07-31T06:42:19+00:00"
+            "time": "2025-10-20T13:17:46+00:00"
         },
         {
             "name": "mediawiki/template-styles",
@@ -5102,12 +4777,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-UserProfile.git",
-                "reference": "46f704207ca088a9ac65abae4869b13d426dc2d2"
+                "reference": "f9794952a7651429f11c3c4c7e023e33f0c2cbd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-UserProfile/zipball/46f704207ca088a9ac65abae4869b13d426dc2d2",
-                "reference": "46f704207ca088a9ac65abae4869b13d426dc2d2",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-UserProfile/zipball/f9794952a7651429f11c3c4c7e023e33f0c2cbd7",
+                "reference": "f9794952a7651429f11c3c4c7e023e33f0c2cbd7",
                 "shasum": ""
             },
             "require": {
@@ -5155,7 +4830,7 @@
                 }
             ],
             "description": "User profile UI",
-            "time": "2025-08-21T13:58:04+00:00"
+            "time": "2025-10-20T13:17:46+00:00"
         },
         {
             "name": "mediawiki/variables",
@@ -5234,12 +4909,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-VisualEditorPlus.git",
-                "reference": "b1c0f21bf546e62d8fada7089ec0671e90fad29f"
+                "reference": "493ed9527d4a0c6fea335454dd7738c30bbe8de9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VisualEditorPlus/zipball/b1c0f21bf546e62d8fada7089ec0671e90fad29f",
-                "reference": "b1c0f21bf546e62d8fada7089ec0671e90fad29f",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VisualEditorPlus/zipball/493ed9527d4a0c6fea335454dd7738c30bbe8de9",
+                "reference": "493ed9527d4a0c6fea335454dd7738c30bbe8de9",
                 "shasum": ""
             },
             "require": {
@@ -5283,7 +4958,7 @@
                     "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "time": "2025-08-08T20:19:18+00:00"
+            "time": "2025-10-22T20:20:32+00:00"
         },
         {
             "name": "mediawiki/vuejs-plus",
@@ -5291,12 +4966,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-VueJsPlus.git",
-                "reference": "0c9a48c7e4558db965f638a66d6b468792ad2286"
+                "reference": "32a04ca3e55140e75ac9b56ae9dcef10993b5580"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VueJsPlus/zipball/0c9a48c7e4558db965f638a66d6b468792ad2286",
-                "reference": "0c9a48c7e4558db965f638a66d6b468792ad2286",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VueJsPlus/zipball/32a04ca3e55140e75ac9b56ae9dcef10993b5580",
+                "reference": "32a04ca3e55140e75ac9b56ae9dcef10993b5580",
                 "shasum": ""
             },
             "require": {
@@ -5340,7 +5015,7 @@
                     "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "time": "2025-07-18T13:08:13+00:00"
+            "time": "2025-10-20T13:17:46+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5551,16 +5226,16 @@
         },
         {
             "name": "mwstake/mediawiki-component-commonwebapis",
-            "version": "3.0.21",
+            "version": "3.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis.git",
-                "reference": "d849d71f0637ebe3dd751579924d7f46b02d14ea"
+                "reference": "bcaa709bb89c5bbf20d9b1940175fde765e38a0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-commonwebapis/zipball/d849d71f0637ebe3dd751579924d7f46b02d14ea",
-                "reference": "d849d71f0637ebe3dd751579924d7f46b02d14ea",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-commonwebapis/zipball/bcaa709bb89c5bbf20d9b1940175fde765e38a0d",
+                "reference": "bcaa709bb89c5bbf20d9b1940175fde765e38a0d",
                 "shasum": ""
             },
             "require": {
@@ -5599,9 +5274,9 @@
             "description": "Provides various web APIs (Action API and REST)",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/tree/3.0.21"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/tree/3.0.22"
             },
-            "time": "2025-08-19T06:25:11+00:00"
+            "time": "2025-10-15T09:53:06+00:00"
         },
         {
             "name": "mwstake/mediawiki-component-contentprovisioner",
@@ -6034,23 +5709,23 @@
         },
         {
             "name": "mwstake/mediawiki-component-processmanager",
-            "version": "3.1.2",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-processmanager.git",
-                "reference": "d52848066a8f6663f49ed40c243a197724358870"
+                "reference": "3933460b9ec51288a45e5c2679d4d321a79403bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-processmanager/zipball/d52848066a8f6663f49ed40c243a197724358870",
-                "reference": "d52848066a8f6663f49ed40c243a197724358870",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-processmanager/zipball/3933460b9ec51288a45e5c2679d4d321a79403bd",
+                "reference": "3933460b9ec51288a45e5c2679d4d321a79403bd",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0|~2",
                 "mwstake/mediawiki-componentloader": "~1",
                 "symfony/filesystem": "~3",
-                "symfony/process": "~5"
+                "symfony/process": "~5|~6"
             },
             "require-dev": {
                 "mediawiki/mediawiki-codesniffer": "45.0.0",
@@ -6083,9 +5758,9 @@
             "description": "Provides a management system for background processes",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-processmanager/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-processmanager/tree/3.1.2"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-processmanager/tree/3.1.3"
             },
-            "time": "2025-07-02T10:06:01+00:00"
+            "time": "2025-10-08T14:17:50+00:00"
         },
         {
             "name": "mwstake/mediawiki-component-runjobstrigger",
@@ -7101,112 +6776,6 @@
             "time": "2021-03-21T15:43:46+00:00"
         },
         {
-            "name": "phpoffice/phpspreadsheet",
-            "version": "1.29.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "7c06eed662cce7ecab88f6f9f7626b443f5285df"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/7c06eed662cce7ecab88f6f9f7626b443f5285df",
-                "reference": "7c06eed662cce7ecab88f6f9f7626b443f5285df",
-                "shasum": ""
-            },
-            "require": {
-                "composer/pcre": "^1||^2||^3",
-                "ext-ctype": "*",
-                "ext-dom": "*",
-                "ext-fileinfo": "*",
-                "ext-gd": "*",
-                "ext-iconv": "*",
-                "ext-libxml": "*",
-                "ext-mbstring": "*",
-                "ext-simplexml": "*",
-                "ext-xml": "*",
-                "ext-xmlreader": "*",
-                "ext-xmlwriter": "*",
-                "ext-zip": "*",
-                "ext-zlib": "*",
-                "ezyang/htmlpurifier": "^4.15",
-                "maennchen/zipstream-php": "^2.1 || ^3.0",
-                "markbaker/complex": "^3.0",
-                "markbaker/matrix": "^3.0",
-                "php": "^7.4 || ^8.0",
-                "psr/http-client": "^1.0",
-                "psr/http-factory": "^1.0",
-                "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
-                "dompdf/dompdf": "^1.0 || ^2.0 || ^3.0",
-                "friendsofphp/php-cs-fixer": "^3.2",
-                "mitoteam/jpgraph": "^10.3",
-                "mpdf/mpdf": "^8.1.1",
-                "phpcompatibility/php-compatibility": "^9.3",
-                "phpstan/phpstan": "^1.1",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^8.5 || ^9.0",
-                "squizlabs/php_codesniffer": "^3.7",
-                "tecnickcom/tcpdf": "^6.5"
-            },
-            "suggest": {
-                "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
-                "ext-intl": "PHP Internationalization Functions",
-                "mitoteam/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
-                "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
-                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Maarten Balliauw",
-                    "homepage": "https://blog.maartenballiauw.be"
-                },
-                {
-                    "name": "Mark Baker",
-                    "homepage": "https://markbakeruk.net"
-                },
-                {
-                    "name": "Franck Lefevre",
-                    "homepage": "https://rootslabs.net"
-                },
-                {
-                    "name": "Erik Tilt"
-                },
-                {
-                    "name": "Adrien Crivelli"
-                }
-            ],
-            "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
-            "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
-            "keywords": [
-                "OpenXML",
-                "excel",
-                "gnumeric",
-                "ods",
-                "php",
-                "spreadsheet",
-                "xls",
-                "xlsx"
-            ],
-            "support": {
-                "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.12"
-            },
-            "time": "2025-07-23T04:40:30+00:00"
-        },
-        {
             "name": "poliander/cron",
             "version": "3.1.0",
             "source": {
@@ -7509,57 +7078,6 @@
             "time": "2021-05-03T11:20:27+00:00"
         },
         {
-            "name": "psr/simple-cache",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/764e0b3939f5ca87cb904f570ef9be2d78a07865",
-                "reference": "764e0b3939f5ca87cb904f570ef9be2d78a07865",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\SimpleCache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interfaces for simple caching",
-            "keywords": [
-                "cache",
-                "caching",
-                "psr",
-                "psr-16",
-                "simple-cache"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
-            },
-            "time": "2021-10-29T13:26:27+00:00"
-        },
-        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -7678,43 +7196,19 @@
         },
         {
             "name": "starcitizenwiki/embedvideo",
-            "version": "3.4.3",
+            "version": "4.0.0.1+BlueSpice513",
             "source": {
                 "type": "git",
-                "url": "https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git",
-                "reference": "5c0f542d29c59fe57b020868093d38e99c3bc95b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/StarCitizenWiki/mediawiki-extensions-EmbedVideo/zipball/5c0f542d29c59fe57b020868093d38e99c3bc95b",
-                "reference": "5c0f542d29c59fe57b020868093d38e99c3bc95b",
-                "shasum": ""
+                "url": "git@github.com:StarCitizenWiki/mediawiki-extensions-EmbedVideo.git",
+                "reference": "5d8c91aa74024a1ff0b1f47bff7fd0b2e57f9874"
             },
             "require": {
-                "composer/installers": ">=1.0.1",
-                "php": ">=8.0.0"
-            },
-            "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "36.0.0",
-                "mediawiki/mediawiki-phan-config": "0.10.6",
-                "mediawiki/minus-x": "1.1.1",
-                "php-parallel-lint/php-console-highlighter": "0.5.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.0"
+                "composer/installers": "~1.0|~2.0"
             },
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "EmbedVideo"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Adds a parser function embedding video from popular sources.",
-            "support": {
-                "issues": "https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo/issues",
-                "source": "https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo/tree/v3.4.3"
-            },
-            "time": "2025-03-16T10:49:28+00:00"
+            }
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -7999,21 +7493,20 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.4.47",
+            "version": "v6.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "5d1662fb32ebc94f17ddb8d635454a776066733d"
+                "reference": "48bad913268c8cafabbf7034b39c8bb24fbc5ab8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/5d1662fb32ebc94f17ddb8d635454a776066733d",
-                "reference": "5d1662fb32ebc94f17ddb8d635454a776066733d",
+                "url": "https://api.github.com/repos/symfony/process/zipball/48bad913268c8cafabbf7034b39c8bb24fbc5ab8",
+                "reference": "48bad913268c8cafabbf7034b39c8bb24fbc5ab8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-php80": "^1.16"
+                "php": ">=8.1"
             },
             "type": "library",
             "autoload": {
@@ -8041,7 +7534,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.4.47"
+                "source": "https://github.com/symfony/process/tree/v6.4.26"
             },
             "funding": [
                 {
@@ -8053,11 +7546,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-06T11:36:42+00:00"
+            "time": "2025-09-11T09:57:09+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -9133,16 +8630,16 @@
         },
         {
             "name": "wikimedia/parsoid",
-            "version": "v0.20.3",
+            "version": "v0.20.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikimedia/mediawiki-services-parsoid.git",
-                "reference": "c31cc6f74c422926bae5f2d0e19b6b7ccaf053fa"
+                "reference": "75f04e1f7b6f46af9437a34ecf72b1953c5ab59c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-services-parsoid/zipball/c31cc6f74c422926bae5f2d0e19b6b7ccaf053fa",
-                "reference": "c31cc6f74c422926bae5f2d0e19b6b7ccaf053fa",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-services-parsoid/zipball/75f04e1f7b6f46af9437a34ecf72b1953c5ab59c",
+                "reference": "75f04e1f7b6f46af9437a34ecf72b1953c5ab59c",
                 "shasum": ""
             },
             "require": {
@@ -9151,7 +8648,7 @@
                 "ext-dom": "*",
                 "ext-json": "*",
                 "liuggio/statsd-php-client": "^1.0.18",
-                "php": ">=7.4.0",
+                "php": ">=8.1.0",
                 "psr/container": "~1.1.2 || ~2.0.2",
                 "psr/log": "^1.1.4",
                 "symfony/polyfill-php80": "^1.23.1",
@@ -9212,10 +8709,10 @@
             ],
             "support": {
                 "irc": "irc://irc.libera.chat/mediawiki-parsoid",
-                "source": "https://github.com/wikimedia/mediawiki-services-parsoid/tree/v0.20.3",
+                "source": "https://github.com/wikimedia/mediawiki-services-parsoid/tree/v0.20.4",
                 "wiki": "https://www.mediawiki.org/wiki/Parsoid"
             },
-            "time": "2025-06-03T22:33:21+00:00"
+            "time": "2025-09-29T14:56:09+00:00"
         },
         {
             "name": "wikimedia/php-session-serializer",
@@ -10154,6 +9651,85 @@
     ],
     "packages-dev": [
         {
+            "name": "composer/pcre",
+            "version": "3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/pcre.git",
+                "reference": "b2bed4734f0cc156ee1fe9c0da2550420d99a21e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/pcre/zipball/b2bed4734f0cc156ee1fe9c0da2550420d99a21e",
+                "reference": "b2bed4734f0cc156ee1fe9c0da2550420d99a21e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<1.11.10"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.12 || ^2",
+                "phpstan/phpstan-strict-rules": "^1 || ^2",
+                "phpunit/phpunit": "^8 || ^9"
+            },
+            "type": "library",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Pcre\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "PCRE wrapping library that offers type-safe preg_* replacements.",
+            "keywords": [
+                "PCRE",
+                "preg",
+                "regex",
+                "regular expression"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/pcre/issues",
+                "source": "https://github.com/composer/pcre/tree/3.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-11-12T16:29:46+00:00"
+        },
+        {
             "name": "composer/spdx-licenses",
             "version": "1.5.8",
             "source": {
@@ -10486,6 +10062,7 @@
                     "type": "tidelift"
                 }
             ],
+            "abandoned": true,
             "time": "2022-05-20T20:07:39+00:00"
         },
         {
@@ -11452,16 +11029,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.6.1",
+            "version": "v5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2"
+                "reference": "3a454ca033b9e06b63282ce19562e892747449bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2",
-                "reference": "f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/3a454ca033b9e06b63282ce19562e892747449bb",
+                "reference": "3a454ca033b9e06b63282ce19562e892747449bb",
                 "shasum": ""
             },
             "require": {
@@ -11504,9 +11081,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.1"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.2"
             },
-            "time": "2025-08-13T20:13:15+00:00"
+            "time": "2025-10-21T19:32:17+00:00"
         },
         {
             "name": "phan/phan",
@@ -12729,16 +12306,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.10",
+            "version": "v0.12.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "6e80abe6f2257121f1eb9a4c55bf29d921025b22"
+                "reference": "d86c2f750e72017a5cdb1b9f1cef468a5cbacd1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6e80abe6f2257121f1eb9a4c55bf29d921025b22",
-                "reference": "6e80abe6f2257121f1eb9a4c55bf29d921025b22",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/d86c2f750e72017a5cdb1b9f1cef468a5cbacd1e",
+                "reference": "d86c2f750e72017a5cdb1b9f1cef468a5cbacd1e",
                 "shasum": ""
             },
             "require": {
@@ -12753,9 +12330,11 @@
                 "symfony/console": "4.4.37 || 5.3.14 || 5.3.15 || 5.4.3 || 5.4.4 || 6.0.3 || 6.0.4"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.2"
+                "bamarni/composer-bin-plugin": "^1.2",
+                "composer/class-map-generator": "^1.6"
             },
             "suggest": {
+                "composer/class-map-generator": "Improved tab completion performance with better class discovery.",
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
                 "ext-pdo-sqlite": "The doc command requires SQLite to work.",
                 "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well."
@@ -12801,9 +12380,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.10"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.13"
             },
-            "time": "2025-08-04T12:39:37+00:00"
+            "time": "2025-10-20T22:48:29+00:00"
         },
         {
             "name": "sabre/event",
@@ -13312,16 +12891,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "4.0.6",
+            "version": "4.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "78c00df8f170e02473b682df15bfcdacc3d32d72"
+                "reference": "14c6ba52f95a36c3d27c835d65efc7123c446e8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/78c00df8f170e02473b682df15bfcdacc3d32d72",
-                "reference": "78c00df8f170e02473b682df15bfcdacc3d32d72",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/14c6ba52f95a36c3d27c835d65efc7123c446e8c",
+                "reference": "14c6ba52f95a36c3d27c835d65efc7123c446e8c",
                 "shasum": ""
             },
             "require": {
@@ -13377,15 +12956,27 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.6"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.8"
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/exporter",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2024-03-02T06:33:00+00:00"
+            "time": "2025-09-24T06:03:27+00:00"
         },
         {
             "name": "sebastian/global-state",
@@ -14016,16 +13607,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.4.25",
+            "version": "v6.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "273fd29ff30ba0a88ca5fb83f7cf1ab69306adae"
+                "reference": "492de6dfd93910d7d7a729c5a04ddcd2b9e99c4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/273fd29ff30ba0a88ca5fb83f7cf1ab69306adae",
-                "reference": "273fd29ff30ba0a88ca5fb83f7cf1ab69306adae",
+                "url": "https://api.github.com/repos/symfony/console/zipball/492de6dfd93910d7d7a729c5a04ddcd2b9e99c4f",
+                "reference": "492de6dfd93910d7d7a729c5a04ddcd2b9e99c4f",
                 "shasum": ""
             },
             "require": {
@@ -14090,7 +13681,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.4.25"
+                "source": "https://github.com/symfony/console/tree/v6.4.26"
             },
             "funding": [
                 {
@@ -14110,7 +13701,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-22T10:21:53+00:00"
+            "time": "2025-09-26T12:13:46+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -14197,16 +13788,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.4.25",
+            "version": "v6.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "7cdec7edfaf2cdd9c18901e35bcf9653d6209ff1"
+                "reference": "5621f039a71a11c87c106c1c598bdcd04a19aeea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/7cdec7edfaf2cdd9c18901e35bcf9653d6209ff1",
-                "reference": "7cdec7edfaf2cdd9c18901e35bcf9653d6209ff1",
+                "url": "https://api.github.com/repos/symfony/string/zipball/5621f039a71a11c87c106c1c598bdcd04a19aeea",
+                "reference": "5621f039a71a11c87c106c1c598bdcd04a19aeea",
                 "shasum": ""
             },
             "require": {
@@ -14220,7 +13811,6 @@
                 "symfony/translation-contracts": "<2.5"
             },
             "require-dev": {
-                "symfony/error-handler": "^5.4|^6.0|^7.0",
                 "symfony/http-client": "^5.4|^6.0|^7.0",
                 "symfony/intl": "^6.2|^7.0",
                 "symfony/translation-contracts": "^2.5|^3.0",
@@ -14263,7 +13853,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.4.25"
+                "source": "https://github.com/symfony/string/tree/v6.4.26"
             },
             "funding": [
                 {
@@ -14283,20 +13873,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-22T12:33:20+00:00"
+            "time": "2025-09-11T14:32:46+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v6.4.25",
+            "version": "v6.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "c6cd92486e9fc32506370822c57bc02353a5a92c"
+                "reference": "cfae1497a2f1eaad78dbc0590311c599c7178d4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c6cd92486e9fc32506370822c57bc02353a5a92c",
-                "reference": "c6cd92486e9fc32506370822c57bc02353a5a92c",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/cfae1497a2f1eaad78dbc0590311c599c7178d4a",
+                "reference": "cfae1497a2f1eaad78dbc0590311c599c7178d4a",
                 "shasum": ""
             },
             "require": {
@@ -14351,7 +13941,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v6.4.25"
+                "source": "https://github.com/symfony/var-dumper/tree/v6.4.26"
             },
             "funding": [
                 {
@@ -14371,7 +13961,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-13T09:41:44+00:00"
+            "time": "2025-09-25T15:37:27+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -14487,28 +14077,28 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
+                "reference": "541057574806f942c94662b817a50f63f7345360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/11cb2199493b2f8a3b53e7f19068fc6aac760991",
-                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/541057574806f942c94662b817a50f63f7345360",
+                "reference": "541057574806f942c94662b817a50f63f7345360",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
+                "ext-date": "*",
+                "ext-filter": "*",
                 "php": "^7.2 || ^8.0"
             },
-            "conflict": {
-                "phpstan/phpstan": "<0.12.20",
-                "vimeo/psalm": "<4.6.1 || 4.6.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5.13"
+            "suggest": {
+                "ext-intl": "",
+                "ext-simplexml": "",
+                "ext-spl": ""
             },
             "type": "library",
             "extra": {
@@ -14539,9 +14129,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.11.0"
+                "source": "https://github.com/webmozarts/assert/tree/1.12.0"
             },
-            "time": "2022-06-03T18:03:27+00:00"
+            "time": "2025-10-20T12:43:39+00:00"
         },
         {
             "name": "wikimedia/alea",
@@ -14787,7 +14377,6 @@
         "mediawiki/hit-counters": 20,
         "mediawiki/image-map-edit": 20,
         "mediawiki/invite-signup": 20,
-        "mediawiki/lingo": 20,
         "mediawiki/loops": 20,
         "mediawiki/menu-editor": 20,
         "mediawiki/notify-me": 20,

@@ -4,6 +4,7 @@ namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore;
 
 use MediaWiki\Config\GlobalVarConfig;
 use MediaWiki\Message\Message;
+use MediaWiki\Parser\Sanitizer;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\PrimaryDatabaseDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
@@ -220,10 +221,11 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	 * @return void
 	 */
 	protected function appendRowToData( \stdClass $row ) {
+		$realName = $row->user_real_name !== null ? Sanitizer::stripAllTags( $row->user_real_name ?? '' ) : null;
 		$resultRow = [
 			'user_id' => (int)$row->user_id,
 			'user_name' => $row->user_name,
-			'user_real_name' => $row->user_real_name,
+			'user_real_name' => $realName,
 			'user_registration' => $row->user_registration,
 			'user_editcount' => (int)$row->user_editcount,
 			'user_email' => $row->user_email,
@@ -231,7 +233,7 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			'groups_raw' => explode( '|', $row->groups ),
 			'enabled' => !$this->isUserBlocked( (int)$row->user_id ),
 			// legacy fields
-			'display_name' => $row->user_real_name == null ? $row->user_name : $row->user_real_name,
+			'display_name' => !$realName ? $row->user_name : $realName,
 		];
 		$this->data[] = new UserRecord( (object)$resultRow );
 	}

@@ -5,13 +5,13 @@ declare( strict_types=1 );
 namespace MediaWiki\Extension\EmbedVideo\Media;
 
 use File;
-use FSFile;
 use MediaHandler;
 use MediaTransformOutput;
 use MediaWiki\Extension\EmbedVideo\Media\FFProbe\FFProbe;
 use MediaWiki\Extension\EmbedVideo\Media\TransformOutput\AudioTransformOutput;
 use MediaWiki\MediaWikiServices;
 use stdClass;
+use Wikimedia\FileBackend\FSFile\FSFile;
 
 class AudioHandler extends MediaHandler {
 	protected $contentLanguage;
@@ -262,10 +262,11 @@ class AudioHandler extends MediaHandler {
 		];
 
 		if ( $stream !== false && $stream !== null ) {
+			$bitDepth = $stream->getBitDepth();
 			$data['metadata'] = [
 				'duration' => $stream->getDuration(),
 				'codec' => $stream->getCodecName(),
-				'bitdepth' => $stream->getBitDepth(),
+				'bitdepth' => $bitDepth,
 			];
 
 			if ( !empty( $stream->getWidth() ) ) {
@@ -275,7 +276,10 @@ class AudioHandler extends MediaHandler {
 		}
 
 		if ( $format !== false && $format !== null ) {
-			$data['bits'] = $format->getBitRate();
+			$bitrate = $format->getBitRate();
+			if ( $bitrate !== false && $bitrate !== null ) {
+				$data['metadata']['bitrate'] = (int)$bitrate;
+			}
 		}
 
 		return $data;

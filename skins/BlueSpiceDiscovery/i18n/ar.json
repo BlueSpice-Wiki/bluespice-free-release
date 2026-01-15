@@ -76,7 +76,7 @@
 	"bs-discovery-tabpanel-page-text": "التنقل في إجراءات الصفحة",
 	"bs-discovery-tabpanel-page-title": "Tab مع إجراءات الصفحة وأدواتها",
 	"bs-discovery-tabpanel-page-aria-label": "إجراءات الصفحة والتنقل الأدوات",
-	"bs-discovery-tabpanel-page-desc": "إجراءات الصفحة والأدوات navigaiton يحتوي على علامات التبويب وصندوق الأدوات والإجراءات",
+	"bs-discovery-tabpanel-page-desc": "تحتوي صفحة إجراءات وأدوات التنقل على علامات تبويب وصندوق أدوات وإجراءات",
 	"bs-discovery-sidebar-primary-toggle-show-title": "افتح الشريط الجانبي الأساسي",
 	"bs-discovery-sidebar-primary-toggle-show-aria-label": "افتح الشريط الجانبي الأساسي",
 	"bs-discovery-sidebar-primary-toggle-hide-title": "إغلاق الشريط الجانبي الأساسي",
@@ -198,5 +198,11 @@
 	"bs-discovery-back-to-page-title": "العودة إلى الصفحة $1",
 	"bs-discovery-back-to-version-history": "العودة إلى تاريخ الإصدار",
 	"bs-discovery-back-to-version-history-title": "العودة إلى سجل الإصدارات للصفحة $1",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "الخط Atkinson Hyperlegible Next المستخدم في BlueSpiceDiscovery والمحتوى. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "الخط Atkinson Hyperlegible Next المستخدم في BlueSpiceDiscovery والمحتوى. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
+	"bs-toc-hide-button-aria-label": "إخفاء جدول المحتويات.",
+	"bs-discovery-skip-links-nav-aria-label": "تخطي الروابط",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "التنقل الرئيسي",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "أدوات الصفحة",
+	"bs-discovery-tools-after-content-cnt-aria-label": "معلومات إضافية عن الصفحة",
+	"bs-discovery-data-after-content-cnt-aria-label": "ملحق الصفحة"
 }

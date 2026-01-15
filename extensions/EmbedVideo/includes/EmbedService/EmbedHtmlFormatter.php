@@ -4,14 +4,14 @@ declare( strict_types=1 );
 
 namespace MediaWiki\Extension\EmbedVideo\EmbedService;
 
-use ConfigException;
 use Exception;
-use Html;
 use JsonException;
+use MediaWiki\Config\ConfigException;
 use MediaWiki\Extension\EmbedVideo\EmbedVideo;
 use MediaWiki\Extension\EmbedVideo\OEmbed;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
-use Message;
+use MediaWiki\Message\Message;
 use UnexpectedValueException;
 
 final class EmbedHtmlFormatter {
@@ -54,10 +54,20 @@ final class EmbedHtmlFormatter {
 			$config['class'] .= ' ' . $config['img-class'];
 		}
 
+		// Detect gallery-like contexts for local videos (packed galleries provide override-* options)
+		$isGalleryLike = $service instanceof LocalVideo && (
+			isset( $args['override-width'] ) || isset( $args['override-height'] )
+		);
+
 		$inlineStyles = [
 			'container' => $config['style'] ?? '',
 			'wrapper' => '',
 		];
+
+		// Force autoresize for gallery-like local embeds to avoid fixed dimensions
+		if ( $isGalleryLike ) {
+			$config['autoresize'] = true;
+		}
 
 		if ( $config['autoresize'] === true ) {
 			$config['class'] .= ' embedvideo--autoresize';
@@ -91,7 +101,7 @@ final class EmbedHtmlFormatter {
 				->get( 'EmbedVideoRequireConsent' );
 			if ( $consent === true ) {
 				$iframeConfig = sprintf(
-					"data-iframeconfig='%s'",
+					"data-mw-iframeconfig='%s'",
 					$service->getIframeConfig( $width, $height )
 				);
 			}
@@ -111,10 +121,18 @@ final class EmbedHtmlFormatter {
 		 * @see https://www.mediawiki.org/wiki/Specs/HTML/2.7.0#Audio/Video
 		 */
 		$template = <<<HTML
-			<figure class="%s" data-service="%s" %s %s><!--
-				--><div class="embedvideo-wrapper" %s>%s%s</div>%s
+			<figure class="%s" data-service="%s" %s %s>
+				<div class="embedvideo-wrapper" %s>%s%s</div>%s
 			</figure>
 			HTML;
+
+		$consentHtml = ( $config['withConsent'] ?? false ) === true
+			? self::makeConsentContainerHtml( $service )
+			: '';
+
+		$embedHtml = $service instanceof LocalVideo
+			? $service->renderVideoHtml( $args )
+			: (string)$service;
 
 		return sprintf(
 			$template,
@@ -123,8 +141,8 @@ final class EmbedHtmlFormatter {
 			$iframeConfig,
 			$inlineStyles['container'],
 			$inlineStyles['wrapper'],
-			( $config['withConsent'] ?? false ) === true ? self::makeConsentContainerHtml( $service ) : '',
-			$service,
+			$consentHtml,
+			$embedHtml,
 			$caption
 		);
 	}
@@ -194,8 +212,8 @@ final class EmbedHtmlFormatter {
 
 			// phpcs:disable
 			return <<<HTML
-				<picture class="embedvideo-thumbnail"><!--
-				--><img src="{$url}" loading="lazy" class="embedvideo-thumbnail__image" alt="Thumbnail for {$service->getTitle()}"/>
+				<picture class="embedvideo-thumbnail">
+					<img src="{$url}" loading="lazy" class="embedvideo-thumbnail__image" alt="Thumbnail for {$service->getTitle()}"/>
 				</picture>
 				HTML;
 			// phpcs:enable
@@ -232,23 +250,23 @@ final class EmbedHtmlFormatter {
 	 */
 	public static function makeConsentContainerHtml( AbstractEmbedService $service ): string {
 		$template = <<<HTML
-<div class="embedvideo-consent" data-show-privacy-notice="%s">%s<!--
---><div class="embedvideo-overlay"><!--
-	--><div class="embedvideo-loader" role="button">%s<!--
-		--><div class="embedvideo-loader__fakeButton">%s</div><!--
-		--><div class="embedvideo-loader__footer"><!--
-			--><div class="embedvideo-loader__service">%s</div><!--
-		--></div><!--
-	--></div><!--
-	--><div class="embedvideo-privacyNotice hidden"><!--
-		--><div class="embedvideo-privacyNotice__content">%s%s</div><!--
-		--><div class="embedvideo-privacyNotice__buttons"><!--
-			--><button class="embedvideo-privacyNotice__continue">%s</button><!--
-			--><button class="embedvideo-privacyNotice__dismiss">%s</button><!--
-		--></div><!--
-	--></div><!--
---></div><!--
---></div>
+<div class="embedvideo-consent" data-show-privacy-notice="%s">%s
+	<div class="embedvideo-overlay">
+		<div class="embedvideo-loader" role="button">%s
+			<div class="embedvideo-loader__fakeButton">%s</div>
+			<div class="embedvideo-loader__footer">
+				<div class="embedvideo-loader__service">%s</div>
+			</div>
+		</div>
+		<div class="embedvideo-privacyNotice hidden">
+			<div class="embedvideo-privacyNotice__content">%s%s</div>
+			<div class="embedvideo-privacyNotice__buttons">
+				<button class="embedvideo-privacyNotice__continue">%s</button>
+				<button class="embedvideo-privacyNotice__dismiss">%s</button>
+			</div>
+		</div>
+	</div>
+</div>
 HTML;
 
 		$showPrivacyNotice = false;

@@ -60,5 +60,6 @@
 	"bs-discovery-table-of-contents-show-button-aria-label": "Muestral la tabra de conteníus",
 	"bs-discovery-table-of-contents-hide-button-aria-label": "Incultal la tabra de conteníus",
 	"bs-discovery-breadcrumb-label-diff": "Deferencias",
-	"bs-discovery-back-to-page": "Golvel a $1"
+	"bs-discovery-back-to-page": "Golvel a $1",
+	"bs-toc-hide-button-aria-label": "Incultal la tabra de conteníus"
 }

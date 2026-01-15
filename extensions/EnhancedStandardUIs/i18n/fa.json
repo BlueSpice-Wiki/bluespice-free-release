@@ -3,6 +3,7 @@
 		"authors": [
 			"Darafsh",
 			"Jeeputer",
+			"LordProfo",
 			"Rulebased"
 		]
 	},
@@ -25,7 +26,7 @@
 	"enhanced-standard-uis-allpages-paginator-first": "نخست",
 	"enhanced-standard-uis-allpages-paginator-previous": "قبلی",
 	"enhanced-standard-uis-allpages-paginator-next": "بعدی",
-	"enhanced-standard-uis-allpages-paginator-last": "آخر",
+	"enhanced-standard-uis-allpages-paginator-last": "صفحه پایانی",
 	"enhanced-standard-uis-allpages-redirect-title": "تغییرمسیر",
 	"enhancedfilelist": "فهرست پرونده",
 	"enhanced-standard-uis-filelist-grid-file-title": "نام پرونده",

@@ -1,6 +1,6 @@
 {
 	"name": "StandardDialogs",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
@@ -72,7 +72,8 @@
 				"standarddialogs-btn-done",
 				"standarddialogs-btn-cancel",
 				"standarddialogs-delete-subpages",
-				"standarddialogs-confirm-mass-deletion"
+				"standarddialogs-confirm-mass-deletion",
+				"standarddialogs-delete-btn-label"
 			],
 			"dependencies": [
 				"oojs-ui-windows"
@@ -96,7 +97,8 @@
 				"move-subpages",
 				"standarddialogs-btn-done",
 				"standarddialogs-btn-cancel",
-				"standarddialogs-validation-page-exist-info-label"
+				"standarddialogs-validation-page-exist-info-label",
+				"standarddialogs-move-btn-label"
 			],
 			"dependencies": [
 				"oojs-ui-windows",
@@ -130,7 +132,8 @@
 				"protect-otherreason-op",
 				"watchthis",
 				"standarddialogs-btn-done",
-				"standarddialogs-btn-cancel"
+				"standarddialogs-btn-cancel",
+				"standarddialogs-protect-btn-label"
 			],
 			"dependencies": [
 				"oojs-ui-windows"
@@ -149,7 +152,8 @@
 				"confirm-purge-top",
 				"confirm-purge-bottom",
 				"standarddialogs-btn-done",
-				"standarddialogs-btn-cancel"
+				"standarddialogs-btn-cancel",
+				"standarddialogs-purge-btn-label"
 			],
 			"dependencies": [
 				"oojs-ui-windows"
@@ -169,7 +173,8 @@
 				"standarddialogs-copy-discussion",
 				"standarddialogs-btn-done",
 				"standarddialogs-btn-cancel",
-				"standarddialogs-validation-page-exist-info-label"
+				"standarddialogs-validation-page-exist-info-label",
+				"standarddialogs-copy-btn-label"
 			],
 			"dependencies": [
 				"oojs-ui-windows",
@@ -236,7 +241,8 @@
 				"standarddialogs-btn-done",
 				"standarddialogs-btn-cancel",
 				"standarddialogs-new-page-not-exist-label",
-				"standarddialogs-validation-page-exist-info-label"
+				"standarddialogs-validation-page-exist-info-label",
+				"standarddialogs-new-page-btn-label"
 			],
 			"dependencies": [
 				"oojs-ui-windows",
@@ -256,7 +262,8 @@
 				"create",
 				"standarddialogs-btn-done",
 				"standarddialogs-btn-cancel",
-				"standarddialogs-validation-page-exist-info-label"
+				"standarddialogs-validation-page-exist-info-label",
+				"standarddialogs-new-subpage-btn-label"
 			],
 			"dependencies": [
 				"oojs-ui-windows",

@@ -315,10 +315,10 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 
 			if ( !$ariaString ) {
 				/*
-				* bs-discovery-tools-after-content-aria-label,
-				* bs-discovery-data-after-content-aria-label
+				* bs-discovery-tools-after-content-cnt-aria-label,
+				* bs-discovery-data-after-content-cnt-aria-label
 				*/
-				$ariaLabel = Message::newFromKey( "bs-discovery-$id-aria-label" );
+				$ariaLabel = Message::newFromKey( "bs-discovery-$id-cnt-aria-label" );
 				$ariaLabelString = ' aria-label="' . $ariaLabel->escaped() . '"';
 			}
 		}

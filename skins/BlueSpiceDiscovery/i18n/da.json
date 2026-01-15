@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"SiGNOUT"
+			"SiGNOUT",
+			"Steenth"
 		]
 	},
 	"bs-discovery-enhanced-mediawiki-sidebar-field-page": "Side",
@@ -14,5 +15,7 @@
 	"menueditor-ui-enhanced-sidebar-panel-heading-label-edit": "Paneloverskrift",
 	"bs-discovery-enhanced-mediawiki-sidebar-field-heading": "Overskriftstekst",
 	"bs-discovery-enhanced-mediawiki-sidebar-add-new-panel-button-label": "Tilføj nyt panel",
-	"bs-discovery-enhanced-mediawiki-sidebar-field-classes": "CSS klasser"
+	"bs-discovery-enhanced-mediawiki-sidebar-field-classes": "CSS klasser",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Hovednavigation",
+	"bs-discovery-data-after-content-cnt-aria-label": "Sidetillæg"
 }

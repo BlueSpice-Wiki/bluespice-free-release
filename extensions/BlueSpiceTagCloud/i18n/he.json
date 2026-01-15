@@ -32,5 +32,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "ללא הדפים האלה",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "לא להציג את הדפים האלה בענן התגים. לדפים נוספים, להשתמש ברשימה מופרדת בפסיקים, למשל \"עמוד ראשי, בדיקה, דף שלי\"",
 	"bs-tagcloud-droplet-name": "ענן תגים",
-	"bs-tagcloud-droplet-description": "ענן תגים מבוסס על קטגוריות או שאילתות חיפוש"
+	"bs-tagcloud-droplet-description": "ענן תגים מבוסס על קטגוריות או שאילתות חיפוש",
+	"bs-tagcloud-tag-tagcloud-tab-common": "כללי",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "מתקדם"
 }

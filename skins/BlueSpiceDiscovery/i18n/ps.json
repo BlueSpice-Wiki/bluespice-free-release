@@ -148,7 +148,7 @@
 	"bs-discovery-back-to-version-history-title": "بېرته د $1 مخ بل‌بڼې ته ورتلل",
 	"bs-discovery-tabpanel-main-title": "د ار ويکي‌چلند سره ريښکه",
 	"bs-discovery-tabpanel-main-desc": "آر چلند خپل ځان کې ريښکې، آر تړوني او مېډياويکي څنگپټه رانغاړي",
-	"bs-discovery-tabpanel-page-desc": "مخ چارې او توکي چلند په خپل ځان کې ريښکې، توک‌بکس او چارې رانغاړي",
+	"bs-discovery-tabpanel-page-desc": "مخ چارې او توکو چلند په خپل ځان کې ريښکې، توک‌بکس او چارې رانغاړي",
 	"bs-discovery-details-pnl-more-link-title": "د دې مخ چارو او مالوماتو چمتو کولو تړنو سره يو خبربکس پرانيزئ",
 	"bs-discovery-details-pnl-more-link-aria-label": "دې مخ لپاره نور تړوني مالومات او چارې چمتو کوي",
 	"bs-discovery-config-mainlinks-mainpage-help": "په کيڼ چلند کې د \"لومړي مخ\" ننوتنځايونه ښودل.",
@@ -189,5 +189,11 @@
 	"bs-discovery-footerlinks-imprint-link-desc": "چاپول",
 	"bs-discovery-footerlinks-imprint-link-page": "وېبځي:چاپول",
 	"bs-discovery-footerlinks-termsofservice-link-page": "وېبځي:چوپړ_منښتونه",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "د Atkinson Hyperlegible Next ليکبڼه چې BlueSpiceDiscovery او منځپانگه کې کارېږي.([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "د Atkinson Hyperlegible Next ليکبڼه چې BlueSpiceDiscovery او منځپانگه کې کارېږي.([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
+	"bs-toc-hide-button-aria-label": "نيوليک پټول",
+	"bs-discovery-skip-links-nav-aria-label": "تړوني پرېښودل",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "آر چلند",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "مخ‌ توکي",
+	"bs-discovery-tools-after-content-cnt-aria-label": "زياتي مخ مالومات",
+	"bs-discovery-data-after-content-cnt-aria-label": "مخ کولمه"
 }

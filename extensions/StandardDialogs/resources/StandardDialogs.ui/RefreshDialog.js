@@ -15,6 +15,10 @@ StandardDialogs.ui.RefreshDialog.prototype.makeSetupProcessData = function () {
 	return data;
 };
 
+StandardDialogs.ui.RefreshDialog.prototype.getPrimaryActionLabel = function () {
+	return mw.message( 'standarddialogs-purge-btn-label' ).plain();
+};
+
 StandardDialogs.ui.RefreshDialog.prototype.getFormItems = function () {
 	this.mainInput = this.targetTitle = new OO.ui.LabelWidget( {
 		label: mw.message( 'confirm-purge-bottom' ).plain()

@@ -6,8 +6,8 @@ use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
-use MWException;
 use Skin;
+use Throwable;
 
 class AddSidebarLinks implements SidebarBeforeOutputHook {
 
@@ -46,7 +46,7 @@ class AddSidebarLinks implements SidebarBeforeOutputHook {
 			// `WebRequest::getRequestURL` may fail in some cases (e.g. UnitTests)
 			$requestUrl = $skin->getConfig()->get( 'Server' )
 				. $skin->getRequest()->getRequestURL();
-		} catch ( MWException $ex ) {
+		} catch ( Throwable $ex ) {
 			$requestUrl = $title->getLocalURL();
 		}
 

@@ -68,7 +68,7 @@
 	"bs-discovery-tabpanel-page-text": "ניווט פעולות דף",
 	"bs-discovery-tabpanel-page-title": "לשונית עם פעולות כלים בשביל הדף",
 	"bs-discovery-tabpanel-page-aria-label": "ניווט פעולות וכלים בשביל הדף",
-	"bs-discovery-tabpanel-page-desc": "ניווט פעולות וכלים בשביל הדף מכיל לשוניות, תיבת כלים, ופעולות",
+	"bs-discovery-tabpanel-page-desc": "ניווט פעולות וכלים בשביל הדף מכיל לשוניות, תיבת כלים ופעולות",
 	"bs-discovery-sidebar-primary-toggle-show-title": "פתיחת סרגל צד ראשי",
 	"bs-discovery-sidebar-primary-toggle-show-aria-label": "פתיחת סרגל צד ראשי",
 	"bs-discovery-sidebar-primary-toggle-hide-title": "סגירת סרגל צד ראשי",
@@ -189,5 +189,11 @@
 	"bs-discovery-back-to-page-title": "חזרה לדף $1",
 	"bs-discovery-back-to-version-history": "חזרה להיסטוריית הגרסאות",
 	"bs-discovery-back-to-version-history-title": "חזרה להיסטוריית הגרסאות של הדף $1",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "גופן Atkinson Hyperlegible Next משמש עבור BlueSpiceDiscovery ותוכן. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "גופן Atkinson Hyperlegible Next משמש עבור BlueSpiceDiscovery ותוכן. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
+	"bs-toc-hide-button-aria-label": "להסתיר את תוכן העניינים",
+	"bs-discovery-skip-links-nav-aria-label": "לדלג על קישורים",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "ניווט ראשי",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "כלי דף",
+	"bs-discovery-tools-after-content-cnt-aria-label": "מידע נוסף על הדף",
+	"bs-discovery-data-after-content-cnt-aria-label": "נספח לדף"
 }

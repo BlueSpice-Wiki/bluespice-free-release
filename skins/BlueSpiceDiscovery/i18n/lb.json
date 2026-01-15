@@ -6,8 +6,8 @@
 		]
 	},
 	"bs-discovery-skip-links-navigation-aria-label": "Op d'Linke wiesselen",
-	"bs-discovery-back-to-top-text": "Zréck no uewen",
-	"bs-discovery-back-to-top-aria-label": "Zréck no uewen",
+	"bs-discovery-back-to-top-text": "Zeréck no uewen",
+	"bs-discovery-back-to-top-aria-label": "Zeréck no uewen",
 	"bs-discovery-navbar-user-button-title": "Benotzermenü",
 	"bs-discovery-navbar-user-button-aria-label": "Benotzermenü",
 	"bs-discovery-navbar-user-button-personal-menu-text": "Perséinlech Tools",
@@ -105,5 +105,9 @@
 	"bs-discovery-page-version-pager-previous": "Vireg",
 	"bs-discovery-page-version-pager-next": "Nächst",
 	"bs-discovery-back-to-page": "Zréck op $1",
-	"bs-discovery-back-to-page-title": "Zréck op d'Säit $1"
+	"bs-discovery-back-to-page-title": "Zréck op d'Säit $1",
+	"bs-discovery-config-meta-items-header-label": "Elementer ënner dem Säitentitel",
+	"bs-discovery-skip-links-nav-aria-label": "Linken iwwersprangen",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Haaptnavigatioun",
+	"bs-discovery-tools-after-content-cnt-aria-label": "Zousätzlech Säiteninformatiounen"
 }

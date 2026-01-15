@@ -70,7 +70,7 @@
 	"bs-discovery-tabpanel-page-text": "頁面操作導覽",
 	"bs-discovery-tabpanel-page-title": "帶有頁面操作導覽與工具的分頁",
 	"bs-discovery-tabpanel-page-aria-label": "頁面操作與工具導覽",
-	"bs-discovery-tabpanel-page-desc": "頁面操作與含有分頁、工具箱、操作的工具導覽",
+	"bs-discovery-tabpanel-page-desc": "頁面操作與工具導覽含有分頁、工具箱與操作",
 	"bs-discovery-sidebar-primary-toggle-show-title": "開啟主要側邊欄",
 	"bs-discovery-sidebar-primary-toggle-show-aria-label": "開啟主要側邊欄",
 	"bs-discovery-sidebar-primary-toggle-hide-title": "關閉主要側邊欄",
@@ -191,5 +191,11 @@
 	"bs-discovery-back-to-page-title": "返回到$1頁面",
 	"bs-discovery-back-to-version-history": "返回到版本歷史",
 	"bs-discovery-back-to-version-history-title": "返回到頁面$1的版本歷史",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "使用在 BlueSpiceDiscovery 與內容的 Atkinson Hyperlegible Next Font。（[https://www.brailleinstitute.org https://www.brailleinstitute.org]）"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "使用在 BlueSpiceDiscovery 與內容的 Atkinson Hyperlegible Next Font。（[https://www.brailleinstitute.org https://www.brailleinstitute.org]）",
+	"bs-toc-hide-button-aria-label": "隱藏目次",
+	"bs-discovery-skip-links-nav-aria-label": "跳過連結",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "主導覽",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "頁面工具",
+	"bs-discovery-tools-after-content-cnt-aria-label": "額外頁面資訊",
+	"bs-discovery-data-after-content-cnt-aria-label": "頁面附錄"
 }

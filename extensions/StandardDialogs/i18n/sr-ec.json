@@ -12,5 +12,11 @@
 	"standarddialogs-page-info-page-no-templates-label": "Ова страница нема шаблоне",
 	"standarddialogs-page-info-page-no-categories-label": "Ова страница нема категорије",
 	"standarddialogs-page-info-page-no-links-label": "Ова страница нема везе",
-	"standarddialogs-page-info-page-no-extlinks-label": "Ова страница нема спољашње везе"
+	"standarddialogs-page-info-page-no-extlinks-label": "Ова страница нема спољашње везе",
+	"standarddialogs-delete-btn-label": "Обриши",
+	"standarddialogs-copy-btn-label": "Копирај",
+	"standarddialogs-new-page-btn-label": "Направи",
+	"standarddialogs-new-subpage-btn-label": "Направи",
+	"standarddialogs-protect-btn-label": "Заштити",
+	"standarddialogs-purge-btn-label": "Освежи"
 }

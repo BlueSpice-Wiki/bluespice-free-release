@@ -197,5 +197,10 @@
 	"bs-discovery-back-to-page-title": "Zurück zur Seite $1",
 	"bs-discovery-back-to-version-history": "Zurück zur Versionsgeschichte",
 	"bs-discovery-back-to-version-history-title": "Zurück zur Versionsgeschichte der Seite $1",
-	"bs-toc-hide-button-aria-label": "Inhaltsverzeichnis verbergen"
+	"bs-toc-hide-button-aria-label": "Inhaltsverzeichnis verbergen",
+	"bs-discovery-skip-links-nav-aria-label": "Sprunglinks",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Hauptnavigation",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "Seitenwerkzeuge",
+	"bs-discovery-tools-after-content-cnt-aria-label": "Zusätzliche Seiteninformationen",
+	"bs-discovery-data-after-content-cnt-aria-label": "Seitenanhang"
 }

@@ -203,5 +203,9 @@
 	"notifyme-ui-dialog-popup-table-event-label": "אירוע",
 	"notifyme-ui-dialog-popup-table-desc-label": "תיאור",
 	"notifyme-ui-dialog-popup-header-label": "האירועים האלה מפעילים התראות:",
-	"notifyme-event-page-edit-desc": "דף נערך על־ידי משתמש אחר"
+	"notifyme-event-page-edit-desc": "דף נערך על־ידי משתמש אחר",
+	"notifyme-ui-delivery-label": "שיטת מסירה",
+	"prefs-subs": "מינויים להתראות",
+	"notifyme-notification-filter-count-aria-label": "מכיל {{PLURAL:$1|התראה אחת|$1 התראות}}",
+	"notifyme-notification-filter-aria-label": "סינון התראות"
 }

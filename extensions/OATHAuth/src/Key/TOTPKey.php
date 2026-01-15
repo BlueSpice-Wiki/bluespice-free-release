@@ -23,7 +23,9 @@ use Base32\Base32;
 use DomainException;
 use Exception;
 use jakobo\HOTP\HOTP;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\OATHAuth\IAuthKey;
+use MediaWiki\Extension\OATHAuth\Module\TOTP;
 use MediaWiki\Extension\OATHAuth\Notifications\Manager;
 use MediaWiki\Extension\OATHAuth\OATHAuthServices;
 use MediaWiki\Extension\OATHAuth\OATHUser;
@@ -169,7 +171,7 @@ class TOTPKey implements IAuthKey {
 		// Remove any whitespace from the received token, which can be an intended group separator
 		$token = preg_replace( '/\s+/', '', $token );
 
-		$clientIP = $user->getUser()->getRequest()->getIP();
+		$clientIP = RequestContext::getMain()->getRequest()->getIP();
 
 		$logger = $this->getLogger();
 
@@ -246,6 +248,11 @@ class TOTPKey implements IAuthKey {
 	public function isScratchToken( $token ) {
 		$token = preg_replace( '/\s+/', '', $token );
 		return in_array( $token, $this->recoveryCodes, true );
+	}
+
+	/** @inheritDoc */
+	public function getModule(): string {
+		return TOTP::MODULE_NAME;
 	}
 
 	/**

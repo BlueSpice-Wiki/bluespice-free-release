@@ -62,3 +62,8 @@ body.mw-underline-always .mw-body-content a {
 .skin-bluespicediscovery .oojs-plus-color-picker-standalone {
 	z-index: 2050;
 }
+
+/* fix MultimediaViewer fold bar width */
+.mw-mmv-above-fold {
+	box-sizing: content-box;
+}

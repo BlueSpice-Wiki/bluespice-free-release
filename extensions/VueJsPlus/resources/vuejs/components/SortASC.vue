@@ -45,7 +45,7 @@ module.exports = exports = {
 <style lang="css">
 .vuejsplus-data-grid-option-sort-asc {
 	padding-left: 20px;
-	background-image: url( '../../../VueJsPlus/resources/images/Bootstrap_sort-up.svg.png');
+	background-image: url( ../../../VueJsPlus/resources/images/Bootstrap_sort-up.svg.png );
 	background-repeat: no-repeat;
 	background-position-y: 4px;
 }

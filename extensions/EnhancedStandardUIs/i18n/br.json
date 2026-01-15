@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Adriendelucca"
+			"Adriendelucca",
+			"Huñvreüs"
 		]
 	},
 	"enhancedallpages": "An holl bajennoù",
 	"enhanced-standard-uis-allpages-include-redirect": "Diskouez an adkasoù",
-	"enhanced-standard-uis-allpages-paginator-first": "Kentañ",
-	"enhanced-standard-uis-allpages-paginator-previous": "Kent",
-	"enhanced-standard-uis-allpages-paginator-next": "War-lerc'h",
-	"enhanced-standard-uis-allpages-paginator-last": "Diwezhañ",
+	"enhanced-standard-uis-allpages-paginator-first": "Pajenn gentañ",
+	"enhanced-standard-uis-allpages-paginator-previous": "Pajenn gent",
+	"enhanced-standard-uis-allpages-paginator-next": "Pajenn war-lerc'h",
+	"enhanced-standard-uis-allpages-paginator-last": "Pajenn ziwezhañ",
 	"enhanced-standard-uis-allpages-redirect-title": "Adkas"
 }

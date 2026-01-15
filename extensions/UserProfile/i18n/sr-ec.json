@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"userprofile-field-email": "Имејл",
+	"userprofile-editor-toolbar-cancel": "Откажи",
+	"userprofile-editor-toolbar-save": "Сачувај",
+	"userprofile-profile-image-alt": "Профилна слика",
+	"userprofile-droplet-name": "Кориснички профил",
+	"userprofile-ve-attr-framed-label": "Урамљено",
+	"userprofile-ve-attr-orientation-horizontal": "Водоравно",
+	"userprofile-ve-attr-orientation-vertical": "Усправно"
+}

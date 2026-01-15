@@ -195,8 +195,8 @@
 	"ext-notifications-mail-manage-notifications": "{{int:notifyme-mail-manage-notifications}}",
 	"ext-notifications-mail-manage-notifications-link": "{{int:notifyme-mail-manage-notifications-link}}",
 	"notifyme-navbar-button-aria-label-unread-notifications": "You have $1 unread {{PLURAL:$1|notification|notifications}}",
-	"notifyme-notification-center-pagination-aria-next": "Next",
-	"notifyme-notification-center-pagination-aria-previous": "Previous",
+	"notifyme-notification-center-pagination-aria-next": "Next page",
+	"notifyme-notification-center-pagination-aria-previous": "Previous page",
 	"notifyme-notification-center-navigation-hint": "Tip: You can use the left and right arrow keys to navigate between the tabs in the tabs list.",
 	"notifyme-notification-center-filter-item-aria-label": "Filter $1",
 	"notifyme-event-page-missing-desc": "''There is no description of this event yet''",
@@ -208,5 +208,8 @@
 	"notifyme-ui-dialog-popup-header-label": "These events trigger notifications:",
 	"notifyme-event-page-edit-desc": "A page has been edited by another user",
 	"notifyme-ui-delivery-label": "Delivery",
-	"prefs-subs": "Notification subscriptions"
+	"prefs-subs": "Notification subscriptions",
+	"notifyme-notification-filter-count-aria-label": "contains {{PLURAL:$1|one notification|$1 notifications}}",
+	"notifyme-notification-filter-aria-label": "Notification filter",
+	"notifyme-notification-center-pagination-number-aria-label": "Notifications $1 to $2 shown"
 }

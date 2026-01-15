@@ -16,8 +16,8 @@
 	"enhanced-standard-uis-history-grid-header-diff-label": "Differenza",
 	"enhancedallpages": "Tutte le pagine",
 	"enhanced-standard-uis-allpages-config": "Configurazione",
-	"enhanced-standard-uis-allpages-paginator-previous": "Precedente",
-	"enhanced-standard-uis-allpages-paginator-next": "Successivo",
+	"enhanced-standard-uis-allpages-paginator-previous": "Pagina precedente",
+	"enhanced-standard-uis-allpages-paginator-next": "Pagina successiva",
 	"enhanced-standard-uis-allpages-redirect-title": "Reindirizzamento",
 	"enhancedfilelist": "Elenco dei file",
 	"enhanced-standard-uis-filelist-grid-file-title": "Nome del file",
@@ -53,5 +53,7 @@
 	"enhanced-pref-username": "{{GENDER:$1|Nome utente}}",
 	"enhanced-prefs-memberingroups": "{{GENDER:$2|Membro}} {{PLURAL:$1|del gruppo|dei gruppi}}",
 	"enhanced-standard-uis-preferences-date-label": "Seleziona il formato di visualizzazione",
-	"enhanced-standard-uis-prefs-panel-search-label": "Cerca"
+	"enhanced-standard-uis-prefs-panel-search-label": "Cerca",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Informazioni sul file",
+	"enhanced-standard-uis-prefs-reset-dlg-action-label": "Reimposta"
 }

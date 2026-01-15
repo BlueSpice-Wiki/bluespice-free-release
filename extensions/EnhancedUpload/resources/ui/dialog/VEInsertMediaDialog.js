@@ -118,9 +118,9 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.makeDoneProcess = functio
 	dfdUpload.done( ( resp ) => {
 		this.insertMedia( params.filename, resp.upload.imageinfo.url, this.file );
 		dfd.resolve.apply( this );
-	} ).fail( ( error ) => {
+	} ).fail( ( error, result ) => {
 		if ( error === 'fileexists-no-change' || error === 'duplicate' || error === 'exists' ) {
-			this.handleErrors( error, arguments, params.filename, this.fragment );
+			this.handleErrors( error, result, params.filename, this.fragment );
 			dfd.resolve.apply( this );
 		} else {
 			dfd.reject(
@@ -144,8 +144,8 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.doUpload = function ( fil
 		if ( result.error !== undefined ) {
 			dfd.reject( result.error.info, result );
 		}
-		if ( arguments[ 1 ] && arguments[ 1 ].upload && arguments[ 1 ].upload.warnings ) {
-			warnings = arguments[ 1 ].upload.warnings;
+		if ( result.upload && result.upload.warnings ) {
+			warnings = result.upload.warnings;
 		}
 		if ( 'exists' in warnings || 'exists-normalized' in warnings ) {
 			errorMessage = 'exists';
@@ -244,14 +244,14 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertExistingMedia = fun
 	}
 };
 
-enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors = function ( error, arguments, fileName, fragment ) { // eslint-disable-line no-shadow-restricted-names
+enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors = function ( error, results, fileName, fragment ) { // eslint-disable-line no-shadow-restricted-names
 	const dfd = $.Deferred();
 	if ( error === 'fileexists-no-change' ) {
 		this.insertExistingMedia( fragment, fileName );
 		dfd.resolve.apply( this );
 	}
 	if ( error === 'duplicate' ) {
-		const origFileName = arguments[ 1 ].upload.warnings.duplicate[ 0 ];
+		const origFileName = results.upload.warnings.duplicate[ 0 ];
 		OO.ui.confirm(
 			mw.message( 'enhancedupload-ve-dialog-duplicate-confirm' ).plain() )
 			.done( ( confirmed ) => {

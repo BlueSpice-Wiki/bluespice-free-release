@@ -133,5 +133,6 @@
 	"bs-discovery-table-of-contents-show-button-aria-label": "Prikaži tabelu sa sadržajem",
 	"bs-discovery-table-of-contents-hide-button-aria-label": "Sakrij tabelu sa sadržajem",
 	"bs-discovery-back-to-page": "Nazad na $1",
-	"bs-discovery-back-to-page-title": "Nazad na stranicu $1"
+	"bs-discovery-back-to-page-title": "Nazad na stranicu $1",
+	"bs-toc-hide-button-aria-label": "Sakrij tabelu sa sadržajem"
 }

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Marphy 123"
+		]
+	},
+	"standarddialogs-delete-btn-label": "Boma",
+	"standarddialogs-move-btn-label": "Koningana",
+	"standarddialogs-copy-btn-label": "Kopi na yango",
+	"standarddialogs-new-page-btn-label": "Kosala",
+	"standarddialogs-new-subpage-btn-label": "Kobimisa",
+	"standarddialogs-protect-btn-label": "Kobatela",
+	"standarddialogs-purge-btn-label": "Bozongisa sika"
+}

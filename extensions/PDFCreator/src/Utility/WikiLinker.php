@@ -4,18 +4,14 @@ namespace MediaWiki\Extension\PDFCreator\Utility;
 
 use DOMElement;
 use DOMXPath;
-use MediaWiki\Title\TitleFactory;
+use MediaWiki\Utils\UrlUtils;
 
 class WikiLinker {
 
-	/** @var TitleFactory */
-	private $titleFactory;
-
 	/**
-	 * @param TitleFactory $titleFactory
+	 * @param UrlUtils $urlUtils
 	 */
-	public function __construct( TitleFactory $titleFactory ) {
-		$this->titleFactory = $titleFactory;
+	public function __construct( private readonly UrlUtils $urlUtils ) {
 	}
 
 	/**
@@ -30,17 +26,27 @@ class WikiLinker {
 			$dom = $page->getDOMDocument();
 			$xpath = new DOMXPath( $dom );
 
-			$elements = $xpath->query( '//*[contains(@class, "internal") and not(contains(@class, "media"))]' );
+			$elements = $xpath->query( '//a[not(contains(@class, "media"))]' );
 			foreach ( $elements as $element ) {
 				if ( $element instanceof DOMElement === false ) {
 					continue;
 				}
-				if ( $element->hasAttribute( 'title' ) === false ) {
+
+				if ( $element->hasAttribute( 'href' ) === false ) {
 					continue;
 				}
-				$title = $element->getAttribute( 'title' );
-				$title = $this->titleFactory->newFromText( $title );
-				$element->setAttribute( 'href', $title->getFullURL() );
+
+				$href = $element->getAttribute( 'href' );
+				if ( substr( $href, 0, 1 ) === '#' ) {
+					continue;
+				}
+
+				$href = $this->urlUtils->expand( $href );
+				if ( !$href ) {
+					continue;
+				}
+
+				$element->setAttribute( 'href', $href );
 			}
 		}
 

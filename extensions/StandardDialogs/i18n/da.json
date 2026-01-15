@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Steenth"
+		]
+	},
+	"standarddialogs-delete-btn-label": "Slet",
+	"standarddialogs-move-btn-label": "Flyt",
+	"standarddialogs-copy-btn-label": "Kopiér",
+	"standarddialogs-new-page-btn-label": "Opret",
+	"standarddialogs-new-subpage-btn-label": "Opret",
+	"standarddialogs-protect-btn-label": "Beskytte",
+	"standarddialogs-purge-btn-label": "Opfriske"
+}

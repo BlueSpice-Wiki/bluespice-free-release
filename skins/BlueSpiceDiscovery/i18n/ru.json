@@ -199,5 +199,6 @@
 	"bs-discovery-footerlinks-imprint-link-desc": "Imprint",
 	"bs-discovery-footerlinks-imprint-link-page": "Site:Imprint",
 	"bs-discovery-back-to-version-history-title": "Вернуться к истории версий страницы $1",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Шрифт Atkinson Hyperlegible Next, используемый для BlueSpiceDiscovery и контента. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Шрифт Atkinson Hyperlegible Next, используемый для BlueSpiceDiscovery и контента. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
+	"bs-toc-hide-button-aria-label": "Скрыть содержание"
 }

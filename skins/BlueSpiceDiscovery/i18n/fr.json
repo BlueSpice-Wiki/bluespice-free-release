@@ -7,6 +7,7 @@
 			"Gomoko",
 			"JLTRY",
 			"Mahabarata",
+			"Marphy 123",
 			"McDutchie",
 			"Méthodes Bulebe Hangi",
 			"Verdy p",
@@ -202,5 +203,6 @@
 	"bs-discovery-back-to-page-title": "Retourner à la page $1",
 	"bs-discovery-back-to-version-history": "Retour à l'historique des versions",
 	"bs-discovery-back-to-version-history-title": "Retourner à l'historique des versions de la page $1",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Police Atkinson Hyperlegible Next utilisée pour BlueSpiceDiscovery et son contenu. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Police Atkinson Hyperlegible Next utilisée pour BlueSpiceDiscovery et son contenu. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
+	"bs-toc-hide-button-aria-label": "Masquer la table des matières"
 }

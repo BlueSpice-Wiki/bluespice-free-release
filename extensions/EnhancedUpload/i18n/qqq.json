@@ -95,5 +95,8 @@
 	"enhancedupload-preview-widget-remove-label": "Label for icon to remove preview widget\nParameters:\n* $1 - file name",
 	"enhancedupload-reset-button-label": "Label for button to reset upload files",
 	"enhancedupload-ve-file-dialog-title": "Title for dialog to upload and insert file to content",
-	"enhancedupload-ve-file-dialog-filename-label": "Label for input to insert file name"
+	"enhancedupload-ve-file-dialog-filename-label": "Label for input to insert file name",
+	"enhancedupload-ve-dialog-title": "Title for dialog to upload and insert file to content",
+	"enhancedupload-ve-dialog-filename-label": "Label for input to insert file name",
+	"enhancedupload-warning-dialog-upload-label": "A warning message that tells how many files are uploaded with a warning\n\nParameters:\n* $1 - number of files"
 }

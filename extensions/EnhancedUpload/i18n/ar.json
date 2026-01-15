@@ -4,8 +4,10 @@
 			"Alshamiri1",
 			"Asma",
 			"Cigaryno",
+			"Hubaishan",
 			"Mdktb",
 			"Meno25",
+			"Mohammed Qays",
 			"Mohanad",
 			"Mohanad Kh",
 			"محمد أحمد عبد الفتاح"
@@ -15,7 +17,7 @@
 	"enhancedupload-desc": "توفر صفحة خاصة مع خيار تحميل ملف واحد أو ملفات متعددة إلى الويكي",
 	"enhancedupload-text": "تحميل الملفات",
 	"enhancedupload-details-header-label": "التفاصيل",
-	"enhancedupload-details-namespace-label": "مساحة الاسم",
+	"enhancedupload-details-namespace-label": "نطاق",
 	"enhancedupload-details-categories-label": "تصنيفات",
 	"enhancedupload-details-description-label": "الوصف",
 	"enhancedupload-upload-button-label": "رفع",
@@ -54,7 +56,7 @@
 	"enhancedupload-upload-media-dialog-title": "تحميل الملف",
 	"enhancedupload-upload-media-dialog-cancel-title": "إلغاء",
 	"enhancedupload-upload-media-dialog-upload-title": "رفع",
-	"enhancedupload-upload-media-dialog-done-title": "تم",
+	"enhancedupload-upload-media-dialog-done-title": "نُفّذ",
 	"enhancedupload-ve-dialog-duplicate-confirm": "هذا الملف مكرر. هل تريد إدراج الملف الحالي بدلاً من ذلك؟ وإلا فلن يتم إدراج أي ملف",
 	"enhancedupload-attachments-media-dialog-details-cancel": "إلغاء",
 	"enhancedupload-attachments-media-dialog-details-upload": "تحميل",
@@ -100,5 +102,6 @@
 	"enhancedupload-preview-widget-remove-label": "أزل '$1'",
 	"enhancedupload-reset-button-label": "إعادة ضبط",
 	"enhancedupload-ve-file-dialog-title": "ملف",
-	"enhancedupload-ve-file-dialog-filename-label": "اسم الملف"
+	"enhancedupload-ve-file-dialog-filename-label": "اسم الملف",
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|حدث تحذير}} مع {{PLURAL:$1| هذا الملف الذي تم تحميله|هذه الملفات التي تم تحميلها}}"
 }

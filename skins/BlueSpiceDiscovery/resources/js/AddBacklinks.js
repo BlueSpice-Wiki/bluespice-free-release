@@ -1,12 +1,15 @@
 ( function ( mw, $, d ) {
 
 	function buildURL( url ) {
-		const backTo = 'backTo=' + mw.util.rawurlencode( mw.util.rawurlencode( mw.config.get( 'wgPageName' ) ) );
-		let connector = '?';
-		if ( url.indexOf( '?' ) > 0 ) {
-			connector = '&';
+		const parsed = new URL( url, mw.config.get( 'wgServer' ) );
+		if ( parsed.hostname !== window.location.hostname ) {
+			return url;
 		}
-		return url + connector + backTo;
+		if ( parsed.searchParams.has( 'backTo' ) ) {
+			return url;
+		}
+		parsed.searchParams.set( 'backTo', mw.config.get( 'wgPageName' ) );
+		return parsed.toString();
 	}
 
 	$( d ).on( 'click', '.ns-special #content a', function ( e ) {

@@ -114,7 +114,7 @@ final class Grouper {
 			case 'agent':
 				return $notification->getEvent()->getAgent()->getId();
 			case 'subject':
-				return $notification->getEvent()->getMessage( $notification->getChannel() )->plain();
+				return $notification->getEvent()->getMessage( $notification->getChannel() )->text();
 		}
 
 		return '';

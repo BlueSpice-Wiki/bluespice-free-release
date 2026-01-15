@@ -36,8 +36,6 @@
 	"pdfcreator-config-default-pdf-template-help": "Sets the default template for page exports. The template must exist as a subpage of MediaWiki:PDFCreator",
 	"pdfcreator-dialog-button-title": "Open export dialog",
 	"pdfcreator-dialog-button-text": "Export",
-	"pdfcreator-config-suppress-namespace": "Hide namespace prefix in PDF",
-	"pdfcreator-config-suppress-namespace-help": "Removes the namespace prefix from titles and from template param \"title\" in the PDF output",
 	"pdfcreator-config-coverbackground": "Default cover background image in PDF templates",
 	"pdfcreator-config-coverbackground-help": "Defines a cover background image for all PDF templates that have the default intro-wrapper set. The image must be an uploaded file in the wiki or a valid file path",
 	"pdfcreator-pageparam-username": "Shows username of exporting user",

@@ -68,7 +68,7 @@
 	"bs-discovery-tabpanel-page-text": "Navigation de actiones de pagina",
 	"bs-discovery-tabpanel-page-title": "Scheda con actiones e instrumentos de pagina",
 	"bs-discovery-tabpanel-page-aria-label": "Navigation de actiones e instrumentos de pagina",
-	"bs-discovery-tabpanel-page-desc": "Le vavigation de actiones e instrumentos de pagina contine schedas, instrumentario e actiones",
+	"bs-discovery-tabpanel-page-desc": "Le navigation de actiones e instrumentos de pagina contine schedas, instrumentario e actiones",
 	"bs-discovery-sidebar-primary-toggle-show-title": "Aperir le barra lateral principal",
 	"bs-discovery-sidebar-primary-toggle-show-aria-label": "Aperir le barra lateral principal",
 	"bs-discovery-sidebar-primary-toggle-hide-title": "Clauder le barra lateral principal",
@@ -189,5 +189,11 @@
 	"bs-discovery-back-to-page-title": "Retornar al pagina $1",
 	"bs-discovery-back-to-version-history": "Retornar al historia de versiones",
 	"bs-discovery-back-to-version-history-title": "Retornar al historia de versiones del pagina $1",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Le typo de litteras Atkinson Hyperlegible Next usate pro BlueSpiceDiscovery e contento. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Le typo de litteras Atkinson Hyperlegible Next usate pro BlueSpiceDiscovery e contento. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
+	"bs-toc-hide-button-aria-label": "Celar le tabula de contento",
+	"bs-discovery-skip-links-nav-aria-label": "Saltar ligamines",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Navigation principal",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "Instrumentos de pagina",
+	"bs-discovery-tools-after-content-cnt-aria-label": "Information additional sur le pagina",
+	"bs-discovery-data-after-content-cnt-aria-label": "Appendice del pagina"
 }

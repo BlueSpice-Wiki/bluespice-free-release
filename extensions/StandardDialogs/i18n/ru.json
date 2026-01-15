@@ -52,5 +52,10 @@
 	"standarddialogs-purge-title": "Обновление страницы «$1»",
 	"standarddialogs-btn-done": "Готово",
 	"standarddialogs-btn-cancel": "Отмена",
-	"standarddialogs-protect-level-editor": "Разрешено только редакторам и администраторам"
+	"standarddialogs-protect-level-editor": "Разрешено только редакторам и администраторам",
+	"standarddialogs-delete-btn-label": "Удалить",
+	"standarddialogs-copy-btn-label": "Копировать",
+	"standarddialogs-new-page-btn-label": "Создать",
+	"standarddialogs-new-subpage-btn-label": "Создать",
+	"standarddialogs-purge-btn-label": "Обновить"
 }

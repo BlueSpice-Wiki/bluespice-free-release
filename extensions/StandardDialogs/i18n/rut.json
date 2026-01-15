@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Marphy 123"
+		]
+	},
+	"standarddialogs-delete-btn-label": "Delete",
+	"standarddialogs-protect-btn-label": "Protect",
+	"standarddialogs-purge-btn-label": "Refresh"
+}

@@ -141,5 +141,6 @@
 	"bs-discovery-header-create-split-button-title": "내용 생성을 위한 옵션이 있는 메뉴 열기",
 	"bs-discovery-header-create-split-button-aria-label": "내용 생성을 위한 옵션이 있는 메뉴 열기",
 	"bs-discovery-navbar-global-actions-button-title": "전역 동작",
-	"bs-discovery-navbar-global-actions-button-aria-label": "전역 동작"
+	"bs-discovery-navbar-global-actions-button-aria-label": "전역 동작",
+	"bs-toc-hide-button-aria-label": "목차 숨기기"
 }

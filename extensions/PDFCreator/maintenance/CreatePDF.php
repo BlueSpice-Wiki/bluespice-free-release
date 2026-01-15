@@ -5,6 +5,7 @@
  * @author Daniel Vogel
  */
 
+use MediaWiki\Extension\PDFCreator\IExportMode;
 use MediaWiki\Extension\PDFCreator\ITargetResult;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
 use MediaWiki\Maintenance\Maintenance;
@@ -76,10 +77,42 @@ class CreatePDF extends Maintenance {
 			return;
 		}
 
+		$pages = $specification->getPageSpecs();
+
 		$relevantTitle = null;
+		$titleFactory = $services->getTitleFactory();
 		if ( isset( $params['relevantTitle'] ) ) {
-			$titleFactory = $services->getTitleFactory();
 			$relevantTitle = $titleFactory->newFromText( $params['relevantTitle'] );
+		} elseif ( !empty( $pages ) ) {
+			foreach ( $pages as $page ) {
+				if ( !isset( $page['target'] ) ) {
+					continue;
+				}
+				$relevantTitle = $titleFactory->newFromText( $page['target'] );
+				break;
+			}
+		}
+
+		// Use export Modes
+		if ( isset( $params['mode'] ) && $relevantTitle !== null ) {
+			$modeFactory = $services->get( 'PDFCreator.ExportModeFactory' );
+			$modeProvider = $modeFactory->getModeProvider( $params['mode'] );
+			if ( $modeProvider instanceof IExportMode ) {
+				$pages = $modeProvider->getExportPages( $relevantTitle, $params );
+
+				// Override ExportSpecificaton
+				$specification = $exportSpecificationFactory->new(
+					'batch',
+					$specification->getTemplateProvider(),
+					$specification->getTarget(),
+					$specification->getBackend(),
+					$pages,
+					$specification->getOptions(),
+					$specification->getParams()
+				);
+			} else {
+				echo "Invalid mode provider";
+			}
 		}
 
 		$context = new ExportContext( $user, $relevantTitle	);

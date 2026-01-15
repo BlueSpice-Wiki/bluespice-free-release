@@ -8,7 +8,7 @@
 	height: 40px;
 	border-radius: 5px 0 0 5px;
 	background-color: var( --navbar-primary-searchform-bg );
-	border-color: var( --navbar-primary-searchform-bg );
+	border-color: var( --navbar-primary-searchform-border-inactive );
 	color: var( --navbar-primary-searchform-fg );
 	border-width: 0.5px 0 0.5px 0.5px;
 }
@@ -25,7 +25,7 @@
 	height: 40px;
 	font-size: 15px;
 	background-color: var( --navbar-primary-searchform-bg );
-	border-color: var( --navbar-primary-searchform-bg );
+	border-color: var( --navbar-primary-searchform-border-inactive );
 	border-width: 0.5px 0.5px 0.5px 0;
 	margin: 0;
 	border-radius: 0 5px 5px 0;

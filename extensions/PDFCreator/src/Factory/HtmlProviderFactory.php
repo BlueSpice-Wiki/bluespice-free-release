@@ -49,7 +49,7 @@ class HtmlProviderFactory implements LoggerAwareInterface {
 	 * @param LoggerInterface $logger
 	 * @return void
 	 */
-	public function setLogger( LoggerInterface $logger ) {
+	public function setLogger( LoggerInterface $logger ): void {
 		$this->logger = $logger;
 	}
 }

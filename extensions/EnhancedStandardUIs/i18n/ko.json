@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bisang",
 			"Markingdots",
 			"YeBoy371",
 			"Ykhwong"
@@ -41,5 +42,6 @@
 	"enhanced-standard-uis-ve-filegrid-title": "고급 검색",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "사용 가능한 이름 공간이 없음",
 	"enhancedpreferences": "환경 설정",
-	"enhanced-standard-uis-prefs-panel-search-label": "검색"
+	"enhanced-standard-uis-prefs-panel-search-label": "검색",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "이 파일에 대한 정보"
 }

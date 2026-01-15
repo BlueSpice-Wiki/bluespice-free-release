@@ -56,5 +56,7 @@
 	"bs-statistics-ve-progress-attr-width-label": "Bredde",
 	"bs-statistics-ve-progress-attr-width-help": "Bredde på fremdriftslinje i piksler",
 	"bs-statistics-droplet-progress-name": "Framgang",
-	"bs-statistics-droplet-progress-description": "Visualiserer fremgang mot gitte målevariabler"
+	"bs-statistics-droplet-progress-description": "Visualiserer fremgang mot gitte målevariabler",
+	"apihelp-query+statistics-reports-param-aggregate": "Hvorvidt statistikken skal aggregeres",
+	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>fremdrift</span>"
 }

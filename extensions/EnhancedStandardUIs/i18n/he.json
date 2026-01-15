@@ -72,5 +72,10 @@
 	"enhanced-standard-uis-allpages-empty-pages-text": "כרגע אין דפים במרחב השם הזה",
 	"enhancedpreferences": "העדפות",
 	"enhanced-pref-username": "שם {{GENDER:$1|משתמש|משתמשת}}",
-	"enhanced-standard-uis-prefs-panel-search-label": "חיפוש"
+	"enhanced-standard-uis-prefs-panel-search-label": "חיפוש",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "מכיל {{PLURAL:$1|דף אחד|$1 דפים}}",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "דפי־משנה",
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|חבר|חברה}} {{PLURAL:$1|בקבוצה|בקבוצות}}",
+	"enhanced-standard-uis-preferences-date-label": "נא לבחור תסדיר תצוגה",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "מידע על הקובץ"
 }

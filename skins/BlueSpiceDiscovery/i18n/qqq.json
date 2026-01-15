@@ -12,7 +12,6 @@
 	},
 	"bs-discovery-name": "{{name}}",
 	"bs-discovery-desc": "BlueSpice skin",
-	"bs-discovery-skip-links-navigation-aria-label": "Aria-label attribute for skip links navigation",
 	"bs-discovery-skip-to-navbar-primary-text": "Text for skip link item navbar-primary",
 	"bs-discovery-skip-to-sidebar-primary-text": "Text for skip link item sidebar-primary",
 	"bs-discovery-skip-to-sidebar-secondary-text": "Text for skip link item sidebar-secondary",
@@ -185,10 +184,6 @@
 	"bs-discovery-footerlinks-imprint-link-page": "Destination for the [Site:Imprint] footer link ('Site' not translatable)",
 	"bs-discovery-footerlinks-termsofservice-link-desc": "Text for footer link to [Site:Terms_of_service]",
 	"bs-discovery-footerlinks-termsofservice-link-page": "Destination for the [Site:Terms_of_service] footer link ('Site' not translatable)",
-	"bs-discovery-sidebar-primary-aria-label": "Aria-label for navigation landmark primary sidebar",
-	"bs-discovery-sidebar-secondary-aria-label": "Aria-labe for navigation landmark secondary sidebar",
-	"bs-discovery-tools-after-content-aria-label": "Aria-label for tools after content section",
-	"bs-discovery-data-after-content-aria-label": "Aria-label for data after content section",
 	"bs-discovery-requires-attention": "Text for visually hidden element to indicate that this element requires user attention",
 	"bs-discovery-breadcrumb-label-diff": "Label for diff page in breadcrumbs\n\n{{Identical|Differences}}",
 	"bs-discovery-back-to-page": "Text for link to navigate back to page\nParameters:\n* - $1 - name of page",
@@ -196,5 +191,10 @@
 	"bs-discovery-back-to-version-history": "Text for link to navigate back to the version history of a page",
 	"bs-discovery-back-to-version-history-title": "Title for link to go back to version history of a page\nParameters:\n* - $1 - name of page",
 	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Font description on [[Special:Version]]",
-	"bs-toc-hide-button-aria-label": "Aria label for button to hide the table of contents"
+	"bs-toc-hide-button-aria-label": "Aria label for button to hide the table of contents",
+	"bs-discovery-skip-links-nav-aria-label": "Aria-label attribute for skip links navigation",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Aria-label for navigation landmark primary sidebar",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "Aria-label for navigation landmark secondary sidebar",
+	"bs-discovery-tools-after-content-cnt-aria-label": "Aria-label for tools after content section",
+	"bs-discovery-data-after-content-cnt-aria-label": "Aria-label for data after content section"
 }

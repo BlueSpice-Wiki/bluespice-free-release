@@ -14,6 +14,11 @@ StandardDialogs.ui.NewSubpageDialog.prototype.makeSetupProcessData = function ()
 
 	return data;
 };
+
+StandardDialogs.ui.NewSubpageDialog.prototype.getPrimaryActionLabel = function () {
+	return mw.message( 'standarddialogs-new-subpage-btn-label' ).plain();
+};
+
 StandardDialogs.ui.NewSubpageDialog.prototype.getFormItems = function () {
 	this.mainInput = this.targetTitle = new StandardDialogs.widgets.SubpageTitleWidget( {
 		id: this.elementId + '-tf-target',

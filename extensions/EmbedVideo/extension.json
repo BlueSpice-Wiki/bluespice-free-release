@@ -1,6 +1,6 @@
 {
 	"name": "EmbedVideo",
-	"version": "3.4.3",
+	"version": "4.0.0",
 	"author": [
 		"[https://www.mediawiki.org/wiki/User:Octfx Octfx]",
 		"[https://www.mediawiki.org/wiki/User:Alistair3149 Alistair3149]",
@@ -14,7 +14,7 @@
 	"license-name": "MIT",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.39.0",
+		"MediaWiki": ">= 1.43.0",
 		"platform": {
 			"php": ">=8.0"
 		}
@@ -37,6 +37,7 @@
 		"ext.embedVideo.messages": {
 			"messages": [
 				"embedvideo-service-archiveorg",
+				"embedvideo-service-aparat",
 				"embedvideo-service-bandcamp",
 				"embedvideo-service-bilibili",
 				"embedvideo-service-dailymotion",
@@ -45,11 +46,15 @@
 				"embedvideo-service-navertv",
 				"embedvideo-service-niconico",
 				"embedvideo-service-soundcloud",
+				"embedvideo-service-podbean",
 				"embedvideo-service-sharepoint",
 				"embedvideo-service-spotify",
+				"embedvideo-service-takhtesefid",
 				"embedvideo-service-twitch",
+				"embedvideo-service-tidal",
 				"embedvideo-service-videolink",
 				"embedvideo-service-vimeo",
+				"embedvideo-service-reddit",
 				"embedvideo-service-youtube",
 				"embedvideo-service-youku",
 				"embedvideo-service-localvideo",
@@ -57,7 +62,7 @@
 				"embedvideo-consent-privacy-notice-text",
 				"embedvideo-consent-privacy-policy"
 			]
-		},
+    },
 		"ext.embedVideo.videolink": {
 			"es6": true,
 			"packageFiles": [
@@ -184,7 +189,7 @@
 		}
 	},
 	"ConfigRegistry": {
-		"EmbedVideo": "GlobalVarConfig::newInstance"
+		"EmbedVideo": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"ExtensionFunctions": [
 		"MediaWiki\\Extension\\EmbedVideo\\EmbedVideoHooks::setup"
@@ -206,3 +211,4 @@
 	},
 	"manifest_version": 2
 }
+

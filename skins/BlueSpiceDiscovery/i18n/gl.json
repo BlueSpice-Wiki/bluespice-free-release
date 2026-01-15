@@ -54,7 +54,7 @@
 	"bs-discovery-breadcrumb-nav-node-split-button-aria-label": "Máis subpáxinas",
 	"bs-discovery-breadcrumb-nav-node-portal-page": "Páxina principal",
 	"bs-discovery-title-last-edit-info-date-only": "Última edición o $1",
-	"bs-discovery-title-last-edit-info": "Última edición o $1 <br /> por $2",
+	"bs-discovery-title-last-edit-info": "Última edición $1 <br /> por $2",
 	"bs-discovery-title-last-edit-info-timestamp-aria-label": "Última edición o $1",
 	"bs-discovery-title-last-edit-info-user-aria-label": "Última edición por $1",
 	"bs-discovery-last-edit-by-anon-user": "Usuario anónimo",
@@ -190,5 +190,11 @@
 	"bs-discovery-back-to-page-title": "Volver á páxina «$1»",
 	"bs-discovery-back-to-version-history": "Volver ao historial de versións",
 	"bs-discovery-back-to-version-history-title": "Volver ao historial de versións da páxina «$1»",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "A fonte Atkinson Hyperlegible Next usada para BlueSpiceDiscovery e o contido. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "A fonte Atkinson Hyperlegible Next usada para BlueSpiceDiscovery e o contido. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
+	"bs-toc-hide-button-aria-label": "Agochar a táboa de contidos",
+	"bs-discovery-skip-links-nav-aria-label": "Saltar as ligazóns",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Navegación principal",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "Ferramentas da páxina",
+	"bs-discovery-tools-after-content-cnt-aria-label": "Información adicional da páxina",
+	"bs-discovery-data-after-content-cnt-aria-label": "Apéndice da páxina"
 }

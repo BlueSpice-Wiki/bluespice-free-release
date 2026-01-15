@@ -93,5 +93,6 @@
 	"enhancedupload-preview-widget-remove-label": "Remover $1",
 	"enhancedupload-reset-button-label": "Reinitialisar",
 	"enhancedupload-ve-file-dialog-title": "File",
-	"enhancedupload-ve-file-dialog-filename-label": "Nomine de file"
+	"enhancedupload-ve-file-dialog-filename-label": "Nomine de file",
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Un advertimento|Advertimentos}} se ha producite con iste file{{PLURAL:$1||s}} incargate"
 }

@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-saferedit-desc": "Tëschespäichere vun Ännerunge vun der Wiki",
-	"bs-saferedit-someone-editing": "D'Säit gëtt geännert"
+	"bs-saferedit-someone-editing": "D'Säit gëtt geännert",
+	"bs-saferedit-anonymous-editor": "Anonymme Benotzer"
 }

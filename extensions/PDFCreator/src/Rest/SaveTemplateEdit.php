@@ -103,6 +103,7 @@ class SaveTemplateEdit extends SimpleHandler {
 	public function getBodyParamSettings(): array {
 		return [
 			'data' => [
+				self::PARAM_SOURCE => 'body',
 				ParamValidator::PARAM_TYPE => 'array',
 				ParamValidator::PARAM_REQUIRED => false,
 				ParamValidator::PARAM_DEFAULT => ''

@@ -132,8 +132,4 @@ $( document ).click( function( event ) {
 	$( '.opt-list' ).removeClass( 'show' );
 } );
 
-
 </script>
-
-<style lang="css">
-</style>

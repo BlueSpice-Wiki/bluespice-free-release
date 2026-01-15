@@ -59,5 +59,12 @@
 	"standarddialogs-page-info-page-no-categories-label": "This page contains no categories",
 	"standarddialogs-page-info-page-no-links-label": "This page contains no links",
 	"standarddialogs-page-info-page-no-extlinks-label": "This page contains no external links",
-	"standarddialogs-validation-page-exist-info-label": "A page with this title already exists. Please choose another name."
+	"standarddialogs-validation-page-exist-info-label": "A page with this title already exists. Please choose another name.",
+	"standarddialogs-delete-btn-label": "Delete",
+	"standarddialogs-move-btn-label": "Move",
+	"standarddialogs-copy-btn-label": "Copy",
+	"standarddialogs-new-page-btn-label": "Create",
+	"standarddialogs-new-subpage-btn-label": "Create",
+	"standarddialogs-protect-btn-label": "Protect",
+	"standarddialogs-purge-btn-label": "Refresh"
 }

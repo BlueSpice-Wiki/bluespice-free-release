@@ -324,6 +324,13 @@ figure[ typeof~='mw:File/Frameless' ] > figcaption {
 	display: none;
 }
 
+figcaption {
+	padding-top: 3px;
+	font-size: 50%;
+	text-align: left;
+	line-height: 1.4em;
+}
+
 /* thumbnails */
 div.tright {
 	margin-right: 10px !important;
@@ -391,6 +398,7 @@ div.tleft {
 figure[typeof~="mw:File/Thumb"],
 figure[typeof~="mw:File/Frame"] {
 	margin: 0 0 .5em 1em;
+	padding: 3px;
 	border: 0.1mm solid #ccc;
 	background-color: white;
 	font-size: 94%;
@@ -405,7 +413,7 @@ figure[ typeof~='mw:File/Frame' ] > a.mw-file-description {
 
 figure[ typeof~='mw:File/Thumb' ] > a.mw-file-description > img,
 figure[ typeof~='mw:File/Frame' ] > a.mw-file-description > img {
-	max-width: 99% !important;
+	max-width: 100% !important;
 }
 
 figure[ typeof~='mw:File/Thumb' ].mw-halign-right,
@@ -436,8 +444,6 @@ figure[ typeof~='mw:File/Frame' ].mw-halign-none {
 figure[ typeof~='mw:File/Thumb' ] > figcaption,
 figure[ typeof~='mw:File/Frame' ] > figcaption {
 	border: none;
-	text-align: left;
-	line-height: 1.4em;
 }
 
 /* Galleries */

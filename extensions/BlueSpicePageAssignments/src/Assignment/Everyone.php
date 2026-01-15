@@ -35,7 +35,7 @@ class Everyone extends \BlueSpice\PageAssignments\Assignment {
 	public function getText() {
 		return Message::newFromKey(
 			'bs-pageassignments-assignee-special-everyone-label'
-		)->plain();
+		)->text();
 	}
 
 	/**

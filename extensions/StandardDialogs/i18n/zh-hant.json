@@ -60,5 +60,12 @@
 	"standarddialogs-page-info-page-no-categories-label": "此頁面不包含分類",
 	"standarddialogs-page-info-page-no-links-label": "此頁面不包含連結",
 	"standarddialogs-page-info-page-no-extlinks-label": "此頁面不包含外部連結",
-	"standarddialogs-validation-page-exist-info-label": "同樣標題的頁面已存在，請選擇別的。"
+	"standarddialogs-validation-page-exist-info-label": "同樣標題的頁面已存在，請選擇別的。",
+	"standarddialogs-delete-btn-label": "刪除",
+	"standarddialogs-move-btn-label": "移動",
+	"standarddialogs-copy-btn-label": "複製",
+	"standarddialogs-new-page-btn-label": "建立",
+	"standarddialogs-new-subpage-btn-label": "建立",
+	"standarddialogs-protect-btn-label": "保護",
+	"standarddialogs-purge-btn-label": "重新整理"
 }

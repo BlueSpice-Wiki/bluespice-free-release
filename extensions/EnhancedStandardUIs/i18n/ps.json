@@ -9,5 +9,7 @@
 	"enhancedpreferences": "غوره‌توبونه",
 	"enhanced-prefs-memberingroups": "د {{PLURAL:$1|ډلې|ډلو}} {{GENDER:$2|غړی|غړي}}",
 	"enhanced-standard-uis-preferences-date-label": "ښکارېدنې بڼه غوره‌کول",
-	"enhanced-standard-uis-prefs-panel-search-label": "پلټل"
+	"enhanced-standard-uis-prefs-panel-search-label": "پلټل",
+	"enhanced-standard-uis-prefs-reset-dlg-action-label": "له‌سره‌اوڼل",
+	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "کتل ونگ‌ډول غوره‌کول"
 }

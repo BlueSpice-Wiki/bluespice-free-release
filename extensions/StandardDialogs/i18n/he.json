@@ -59,5 +59,12 @@
 	"standarddialogs-page-info-page-no-categories-label": "בדף הזה אין קטגוריות",
 	"standarddialogs-page-info-page-no-links-label": "בדף הזה אין קישורים",
 	"standarddialogs-page-info-page-no-extlinks-label": "בדף הזה אין קישורים חיצוניים",
-	"standarddialogs-validation-page-exist-info-label": "דף עם הכותרת הזאת כבר קיים. נא לבחור שם אחר."
+	"standarddialogs-validation-page-exist-info-label": "דף עם הכותרת הזאת כבר קיים. נא לבחור שם אחר.",
+	"standarddialogs-delete-btn-label": "מחיקה",
+	"standarddialogs-move-btn-label": "העברה",
+	"standarddialogs-copy-btn-label": "העתקה",
+	"standarddialogs-new-page-btn-label": "יצירה",
+	"standarddialogs-new-subpage-btn-label": "יצירה",
+	"standarddialogs-protect-btn-label": "הגנה",
+	"standarddialogs-purge-btn-label": "רענון"
 }

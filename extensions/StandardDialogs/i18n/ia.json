@@ -58,5 +58,12 @@
 	"standarddialogs-page-info-page-no-categories-label": "Iste pagina non contine categorias",
 	"standarddialogs-page-info-page-no-links-label": "Iste pagina non contine ligamines",
 	"standarddialogs-page-info-page-no-extlinks-label": "Iste pagina non contine ligamines externe",
-	"standarddialogs-validation-page-exist-info-label": "Existe ja un pagina con iste titulo. Per favor elige un altere nomine."
+	"standarddialogs-validation-page-exist-info-label": "Existe ja un pagina con iste titulo. Per favor elige un altere nomine.",
+	"standarddialogs-delete-btn-label": "Deler",
+	"standarddialogs-move-btn-label": "Renominar",
+	"standarddialogs-copy-btn-label": "Copiar",
+	"standarddialogs-new-page-btn-label": "Crear",
+	"standarddialogs-new-subpage-btn-label": "Crear",
+	"standarddialogs-protect-btn-label": "Proteger",
+	"standarddialogs-purge-btn-label": "Refrescar"
 }

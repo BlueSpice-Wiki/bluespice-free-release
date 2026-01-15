@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Derugon",
+			"Escargot bleu",
 			"Graineahumus",
 			"Iketsi",
 			"JLTRY",
@@ -82,5 +83,6 @@
 	"enhanced-pref-username": "Nom d’utilisat{{GENDER:$1|eur|rice}}",
 	"enhanced-prefs-memberingroups": "Membre{{GENDER:$2|}} {{PLURAL:$1|du|des}} groupe{{PLURAL:$1||s}}",
 	"enhanced-standard-uis-preferences-date-label": "Sélectionnez le format d’affichage",
-	"enhanced-standard-uis-prefs-panel-search-label": "Rechercher"
+	"enhanced-standard-uis-prefs-panel-search-label": "Rechercher",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Informations sur le fichier"
 }

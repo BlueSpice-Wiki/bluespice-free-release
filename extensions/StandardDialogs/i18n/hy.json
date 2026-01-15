@@ -29,5 +29,12 @@
 	"standarddialogs-purge-btn": "Թարմացնել",
 	"standarddialogs-purge-title": "Թարմացնել «$1» էջը",
 	"standarddialogs-btn-done": "Արված է",
-	"standarddialogs-btn-cancel": "Չեղարկել"
+	"standarddialogs-btn-cancel": "Չեղարկել",
+	"standarddialogs-delete-btn-label": "Ջնջել",
+	"standarddialogs-move-btn-label": "Տեղափոխել",
+	"standarddialogs-copy-btn-label": "Պատճենել",
+	"standarddialogs-new-page-btn-label": "Ստեղծել",
+	"standarddialogs-new-subpage-btn-label": "Ստեղծել",
+	"standarddialogs-protect-btn-label": "Պաշտպանել",
+	"standarddialogs-purge-btn-label": "Թարմացնել"
 }

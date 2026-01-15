@@ -21,21 +21,6 @@ body.mediawiki .ve-init-sa-target-toolbar > .oo-ui-toolbar-bar > .oo-ui-toolbar-
 	white-space: normal;
 }
 
-/* make full textarea clickable in forms */
-.ve-init-sa-target-surfaceWrapper,
-.ve-ui-surface.ve-ui-surface-visual,
-.ve-ce-surface.ve-ce-surface,
-.ve-ce-surface.ve-ce-surface.ve-ce-surface-focused,
-.ve-ce-branchNode.ve-ce-documentNode.ve-ce-attachedRootNode.ve-ce-rootNode {
-	min-height: inherit;
-}
-
-/* Fixing blinking cursor for chromium browser */
-.ve-ce-surface.ve-ce-surface.ve-ce-surface-focused .ve-ce-branchNode.ve-ce-documentNode.ve-ce-attachedRootNode.ve-ce-rootNode .ve-ce-branchNode-slug.ve-ce-branchNode-inlineSlug {
-	padding-left: 3px;
-	padding-right: 3px;
-}
-
 /* Fix inspector popup behind toolbar - ERM37546 */
 .oo-ui-popupWidget.ext-visualEditorPlus-inlineTextInspector {
 	z-index: 2;

@@ -21,5 +21,7 @@
 	"bs-insertcategory-edit-dialog-implicit-categories-help": "Kategorier som ikke er definert i wikitekstinnholdet til siden. Kommer sannsynligvis fra en mal.",
 	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Kan ikke hente sidekategorier",
 	"bs-insertcategory-no-categories": "Ingen kategorier tildelt",
-	"bs-insertcategory-edit-dialog-tree-view": "Vis alle kategorier"
+	"bs-insertcategory-edit-dialog-tree-view": "Vis alle kategorier",
+	"bs-insertcategory-pref-uploadintegration": "Bruk sidekategorier i opplastingsboksen",
+	"bs-insertcategory-pref-uploadintegration-help": "Setter sidekategorier som standardvalg i opplastingsboksen"
 }

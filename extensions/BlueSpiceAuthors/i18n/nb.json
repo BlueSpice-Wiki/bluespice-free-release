@@ -14,5 +14,7 @@
 	"bs-authors-navigation-link-title": "Forfatterne av denne siden",
 	"bs-authors-navigation-link-text": "Forfattere",
 	"apihelp-bs-pageauthors-store-summary": "Liste opp alle forfatterne av en side gitt i konteksten",
-	"bs-authors-info-dialog": "Forfattere av denne siden"
+	"bs-authors-info-dialog": "Forfattere av denne siden",
+	"bs-authors-info-dialog-grid-column-author": "Forfatter",
+	"bs-authors-info-dialog-grid-column-type": "Forfattertype"
 }

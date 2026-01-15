@@ -13,7 +13,7 @@
 	},
 	"bs-avatars-desc": "Stellt individuelle und allgemeine Benutzerbilder bereit",
 	"bs-avatars-pref-generator": "Generator:",
-	"bs-avatars-pref-userimage-img-alt": "Dein derzeitiges Benutzerbild",
+	"bs-avatars-pref-userimage-img-alt": "{{#FORMAL:Dein|Ihr}} derzeitiges Benutzerbild",
 	"bs-avatars-upload-complete": "Das Bild wurde hochgeladen.",
 	"bs-avatars-generate-complete": "Es wurde ein neues Benutzerbild generiert.",
 	"bs-avatars-upload-label": "Bild",

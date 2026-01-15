@@ -11,5 +11,6 @@
 	"notifyme-notification-center-filter-title": "Известия",
 	"notifyme-navbar-button-title": "Известия",
 	"notifyme-navbar-button-aria-label": "Известия",
-	"notifyme-ui-dialog-popup-table-event-label": "Събитие"
+	"notifyme-ui-dialog-popup-table-event-label": "Събитие",
+	"notifyme-ui-dialog-set-editor-cancel": "Отказ"
 }

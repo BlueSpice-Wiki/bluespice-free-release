@@ -189,8 +189,8 @@
 	"notifyme-notification-center-timestamp-ago": "пред $1",
 	"notifyme-notification-center-no-new-notifications-label": "Нема нови известувања.",
 	"notifyme-navbar-button-aria-label-unread-notifications": "Имате $1 {{PLURAL:$1|непрочитано известување|непрочитани известувања}}",
-	"notifyme-notification-center-pagination-aria-next": "Следно",
-	"notifyme-notification-center-pagination-aria-previous": "Претходно",
+	"notifyme-notification-center-pagination-aria-next": "Следна страница",
+	"notifyme-notification-center-pagination-aria-previous": "Претходна страница",
 	"notifyme-notification-center-navigation-hint": "Совет: Можете да ги користите стрелките на тастатурата за да преоѓате од едно на друго јазиче во списокот на јазичиња.",
 	"notifyme-notification-center-filter-item-aria-label": "Филтер $1",
 	"notifyme-bucket-content-low-freq-label": "Настани што се случуваат поретко",
@@ -205,5 +205,8 @@
 	"notifyme-ui-dialog-popup-header-label": "Овие настани покренуваат известувања:",
 	"notifyme-event-page-edit-desc": "Уредена е страница од друг корисник",
 	"notifyme-ui-delivery-label": "Достава",
-	"prefs-subs": "Претплати на известувања"
+	"prefs-subs": "Претплати на известувања",
+	"notifyme-notification-filter-count-aria-label": "содржи {{PLURAL:$1|едно известување| $1 известувања}}",
+	"notifyme-notification-filter-aria-label": "Филтер на известувања",
+	"notifyme-notification-center-pagination-number-aria-label": "Прикажани известувањата $1 до $2"
 }

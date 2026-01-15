@@ -156,7 +156,7 @@ class PageAssignmentsWikiExplorerHooks {
 	 */
 	private static function makeGroupAssignmentLabel( $groupname ) {
 		return Message::newFromKey( "group-{$groupname}" )->exists()
-					? Message::newFromKey( "group-{$groupname}" )->plain()
+					? Message::newFromKey( "group-{$groupname}" )->text()
 					: $groupname;
 	}
 }

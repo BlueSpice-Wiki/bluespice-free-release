@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"userprofile-desc": "Benotzeruewerfläch an zousätzlech Donnéeë fir Benotzerprofiller",
+	"userprofile-general-error": "Et ass e Feeler geschitt. Kontaktéiert wgl. Ären Administrateur.",
+	"userprofile-user-not-exist-error": "Dëse Benotzer gëtt et net. Kontaktéiert wgl. Ären Administrateur.",
+	"userprofile-save-error": "Beim Späichere vum Profil ass e Feeler geschitt<br>$1",
+	"userprofile-edit-summary": "Benotzerprofil geännert",
+	"userprofile-user-not-found": "Benotzer net fonnt",
+	"userprofile-field-numberofedits": "Zuel vun den Ännerungen",
+	"userprofile-field-email": "E-Mail",
+	"userprofile-edit-image": "Bild änneren",
+	"userprofile-view-profile": "Benotzerprofil weisen",
+	"userprofile-edit-profile": "Profildonnéeën änneren",
+	"userprofile-field-realname": "Richtegen Numm",
+	"userprofile-field-function": "Funktioun",
+	"userprofile-field-phone": "Telefon",
+	"userprofile-editor-toolbar-cancel": "Ofbriechen",
+	"userprofile-editor-toolbar-save": "Späicheren",
+	"userprofile-profile-image-alt": "Profilbild",
+	"userprofile-profile-name-title": "Richtegen Numm vum Benotzer",
+	"userprofile-profile-username-title": "Benotzernumm",
+	"userprofile-droplet-name": "Benotzerprofil",
+	"userprofile-droplet-name-description": "Weist d'Profilinformatioune vun engem Benotzer",
+	"userprofile-ve-attr-user-label": "Benotzer",
+	"userprofile-ve-attr-user-help": "Benotzernumm",
+	"userprofile-set-userimage-failed": "Dat Bild kann net als Profilbild benotzt ginn",
+	"userprofile-changeuserimage-title": "Profilbild änneren",
+	"userprofile-pref-userimage": "Profilbild",
+	"userprofile-ve-attr-orientation-label": "Orientéierung",
+	"userprofile-ve-attr-orientation-horizontal": "Horizontal",
+	"userprofile-ve-attr-orientation-vertical": "Vertikal"
+}

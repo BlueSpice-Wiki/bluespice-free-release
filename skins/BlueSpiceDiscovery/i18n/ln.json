@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Marphy 123"
+		]
+	},
+	"bs-discovery-tabpanel-page-desc": "Misala ya lokasa mpe navigation ya bisaleli ezali na ba onglets, boîte de outils mpe misala",
+	"bs-discovery-skip-links-nav-aria-label": "Salá koleka ba liens",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Navigation ya monene",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "Bisaleli ya nkasa",
+	"bs-discovery-tools-after-content-cnt-aria-label": "Makambo mosusu ya lokasa",
+	"bs-discovery-data-after-content-cnt-aria-label": "Appendice ya lokasa"
+}

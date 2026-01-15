@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"22258",
+			"Bisang",
 			"Hwangjy9",
 			"Suleiman the Magnificent Television",
 			"Tensama0415",
@@ -114,5 +115,6 @@
 	"notifyme-event-page-missing-desc": "''이 이벤트에 대한 설명이 아직 없습니다''",
 	"notifyme-event-page-create-desc": "다른 사용자가 문서를 만들었습니다.",
 	"notifyme-event-page-delete-desc": "다른 사용자가 문서를 삭제했습니다.",
-	"notifyme-event-page-move-desc": "다른 사용자가 문서를 이동했습니다."
+	"notifyme-event-page-move-desc": "다른 사용자가 문서를 이동했습니다.",
+	"notifyme-notification-filter-aria-label": "알림 필터"
 }

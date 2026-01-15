@@ -200,5 +200,11 @@
 	"bs-discovery-back-to-page-title": "返回到$1页",
 	"bs-discovery-back-to-version-history": "回退版本历史",
 	"bs-discovery-back-to-version-history-title": "返回第$1页的版本历史记录",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "使用在BlueSpiceDiscovery和内容的Atkinson Hyperlegible Next字体。（[https://www.brailleinstitute.org https://www.brailleinstitute.org]）"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "使用在BlueSpiceDiscovery和内容的Atkinson Hyperlegible Next字体。（[https://www.brailleinstitute.org https://www.brailleinstitute.org]）",
+	"bs-toc-hide-button-aria-label": "隐藏目录",
+	"bs-discovery-skip-links-nav-aria-label": "跳过链接",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "主导航",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "页面工具",
+	"bs-discovery-tools-after-content-cnt-aria-label": "额外页面信息",
+	"bs-discovery-data-after-content-cnt-aria-label": "页面附录"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Jeeputer",
+			"LordProfo",
 			"Mohammad ebz",
 			"Rulebased"
 		]
@@ -24,5 +25,6 @@
 	"bs-discovery-page-version-pager-deleted-user": "(نام کاربری حذف شده است)",
 	"bs-discovery-page-version-pager-previous": "قبلی",
 	"bs-discovery-sidebar-primary-aria-label": "نوار کناری اصلی",
-	"bs-discovery-sidebar-secondary-aria-label": "نوار کناری ثانویه"
+	"bs-discovery-sidebar-secondary-aria-label": "نوار کناری ثانویه",
+	"bs-discovery-dialog-detailssectionheading-namespaces": "فضاهای نام"
 }

@@ -504,23 +504,27 @@ var getFilterOptions = function( type ) {
 
 <style lang="css">
 :root {
-	--vuejsplus--focus-visible: blue;
+	--vuejsplus--focus-visible: #00f;
 }
+
 .opt-menu {
 	position: relative;
 }
-.opt-menu.opt-menu-btn{
+
+.opt-menu.opt-menu-btn {
 	padding-right: 1.5em;
-	background-image: url( '../../../VueJsPlus/resources/images/Bootstrap_three-dots-vertical.svg.png' );
+	background-image: url( ../../../VueJsPlus/resources/images/Bootstrap_three-dots-vertical.svg.png );
 	background-repeat: no-repeat;
 	background-size: 1em;
 	background-position-x: right;
 	background-position-y: center;
 }
+
 .opt-menu button:focus-visible {
 	outline: 0;
-	box-shadow: 0 0 0 .1em var(--vuejsplus--focus-visible);
+	box-shadow: 0 0 0 0.1em var( --vuejsplus--focus-visible );
 }
+
 .vuejsplus-aria-lve {
 	height: 0;
 	overflow: hidden;

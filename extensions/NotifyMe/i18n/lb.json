@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GilPe",
 			"Robby",
 			"Volvox"
 		]
@@ -13,10 +14,10 @@
 	"notifyme-event-page-move-key-desc": "Säit geréckelt",
 	"notifyme-event-page-delete-key-desc": "Säit geläscht",
 	"notifications-subscriptions": "Notifikatiounsabonnementer geréieren",
-	"notifyme-digest-header-daily": "hei ass e Resumé vun den Aktivitéiten op $1 vun deene leschte 24 Stonnen",
-	"notifyme-digest-header-weekly": "hei ass e Resumé vun den Aktivitéiten op $1 vun der leschter Woch",
-	"notifyme-digest-subject-daily": "Deegleche Resumé vun den Notifikatiounen",
-	"notifyme-digest-subject-weekly": "Wéchentleche Resumé vun den Notifikatiounen",
+	"notifyme-digest-header-daily": "hei ass e Resümmee vun den Aktivitéiten op $1 vun deene leschte 24 Stonnen",
+	"notifyme-digest-header-weekly": "hei ass e Resümmee vun den Aktivitéiten op $1 vun der leschter Woch",
+	"notifyme-digest-subject-daily": "Deegleche Resümmee vun den Notifikatiounen",
+	"notifyme-digest-subject-weekly": "Wéchentleche Resümmee vun den Notifikatiounen",
 	"notifyme-bucket-content-low-freq-desc": "Manner heefeg Säitenevenementer (uleeën, läschen, réckelen…)",
 	"notifyme-bucket-content-high-freq-desc": "Méi heefeg Säitenevenementer (Ännerungen, Kommentaren…)",
 	"notifyme-bucket-qm": "Qualitéitsmonitoring",
@@ -36,9 +37,9 @@
 	"notifyme-ui-email-frequency-instant": "Direkt",
 	"notifyme-ui-email-frequency-instant-desc": "Notifikatioune kréien, soubal eppes geschitt",
 	"notifyme-ui-email-frequency-daily": "All Dag",
-	"notifyme-ui-email-frequency-daily-desc": "All Dag e Resumé vun den Notifikatioune kréien",
+	"notifyme-ui-email-frequency-daily-desc": "All Dag e Resümmee vun den Notifikatioune kréien",
 	"notifyme-ui-email-frequency-weekly": "All Woch",
-	"notifyme-ui-email-frequency-weekly-desc": "All Woch e Resumé vun den Notifikatioune kréien",
+	"notifyme-ui-email-frequency-weekly-desc": "All Woch e Resümmee vun den Notifikatioune kréien",
 	"notifyme-ui-email-frequency-label": "Heefegkeet vun den E-Mail-Notifikatiounen",
 	"notifyme-ui-subscriptionset-editor-category-label": "Kategorie",
 	"notifyme-ui-subscriptionset-editor-namespace-label": "Nummraum",
@@ -147,11 +148,12 @@
 	"notifyme-notification-center-timestamp-ago": "viru(n) $1",
 	"notifyme-notification-center-no-new-notifications-label": "Et gëtt keng nei Notifikatiounen",
 	"notifyme-navbar-button-aria-label-unread-notifications": "Dir hutt $1 net gelies {{PLURAL:$1|Notifikatioun|Notifikatiounen}}",
-	"notifyme-notification-center-pagination-aria-next": "Nächst",
-	"notifyme-notification-center-pagination-aria-previous": "Vireg",
+	"notifyme-notification-center-pagination-aria-next": "Nächst Säit",
+	"notifyme-notification-center-pagination-aria-previous": "Vireg Säit",
 	"notifyme-notification-center-filter-item-aria-label": "Filter $1",
 	"notifyme-bucket-qm-label": "Evenementer am Zesummenhang mat der Säitequalitéit",
 	"notifyme-event-page-missing-desc": "''Et gëtt nach keng Beschreiwung fir dëst Evenement''",
 	"notifyme-ui-dialog-popup-table-event-label": "Evenement",
-	"notifyme-ui-dialog-popup-table-desc-label": "Beschreiwung"
+	"notifyme-ui-dialog-popup-table-desc-label": "Beschreiwung",
+	"notifyme-notification-filter-aria-label": "Notifikatiounsfilter"
 }

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"GuoPC"
+		]
+	},
+	"vuejsplus-desc": "VueJs组件集合",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "折叠",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "展开",
+	"vuejsplus-data-grid-option-sort-string-asc": "升序排序",
+	"vuejsplus-data-grid-option-sort-string-desc": "降序排序",
+	"vuejsplus-data-grid-option-filter-string": "查找",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "找到{{PLURAL:$1|$1行}}",
+	"vuejsplus-data-grid-option-button-aria-label": "$1列选项",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "已勾选",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "未勾选",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "不确定",
+	"vuejsplus-data-grid-option-filter-date-from-label": "开始日期",
+	"vuejsplus-data-grid-option-filter-date-to-label": "结束日期"
+}

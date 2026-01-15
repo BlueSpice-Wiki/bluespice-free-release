@@ -86,5 +86,6 @@
 	"bs-pageassignments-header-action-delete": "Deler",
 	"bs-pageassignments-title-edit": "Modificar assignationes",
 	"bs-pageassignments-title-delete": "Deler assignationes",
-	"bs-pageassignments-show-unassigned-pages": "Monstrar paginas non assignate"
+	"bs-pageassignments-show-unassigned-pages": "Monstrar paginas non assignate",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Paginas assignate e non assignate in le periodo seligite, filtrabile per categoria e spatio de nomines"
 }

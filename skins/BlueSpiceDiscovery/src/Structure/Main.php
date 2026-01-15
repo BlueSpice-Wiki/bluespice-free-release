@@ -295,7 +295,7 @@ class Main implements
 		$displayTitle = $this->template->data['title'];
 
 		// Check if $displayTitle contains DISPLAYTITLE or page title
-		if ( $regularTitle === strip_tags( $displayTitle ) ) {
+		if ( $regularTitle === html_entity_decode( strip_tags( $displayTitle ) ) ) {
 			// $displayTitle contains page title.
 			// But we only want to show the subpage text in title section.
 

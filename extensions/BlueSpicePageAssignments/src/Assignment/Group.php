@@ -30,7 +30,7 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 	 */
 	public function getText() {
 		return Message::newFromKey( "group-{$this->getKey()}" )->exists()
-			? Message::newFromKey( "group-{$this->getKey()}" )->plain()
+			? Message::newFromKey( "group-{$this->getKey()}" )->text()
 			: $this->getKey();
 	}
 

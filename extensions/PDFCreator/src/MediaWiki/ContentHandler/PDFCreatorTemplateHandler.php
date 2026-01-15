@@ -8,10 +8,14 @@ use MediaWiki\Content\TextContent;
 use MediaWiki\Content\TextContentHandler;
 use MediaWiki\Extension\PDFCreator\MediaWiki\Action\EditPDFTemplateAction;
 use MediaWiki\Extension\PDFCreator\MediaWiki\Content\PDFCreatorTemplate;
+use MediaWiki\Extension\PDFCreator\PDFCreatorUtil;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\ParserFactory;
 use MediaWiki\Parser\ParserOutput;
 use MediaWiki\Registration\ExtensionRegistry;
+use MediaWiki\Revision\RevisionAccessException;
+use MediaWiki\Revision\RevisionLookup;
+use MediaWiki\Title\TitleFactory;
 use OOUI\Element;
 use OOUI\FieldsetLayout;
 use OOUI\HtmlSnippet;
@@ -106,14 +110,18 @@ class PDFCreatorTemplateHandler extends TextContentHandler {
 
 		$tabPanels = [];
 		foreach ( $this->util->slots as $slot ) {
-			$content = $revision->getContent( $this->util->templatePrefix . $slot );
-			if ( !$content instanceof TextContent ) {
+			try {
+				$content = $revision->getContent( $this->util->templatePrefix . $slot );
+			} catch ( RevisionAccessException $e ) {
+				continue;
+			}
+			if ( !( $content instanceof TextContent ) ) {
 				continue;
 			}
 			$text = $this->getContent( $content, $cpoParams );
 			$tabPanels[] = new TabPanelLayout( $slot, [
 				'classes' => [ 'pdf-creator-template-tab-' . $slot ],
-				'label' => wfMessage( 'pdfcreator-tab-panel-' . $slot . '-label' )->plain(),
+				'label' => wfMessage( 'pdfcreator-tab-panel-' . $slot . '-label' )->text(),
 				'content' => new FieldsetLayout( [
 					'classes' => [ 'pdf-creator-template-tab-fieldset' ],
 					'items' => [
@@ -125,6 +133,10 @@ class PDFCreatorTemplateHandler extends TextContentHandler {
 				'expanded' => false,
 				'framed' => true
 			] );
+		}
+
+		if ( !$tabPanels ) {
+			return $output->setRawText( 'No tab panels' );
 		}
 
 		$indexLayout = new IndexLayout( [

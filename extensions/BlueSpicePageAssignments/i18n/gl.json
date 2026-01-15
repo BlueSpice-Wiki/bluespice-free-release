@@ -88,5 +88,6 @@
 	"bs-pageassignments-header-action-delete": "Eliminar",
 	"bs-pageassignments-title-edit": "Editar asignacións",
 	"bs-pageassignments-title-delete": "Eliminar asignacións",
-	"bs-pageassignments-show-unassigned-pages": "Mostrar as páxinas non asignadas"
+	"bs-pageassignments-show-unassigned-pages": "Mostrar as páxinas non asignadas",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Páxinas asignadas e páxinas sen asignar no período seleccionado, filtrables por categoría e espazo de nomes"
 }

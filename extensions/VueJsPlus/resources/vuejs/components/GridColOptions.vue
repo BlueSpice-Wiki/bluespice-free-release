@@ -84,26 +84,30 @@ module.exports = exports = {
 	right: 0;
 	transform: translateX( 95% );
 	width: max-content;
-	background-color: white;
-	border: 1px solid black;
+	background-color: #fff;
+	border: 1px solid #000;
 	border-radius: 5px;
+	/* stylelint-disable-next-line declaration-no-important */
 	padding: 10px !important;
 	list-style: none;
 	display: none;
 }
+
 .opt-list.show {
 	display: block;
 	z-index: 5000;
 }
+
 .opt-list > li {
 	padding: 5px 0;
 }
+
 .opt-list > li > button {
 	width: 100%;
-	background-color: white;
+	background-color: #fff;
+	/* stylelint-disable-next-line declaration-property-value-disallowed-list */
 	border: none;
 	text-align: left;
 }
-
 
 </style>

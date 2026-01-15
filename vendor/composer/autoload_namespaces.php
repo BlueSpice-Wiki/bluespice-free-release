@@ -10,7 +10,6 @@ return array(
     'Mail' => array($vendorDir . '/pear/mail', $vendorDir . '/pear/mail_mime'),
     'Liuggio' => array($vendorDir . '/liuggio/statsd-php-client/src'),
     'Less' => array($vendorDir . '/wikimedia/less.php/lib'),
-    'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
     'Console' => array($vendorDir . '/pear/console_getopt'),
     'CSSMin' => array($vendorDir . '/wikimedia/minify/src'),
     '' => array($vendorDir . '/cssjanus/cssjanus/src'),

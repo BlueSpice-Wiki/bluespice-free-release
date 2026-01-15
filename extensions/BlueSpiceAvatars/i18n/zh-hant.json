@@ -6,6 +6,7 @@
 			"LNDDYL",
 			"Lakejason0",
 			"Liuxinyu970226",
+			"LowensteinYang",
 			"Madeleinemcc",
 			"S8321414",
 			"Wehwei"
@@ -18,9 +19,13 @@
 	"bs-avatars-generate-complete": "已產生新的頭像。",
 	"bs-avatars-upload-label": "圖片",
 	"bs-avatars-generate-new-label": "產生新頭像",
-	"bs-avatars-file-upload-fieldset-title": "圖片上傳",
+	"bs-avatars-file-upload-fieldset-title": "上傳新的圖片",
 	"bs-avatars-auto-generate-fieldset-title": "自動產生頭像",
 	"apihelp-bs-avatars-tasks-summary": "上傳、產生，並設定使用者頭像",
 	"bs-avatars-tag-profileimage-error-invalidusername": "參數「username」為必要並且須包含一個有效的使用者名稱",
-	"bs-avatars-pref-generator-help": "當使用者未上傳個人檔案照片時，會產生頭像圖片。InstantAvatar：所產生的頭像圖片是基於真實姓名、或是使用者名稱。Identicon：所產生的頭像圖片是基於使用者 ID 部份內容。"
+	"bs-avatars-pref-generator-help": "當使用者未上傳個人頭像時，系統將自動生成虛擬頭像。InstantAvatar：根據真實姓名首字母或使用者名字欄位生成虛擬頭像。Identicon：根據使用者ID的部份內容生成虛擬頭像。",
+	"bs-avatars-upload-button": "上傳",
+	"bs-avatars-generate-button": "生成",
+	"bs-avatars-generic-cancel": "取消",
+	"bs-avatars-generate-description": "生成新的自動化頭像。此操作將永久替換任何已上傳的個人檔案圖片（若是已設定）。"
 }

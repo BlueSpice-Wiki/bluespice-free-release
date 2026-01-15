@@ -11,5 +11,11 @@
 	"standarddialogs-page-info-page-no-templates-label": "Questa pagina non contiene template",
 	"standarddialogs-page-info-page-no-categories-label": "Questa pagina non contiene categorie",
 	"standarddialogs-page-info-page-no-links-label": "Questa pagina non contiene collegamenti",
-	"standarddialogs-page-info-page-no-extlinks-label": "Questa pagina non contiene collegamenti esterni"
+	"standarddialogs-page-info-page-no-extlinks-label": "Questa pagina non contiene collegamenti esterni",
+	"standarddialogs-delete-btn-label": "Cancella",
+	"standarddialogs-move-btn-label": "Sposta",
+	"standarddialogs-copy-btn-label": "Copia",
+	"standarddialogs-new-page-btn-label": "Crea",
+	"standarddialogs-new-subpage-btn-label": "Crea",
+	"standarddialogs-purge-btn-label": "Aggiorna"
 }

@@ -47,7 +47,7 @@ class SkipTo extends SkinStructureBase implements ISkinLayoutAware {
 	 */
 	public function getParams(): array {
 		return [
-			'aria-label' => Message::newFromKey( 'bs-discovery-skip-links-navigation-aria-label' )->text(),
+			'aria-label' => Message::newFromKey( 'bs-discovery-skip-links-nav-aria-label' )->text(),
 			'body' => $this->buildList()
 		];
 	}

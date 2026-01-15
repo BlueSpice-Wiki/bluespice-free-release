@@ -128,11 +128,10 @@ class BsFileSystemHelper {
 
 		$repo = MediaWikiServices::getInstance()->getRepoGroup()->getRepoByName( $sSubDirName );
 
-		// This is not usable! Used for invalidating cache.
-		$repo->quickImport(
-			"",
-			""
-		);
+		$file = $repo->newFile( $sFileName );
+		if ( $file ) {
+			$file->purgeCache();
+		}
 
 		return $oStatus::newGood( static::getFileFromRepoName( $sFileName, $sSubDirName ) );
 	}
@@ -783,7 +782,7 @@ class BsFileSystemHelper {
 
 		if ( $oUploadFile === false ) {
 			return Status::newFatal(
-				wfMessage( 'bs-filesystemhelper-upload-local-error-stash-file' )->plain()
+				wfMessage( 'bs-filesystemhelper-upload-local-error-stash-file' )->text()
 			);
 		}
 

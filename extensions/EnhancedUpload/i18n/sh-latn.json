@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -11,7 +12,7 @@
 	"enhancedupload-details-namespace-label": "Imenski prostor",
 	"enhancedupload-details-categories-label": "Kategorije",
 	"enhancedupload-details-description-label": "Opis",
-	"enhancedupload-upload-button-label": "Otpremi",
+	"enhancedupload-upload-button-label": "Postavi",
 	"enhancedupload-cancel-button-label": "Otkaži",
 	"enhancedupload-finished-dialog-title": "Otpremanje završilo je",
 	"enhancedupload-failed-dialog-title": "Nešto je pošlo naopako",

@@ -74,7 +74,7 @@
 	"bs-discovery-tabpanel-page-text": "Navigatie paginahandelingen",
 	"bs-discovery-tabpanel-page-title": "Tabblad met paginahandelingen en hulpmiddelen",
 	"bs-discovery-tabpanel-page-aria-label": "Navigatie paginahandelingen en hulpmiddelen",
-	"bs-discovery-tabpanel-page-desc": "De navigatie paginahandelingen en hulpmiddelen bevat tabbladen, hulpmiddelen en handelingen",
+	"bs-discovery-tabpanel-page-desc": "Het navigatiepaneel voor paginahandelingen en hulpmiddelen bevat tabbladen, hulpmiddelen en handelingen",
 	"bs-discovery-sidebar-primary-toggle-show-title": "Primaire zijbalk openen",
 	"bs-discovery-sidebar-primary-toggle-show-aria-label": "Primaire zijbalk openen",
 	"bs-discovery-sidebar-primary-toggle-hide-title": "Primaire zijbalk sluiten",
@@ -198,5 +198,11 @@
 	"bs-discovery-back-to-page-title": "Teruggaan naar de pagina $1",
 	"bs-discovery-back-to-version-history": "Terug naar versiegeschiedenis",
 	"bs-discovery-back-to-version-history-title": "Teruggaan naar de versiegeschiedenis van de pagina $1",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Het lettertype Atkinson Hyperlegible Next dat wordt gebruikt voor BlueSpiceDiscovery en voor tekst. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])https://www.brailleinstitute.org"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Het lettertype Atkinson Hyperlegible Next dat wordt gebruikt voor BlueSpiceDiscovery en voor tekst. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])https://www.brailleinstitute.org",
+	"bs-toc-hide-button-aria-label": "Inhoudsopgave verbergen",
+	"bs-discovery-skip-links-nav-aria-label": "Koppelingen overslaan",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Hoofdnavigatie",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "Paginahulpmiddelen",
+	"bs-discovery-tools-after-content-cnt-aria-label": "Aanvullende pagina-informatie",
+	"bs-discovery-data-after-content-cnt-aria-label": "Pagina-appendix"
 }

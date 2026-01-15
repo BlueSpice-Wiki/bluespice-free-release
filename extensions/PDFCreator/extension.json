@@ -1,11 +1,11 @@
 {
 	"name": "PDFCreator",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Daniel Vogel",
 		"Miriam Schlindwein",
-		"[http://www.hallowelt.com Hallo Welt! GmbH]"
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:PDFCreator",
 	"namemsg": "pdfcreator-name",
@@ -93,9 +93,6 @@
 			"PreProcessors": {
 				"excludeExport": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\PreProcessor\\ExcludeExportProcessor"
-				},
-				"objects": {
-					"class": "MediaWiki\\Extension\\PDFCreator\\PreProcessor\\ObjectProcessor"
 				}
 			},
 			"Processors": {
@@ -116,17 +113,20 @@
 				},
 				"pagelinker": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\PageLinkerProcessor",
-					"services": [ "TitleFactory" ]
+					"services": [ "TitleFactory", "UrlUtils" ]
 				},
 				"wikilinker": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\WikiLinkerProcessor",
-					"services": [ "TitleFactory" ]
+					"services": [ "UrlUtils" ]
 				},
 				"suppresslinks": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\SuppressLinks"
 				},
 				"input-select": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\InputSelectProcessor"
+				},
+				"objects": {
+					"class": "MediaWiki\\Extension\\PDFCreator\\Processor\\ObjectProcessor"
 				}
 			},
 			"PostProcessors": {},
@@ -164,7 +164,7 @@
 				},
 				"pageWithLinkedPages": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\ExportMode\\PageWithLinkedPages",
-					"services": [ "MainConfig", "TitleFactory", "DBLoadBalancer", "NamespaceInfo" ]
+					"services": [ "MainConfig", "TitleFactory", "RevisionLookup", "RevisionRenderer", "PermissionManager" ]
 				}
 			},
 			"ExportPluginModules": []
@@ -176,7 +176,6 @@
 		},
 		"BlueSpiceFoundation": {
 			"ConfigDefinitionRegistry": {
-				"PDFCreatorSuppressNamespace": "\\MediaWiki\\Extension\\PDFCreator\\ConfigDefinition\\SuppressNamespace::getInstance",
 				"PDFCreatorDefaultTemplate": "\\MediaWiki\\Extension\\PDFCreator\\ConfigDefinition\\DefaultPDFTemplate::getInstance",
 				"PDFCreatorCoverbackground": "\\MediaWiki\\Extension\\PDFCreator\\ConfigDefinition\\Coverbackground::getInstance"
 			}
@@ -606,9 +605,6 @@
 		},
 		"PDFCreatorCoverbackground": {
 			"value": ""
-		},
-		"PDFCreatorSuppressNamespace": {
-			"value": false
 		}
 	},
 	"manifest_version": 2,

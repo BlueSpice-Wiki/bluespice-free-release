@@ -8,6 +8,7 @@ use MediaWiki\Extension\PDFCreator\Utility\AttachmentFinder;
 use MediaWiki\Extension\PDFCreator\Utility\AttachmentUrlUpdater;
 use MediaWiki\Extension\PDFCreator\Utility\BoolValueGet;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
+use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 use MediaWiki\Title\TitleFactory;
 use RepoGroup;
 

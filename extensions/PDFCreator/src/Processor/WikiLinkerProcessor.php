@@ -4,19 +4,19 @@ namespace MediaWiki\Extension\PDFCreator\Processor;
 
 use MediaWiki\Extension\PDFCreator\IProcessor;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
+use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 use MediaWiki\Extension\PDFCreator\Utility\WikiLinker;
-use MediaWiki\Title\TitleFactory;
+use MediaWiki\Utils\UrlUtils;
 
+/**
+ * This class has to run after PageLinkerProcessor
+ */
 class WikiLinkerProcessor implements IProcessor {
 
-	/** @var TitleFactory */
-	private $titleFactory;
-
 	/**
-	 * @param TitleFactory $titleFactory
+	 * @param UrlUtils $urlUtils
 	 */
-	public function __construct( TitleFactory $titleFactory ) {
-		$this->titleFactory = $titleFactory;
+	public function __construct( private readonly UrlUtils $urlUtils ) {
 	}
 
 	/**
@@ -32,7 +32,7 @@ class WikiLinkerProcessor implements IProcessor {
 		array &$pages, array &$images, array &$attachments,
 		?ExportContext $context = null, string $module = '', $params = []
 	): void {
-		$wikiLinker = new WikiLinker( $this->titleFactory );
+		$wikiLinker = new WikiLinker( $this->urlUtils );
 		$pages = $wikiLinker->execute( $pages );
 	}
 

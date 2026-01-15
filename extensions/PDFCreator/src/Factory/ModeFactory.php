@@ -2,6 +2,8 @@
 
 namespace MediaWiki\Extension\PDFCreator\Factory;
 
+use MediaWiki\Context\IContextSource;
+use MediaWiki\Extension\PDFCreator\IContextSourceAware;
 use MediaWiki\Extension\PDFCreator\IExportMode;
 use MediaWiki\Registration\ExtensionRegistry;
 use Wikimedia\ObjectFactory\ObjectFactory;
@@ -11,6 +13,9 @@ class ModeFactory {
 	/** @var ObjectFactory */
 	private $objectFactory;
 
+	/** @var IContextSource */
+	private $context;
+
 	/** @var array|null */
 	private $modes = null;
 
@@ -18,8 +23,9 @@ class ModeFactory {
 	 *
 	 * @param ObjectFactory $objectFactory
 	 */
-	public function __construct( ObjectFactory $objectFactory ) {
+	public function __construct( ObjectFactory $objectFactory, IContextSource $context ) {
 		$this->objectFactory = $objectFactory;
+		$this->context = $context;
 
 		$this->modes = null;
 	}
@@ -27,7 +33,7 @@ class ModeFactory {
 	/**
 	 *
 	 * @param string $mode
-	 * @return IExportMode
+	 * @return IExportMode|null
 	 */
 	public function getModeProvider( $mode ) {
 		$this->getAllProviders();
@@ -36,6 +42,7 @@ class ModeFactory {
 				return $modeProvider;
 			}
 		}
+		return null;
 	}
 
 	/**
@@ -52,6 +59,10 @@ class ModeFactory {
 
 				if ( $modeProvider instanceof IExportMode === false ) {
 					continue;
+				}
+
+				if ( $modeProvider instanceof IContextSourceAware ) {
+					$modeProvider->setContext( $this->context );
 				}
 				$this->modes[] = $modeProvider;
 			}

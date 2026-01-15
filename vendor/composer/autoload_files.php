@@ -19,7 +19,6 @@ return array(
     '7b11c4dc42b3b3023073cb14e519683c' => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php',
     'ad155f8f1cf0d418fe49e248db8c661b' => $vendorDir . '/react/promise/src/functions_include.php',
     'c3f7f0e81464740a933532e81fa26cc7' => $vendorDir . '/wikimedia/base-convert/src/Functions.php',
-    '2cffec82183ee1cea088009cef9a6fc3' => $vendorDir . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
     '7fd731f274b981c7fe86f42af6d7a5a0' => $vendorDir . '/mwstake/mediawiki-component-contentprovisioner/bootstrap.php',
     '4c4cd977692004fea9f68cd0a1410561' => $vendorDir . '/mwstake/mediawiki-component-dynamicconfig/bootstrap.php',
     '8e06efb3ebaf2e2398db173c978b5819' => $vendorDir . '/mwstake/mediawiki-component-formengine/bootstrap.php',

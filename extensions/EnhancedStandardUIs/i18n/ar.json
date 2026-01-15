@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mohammed Qays",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"enhanced-standard-uis-history-grid-header-summary-label": "ملخص",
 	"enhanced-standard-uis-history-grid-header-undo-title": "رجوع",
-	"enhanced-standard-uis-history-grid-header-diff-label": "فرق"
+	"enhanced-standard-uis-history-grid-header-diff-label": "فرق",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "معلومات عن الملف"
 }

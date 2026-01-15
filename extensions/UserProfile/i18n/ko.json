@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bisang",
+			"YeBoy371",
+			"Ykhwong"
+		]
+	},
+	"userprofile-desc": "사용자 프로필을 위한 UI 및 추가 데이터",
+	"userprofile-user-not-exist-error": "이 사용자는 존재하지 않습니다. 관리자에게 문의해주세요.",
+	"action-userprofile-edit-other": "다른 사용자의 프로필 수정",
+	"right-userprofile-edit-other": "다른 사용자의 프로필 수정",
+	"userprofile-user-not-found": "사용자를 찾을 수 없습니다",
+	"userprofile-pref-mail-public": "다른 사용자에게 내 이메일 주소를 보이기",
+	"userprofile-field-numberofedits": "편집 수",
+	"userprofile-field-email": "이메일",
+	"userprofile-edit-image": "이미지 변경",
+	"userprofile-view-profile": "사용자 프로필 보기",
+	"userprofile-field-realname": "실명",
+	"userprofile-editor-toolbar-cancel": "취소",
+	"userprofile-editor-toolbar-save": "저장",
+	"userprofile-profile-image-alt": "프로필 이미지",
+	"userprofile-profile-name-title": "사용자 실명",
+	"userprofile-profile-username-title": "사용자 이름",
+	"userprofile-profile-panel-aria-label": "$1 사용자의 프로필 패널",
+	"userprofile-droplet-name": "사용자 프로필",
+	"userprofile-ve-attr-user-label": "사용자",
+	"userprofile-ve-attr-user-help": "사용자 이름",
+	"userprofile-changeuserimage-title": "프로필 사진 바꾸기",
+	"userprofile-pref-userimage": "프로필 사진",
+	"userprofile-pref-userimage-link": "프로필 보기",
+	"userprofile-ve-attr-orientation-vertical": "수직"
+}

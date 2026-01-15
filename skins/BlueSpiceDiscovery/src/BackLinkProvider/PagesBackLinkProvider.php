@@ -4,6 +4,7 @@ namespace BlueSpice\Discovery\BackLinkProvider;
 
 use BlueSpice\Discovery\IBackLinkProvider;
 use MediaWiki\Message\Message;
+use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 
 class PagesBackLinkProvider implements IBackLinkProvider {
@@ -31,7 +32,7 @@ class PagesBackLinkProvider implements IBackLinkProvider {
 			return false;
 		}
 		$this->backToTitle = $this->titleFactory->newFromText( urldecode( $backToValue ) );
-		return true;
+		return $this->backToTitle instanceof Title;
 	}
 
 	/**

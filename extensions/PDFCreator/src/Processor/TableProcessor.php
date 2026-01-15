@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\PDFCreator\Processor;
 
 use MediaWiki\Extension\PDFCreator\IProcessor;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
+use MediaWiki\Extension\PDFCreator\Utility\ExportPage;
 use MediaWiki\Extension\PDFCreator\Utility\TableHeadsDuplicator;
 use MediaWiki\Extension\PDFCreator\Utility\TableWidthUpdater;
 

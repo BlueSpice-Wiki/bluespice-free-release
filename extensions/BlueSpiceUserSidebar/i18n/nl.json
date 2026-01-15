@@ -12,5 +12,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Sleutelwoord bewerken",
 	"menueditor-ui-menu-keyword-usersidebar-label": "Trefwoord",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Sleutelwoord bewerken",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "Trefwoord"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Trefwoord",
+	"bs-usersidebar-empty-menu-label": "Geen vermeldingen beschikbaar"
 }
