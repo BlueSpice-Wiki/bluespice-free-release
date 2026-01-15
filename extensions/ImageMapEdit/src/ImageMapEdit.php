@@ -1,5 +1,7 @@
 <?php
 
+namespace MediaWiki\Extension\ImageMapEdit;
+
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\ParserOutput;

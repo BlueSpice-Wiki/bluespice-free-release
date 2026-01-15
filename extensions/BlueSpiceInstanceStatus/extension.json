@@ -1,11 +1,11 @@
 {
 	"name": "BlueSpiceInstanceStatus",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
 	],
-	"url": "http://www.bluespice.com",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceInstanceStatus",
 	"descriptionmsg": "bs-instancestatus-desc",
 	"type": "bluespice",
 	"requires": {

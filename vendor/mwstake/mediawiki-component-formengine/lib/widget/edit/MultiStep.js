@@ -1,5 +1,5 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.widget.edit.MultiStep = function( cfg ) {
+( function ( mw, $ ) {
+	mw.ext.forms.widget.edit.MultiStep = function ( cfg ) {
 		mw.ext.forms.widget.edit.MultiStep.parent.call( this, cfg );
 
 		this.form = cfg.form;
@@ -17,7 +17,7 @@
 
 	OO.inheritClass( mw.ext.forms.widget.edit.MultiStep, OO.ui.InputWidget );
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.renderItems = function() {
+	mw.ext.forms.widget.edit.MultiStep.prototype.renderItems = function () {
 		this.renderStepNavigator();
 		this.renderSteps();
 		this.renderFooter();
@@ -29,12 +29,12 @@
 		}
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.renderStepNavigator = function() {
-		var buildPbConfig = function( steps ) {
-				var config = {};
-				for ( var i = 0; i < steps.length; i++ ) {
-					var step = steps[i];
-					config[step.name] = {
+	mw.ext.forms.widget.edit.MultiStep.prototype.renderStepNavigator = function () {
+		const buildPbConfig = function ( steps ) {
+				const config = {};
+				for ( let i = 0; i < steps.length; i++ ) {
+					const step = steps[ i ];
+					config[ step.name ] = {
 						label: step.label,
 						completionStep: step.completionStep
 					};
@@ -50,18 +50,18 @@
 		this.$element.append( this.stepPb.$element );
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.renderSteps = function() {
-		var stepName, stepConfig, items = [];
+	mw.ext.forms.widget.edit.MultiStep.prototype.renderSteps = function () {
+		let stepName, stepConfig, items = [];
 		this.$stepBody = $( '<div>' ).addClass( 'step-body' );
 		this.$element.append( this.$stepBody );
 		this.stepLayouts = {};
-		this.stepItems =  {};
+		this.stepItems = {};
 
-		for( var i = 0; i < this.steps.length; i++ ) {
-			stepName = this.steps[i].name;
-			stepConfig = this.steps[i];
+		for ( let i = 0; i < this.steps.length; i++ ) {
+			stepName = this.steps[ i ].name;
+			stepConfig = this.steps[ i ];
 
-			this.stepLayouts[stepName] = new OO.ui.FieldsetLayout( {
+			this.stepLayouts[ stepName ] = new OO.ui.FieldsetLayout( {
 				classes: [ 'step-body-step step-hidden' ],
 				data: {
 					stepName: stepName
@@ -69,12 +69,12 @@
 			} );
 
 			items = stepConfig.items || stepConfig.widget_items;
-			this.stepItems[stepName] = this.form.parseItems( items, this.stepLayouts[stepName] );
-			this.$stepBody.append( this.stepLayouts[stepName].$element );
+			this.stepItems[ stepName ] = this.form.parseItems( items, this.stepLayouts[ stepName ] );
+			this.$stepBody.append( this.stepLayouts[ stepName ].$element );
 		}
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.renderFooter = function() {
+	mw.ext.forms.widget.edit.MultiStep.prototype.renderFooter = function () {
 		this.$footer = $( '<div>' ).addClass( 'step-footer' );
 		this.nextStepButton = new OO.ui.ButtonWidget( {
 			label: '',
@@ -90,47 +90,49 @@
 		this.$element.append( this.$footer );
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.nextStep = function() {
-		this.validateStep().done( function() {
+	mw.ext.forms.widget.edit.MultiStep.prototype.nextStep = function () {
+		this.validateStep().done( () => {
 			this.stepPb.nextStep();
 			this.setStep( this.stepPb.getCurrent() );
-		}.bind( this ) );
+		} );
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.validateStep = function() {
-		var dfd = $.Deferred(), inputs = {}, inputName;
+	mw.ext.forms.widget.edit.MultiStep.prototype.validateStep = function () {
+		const dfd = $.Deferred();
+		const inputs = {};
+		let inputName;
 		if ( !this.stepItems.hasOwnProperty( this.currentStep ) ) {
 			dfd.reject();
 		}
-		for ( inputName in this.stepItems[this.currentStep] ) {
-			if ( this.stepItems[this.currentStep][inputName] instanceof OO.ui.InputWidget ) {
-				inputs[inputName] = this.stepItems[this.currentStep][inputName];
+		for ( inputName in this.stepItems[ this.currentStep ] ) {
+			if ( this.stepItems[ this.currentStep ][ inputName ] instanceof OO.ui.InputWidget ) {
+				inputs[ inputName ] = this.stepItems[ this.currentStep ][ inputName ];
 			}
 		}
 		if ( $.isEmptyObject( inputs ) ) {
 			dfd.resolve();
 		}
 
-		this.form.validateForm( inputs ).done( function() {
+		this.form.validateForm( inputs ).done( () => {
 			dfd.resolve();
-		} ).fail( function() {
+		} ).fail( () => {
 			dfd.reject();
 		} );
 		return dfd.promise();
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.stepSet = function( step ) {
+	mw.ext.forms.widget.edit.MultiStep.prototype.stepSet = function ( step ) {
 		this.setStep( step );
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.setStep = function( step ) {
-		var stepName;
-		for ( var i = 0; i < this.steps.length; i++ ) {
-			stepName = this.steps[i].name;
-			this.stepLayouts[stepName].$element.addClass( 'step-hidden' );
+	mw.ext.forms.widget.edit.MultiStep.prototype.setStep = function ( step ) {
+		let stepName;
+		for ( let i = 0; i < this.steps.length; i++ ) {
+			stepName = this.steps[ i ].name;
+			this.stepLayouts[ stepName ].$element.addClass( 'step-hidden' );
 
 			if ( stepName === step ) {
-				this.stepLayouts[stepName].$element.removeClass( 'step-hidden' );
+				this.stepLayouts[ stepName ].$element.removeClass( 'step-hidden' );
 				this.currentStep = stepName;
 				if ( !this.stepPb.hasMoreSteps() ) {
 					this.nextStepButton.setDisabled( true );
@@ -138,13 +140,13 @@
 				} else {
 					this.nextStepButton.$element.css( 'display', 'inline-block' );
 					this.nextStepButton.setDisabled( false );
-					this.nextStepButton.setLabel( this.steps[i].nextButtonLabel || mw.message( 'mwstake-formengine-label-next-step' ).text() );
+					this.nextStepButton.setLabel( this.steps[ i ].nextButtonLabel || mw.message( 'mwstake-formengine-label-next-step' ).text() );
 				}
 			}
 		}
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.setValue = function( value ) {
+	mw.ext.forms.widget.edit.MultiStep.prototype.setValue = function ( value ) {
 		if ( !value ) {
 			return;
 		}
@@ -161,7 +163,7 @@
 		this.setStep( this.stepPb.getCurrent() );
 	};
 
-	mw.ext.forms.widget.edit.MultiStep.prototype.getValue = function() {
+	mw.ext.forms.widget.edit.MultiStep.prototype.getValue = function () {
 		return {
 			current: this.stepPb.getCurrent(),
 			max: this.stepPb.getMax(),
@@ -169,4 +171,4 @@
 		};
 	};
 
-} )( mediaWiki, jQuery );
+}( mediaWiki, jQuery ) );

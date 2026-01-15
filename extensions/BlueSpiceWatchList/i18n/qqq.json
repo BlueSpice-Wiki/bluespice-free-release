@@ -27,5 +27,6 @@
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "Help message for the parameter \"pagename\"",
 	"bs-watchlist-tag-watchlist-attr-time-help": "Help message for the parameter \"time\"",
 	"bs-watchlist-droplet-name": "Title of droplet for tag Watchlist",
-	"bs-watchlist-droplet-description": "Description of droplet for tag Watchlist"
+	"bs-watchlist-droplet-description": "Description of droplet for tag Watchlist",
+	"bs-watchlist-usersidebar-title": "Title of user sidebar widget Watchlist\n{{Identical|Watchlist}}"
 }

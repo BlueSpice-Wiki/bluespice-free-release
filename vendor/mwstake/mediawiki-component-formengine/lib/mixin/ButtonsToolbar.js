@@ -1,7 +1,7 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.mixin.ButtonsToolbar = function() {
+( function ( mw ) {
+	mw.ext.forms.mixin.ButtonsToolbar = function () {
 
-		var toolFactory = new OO.ui.ToolFactory(),
+		const toolFactory = new OO.ui.ToolFactory(),
 			toolGroupFactory = new OO.ui.ToolGroupFactory(),
 			toolbar = new OO.ui.Toolbar( toolFactory, toolGroupFactory );
 		toolbar.$element.addClass( 'form-instance-toolbar' );
@@ -22,7 +22,7 @@
 			this.getButton( 'progressSave', {
 				flags: [ 'progressive', 'primary' ],
 				framed: true,
-				title:mw.message( 'mwstake-formengine-form-save-label' ).text(),
+				title: mw.message( 'mwstake-formengine-form-save-label' ).text(),
 				showBothIconAndLabel: true
 			}, toolFactory );
 		}
@@ -37,18 +37,18 @@
 			showBothIconAndLabel: true
 		}, toolFactory );
 
-		var includes = [];
+		let includes = [];
 		if ( this.enableProgressSave ) {
 			includes.push( 'progressSave' );
 		}
-		for ( var i = 0; i < this.buttonsToShow.length; i++ ) {
-			if ( !this.buttonsToShow[i] ) {
+		for ( let i = 0; i < this.buttonsToShow.length; i++ ) {
+			if ( !this.buttonsToShow[ i ] ) {
 				continue;
 			}
-			if ( this.buttonsToShow[i] === 'cancel' && this.canCancel() ) {
+			if ( this.buttonsToShow[ i ] === 'cancel' && this.canCancel() ) {
 				includes.push( 'cancel' );
 			} else {
-				includes.push( this.buttonsToShow[i] );
+				includes.push( this.buttonsToShow[ i ] );
 			}
 		}
 		includes = includes.reverse();
@@ -61,21 +61,21 @@
 			}
 		] );
 		toolbar.initialize();
-		for ( var name in toolbar.tools ) {
+		for ( const name in toolbar.tools ) {
 			if ( !toolbar.tools.hasOwnProperty( name ) ) {
 				continue;
 			}
 			if ( name === 'submit' ) {
-				this.submitButton = toolbar.tools[name];
+				this.submitButton = toolbar.tools[ name ];
 			}
 			if ( name === 'progressSave' ) {
-				this.progressSaveButton = toolbar.tools[name];
+				this.progressSaveButton = toolbar.tools[ name ];
 			}
 			if ( name === 'reset' ) {
-				this.resetButton = toolbar.tools[name];
+				this.resetButton = toolbar.tools[ name ];
 			}
 			if ( name === 'cancel' ) {
-				this.cancelButton = toolbar.tools[name];
+				this.cancelButton = toolbar.tools[ name ];
 			}
 		}
 		if ( includes.length > 0 ) {
@@ -85,18 +85,18 @@
 
 	OO.initClass( mw.ext.forms.mixin.ButtonsToolbar );
 
-	mw.ext.forms.mixin.ButtonsToolbar.prototype.getButton = function( name, config, toolFactory ) {
-		var form = this,
-			button = function() {
-			button.parent.apply( this, arguments );
-		};
+	mw.ext.forms.mixin.ButtonsToolbar.prototype.getButton = function ( name, config, toolFactory ) {
+		const form = this,
+			button = function () {
+				button.parent.apply( this, arguments );
+			};
 		OO.inheritClass( button, OO.ui.Tool );
 		button.static.name = name;
 		button.static.icon = config.icon || '';
 		button.static.title = config.title || '';
 		button.static.flags = config.flags || [];
 		button.static.framed = config.framed || false;
-		button.prototype.onSelect = function() {
+		button.prototype.onSelect = function () {
 			this.setActive( false );
 			form.emit( 'buttonClick', name );
 		};
@@ -104,4 +104,4 @@
 		toolFactory.register( button );
 	};
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

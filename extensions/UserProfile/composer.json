@@ -1,8 +1,15 @@
 {
 	"name": "mediawiki/user-profile",
 	"type": "mediawiki-extension",
-	"license": "GPL-3.0-only",
 	"description": "User profile UI",
+	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "https://www.hallowelt.com"
+		}
+	],
 	"extra": {
 		"installer-name": "UserProfile"
 	},

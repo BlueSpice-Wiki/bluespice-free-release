@@ -1,5 +1,5 @@
-( function ( mw, $) {
-	mw.ext.forms.standalone.Form = function( cfg ) {
+( function ( mw, $ ) {
+	mw.ext.forms.standalone.Form = function ( cfg ) {
 		mw.ext.forms.standalone.Form.parent.call( this, {} );
 		OO.EventEmitter.call( this );
 
@@ -15,7 +15,7 @@
 
 	mw.ext.forms.standalone.Form.static.name = 'standalone-form';
 
-	mw.ext.forms.standalone.Form.prototype.render = function() {
+	mw.ext.forms.standalone.Form.prototype.render = function () {
 		if ( !this.config.definition.hasOwnProperty( 'items' ) ) {
 			this.config.definition.items = this.makeItems();
 		}
@@ -23,48 +23,48 @@
 		this.createForm();
 	};
 
-	mw.ext.forms.standalone.Form.prototype.createForm = function() {
-		var standalone = this;
+	mw.ext.forms.standalone.Form.prototype.createForm = function () {
+		const standalone = this;
 
 		this.form = new mw.ext.forms.widget.Form( $.extend( true, {}, {
 			definitionName: mw.ext.forms.standalone.Form.static.name,
-			action: this.config.hasOwnProperty( 'data' ) ? 'edit' : 'create',
+			action: this.config.hasOwnProperty( 'data' ) ? 'edit' : 'create'
 		}, this.config, {
 			// Force certain properties
 			definition: {
 				target: null,
 				listeners: $.extend( true, {}, {
-					setValueFor: function( name, value, dataset ) {
+					setValueFor: function ( name, value, dataset ) {
 						standalone.onSetValueFor( this, name, value, dataset );
 					},
-					parseComplete: function( items ) {
+					parseComplete: function ( items ) {
 						standalone.onParseComplete( this, items );
 					},
-					renderComplete: function() {
+					renderComplete: function () {
 						standalone.onRenderComplete( this );
 					},
-					initComplete: function() {
+					initComplete: function () {
 						standalone.onInitComplete( this );
 					},
-					submit: function() {
+					submit: function () {
 						return standalone.onSubmit( this );
 					},
-					submitToNullTarget: function( data, summary ) {
+					submitToNullTarget: function ( data, summary ) {
 						standalone.onDataSubmitted( data, summary );
 					},
-					reset: function() {
+					reset: function () {
 						standalone.onReset( this );
 					},
-					cancel: function() {
+					cancel: function () {
 						return standalone.onCancel( this );
 					},
-					progressSave: function() {
+					progressSave: function () {
 						return standalone.onProgressSave( this );
 					},
-					beforeSubmitData: function( data ) {
+					beforeSubmitData: function ( data ) {
 						return standalone.onBeforeSubmitData( this, data );
 					},
-					validationFailed: function() {
+					validationFailed: function () {
 						standalone.onValidationFailed( this );
 					}
 				}, this.config.listeners || {} )
@@ -77,68 +77,68 @@
 		this.$element.addClass( 'ext-forms-standalone-form' );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.makeItems = function() {
+	mw.ext.forms.standalone.Form.prototype.makeItems = function () {
 		return [];
 	};
 
-	mw.ext.forms.standalone.Form.prototype.getForm = function() {
+	mw.ext.forms.standalone.Form.prototype.getForm = function () {
 		return this.form;
 	};
 
-	mw.ext.forms.standalone.Form.prototype.submit = function() {
+	mw.ext.forms.standalone.Form.prototype.submit = function () {
 		return this.form.submitForm();
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onSetValueFor = function( form, name, value, dataset ) {
+	mw.ext.forms.standalone.Form.prototype.onSetValueFor = function ( form, name, value, dataset ) {
 		this.emit( 'setValueFor', form, name, value, dataset );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onParseComplete = function( form, items ) {
+	mw.ext.forms.standalone.Form.prototype.onParseComplete = function ( form, items ) {
 		this.emit( 'parseComplete', form, items );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onRenderComplete = function( form ) {
+	mw.ext.forms.standalone.Form.prototype.onRenderComplete = function ( form ) {
 		this.emit( 'renderComplete', form );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onInitComplete = function( form ) {
+	mw.ext.forms.standalone.Form.prototype.onInitComplete = function ( form ) {
 		this.emit( 'initComplete', form );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onSubmit = function( form ) {
+	mw.ext.forms.standalone.Form.prototype.onSubmit = function ( form ) {
 		return this.resolvedDeferrable();
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onReset = function( form ) {
+	mw.ext.forms.standalone.Form.prototype.onReset = function ( form ) {
 		this.emit( 'reset', form );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onCancel = function( form ) {
+	mw.ext.forms.standalone.Form.prototype.onCancel = function ( form ) {
 		this.emit( 'cancel', form );
 		return this.resolvedDeferrable();
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onProgressSave = function( form ) {
+	mw.ext.forms.standalone.Form.prototype.onProgressSave = function ( form ) {
 		this.emit( 'progressSave', form );
 		return this.resolvedDeferrable();
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onBeforeSubmitData = function( form, data ) {
+	mw.ext.forms.standalone.Form.prototype.onBeforeSubmitData = function ( form, data ) {
 		this.emit( 'beforeSubmitData', form );
 		return this.resolvedDeferrable( data );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onDataSubmitted = function( data, summary ) {
+	mw.ext.forms.standalone.Form.prototype.onDataSubmitted = function ( data, summary ) {
 		this.emit( 'dataSubmitted', data, summary );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.onValidationFailed = function( form ) {
+	mw.ext.forms.standalone.Form.prototype.onValidationFailed = function ( form ) {
 		this.emit( 'validationFailed' );
 	};
 
-	mw.ext.forms.standalone.Form.prototype.resolvedDeferrable = function( data ) {
+	mw.ext.forms.standalone.Form.prototype.resolvedDeferrable = function ( data ) {
 		data = data || null;
-		var dfd = $.Deferred();
+		const dfd = $.Deferred();
 		if ( data !== null ) {
 			dfd.resolve( data );
 		} else {
@@ -147,4 +147,4 @@
 		return dfd.promise();
 	};
 
-} )( mediaWiki, jQuery );
+}( mediaWiki, jQuery ) );

@@ -6,7 +6,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_COMMONWEBAPIS_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_COMMONWEBAPIS_VERSION', '3.0.16' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_COMMONWEBAPIS_VERSION', '3.0.20' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 	->register( 'commonwebapis', static function () {
@@ -24,7 +24,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 
 			$hookContainer->register( 'LoadExtensionSchemaUpdates', static function ( $updater ) {
 				if ( !$updater instanceof DatabaseUpdater ) {
-					throw new \MWException( "LoadExtensionSchemaUpdates hook must be called with a DatabaseUpdater" );
+					throw new LogicException( "LoadExtensionSchemaUpdates hook must be called with a DatabaseUpdater" );
 				}
 
 				$dbType = $updater->getDB()->getType();

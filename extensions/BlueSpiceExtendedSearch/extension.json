@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceExtendedSearch",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"author": [
 		"Robert Vogel",
 		"Dejan Savuljesku"
@@ -364,7 +364,6 @@
 				"bs-extendedsearch-autocomplete-result-primary-no-results-label",
 				"bs-extendedsearch-autocomplete-result-type",
 				"bs-extendedsearch-autocomplete-result-top-match-label",
-				"bs-extendedsearch-autocomplete-result-secondary-results-label",
 				"bs-extendedsearch-close-search-button-aria-label"
 			],
 			"dependencies": [
@@ -397,7 +396,6 @@
 				"bs-extendedsearch-autocomplete-result-primary-no-results-label",
 				"bs-extendedsearch-autocomplete-result-type",
 				"bs-extendedsearch-autocomplete-result-top-match-label",
-				"bs-extendedsearch-autocomplete-result-secondary-results-label",
 				"bs-extendedsearch-autocomplete-create-page-link",
 				"bs-extendedsearch-autocomplete-modified-time-label",
 				"bs-extendedsearch-autocomplete-popup-quiet-subpage",
@@ -412,7 +410,8 @@
 				"bs-extendedsearch-autocomplete-popup-secondary-results-aria",
 				"bs-extendedsearch-autocomplete-popup-redirect-title",
 				"bs-extendedsearch-autocomplete-result-primary-results-label",
-				"bs-extendedsearch-autocomplete-context-options-label"
+				"bs-extendedsearch-autocomplete-context-options-label",
+				"bs-extendedsearch-autocomplete-result-secondary-results-header-label"
 			],
 			"dependencies": [
 				"ext.blueSpiceExtendedSearch.SearchBar",

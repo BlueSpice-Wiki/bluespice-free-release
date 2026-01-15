@@ -49,8 +49,12 @@ class InsertCategoryTool extends Literal {
 		/** @var Title */
 		$title = $context->getTitle();
 
-		$this->btnDisabled = !$this->permissionManager
-			->userCan( 'edit', $user, $title );
+		$this->btnDisabled =
+			!$this->permissionManager->userCan( 'edit', $user, $title );
+		if ( $title && $title->canExist() ) {
+			$content = $this->wikiPageFactory->newFromTitle( $title )->getContent();
+			$this->btnDisabled = $this->btnDisabled && $content instanceof WikitextContent;
+		}
 
 		parent::__construct(
 			'bs-category-inline-editor',
@@ -69,11 +73,7 @@ class InsertCategoryTool extends Literal {
 			return false;
 		}
 		$wikipage = $this->wikiPageFactory->newFromTitle( $title );
-		$content = $wikipage->getContent();
-		if ( !$content instanceof WikitextContent ) {
-			return false;
-		}
-		return true;
+		return $wikipage->getContentHandler()->supportsCategories();
 	}
 
 	/**

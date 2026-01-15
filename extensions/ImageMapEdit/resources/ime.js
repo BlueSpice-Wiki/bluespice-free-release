@@ -10,31 +10,6 @@
 */
 
 /*
-	Constants
-*/
-
-var IME_TEMPLATE = mw.config.get( 'wgScriptPath' ) + '/extensions/ImageMapEdit/includes/template.php';
-var IME_TRANSLATIONS = mw.config.get( 'wgScriptPath' ) + '/extensions/ImageMapEdit/includes/translations.php?lang=' + mw.config.get( 'wgUserLanguage' );
-
-// Scripts to create the circle and polygon images
-var IME_CIRCLESCRIPT = mw.config.get( 'wgScriptPath' ) + '/extensions/ImageMapEdit/includes/circle.php';
-var IME_POLYSCRIPT = mw.config.get( 'wgScriptPath' ) + '/extensions/ImageMapEdit/includes/poly.php';
-
-/*
-	Imports
-*/
-
-// Load HTML form code for ImageMapEdit
-mw.loader.load(IME_TEMPLATE);
-
-// Default error message, will be overwritten if translation is loaded
-ime_translations = new Array();
-ime_translations['error_imagenotfound'] = 'ImageMapEdit: Could not find image in page structure.';
-// Container for translations
-// Load translations
-mw.loader.load(IME_TRANSLATIONS);
-
-/*
 	Global variables
 */
 var ime_areas = Array();
@@ -42,6 +17,44 @@ var ime_currentlyEditing = -1;
 var ime_width;
 var ime_height;
 var ime_scale;
+var imeEventHandlers = {
+	ime_Area: ime_Area,
+	ime_CircleCoord: ime_CircleCoord,
+	ime_PolyCoord: ime_PolyCoord,
+	ime_RectCoord: ime_RectCoord,
+	ime_deleteArea: ime_deleteArea,
+	ime_deletePolyCoords: ime_deletePolyCoords,
+	ime_editArea: ime_editArea,
+	ime_error: ime_error,
+	ime_eventCircle: ime_eventCircle,
+	ime_eventDummy: ime_eventDummy,
+	ime_eventGetButton: ime_eventGetButton,
+	ime_eventGetX: ime_eventGetX,
+	ime_eventGetY: ime_eventGetY,
+	ime_eventPoly: ime_eventPoly,
+	ime_eventRect: ime_eventRect,
+	ime_findATag: ime_findATag,
+	ime_getElementsByClassName: ime_getElementsByClassName,
+	ime_getEvent: ime_getEvent,
+	ime_hideImport: ime_hideImport,
+	ime_highlightMap: ime_highlightMap,
+	ime_highlightMapCircle: ime_highlightMapCircle,
+	ime_highlightMapPoly: ime_highlightMapPoly,
+	ime_htmlNewDiv: ime_htmlNewDiv,
+	ime_importLines: ime_importLines,
+	ime_init1: ime_init1,
+	ime_init2: ime_init2,
+	ime_mouseEventClear: ime_mouseEventClear,
+	ime_mouseEventSet: ime_mouseEventSet,
+	ime_newArea: ime_newArea,
+	ime_removeOtherUIElements: ime_removeOtherUIElements,
+	ime_saveArea: ime_saveArea,
+	ime_showImport: ime_showImport,
+	ime_updateAreas: ime_updateAreas,
+	ime_updateMap: ime_updateMap,
+	ime_updateResult: ime_updateResult,
+	ime_updateSelectArea: ime_updateSelectArea
+};
 
 /*
 	Start Initialization if this is an image page and there actually is an image
@@ -75,26 +88,26 @@ var imeButton = null;
 function ime_init1() {
 	var divFile = document.getElementById('file');
 	if (!divFile) {
-		ime_error(ime_translations['error_imagenotfound'] + ' (ime_init1,divFile=null)');
+		ime_error(mw.message('imagemapedit-error-imagenotfound').text() + ' (ime_init1,divFile=null)');
 		return;
 	}
 
 	var a = ime_findATag(divFile);
 	if (!a) {
-		ime_error(ime_translations['error_imagenotfound'] + ' (ime_init1,a=null)');
+		ime_error(mw.message('imagemapedit-error-imagenotfound').text() + ' (ime_init1,a=null)');
 		return;
 	}
 
 	var img = a.firstChild;
 	if (!img) {
-		ime_error(ime_translations['error_imagenotfound'] + ' (ime_init1,img=null)');
+		ime_error(mw.message('imagemapedit-error-imagenotfound').text() + ' (ime_init1,img=null)');
 		return;
 	}
 
 	var url = mw.config.get( 'wgScriptPath' ) + '/api.php?format=xml&action=query&prop=imageinfo&iiprop=size&titles=' + mw.config.get( 'wgPageName' );
 
 	imeButton = new OO.ui.ButtonWidget( {
-		label: 'Image map',
+		label: mw.message('imagemapedit-display-interface').text(),
 		icon: 'imageLayoutBasic',
 		disabled: true
 	} );
@@ -167,28 +180,77 @@ function ime_init2() {
 	// Disable image context menu so right click can be used for events
 	img.oncontextmenu = ime_eventDummy;
 
+	var template = mw.template.get( 'ext.imagemapedit', 'ImageMapEdit.mustache' );
 
-	divIme.innerHTML = ime_templateHtml;
+	var messageKeys = template.getSource().match(/\{\{([a-zA-Z0-9\-_]+)\}\}/g) || [];
+	var templateRenderData = {};
+	messageKeys.forEach(function(match) {
+		var key = match.replace(/[{}]/g, '');
+		// Message keys that might be used here:
+		// * imagemapedit-bottomleft
+		// * imagemapedit-bottomright
+		// * imagemapedit-circle
+		// * imagemapedit-circlechoose1
+		// * imagemapedit-circlechoose2
+		// * imagemapedit-coordinates
+		// * imagemapedit-deletearea
+		// * imagemapedit-deletecoordinates
+		// * imagemapedit-display-interface
+		// * imagemapedit-editarea
+		// * imagemapedit-error-imagenotfound
+		// * imagemapedit-generatedwikicode
+		// * imagemapedit-hidetextbox
+		// * imagemapedit-imagealttext
+		// * imagemapedit-imagedescription
+		// * imagemapedit-imagedisplaydimensions
+		// * imagemapedit-imagedisplayposition
+		// * imagemapedit-imagedisplayposition-left
+		// * imagemapedit-imagedisplayposition-center
+		// * imagemapedit-imagedisplayposition-right
+		// * imagemapedit-imagedisplaytype
+		// * imagemapedit-imagedisplaytype-thumbnail
+		// * imagemapedit-imagedisplaytype-border
+		// * imagemapedit-imagedisplaytype-frameless
+		// * imagemapedit-import
+		// * imagemapedit-importareas
+		// * imagemapedit-infolinkposition
+		// * imagemapedit-linktarget
+		// * imagemapedit-linktitle
+		// * imagemapedit-newarea
+		// * imagemapedit-nolink
+		// * imagemapedit-notspecified
+		// * imagemapedit-optional
+		// * imagemapedit-poly
+		// * imagemapedit-polychoose
+		// * imagemapedit-preferences
+		// * imagemapedit-position
+		// * imagemapedit-radius
+		// * imagemapedit-rect
+		// * imagemapedit-rectbottom
+		// * imagemapedit-rectchoose1
+		// * imagemapedit-rectchoose2
+		// * imagemapedit-rectleft
+		// * imagemapedit-rectright
+		// * imagemapedit-recttop
+		// * imagemapedit-showtextbox
+		// * imagemapedit-topleft
+		// * imagemapedit-topright
+		templateRenderData[key] = mw.message(key).escaped();
+	});
 
-	// Translate texts
-	ime_translate();
-}
+	divIme.innerHTML = template.render(templateRenderData).html();
 
-/*
-	Translate the user interface to the specified language.
-*/
-function ime_translate() {
-	if (ime_translations) {
-		for (var i in ime_translations) {
-			var elements = ime_getElementsByClassName('ime_t_' + i);
-			if (elements.length > 0) {
-				var text = ime_translations[i];;
-				for (var j=0; j<elements.length; j++) {
-					elements[j].innerHTML = text;
-				}
-			}
-		}
+	document.ime = divIme.querySelector( 'form[name="ime"]' );
+
+	// Setup event listeners
+	if ( document.ime && document.ime.area ) {
+		document.ime.area.addEventListener( 'click', function() {
+			ime_editArea( this.selectedIndex );
+		});
 	}
+
+	// Default image configs
+	document.ime.imageDisplayDimensions.value = img.width + 'px';
 }
 
 /*
@@ -408,18 +470,25 @@ function ime_updateAreas() {
 }
 
 function ime_updateResult() {
-	var arr = document.ime.imageDescriptionPos;
-	var imageDescriptionPos = arr[0].value;
-	for (var i=1; i<arr.length; i++) {
-		if (arr[i].checked) {
-			imageDescriptionPos = arr[i].value;
-			break;
+	var imageDescriptionPos = document.ime.imageDescriptionPos.value;
+	var imeDisplayConfigs = '';
+	[
+		'imageDisplayDimensions',
+		'imageDisplayPosition',
+		'imageDisplayType'
+	].forEach( function( prop ) {
+		if ( document.ime[prop].value !== '' ) {
+			imeDisplayConfigs += '|' + document.ime[prop].value;
 		}
-	}
+	});
 
 	var result = Array();
 	result.push('<imagemap>');
-	result.push( mw.config.get( 'wgPageName' ) + '|' + document.ime.imageDescription.value );
+	result.push(
+		mw.config.get( 'wgPageName' ) + imeDisplayConfigs +
+		'|alt=' + document.ime.imageAltText.value +
+		'|' + document.ime.imageDescription.value
+	);
 	result.push('');
 	for (var i=0; i<ime_areas.length; i++) {
 		var coords = ime_areas[i].coords;
@@ -554,10 +623,9 @@ function ime_updateMap() {
 }
 
 function ime_highlightMapCircle(div,radius,highlight) {
-	var background = "url('" + IME_CIRCLESCRIPT + '?' + (highlight ? 'active=1&' : '') + 'radius=' +  Math.round(ime_scale * radius) + "') no-repeat";
-	if (div.style.background != background) {
-		div.style.background = background;
-	}
+	div.style.borderRadius = '50%';
+	div.style.backgroundColor = highlight ? 'red' : 'black';
+	div.style.backgroundImage = 'none'; // Clear any old background image if present
 }
 
 function ime_highlightMapPoly(div,points,highlight) {
@@ -573,14 +641,24 @@ function ime_highlightMapPoly(div,points,highlight) {
 		}
 	}
 	var convpoints = Array();
+	var clipPathCoords = [];
 	for(var j=0; j<points.length; j+=2) {
-		convpoints[j] = Math.round(ime_scale * points[j]) - Math.round(ime_scale * minX);
-		convpoints[j+1] = Math.round(ime_scale * points[j+1]) - Math.round(ime_scale * minY);
+		// Points for clip-path are relative to the div's own bounding box
+		var relX = Math.round(ime_scale * points[j]) - Math.round(ime_scale * minX);
+		var relY = Math.round(ime_scale * points[j+1]) - Math.round(ime_scale * minY);
+		convpoints[j] = relX; // This array was used for the PHP script, might not be needed now
+		convpoints[j+1] = relY;
+		clipPathCoords.push(relX + 'px ' + relY + 'px');
 	}
-	var background = "url('" + IME_POLYSCRIPT + '?' + (highlight ? 'active=1&' : '') + 'coords=' + convpoints.join("|") + "') no-repeat";
-	if (div.style.background != background) {
-		div.style.background = background;
+
+	if (clipPathCoords.length > 0) {
+		div.style.clipPath = 'polygon(' + clipPathCoords.join(', ') + ')';
+	} else {
+		// If no points, make it invisible or a tiny dot
+		div.style.clipPath = 'polygon(0px 0px, 0px 0px, 0px 0px)'; // Effectively hides it
 	}
+	div.style.backgroundColor = highlight ? 'red' : 'black';
+	div.style.backgroundImage = 'none'; // Clear any old background image
 }
 
 function ime_highlightMap() {
@@ -828,10 +906,10 @@ function ime_findATag(node) {
 
 function ime_callHandler( element ) {
 	var handlerName = $( element ).data( 'handler-name' );
-	var handlerArgs = $( element ).data( 'handler-args' );
-	var handler = window[ handlerName ];
+	var handlerArgs = $( element ).data( 'handler-args' ) || [];
+	var handler = imeEventHandlers[ handlerName ];
 	if ( typeof handler === 'function' ) {
-		handler.apply( window, handlerArgs );
+		handler.apply( element, handlerArgs );
 	}
 	return false;
 }

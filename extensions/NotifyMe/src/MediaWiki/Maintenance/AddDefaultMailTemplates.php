@@ -11,7 +11,6 @@ use MediaWiki\Maintenance\LoggedUpdateMaintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\User\User;
-use MWException;
 
 require_once __DIR__ . '/../../../../../maintenance/Maintenance.php';
 
@@ -25,7 +24,7 @@ class AddDefaultMailTemplates extends LoggedUpdateMaintenance {
 
 	/**
 	 * @return bool|void
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	protected function doDBUpdates() {
 		$this->output( "Adding default mail templates...\n" );

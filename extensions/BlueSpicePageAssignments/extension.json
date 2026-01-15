@@ -8,7 +8,7 @@
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageAssignments",
 	"type": "bluespice",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"descriptionmsg": "bs-pageassignments-desc",
 	"requires": {
 		"MediaWiki": ">= 1.43.0",
@@ -210,8 +210,7 @@
 			],
 			"messages": [
 				"bs-pageassignments-dlg-title",
-				"bs-pageassignments-dlg-fldlabel",
-				"bs-pageassignments-action-apiedit-description"
+				"bs-pageassignments-dlg-fldlabel"
 			],
 			"dependencies": [
 				"ext.bluespice.pageassignments.assignable.messages",

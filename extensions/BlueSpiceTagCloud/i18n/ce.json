@@ -12,5 +12,11 @@
 	"bs-tagcloud-tag-tagcloud-attr-width-label": "Шоралла",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Гайта дукхалла",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Шрифтан минимум барам",
-	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Шрифтан максимум барам"
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Шрифтан максимум барам",
+	"bs-tagcloud-tag-tagcloud-name": "Билгалонийн марха",
+	"bs-tagcloud-tag-tagcloud-title": "Билгалонийн марха",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "Туька",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Лахаран биллам",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "АгӀонаш йукъара йаха",
+	"bs-tagcloud-droplet-name": "Билгалонийн марха"
 }

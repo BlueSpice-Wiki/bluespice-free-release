@@ -1,10 +1,10 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.formElement.MenuTagMultiselect = function() {};
+( function ( mw ) {
+	mw.ext.forms.formElement.MenuTagMultiselect = function () {};
 
 	OO.inheritClass( mw.ext.forms.formElement.MenuTagMultiselect, mw.ext.forms.formElement.InputFormElement );
 
-	mw.ext.forms.formElement.MenuTagMultiselect.prototype.getElementConfig = function() {
-		var config = mw.ext.forms.formElement.MenuTagMultiselect.parent.prototype.getElementConfigInternal.call( this );
+	mw.ext.forms.formElement.MenuTagMultiselect.prototype.getElementConfig = function () {
+		const config = mw.ext.forms.formElement.MenuTagMultiselect.parent.prototype.getElementConfigInternal.call( this );
 		config.options = {
 			type: 'multiplier',
 			name: 'options',
@@ -29,21 +29,21 @@
 		return this.returnConfig( config );
 	};
 
-	mw.ext.forms.formElement.MenuTagMultiselect.prototype.getType = function() {
-		return "menutag_multiselect";
+	mw.ext.forms.formElement.MenuTagMultiselect.prototype.getType = function () {
+		return 'menutag_multiselect';
 	};
 
-	mw.ext.forms.formElement.MenuTagMultiselect.prototype.getWidgets = function() {
+	mw.ext.forms.formElement.MenuTagMultiselect.prototype.getWidgets = function () {
 		return {
 			view: mw.ext.forms.widget.view.MenuTagMultiselectView,
-			edit: OO.ui.MenuTagMultiselectWidget,
+			edit: OO.ui.MenuTagMultiselectWidget
 		};
 	};
 
-	mw.ext.forms.formElement.MenuTagMultiselect.prototype.isInput = function() {
+	mw.ext.forms.formElement.MenuTagMultiselect.prototype.isInput = function () {
 		return true;
 	};
 
-	mw.ext.forms.registry.Type.register( "menutag_multiselect", new mw.ext.forms.formElement.MenuTagMultiselect() );
+	mw.ext.forms.registry.Type.register( 'menutag_multiselect', new mw.ext.forms.formElement.MenuTagMultiselect() );
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

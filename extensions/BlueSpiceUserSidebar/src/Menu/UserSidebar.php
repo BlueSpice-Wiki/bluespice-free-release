@@ -4,7 +4,6 @@ namespace BlueSpice\UserSidebar\Menu;
 
 use BlueSpice\UserSidebar\WidgetFactory;
 use MediaWiki\Extension\MenuEditor\Menu\MediawikiSidebar;
-use MediaWiki\Extension\MenuEditor\Node\Keyword;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\Wikitext\ParserFactory;
 
@@ -66,8 +65,15 @@ class UserSidebar extends MediawikiSidebar {
 	public function getEmptyContent(): array {
 		$nodes = [];
 		foreach ( $this->widgetFactory->getAllKeys() as $key ) {
-			$nodes[] = new Keyword( 1, $key );
+			$nodes[] = new UserSideBarKeyword( 1, $key );
 		}
 		return $nodes;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getEditRight(): string {
+		return 'edit';
 	}
 }

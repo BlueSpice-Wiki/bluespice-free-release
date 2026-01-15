@@ -137,5 +137,9 @@
 	"bs-discovery-table-of-contents-hide-button-aria-label": "목차 숨기기",
 	"bs-discovery-breadcrumb-label-diff": "차이",
 	"bs-discovery-back-to-page": "$1 항목으로 돌아가기",
-	"bs-discovery-back-to-page-title": "$1 문서로 돌아가기"
+	"bs-discovery-back-to-page-title": "$1 문서로 돌아가기",
+	"bs-discovery-header-create-split-button-title": "내용 생성을 위한 옵션이 있는 메뉴 열기",
+	"bs-discovery-header-create-split-button-aria-label": "내용 생성을 위한 옵션이 있는 메뉴 열기",
+	"bs-discovery-navbar-global-actions-button-title": "전역 동작",
+	"bs-discovery-navbar-global-actions-button-aria-label": "전역 동작"
 }

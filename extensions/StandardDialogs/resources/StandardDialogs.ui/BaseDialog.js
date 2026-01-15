@@ -117,6 +117,7 @@ StandardDialogs.ui.BaseDialog.prototype.getActionCompletedEventArgs = function (
 };
 
 StandardDialogs.ui.BaseDialog.prototype.validateTitleNotExist = function ( value ) {
+	this.clearError();
 	if ( !value ) {
 		this.actions.setAbilities( { done: false } );
 		return;
@@ -158,6 +159,7 @@ StandardDialogs.ui.BaseDialog.prototype.setError = function ( error ) {
 StandardDialogs.ui.BaseDialog.prototype.clearError = function () {
 	this.mainFieldset.setWarnings( [] );
 	this.mainFieldset.setErrors( [] );
+	this.updateSize();
 };
 
 StandardDialogs.ui.BaseDialog.prototype.setExistWarning = function () {

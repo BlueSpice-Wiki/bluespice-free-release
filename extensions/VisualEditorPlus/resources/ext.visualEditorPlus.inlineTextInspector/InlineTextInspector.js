@@ -82,6 +82,13 @@ ext.visualEditorPlus.ui.InlineTextInspector.prototype.onMouseDown = function ( e
 				y: e.pageY
 			}
 		};
+	} else {
+		const isPartOfPopup = $( e.target ).closest( '.ext-visualEditorPlus-inlineTextInspector' ).length > 0;
+		if ( isPartOfPopup ) {
+			// If the click is inside the popup, prevent bubbling
+			e.stopPropagation();
+			e.preventDefault();
+		}
 	}
 };
 
@@ -165,7 +172,11 @@ ext.visualEditorPlus.ui.InlineTextInspector.prototype.computePosition = function
 	// var x = ext.visualEditorPlus.ui.InlineTextInspector.super.prototype.computePosition.call( this );
 	let desiredPosition;
 	if ( !this.location || !this.location.hasOwnProperty( 'start' ) || !this.location.hasOwnProperty( 'end' ) ) {
+		// If this.$container has no `direction` css property set, set it to ltr
 		return ext.visualEditorPlus.ui.InlineTextInspector.super.prototype.computePosition.call( this );
+	}
+	if ( !this.$container.css( 'direction' ) ) {
+		this.$container.css( 'direction', 'ltr' );
 	}
 
 	const boundary = this.getEditorBoundary();
@@ -200,7 +211,6 @@ ext.visualEditorPlus.ui.InlineTextInspector.prototype.computePosition = function
 ext.visualEditorPlus.ui.InlineTextInspector.prototype.toggle = function ( show ) {
 	let i;
 	ext.visualEditorPlus.ui.InlineTextInspector.parent.prototype.toggle.call( this, show );
-
 	if ( !show ) {
 		for ( i = 0; i < this.inspectors.length; i++ ) {
 			this.inspectors[ i ].onClose();
@@ -208,7 +218,9 @@ ext.visualEditorPlus.ui.InlineTextInspector.prototype.toggle = function ( show )
 		if ( this.selection ) {
 			this.selection.collapseToEnd();
 		}
+		this.$element.addClass( 'oo-ui-element-hidden' );
 	}
+
 	if ( this.oldWidth ) {
 		this.width = this.oldWidth;
 	}

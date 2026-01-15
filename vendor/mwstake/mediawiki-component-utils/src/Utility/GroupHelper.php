@@ -2,6 +2,7 @@
 namespace MWStake\MediaWiki\Component\Utils\Utility;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserGroupManager;
 use Wikimedia\Rdbms\IDatabase;
@@ -9,13 +10,13 @@ use Wikimedia\Rdbms\IDatabase;
 class GroupHelper {
 
 	/** @var UserGroupManager */
-	private $userGroupManager = null;
+	private $userGroupManager;
 	/** @var array */
 	private $additionalGroups = [];
 	/** @var array */
 	private $groupTypes = [];
 	/** @var IDatabase */
-	private $dbr = null;
+	private $dbr;
 	/** @var string[] */
 	private $standardGroupsFilter = [ 'core-minimal', 'extension-minimal', 'custom' ];
 	/** @var MediaWikiServices */
@@ -79,7 +80,6 @@ class GroupHelper {
 	}
 
 	/**
-	 *
 	 * @param array $aConf
 	 * @return array
 	 */
@@ -141,7 +141,8 @@ class GroupHelper {
 
 	/**
 	 * @param string $group
-	 *
+	 * @param bool $onlyActive Do not count blocked/deactivated users
+	 * @param bool $excludeSystem Do not count build in system users
 	 * @return int
 	 */
 	public function countUsersInGroup( $group, bool $onlyActive = false, bool $excludeSystem = false ): int {

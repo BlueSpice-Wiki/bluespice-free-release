@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceInsertCategory",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceInsertCategory",
 	"author": [
 		"Markus Glaser",
@@ -25,7 +25,6 @@
 				}
 			},
 			"ConfigDefinitionRegistry": {
-				"InsertCategoryWithParents": "\\BlueSpice\\InsertCategory\\ConfigDefinition\\WithParents::getInstance",
 				"InsertCategoryUploadPanelIntegration": "\\BlueSpice\\InsertCategory\\ConfigDefinition\\UploadPanelIntegration::getInstance"
 			}
 		},
@@ -89,10 +88,6 @@
 	},
 	"config_prefix": "bsg",
 	"config": {
-		"InsertCategoryWithParents": {
-			"value": false,
-			"descriptionmsg": "bs-insertcategory-pref-withparents"
-		},
 		"InsertCategoryUploadPanelIntegration": {
 			"value": false,
 			"descriptionmsg": "bs-insertcategory-pref-uploadpanelintegration"

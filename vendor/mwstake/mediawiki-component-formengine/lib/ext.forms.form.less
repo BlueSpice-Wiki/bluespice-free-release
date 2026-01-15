@@ -1,73 +1,90 @@
 .mw-ext-forms-form-picker {
-	margin:20px;
+	margin: 20px;
 }
 
 .field-button {
 	width: 49%;
 	margin-top: 10px;
+
 	a {
 		float: right;
 	}
 }
+
 .mw-ext-forms-form {
 	.mw-ext-forms-message-cnt {
 		margin-bottom: 10px;
 	}
+
 	.oo-ui-flaggedElement-invalid {
 		border: 1px solid red;
 	}
 	position: relative;
+
 	.level-2 {
 		margin-left: 20px;
 	}
+
 	.level-3 {
 		margin-left: 40px;
 	}
+
 	.level-4 {
 		margin-left: 60px;
 	}
+
 	.mw-ext-forms-form-loading-alert {
 		text-align: center;
 	}
+
 	.forms-form-edit-layout {
 		.oo-ui-fieldLayout-header {
 			margin-right: 4% !important;
 		}
 	}
+
 	.forms-form-view-layout {
 		.view-label {
 			width: 45%;
 			font-weight: normal;
 		}
 	}
-	.forms-form-layout-inner{
+
+	.forms-form-layout-inner {
 		margin-top: 10px;
 	}
+
 	.oo-ui-multiselectWidget-group {
 		.oo-ui-checkboxMultioptionWidget {
 			display: block;
 		}
 	}
+
 	.oo-ui-radioSelectWidget {
 		.oo-ui-radioOptionWidget {
 			display: block;
 		}
 	}
+
 	.oo-ui-progressBarWidget {
 		width: 100%;
 	}
+
 	.forms-section {
 		display: block !important;
-		margin-top:20px;
+		margin-top: 20px;
 		font-size: 1.2em;
 	}
+
 	.form-instance-toolbar {
-		position: sticky;
-		top: 0px;
+		position: sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
+		top: 0;
 		z-index: 20;
 		margin-bottom: 10px;
+
 		.oo-ui-barToolGroup.actions {
 			float: right;
+
 			.oo-ui-tool a {
 				padding: 12px !important;
 			}
@@ -84,16 +101,17 @@
 }
 
 .ext-forms-single-image-view-widget {
-	 .inner-image {
-		 width: 100px;
-		 height: 100px;
-		 background-size: contain;
-	 }
- }
+	.inner-image {
+		width: 100px;
+		height: 100px;
+		background-size: contain;
+	}
+}
 
 /* Multi-step widget */
 .ext-forms-widget-multi-step {
 	margin-bottom: 30px;
+
 	.step-navigator {
 		&.configuration-horizontal {
 			.step-navigator-button {
@@ -101,66 +119,79 @@
 				padding: 10px;
 				border-right: 2px solid white;
 				background-color: #0060df;
+
 				.oo-ui-buttonElement-button span {
 					color: white;
 				}
-				&:before {
+
+				&::before {
 					width: 0;
 					height: 0;
 					border-top: 60px solid transparent;
 					border-bottom: 60px solid transparent;
 					border-left: 60px solid green;
 				}
+
 				&.step-current {
 					.oo-ui-buttonElement-button span {
 						text-decoration: underline;
 					}
+
 					&.completion-step {
 						background-color: #019f50;
 					}
 				}
+
 				&.step-disabled {
 					background-color: #9b9b9b;
+
 					.oo-ui-buttonElement-button span {
 						color: #3a3a3b;
 					}
 				}
 			}
 		}
-
 	}
+
 	.step-body {
 		padding: 20px;
 		margin-top: 10px;
+
 		.step-body-step {
 			&.step-hidden {
 				display: none !important;
 			}
 		}
 	}
+
 	.step-footer {
 		text-align: right;
 	}
 }
 
 .ext-forms-widget-multiplier {
-	/*Terrible*/
+	/* Terrible */
 	.multiplier-remove-btn {
 		position: absolute;
 		left: -50px;
 		margin-top: 10px;
+
 		&:first-of-type {
 			margin-left: 0 !important;
 			margin-top: 0 !important;
 		}
 	}
+
 	.multiplier-items-layout {
 		margin-top: 10px;
+
 		.oo-ui-fieldsetLayout-header {
 			font-size: 1.2em;
 		}
+
 		.multiplier-item {
 			margin-top: 10px;
+
 			&:first-of-type {
 				margin-top: 0;
 			}
@@ -170,6 +201,7 @@
 
 .ext-forms-widget-view-wikitext {
 	margin: 10px;
+
 	.ext-forms-widget-view-wikitext-error {
 		font-size: 1.2em;
 		color: red;
@@ -185,6 +217,7 @@
 	.oo-ui-radioSelectWidget {
 		display: table;
 		width: 100%;
+
 		.oo-ui-radioOptionWidget {
 			display: table-cell !important;
 			margin-right: 10px;
@@ -199,6 +232,7 @@
 		width: auto;
 		margin-right: 15px;
 		display: inline-block !important;
+
 		&:last-of-type {
 			margin-right: 0;
 		}
@@ -226,10 +260,12 @@
 			.oo-ui-fieldLayout-header {
 				width: 100% !important;
 			}
+
 			.oo-ui-fieldLayout-field {
 				width: 100% !important;
 			}
 		}
+
 		.oo-ui-labelWidget {
 			vertical-align: top;
 		}
@@ -243,10 +279,10 @@
 }
 
 .skin-vector .form-instance-toolbar {
-	 top: 0;
-}
-.base-bluespicediscovery .form-instance-toolbar,
-.skin-bluespicediscovery .form-instance-toolbar{
-	top: 64px;
+	top: 0;
 }
 
+.base-bluespicediscovery .form-instance-toolbar,
+.skin-bluespicediscovery .form-instance-toolbar {
+	top: 64px;
+}

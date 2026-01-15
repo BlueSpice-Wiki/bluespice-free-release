@@ -11,11 +11,18 @@ OO.inheritClass( bs.vec.ui.dialog.CreateTableOptions, OO.ui.ProcessDialog );
 bs.vec.ui.dialog.CreateTableOptions.static.name = 'createTableOptions';
 
 bs.vec.ui.dialog.CreateTableOptions.static.actions = [
-	{ action: 'save', label: OO.ui.deferMsg( 'bs-vec-dialog-action-done' ), flags: 'primary' },
-	{ label: OO.ui.deferMsg( 'bs-vec-dialog-action-safe' ), flags: 'safe' }
+	{
+		action: 'save',
+		label: OO.ui.deferMsg( 'bs-visualeditorconnector-dialog-action-insert' ),
+		flags: [ 'primary', 'progressive' ]
+	},
+	{
+		title: OO.ui.deferMsg( 'bs-vec-dialog-action-safe' ),
+		flags: [ 'safe', 'close' ]
+	}
 ];
 
-bs.vec.ui.dialog.CreateTableOptions.static.title = OO.ui.deferMsg( 'bs-vec-dialog-create-table-title' );
+bs.vec.ui.dialog.CreateTableOptions.static.title = OO.ui.deferMsg( 'bs-visualeditorconnector-dialog-table-title' );
 
 bs.vec.ui.dialog.CreateTableOptions.prototype.initialize = function () {
 	const mainLayout = new OO.ui.PanelLayout( {

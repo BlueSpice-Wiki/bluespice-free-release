@@ -20,6 +20,7 @@ Require this component in the `composer.json` of your extension:
 		"mwstake/mediawiki-component-manifestregistry": "~3"
 	}
 }
+```
 
 Since 2.0 explicit initialization is required. This can be achieved by
 - either adding `"callback": "mwsInitComponents"` to your `extension.json`/`skin.json`

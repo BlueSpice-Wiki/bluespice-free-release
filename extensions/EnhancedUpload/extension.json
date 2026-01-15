@@ -1,6 +1,6 @@
 {
 	"name": "EnhancedUpload",
-	"version": "4.0.0",
+	"version": "4.0.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]",
@@ -297,8 +297,8 @@
 				"ext.oOJSPlus.widgets"
 			],
 			"messages": [
-				"enhancedupload-ve-dialog-title",
-				"enhancedupload-ve-dialog-filename-label",
+				"enhancedupload-ve-file-dialog-title",
+				"enhancedupload-ve-file-dialog-filename-label",
 				"enhancedupload-ve-dialog-title-exists",
 				"enhancedupload-ve-dialog-duplicate-confirm",
 				"enhancedupload-upload-error-duplicate",

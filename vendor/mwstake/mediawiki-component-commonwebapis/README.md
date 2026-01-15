@@ -19,7 +19,7 @@ Require this component in the `composer.json` of your extension:
 ```json
 {
 	"require": {
-		"mwstake/mediawiki-component-commonwebapis": "~2"
+		"mwstake/mediawiki-component-commonwebapis": "~3"
 	}
 }
 ```

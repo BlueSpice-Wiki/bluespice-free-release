@@ -6,13 +6,13 @@
 		{
 			"name": "HalloWelt! GmbH",
 			"email": "info@hallowelt.com",
-			"homepage": "http://www.hallowelt.com"
+			"homepage": "https://www.hallowelt.com"
 		}
 	],
 	"require": {
 		"mwstake/mediawiki-componentloader": "~1",
 		"mwstake/mediawiki-component-manifestregistry": "~3.0",
-		"mwstake/mediawiki-lib-nodes": "~1.0"
+		"mwstake/mediawiki-lib-nodes": "~2"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "45.0.0",

@@ -2,13 +2,15 @@
 
 namespace MWStake\MediaWiki\Lib\Nodes;
 
-use Content;
+use MediaWiki\CommentStore\CommentStoreComment;
+use MediaWiki\Content\Content;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\MutableRevisionRecord;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Status\Status;
 use MediaWiki\Storage\PageUpdater;
-use User;
+use MediaWiki\User\User;
 
 abstract class MutableParser implements IMutator {
 	/** @var RevisionRecord */
@@ -70,11 +72,11 @@ abstract class MutableParser implements IMutator {
 			->newFromTitle( $title );
 
 		if ( !$user ) {
-			$user = \User::newSystemUser( 'Mediawiki default' );
+			$user = User::newSystemUser( 'Mediawiki default' );
 		}
 		$updater = $wikipage->newPageUpdater( $user );
 		$this->setUpdaterSlotsOnSave( $updater );
-		$rev = $updater->saveRevision( \CommentStoreComment::newUnsavedComment( $comment ), $flags );
+		$rev = $updater->saveRevision( CommentStoreComment::newUnsavedComment( $comment ), $flags );
 		if ( !$rev && $this->isNullEdit( $updater->getStatus() ) ) {
 			// Do not fail on null edits
 			$rev = $this->revision;
@@ -100,7 +102,7 @@ abstract class MutableParser implements IMutator {
 	 * @return Content
 	 */
 	public function getContent(): Content {
-		return  $this->revision->getContent( SlotRecord::MAIN );
+		return $this->revision->getContent( SlotRecord::MAIN );
 	}
 
 	/**
@@ -121,9 +123,9 @@ abstract class MutableParser implements IMutator {
 	abstract public function removeNode( INode $node ): bool;
 
 	/**
-	 * @return \Content
+	 * @return Content
 	 */
-	abstract protected function getContentObject(): \Content;
+	abstract protected function getContentObject(): Content;
 
 	protected function isMutated(): bool {
 		return $this->mutated;
@@ -145,10 +147,10 @@ abstract class MutableParser implements IMutator {
 	}
 
 	/**
-	 * @param \Status $saveStatus
+	 * @param Status $saveStatus
 	 * @return bool
 	 */
-	protected function isNullEdit( \Status $saveStatus ): bool {
+	protected function isNullEdit( Status $saveStatus ): bool {
 		$errors = $saveStatus->getErrors();
 		return count( $errors ) === 1 && $errors[0]['message'] === 'edit-no-change';
 	}

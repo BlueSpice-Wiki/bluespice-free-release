@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpicePageTemplates",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageTemplates",
 	"author": [
 		"Markus Glaser",
@@ -113,8 +113,7 @@
 		"BSApiPageTemplatesTasks": "includes/api/BSApiPageTemplatesTasks.php",
 		"BSApiPageTemplateTagsStore": "includes/api/BSApiPageTemplateTagsStore.php",
 		"BSPageTemplateList": "includes/BSPageTemplateList.php",
-		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php",
-		"BSTransformNSData": "maintenance/BSTransformNSData.php"
+		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php"
 	},
 	"TestAutoloadClasses": {
 		"BSPageTemplateFixtures": "tests/phpunit/utility/BSPageTemplateFixtures.php"
@@ -228,16 +227,15 @@
 		},
 		"handleShowingTemplateList": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\HandleShowingTemplateList",
-			"services": [ "ConfigFactory", "TitleFactory" ]
+			"services": [ "ConfigFactory", "TitleFactory", "PermissionManager" ]
+		},
+		"runDatabaseUpdates": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\RunDatabaseUpdates"
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": [
-			"common-user-interface"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback"
-		],
+		"BeforePageDisplay": "common-user-interface",
+		"LoadExtensionSchemaUpdates": "runDatabaseUpdates",
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageTemplates\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageTemplatesTag::callback",
 		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
 		"BSApiNamespaceStoreMakeData": "BlueSpice\\PageTemplates\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",

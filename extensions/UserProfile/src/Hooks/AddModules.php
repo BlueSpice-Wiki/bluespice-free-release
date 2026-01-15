@@ -43,7 +43,7 @@ class AddModules implements BeforePageDisplayHook {
 		$mandatory = [ 'username', 'realName', 'userDisplay', 'imageUrl' ];
 
 		// Filter out mandatory fields
-		return array_filter( $allFields, function ( $field ) use ( $mandatory ) {
+		return array_filter( $allFields, static function ( $field ) use ( $mandatory ) {
 			return !in_array( $field['name'], $mandatory );
 		} );
 	}

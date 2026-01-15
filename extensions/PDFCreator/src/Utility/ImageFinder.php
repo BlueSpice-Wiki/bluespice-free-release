@@ -6,6 +6,7 @@ use DOMDocument;
 use DOMElement;
 use DOMXPath;
 use MediaWiki\Config\Config;
+use MediaWiki\Extension\NSFileRepo\Integration\PDFCreator\Utility\FileResolver as NSFileRepoFileResolver;
 use MediaWiki\Title\TitleFactory;
 use RepoGroup;
 
@@ -77,47 +78,47 @@ class ImageFinder {
 	 */
 	protected function find( DOMDocument $dom ): void {
 		$xpath = new DOMXPath( $dom );
-		$images = $xpath->query(
-			'//img',
-			$dom
-		);
+		$images = $xpath->query( '//img[@src]' );
 
-		/** @var FileResolver */
 		$fileResolver = $this->getFileResolver();
 
-		/** @var DOMElement */
+		/** @var DOMElement $image */
 		foreach ( $images as $image ) {
-			if ( !$image->hasAttribute( 'src' ) ) {
-				continue;
-			}
+			$this->handleImageElement( $fileResolver, $image );
+		}
+	}
 
-			$file = $fileResolver->execute( $image );
-			if ( !$file ) {
-				continue;
-			}
+	/**
+	 * @param FileResolver|NSFileRepoFileResolver $fileResolver
+	 * @param DOMElement $element
+	 */
+	protected function handleImageElement( mixed $fileResolver, DOMElement $element ): void {
+		$file = $fileResolver->execute( $element, 'src' );
+		if ( !$file ) {
+			return;
+		}
 
-			$absPath = $file->getLocalRefPath();
-			$filename = $file->getName();
-			$filename = $this->uncollideFilenames( $filename, $absPath );
-			$url = $image->getAttribute( 'src' );
+		$absPath = $file->getLocalRefPath();
+		$filename = $file->getName();
+		$filename = $this->uncollideFilenames( $filename, $absPath );
+		$url = $element->getAttribute( 'src' );
 
-			if ( !isset( $this->data[$filename] ) ) {
-				$this->data[$filename] = [
-					'src' => [ $url ],
-					'absPath' => $absPath,
-					'filename' => str_replace( ':', '_', $filename )
-				];
-			} elseif ( $this->data[$filename]['absPath'] === $absPath ) {
-				$urls = &$this->data[$filename]['src'];
-				if ( !in_array( $url, $urls ) ) {
-					$urls[] = $url;
-				}
+		if ( !isset( $this->data[$filename] ) ) {
+			$this->data[$filename] = [
+				'src' => [ $url ],
+				'absPath' => $absPath,
+				'filename' => str_replace( ':', '_', $filename )
+			];
+		} elseif ( $this->data[$filename]['absPath'] === $absPath ) {
+			$urls = &$this->data[$filename]['src'];
+			if ( !in_array( $url, $urls, true ) ) {
+				$urls[] = $url;
 			}
 		}
 	}
 
 	/**
-	 * @return void
+	 * @return FileResolver
 	 */
 	protected function getFileResolver() {
 		return new FileResolver(

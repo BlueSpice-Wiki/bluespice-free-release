@@ -17,9 +17,6 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	/** @var array|null */
 	private $expandPaths = null;
 
-	/** @var NamespaceInfo */
-	private $nsInfo;
-
 	/** @var PermissionManager */
 	private $permissionManager;
 
@@ -29,7 +26,6 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	public function __construct( IDatabase $db, Schema $schema, Language $language,
 		NamespaceInfo $nsInfo, PermissionManager $permissionManager ) {
 		parent::__construct( $db, $schema, $language, $nsInfo );
-		$this->nsInfo = $nsInfo;
 		$this->permissionManager = $permissionManager;
 	}
 
@@ -146,6 +142,7 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 			TitleTreeRecord::PAGE_TITLE => $row->page_title,
 			TitleTreeRecord::PAGE_DBKEY => $row->page_title,
 			TitleTreeRecord::IS_CONTENT_PAGE => in_array( $row->page_namespace, $this->contentNamespaces ),
+			TitleTreeRecord::PAGE_CONTENT_MODEL => $row->page_content_model,
 			TitleTreeRecord::ALLOWS_SUBPAGES => $this->nsInfo->hasSubpages( (int)$row->page_namespace ),
 			TitleTreeRecord::LEAF => false,
 			TitleTreeRecord::EXPANDED => $expanded,
@@ -334,6 +331,10 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 		return $this->expandChildrenNodes( $nodes );
 	}
 
+	/**
+	 * @param TitleTreeRecord[] $nodes
+	 * @return TitleTreeRecord[]
+	 */
 	private function expandChildrenNodes( $nodes ) {
 		if ( $this->expandPaths ) {
 			foreach ( $nodes as $node ) {

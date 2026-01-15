@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": [ "[http://www.hallowelt.com Hallo Welt! GmbH]" ]
+		"authors": [
+			"[http://www.hallowelt.com Hallo Welt! GmbH]"
+		]
 	},
 	"notifyme-desc": "Notifications",
 	"prefs-notifications": "Notifications",
@@ -204,5 +206,6 @@
 	"notifyme-ui-dialog-popup-table-event-label": "Event",
 	"notifyme-ui-dialog-popup-table-desc-label": "Description",
 	"notifyme-ui-dialog-popup-header-label": "These events trigger notifications:",
-	"notifyme-event-page-edit-desc": "A page has been edited by another user"
+	"notifyme-event-page-edit-desc": "A page has been edited by another user",
+	"notifyme-ui-delivery-label": "Delivery"
 }

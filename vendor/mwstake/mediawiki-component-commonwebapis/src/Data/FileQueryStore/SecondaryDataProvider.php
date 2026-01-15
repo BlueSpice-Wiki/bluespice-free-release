@@ -6,8 +6,7 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\Language\Language;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Title\TitleFactory;
-use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\SecondaryDataProvider
-	as TitleSecondaryDataProvider;
+use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\SecondaryDataProvider as TitleSecondaryDataProvider;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\TitleRecord;
 
 class SecondaryDataProvider extends TitleSecondaryDataProvider {
@@ -46,7 +45,8 @@ class SecondaryDataProvider extends TitleSecondaryDataProvider {
 		$dataSets = parent::extend( $dataSets );
 		foreach ( $dataSets as $dataSet ) {
 			$title = $this->titleFromRecord( $dataSet );
-			$dataSet->set( TitleRecord::PAGE_PREFIXED, $title->getPrefixedText() );
+			// Note: PAGE_PREFIXED in File context omits 'File:'
+			$dataSet->set( TitleRecord::PAGE_PREFIXED, $title->getText() );
 			$file = $this->repoGroup->getLocalRepo()->newFile( $title );
 
 			$dataSet->set(

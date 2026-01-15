@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"BadDog",
 			"Kizule",
-			"Milicevic01",
-			"Aca"
+			"Milicevic01"
 		]
 	},
 	"bs-qr-code-extension-description": "Приказује QR код с везом до тренутне странице у траци с алаткама.",

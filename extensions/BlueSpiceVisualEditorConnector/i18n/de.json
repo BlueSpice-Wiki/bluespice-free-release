@@ -6,9 +6,9 @@
 			"Metalhead64",
 			"Mglaser",
 			"Mirzali",
+			"Mschlindwein",
 			"Sushi",
-			"TMg",
-			"Mschlindwein"
+			"TMg"
 		]
 	},
 	"bs-visualeditorconnector-desc": "Verbindet BlueSpice mit dem VisualEditor",
@@ -94,5 +94,7 @@
 	"bs-visualeditorconnector-upload-dlg-type-help": "Original: Die Eigentümerschaft der hochgeladenen Datei wird mit einem Kontrollkästchen überprüft. Dateiname, Namespace und Kategorie können bearbeitet werden. Eine Beschreibung ist erforderlich. Einfach: Die Eigentümerschaft der hochgeladenen Datei wird nicht überprüft. Dateiname, Namensraum und Kategorie können bearbeitet werden. Eine Beschreibung ist optional. Ein Klick: Die Eigentümerschaft der hochgeladenen Datei wird nicht überprüft. Dateiname und Kategorie können nicht bearbeitet werden. Der Namensraum kann bearbeitet werden",
 	"bs-visualeditorconnector-upload-type": "Hochladetyp",
 	"bs-visualeditorconnector-upload-type-help": "Original: Hochlade-Recht wird geprüft. Dateiname, Namensraum und Kategorie sind editierbar. Die Beschreibung ist erforderlich.\nEinfach: Hochlade-Recht wird nicht geprüft. Dateiname, Namensraum und Kategorie sind editierbar. Beschreibung ist optional.\nEin Klick: Hochlade-Recht wird nicht geprüft. Dateiname und Kategorie sind nicht editierbar. Der Namensraum ist editierbar.",
-	"bs-visualeditorconnector-tab-file": "Link auf Datei"
+	"bs-visualeditorconnector-tab-file": "Link auf Datei",
+	"bs-visualeditorconnector-dialog-table-title": "Tabelle",
+	"bs-visualeditorconnector-dialog-action-insert": "Einfügen"
 }

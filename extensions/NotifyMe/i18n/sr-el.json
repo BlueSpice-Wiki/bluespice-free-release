@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"notifyme-ui-email-frequency-weekly-desc": "Sedmični rezime obaveštenja",
+	"notifyme-mail-template-edit-help-category-colors": "Boje",
+	"notifyme-mail-template-edit-help-header-example": "Primer",
+	"notifyme-event-page-create": "{{GENDER:$1|napravio|napravila}} je stranicu $2",
+	"notifyme-event-page-create-bot": "Stranica $1 je napravljena",
+	"notifyme-link-label-history": "Prikaži istoriju stranice",
+	"notifyme-event-page-delete": "{{GENDER:$1|izbrisao|izbrisala}} stranicu $2",
+	"notifyme-notification-center-filter-label-namespaces": "Imenski prostori",
+	"notifyme-notification-center-filter-label-categories": "Kategorije",
+	"notifyme-notification-center-filter-label-categories-none": "Nema kategorije",
+	"notifyme-event-page-linked-bot": "Vaša stranica $1 je povezana sa stranicom $2",
+	"notifyme-event-page-edit-revert": "{{GENDER:$1|vratio|vratila}} Vašu izmenu stranice $2",
+	"notifyme-notifications-group-mark-group-as-unread-label": "Označi grupu nepročitanom",
+	"notifyme-notification-center-help-menu-mark-all-read-label": "Označi sve pročitanim",
+	"notifyme-notification-center-mark-as-unread-circle-title": "Označi nepročitanim",
+	"notifyme-notification-center-no-new-notifications-label": "Nema novih obaveštenja"
+}

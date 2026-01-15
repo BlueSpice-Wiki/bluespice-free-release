@@ -1,5 +1,5 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.widget.view.SectionLabel = function( cfg ) {
+( function ( mw ) {
+	mw.ext.forms.widget.view.SectionLabel = function ( cfg ) {
 		cfg.label = cfg.title || '';
 
 		mw.ext.forms.widget.view.SectionLabel.parent.call( this, cfg );
@@ -9,4 +9,4 @@
 
 	OO.inheritClass( mw.ext.forms.widget.view.SectionLabel, OO.ui.LabelWidget );
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

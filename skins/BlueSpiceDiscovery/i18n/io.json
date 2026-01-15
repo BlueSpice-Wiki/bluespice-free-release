@@ -15,5 +15,6 @@
 	"bs-discovery-breadcrumb-label-action-history": "Kronologio",
 	"bs-discovery-breadcrumb-label-action-edit": "Redaktez",
 	"bs-discovery-personalurl-userpage-text": "Profilo",
-	"bs-discovery-enhanced-mediawiki-sidebar-field-heading-help": "Texto por montrar kom titulo; povas kontenar funciono ''parser'' (por facar analizi)"
+	"bs-discovery-enhanced-mediawiki-sidebar-field-heading-help": "Texto por montrar kom titulo; povas kontenar funciono ''parser'' (por facar analizi)",
+	"bs-discovery-personalurl-mycontributions-text": "Kontributadi"
 }

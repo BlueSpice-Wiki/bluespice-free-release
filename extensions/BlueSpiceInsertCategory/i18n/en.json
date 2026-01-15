@@ -7,7 +7,6 @@
 	"bs-insertcategory-desc": "Dialog to enter a category link",
 	"bs-insertcategory-insertcat": "Insert category",
 	"prefs-insertcategory": "Insert category",
-	"bs-insertcategory-pref-withparents": "Insert category with its parents",
 	"bs-insertcategory-page-header-categories-edit-tooltip": "Edit the categories of this page",
 	"bs-insertcategory-edit-dialog-button-tooltip": "Edit the categories of this page",
 	"bs-insertcategory-edit-dialog-button-aria-label": "Open dialog to edit the categories of this page",
@@ -21,7 +20,6 @@
 	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Cannot retrieve page categories",
 	"bs-insertcategory-no-categories": "No categories assigned",
 	"bs-insertcategory-edit-dialog-tree-view": "Show all categories",
-	"bs-insertcategory-pref-withparents-help": "Adds both the category itself and its parent categories to the page",
 	"bs-insertcategory-pref-uploadintegration": "Use page categories in upload dialog",
 	"bs-insertcategory-pref-uploadintegration-help": "Sets the page categories as the default option in the upload dialog"
 }

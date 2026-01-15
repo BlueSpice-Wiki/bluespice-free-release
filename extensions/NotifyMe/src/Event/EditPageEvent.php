@@ -24,9 +24,9 @@ class EditPageEvent extends CreatePageEvent implements GroupableEvent {
 	 * @param UserIdentity $agent
 	 * @param Title $title
 	 * @param int $revId
-	 * @param int $diffTarget
+	 * @param int|null $diffTarget
 	 */
-	public function __construct( UserIdentity $agent, Title $title, int $revId, int $diffTarget ) {
+	public function __construct( UserIdentity $agent, Title $title, int $revId, ?int $diffTarget ) {
 		parent::__construct( $agent, $title );
 		$this->revId = $revId;
 		$this->diffTarget = $diffTarget;

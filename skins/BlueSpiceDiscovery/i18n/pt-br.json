@@ -115,5 +115,8 @@
 	"bs-discovery-footerlinks-termsofservice-link-desc": "Termos de serviço",
 	"bs-discovery-sidebar-primary-aria-label": "Barra lateral primária",
 	"bs-discovery-sidebar-secondary-aria-label": "Barra lateral secundária",
-	"bs-discovery-breadcrumb-label-diff": "Diferenças"
+	"bs-discovery-breadcrumb-label-diff": "Diferenças",
+	"bs-discovery-back-to-top-aria-label": "Voltar ao topo",
+	"bs-discovery-navbar-aria-label": "Barra de cabeçalho",
+	"bs-discovery-back-to-version-history": "Voltar ao histórico de versões"
 }

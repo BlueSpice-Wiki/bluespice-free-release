@@ -1,11 +1,11 @@
 {
 	"name": "UserProfile",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
 	],
-	"url": "http://www.hallowelt.com",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:UserProfile",
 	"descriptionmsg": "userprofile-desc",
 	"requires": {
 		"MediaWiki": ">= 1.43.0"
@@ -216,7 +216,8 @@
 		"UserProfileGetProfileData": "handleExternalProfileData",
 		"GetPreferences": "addPreferences",
 		"LoadExtensionSchemaUpdates": "runMigration",
-		"MWStakeDynamicFileDispatcherRegisterModule": "registerDynamicFileModule"
+		"MWStakeDynamicFileDispatcherRegisterModule": "registerDynamicFileModule",
+		"BSUsageTrackerRegisterCollectors": "registerUsageTracker"
 	},
 	"HookHandlers": {
 		"addProfileSlot": {
@@ -250,6 +251,9 @@
 		},
 		"commentStreamsAvatar": {
 			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\CommentStreamsAvatar"
+		},
+		"registerUsageTracker": {
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\RegisterUsageTracker"
 		}
 	},
 	"RestRoutes": [ {

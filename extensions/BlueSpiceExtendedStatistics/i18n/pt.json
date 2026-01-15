@@ -54,5 +54,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "Largura",
 	"bs-statistics-ve-progress-attr-width-help": "Largura da barra de progresso em píxeis",
 	"bs-statistics-droplet-progress-name": "Progresso",
-	"bs-statistics-droplet-progress-description": "Visualiza o progresso em relação a determinadas variáveis de medição"
+	"bs-statistics-droplet-progress-description": "Visualiza o progresso em relação a determinadas variáveis de medição",
+	"apihelp-query+statistics-reports-param-aggregate": "Se as estatísticas devem ser agregadas"
 }

@@ -27,8 +27,6 @@
 	"enhancedupload-tab-successfull-upload": "Success",
 	"enhancedupload-tab-warnings-upload": "Warnings",
 	"enhancedupload-warning-dialog-label": "{{PLURAL:$1|A warning has|Warnings have}} occurred with {{PLURAL:$1|this file|these files}}",
-	"enhancedupload-ve-dialog-title": "Upload file",
-	"enhancedupload-ve-dialog-filename-label": "Insert filename",
 	"enhancedupload-ve-dialog-title-exists": "A file with this name exists already. Please insert a new filename",
 	"enhancedupload-preview-widget-label": "These files are selected for upload",
 	"enhancedupload-attachments-add-media-button-title": "Add file from wiki",
@@ -91,5 +89,7 @@
 	"enhancedupload-toggle-details-button-hide-label": "Hide details",
 	"enhancedupload-toggle-details-button-show-label": "Show details",
 	"enhancedupload-preview-widget-remove-label": "Remove $1",
-	"enhancedupload-reset-button-label": "Reset"
+	"enhancedupload-reset-button-label": "Reset",
+	"enhancedupload-ve-file-dialog-title": "File",
+	"enhancedupload-ve-file-dialog-filename-label": "Filename"
 }

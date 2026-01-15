@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\EnhancedStandardUIs;
 
+use Exception;
 use MediaWiki\Message\Message;
 use MediaWiki\SpecialPage\SpecialPage;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\RestrictedTextLink;
@@ -29,9 +30,8 @@ class FilelistGlobalAction extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return string
-	 * @throws \MWException
+	 * @throws Exception
 	 */
 	public function getHref(): string {
 		$tool = SpecialPage::getTitleFor( 'EnhancedFilelist' );

@@ -80,7 +80,7 @@ class ProfileFieldRegistry {
 
 		$serializedFields = [];
 		foreach ( $data as $name => $field ) {
-			$serializedFields[$name] =  $field->getLabel( $language )->text();
+			$serializedFields[$name] = $field->getLabel( $language )->text();
 		}
 		return $serializedFields;
 	}

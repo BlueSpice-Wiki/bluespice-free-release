@@ -20,5 +20,6 @@
 	"enhancedupload-single-file-dlg-title": "\"$1\"-এর নতুন সংস্করণ",
 	"enhancedupload-toggle-details-button-hide-label": "বিস্তারিত লুকান",
 	"enhancedupload-toggle-details-button-show-label": "বিস্তারিত দেখান",
-	"enhancedupload-preview-widget-remove-label": "$1 সরান"
+	"enhancedupload-preview-widget-remove-label": "$1 সরান",
+	"enhancedupload-ve-file-dialog-title": "ফাইল"
 }

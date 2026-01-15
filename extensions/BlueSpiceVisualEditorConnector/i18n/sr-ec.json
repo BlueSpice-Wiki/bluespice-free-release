@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"BadDog",
 			"Kizule",
 			"Milicevic01",
@@ -39,5 +40,7 @@
 	"bs-vec-table-border-bottom": "Дно",
 	"bs-vec-table-border-all": "Све",
 	"bs-visualeditor-save-label": "Сачувај",
-	"bs-visualeditorconnector-upload-type": "Врста отпремања"
+	"bs-visualeditorconnector-upload-type": "Врста отпремања",
+	"bs-visualeditorconnector-dialog-table-title": "Табела",
+	"bs-visualeditorconnector-dialog-action-insert": "Уметни"
 }

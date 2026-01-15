@@ -260,7 +260,8 @@
 			"JaimeDes",
 			"MatyGamingHD",
 			"Luigi Nakano",
-			"ProtoplasmaKid"
+			"ProtoplasmaKid",
+			"JorgeElias2302"
 		]
 	},
 	"sunday": "domingo",
@@ -1263,7 +1264,7 @@
 	"default": "predeterminado",
 	"linterror-bogus-image-options": "Opción de archivo inútil",
 	"linterror-deletable-table-tag": "Etiqueta de tabla que se debería borrar",
-	"linterror-fostered": "Contenido fomentado",
+	"linterror-fostered": "Contenido fuera de lugar",
 	"linterror-html5-misnesting": "Anidación errónea (ahora rota)",
 	"linterror-inline-media-caption": "Título invisible",
 	"linterror-large-tables": "Tablas grandes que rompen la visualización en dispositivos móviles",
@@ -4253,11 +4254,6 @@
 	"newpages-showhide-patrolled": "$1 ediciones verificadas",
 	"newpages-showhide-redirect": "$1 redirecciones",
 	"newpages-showhide-registered": "$1 usuarios registrados",
-	"restsandbox": "Zona de pruebas REST",
-	"restsandbox-text": "Esta página proporciona un constructor de consultas para APIs REST. Ten en cuenta que las llamadas a la API interactuarán con el contenido wiki activo.",
-	"restsandbox-select-api": "Seleccione la API a explorar.",
-	"restsandbox-no-such-api": "El parámetro API indicado no es compatible: $1",
-	"restsandbox-jsonly": "Se requiere JavaScript para ver la especificación REST.",
 	"blockedtext-made-by": "El bloqueo fue realizado por $1.",
 	"blockedtext-reason-comment": "El motivo dado es el siguiente: <em>$1</em>.",
 	"blockedtext-start-time": "Inicio del bloqueo: $1",

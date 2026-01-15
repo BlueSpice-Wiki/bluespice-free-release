@@ -3,6 +3,7 @@
 		"authors": [
 			"Adam-Yourist",
 			"BerryAVGN",
+			"Engineer56",
 			"Gulka.nik",
 			"Kareyac",
 			"Okras",
@@ -190,5 +191,13 @@
 	"bs-discovery-breadcrumb-label-diff": "Различия",
 	"bs-discovery-back-to-page": "Вернуться к $1",
 	"bs-discovery-back-to-page-title": "Вернуться на страницу $1",
-	"bs-discovery-back-to-version-history": "Вернуться к истории версий"
+	"bs-discovery-back-to-version-history": "Вернуться к истории версий",
+	"bs-discovery-name": "BlueSpice Discovery",
+	"bs-discovery-sidebar-secondary-share-sharebymail-subject": "$1: $2",
+	"bs-discovery-sidebar-secondary-share-sharebymail-body": "$1: $2\n\n$3",
+	"bs-discovery-edit-footerlinks-link-text": "Изменить ссылки футера сайта",
+	"bs-discovery-footerlinks-imprint-link-desc": "Imprint",
+	"bs-discovery-footerlinks-imprint-link-page": "Site:Imprint",
+	"bs-discovery-back-to-version-history-title": "Вернуться к истории версий страницы $1",
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Шрифт Atkinson Hyperlegible Next, используемый для BlueSpiceDiscovery и контента. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
 }

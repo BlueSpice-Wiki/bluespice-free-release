@@ -1,7 +1,20 @@
 # DynamicFileDispatcher component
 Provides dynamic images from registered modeules.
 
+## Compatibility
+- `1.0.x` -> MediaWiki 1.43
+
 # Usage
+
+Require this component in the `composer.json` of your extension:
+
+```json
+{
+	"require": {
+		"mwstake/mediawiki-component-dynamicfiledispatcher": "~1"
+	}
+}
+```
 
 ## Getting URL
 

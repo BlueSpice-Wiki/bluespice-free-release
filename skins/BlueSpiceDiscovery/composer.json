@@ -10,6 +10,13 @@
 		"Bootstrap"
 	],
 	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "https://www.hallowelt.com"
+		}
+	],
 	"extra": {
 		"installer-name": "BlueSpiceDiscovery"
 	},
@@ -18,7 +25,7 @@
 		"mwstake/mediawiki-component-commonuserinterface": "~6",
 		"mwstake/mediawiki-component-manifestregistry": "~3",
 		"mwstake/mediawiki-component-wikitext": "~7",
-		"mwstake/mediawiki-lib-nodes": "~1"
+		"mwstake/mediawiki-lib-nodes": "~2"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "45.0.0",

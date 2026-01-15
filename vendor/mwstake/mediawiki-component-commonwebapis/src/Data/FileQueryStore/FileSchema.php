@@ -10,42 +10,42 @@ class FileSchema extends TitleSchema {
 		parent::__construct( [
 			FileRecord::FILE_EXTENSION => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			FileRecord::MIME_MAJOR => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			FileRecord::MIME_MINOR => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			FileRecord::FILE_SIZE => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::INT
 			],
 			FileRecord::FILE_AUTHOR_NAME => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			FileRecord::FILE_TIMESTAMP => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			FileRecord::FILE_TIMESTAMP_FORMATTED => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			FileRecord::FILE_COMMENT => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			FileRecord::FILE_CATEGORIES => [
@@ -65,17 +65,17 @@ class FileSchema extends TitleSchema {
 			],
 			FileRecord::FILE_MEDIATYPE => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::STRING
 			],
 			FileRecord::FILE_HEIGHT => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::INT
 			],
 			FileRecord::FILE_WIDTH => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::INT
 			],
 		] );

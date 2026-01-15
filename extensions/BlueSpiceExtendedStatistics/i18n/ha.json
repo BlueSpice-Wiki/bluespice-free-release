@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gwanki",
 			"Hamxo",
 			"Harunaningi",
 			"Nura A Sani"
@@ -20,5 +21,6 @@
 	"bs-statistics-aggregated-report-filter-page": "Shafi",
 	"bs-statistics-aggregated-report-filter-user": "Mai aiki",
 	"bs-statistics-aggregated-report-filter-user-multi": "Masu amfani",
-	"bs-statistics-aggregated-report-loading": "Kwaso bayani..."
+	"bs-statistics-aggregated-report-loading": "Kwaso bayani...",
+	"apihelp-query+statistics-reports-param-aggregate": "Ko don tara kididdiga"
 }

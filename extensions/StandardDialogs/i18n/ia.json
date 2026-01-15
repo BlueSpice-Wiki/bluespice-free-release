@@ -57,5 +57,6 @@
 	"standarddialogs-page-info-page-no-templates-label": "Iste pagina non contine patronos",
 	"standarddialogs-page-info-page-no-categories-label": "Iste pagina non contine categorias",
 	"standarddialogs-page-info-page-no-links-label": "Iste pagina non contine ligamines",
-	"standarddialogs-page-info-page-no-extlinks-label": "Iste pagina non contine ligamines externe"
+	"standarddialogs-page-info-page-no-extlinks-label": "Iste pagina non contine ligamines externe",
+	"standarddialogs-validation-page-exist-info-label": "Existe ja un pagina con iste titulo. Per favor elige un altere nomine."
 }

@@ -14,5 +14,7 @@
 	"bs-authors-navigation-link-title": "A lap szerzői",
 	"bs-authors-navigation-link-text": "Szerzők",
 	"apihelp-bs-pageauthors-store-summary": "Listázza a lap összes szerzőjét a megadott kontextusból",
-	"bs-authors-info-dialog": "A lap szerzői"
+	"bs-authors-info-dialog": "A lap szerzői",
+	"bs-authors-info-dialog-grid-column-author": "Szerző",
+	"bs-authors-info-dialog-grid-column-type": "Szerző típusa"
 }

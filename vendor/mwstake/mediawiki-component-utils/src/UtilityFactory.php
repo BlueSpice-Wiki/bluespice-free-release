@@ -10,11 +10,8 @@ use MWStake\MediaWiki\Component\Utils\Utility\GroupHelper;
  */
 class UtilityFactory {
 
-	/**
-	 *
-	 * @var MediaWikiServices
-	 */
-	protected $services = null;
+	/** @var MediaWikiServices */
+	protected $services;
 
 	/**
 	 * @param MediaWikiServices $services

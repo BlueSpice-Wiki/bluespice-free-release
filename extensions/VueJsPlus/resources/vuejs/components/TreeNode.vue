@@ -8,10 +8,9 @@
 				type="checkbox"
 				:aria-labelledby="itemId"
 				:name="name"
-				:value="isSelected"
-				:checked="isSelected"
+				v-model="internalSelected"
 				class="vuejsplus-data-tree-item-checkbox"
-				@change="toggleCheckbox"
+				@change="handleCheckboxChange"
 			><a :id="itemId" :href="href" :class="nodeClass">{{ label }}</a>
 		</div>
 		<ul
@@ -20,13 +19,12 @@
 			role="tree"
 			:aria-labelledby="itemId">
 			<component
-				:is="item.type"
-				v-for="( item, index ) in children"
-				:key="index"
-				:item="item"
+				:is="childItem.type"
+				v-for="( childItem, childIndex ) in children"
+				:key="childIndex"
+				:item="childItem"
 				:selectable="isSelectable"
-				:selected="item.selected"
-				@update:model-value="updateModelValue"
+				:selected="childItem.selected" @update:model-value="updateModelValue"
 			></component>
 		</ul>
 	</li>
@@ -39,10 +37,9 @@
 				type="checkbox"
 				:aria-labelledby="itemId"
 				:name="name"
-				:value="isSelected"
-				:checked="isSelected"
+				v-model="internalSelected"
 				class="vuejsplus-data-tree-item-checkbox"
-				@change="toggleCheckbox"
+				@change="handleCheckboxChange"
 			><span :id="itemId" :class="nodeClass">{{ label }}</span>
 		</div>
 		<ul
@@ -51,13 +48,12 @@
 			role="tree"
 			:aria-labelledby="itemId">
 			<component
-				:is="item.type"
-				v-for="( item, index ) in children"
-				:key="index"
-				:item="item"
+				:is="childItem.type"
+				v-for="( childItem, childIndex ) in children"
+				:key="childIndex"
+				:item="childItem"
 				:selectable="isSelectable"
-				:selected="item.selected"
-				@update:model-value="updateModelValue"
+				:selected="childItem.selected" @update:model-value="updateModelValue"
 			></component>
 		</ul>
 	</li>
@@ -74,12 +70,12 @@
 			role="tree"
 			:aria-labelledby="itemId">
 			<component
-				:is="item.type"
-				v-for="( item, index ) in children"
-				:key="index"
-				:item="item"
+				:is="childItem.type"
+				v-for="( childItem, childIndex ) in children"
+				:key="childIndex"
+				:item="childItem"
 				:selectable="isSelectable"
-				:selected="item.selected"
+				:selected="childItem.selected"
 			></component>
 		</ul>
 	</li>
@@ -96,12 +92,12 @@
 			role="tree"
 			:aria-labelledby="itemId">
 			<component
-				:is="item.type"
-				v-for="( item, index ) in children"
-				:key="index"
-				:item="item"
+				:is="childItem.type"
+				v-for="( childItem, childIndex ) in children"
+				:key="childIndex"
+				:item="childItem"
 				:selectable="isSelectable"
-				:selected="item.selected"
+				:selected="childItem.selected"
 			></component>
 		</ul>
 	</li>
@@ -118,7 +114,8 @@ module.exports = exports = {
 	},
 	props: {
 		item: {
-			type: Array
+			type: Object,
+			default: () => ( {} )
 		},
 		selectable: {
 			type: Boolean,
@@ -176,6 +173,7 @@ module.exports = exports = {
 			itemId: this.item.id,
 			nodeClass: nodeClass,
 			href: href,
+			internalSelected: this.selected,
 			isSelected: this.selected,
 			treeClass: classes.join( ' ' ),
 			children: this.item.children,
@@ -187,38 +185,48 @@ module.exports = exports = {
 			update: 0
 		};
 	},
-	methods: {
-		updateModelValue: function ( data ) {
-			if ( data.selected === true ) {
-				this.$emit(
-					'update:model-value',
-					data
-				);
+	watch: {
+		selected: {
+			immediate: true,
+			handler( newSelected ) {
+				if ( this.internalSelected !== newSelected ) {
+					this.internalSelected = newSelected;
+					this.setChildrenSelected( this.children, newSelected );
+				}
 			}
 		},
-		toggleCheckbox: function ( event ) {
-			const cb = $( event.target );
-			const select = false;
-			if ( $( cb ).prop( 'checked' ) === true ) {
-				isSelected = true;
-			}
-
-			for ( let index = 0; index < this.item.children.length; index++ ) {
-				this.item.children[ index ].selected = isSelected;
-				this.update++; // required to update children
-			}
-
-			this.item.selected = isSelected;
-			this.isSelected = isSelected; // required to update children view
+		internalSelected( newSelected ) {
+			this.item.selected = newSelected;
+			this.setChildrenSelected( this.children, newSelected );
 
 			this.$emit(
 				'update:model-value',
 				{
-					selected: isSelected,
+					selected: newSelected,
 					name: this.item.name,
 					path: this.item.path
 				}
 			);
+		}
+	},
+	methods: {
+		updateModelValue: function ( data ) {
+			this.$emit(
+				'update:model-value',
+				data
+			);
+		},
+		handleCheckboxChange: function () {
+ 		},
+		setChildrenSelected( children, selectedStatus ) {
+			if ( !children || children.length === 0 ) {
+				return;
+			}
+			children.forEach( child => {
+				if ( child.hasOwnProperty( 'selected' ) ) {
+					child.selected = selectedStatus;
+				}
+			} );
 		}
 	}
 };

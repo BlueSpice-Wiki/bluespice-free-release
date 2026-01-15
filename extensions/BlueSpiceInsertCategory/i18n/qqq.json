@@ -11,7 +11,6 @@
 	"bs-insertcategory-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of insert category extension",
 	"bs-insertcategory-insertcat": "Used as text for the link to insert category.\n{{Identical|Insert category}}",
 	"prefs-insertcategory": "Used in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], headline for insert category section.\n{{Identical|Insert category}}",
-	"bs-insertcategory-pref-withparents": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], checkbox label for insert category with its parents",
 	"bs-insertcategory-page-header-categories-edit-tooltip": "Tooltip for link in page headerthat shows category editor of a page next to this button",
 	"bs-insertcategory-edit-dialog-button-tooltip": "Tooltip for button to open a category editor dialog",
 	"bs-insertcategory-edit-dialog-button-aria-label": "Aria-label for button to open a category editor dialog",
@@ -25,7 +24,6 @@
 	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Error message for user, when page categories were not got",
 	"bs-insertcategory-no-categories": "Label when no categories are assigned to a page",
 	"bs-insertcategory-edit-dialog-tree-view": "Label for the tree view toggle in category editor dialog",
-	"bs-insertcategory-pref-withparents-help": "Description for config variable \"BlueSpiceInsertCategoryWithParents\"",
 	"bs-insertcategory-pref-uploadintegration": "Label for config variable \"BlueSpiceInsertCategoryUploadPanelIntegration\" at [[Special:BlueSpiceConfigManager]]",
 	"bs-insertcategory-pref-uploadintegration-help": "Description for config variable \"BlueSpiceInsertCategoryUploadPanelIntegration\""
 }

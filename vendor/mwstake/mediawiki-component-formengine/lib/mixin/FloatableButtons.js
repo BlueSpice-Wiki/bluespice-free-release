@@ -1,12 +1,12 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.mixin.FloatableButtons = function() {
+( function ( mw ) {
+	mw.ext.forms.mixin.FloatableButtons = function () {
 
 		this.submitButton = new OO.ui.ButtonWidget( {
 			label: this.buttons.hasOwnProperty( 'submit' ) ?
 				this.buttons.submit.label : mw.message( 'mwstake-formengine-form-submit-label' ).text(),
 			flags: [
-				"progressive",
-				"primary"
+				'progressive',
+				'primary'
 			],
 			id: 'formSubmit'
 		} );
@@ -17,8 +17,8 @@
 			this.progressSaveButton = new OO.ui.ButtonWidget( {
 				label: mw.message( 'mwstake-formengine-form-save-label' ).text(),
 				flags: [
-					"progressive",
-					"primary"
+					'progressive',
+					'primary'
 				]
 			} );
 		}
@@ -34,12 +34,12 @@
 			framed: false
 		} );
 
-		var classes = [ 'ext-mw-forms-form-buttons' ];
+		const classes = [ 'ext-mw-forms-form-buttons' ];
 		if ( this.buttonsFloat ) {
 			classes.push( 'float-buttons' );
 		}
 
-		var items = [];
+		const items = [];
 		if ( this.enableProgressSave ) {
 			items.push( this.progressSaveButton );
 		}
@@ -52,7 +52,7 @@
 		if ( this.buttonsToShow.indexOf( 'cancel' ) !== -1 ) {
 			items.push( this.cancelButton );
 		}
-		this.buttonsLayout = new OO.ui.HorizontalLayout( {
+		this.buttonsLayout = new OO.ui.HorizontalLayout( { // eslint-disable-line mediawiki/class-doc
 			classes: classes,
 			items: items
 		} );
@@ -66,4 +66,4 @@
 
 	OO.initClass( mw.ext.forms.mixin.FloatableButtons );
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

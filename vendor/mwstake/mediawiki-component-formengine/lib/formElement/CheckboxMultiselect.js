@@ -1,10 +1,10 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.formElement.CheckboxMultiselect = function() {};
+( function ( mw ) {
+	mw.ext.forms.formElement.CheckboxMultiselect = function () {};
 
 	OO.inheritClass( mw.ext.forms.formElement.CheckboxMultiselect, mw.ext.forms.formElement.InputFormElement );
 
-	mw.ext.forms.formElement.CheckboxMultiselect.prototype.getElementConfig = function() {
-		var config = mw.ext.forms.formElement.CheckboxMultiselect.parent.prototype.getElementConfigInternal.call( this );
+	mw.ext.forms.formElement.CheckboxMultiselect.prototype.getElementConfig = function () {
+		const config = mw.ext.forms.formElement.CheckboxMultiselect.parent.prototype.getElementConfigInternal.call( this );
 
 		config.horizontal = {
 			name: 'horizontal',
@@ -35,17 +35,17 @@
 		return this.returnConfig( config );
 	};
 
-	mw.ext.forms.formElement.CheckboxMultiselect.prototype.getType = function() {
-		return "checkbox_multiselect";
+	mw.ext.forms.formElement.CheckboxMultiselect.prototype.getType = function () {
+		return 'checkbox_multiselect';
 	};
 
-	mw.ext.forms.formElement.CheckboxMultiselect.prototype.getWidgets = function() {
+	mw.ext.forms.formElement.CheckboxMultiselect.prototype.getWidgets = function () {
 		return {
 			view: mw.ext.forms.widget.view.CheckboxMultiselectView,
 			edit: mw.ext.forms.widget.edit.CheckboxMultiselect
 		};
 	};
 
-	mw.ext.forms.registry.Type.register( "checkbox_multiselect", new mw.ext.forms.formElement.CheckboxMultiselect() );
+	mw.ext.forms.registry.Type.register( 'checkbox_multiselect', new mw.ext.forms.formElement.CheckboxMultiselect() );
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

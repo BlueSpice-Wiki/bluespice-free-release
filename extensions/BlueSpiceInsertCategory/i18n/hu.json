@@ -2,10 +2,26 @@
 	"@metadata": {
 		"authors": [
 			"Csega",
+			"Krisztina",
 			"Rodrigo"
 		]
 	},
 	"bs-insertcategory-desc": "Párbeszédpanel kategória link beírásához",
 	"bs-insertcategory-insertcat": "Kategória beillesztése",
-	"prefs-insertcategory": "Kategória beillesztése"
+	"prefs-insertcategory": "Kategória beillesztése",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "A lap kategóriáinak szerkesztése",
+	"bs-insertcategory-edit-dialog-button-tooltip": "A lap kategóriáinak szerkesztése",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Párbeszédpanel megnyitása a lap kategóriáinak szerkesztéséhez",
+	"bs-insertcategory-edit-dialog-button-label": "Szerkesztés",
+	"bs-insertcategory-edit-dialog-title": "Kategória szerkesztése",
+	"bs-insertcategory-edit-dialog-button-submit": "Kész",
+	"bs-insertcategory-edit-dialog-button-cancel": "Mégse",
+	"bs-insertcategory-edit-dialog-input-label": "Hozzárendelt kategóriák",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Implicit kategóriák",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Ezek a kategóriák nincsenek definiálva az oldal wikiszöveg tartalmában. Valószínűleg egy sablonban vannak beállítva.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Nem sikerült lekérni a lap kategóriáit",
+	"bs-insertcategory-no-categories": "Nincs hozzárendelve kategória",
+	"bs-insertcategory-edit-dialog-tree-view": "Összes kategória megjelenítése",
+	"bs-insertcategory-pref-uploadintegration": "Lap kategóriák használata a feltöltési párbeszédpanelen",
+	"bs-insertcategory-pref-uploadintegration-help": "Lap kategóriákat alapértelmezettként  állítja be a feltöltési párbeszédpanelen"
 }

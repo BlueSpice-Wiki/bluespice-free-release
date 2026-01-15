@@ -8,5 +8,6 @@
 	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "সর্বোচ্চ শিরোনাম দৈর্ঘ্য",
 	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "সর্বোচ্চ শিরোনাম দৈর্ঘ্য সাহায্য",
 	"bs-watchlist-ve-watchlist-attr-time-label": "সময়",
-	"bs-watchlist-droplet-name": "নজরতালিকা"
+	"bs-watchlist-droplet-name": "নজরতালিকা",
+	"bs-watchlist-usersidebar-title": "নজরতালিকা"
 }

@@ -14,7 +14,6 @@ use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Parser\ParserOutput;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Title\Title;
-use MWException;
 
 class MailTemplate extends TextContent {
 	/**
@@ -29,7 +28,7 @@ class MailTemplate extends TextContent {
 	/**
 	 * @param string $text
 	 *
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	public function __construct( $text ) {
 		parent::__construct( $text, 'mail_template' );

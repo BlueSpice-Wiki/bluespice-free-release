@@ -17,5 +17,8 @@
 	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Дукхалла",
 	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Къепе",
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "ЦӀерийн меттигаш",
-	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Хан"
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Хан",
+	"bs-pagesvisited-ve-pagesvisited-title": "Хьовсийна агӀонаш",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Максималан цӀеран йохалла",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "АгӀонан цӀе"
 }

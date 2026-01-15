@@ -2,7 +2,9 @@
 
 namespace MWStake\MediaWiki\Lib\Nodes;
 
-interface INode extends \JsonSerializable {
+use JsonSerializable;
+
+interface INode extends JsonSerializable {
 	/**
 	 * @return string
 	 */

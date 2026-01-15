@@ -44,32 +44,32 @@ class TitleSchema extends Schema {
 			],
 			TitleRecord::PAGE_NAMESPACE_TEXT => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			TitleRecord::PAGE_EXISTS => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::BOOLEAN
 			],
 			TitleRecord::PAGE_CONTENT_MODEL => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::STRING
 			],
 			TitleRecord::PAGE_URL => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::STRING
 			],
 			TitleRecord::IS_CONTENT_PAGE => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::BOOLEAN
 			],
 			TitleRecord::PAGE_IS_REDIRECT => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::BOOLEAN
 			]
 		], $fields ) );

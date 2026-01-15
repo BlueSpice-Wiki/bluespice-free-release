@@ -59,5 +59,7 @@
 	"bs-vec-table-border-solid": "Solido",
 	"bs-vec-insert-line-break-title": "Interruzione di linea (<br /> )",
 	"bs-visualeditorconnector-text-style-tool-align-center-label": "Allinea al centro",
-	"bs-visualeditorconnector-text-style-indent-label": "Indenta"
+	"bs-visualeditorconnector-text-style-indent-label": "Indenta",
+	"bs-visualeditorconnector-dialog-table-title": "Tabella",
+	"bs-visualeditorconnector-dialog-action-insert": "Inserisci"
 }

@@ -43,6 +43,7 @@ ve.ui.VideoDropletInspector.prototype.initialize = function () {
 		this.serviceLayout.$element,
 		this.titleLayout.$element,
 		this.descriptionLayout.$element,
+		this.coverLayout.$element,
 		this.dimensionLayout.$element,
 		this.alignmentLayout.$element,
 		this.containerLayout.$element,
@@ -88,16 +89,21 @@ ve.ui.VideoDropletInspector.prototype.createFields = function () {
 		rows: 2,
 		placeholder: mw.message( 'bs-distributionconnector-videodropletinspector-description-placeholder' ).plain()
 	} );
+	this.coverInput = new OOJSPlus.ui.widget.FileSearchWidget( {
+		extensions: [ 'svg', 'png', 'jpg' ],
+		placeholder: mw.message( 'bs-distributionconnector-videodropletinspector-cover-placeholder' ).plain()
+	} );
 	this.dimensionsInput = new OO.ui.TextInputWidget( {
 		placeholder: '640'
 	} );
 
-	const alignmentsData = [ 'left', 'center', 'right' ];
+	const alignmentsData = [ 'inline', 'left', 'center', 'right' ];
 	const alignments = [];
 	for ( const alignmentKey in alignmentsData ) {
 		const alignment = alignmentsData[ alignmentKey ];
 		const item = new OO.ui.MenuOptionWidget( {
 			data: alignment,
+			// bs-distributionconnector-videodropletinspector-alignment-inline
 			// bs-distributionconnector-videodropletinspector-alignment-left
 			// bs-distributionconnector-videodropletinspector-alignment-center
 			// bs-distributionconnector-videodropletinspector-alignment-right
@@ -138,6 +144,11 @@ ve.ui.VideoDropletInspector.prototype.setLayouts = function () {
 		label: mw.message( 'bs-distributionconnector-videodropletinspector-description-label' ).plain(),
 		help: mw.message( 'bs-distributionconnector-videodropletinspector-description-help' ).plain()
 	} );
+	this.coverLayout = new OO.ui.FieldLayout( this.coverInput, {
+		align: 'left',
+		label: mw.message( 'bs-distributionconnector-videodropletinspector-cover-label' ).plain(),
+		help: mw.message( 'bs-distributionconnector-videodropletinspector-cover-help' ).plain()
+	} );
 	this.dimensionLayout = new OO.ui.FieldLayout( this.dimensionsInput, {
 		align: 'left',
 		label: mw.message( 'bs-distributionconnector-videodropletinspector-dimension-label' ).plain(),
@@ -171,14 +182,15 @@ ve.ui.VideoDropletInspector.prototype.getSetupProcess = function ( data ) {
 			if ( attributes.description ) {
 				this.descriptionInput.setValue( attributes.description );
 			}
+			if ( attributes.cover ) {
+				this.coverInput.setValue( attributes.cover );
+			}
 			if ( attributes.dimensions ) {
 				this.dimensionsInput.setValue( attributes.dimensions );
 			}
-
 			if ( attributes.alignment ) {
 				this.alignmentInput.getMenu().selectItemByData( attributes.alignment );
 			}
-
 			if ( attributes.container === 'frame' ) {
 				this.containerInput.setSelected( true );
 			}
@@ -202,6 +214,11 @@ ve.ui.VideoDropletInspector.prototype.updateMwData = function ( mwData ) {
 		mwData.attrs.description = this.descriptionInput.getValue();
 	} else {
 		delete ( mwData.attrs.description );
+	}
+	if ( this.coverInput.getValue() ) {
+		mwData.attrs.cover = this.coverInput.getValue();
+	} else {
+		delete ( mwData.attrs.cover );
 	}
 	if ( this.dimensionsInput.getValue() !== '' ) {
 		mwData.attrs.dimensions = this.dimensionsInput.getValue();

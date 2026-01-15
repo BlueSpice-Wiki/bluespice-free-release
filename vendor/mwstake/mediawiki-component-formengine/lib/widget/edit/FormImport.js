@@ -1,8 +1,8 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.widget.edit.FormImport = function( cfg ) {
+( function ( mw ) {
+	mw.ext.forms.widget.edit.FormImport = function ( cfg ) {
 		mw.ext.forms.widget.edit.FormImport.parent.call( this, cfg );
 		this.formName = cfg.formName || '';
-		if ( !this.formName )  {
+		if ( !this.formName ) {
 			this.$element.append( mw.msg( 'mwstake-formengine-type-form_import' ) );
 			return;
 		}
@@ -13,8 +13,8 @@
 
 	OO.inheritClass( mw.ext.forms.widget.edit.FormImport, OO.ui.Widget );
 
-	mw.ext.forms.widget.edit.FormImport.prototype.makeLayout = function() {
-		var form = new mw.ext.forms.widget.Form( {
+	mw.ext.forms.widget.edit.FormImport.prototype.makeLayout = function () {
+		const form = new mw.ext.forms.widget.Form( {
 			definitionName: this.formName,
 			action: 'edit',
 			forInclusion: true,
@@ -23,20 +23,19 @@
 		} );
 
 		form.connect( this, {
-			parseComplete: function( items ) {
+			parseComplete: function ( items ) {
 				if ( !items ) {
 					return;
 				}
 				this.$element.append( form.layout.$element );
 			},
-			inclusionError: function( error ) {
+			inclusionError: function ( error ) {
 				this.$element.append( new OO.ui.LabelWidget( {
 					label: error
 				} ).$element );
 			}
 		} );
 
-
 	};
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

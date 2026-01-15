@@ -91,5 +91,8 @@
 	"enhancedupload-single-file-dlg-title": "Нова верзија на „$1“",
 	"enhancedupload-toggle-details-button-hide-label": "Скриј поединости",
 	"enhancedupload-toggle-details-button-show-label": "Покажи поединости",
-	"enhancedupload-preview-widget-remove-label": "Отстрани $1"
+	"enhancedupload-preview-widget-remove-label": "Отстрани $1",
+	"enhancedupload-reset-button-label": "Одново",
+	"enhancedupload-ve-file-dialog-title": "Податотека",
+	"enhancedupload-ve-file-dialog-filename-label": "Име на податотеката"
 }

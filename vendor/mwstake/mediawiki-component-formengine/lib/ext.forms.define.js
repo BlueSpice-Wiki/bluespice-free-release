@@ -1,4 +1,4 @@
-( function( mw, $, undefined ) {
+( function ( mw ) {
 
 	mw.ext = mw.ext || {};
 	mw.ext.forms = {
@@ -22,4 +22,4 @@
 	mw.ext.forms.registry.Target = new OO.Registry();
 	mw.ext.forms.registry.ElementGroup = new OO.Registry();
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

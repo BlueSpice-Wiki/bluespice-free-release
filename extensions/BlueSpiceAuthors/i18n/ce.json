@@ -12,5 +12,7 @@
 	"bs-authors-show-all-authors": "Кхин бу авторш",
 	"bs-authors-navigation-link-title": "ХӀокху агӀонан авторш",
 	"bs-authors-navigation-link-text": "Авторш",
-	"bs-authors-info-dialog": "ХӀокху агӀонан авторш"
+	"bs-authors-info-dialog": "ХӀокху агӀонан авторш",
+	"bs-authors-info-dialog-grid-column-author": "Автор",
+	"bs-authors-info-dialog-grid-column-type": "Авторан тайпа"
 }

@@ -18,6 +18,9 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	/** @var array */
 	protected $contentNamespaces;
 
+	/** @var NamespaceInfo */
+	protected $nsInfo;
+
 	/**
 	 * @param IDatabase $db
 	 * @param Schema $schema
@@ -29,6 +32,7 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	) {
 		parent::__construct( $db, $schema );
 		$this->language = $language;
+		$this->nsInfo = $nsInfo;
 		$this->contentNamespaces = $nsInfo->getContentNamespaces();
 	}
 
@@ -87,24 +91,22 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 		}
 
 		if ( $query !== '' ) {
-			$queryParts = explode( ':', $query, 2 );
-			$nsText = $queryParts[0] ?? '';
-			$queryText = $query;
-			$nsIndex = $this->language->getLocalNsIndex( $nsText );
-			if ( $nsIndex >= 0 ) {
-				if ( empty( $nsFilter ) || in_array( $nsIndex, $nsFilter ) ) {
-					$nsFilter = [ $nsIndex ];
-					$queryText = $queryParts[1] ?? $queryParts[0];
+			$colonPos = mb_strpos( $query, ':' );
+			if ( $colonPos !== false ) {
+				$queryParts = explode( ':', $query, 2 );
+				$nsText = $queryParts[0] ?? '';
+				$queryText = $query;
+				$nsIndex = $this->language->getLocalNsIndex( $nsText );
+				if ( $nsIndex !== false ) {
+					if ( empty( $nsFilter ) || in_array( $nsIndex, $nsFilter ) ) {
+						$nsFilter = [ $nsIndex ];
+						$queryText = $queryParts[1] ?? $queryParts[0];
+					}
 				}
+				$conds[] = $this->processQuery( $queryText );
+			} else {
+				$conds[] = $this->processQuery( $query );
 			}
-			$queryText = mb_strtolower( str_replace( '_', ' ', $queryText ) );
-			$titleQuery = 'mti_title ' . $this->db->buildLike(
-				$this->db->anyString(), $queryText, $this->db->anyString()
-			);
-			$displayTitleQuery = 'mti_displaytitle ' . $this->db->buildLike(
-				$this->db->anyString(), $queryText, $this->db->anyString()
-			);
-			$conds[] = "($titleQuery OR $displayTitleQuery)";
 		}
 
 		if ( !empty( $nsFilter ) ) {
@@ -112,6 +114,21 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 		}
 
 		return $conds;
+	}
+
+	/**
+	 * @param string $query
+	 * @return string
+	 */
+	protected function processQuery( string $query ) {
+		$query = mb_strtolower( str_replace( '_', ' ', $query ) );
+		$titleQuery = 'mti_title ' . $this->db->buildLike(
+			$this->db->anyString(), $query, $this->db->anyString()
+		);
+		$displayTitleQuery = 'mti_displaytitle ' . $this->db->buildLike(
+			$this->db->anyString(), $query, $this->db->anyString()
+		);
+		return "($titleQuery OR $displayTitleQuery)";
 	}
 
 	/**
@@ -161,6 +178,8 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			TitleRecord::PAGE_NAMESPACE => (int)$row->page_namespace,
 			TitleRecord::PAGE_DBKEY => $row->page_title,
 			TitleRecord::PAGE_CONTENT_MODEL => $row->page_content_model,
+			// B/C
+			'content_model' => $row->page_content_model,
 			TitleRecord::IS_CONTENT_PAGE => in_array( $row->page_namespace, $this->contentNamespaces ),
 			TitleRecord::PAGE_EXISTS => true,
 		] );

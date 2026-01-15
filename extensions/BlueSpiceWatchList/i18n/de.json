@@ -36,5 +36,6 @@
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "Hilfe zum Seitennamen",
 	"bs-watchlist-tag-watchlist-attr-time-help": "Zeit helfen",
 	"bs-watchlist-droplet-name": "Beobachtungsliste",
-	"bs-watchlist-droplet-description": "Letzte Änderungen an Seiten, die in der Beobachtungsliste enthalten sind"
+	"bs-watchlist-droplet-description": "Letzte Änderungen an Seiten, die in der Beobachtungsliste enthalten sind",
+	"bs-watchlist-usersidebar-title": "Beobachtungsliste"
 }

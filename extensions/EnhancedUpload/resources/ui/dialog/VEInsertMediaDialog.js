@@ -10,7 +10,7 @@ OO.inheritClass( enhancedUpload.ui.dialog.VEInsertMediaDialog, ve.ui.NodeDialog 
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.static.name = 'mediaUpload';
 
-enhancedUpload.ui.dialog.VEInsertMediaDialog.static.title = OO.ui.deferMsg( 'enhancedupload-ve-dialog-title' );
+enhancedUpload.ui.dialog.VEInsertMediaDialog.static.title = OO.ui.deferMsg( 'enhancedupload-ve-file-dialog-title' );
 
 enhancedUpload.ui.dialog.VEInsertMediaDialog.static.size = 'medium';
 
@@ -28,7 +28,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.initialize = function () 
 		value: this.pageName + '_' + Date.now()
 	} );
 	const titleLayout = new OO.ui.FieldLayout( this.targetTitle, {
-		label: mw.message( 'enhancedupload-ve-dialog-filename-label' ).plain(),
+		label: mw.message( 'enhancedupload-ve-file-dialog-filename-label' ).plain(),
 		align: 'top'
 	} );
 

@@ -3,12 +3,19 @@
 	"type": "mediawiki-extension",
 	"description": "Add a qr code with link to the current page in toolbox.",
 	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "https://www.hallowelt.com"
+		}
+	],
 	"extra": {
 		"installer-name": "BlueSpiceQrCode"
 	},
 	"require": {
 		"composer/installers": "~1.0|~2",
-		"endroid/qr-code": "4.6.*",
+		"endroid/qr-code": "5.1.*",
 		"mwstake/mediawiki-component-dynamicfiledispatcher": "~1"
 	},
 	"require-dev": {

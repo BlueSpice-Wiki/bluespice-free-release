@@ -5,10 +5,12 @@
 		]
 	},
 	"menueditor-ui-menu-two-fold-link-spec-label": "ਕੜੀ",
-	"menueditor-toolbar-save": "ਸਾਂਭੋ",
 	"menueditor-ui-menu-keyword-label": "ਖ਼ਾਸ-ਸ਼ਬਦ",
 	"menueditor-ui-menu-keyword-label-edit": "ਖ਼ਾਸ-ਸ਼ਬਦ ਸੋਧੋ",
 	"menueditor-ui-form-field-keyword": "ਖ਼ਾਸ-ਸ਼ਬਦ",
+	"menueditor-ui-dialog-action-cancel": "ਰੱਦ ਕਰੋ",
+	"menueditor-ui-cancel": "ਰੱਦ ਕਰੋ",
 	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "ਖ਼ਾਸ-ਸ਼ਬਦ ਸੋਧੋ",
-	"menueditor-ui-mediawiki-sidebar-keyword-label": "ਖ਼ਾਸ-ਸ਼ਬਦ"
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "ਖ਼ਾਸ-ਸ਼ਬਦ",
+	"menueditor-toolbar-save": "ਸਾਂਭੋ"
 }

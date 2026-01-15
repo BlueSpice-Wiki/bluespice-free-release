@@ -20,5 +20,6 @@
 	"enhancedupload-upload-error-unhandled": "Дошло је до неочекиваног дешавања.",
 	"enhancedupload-single-file-dlg-title": "Нова верзија „$1”",
 	"enhancedupload-toggle-details-button-hide-label": "Сакриј детаље",
-	"enhancedupload-toggle-details-button-show-label": "Прикажи детаље"
+	"enhancedupload-toggle-details-button-show-label": "Прикажи детаље",
+	"enhancedupload-ve-file-dialog-title": "Датотека"
 }

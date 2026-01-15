@@ -1,10 +1,10 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.formElement.RadioMultiselect = function() {};
+( function ( mw ) {
+	mw.ext.forms.formElement.RadioMultiselect = function () {};
 
 	OO.inheritClass( mw.ext.forms.formElement.RadioMultiselect, mw.ext.forms.formElement.InputFormElement );
 
-	mw.ext.forms.formElement.RadioMultiselect.prototype.getElementConfigInternal = function() {
-		var config = mw.ext.forms.formElement.RadioMultiselect.parent.prototype.getElementConfigInternal.call( this );
+	mw.ext.forms.formElement.RadioMultiselect.prototype.getElementConfigInternal = function () {
+		const config = mw.ext.forms.formElement.RadioMultiselect.parent.prototype.getElementConfigInternal.call( this );
 		config.noDefaultValue = {
 			type: 'checkbox',
 			name: 'noDefaultValue',
@@ -44,22 +44,22 @@
 		return config;
 	};
 
-	mw.ext.forms.formElement.RadioMultiselect.prototype.getType = function() {
-		return "radio_multiselect";
+	mw.ext.forms.formElement.RadioMultiselect.prototype.getType = function () {
+		return 'radio_multiselect';
 	};
 
-	mw.ext.forms.formElement.RadioMultiselect.prototype.getWidgets = function() {
+	mw.ext.forms.formElement.RadioMultiselect.prototype.getWidgets = function () {
 		return {
 			view: mw.ext.forms.widget.view.RadioSelectView,
 			edit: mw.ext.forms.widget.edit.RadioSelectInputWidget
 		};
 	};
 
-	mw.ext.forms.formElement.RadioMultiselect.prototype.getDefaultValue = function() {
+	mw.ext.forms.formElement.RadioMultiselect.prototype.getDefaultValue = function () {
 		return {
-			options: [ { data: 'option1', label: 'Option 1' } ] //TODO: i18n
+			options: [ { data: 'option1', label: 'Option 1' } ] // TODO: i18n
 		};
 	};
 
-	mw.ext.forms.registry.Type.register( "radio_multiselect", new mw.ext.forms.formElement.RadioMultiselect() );
-} )( mediaWiki, jQuery );
+	mw.ext.forms.registry.Type.register( 'radio_multiselect', new mw.ext.forms.formElement.RadioMultiselect() );
+}( mediaWiki ) );

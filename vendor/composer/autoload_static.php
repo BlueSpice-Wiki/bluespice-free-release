@@ -4,14 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
+class ComposerStaticInit54a9100c58326aeb89dba15a971a2a04
 {
     public static $files = array (
         'ef0a3cc8d59aacc0241af9c20bb29c47' => __DIR__ . '/..' . '/mwstake/mediawiki-componentloader/bootstrap.php',
         'aee3df8238f2131f3ed1cf1c93bae858' => __DIR__ . '/..' . '/mwstake/mediawiki-component-manifestregistry/bootstrap.php',
         '10a542061c80b3639afb5868667e9583' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/bootstrap.php',
         '23c5449715806cf29062abde4a042613' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/bootstrap.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '54b5b4fa498e570138b0c96a5a5c74f1' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonuserinterface/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'e88301dfa829b6392faf3213d53f4383' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/bootstrap.php',
@@ -25,7 +24,6 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         '7fd731f274b981c7fe86f42af6d7a5a0' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/bootstrap.php',
         '4c4cd977692004fea9f68cd0a1410561' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/bootstrap.php',
         'ddf173dd25d1002cda4244fda8b1d3ac' => __DIR__ . '/..' . '/mwstake/mediawiki-component-runjobstrigger/bootstrap.php',
-        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '1983c13b69e495399f39e129bef37a19' => __DIR__ . '/..' . '/mwstake/mediawiki-component-alertbanners/bootstrap.php',
         'ba2d8993296fb4095ebfbf8931e43e31' => __DIR__ . '/..' . '/mwstake/mediawiki-component-events/bootstrap.php',
@@ -82,8 +80,6 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         array (
             'Symfony\\Polyfill\\Php83\\' => 23,
             'Symfony\\Polyfill\\Php82\\' => 23,
-            'Symfony\\Polyfill\\Php81\\' => 23,
-            'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Filesystem\\' => 29,
@@ -334,14 +330,6 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'Symfony\\Polyfill\\Php82\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php82',
-        ),
-        'Symfony\\Polyfill\\Php81\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-php81',
-        ),
-        'Symfony\\Polyfill\\Php80\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
         'Symfony\\Component\\Yaml\\' => 
         array (
@@ -745,7 +733,6 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
 
     public static $classMap = array (
         'AllowDynamicProperties' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/AllowDynamicProperties.php',
-        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'BS\\ExtendedSearch\\AdminTool' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/AdminTool.php',
         'BS\\ExtendedSearch\\Backend' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Backend.php',
         'BS\\ExtendedSearch\\ClientConfig' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/ClientConfig.php',
@@ -948,8 +935,10 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'BaconQrCode\\Renderer\\Eye\\CompositeEye' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/Eye/CompositeEye.php',
         'BaconQrCode\\Renderer\\Eye\\EyeInterface' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/Eye/EyeInterface.php',
         'BaconQrCode\\Renderer\\Eye\\ModuleEye' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/Eye/ModuleEye.php',
+        'BaconQrCode\\Renderer\\Eye\\PointyEye' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/Eye/PointyEye.php',
         'BaconQrCode\\Renderer\\Eye\\SimpleCircleEye' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/Eye/SimpleCircleEye.php',
         'BaconQrCode\\Renderer\\Eye\\SquareEye' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/Eye/SquareEye.php',
+        'BaconQrCode\\Renderer\\GDLibRenderer' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/GDLibRenderer.php',
         'BaconQrCode\\Renderer\\ImageRenderer' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/ImageRenderer.php',
         'BaconQrCode\\Renderer\\Image\\EpsImageBackEnd' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/Image/EpsImageBackEnd.php',
         'BaconQrCode\\Renderer\\Image\\ImageBackEndInterface' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Renderer/Image/ImageBackEndInterface.php',
@@ -1302,10 +1291,10 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'BlueSpice\\PageTemplates\\HookHandler\\AddPreloadForActions' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/HookHandler/AddPreloadForActions.php',
         'BlueSpice\\PageTemplates\\HookHandler\\CommonUserInterface' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/HookHandler/CommonUserInterface.php',
         'BlueSpice\\PageTemplates\\HookHandler\\HandleShowingTemplateList' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/HookHandler/HandleShowingTemplateList.php',
+        'BlueSpice\\PageTemplates\\HookHandler\\RunDatabaseUpdates' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/HookHandler/RunDatabaseUpdates.php',
         'BlueSpice\\PageTemplates\\Hook\\BSApiNamespaceStoreMakeData\\AddData' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/Hook/BSApiNamespaceStoreMakeData/AddData.php',
         'BlueSpice\\PageTemplates\\Hook\\BSPageTemplatesModifyTargetUrl' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/Hook/BSPageTemplatesModifyTargetUrl.php',
         'BlueSpice\\PageTemplates\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageTemplatesTag' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/Hook/BSUsageTrackerRegisterCollectors/AddPageTemplatesTag.php',
-        'BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/Hook/LoadExtensionSchemaUpdates/AddPageTemplateTable.php',
         'BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/Hook/MediaWikiPerformAction/PreventEditMode.php',
         'BlueSpice\\PageTemplates\\Hook\\NamespaceManagerEditNamespace\\SetPageTemplateValues' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/Hook/NamespaceManagerEditNamespace/SetPageTemplateValues.php',
         'BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/Hook/NamespaceManagerGetMetaFields/RegisterMetaField.php',
@@ -1425,6 +1414,7 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'BlueSpice\\WatchList\\Hook\\BSUsageTrackerRegisterCollectors\\AddWatchListTag' => __DIR__ . '/../..' . '/extensions/BlueSpiceWatchList/src/Hook/BSUsageTrackerRegisterCollectors/AddWatchListTag.php',
         'BlueSpice\\WatchList\\Tag\\WatchList' => __DIR__ . '/../..' . '/extensions/BlueSpiceWatchList/src/Tag/WatchList.php',
         'BlueSpice\\WatchList\\Tag\\WatchListHandler' => __DIR__ . '/../..' . '/extensions/BlueSpiceWatchList/src/Tag/WatchListHandler.php',
+        'BlueSpice\\WatchList\\UserSidebar\\Widget\\WatchList' => __DIR__ . '/../..' . '/extensions/BlueSpiceWatchList/src/UserSidebar/Widget/WatchList.php',
         'BlueSpice\\WhoIsOnline\\ConfigDefinition\\Interval' => __DIR__ . '/../..' . '/extensions/BlueSpiceWhoIsOnline/src/ConfigDefinition/Interval.php',
         'BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime' => __DIR__ . '/../..' . '/extensions/BlueSpiceWhoIsOnline/src/ConfigDefinition/MaxIdleTime.php',
         'BlueSpice\\WhoIsOnline\\ContentDroplets\\WhoIsOnlineCountDroplet' => __DIR__ . '/../..' . '/extensions/BlueSpiceWhoIsOnline/src/ContentDroplets/WhoIsOnlineCountDroplet.php',
@@ -1466,7 +1456,6 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'CLDRPluralRuleParser\\Evaluator' => __DIR__ . '/..' . '/wikimedia/cldr-plural-rule-parser/src/Evaluator.php',
         'CLDRPluralRuleParser\\Range' => __DIR__ . '/..' . '/wikimedia/cldr-plural-rule-parser/src/Range.php',
         'CSSJanus' => __DIR__ . '/..' . '/cssjanus/cssjanus/src/CSSJanus.php',
-        'CURLStringFile' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
         'Cdb\\Cli' => __DIR__ . '/..' . '/wikimedia/cdb/src/Cli.php',
         'Cdb\\Exception' => __DIR__ . '/..' . '/wikimedia/cdb/src/Exception.php',
         'Cdb\\Reader' => __DIR__ . '/..' . '/wikimedia/cdb/src/Reader.php',
@@ -1653,23 +1642,16 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'Endroid\\QrCode\\Color\\ColorInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Color/ColorInterface.php',
         'Endroid\\QrCode\\Encoding\\Encoding' => __DIR__ . '/..' . '/endroid/qr-code/src/Encoding/Encoding.php',
         'Endroid\\QrCode\\Encoding\\EncodingInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Encoding/EncodingInterface.php',
-        'Endroid\\QrCode\\ErrorCorrectionLevel\\ErrorCorrectionLevelHigh' => __DIR__ . '/..' . '/endroid/qr-code/src/ErrorCorrectionLevel/ErrorCorrectionLevelHigh.php',
-        'Endroid\\QrCode\\ErrorCorrectionLevel\\ErrorCorrectionLevelInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/ErrorCorrectionLevel/ErrorCorrectionLevelInterface.php',
-        'Endroid\\QrCode\\ErrorCorrectionLevel\\ErrorCorrectionLevelLow' => __DIR__ . '/..' . '/endroid/qr-code/src/ErrorCorrectionLevel/ErrorCorrectionLevelLow.php',
-        'Endroid\\QrCode\\ErrorCorrectionLevel\\ErrorCorrectionLevelMedium' => __DIR__ . '/..' . '/endroid/qr-code/src/ErrorCorrectionLevel/ErrorCorrectionLevelMedium.php',
-        'Endroid\\QrCode\\ErrorCorrectionLevel\\ErrorCorrectionLevelQuartile' => __DIR__ . '/..' . '/endroid/qr-code/src/ErrorCorrectionLevel/ErrorCorrectionLevelQuartile.php',
+        'Endroid\\QrCode\\ErrorCorrectionLevel' => __DIR__ . '/..' . '/endroid/qr-code/src/ErrorCorrectionLevel.php',
         'Endroid\\QrCode\\Exception\\ValidationException' => __DIR__ . '/..' . '/endroid/qr-code/src/Exception/ValidationException.php',
         'Endroid\\QrCode\\ImageData\\LabelImageData' => __DIR__ . '/..' . '/endroid/qr-code/src/ImageData/LabelImageData.php',
         'Endroid\\QrCode\\ImageData\\LogoImageData' => __DIR__ . '/..' . '/endroid/qr-code/src/ImageData/LogoImageData.php',
-        'Endroid\\QrCode\\Label\\Alignment\\LabelAlignmentCenter' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Alignment/LabelAlignmentCenter.php',
-        'Endroid\\QrCode\\Label\\Alignment\\LabelAlignmentInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Alignment/LabelAlignmentInterface.php',
-        'Endroid\\QrCode\\Label\\Alignment\\LabelAlignmentLeft' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Alignment/LabelAlignmentLeft.php',
-        'Endroid\\QrCode\\Label\\Alignment\\LabelAlignmentRight' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Alignment/LabelAlignmentRight.php',
         'Endroid\\QrCode\\Label\\Font\\Font' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Font/Font.php',
         'Endroid\\QrCode\\Label\\Font\\FontInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Font/FontInterface.php',
         'Endroid\\QrCode\\Label\\Font\\NotoSans' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Font/NotoSans.php',
         'Endroid\\QrCode\\Label\\Font\\OpenSans' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Font/OpenSans.php',
         'Endroid\\QrCode\\Label\\Label' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Label.php',
+        'Endroid\\QrCode\\Label\\LabelAlignment' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/LabelAlignment.php',
         'Endroid\\QrCode\\Label\\LabelInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/LabelInterface.php',
         'Endroid\\QrCode\\Label\\Margin\\Margin' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Margin/Margin.php',
         'Endroid\\QrCode\\Label\\Margin\\MarginInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Label/Margin/MarginInterface.php',
@@ -1680,15 +1662,13 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'Endroid\\QrCode\\Matrix\\MatrixInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Matrix/MatrixInterface.php',
         'Endroid\\QrCode\\QrCode' => __DIR__ . '/..' . '/endroid/qr-code/src/QrCode.php',
         'Endroid\\QrCode\\QrCodeInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/QrCodeInterface.php',
-        'Endroid\\QrCode\\RoundBlockSizeMode\\RoundBlockSizeModeEnlarge' => __DIR__ . '/..' . '/endroid/qr-code/src/RoundBlockSizeMode/RoundBlockSizeModeEnlarge.php',
-        'Endroid\\QrCode\\RoundBlockSizeMode\\RoundBlockSizeModeInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/RoundBlockSizeMode/RoundBlockSizeModeInterface.php',
-        'Endroid\\QrCode\\RoundBlockSizeMode\\RoundBlockSizeModeMargin' => __DIR__ . '/..' . '/endroid/qr-code/src/RoundBlockSizeMode/RoundBlockSizeModeMargin.php',
-        'Endroid\\QrCode\\RoundBlockSizeMode\\RoundBlockSizeModeNone' => __DIR__ . '/..' . '/endroid/qr-code/src/RoundBlockSizeMode/RoundBlockSizeModeNone.php',
-        'Endroid\\QrCode\\RoundBlockSizeMode\\RoundBlockSizeModeShrink' => __DIR__ . '/..' . '/endroid/qr-code/src/RoundBlockSizeMode/RoundBlockSizeModeShrink.php',
+        'Endroid\\QrCode\\RoundBlockSizeMode' => __DIR__ . '/..' . '/endroid/qr-code/src/RoundBlockSizeMode.php',
+        'Endroid\\QrCode\\Writer\\AbstractGdWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/AbstractGdWriter.php',
         'Endroid\\QrCode\\Writer\\BinaryWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/BinaryWriter.php',
         'Endroid\\QrCode\\Writer\\ConsoleWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/ConsoleWriter.php',
         'Endroid\\QrCode\\Writer\\DebugWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/DebugWriter.php',
         'Endroid\\QrCode\\Writer\\EpsWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/EpsWriter.php',
+        'Endroid\\QrCode\\Writer\\GifWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/GifWriter.php',
         'Endroid\\QrCode\\Writer\\PdfWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/PdfWriter.php',
         'Endroid\\QrCode\\Writer\\PngWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/PngWriter.php',
         'Endroid\\QrCode\\Writer\\Result\\AbstractResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/AbstractResult.php',
@@ -1696,12 +1676,16 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'Endroid\\QrCode\\Writer\\Result\\ConsoleResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/ConsoleResult.php',
         'Endroid\\QrCode\\Writer\\Result\\DebugResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/DebugResult.php',
         'Endroid\\QrCode\\Writer\\Result\\EpsResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/EpsResult.php',
+        'Endroid\\QrCode\\Writer\\Result\\GdResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/GdResult.php',
+        'Endroid\\QrCode\\Writer\\Result\\GifResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/GifResult.php',
         'Endroid\\QrCode\\Writer\\Result\\PdfResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/PdfResult.php',
         'Endroid\\QrCode\\Writer\\Result\\PngResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/PngResult.php',
         'Endroid\\QrCode\\Writer\\Result\\ResultInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/ResultInterface.php',
         'Endroid\\QrCode\\Writer\\Result\\SvgResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/SvgResult.php',
+        'Endroid\\QrCode\\Writer\\Result\\WebPResult' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/Result/WebPResult.php',
         'Endroid\\QrCode\\Writer\\SvgWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/SvgWriter.php',
         'Endroid\\QrCode\\Writer\\ValidatingWriterInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/ValidatingWriterInterface.php',
+        'Endroid\\QrCode\\Writer\\WebPWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/WebPWriter.php',
         'Endroid\\QrCode\\Writer\\WriterInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/WriterInterface.php',
         'GuzzleHttp\\BodySummarizer' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/BodySummarizer.php',
         'GuzzleHttp\\BodySummarizerInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/BodySummarizerInterface.php',
@@ -3957,7 +3941,6 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'PhpOffice\\PhpSpreadsheet\\Writer\\ZipStream0' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/ZipStream0.php',
         'PhpOffice\\PhpSpreadsheet\\Writer\\ZipStream2' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/ZipStream2.php',
         'PhpOffice\\PhpSpreadsheet\\Writer\\ZipStream3' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/ZipStream3.php',
-        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'Poliander\\Cron\\CronExpression' => __DIR__ . '/..' . '/poliander/cron/src/Cron/CronExpression.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
@@ -4007,7 +3990,6 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'React\\Promise\\Internal\\RejectedPromise' => __DIR__ . '/..' . '/react/promise/src/Internal/RejectedPromise.php',
         'React\\Promise\\Promise' => __DIR__ . '/..' . '/react/promise/src/Promise.php',
         'React\\Promise\\PromiseInterface' => __DIR__ . '/..' . '/react/promise/src/PromiseInterface.php',
-        'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
         'SQLite3Exception' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/SQLite3Exception.php',
         'SensitiveParameter' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/SensitiveParameter.php',
         'SensitiveParameterValue' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/SensitiveParameterValue.php',
@@ -4072,7 +4054,6 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'Shellbox\\Shellbox' => __DIR__ . '/..' . '/wikimedia/shellbox/src/Shellbox.php',
         'Shellbox\\ShellboxError' => __DIR__ . '/..' . '/wikimedia/shellbox/src/ShellboxError.php',
         'Shellbox\\TempDirManager' => __DIR__ . '/..' . '/wikimedia/shellbox/src/TempDirManager.php',
-        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Filesystem\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/symfony/filesystem/Exception/ExceptionInterface.php',
         'Symfony\\Component\\Filesystem\\Exception\\FileNotFoundException' => __DIR__ . '/..' . '/symfony/filesystem/Exception/FileNotFoundException.php',
         'Symfony\\Component\\Filesystem\\Exception\\IOException' => __DIR__ . '/..' . '/symfony/filesystem/Exception/IOException.php',
@@ -4108,20 +4089,15 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
         'Symfony\\Component\\Yaml\\Tag\\TaggedValue' => __DIR__ . '/..' . '/symfony/yaml/Tag/TaggedValue.php',
         'Symfony\\Component\\Yaml\\Unescaper' => __DIR__ . '/..' . '/symfony/yaml/Unescaper.php',
         'Symfony\\Component\\Yaml\\Yaml' => __DIR__ . '/..' . '/symfony/yaml/Yaml.php',
-        'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
-        'Symfony\\Polyfill\\Php80\\PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/PhpToken.php',
-        'Symfony\\Polyfill\\Php81\\Php81' => __DIR__ . '/..' . '/symfony/polyfill-php81/Php81.php',
         'Symfony\\Polyfill\\Php82\\NoDynamicProperties' => __DIR__ . '/..' . '/symfony/polyfill-php82/NoDynamicProperties.php',
         'Symfony\\Polyfill\\Php82\\Php82' => __DIR__ . '/..' . '/symfony/polyfill-php82/Php82.php',
         'Symfony\\Polyfill\\Php82\\Random\\Engine\\Secure' => __DIR__ . '/..' . '/symfony/polyfill-php82/Random/Engine/Secure.php',
         'Symfony\\Polyfill\\Php82\\SensitiveParameterValue' => __DIR__ . '/..' . '/symfony/polyfill-php82/SensitiveParameterValue.php',
         'Symfony\\Polyfill\\Php83\\Php83' => __DIR__ . '/..' . '/symfony/polyfill-php83/Php83.php',
         'System' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/System.php',
-        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'UtfNormal\\Constants' => __DIR__ . '/..' . '/wikimedia/utfnormal/src/Constants.php',
         'UtfNormal\\Utils' => __DIR__ . '/..' . '/wikimedia/utfnormal/src/Utils.php',
         'UtfNormal\\Validator' => __DIR__ . '/..' . '/wikimedia/utfnormal/src/Validator.php',
-        'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'ValueFormatters\\Exceptions\\MismatchingDataValueTypeException' => __DIR__ . '/..' . '/data-values/common/src/ValueFormatters/Exceptions/MismatchingDataValueTypeException.php',
         'ValueFormatters\\FormatterOptions' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueFormatters/FormatterOptions.php',
         'ValueFormatters\\FormattingException' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueFormatters/FormattingException.php',
@@ -5287,11 +5263,11 @@ class ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit6a5eff5a20428f9686baf477f450b1ed::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit54a9100c58326aeb89dba15a971a2a04::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit54a9100c58326aeb89dba15a971a2a04::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit54a9100c58326aeb89dba15a971a2a04::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit54a9100c58326aeb89dba15a971a2a04::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit54a9100c58326aeb89dba15a971a2a04::$classMap;
 
         }, null, ClassLoader::class);
     }

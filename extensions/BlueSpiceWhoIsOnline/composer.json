@@ -3,6 +3,13 @@
 	"type": "mediawiki-extension",
 	"description": "Displays a list of users who are currently online",
 	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "https://www.hallowelt.com"
+		}
+	],
 	"extra": {
 		"installer-name": "BlueSpiceWhoIsOnline"
 	},

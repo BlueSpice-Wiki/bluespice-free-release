@@ -1,5 +1,5 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.widget.edit.Multiplier = function( cfg ) {
+( function ( mw, $ ) {
+	mw.ext.forms.widget.edit.Multiplier = function ( cfg ) {
 		mw.ext.forms.widget.edit.Multiplier.parent.call( this, cfg );
 
 		this.base = cfg.base || [];
@@ -40,7 +40,7 @@
 	mw.ext.forms.widget.edit.Multiplier.static.RETURN_TYPE_SIMPLE_ARRAY = 'simple_array';
 	mw.ext.forms.widget.edit.Multiplier.static.RETURN_TYPE_STRING = 'string';
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.makeLayout = function() {
+	mw.ext.forms.widget.edit.Multiplier.prototype.makeLayout = function () {
 		this.itemsLayout = new OO.ui.FieldsetLayout( {
 			label: this.label,
 			classes: [ 'multiplier-items-layout' ]
@@ -63,9 +63,9 @@
 		);
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.addItem = function( item ) {
+	mw.ext.forms.widget.edit.Multiplier.prototype.addItem = function ( item ) {
 		item = item || this.base;
-		var itemLayout = new OO.ui.FieldsetLayout( {
+		let itemLayout = new OO.ui.FieldsetLayout( {
 			data: {},
 			classes: [ 'multiplier-item' ]
 		} );
@@ -74,15 +74,15 @@
 				classes: [ 'multiplier-item' ]
 			} );
 		}
-		var parsedItems = this.form.parseItems( item, itemLayout, true );
+		const parsedItems = this.form.parseItems( item, itemLayout, true );
 		this.attachChangeListeners( parsedItems );
-		var itemName =  this.form.getRandomName( 'multiplier', Math.floor( Math.random() * (9999 - 100) + 100) );
-		this.items[itemName] = parsedItems;
+		const itemName = this.form.getRandomName( 'multiplier', Math.floor( Math.random() * ( 9999 - 100 ) + 100 ) );
+		this.items[ itemName ] = parsedItems;
 		this.timesAdded++;
 		if ( parseInt( this.max ) === this.timesAdded ) {
 			this.addButton.setDisabled( true );
 		}
-		var removeButton = new OO.ui.ButtonWidget( {
+		const removeButton = new OO.ui.ButtonWidget( {
 			icon: 'trash',
 			framed: false,
 			title: mw.message( 'mwstake-formengine-title-remove' ).text(),
@@ -91,31 +91,31 @@
 				item_name: itemName
 			}
 		} );
-		var multiplier = this;
+		const multiplier = this;
 		removeButton.connect( removeButton, {
-			click: function() {
-				var name = this.getData().item_name;
+			click: function () {
+				const name = this.getData().item_name;
 				this.$element.remove();
 				multiplier.removeItem( name );
 			}
 		} );
-		this.layouts[itemName] = itemLayout;
+		this.layouts[ itemName ] = itemLayout;
 		this.itemsLayout.addItems( [ removeButton, itemLayout ] );
 		this.emit( 'change', this.items, this.layouts );
 		return parsedItems;
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.removeItem = function( name ) {
+	mw.ext.forms.widget.edit.Multiplier.prototype.removeItem = function ( name ) {
 		if ( !this.layouts.hasOwnProperty( name ) ) {
 			return;
 		}
-		this.layouts[name].$element.remove();
-		delete( this.layouts[name] );
-		delete( this.items[name] );
+		this.layouts[ name ].$element.remove();
+		delete ( this.layouts[ name ] );
+		delete ( this.items[ name ] );
 		this.emit( 'change', this.items );
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.setValue = function( value ) {
+	mw.ext.forms.widget.edit.Multiplier.prototype.setValue = function ( value ) {
 		this.layout = {};
 		this.items = {};
 		if ( this.itemsLayout ) {
@@ -127,53 +127,53 @@
 			this.setValueArray( value );
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.setValueArray = function( value ) {
-		var inputName;
+	mw.ext.forms.widget.edit.Multiplier.prototype.setValueArray = function ( value ) {
+		let inputName;
 
 		if ( !value || !Array.isArray( value ) ) {
 			return;
 		}
 
-		for( var i = 0; i < value.length; i++ ) {
-			var addedItems = this.addItem();
-			if ( this.returnType === mw.ext.forms.widget.edit.Multiplier.static.RETURN_TYPE_SIMPLE_ARRAY  ) {
-				for( inputName in addedItems ) {
-					if ( addedItems[inputName] instanceof OO.ui.InputWidget ) {
-						addedItems[inputName].setValue( value[i] );
+		for ( let i = 0; i < value.length; i++ ) {
+			const addedItems = this.addItem();
+			if ( this.returnType === mw.ext.forms.widget.edit.Multiplier.static.RETURN_TYPE_SIMPLE_ARRAY ) {
+				for ( inputName in addedItems ) {
+					if ( addedItems[ inputName ] instanceof OO.ui.InputWidget ) {
+						addedItems[ inputName ].setValue( value[ i ] );
 						break;
 					}
 				}
 			} else {
-				for( inputName in value[i] ) {
-					if ( addedItems.hasOwnProperty( inputName ) && addedItems[inputName] instanceof OO.ui.InputWidget ) {
-						addedItems[inputName].setValue( value[i][inputName] );
+				for ( inputName in value[ i ] ) {
+					if ( addedItems.hasOwnProperty( inputName ) && addedItems[ inputName ] instanceof OO.ui.InputWidget ) {
+						addedItems[ inputName ].setValue( value[ i ][ inputName ] );
 					}
 				}
 			}
 		}
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.setValueObject = function( value ) {
+	mw.ext.forms.widget.edit.Multiplier.prototype.setValueObject = function ( value ) {
 		if ( !value || typeof value !== 'object' ) {
 			return;
 		}
 
-		for( var key in value ) {
-			var addedItems = this.addItem();
-			value[key][this.returnKey] = key;
-			for( var name in value[key] ) {
-				if ( addedItems.hasOwnProperty( name ) && addedItems[name] instanceof OO.ui.InputWidget ) {
-					addedItems[name].setValue( value[key][name] );
+		for ( const key in value ) {
+			const addedItems = this.addItem();
+			value[ key ][ this.returnKey ] = key;
+			for ( const name in value[ key ] ) {
+				if ( addedItems.hasOwnProperty( name ) && addedItems[ name ] instanceof OO.ui.InputWidget ) {
+					addedItems[ name ].setValue( value[ key ][ name ] );
 				}
 			}
 		}
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.attachChangeListeners = function( items ) {
-		for( var name in items ) {
-			if ( items[name] instanceof OO.ui.InputWidget ) {
-				items[name].connect( this, {
-					change: function() {
+	mw.ext.forms.widget.edit.Multiplier.prototype.attachChangeListeners = function ( items ) {
+		for ( const name in items ) {
+			if ( items[ name ] instanceof OO.ui.InputWidget ) {
+				items[ name ].connect( this, {
+					change: function () {
 						this.emit( 'change', this.items, this.layouts );
 					}
 				} );
@@ -181,15 +181,15 @@
 		}
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.getValidity = function() {
-		var dfd = $.Deferred();
-		var toCheck = {};
-		for( var name in this.items ) {
-			for( var itemName in this.items[name] ) {
-				if ( !this.items[name][itemName] instanceof OO.ui.InputWidget ) {
+	mw.ext.forms.widget.edit.Multiplier.prototype.getValidity = function () {
+		const dfd = $.Deferred();
+		const toCheck = {};
+		for ( const name in this.items ) {
+			for ( const itemName in this.items[ name ] ) {
+				if ( !( this.items[ name ][ itemName ] instanceof OO.ui.InputWidget ) ) {
 					continue;
 				}
-				toCheck[itemName] = this.items[name][itemName];
+				toCheck[ itemName ] = this.items[ name ][ itemName ];
 			}
 		}
 
@@ -197,7 +197,7 @@
 		return dfd.promise();
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.setValidityFlag = function( valid ) {
+	mw.ext.forms.widget.edit.Multiplier.prototype.setValidityFlag = function ( valid ) {
 		if ( !valid ) {
 			this.$element.addClass( 'input-invalid' );
 		} else {
@@ -205,7 +205,7 @@
 		}
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.getValue = function() {
+	mw.ext.forms.widget.edit.Multiplier.prototype.getValue = function () {
 		switch ( this.returnType ) {
 			case mw.ext.forms.widget.edit.Multiplier.static.RETURN_TYPE_OBJECT:
 				return this.returnObject();
@@ -216,35 +216,35 @@
 		}
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.returnObject = function() {
-		var result = {};
-		for( var name in this.items ) {
-			var singleResult = {};
-			for( var itemName in this.items[name] ) {
-				if ( ! ( this.items[name][itemName] instanceof OO.ui.InputWidget ) ) {
+	mw.ext.forms.widget.edit.Multiplier.prototype.returnObject = function () {
+		const result = {};
+		for ( const name in this.items ) {
+			const singleResult = {};
+			for ( const itemName in this.items[ name ] ) {
+				if ( !( this.items[ name ][ itemName ] instanceof OO.ui.InputWidget ) ) {
 					continue;
 				}
 				if ( itemName === this.returnKey ) {
 					continue;
 				}
-				singleResult[itemName] = this.items[name][itemName].getValue();
+				singleResult[ itemName ] = this.items[ name ][ itemName ].getValue();
 			}
-			result[this.items[name][this.returnKey].getValue()] = singleResult;
+			result[ this.items[ name ][ this.returnKey ].getValue() ] = singleResult;
 		}
 		return result;
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.returnArray = function() {
-		var result = [];
-		for( var name in this.items ) {
-			var singleResult = {};
-			for( var itemName in this.items[name] ) {
-				if ( this.items[name][itemName] instanceof OO.ui.InputWidget ) {
+	mw.ext.forms.widget.edit.Multiplier.prototype.returnArray = function () {
+		const result = [];
+		for ( const name in this.items ) {
+			let singleResult = {};
+			for ( const itemName in this.items[ name ] ) {
+				if ( this.items[ name ][ itemName ] instanceof OO.ui.InputWidget ) {
 					if ( this.returnType === mw.ext.forms.widget.edit.Multiplier.static.RETURN_TYPE_SIMPLE_ARRAY ) {
-						singleResult = this.items[name][itemName].getValue();
+						singleResult = this.items[ name ][ itemName ].getValue();
 						break;
 					}
-					singleResult[itemName] = this.items[name][itemName].getValue();
+					singleResult[ itemName ] = this.items[ name ][ itemName ].getValue();
 				}
 			}
 			result.push( singleResult );
@@ -252,12 +252,12 @@
 		return result;
 	};
 
-	mw.ext.forms.widget.edit.Multiplier.prototype.returnString = function() {
-		var origReturnType = this.returnType;
+	mw.ext.forms.widget.edit.Multiplier.prototype.returnString = function () {
+		const origReturnType = this.returnType;
 		this.returnType = mw.ext.forms.widget.edit.Multiplier.static.RETURN_TYPE_SIMPLE_ARRAY;
-		var result = this.returnArray();
+		const result = this.returnArray();
 		this.returnType = origReturnType;
 		return result.join( this.returnSeparator );
 	};
 
-} )( mediaWiki, jQuery );
+}( mediaWiki, jQuery ) );

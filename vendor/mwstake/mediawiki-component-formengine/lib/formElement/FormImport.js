@@ -1,10 +1,10 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.formElement.FormImport = function() {};
+( function ( mw ) {
+	mw.ext.forms.formElement.FormImport = function () {};
 
 	OO.inheritClass( mw.ext.forms.formElement.FormImport, mw.ext.forms.formElement.FormElement );
 
-	mw.ext.forms.formElement.FormImport.prototype.getElementConfig = function() {
-		var availableForms = mw.config.get( 'formsAvailableFormsForWidget' );
+	mw.ext.forms.formElement.FormImport.prototype.getElementConfig = function () {
+		const availableForms = mw.config.get( 'formsAvailableFormsForWidget' );
 		return this.returnConfig( {
 			formName: {
 				type: 'dropdown',
@@ -20,14 +20,14 @@
 		} );
 	};
 
-	mw.ext.forms.formElement.FormImport.prototype.getType = function() {
-		return "form_import";
+	mw.ext.forms.formElement.FormImport.prototype.getType = function () {
+		return 'form_import';
 	};
 
-	mw.ext.forms.formElement.FormImport.prototype.getWidgets = function() {
+	mw.ext.forms.formElement.FormImport.prototype.getWidgets = function () {
 		return mw.ext.forms.widget.edit.FormImport;
 	};
 
-	mw.ext.forms.registry.Type.register( "form_import", new mw.ext.forms.formElement.FormImport() );
+	mw.ext.forms.registry.Type.register( 'form_import', new mw.ext.forms.formElement.FormImport() );
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

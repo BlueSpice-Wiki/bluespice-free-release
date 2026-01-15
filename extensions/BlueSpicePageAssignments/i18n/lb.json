@@ -17,5 +17,6 @@
 	"bs-pageassignments-assignee-type-group": "Grupp",
 	"bs-pageassignments-collection-var-namespacename": "Nummraum",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Zuel vun de Säiten",
-	"bs-pageassignments-header-action-delete": "Läschen"
+	"bs-pageassignments-header-action-delete": "Läschen",
+	"bs-pageassignments-header-action-edit": "Änneren"
 }

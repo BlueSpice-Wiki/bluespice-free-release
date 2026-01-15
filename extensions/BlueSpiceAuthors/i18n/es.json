@@ -3,6 +3,7 @@
 		"authors": [
 			"Carlosmg.dg",
 			"Fitoschido",
+			"JaimeDes",
 			"Jakeukalane",
 			"Macofe",
 			"MarleneR329",
@@ -19,5 +20,7 @@
 	"bs-authors-navigation-link-title": "Autores de esta página",
 	"bs-authors-navigation-link-text": "Autores",
 	"apihelp-bs-pageauthors-store-summary": "Lista todos los autores de una página proporcionada en el contexto",
-	"bs-authors-info-dialog": "Autores de esta página"
+	"bs-authors-info-dialog": "Autores de esta página",
+	"bs-authors-info-dialog-grid-column-author": "Autor",
+	"bs-authors-info-dialog-grid-column-type": "Tipo de autor"
 }

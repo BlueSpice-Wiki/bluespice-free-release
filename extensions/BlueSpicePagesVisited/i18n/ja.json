@@ -18,7 +18,7 @@
 	"bs-pagesvisited-pref-widgetsortodr": "並び順:",
 	"bs-pagesvisited-pref-sort-time": "日時",
 	"bs-pagesvisited-pref-sort-pagename": "ページ名",
-	"bs-pagesvisited-tag-pagesvisited-desc": "最近訪れたページのリストを表示します。このリストはパラメータで制限することができます。",
+	"bs-pagesvisited-tag-pagesvisited-desc": "最近訪れたページの一覧を表示できるようにする。この一覧はパラメーターで制限できる。",
 	"bs-pagesvisited-ve-pagesvisited-title": "閲覧したページ",
 	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "回数",
 	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "リストに表示するページ数を設定する",

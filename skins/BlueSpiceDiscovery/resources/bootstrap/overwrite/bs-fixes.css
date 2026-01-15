@@ -1,0 +1,6 @@
+/* in bootstrap this css rule for the modal header is missing 
+ * ERM41380
+ */
+.modal-header {
+	justify-content: space-between;
+}

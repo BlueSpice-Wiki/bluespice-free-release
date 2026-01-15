@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Krisztina"
+			"Krisztina",
+			"Tacsipacsi"
 		]
 	},
-	"action-bluespiceabout-viewspecialpage": "tekintse meg a \"{{int:bs-bluespiceabout-about-bluespice}}\" speciális oldalt"
+	"action-bluespiceabout-viewspecialpage": "„{{int:bs-bluespiceabout-about-bluespice}}” speciális oldal megtekintése"
 }

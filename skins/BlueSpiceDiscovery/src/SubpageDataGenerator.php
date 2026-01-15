@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Discovery;
 
+use Exception;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Title\Title;
@@ -146,11 +147,17 @@ class SubpageDataGenerator {
 			$id = substr( $fullId, 0, 6 );
 
 			$text = $titleParts[$index];
-			$pageId = $curTitle->getId();
-			$displayTitleProps = $pageProps->getProperties( $curTitle, 'displaytitle' );
 
-			if ( isset( $displayTitleProps[$pageId] ) ) {
-				$text = $displayTitleProps[$pageId];
+			try {
+				$pageId = $curTitle->getId();
+				$displayTitleProps = $pageProps->getProperties( $curTitle, 'displaytitle' );
+
+				if ( isset( $displayTitleProps[$pageId] ) ) {
+					$text = $displayTitleProps[$pageId];
+				}
+			} catch ( Exception $ex ) {
+				// Nothing to do here -> page has no ID but should be shown anyways
+				// ERM42605
 			}
 
 			$key = $curTitle->getDBkey();

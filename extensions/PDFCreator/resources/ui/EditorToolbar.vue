@@ -96,6 +96,7 @@
 		max-width: 50rem;
 		height: 100%;
 	}
+
 	.pdfcreator-editor-help-table .cdx-table__header {
 		display: none;
 	}

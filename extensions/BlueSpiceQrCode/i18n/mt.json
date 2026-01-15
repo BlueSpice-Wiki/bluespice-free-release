@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"ToniSant"
+		]
+	},
+	"bs-qr-code-extension-description": "Juri kodiċi QR b'ħolqa għall-paġna attwali fit-toolbar.",
+	"bs-qr-code-action-qr-code-title": "Iftaħ djalogu bil-kodiċi QR",
+	"bs-qr-code-action-qr-code-text": "Kodiċi QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Kodiċi QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Kodiċi QR għal $1",
+	"bs-qr-code-api-no-page": "Il-parametru 'paġna' huwa vojt",
+	"apihelp-bs-qr-code-param-revid": "L-ID tar-reviżjoni tal-paġna biex tiġġenera permalink",
+	"apihelp-bs-qr-code-param-page": "Isem tal-paġna għall-paġna li se tiġġenera URI għad-data base64",
+	"apihelp-bs-qr-code-param-size": "Daqs tal-kodiċi QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Sejħa API awtomatika",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Sejħa API b'daqs personalizzat",
+	"bs-qr-code-alt-text": "Kodiċi QR għal $1",
+	"bs-qr-code-tag-qrcode-desc": "Jinkorpora kodiċi QR marbut fil-paġna tal-wiki",
+	"bs-qr-code-tag-qrcode-title": "Kodiċi QR",
+	"bs-qr-code-tag-attr-page-label": "Paġna",
+	"bs-qr-code-tag-attr-page-help": "Isem il-paġna li għandha tiġi inkluża fil-ħolqa tal-kodiċi QR. Biex tuża l-isem tal-paġna attwali, ħalli vojt",
+	"bs-qr-code-tag-attr-query-label": "Parametru",
+	"bs-qr-code-tag-attr-desc-label": "Deskrizzjoni",
+	"bs-qr-code-tag-attr-desc-help": "Deskrizzjoni relatata mal-kodiċi QR. Biex turi biss il-kodiċi QR, ħalli vojt.",
+	"bs-qr-code-tag-attr-size-label": "Daqs",
+	"bs-qr-code-tag-attr-size-help": "Ibdel id-daqs tal-kodiċi QR inkorporat",
+	"bs-qr-code-droplet-name": "Kodiċi QR",
+	"bs-qr-code-droplet-desc": "Idaħħal kodiċi QR fil-paġna tal-wiki",
+	"bs-qr-code-tag-attr-size-option-small": "żgħir",
+	"bs-qr-code-tag-attr-size-option-medium": "medju",
+	"bs-qr-code-tag-attr-size-option-large": "kbir"
+}

@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceDiscovery",
-	"version": "5.1.0",
+	"version": "5.1.1",
 	"author": [
 		"Daniel Vogel"
 	],
@@ -460,7 +460,8 @@
 				"bootstrap/dist/css/bootstrap-utilities.min.css": {},
 				"bootstrap/dist/css/bootstrap.min.css": {},
 				"bootstrap/icons/bootstrap-icons.css": {},
-				"bootstrap/overwrite/alert-colors.css": {}
+				"bootstrap/overwrite/alert-colors.css": {},
+				"bootstrap/overwrite/bs-fixes.css": {}
 			}
 		},
 		"skin.discovery.bootstrap.rtl.styles": {

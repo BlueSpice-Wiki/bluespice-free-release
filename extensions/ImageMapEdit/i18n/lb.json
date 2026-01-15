@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"imagemapedit-bottomleft": "ënne lénks",
+	"imagemapedit-bottomright": "ënne riets",
+	"imagemapedit-coordinates": "Koordinaten",
+	"imagemapedit-default": "Standard",
+	"imagemapedit-deletecoordinates": "All Koordinate läschen",
+	"imagemapedit-imagedescription": "Bildbeschreiwung",
+	"imagemapedit-import": "Importéieren",
+	"imagemapedit-optional": "fakultativ",
+	"imagemapedit-preferences": "Allgemeng Astellungen",
+	"imagemapedit-position": "Positioun",
+	"imagemapedit-radius": "Radius",
+	"imagemapedit-rectbottom": "ënnen",
+	"imagemapedit-rectleft": "Lénks",
+	"imagemapedit-rectright": "Riets",
+	"imagemapedit-recttop": "uewen",
+	"imagemapedit-topleft": "uewe lénks",
+	"imagemapedit-topright": "uewe riets",
+	"imagemapedit-imagedisplaytype-thumbnail": "Miniaturbild",
+	"imagemapedit-notspecified": "net uginn"
+}

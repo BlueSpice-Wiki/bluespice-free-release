@@ -1,5 +1,5 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.widget.edit.Listeners = function( cfg ) {
+( function ( mw ) {
+	mw.ext.forms.widget.edit.Listeners = function ( cfg ) {
 
 		cfg.base = [
 			{
@@ -14,7 +14,7 @@
 				required: true,
 				name: 'callback',
 				label: 'Callback',
-				labelAlign: 'top',
+				labelAlign: 'top'
 			},
 			{
 				type: 'hr',
@@ -27,44 +27,43 @@
 
 		this.events = cfg.events || [];
 		if ( this.events.length ) {
-			var options = [];
-			for( var i = 0; i < this.events.length; i++ ) {
+			const options = [];
+			for ( let i = 0; i < this.events.length; i++ ) {
 				options.push( {
-					label: this.events[i],
-					data: this.events[i]
+					label: this.events[ i ],
+					data: this.events[ i ]
 				} );
 			}
-			cfg.base[0].type = 'dropdown';
-			cfg.base[0].options = options;
+			cfg.base[ 0 ].type = 'dropdown';
+			cfg.base[ 0 ].options = options;
 
 		}
 		cfg.addInitially = false;
 		mw.ext.forms.widget.edit.Listeners.parent.call( this, cfg );
 
-
 	};
 
 	OO.inheritClass( mw.ext.forms.widget.edit.Listeners, mw.ext.forms.widget.edit.Multiplier );
 
-	mw.ext.forms.widget.edit.Listeners.prototype.setValue = function( value ) {
+	mw.ext.forms.widget.edit.Listeners.prototype.setValue = function ( value ) {
 		if ( !value ) {
 			return;
 		}
 
-		for( var name in value ) {
-			var addedItems = this.addItem();
+		for ( const name in value ) {
+			const addedItems = this.addItem();
 			addedItems.event.setValue( name );
-			addedItems.callback.setValue( value[name] );
+			addedItems.callback.setValue( value[ name ] );
 		}
 	};
 
-	mw.ext.forms.widget.edit.Listeners.prototype.getValue = function() {
-		var listeners = {};
-		for( var name in this.items ) {
-			listeners[this.items[name].event.getValue()] = this.items[name].callback.getValue();
+	mw.ext.forms.widget.edit.Listeners.prototype.getValue = function () {
+		const listeners = {};
+		for ( const name in this.items ) {
+			listeners[ this.items[ name ].event.getValue() ] = this.items[ name ].callback.getValue();
 		}
 
 		return listeners;
 	};
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

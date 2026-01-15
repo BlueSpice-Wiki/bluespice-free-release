@@ -30,15 +30,6 @@ bs.vec.ce.ColorAnnotation.static.name = 'textStyle/color';
 
 bs.vec.ce.ColorAnnotation.static.tagName = 'span';
 
-/* Static Methods */
-
-/**
- * @inheritdoc
- */
-bs.vec.ce.ColorAnnotation.static.getDescription = function ( model ) { // eslint-disable-line no-unused-vars
-	return OO.ui.deferMsg( 'bs-visualeditorconnector-color-annotation-desc' );
-};
-
 /* Registration */
 
 ve.ce.annotationFactory.register( bs.vec.ce.ColorAnnotation );

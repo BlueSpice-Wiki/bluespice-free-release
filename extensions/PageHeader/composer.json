@@ -2,16 +2,16 @@
 	"name": "mediawiki/page-header",
 	"type": "mediawiki-extension",
 	"description": "Additional UI before the page content",
-	"license": "GPL-3.0-only",
 	"keywords": [
 		"mediawiki",
 		"wiki"
 	],
+	"license": "GPL-3.0-only",
 	"authors": [
 		{
 			"name": "Hallo Welt! GmbH",
 			"email": "info@hallowelt.com",
-			"homepage": "http://www.hallowelt.com"
+			"homepage": "https://www.hallowelt.com"
 		}
 	],
 	"require": {
@@ -20,21 +20,24 @@
 		"mwstake/mediawiki-component-commonuserinterface": "~6"
 	},
 	"require-dev": {
-		"mediawiki/mediawiki-codesniffer": "39.0.0",
-		"mediawiki/minus-x": "1.1.1",
+		"mediawiki/mediawiki-codesniffer": "45.0.0",
+		"mediawiki/mediawiki-phan-config": "0.14.0",
+		"mediawiki/minus-x": "1.1.3",
 		"php-parallel-lint/php-console-highlighter": "1.0.0",
-		"php-parallel-lint/php-parallel-lint": "1.3.2"
+		"php-parallel-lint/php-parallel-lint": "1.4.0"
 	},
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules",
-			"minus-x check .",
-			"phpcs -sp"
+			"@phpcs",
+			"minus-x check ."
 		],
 		"fix": [
 			"minus-x fix .",
 			"phpcbf"
-		]
+		],
+		"phan": "phan -d . --long-progress-bar",
+		"phpcs": "phpcs -sp --cache"
 	},
 	"autoload": {
 		"psr-4": {
@@ -46,7 +49,8 @@
 	},
 	"config": {
 		"allow-plugins": {
-			"composer/installers": true
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
 	}
 }

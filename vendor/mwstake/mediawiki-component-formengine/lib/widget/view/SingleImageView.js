@@ -1,5 +1,5 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.widget.view.SingleImageView = function( cfg ) {
+( function ( mw, $ ) {
+	mw.ext.forms.widget.view.SingleImageView = function ( cfg ) {
 		mw.ext.forms.widget.view.SingleImageView.parent.call( this, cfg );
 
 		this.$element.addClass( 'ext-forms-single-image-view-widget' );
@@ -11,7 +11,7 @@
 
 	mw.ext.forms.widget.view.SingleImageView.static.tagName = 'div';
 
-	mw.ext.forms.widget.view.SingleImageView.prototype.setValue = function( value ) {
+	mw.ext.forms.widget.view.SingleImageView.prototype.setValue = function ( value ) {
 		if ( value ) {
 			this.$image.css( {
 				'background-image': "url( '" + value.base64 + "' )"
@@ -22,4 +22,4 @@
 		}
 	};
 
-} )( mediaWiki, jQuery );
+}( mediaWiki, jQuery ) );

@@ -2,8 +2,7 @@
 
 namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\FileQueryStore;
 
-use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\PrimaryDataProvider
-	as TitlePrimaryDataProvider;
+use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\PrimaryDataProvider as TitlePrimaryDataProvider;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\TitleRecord;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
@@ -35,10 +34,25 @@ class PrimaryDataProvider extends TitlePrimaryDataProvider {
 				}
 				$nsConds = [];
 				foreach ( $filterValue as $value ) {
-					// Special case for NSFR:
-					// Filtering by namespace is a bit tricky, as NSFR stores namespaces as part of title
-					$value = mb_strtolower( str_replace( '_', ' ', $value ) );
-					$nsConds[] = 'mti_title LIKE "' . $value . ':%"';
+					$value = mb_strtolower( $value );
+					$nsIndex = $this->nsInfo->getCanonicalIndex( $value );
+					// Main = null
+					if ( !$nsIndex ) {
+						$nsConds[] = 'mti_title NOT' . $this->db->buildLike( [
+							$this->db->anyString(),
+							':',
+							$this->db->anyString()
+						] );
+					} else {
+						// Special case for NSFR:
+						// Filtering by namespace is a bit tricky, as NSFR stores namespaces as part of title
+						$value = str_replace( '_', ' ', $value );
+						$nsConds[] = 'mti_title' . $this->db->buildLike( [
+							$value,
+							':',
+							$this->db->anyString()
+						] );
+					}
 				}
 				$conds[] = implode( ' OR ', $nsConds );
 				$filter->setApplied( true );

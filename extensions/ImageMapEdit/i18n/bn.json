@@ -4,5 +4,27 @@
 			"আফতাবুজ্জামান"
 		]
 	},
-	"imagemapedit-desc": "ব্রাউজারে চিত্র মানচিত্র তৈরি করুন।"
+	"imagemapedit-desc": "ব্রাউজারে চিত্র মানচিত্র তৈরি করুন।",
+	"imagemapedit-bottomleft": "নিচের বাম দিকে",
+	"imagemapedit-bottomright": "নিচের ডান দিকে",
+	"imagemapedit-circle": "বৃত্ত",
+	"imagemapedit-coordinates": "স্থানাঙ্ক",
+	"imagemapedit-default": "পূর্বনির্ধারিত",
+	"imagemapedit-deletearea": "নির্বাচিত এলাকা মুছুন",
+	"imagemapedit-deletecoordinates": "সমস্ত স্থানাঙ্ক মুছুন",
+	"imagemapedit-editarea": "সম্পাদনা এলাকা",
+	"imagemapedit-imagedescription": "ছবির বিবরণ",
+	"imagemapedit-import": "আমদানি করুন",
+	"imagemapedit-optional": "ঐচ্ছিক",
+	"imagemapedit-polychoose": "মাউসের বাম বোতাম দিয়ে নতুন কোণ যোগ করুন",
+	"imagemapedit-preferences": "সাধারণ পছন্দসমূহ",
+	"imagemapedit-position": "অবস্থান",
+	"imagemapedit-radius": "ব্যাসার্ধ",
+	"imagemapedit-rectbottom": "নিচে",
+	"imagemapedit-rectchoose1": "মাউসের বাম বোতাম দিয়ে নির্বাচন করুন",
+	"imagemapedit-rectleft": "বামে",
+	"imagemapedit-rectright": "ডানে",
+	"imagemapedit-recttop": "উপরে",
+	"imagemapedit-topleft": "উপরে বাম দিকে",
+	"imagemapedit-topright": "উপরে ডান দিকে"
 }

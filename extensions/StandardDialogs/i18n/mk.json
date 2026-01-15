@@ -57,5 +57,6 @@
 	"standarddialogs-page-info-page-no-templates-label": "Оваа страница не содржи предлошки",
 	"standarddialogs-page-info-page-no-categories-label": "Оваа страница не содржи категории",
 	"standarddialogs-page-info-page-no-links-label": "Оваа страница не содржи врски",
-	"standarddialogs-page-info-page-no-extlinks-label": "Оваа страница не содржи надворешни врски"
+	"standarddialogs-page-info-page-no-extlinks-label": "Оваа страница не содржи надворешни врски",
+	"standarddialogs-validation-page-exist-info-label": "Веќе постои страница со тој наслов. Изберете друг."
 }

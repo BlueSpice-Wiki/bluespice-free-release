@@ -40,37 +40,37 @@ class UserSchema extends Schema {
 			],
 			UserRecord::GROUPS => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::LISTVALUE
 			],
 			UserRecord::GROUPS_RAW => [
 				self::FILTERABLE => true,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::LISTVALUE
 			],
 			UserRecord::ENABLED => [
 				self::FILTERABLE => true,
-				self::SORTABLE => true ,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::BOOLEAN
 			],
 			UserRecord::DISPLAY_NAME => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::STRING
 			],
 			UserRecord::PAGE_LINK => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::STRING
 			],
 			UserRecord::PAGE_PREFIXED_TEXT => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::STRING
 			],
 			UserRecord::USER_IMAGE => [
 				self::FILTERABLE => false,
-				self::SORTABLE => false ,
+				self::SORTABLE => false,
 				self::TYPE => FieldType::STRING
 			]
 		] );

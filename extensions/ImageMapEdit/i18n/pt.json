@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb"
 		]
 	},
-	"imagemapedit-desc": "Criar mapeamentos de imagens no ''browser''."
+	"imagemapedit-desc": "Criar mapeamentos de imagens no ''browser''.",
+	"imagemapedit-imagedisplaytype-thumbnail": "miniatura",
+	"imagemapedit-imagedisplaytype-frameless": "sem moldura"
 }

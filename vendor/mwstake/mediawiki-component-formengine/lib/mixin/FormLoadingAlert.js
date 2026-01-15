@@ -1,5 +1,5 @@
-( function ( mw, $, d ) {
-	mw.ext.forms.mixin.FormLoadingAlert = function( hidden ) {
+( function ( mw, $ ) {
+	mw.ext.forms.mixin.FormLoadingAlert = function ( hidden ) {
 		this.$loadingAlert = $( '<div>' ).addClass( 'mw-ext-forms-form-loading-alert' )
 			.append(
 				new OO.ui.LabelWidget( {
@@ -13,11 +13,11 @@
 
 	OO.initClass( mw.ext.forms.mixin.FormLoadingAlert );
 
-	mw.ext.forms.mixin.FormLoadingAlert.prototype.setLoadingVisibility = function( show ) {
+	mw.ext.forms.mixin.FormLoadingAlert.prototype.setLoadingVisibility = function ( show ) {
 		this.$loadingAlert.hide();
 		if ( show ) {
 			this.$loadingAlert.show();
 		}
 	};
 
-} )( mediaWiki, jQuery, document );
+}( mediaWiki, jQuery ) );

@@ -2,34 +2,34 @@
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
-            "version": "2.0.8",
-            "version_normalized": "2.0.8.0",
+            "version": "v3.0.1",
+            "version_normalized": "3.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Bacon/BaconQrCode.git",
-                "reference": "8674e51bb65af933a5ffaf1c308a660387c35c22"
+                "reference": "f9cc1f52b5a463062251d666761178dbdb6b544f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/8674e51bb65af933a5ffaf1c308a660387c35c22",
-                "reference": "8674e51bb65af933a5ffaf1c308a660387c35c22",
+                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/f9cc1f52b5a463062251d666761178dbdb6b544f",
+                "reference": "f9cc1f52b5a463062251d666761178dbdb6b544f",
                 "shasum": ""
             },
             "require": {
                 "dasprid/enum": "^1.0.3",
                 "ext-iconv": "*",
-                "php": "^7.1 || ^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
-                "phly/keep-a-changelog": "^2.1",
-                "phpunit/phpunit": "^7 | ^8 | ^9",
-                "spatie/phpunit-snapshot-assertions": "^4.2.9",
-                "squizlabs/php_codesniffer": "^3.4"
+                "phly/keep-a-changelog": "^2.12",
+                "phpunit/phpunit": "^10.5.11 || 11.0.4",
+                "spatie/phpunit-snapshot-assertions": "^5.1.5",
+                "squizlabs/php_codesniffer": "^3.9"
             },
             "suggest": {
                 "ext-imagick": "to generate QR code images"
             },
-            "time": "2022-12-07T17:46:57+00:00",
+            "time": "2024-10-01T13:55:55+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -53,7 +53,7 @@
             "homepage": "https://github.com/Bacon/BaconQrCode",
             "support": {
                 "issues": "https://github.com/Bacon/BaconQrCode/issues",
-                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.8"
+                "source": "https://github.com/Bacon/BaconQrCode/tree/v3.0.1"
             },
             "install-path": "../bacon/bacon-qr-code"
         },
@@ -63,13 +63,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceAbout.git",
-                "reference": "378007431ac2833a3cc9ec1676b8f963d5d75ea6"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAbout.git",
+                "reference": "e403c5cacc84dce7a504ed7f4e2862b0a751acc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAbout/zipball/378007431ac2833a3cc9ec1676b8f963d5d75ea6",
-                "reference": "378007431ac2833a3cc9ec1676b8f963d5d75ea6",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAbout/zipball/e403c5cacc84dce7a504ed7f4e2862b0a751acc7",
+                "reference": "e403c5cacc84dce7a504ed7f4e2862b0a751acc7",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +82,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-16T14:40:27+00:00",
+            "time": "2025-06-30T22:31:30+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceAbout"
@@ -111,10 +111,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Information about BlueSpice",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceAbout/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceAbout"
         },
         {
@@ -123,13 +127,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceArticleInfo.git",
-                "reference": "f8f1f10ba2fd2f87003f00d2ae60a242e0a623ff"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceArticleInfo",
+                "reference": "8488af14f95ef09fe893fbd398967c7990107880"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceArticleInfo/zipball/f8f1f10ba2fd2f87003f00d2ae60a242e0a623ff",
-                "reference": "f8f1f10ba2fd2f87003f00d2ae60a242e0a623ff",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceArticleInfo/zipball/8488af14f95ef09fe893fbd398967c7990107880",
+                "reference": "8488af14f95ef09fe893fbd398967c7990107880",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +146,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-04-22T07:19:50+00:00",
+            "time": "2025-06-30T22:34:34+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceArticleInfo"
@@ -168,10 +172,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Provides information about a page in status bar",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceArticleInfo/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceArticleInfo"
         },
         {
@@ -180,13 +188,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceAuthors.git",
-                "reference": "1ad53b419031a73711ad1739890b3abddd65af65"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAuthors.git",
+                "reference": "d056ebbc5085f212fecc61b1737bdf03bd4a557a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAuthors/zipball/1ad53b419031a73711ad1739890b3abddd65af65",
-                "reference": "1ad53b419031a73711ad1739890b3abddd65af65",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAuthors/zipball/d056ebbc5085f212fecc61b1737bdf03bd4a557a",
+                "reference": "d056ebbc5085f212fecc61b1737bdf03bd4a557a",
                 "shasum": ""
             },
             "require": {
@@ -199,7 +207,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T06:11:31+00:00",
+            "time": "2025-07-11T20:07:41+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceAuthors"
@@ -230,10 +238,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Displays the profile picture for authors of a page",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceAuthors/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceAuthors"
         },
         {
@@ -242,13 +254,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceAvatars.git",
-                "reference": "aa3c9c4f6087d09e38cf9058049dc689df47dd78"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAvatars.git",
+                "reference": "b8d2e1a4b9bf67a9da3dba7d65349951be807f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAvatars/zipball/aa3c9c4f6087d09e38cf9058049dc689df47dd78",
-                "reference": "aa3c9c4f6087d09e38cf9058049dc689df47dd78",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAvatars/zipball/b8d2e1a4b9bf67a9da3dba7d65349951be807f29",
+                "reference": "b8d2e1a4b9bf67a9da3dba7d65349951be807f29",
                 "shasum": ""
             },
             "require": {
@@ -261,7 +273,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:29:58+00:00",
+            "time": "2025-07-11T20:07:41+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceAvatars"
@@ -287,10 +299,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Provides generic and individual user pictures",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceAvatars/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceAvatars"
         },
         {
@@ -299,13 +315,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceChecklist.git",
-                "reference": "55fab25b755ce273f6a6de6cdfcd02fac14d08c5"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceChecklist.git",
+                "reference": "c085e71ca43174024159fcce895c194d110bf5e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceChecklist/zipball/55fab25b755ce273f6a6de6cdfcd02fac14d08c5",
-                "reference": "55fab25b755ce273f6a6de6cdfcd02fac14d08c5",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceChecklist/zipball/c085e71ca43174024159fcce895c194d110bf5e3",
+                "reference": "c085e71ca43174024159fcce895c194d110bf5e3",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +334,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:30:07+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceChecklist"
@@ -344,10 +360,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "BlueSpiceChecklist provides checklist functionality",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceChecklist/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceChecklist"
         },
         {
@@ -356,13 +376,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceConfigManager.git",
-                "reference": "b0e60ceda272a62db309f583984a9c26f8b24c50"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceConfigManager",
+                "reference": "a116fa6894c305da581a098449f305c6e3e49dd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceConfigManager/zipball/b0e60ceda272a62db309f583984a9c26f8b24c50",
-                "reference": "b0e60ceda272a62db309f583984a9c26f8b24c50",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceConfigManager/zipball/a116fa6894c305da581a098449f305c6e3e49dd2",
+                "reference": "a116fa6894c305da581a098449f305c6e3e49dd2",
                 "shasum": ""
             },
             "require": {
@@ -375,7 +395,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T12:53:35+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceConfigManager"
@@ -401,10 +421,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Administration interface for configurations.",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceConfigManager/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceConfigManager"
         },
         {
@@ -413,13 +437,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceContextMenu.git",
-                "reference": "273b49ae0c88d56a4428b941e65847a247185571"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceContextMenu.git",
+                "reference": "d940cd954ae34e9cc75597b1831fd468cace5315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceContextMenu/zipball/273b49ae0c88d56a4428b941e65847a247185571",
-                "reference": "273b49ae0c88d56a4428b941e65847a247185571",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceContextMenu/zipball/d940cd954ae34e9cc75597b1831fd468cace5315",
+                "reference": "d940cd954ae34e9cc75597b1831fd468cace5315",
                 "shasum": ""
             },
             "require": {
@@ -432,7 +456,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:30:13+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceContextMenu"
@@ -463,10 +487,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Provides context menus for various links",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceContextMenu/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceContextMenu"
         },
         {
@@ -475,13 +503,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceCountThings.git",
-                "reference": "d3cd31e1bac2aaad2518a3b6ec41187d84dd0ff7"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceCountThings.git",
+                "reference": "8c3972d307c3b22d2e0b668fa67603db5e4a2d9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCountThings/zipball/d3cd31e1bac2aaad2518a3b6ec41187d84dd0ff7",
-                "reference": "d3cd31e1bac2aaad2518a3b6ec41187d84dd0ff7",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCountThings/zipball/8c3972d307c3b22d2e0b668fa67603db5e4a2d9c",
+                "reference": "8c3972d307c3b22d2e0b668fa67603db5e4a2d9c",
                 "shasum": ""
             },
             "require": {
@@ -494,7 +522,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:30:21+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceCountThings"
@@ -520,10 +548,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Provides content based statistics",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceCountThings/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceCountThings"
         },
         {
@@ -532,13 +564,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceCustomMenu.git",
-                "reference": "b0e02e102bbb99d84de1e30f356bce3a64e9b89d"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceCustomMenu.git",
+                "reference": "d49328916ebbd955babafb8bee104031e5390da6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCustomMenu/zipball/b0e02e102bbb99d84de1e30f356bce3a64e9b89d",
-                "reference": "b0e02e102bbb99d84de1e30f356bce3a64e9b89d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCustomMenu/zipball/d49328916ebbd955babafb8bee104031e5390da6",
+                "reference": "d49328916ebbd955babafb8bee104031e5390da6",
                 "shasum": ""
             },
             "require": {
@@ -552,7 +584,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T07:35:36+00:00",
+            "time": "2025-06-30T23:38:15+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceCustomMenu"
@@ -578,10 +610,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Provides customizable menus",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceCustomMenu/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceCustomMenu"
         },
         {
@@ -590,13 +626,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-skins-BlueSpiceDiscovery.git",
-                "reference": "59d8c23a4b7e1f8c5c0e0f828a8d697c624e6dd5"
+                "url": "git@github.com:wikimedia/mediawiki-skins-BlueSpiceDiscovery.git",
+                "reference": "09afad6c9c4a25debf734425a1ed827a54608bcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-skins-BlueSpiceDiscovery/zipball/59d8c23a4b7e1f8c5c0e0f828a8d697c624e6dd5",
-                "reference": "59d8c23a4b7e1f8c5c0e0f828a8d697c624e6dd5",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-skins-BlueSpiceDiscovery/zipball/09afad6c9c4a25debf734425a1ed827a54608bcc",
+                "reference": "09afad6c9c4a25debf734425a1ed827a54608bcc",
                 "shasum": ""
             },
             "require": {
@@ -604,7 +640,7 @@
                 "mwstake/mediawiki-component-commonuserinterface": "~6",
                 "mwstake/mediawiki-component-manifestregistry": "~3",
                 "mwstake/mediawiki-component-wikitext": "~7",
-                "mwstake/mediawiki-lib-nodes": "~1"
+                "mwstake/mediawiki-lib-nodes": "~2"
             },
             "require-dev": {
                 "mediawiki/mediawiki-codesniffer": "45.0.0",
@@ -613,7 +649,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T07:39:16+00:00",
+            "time": "2025-07-14T20:07:23+00:00",
             "type": "mediawiki-skin",
             "extra": {
                 "installer-name": "BlueSpiceDiscovery"
@@ -647,6 +683,13 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "A highly flexible MediaWiki skin using Bootstrap 5",
             "keywords": [
                 "Bootstrap",
@@ -655,9 +698,6 @@
                 "skin",
                 "wiki"
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-skins-BlueSpiceDiscovery/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../skins/BlueSpiceDiscovery"
         },
         {
@@ -666,13 +706,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector.git",
-                "reference": "2b67bb566b39eee187c6ca189a3434a7a25fa65c"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector.git",
+                "reference": "5c0cdb823e347d5d6928d15505559f2dff397786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector/zipball/2b67bb566b39eee187c6ca189a3434a7a25fa65c",
-                "reference": "2b67bb566b39eee187c6ca189a3434a7a25fa65c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector/zipball/5c0cdb823e347d5d6928d15505559f2dff397786",
+                "reference": "5c0cdb823e347d5d6928d15505559f2dff397786",
                 "shasum": ""
             },
             "require": {
@@ -686,7 +726,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-27T11:44:46+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceDistributionConnector"
@@ -717,10 +757,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Connect BlueSpice with some extensions",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceDistributionConnector"
         },
         {
@@ -729,13 +773,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceEmoticons.git",
-                "reference": "b50711ce7ac2bf6b9c2e16b25bd9493096b1906f"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceEmoticons.git",
+                "reference": "b5233acb7f534529586c8d44f64d2773c900ae67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceEmoticons/zipball/b50711ce7ac2bf6b9c2e16b25bd9493096b1906f",
-                "reference": "b50711ce7ac2bf6b9c2e16b25bd9493096b1906f",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceEmoticons/zipball/b5233acb7f534529586c8d44f64d2773c900ae67",
+                "reference": "b5233acb7f534529586c8d44f64d2773c900ae67",
                 "shasum": ""
             },
             "require": {
@@ -748,7 +792,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T05:55:52+00:00",
+            "time": "2025-06-30T23:46:17+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceEmoticons"
@@ -774,10 +818,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Renders emoticons in a text as images",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceEmoticons/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceEmoticons"
         },
         {
@@ -786,13 +834,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch.git",
-                "reference": "516c2ffabce29dac508b0f2d40291ead82be14dc"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch.git",
+                "reference": "b63f8ffd04c376d076677fec346be1f9ecead27a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch/zipball/516c2ffabce29dac508b0f2d40291ead82be14dc",
-                "reference": "516c2ffabce29dac508b0f2d40291ead82be14dc",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch/zipball/b63f8ffd04c376d076677fec346be1f9ecead27a",
+                "reference": "b63f8ffd04c376d076677fec346be1f9ecead27a",
                 "shasum": ""
             },
             "require": {
@@ -807,7 +855,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T06:39:56+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceExtendedSearch"
@@ -838,10 +886,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "OpenSearch search backend for BlueSpice MediaWiki",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceExtendedSearch"
         },
         {
@@ -850,13 +902,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics.git",
-                "reference": "f8a92587e2d83199cdfae3647d6d1910b40aa446"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics.git",
+                "reference": "9ecdfcef9cd1b63cdac28e58ff43b450090f0420"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics/zipball/f8a92587e2d83199cdfae3647d6d1910b40aa446",
-                "reference": "f8a92587e2d83199cdfae3647d6d1910b40aa446",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics/zipball/9ecdfcef9cd1b63cdac28e58ff43b450090f0420",
+                "reference": "9ecdfcef9cd1b63cdac28e58ff43b450090f0420",
                 "shasum": ""
             },
             "require": {
@@ -870,7 +922,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-15T11:42:35+00:00",
+            "time": "2025-07-15T20:08:53+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceExtendedStatistics"
@@ -901,10 +953,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Statistics module for BlueSpice",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceExtendedStatistics"
         },
         {
@@ -913,13 +969,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceFoundation.git",
-                "reference": "a56a4248019cb5af70e5d52a23d3215df9c8c4d1"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceFoundation",
+                "reference": "c88e21173bd27816aaed1c61a54b7f998cd54135"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceFoundation/zipball/a56a4248019cb5af70e5d52a23d3215df9c8c4d1",
-                "reference": "a56a4248019cb5af70e5d52a23d3215df9c8c4d1",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceFoundation/zipball/c88e21173bd27816aaed1c61a54b7f998cd54135",
+                "reference": "c88e21173bd27816aaed1c61a54b7f998cd54135",
                 "shasum": ""
             },
             "require": {
@@ -942,7 +998,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-28T03:17:49+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceFoundation"
@@ -983,8 +1039,7 @@
             ],
             "support": {
                 "issues": "https://sourceforge.net/projects/bluespice/support",
-                "wiki": "https://help.bluespice.com",
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceFoundation/tree/REL1_43-5.1.x"
+                "wiki": "https://help.bluespice.com"
             },
             "install-path": "../../extensions/BlueSpiceFoundation"
         },
@@ -994,13 +1049,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceHideTitle.git",
-                "reference": "54ea40227eddfc134f3e778aea641ef29ab5060c"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceHideTitle.git",
+                "reference": "8176cc16166a48018bbdcab9b69f8fc1f5192225"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceHideTitle/zipball/54ea40227eddfc134f3e778aea641ef29ab5060c",
-                "reference": "54ea40227eddfc134f3e778aea641ef29ab5060c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceHideTitle/zipball/8176cc16166a48018bbdcab9b69f8fc1f5192225",
+                "reference": "8176cc16166a48018bbdcab9b69f8fc1f5192225",
                 "shasum": ""
             },
             "require": {
@@ -1013,7 +1068,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T07:15:39+00:00",
+            "time": "2025-07-11T20:07:42+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceHideTitle"
@@ -1042,10 +1097,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Adds the magic word to hide the title of the page",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceHideTitle/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceHideTitle"
         },
         {
@@ -1054,13 +1113,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceInsertCategory.git",
-                "reference": "7009bb79c1aa187de5101910f1c4f74494e75616"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInsertCategory.git",
+                "reference": "2d75ae3f5f6519a62ee0fe42a33bc1c5361d8de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInsertCategory/zipball/7009bb79c1aa187de5101910f1c4f74494e75616",
-                "reference": "7009bb79c1aa187de5101910f1c4f74494e75616",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInsertCategory/zipball/2d75ae3f5f6519a62ee0fe42a33bc1c5361d8de3",
+                "reference": "2d75ae3f5f6519a62ee0fe42a33bc1c5361d8de3",
                 "shasum": ""
             },
             "require": {
@@ -1073,7 +1132,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-04-22T07:27:21+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceInsertCategory"
@@ -1102,10 +1161,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Dialog to enter a category link",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceInsertCategory/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceInsertCategory"
         },
         {
@@ -1114,13 +1177,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus.git",
-                "reference": "2df1bcb31d00ebb39a3aac27e196f73b201a92e9"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus",
+                "reference": "22d20871b72659e5df361636549aa29949f231f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus/zipball/2df1bcb31d00ebb39a3aac27e196f73b201a92e9",
-                "reference": "2df1bcb31d00ebb39a3aac27e196f73b201a92e9",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus/zipball/22d20871b72659e5df361636549aa29949f231f6",
+                "reference": "22d20871b72659e5df361636549aa29949f231f6",
                 "shasum": ""
             },
             "require": {
@@ -1133,7 +1196,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-16T14:06:56+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceInstanceStatus"
@@ -1156,9 +1219,16 @@
                     "phpcs -sp --cache"
                 ]
             },
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus/tree/REL1_43-5.1.x"
-            },
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "install-path": "../../extensions/BlueSpiceInstanceStatus"
         },
         {
@@ -1167,13 +1237,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks.git",
-                "reference": "520f83b9c395b6991a82ec49e663ad615085a319"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks.git",
+                "reference": "a9fcc3162fa2a0cbdad72b00c4f04bc17f4ab821"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks/zipball/520f83b9c395b6991a82ec49e663ad615085a319",
-                "reference": "520f83b9c395b6991a82ec49e663ad615085a319",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks/zipball/a9fcc3162fa2a0cbdad72b00c4f04bc17f4ab821",
+                "reference": "a9fcc3162fa2a0cbdad72b00c4f04bc17f4ab821",
                 "shasum": ""
             },
             "require": {
@@ -1186,7 +1256,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T12:52:14+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceInterWikiLinks"
@@ -1215,10 +1285,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Administration interface for adding, editing and deleting interwiki links",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceInterWikiLinks"
         },
         {
@@ -1227,13 +1301,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager.git",
-                "reference": "643b1cdc98017c0620262601bade1ee3c7312974"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager.git",
+                "reference": "ca4949da720f668196f3fb915574ba0ca361e70c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager/zipball/643b1cdc98017c0620262601bade1ee3c7312974",
-                "reference": "643b1cdc98017c0620262601bade1ee3c7312974",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager/zipball/ca4949da720f668196f3fb915574ba0ca361e70c",
+                "reference": "ca4949da720f668196f3fb915574ba0ca361e70c",
                 "shasum": ""
             },
             "require": {
@@ -1247,7 +1321,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:30:56+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceNamespaceManager"
@@ -1273,10 +1347,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "BlueSpiceNamespaceManager Administration interface for adding, editing and deleting namespaces",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceNamespaceManager"
         },
         {
@@ -1285,13 +1363,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePageAccess.git",
-                "reference": "fbd84e94e8280c695d46a995540b789d576b2eaf"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageAccess.git",
+                "reference": "64ea9dae9071908204e3685a2850cb8caa54627e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAccess/zipball/fbd84e94e8280c695d46a995540b789d576b2eaf",
-                "reference": "fbd84e94e8280c695d46a995540b789d576b2eaf",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAccess/zipball/64ea9dae9071908204e3685a2850cb8caa54627e",
+                "reference": "64ea9dae9071908204e3685a2850cb8caa54627e",
                 "shasum": ""
             },
             "require": {
@@ -1304,7 +1382,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T07:35:09+00:00",
+            "time": "2025-07-11T20:07:42+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePageAccess"
@@ -1335,10 +1413,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Controls access on page level",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePageAccess/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpicePageAccess"
         },
         {
@@ -1347,13 +1429,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePageAssignments.git",
-                "reference": "14e816b8a69d36f94b122ba5a6366682ce75ba2f"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageAssignments.git",
+                "reference": "5de53d3b29293dcfe1d084fc15cffbc3af0c2960"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAssignments/zipball/14e816b8a69d36f94b122ba5a6366682ce75ba2f",
-                "reference": "14e816b8a69d36f94b122ba5a6366682ce75ba2f",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAssignments/zipball/5de53d3b29293dcfe1d084fc15cffbc3af0c2960",
+                "reference": "5de53d3b29293dcfe1d084fc15cffbc3af0c2960",
                 "shasum": ""
             },
             "require": {
@@ -1368,7 +1450,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T05:53:40+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePageAssignments"
@@ -1394,10 +1476,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Enables you to assign users or groups to a page",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePageAssignments/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpicePageAssignments"
         },
         {
@@ -1406,13 +1492,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePagesVisited.git",
-                "reference": "c0130fdbb266495cea2c58e18f8a646b47f17520"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePagesVisited.git",
+                "reference": "458b03152b15cb588328bf4d520a9ad5a529fc6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePagesVisited/zipball/c0130fdbb266495cea2c58e18f8a646b47f17520",
-                "reference": "c0130fdbb266495cea2c58e18f8a646b47f17520",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePagesVisited/zipball/458b03152b15cb588328bf4d520a9ad5a529fc6c",
+                "reference": "458b03152b15cb588328bf4d520a9ad5a529fc6c",
                 "shasum": ""
             },
             "require": {
@@ -1425,7 +1511,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T07:39:38+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePagesVisited"
@@ -1456,10 +1542,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Provides a personalized list of the last visited pages",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePagesVisited/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpicePagesVisited"
         },
         {
@@ -1468,13 +1558,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePageTemplates.git",
-                "reference": "ed568ffc584b8501203981965ddf6fb7d137a6a9"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageTemplates.git",
+                "reference": "cb21c3e3626bf499384c8e8cc6f28c5dfb58890e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageTemplates/zipball/ed568ffc584b8501203981965ddf6fb7d137a6a9",
-                "reference": "ed568ffc584b8501203981965ddf6fb7d137a6a9",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageTemplates/zipball/cb21c3e3626bf499384c8e8cc6f28c5dfb58890e",
+                "reference": "cb21c3e3626bf499384c8e8cc6f28c5dfb58890e",
                 "shasum": ""
             },
             "require": {
@@ -1488,7 +1578,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T06:32:46+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePageTemplates"
@@ -1519,10 +1609,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Displays a list of templates marked as page templates",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePageTemplates/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpicePageTemplates"
         },
         {
@@ -1531,13 +1625,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePermissionManager.git",
-                "reference": "8b5b846890c219d862d6d1cfbc414c34e712182d"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePermissionManager.git",
+                "reference": "cd2807ad2031c5794c4f31b5823097c5dd5c54a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePermissionManager/zipball/8b5b846890c219d862d6d1cfbc414c34e712182d",
-                "reference": "8b5b846890c219d862d6d1cfbc414c34e712182d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePermissionManager/zipball/cd2807ad2031c5794c4f31b5823097c5dd5c54a2",
+                "reference": "cd2807ad2031c5794c4f31b5823097c5dd5c54a2",
                 "shasum": ""
             },
             "require": {
@@ -1551,7 +1645,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:31:05+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePermissionManager"
@@ -1582,10 +1676,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Administration interface for editing user rights",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpicePermissionManager/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpicePermissionManager"
         },
         {
@@ -1594,18 +1692,18 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceQrCode.git",
-                "reference": "47719b50ace9700e00f221fd48d10367e6bc7f34"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceQrCode",
+                "reference": "52a574e49099608df445e32a27b1dac023b2bb75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceQrCode/zipball/47719b50ace9700e00f221fd48d10367e6bc7f34",
-                "reference": "47719b50ace9700e00f221fd48d10367e6bc7f34",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceQrCode/zipball/52a574e49099608df445e32a27b1dac023b2bb75",
+                "reference": "52a574e49099608df445e32a27b1dac023b2bb75",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0|~2",
-                "endroid/qr-code": "4.6.*",
+                "endroid/qr-code": "5.1.*",
                 "mwstake/mediawiki-component-dynamicfiledispatcher": "~1"
             },
             "require-dev": {
@@ -1615,7 +1713,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T15:26:19+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceQrCode"
@@ -1641,10 +1739,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Add a qr code with link to the current page in toolbox.",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceQrCode/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceQrCode"
         },
         {
@@ -1653,13 +1755,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceReaders.git",
-                "reference": "90def111a2b8b3182f1f1689d3ecff66907ef550"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceReaders.git",
+                "reference": "ada3f3a54a5451c70fd8eeaf6711dd5399cf40f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceReaders/zipball/90def111a2b8b3182f1f1689d3ecff66907ef550",
-                "reference": "90def111a2b8b3182f1f1689d3ecff66907ef550",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceReaders/zipball/ada3f3a54a5451c70fd8eeaf6711dd5399cf40f6",
+                "reference": "ada3f3a54a5451c70fd8eeaf6711dd5399cf40f6",
                 "shasum": ""
             },
             "require": {
@@ -1672,7 +1774,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:31:23+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceReaders"
@@ -1703,10 +1805,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Creates a list of the people who read a page",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceReaders/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceReaders"
         },
         {
@@ -1715,13 +1821,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder.git",
-                "reference": "3e18dc8d9fa45efa4c2735e68402c51b72113960"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder",
+                "reference": "99982a9769ff2becd5561520926cec3bd009690b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder/zipball/3e18dc8d9fa45efa4c2735e68402c51b72113960",
-                "reference": "3e18dc8d9fa45efa4c2735e68402c51b72113960",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder/zipball/99982a9769ff2becd5561520926cec3bd009690b",
+                "reference": "99982a9769ff2becd5561520926cec3bd009690b",
                 "shasum": ""
             },
             "require": {
@@ -1734,7 +1840,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:31:14+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceRSSFeeder"
@@ -1765,10 +1871,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Create your own RSS feed",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceRSSFeeder"
         },
         {
@@ -1777,13 +1887,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceSaferEdit.git",
-                "reference": "fe455e6231066a6709a388e996d4482bc974049c"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceSaferEdit.git",
+                "reference": "164765f2dd4d2da608761a82f64f72c745731310"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSaferEdit/zipball/fe455e6231066a6709a388e996d4482bc974049c",
-                "reference": "fe455e6231066a6709a388e996d4482bc974049c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSaferEdit/zipball/164765f2dd4d2da608761a82f64f72c745731310",
+                "reference": "164765f2dd4d2da608761a82f64f72c745731310",
                 "shasum": ""
             },
             "require": {
@@ -1796,7 +1906,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T08:32:33+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceSaferEdit"
@@ -1822,10 +1932,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Intermediate saving of wiki edits",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceSaferEdit/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceSaferEdit"
         },
         {
@@ -1834,13 +1948,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceSmartList.git",
-                "reference": "76e1754ad4efe340032970e3e50fa70bcf320f3d"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceSmartList.git",
+                "reference": "2ceca159ce5e97185f5c7162d9c09af8c06fdb05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSmartList/zipball/76e1754ad4efe340032970e3e50fa70bcf320f3d",
-                "reference": "76e1754ad4efe340032970e3e50fa70bcf320f3d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSmartList/zipball/2ceca159ce5e97185f5c7162d9c09af8c06fdb05",
+                "reference": "2ceca159ce5e97185f5c7162d9c09af8c06fdb05",
                 "shasum": ""
             },
             "require": {
@@ -1853,7 +1967,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:31:30+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceSmartList"
@@ -1882,10 +1996,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Displays the last five changes of the wiki in a list",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceSmartList/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceSmartList"
         },
         {
@@ -1894,13 +2012,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceTagCloud.git",
-                "reference": "d28bf348f5809e25d07b7ea0a27652df9ea1fb93"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceTagCloud",
+                "reference": "b32b44885695f0a04fb7004fa7115b3237c53800"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceTagCloud/zipball/d28bf348f5809e25d07b7ea0a27652df9ea1fb93",
-                "reference": "d28bf348f5809e25d07b7ea0a27652df9ea1fb93",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceTagCloud/zipball/b32b44885695f0a04fb7004fa7115b3237c53800",
+                "reference": "b32b44885695f0a04fb7004fa7115b3237c53800",
                 "shasum": ""
             },
             "require": {
@@ -1913,7 +2031,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T08:55:27+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceTagCloud"
@@ -1939,10 +2057,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Displays various tag clouds",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceTagCloud/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceTagCloud"
         },
         {
@@ -1951,13 +2073,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceUsageTracker.git",
-                "reference": "0d9b5a581d1249084fedbd2c440f68a0ce8d171b"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUsageTracker",
+                "reference": "e31c9fe690df9c5679f2b28eb5522085b95d98bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUsageTracker/zipball/0d9b5a581d1249084fedbd2c440f68a0ce8d171b",
-                "reference": "0d9b5a581d1249084fedbd2c440f68a0ce8d171b",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUsageTracker/zipball/e31c9fe690df9c5679f2b28eb5522085b95d98bf",
+                "reference": "e31c9fe690df9c5679f2b28eb5522085b95d98bf",
                 "shasum": ""
             },
             "require": {
@@ -1970,7 +2092,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T09:28:55+00:00",
+            "time": "2025-07-01T03:33:10+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceUsageTracker"
@@ -1996,10 +2118,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Holds statistical data about extension use",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceUsageTracker/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceUsageTracker"
         },
         {
@@ -2008,13 +2134,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceUserManager.git",
-                "reference": "abf59c8283720522f325acdcc44e6102a3bb38f4"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUserManager.git",
+                "reference": "3c8f2885fadf074bb078938a7717f24201af6b3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserManager/zipball/abf59c8283720522f325acdcc44e6102a3bb38f4",
-                "reference": "abf59c8283720522f325acdcc44e6102a3bb38f4",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserManager/zipball/3c8f2885fadf074bb078938a7717f24201af6b3d",
+                "reference": "3c8f2885fadf074bb078938a7717f24201af6b3d",
                 "shasum": ""
             },
             "require": {
@@ -2027,7 +2153,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T06:31:49+00:00",
+            "time": "2025-07-14T20:07:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceUserManager"
@@ -2058,10 +2184,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Administration interface for adding, editing and deleting users",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceUserManager/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceUserManager"
         },
         {
@@ -2070,13 +2200,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceUserSidebar.git",
-                "reference": "892e354d2539fb39d83427215b06c9ed4cc413c6"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUserSidebar.git",
+                "reference": "e27f484e6867f98fb2b8724dd34f6aa9706417f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserSidebar/zipball/892e354d2539fb39d83427215b06c9ed4cc413c6",
-                "reference": "892e354d2539fb39d83427215b06c9ed4cc413c6",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserSidebar/zipball/e27f484e6867f98fb2b8724dd34f6aa9706417f9",
+                "reference": "e27f484e6867f98fb2b8724dd34f6aa9706417f9",
                 "shasum": ""
             },
             "require": {
@@ -2090,7 +2220,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-07T09:05:00+00:00",
+            "time": "2025-06-16T05:55:04+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceUserSidebar"
@@ -2116,10 +2246,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Adds the \"Focus\" section to the left navigation",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceUserSidebar/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceUserSidebar"
         },
         {
@@ -2128,13 +2262,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector.git",
-                "reference": "7d21e26ff8366bd6c5dd1f041d222c4a9f4f03b1"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector",
+                "reference": "628a2209eb6842ee1725277a85ba221c76897dad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector/zipball/7d21e26ff8366bd6c5dd1f041d222c4a9f4f03b1",
-                "reference": "7d21e26ff8366bd6c5dd1f041d222c4a9f4f03b1",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector/zipball/628a2209eb6842ee1725277a85ba221c76897dad",
+                "reference": "628a2209eb6842ee1725277a85ba221c76897dad",
                 "shasum": ""
             },
             "require": {
@@ -2147,7 +2281,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-20T01:11:40+00:00",
+            "time": "2025-07-14T20:07:23+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceVisualEditorConnector"
@@ -2173,10 +2307,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Enable VisualEditor for BlueSpice extensions",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceVisualEditorConnector"
         },
         {
@@ -2185,13 +2323,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceWatchList.git",
-                "reference": "945b92dee3e5113a27810819b036462d2021b6b8"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceWatchList",
+                "reference": "5d67501c0aecd19aaf88a1fd279ec4fb06c9728f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWatchList/zipball/945b92dee3e5113a27810819b036462d2021b6b8",
-                "reference": "945b92dee3e5113a27810819b036462d2021b6b8",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWatchList/zipball/5d67501c0aecd19aaf88a1fd279ec4fb06c9728f",
+                "reference": "5d67501c0aecd19aaf88a1fd279ec4fb06c9728f",
                 "shasum": ""
             },
             "require": {
@@ -2204,7 +2342,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T04:44:44+00:00",
+            "time": "2025-07-14T20:07:23+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceWatchList"
@@ -2235,10 +2373,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Adds a watchlist widget and tag",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceWatchList/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceWatchList"
         },
         {
@@ -2247,13 +2389,13 @@
             "version_normalized": "dev-REL1_43-5.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline.git",
-                "reference": "1a7684c712d47791c2fed122ce32c015e214350e"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline",
+                "reference": "5af863a073f895e0ee98ffecbae8b709ec288b89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline/zipball/1a7684c712d47791c2fed122ce32c015e214350e",
-                "reference": "1a7684c712d47791c2fed122ce32c015e214350e",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline/zipball/5af863a073f895e0ee98ffecbae8b709ec288b89",
+                "reference": "5af863a073f895e0ee98ffecbae8b709ec288b89",
                 "shasum": ""
             },
             "require-dev": {
@@ -2263,7 +2405,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-06T04:38:44+00:00",
+            "time": "2025-07-14T20:07:23+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceWhoIsOnline"
@@ -2294,10 +2436,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Displays a list of users who are currently online",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline/tree/REL1_43-5.1.x"
-            },
             "install-path": "../../extensions/BlueSpiceWhoIsOnline"
         },
         {
@@ -3057,27 +3203,27 @@
         },
         {
             "name": "endroid/qr-code",
-            "version": "4.6.1",
-            "version_normalized": "4.6.1.0",
+            "version": "5.1.0",
+            "version_normalized": "5.1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/qr-code.git",
-                "reference": "a75c913b0e4d6ad275e49a2c1de1cacffc6c2184"
+                "reference": "393fec6c4cbdc1bd65570ac9d245704428010122"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/qr-code/zipball/a75c913b0e4d6ad275e49a2c1de1cacffc6c2184",
-                "reference": "a75c913b0e4d6ad275e49a2c1de1cacffc6c2184",
+                "url": "https://api.github.com/repos/endroid/qr-code/zipball/393fec6c4cbdc1bd65570ac9d245704428010122",
+                "reference": "393fec6c4cbdc1bd65570ac9d245704428010122",
                 "shasum": ""
             },
             "require": {
-                "bacon/bacon-qr-code": "^2.0.5",
-                "php": "^7.4||^8.0"
+                "bacon/bacon-qr-code": "^3.0",
+                "php": "^8.1"
             },
             "require-dev": {
-                "endroid/quality": "dev-master",
+                "endroid/quality": "dev-main",
                 "ext-gd": "*",
-                "khanamiryan/qrcode-detector-decoder": "^1.0.4",
+                "khanamiryan/qrcode-detector-decoder": "^2.0.2",
                 "setasign/fpdf": "^1.8.2"
             },
             "suggest": {
@@ -3086,11 +3232,11 @@
                 "roave/security-advisories": "Makes sure package versions with known security issues are not installed",
                 "setasign/fpdf": "Enables you to use the PDF writer"
             },
-            "time": "2022-10-26T08:48:17+00:00",
+            "time": "2024-09-08T08:52:55+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.x-dev"
+                    "dev-main": "5.x-dev"
                 }
             },
             "installation-source": "dist",
@@ -3120,7 +3266,7 @@
             ],
             "support": {
                 "issues": "https://github.com/endroid/qr-code/issues",
-                "source": "https://github.com/endroid/qr-code/tree/4.6.1"
+                "source": "https://github.com/endroid/qr-code/tree/5.1.0"
             },
             "funding": [
                 {
@@ -3650,13 +3796,13 @@
             "version_normalized": "dev-REL1_43-3.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-FilterSpecialPages.git",
-                "reference": "a5a1eceac90266d9f81e83b772a917542f8c1038"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-FilterSpecialPages.git",
+                "reference": "8a1e9931aac6f50f86a866794fe216f8802b9617"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FilterSpecialPages/zipball/a5a1eceac90266d9f81e83b772a917542f8c1038",
-                "reference": "a5a1eceac90266d9f81e83b772a917542f8c1038",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FilterSpecialPages/zipball/8a1e9931aac6f50f86a866794fe216f8802b9617",
+                "reference": "8a1e9931aac6f50f86a866794fe216f8802b9617",
                 "shasum": ""
             },
             "require": {
@@ -3668,7 +3814,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-04-02T14:28:03+00:00",
+            "time": "2025-07-01T04:42:28+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -3685,9 +3831,16 @@
                     "phpcs -sp --cache"
                 ]
             },
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-FilterSpecialPages/tree/3.0.0"
-            },
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "install-path": "../../extensions/FilterSpecialPages"
         },
         {
@@ -4131,13 +4284,13 @@
             "version_normalized": "dev-REL1_43-2.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-ContentDroplets.git",
-                "reference": "1c685bbccb88434929b3904d9f121eb3bd3fae98"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-ContentDroplets.git",
+                "reference": "121325810b0d0093281117ab5bb104139661f6e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ContentDroplets/zipball/1c685bbccb88434929b3904d9f121eb3bd3fae98",
-                "reference": "1c685bbccb88434929b3904d9f121eb3bd3fae98",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ContentDroplets/zipball/121325810b0d0093281117ab5bb104139661f6e1",
+                "reference": "121325810b0d0093281117ab5bb104139661f6e1",
                 "shasum": ""
             },
             "require": {
@@ -4152,7 +4305,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T06:10:09+00:00",
+            "time": "2025-07-01T04:17:18+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "ContentDroplets"
@@ -4178,9 +4331,13 @@
             "license": [
                 "GPL-3.0-only"
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-ContentDroplets/tree/REL1_43-2.0.x"
-            },
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "install-path": "../../extensions/ContentDroplets"
         },
         {
@@ -4189,13 +4346,13 @@
             "version_normalized": "dev-REL1_43-2.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-EnhancedStandardUIs.git",
-                "reference": "838e6f5a8741d37dbd7b53ca371f8c563800d86d"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-EnhancedStandardUIs.git",
+                "reference": "c16be923926289ac0f1caba54d0faf188de57dbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedStandardUIs/zipball/838e6f5a8741d37dbd7b53ca371f8c563800d86d",
-                "reference": "838e6f5a8741d37dbd7b53ca371f8c563800d86d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedStandardUIs/zipball/c16be923926289ac0f1caba54d0faf188de57dbc",
+                "reference": "c16be923926289ac0f1caba54d0faf188de57dbc",
                 "shasum": ""
             },
             "require": {
@@ -4208,7 +4365,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T12:42:32+00:00",
+            "time": "2025-07-01T04:39:05+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "EnhancedStandardUIs"
@@ -4238,12 +4395,9 @@
                 {
                     "name": "Hallo Welt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-EnhancedStandardUIs/tree/REL1_43-2.0.x"
-            },
             "install-path": "../../extensions/EnhancedStandardUIs"
         },
         {
@@ -4252,13 +4406,13 @@
             "version_normalized": "dev-REL1_43-4.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-EnhancedUpload.git",
-                "reference": "84f56ac1d1d1246439dbeaddf90f868cd19c35d8"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-EnhancedUpload",
+                "reference": "b266492a3d72560d57141fcd10b37c155d0956fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedUpload/zipball/84f56ac1d1d1246439dbeaddf90f868cd19c35d8",
-                "reference": "84f56ac1d1d1246439dbeaddf90f868cd19c35d8",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedUpload/zipball/b266492a3d72560d57141fcd10b37c155d0956fc",
+                "reference": "b266492a3d72560d57141fcd10b37c155d0956fc",
                 "shasum": ""
             },
             "require": {
@@ -4271,7 +4425,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T07:09:06+00:00",
+            "time": "2025-07-11T20:07:42+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "EnhancedUpload"
@@ -4311,9 +4465,6 @@
                 "mediawiki",
                 "wiki"
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-EnhancedUpload/tree/REL1_43-4.0.x"
-            },
             "install-path": "../../extensions/EnhancedUpload"
         },
         {
@@ -4322,13 +4473,13 @@
             "version_normalized": "dev-REL1_43-3.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-FlexiSkin.git",
-                "reference": "63f28dce80cd20ca13a42a76649951112d80827c"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-FlexiSkin.git",
+                "reference": "a7e65a7a2d06e8df58c317d63b39d4e727718e7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FlexiSkin/zipball/63f28dce80cd20ca13a42a76649951112d80827c",
-                "reference": "63f28dce80cd20ca13a42a76649951112d80827c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FlexiSkin/zipball/a7e65a7a2d06e8df58c317d63b39d4e727718e7b",
+                "reference": "a7e65a7a2d06e8df58c317d63b39d4e727718e7b",
                 "shasum": ""
             },
             "require": {
@@ -4341,7 +4492,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T11:21:08+00:00",
+            "time": "2025-07-01T04:48:14+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "FlexiSkin"
@@ -4364,10 +4515,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Adds skin themes",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-FlexiSkin/tree/REL1_43-3.0.x"
-            },
             "install-path": "../../extensions/FlexiSkin"
         },
         {
@@ -4458,13 +4613,13 @@
             "version_normalized": "dev-REL1_43-3.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-ImageMapEdit.git",
-                "reference": "9aea133cb9993f791dbd3a3108178b4096059088"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-ImageMapEdit",
+                "reference": "9e4799890903ae3d65318d986d6596007d0fc6b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ImageMapEdit/zipball/9aea133cb9993f791dbd3a3108178b4096059088",
-                "reference": "9aea133cb9993f791dbd3a3108178b4096059088",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ImageMapEdit/zipball/9e4799890903ae3d65318d986d6596007d0fc6b4",
+                "reference": "9e4799890903ae3d65318d986d6596007d0fc6b4",
                 "shasum": ""
             },
             "require": {
@@ -4477,7 +4632,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-04-02T14:28:03+00:00",
+            "time": "2025-07-15T20:08:53+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -4497,10 +4652,17 @@
                     "phpcs -sp --cache"
                 ]
             },
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Create image maps in the browser.",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-ImageMapEdit/tree/3.0.0"
-            },
             "install-path": "../../extensions/ImageMapEdit"
         },
         {
@@ -4509,13 +4671,13 @@
             "version_normalized": "dev-REL1_43",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-InviteSignup.git",
-                "reference": "f92b258e1267f47c0155ce73502e47a230eb9588"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-InviteSignup.git",
+                "reference": "aa0cfaf635f6d757ad7d113d29cc246333bf6a7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-InviteSignup/zipball/f92b258e1267f47c0155ce73502e47a230eb9588",
-                "reference": "f92b258e1267f47c0155ce73502e47a230eb9588",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-InviteSignup/zipball/aa0cfaf635f6d757ad7d113d29cc246333bf6a7b",
+                "reference": "aa0cfaf635f6d757ad7d113d29cc246333bf6a7b",
                 "shasum": ""
             },
             "require": {
@@ -4527,7 +4689,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-04-25T13:03:47+00:00",
+            "time": "2025-06-17T06:36:40+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -4560,8 +4722,7 @@
                 "MediaWiki"
             ],
             "support": {
-                "issues": "https://phabricator.wikimedia.org/",
-                "source": "https://github.com/wikimedia/mediawiki-extensions-InviteSignup/tree/REL1_43"
+                "issues": "https://phabricator.wikimedia.org/"
             },
             "install-path": "../../extensions/InviteSignup"
         },
@@ -4571,13 +4732,13 @@
             "version_normalized": "dev-REL1_43",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-Lingo.git",
-                "reference": "27893843b7529951deed9a3ef9fc25c778934eea"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-Lingo.git",
+                "reference": "3714aefc935c7d6f3af1fa3706764a328ad96582"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-Lingo/zipball/27893843b7529951deed9a3ef9fc25c778934eea",
-                "reference": "27893843b7529951deed9a3ef9fc25c778934eea",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-Lingo/zipball/3714aefc935c7d6f3af1fa3706764a328ad96582",
+                "reference": "3714aefc935c7d6f3af1fa3706764a328ad96582",
                 "shasum": ""
             },
             "require": {
@@ -4594,7 +4755,7 @@
             "suggest": {
                 "mediawiki/semantic-glossary": "Alternative back-end that retrieves terms and definitions from a Semantic MediaWiki store"
             },
-            "time": "2024-12-13T18:24:15+00:00",
+            "time": "2025-06-12T17:00:47+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "branch-alias": {
@@ -4662,17 +4823,17 @@
         },
         {
             "name": "mediawiki/menu-editor",
-            "version": "dev-REL1_43-3.0.x",
-            "version_normalized": "dev-REL1_43-3.0.x",
+            "version": "dev-REL1_43-3.1.x",
+            "version_normalized": "dev-REL1_43-3.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-MenuEditor.git",
-                "reference": "a3e4eea1b9662bf676b8722c76ab2a6ca996ce98"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-MenuEditor",
+                "reference": "076d4ea78afbe761bd374b0e5ec3678aaaba83ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-MenuEditor/zipball/a3e4eea1b9662bf676b8722c76ab2a6ca996ce98",
-                "reference": "a3e4eea1b9662bf676b8722c76ab2a6ca996ce98",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-MenuEditor/zipball/076d4ea78afbe761bd374b0e5ec3678aaaba83ad",
+                "reference": "076d4ea78afbe761bd374b0e5ec3678aaaba83ad",
                 "shasum": ""
             },
             "require": {
@@ -4685,7 +4846,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T07:36:49+00:00",
+            "time": "2025-07-01T06:30:20+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "MenuEditor"
@@ -4708,10 +4869,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "Graphical editor for menu pages",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-MenuEditor/tree/REL1_43-3.0.x"
-            },
             "install-path": "../../extensions/MenuEditor"
         },
         {
@@ -4720,13 +4885,13 @@
             "version_normalized": "dev-REL1_43-2.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-NotifyMe.git",
-                "reference": "6504e94d3b7026c6fac8cc4516ca6c3d20264dbb"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-NotifyMe.git",
+                "reference": "cf0298f617587b15a56871c00ce781429ab5d452"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-NotifyMe/zipball/6504e94d3b7026c6fac8cc4516ca6c3d20264dbb",
-                "reference": "6504e94d3b7026c6fac8cc4516ca6c3d20264dbb",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-NotifyMe/zipball/cf0298f617587b15a56871c00ce781429ab5d452",
+                "reference": "cf0298f617587b15a56871c00ce781429ab5d452",
                 "shasum": ""
             },
             "require": {
@@ -4745,7 +4910,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-27T02:35:46+00:00",
+            "time": "2025-07-15T20:08:53+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "NotifyMe"
@@ -4771,10 +4936,14 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "...",
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-NotifyMe/tree/REL1_43-2.0.x"
-            },
             "install-path": "../../extensions/NotifyMe"
         },
         {
@@ -4783,13 +4952,13 @@
             "version_normalized": "dev-REL1_43-3.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-OOJSPlus.git",
-                "reference": "9515110b89b2c25ef5d873bb7a1d9e32b7c04e99"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-OOJSPlus.git",
+                "reference": "443adb6f3eb07cb2045d50aaaf3c437dfdca0669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-OOJSPlus/zipball/9515110b89b2c25ef5d873bb7a1d9e32b7c04e99",
-                "reference": "9515110b89b2c25ef5d873bb7a1d9e32b7c04e99",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-OOJSPlus/zipball/443adb6f3eb07cb2045d50aaaf3c437dfdca0669",
+                "reference": "443adb6f3eb07cb2045d50aaaf3c437dfdca0669",
                 "shasum": ""
             },
             "require": {
@@ -4804,7 +4973,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T14:16:31+00:00",
+            "time": "2025-07-07T20:08:24+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "OOJSPlus"
@@ -4840,9 +5009,6 @@
                 "mediawiki",
                 "wiki"
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-OOJSPlus/tree/REL1_43-3.1.x"
-            },
             "install-path": "../../extensions/OOJSPlus"
         },
         {
@@ -4852,7 +5018,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hallowelt.com:BlueSpice/mediawiki-extensions-pageheader.git",
-                "reference": "ee331ab4649b31fc4d0580ab40a8e1b474e335a4"
+                "reference": "93bc430b64c6c37ade1c788fd34f3485c078f7da"
             },
             "require": {
                 "composer/installers": "~1.0|~2",
@@ -4860,12 +5026,13 @@
                 "mwstake/mediawiki-component-manifestregistry": "~3"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "39.0.0",
-                "mediawiki/minus-x": "1.1.1",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.2"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-07T09:12:19+00:00",
+            "time": "2025-07-01T07:41:46+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "PageHeader"
@@ -4879,12 +5046,18 @@
             "scripts": {
                 "test": [
                     "parallel-lint . --exclude vendor --exclude node_modules",
-                    "minus-x check .",
-                    "phpcs -sp"
+                    "@phpcs",
+                    "minus-x check ."
                 ],
                 "fix": [
                     "minus-x fix .",
                     "phpcbf"
+                ],
+                "phan": [
+                    "phan -d . --long-progress-bar"
+                ],
+                "phpcs": [
+                    "phpcs -sp --cache"
                 ]
             },
             "license": [
@@ -4894,7 +5067,7 @@
                 {
                     "name": "Hallo Welt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Additional UI before the page content",
@@ -4910,13 +5083,13 @@
             "version_normalized": "dev-REL1_43-1.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-PDFCreator.git",
-                "reference": "ae3bfbb7b6c4b8712deadb84d97f34e5e7def998"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-PDFCreator.git",
+                "reference": "7118debf61d03a3720620929229a172c55e6b62e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-PDFCreator/zipball/ae3bfbb7b6c4b8712deadb84d97f34e5e7def998",
-                "reference": "ae3bfbb7b6c4b8712deadb84d97f34e5e7def998",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-PDFCreator/zipball/7118debf61d03a3720620929229a172c55e6b62e",
+                "reference": "7118debf61d03a3720620929229a172c55e6b62e",
                 "shasum": ""
             },
             "require": {
@@ -4929,7 +5102,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T06:41:40+00:00",
+            "time": "2025-07-11T20:07:42+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "PDFCreator"
@@ -4959,16 +5132,13 @@
                 {
                     "name": "Hallo Welt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Export wiki pages as pdf",
             "keywords": [
                 "pdf"
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-PDFCreator/tree/REL1_43-1.1.x"
-            },
             "install-path": "../../extensions/PDFCreator"
         },
         {
@@ -5012,13 +5182,13 @@
             "version_normalized": "dev-REL1_43-3.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-StandardDialogs.git",
-                "reference": "bba987666855b3d58f60a85e27310d8738459c2a"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-StandardDialogs",
+                "reference": "f396e63e8bc310945a7141fef28a29f988c99a4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-StandardDialogs/zipball/bba987666855b3d58f60a85e27310d8738459c2a",
-                "reference": "bba987666855b3d58f60a85e27310d8738459c2a",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-StandardDialogs/zipball/f396e63e8bc310945a7141fef28a29f988c99a4d",
+                "reference": "f396e63e8bc310945a7141fef28a29f988c99a4d",
                 "shasum": ""
             },
             "require": {
@@ -5030,7 +5200,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T11:42:15+00:00",
+            "time": "2025-07-01T08:22:21+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "StandardDialogs"
@@ -5050,9 +5220,16 @@
                     "phpcs -sp"
                 ]
             },
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-StandardDialogs/tree/REL1_43-3.0.x"
-            },
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "install-path": "../../extensions/StandardDialogs"
         },
         {
@@ -5110,13 +5287,13 @@
             "version_normalized": "dev-REL1_43",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-UserFunctions.git",
-                "reference": "fe610c0a243644789afd7837b7d19a896e216822"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-UserFunctions",
+                "reference": "1c1010f06c09caa1c5e2462abc884935880e8bbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-UserFunctions/zipball/fe610c0a243644789afd7837b7d19a896e216822",
-                "reference": "fe610c0a243644789afd7837b7d19a896e216822",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-UserFunctions/zipball/1c1010f06c09caa1c5e2462abc884935880e8bbf",
+                "reference": "1c1010f06c09caa1c5e2462abc884935880e8bbf",
                 "shasum": ""
             },
             "require": {
@@ -5128,7 +5305,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2024-11-28T20:03:28+00:00",
+            "time": "2025-06-13T11:39:19+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -5154,9 +5331,6 @@
                 "MediaWiki",
                 "User"
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-UserFunctions/tree/REL1_43"
-            },
             "install-path": "../../extensions/UserFunctions"
         },
         {
@@ -5182,7 +5356,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hallowelt.com:BlueSpice/mediawiki-extensions-bluespiceuserprofile.git",
-                "reference": "1ed80aa55b544f010a4f328b4ba789dafd291476"
+                "reference": "3255b0a7f236b8265e5e436ab37e5694870c4270"
             },
             "require": {
                 "composer/installers": "~1.0|~2",
@@ -5195,7 +5369,7 @@
                 "php-parallel-lint/php-console-highlighter": "0.5.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T06:32:33+00:00",
+            "time": "2025-07-01T08:28:14+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "UserProfile"
@@ -5215,6 +5389,13 @@
             "license": [
                 "GPL-3.0-only"
             ],
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "description": "User profile UI",
             "install-path": "../../extensions/UserProfile"
         },
@@ -5224,7 +5405,7 @@
             "version_normalized": "2.5.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-Variables.git",
+                "url": "git@github.com:wikimedia/mediawiki-extensions-Variables",
                 "reference": "4cb4db05e39b8af0b01e5c7b24df18747deff6d8"
             },
             "dist": {
@@ -5298,13 +5479,13 @@
             "version_normalized": "dev-REL1_43-2.1.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-VisualEditorPlus.git",
-                "reference": "e30a5e93bd46b6783b801f2db1d977eca7370885"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-VisualEditorPlus.git",
+                "reference": "6b35db7b8898aeda404f716bb90381e53b4887ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VisualEditorPlus/zipball/e30a5e93bd46b6783b801f2db1d977eca7370885",
-                "reference": "e30a5e93bd46b6783b801f2db1d977eca7370885",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VisualEditorPlus/zipball/6b35db7b8898aeda404f716bb90381e53b4887ab",
+                "reference": "6b35db7b8898aeda404f716bb90381e53b4887ab",
                 "shasum": ""
             },
             "require": {
@@ -5317,7 +5498,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T08:39:55+00:00",
+            "time": "2025-07-01T11:33:54+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "VisualEditorPlus"
@@ -5347,12 +5528,9 @@
                 {
                     "name": "Hallo Welt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-VisualEditorPlus/tree/REL1_43-2.1.x"
-            },
             "install-path": "../../extensions/VisualEditorPlus"
         },
         {
@@ -5361,13 +5539,13 @@
             "version_normalized": "dev-REL1_43-2.0.x",
             "source": {
                 "type": "git",
-                "url": "https://github.com/wikimedia/mediawiki-extensions-VueJsPlus.git",
-                "reference": "e968ba63935fe2a38b421891ac5bd4856179952d"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-VueJsPlus.git",
+                "reference": "54bec786221008ea7f32594f0b1f80740c0923c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VueJsPlus/zipball/e968ba63935fe2a38b421891ac5bd4856179952d",
-                "reference": "e968ba63935fe2a38b421891ac5bd4856179952d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VueJsPlus/zipball/54bec786221008ea7f32594f0b1f80740c0923c8",
+                "reference": "54bec786221008ea7f32594f0b1f80740c0923c8",
                 "shasum": ""
             },
             "require": {
@@ -5380,7 +5558,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-14T11:21:08+00:00",
+            "time": "2025-07-01T08:31:53+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "VueJsPlus"
@@ -5406,9 +5584,13 @@
             "license": [
                 "GPL-3.0-only"
             ],
-            "support": {
-                "source": "https://github.com/wikimedia/mediawiki-extensions-VueJsPlus/tree/REL1_43-2.0.x"
-            },
+            "authors": [
+                {
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
+                }
+            ],
             "install-path": "../../extensions/VueJsPlus"
         },
         {
@@ -5518,17 +5700,17 @@
         },
         {
             "name": "mwstake/mediawiki-component-alertbanners",
-            "version": "2.0.6",
-            "version_normalized": "2.0.6.0",
+            "version": "2.0.7",
+            "version_normalized": "2.0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-alertbanners.git",
-                "reference": "4f05adeab64082c6fc77baa7e23250190d00ba71"
+                "reference": "b816b8f47c0afff80933d352d727ce0b75e0ee43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-alertbanners/zipball/4f05adeab64082c6fc77baa7e23250190d00ba71",
-                "reference": "4f05adeab64082c6fc77baa7e23250190d00ba71",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-alertbanners/zipball/b816b8f47c0afff80933d352d727ce0b75e0ee43",
+                "reference": "b816b8f47c0afff80933d352d727ce0b75e0ee43",
                 "shasum": ""
             },
             "require": {
@@ -5540,7 +5722,7 @@
                 "php-parallel-lint/php-console-highlighter": "0.5.0",
                 "php-parallel-lint/php-parallel-lint": "1.3.1"
             },
-            "time": "2025-01-14T12:44:08+00:00",
+            "time": "2025-07-02T03:04:27+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5560,29 +5742,29 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides an API for showing banners above the content of a page",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-alertbanners/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-alertbanners/tree/2.0.6"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-alertbanners/tree/2.0.7"
             },
             "install-path": "../mwstake/mediawiki-component-alertbanners"
         },
         {
             "name": "mwstake/mediawiki-component-commonuserinterface",
-            "version": "6.0.0",
-            "version_normalized": "6.0.0.0",
+            "version": "6.0.1",
+            "version_normalized": "6.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-commonuserinterface.git",
-                "reference": "5713ce7ec91749cdb68128360c2411a0f51a75c0"
+                "reference": "9c407489c6428d1be26df325336418a2490409f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-commonuserinterface/zipball/5713ce7ec91749cdb68128360c2411a0f51a75c0",
-                "reference": "5713ce7ec91749cdb68128360c2411a0f51a75c0",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-commonuserinterface/zipball/9c407489c6428d1be26df325336418a2490409f6",
+                "reference": "9c407489c6428d1be26df325336418a2490409f6",
                 "shasum": ""
             },
             "require": {
@@ -5597,7 +5779,7 @@
                 "php-parallel-lint/php-parallel-lint": "1.4.0",
                 "phpunit/phpunit": "^8.5"
             },
-            "time": "2025-05-07T08:38:51+00:00",
+            "time": "2025-07-02T05:11:23+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5617,29 +5799,29 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides common user interface elements and customizeable stylings",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-commonuserinterface/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-commonuserinterface/tree/6.0.0"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-commonuserinterface/tree/6.0.1"
             },
             "install-path": "../mwstake/mediawiki-component-commonuserinterface"
         },
         {
             "name": "mwstake/mediawiki-component-commonwebapis",
-            "version": "3.0.16",
-            "version_normalized": "3.0.16.0",
+            "version": "3.0.20",
+            "version_normalized": "3.0.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis.git",
-                "reference": "612c1866a1eadacbfbb5bcdb8a4585b4f2659a4d"
+                "reference": "24b139ea1fd9ab1e59b6b7411b52bbd34341a940"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-commonwebapis/zipball/612c1866a1eadacbfbb5bcdb8a4585b4f2659a4d",
-                "reference": "612c1866a1eadacbfbb5bcdb8a4585b4f2659a4d",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-commonwebapis/zipball/24b139ea1fd9ab1e59b6b7411b52bbd34341a940",
+                "reference": "24b139ea1fd9ab1e59b6b7411b52bbd34341a940",
                 "shasum": ""
             },
             "require": {
@@ -5648,13 +5830,13 @@
                 "mwstake/mediawiki-componentloader": "~1"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "39.0.0",
-                "mediawiki/minus-x": "1.1.1",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-19T08:35:11+00:00",
+            "time": "2025-07-02T07:59:31+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5674,29 +5856,29 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides various web APIs (Action API and REST)",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/tree/3.0.16"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/tree/3.0.20"
             },
             "install-path": "../mwstake/mediawiki-component-commonwebapis"
         },
         {
             "name": "mwstake/mediawiki-component-contentprovisioner",
-            "version": "3.0.0",
-            "version_normalized": "3.0.0.0",
+            "version": "3.0.1",
+            "version_normalized": "3.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-contentprovisioner.git",
-                "reference": "a90bd0aff27c9207ab0d1ed44d29a05c3a0f3beb"
+                "reference": "493de04b201f99d3e4ca2476b54f9ba1f918ffae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-contentprovisioner/zipball/a90bd0aff27c9207ab0d1ed44d29a05c3a0f3beb",
-                "reference": "a90bd0aff27c9207ab0d1ed44d29a05c3a0f3beb",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-contentprovisioner/zipball/493de04b201f99d3e4ca2476b54f9ba1f918ffae",
+                "reference": "493de04b201f99d3e4ca2476b54f9ba1f918ffae",
                 "shasum": ""
             },
             "require": {
@@ -5711,7 +5893,7 @@
                 "php-parallel-lint/php-parallel-lint": "1.4.0",
                 "phpunit/phpunit": "^8.5"
             },
-            "time": "2025-04-01T06:22:05+00:00",
+            "time": "2025-07-02T05:38:55+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5731,29 +5913,29 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides classes and services to import content into MediaWiki",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-contentprovisioner/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-contentprovisioner/tree/3.0.0"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-contentprovisioner/tree/3.0.1"
             },
             "install-path": "../mwstake/mediawiki-component-contentprovisioner"
         },
         {
             "name": "mwstake/mediawiki-component-datastore",
-            "version": "2.0.0",
-            "version_normalized": "2.0.0.0",
+            "version": "2.0.1",
+            "version_normalized": "2.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-datastore.git",
-                "reference": "ebb4a6224fd89bd8ebe347733da04d2b1cf8de65"
+                "reference": "3963ca275df53c3e05959e05344a7b2f133033d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-datastore/zipball/ebb4a6224fd89bd8ebe347733da04d2b1cf8de65",
-                "reference": "ebb4a6224fd89bd8ebe347733da04d2b1cf8de65",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-datastore/zipball/3963ca275df53c3e05959e05344a7b2f133033d5",
+                "reference": "3963ca275df53c3e05959e05344a7b2f133033d5",
                 "shasum": ""
             },
             "require-dev": {
@@ -5763,7 +5945,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-07T08:45:42+00:00",
+            "time": "2025-07-02T06:04:35+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5783,29 +5965,29 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "datastore",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-datastore/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-datastore/tree/2.0.0"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-datastore/tree/2.0.1"
             },
             "install-path": "../mwstake/mediawiki-component-datastore"
         },
         {
             "name": "mwstake/mediawiki-component-dynamicconfig",
-            "version": "2.0.1",
-            "version_normalized": "2.0.1.0",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hallowelt/mwstake-mediawiki-component-dynamicconfig.git",
-                "reference": "7b862358664ea3b44b3bc1f82d1a38cc77f2196a"
+                "url": "git@github.com:hallowelt/mwstake-mediawiki-component-dynamicconfig.git",
+                "reference": "428376b2fc60cfc089ba73fdda9f23db629ea51a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-dynamicconfig/zipball/7b862358664ea3b44b3bc1f82d1a38cc77f2196a",
-                "reference": "7b862358664ea3b44b3bc1f82d1a38cc77f2196a",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-dynamicconfig/zipball/428376b2fc60cfc089ba73fdda9f23db629ea51a",
+                "reference": "428376b2fc60cfc089ba73fdda9f23db629ea51a",
                 "shasum": ""
             },
             "require": {
@@ -5814,12 +5996,12 @@
             },
             "require-dev": {
                 "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
                 "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.4.0",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-04-15T05:58:32+00:00",
+            "time": "2025-07-02T06:50:36+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5832,17 +6014,20 @@
                 ]
             },
             "scripts": {
-                "phpunit": [
-                    "php ../../../tests/phpunit/phpunit.php -c .phpunit.xml"
-                ],
                 "test": [
                     "parallel-lint . --exclude vendor --exclude node_modules",
-                    "minus-x check .",
-                    "phpcs -sp"
+                    "@phpcs",
+                    "minus-x check ."
                 ],
                 "fix": [
                     "minus-x fix .",
                     "phpcbf"
+                ],
+                "phan": [
+                    "phan -d . --long-progress-bar"
+                ],
+                "phpcs": [
+                    "phpcs -sp --cache"
                 ]
             },
             "license": [
@@ -5852,29 +6037,25 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Dynamic config manager",
-            "support": {
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-dynamicconfig/tree/2.0.1",
-                "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-dynamicconfig/issues"
-            },
             "install-path": "../mwstake/mediawiki-component-dynamicconfig"
         },
         {
             "name": "mwstake/mediawiki-component-dynamicfiledispatcher",
-            "version": "1.0.1",
-            "version_normalized": "1.0.1.0",
+            "version": "1.0.2",
+            "version_normalized": "1.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-dynamicfiledispatcher.git",
-                "reference": "bf5ce280dbe2a6c7092c00c017d3072a0556a298"
+                "reference": "5fcef38393099798429220f73cb8d7f8ea31549e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-dynamicfiledispatcher/zipball/bf5ce280dbe2a6c7092c00c017d3072a0556a298",
-                "reference": "bf5ce280dbe2a6c7092c00c017d3072a0556a298",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-dynamicfiledispatcher/zipball/5fcef38393099798429220f73cb8d7f8ea31549e",
+                "reference": "5fcef38393099798429220f73cb8d7f8ea31549e",
                 "shasum": ""
             },
             "require": {
@@ -5882,13 +6063,13 @@
                 "mwstake/mediawiki-componentloader": "~1"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "39.0.0",
-                "mediawiki/minus-x": "1.1.1",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2024-11-28T10:07:24+00:00",
+            "time": "2025-07-02T07:02:45+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5906,30 +6087,31 @@
             ],
             "authors": [
                 {
-                    "name": "BlueSpice",
-                    "email": "support@bluespice.com"
+                    "name": "Hallo Welt! GmbH",
+                    "email": "info@hallowelt.com",
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides a new entrypoint to serve dynamically created files",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-dynamicfiledispatcher/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-dynamicfiledispatcher/tree/1.0.1"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-dynamicfiledispatcher/tree/1.0.2"
             },
             "install-path": "../mwstake/mediawiki-component-dynamicfiledispatcher"
         },
         {
             "name": "mwstake/mediawiki-component-events",
-            "version": "4.0.1",
-            "version_normalized": "4.0.1.0",
+            "version": "4.0.2",
+            "version_normalized": "4.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-events.git",
-                "reference": "61a738bdb25115fea194139a618fa4a418203a14"
+                "reference": "eb613066d61f34918bf83f059a5fc31a6f3467a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-events/zipball/61a738bdb25115fea194139a618fa4a418203a14",
-                "reference": "61a738bdb25115fea194139a618fa4a418203a14",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-events/zipball/eb613066d61f34918bf83f059a5fc31a6f3467a6",
+                "reference": "eb613066d61f34918bf83f059a5fc31a6f3467a6",
                 "shasum": ""
             },
             "require": {
@@ -5941,10 +6123,9 @@
                 "mediawiki/mediawiki-phan-config": "0.14.0",
                 "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.4.0",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-13T11:38:17+00:00",
+            "time": "2025-07-02T07:19:02+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5964,29 +6145,29 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Mechanism for firing events",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-events/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-events/tree/4.0.1"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-events/tree/4.0.2"
             },
             "install-path": "../mwstake/mediawiki-component-events"
         },
         {
             "name": "mwstake/mediawiki-component-formengine",
-            "version": "3.0.6",
-            "version_normalized": "3.0.6.0",
+            "version": "3.0.8",
+            "version_normalized": "3.0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-formengine.git",
-                "reference": "7dbfea1ca982121fbcf501195eaab3328dbd2155"
+                "reference": "bf565c2aa24162ebf15548ed23a0f669b41118d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-formengine/zipball/7dbfea1ca982121fbcf501195eaab3328dbd2155",
-                "reference": "7dbfea1ca982121fbcf501195eaab3328dbd2155",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-formengine/zipball/bf565c2aa24162ebf15548ed23a0f669b41118d4",
+                "reference": "bf565c2aa24162ebf15548ed23a0f669b41118d4",
                 "shasum": ""
             },
             "require": {
@@ -5994,13 +6175,13 @@
                 "mwstake/mediawiki-componentloader": "~1"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "41.0.0",
-                "mediawiki/minus-x": "1.1.1",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-21T12:56:07+00:00",
+            "time": "2025-07-02T08:58:13+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6020,41 +6201,41 @@
                 {
                     "name": "Hallo Welt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-formengine/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-formengine/tree/3.0.6"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-formengine/tree/3.0.8"
             },
             "install-path": "../mwstake/mediawiki-component-formengine"
         },
         {
             "name": "mwstake/mediawiki-component-inputprocessor",
-            "version": "1.1.2",
-            "version_normalized": "1.1.2.0",
+            "version": "1.1.3",
+            "version_normalized": "1.1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-inputprocessor.git",
-                "reference": "946fe7d47f75036d9dc02a194e29666330868ead"
+                "reference": "4baa74c29f9552acb22a47edc53c61e497e900a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-inputprocessor/zipball/946fe7d47f75036d9dc02a194e29666330868ead",
-                "reference": "946fe7d47f75036d9dc02a194e29666330868ead",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-inputprocessor/zipball/4baa74c29f9552acb22a47edc53c61e497e900a4",
+                "reference": "4baa74c29f9552acb22a47edc53c61e497e900a4",
                 "shasum": ""
             },
             "require": {
                 "mwstake/mediawiki-componentloader": "~1"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "41.0.0",
-                "mediawiki/mediawiki-phan-config": "0.12.1",
-                "mediawiki/minus-x": "1.1.1",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.2"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-28T10:01:27+00:00",
+            "time": "2025-07-02T09:11:02+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6074,28 +6255,28 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-inputprocessor/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-inputprocessor/tree/1.1.2"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-inputprocessor/tree/1.1.3"
             },
             "install-path": "../mwstake/mediawiki-component-inputprocessor"
         },
         {
             "name": "mwstake/mediawiki-component-manifestregistry",
-            "version": "3.0.0",
-            "version_normalized": "3.0.0.0",
+            "version": "3.0.1",
+            "version_normalized": "3.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-manifestregistry.git",
-                "reference": "300c3457610b71c1266eaa805365173e654e3362"
+                "reference": "6212b6f0221c9d7f8b5d9f48d0f5ac910cc2c72a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-manifestregistry/zipball/300c3457610b71c1266eaa805365173e654e3362",
-                "reference": "300c3457610b71c1266eaa805365173e654e3362",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-manifestregistry/zipball/6212b6f0221c9d7f8b5d9f48d0f5ac910cc2c72a",
+                "reference": "6212b6f0221c9d7f8b5d9f48d0f5ac910cc2c72a",
                 "shasum": ""
             },
             "require": {
@@ -6108,7 +6289,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-05-07T08:52:14+00:00",
+            "time": "2025-07-02T09:13:45+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6128,29 +6309,29 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides classes and services to interact with registries in MediaWiki manifests",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-manifestregistry/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-manifestregistry/tree/3.0.0"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-manifestregistry/tree/3.0.1"
             },
             "install-path": "../mwstake/mediawiki-component-manifestregistry"
         },
         {
             "name": "mwstake/mediawiki-component-processmanager",
-            "version": "3.1.1",
-            "version_normalized": "3.1.1.0",
+            "version": "3.1.2",
+            "version_normalized": "3.1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-processmanager.git",
-                "reference": "904e5f72d0c134aa4c90406d6ed5fb0949c13096"
+                "reference": "d52848066a8f6663f49ed40c243a197724358870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-processmanager/zipball/904e5f72d0c134aa4c90406d6ed5fb0949c13096",
-                "reference": "904e5f72d0c134aa4c90406d6ed5fb0949c13096",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-processmanager/zipball/d52848066a8f6663f49ed40c243a197724358870",
+                "reference": "d52848066a8f6663f49ed40c243a197724358870",
                 "shasum": ""
             },
             "require": {
@@ -6160,13 +6341,13 @@
                 "symfony/process": "~5"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "39.0.0",
-                "mediawiki/minus-x": "1.1.1",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-03-27T12:03:14+00:00",
+            "time": "2025-07-02T10:06:01+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6186,29 +6367,29 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides a management system for background processes",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-processmanager/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-processmanager/tree/3.1.1"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-processmanager/tree/3.1.2"
             },
             "install-path": "../mwstake/mediawiki-component-processmanager"
         },
         {
             "name": "mwstake/mediawiki-component-runjobstrigger",
-            "version": "2.0.3",
-            "version_normalized": "2.0.3.0",
+            "version": "2.0.4",
+            "version_normalized": "2.0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-runjobstrigger.git",
-                "reference": "51dee04e8ddb0f8f17ac26396814ed78e4bdbabe"
+                "reference": "cadff096fb98cbe016ee68848f65232c3ffd4b98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-runjobstrigger/zipball/51dee04e8ddb0f8f17ac26396814ed78e4bdbabe",
-                "reference": "51dee04e8ddb0f8f17ac26396814ed78e4bdbabe",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-runjobstrigger/zipball/cadff096fb98cbe016ee68848f65232c3ffd4b98",
+                "reference": "cadff096fb98cbe016ee68848f65232c3ffd4b98",
                 "shasum": ""
             },
             "require": {
@@ -6222,7 +6403,7 @@
                 "php-parallel-lint/php-parallel-lint": "1.3.2",
                 "phpunit/phpunit": "^8.5"
             },
-            "time": "2024-08-22T05:54:15+00:00",
+            "time": "2025-07-02T10:11:33+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6242,42 +6423,42 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides background tasks infrastructure based on MediaWikis `maintenance/runJobs.php`",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-runjobstrigger/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-runjobstrigger/tree/2.0.3"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-runjobstrigger/tree/2.0.4"
             },
             "install-path": "../mwstake/mediawiki-component-runjobstrigger"
         },
         {
             "name": "mwstake/mediawiki-component-utils",
-            "version": "3.0.1",
-            "version_normalized": "3.0.1.0",
+            "version": "3.0.2",
+            "version_normalized": "3.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-utils.git",
-                "reference": "adca79be446de2d4a84e4ce63527b513e730849f"
+                "reference": "251fe73d9d204a623d9ecbabb1f9c7a830bbe2e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-utils/zipball/adca79be446de2d4a84e4ce63527b513e730849f",
-                "reference": "adca79be446de2d4a84e4ce63527b513e730849f",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-utils/zipball/251fe73d9d204a623d9ecbabb1f9c7a830bbe2e9",
+                "reference": "251fe73d9d204a623d9ecbabb1f9c7a830bbe2e9",
                 "shasum": ""
             },
             "require": {
                 "mwstake/mediawiki-componentloader": "~1"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "41.0.0",
-                "mediawiki/minus-x": "1.1.1",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-02-25T08:10:31+00:00",
+            "time": "2025-07-03T03:27:36+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6297,28 +6478,28 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-utils/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-utils/tree/3.0.1"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-utils/tree/3.0.2"
             },
             "install-path": "../mwstake/mediawiki-component-utils"
         },
         {
             "name": "mwstake/mediawiki-component-wikicron",
-            "version": "1.0.6",
-            "version_normalized": "1.0.6.0",
+            "version": "1.0.7",
+            "version_normalized": "1.0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-wikicron.git",
-                "reference": "d46bff9acc6af461c4ca2400bf42d46d1593b9d6"
+                "reference": "c9584e37428c3fc9132505f6d1a179a2d9b7cf4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-wikicron/zipball/d46bff9acc6af461c4ca2400bf42d46d1593b9d6",
-                "reference": "d46bff9acc6af461c4ca2400bf42d46d1593b9d6",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-wikicron/zipball/c9584e37428c3fc9132505f6d1a179a2d9b7cf4c",
+                "reference": "c9584e37428c3fc9132505f6d1a179a2d9b7cf4c",
                 "shasum": ""
             },
             "require": {
@@ -6329,12 +6510,12 @@
             },
             "require-dev": {
                 "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
                 "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.4.0",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-03-24T14:31:01+00:00",
+            "time": "2025-07-03T03:49:09+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6354,35 +6535,35 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Cron manager for MediaWiki",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-wikicron/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-wikicron/tree/1.0.6"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-wikicron/tree/1.0.7"
             },
             "install-path": "../mwstake/mediawiki-component-wikicron"
         },
         {
             "name": "mwstake/mediawiki-component-wikitext",
-            "version": "7.0.0",
-            "version_normalized": "7.0.0.0",
+            "version": "7.0.2",
+            "version_normalized": "7.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-wikitext.git",
-                "reference": "c0f91284d08b1fc37d8688a97334e5357b1961ec"
+                "reference": "84d3702c4afa7b1f08f95793dbcd5eb1c474a3af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-wikitext/zipball/c0f91284d08b1fc37d8688a97334e5357b1961ec",
-                "reference": "c0f91284d08b1fc37d8688a97334e5357b1961ec",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-wikitext/zipball/84d3702c4afa7b1f08f95793dbcd5eb1c474a3af",
+                "reference": "84d3702c4afa7b1f08f95793dbcd5eb1c474a3af",
                 "shasum": ""
             },
             "require": {
                 "mwstake/mediawiki-component-manifestregistry": "~3.0",
                 "mwstake/mediawiki-componentloader": "~1",
-                "mwstake/mediawiki-lib-nodes": "~1.0"
+                "mwstake/mediawiki-lib-nodes": "~2"
             },
             "require-dev": {
                 "mediawiki/mediawiki-codesniffer": "45.0.0",
@@ -6391,7 +6572,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-03T07:31:02+00:00",
+            "time": "2025-07-03T03:51:05+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6410,13 +6591,13 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides wikitext handling and tree parsing",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-wikitext/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-wikitext/tree/7.0.0"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-wikitext/tree/7.0.2"
             },
             "install-path": "../mwstake/mediawiki-component-wikitext"
         },
@@ -6473,27 +6654,27 @@
         },
         {
             "name": "mwstake/mediawiki-lib-nodes",
-            "version": "1.0.10",
-            "version_normalized": "1.0.10.0",
+            "version": "2.0.1",
+            "version_normalized": "2.0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-lib-nodes.git",
-                "reference": "dc787aaf48969b89274849b39dfec2466a21de11"
+                "reference": "9eb520dfc064b222a4acbd2874462bb2ede5b841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-lib-nodes/zipball/dc787aaf48969b89274849b39dfec2466a21de11",
-                "reference": "dc787aaf48969b89274849b39dfec2466a21de11",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-lib-nodes/zipball/9eb520dfc064b222a4acbd2874462bb2ede5b841",
+                "reference": "9eb520dfc064b222a4acbd2874462bb2ede5b841",
                 "shasum": ""
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "39.0.0",
-                "mediawiki/minus-x": "1.1.1",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
-                "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpunit/phpunit": "^8.5"
+                "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2024-08-22T05:49:17+00:00",
+            "time": "2025-07-03T04:05:24+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6509,13 +6690,13 @@
                 {
                     "name": "HalloWelt! GmbH",
                     "email": "info@hallowelt.com",
-                    "homepage": "http://www.hallowelt.com"
+                    "homepage": "https://www.hallowelt.com"
                 }
             ],
             "description": "Provides an infrastructure to tokenize content into nodes",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-lib-nodes/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-lib-nodes/tree/1.0.10"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-lib-nodes/tree/2.0.1"
             },
             "install-path": "../mwstake/mediawiki-lib-nodes"
         },
@@ -7262,17 +7443,17 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.29.10",
-            "version_normalized": "1.29.10.0",
+            "version": "1.29.11",
+            "version_normalized": "1.29.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "c80041b1628c4f18030407134fe88303661d4e4e"
+                "reference": "05b6c4378ddf3e81b460ea645c42b46432c0db25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/c80041b1628c4f18030407134fe88303661d4e4e",
-                "reference": "c80041b1628c4f18030407134fe88303661d4e4e",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/05b6c4378ddf3e81b460ea645c42b46432c0db25",
+                "reference": "05b6c4378ddf3e81b460ea645c42b46432c0db25",
                 "shasum": ""
             },
             "require": {
@@ -7319,7 +7500,7 @@
                 "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
                 "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
             },
-            "time": "2025-02-08T02:56:14+00:00",
+            "time": "2025-06-23T01:22:06+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -7365,7 +7546,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.10"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.11"
             },
             "install-path": "../phpoffice/phpspreadsheet"
         },
@@ -8045,168 +8226,6 @@
             "install-path": "../symfony/filesystem"
         },
         {
-            "name": "symfony/polyfill-php80",
-            "version": "v1.31.0",
-            "version_normalized": "1.31.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
-                "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "time": "2024-09-09T11:45:10+00:00",
-            "type": "library",
-            "extra": {
-                "thanks": {
-                    "url": "https://github.com/symfony/polyfill",
-                    "name": "symfony/polyfill"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
-                "classmap": [
-                    "Resources/stubs"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ion Bazan",
-                    "email": "ion.bazan@gmail.com"
-                },
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.31.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/polyfill-php80"
-        },
-        {
-            "name": "symfony/polyfill-php81",
-            "version": "v1.31.0",
-            "version_normalized": "1.31.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php81.git",
-                "reference": "4a4cfc2d253c21a5ad0e53071df248ed48c6ce5c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/4a4cfc2d253c21a5ad0e53071df248ed48c6ce5c",
-                "reference": "4a4cfc2d253c21a5ad0e53071df248ed48c6ce5c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "time": "2024-09-09T11:45:10+00:00",
-            "type": "library",
-            "extra": {
-                "thanks": {
-                    "url": "https://github.com/symfony/polyfill",
-                    "name": "symfony/polyfill"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php81\\": ""
-                },
-                "classmap": [
-                    "Resources/stubs"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php81/tree/v1.31.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/polyfill-php81"
-        },
-        {
             "name": "symfony/polyfill-php82",
             "version": "v1.31.0",
             "version_normalized": "1.31.0.0",
@@ -8509,30 +8528,30 @@
         },
         {
             "name": "universal-omega/dynamic-page-list3",
-            "version": "3.6.2",
-            "version_normalized": "3.6.2.0",
+            "version": "3.6.4",
+            "version_normalized": "3.6.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Universal-Omega/DynamicPageList3.git",
-                "reference": "5022ef2cd8faf06ccb3257f570247820e2fe0383"
+                "url": "git@github.com:Universal-Omega/DynamicPageList3.git",
+                "reference": "db57791cd0a822f4bc55eb9edc4a6e6c53d24342"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Universal-Omega/DynamicPageList3/zipball/5022ef2cd8faf06ccb3257f570247820e2fe0383",
-                "reference": "5022ef2cd8faf06ccb3257f570247820e2fe0383",
+                "url": "https://api.github.com/repos/Universal-Omega/DynamicPageList3/zipball/db57791cd0a822f4bc55eb9edc4a6e6c53d24342",
+                "reference": "db57791cd0a822f4bc55eb9edc4a6e6c53d24342",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": ">=1.0.1"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "46.0.0",
-                "mediawiki/mediawiki-phan-config": "0.15.1",
+                "mediawiki/mediawiki-codesniffer": "47.0.0",
+                "mediawiki/mediawiki-phan-config": "0.16.0",
                 "mediawiki/minus-x": "1.1.3",
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-03-25T17:23:37+00:00",
+            "time": "2025-07-09T23:31:51+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -8557,16 +8576,6 @@
             ],
             "description": "The DynamicPageList3 extension allows creating lists of other articles based on their category, namespace, title, references or template usage and include contents or arguments of template calls of those articles into your page.",
             "homepage": "https://www.mediawiki.org/wiki/Extension:DynamicPageList3",
-            "support": {
-                "source": "https://github.com/Universal-Omega/DynamicPageList3/tree/3.6.2",
-                "issues": "https://github.com/Universal-Omega/DynamicPageList3/issues"
-            },
-            "funding": [
-                {
-                    "type": "github",
-                    "url": "https://github.com/Universal-Omega"
-                }
-            ],
             "install-path": "../../extensions/DynamicPageList3"
         },
         {
@@ -9570,17 +9579,17 @@
         },
         {
             "name": "wikimedia/parsoid",
-            "version": "v0.20.2",
-            "version_normalized": "0.20.2.0",
+            "version": "v0.20.3",
+            "version_normalized": "0.20.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikimedia/mediawiki-services-parsoid.git",
-                "reference": "7b69b27dfa01f9180f4652e221ecd651e95c76ab"
+                "reference": "c31cc6f74c422926bae5f2d0e19b6b7ccaf053fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-services-parsoid/zipball/7b69b27dfa01f9180f4652e221ecd651e95c76ab",
-                "reference": "7b69b27dfa01f9180f4652e221ecd651e95c76ab",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-services-parsoid/zipball/c31cc6f74c422926bae5f2d0e19b6b7ccaf053fa",
+                "reference": "c31cc6f74c422926bae5f2d0e19b6b7ccaf053fa",
                 "shasum": ""
             },
             "require": {
@@ -9599,7 +9608,7 @@
                 "wikimedia/ip-utils": "^5.0.0",
                 "wikimedia/json-codec": "^3.0.1",
                 "wikimedia/object-factory": "^5.0.1",
-                "wikimedia/remex-html": "^4.0.1",
+                "wikimedia/remex-html": "4.1.1",
                 "wikimedia/scoped-callback": "^4.0.0 || ^5.0.0",
                 "wikimedia/wikipeg": "^4.0.0",
                 "wikimedia/zest-css": "^3.0.1"
@@ -9626,7 +9635,7 @@
             "suggest": {
                 "wikimedia/langconv": "Provides script conversion support"
             },
-            "time": "2025-03-06T02:32:43+00:00",
+            "time": "2025-06-03T22:33:21+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -9652,7 +9661,7 @@
             ],
             "support": {
                 "irc": "irc://irc.libera.chat/mediawiki-parsoid",
-                "source": "https://github.com/wikimedia/mediawiki-services-parsoid/tree/v0.20.2",
+                "source": "https://github.com/wikimedia/mediawiki-services-parsoid/tree/v0.20.3",
                 "wiki": "https://www.mediawiki.org/wiki/Parsoid"
             },
             "install-path": "../wikimedia/parsoid"
@@ -10516,8 +10525,8 @@
         },
         {
             "name": "wikimedia/zest-css",
-            "version": "3.0.2",
-            "version_normalized": "3.0.2.0",
+            "version": "3.0.4",
+            "version_normalized": "3.0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikimedia/mediawiki-libs-Zest.git",
@@ -10579,7 +10588,7 @@
                 "selector"
             ],
             "support": {
-                "source": "https://github.com/wikimedia/mediawiki-libs-Zest/tree/3.0.2"
+                "source": "https://github.com/wikimedia/mediawiki-libs-Zest/tree/3.0.4"
             },
             "install-path": "../wikimedia/zest-css"
         },

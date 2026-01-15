@@ -5,6 +5,7 @@
 			"850710247liu",
 			"A Chinese Wikipedian",
 			"AYZ04",
+			"Aoum",
 			"CrownedWharf566",
 			"Evesiesta",
 			"Jbyccc",
@@ -73,5 +74,6 @@
 	"bs-statistics-ve-progress-attr-progressitem-help": "正文中出现的文本定义进度",
 	"bs-statistics-ve-progress-attr-width-label": "宽度",
 	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）",
-	"bs-statistics-droplet-progress-name": "进度"
+	"bs-statistics-droplet-progress-name": "进度",
+	"apihelp-query+statistics-reports-param-aggregate": "是否聚合统计数据"
 }

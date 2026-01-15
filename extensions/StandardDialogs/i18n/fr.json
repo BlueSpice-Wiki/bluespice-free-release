@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"JLTRY",
 			"Terio legale",
 			"Verdy p",
 			"Wladek92"
@@ -60,5 +61,6 @@
 	"standarddialogs-page-info-page-no-templates-label": "Cette page ne contient aucun modèle",
 	"standarddialogs-page-info-page-no-categories-label": "Cette page ne contient aucune catégorie",
 	"standarddialogs-page-info-page-no-links-label": "Cette page ne contient aucun lien",
-	"standarddialogs-page-info-page-no-extlinks-label": "Cette page ne contient aucun lien externe"
+	"standarddialogs-page-info-page-no-extlinks-label": "Cette page ne contient aucun lien externe",
+	"standarddialogs-validation-page-exist-info-label": "Une page avec ce nom existe déjà. Veuillez en choisir un autre."
 }

@@ -271,7 +271,8 @@
 			"Bunnypranav",
 			"Qwrop",
 			"Aca",
-			"Foomin10"
+			"Foomin10",
+			"codeofdusk"
 		]
 	},
 	"sidebar": "{{notranslate}}",
@@ -906,7 +907,7 @@
 	"showpreview": "The text of the button to preview the page you are editing. See also {{msg-mw|showdiff}}, {{msg-mw|savearticle}} and {{msg-mw|Publishchanges}} for the other buttons.\n\nSee also:\n* {{msg-mw|Showpreview}}\n* {{msg-mw|Accesskey-preview}}\n* {{msg-mw|Tooltip-preview}}\n{{Identical|Show preview}}",
 	"showdiff": "Button below the edit page. See also {{msg-mw|Showpreview}} and {{msg-mw|Savearticle}} for the other buttons.\n\nSee also:\n* {{msg-mw|Showdiff}}\n* {{msg-mw|Accesskey-diff}}\n* {{msg-mw|Tooltip-diff}}\n{{Identical|Show change}}",
 	"tempuser-helppage": "{{notranslate}}\nDefines a link to the documentation page for temporary accounts.",
-	"temp-user-banner-description": "The text on the banner that informs users that they are editing with a temporary arrount",
+	"temp-user-banner-description": "The text on the banner that informs users that they are editing with a temporary account. After this message, there is {{msg-mw|colon-separator}} and a temporary account name. See https://phabricator.wikimedia.org/T398443",
 	"temp-user-banner-tooltip-label": "Accessible label for the tooltip toggle.",
 	"temp-user-banner-tooltip-title": "The title of the tooltip that explains what a temporary account is.",
 	"temp-user-banner-tooltip-description-expiration-soon": "First paragraph of the temporary user expiration alert tooltip. Explains the temporary account expiration is scheduled in the near future.\n\nParameters:\n* $1 - the number of days until the temporary account will be expired",
@@ -4758,12 +4759,6 @@
 	"newpages-showhide-patrolled": "Option text in [[Special:NewPages]]. Parameters:\n* $1 - the \"show/hide\" command, with the text taken from either {{msg-mw|show}} or {{msg-mw|hide}}",
 	"newpages-showhide-redirect": "Option text in [[Special:NewPages]]. Parameters:\n* $1 - the \"show/hide\" command, with the text taken from either {{msg-mw|show}} or {{msg-mw|hide}}",
 	"newpages-showhide-registered": "Option text in [[Special:NewPages]]. Parameters:\n* $1 - the \"show/hide\" command, with the text taken from either {{msg-mw|show}} or {{msg-mw|hide}}",
-	"restsandbox": "Title of Special:RestSandbox, also shown in the listing of special pages",
-	"restsandbox-text": "Message shown at the top of Special:RestSandbox.",
-	"restsandbox-select-api": "Message shown at the top of Special:RestSandbox, next to the selector for choosing an API.",
-	"restsandbox-no-specs-configured": "Message shown on Special:RestSandbox when no API specs have been configured.",
-	"restsandbox-no-such-api": "Message shown on Special:RestSandbox when an unknown API is requested. \n\nParameters: $1 - The unknown API identifier",
-	"restsandbox-jsonly": "Message shown on Special:RestSandbox if the browser has JavaScript disabled.",
 	"blockedtext-made-by": "Used as component for a block error message. $1 - the blocking sysop (with a link to their user page if they are a local user)",
 	"blockedtext-reason-comment": "Used as component for a block error message. $1 - the reason for the block",
 	"blockedtext-start-time": "Used as component for a block error message. $1 - the timestamp when the block started",

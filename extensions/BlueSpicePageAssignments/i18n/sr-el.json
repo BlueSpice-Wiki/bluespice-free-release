@@ -6,5 +6,8 @@
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpice dodele stranicama — Dodeljeno {{PLURAL:$2|stranici|stranicama}}: $1",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Broj stranica",
 	"bs-pageassignments-notification-pagereview-summary": "$1 je pregledao $3",
-	"bs-pageassignments-notification-pagereview-body": "$1 je pregledao stranicu $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 je pregledao stranicu $2.",
+	"bs-pageassignments-column-assignee-type": "Tip",
+	"bs-pageassignments-notification-ui-subscriptionset-assigned-pages": "Dodeljene stranice",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Dodeli"
 }

@@ -14,7 +14,7 @@
 	"bs-interwikilinks-link-created": "ウィキ間リンクを作成しました。",
 	"bs-interwikilinks-link-added": "ウィキ間リンクを追加しました。",
 	"bs-interwikilinks-link-deleted": "ウィキ間リンクを削除しました。",
-	"bs-interwikilinks-nooldpfx": "前のプレフィックスが見つかりませんでした。",
+	"bs-interwikilinks-nooldpfx": "前の接頭辞が見つかりませんでした。",
 	"bs-interwikilinks-nopfx": "接頭辞を指定してください。",
 	"bs-interwikilinks-nourl": "URL を指定してください。",
 	"bs-interwikilinks-pfxtoolong": "接頭辞が長すぎます。最長でも32文字にしてください。",

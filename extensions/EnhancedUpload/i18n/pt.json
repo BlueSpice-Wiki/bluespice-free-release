@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
+			"Mansil alfalb",
 			"Mbs262"
 		]
 	},
@@ -68,5 +69,7 @@
 	"enhancedupload-attachments-confirm-remove": "Remover o ficheiro \"$1\" da lista?",
 	"enhancedupload-tab-updated-upload": "Ficheiros carregados",
 	"enhancedupload-updated-dialog-label": "O ficheiro \"$1\" foi atualizado",
-	"enhancedupload-finished-dialog-action-close": "Fechar"
+	"enhancedupload-finished-dialog-action-close": "Fechar",
+	"enhancedupload-ve-file-dialog-title": "Ficheiro",
+	"enhancedupload-ve-file-dialog-filename-label": "Nome do ficheiro"
 }

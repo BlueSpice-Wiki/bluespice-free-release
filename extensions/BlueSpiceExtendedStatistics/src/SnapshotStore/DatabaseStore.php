@@ -36,7 +36,7 @@ class DatabaseStore implements ISnapshotStore {
 	 * @inheritDoc
 	 */
 	public function getSnapshotForRange(
-		SnapshotDateRange $range, $type = null, $interval = 'day'
+		SnapshotDateRange $range, $type = null, $interval = Snapshot::INTERVAL_DAY
 	): array {
 		return $this->forRange( $range )->forType( $type )->forInterval( $interval )->query();
 	}

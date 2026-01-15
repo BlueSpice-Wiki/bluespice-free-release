@@ -1,0 +1,140 @@
+<div>
+<form name="ime" action="" class="mw-ui-vform">
+    <fieldset class="ime-fieldset">
+        <legend>{{imagemapedit-display-interface}}</legend>
+        <fieldset class="ime-fieldset ime-fieldset-halfwidth">
+            <legend>{{imagemapedit-newarea}}</legend>
+            <a href="" data-handler-type="click" data-handler-name="ime_newArea" data-handler-args="[&#34;rect&#34;]">{{imagemapedit-rect}}</a>
+            <br />
+            <a href="" data-handler-type="click" data-handler-name="ime_newArea" data-handler-args="[&#34;circle&#34;]">{{imagemapedit-circle}}</a>
+
+            <br />
+            <a href="" data-handler-type="click" data-handler-name="ime_newArea" data-handler-args="[&#34;poly&#34;]">{{imagemapedit-poly}}</a>
+        </fieldset>
+        <fieldset class="ime-fieldset ime-fieldset-halfwidth">
+            <legend>{{imagemapedit-editarea}}</legend>
+            <select name="area" size="10"></select>
+            <div id="imeProps" style="display:none">
+                <div>
+                    <label for="ime_areaLink">{{imagemapedit-linktarget}}</label>
+                    <br />
+                    <input id="ime_areaLink" name="areaLink" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+                    <br />
+
+                    <label for="ime_areaTitle"><span>{{imagemapedit-linktitle}}</span> (<span>{{imagemapedit-optional}}</span>)</label>
+                    <br />
+                    <input id="ime_areaTitle" name="areaTitle" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+                </div>
+                <div id="imePropsRect" style="display:none">
+                    <label for="ime_areaRectLeft">{{imagemapedit-rectleft}}</label>/<label for="ime_areaRectTop">{{imagemapedit-recttop}}</label>
+                    <br />
+                    <input id="ime_areaRectLeft" name="areaRectLeft" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+                    <input id="ime_areaRectTop" name="areaRectTop" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+
+                    <span>{{imagemapedit-rectchoose1}}</span>
+                    <br/>
+                    <label for="ime_areaRectRight">{{imagemapedit-rectright}}</label>/<label for="ime_areaRectBottom">{{imagemapedit-rectbottom}}</label>
+                    <br />
+                    <input id="ime_areaRectRight" name="areaRectRight" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+                    <input id="ime_areaRectBottom" name="areaRectBottom" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+                    <span>{{imagemapedit-rectchoose2}}</span>
+                </div>
+                <div id="imePropsCircle" style="display:none">
+                    <label>{{imagemapedit-position}}</label>
+                    <br />
+                    <input name="areaCircleX" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+                    <input name="areaCircleY" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+                    <span>{{imagemapedit-circlechoose1}}</span>
+                    <br />
+
+                    <label for="ime_areaCircleRadius">{{imagemapedit-radius}}</label>
+                    <br />
+                    <input id="ime_areaCircleRadius" name="areaCircleRadius" data-handler-type="change" data-handler-name="ime_saveArea" data-handler-args="[]" />
+                    <span>{{imagemapedit-circlechoose2}}</span>
+                </div>
+                <div id="imePropsPoly" style="display:none">
+                    <label>{{imagemapedit-coordinates}}</label>
+
+                    <br />
+                    <p id="imePropsPolyCoords"></p>
+                    <a href="" data-handler-type="click" data-handler-name="ime_deletePolyCoords" data-handler-args="[]">{{imagemapedit-deletecoordinates}}</a>
+                    <br />
+                    <span>{{imagemapedit-polychoose}}</span>
+                </div>
+                <div style="clear:both"></div>
+                <a href="" data-handler-type="click" data-handler-name="ime_deleteArea" data-handler-args="[]">{{imagemapedit-deletearea}}</a>
+
+            </div>
+            <div style="clear:both"></div>
+        </fieldset>
+        <div style="clear:both"></div>
+        <fieldset class="ime-fieldset ime-fieldset-div-floatleft">
+            <legend>{{imagemapedit-preferences}}</legend>
+            <div>
+                <label for="ime_imageDescription">{{imagemapedit-imagedescription}}</label>
+                <br />
+                <input id="ime_imageDescription" name="imageDescription" data-handler-type="change" data-handler-name="ime_updateResult" data-handler-args="[]" />
+                <br />
+                <label for="ime_imageAltText">{{imagemapedit-imagealttext}}</label>
+                <br />
+                <input id="ime_imageAltText" name="imageAltText" data-handler-type="change" data-handler-name="ime_updateResult" data-handler-args="[]" />
+            </div>
+            <div>
+                <label for="ime_imageDescriptionPos">{{imagemapedit-infolinkposition}}</label>
+                <br />
+                <select id="ime_imageDescriptionPos" name="imageDescriptionPos" data-handler-type="change" data-handler-name="ime_updateResult" data-handler-args="[]">
+                    <option value="bottom-left" selected="selected">{{imagemapedit-bottomleft}}</option>
+                    <option value="bottom-right">{{imagemapedit-bottomright}}</option>
+                    <option value="top-left">{{imagemapedit-topleft}}</option>
+                    <option value="top-right">{{imagemapedit-topright}}</option>
+                    <option value="none">{{imagemapedit-nolink}}</option>
+                </select>
+                <br />
+                <label for="ime_imageDisplayDimensions">{{imagemapedit-imagedisplaydimensions}}</label>
+                <br />
+                <input id="ime_imageDisplayDimensions" name="imageDisplayDimensions" data-handler-type="change" data-handler-name="ime_updateResult" data-handler-args="[]" />
+            </div>
+            <div>
+                <label for="ime_imageDisplayPosition">{{imagemapedit-imagedisplayposition}}</label>
+                <br />
+                <select id="ime_imageDisplayPosition" name="imageDisplayPosition" data-handler-type="change" data-handler-name="ime_updateResult" data-handler-args="[]">
+                    <option value="" selected="selected">{{imagemapedit-notspecified}}</option>
+                    <option value="right">{{imagemapedit-imagedisplayposition-right}}</option>
+                    <option value="center">{{imagemapedit-imagedisplayposition-center}}</option>
+                    <option value="left">{{imagemapedit-imagedisplayposition-left}}</option>
+                </select>
+                <br />
+                <label for="ime_imageDisplayType">{{imagemapedit-imagedisplaytype}}</label>
+                <br />
+                <select id="ime_imageDisplayType" name="imageDisplayType" data-handler-type="change" data-handler-name="ime_updateResult" data-handler-args="[]">
+                    <option value="" selected="selected">{{imagemapedit-notspecified}}</option>
+                    <option value="thumbnail">{{imagemapedit-imagedisplaytype-thumbnail}}</option>
+                    <option value="border">{{imagemapedit-imagedisplaytype-border}}</option>
+                    <option value="frameless">{{imagemapedit-imagedisplaytype-frameless}}</option>
+                </select>
+            </div>
+            <div style="clear:both"></div>
+        </fieldset>
+
+        <fieldset class="ime-fieldset">
+            <legend>{{imagemapedit-importareas}}</legend>
+            <a href="" data-handler-type="click" data-handler-name="ime_showImport" data-handler-args="[]" id="imeImportShow">
+                <span>{{imagemapedit-showtextbox}}</span> &gt;
+            </a>
+            <a href="" data-handler-type="click" data-handler-name="ime_hideImport" data-handler-args="[]" style="display:none" id="imeImportHide">
+                <span>{{imagemapedit-hidetextbox}}</span> &lt;
+            </a>
+            <div id="imeImport" style="display:none">
+                <textarea name="importText"></textarea>
+                <a href="" data-handler-type="click" data-handler-name="ime_importLines" data-handler-args="[]">{{imagemapedit-import}}</a>
+            </div>
+        </fieldset>
+        <fieldset class="ime-fieldset">
+            <legend>{{imagemapedit-generatedwikicode}}</legend>
+            <div>
+                <code id="imeResult"></code>
+            </div>
+        </fieldset>
+    </fieldset>
+</form>
+</div>

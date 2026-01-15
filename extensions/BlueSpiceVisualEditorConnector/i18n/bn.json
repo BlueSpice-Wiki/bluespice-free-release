@@ -14,5 +14,6 @@
 	"bs-visualeditorconnector-inspector-tab-advanced-name": "উচ্চতর",
 	"bs-vec-dialog-action-safe": "বাতিল",
 	"bs-visualeditor-linkcontext-label-change": "নামাঙ্কন পরিবর্তন করুন",
-	"bs-visualeditor-linkcontext-label-label": "নামাঙ্ককন"
+	"bs-visualeditor-linkcontext-label-label": "নামাঙ্ককন",
+	"bs-visualeditorconnector-dialog-action-insert": "যোগ করুন"
 }

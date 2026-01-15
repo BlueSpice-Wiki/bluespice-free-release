@@ -2,15 +2,15 @@
 	"name": "mediawiki/pdf-creator",
 	"type": "mediawiki-extension",
 	"description": "Export wiki pages as pdf",
-	"license": "GPL-3.0-only",
 	"keywords": [
 		"pdf"
 	],
+	"license": "GPL-3.0-only",
 	"authors": [
 		{
 			"name": "Hallo Welt! GmbH",
 			"email": "info@hallowelt.com",
-			"homepage": "http://www.hallowelt.com"
+			"homepage": "https://www.hallowelt.com"
 		}
 	],
 	"require": {

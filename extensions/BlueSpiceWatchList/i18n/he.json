@@ -5,6 +5,7 @@
 			"Erelon",
 			"Guycn2",
 			"Steeve815",
+			"YaronSh",
 			"מקף"
 		]
 	},
@@ -33,5 +34,6 @@
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "עזרה לשם דף",
 	"bs-watchlist-tag-watchlist-attr-time-help": "עזרה על זמן",
 	"bs-watchlist-droplet-name": "רשימת המעקב",
-	"bs-watchlist-droplet-description": "שינויים אחרונים בדפים הכלולים ברשימת המעקב"
+	"bs-watchlist-droplet-description": "שינויים אחרונים בדפים הכלולים ברשימת המעקב",
+	"bs-watchlist-usersidebar-title": "רשימת המעקב"
 }

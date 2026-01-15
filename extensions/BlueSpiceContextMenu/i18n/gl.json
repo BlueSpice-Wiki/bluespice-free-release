@@ -2,25 +2,28 @@
 	"@metadata": {
 		"authors": [
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"bs-contextmenu-desc": "Provee menús contextuais para varias ligazóns",
+	"bs-contextmenu-desc": "Ofrece menús contextuais para varias ligazóns",
 	"prefs-contextmenu": "Menú contextual",
 	"bs-contextmenu-pref-modus": "Abrir o menú contextual (non para móbiles) mediante:",
-	"bs-contextmenu-pref-modus-just-right-mouse": "Prema no botón dereito do rato (pulsando CTRL amosarase o menú contextual do navegador predeterminado)",
-	"bs-contextmenu-pref-modus-ctrl-and-right-mouse": "Prema no botón dereito do rato premendo CTRL (premendo só o botón dereito amosarase o menú do navegador predeterminado)",
-	"bs-contextmenu-page-edit": "Editar páxina",
-	"bs-contextmenu-page-delete": "Borrar páxina",
-	"bs-contextmenu-page-move": "Mover páxina",
+	"bs-contextmenu-pref-modus-just-right-mouse": "Fai clic co botón dereito do rato (premendo CTRL mostrarase o menú contextual predeterminado do navegador)",
+	"bs-contextmenu-pref-modus-ctrl-and-right-mouse": "Fai clic co botón dereito do rato e preme CTRL (o botón dereito normal do rato mostrará o menú predeterminado do navegador)",
+	"bs-contextmenu-page-edit": "Editar a páxina",
+	"bs-contextmenu-page-delete": "Borrar a páxina",
+	"bs-contextmenu-page-move": "Mover a páxina",
 	"bs-contextmenu-page-history": "Ver o historial da páxina",
-	"bs-contextmenu-page-protect": "Protexer páxina",
+	"bs-contextmenu-page-protect": "Protexer a páxina",
 	"bs-contextmenu-page-purge": "Purgar a caché e ver a páxina",
-	"bs-contextmenu-page-info": "Ver información da páxina",
-	"bs-contextmenu-media-reupload": "Subir nova versión",
+	"bs-contextmenu-page-info": "Ver a información da páxina",
+	"bs-contextmenu-media-reupload": "Subir unha nova versión",
 	"bs-contextmenu-media-view-page": "Ver a páxina de descrición e o historial do ficheiro",
 	"bs-contextmenu-user-mail": "Enviar un correo",
-	"bs-contextmenu-user-talk": "Dejar unha mensaxe na páxina de discusión",
+	"bs-contextmenu-user-talk": "Deixar unha mensaxe na páxina de conversa",
 	"bs-contextmenu-file-download": "Descargar o ficheiro",
-	"apihelp-bs-contextmenu-tasks-summary": "Fornece os elementos do menú contextual no contexto"
+	"apihelp-bs-contextmenu-tasks-summary": "Fornece os elementos do menú contextual no contexto",
+	"bs-contextmenu-open-in-new-tab": "Abrir nunha lapela nova",
+	"bs-contextmenu-no-items": "Non hai elementos de contexto dispoñibles"
 }

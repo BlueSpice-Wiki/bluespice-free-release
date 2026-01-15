@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"enhancedupload": "Otpremi",
+	"enhancedupload-list-header-warning": "upozorenje",
+	"enhancedupload-config-alignment-label": "Podešavanje slike:",
+	"enhancedupload-config-type-label": "Vrsta slike:",
+	"enhancedupload-config-height-label": "Visina slike:",
+	"enhancedupload-config-width-label": "Širina slike:",
+	"enhancedupload-droplet-attachments-name": "Prilozi",
+	"enhancedupload-upload-warning-exists": "Naziv datoteke je zauzet",
+	"enhancedupload-upload-warning-duplicate": "Ova datoteka je duplikat",
+	"enhancedupload-upload-warning-was-deleted": "Datoteka sa ovim nazivom je prethodno obrisana.",
+	"enhancedupload-upload-error-duplicate": "Datoteka identična ovoj ($1) je prethodno obrisana.",
+	"enhancedupload-upload-error-badfilename": "Datoteka $1 sadrži nevažeće znakove.",
+	"enhancedupload-upload-error-unhandled": "Došlo je do neočekivanog dešavanja.",
+	"enhancedupload-single-file-dlg-title": "Nova verzija „$1”",
+	"enhancedupload-toggle-details-button-hide-label": "Sakrij detalje",
+	"enhancedupload-toggle-details-button-show-label": "Prikaži detalje"
+}

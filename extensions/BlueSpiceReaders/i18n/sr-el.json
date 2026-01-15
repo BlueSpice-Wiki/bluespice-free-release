@@ -9,5 +9,6 @@
 	"bs-readers-header-page": "Stranica",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Čitate}} stranicu $1 na $2",
 	"bs-readers-header-revision-id": "ID izmene",
-	"bs-readers-header-revision-date": "Datum izmene"
+	"bs-readers-header-revision-date": "Datum izmene",
+	"bs-readers-permission-error": "Greška u dozvolama"
 }

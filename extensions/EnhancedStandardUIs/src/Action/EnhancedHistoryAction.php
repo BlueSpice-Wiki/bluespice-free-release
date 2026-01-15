@@ -170,7 +170,7 @@ class EnhancedHistoryAction extends HistoryAction {
 					? $summary->parse()
 					: Message::newFromKey( 'rev-deleted-comment' )->escaped();
 			}
-			$entry['tags'] = $row->ts_tags;
+			$entry['tags'] = $row->ts_tags ?? '';
 			$entry['tagUrl'] = $titleFactory->newFromText( 'Special:Tags' )->getLocalURL();
 
 			$attribs = [];

@@ -1,10 +1,10 @@
-( function ( mw, $, undefined ) {
-	mw.ext.forms.formElement.FieldsetLayout = function() {};
+( function ( mw ) {
+	mw.ext.forms.formElement.FieldsetLayout = function () {};
 
 	OO.inheritClass( mw.ext.forms.formElement.FieldsetLayout, mw.ext.forms.formElement.FormLayoutElement );
 
-	mw.ext.forms.formElement.FieldsetLayout.prototype.getElementConfigInternal = function() {
-		var config = mw.ext.forms.formElement.BookletLayout.parent.prototype.getElementConfigInternal.call( this );
+	mw.ext.forms.formElement.FieldsetLayout.prototype.getElementConfigInternal = function () {
+		const config = mw.ext.forms.formElement.BookletLayout.parent.prototype.getElementConfigInternal.call( this );
 		config.icon = {
 			type: 'text',
 			name: 'icon',
@@ -29,25 +29,25 @@
 		return this.returnConfig( config );
 	};
 
-	mw.ext.forms.formElement.FieldsetLayout.prototype.isSystemElement = function() {
+	mw.ext.forms.formElement.FieldsetLayout.prototype.isSystemElement = function () {
 		return true;
 	};
 
-	mw.ext.forms.formElement.FieldsetLayout.prototype.getType = function() {
-		return "layout_fieldset";
+	mw.ext.forms.formElement.FieldsetLayout.prototype.getType = function () {
+		return 'layout_fieldset';
 	};
 
-	mw.ext.forms.formElement.FieldsetLayout.prototype.getWidgets = function() {
+	mw.ext.forms.formElement.FieldsetLayout.prototype.getWidgets = function () {
 		return OO.ui.FieldsetLayout;
 	};
 
-	mw.ext.forms.formElement.FieldsetLayout.prototype.getSubitemConfig = function() {
+	mw.ext.forms.formElement.FieldsetLayout.prototype.getSubitemConfig = function () {
 		return {
 			propName: 'widget_items',
 			accepts: [ 'input', 'static' ]
 		};
 	};
 
-	mw.ext.forms.registry.Type.register( "layout_fieldset", new mw.ext.forms.formElement.FieldsetLayout() );
+	mw.ext.forms.registry.Type.register( 'layout_fieldset', new mw.ext.forms.formElement.FieldsetLayout() );
 
-} )( mediaWiki, jQuery );
+}( mediaWiki ) );

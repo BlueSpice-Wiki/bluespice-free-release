@@ -29,5 +29,6 @@
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "Adjuta sur le nomine de pagina",
 	"bs-watchlist-tag-watchlist-attr-time-help": "Adjuta sur le hora",
 	"bs-watchlist-droplet-name": "Observatorio",
-	"bs-watchlist-droplet-description": "Modificationes recente de paginas includite in le observatorio"
+	"bs-watchlist-droplet-description": "Modificationes recente de paginas includite in le observatorio",
+	"bs-watchlist-usersidebar-title": "Observatorio"
 }

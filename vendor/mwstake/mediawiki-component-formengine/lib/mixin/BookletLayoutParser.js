@@ -1,24 +1,24 @@
-( function ( mw, $, d ) {
-	mw.ext.forms.mixin.BookletLayoutParser = function() {};
+( function ( mw ) {
+	mw.ext.forms.mixin.BookletLayoutParser = function () {};
 
 	OO.initClass( mw.ext.forms.mixin.BookletLayoutParser );
 
-	mw.ext.forms.mixin.BookletLayoutParser.prototype.parseBooklet = function( pages, booklet ) {
-		for( var i = 0; i < pages.length; i++ ) {
-			var page = pages[i];
+	mw.ext.forms.mixin.BookletLayoutParser.prototype.parseBooklet = function ( pages, booklet ) {
+		for ( let i = 0; i < pages.length; i++ ) {
+			const page = pages[ i ];
 			if ( this.shouldShow( page.showOn ) === false ) {
 				continue;
 			}
 
-			var pageLayout = new mw.ext.forms.widget.BookletPageLayout( page, this );
+			const pageLayout = new mw.ext.forms.widget.BookletPageLayout( page, this );
 
 			booklet.addPages( [ pageLayout ] );
 		}
 	};
 
-	mw.ext.forms.widget.BookletPageLayout = function( page, parser ) {
-		var contLayout = new OO.ui.FieldsetLayout();
-		var items = page.items || page.widget_items;
+	mw.ext.forms.widget.BookletPageLayout = function ( page, parser ) {
+		const contLayout = new OO.ui.FieldsetLayout();
+		const items = page.items || page.widget_items;
 		this.page = page;
 
 		mw.ext.forms.widget.BookletPageLayout.parent.call( this, page.name, {
@@ -32,7 +32,7 @@
 
 	OO.inheritClass( mw.ext.forms.widget.BookletPageLayout, OO.ui.PageLayout );
 
-	mw.ext.forms.widget.BookletPageLayout.prototype.setupOutlineItem = function() {
+	mw.ext.forms.widget.BookletPageLayout.prototype.setupOutlineItem = function () {
 		if ( this.page.hasOwnProperty( 'label' ) ) {
 			this.outlineItem.setLabel( this.page.label );
 		}
@@ -41,4 +41,4 @@
 		}
 	};
 
-} )( mediaWiki, jQuery, document );
+}( mediaWiki ) );

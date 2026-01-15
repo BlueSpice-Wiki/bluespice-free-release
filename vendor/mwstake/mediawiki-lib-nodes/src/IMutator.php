@@ -3,7 +3,7 @@
 namespace MWStake\MediaWiki\Lib\Nodes;
 
 use MediaWiki\Revision\RevisionRecord;
-use User;
+use MediaWiki\User\User;
 
 interface IMutator extends IParser {
 	/**

@@ -199,5 +199,6 @@
 	"bs-discovery-back-to-page": "回到$1",
 	"bs-discovery-back-to-page-title": "返回到$1页",
 	"bs-discovery-back-to-version-history": "回退版本历史",
-	"bs-discovery-back-to-version-history-title": "返回第$1页的版本历史记录"
+	"bs-discovery-back-to-version-history-title": "返回第$1页的版本历史记录",
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "使用在BlueSpiceDiscovery和内容的Atkinson Hyperlegible Next字体。（[https://www.brailleinstitute.org https://www.brailleinstitute.org]）"
 }

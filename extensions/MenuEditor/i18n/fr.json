@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EmDashUser002",
 			"Mahabarata",
 			"McDutchie",
 			"Verdy p"
@@ -38,5 +39,6 @@
 	"menueditor-ui-edit-label": "Modifier",
 	"menueditor-ui-add-sub-element-label": "Ajouter un sous-élément",
 	"menueditor-footerlinks-banner-text": "Certains liens peuvent être ajoutés automatiquement par des extensions. Veuillez vérifier la configuration de l'extension pour en savoir plus.",
-	"menueditor-toolbar-save": "Enregistrer"
+	"menueditor-toolbar-save": "Enregistrer",
+	"menueditor-ui-cancel-confirmation": "Êtes-vous sûr{{GENDER:||e}} de vouloir annuler la modification ? Toute modification non enregistrée sera perdue."
 }

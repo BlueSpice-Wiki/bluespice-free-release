@@ -2,7 +2,6 @@
 
 namespace MWStake\MediaWiki\Component\InputProcessor\Processor;
 
-use MWStake\MediaWiki\Component\InputProcessor\GenericProcessor;
 use StatusValue;
 
 class PercentValue extends IntValue {

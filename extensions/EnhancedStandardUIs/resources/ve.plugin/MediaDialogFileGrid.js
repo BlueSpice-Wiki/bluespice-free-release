@@ -90,7 +90,7 @@ ext.enhancedUI.ve.MediaDialogFileGrid.prototype.initFileRepoGrid = function () {
 ext.enhancedUI.ve.MediaDialogFileGrid.prototype.onFileRepoGridSelect = function ( data ) {
 	const row = data.item;
 	const imageInfo = {
-		title: row.prefixed,
+		title: `File:${ row.prefixed }`,
 		extmetadata: [],
 		user: row.author,
 		timestamp: row.formatted_ts,

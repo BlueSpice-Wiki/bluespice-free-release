@@ -125,12 +125,12 @@
 		}
 	},
 	"config": {
+		"CaptchaClass": {
+			"description": "Set to one of SimpleCaptcha, FancyCaptcha, QuestyCaptcha, ReCaptchaNoCaptcha, hCaptcha, Turnstile, or to a custom PHP subclass of SimpleCaptcha. Defaults to the SimpleCaptcha demo captcha. For example, to use FancyCaptcha: `$wgCaptchaClass = 'FancyCaptcha';`",
+			"value": "SimpleCaptcha"
+		},
 		"CaptchaWhitelistIP": {
 			"value": false
-		},
-		"Captcha": {
-			"description": "Captcha class to be used; when enabling sub extensions (ie FancyCaptcha) this will be set for you",
-			"value": null
 		},
 		"CaptchaTriggers": {
 			"description": "Actions which can trigger a captcha",

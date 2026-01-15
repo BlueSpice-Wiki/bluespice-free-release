@@ -10,6 +10,10 @@
 	"bs-avatars-generate-complete": "Кхоьллина керла аватар.",
 	"bs-avatars-upload-label": "Сурт",
 	"bs-avatars-generate-new-label": "Кхолла керла аватар",
-	"bs-avatars-file-upload-fieldset-title": "Чудаккха сурт",
-	"bs-avatars-auto-generate-fieldset-title": "Кхолла аватар автоматаца"
+	"bs-avatars-file-upload-fieldset-title": "Чудаккха керла сурт",
+	"bs-avatars-auto-generate-fieldset-title": "Кхолла аватар автоматаца",
+	"bs-avatars-desc": "Декъашхойн а, ша-ша а лелоран суьрташ лело таро ло",
+	"bs-avatars-upload-button": "Чуйаккха",
+	"bs-avatars-generate-button": "Генерацийан",
+	"bs-avatars-generic-cancel": "Йухайаккхар"
 }
