@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6913f73c602ada284dd430219ef77b96
+class ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c
 {
     public static $files = array (
         'ef0a3cc8d59aacc0241af9c20bb29c47' => __DIR__ . '/..' . '/mwstake/mediawiki-componentloader/bootstrap.php',
@@ -33,6 +33,8 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'c50606d667a3fde2b80a955639479d3d' => __DIR__ . '/..' . '/wikimedia/timestamp/src/defines.php',
         '5897ea0ac4cccf14d323035e65887801' => __DIR__ . '/..' . '/symfony/polyfill-php82/bootstrap.php',
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
+        '9d2b9fc6db0f153a0a149fefb182415e' => __DIR__ . '/..' . '/symfony/polyfill-php84/bootstrap.php',
+        '606a39d89246991a373564698c2d8383' => __DIR__ . '/..' . '/symfony/polyfill-php85/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -73,6 +75,8 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php85\\' => 23,
+            'Symfony\\Polyfill\\Php84\\' => 23,
             'Symfony\\Polyfill\\Php83\\' => 23,
             'Symfony\\Polyfill\\Php82\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
@@ -129,7 +133,7 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
             'MWStake\\MediaWiki\\Component\\DataStore\\' => 38,
             'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\' => 53,
             'MWStake\\MediaWiki\\Component\\ContentProvisioner\\' => 47,
-            'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Tests\\' => 48,
+            'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Tests\\Unit\\' => 53,
             'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\' => 42,
             'MWStake\\MediaWiki\\Component\\CommonUserInterface\\Tests\\' => 54,
             'MWStake\\MediaWiki\\Component\\CommonUserInterface\\' => 48,
@@ -309,6 +313,14 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
             0 => __DIR__ . '/..' . '/data-values/common/src/ValueFormatters',
             1 => __DIR__ . '/..' . '/data-values/interfaces/src/ValueFormatters',
         ),
+        'Symfony\\Polyfill\\Php85\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php85',
+        ),
+        'Symfony\\Polyfill\\Php84\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php84',
+        ),
         'Symfony\\Polyfill\\Php83\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php83',
@@ -486,9 +498,9 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         array (
             0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/src',
         ),
-        'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Tests\\' => 
+        'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Tests\\Unit\\' => 
         array (
-            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/tests/phpunit',
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/tests/phpunit/unit',
         ),
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\' => 
         array (
@@ -687,12 +699,11 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
     );
 
     public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/..' . '/cssjanus/cssjanus/src',
+        0 => __DIR__ . '/..' . '/wikimedia/cssjanus/src',
     );
 
     public static $classMap = array (
         'AllowDynamicProperties' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/AllowDynamicProperties.php',
-        'BS\\ExtendedSearch\\AdminTool' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/AdminTool.php',
         'BS\\ExtendedSearch\\Backend' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Backend.php',
         'BS\\ExtendedSearch\\ClientConfig' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/ClientConfig.php',
         'BS\\ExtendedSearch\\ConfigDefinition\\AutoSetLanguageFilter' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/ConfigDefinition/AutoSetLanguageFilter.php',
@@ -1247,7 +1258,6 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'BlueSpice\\PageAccess\\Special\\PageAccess' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Special/PageAccess.php',
         'BlueSpice\\PageAccess\\Tag\\PageAccess' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Tag/PageAccess.php',
         'BlueSpice\\PageAccess\\Tag\\PageAccessHandler' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Tag/PageAccessHandler.php',
-        'BlueSpice\\PageTemplates\\AdminTool' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/AdminTool.php',
         'BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/ConfigDefinition/PageTemplatesForceNamespace.php',
         'BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/ConfigDefinition/PageTemplatesHideDefaults.php',
         'BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNs' => __DIR__ . '/../..' . '/extensions/BlueSpicePageTemplates/src/ConfigDefinition/PageTemplatesHideIfNotInTargetNs.php',
@@ -1279,7 +1289,6 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'BlueSpice\\PagesVisited\\Tag\\PagesVisited' => __DIR__ . '/../..' . '/extensions/BlueSpicePagesVisited/src/Tag/PagesVisited.php',
         'BlueSpice\\PagesVisited\\Tag\\PagesVisitedHandler' => __DIR__ . '/../..' . '/extensions/BlueSpicePagesVisited/src/Tag/PagesVisitedHandler.php',
         'BlueSpice\\PagesVisited\\UserSidebar\\Widget\\PagesVisited' => __DIR__ . '/../..' . '/extensions/BlueSpicePagesVisited/src/UserSidebar/Widget/PagesVisited.php',
-        'BlueSpice\\PermissionManager\\AdminTool' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/AdminTool.php',
         'BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerActivePresetConfig' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/ConfigDefinition/PermissionManagerActivePresetConfig.php',
         'BlueSpice\\PermissionManager\\DynamicConfig\\Groups' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/DynamicConfig/Groups.php',
         'BlueSpice\\PermissionManager\\DynamicConfig\\Roles' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/DynamicConfig/Roles.php',
@@ -1287,6 +1296,7 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'BlueSpice\\PermissionManager\\GlobalActionsAdministration' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/GlobalActionsAdministration.php',
         'BlueSpice\\PermissionManager\\GroupManager' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/GroupManager.php',
         'BlueSpice\\PermissionManager\\HookHandler\\CommonUserInterface' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/HookHandler/CommonUserInterface.php',
+        'BlueSpice\\PermissionManager\\Hook\\BSPermissionManagerAfterApplyPresetHook' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/BSPermissionManagerAfterApplyPresetHook.php',
         'BlueSpice\\PermissionManager\\Hook\\BSPermissionManagerGroupAddedHook' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/BSPermissionManagerGroupAddedHook.php',
         'BlueSpice\\PermissionManager\\Hook\\BSPermissionManagerGroupDeletedHook' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/BSPermissionManagerGroupDeletedHook.php',
         'BlueSpice\\PermissionManager\\Hook\\BSPermissionManagerGroupEditedHook' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/BSPermissionManagerGroupEditedHook.php',
@@ -1356,7 +1366,6 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'BlueSpice\\Readers\\RunJobsTriggerHandler\\DBCleaner' => __DIR__ . '/../..' . '/extensions/BlueSpiceReaders/src/RunJobsTriggerHandler/DBCleaner.php',
         'BlueSpice\\Readers\\Special\\Readers' => __DIR__ . '/../..' . '/extensions/BlueSpiceReaders/src/Special/Readers.php',
         'BlueSpice\\Readers\\Special\\RevisionReaders' => __DIR__ . '/../..' . '/extensions/BlueSpiceReaders/src/Special/RevisionReaders.php',
-        'BlueSpice\\UserManager\\AdminTool' => __DIR__ . '/../..' . '/extensions/BlueSpiceUserManager/src/AdminTool.php',
         'BlueSpice\\UserManager\\Extension' => __DIR__ . '/../..' . '/extensions/BlueSpiceUserManager/src/Extension.php',
         'BlueSpice\\UserManager\\GlobalActionsAdministration' => __DIR__ . '/../..' . '/extensions/BlueSpiceUserManager/src/GlobalActionsAdministration.php',
         'BlueSpice\\UserManager\\HookHandler\\CommonUserInterface' => __DIR__ . '/../..' . '/extensions/BlueSpiceUserManager/src/HookHandler/CommonUserInterface.php',
@@ -1422,7 +1431,7 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'CLDRPluralRuleParser\\Error' => __DIR__ . '/..' . '/wikimedia/cldr-plural-rule-parser/src/Error.php',
         'CLDRPluralRuleParser\\Evaluator' => __DIR__ . '/..' . '/wikimedia/cldr-plural-rule-parser/src/Evaluator.php',
         'CLDRPluralRuleParser\\Range' => __DIR__ . '/..' . '/wikimedia/cldr-plural-rule-parser/src/Range.php',
-        'CSSJanus' => __DIR__ . '/..' . '/cssjanus/cssjanus/src/CSSJanus.php',
+        'CSSJanus' => __DIR__ . '/..' . '/wikimedia/cssjanus/src/CSSJanus.php',
         'Cdb\\Cli' => __DIR__ . '/..' . '/wikimedia/cdb/src/Cli.php',
         'Cdb\\Exception' => __DIR__ . '/..' . '/wikimedia/cdb/src/Exception.php',
         'Cdb\\Reader' => __DIR__ . '/..' . '/wikimedia/cdb/src/Reader.php',
@@ -1578,6 +1587,7 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'DateMalformedStringException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateMalformedStringException.php',
         'DateObjectError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateObjectError.php',
         'DateRangeError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateRangeError.php',
+        'Deprecated' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Deprecated.php',
         'Endroid\\QrCode\\Bacon\\ErrorCorrectionLevelConverter' => __DIR__ . '/..' . '/endroid/qr-code/src/Bacon/ErrorCorrectionLevelConverter.php',
         'Endroid\\QrCode\\Bacon\\MatrixFactory' => __DIR__ . '/..' . '/endroid/qr-code/src/Bacon/MatrixFactory.php',
         'Endroid\\QrCode\\Builder\\Builder' => __DIR__ . '/..' . '/endroid/qr-code/src/Builder/Builder.php',
@@ -2120,7 +2130,7 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Rest\\TitleTreeStore' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Rest/TitleTreeStore.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Rest\\UserQueryStore' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Rest/UserQueryStore.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Setup' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Setup.php',
-        'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Tests\\EndpointManagerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/tests/phpunit/EndpointManagerTest.php',
+        'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Tests\\Unit\\EndpointManagerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/tests/phpunit/unit/EndpointManagerTest.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\TitleIndexUpdater' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/TitleIndexUpdater.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\UserIndexUpdater' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/UserIndexUpdater.php',
         'MWStake\\MediaWiki\\Component\\ContentProvisioner\\AttributeProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/src/AttributeProvider.php',
@@ -2480,6 +2490,7 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'Net_SMTP' => __DIR__ . '/..' . '/pear/net_smtp/Net/SMTP.php',
         'Net_Socket' => __DIR__ . '/..' . '/pear/net_socket/Net/Socket.php',
         'Net_URL2' => __DIR__ . '/..' . '/pear/net_url2/Net/URL2.php',
+        'NoDiscard' => __DIR__ . '/..' . '/symfony/polyfill-php85/Resources/stubs/NoDiscard.php',
         'OOUI\\AccessKeyedElement' => __DIR__ . '/..' . '/oojs/oojs-ui/php/mixins/AccessKeyedElement.php',
         'OOUI\\ActionFieldLayout' => __DIR__ . '/..' . '/oojs/oojs-ui/php/layouts/ActionFieldLayout.php',
         'OOUI\\ApexTheme' => __DIR__ . '/..' . '/oojs/oojs-ui/php/themes/ApexTheme.php',
@@ -3289,6 +3300,8 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
         'Symfony\\Polyfill\\Php82\\Random\\Engine\\Secure' => __DIR__ . '/..' . '/symfony/polyfill-php82/Random/Engine/Secure.php',
         'Symfony\\Polyfill\\Php82\\SensitiveParameterValue' => __DIR__ . '/..' . '/symfony/polyfill-php82/SensitiveParameterValue.php',
         'Symfony\\Polyfill\\Php83\\Php83' => __DIR__ . '/..' . '/symfony/polyfill-php83/Php83.php',
+        'Symfony\\Polyfill\\Php84\\Php84' => __DIR__ . '/..' . '/symfony/polyfill-php84/Php84.php',
+        'Symfony\\Polyfill\\Php85\\Php85' => __DIR__ . '/..' . '/symfony/polyfill-php85/Php85.php',
         'System' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/System.php',
         'UtfNormal\\Constants' => __DIR__ . '/..' . '/wikimedia/utfnormal/src/Constants.php',
         'UtfNormal\\Utils' => __DIR__ . '/..' . '/wikimedia/utfnormal/src/Utils.php',
@@ -4431,11 +4444,11 @@ class ComposerStaticInit6913f73c602ada284dd430219ef77b96
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6913f73c602ada284dd430219ef77b96::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6913f73c602ada284dd430219ef77b96::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit6913f73c602ada284dd430219ef77b96::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit6913f73c602ada284dd430219ef77b96::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit6913f73c602ada284dd430219ef77b96::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$classMap;
 
         }, null, ClassLoader::class);
     }

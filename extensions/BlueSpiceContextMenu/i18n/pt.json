@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
+			"Mansil alfalb",
 			"Vitorvicentevalente"
 		]
 	},
@@ -22,5 +23,7 @@
 	"bs-contextmenu-user-mail": "Enviar correio eletrónico",
 	"bs-contextmenu-user-talk": "Deixar mensagem na página de discussão",
 	"bs-contextmenu-file-download": "Descarregar ficheiro",
-	"apihelp-bs-contextmenu-tasks-summary": "Fornece os elementos do menu contextual no contexto"
+	"apihelp-bs-contextmenu-tasks-summary": "Fornece os elementos do menu contextual no contexto",
+	"bs-contextmenu-open-in-new-tab": "Abrir num novo separador",
+	"bs-contextmenu-no-items": "Não há itens de contexto disponíveis"
 }

@@ -72,10 +72,37 @@ class FileResolver {
 		$fileTitle = $this->titleFactory->newFromText( $srcFilename, NS_FILE );
 		$file = $this->repoGroup->findFile( $fileTitle );
 
+		// If not found, maybe its an archived file
 		if ( !$file ) {
+			$file = $this->findArchivedFile( $srcFilename );
+		}
+
+		if ( !$file || !$file->exists() ) {
 			$file = null;
 		}
 
 		return $file;
+	}
+
+	/**
+	 * @param string $filename
+	 *
+	 * @return File|null
+	 */
+	protected function findArchivedFile( string $filename ): ?File {
+		$timestampPattern = '/^\d{14}!/';
+
+		if ( !preg_match( $timestampPattern, $filename ) ) {
+			return null;
+		}
+
+		$localGroup = $this->repoGroup->getLocalRepo();
+
+		// Remove 14-digit timestamp and exclamation mark at the start
+		$origFileName = preg_replace( $timestampPattern, '', $filename );
+
+		$fileTitle = $this->titleFactory->makeTitle( NS_FILE, $origFileName );
+
+		return $localGroup->newFromArchiveName( $fileTitle, $filename );
 	}
 }

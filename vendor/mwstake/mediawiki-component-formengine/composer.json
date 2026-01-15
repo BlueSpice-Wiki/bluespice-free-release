@@ -1,5 +1,6 @@
 {
 	"name": "mwstake/mediawiki-component-formengine",
+	"description": "Provides a OOJS based form engine for MediaWiki",
 	"license": "GPL-3.0-only",
 	"authors": [
 		{

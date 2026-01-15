@@ -38,6 +38,18 @@ body.mediawiki .oo-ui-windowManager-modal > .oo-ui-dialog {
 }
 
 /* ERM43065 - border color for input is not enough -> use Codex input border color */
-.oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input {
+.oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input,
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle {
 	border-color: #72777d;
+}
+
+/* ERM43801 - Fix contrast mode of browser with forced colors */
+@media ( forced-colors: active ) {
+	.oo-ui-tabOptionWidget.oo-ui-optionWidget-selected,
+	.oo-ui-outlineSelectWidget .oo-ui-optionWidget-selected,
+	.oo-ui-toggleSwitchWidget.oo-ui-widget-enabled.oo-ui-toggleWidget-on,
+	.oo-ui-menuOptionWidget.oo-ui-optionWidget-selected {
+		background-color: SelectedItem !important;
+		color: SelectedItemText !important;
+	}
 }

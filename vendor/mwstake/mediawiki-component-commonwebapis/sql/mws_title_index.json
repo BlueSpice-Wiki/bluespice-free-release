@@ -33,9 +33,33 @@
 					"length": 255,
 					"notnull": true
 				}
+			},
+			{
+				"name": "mti_leaf_title",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
 			}
 		],
-		"indexes": [],
+		"indexes": [
+			{
+				"name": "mws_title_index_title_index",
+				"columns": [ "mti_title" ],
+				"unique": false
+			},
+			{
+				"name": "mws_title_index_displaytitle_index",
+				"columns": [ "mti_displaytitle" ],
+				"unique": false
+			},
+			{
+				"name": "mws_title_index_leaftitle_index",
+				"columns": [ "mti_leaf_title" ],
+				"unique": false
+			}
+		],
 		"pk": [ "mti_page_id" ]
 	}
 ]

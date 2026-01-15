@@ -24,16 +24,6 @@
 			} );
 			$formContainer.find( '.mw-ext-forms-form' ).remove();
 			$formContainer.append( form.$element );
-
-			// BlueSpiceDiscovery skin special case
-			if ( $( 'body' ).hasClass( 'base-bluespicediscovery' ) || $( 'body' ).hasClass( 'skin-bluespicediscovery' ) ) {
-				form.connect( this, {
-					initComplete: function () {
-						const offset = $( '#main' ).offset().top + $( '#title-line' ).height();
-						form.$element.children( '.form-instance-toolbar' ).css( 'top', offset );
-					}
-				} );
-			}
 		}
 	}
 

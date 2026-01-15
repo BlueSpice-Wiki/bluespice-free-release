@@ -9,6 +9,7 @@
 			"Lakejason0",
 			"LittlePaw365",
 			"MangoFanFanw",
+			"Peterxy12",
 			"SolidBlock",
 			"StarrySky",
 			"Tr jason",
@@ -206,5 +207,8 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "主导航",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "页面工具",
 	"bs-discovery-tools-after-content-cnt-aria-label": "额外页面信息",
-	"bs-discovery-data-after-content-cnt-aria-label": "页面附录"
+	"bs-discovery-data-after-content-cnt-aria-label": "页面附录",
+	"bs-discovery-footer-places-alt-text-mediawiki": "由MediaWiki驱动",
+	"bs-discovery-footer-places-alt-text-bluespice": "由BlueSpice提供驱动",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "由Semantic MediaWiki提供驱动"
 }

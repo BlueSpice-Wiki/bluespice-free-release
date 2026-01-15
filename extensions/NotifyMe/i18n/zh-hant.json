@@ -191,5 +191,6 @@
 	"notifyme-ui-delivery-label": "傳遞",
 	"prefs-subs": "通知訂閱",
 	"notifyme-notification-filter-count-aria-label": "包含 {{PLURAL:$1|1|$1}} 則通知",
-	"notifyme-notification-filter-aria-label": "通知過濾器"
+	"notifyme-notification-filter-aria-label": "通知過濾器",
+	"notifyme-notification-center-pagination-number-aria-label": "已顯示 $1 至 $2 的通知"
 }

@@ -1,4 +1,7 @@
 {
+	"@metadata": {
+		"authors": []
+	},
 	"mwstake-formengine-error-invalid-form": "Error message",
 	"mwstake-formengine-form-loading-label": "Input field label",
 	"mwstake-formengine-form-submit-label": "Input field label",
@@ -87,8 +90,6 @@
 	"mwstake-formengine-type": "Input field label",
 	"mwstake-formengine-type-message": "Field label",
 	"mwstake-formengine-label-indicator": "Input field label",
-	"mwstake-formengine-type-combobox": "Selection option label",
-	"mwstake-formengine-type-tag": "Selection option label",
 	"mwstake-formengine-label-input-position": "Input field label",
 	"mwstake-formengine-label-allow-arbitrary": "Input field label",
 	"mwstake-formengine-label-allowed-values": "Input field label",

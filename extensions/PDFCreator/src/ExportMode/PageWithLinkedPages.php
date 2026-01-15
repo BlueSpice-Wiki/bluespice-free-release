@@ -99,7 +99,8 @@ class PageWithLinkedPages extends Page implements IContextSourceAware {
 		$pages[] = [
 			'type' => 'page',
 			'target' => $title->getPrefixedDBkey(),
-			'rev-id' => $revisionId
+			'rev-id' => $revisionId,
+			'params' => $data
 		];
 
 		if ( $revisionRecord ) {

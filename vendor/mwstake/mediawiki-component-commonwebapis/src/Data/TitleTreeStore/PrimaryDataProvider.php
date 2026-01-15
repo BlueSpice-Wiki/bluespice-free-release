@@ -299,7 +299,7 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	 */
 	private function getSubpages( \stdClass $row ) {
 		$pages = [];
-		foreach( $this->subpageData as $subpageRow ) {
+		foreach ( $this->subpageData as $subpageRow ) {
 			if ( str_starts_with( $subpageRow->page_title, $row->page_title . '/' ) ) {
 				$subpage = substr( $subpageRow->page_title, strlen( $row->page_title . '/' ) );
 				if ( str_contains( $subpage, '/' ) ) {
@@ -378,11 +378,13 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 			foreach ( $nodes as $node ) {
 				foreach ( $this->expandPaths as $path ) {
 					$pathParts = $this->splitNode( $path );
-					if ( $node->get( TitleTreeRecord::PAGE_TITLE ) === $pathParts['page_title'] &&
-						$node->get( TitleTreeRecord::PAGE_NAMESPACE ) === $pathParts['page_namespace'] ) {
-							$children = $this->expandChildrenNodes( $this->getChildren( (object)$pathParts, null, true ) );
-							$node->set( TitleTreeRecord::CHILDREN, $children );
-							$node->set( TitleTreeRecord::EXPANDED, true );
+					if (
+						$node->get( TitleTreeRecord::PAGE_TITLE ) === $pathParts['page_title'] &&
+						$node->get( TitleTreeRecord::PAGE_NAMESPACE ) === $pathParts['page_namespace']
+					) {
+						$children = $this->expandChildrenNodes( $this->getChildren( (object)$pathParts, null, true ) );
+						$node->set( TitleTreeRecord::CHILDREN, $children );
+						$node->set( TitleTreeRecord::EXPANDED, true );
 					}
 				}
 			}

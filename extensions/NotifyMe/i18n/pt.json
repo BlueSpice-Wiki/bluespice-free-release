@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mansil alfalb",
 			"Vitorvicentevalente"
 		]
 	},
-	"prefs-notifications": "Notificações"
+	"prefs-notifications": "Notificações",
+	"notifyme-notification-center-pagination-aria-next": "Página seguinte",
+	"notifyme-notification-center-pagination-aria-previous": "Página anterior",
+	"notifyme-notification-center-pagination-number-aria-label": "Notificações de $1 a $2 mostradas"
 }

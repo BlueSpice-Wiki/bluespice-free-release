@@ -42,5 +42,8 @@
 	"contentdroplets-droplet-code-name": "Droplet name",
 	"contentdroplets-droplet-code-desc": "Droplet description",
 	"contentdroplets-droplet-dialog-search-placeholder-label": "Placeholder label in search input field",
-	"contentdroplets-toolbar-icon-title": "Title for icon in VisualEditor toolbar"
+	"contentdroplets-toolbar-icon-title": "Title for icon in VisualEditor toolbar",
+	"contentdroplets-droplet-icon-font-size-help": "{{doc-important|Do not translate \"'''15px, 0.83em and 1.2rem'''\".}} Help text for input field to set font size of icon",
+	"contentdroplets-droplet-icon-color-help": "{{doc-important|Do not translate \"'''yellows, blue and black'''\".}} Help text for input field to set color of icon",
+	"contentdroplets-droplet-icon-orientation-help": "{{doc-important|Do not translate \"'''baseline, text-top, text-bottom, sub and super'''\".}} Help text for input field to set vertical align value"
 }

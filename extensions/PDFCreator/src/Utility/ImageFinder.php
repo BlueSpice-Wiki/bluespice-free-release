@@ -7,6 +7,7 @@ use DOMElement;
 use DOMXPath;
 use MediaWiki\Config\Config;
 use MediaWiki\Title\TitleFactory;
+use OldLocalFile;
 use RepoGroup;
 
 class ImageFinder {
@@ -98,7 +99,7 @@ class ImageFinder {
 		}
 
 		$absPath = $file->getLocalRefPath();
-		$filename = $file->getName();
+		$filename = ( $file instanceof OldLocalFile ) ? $file->getArchiveName() : $file->getName();
 		$filename = $this->uncollideFilenames( $filename, $absPath );
 		$url = $element->getAttribute( 'src' );
 

@@ -85,5 +85,13 @@
 	"bs-vec-insert-line-break-title": "換行（<br />）",
 	"bs-visualeditorconnector-text-style-indent-label": "縮排",
 	"bs-visualeditorconnector-indent-annotation-desc": "縮排已選取的文字",
-	"bs-visualeditorconnector-upload-type": "上傳類型"
+	"bs-visualeditorconnector-upload-type": "上傳類型",
+	"bs-visualeditorconnector-upload-type-help": "原始模式：驗證上傳權限。檔案名稱、命名空間和分類均可編輯。描述為必填。\n\n簡易模式：不驗證上傳權限。檔案名稱、命名空間和分類均可編輯。描述為選填。\n\n一鍵模式：不驗證上傳權限。檔案名稱與分類不可編輯。命名空間可編輯。",
+	"bs-visualeditorconnector-text-style-tool-align-center-label": "置中對齊",
+	"bs-visualeditorconnector-align-center-annotation-desc": "所選文字置中",
+	"bs-visualeditor-save-label": "儲存",
+	"bs-visualeditorconnector-tab-file": "連結至檔案",
+	"bs-visualeditor-request-entity-too-large": "檔案太大無法上傳。",
+	"bs-visualeditorconnector-dialog-table-title": "表格",
+	"bs-visualeditorconnector-dialog-action-insert": "插入"
 }

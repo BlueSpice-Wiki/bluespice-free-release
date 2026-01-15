@@ -151,5 +151,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "done",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "fail",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF exclude - start",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF exclude - end"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF exclude - end",
+	"pdfcreator-global-action-overview": "PDF templates",
+	"pdfcreator-global-action-overview-desc": "Overview of all PDF templates in the wiki"
 }

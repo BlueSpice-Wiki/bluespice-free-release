@@ -23,16 +23,19 @@ ext.contentdroplets.object.Icon.prototype.getFormItems = function () {
 		{
 			name: 2,
 			label: mw.message( 'contentdroplets-droplet-icon-font-size-label' ).text(),
+			help: mw.message( 'contentdroplets-droplet-icon-font-size-help' ).text(),
 			type: 'text'
 		},
 		{
 			name: 3,
 			label: mw.message( 'contentdroplets-droplet-icon-color-label' ).text(),
+			help: mw.message( 'contentdroplets-droplet-icon-color-help' ).text(),
 			type: 'text'
 		},
 		{
 			name: 4,
 			label: mw.message( 'contentdroplets-droplet-icon-orientation-label' ).text(),
+			help: mw.message( 'contentdroplets-droplet-icon-orientation-help' ).text(),
 			type: 'text'
 		}
 	];

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Derugon",
+			"Escargot bleu",
 			"Gomoko",
 			"JLTRY",
 			"Mahabarata",
@@ -196,8 +197,8 @@
 	"notifyme-notification-center-timestamp-ago": "il y a $1",
 	"notifyme-notification-center-no-new-notifications-label": "Il n'y a pas de nouvelles notifications",
 	"notifyme-navbar-button-aria-label-unread-notifications": "Vous avez $1 notification{{PLURAL:$1| non lue|s non lues}}",
-	"notifyme-notification-center-pagination-aria-next": "Suivante",
-	"notifyme-notification-center-pagination-aria-previous": "Précédente",
+	"notifyme-notification-center-pagination-aria-next": "Page suivante",
+	"notifyme-notification-center-pagination-aria-previous": "Page précédente",
 	"notifyme-notification-center-navigation-hint": "Astuce : vous pouvez utiliser les touches de flèches à gauche et à droite pour naviguer entre les onglets.",
 	"notifyme-notification-center-filter-item-aria-label": "Filtre $1",
 	"notifyme-bucket-content-low-freq-label": "Événements qui se produisent moins fréquemment",
@@ -214,5 +215,6 @@
 	"notifyme-ui-delivery-label": "Livraison",
 	"prefs-subs": "Abonnements aux notifications",
 	"notifyme-notification-filter-count-aria-label": "contient {{PLURAL:$1|une notification|$1 notifications}}",
-	"notifyme-notification-filter-aria-label": "Filtre de notifications"
+	"notifyme-notification-filter-aria-label": "Filtre de notifications",
+	"notifyme-notification-center-pagination-number-aria-label": "Notifications $1 à $2 affichées"
 }

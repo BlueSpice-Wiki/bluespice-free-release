@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"बडा काजी",
 			"बिप्लब आनन्द",
 			"सरोज कुमार ढकाल"
 		]
@@ -22,5 +23,7 @@
 	"bs-interwikilinks-titleeditinterwikilink": "अन्तरविकि लिङ्क सम्पादन गर्ने",
 	"bs-interwikilinks-labelprefix": "उपसर्ग",
 	"bs-interwikilinks-titledeleteinterwikilink": "अन्तरविकि लिङ्क मेट्ने",
-	"bs-interwikilinks-confirmdeleteinterwikilink": "के तपाईँ साच्चै यो अन्तरविकी लिङ्कलाई मेट्न चाहनुहुन्छ?"
+	"bs-interwikilinks-confirmdeleteinterwikilink": "के तपाईँ साच्चै यो अन्तरविकी लिङ्कलाई मेट्न चाहनुहुन्छ?",
+	"bs-interwikilinks-headerurl": "युआरएल",
+	"bs-interwikilinks-labelurl": "युआरएल"
 }

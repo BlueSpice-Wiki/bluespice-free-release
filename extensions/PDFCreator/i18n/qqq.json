@@ -152,5 +152,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "Status message in case of successful export",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "Status message in case of failed export",
 	"pdfcreator-tag-no-export-start-ve-label": "Label for tag to indicate pdf exclude start",
-	"pdfcreator-tag-no-export-end-ve-label": "Label for tag to indicate pdf exclude end"
+	"pdfcreator-tag-no-export-end-ve-label": "Label for tag to indicate pdf exclude end",
+	"pdfcreator-global-action-overview": "Label for link to [[Special:PDFTemplatesOverview]]",
+	"pdfcreator-global-action-overview-desc": "Tooltip for a link to [[Special:PDFTemplatesOverview]]"
 }

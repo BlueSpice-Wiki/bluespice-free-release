@@ -26,15 +26,23 @@ class PopulateTitleIndex extends LoggedUpdateMaintenance {
 			[ 'pp' => [ 'LEFT OUTER JOIN', [ 'p.page_id = pp.pp_page', 'pp.pp_propname' => 'displaytitle' ] ] ]
 		);
 
+		$nsInfo = $this->getServiceContainer()->getNamespaceInfo();
+
 		$toInsert = [];
 		$cnt = 0;
 		$batch = 250;
 		foreach ( $titles as $title ) {
+			$leafTitle = '';
+			if ( str_contains( $title->page_title, '/' ) ) {
+				$bits = explode( '/', $title->page_title );
+				$leafTitle = array_pop( $bits );
+			}
 			$toInsert[] = [
 				'mti_page_id' => $title->page_id,
 				'mti_namespace' => mb_strtolower( $title->page_namespace ),
 				'mti_title' => mb_strtolower( str_replace( '_', ' ', $title->page_title ) ),
 				'mti_displaytitle' => mb_strtolower( str_replace( '_', ' ', $title->pp_value ?? '' ) ),
+				'mti_leaf_title' => mb_strtolower( str_replace( '_', ' ', $leafTitle ) ),
 			];
 			if ( $cnt % $batch === 0 ) {
 				$this->insertBatch( $toInsert );
@@ -68,7 +76,7 @@ class PopulateTitleIndex extends LoggedUpdateMaintenance {
 	 * @return string
 	 */
 	protected function getUpdateKey() {
-		return 'mws-title-index-init-with-redirect';
+		return 'mws-title-index-init-with-redirect-with-leaf';
 	}
 }
 

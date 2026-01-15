@@ -6,5 +6,6 @@
 		]
 	},
 	"bs-pageassignments-column-title": "Titulo-di-pagino",
-	"bs-pageassignments-assignee-type-user": "Uzero"
+	"bs-pageassignments-assignee-type-user": "Uzero",
+	"bs-pageassignments-collection-var-namespacename": "Nomaro (''namespace'')"
 }

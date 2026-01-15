@@ -42,5 +42,8 @@
 	"contentdroplets-droplet-code-name": "Code",
 	"contentdroplets-droplet-code-desc": "Highlighted section for code examples",
 	"contentdroplets-droplet-dialog-search-placeholder-label": "Search for content droplets",
-	"contentdroplets-toolbar-icon-title": "Add content droplets"
+	"contentdroplets-toolbar-icon-title": "Add content droplets",
+	"contentdroplets-droplet-icon-font-size-help": "To adjust the font size, the unit must be specified, e.g., 15px, 0.83em, or 1.2rem",
+	"contentdroplets-droplet-icon-color-help": "All hex values (e.g., '#3366cc') can be used for colors, as well as CSS color descriptions such as 'yellow', 'blue', or 'black'",
+	"contentdroplets-droplet-icon-orientation-help": "Values can be set for the CSS property 'vertical-align' to adjust the alignment of the icon: 'baseline', 'text-top', 'text-bottom', 'sub', or 'super'"
 }

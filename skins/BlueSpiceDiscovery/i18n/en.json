@@ -190,5 +190,8 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Main navigation",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "Page tools",
 	"bs-discovery-tools-after-content-cnt-aria-label": "Additional page information",
-	"bs-discovery-data-after-content-cnt-aria-label": "Page appendix"
+	"bs-discovery-data-after-content-cnt-aria-label": "Page appendix",
+	"bs-discovery-footer-places-alt-text-mediawiki": "Powered by MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "Powered by BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Powered by Semantic MediaWiki"
 }

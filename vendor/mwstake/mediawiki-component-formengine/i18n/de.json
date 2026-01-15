@@ -1,4 +1,7 @@
 {
+	"@metadata": {
+		"authors": []
+	},
 	"mwstake-formengine-error-invalid-form": "Formulardefinition ist ungültig!",
 	"mwstake-formengine-form-loading-label": "Das Formular wird geladen...",
 	"mwstake-formengine-form-submit-label": "Abschicken",
@@ -86,8 +89,6 @@
 	"mwstake-formengine-type-title": "Seitentitel",
 	"mwstake-formengine-type": "Typ",
 	"mwstake-formengine-label-indicator": "Indikator",
-	"mwstake-formengine-type-combobox": "Combobox",
-	"mwstake-formengine-type-tag": "Schlagwortmehrfachauswahl",
 	"mwstake-formengine-label-input-position": "Eingabefeldposition",
 	"mwstake-formengine-label-allow-arbitrary": "Willkürliche Werte erlauben",
 	"mwstake-formengine-label-allowed-values": "Erlaubte Werte",

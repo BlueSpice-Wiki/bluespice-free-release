@@ -6,7 +6,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_COMMONWEBAPIS_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_COMMONWEBAPIS_VERSION', '3.0.22' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_COMMONWEBAPIS_VERSION', '3.1.0' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 	->register( 'commonwebapis', static function () {
@@ -51,6 +51,11 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 					'mws_category_index',
 					'mci_page_title',
 					__DIR__ . "/sql/$dbType/mws_category_index_patch_page_title.sql"
+				);
+				$updater->addExtensionField(
+					'mws_title_index',
+					'mti_leaf_title',
+					__DIR__ . "/sql/$dbType/mws_title_index_leafpage_patch.sql"
 				);
 
 				$updater->addPostDatabaseUpdateMaintenance(

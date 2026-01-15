@@ -13,6 +13,7 @@ use MediaWiki\Page\ProperPageIdentity;
 use MediaWiki\Permissions\Authority;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Storage\Hook\PageSaveCompleteHook;
+use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\DBConnRef;
 use Wikimedia\Rdbms\ILoadBalancer;
 
@@ -86,6 +87,7 @@ class TitleIndexUpdater implements
 		bool $created,
 		array $restoredPageIds
 	): void {
+		$page = Title::newFromPageIdentity( $page );
 		$this->insert( $page, $page->getId() );
 	}
 
@@ -97,12 +99,12 @@ class TitleIndexUpdater implements
 	}
 
 	/**
-	 * @param PageIdentity $page
+	 * @param Title $page
 	 * @param int|null $forceId (optional)
 	 *
 	 * @return bool
 	 */
-	private function insert( PageIdentity $page, $forceId = null ) {
+	private function insert( Title $page, $forceId = null ) {
 		/** @var DBConnRef $db */
 		$db = $this->lb->getConnection( DB_PRIMARY );
 		if ( !$db->tableExists( 'mws_title_index', __METHOD__ ) ) {
@@ -120,6 +122,12 @@ class TitleIndexUpdater implements
 			__METHOD__
 		);
 
+		$leaf = '';
+		if ( strpos( $page->getDBkey(), '/' ) !== false ) {
+			$bits = explode( '/', $page->getDBkey() );
+			$leaf = array_pop( $bits );
+		}
+
 		return $db->insert(
 			'mws_title_index',
 			[
@@ -127,6 +135,7 @@ class TitleIndexUpdater implements
 				'mti_namespace' => $page->getNamespace(),
 				'mti_title' => mb_strtolower( str_replace( '_', ' ', $page->getDBkey() ) ),
 				'mti_displaytitle' => $this->getDisplayTitle( $page ),
+				'mti_leaf_title' => mb_strtolower( str_replace( '_', ' ', $leaf ) ),
 			],
 			__METHOD__,
 			[ 'OVERWRITE' ]

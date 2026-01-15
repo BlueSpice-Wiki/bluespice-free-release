@@ -202,5 +202,8 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Hauptnavigation",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "Seitenwerkzeuge",
 	"bs-discovery-tools-after-content-cnt-aria-label": "Zusätzliche Seiteninformationen",
-	"bs-discovery-data-after-content-cnt-aria-label": "Seitenanhang"
+	"bs-discovery-data-after-content-cnt-aria-label": "Seitenanhang",
+	"bs-discovery-footer-places-alt-text-mediawiki": "Unterstützt durch MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "Unterstützt durch BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Unterstützt durch Semantic MediaWiki"
 }

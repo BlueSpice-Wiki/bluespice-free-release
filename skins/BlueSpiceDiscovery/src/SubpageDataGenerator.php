@@ -133,6 +133,9 @@ class SubpageDataGenerator {
 			}
 
 			$curTitle = Title::makeTitle( $namespace, $curTitleText );
+			if ( !$curTitle || !$curTitle->canExist() ) {
+				continue;
+			}
 
 			if ( $this->treeRootTitle ) {
 				$curDBKey = $curTitle->getDBkey();

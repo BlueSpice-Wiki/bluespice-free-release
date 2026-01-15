@@ -152,5 +152,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "finite",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "fallimento",
 	"pdfcreator-tag-no-export-start-ve-label": "Exclusion del PDF – initio",
-	"pdfcreator-tag-no-export-end-ve-label": "Exclusion del PDF – fin"
+	"pdfcreator-tag-no-export-end-ve-label": "Exclusion del PDF – fin",
+	"pdfcreator-global-action-overview": "Modellos PDF",
+	"pdfcreator-global-action-overview-desc": "Vista general de tote le modellos PDF in le wiki"
 }

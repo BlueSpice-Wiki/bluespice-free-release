@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ChiK",
 			"Pragathi. BH"
 		]
 	},
@@ -8,5 +9,6 @@
 	"standarddialogs-page-info-page-no-templates-label": "ಈ ಪುಟೊಡು ಒವ್ವೆ ಟೆಂಪ್ಲೇಟ್ ಲಾ ಇಜ್ಜಿ",
 	"standarddialogs-page-info-page-no-categories-label": "ಈ ಪುಟೊಡು ಯಾವುಲಾ ವಿಭಾಗೊಲು ಇಜ್ಜಿ",
 	"standarddialogs-page-info-page-no-links-label": "ಈ ಪುಟೊಡು ದಾಲ ಲಿಂಕ್ ಇಜ್ಜಿ",
-	"standarddialogs-page-info-page-no-extlinks-label": "ಈ ಪುಟೊಡು ಒವ್ವೆ ಬಾಹ್ಯ ಲಿಂಕ್ ಲು ಇಜ್ಜಿ"
+	"standarddialogs-page-info-page-no-extlinks-label": "ಈ ಪುಟೊಡು ಒವ್ವೆ ಬಾಹ್ಯ ಲಿಂಕ್ ಲು ಇಜ್ಜಿ",
+	"standarddialogs-protect-btn": "ಸಂರಕ್ಷಿಸಾಲೆ"
 }

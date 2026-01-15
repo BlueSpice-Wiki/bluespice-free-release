@@ -84,5 +84,7 @@
 	"enhanced-standard-uis-prefs-reset-not-allowed-label": "您沒有權限重新設定使用者偏好設定",
 	"enhanced-standard-uis-prefs-reset-notify": "偏好設定已重設為預設偏好設定",
 	"enhanced-standard-uis-prefs-menu-aria-label": "偏好設定部分",
-	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "選擇查看模式"
+	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "選擇查看模式",
+	"enhanced-standard-uis-paginator-page-aria-label": "第 $1 頁",
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "從第 $1 頁開始"
 }

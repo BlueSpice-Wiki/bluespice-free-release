@@ -30,3 +30,10 @@ body.mediawiki .ve-init-sa-target-toolbar > .oo-ui-toolbar-bar > .oo-ui-toolbar-
 .ve-init-mw-desktopArticleTarget .ve-init-mw-target-surface > .ve-ce-surface .ve-ce-attachedRootNode {
 	min-height: 15em;
 }
+
+/* Fix Chrome/Edge underlying text color - ERM40541 */
+.ve-ce-documentNode-codeEditor-webkit-hide::spelling-error,
+.ve-ce-documentNode-codeEditor-webkit-hide::grammar-error,
+.ve-ce-documentNode-codeEditor-webkit-hide::selection {
+    color: transparent;
+}

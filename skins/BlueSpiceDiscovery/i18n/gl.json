@@ -196,5 +196,8 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Navegación principal",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "Ferramentas da páxina",
 	"bs-discovery-tools-after-content-cnt-aria-label": "Información adicional da páxina",
-	"bs-discovery-data-after-content-cnt-aria-label": "Apéndice da páxina"
+	"bs-discovery-data-after-content-cnt-aria-label": "Apéndice da páxina",
+	"bs-discovery-footer-places-alt-text-mediawiki": "Desenvolvido por MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "Desenvolvido por BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Desenvolvido por Semantic MediaWiki"
 }

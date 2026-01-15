@@ -15,5 +15,6 @@
 	"bs-saferedit-pref-edit-interval": "فترة التحقق من التحرير (بالثواني)",
 	"bs-saferedit-pref-edit-interval-help": "يحدد عدد المرات، بالثواني، للتحقق مما إذا كان شخص آخر يقوم بتحرير الصفحة (افتراضي: 3 ثوانٍ)",
 	"bs-saferedit-pref-show-editinguser": "إظهار المحرر الحالي",
-	"bs-saferedit-pref-show-editinguser-help": "إضافة اسم المستخدم الذي يقوم حاليًا بتحرير الصفحة إلى أعلى الصفحة"
+	"bs-saferedit-pref-show-editinguser-help": "إضافة اسم المستخدم الذي يقوم حاليًا بتحرير الصفحة إلى أعلى الصفحة",
+	"bs-saferedit-anonymous-editor": "مستخدم مجهول"
 }

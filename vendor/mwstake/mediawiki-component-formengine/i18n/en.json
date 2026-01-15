@@ -1,4 +1,7 @@
 {
+	"@metadata": {
+		"authors": []
+	},
 	"mwstake-formengine-error-invalid-form": "Form definition is invalid!",
 	"mwstake-formengine-form-loading-label": "Form is being loaded...",
 	"mwstake-formengine-form-submit-label": "Submit",
@@ -87,8 +90,6 @@
 	"mwstake-formengine-type-message": "Message banner",
 	"mwstake-formengine-type": "Type",
 	"mwstake-formengine-label-indicator": "Indicator",
-	"mwstake-formengine-type-combobox": "Combo box",
-	"mwstake-formengine-type-tag": "Tag multiselect",
 	"mwstake-formengine-label-input-position": "Input position",
 	"mwstake-formengine-label-allow-arbitrary": "Allow arbitrary",
 	"mwstake-formengine-label-allowed-values": "Allowed values",
@@ -99,6 +100,5 @@
 	"mwstake-formengine-edit-password-strength-indicator-stong": "Strong",
 	"mwstake-formengine-edit-password-strength-indicator-medium": "Medium",
 	"mwstake-formengine-edit-password-strength-indicator-weak": "Weak",
-	"mwstake-formengine-edit-password-error-mismatch": "Passwords do not match!",
-	"mwstake-formengine-type-hr": "Horizontal rule"
+	"mwstake-formengine-edit-password-error-mismatch": "Passwords do not match!"
 }

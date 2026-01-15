@@ -5,6 +5,8 @@
 			"Can",
 			"MuratTheTurkish",
 			"Rapsar",
+			"Sakblue",
+			"SaldırganSincap",
 			"Sayginer",
 			"Violetanka"
 		]
@@ -32,8 +34,8 @@
 	"bs-usermanager-headerenabled": "Etkin",
 	"bs-usermanager-log-user-disabled": "$1 {{GENDER:$1|kullanıcısı}} UserManager aracılığıyla devre dışı bırakıldı",
 	"bs-usermanager-endisable": "Etkinleştir/devre dışı bırak",
-	"bs-usermanager-confirmdisableuser": "{{PLURAL:$1|Bu kullanıcıyı|Bu $1 kullanıcıları}} gerçekten devre dışı bırakmak istiyor musunuz?",
-	"bs-usermanager-confirmenableuser": "{{PLURAL:$1|Bu kullanıcıyı|Bu $1 kullanıcıları}} gerçekten etkinleştirmek istiyor musunuz?",
+	"bs-usermanager-confirmdisableuser": "{{PLURAL:$1|Bu kullanıcıyı|Bu $1 kullanıcıyı}} gerçekten devre dışı bırakmak istiyor musunuz?",
+	"bs-usermanager-confirmenableuser": "{{PLURAL:$1|Bu kullanıcıyı|Bu $1 kullanıcı}} gerçekten etkinleştirmek istiyor musunuz?",
 	"bs-usermanager-titledisableuser": "Kullanıcıyı devre dışı bırak",
 	"bs-usermanager-titleenableuser": "Kullanıcıyı etkinleştir",
 	"usermanager": "Kullanıcı yöneticisi",
@@ -47,5 +49,7 @@
 	"bs-usermanager-label-password-change-strategy": "Yöntem",
 	"bs-usermanager-label-password-change-strategy-reset": "Kullanıcıya parola sıfırlama bağlantısını gönder",
 	"bs-usermanager-label-password-change-strategy-pw": "Doğrudan parolayı değiştirin",
-	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok"
+	"bs-usermanager-no-mail": "Seçili kullanıcının onaylanmış e-posta adresi yok",
+	"bs-usermanager-invalid-realname": "Gerçek isim geçersiz",
+	"bs-usermanager-password-repeat-mismatch-label": "Şifreler eşleşmiyor. Lütfen girişinizi kontrol edin."
 }

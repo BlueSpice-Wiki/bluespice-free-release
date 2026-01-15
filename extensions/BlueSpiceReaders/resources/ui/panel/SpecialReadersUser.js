@@ -27,7 +27,7 @@ ext.bluespice.readers.ui.panel.SpecialReadersUser.prototype.setupGridConfig = fu
 		style: 'differentiate-rows',
 		columns: {
 			pv_page_title: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-readers-header-page' ).plain(),
+				headerText: mw.message( 'bs-readers-header-page' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
@@ -40,7 +40,7 @@ ext.bluespice.readers.ui.panel.SpecialReadersUser.prototype.setupGridConfig = fu
 				) )
 			},
 			pv_ts: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-readers-header-ts' ).plain(),
+				headerText: mw.message( 'bs-readers-header-ts' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },

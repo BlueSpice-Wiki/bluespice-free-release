@@ -9,6 +9,7 @@ use MWStake\MediaWiki\Component\DataStore\PrimaryDatabaseDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\Schema;
 use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\ResultWrapper;
 
 class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 
@@ -20,6 +21,7 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 
 	/** @var NamespaceInfo */
 	protected $nsInfo;
+
 
 	/**
 	 * @param IDatabase $db
@@ -34,6 +36,86 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 		$this->language = $language;
 		$this->nsInfo = $nsInfo;
 		$this->contentNamespaces = $nsInfo->getContentNamespaces();
+	}
+
+	public function makeData( $params ) {
+		$this->data = [];
+
+		$res = $this->db->select(
+			$this->getTableNames(),
+			$this->getFields(),
+			$this->makePreFilterConds( $params ),
+			__METHOD__,
+			$this->makePreOptionConds( $params ),
+			$this->getJoinConds( $params )
+		);
+		if ( $params->getQuery() !== '' ) {
+			$res = $this->rerank( $params->getQuery(), $res );
+		}
+		foreach ( $res as $row ) {
+			$this->appendRowToData( $row );
+		}
+
+		return $this->data;
+	}
+
+	/**
+	 * @param string $query
+	 * @param ResultWrapper $res
+	 * @return array
+	 */
+	protected function rerank( string $query, ResultWrapper $res ) {
+		$query = mb_strtolower( str_replace( ' ', '_', $query ) );
+		/**
+		 * First determine the "main" field to match against
+		 * - displaytitle if exists
+		 * - subpage title if exists
+		 * - non-prefixed title
+		 *
+		 * We are boosting results on these three criteria:
+		 * - Exact match
+		 * - Starts with query ( whatever the match field is )
+		 * - Has query in match field
+		 * - Has query in non-prefixed title
+		 */
+		$ranked = [];
+		foreach ( $res as $row ) {
+			$row->_score = 0.0;
+			$title = $row->mti_title;
+			$displayTitle = $row->mti_displaytitle;
+			$leafTitle = $row->mti_leaf_title;
+			$fieldToMatch = $displayTitle ?: $leafTitle ?: $title;
+			$hasPrimaryMatch = true;
+
+			if ( $fieldToMatch === $query ) {
+				$row->_score = 4;
+			} elseif ( mb_strpos( $fieldToMatch, $query ) === 0 ) {
+				$row->_score = 3;
+			} elseif ( mb_strpos( $fieldToMatch, $query ) !== false ) {
+				$row->_score = 2;
+			} elseif ( mb_strpos( $title, $query ) !== false ) {
+				$hasPrimaryMatch = false;
+				$row->_score = 1;
+			} else {
+				continue;
+			}
+			// Determine how much of the query is matched in title/displaytitle/leaftitle
+			$lenMatchField = $hasPrimaryMatch ? mb_strlen( $fieldToMatch ) : mb_strlen( $title );
+			$queryLen = mb_strlen( $query );
+			$matchPercent = min( $queryLen / $lenMatchField, 1.0 );
+			// Half the boost for match is base title
+			$row->_score += $hasPrimaryMatch ? $matchPercent : $matchPercent / 2;
+			if ( (int)$row->page_namespace === NS_MAIN ) {
+				// Slight boost NS_MAIN
+				$row->_score += 0.1;
+			}
+			$ranked[] = $row;
+		}
+		usort( $ranked, static function ( $a, $b ) {
+			return $b->_score <=> $a->_score;
+		} );
+
+		return $ranked;
 	}
 
 	/**
@@ -100,13 +182,11 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 				if ( $nsIndex !== false ) {
 					if ( empty( $nsFilter ) || in_array( $nsIndex, $nsFilter ) ) {
 						$nsFilter = [ $nsIndex ];
-						$queryText = $queryParts[1] ?? $queryParts[0];
+						$query = $queryParts[1] ?? $queryParts[0];
 					}
 				}
-				$conds[] = $this->processQuery( $queryText );
-			} else {
-				$conds[] = $this->processQuery( $query );
 			}
+			$conds[] = $this->processQuery( $query );
 		}
 
 		if ( !empty( $nsFilter ) ) {
@@ -128,7 +208,10 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 		$displayTitleQuery = 'mti_displaytitle ' . $this->db->buildLike(
 			$this->db->anyString(), $query, $this->db->anyString()
 		);
-		return "($titleQuery OR $displayTitleQuery)";
+		$leafQuery = 'mti_leaf_title ' . $this->db->buildLike(
+				$this->db->anyString(), $query, $this->db->anyString()
+			);
+		return "($titleQuery OR $displayTitleQuery OR $leafQuery)";
 	}
 
 	/**
@@ -154,7 +237,10 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	 * @inheritDoc
 	 */
 	protected function getFields() {
-		return [ 'mti_page_id', 'mti_title', 'page_namespace', 'page_title', 'page_content_model', 'page_lang' ];
+		return [
+			'mti_page_id', 'mti_title', 'mti_displaytitle', 'mti_leaf_title', 'page_namespace', 'page_title',
+			'page_content_model', 'page_lang'
+		];
 	}
 
 	/**
@@ -182,6 +268,9 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			'content_model' => $row->page_content_model,
 			TitleRecord::IS_CONTENT_PAGE => in_array( $row->page_namespace, $this->contentNamespaces ),
 			TitleRecord::PAGE_EXISTS => true,
+			TitleRecord::LEAF_TITLE => '',
+			TitleRecord::BASE_TITLE => '',
+			'_score' => $row->_score ?? 0
 		] );
 	}
 

@@ -1,10 +1,48 @@
 {
 	"@metadata": {
 		"authors": [
-			"पर्वत सुबेदी"
+			"पर्वत सुबेदी",
+			"बडा काजी"
 		]
 	},
 	"bs-discovery-title-action-edit-button-aria-label": "पृष्ठ सम्पादन गर्नुहोस्",
 	"bs-discovery-personalurl-mycontributions-text": "योगदानहरू",
-	"bs-discovery-breadcrumb-label-talk": "वार्तालाप"
+	"bs-discovery-breadcrumb-label-talk": "वार्तालाप",
+	"bs-discovery-back-to-top-text": "सिरानमा जानुहोस्",
+	"bs-discovery-back-to-top-aria-label": "सिरानमा जानुहोस्",
+	"bs-discovery-navbar-user-login-text": "प्रवेश",
+	"bs-discovery-navbar-user-login-title": "प्रवेश",
+	"bs-discovery-navbar-user-login-aria-label": "प्रवेश",
+	"bs-discovery-searchform-button-title": "अहिले नै खोज्नुहोस्",
+	"bs-discovery-searchform-button-aria-label": "अहिले नै खोज्नुहोस्",
+	"bs-discovery-searchform-input-placeholder": "तपाईँको खोजी शब्द",
+	"bs-discovery-searchform-input-aria-label": "यहाँ आफ्नो खोज शब्द प्रविष्ट गर्नुहोस्।",
+	"bs-discovery-header-create-button-text": "नयाँ",
+	"bs-discovery-header-create-button-title": "नयाँ पृष्ठ बनाउनुहोस्",
+	"bs-discovery-header-create-button-aria-label": "नयाँ पृष्ठ बनाउनुहोस्",
+	"bs-discovery-create-button-new-section-text": "नयाँ खण्ड",
+	"bs-discovery-create-button-new-section-title": "नयाँ खण्ड सिर्जना गर्नुहोस्",
+	"bs-discovery-create-button-new-file-text": "नयाँ फाइल",
+	"bs-discovery-breadcrumb-nav-node-ns-main": "पृष्ठहरू",
+	"bs-discovery-breadcrumb-nav-node-title": "$1 खोल्नुहोस्",
+	"bs-discovery-breadcrumb-nav-node-aria-label": "$1 खोल्नुहोस्",
+	"bs-discovery-breadcrumb-nav-node-split-button-title": "थप उपपृष्ठहरू",
+	"bs-discovery-breadcrumb-nav-node-split-button-aria-label": "थप उपपृष्ठहरू",
+	"bs-discovery-breadcrumb-nav-node-portal-page": "मुख्य पृष्ठ",
+	"bs-discovery-last-edit-by-anon-user": "अज्ञात प्रयोगकर्ता",
+	"bs-discovery-title-action-edit-button-title": "पृष्ठ सम्पादन गर्नुहोस्",
+	"bs-discovery-title-action-language-button-title": "भाषा छान्नुहाेस्",
+	"bs-discovery-title-action-language-button-aria-label": "भाषा छान्नुहाेस्",
+	"bs-discovery-sidebar-actions-heading": "कार्यहरू",
+	"bs-discovery-sidebar-details-heading": "विवरणहरू",
+	"bs-discovery-details-pnl-more-link-text": "... सबै कार्यहरू",
+	"bs-discovery-dialog-details-heading": "सबै कार्यहरू",
+	"bs-discovery-dialog-details-action-cancel": "रद्द गर्नुहोस्",
+	"bs-discovery-dialog-detailssectionheading-namespaces": "नामपदहरू",
+	"bs-discovery-dialog-detailssectionheading-views": "अवलोकनहरू",
+	"bs-discovery-dialog-detailssectionheading-actions": "सामग्री कार्यहरू",
+	"bs-discovery-dialog-detailssectionheading-toolbox": "उपकरणको बाकस",
+	"bs-discovery-footer-places-alt-text-mediawiki": "मिडियाविकि द्वारा संचालित",
+	"bs-discovery-footer-places-alt-text-bluespice": "ब्लुस्पाइस द्वारा संचालित",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "सिमान्टिक मिडियाविकि द्वारा संचालित"
 }

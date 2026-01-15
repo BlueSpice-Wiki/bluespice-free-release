@@ -172,18 +172,23 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			'user_real_name' => 'mui_user_real_name'
 		];
 		$filterValue = str_replace( '_', ' ', $filter->getValue() );
+		$comparison = $filter->getComparison();
+		$field = $filter->getField();
+
 		if (
-			$filter->getComparison() === Filter::COMPARISON_CONTAINS ||
-			$filter->getComparison() === Filter::COMPARISON_LIKE
+			$comparison === Filter::COMPARISON_CONTAINS ||
+			$comparison === Filter::COMPARISON_LIKE
 		) {
-			$field = $fieldMapping[$filter->getField()];
+			$filterValue = mb_strtolower( $filterValue );
+			$field = $fieldMapping[$field];
 			$conds[] = "$field " . $this->db->buildLike(
 				$this->db->anyString(), $filterValue, $this->db->anyString()
 			);
-		} elseif ( $filter->getComparison() === Filter::COMPARISON_EQUALS ) {
-			$conds[$filter->getField()] = $filterValue;
-		} elseif ( $filter->getComparison() === Filter::COMPARISON_NOT_EQUALS ) {
-			$conds[$filter->getField()] = $filterValue;
+		} elseif (
+			$comparison === Filter::COMPARISON_EQUALS ||
+			$comparison === Filter::COMPARISON_NOT_EQUALS
+		) {
+			$conds[$field] = $filterValue;
 		}
 	}
 

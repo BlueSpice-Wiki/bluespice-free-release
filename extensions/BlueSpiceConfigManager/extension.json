@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceConfigManager",
-	"version": "5.1.3",
+	"version": "5.1.4",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceConfigManager",
 	"author": [
 		"Patric Wirth"
@@ -15,9 +15,6 @@
 					"className": "\\BlueSpice\\ConfigManager\\Extension",
 					"extPath": "/BlueSpiceConfigManager"
 				}
-			},
-			"AdminToolRegistry": {
-				"bs-config-manager": "BlueSpice\\ConfigManager\\AdminTool"
 			},
 			"PermissionRegistry": {
 				"bluespiceconfigmanager-viewspecialpage": {

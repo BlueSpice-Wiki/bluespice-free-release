@@ -4,7 +4,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_INPUTPROCESSOR_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_INPUTPROCESSOR_VERSION', '1.1.3' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_INPUTPROCESSOR_VERSION', '1.1.4' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'inputprocessor', static function () {
@@ -52,11 +52,11 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			'services' => [ 'TitleFactory', 'PermissionManager', 'DBLoadBalancer' ]
 		],
 		'username' => [
-			'class' => '\\MWStake\\MediaWiki\\Component\\InputProcessor\\Processor\\UsernameValue',
+			'class' => '\\MWStake\\MediaWiki\\Component\\InputProcessor\\Processor\\UserValue',
 			'services' => [ 'UserFactory' ]
 		],
 		'username-list' => [
-			'class' => '\\MWStake\\MediaWiki\\Component\\InputProcessor\\Processor\\UsernameListValue',
+			'class' => '\\MWStake\\MediaWiki\\Component\\InputProcessor\\Processor\\UserListValue',
 			'services' => [ 'UserFactory' ]
 		],
 		'usergroup' => [

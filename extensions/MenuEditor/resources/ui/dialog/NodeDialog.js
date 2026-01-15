@@ -21,7 +21,7 @@ ext.menueditor.ui.dialog.NodeDialog.static.actions = [
 	},
 	{
 		label: mw.message( 'menueditor-ui-dialog-action-cancel' ).text(),
-		flags: 'safe'
+		flags: [ 'safe', 'close' ]
 	}
 ];
 

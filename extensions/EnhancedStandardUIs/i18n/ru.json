@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dirruw'o",
+			"EneshTranslates",
 			"Kareyac"
 		]
 	},
@@ -11,5 +12,6 @@
 	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|результат|результата|результатов}}",
 	"enhanced-standard-uis-filelist-grid-preview-title": "Предпросмотр",
 	"enhanced-standard-uis-allpages-redirect-label": "$1 (перенаправление)",
-	"enhancedspecialpages": "Служебные страницы"
+	"enhancedspecialpages": "Служебные страницы",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "содержит {{PLURAL:$1|одну страницу|$1 страниц}}"
 }

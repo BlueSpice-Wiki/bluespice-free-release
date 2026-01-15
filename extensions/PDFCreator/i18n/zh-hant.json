@@ -150,5 +150,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "完成",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "失敗",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF 排除 - 開始",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF 排除 - 結束"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF 排除 - 結束",
+	"pdfcreator-global-action-overview": "PDF 範本",
+	"pdfcreator-global-action-overview-desc": "Wiki 中所有 PDF 範本概要"
 }

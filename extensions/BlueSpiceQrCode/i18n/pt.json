@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil alfalb"
 		]
 	},
 	"bs-qr-code-extension-description": "Apresenta um código QR com uma hiperligação para a página atual na barra de ferramentas.",
@@ -16,5 +17,16 @@
 	"apihelp-bs-qr-code-param-size": "Tamanho do código QR",
 	"apihelp-bs-qr-code-example-bs-qr-code": "Chamada de API por omissão",
 	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Chamada de API para determinada revisão",
-	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Chamada de API com tamanho personalizado"
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Chamada de API com tamanho personalizado",
+	"bs-qr-code-alt-text": "Código QR para $1",
+	"bs-qr-code-tag-qrcode-desc": "Incorpora um código QR associado na página wiki.",
+	"bs-qr-code-tag-qrcode-title": "Código QR",
+	"bs-qr-code-tag-attr-page-label": "Página",
+	"bs-qr-code-tag-attr-query-label": "Parâmetro",
+	"bs-qr-code-tag-attr-desc-label": "Descrição",
+	"bs-qr-code-tag-attr-size-label": "Tamanho",
+	"bs-qr-code-droplet-name": "Código QR",
+	"bs-qr-code-tag-attr-size-option-small": "pequeno",
+	"bs-qr-code-tag-attr-size-option-medium": "médio",
+	"bs-qr-code-tag-attr-size-option-large": "grande"
 }

@@ -1,10 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Agam Riyandana"
+			"Agam Riyandana",
+			"Penyuwangi"
 		]
 	},
 	"bs-discovery-page-does-not-exist-title": "$1 (halaman belum tersedia)",
 	"bs-discovery-sidebar-primary-aria-label": "Tabel samping utama",
-	"bs-discovery-sidebar-secondary-aria-label": "Tabel sisi sekunder"
+	"bs-discovery-sidebar-secondary-aria-label": "Tabel sisi sekunder",
+	"bs-discovery-footer-places-alt-text-mediawiki": "Diberdayakan oleh MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "Diberdayakan oleh BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Diberdayakan oleh Semantic MediaWiki"
 }

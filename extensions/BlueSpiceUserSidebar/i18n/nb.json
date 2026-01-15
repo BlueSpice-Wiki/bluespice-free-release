@@ -11,5 +11,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Rediger nøkkelord",
 	"menueditor-ui-menu-keyword-usersidebar-label": "Nøkkelord",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Rediger nøkkelord",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "Nøkkelord"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Nøkkelord",
+	"bs-usersidebar-empty-menu-label": "Ingen oppføringer tilgjengelig"
 }

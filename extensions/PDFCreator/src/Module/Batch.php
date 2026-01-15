@@ -222,15 +222,6 @@ class Batch implements IExportModule, LoggerAwareInterface {
 			$specification->getModule(), $pages, $images, $attachments, $context, $optionParams
 		);
 
-		// add toc page
-		$this->embedPageToc = false;
-		if ( isset( $optionParams['embed-page-toc'] )
-			&& BoolValueGet::from( $optionParams['embed-page-toc'] ) === true
-		) {
-			$this->embedPageToc = true;
-			$this->addTocPage( $pages, $context, $this->embedPageToc, $this->template );
-		}
-
 		// add intro page
 		if ( $this->template->getIntro() !== '' ) {
 			$intro = new PageSpec( 'intro', $this->docTitle );
@@ -253,6 +244,15 @@ class Batch implements IExportModule, LoggerAwareInterface {
 		$this->processPages(
 			$specification->getModule(), $pages, $images, $attachments, $context, $optionParams
 		);
+
+		// add toc page
+		$this->embedPageToc = false;
+		if ( isset( $optionParams['embed-page-toc'] )
+			&& BoolValueGet::from( $optionParams['embed-page-toc'] ) === true
+		) {
+			$this->embedPageToc = true;
+			$this->addTocPage( $pages, $context, $this->embedPageToc, $this->template );
+		}
 
 		$html = $this->getHtml( $pages, $stylesheets, $styleblocks, $context, $specification->getParams() );
 
@@ -370,10 +370,6 @@ class Batch implements IExportModule, LoggerAwareInterface {
 			$docTitle = $params['title'];
 		} elseif ( $label !== '' ) {
 			$docTitle = $label;
-		} elseif (
-			isset( $params['title-show-namespace'] ) && BoolValueGet::from( $params['title-show-namespace'] ) === true
-		) {
-			$docTitle = $relevantTitle->getPrefixedText();
 		} else {
 			$docTitle = $relevantTitle->getText();
 		}
@@ -628,13 +624,22 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	): void {
 		if ( count( $pages ) > 1 ) {
 			$tocPageBuilder = new TocBuilder( $this->titleFactory );
-			$html = $tocPageBuilder->getHtml( $pages, $embedPageToc, $this->docTitle );
+			$html = $tocPageBuilder->getHtml( $pages, $embedPageToc );
 			$labelMsg = Message::newFromKey( 'pdfcreator-toc-page-label' );
 			$pageSpec = new PageSpec( 'raw', $labelMsg->text(), '', null, [
 				'content' => $html
 			] );
 			$page = $this->exportPageFactory->getPageFromSpec( $pageSpec, $this->template, $context, $this->workspace );
-			array_unshift( $pages, $page );
+
+			// Toc page should be placed after intro page if it exists.
+			$firstPage = array_shift( $pages );
+			if ( $firstPage->getType() === 'intro' ) {
+				array_unshift( $pages, $page );
+				array_unshift( $pages, $firstPage );
+			} else {
+				array_unshift( $pages, $firstPage );
+				array_unshift( $pages, $page );
+			}
 		}
 	}
 

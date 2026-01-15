@@ -3,6 +3,7 @@
 namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore;
 
 use MediaWiki\Language\Language;
+use MediaWiki\Message\Message;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
@@ -52,11 +53,19 @@ class SecondaryDataProvider implements ISecondaryDataProvider {
 		$dataSet->set( TitleRecord::PAGE_TITLE, $title->getText() );
 		$dataSet->set( TitleRecord::PAGE_PREFIXED, $title->getPrefixedText() );
 		$dataSet->set( TitleRecord::PAGE_URL, $title->getLocalURL() );
-		$dataSet->set(
-			TitleRecord::PAGE_NAMESPACE_TEXT, $this->language->getNsText( $title->getNamespace() )
-		);
+		if ( $title->getNamespace() === NS_MAIN ) {
+			$dataSet->set( TitleRecord::PAGE_NAMESPACE_TEXT, Message::newFromKey( 'blanknamespace' )->text() );
+		} else {
+			$dataSet->set(
+				TitleRecord::PAGE_NAMESPACE_TEXT, $this->language->getNsText( $title->getNamespace() )
+			);
+		}
 		$dataSet->set( TitleRecord::PAGE_DISPLAY_TITLE, $this->getDisplayTitle( $title ) );
 		$dataSet->set( TitleRecord::PAGE_IS_REDIRECT, $title->isRedirect() );
+		if ( $title->isSubpage() ) {
+			$dataSet->set( TitleRecord::LEAF_TITLE, $title->getSubpageText() );
+			$dataSet->set( TitleRecord::BASE_TITLE, $title->getBaseText() );
+		}
 	}
 
 	/**

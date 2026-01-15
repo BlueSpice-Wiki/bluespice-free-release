@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"menueditor-desc": "Editor gráfico para as páxinas de menú",
+	"menueditor-ui-menu-wiki-link-label": "Ligazón wiki",
+	"menueditor-ui-menu-wiki-link-label-edit": "Editar a ligazón wiki",
+	"menueditor-ui-menu-wiki-link-help": "Ligazón a unha páxina wiki",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Ligazón",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Editar a ligazón",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Especificación da ligazón.<br>O destino pode ser:<ul><li>unha clave de mensaxe, que se resolve nun nome de páxina</li><li>unha ligazón externa</li><li>o nome dunha páxina do wiki</li><li>unha ligazón interwiki</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Texto ou clave de mensaxe",
+	"menueditor-ui-menu-raw-text-label-edit": "Modificar o texto ou a clave de mensaxe",
+	"menueditor-ui-menu-keyword-label": "Palabra clave",
+	"menueditor-ui-menu-keyword-label-edit": "Editar a palabra clave",
+	"menueditor-ui-menu-keyword-help": "Unha das '''palabras clave''' dispoñibles, que mostrará o widget axeitado",
+	"menueditor-ui-form-field-keyword": "Palabra clave",
+	"menueditor-ui-form-field-text": "Texto ou unha clave de mensaxe",
+	"menueditor-ui-form-field-target": "Destino da ligazón",
+	"menueditor-ui-form-field-label": "Texto da ligazón",
+	"menueditor-ui-dialog-action-done": "Feito",
+	"menueditor-ui-dialog-action-cancel": "Cancelar",
+	"menueditor-ui-node-type-selector-label": "Tipo de nó",
+	"menueditor-ui-submit": "Gardar",
+	"menueditor-ui-cancel": "Cancelar",
+	"menueditor-ui-redlink-notice": "Este menú aínda non existe!",
+	"menueditor-action-menueditsource": "Editar a fonte",
+	"menueditor-action-menuedit": "Editar",
+	"menueditor-ui-dialog-title": "Editar o elemento",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Editar a palabra clave",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Palabra clave",
+	"menueditor-toolbar-cancel": "Cancelar a edición",
+	"menueditor-toolbar-add-label": "Engadir un elemento",
+	"menueditor-ui-edit-label": "Editar",
+	"menueditor-ui-add-sub-element-label": "Engadir un subelemento",
+	"menueditor-footerlinks-banner-text": "As extensións poden engadir automaticamente algunhas ligazóns. Consulta a configuración da extensión para obter máis información.",
+	"menueditor-toolbar-save": "Gardar",
+	"menueditor-ui-cancel-confirmation": "Queres cancelar a edición? Perderanse todos os cambios non gardados."
+}

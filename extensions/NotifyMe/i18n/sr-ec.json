@@ -20,5 +20,7 @@
 	"notifyme-notifications-group-mark-group-as-unread-label": "Означи групу непрочитаном",
 	"notifyme-notification-center-help-menu-mark-all-read-label": "Означи све прочитаним",
 	"notifyme-notification-center-mark-as-unread-circle-title": "Означи непрочитаним",
-	"notifyme-notification-center-no-new-notifications-label": "Нема нових обавештења"
+	"notifyme-notification-center-no-new-notifications-label": "Нема нових обавештења",
+	"notifyme-notification-center-pagination-aria-next": "Следећа страница",
+	"notifyme-notification-center-pagination-aria-previous": "Претходна страница"
 }
