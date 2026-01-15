@@ -400,7 +400,6 @@ figure[typeof~="mw:File/Frame"] {
 
 figure[ typeof~='mw:File/Thumb' ] > a.mw-file-description,
 figure[ typeof~='mw:File/Frame' ] > a.mw-file-description {
-	display: block;
 	padding: 3px;
 }
 

@@ -59,5 +59,6 @@
 	"standarddialogs-page-info-page-no-templates-label": "此頁面不包含模板",
 	"standarddialogs-page-info-page-no-categories-label": "此頁面不包含分類",
 	"standarddialogs-page-info-page-no-links-label": "此頁面不包含連結",
-	"standarddialogs-page-info-page-no-extlinks-label": "此頁面不包含外部連結"
+	"standarddialogs-page-info-page-no-extlinks-label": "此頁面不包含外部連結",
+	"standarddialogs-validation-page-exist-info-label": "同樣標題的頁面已存在，請選擇別的。"
 }

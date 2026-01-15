@@ -10,11 +10,11 @@ ext.enhancedUI.booklet.DataPage = function ( name, cfg ) {
 			this.$element.append( label.$element );
 			this.emit( 'update' );
 		}
-		const $table = $( '<ul>' ).addClass( 'wikitable' );
+		const $table = $( '<table>' ).addClass( 'wikitable' );
 		for ( const key in this.versions ) {
 			const $tr = $( '<tr>' );
 			const $tdName = $( '<td>' ).text( this.versions[ key ].name );
-			const $tdValue = $( '<td>' ).text( this.versions[ key ].value );
+			const $tdValue = $( '<td>' ).append( this.versions[ key ].value );
 			$tr.append( $tdName ).append( $tdValue );
 			$table.append( $tr );
 			this.$element.append( $table );

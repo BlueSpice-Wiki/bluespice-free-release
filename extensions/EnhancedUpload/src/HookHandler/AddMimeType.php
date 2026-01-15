@@ -21,6 +21,10 @@ class AddMimeType implements MimeMagicImproveFromExtensionHook {
 	 * @inheritDoc
 	 */
 	public function onMimeMagicImproveFromExtension( $mimeMagic, $ext, &$mime ) {
+		if ( !$ext ) {
+			return;
+		}
+
 		$allow = $this->mainConfig->get( 'EnhancedUploadAllowMismatchedMimeTypes' );
 		if ( $allow === false ) {
 			return;

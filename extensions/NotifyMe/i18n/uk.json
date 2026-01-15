@@ -4,5 +4,7 @@
 			"Ата"
 		]
 	},
-	"prefs-notifications": "Сповіщення"
+	"prefs-notifications": "Сповіщення",
+	"notifyme-notification-tester-field-event": "Подія",
+	"notifyme-ui-dialog-popup-table-event-label": "Подія"
 }

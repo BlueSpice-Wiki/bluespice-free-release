@@ -3,6 +3,7 @@
 		"authors": [
 			"Markus Glaser <glaser@hallowelt.com>",
 			"Robby",
+			"Toliño",
 			"Umherirrender",
 			"Wladek92",
 			"Zoranzoki21"
@@ -53,7 +54,7 @@
 	"bs-vec-table-style-cell-text-hor-align": "Label for horizontal alignment of text control",
 	"bs-vec-table-style-cell-text-hor-align-left": "Label for left text alignment option",
 	"bs-vec-table-style-cell-text-hor-align-center": "Label for center text alignment option",
-	"bs-vec-table-style-cell-text-hor-align-right": "Label for right text alignment option\n[[Identical|Right}}",
+	"bs-vec-table-style-cell-text-hor-align-right": "Label for right text alignment option\n{{Identical|Right}}",
 	"bs-vec-table-style-cell-text-hor-align-justify": "Label for justify text alignment option",
 	"bs-vec-ve-table-width-label": "Label for table width control",
 	"bs-vec-ve-table-width-value-auto": "Label for table width, when no width is specified. Should not be longer than 6 characters",

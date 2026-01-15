@@ -64,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAbout.git",
-                "reference": "e403c5cacc84dce7a504ed7f4e2862b0a751acc7"
+                "reference": "9321754355c7d96ccddaf012a5d2a94ba61e239c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAbout/zipball/e403c5cacc84dce7a504ed7f4e2862b0a751acc7",
-                "reference": "e403c5cacc84dce7a504ed7f4e2862b0a751acc7",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAbout/zipball/9321754355c7d96ccddaf012a5d2a94ba61e239c",
+                "reference": "9321754355c7d96ccddaf012a5d2a94ba61e239c",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +82,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-30T22:31:30+00:00",
+            "time": "2025-07-18T13:08:11+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceAbout"
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceArticleInfo",
-                "reference": "8488af14f95ef09fe893fbd398967c7990107880"
+                "reference": "15bbecd59b7e172232a3dc257c13eea739cdba4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceArticleInfo/zipball/8488af14f95ef09fe893fbd398967c7990107880",
-                "reference": "8488af14f95ef09fe893fbd398967c7990107880",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceArticleInfo/zipball/15bbecd59b7e172232a3dc257c13eea739cdba4b",
+                "reference": "15bbecd59b7e172232a3dc257c13eea739cdba4b",
                 "shasum": ""
             },
             "require": {
@@ -146,7 +146,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-30T22:34:34+00:00",
+            "time": "2025-07-19T20:07:23+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceArticleInfo"
@@ -189,12 +189,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAuthors.git",
-                "reference": "d056ebbc5085f212fecc61b1737bdf03bd4a557a"
+                "reference": "ef1a12e5081a77fc350a1098ce49afb97a1235bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAuthors/zipball/d056ebbc5085f212fecc61b1737bdf03bd4a557a",
-                "reference": "d056ebbc5085f212fecc61b1737bdf03bd4a557a",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAuthors/zipball/ef1a12e5081a77fc350a1098ce49afb97a1235bb",
+                "reference": "ef1a12e5081a77fc350a1098ce49afb97a1235bb",
                 "shasum": ""
             },
             "require": {
@@ -207,7 +207,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-11T20:07:41+00:00",
+            "time": "2025-08-11T20:19:22+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceAuthors"
@@ -255,12 +255,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceAvatars.git",
-                "reference": "b8d2e1a4b9bf67a9da3dba7d65349951be807f29"
+                "reference": "9bc90599348b3497748c7e8e5b2bee0652254da7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAvatars/zipball/b8d2e1a4b9bf67a9da3dba7d65349951be807f29",
-                "reference": "b8d2e1a4b9bf67a9da3dba7d65349951be807f29",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceAvatars/zipball/9bc90599348b3497748c7e8e5b2bee0652254da7",
+                "reference": "9bc90599348b3497748c7e8e5b2bee0652254da7",
                 "shasum": ""
             },
             "require": {
@@ -273,7 +273,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-11T20:07:41+00:00",
+            "time": "2025-09-16T08:46:03+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceAvatars"
@@ -316,12 +316,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceChecklist.git",
-                "reference": "c085e71ca43174024159fcce895c194d110bf5e3"
+                "reference": "6c96bb23191a487dbce55f7b554762423086db62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceChecklist/zipball/c085e71ca43174024159fcce895c194d110bf5e3",
-                "reference": "c085e71ca43174024159fcce895c194d110bf5e3",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceChecklist/zipball/6c96bb23191a487dbce55f7b554762423086db62",
+                "reference": "6c96bb23191a487dbce55f7b554762423086db62",
                 "shasum": ""
             },
             "require": {
@@ -334,7 +334,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-18T20:19:07+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceChecklist"
@@ -377,12 +377,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceConfigManager",
-                "reference": "a116fa6894c305da581a098449f305c6e3e49dd2"
+                "reference": "f803ab8d8ae7eaa270a280483c23a7b5d6e87bb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceConfigManager/zipball/a116fa6894c305da581a098449f305c6e3e49dd2",
-                "reference": "a116fa6894c305da581a098449f305c6e3e49dd2",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceConfigManager/zipball/f803ab8d8ae7eaa270a280483c23a7b5d6e87bb5",
+                "reference": "f803ab8d8ae7eaa270a280483c23a7b5d6e87bb5",
                 "shasum": ""
             },
             "require": {
@@ -395,7 +395,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-21T20:20:12+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceConfigManager"
@@ -438,12 +438,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceContextMenu.git",
-                "reference": "d940cd954ae34e9cc75597b1831fd468cace5315"
+                "reference": "914acd1f89971497576113c77efdd84c3f2ccea6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceContextMenu/zipball/d940cd954ae34e9cc75597b1831fd468cace5315",
-                "reference": "d940cd954ae34e9cc75597b1831fd468cace5315",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceContextMenu/zipball/914acd1f89971497576113c77efdd84c3f2ccea6",
+                "reference": "914acd1f89971497576113c77efdd84c3f2ccea6",
                 "shasum": ""
             },
             "require": {
@@ -456,7 +456,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-21T20:20:12+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceContextMenu"
@@ -504,12 +504,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceCountThings.git",
-                "reference": "8c3972d307c3b22d2e0b668fa67603db5e4a2d9c"
+                "reference": "4d204a9153d277c123a1f0b59a597884e6303111"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCountThings/zipball/8c3972d307c3b22d2e0b668fa67603db5e4a2d9c",
-                "reference": "8c3972d307c3b22d2e0b668fa67603db5e4a2d9c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCountThings/zipball/4d204a9153d277c123a1f0b59a597884e6303111",
+                "reference": "4d204a9153d277c123a1f0b59a597884e6303111",
                 "shasum": ""
             },
             "require": {
@@ -522,7 +522,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-07-23T20:07:33+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceCountThings"
@@ -565,12 +565,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceCustomMenu.git",
-                "reference": "d49328916ebbd955babafb8bee104031e5390da6"
+                "reference": "6a7f9ca479b45ee129e6c795ab7a0385ccf31314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCustomMenu/zipball/d49328916ebbd955babafb8bee104031e5390da6",
-                "reference": "d49328916ebbd955babafb8bee104031e5390da6",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceCustomMenu/zipball/6a7f9ca479b45ee129e6c795ab7a0385ccf31314",
+                "reference": "6a7f9ca479b45ee129e6c795ab7a0385ccf31314",
                 "shasum": ""
             },
             "require": {
@@ -584,7 +584,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-30T23:38:15+00:00",
+            "time": "2025-08-18T20:19:07+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceCustomMenu"
@@ -627,12 +627,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-skins-BlueSpiceDiscovery.git",
-                "reference": "09afad6c9c4a25debf734425a1ed827a54608bcc"
+                "reference": "ef82eb9cf95b42d3eeaf866d133c54ccff17fda6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-skins-BlueSpiceDiscovery/zipball/09afad6c9c4a25debf734425a1ed827a54608bcc",
-                "reference": "09afad6c9c4a25debf734425a1ed827a54608bcc",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-skins-BlueSpiceDiscovery/zipball/ef82eb9cf95b42d3eeaf866d133c54ccff17fda6",
+                "reference": "ef82eb9cf95b42d3eeaf866d133c54ccff17fda6",
                 "shasum": ""
             },
             "require": {
@@ -649,7 +649,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:23+00:00",
+            "time": "2025-07-03T13:17:40+00:00",
             "type": "mediawiki-skin",
             "extra": {
                 "installer-name": "BlueSpiceDiscovery"
@@ -707,12 +707,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector.git",
-                "reference": "5c0cdb823e347d5d6928d15505559f2dff397786"
+                "reference": "4ceb8907224aefa8d610e9995fa4bb4cbd5bd9d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector/zipball/5c0cdb823e347d5d6928d15505559f2dff397786",
-                "reference": "5c0cdb823e347d5d6928d15505559f2dff397786",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceDistributionConnector/zipball/4ceb8907224aefa8d610e9995fa4bb4cbd5bd9d6",
+                "reference": "4ceb8907224aefa8d610e9995fa4bb4cbd5bd9d6",
                 "shasum": ""
             },
             "require": {
@@ -726,7 +726,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-28T10:09:54+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceDistributionConnector"
@@ -774,12 +774,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceEmoticons.git",
-                "reference": "b5233acb7f534529586c8d44f64d2773c900ae67"
+                "reference": "6d7f17a737bbe67f62221ef5911b77bf0e73d83c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceEmoticons/zipball/b5233acb7f534529586c8d44f64d2773c900ae67",
-                "reference": "b5233acb7f534529586c8d44f64d2773c900ae67",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceEmoticons/zipball/6d7f17a737bbe67f62221ef5911b77bf0e73d83c",
+                "reference": "6d7f17a737bbe67f62221ef5911b77bf0e73d83c",
                 "shasum": ""
             },
             "require": {
@@ -792,7 +792,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-30T23:46:17+00:00",
+            "time": "2025-08-20T20:19:41+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceEmoticons"
@@ -835,12 +835,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch.git",
-                "reference": "b63f8ffd04c376d076677fec346be1f9ecead27a"
+                "reference": "e30b5674e5dca0822293fb77e19f9e61346125b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch/zipball/b63f8ffd04c376d076677fec346be1f9ecead27a",
-                "reference": "b63f8ffd04c376d076677fec346be1f9ecead27a",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedSearch/zipball/e30b5674e5dca0822293fb77e19f9e61346125b2",
+                "reference": "e30b5674e5dca0822293fb77e19f9e61346125b2",
                 "shasum": ""
             },
             "require": {
@@ -855,7 +855,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-09-09T10:39:33+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceExtendedSearch"
@@ -903,12 +903,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics.git",
-                "reference": "9ecdfcef9cd1b63cdac28e58ff43b450090f0420"
+                "reference": "0d911a47246075d1c66d5558a0e8d8fa63cc952f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics/zipball/9ecdfcef9cd1b63cdac28e58ff43b450090f0420",
-                "reference": "9ecdfcef9cd1b63cdac28e58ff43b450090f0420",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceExtendedStatistics/zipball/0d911a47246075d1c66d5558a0e8d8fa63cc952f",
+                "reference": "0d911a47246075d1c66d5558a0e8d8fa63cc952f",
                 "shasum": ""
             },
             "require": {
@@ -922,7 +922,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-15T20:08:53+00:00",
+            "time": "2025-08-28T09:20:05+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceExtendedStatistics"
@@ -970,12 +970,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceFoundation",
-                "reference": "c88e21173bd27816aaed1c61a54b7f998cd54135"
+                "reference": "a899d4a0ebdda95b1f4d31959a4a4691729396c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceFoundation/zipball/c88e21173bd27816aaed1c61a54b7f998cd54135",
-                "reference": "c88e21173bd27816aaed1c61a54b7f998cd54135",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceFoundation/zipball/a899d4a0ebdda95b1f4d31959a4a4691729396c3",
+                "reference": "a899d4a0ebdda95b1f4d31959a4a4691729396c3",
                 "shasum": ""
             },
             "require": {
@@ -998,7 +998,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-25T20:20:02+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceFoundation"
@@ -1050,12 +1050,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceHideTitle.git",
-                "reference": "8176cc16166a48018bbdcab9b69f8fc1f5192225"
+                "reference": "7085424095f754590ae5b7c44c30476f30c307c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceHideTitle/zipball/8176cc16166a48018bbdcab9b69f8fc1f5192225",
-                "reference": "8176cc16166a48018bbdcab9b69f8fc1f5192225",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceHideTitle/zipball/7085424095f754590ae5b7c44c30476f30c307c2",
+                "reference": "7085424095f754590ae5b7c44c30476f30c307c2",
                 "shasum": ""
             },
             "require": {
@@ -1068,7 +1068,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-11T20:07:42+00:00",
+            "time": "2025-08-20T20:19:41+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceHideTitle"
@@ -1114,12 +1114,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInsertCategory.git",
-                "reference": "2d75ae3f5f6519a62ee0fe42a33bc1c5361d8de3"
+                "reference": "e7a06fb0aca2612cc7adb2656442aac740e3d867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInsertCategory/zipball/2d75ae3f5f6519a62ee0fe42a33bc1c5361d8de3",
-                "reference": "2d75ae3f5f6519a62ee0fe42a33bc1c5361d8de3",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInsertCategory/zipball/e7a06fb0aca2612cc7adb2656442aac740e3d867",
+                "reference": "e7a06fb0aca2612cc7adb2656442aac740e3d867",
                 "shasum": ""
             },
             "require": {
@@ -1132,7 +1132,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-26T20:19:30+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceInsertCategory"
@@ -1178,12 +1178,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus",
-                "reference": "22d20871b72659e5df361636549aa29949f231f6"
+                "reference": "7c69f5a84fd0112c51a9cf4fcc575aad7c40a0ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus/zipball/22d20871b72659e5df361636549aa29949f231f6",
-                "reference": "22d20871b72659e5df361636549aa29949f231f6",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInstanceStatus/zipball/7c69f5a84fd0112c51a9cf4fcc575aad7c40a0ac",
+                "reference": "7c69f5a84fd0112c51a9cf4fcc575aad7c40a0ac",
                 "shasum": ""
             },
             "require": {
@@ -1196,7 +1196,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-07-30T20:21:20+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceInstanceStatus"
@@ -1238,12 +1238,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks.git",
-                "reference": "a9fcc3162fa2a0cbdad72b00c4f04bc17f4ab821"
+                "reference": "1f793edddba509d6b5df35bf7bf00d9dfe4a98f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks/zipball/a9fcc3162fa2a0cbdad72b00c4f04bc17f4ab821",
-                "reference": "a9fcc3162fa2a0cbdad72b00c4f04bc17f4ab821",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceInterWikiLinks/zipball/1f793edddba509d6b5df35bf7bf00d9dfe4a98f5",
+                "reference": "1f793edddba509d6b5df35bf7bf00d9dfe4a98f5",
                 "shasum": ""
             },
             "require": {
@@ -1256,7 +1256,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-20T20:19:41+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceInterWikiLinks"
@@ -1302,12 +1302,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager.git",
-                "reference": "ca4949da720f668196f3fb915574ba0ca361e70c"
+                "reference": "92c796f3d88649def1e83a0a21ec7918f14616a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager/zipball/ca4949da720f668196f3fb915574ba0ca361e70c",
-                "reference": "ca4949da720f668196f3fb915574ba0ca361e70c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceNamespaceManager/zipball/92c796f3d88649def1e83a0a21ec7918f14616a3",
+                "reference": "92c796f3d88649def1e83a0a21ec7918f14616a3",
                 "shasum": ""
             },
             "require": {
@@ -1321,7 +1321,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-20T20:19:41+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceNamespaceManager"
@@ -1364,12 +1364,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageAccess.git",
-                "reference": "64ea9dae9071908204e3685a2850cb8caa54627e"
+                "reference": "14ef2cebd1dc850ba3b85e7c28dad101d24f4f7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAccess/zipball/64ea9dae9071908204e3685a2850cb8caa54627e",
-                "reference": "64ea9dae9071908204e3685a2850cb8caa54627e",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAccess/zipball/14ef2cebd1dc850ba3b85e7c28dad101d24f4f7d",
+                "reference": "14ef2cebd1dc850ba3b85e7c28dad101d24f4f7d",
                 "shasum": ""
             },
             "require": {
@@ -1382,7 +1382,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-11T20:07:42+00:00",
+            "time": "2025-07-23T20:07:33+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePageAccess"
@@ -1430,12 +1430,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageAssignments.git",
-                "reference": "5de53d3b29293dcfe1d084fc15cffbc3af0c2960"
+                "reference": "93e8be23a0c73d63b7f0a35260ee52c61ded5ce7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAssignments/zipball/5de53d3b29293dcfe1d084fc15cffbc3af0c2960",
-                "reference": "5de53d3b29293dcfe1d084fc15cffbc3af0c2960",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageAssignments/zipball/93e8be23a0c73d63b7f0a35260ee52c61ded5ce7",
+                "reference": "93e8be23a0c73d63b7f0a35260ee52c61ded5ce7",
                 "shasum": ""
             },
             "require": {
@@ -1450,7 +1450,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-28T09:51:34+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePageAssignments"
@@ -1493,12 +1493,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePagesVisited.git",
-                "reference": "458b03152b15cb588328bf4d520a9ad5a529fc6c"
+                "reference": "173e9b47ee957e865709be601cb35cba0d4431a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePagesVisited/zipball/458b03152b15cb588328bf4d520a9ad5a529fc6c",
-                "reference": "458b03152b15cb588328bf4d520a9ad5a529fc6c",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePagesVisited/zipball/173e9b47ee957e865709be601cb35cba0d4431a9",
+                "reference": "173e9b47ee957e865709be601cb35cba0d4431a9",
                 "shasum": ""
             },
             "require": {
@@ -1511,7 +1511,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-09-03T13:00:27+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePagesVisited"
@@ -1559,12 +1559,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePageTemplates.git",
-                "reference": "cb21c3e3626bf499384c8e8cc6f28c5dfb58890e"
+                "reference": "94fe656f5540b13f14cbc7547d5326264b0bcaf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageTemplates/zipball/cb21c3e3626bf499384c8e8cc6f28c5dfb58890e",
-                "reference": "cb21c3e3626bf499384c8e8cc6f28c5dfb58890e",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePageTemplates/zipball/94fe656f5540b13f14cbc7547d5326264b0bcaf8",
+                "reference": "94fe656f5540b13f14cbc7547d5326264b0bcaf8",
                 "shasum": ""
             },
             "require": {
@@ -1578,7 +1578,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-20T20:19:41+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePageTemplates"
@@ -1626,12 +1626,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpicePermissionManager.git",
-                "reference": "cd2807ad2031c5794c4f31b5823097c5dd5c54a2"
+                "reference": "32c154240d2109d389d6592b44359a99e1f15d16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePermissionManager/zipball/cd2807ad2031c5794c4f31b5823097c5dd5c54a2",
-                "reference": "cd2807ad2031c5794c4f31b5823097c5dd5c54a2",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpicePermissionManager/zipball/32c154240d2109d389d6592b44359a99e1f15d16",
+                "reference": "32c154240d2109d389d6592b44359a99e1f15d16",
                 "shasum": ""
             },
             "require": {
@@ -1645,7 +1645,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-20T20:19:42+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpicePermissionManager"
@@ -1693,12 +1693,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceQrCode",
-                "reference": "52a574e49099608df445e32a27b1dac023b2bb75"
+                "reference": "a1bb16c8ebd2b0a2932528168bf272dea3bd2ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceQrCode/zipball/52a574e49099608df445e32a27b1dac023b2bb75",
-                "reference": "52a574e49099608df445e32a27b1dac023b2bb75",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceQrCode/zipball/a1bb16c8ebd2b0a2932528168bf272dea3bd2ab0",
+                "reference": "a1bb16c8ebd2b0a2932528168bf272dea3bd2ab0",
                 "shasum": ""
             },
             "require": {
@@ -1713,7 +1713,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-25T20:20:02+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceQrCode"
@@ -1756,12 +1756,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceReaders.git",
-                "reference": "ada3f3a54a5451c70fd8eeaf6711dd5399cf40f6"
+                "reference": "57230d0eea5ff1fc7563bcfd047ab55fe3e04e9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceReaders/zipball/ada3f3a54a5451c70fd8eeaf6711dd5399cf40f6",
-                "reference": "ada3f3a54a5451c70fd8eeaf6711dd5399cf40f6",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceReaders/zipball/57230d0eea5ff1fc7563bcfd047ab55fe3e04e9d",
+                "reference": "57230d0eea5ff1fc7563bcfd047ab55fe3e04e9d",
                 "shasum": ""
             },
             "require": {
@@ -1774,7 +1774,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-21T20:20:13+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceReaders"
@@ -1822,12 +1822,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder",
-                "reference": "99982a9769ff2becd5561520926cec3bd009690b"
+                "reference": "2fe9745070409926facfaa9f0c26e38566b0dfcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder/zipball/99982a9769ff2becd5561520926cec3bd009690b",
-                "reference": "99982a9769ff2becd5561520926cec3bd009690b",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceRSSFeeder/zipball/2fe9745070409926facfaa9f0c26e38566b0dfcd",
+                "reference": "2fe9745070409926facfaa9f0c26e38566b0dfcd",
                 "shasum": ""
             },
             "require": {
@@ -1840,7 +1840,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-07-25T00:33:21+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceRSSFeeder"
@@ -1888,12 +1888,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceSaferEdit.git",
-                "reference": "164765f2dd4d2da608761a82f64f72c745731310"
+                "reference": "d592834dcaaa23f6bed348db5be457eafc19b8fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSaferEdit/zipball/164765f2dd4d2da608761a82f64f72c745731310",
-                "reference": "164765f2dd4d2da608761a82f64f72c745731310",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSaferEdit/zipball/d592834dcaaa23f6bed348db5be457eafc19b8fd",
+                "reference": "d592834dcaaa23f6bed348db5be457eafc19b8fd",
                 "shasum": ""
             },
             "require": {
@@ -1906,7 +1906,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-07-25T00:34:59+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceSaferEdit"
@@ -1949,12 +1949,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceSmartList.git",
-                "reference": "2ceca159ce5e97185f5c7162d9c09af8c06fdb05"
+                "reference": "82224a64a3d8686388fa009287f1fc1be5e8eb6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSmartList/zipball/2ceca159ce5e97185f5c7162d9c09af8c06fdb05",
-                "reference": "2ceca159ce5e97185f5c7162d9c09af8c06fdb05",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceSmartList/zipball/82224a64a3d8686388fa009287f1fc1be5e8eb6b",
+                "reference": "82224a64a3d8686388fa009287f1fc1be5e8eb6b",
                 "shasum": ""
             },
             "require": {
@@ -1967,7 +1967,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-25T20:20:02+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceSmartList"
@@ -2013,12 +2013,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceTagCloud",
-                "reference": "b32b44885695f0a04fb7004fa7115b3237c53800"
+                "reference": "b55e4b5e16229af9e613440c325b6a57ff1c0ebe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceTagCloud/zipball/b32b44885695f0a04fb7004fa7115b3237c53800",
-                "reference": "b32b44885695f0a04fb7004fa7115b3237c53800",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceTagCloud/zipball/b55e4b5e16229af9e613440c325b6a57ff1c0ebe",
+                "reference": "b55e4b5e16229af9e613440c325b6a57ff1c0ebe",
                 "shasum": ""
             },
             "require": {
@@ -2031,7 +2031,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-25T20:20:02+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceTagCloud"
@@ -2074,12 +2074,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUsageTracker",
-                "reference": "e31c9fe690df9c5679f2b28eb5522085b95d98bf"
+                "reference": "9fcb6e8c4bb4bd04c874045fa63b456ab1063d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUsageTracker/zipball/e31c9fe690df9c5679f2b28eb5522085b95d98bf",
-                "reference": "e31c9fe690df9c5679f2b28eb5522085b95d98bf",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUsageTracker/zipball/9fcb6e8c4bb4bd04c874045fa63b456ab1063d96",
+                "reference": "9fcb6e8c4bb4bd04c874045fa63b456ab1063d96",
                 "shasum": ""
             },
             "require": {
@@ -2092,7 +2092,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T03:33:10+00:00",
+            "time": "2025-08-20T20:19:42+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceUsageTracker"
@@ -2135,12 +2135,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUserManager.git",
-                "reference": "3c8f2885fadf074bb078938a7717f24201af6b3d"
+                "reference": "ff7a9e690d692fcd2463bfe225b5d2234fa8abcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserManager/zipball/3c8f2885fadf074bb078938a7717f24201af6b3d",
-                "reference": "3c8f2885fadf074bb078938a7717f24201af6b3d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserManager/zipball/ff7a9e690d692fcd2463bfe225b5d2234fa8abcb",
+                "reference": "ff7a9e690d692fcd2463bfe225b5d2234fa8abcb",
                 "shasum": ""
             },
             "require": {
@@ -2153,7 +2153,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:22+00:00",
+            "time": "2025-08-25T20:20:02+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceUserManager"
@@ -2201,12 +2201,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceUserSidebar.git",
-                "reference": "e27f484e6867f98fb2b8724dd34f6aa9706417f9"
+                "reference": "2cf9a35068dcfecb060b26714900dbdec8d30fc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserSidebar/zipball/e27f484e6867f98fb2b8724dd34f6aa9706417f9",
-                "reference": "e27f484e6867f98fb2b8724dd34f6aa9706417f9",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceUserSidebar/zipball/2cf9a35068dcfecb060b26714900dbdec8d30fc0",
+                "reference": "2cf9a35068dcfecb060b26714900dbdec8d30fc0",
                 "shasum": ""
             },
             "require": {
@@ -2220,7 +2220,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-16T05:55:04+00:00",
+            "time": "2025-08-08T20:19:18+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceUserSidebar"
@@ -2263,12 +2263,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector",
-                "reference": "628a2209eb6842ee1725277a85ba221c76897dad"
+                "reference": "8c20001a8168fe194421803aa24efefe7dcb0e35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector/zipball/628a2209eb6842ee1725277a85ba221c76897dad",
-                "reference": "628a2209eb6842ee1725277a85ba221c76897dad",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceVisualEditorConnector/zipball/8c20001a8168fe194421803aa24efefe7dcb0e35",
+                "reference": "8c20001a8168fe194421803aa24efefe7dcb0e35",
                 "shasum": ""
             },
             "require": {
@@ -2281,7 +2281,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:23+00:00",
+            "time": "2025-08-14T10:10:05+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceVisualEditorConnector"
@@ -2324,12 +2324,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceWatchList",
-                "reference": "5d67501c0aecd19aaf88a1fd279ec4fb06c9728f"
+                "reference": "d86a5b87b4de448fa04327571dd8b99de31c79e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWatchList/zipball/5d67501c0aecd19aaf88a1fd279ec4fb06c9728f",
-                "reference": "5d67501c0aecd19aaf88a1fd279ec4fb06c9728f",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWatchList/zipball/d86a5b87b4de448fa04327571dd8b99de31c79e2",
+                "reference": "d86a5b87b4de448fa04327571dd8b99de31c79e2",
                 "shasum": ""
             },
             "require": {
@@ -2342,7 +2342,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:23+00:00",
+            "time": "2025-08-21T20:20:13+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceWatchList"
@@ -2390,12 +2390,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline",
-                "reference": "5af863a073f895e0ee98ffecbae8b709ec288b89"
+                "reference": "f94595a77c5020a167b904c71e768fb7885bd275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline/zipball/5af863a073f895e0ee98ffecbae8b709ec288b89",
-                "reference": "5af863a073f895e0ee98ffecbae8b709ec288b89",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-BlueSpiceWhoIsOnline/zipball/f94595a77c5020a167b904c71e768fb7885bd275",
+                "reference": "f94595a77c5020a167b904c71e768fb7885bd275",
                 "shasum": ""
             },
             "require-dev": {
@@ -2405,7 +2405,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-14T20:07:23+00:00",
+            "time": "2025-09-16T08:41:48+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "BlueSpiceWhoIsOnline"
@@ -2880,21 +2880,22 @@
             "support": {
                 "source": "https://github.com/wikimedia/php-cssjanus/tree/v2.3.0"
             },
+            "abandoned": "wikimedia/cssjanus",
             "install-path": "../cssjanus/cssjanus"
         },
         {
             "name": "dasprid/enum",
-            "version": "1.0.6",
-            "version_normalized": "1.0.6.0",
+            "version": "1.0.7",
+            "version_normalized": "1.0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DASPRiD/Enum.git",
-                "reference": "8dfd07c6d2cf31c8da90c53b83c026c7696dda90"
+                "reference": "b5874fa9ed0043116c72162ec7f4fb50e02e7cce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/8dfd07c6d2cf31c8da90c53b83c026c7696dda90",
-                "reference": "8dfd07c6d2cf31c8da90c53b83c026c7696dda90",
+                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/b5874fa9ed0043116c72162ec7f4fb50e02e7cce",
+                "reference": "b5874fa9ed0043116c72162ec7f4fb50e02e7cce",
                 "shasum": ""
             },
             "require": {
@@ -2904,7 +2905,7 @@
                 "phpunit/phpunit": "^7 || ^8 || ^9 || ^10 || ^11",
                 "squizlabs/php_codesniffer": "*"
             },
-            "time": "2024-08-09T14:30:48+00:00",
+            "time": "2025-09-16T12:23:56+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -2931,7 +2932,7 @@
             ],
             "support": {
                 "issues": "https://github.com/DASPRiD/Enum/issues",
-                "source": "https://github.com/DASPRiD/Enum/tree/1.0.6"
+                "source": "https://github.com/DASPRiD/Enum/tree/1.0.7"
             },
             "install-path": "../dasprid/enum"
         },
@@ -3278,26 +3279,27 @@
         },
         {
             "name": "ezimuel/guzzlestreams",
-            "version": "3.1.0",
-            "version_normalized": "3.1.0.0",
+            "version": "4.1.0",
+            "version_normalized": "4.1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezimuel/guzzlestreams.git",
-                "reference": "b4b5a025dfee70d6cd34c780e07330eb93d5b997"
+                "reference": "903161be81e9f497cc42fb7db982404a4e6441b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezimuel/guzzlestreams/zipball/b4b5a025dfee70d6cd34c780e07330eb93d5b997",
-                "reference": "b4b5a025dfee70d6cd34c780e07330eb93d5b997",
+                "url": "https://api.github.com/repos/ezimuel/guzzlestreams/zipball/903161be81e9f497cc42fb7db982404a4e6441b0",
+                "reference": "903161be81e9f497cc42fb7db982404a4e6441b0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=7.4.0"
             },
             "require-dev": {
+                "phpstan/phpstan": "^2.1",
                 "phpunit/phpunit": "~9.0"
             },
-            "time": "2022-10-24T12:58:50+00:00",
+            "time": "2025-08-05T06:44:46+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3328,27 +3330,27 @@
                 "stream"
             ],
             "support": {
-                "source": "https://github.com/ezimuel/guzzlestreams/tree/3.1.0"
+                "source": "https://github.com/ezimuel/guzzlestreams/tree/4.1.0"
             },
             "install-path": "../ezimuel/guzzlestreams"
         },
         {
             "name": "ezimuel/ringphp",
-            "version": "1.3.0",
-            "version_normalized": "1.3.0.0",
+            "version": "1.4.0",
+            "version_normalized": "1.4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezimuel/ringphp.git",
-                "reference": "5e4ee1dfc7a323b87873b83f17c69c76ba047793"
+                "reference": "bc983599ec7add50c00e420e867c403c8ed16ae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezimuel/ringphp/zipball/5e4ee1dfc7a323b87873b83f17c69c76ba047793",
-                "reference": "5e4ee1dfc7a323b87873b83f17c69c76ba047793",
+                "url": "https://api.github.com/repos/ezimuel/ringphp/zipball/bc983599ec7add50c00e420e867c403c8ed16ae7",
+                "reference": "bc983599ec7add50c00e420e867c403c8ed16ae7",
                 "shasum": ""
             },
             "require": {
-                "ezimuel/guzzlestreams": "^3.0.1",
+                "ezimuel/guzzlestreams": "^3.0.1 || ^4.0.0",
                 "php": ">=5.4.0",
                 "react/promise": "^2.0 || ^3.0"
             },
@@ -3362,7 +3364,7 @@
             "suggest": {
                 "ext-curl": "Guzzle will use specific adapters if cURL is present"
             },
-            "time": "2025-02-24T10:29:27+00:00",
+            "time": "2025-08-07T09:30:38+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3388,7 +3390,7 @@
             ],
             "description": "Fork of guzzle/RingPHP (abandoned) to be used with elasticsearch-php",
             "support": {
-                "source": "https://github.com/ezimuel/ringphp/tree/1.3.0"
+                "source": "https://github.com/ezimuel/ringphp/tree/1.4.0"
             },
             "install-path": "../ezimuel/ringphp"
         },
@@ -3587,17 +3589,17 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.2.0",
-            "version_normalized": "2.2.0.0",
+            "version": "2.3.0",
+            "version_normalized": "2.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "7c69f28996b0a6920945dd20b3857e499d9ca96c"
+                "reference": "481557b130ef3790cf82b713667b43030dc9c957"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/7c69f28996b0a6920945dd20b3857e499d9ca96c",
-                "reference": "7c69f28996b0a6920945dd20b3857e499d9ca96c",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/481557b130ef3790cf82b713667b43030dc9c957",
+                "reference": "481557b130ef3790cf82b713667b43030dc9c957",
                 "shasum": ""
             },
             "require": {
@@ -3605,9 +3607,9 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
-                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
+                "phpunit/phpunit": "^8.5.44 || ^9.6.25"
             },
-            "time": "2025-03-27T13:27:01+00:00",
+            "time": "2025-08-22T14:34:08+00:00",
             "type": "library",
             "extra": {
                 "bamarni-bin": {
@@ -3653,7 +3655,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.2.0"
+                "source": "https://github.com/guzzle/promises/tree/2.3.0"
             },
             "funding": [
                 {
@@ -3673,17 +3675,17 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.7.1",
-            "version_normalized": "2.7.1.0",
+            "version": "2.8.0",
+            "version_normalized": "2.8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16"
+                "reference": "21dc724a0583619cd1652f673303492272778051"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c2270caaabe631b3b44c85f99e5a04bbb8060d16",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/21dc724a0583619cd1652f673303492272778051",
+                "reference": "21dc724a0583619cd1652f673303492272778051",
                 "shasum": ""
             },
             "require": {
@@ -3699,12 +3701,12 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "http-interop/http-factory-tests": "0.9.0",
-                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
+                "phpunit/phpunit": "^8.5.44 || ^9.6.25"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
-            "time": "2025-03-27T12:30:47+00:00",
+            "time": "2025-08-23T21:21:41+00:00",
             "type": "library",
             "extra": {
                 "bamarni-bin": {
@@ -3772,7 +3774,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.7.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.8.0"
             },
             "funding": [
                 {
@@ -3797,12 +3799,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-FilterSpecialPages.git",
-                "reference": "8a1e9931aac6f50f86a866794fe216f8802b9617"
+                "reference": "6abe0f3c24c47b06752e61f6a91b7ef227895b8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FilterSpecialPages/zipball/8a1e9931aac6f50f86a866794fe216f8802b9617",
-                "reference": "8a1e9931aac6f50f86a866794fe216f8802b9617",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FilterSpecialPages/zipball/6abe0f3c24c47b06752e61f6a91b7ef227895b8e",
+                "reference": "6abe0f3c24c47b06752e61f6a91b7ef227895b8e",
                 "shasum": ""
             },
             "require": {
@@ -3814,7 +3816,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T04:42:28+00:00",
+            "time": "2025-07-18T13:08:12+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -4285,12 +4287,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-ContentDroplets.git",
-                "reference": "121325810b0d0093281117ab5bb104139661f6e1"
+                "reference": "40d6ff27eaacc61585e9f91d8b6261acf16297f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ContentDroplets/zipball/121325810b0d0093281117ab5bb104139661f6e1",
-                "reference": "121325810b0d0093281117ab5bb104139661f6e1",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ContentDroplets/zipball/40d6ff27eaacc61585e9f91d8b6261acf16297f2",
+                "reference": "40d6ff27eaacc61585e9f91d8b6261acf16297f2",
                 "shasum": ""
             },
             "require": {
@@ -4305,7 +4307,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T04:17:18+00:00",
+            "time": "2025-07-22T14:23:50+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "ContentDroplets"
@@ -4347,12 +4349,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-EnhancedStandardUIs.git",
-                "reference": "c16be923926289ac0f1caba54d0faf188de57dbc"
+                "reference": "b9b6f73598770cdaa562bf6cc5c117dee08d5906"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedStandardUIs/zipball/c16be923926289ac0f1caba54d0faf188de57dbc",
-                "reference": "c16be923926289ac0f1caba54d0faf188de57dbc",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedStandardUIs/zipball/b9b6f73598770cdaa562bf6cc5c117dee08d5906",
+                "reference": "b9b6f73598770cdaa562bf6cc5c117dee08d5906",
                 "shasum": ""
             },
             "require": {
@@ -4365,7 +4367,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T04:39:05+00:00",
+            "time": "2025-09-02T14:27:04+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "EnhancedStandardUIs"
@@ -4407,12 +4409,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-EnhancedUpload",
-                "reference": "b266492a3d72560d57141fcd10b37c155d0956fc"
+                "reference": "ace4848f6ce1bedf82d5dba3980c8b2ef80102f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedUpload/zipball/b266492a3d72560d57141fcd10b37c155d0956fc",
-                "reference": "b266492a3d72560d57141fcd10b37c155d0956fc",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-EnhancedUpload/zipball/ace4848f6ce1bedf82d5dba3980c8b2ef80102f1",
+                "reference": "ace4848f6ce1bedf82d5dba3980c8b2ef80102f1",
                 "shasum": ""
             },
             "require": {
@@ -4425,7 +4427,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-11T20:07:42+00:00",
+            "time": "2025-08-22T07:38:56+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "EnhancedUpload"
@@ -4474,12 +4476,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-FlexiSkin.git",
-                "reference": "a7e65a7a2d06e8df58c317d63b39d4e727718e7b"
+                "reference": "0ed1e5e78bd14e87703e676c3cfd40a738fe9ac2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FlexiSkin/zipball/a7e65a7a2d06e8df58c317d63b39d4e727718e7b",
-                "reference": "a7e65a7a2d06e8df58c317d63b39d4e727718e7b",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-FlexiSkin/zipball/0ed1e5e78bd14e87703e676c3cfd40a738fe9ac2",
+                "reference": "0ed1e5e78bd14e87703e676c3cfd40a738fe9ac2",
                 "shasum": ""
             },
             "require": {
@@ -4492,7 +4494,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T04:48:14+00:00",
+            "time": "2025-06-05T10:41:26+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "FlexiSkin"
@@ -4614,12 +4616,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-ImageMapEdit",
-                "reference": "9e4799890903ae3d65318d986d6596007d0fc6b4"
+                "reference": "b2865b2eefdd55467239c28df26ef2d06ac9d18e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ImageMapEdit/zipball/9e4799890903ae3d65318d986d6596007d0fc6b4",
-                "reference": "9e4799890903ae3d65318d986d6596007d0fc6b4",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-ImageMapEdit/zipball/b2865b2eefdd55467239c28df26ef2d06ac9d18e",
+                "reference": "b2865b2eefdd55467239c28df26ef2d06ac9d18e",
                 "shasum": ""
             },
             "require": {
@@ -4632,7 +4634,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-15T20:08:53+00:00",
+            "time": "2025-08-29T20:18:55+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -4672,12 +4674,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-InviteSignup.git",
-                "reference": "aa0cfaf635f6d757ad7d113d29cc246333bf6a7b"
+                "reference": "85edbbe21447fee64a243e52572b621202ef2ced"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-InviteSignup/zipball/aa0cfaf635f6d757ad7d113d29cc246333bf6a7b",
-                "reference": "aa0cfaf635f6d757ad7d113d29cc246333bf6a7b",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-InviteSignup/zipball/85edbbe21447fee64a243e52572b621202ef2ced",
+                "reference": "85edbbe21447fee64a243e52572b621202ef2ced",
                 "shasum": ""
             },
             "require": {
@@ -4689,7 +4691,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-17T06:36:40+00:00",
+            "time": "2025-08-26T06:42:24+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -4733,12 +4735,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-Lingo.git",
-                "reference": "3714aefc935c7d6f3af1fa3706764a328ad96582"
+                "reference": "638ff8d0b5a2e3974ddc54d68f21970f74d333cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-Lingo/zipball/3714aefc935c7d6f3af1fa3706764a328ad96582",
-                "reference": "3714aefc935c7d6f3af1fa3706764a328ad96582",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-Lingo/zipball/638ff8d0b5a2e3974ddc54d68f21970f74d333cf",
+                "reference": "638ff8d0b5a2e3974ddc54d68f21970f74d333cf",
                 "shasum": ""
             },
             "require": {
@@ -4755,7 +4757,7 @@
             "suggest": {
                 "mediawiki/semantic-glossary": "Alternative back-end that retrieves terms and definitions from a Semantic MediaWiki store"
             },
-            "time": "2025-06-12T17:00:47+00:00",
+            "time": "2025-09-09T06:17:00+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "branch-alias": {
@@ -4828,12 +4830,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-MenuEditor",
-                "reference": "076d4ea78afbe761bd374b0e5ec3678aaaba83ad"
+                "reference": "0baef91b7c4b46ed403b14a8e2b023183e9286ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-MenuEditor/zipball/076d4ea78afbe761bd374b0e5ec3678aaaba83ad",
-                "reference": "076d4ea78afbe761bd374b0e5ec3678aaaba83ad",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-MenuEditor/zipball/0baef91b7c4b46ed403b14a8e2b023183e9286ca",
+                "reference": "0baef91b7c4b46ed403b14a8e2b023183e9286ca",
                 "shasum": ""
             },
             "require": {
@@ -4846,7 +4848,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T06:30:20+00:00",
+            "time": "2025-08-21T20:20:13+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "MenuEditor"
@@ -4886,12 +4888,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-NotifyMe.git",
-                "reference": "cf0298f617587b15a56871c00ce781429ab5d452"
+                "reference": "5d3489660b34443ae09d7f559ae2458762cd8437"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-NotifyMe/zipball/cf0298f617587b15a56871c00ce781429ab5d452",
-                "reference": "cf0298f617587b15a56871c00ce781429ab5d452",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-NotifyMe/zipball/5d3489660b34443ae09d7f559ae2458762cd8437",
+                "reference": "5d3489660b34443ae09d7f559ae2458762cd8437",
                 "shasum": ""
             },
             "require": {
@@ -4910,7 +4912,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-15T20:08:53+00:00",
+            "time": "2025-08-18T20:19:08+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "NotifyMe"
@@ -4953,12 +4955,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-OOJSPlus.git",
-                "reference": "443adb6f3eb07cb2045d50aaaf3c437dfdca0669"
+                "reference": "73999c7710ae0cf58d93bb9795f106b0cbc26408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-OOJSPlus/zipball/443adb6f3eb07cb2045d50aaaf3c437dfdca0669",
-                "reference": "443adb6f3eb07cb2045d50aaaf3c437dfdca0669",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-OOJSPlus/zipball/73999c7710ae0cf58d93bb9795f106b0cbc26408",
+                "reference": "73999c7710ae0cf58d93bb9795f106b0cbc26408",
                 "shasum": ""
             },
             "require": {
@@ -4973,7 +4975,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-07T20:08:24+00:00",
+            "time": "2025-08-21T12:04:02+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "OOJSPlus"
@@ -5018,7 +5020,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.hallowelt.com:BlueSpice/mediawiki-extensions-pageheader.git",
-                "reference": "93bc430b64c6c37ade1c788fd34f3485c078f7da"
+                "reference": "0d699f5359180d2f5507226c71d5643314cb68d3"
             },
             "require": {
                 "composer/installers": "~1.0|~2",
@@ -5032,7 +5034,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T07:41:46+00:00",
+            "time": "2025-07-18T13:08:13+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "PageHeader"
@@ -5084,12 +5086,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-PDFCreator.git",
-                "reference": "7118debf61d03a3720620929229a172c55e6b62e"
+                "reference": "5fa5a6851e6b0466ab83a7b1919fadc46aa0ad8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-PDFCreator/zipball/7118debf61d03a3720620929229a172c55e6b62e",
-                "reference": "7118debf61d03a3720620929229a172c55e6b62e",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-PDFCreator/zipball/5fa5a6851e6b0466ab83a7b1919fadc46aa0ad8c",
+                "reference": "5fa5a6851e6b0466ab83a7b1919fadc46aa0ad8c",
                 "shasum": ""
             },
             "require": {
@@ -5102,7 +5104,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-11T20:07:42+00:00",
+            "time": "2025-09-03T14:17:59+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "PDFCreator"
@@ -5183,12 +5185,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-StandardDialogs",
-                "reference": "f396e63e8bc310945a7141fef28a29f988c99a4d"
+                "reference": "6bca68e6e8e15c5140fb661f3a626a86fe44032c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-StandardDialogs/zipball/f396e63e8bc310945a7141fef28a29f988c99a4d",
-                "reference": "f396e63e8bc310945a7141fef28a29f988c99a4d",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-StandardDialogs/zipball/6bca68e6e8e15c5140fb661f3a626a86fe44032c",
+                "reference": "6bca68e6e8e15c5140fb661f3a626a86fe44032c",
                 "shasum": ""
             },
             "require": {
@@ -5200,7 +5202,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T08:22:21+00:00",
+            "time": "2025-07-31T06:42:19+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "StandardDialogs"
@@ -5288,12 +5290,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-UserFunctions",
-                "reference": "1c1010f06c09caa1c5e2462abc884935880e8bbf"
+                "reference": "32a43c9093db90d407ff6bc46ec6c6e952aa89f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-UserFunctions/zipball/1c1010f06c09caa1c5e2462abc884935880e8bbf",
-                "reference": "1c1010f06c09caa1c5e2462abc884935880e8bbf",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-UserFunctions/zipball/32a43c9093db90d407ff6bc46ec6c6e952aa89f0",
+                "reference": "32a43c9093db90d407ff6bc46ec6c6e952aa89f0",
                 "shasum": ""
             },
             "require": {
@@ -5305,7 +5307,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-06-13T11:39:19+00:00",
+            "time": "2025-07-29T06:55:33+00:00",
             "type": "mediawiki-extension",
             "installation-source": "dist",
             "scripts": {
@@ -5355,35 +5357,49 @@
             "version_normalized": "dev-REL1_43-1.1.x",
             "source": {
                 "type": "git",
-                "url": "git@gitlab.hallowelt.com:BlueSpice/mediawiki-extensions-bluespiceuserprofile.git",
-                "reference": "3255b0a7f236b8265e5e436ab37e5694870c4270"
+                "url": "git@github.com:wikimedia/mediawiki-extensions-UserProfile.git",
+                "reference": "46f704207ca088a9ac65abae4869b13d426dc2d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-UserProfile/zipball/46f704207ca088a9ac65abae4869b13d426dc2d2",
+                "reference": "46f704207ca088a9ac65abae4869b13d426dc2d2",
+                "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0|~2",
                 "mwstake/mediawiki-component-dynamicfiledispatcher": "~1",
+                "mwstake/mediawiki-component-formengine": "~3.0",
                 "mwstake/mediawiki-component-inputprocessor": "~1"
             },
             "require-dev": {
-                "mediawiki/mediawiki-codesniffer": "38.0.0",
-                "mediawiki/minus-x": "1.1.0",
-                "php-parallel-lint/php-console-highlighter": "0.5.0",
+                "mediawiki/mediawiki-codesniffer": "45.0.0",
+                "mediawiki/mediawiki-phan-config": "0.14.0",
+                "mediawiki/minus-x": "1.1.3",
+                "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T08:28:14+00:00",
+            "time": "2025-08-21T13:58:04+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "UserProfile"
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "scripts": {
                 "test": [
                     "parallel-lint . --exclude vendor --exclude node_modules",
-                    "minus-x check .",
-                    "phpcs -p -s"
+                    "@phpcs",
+                    "minus-x check ."
                 ],
                 "fix": [
                     "minus-x fix .",
                     "phpcbf"
+                ],
+                "phan": [
+                    "phan -d . --long-progress-bar"
+                ],
+                "phpcs": [
+                    "phpcs -sp --cache"
                 ]
             },
             "license": [
@@ -5480,12 +5496,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-VisualEditorPlus.git",
-                "reference": "6b35db7b8898aeda404f716bb90381e53b4887ab"
+                "reference": "b1c0f21bf546e62d8fada7089ec0671e90fad29f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VisualEditorPlus/zipball/6b35db7b8898aeda404f716bb90381e53b4887ab",
-                "reference": "6b35db7b8898aeda404f716bb90381e53b4887ab",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VisualEditorPlus/zipball/b1c0f21bf546e62d8fada7089ec0671e90fad29f",
+                "reference": "b1c0f21bf546e62d8fada7089ec0671e90fad29f",
                 "shasum": ""
             },
             "require": {
@@ -5498,7 +5514,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T11:33:54+00:00",
+            "time": "2025-08-08T20:19:18+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "VisualEditorPlus"
@@ -5540,12 +5556,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:wikimedia/mediawiki-extensions-VueJsPlus.git",
-                "reference": "54bec786221008ea7f32594f0b1f80740c0923c8"
+                "reference": "0c9a48c7e4558db965f638a66d6b468792ad2286"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VueJsPlus/zipball/54bec786221008ea7f32594f0b1f80740c0923c8",
-                "reference": "54bec786221008ea7f32594f0b1f80740c0923c8",
+                "url": "https://api.github.com/repos/wikimedia/mediawiki-extensions-VueJsPlus/zipball/0c9a48c7e4558db965f638a66d6b468792ad2286",
+                "reference": "0c9a48c7e4558db965f638a66d6b468792ad2286",
                 "shasum": ""
             },
             "require": {
@@ -5558,7 +5574,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-01T08:31:53+00:00",
+            "time": "2025-07-18T13:08:13+00:00",
             "type": "mediawiki-extension",
             "extra": {
                 "installer-name": "VueJsPlus"
@@ -5811,17 +5827,17 @@
         },
         {
             "name": "mwstake/mediawiki-component-commonwebapis",
-            "version": "3.0.20",
-            "version_normalized": "3.0.20.0",
+            "version": "3.0.21",
+            "version_normalized": "3.0.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis.git",
-                "reference": "24b139ea1fd9ab1e59b6b7411b52bbd34341a940"
+                "reference": "d849d71f0637ebe3dd751579924d7f46b02d14ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-commonwebapis/zipball/24b139ea1fd9ab1e59b6b7411b52bbd34341a940",
-                "reference": "24b139ea1fd9ab1e59b6b7411b52bbd34341a940",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-commonwebapis/zipball/d849d71f0637ebe3dd751579924d7f46b02d14ea",
+                "reference": "d849d71f0637ebe3dd751579924d7f46b02d14ea",
                 "shasum": ""
             },
             "require": {
@@ -5836,7 +5852,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-02T07:59:31+00:00",
+            "time": "2025-08-19T06:25:11+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5862,23 +5878,23 @@
             "description": "Provides various web APIs (Action API and REST)",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/tree/3.0.20"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-commonwebapis/tree/3.0.21"
             },
             "install-path": "../mwstake/mediawiki-component-commonwebapis"
         },
         {
             "name": "mwstake/mediawiki-component-contentprovisioner",
-            "version": "3.0.1",
-            "version_normalized": "3.0.1.0",
+            "version": "3.0.2",
+            "version_normalized": "3.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-contentprovisioner.git",
-                "reference": "493de04b201f99d3e4ca2476b54f9ba1f918ffae"
+                "reference": "5841fd0279e1c759d48172bd14e602fbb91907d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-contentprovisioner/zipball/493de04b201f99d3e4ca2476b54f9ba1f918ffae",
-                "reference": "493de04b201f99d3e4ca2476b54f9ba1f918ffae",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-contentprovisioner/zipball/5841fd0279e1c759d48172bd14e602fbb91907d8",
+                "reference": "5841fd0279e1c759d48172bd14e602fbb91907d8",
                 "shasum": ""
             },
             "require": {
@@ -5893,7 +5909,7 @@
                 "php-parallel-lint/php-parallel-lint": "1.4.0",
                 "phpunit/phpunit": "^8.5"
             },
-            "time": "2025-07-02T05:38:55+00:00",
+            "time": "2025-07-23T09:27:42+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -5919,7 +5935,7 @@
             "description": "Provides classes and services to import content into MediaWiki",
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-contentprovisioner/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-contentprovisioner/tree/3.0.1"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-contentprovisioner/tree/3.0.2"
             },
             "install-path": "../mwstake/mediawiki-component-contentprovisioner"
         },
@@ -6157,17 +6173,17 @@
         },
         {
             "name": "mwstake/mediawiki-component-formengine",
-            "version": "3.0.8",
-            "version_normalized": "3.0.8.0",
+            "version": "3.0.9",
+            "version_normalized": "3.0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hallowelt/mwstake-mediawiki-component-formengine.git",
-                "reference": "bf565c2aa24162ebf15548ed23a0f669b41118d4"
+                "reference": "a983e7f95a39bb2ae033471348ab7e64364ff017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-formengine/zipball/bf565c2aa24162ebf15548ed23a0f669b41118d4",
-                "reference": "bf565c2aa24162ebf15548ed23a0f669b41118d4",
+                "url": "https://api.github.com/repos/hallowelt/mwstake-mediawiki-component-formengine/zipball/a983e7f95a39bb2ae033471348ab7e64364ff017",
+                "reference": "a983e7f95a39bb2ae033471348ab7e64364ff017",
                 "shasum": ""
             },
             "require": {
@@ -6181,7 +6197,7 @@
                 "php-parallel-lint/php-console-highlighter": "1.0.0",
                 "php-parallel-lint/php-parallel-lint": "1.4.0"
             },
-            "time": "2025-07-02T08:58:13+00:00",
+            "time": "2025-07-22T14:08:10+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -6206,7 +6222,7 @@
             ],
             "support": {
                 "issues": "https://github.com/hallowelt/mwstake-mediawiki-component-formengine/issues",
-                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-formengine/tree/3.0.8"
+                "source": "https://github.com/hallowelt/mwstake-mediawiki-component-formengine/tree/3.0.9"
             },
             "install-path": "../mwstake/mediawiki-component-formengine"
         },
@@ -7443,17 +7459,17 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.29.11",
-            "version_normalized": "1.29.11.0",
+            "version": "1.29.12",
+            "version_normalized": "1.29.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "05b6c4378ddf3e81b460ea645c42b46432c0db25"
+                "reference": "7c06eed662cce7ecab88f6f9f7626b443f5285df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/05b6c4378ddf3e81b460ea645c42b46432c0db25",
-                "reference": "05b6c4378ddf3e81b460ea645c42b46432c0db25",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/7c06eed662cce7ecab88f6f9f7626b443f5285df",
+                "reference": "7c06eed662cce7ecab88f6f9f7626b443f5285df",
                 "shasum": ""
             },
             "require": {
@@ -7500,7 +7516,7 @@
                 "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
                 "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
             },
-            "time": "2025-06-23T01:22:06+00:00",
+            "time": "2025-07-23T04:40:30+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -7546,7 +7562,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.11"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.12"
             },
             "install-path": "../phpoffice/phpspreadsheet"
         },
@@ -7973,27 +7989,27 @@
         },
         {
             "name": "react/promise",
-            "version": "v3.2.0",
-            "version_normalized": "3.2.0.0",
+            "version": "v3.3.0",
+            "version_normalized": "3.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "8a164643313c71354582dc850b42b33fa12a4b63"
+                "reference": "23444f53a813a3296c1368bb104793ce8d88f04a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/8a164643313c71354582dc850b42b33fa12a4b63",
-                "reference": "8a164643313c71354582dc850b42b33fa12a4b63",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/23444f53a813a3296c1368bb104793ce8d88f04a",
+                "reference": "23444f53a813a3296c1368bb104793ce8d88f04a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "1.10.39 || 1.4.10",
+                "phpstan/phpstan": "1.12.28 || 1.4.10",
                 "phpunit/phpunit": "^9.6 || ^7.5"
             },
-            "time": "2024-05-24T10:39:05+00:00",
+            "time": "2025-08-19T18:57:03+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -8037,7 +8053,7 @@
             ],
             "support": {
                 "issues": "https://github.com/reactphp/promise/issues",
-                "source": "https://github.com/reactphp/promise/tree/v3.2.0"
+                "source": "https://github.com/reactphp/promise/tree/v3.3.0"
             },
             "funding": [
                 {

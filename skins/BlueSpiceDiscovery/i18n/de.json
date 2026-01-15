@@ -196,5 +196,6 @@
 	"bs-discovery-back-to-page": "Zurück zu $1",
 	"bs-discovery-back-to-page-title": "Zurück zur Seite $1",
 	"bs-discovery-back-to-version-history": "Zurück zur Versionsgeschichte",
-	"bs-discovery-back-to-version-history-title": "Zurück zur Versionsgeschichte der Seite $1"
+	"bs-discovery-back-to-version-history-title": "Zurück zur Versionsgeschichte der Seite $1",
+	"bs-toc-hide-button-aria-label": "Inhaltsverzeichnis verbergen"
 }

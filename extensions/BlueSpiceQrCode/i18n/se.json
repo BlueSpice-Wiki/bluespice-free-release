@@ -6,5 +6,6 @@
 	},
 	"bs-qr-code-action-qr-code-text": "QR-koda",
 	"bs-qr-code-action-qr-code-dialog-title": "QR-koda",
-	"apihelp-bs-qr-code-param-size": "QR-koda sturrodat"
+	"apihelp-bs-qr-code-param-size": "QR-koda sturrodat",
+	"bs-qr-code-tag-attr-size-label": "Sturrodat"
 }

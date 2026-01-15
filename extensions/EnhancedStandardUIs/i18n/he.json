@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Neriah"
 		]
 	},
 	"enhanced-standard-uis-desc": "מספקת ממשקי משתמש עבור ממשקי משתמש סטנדרטיים של מדיה־ויקי",
@@ -51,7 +52,7 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "אין מטא־נתונים זמינים עבור הקובץ הזה",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "קישור הקובץ הועתק ללוח",
 	"enhanced-standard-uis-allpages-filter-pages-label": "מסנן",
-	"enhanced-standard-uis-allpages-namespace-list-label": "רשימת מרחבי שם",
+	"enhanced-standard-uis-allpages-namespace-list-label": "מרחב שם",
 	"enhanced-standard-uis-paginator-aria-label": "חלוקה לדפים",
 	"enhanced-standard-uis-allpages-watch-label": "לעקוב אחר הדף $1",
 	"enhanced-standard-uis-allpages-unwatch-label": "להפסיק לעקוב אחר הדף $1",
@@ -68,5 +69,8 @@
 	"action-enhancedstandarduis-viewuncustomizedspecialpageslist": "לצפות בדפים מיוחדים מסוימים ברשימה [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages] שמוסתרים ממשתמשים בעלי תפקיד קורא טהור",
 	"enhanced-standard-uis-ve-filegrid-title": "חיפוש מתקדם",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "אין מרחבי שם זמינים",
-	"enhanced-standard-uis-allpages-empty-pages-text": "כרגע אין דפים במרחב השם הזה"
+	"enhanced-standard-uis-allpages-empty-pages-text": "כרגע אין דפים במרחב השם הזה",
+	"enhancedpreferences": "העדפות",
+	"enhanced-pref-username": "שם {{GENDER:$1|משתמש|משתמשת}}",
+	"enhanced-standard-uis-prefs-panel-search-label": "חיפוש"
 }

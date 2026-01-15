@@ -1,4 +1,4 @@
-ext.userProfile.ui.Editor = function( cfg ) {
+ext.userProfile.ui.Editor = function ( cfg ) {
 	cfg = cfg || {};
 	cfg.padded = true;
 	cfg.expanded = false;
@@ -11,7 +11,7 @@ ext.userProfile.ui.Editor = function( cfg ) {
 
 OO.inheritClass( ext.userProfile.ui.Editor, OO.ui.PanelLayout );
 
-ext.userProfile.ui.Editor.prototype.initialize = function() {
+ext.userProfile.ui.Editor.prototype.initialize = function () {
 	this.addToolbar();
 	this.form = new ext.userProfile.form.Editor( {}, this.fields, this.data );
 	this.form.render();
@@ -26,15 +26,15 @@ ext.userProfile.ui.Editor.prototype.initialize = function() {
 	this.form.$element.on( 'lastItemFocusOut', this.focusToolbar.bind( this ) );
 };
 
-ext.userProfile.ui.Editor.prototype.addToolbar = function() {
-	var editor = this,
+ext.userProfile.ui.Editor.prototype.addToolbar = function () {
+	const editor = this,
 		toolFactory = new OO.ui.ToolFactory(),
 		toolGroupFactory = new OO.ui.ToolGroupFactory(),
 		toolbar = new OO.ui.Toolbar( toolFactory, toolGroupFactory );
 	toolbar.$element.addClass( 'user-profile-editor-toolbar' );
 	this.$element.append( toolbar.$element );
 
-	var cancelTool = function() {
+	const cancelTool = function () {
 		cancelTool.super.apply( this, arguments );
 	};
 	OO.inheritClass( cancelTool, OO.ui.Tool );
@@ -42,20 +42,20 @@ ext.userProfile.ui.Editor.prototype.addToolbar = function() {
 	cancelTool.static.icon = 'close';
 	cancelTool.static.flags = [];
 	cancelTool.static.title = mw.msg( 'userprofile-editor-toolbar-cancel' );
-	cancelTool.prototype.onSelect = function(){
+	cancelTool.prototype.onSelect = function () {
 		editor.goToProfile();
 	};
 	cancelTool.prototype.onUpdateState = function () {};
 	toolFactory.register( cancelTool );
 
-	var saveTool = function() {
+	const saveTool = function () {
 		saveTool.super.apply( this, arguments );
 	};
 	OO.inheritClass( saveTool, OO.ui.Tool );
 	saveTool.static.name = 'save';
 	saveTool.static.title = mw.msg( 'userprofile-editor-toolbar-save' );
 	saveTool.static.flags = [ 'primary', 'progressive' ];
-	saveTool.prototype.onSelect = function() {
+	saveTool.prototype.onSelect = function () {
 		editor.form.submit();
 	};
 	saveTool.prototype.onUpdateState = function () {};
@@ -79,33 +79,33 @@ ext.userProfile.ui.Editor.prototype.addToolbar = function() {
 	return toolbar;
 };
 
-ext.userProfile.ui.Editor.prototype.goToProfile = function() {
-	var title = mw.Title.newFromText( mw.config.get( 'wgPageName' ) );
+ext.userProfile.ui.Editor.prototype.goToProfile = function () {
+	const title = mw.Title.newFromText( mw.config.get( 'wgPageName' ) );
 	window.location.href = title.getUrl();
 };
 
-ext.userProfile.ui.Editor.prototype.save = function( data ) {
+ext.userProfile.ui.Editor.prototype.save = function ( data ) {
 	$.ajax( {
 		method: 'POST',
 		url: mw.util.wikiScript( 'rest' ) + '/userprofile/v1/' + this.user,
 		data: JSON.stringify( { data: data } ),
 		contentType: 'application/json; charset=utf-8',
-		dataType: 'json',
-	} ).done( function( response ) {
+		dataType: 'json'
+	} ).done( ( response ) => { // eslint-disable-line no-unused-vars
 		this.goToProfile();
-	}.bind( this ) ).fail( function( e ) {
-		console.error( e );
+	} ).fail( ( e ) => {
+		console.error( e ); // eslint-disable-line no-console
 	} );
 };
 
-ext.userProfile.ui.Editor.prototype.focusToolbar = function( e ) {
+ext.userProfile.ui.Editor.prototype.focusToolbar = function ( e ) {
 	e.preventDefault();
 	e.stopPropagation();
-	var $save = this.$element
+	const $save = this.$element
 		.find( '.user-profile-editor-toolbar' )
 		.find( '.oo-ui-barToolGroup-tools' )
 		.find( '.oo-ui-tool-name-save' )
 		.find( 'a' );
 	$save.attr( 'tabindex', 1 );
-	$save.focus();
+	$save.trigger( 'focus' );
 };

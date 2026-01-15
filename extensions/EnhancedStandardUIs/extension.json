@@ -1,6 +1,6 @@
 {
 	"name": "EnhancedStandardUIs",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
@@ -219,17 +219,18 @@
 				"enhanced-standard-uis-allpages-untitled",
 				"enhanced-standard-uis-allpages-redirect-label",
 				"enhanced-standard-uis-allpages-empty-namespaces-text",
-				"enhanced-standard-uis-allpages-empty-pages-text"
+				"enhanced-standard-uis-allpages-empty-pages-text",
+				"enhanced-standard-uis-allpages-namespace-badge-aria-label",
+				"enhanced-standard-uis-allpages-page-tree-item-expander-label"
 			],
 			"dependencies": [
 				"oojs-ui",
 				"ext.oOJSPlus.data"
 			]
 		},
-		"ext.enhancedstandarduis.special.filelist": {
+		"ext.enhancedstandarduis.filelist.panel": {
 			"es6": true,
 			"packageFiles": [
-				"ext.enhancedUI.special.filelist.js",
 				"panel/FilelistPanel.js",
 				"widget/FilelistGrid.js",
 				"widget/Paginator.js",
@@ -284,13 +285,20 @@
 				"enhanced-standard-uis-filelist-dialog-page-data-label",
 				"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label",
 				"enhanced-standard-uis-filelist-notify-copy-clipboard",
-				"enhanced-standard-uis-filelist-grid-preview-title"
+				"enhanced-standard-uis-filelist-grid-preview-title",
+				"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label"
 			],
 			"dependencies": [
 				"oojs-ui",
 				"@wikimedia/codex",
 				"ext.oOJSPlus.data",
 				"oojs-ui.styles.icons-editing-list"
+			]
+		},
+		"ext.enhancedstandarduis.special.filelist": {
+			"es6": true,
+			"packageFiles": [
+				"ext.enhancedUI.special.filelist.js"
 			]
 		},
 		"ext.enhancedstandarduis.api": {
@@ -310,7 +318,7 @@
 				"enhanced-standard-uis-ve-filegrid-title"
 			],
 			"dependencies": [
-				"ext.enhancedstandarduis.special.filelist"
+				"ext.enhancedstandarduis.filelist.panel"
 			]
 		}
 	},

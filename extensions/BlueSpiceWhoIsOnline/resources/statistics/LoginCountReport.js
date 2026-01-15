@@ -9,6 +9,8 @@
 
 	bs.whoisonline.report.LoginCountReport.static.label = mw.message( 'bs-whoisonline-statistics-report-login-number' ).text();
 
+	bs.whoisonline.report.LoginCountReport.static.desc = mw.message( 'bs-whoisonline-statistics-report-login-number-desc' ).text();
+
 	bs.whoisonline.report.LoginCountReport.prototype.getFilters = function () {
 		return [];
 	};

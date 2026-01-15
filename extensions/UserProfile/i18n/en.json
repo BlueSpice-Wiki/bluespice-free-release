@@ -14,7 +14,7 @@
 	"userprofile-edit-summary": "User profile edited",
 	"userprofile-user-not-found": "User not found",
 	"userprofile-unauthorized": "You are not authorized to view this profile",
-	"user-profile-pref-mail-public" : "Show my email address to other users",
+	"userprofile-pref-mail-public": "Show my email address to other users",
 	"userprofile-field-numberofedits": "Number of edits",
 	"userprofile-field-joined": "Joined",
 	"userprofile-field-email": "Email",

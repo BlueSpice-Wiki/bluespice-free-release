@@ -24,5 +24,7 @@
 	"bs-contextmenu-user-mail": "傳送電子郵件",
 	"bs-contextmenu-user-talk": "在對話頁留言",
 	"bs-contextmenu-file-download": "下載檔案",
-	"apihelp-bs-contextmenu-tasks-summary": "提供上下文裡在提供上下文選單項目"
+	"apihelp-bs-contextmenu-tasks-summary": "提供上下文裡在提供上下文選單項目",
+	"bs-contextmenu-open-in-new-tab": "在新分頁開啟",
+	"bs-contextmenu-no-items": "沒有可用的上下文項目"
 }

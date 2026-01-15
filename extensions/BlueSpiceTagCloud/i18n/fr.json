@@ -2,6 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"JLTRY",
+			"McDutchie",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92"
@@ -33,5 +35,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Exclure les pages",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Ne pas afficher ces pages dans le nuage de balises. Pour plus de pages, utiliser une liste séparée par des virgules, par ex. « Page principale, Test, MaPage »",
 	"bs-tagcloud-droplet-name": "Nuage de balises",
-	"bs-tagcloud-droplet-description": "Nuage de balises basé sur des catégories ou des requêtes de recherche"
+	"bs-tagcloud-droplet-description": "Nuage de balises basé sur des catégories ou des requêtes de recherche",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Commun",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avancé"
 }

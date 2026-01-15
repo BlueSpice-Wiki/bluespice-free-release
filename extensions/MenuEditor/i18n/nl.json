@@ -38,5 +38,6 @@
 	"menueditor-ui-edit-label": "Bewerken",
 	"menueditor-ui-add-sub-element-label": "Subelement toevoegen",
 	"menueditor-footerlinks-banner-text": "Sommige koppelingen kunnen automatisch door uitbreidingen worden toegevoegd. Bekijk de instellingen van de uitbreiding om meer te weten te komen.",
-	"menueditor-toolbar-save": "Opslaan"
+	"menueditor-toolbar-save": "Opslaan",
+	"menueditor-ui-cancel-confirmation": "Weet u zeker dat u de bewerking wilt annuleren? Alle niet-opgeslagen wijzigingen gaan verloren."
 }

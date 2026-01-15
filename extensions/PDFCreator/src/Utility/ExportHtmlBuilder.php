@@ -6,9 +6,20 @@ use DOMDocument;
 use DOMElement;
 use DOMNode;
 use MediaWiki\Extension\PDFCreator\PDFCreator;
+use MediaWiki\Language\Language;
 use Psr\Log\LoggerInterface;
 
 class ExportHtmlBuilder {
+
+	/** @var Language */
+	protected $language;
+
+	/**
+	 * @param Language $language
+	 */
+	public function __construct( Language $language ) {
+		$this->language = $language;
+	}
 
 	/**
 	 * @param ExportPage[] $pages
@@ -29,6 +40,11 @@ class ExportHtmlBuilder {
 		$dom->formatOutput = true;
 		$dom->preserveWhiteSpace = false;
 		$dom->loadXML( PDFCreator::HTML_STUB );
+		$lang = $this->language->getHtmlCode();
+		if ( $lang !== '' ) {
+			$html = $dom->getElementsByTagName( 'html' )->item( 0 );
+			$html->setAttribute( 'lang', htmlspecialchars( $lang ) );
+		}
 		$head = $dom->getElementsByTagName( 'head' )->item( 0 );
 		$body = $dom->getElementsByTagName( 'body' )->item( 0 );
 

@@ -13,7 +13,7 @@
 	"userprofile-edit-summary": "Benutzerprofil bearbeitet",
 	"userprofile-user-not-found": "Benutzer nicht gefunden",
 	"userprofile-unauthorized": "Du bist nicht berechtigt, das Profil anzusehen",
-	"user-profile-pref-mail-public" : "Meine E-Mailadresse anderen Benutzern anzeigen",
+	"userprofile-pref-mail-public": "Meine E-Mailadresse anderen Benutzern anzeigen",
 	"userprofile-field-numberofedits": "Anzahl der Bearbeitungen",
 	"userprofile-field-joined": "Beigetreten",
 	"userprofile-field-email": "E-Mail",

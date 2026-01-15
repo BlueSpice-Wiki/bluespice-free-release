@@ -64,14 +64,17 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 			return false;
 		}
 
-		if ( !$title->exists() ) {
-			return false;
-		}
-
 		$enabledNs = $this->getConfig()->get(
 			'PageAssignmentsSecureEnabledNamespaces'
 		);
 		if ( !in_array( $title->getNamespace(), $enabledNs ) ) {
+			return false;
+		}
+
+		// Performance: Checking if the title exists requires a database query.
+		// Therefore we only do it in case the namespace of the title actually
+		// uses "secure page assignments".
+		if ( !$title->exists() ) {
 			return false;
 		}
 

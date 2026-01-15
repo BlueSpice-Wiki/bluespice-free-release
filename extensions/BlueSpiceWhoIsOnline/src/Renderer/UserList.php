@@ -6,7 +6,6 @@ use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\UtilityFactory;
 use BlueSpice\WhoIsOnline\Data\Record;
-use HtmlArmor;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Context\RequestContext;
@@ -128,7 +127,7 @@ class UserList extends \BlueSpice\Renderer {
 			$out .= Html::openElement( 'li' );
 			$out .= $this->linkRenderer->makeLink(
 				$user->getUserPage(),
-				new HtmlArmor( $displayName )
+				$displayName
 			);
 			$out .= Html::closeElement( 'li' );
 		}

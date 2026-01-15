@@ -174,6 +174,7 @@
 
 	mw.ext.forms.mixin.DefinitionParser.prototype.parseLayout = function ( name, config, layout, hostLayout, justParse ) {
 		name = name || this.getNameForStatic();
+		let subitems = {};
 		if ( layout instanceof OO.ui.BookletLayout ) {
 			this.parseBooklet( config.pages, layout );
 			layout = this.wrapInPanel( layout, config.framed );
@@ -187,6 +188,7 @@
 					layoutItem.noLayout = true;
 				}
 			}
+			subitems = this.parseItems( config.layoutItems, layout );
 		} else {
 			// No special layout and no items - nothing to display
 			return;

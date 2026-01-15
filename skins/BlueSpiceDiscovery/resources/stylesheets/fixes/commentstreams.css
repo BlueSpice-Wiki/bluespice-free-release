@@ -30,6 +30,11 @@ main .cs-comment {
 	overflow: visible;
 }
 
+main .cs-comment-details,
+main .cs-comment-author-anonymous {
+	color: #454545;
+}
+
 main .cs-comment-header {
 	border-bottom: 1px solid var( --comments-section-border-color );
 }

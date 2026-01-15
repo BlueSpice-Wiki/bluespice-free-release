@@ -1,153 +1,181 @@
 .user-profile-panel {
-  background-color: white;
-  &.user-profile-loading {
-    width: 100%;
-    height: 200px;
-    background-image: url( 'assets/loading.svg' );
-  }
-  .user-profile-image-cnt {
-    vertical-align: top;
-    display: inline-block;
-    width: 90px;
-    text-align: center;
-    height: 90px;
-    position: relative;
-    margin-right: 20px;
-    @media (max-width: 768px) {
-      margin-bottom: 10px;
-    }
-    img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .user-profile-edit-image-btn {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      min-height: 25%;
-      border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
-      margin: 0 !important;
-      background-color: rgba(255, 255, 255, 0.8);
-      text-align: center;
-      a {
-        white-space: break-spaces;
-        max-width: 55%
-      }
-    }
-  }
-  .user-profile-data-cnt {
-    vertical-align: top;
-    display: inline-block;
-    .user-profile-name-header {
-      .user-profile-name {
-        font-size: 1.5em;
-        line-height: 1;
-        margin-bottom: 10px;
-      }
-      .user-profile-username {
-        margin-left: 10px;
-        color: #4b4b4b;
-      }
-    }
-    .user-profile-meta-cnt {
-      margin-bottom: 10px;
-      .user-profile-meta {
-        display: inline-block;
-        color: #4b4b4b;;
-        font-size: 0.9em;
-        &:not(:last-child):after {
-          content: "•";
-          margin-left: 10px;
-          margin-right: 10px;
-          color: #4b4b4b;
-        }
-      }
-    }
-    .user-profile-fields-cnt {
-      display: table;
-      .user-profile-field {
-        display: table-row;
-        .user-profile-field-label {
-          display: table-cell;
-        }
-        .user-profile-field-value {
-          display: table-cell;
-          padding-left: 20px;
-        }
-      }
-    }
+	background-color: white;
 
-  }
+	&.user-profile-loading {
+		width: 100%;
+		height: 200px;
+		background-image: url( assets/loading.svg );
+	}
+
+	.user-profile-image-cnt {
+		vertical-align: top;
+		display: inline-block;
+		width: 90px;
+		text-align: center;
+		height: 90px;
+		position: relative;
+		margin-right: 20px;
+
+		@media ( max-width: 768px ) {
+			margin-bottom: 10px;
+		}
+
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+
+		.user-profile-edit-image-btn {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			min-height: 25%;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+			margin: 0 !important;
+			background-color: rgba( 255, 255, 255, 0.8 );
+			text-align: center;
+
+			a {
+				white-space: break-spaces;
+				max-width: 55%;
+			}
+		}
+	}
+
+	.user-profile-data-cnt {
+		vertical-align: top;
+		display: inline-block;
+
+		.user-profile-name-header {
+			.user-profile-name {
+				font-size: 1.5em;
+				line-height: 1;
+				margin-bottom: 10px;
+			}
+
+			.user-profile-username {
+				margin-left: 10px;
+				color: #4b4b4b;
+			}
+		}
+
+		.user-profile-meta-cnt {
+			margin-bottom: 10px;
+
+			.user-profile-meta {
+				display: inline-block;
+				color: #4b4b4b;
+				font-size: 0.9em;
+
+				&:not( :last-child )::after {
+					content: '•';
+					margin-left: 10px;
+					margin-right: 10px;
+					color: #4b4b4b;
+				}
+			}
+		}
+
+		.user-profile-fields-cnt {
+			display: table;
+
+			.user-profile-field {
+				display: table-row;
+
+				.user-profile-field-label {
+					display: table-cell;
+				}
+
+				.user-profile-field-value {
+					display: table-cell;
+					padding-left: 20px;
+				}
+			}
+		}
+	}
 }
 
-.user-profile-on-user-page {
-  .user-profile-image-cnt {
-    width: 250px;
-    height: 250px;
-    img {
-      width: 240px;
-      height: 240px;
-    }
-  }
+#mw-content-text .user-profile-on-user-page {
+	.user-profile-image-cnt {
+		width: 250px;
+		height: 250px;
+
+		img {
+			width: 240px;
+			height: 240px;
+		}
+	}
 }
 
 .user-profile-editor-toolbar {
-  .oo-ui-barToolGroup.actions {
-    float: right;
-  }
-  .oo-ui-tool-name-save a {
-    padding: 12px !important;
-  }
+	.oo-ui-barToolGroup.actions {
+		float: right;
+	}
+
+	.oo-ui-tool-name-save a {
+		padding: 12px !important;
+	}
 }
 
 .user-profile.user-profile-vertical {
-  width: fit-content;
-  .user-profile-image-cnt {
-    display: block;
-    margin: 0 0 10px 0;
-  }
-  .user-profile-data-cnt {
-    display: block;
-    .user-profile-meta-cnt {
-      margin-top: 10px;
-    }
-    .user-profile-meta {
-      display: block;
-      &:after {
-        content: "" !important;
-        clear: both;
-      }
-    }
-    .user-profile-username {
-        display: block;
-        margin: 0;
-    }
-  }
+	width: fit-content;
+
+	.user-profile-image-cnt {
+		display: block;
+		margin: 0 0 10px 0;
+	}
+
+	.user-profile-data-cnt {
+		display: block;
+
+		.user-profile-meta-cnt {
+			margin-top: 10px;
+		}
+
+		.user-profile-meta {
+			display: block;
+
+			&::after {
+				content: '' !important;
+				clear: both;
+			}
+		}
+
+		.user-profile-username {
+			display: block;
+			margin: 0;
+		}
+	}
 }
+
 .ext-userprofile-userinfopopup {
-  text-align: center;
-  .user-profile-panel {
-    width: 100%;
-    text-align: center;
-    .user-profile-image-cnt {
-      width: 100%;
-    }
-  }
-  .user-profile-panel.user-profile-loading {
-    width: 320px;
-    height: 200px;
-    background-image: url( 'assets/loadingVertical.svg' );
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150px;
-  }
-  .user-profile-field-value {
-    /* Popups have fixed size and cannot grow, we need to fit the content inside */
-    word-break: break-all;
-  }
+	text-align: center;
+
+	.user-profile-panel {
+		width: 100%;
+		text-align: center;
+
+		.user-profile-image-cnt {
+			width: 100%;
+		}
+	}
+
+	.user-profile-panel.user-profile-loading {
+		width: 320px;
+		height: 200px;
+		background-image: url( assets/loadingVertical.svg );
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 150px;
+	}
+
+	.user-profile-field-value {
+		/* Popups have fixed size and cannot grow, we need to fit the content inside */
+		word-break: break-all;
+	}
 }
 
 .user-profile-error .oo-ui-messageWidget .oo-ui-iconElement-icon {
@@ -155,5 +183,5 @@
 }
 
 .droplet .droplet-profile {
-  background-image: url( 'assets/profileDropletIcon.svg' ) !important;
+	background-image: url( assets/profileDropletIcon.svg ) !important;
 }

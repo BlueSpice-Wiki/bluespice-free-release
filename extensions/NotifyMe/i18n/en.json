@@ -207,5 +207,6 @@
 	"notifyme-ui-dialog-popup-table-desc-label": "Description",
 	"notifyme-ui-dialog-popup-header-label": "These events trigger notifications:",
 	"notifyme-event-page-edit-desc": "A page has been edited by another user",
-	"notifyme-ui-delivery-label": "Delivery"
+	"notifyme-ui-delivery-label": "Delivery",
+	"prefs-subs": "Notification subscriptions"
 }

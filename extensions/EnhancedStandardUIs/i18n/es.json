@@ -4,7 +4,8 @@
 			"AnupamM",
 			"Eulalio",
 			"No se",
-			"Rajadinho"
+			"Rajadinho",
+			"Yupik"
 		]
 	},
 	"enhanced-standard-uis-history-grid-header-undo-title": "Deshacer",
@@ -24,5 +25,6 @@
 	"enhanced-standard-uis-allpages-filter-pages-label": "Filtrar páginas",
 	"enhanced-standard-uis-allpages-namespace-list-label": "Lista de espacios de nombres",
 	"enhanced-standard-uis-paginator-aria-label": "Paginación",
-	"enhanced-standard-uis-allpages-watch-label": "Ver página $1"
+	"enhanced-standard-uis-allpages-watch-label": "Ver página $1",
+	"enhanced-standard-uis-history-grid-header-size-label": "Tamaño"
 }

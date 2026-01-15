@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Derugon",
 			"Graineahumus",
 			"Iketsi",
 			"JLTRY",
@@ -57,7 +58,7 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "Aucune métadonnée disponible pour ce fichier",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "Lien du fichier copié dans le presse-papiers",
 	"enhanced-standard-uis-allpages-filter-pages-label": "Filtre",
-	"enhanced-standard-uis-allpages-namespace-list-label": "Liste des espaces de noms",
+	"enhanced-standard-uis-allpages-namespace-list-label": "Espace de noms",
 	"enhanced-standard-uis-paginator-aria-label": "Pagination",
 	"enhanced-standard-uis-allpages-watch-label": "Regarder la page $1",
 	"enhanced-standard-uis-allpages-unwatch-label": "Ne plus suivre la page $1",
@@ -74,5 +75,12 @@
 	"action-enhancedstandarduis-viewuncustomizedspecialpageslist": "voir certaines pages spéciales de la liste [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages], qui sont masquées pour les utilisateurs ayant un rôle de simple lecteur",
 	"enhanced-standard-uis-ve-filegrid-title": "Recherche avancée",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "Aucun espace de noms disponible",
-	"enhanced-standard-uis-allpages-empty-pages-text": "Il n'y a actuellement aucune page dans cet espace de noms"
+	"enhanced-standard-uis-allpages-empty-pages-text": "Il n'y a actuellement aucune page dans cet espace de noms",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "contient {{PLURAL:$1|une page|$1 pages}}",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Sous-pages",
+	"enhancedpreferences": "Préférences",
+	"enhanced-pref-username": "Nom d’utilisat{{GENDER:$1|eur|rice}}",
+	"enhanced-prefs-memberingroups": "Membre{{GENDER:$2|}} {{PLURAL:$1|du|des}} groupe{{PLURAL:$1||s}}",
+	"enhanced-standard-uis-preferences-date-label": "Sélectionnez le format d’affichage",
+	"enhanced-standard-uis-prefs-panel-search-label": "Rechercher"
 }

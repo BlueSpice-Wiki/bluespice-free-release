@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Justman10000",
-			"Miriam Schlindwein"
+			"Miriam Schlindwein",
+			"PretzelRocky"
 		]
 	},
 	"enhanced-standard-uis-desc": "Stellt Benutzeroberflächen für die Standard-Benutzeroberflächen von MediaWiki zur Verfügung",
@@ -52,7 +53,7 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "Für diese Datei sind keine Metadaten verfügbar",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "Der Dateilink wurde in die Zwischenablage kopiert",
 	"enhanced-standard-uis-allpages-filter-pages-label": "Filtern",
-	"enhanced-standard-uis-allpages-namespace-list-label": "Namensraumliste",
+	"enhanced-standard-uis-allpages-namespace-list-label": "Namensraum",
 	"enhanced-standard-uis-paginator-aria-label": "Paginierung",
 	"enhanced-standard-uis-allpages-watch-label": "Seite $1 beobachten",
 	"enhanced-standard-uis-allpages-unwatch-label": "Seite $1 nicht mehr beobachten",
@@ -69,5 +70,13 @@
 	"action-enhancedstandarduis-viewuncustomizedspecialpageslist": "Spezialseiten in der Liste [{{canonicalurl:Special:SpecialPages}} Spezial:Spezialseiten] anzuzeigen, die für Benutzer mit reiner Leserrolle ausgeblendet sind",
 	"enhanced-standard-uis-ve-filegrid-title": "Erweiterte Suche",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "Keine Namensräume vorhanden",
-	"enhanced-standard-uis-allpages-empty-pages-text": "Es gibt noch keine Seiten in diesem Namensraum"
+	"enhanced-standard-uis-allpages-empty-pages-text": "Es gibt noch keine Seiten in diesem Namensraum",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "enthält {{PLURAL:$1|1 Seite| $1 Seiten}}",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Unterseiten",
+	"enhancedpreferences": "Einstellungen",
+	"enhanced-pref-username": "{{GENDER:$1|Benutzername}}",
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|Mitglied}} der {{PLURAL:$1|Gruppe|Gruppen}}",
+	"enhanced-standard-uis-preferences-date-label": "Anzeigeformat auswählen",
+	"enhanced-standard-uis-prefs-panel-search-label": "Suche",
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Informationen zur Datei"
 }

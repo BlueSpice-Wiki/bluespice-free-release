@@ -1,9 +1,9 @@
 {
 	"name": "UserProfile",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"license-name": "GPL-3.0-only",
 	"author": [
-		"[http://www.hallowelt.com Hallo Welt! GmbH]"
+		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:UserProfile",
 	"descriptionmsg": "userprofile-desc",
@@ -14,8 +14,10 @@
 		"UserProfile": "i18n"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\UserProfile\\": "src/",
-		"MediaWiki\\Extension\\UserProfile\\Tests\\": "tests/phpunit"
+		"MediaWiki\\Extension\\UserProfile\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\UserProfile\\Tests\\": "tests/phpunit/"
 	},
 	"attributes": {
 		"UserProfile": {
@@ -155,7 +157,6 @@
 			"scripts": [
 				"visualEditorTagDefinition.js"
 			],
-			"styles": "droplet.css",
 			"dependencies": [
 				"ext.userProfile.bootstrap"
 			],

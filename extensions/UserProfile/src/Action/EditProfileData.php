@@ -20,7 +20,7 @@ class EditProfileData extends EditAction {
 	 * @param Article $article
 	 * @param IContextSource|null $context
 	 */
-	public function __construct( Article $article, IContextSource $context = null ) {
+	public function __construct( Article $article, ?IContextSource $context = null ) {
 		parent::__construct( $article, $context );
 		$this->profileManager = MediaWikiServices::getInstance()->getService( 'UserProfile.Manager' );
 	}

@@ -133,9 +133,7 @@ class DefaultBreadCrumbRenderer extends TemplateRendererBase {
 			'text' => str_replace( '_', ' ', $rootNodeText ),
 			'href' => $rootNodeUrl,
 			'role' => 'link',
-			'title' => $rootNodeText,
-			'aria-label' => $this->messageLocalizer->msg(
-				'bs-discovery-breadcrumb-nav-node-ns-aria-label' )->text()
+			'title' => $rootNodeText
 		];
 	}
 

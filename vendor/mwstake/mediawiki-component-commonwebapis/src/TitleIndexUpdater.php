@@ -58,6 +58,9 @@ class TitleIndexUpdater implements
 	public function onPageMoveComplete( $old, $new, $user, $pageid, $redirid, $reason, $revision ) {
 		$this->delete( $old->getNamespace(), $old->getDBkey() );
 		$this->insert( $new );
+		if ( $redirid ) {
+			$this->insert( $old );
+		}
 	}
 
 	/**

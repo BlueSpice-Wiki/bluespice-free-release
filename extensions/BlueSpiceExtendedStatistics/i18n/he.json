@@ -120,5 +120,6 @@
 	"bs-statistics-ve-progress-attr-width-label": "רוחב",
 	"bs-statistics-ve-progress-attr-width-help": "רוחב סרגל ההתקדמות בפיקסלים",
 	"bs-statistics-droplet-progress-name": "התקדמות",
-	"bs-statistics-droplet-progress-description": "הצגה חזותית של התקדמות מול משתני מדידה נתונים"
+	"bs-statistics-droplet-progress-description": "הצגה חזותית של התקדמות מול משתני מדידה נתונים",
+	"apihelp-query+statistics-reports-param-aggregate": "האם לצבור את הסטטיסטיקות"
 }

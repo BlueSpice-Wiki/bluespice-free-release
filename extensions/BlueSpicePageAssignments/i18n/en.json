@@ -64,6 +64,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Unassigned pages",
 	"bs-pageassignments-pageheader-label": "Assignments",
 	"bs-pageassignments-statistics-report-assigned-pages": "Assigned pages",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Assigned and unassigned pages in the selected period, filterable by category and namespace",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Assigned",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Not assigned",
 	"bs-pageassignments-dialog-input-placeholder": "Add assignments…",

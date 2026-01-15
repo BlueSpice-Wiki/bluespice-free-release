@@ -51,5 +51,13 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-label": "فراداده",
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "هیچ فراداده‌ای برای این پرونده در دسترس نیست",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "پیوند پرونده در کلیپ‌بورد کپی شد",
-	"enhanced-standard-uis-filter-results-label": "$1 {{PLURAL:$1|نتیجه}} یافت شد"
+	"enhanced-standard-uis-filter-results-label": "$1 {{PLURAL:$1|نتیجه}} یافت شد",
+	"enhanced-standard-uis-allpages-namespace-list-label": "فضای نام",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "حاوی {{PLURAL:$1|یک صفحه|$1 صفحه}} است",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "زیرصفحه‌ها",
+	"enhancedpreferences": "ترجیحات",
+	"enhanced-pref-username": "{{GENDER:$1|نام کاربری}}",
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|عضو}} {{PLURAL:$1|گروه|گروه‌های}}",
+	"enhanced-standard-uis-preferences-date-label": "قالب نمایش را انتخاب کنید",
+	"enhanced-standard-uis-prefs-panel-search-label": "جستجو"
 }

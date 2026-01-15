@@ -52,7 +52,7 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "Er zijn geen metagegevens beschikbaar voor dit bestand",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "Bestandskoppeling gekopieerd naar klembord",
 	"enhanced-standard-uis-allpages-filter-pages-label": "Filteren",
-	"enhanced-standard-uis-allpages-namespace-list-label": "Lijst met naamruimten",
+	"enhanced-standard-uis-allpages-namespace-list-label": "Naamruimte",
 	"enhanced-standard-uis-paginator-aria-label": "Paginering",
 	"enhanced-standard-uis-allpages-watch-label": "Pagina “$1” volgen",
 	"enhanced-standard-uis-allpages-unwatch-label": "Pagina “$1” ontvolgen",
@@ -69,5 +69,12 @@
 	"action-enhancedstandarduis-viewuncustomizedspecialpageslist": "bepaalde speciale pagina’s te bekijken op de lijst [{{canonicalurl:Special:SpecialPages}} Speciaal:SpecialePaginas], die verborgen zijn voor gebruikers aan wie slechts een lezer-rol is toegekend",
 	"enhanced-standard-uis-ve-filegrid-title": "Geavanceerd zoeken",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "Geen naamruimten beschikbaar",
-	"enhanced-standard-uis-allpages-empty-pages-text": "Er zijn momenteel geen pagina’s in deze naamruimte"
+	"enhanced-standard-uis-allpages-empty-pages-text": "Er zijn momenteel geen pagina’s in deze naamruimte",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "bevat {{PLURAL:$1|één pagina| $1 pagina’s}}",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Subpagina’s",
+	"enhancedpreferences": "Voorkeuren",
+	"enhanced-pref-username": "{{GENDER:$1|Gebruikersnaam}}",
+	"enhanced-prefs-memberingroups": "{{GENDER:$2|Lid}} van de {{PLURAL:$1|groep|groepen}}:",
+	"enhanced-standard-uis-preferences-date-label": "Selecteer weergaveformaat",
+	"enhanced-standard-uis-prefs-panel-search-label": "Zoeken"
 }

@@ -64,7 +64,7 @@ ext.enhancedUI.widget.NamespacesMenu.prototype.setupConfigButton = function () {
 };
 
 ext.enhancedUI.widget.NamespacesMenu.prototype.setupNamespaceMenu = function () {
-	this.selectWidget = new OO.ui.OutlineSelectWidget();
+	this.selectWidget = new OOJSPlus.ui.widget.OutlineSelectWidget();
 	this.selectWidget.$element.attr( 'aria-label',
 		mw.message( 'enhanced-standard-uis-allpages-namespace-list-label' ).text() );
 	this.selectWidget.connect( this, {
@@ -159,7 +159,7 @@ ext.enhancedUI.widget.NamespacesMenu.prototype.updateNSMenu = function () {
 			const namespaceTalkId = namespace.id;
 
 			const relatedNS = this.namespaces.filter( ( ns ) => ns.id === ( namespaceTalkId - 1 ) );
-			if ( !relatedNS ) {
+			if ( !relatedNS || relatedNS.length === 0 ) {
 				continue;
 			}
 			if ( !relatedNS[ 0 ].isContent && !includeNonContent ) {

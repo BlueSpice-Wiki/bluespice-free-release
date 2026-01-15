@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceWhoIsOnline",
-	"version": "5.1.1",
+	"version": "5.1.2",
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceWhoIsOnline",
 	"author": [
@@ -113,7 +113,8 @@
 			],
 			"messages": [
 				"bs-whoisonline-statistics-report-login-number-axis-value",
-				"bs-whoisonline-statistics-report-login-number"
+				"bs-whoisonline-statistics-report-login-number",
+				"bs-whoisonline-statistics-report-login-number-desc"
 			]
 		},
 		"ext.bluespice.whoisonlinecount.visualEditorTagDefinition": {

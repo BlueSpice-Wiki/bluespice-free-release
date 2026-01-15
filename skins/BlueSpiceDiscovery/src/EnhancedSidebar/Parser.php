@@ -7,6 +7,7 @@ use BlueSpice\Discovery\EnhancedSidebar\NodeProcessor\EnhancedSidebarNodeProcess
 use Exception;
 use MediaWiki\Content\Content;
 use MediaWiki\Content\JsonContent;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\MenuEditor\Parser\IMenuParser;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
@@ -16,6 +17,8 @@ use MWStake\MediaWiki\Lib\Nodes\INode;
 use MWStake\MediaWiki\Lib\Nodes\INodeProcessor;
 use MWStake\MediaWiki\Lib\Nodes\IParser;
 use MWStake\MediaWiki\Lib\Nodes\MutableParser;
+use UnexpectedValueException;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 /**
  * This parser's implementation could be confusing. It is a parser for the
@@ -27,16 +30,32 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 
 	/** @var EnhancedSidebarNodeProcessor[] */
 	private $nodeProcessors;
-	/** @var array */
-	private $nodes = null;
+
 	/** @var bool */
 	private $doFullParse = false;
+
+	/** @var User */
+	private User $user;
+
+	/** @var string|null */
+	private ?string $dataCacheUserKey;
+
+	/** @var string */
+	public const CACHE_KEY = 'enhanced-sidebar-nodes-cache';
+
+	/** @var int Cache TTL in seconds */
+	private const CACHE_TTL = 600;
 
 	/**
 	 * @param RevisionRecord $revision
 	 * @param array $nodeProcessors
+	 * @param WANObjectCache $objectCache
 	 */
-	public function __construct( RevisionRecord $revision, array $nodeProcessors ) {
+	public function __construct(
+		RevisionRecord $revision,
+		array $nodeProcessors,
+		private readonly WANObjectCache $objectCache
+	) {
 		parent::__construct( $revision );
 		$this->nodeProcessors = array_filter(
 			$nodeProcessors,
@@ -45,68 +64,78 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 			}
 		);
 		$this->rawData = [];
+		$this->user = RequestContext::getMain()->getUser();
+		$this->dataCacheUserKey = $objectCache->makeKey( self::CACHE_KEY, $this->user->getId() );
 	}
 
 	/**
-	 * @return array
+	 * This is only called if nodes are not cached or
+	 * if the nodes are edited via the sidebar editor
+	 *
+	 * @return EnhancedSidebarNode[]
+	 *
+	 * @throws Exception
 	 */
 	public function parse(): array {
 		$content = $this->pullContent();
-		if ( is_array( $this->nodes ) ) {
-			return $this->nodes;
-		}
-		$this->nodes = [];
-		$this->processNodesInternally( $content, 1 );
-		return $this->nodes;
+		$nodes = [];
+		$this->processNodesInternally( $nodes, $content, 1 );
+
+		return $nodes;
 	}
 
 	/**
-	 * @param User $user
 	 * @return array
+	 * @throws Exception
 	 */
-	public function parseForOutput( User $user ): array {
-		$this->setUserOnProcessors( $user );
-		$this->setFullParse( true );
-		$this->parse();
-		$this->setFullParse( false );
+	public function parseForOutput(): array {
+		return $this->objectCache->getWithSetCallback( $this->dataCacheUserKey, self::CACHE_TTL, function () {
+			$data = [];
 
-		$data = [];
-		/** @var EnhancedSidebarNode $node */
-		foreach ( $this->nodes as $node ) {
-			// Convert usual flat list of nodes into a tree
-			if ( $node->isHidden( $user ) ) {
-				continue;
-			}
-			if ( $node->getLevel() !== 1 ) {
-				continue;
-			}
-			$nodeData = $node->treeSerialize() + $this->getTreeChildren( $node, $user );
-			$nodeData['leaf'] = empty( $nodeData['items'] );
-			$data[] = $nodeData;
-		}
+			$this->setUserOnProcessors( $this->user );
 
-		return $data;
+			$this->setFullParse( true );
+			$nodes = $this->parse();
+			$this->setFullParse( false );
+
+			foreach ( $nodes as $node ) {
+				// Convert usual flat list of nodes into a tree
+				if ( $node->getLevel() !== 1 ) {
+					continue;
+				}
+				if ( $this->isNodeHidden( $node ) ) {
+					continue;
+				}
+				$nodeData = $this->serializeNodeTree( $node ) + $this->getTreeChildren( $nodes, $node );
+				$nodeData['leaf'] = empty( $nodeData['items'] );
+				$data[] = $nodeData;
+			}
+
+			return $data;
+		} );
 	}
 
 	/**
+	 * @param EnhancedSidebarNode[] $nodes
 	 * @param EnhancedSidebarNode $node
-	 * @param User $user
 	 *
 	 * @return array[]
+	 * @throws Exception
 	 */
-	private function getTreeChildren( EnhancedSidebarNode $node, User $user ) {
+	private function getTreeChildren( array $nodes, EnhancedSidebarNode $node ): array {
 		$parentFound = false;
 		$children = [];
-		/** @var EnhancedSidebarNode $node */
-		foreach ( $this->nodes as $childNode ) {
+
+		foreach ( $nodes as $childNode ) {
 			if ( $childNode === $node ) {
 				$parentFound = true;
 				continue;
 			}
 			if ( $parentFound ) {
 				if ( $childNode->getLevel() === $node->getLevel() + 1 ) {
-					if ( !$childNode->isHidden( $user ) ) {
-						$children[] = $childNode->treeSerialize() + $this->getTreeChildren( $childNode, $user );
+					if ( !$this->isNodeHidden( $childNode ) ) {
+						$children[] = $this->serializeNodeTree( $childNode )
+							+ $this->getTreeChildren( $nodes, $childNode );
 					}
 				} elseif ( $childNode->getLevel() <= $node->getLevel() ) {
 					return [ 'items' => $children ];
@@ -118,18 +147,48 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	}
 
 	/**
+	 * @param EnhancedSidebarNode $node
+	 *
+	 * @return bool
+	 */
+	private function isNodeHidden( EnhancedSidebarNode $node ): bool {
+		if ( !$node->getReadRestriction() ) {
+			return false;
+		}
+
+		$nodeProcessor = $this->getNodeProcessor( $node->getType() );
+
+		return $nodeProcessor->isHidden( $node );
+	}
+
+	/**
+	 * Serialize in format to be consumed by a tree
+	 *
+	 * @param EnhancedSidebarNode $node
+	 *
+	 * @return array
+	 * @throws Exception
+	 */
+	private function serializeNodeTree( EnhancedSidebarNode $node ): array {
+		$nodeProcessor = $this->getNodeProcessor( $node->getType() );
+
+		return $nodeProcessor->serializeNodeTree( $node );
+	}
+
+	/**
 	 * If set to true, will parse data values - for output
 	 *
 	 * @param bool $doFullParse
 	 *
 	 * @return void
 	 */
-	private function setFullParse( bool $doFullParse ) {
+	private function setFullParse( bool $doFullParse ): void {
 		$this->doFullParse = $doFullParse;
 	}
 
 	/**
 	 * @return array
+	 * @throws Exception
 	 */
 	public function pullContent(): array {
 		$content = $this->revision->getContent( SlotRecord::MAIN );
@@ -144,16 +203,19 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 		if ( !$data ) {
 			throw new Exception( json_last_error_msg() );
 		}
+
 		return $data;
 	}
 
 	/**
-	 * @param array $nodes
+	 * @param array &$nodes
+	 * @param array $data
 	 * @param int $level
+	 *
 	 * @return void
 	 */
-	private function processNodesInternally( array $nodes, int $level ) {
-		foreach ( $nodes as $nodeData ) {
+	private function processNodesInternally( array &$nodes, array $data, int $level ): void {
+		foreach ( $data as $nodeData ) {
 			// Get node processor that supports the node type
 			try {
 				$nodeProcessor = $this->getNodeProcessor( $nodeData['type'] ?? '' );
@@ -170,9 +232,9 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 				continue;
 			}
 			$node->setLevel( $level );
-			$this->nodes[] = $node;
+			$nodes[] = $node;
 			if ( isset( $nodeData['children'] ) && is_array( $nodeData['children'] ) && $node->supportsChildren() ) {
-				$this->processNodesInternally( $nodeData['children'], $level + 1 );
+				$this->processNodesInternally( $nodes, $nodeData['children'], $level + 1 );
 			}
 		}
 	}
@@ -187,7 +249,7 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 				return $nodeProcessor;
 			}
 		}
-		throw new \UnexpectedValueException( 'No node processor found for type ' . $type );
+		throw new UnexpectedValueException( 'No node processor found for type ' . $type );
 	}
 
 	/**
@@ -211,7 +273,9 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	 * @param INode $node
 	 * @param string $mode
 	 * @param bool $newline
+	 *
 	 * @return void
+	 * @throws Exception
 	 */
 	public function addNode( INode $node, $mode = 'append', $newline = true ): void {
 		$this->rawData[] = $node->storageSerialize();
@@ -239,8 +303,9 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	 * @param bool $replace
 	 *
 	 * @return void
+	 * @throws Exception
 	 */
-	public function addNodesFromData( array $nodes, bool $replace = false ) {
+	public function addNodesFromData( array $nodes, bool $replace = false ): void {
 		$parsed = [];
 		foreach ( $nodes as $nodeData ) {
 			// Get node processor that supports the node type
@@ -285,7 +350,7 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	 *
 	 * @return void
 	 */
-	private function addChildren( EnhancedSidebarNode $node, array $nodes ) {
+	private function addChildren( EnhancedSidebarNode $node, array $nodes ): void {
 		$found = false;
 		foreach ( $nodes as $n ) {
 			if ( $n === $node ) {
@@ -309,7 +374,7 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	 *
 	 * @return void
 	 */
-	private function setUserOnProcessors( User $user ) {
+	private function setUserOnProcessors( User $user ): void {
 		foreach ( $this->nodeProcessors as $processor ) {
 			$processor->setUser( $user );
 		}

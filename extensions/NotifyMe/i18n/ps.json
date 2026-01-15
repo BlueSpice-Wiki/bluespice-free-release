@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Af420"
+			"Af420",
+			"شاه زمان پټان"
 		]
 	},
-	"prefs-notifications": "يادگيرنې"
+	"prefs-notifications": "يادگيرنې",
+	"prefs-subs": "د خبرتيا گډونونه"
 }

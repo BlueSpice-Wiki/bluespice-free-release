@@ -247,6 +247,10 @@ enhancedUpload.ui.AttachmentsWidget.prototype.getGridData = function () {
 			dfds.push( dfdInfo );
 		}
 		$.when.apply( me, dfds ).done( () => {
+			// Make sure that files have the same order as in wikitext
+			const normalize = ( filename ) => filename.replace( /_/g, ' ' ).trim();
+			const sortFiles = new Map( me.filesTitle.map( ( name, idx ) => [ normalize( name ), idx ] ) );
+			files.sort( ( a, b ) => sortFiles.get( a.filename ) - sortFiles.get( b.filename ) );
 			dfd.resolve( files );
 		} );
 	} );

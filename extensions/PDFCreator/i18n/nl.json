@@ -147,5 +147,10 @@
 	"pdfcreator-template-edit-dlg-intro-custom-file-select": "Eigen achtergrondafbeelding gebruiken",
 	"pdfcreator-template-edit-dlg-general-redirect-label": "Doorverwijzing negeren",
 	"pdfcreator-template-edit-dlg-title-create": "PDF-sjabloon aanmaken",
-	"pdfcreator-template-edit-dlg-general-page-heading-edit": "PDF-sjabloon bewerken"
+	"pdfcreator-template-edit-dlg-general-page-heading-edit": "PDF-sjabloon bewerken",
+	"pdfcreator-dump-namespaces-mail-body-text": "De naamruimten van $1 zijn op $2 in PDF geëxporteerd.",
+	"pdfcreator-dump-namespaces-mail-body-text-done": "klaar",
+	"pdfcreator-dump-namespaces-mail-body-text-fail": "mislukt",
+	"pdfcreator-tag-no-export-start-ve-label": "PDF-uitsluiting - begin",
+	"pdfcreator-tag-no-export-end-ve-label": "PDF-uitsluiting - einde"
 }

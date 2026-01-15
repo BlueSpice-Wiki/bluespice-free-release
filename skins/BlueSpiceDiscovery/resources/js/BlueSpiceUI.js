@@ -169,20 +169,34 @@
 	}
 
 	function init() {
-		if ( $( window ).width() >= 1400 && discovery_cookie.get( 'sb-pri-cnt' ) !== 'false' ) {
-			showSidebarPrimary();
-		}
-		if ( $( window ).width() >= 1400 && $( '#book-navigation-panel.active' ).length ) {
-			showSidebarPrimary();
-		}
-		if ( $( window ).width() < 1400 ) {
+		const isWideScreen = $( window ).width() >= 1400;
+		const isMobile = $( window ).width() < 768;
+
+		if ( isWideScreen ) {
+			// Show primary sidebar if not explicitly hidden
+			if ( discovery_cookie.get( 'sb-pri-cnt' ) !== 'false' ) {
+				showSidebarPrimary();
+			}
+
+			// Show primary sidebar if book navigation is active
+			if ( $( '#book-navigation-panel.active' ).length ) {
+				showSidebarPrimary();
+			}
+
+			// Show secondary sidebar if not explicitly hidden
+			if ( discovery_cookie.get( 'sb-sec-cnt' ) !== 'false' ) {
+				showSidebarSecondary();
+			}
+		} else {
+			// Small screens: hide both
 			hideSidebarPrimary();
 			hideSidebarSecondary();
 		}
+
 		if ( $( '#sb-sec-cnt.show' ).length ) {
 			$( '#back-to-top' ).addClass( 'collapsed' );
 		}
-		if ( $( window ).width() < 768 ) {
+		if ( isMobile ) {
 			$( 'html' ).addClass( 'discovery-mobile' );
 		} else {
 			$( 'html' ).removeClass( 'discovery-mobile' );
@@ -192,7 +206,7 @@
 		}
 
 		const resizeObserver = new ResizeObserver( () => { // eslint-disable-line compat/compat
-			if ( $( window ).width() < 768 ) {
+			if ( isMobile ) {
 				$( 'html' ).addClass( 'discovery-mobile' );
 			} else {
 				$( 'html' ).removeClass( 'discovery-mobile' );

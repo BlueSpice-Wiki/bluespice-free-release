@@ -20,18 +20,27 @@ mw.hook( 've.activationComplete' ).add( () => {
 	);
 
 	cancelButton.on( 'click', () => {
-		OO.ui.confirm( ve.msg( 'bs-visualeditorconnector-cancel-edit-confirm-message' ) ).done( ( confirmed ) => {
-			if ( confirmed ) {
-				// As this is an intentional act of the user, we assume the user
-				// really wants to discard the changes. So we remove any locally stored
-				// but not yet saved changes.
-				ve.init.target.getSurface().getModel().removeDocStateAndChanges();
-				// This flag triggers the browser's unsaved changes warning in
-				// ve.init.mw.DesktopArticleTarget.prototype.onBeforeUnload
-				ve.init.target.edited = false;
-				window.location.href = mw.util.getUrl();
-			}
-		} );
+		const surface = ve.init.target.getSurface();
+
+		const exit = () => {
+			// Disable browser unsaved changes warning in ve.init.mw.DesktopArticleTarget.prototype.onBeforeUnload
+			ve.init.target.edited = false;
+			window.location.href = mw.util.getUrl();
+		};
+
+		if ( ve.init.target.isSaveable() ) {
+			// Unsaved changes: show confirmation
+			OO.ui.confirm( ve.msg( 'bs-visualeditorconnector-cancel-edit-confirm-message' ) ).done( ( confirmed ) => {
+				if ( confirmed ) {
+					// User confirmed: discard any unsaved local changes
+					surface.getModel().removeDocStateAndChanges();
+					exit();
+				}
+			} );
+		} else {
+			// No changes: just exit
+			exit();
+		}
 	} );
 
 	// Needed for switching between Visual and Wikitext mode. Otherwise, we get this

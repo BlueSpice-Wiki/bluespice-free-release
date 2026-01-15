@@ -36,3 +36,8 @@ body.mediawiki .oo-ui-windowManager-modal > .oo-ui-dialog {
 .oo-ui-tabSelectWidget-framed.oo-ui-widget-enabled .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected .oo-ui-labelElement-label {
 	border-bottom-color: #36c;
 }
+
+/* ERM43065 - border color for input is not enough -> use Codex input border color */
+.oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input {
+	border-color: #72777d;
+}

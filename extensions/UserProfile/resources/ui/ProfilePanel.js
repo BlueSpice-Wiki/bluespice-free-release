@@ -1,4 +1,4 @@
-ext.userProfile.ui.ProfilePanel = function( cfg ) {
+ext.userProfile.ui.ProfilePanel = function ( cfg ) {
 	cfg = cfg || {};
 	cfg.padded = true;
 	cfg.expanded = false;
@@ -20,52 +20,52 @@ ext.userProfile.ui.ProfilePanel = function( cfg ) {
 
 OO.inheritClass( ext.userProfile.ui.ProfilePanel, OO.ui.PanelLayout );
 
-ext.userProfile.ui.ProfilePanel.prototype.initialize = function() {
-	this.loadData().done( function( response ) {
-		var data = response.data || {};
-		var fields = response.fields || {};
+ext.userProfile.ui.ProfilePanel.prototype.initialize = function () {
+	this.loadData().done( ( response ) => {
+		const data = response.data || {};
+		const fields = response.fields || {};
 		this.$imageCnt = $( '<div>' ).addClass( 'user-profile-image-cnt' );
 		this.$dataCnt = $( '<div>' ).addClass( 'user-profile-data-cnt' );
 		this.renderImage( data.imageUrl || '' );
 		this.renderHeader( data, fields );
 		this.renderFields( data, fields );
-		setTimeout( function() {
+		setTimeout( () => {
 			// It needs that long for image to render, so we can avoid flickering
 			this.setLoading( false );
 			this.$element.append( this.$imageCnt, this.$dataCnt );
-		}.bind( this ), 1000 );
-	}.bind( this ) );
+		}, 1000 );
+	} );
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.loadData = function() {
-	var dfd = $.Deferred();
+ext.userProfile.ui.ProfilePanel.prototype.loadData = function () {
+	const dfd = $.Deferred();
 	$.ajax( {
 		url: mw.util.wikiScript( 'rest' ) + '/userprofile/v1/' + this.user
-	} ).done( function( data ) {
+	} ).done( ( data ) => {
 		dfd.resolve( data );
-	}.bind( this ) ).fail( function( err ) {
+	} ).fail( ( err ) => {
 		if ( err.responseJSON.message === 'User not found' ) {
 			this.enterErrorMode( 'userprofile-user-not-exist-error' );
 		} else {
-			console.error( err );
+			console.error( err ); // eslint-disable-line no-console
 			this.enterErrorMode();
 		}
-	}.bind( this ) );
+	} );
 	return dfd.promise();
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.enterErrorMode = function( messageKey = 'userprofile-general-error' ) {
+ext.userProfile.ui.ProfilePanel.prototype.enterErrorMode = function ( messageKey = 'userprofile-general-error' ) {
 	this.setLoading( false );
 	this.$element.addClass( 'user-profile-error' );
 	this.$element.html(
 		new OO.ui.MessageWidget( {
 			type: 'error',
-			label: mw.message( messageKey ).text()
+			label: mw.message( messageKey ).text() // eslint-disable-line mediawiki/msg-doc
 		} ).$element
 	);
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.setLoading = function( loading ) {
+ext.userProfile.ui.ProfilePanel.prototype.setLoading = function ( loading ) {
 	if ( loading ) {
 		this.$element.empty();
 		this.$element.addClass( 'user-profile-loading' );
@@ -74,8 +74,8 @@ ext.userProfile.ui.ProfilePanel.prototype.setLoading = function( loading ) {
 	}
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.renderImage = function( imageUrl ) {
-	var $img = $( '<img>' ).attr( 'src', imageUrl ).addClass( 'user-profile-image' );
+ext.userProfile.ui.ProfilePanel.prototype.renderImage = function ( imageUrl ) {
+	const $img = $( '<img>' ).attr( 'src', imageUrl ).addClass( 'user-profile-image' );
 	$img.attr( 'alt', mw.msg( 'userprofile-profile-image-alt', this.userDisplay ) );
 	if ( this.editable && this.isOwn ) {
 		this.$imageCnt.append(
@@ -85,8 +85,8 @@ ext.userProfile.ui.ProfilePanel.prototype.renderImage = function( imageUrl ) {
 	this.$imageCnt.append( $img );
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.renderHeader = function( data, fields ) {
-	var hasRealName = data.realName && data.realName.length > 0,
+ext.userProfile.ui.ProfilePanel.prototype.renderHeader = function ( data, fields ) {
+	const hasRealName = data.realName && data.realName.length > 0,
 		mainName = hasRealName ? data.realName : data.username,
 		$nameHeader = $( '<div>' ).addClass( 'user-profile-name-header' ),
 		nameLabel = new OO.ui.LabelWidget( {
@@ -120,18 +120,18 @@ ext.userProfile.ui.ProfilePanel.prototype.renderHeader = function( data, fields 
 
 	this.$dataCnt.append( $nameHeader );
 
-	var metas = [];
-	for ( var key in fields ) {
+	const metas = [];
+	for ( const key in fields ) {
 		if (
 			this.shouldShow( key ) &&
 			fields.hasOwnProperty( key ) &&
-			fields[key].hasOwnProperty( 'isMeta' ) &&
-			fields[key].isMeta
+			fields[ key ].hasOwnProperty( 'isMeta' ) &&
+			fields[ key ].isMeta
 		) {
 			if ( !data.hasOwnProperty( key ) ) {
 				continue;
 			}
-			metas.push( $( '<div>' ).addClass( 'user-profile-meta' ).text( fields[key].label + ': ' + data[key] ) );
+			metas.push( $( '<div>' ).addClass( 'user-profile-meta' ).text( fields[ key ].label + ': ' + data[ key ] ) );
 		}
 	}
 
@@ -140,19 +140,19 @@ ext.userProfile.ui.ProfilePanel.prototype.renderHeader = function( data, fields 
 	}
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.renderFields = function( data, fields ) {
-	var layouts = [];
-	for ( var key in fields ) {
+ext.userProfile.ui.ProfilePanel.prototype.renderFields = function ( data, fields ) {
+	const layouts = [];
+	for ( const key in fields ) {
 		if ( !this.shouldShow( key ) ) {
 			continue;
 		}
 		if ( !fields.hasOwnProperty( key ) ) {
 			continue;
 		}
-		if ( fields[key].isMeta || fields[key].isSystem || data.hasOwnProperty( key ) === false || data[key] === '' ) {
+		if ( fields[ key ].isMeta || fields[ key ].isSystem || data.hasOwnProperty( key ) === false || data[ key ] === '' ) {
 			continue;
 		}
-		layouts.push( this.renderField( key, data[key], fields[key] ) );
+		layouts.push( this.renderField( key, data[ key ], fields[ key ] ) );
 	}
 
 	this.$dataCnt.append(
@@ -160,10 +160,10 @@ ext.userProfile.ui.ProfilePanel.prototype.renderFields = function( data, fields 
 	);
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.renderField = function( key, value, field ) {
-	var $field = $( '<div>' ).addClass( 'user-profile-field' ),
-		$label = $( '<div>' ).addClass( 'user-profile-field-label' ).text( field.label ),
-		$value = $( '<div>' ).addClass( 'user-profile-field-value' ).text( value );
+ext.userProfile.ui.ProfilePanel.prototype.renderField = function ( key, value, field ) {
+	const $field = $( '<div>' ).addClass( 'user-profile-field' );
+	const $label = $( '<div>' ).addClass( 'user-profile-field-label' ).text( field.label );
+	let $value = $( '<div>' ).addClass( 'user-profile-field-value' ).text( value );
 
 	if ( field.hasOwnProperty( 'url' ) ) {
 		$value = $( '<a>' )
@@ -176,7 +176,7 @@ ext.userProfile.ui.ProfilePanel.prototype.renderField = function( key, value, fi
 	return $field;
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.getImageEditWidget = function() {
+ext.userProfile.ui.ProfilePanel.prototype.getImageEditWidget = function () {
 	this.editImageButton = new OO.ui.ButtonMenuSelectWidget( {
 		icon: 'edit',
 		framed: false,
@@ -189,7 +189,7 @@ ext.userProfile.ui.ProfilePanel.prototype.getImageEditWidget = function() {
 	} );
 
 	this.editImageButton.getMenu().connect( this, {
-		select: function( item ) {
+		select: function ( item ) {
 			if ( item instanceof OO.ui.MenuOptionWidget ) {
 				if ( item.getData() instanceof ext.userProfile.ui.ProfileImageProvider ) {
 					item.getData().execute();
@@ -199,13 +199,13 @@ ext.userProfile.ui.ProfilePanel.prototype.getImageEditWidget = function() {
 	} );
 
 	const providerModules = ext.userProfile.profileImage.providerModules;
-	mw.loader.using( providerModules ).done( function() {
+	mw.loader.using( providerModules ).done( () => {
 		const registry = ext.userProfile.profileImage.providerRegistry.registry;
-		for ( var key in registry ) {
+		for ( const key in registry ) {
 			if ( !registry.hasOwnProperty( key ) ) {
 				continue;
 			}
-			var provider = registry[key];
+			const provider = registry[ key ];
 			this.editImageButton.getMenu().addItems( [
 				new OO.ui.MenuOptionWidget( {
 					data: provider,
@@ -213,12 +213,12 @@ ext.userProfile.ui.ProfilePanel.prototype.getImageEditWidget = function() {
 				} )
 			] );
 		}
-	}.bind( this ) );
+	} );
 
 	return this.editImageButton;
 };
 
-ext.userProfile.ui.ProfilePanel.prototype.shouldShow = function( key ) {
+ext.userProfile.ui.ProfilePanel.prototype.shouldShow = function ( key ) {
 	if ( this.fieldsToShow.length === 0 ) {
 		return true;
 	}

@@ -1,8 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alojz.tic"
+			"Alojz.tic",
+			"Eleassar"
 		]
 	},
-	"prefs-notifications": "Obvestila"
+	"prefs-notifications": "Obvestila",
+	"notifyme-ui-subscriptionset-editor-category-label": "Kategorija",
+	"notifyme-ui-subscriptionset-category-label": "Kategorija",
+	"notifyme-notification-center-filter-label-categories-none": "Ni kategorij",
+	"notifyme-bucket-personal": "Dogodki na osebni strani",
+	"notifyme-link-label-diff": "ogled razlike",
+	"notifyme-sample-data-link-1": "Ogled razlike"
 }

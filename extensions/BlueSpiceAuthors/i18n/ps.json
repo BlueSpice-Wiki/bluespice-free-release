@@ -1,10 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
 	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|ليکوال}}|ليکوالان}}",
-	"bs-authors-profileimage": "د پېژنليک انځور",
-	"bs-authors-profileimage-change": "پېژنليک انځور بدلول"
+	"bs-authors-profileimage": "د پېژنيال انځور",
+	"bs-authors-profileimage-change": "پېژنيال انځور بدلول",
+	"bs-authors-desc": "د يو مخ د ليکوال پېژنيال انځور ښکاره‌کوي",
+	"prefs-authors": "د دې مخ ليکوالان",
+	"bs-authors-show-all-authors": "نور ليکوالان د لاسرسي وړ دي",
+	"bs-authors-navigation-link-title": "د دې مخ ليکوالان",
+	"bs-authors-navigation-link-text": "ليکوالان",
+	"apihelp-bs-pageauthors-store-summary": "د مخ د ټولو ليکوالانو لړليک چې په شرايطو برابر دي",
+	"bs-authors-info-dialog": "د دې مخ ليکوالان",
+	"bs-authors-info-dialog-grid-column-author": "ليکوال",
+	"bs-authors-info-dialog-grid-column-type": "ليکوال ډول"
 }

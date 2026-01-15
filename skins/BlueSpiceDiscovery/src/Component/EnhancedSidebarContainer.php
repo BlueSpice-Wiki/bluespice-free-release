@@ -4,7 +4,6 @@ namespace BlueSpice\Discovery\Component;
 
 use BlueSpice\Discovery\CookieHandler;
 use BlueSpice\Discovery\EnhancedSidebar\Parser as EnhancedSidebarParser;
-use MediaWiki\Context\RequestContext;
 use MediaWiki\Message\Message;
 use MediaWiki\Revision\RevisionStore;
 use MediaWiki\Title\Title;
@@ -15,6 +14,7 @@ use MWStake\MediaWiki\Component\CommonUserInterface\TreeDataGenerator;
 use MWStake\MediaWiki\Component\Wikitext\ParserFactory;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 class EnhancedSidebarContainer extends Container implements LoggerAwareInterface {
 
@@ -24,54 +24,24 @@ class EnhancedSidebarContainer extends Container implements LoggerAwareInterface
 	private $logger;
 
 	/**
-	 * @var string
-	 */
-	private $id = '';
-
-	/**
-	 * @var Title
-	 */
-	private $title;
-
-	/**
-	 * @var RevisionStore
-	 */
-	private $revisionStore;
-
-	/**
-	 * @var ParserFactory
-	 */
-	private $parserFactory;
-
-	/**
-	 * @var TreeDataGenerator
-	 */
-	private $treeDataGenerator;
-
-	/**
-	 * @var CookieHandler
-	 */
-	protected $cookieHandler = null;
-
-	/**
 	 * @param string $id
 	 * @param Title $title
 	 * @param RevisionStore $revisionStore
 	 * @param ParserFactory $parserFactory
 	 * @param TreeDataGenerator $treeDataGenerator
-	 * @param CookieHandler $cookieHandler
+	 * @param CookieHandler|null $cookieHandler
+	 * @param WANObjectCache $objectCache
 	 */
-	public function __construct( string $id, Title $title, RevisionStore $revisionStore,
-		ParserFactory $parserFactory, TreeDataGenerator $treeDataGenerator, CookieHandler $cookieHandler
+	public function __construct(
+		private readonly string $id,
+		private readonly Title $title,
+		private readonly RevisionStore $revisionStore,
+		private readonly ParserFactory $parserFactory,
+		private readonly TreeDataGenerator $treeDataGenerator,
+		private readonly ?CookieHandler $cookieHandler = null,
+		private readonly WANObjectCache $objectCache
 	) {
 		parent::__construct( [] );
-
-		$this->id = $id;
-		$this->title = $title;
-		$this->revisionStore = $revisionStore;
-		$this->parserFactory = $parserFactory;
-		$this->treeDataGenerator = $treeDataGenerator;
-		$this->cookieHandler = $cookieHandler;
 	}
 
 	/**
@@ -180,7 +150,8 @@ class EnhancedSidebarContainer extends Container implements LoggerAwareInterface
 		$revision = $this->revisionStore->getRevisionByTitle( $this->title );
 		$parser = new EnhancedSidebarParser(
 			$revision,
-			$this->parserFactory->getNodeProcessors()
+			$this->parserFactory->getNodeProcessors(),
+			$this->objectCache
 		);
 
 		if ( !$parser ) {
@@ -188,7 +159,7 @@ class EnhancedSidebarContainer extends Container implements LoggerAwareInterface
 		}
 
 		try {
-			return $parser->parseForOutput( RequestContext::getMain()->getUser() );
+			return $parser->parseForOutput();
 		} catch ( \Exception $ex ) {
 			$this->logger->error(
 				'EnhancedSidebarParser failed to parse sidebar',

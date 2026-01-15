@@ -148,7 +148,7 @@
 	"pdfcreator-template-edit-dlg-general-redirect-label": "Ignorar redirection",
 	"pdfcreator-template-edit-dlg-title-create": "Crear patrono PDF",
 	"pdfcreator-template-edit-dlg-general-page-heading-edit": "Modificar patrono PDF",
-	"pdfcreator-dump-namespaces-mail-body-text": "Le spatios de nomines de $1 ha essite exportate in PDF sur $2.",
+	"pdfcreator-dump-namespaces-mail-body-text": "Le spatios de nomines de $1 ha essite exportate in PDF a $2.",
 	"pdfcreator-dump-namespaces-mail-body-text-done": "finite",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "fallimento",
 	"pdfcreator-tag-no-export-start-ve-label": "Exclusion del PDF – initio",

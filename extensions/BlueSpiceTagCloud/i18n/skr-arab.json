@@ -15,5 +15,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-width-label": "چوڑائی",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "ڳیݨ ݙکھاؤ",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "گھٹ کنوں گھٹ فونٹ سائز",
-	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "ودھ کنوں ودھ فونٹ سائز"
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "ودھ کنوں ودھ فونٹ سائز",
+	"bs-tagcloud-tag-tagcloud-tab-common": "وقف",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "ودھایا"
 }

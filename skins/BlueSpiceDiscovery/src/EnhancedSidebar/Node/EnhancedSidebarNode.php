@@ -5,71 +5,61 @@ namespace BlueSpice\Discovery\EnhancedSidebar\Node;
 use InvalidArgumentException;
 use MediaWiki\Extension\MenuEditor\Node\MenuNode;
 use MediaWiki\Message\Message;
-use MediaWiki\User\User;
 
 abstract class EnhancedSidebarNode extends MenuNode {
 
-	/** @var mixed */
-	protected $hidden;
 	/** @var array */
 	protected $children = [];
+
 	/** @var string */
 	protected $text;
-	/**
-	 * @var array|mixed
-	 */
+
+	/** @var string[] */
 	private $classes;
-	/**
-	 * @var mixed|string
-	 */
+
+	/** @var string */
 	private $iconCls;
+
+	/** @var string */
+	protected $hidden;
 
 	/**
 	 * @param array $data
 	 */
 	public function __construct( array $data ) {
 		parent::__construct( $data['level'] ?? -1, '' );
-		$this->hidden = $data['hidden'] ?? '';
+
 		if ( !isset( $data['text'] ) ) {
 			throw new InvalidArgumentException(
 				$this->getType() . ' requires "text" parameter'
 			);
 		}
+
+		$this->hidden = $data['hidden'] ?? '';
 		$this->text = $data['text'];
 		$this->classes = $data['classes'] ?? [];
 		$this->iconCls = $data['icon-cls'] ?? '';
 	}
 
 	/**
-	 * @param User $user
-	 * @return bool
+	 * @return string
 	 */
-	public function isHidden( User $user ): bool {
-		// No user context check by default
-		return (bool)$this->hidden;
+	public function getReadRestriction(): string {
+		return $this->hidden;
 	}
 
 	/**
-	 * Serialize in format to be consumed by a tree
-	 *
-	 * @return array
-	 * @throws \Exception
+	 * @return string|null
 	 */
-	public function treeSerialize(): array {
-		$data = [
-			'id' => $this->generateId(),
-			'text' => $this->getDisplayText(),
-		];
+	public function getTarget(): ?string {
+		return null;
+	}
 
-		$classes = $this->getOutputCssClasses();
-		if ( !empty( $classes ) ) {
-			$data['classes'] = $classes;
-		}
-		if ( $this->iconCls ) {
-			$data['icon-cls'] = $this->iconCls;
-		}
-
-		return $data;
+	/**
+	 * @return string
+	 */
+	public function getIconCls(): string {
+		return $this->iconCls;
 	}
 
 	public function jsonSerialize(): array {
@@ -107,7 +97,7 @@ abstract class EnhancedSidebarNode extends MenuNode {
 	 *
 	 * @return void
 	 */
-	public function addChild( EnhancedSidebarNode $child ) {
+	public function addChild( EnhancedSidebarNode $child ): void {
 		if ( !$this->supportsChildren() ) {
 			return;
 		}
@@ -127,7 +117,7 @@ abstract class EnhancedSidebarNode extends MenuNode {
 	 * @return string
 	 * @throws \Exception
 	 */
-	protected function generateId(): string {
+	public function generateId(): string {
 		return substr(
 			md5( $this->getType() . $this->text . $this->getLevel() ),
 			-5
@@ -135,21 +125,21 @@ abstract class EnhancedSidebarNode extends MenuNode {
 	}
 
 	/**
-	 * @return array
-	 */
-	protected function getOutputCssClasses(): array {
-		return $this->classes;
-	}
-
-	/**
 	 * @return string
 	 */
-	protected function getDisplayText(): string {
+	public function getDisplayText(): string {
 		$msg = Message::newFromKey( $this->text );
 		if ( $msg->exists() ) {
 			return $msg->plain();
 		}
 
 		return $this->text;
+	}
+
+	/**
+	 * @return array
+	 */
+	public function getOutputCssClasses(): array {
+		return $this->classes;
 	}
 }

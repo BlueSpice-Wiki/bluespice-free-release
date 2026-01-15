@@ -59,7 +59,7 @@ class PagesVisited extends Widget {
 				$record->get( Record::PAGE_NAMESPACE ),
 				$record->get( Record::PAGE_TITLE )
 			);
-			if ( !$title ) {
+			if ( !$title || !$title->isKnown() ) {
 				continue;
 			}
 			$display = BsStringHelper::shorten( $title->getPrefixedText(), [
@@ -69,8 +69,10 @@ class PagesVisited extends Widget {
 			$link = [
 				'href' => $title->getLocalURL(),
 				'text' => $display,
-				'title' => $title->getPrefixedText(),
-				'classes' => ' bs-usersidebar-internal '
+				'classes' => ' bs-usersidebar-internal ',
+				'aria' => [
+					'label' => $title->getPrefixedText()
+				]
 			];
 			$links[] = $link;
 		}

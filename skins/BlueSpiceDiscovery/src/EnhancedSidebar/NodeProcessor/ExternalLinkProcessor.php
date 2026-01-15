@@ -2,7 +2,9 @@
 
 namespace BlueSpice\Discovery\EnhancedSidebar\NodeProcessor;
 
+use BlueSpice\Discovery\EnhancedSidebar\Node\EnhancedSidebarNode;
 use BlueSpice\Discovery\EnhancedSidebar\Node\ExternalLinkNode;
+use Exception;
 use MWStake\MediaWiki\Lib\Nodes\INode;
 
 class ExternalLinkProcessor extends EnhancedSidebarNodeProcessor {
@@ -20,6 +22,22 @@ class ExternalLinkProcessor extends EnhancedSidebarNodeProcessor {
 	 * @return INode
 	 */
 	public function getNodeFromData( array $data ): INode {
-		return new ExternalLinkNode( $data );
+		$node = new ExternalLinkNode( $data );
+		return $node;
+	}
+
+	/**
+	 * Serialize in format to be consumed by a tree
+	 *
+	 * @param EnhancedSidebarNode $node
+	 *
+	 * @return array
+	 *
+	 * @throws Exception
+	 */
+	public function serializeNodeTree( EnhancedSidebarNode $node ): array {
+		return parent::serializeNodeTree( $node ) + [
+				'href' => $node->getHref(),
+			];
 	}
 }

@@ -68,7 +68,7 @@ class PopulateTitleIndex extends LoggedUpdateMaintenance {
 	 * @return string
 	 */
 	protected function getUpdateKey() {
-		return 'mws-title-index-init';
+		return 'mws-title-index-init-with-redirect';
 	}
 }
 

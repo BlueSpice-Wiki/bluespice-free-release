@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yueman"
+		]
+	},
+	"bs-discovery-navbar-user-login-text": "簽到",
+	"bs-discovery-navbar-user-login-title": "簽到",
+	"bs-discovery-navbar-user-login-aria-label": "簽到",
+	"bs-discovery-sidebar-actions-heading": "動作",
+	"bs-discovery-breadcrumb-label-talk": "傾偈",
+	"bs-discovery-personalurl-mycontributions-text": "貢獻"
+}

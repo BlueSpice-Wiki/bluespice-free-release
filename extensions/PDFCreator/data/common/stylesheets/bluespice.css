@@ -80,3 +80,8 @@ in this place anyways.
 	margin:0 0 10px;
 	padding:.3em .6em;
 }
+
+/** can cause empty pages - ERM43439 */
+.mw-empty-elt {
+	display: none;
+}

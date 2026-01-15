@@ -224,31 +224,17 @@ class PdfHandler extends ImageHandler {
 			"-q",
 			$srcPath
 		);
-		if ( wfIsWindows() ) {
-			$cmd .= " | " . wfEscapeShellArg(
-				$wgPdfPostProcessor,
-				"-",
-				"-depth",
-				"8",
-				"-quality",
-				$wgPdfHandlerJpegQuality,
-				"-resize",
-				$width,
-				$dstPath
-			);
-		} else {
-			$cmd .= " | " . wfEscapeShellArg(
-				$wgPdfPostProcessor,
-				"-depth",
-				"8",
-				"-quality",
-				$wgPdfHandlerJpegQuality,
-				"-resize",
-				$width,
-				"-",
-				$dstPath
-			);
-		}
+		$cmd .= " | " . wfEscapeShellArg(
+			$wgPdfPostProcessor,
+			"jpeg:-",
+			"-depth",
+			"8",
+			"-quality",
+			$wgPdfHandlerJpegQuality,
+			"-resize",
+			(string)$width,
+			$dstPath
+		);
 		$cmd .= ")";
 
 		wfDebug( __METHOD__ . ": $cmd\n" );

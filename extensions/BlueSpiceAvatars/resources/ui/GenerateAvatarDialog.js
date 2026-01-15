@@ -21,8 +21,8 @@ bs.avatars.ui.GenerateAvatarDialog.static.actions = [
 	},
 	{
 		action: 'cancel',
-		flags: [ 'safe' ],
-		label: mw.msg( 'bs-avatars-generic-cancel' )
+		flags: [ 'safe', 'close' ],
+		title: mw.msg( 'bs-avatars-generic-cancel' )
 	}
 ];
 

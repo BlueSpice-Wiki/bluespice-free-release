@@ -1,22 +1,39 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"bs-readers-desc": "Crea unha lista das persoas que len unha páxina",
 	"prefs-readers": "Lectores",
 	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Lector|Lectora}}|Lectores}}",
 	"readers-user": "Páxinas {{GENDER:$1|lidas}} por: $1",
-	"readers": "Lectores de \"$1\"",
-	"bs-readers-contentactions-label": "Amosar lectores",
+	"readers": "Lectores de «$1»",
+	"bs-readers-contentactions-label": "Amosar os lectores",
 	"bs-readers-pagenotexists": "A páxina non existe.",
-	"bs-readers-pref-active": "Activar lectores",
+	"bs-readers-pref-active": "Activar os lectores",
 	"bs-readers-emptyinput": "Non se proporcionou ningunha páxina.",
 	"bs-readers-header-username": "Nome de usuario",
 	"bs-readers-header-readerspath": "Lector",
 	"bs-readers-header-ts": "Data",
 	"bs-readers-header-page": "Páxina",
 	"apihelp-bs-readers-data-store-summary": "Obter a información concernente ó lector da páxina especificada.",
-	"apihelp-bs-readers-users-store-summary": "Obter as informacións de tódolos lectores da páxina especificada."
+	"apihelp-bs-readers-users-store-summary": "Obter a información de tódolos lectores da páxina especificada.",
+	"apihelp-bs-readers-page-readers-store-summary": "Obtén todos os lectores de todas as páxinas",
+	"apihelp-bs-readers-revision-readers-store-summary": "Obtén todos os lectores de todas as revisións dunha páxina",
+	"apihelp-bs-readers-tasks-summary": "Proporciona operacións comúns para os lectores",
+	"action-viewreaders": "ver os lectores das páxinas",
+	"action-viewrevisionreaders": "ver os lectores de revisións dunha soa páxina",
+	"right-viewreaders": "Ver os lectores dunha páxina",
+	"right-viewrevisionreaders": "Ver os lectores de revisións dunha soa páxina",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Liches}} a páxina «$1» o $2",
+	"bs-readers-header-read-by": "Lida por",
+	"bs-readers-header-revision-id": "ID da revisión",
+	"bs-readers-header-revision-date": "Data da revisión",
+	"bs-readers-header-read-on": "Lida o",
+	"revisionreaders": "Lectores por revisión de «$1»",
+	"bs-readers-info-dialog": "Lectores desta páxina",
+	"bs-readers-info-dialog-column-readers": "Lectores",
+	"bs-readers-permission-error": "Erro de permisos"
 }

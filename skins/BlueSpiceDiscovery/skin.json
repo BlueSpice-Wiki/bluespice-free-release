@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceDiscovery",
-	"version": "5.1.1",
+	"version": "5.1.2",
 	"author": [
 		"Daniel Vogel"
 	],
@@ -158,7 +158,8 @@
 					"args": [ "MediaWiki:Sidebar.json", "enh-mw-sb" ],
 					"services": [
 						"RevisionStore", "TitleFactory", "MWStakeWikitextParserFactory",
-						"MWStakeCommonUITreeDataGenerator", "BlueSpiceDiscoveryCookieHandler"
+						"MWStakeCommonUITreeDataGenerator", "BlueSpiceDiscoveryCookieHandler",
+						"MainWANObjectCache"
 					]
 				}
 			},
@@ -180,19 +181,19 @@
 			"EnhancedSidebarNodeProcessors": {
 				"enhanced-sidebar-internal-link": {
 					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\NodeProcessor\\InternalLinkProcessor",
-					"services": [ "PermissionManager", "ParserFactory", "TitleFactory" ]
+					"services": [ "ParserFactory", "TitleFactory", "PermissionManager" ]
 				},
 				"enhanced-sidebar-external-link": {
 					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\NodeProcessor\\ExternalLinkProcessor",
-					"services": [ "ParserFactory" ]
+					"services": [ "ParserFactory", "TitleFactory" ]
 				},
 				"enhanced-sidebar-subpage-tree": {
 					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\NodeProcessor\\SubpageListProcessor",
-					"services": [ "PermissionManager", "ParserFactory", "TitleFactory" ]
+					"services": [ "ParserFactory", "TitleFactory", "PermissionManager" ]
 				},
 				"enhanced-sidebar-panel-heading": {
 					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\NodeProcessor\\PanelHeadingProcessor",
-					"services": [ "ParserFactory" ]
+					"services": [ "ParserFactory", "TitleFactory" ]
 				}
 			},
 			"MetaItemProviderRegistry": {},
@@ -250,7 +251,10 @@
 				"enhanced-sidebar": {
 					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\Menu",
 					"args": [ "MediaWiki:Sidebar.json" ],
-					"services": [ "MWStakeWikitextParserFactory" ]
+					"services": [
+						"MWStakeWikitextParserFactory",
+						"MainWANObjectCache"
+					]
 				}
 			},
 			"Nodes": {
@@ -334,6 +338,10 @@
 			"class": "\\BlueSpice\\Discovery\\Hook\\SetPageLanguage",
 			"services": [ "LanguageNameUtils" ]
 		},
+		"invalidateEnhancedSidebarCache": {
+			"class": "\\BlueSpice\\Discovery\\Hook\\InvalidateEnhancedSidebarCache",
+			"services": [ "MainWANObjectCache" ]
+		},
 		"pdf-export": {
 			"class": "\\BlueSpice\\Discovery\\HookHandler\\PdfExportHandler"
 		},
@@ -345,6 +353,9 @@
 		},
 		"addBacklinkOnSpecialPages": {
 			"class": "\\BlueSpice\\Discovery\\HookHandler\\BeforePageDisplay\\AddBacklink"
+		},
+		"overrideMessages": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MessageCacheFetchOverrides\\FixMessages"
 		}
 	},
 	"Hooks": {
@@ -368,7 +379,7 @@
 			"body-classes"
 		],
 		"BsAdapterAjaxPingResult": "\\BlueSpice\\Discovery\\Hook\\BsAdapterAjaxPingResult\\CheckAttentionIndicator::callback",
-		"PageSaveComplete": "setPageLanguage",
+		"PageSaveComplete": [ "setPageLanguage", "invalidateEnhancedSidebarCache" ],
 		"BSUEModulePDFBeforeAddingContent": "pdf-export",
 		"BSUsageTrackerRegisterCollectors": [
 			"\\BlueSpice\\Discovery\\Hook\\BSUsageTrackerRegisterCollectors\\MediaWikiSidebarActive::callback",
@@ -377,7 +388,8 @@
 			"\\BlueSpice\\Discovery\\Hook\\BSUsageTrackerRegisterCollectors\\EnhancedSidebarModified::callback"
 		],
 		"MWStakeCommonUILessVarsInit": "set-less-vars",
-		"BeforePageDisplay": [ "addLoginPageResources", "addBacklinkOnSpecialPages" ]
+		"BeforePageDisplay": [ "addLoginPageResources", "addBacklinkOnSpecialPages" ],
+		"MessageCacheFetchOverrides": "overrideMessages"
 	},
 	"config_prefix": "bsg",
 	"config": {
@@ -527,7 +539,7 @@
 				"js/MobileContentTables.js",
 				"js/dblClickEdit.js",
 				"js/VEEditClick.js",
-				"js/AddTOCAriaLabel.js"
+				"js/TreeComponent.js"
 			],
 			"messages": [
 				"bs-discovery-navbar-full-screen-button-enable-title",
@@ -544,9 +556,7 @@
 				"bs-discovery-sidebar-secondary-toggle-hide-aria-label",
 				"bs-discovery-navbar-user-button-aria-label",
 				"bs-discovery-navbar-user-button-requires-attention-aria-label",
-				"bs-discovery-requires-attention",
-				"bs-discovery-table-of-contents-show-button-aria-label",
-				"bs-discovery-table-of-contents-hide-button-aria-label"
+				"bs-discovery-requires-attention"
 			],
 			"dependencies": [
 				"mediawiki.cookie",

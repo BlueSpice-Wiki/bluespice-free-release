@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"bs-instancestatus-desc": "Engade unha vista xeral do estado da instancia do wiki",
+	"instancestatus": "Estado da instancia",
+	"bs-instancestatus-instance-status-bs-version-label": "Versión de BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "Cota de usuario",
+	"bs-instancestatus-instance-status-last-update-label": "Última actualización o",
+	"bs-instancestatus-instance-status-created-label": "Instancia creada o",
+	"bs-instancestatus-instance-status-no-info": "Non dispoñible",
+	"bs-instancestatus-instance-status-sales-contact-label": "Contacto de BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "Ponte en contacto aquí: [$1 contacto de BlueSpice]",
+	"bs-instancestatus-overview-loader": "Recompilando a información do wiki...",
+	"bs-instancestatus-instance-status-main-label": "Xeral"
+}

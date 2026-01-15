@@ -67,6 +67,9 @@ ext.enhancedUI.dialog.FileInfoDialog.prototype.initialize = function () {
 
 	this.booklet.setPage( this.page );
 
+	// Aria label required for select widget container
+	this.booklet.$menu.find( '[role=listbox]' ).first().attr( 'aria-label',
+		mw.message( 'enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label' ).text() );
 	this.$body.append( this.booklet.$element );
 	this.updateSize();
 };

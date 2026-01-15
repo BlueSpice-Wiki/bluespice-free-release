@@ -1,34 +1,34 @@
-ext.userProfile.tag.UserProfileDefinition = function() {
+ext.userProfile.tag.UserProfileDefinition = function () {
 	ext.userProfile.tag.UserProfileDefinition.super.call( this );
 };
 
 OO.inheritClass( ext.userProfile.tag.UserProfileDefinition, bs.vec.util.tag.Definition );
 
-ext.userProfile.tag.UserProfileDefinition.prototype.getCfg = function() {
-	var cfg = ext.userProfile.tag.UserProfileDefinition.super.prototype.getCfg.call( this );
+ext.userProfile.tag.UserProfileDefinition.prototype.getCfg = function () {
+	const cfg = ext.userProfile.tag.UserProfileDefinition.super.prototype.getCfg.call( this );
 
 	const fields = mw.config.get( 'wgUserProfileAvailableFields' ) || {};
-	let options = [];
+	const options = [];
 	for ( const key in fields ) {
-		options.push( { data: key, label: fields[key].label || key } );
+		options.push( { data: key, label: fields[ key ].label || key } );
 	}
 
-	return $.extend( cfg, {
-		classname : 'UserProfile',
+	return $.extend( cfg, { // eslint-disable-line no-jquery/no-extend
+		classname: 'UserProfile',
 		name: 'userprofile',
 		tagname: 'user-profile',
 		descriptionMsg: 'userprofile-droplet-name-description',
 		menuItemMsg: 'userprofile-droplet-name',
-		attributes: [{
+		attributes: [ {
 			name: 'user',
 			labelMsg: 'userprofile-ve-attr-user-label',
 			helpMsg: 'userprofile-ve-attr-user-help',
-			type: 'user',
-		},{
+			type: 'user'
+		}, {
 			name: 'framed',
 			labelMsg: 'userprofile-ve-attr-framed-label',
 			type: 'toggle'
-		},{
+		}, {
 			name: 'orientation',
 			labelMsg: 'userprofile-ve-attr-orientation-label',
 			type: 'dropdown',
@@ -45,34 +45,34 @@ ext.userProfile.tag.UserProfileDefinition.prototype.getCfg = function() {
 			allowArbitrary: false,
 			options: options,
 			valueSeparator: ','
-		}]
-	});
+		} ]
+	} );
 };
 
 bs.vec.registerTagDefinition(
 	new ext.userProfile.tag.UserProfileDefinition()
 );
 
-ext.userProfile.tag.UserProfileDefinitionLegacy = function() {
+ext.userProfile.tag.UserProfileDefinitionLegacy = function () {
 	ext.userProfile.tag.UserProfileDefinitionLegacy.super.call( this );
 };
 
 OO.inheritClass( ext.userProfile.tag.UserProfileDefinitionLegacy, bs.vec.util.tag.Definition );
 
-ext.userProfile.tag.UserProfileDefinitionLegacy.prototype.getCfg = function() {
-	var cfg = ext.userProfile.tag.UserProfileDefinitionLegacy.super.prototype.getCfg.call( this );
-	return $.extend( cfg, {
-		classname : 'UserProfileLegacy',
+ext.userProfile.tag.UserProfileDefinitionLegacy.prototype.getCfg = function () {
+	const cfg = ext.userProfile.tag.UserProfileDefinitionLegacy.super.prototype.getCfg.call( this );
+	return $.extend( cfg, { // eslint-disable-line no-jquery/no-extend
+		classname: 'UserProfileLegacy',
 		name: 'userprofileLegacy',
 		tagname: 'bs:socialentityprofile',
 		descriptionMsg: 'userprofile-droplet-name-description',
 		menuItemMsg: 'userprofile-droplet-name',
-		attributes: [{
+		attributes: [ {
 			name: 'username',
 			labelMsg: 'userprofile-ve-attr-user-label',
-			type: 'text',
-		}]
-	});
+			type: 'text'
+		} ]
+	} );
 };
 
 bs.vec.registerTagDefinition(

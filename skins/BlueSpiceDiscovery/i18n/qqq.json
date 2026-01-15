@@ -52,7 +52,6 @@
 	"bs-discovery-navbar-full-screen-button-disable-title": "Title attribute for a button to disable fullscreen mode",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "Aria-label attribute for a button to disable fullscreen mode",
 	"bs-discovery-breadcrumb-nav-aria-label": "Aria-label attribute for breadcrumb navigation",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Aria-label for breadcrumb root node\n\n{{Identical|Namespace}}",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "Text for button with namespace as text if namespace is NS_MAIN\n{{identical|Page}}",
 	"bs-discovery-breadcrumb-nav-node-title": "Title for breadcrumb item with link to a page",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "Aria-label attribute for breadcrumb item with link to a page",
@@ -191,12 +190,11 @@
 	"bs-discovery-tools-after-content-aria-label": "Aria-label for tools after content section",
 	"bs-discovery-data-after-content-aria-label": "Aria-label for data after content section",
 	"bs-discovery-requires-attention": "Text for visually hidden element to indicate that this element requires user attention",
-	"bs-discovery-table-of-contents-show-button-aria-label": "ARIA label for the table of contents show toggle button",
-	"bs-discovery-table-of-contents-hide-button-aria-label": "ARIA label for the table of contents hide toggle button",
 	"bs-discovery-breadcrumb-label-diff": "Label for diff page in breadcrumbs\n\n{{Identical|Differences}}",
 	"bs-discovery-back-to-page": "Text for link to navigate back to page\nParameters:\n* - $1 - name of page",
 	"bs-discovery-back-to-page-title": "Title for link to navigate back to page\nParameters:\n* - $1 - name of page",
 	"bs-discovery-back-to-version-history": "Text for link to navigate back to the version history of a page",
 	"bs-discovery-back-to-version-history-title": "Title for link to go back to version history of a page\nParameters:\n* - $1 - name of page",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Font description on [[Special:Version]]"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Font description on [[Special:Version]]",
+	"bs-toc-hide-button-aria-label": "Aria label for button to hide the table of contents"
 }

@@ -9,9 +9,13 @@
 	"bs-authors-desc": "Amosa as imaxes de perfil dos autores dunha páxina",
 	"prefs-authors": "Autores desta páxina",
 	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Autor|Autora}}|Autores}}",
-	"bs-authors-profileimage": "Imaxe do perfil",
-	"bs-authors-profileimage-change": "Cambiar a imaxe do perfil",
+	"bs-authors-profileimage": "Imaxe de perfil",
+	"bs-authors-profileimage-change": "Cambiar a imaxe de perfil",
 	"bs-authors-show-all-authors": "Máis autores dispoñibles",
 	"bs-authors-navigation-link-title": "Autores desta páxina",
-	"bs-authors-navigation-link-text": "Autores"
+	"bs-authors-navigation-link-text": "Autores",
+	"apihelp-bs-pageauthors-store-summary": "Listar todos os autores dunha páxina indicada no contexto",
+	"bs-authors-info-dialog": "Autores desta páxina",
+	"bs-authors-info-dialog-grid-column-author": "Autor",
+	"bs-authors-info-dialog-grid-column-type": "Tipo de autor"
 }

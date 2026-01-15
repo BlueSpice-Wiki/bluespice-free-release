@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"enhanced-standard-uis-allpages-namespace-list-label": "نوم‌تشيال",
+	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "څېرمه‌مخونه",
+	"enhancedpreferences": "غوره‌توبونه",
+	"enhanced-prefs-memberingroups": "د {{PLURAL:$1|ډلې|ډلو}} {{GENDER:$2|غړی|غړي}}",
+	"enhanced-standard-uis-preferences-date-label": "ښکارېدنې بڼه غوره‌کول",
+	"enhanced-standard-uis-prefs-panel-search-label": "پلټل"
+}

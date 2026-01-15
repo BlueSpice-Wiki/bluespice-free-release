@@ -46,7 +46,6 @@
 	"bs-discovery-navbar-full-screen-button-disable-title": "Disable fullscreen mode",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "Disable fullscreen mode",
 	"bs-discovery-breadcrumb-nav-aria-label": "Breadcrumb",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Namespace",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "Pages",
 	"bs-discovery-breadcrumb-nav-node-title": "Open $1",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "Open $1",
@@ -185,12 +184,11 @@
 	"bs-discovery-tools-after-content-aria-label": "Tools after content section",
 	"bs-discovery-data-after-content-aria-label": "Data after content section",
 	"bs-discovery-requires-attention": "(requires attention)",
-	"bs-discovery-table-of-contents-show-button-aria-label": "Show the table of contents",
-	"bs-discovery-table-of-contents-hide-button-aria-label": "Hide the table of contents",
 	"bs-discovery-breadcrumb-label-diff": "Differences",
 	"bs-discovery-back-to-page": "Back to $1",
 	"bs-discovery-back-to-page-title": "Go back to page $1",
 	"bs-discovery-back-to-version-history": "Back to version history",
 	"bs-discovery-back-to-version-history-title": "Go back to version history of page $1",
-	"bs-discovery-ext-credentials-desc-hyperlegible-font": "The Atkinson Hyperlegible Next Font used for BlueSpiceDiscovery and content. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])"
+	"bs-discovery-ext-credentials-desc-hyperlegible-font": "The Atkinson Hyperlegible Next Font used for BlueSpiceDiscovery and content. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
+	"bs-toc-hide-button-aria-label": "Hide the table of contents"
 }

@@ -93,11 +93,13 @@ module.exports = defineComponent( {
 			border: 1px solid #36c;
 		}
 
-		.cdx-thumbnail__image {
-			width: 120px;
-			height: 120px;
-			border-color: transparent;
-			background-size: auto;
+		.cdx-card__thumbnail.cdx-thumbnail {
+			.cdx-thumbnail__image {
+				width: 120px;
+				height: 120px;
+				border-color: transparent;
+				background-size: auto;
+			}
 		}
 
 		.cdx-card__text__title > button {

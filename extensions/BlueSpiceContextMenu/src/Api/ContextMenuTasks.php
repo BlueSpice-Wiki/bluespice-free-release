@@ -4,12 +4,13 @@ namespace BlueSpice\ContextMenu\Api;
 
 use BlueSpice\ContextMenu\IMenuItem;
 use BlueSpice\ExtensionAttributeBasedRegistry;
+use BSApiTasksBase;
 use Exception;
 use MediaWiki\Api\ApiResult;
 use MediaWiki\Title\Title;
 use stdClass;
 
-class ContextMenuTasks extends \BSApiTasksBase {
+class ContextMenuTasks extends BSApiTasksBase {
 
 	/** @var array */
 	protected $aTasks = [
@@ -30,7 +31,6 @@ class ContextMenuTasks extends \BSApiTasksBase {
 	];
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {
@@ -38,7 +38,6 @@ class ContextMenuTasks extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param stdClass $oData
 	 * @param array $aParams
 	 * @return ApiResult
@@ -48,6 +47,7 @@ class ContextMenuTasks extends \BSApiTasksBase {
 		$oResult = $this->getResult();
 
 		if ( !isset( $oData->title ) || empty( $oData->title ) ) {
+			$oResult->addValue( null, 'success', false );
 			return $oResult;
 		}
 
@@ -78,20 +78,19 @@ class ContextMenuTasks extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
-	 * @param ApiResult &$oResult
-	 * @param array $aItems
+	 * @param ApiResult &$result
+	 * @param array $items
 	 * @return ApiResult
 	 */
-	protected function returnItems( ApiResult &$oResult, $aItems ) {
-		$oResult->success = true;
-		$oResult->payload_count = count( $aItems );
-		$oResult->payload = [ 'items' => $aItems ];
-		return $oResult;
+	protected function returnItems( ApiResult &$result, $items ) {
+		$result->addValue( null, 'success', true );
+		$result->addValue( null, 'payload_count', count( $items ) );
+		$result->addValue( null, 'payload', [ 'items' => $items ] );
+
+		return $result;
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function isWriteMode() {
@@ -99,7 +98,6 @@ class ContextMenuTasks extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param IMenuItem[] $itemsObjects
 	 * @return array
 	 */

@@ -15,13 +15,9 @@ use MWStake\MediaWiki\Component\CommonUserInterface\IComponent;
 use MWStake\MediaWiki\Component\CommonUserInterface\TreeDataGenerator;
 use MWStake\MediaWiki\Component\Wikitext\ParserFactory;
 use Psr\Log\LoggerInterface;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 class EnhancedSidebar implements IMenuProvider {
-
-	/**
-	 * @var string
-	 */
-	private $id = '';
 
 	/**
 	 * @var LoggerInterface
@@ -29,50 +25,32 @@ class EnhancedSidebar implements IMenuProvider {
 	private $logger;
 
 	/**
-	 * @var RevisionStore
-	 */
-	private $revisionStore;
-
-	/**
 	 * @var Title
 	 */
 	private $title;
-
-	/**
-	 * @var ParserFactory
-	 */
-	private $parserFactory;
-
-	/**
-	 * @var TreeDataGenerator
-	 */
-	private $treeDataGenerator;
-
-	/**
-	 * @var CookieHandler
-	 */
-	protected $cookieHandler = null;
 
 	/**
 	 * @param RevisionStore $revisionStore
 	 * @param TitleFactory $titleFactory
 	 * @param ParserFactory $parserFactory
 	 * @param TreeDataGenerator $treeDataGenerator
-	 * @param CookieHandler $cookieHandler
+	 * @param CookieHandler|null $cookieHandler
+	 * @param WANObjectCache $objectCache
 	 * @param string $pagename
 	 * @param string $id
 	 */
 	public function __construct(
-		RevisionStore $revisionStore, TitleFactory $titleFactory, ParserFactory $parserFactory,
-		TreeDataGenerator $treeDataGenerator, CookieHandler $cookieHandler, string $pagename, string $id
+		private readonly RevisionStore $revisionStore,
+		TitleFactory $titleFactory,
+		private readonly ParserFactory $parserFactory,
+		private readonly TreeDataGenerator $treeDataGenerator,
+		private readonly ?CookieHandler $cookieHandler = null,
+		private readonly WANObjectCache $objectCache,
+		string $pagename,
+		private readonly string $id = ''
 	) {
 		$this->logger = LoggerFactory::getInstance( 'bluespicediscovery' );
 		$this->title = $titleFactory->newFromText( $pagename );
-		$this->revisionStore = $revisionStore;
-		$this->parserFactory = $parserFactory;
-		$this->treeDataGenerator = $treeDataGenerator;
-		$this->cookieHandler = $cookieHandler;
-		$this->id = $id;
 	}
 
 	/**
@@ -107,6 +85,7 @@ class EnhancedSidebar implements IMenuProvider {
 			$this->parserFactory,
 			$this->treeDataGenerator,
 			$this->cookieHandler,
+			$this->objectCache
 		);
 
 		$sidebarComponent->setLogger( $this->logger );

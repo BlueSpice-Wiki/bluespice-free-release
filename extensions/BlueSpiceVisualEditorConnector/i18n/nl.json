@@ -89,5 +89,8 @@
 	"bs-visualeditor-save-label": "Opslaan",
 	"bs-visualeditorconnector-upload-type": "Uploadtype",
 	"bs-visualeditorconnector-upload-type-help": "Oorspronkelijk: Er wordt gecontroleerd op uploadrechten. Bestandsnaam, naamruimte en categorie zijn te bewerken. Beschrijving is verplicht.\nEenvoudig: Er wordt niet gecontroleerd op uploadrechten. Bestandsnaam, naamruimte en categorie zijn te bewerken. Beschrijving is niet verplicht.\nEén klik: Er wordt niet gecontroleerd op uploadrechten. Bestandsnaam en categorie zijn niet te bewerken. De naamruimte is te bewerken.",
-	"bs-visualeditorconnector-tab-file": "Koppeling naar bestand"
+	"bs-visualeditorconnector-tab-file": "Koppeling naar bestand",
+	"bs-visualeditor-request-entity-too-large": "Het bestand is te groot om te uploaden.",
+	"bs-visualeditorconnector-dialog-table-title": "Tabel",
+	"bs-visualeditorconnector-dialog-action-insert": "Invoegen"
 }

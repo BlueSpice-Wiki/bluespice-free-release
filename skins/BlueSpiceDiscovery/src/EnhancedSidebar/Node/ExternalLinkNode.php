@@ -25,6 +25,13 @@ class ExternalLinkNode extends EnhancedSidebarNode {
 	/**
 	 * @return string
 	 */
+	public function getHref(): string {
+		return $this->href;
+	}
+
+	/**
+	 * @return string
+	 */
 	public function getType(): string {
 		return 'enhanced-sidebar-external-link';
 	}
@@ -39,21 +46,9 @@ class ExternalLinkNode extends EnhancedSidebarNode {
 	}
 
 	/**
-	 * Serialize in format to be consumed by a tree
-	 *
-	 * @return array
-	 * @throws \Exception
-	 */
-	public function treeSerialize(): array {
-		return parent::treeSerialize() + [
-			'href' => $this->href,
-		];
-	}
-
-	/**
 	 * @return string[]
 	 */
-	protected function getOutputCssClasses(): array {
+	public function getOutputCssClasses(): array {
 		return [ 'external' ] + parent::getOutputCssClasses();
 	}
 }

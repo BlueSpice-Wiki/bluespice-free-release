@@ -97,7 +97,7 @@ class Page extends Raw {
 			$this->pageParamsFactory->getParams( $title->toPageIdentity(), $context->getUserIdentity() ),
 			$template->getParams()
 		);
-		$pageParams['title'] = $pageSpec->getLabel();
+		$pageParams['title'] = htmlspecialchars( $pageSpec->getLabel() );
 
 		$classes = [
 			'pdfcreator-page',
