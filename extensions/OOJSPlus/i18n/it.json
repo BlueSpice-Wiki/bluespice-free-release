@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"oojsplus-color-picker-color-blue": "Blu",
+	"oojsplus-color-picker-color-red": "Rosso",
+	"oojsplus-color-picker-color-green": "Verde",
+	"oojsplus-color-picker-color-yellow": "Giallo",
+	"oojsplus-color-picker-color-pink": "Rosa",
+	"oojsplus-stepprogressbar-default-final-label": "Fatto",
+	"oojsplus-data-paginator-next": "Pagina successiva",
+	"oojsplus-data-paginator-previous": "Pagina precedente",
+	"oojsplus-data-grid-filter-boolean": "Valore",
+	"oojsplus-data-tree-item-remove-confirm-label": "Rimuovere l'elemento \"$1\"?",
+	"oojsplus-data-grid-filter-close": "Chiudi",
+	"oojsplus-data-grid-filter-title": "Filtro $1",
+	"oojsplus-data-grid-filter-list-with-value": "Filtro $1 con valore $2",
+	"oojsplus-data-grid-sort-direction-none": "Colonna $1 non ordinata",
+	"oojsplus-data-grid-sort-direction-desc": "Colonna $1 ordinata in ordine decrescente",
+	"oojsplus-data-grid-sort-direction-asc": "Colonna $1 ordinata in ordine crescente",
+	"oojsplus-data-grid-date-filter-announce-lt": "Prima di $1",
+	"oojsplus-data-grid-date-filter-announce-gt": "Dopo $1",
+	"oojsplus-data-grid-date-filter-announce-eq": "Il $1",
+	"oojsplus-data-grid-filter-boolean-true": "Sì",
+	"oojsplus-data-grid-filter-boolean-false": "No",
+	"oojsplus-data-grid-collapse-expand": "Espandi",
+	"oojsplus-toolbar-cancel": "Annulla",
+	"oojsplus-toolbar-save": "Salva",
+	"oojsplus-toolbar-delete": "Cancella",
+	"oojsplus-toolbar-edit": "Modifica",
+	"oojsplus-toolbar-add": "Aggiungi"
+}

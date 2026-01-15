@@ -1,0 +1,110 @@
+{
+	"name": "BlueSpiceUserSidebar",
+	"version": "5.1.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"Dejan Savuljesku"
+	],
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:UserSidebar",
+	"descriptionmsg": "bs-usersidebar-desc",
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceUserSidebar": {
+					"className": "\\BlueSpice\\UserSidebar\\Extension",
+					"extPath": "/BlueSpiceUserSidebar"
+				}
+			}
+		},
+		"BlueSpiceUserSidebar": {
+			"Widgets": {},
+			"WidgetRegistry": {}
+		},
+		"MenuEditor": {
+			"Menus": {
+				"user-sidebar": {
+					"class": "BlueSpice\\UserSidebar\\Menu\\UserSidebar",
+					"services": [
+						"BSUserSidebarWidgetFactory", "MWStakeWikitextParserFactory"
+					]
+				}
+			},
+			"Nodes": {
+				"menu-user-sidebar-keyword": {
+					"classname": "ext.usersidebar.data.UsersidebarKeywordNode",
+					"module": "ext.blueSpice.userSidebar.data"
+				}
+			}
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"callback": "\\BlueSpice\\UserSidebar\\Extension::onRegistry",
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"MessagesDirs": {
+		"BlueSpiceUserSidebar": "i18n"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\UserSidebar\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\UserSidebar\\Tests\\": "tests/phpunit/"
+	},
+	"ResourceModules": {
+		"ext.blueSpice.userSidebar.menu": {
+			"scripts": [
+				"menu/UserSidebarTree.js"
+			],
+			"dependencies": [
+				"ext.menuEditor.tree"
+			]
+		},
+		"ext.blueSpice.userSidebar.data": {
+			"packageFiles": [
+				"data/UsersidebarKeywordNode.js",
+				{
+					"name": "data/config.json",
+					"callback": "\\BlueSpice\\UserSidebar\\ClientConfig::makeConfigJson"
+				}
+			],
+			"dependencies": [
+				"ext.menuEditor.node"
+			],
+			"messages": [
+				"menueditor-ui-menu-keyword-usersidebar-label-edit",
+				"menueditor-ui-menu-keyword-usersidebar-label",
+				"menueditor-ui-menu-user-sidebar-keyword-label-edit",
+				"menueditor-ui-menu-user-sidebar-keyword-label"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceUserSidebar/resources"
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\UserSidebar\\HookHandler\\CommonUserInterface"
+		}
+	},
+	"Hooks": {
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\UserSidebar\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfUserSidebars::callback",
+		"EditFormPreloadText": [
+			"\\BlueSpice\\UserSidebar\\Hook\\EditFormPreloadText\\UserSidebarDefaultText::callback"
+		],
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
+	},
+	"config": {
+		"MenuEditorUserSidebarAllowedKeywords": {
+			"value": [ "PAGESVISITED", "YOUREDITS" ]
+		}
+	},
+	"manifest_version": 2
+}

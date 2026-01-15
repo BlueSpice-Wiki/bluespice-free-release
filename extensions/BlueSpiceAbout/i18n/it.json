@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16",
+			"Selven"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informazioni su BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "Su BlueSpice",
+	"bluespiceabout": "Su BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "visualizzare la pagina speciale \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "Accede alla pagina speciale [[Special:BlueSpiceAbout]]"
+}

@@ -1,0 +1,63 @@
+.thumb {
+	max-width: 100%;
+}
+
+.thumbcaption .thumbnail > .caption {
+	text-align: left;
+}
+
+.thumbinner > img,
+.thumbinner a > img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbinner a > img {
+	display: block;
+}
+
+.thumbinner {
+	display: block;
+	max-width: 100%;
+	padding: 5px;
+	margin-bottom: 20px;
+	line-height: 1.5;
+	background-color: var( --body-bg-color );
+	border: 1px solid var( --font-color-secondary );
+	overflow: hidden;
+}
+/* .thumb and .thumbinner are legacy. */
+#mw-content-text figure[ typeof~='mw:File/Thumb' ],
+#mw-content-text figure[ typeof~='mw:File/Frame' ] {
+	max-width: 100%;
+}
+
+#mw-content-text figure[ typeof~='mw:File/Thumb' ] figcaption,
+#mw-content-text figure[ typeof~='mw:File/Frame' ] figcaption {
+	text-align: left;
+}
+
+#mw-content-text figure[ typeof~='mw:File/Thumb' ] a,
+#mw-content-text figure[ typeof~='mw:File/Frame' ] a {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	max-width: 100%;
+	line-height: 1.5;
+}
+
+#mw-content-text figure[ typeof~='mw:File/Thumb' ] a > img,
+#mw-content-text figure[ typeof~='mw:File/Frame' ] a > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mw-content-text img {
+	max-width: 100%;
+	height: auto;
+}
+
+#mw-content-text a.mw-file-description:focus-visible img {
+	border: 2px solid var( --focus-visible );
+}

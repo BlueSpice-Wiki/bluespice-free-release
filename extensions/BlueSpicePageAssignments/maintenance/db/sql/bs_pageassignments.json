@@ -1,0 +1,55 @@
+[
+	{
+		"name": "bs_pageassignments",
+		"comment": "BlueSpice: PageAssignments - Stores assignments for certain articles",
+		"columns": [
+			{
+				"name": "pa_page_id",
+				"type": "integer",
+				"options": {
+					"unsigned": true
+				}
+			},
+			{
+				"name": "pa_assignee_key",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "pa_assignee_type",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "pa_position",
+				"type": "integer",
+				"options": {
+					"unsigned": true,
+					"notnull": true
+				}
+			}
+		],
+		"indexes": [
+			{
+				"name": "pa_page_id",
+				"columns": [
+					"pa_page_id"
+				],
+				"unique": false
+			}
+		],
+		"pk": [
+			"pa_page_id",
+			"pa_assignee_key",
+			"pa_assignee_type"
+		]
+	}
+]

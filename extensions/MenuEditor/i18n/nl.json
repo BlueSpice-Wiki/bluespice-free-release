@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"McDutchie",
+			"Siebrand"
+		]
+	},
+	"menueditor-desc": "Grafische editor voor menupagina’s",
+	"menueditor-ui-menu-wiki-link-label": "Wiki-koppeling",
+	"menueditor-ui-menu-wiki-link-label-edit": "Wiki-koppeling bewerken",
+	"menueditor-ui-menu-wiki-link-help": "Koppeling naar een wikipagina",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Koppeling",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Koppeling bewerken",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Koppelingsspecificatie.<br>Doel kan zijn:<ul><li>een berichtsleutel, die wordt omgezet in een paginanaam</li><li>een externe koppeling</li><li>Naam van de pagina op de wiki</li><li> interwiki-koppeling</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Tekst of berichtnaam",
+	"menueditor-ui-menu-raw-text-label-edit": "Tekst of berichtsleutel bewerken",
+	"menueditor-ui-menu-keyword-label": "Trefwoord",
+	"menueditor-ui-menu-keyword-label-edit": "Sleutelwoord bewerken",
+	"menueditor-ui-menu-keyword-help": "Een van de beschikbare '''trefwoorden'''', die de bijbehorende widget weergeven",
+	"menueditor-ui-form-field-keyword": "Trefwoord",
+	"menueditor-ui-form-field-text": "Tekst of een berichtsleutel",
+	"menueditor-ui-form-field-target": "Koppelingsdoel",
+	"menueditor-ui-form-field-label": "Koppelingslabel",
+	"menueditor-ui-dialog-action-done": "Afgerond",
+	"menueditor-ui-dialog-action-cancel": "Annuleren",
+	"menueditor-ui-node-type-selector-label": "Knooppunttype",
+	"menueditor-ui-submit": "Opslaan",
+	"menueditor-ui-cancel": "Annuleren",
+	"menueditor-ui-redlink-notice": "Dit menu bestaat nog niet!",
+	"menueditor-action-menueditsource": "Bron bewerken",
+	"menueditor-action-menuedit": "Bewerken",
+	"menueditor-ui-dialog-title": "Element bewerken",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Sleutelwoord bewerken",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Trefwoord",
+	"menueditor-toolbar-cancel": "Bewerking annuleren",
+	"menueditor-toolbar-add-label": "Element toevoegen",
+	"menueditor-ui-edit-label": "Bewerken",
+	"menueditor-ui-add-sub-element-label": "Subelement toevoegen",
+	"menueditor-footerlinks-banner-text": "Sommige koppelingen kunnen automatisch door uitbreidingen worden toegevoegd. Bekijk de instellingen van de uitbreiding om meer te weten te komen.",
+	"menueditor-toolbar-save": "Opslaan"
+}

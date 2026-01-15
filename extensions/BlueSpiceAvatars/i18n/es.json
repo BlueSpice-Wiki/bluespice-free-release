@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agusbou2015",
+			"Fitoschido",
+			"Francodiaz7",
+			"Jakeukalane",
+			"Josecurioso",
+			"Julio Arturo Pérez Duarte",
+			"Macofe",
+			"Miguel2706",
+			"Themasterriot"
+		]
+	},
+	"bs-avatars-desc": "Proporciona imágenes genéricas e individuales de un usuario",
+	"bs-avatars-pref-generator": "Generador:",
+	"bs-avatars-pref-userimage-img-alt": "Tu imagen de usuario actual",
+	"bs-avatars-upload-complete": "Se subió la imagen.",
+	"bs-avatars-generate-complete": "Se generó un nuevo avatar.",
+	"bs-avatars-upload-label": "Imagen",
+	"bs-avatars-generate-new-label": "Generar nuevo avatar",
+	"bs-avatars-file-upload-fieldset-title": "Carga de imagen",
+	"bs-avatars-auto-generate-fieldset-title": "Generar avatar automáticamente",
+	"apihelp-bs-avatars-tasks-summary": "Cargar, generar y configurar avatares de usuario",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Se requiere el parámetro «username» y este debe contener un nombre de usuario válido",
+	"bs-avatars-pref-generator-help": "La imagen de avatar se genera cuando un usuario no sube una foto de perfil. InstantAvatar: Genera una imagen de avatar basada en el uso de las iniciales del nombre real o de los campos de nombre de usuario. Identicon: Genera una imagen de avatar basada en partes del ID del usuario."
+}

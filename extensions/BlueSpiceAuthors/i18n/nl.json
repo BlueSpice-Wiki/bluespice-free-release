@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeroen N",
+			"Mainframe98",
+			"McDutchie",
+			"Niknetniko",
+			"Romaine",
+			"SPQRobin",
+			"Siebrand",
+			"Sjoerddebruin"
+		]
+	},
+	"bs-authors-desc": "Geeft de profielfoto weer van de auteurs van een pagina",
+	"prefs-authors": "Auteurs van deze pagina",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Auteur}}|Auteurs}}",
+	"bs-authors-profileimage": "Profielafbeelding",
+	"bs-authors-profileimage-change": "Profielafbeelding wijzigen",
+	"bs-authors-show-all-authors": "Meer auteurs beschikbaar",
+	"bs-authors-navigation-link-title": "Auteurs van deze pagina",
+	"bs-authors-navigation-link-text": "Auteurs",
+	"apihelp-bs-pageauthors-store-summary": "Geeft een overzicht van alle auteurs van een in de context opgegeven pagina",
+	"bs-authors-info-dialog": "Auteurs van deze pagina",
+	"bs-authors-info-dialog-grid-column-author": "Auteur",
+	"bs-authors-info-dialog-grid-column-type": "Auteurstype"
+}

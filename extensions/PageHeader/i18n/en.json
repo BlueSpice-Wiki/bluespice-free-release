@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth"
+		]
+	},
+	"pageheader-desc": "Provides an additional user interface before the page content",
+	"pageheader-pageinfosentence-no-item-label": "No status information",
+	"pageheader-pageinfosentence-no-item-tooltip": "No status information about this page",
+	"pageheader-pageinfosentence": "This page is $1",
+	"pageheader-pageinfosentence-item-separator": "and",
+	"pageheader-pageinfosentence-item-separator-greater-two": ",",
+	"pageheader-pageinfosentence-item-class-separator": "but"
+}

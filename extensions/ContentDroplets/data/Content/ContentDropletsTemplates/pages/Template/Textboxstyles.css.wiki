@@ -1,0 +1,84 @@
+/* Infoboxes */
+.cd-textbox {
+	padding: 14px;
+	margin: 2em 0 1em 0;
+	display: table;
+	position:relative;
+	width: 100%;
+	clear:both;
+}
+.cd-textbox .icon-col.has-icon {
+	display: table-cell;
+	vertical-align: middle;
+	width: 30px;
+}
+.cd-textbox .icon-col.has-icon::before {
+	width: 35px;
+	height: 100%;
+	font-size: 1.6em;
+	font-family: "fontawesome";
+}
+.cd-textbox .text-col {
+	margin-left: 10px;
+}
+.boxheader {
+	font-weight:bold;
+	display: block;
+}
+.cd-textbox p {
+	margin:0
+}
+.cd-textbox-note {
+	border-left: solid 4px #2b80ea;
+	background:#dfecfc;
+}
+.cd-textbox-note .icon-col.has-icon::before {
+	content: "\f05a";
+	color: #2b80ea;
+}
+.cd-textbox-tip {
+	border-left: solid 4px #fdc300;
+	background:#fff6d8;
+}
+.cd-textbox-tip .icon-col.has-icon::before {
+	content: "\f0eb";
+	color: #fdc300;
+	font-size: 1.7em;
+	margin-left: 5px;
+}
+.cd-textbox-warning {
+	border-left: solid 4px #bd1d1d;
+	background: #f5dcdc;
+}
+.cd-textbox-warning .icon-col.has-icon::before {
+	content: "\f071";
+	color: #bd1d1d;
+}
+.cd-textbox-important {
+	border-left: solid 4px #f28c00;
+	background: #fdeed9;
+	margin-left: 2px;
+}
+.cd-textbox-important .icon-col.has-icon::before {
+	content: "\f06a";
+	color: #f28c00;
+}
+.cd-textbox-neutral {
+	border-left: solid 4px #747474;
+	background:#f1f3f9;
+	padding:14px;
+}
+.cd-textbox-neutral .icon-col.has-icon::before{
+	content: "\f0a9";
+	color: #747474;
+	left: 10px;
+	top: 8px;
+}
+.cd-textbox-success {
+	border-left: solid 4px #94c11f;
+	background: #eff6dd;
+}
+.cd-textbox-success .icon-col.has-icon::before{
+	content: "\f058";
+	color: #94c11f;
+}

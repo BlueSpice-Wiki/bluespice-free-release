@@ -1,0 +1,75 @@
+#footer {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 100%;
+	background-color: var( --footer-bg );
+	height: auto;
+	min-height: var( --footer-height );
+	bottom: 0;
+	left: 0;
+	position: relative;
+}
+
+#footer .inner {
+	margin: 0 auto;
+	max-width: var( --footer-max-width );
+	padding: 0 1rem;
+}
+
+#footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0.5em 0 0.5em 0;
+	margin-left: 0;
+}
+
+#footer ul li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 1rem;
+	height: 35px;
+}
+
+#footer li a {
+	color: var( --footer-fg );
+	font-size: 0.8rem;
+	text-decoration: none;
+	white-space: nowrap;
+	height: 100%;
+}
+
+#footer li a:hover {
+	color: var( --footer-fg--hover );
+}
+
+#footer li a:focus-visible {
+	outline: 0;
+	border-radius: 50rem;
+	box-shadow: 0 0 0 0.1em var( --focus-visible );
+}
+
+#footer-icons li {
+	padding-left: 1rem;
+	padding-right: 0;
+}
+
+#footer .inner #footer-links li.edit-footerlinks-link {
+	visibility: hidden;
+}
+
+#footer .inner:hover #footer-links li.edit-footerlinks-link {
+	visibility: visible;
+}
+
+#footer .inner:focus-within #footer-links li.edit-footerlinks-link {
+	visibility: visible;
+}
+
+#footer #footer-icons li a:focus-visible {
+	box-shadow: none;
+}
+
+#footer #footer-icons li a:focus-visible img {
+	border: 1px solid var( --focus-visible );
+}

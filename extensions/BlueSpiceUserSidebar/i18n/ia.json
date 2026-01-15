@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-usersidebar-desc": "Menu de navigation personalisabile",
+	"bs-edit-user-mm-link-text": "Modificar le menu del usator",
+	"bs-edit-user-mm-link-title": "Modificar le menu del usator",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Modificar parola-clave",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Parola-clave",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Modificar le parola-clave",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Parola-clave"
+}

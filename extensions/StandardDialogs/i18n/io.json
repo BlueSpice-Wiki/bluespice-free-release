@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"standarddialogs-page-info-close": "Klozar",
+	"standarddialogs-page-info-properties": "Propraji",
+	"standarddialogs-page-info-page-title": "Titulo",
+	"standarddialogs-page-info-page-contributors": "Kontributeri",
+	"standarddialogs-page-info-page-categories": "Kategorii",
+	"standarddialogs-page-info-page-images": "Imaji",
+	"standarddialogs-delete-btn": "Efacez",
+	"standarddialogs-move-btn": "Movar",
+	"standarddialogs-move-title": "Movar pagino \"$1\"",
+	"standarddialogs-protect-btn": "Protektar",
+	"standarddialogs-btn-cancel": "Nuligar"
+}

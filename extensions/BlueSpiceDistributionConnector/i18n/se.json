@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
+		]
+	},
+	"bs-distributionconnector-ve-categorytreeinspector-dd-hideprefix": "Čiega prefivssa",
+	"bs-distributionconnector-ve-categorytreeinspector-tb-namespace": "Nammagomuvuohta",
+	"bs-distributionconnector-workflows-form-username": "Geavaheaddji",
+	"bs-distributionconnector-checkpermissions-label-user": "Geavaheaddji",
+	"bs-distributionconnector-checkpermissions-label-permission": "Geavahanvuoigatvuohta",
+	"droplets-create-input-name": "Ráhkat siiddu",
+	"droplets-pdf-link-link-label": "Liŋkateaksta",
+	"droplets-map-name": "Kárta",
+	"droplets-video-name": "Video",
+	"bs-distributionconnector-videodropletinspector-title": "Video"
+}

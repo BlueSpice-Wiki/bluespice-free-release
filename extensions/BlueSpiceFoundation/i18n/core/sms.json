@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-ns_main": "(Seeid)",
+	"bs-ns_all": "(puk)",
+	"bs-tab_navigation": "Vaʹlljõk",
+	"bs-userbar_loginswitch_logout": "Ǩeeʹrjtõõđ åålǥas",
+	"bs-userbar_loginswitch_login": "Ǩeeʹrjtõõđ sizz",
+	"bs-extended-search-textfield-defaultvalue": "Ooʒʒ...",
+	"bs-extended-search-textfield-tooltip": "Ooʒʒ wikist",
+	"bs-years-duration": "{{PLURAL:$1|eeʹǩǩed|1=õhtt eeʹǩǩ|2=eeʹjj|3=eeʹjj|4=eeʹjj|5=eeʹjj|6=eeʹjj}}",
+	"bs-months-duration": "{{PLURAL:$1|õhtt määnpââʹjj|$1 määnpââʹj|$1 määnpââʹjjed}}",
+	"bs-weeks-duration": "{{PLURAL:$1|neäʹttled|1=õhtt neäʹttel|2=neäʹttel|3=neäʹttel|4=neäʹttel|5=neäʹttel|6=neäʹttel}}",
+	"bs-days-duration": "{{PLURAL:$1|õhtt peiʹvv|$1 peeiʹv|$1 peiʹvved}}",
+	"bs-hours-duration": "{{PLURAL:$1|$1 čiâssâd|1=õhtt čiâss|2=2 čiâss|3=3 čiâss|4=4 čiâss|5=5 čiâss|6=6 čiâss}}",
+	"bs-mins-duration": "{{PLURAL:$1|õhtt minutt|$1 minuutt|$1 minuttâd}}",
+	"bs-secs-duration": "{{PLURAL:$1|õhtt sekuntt|$1 sekuunt|$1 sekunttâd}}",
+	"bs-two-units-ago": "$1 da $2 mââiårra",
+	"bs-one-unit-ago": "$1 mââiårra",
+	"bs-exception-view-admin-hint": "Vääʹld õhttvuõđ riâžldõõǥǥ âʹlnnõõʹnnʼja.",
+	"bs-filesystemhelper-upload-err-code": "Teâttõõzz ruõkkmõš ij oʹnnstam: $1",
+	"bs-filesystemhelper-save-base64-error": "Teâttõõzz ruõkkmõš ij oʹnnstam.",
+	"bs-filesystemhelper-upload-base64-error": "Teâttõõzz ruõkkmõš ij oʹnnstam.",
+	"bs-navigation-contact": "Vääʹld õhttvuõđ",
+	"bs-export-menu-print-text": "Printtâd",
+	"bs-graphicallist-action-list": "Listt",
+	"bs-graphicallist-action-preview": "Ǩičč õõudǩiõʹtte"
+}

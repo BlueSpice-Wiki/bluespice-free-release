@@ -1,0 +1,7 @@
+<nav class="{{#container-class}} {{.}}{{/container-class}} aria-label="{{nav-aria-label}}">
+	<ol class="breadcrumb">
+		{{#breadcrumbs}}
+		<li class="breadcrumb-item{{#breadcrumb-class}} {{.}}{{/breadcrumb-class}}" {{#aria-current}}aria-current="{{.}}"{{/aria-current}}>{{{text}}}</li>
+		{{/breadcrumbs}}
+	</ol>
+</nav>

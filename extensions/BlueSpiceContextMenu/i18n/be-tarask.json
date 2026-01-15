@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"bs-contextmenu-page-edit": "Правіць старонку",
+	"bs-contextmenu-page-delete": "Выдаліць старонку",
+	"bs-contextmenu-page-protect": "Абараніць старонку",
+	"bs-contextmenu-page-purge": "Ачысьціць запасьнік і паглядзець старонку",
+	"bs-contextmenu-page-info": "Паглядзець зьвесткі старонкі"
+}

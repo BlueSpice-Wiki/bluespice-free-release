@@ -1,0 +1,73 @@
+.mws-button-primary {
+	background-color: var( --mws-primary-bg );
+	color: var( --mws-primary-fg );
+	font-size: 15px;
+	display: inline-block;
+	font-weight: normal;
+	height: 40px;
+	user-select: none;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding: 0.375rem 0.75rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.mws-button-primary::after {
+	color: var( --mws-primary-fg );
+}
+
+.mws-button-primary:hover {
+	opacity: 50%;
+	background-color: var( --mws-primary-bg--hover );
+	color: var( --mws-primary-fg--hover );
+}
+
+.mws-button-primary:hover::after {
+	color: var( --mws-primary-fg--hover );
+}
+
+.mws-button-secondary {
+	border-radius: 5px;
+	border: 0.5px solid var( --mws-secondary-fg );
+	color: var( --mws-secondary-fg );
+	background-color: var( --mws-secondary-bg );
+	font-size: 15px;
+	display: inline-block;
+	font-weight: normal;
+	line-height: 1.5;
+	user-select: none;
+	padding: 0.375rem 0.75rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.mws-button-secondary:hover {
+	background-color: var( --mws-secondary-bg--hover );
+}
+
+.mws-button-secondary:hover::after {
+	background-color: var( --mws-secondary-bg );
+}
+
+.mws-button-primary,
+.mws-button-primary::after .mws-button-secondary,
+.mws-button-secondary::after {
+	cursor: pointer;
+}
+
+.mws-button-primary[ disabled ],
+.mws-button-primary[ disabled ]:hover {
+	cursor: unset;
+	opacity: 0.3;
+	background-color: var( --mws-primary-bg );
+}
+
+.mws-button-secondary[ disabled ]:hover,
+.mws-button-secondary[ disabled ] {
+	cursor: unset;
+	opacity: 0.3;
+	background-color: var( --mws-secondary-bg );
+}
+
+.mws-button-primary[ disabled ]::after .mws-button-secondary[ disabled ]::after {
+	cursor: unset;
+}

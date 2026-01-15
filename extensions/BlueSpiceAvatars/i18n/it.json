@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16",
+			"GpieroMW",
+			"PeppeAeco",
+			"Selven"
+		]
+	},
+	"bs-avatars-desc": "Fornisce immagini utente generiche e individuali",
+	"bs-avatars-pref-generator": "Generatore:",
+	"bs-avatars-pref-userimage-img-alt": "La tua immagine utente attuale",
+	"bs-avatars-upload-complete": "L'immagine è stata caricata.",
+	"bs-avatars-generate-complete": "Un nuovo avatar è stato generato.",
+	"bs-avatars-upload-label": "Immagine",
+	"bs-avatars-generate-new-label": "Genera un nuovo avatar",
+	"bs-avatars-file-upload-fieldset-title": "Carica una nuova immagine",
+	"bs-avatars-auto-generate-fieldset-title": "Generazione automatica avatar",
+	"apihelp-bs-avatars-tasks-summary": "Carica, genera e configura gli avatar dell'utente",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Richiede il parametro «username» e deve contenere un nome di utente valido",
+	"bs-avatars-upload-button": "Carica",
+	"bs-avatars-generate-button": "Genera"
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore",
+			"もなー(偽物)"
+		]
+	},
+	"instancestatus": "インスタンスのステータス",
+	"bs-instancestatus-instance-status-last-update-label": "最終更新：",
+	"bs-instancestatus-instance-status-created-label": "インスタンスの作成日：",
+	"bs-instancestatus-instance-status-no-info": "利用できません",
+	"bs-instancestatus-overview-loader": "ウィキに関する情報を収集しています...",
+	"bs-instancestatus-instance-status-main-label": "全般"
+}

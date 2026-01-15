@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Duke of Wikipädia",
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Felipe L. Ewald",
+			"YuriNikolai"
+		]
+	},
+	"bs-pagesvisited-desc": "Fornece uma lista personalizada das últimas páginas visitadas",
+	"prefs-pagesvisited": "Páginas visitadas",
+	"bs-pagesvisited-widget-title": "Páginas visitadas",
+	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|O domínio|os domínios}} <code>$2</code> não {{PLURAL:$1|é válido|são válidos}}.",
+	"bs-pagesvisited-pref-widgetlimit": "Limite de entradas:",
+	"bs-pagesvisited-pref-widgetns": "Espaços nominais:",
+	"bs-pagesvisited-pref-widgetsortodr": "Ordenar por:",
+	"bs-pagesvisited-pref-sort-time": "Tempo",
+	"bs-pagesvisited-pref-sort-pagename": "Título",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Apresenta uma lista de páginas que visitou. Esta lista pode ser restringida por parâmetros.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Páginas visitadas",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Número",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Define o número de páginas exibidas na lista",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Comprimento máximo do título",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Define o número máximo de caracteres antes que um título seja cortado",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Ordem",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Define a ordem em que as páginas são exibidas",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Espaços nominais",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Só mostra páginas desses espaços nominais",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Tempo",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nome da página"
+}

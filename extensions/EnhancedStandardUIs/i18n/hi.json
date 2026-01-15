@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abijeet Patro"
+		]
+	},
+	"enhanced-standard-uis-history-grid-header-size-label": "आकार",
+	"enhanced-standard-uis-history-grid-header-summary-label": "सारांश",
+	"enhancedallpages": "सभी पृष्ठ",
+	"enhanced-standard-uis-allpages-paginator-first": "पहला",
+	"enhanced-standard-uis-allpages-paginator-previous": "पिछला",
+	"enhanced-standard-uis-allpages-paginator-next": "अगला",
+	"enhanced-standard-uis-allpages-paginator-last": "आखिरी",
+	"enhanced-standard-uis-allpages-redirect-title": "पुनर्निर्देशन",
+	"enhanced-standard-uis-allpages-filter-pages-label": "फ़िल्टर",
+	"enhanced-standard-uis-filelist-grid-preview-title": "पूर्वावलोकन",
+	"enhanced-standard-uis-allpages-untitled": "अनामांकित"
+}

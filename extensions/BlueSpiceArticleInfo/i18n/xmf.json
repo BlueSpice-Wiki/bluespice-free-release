@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"bs-articleinfo-flyout-title": "ხასჷლაშ ინფორმაცია",
+	"bs-articleinfo-nav-link-title": "ხასჷლაშ ინდორმაცია",
+	"bs-articleinfo-flyout-categorylinks-title": "კატეგორიეფი",
+	"bs-articleinfo-flyout-templatelinks-title": "ხასჷლას გჷმორინაფილი თანგეფი",
+	"bs-articleinfo-flyout-categorylinks-emptytext": "ვა რე მერჩქინელი კატეგორიეფი",
+	"bs-articleinfo-flyout-templatelinks-emptytext": "ვა რე გჷმორინაფილი თანგეფი",
+	"bs-articleinfo-flyout-lasteditedtime-text": "ბოლო რედაქტირაფა",
+	"bs-articleinfo-flyout-lastediteduser-text": "ბოლო რედაქტორი",
+	"bs-articleinfo-flyout-subpages-title": "გიმენხასჷლეფი",
+	"bs-articleinfo-pagetool-subpages-tooltip": "გიმენხასჷლეფი",
+	"bs-articleinfo-dialog-subpages-title": "გიმენხასჷლეფი"
+}

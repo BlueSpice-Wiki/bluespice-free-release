@@ -1,0 +1,112 @@
+@font-face {
+	font-family: 'Lato';
+	src: url( ../fonts/Lato-Regular.ttf );
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url( ../fonts/Lato-Bold.ttf );
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url( ../fonts/Lato-BoldItalic.ttf );
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url( ../fonts/Lato-Black.ttf );
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url( ../fonts/Lato-BlackItalic.ttf );
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url( ../fonts/Lato-Italic.ttf );
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url( ../fonts/Lato-Light.ttf );
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url( ../fonts/Lato-LightItalic.ttf );
+	font-weight: 300;
+	font-style: italic;
+}
+
+/** Hyperlegible **/
+@font-face {
+	font-family: 'Hyperlegible';
+	src: url( ../fonts/Hyperlegible/AtkinsonHyperlegibleNext-Regular.ttf );
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hyperlegible';
+	src: url( ../fonts/Hyperlegible/AtkinsonHyperlegibleNext-RegularItalic.ttf );
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Hyperlegible';
+	src: url( ../fonts/Hyperlegible/AtkinsonHyperlegibleNext-Bold.ttf );
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hyperlegible';
+	src: url( ../fonts/Hyperlegible/AtkinsonHyperlegibleNext-BoldItalic.ttf );
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Hyperlegible';
+	src: url( ../fonts/Hyperlegible/AtkinsonHyperlegibleNext-Light.ttf );
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hyperlegible';
+	src: url( ../fonts/Hyperlegible/AtkinsonHyperlegibleNext-LightItalic.ttf );
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Hyperlegible';
+	src: url( ../fonts/Hyperlegible/AtkinsonHyperlegibleNext-ExtraLight.ttf );
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hyperlegible';
+	src: url( ../fonts/Hyperlegible/AtkinsonHyperlegibleNext-ExtraLightItalic.ttf );
+	font-weight: 100;
+	font-style: italic;
+}

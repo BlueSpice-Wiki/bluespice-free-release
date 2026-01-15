@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"bs-insertcategory-desc": "Dialog fir eng Kategorie anzeginn",
+	"bs-insertcategory-insertcat": "Kategorie drasetzen",
+	"prefs-insertcategory": "Kategorie drasetzen",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "D'Kategorië vun dëser Säit änneren",
+	"bs-insertcategory-edit-dialog-button-tooltip": "D'Kategorië vun dëser Säit änneren",
+	"bs-insertcategory-edit-dialog-button-label": "Änneren",
+	"bs-insertcategory-edit-dialog-title": "Kategorien änneren",
+	"bs-insertcategory-edit-dialog-button-submit": "Fäerdeg",
+	"bs-insertcategory-edit-dialog-button-cancel": "Ofbriechen",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Implizit Kategorien",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "D'Kategorië vun der Säit kënnen net ofgeruff ginn",
+	"bs-insertcategory-no-categories": "Keng Kategorien zougewisen",
+	"bs-insertcategory-edit-dialog-tree-view": "All Kategorie weisen"
+}

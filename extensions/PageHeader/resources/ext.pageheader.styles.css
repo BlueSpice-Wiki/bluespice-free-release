@@ -1,0 +1,3 @@
+#pageheader-pageinfosentence-component-cnt a.dropdown-toggle:empty::after {
+	margin-left: 5px;
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Confidence"
+		]
+	},
+	"enhancedupload-config-width-help": "To set width for drag and drop images for visual editor,set am to 'auto' to scale with height. If their two don dey set to 'auto', the size to use go be default"
+}

@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Kizule",
+			"Milicevic01",
+			"Zoranzoki21",
+			"Aca"
+		]
+	},
+	"bs-permissionmanager-text": "Дозволе",
+	"bs-permissionmanager-header-permissions": "Дозволе",
+	"bs-permissionmanager-header-global": "Вики",
+	"bs-permissionmanager-btn-save-label": "Сачувај",
+	"bs-permissionmanager-affected-by-notset": "Није постављено",
+	"bs-permissionmanager-group-all": "све",
+	"bs-permissionmanager-header-role": "Улога",
+	"bs-premissionmanager-reset-button-label": "Ресетуј",
+	"bs-permissionmanager-preset-private-label": "Приватан вики",
+	"bs-permissionmanager-preset-protected-label": "Заштићен вики",
+	"bs-permissionmanager-preset-public-label": "Јавни вики",
+	"bs-permissionmanager-preset-save-error": "Није могуће чување подешавања! Измене нису примењене!",
+	"bs-permissionmanager-preset-save-success": "Подешавања су сачувана!",
+	"bs-permissionmanager-group-create": "Направи",
+	"bs-permissionmanager-cancel": "Откажи",
+	"bs-permissionmanager-namespace-picker": "Именски простори",
+	"bs-permission-manager-simple-matrix-group": "Подешавања за групу: $1",
+	"bs-permissionmanager-group-manager-heading": "Групе",
+	"bs-permissionmanager-group-header-implicit": "Аутоматске групе",
+	"bs-permissionmanager-group-header-groups": "Групе",
+	"bs-permissionmanager-header-description": "Опис",
+	"bs-permissionmanager-group-implicit-anon": "Неаутентификовани корисници",
+	"bs-permissionmanager-group-implicit-user": "Аутентификовани корисници",
+	"bs-permissionmanager-group-explicit-editor": "Уредници",
+	"bs-permissionmanager-group-explicit-reader": "Читаоци",
+	"bs-permissionmanager-group-explicit-sysop": "Администратори"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Silvonen"
+		]
+	},
+	"bs-watchlist-ve-watchlistinspector-title": "Tarkkailulista",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Määrä",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Otsikon maksimipituus",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Sivun nimi",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Aika"
+}

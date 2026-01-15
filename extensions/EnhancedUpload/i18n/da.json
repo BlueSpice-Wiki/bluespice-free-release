@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"enhancedupload-details-header-label": "Detaljer",
+	"enhancedupload-details-namespace-label": "Navnerum",
+	"enhancedupload-details-categories-label": "Kategorier",
+	"enhancedupload-details-description-label": "Beskrivelse",
+	"enhancedupload-failed-dialog-title": "Noget gik galt",
+	"enhancedupload-list-header-filename": "filnavn",
+	"enhancedupload-list-header-error": "fejl",
+	"enhancedupload-attachments-tag-grid-file-label": "Fil",
+	"enhancedupload-attachments-tag-grid-size-label": "Størrelse",
+	"enhancedupload-attachments-tag-grid-version-label": "Seneste version",
+	"enhancedupload-attachments-tag-grid-category-label": "Kategori",
+	"enhancedupload-attachments-media-dialog-add-title": "Tilføj",
+	"enhancedupload-attachments-media-dialog-title": "Vælg fil",
+	"enhancedupload-attachments-media-dialog-label": "Søg efter fil",
+	"enhancedupload-ui-action-new-upload-text": "Ny fil",
+	"enhancedupload-attachments-media-dialog-details-settings": "Detaljer",
+	"enhancedupload-ve-attachment-title": "Vedhæftninger",
+	"enhancedupload-ve-attachmentinspector-title": "Titel",
+	"enhancedupload-ve-attachmentinspector-categories": "Kategorier",
+	"enhancedupload-ve-attachmentinspector-desc": "Beskrivelse",
+	"enhancedupload-ve-attachmentinspector-grid-size": "Vis størrelse",
+	"enhancedupload-ve-attachmentinspector-grid-categories": "Vis kategorier",
+	"enhancedupload-attachments-tag-grid-details-title": "Detaljer",
+	"enhancedupload-attachments-tag-grid-remove-title": "Fjern"
+}

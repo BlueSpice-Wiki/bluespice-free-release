@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos",
+			"Joao Xavier"
+		]
+	},
+	"bs-usermanager-text": "Uzeri",
+	"bs-usermanager-headerusername": "Uzeronomo",
+	"bs-usermanager-headeremail": "E-posto",
+	"bs-usermanager-titleeditdetails": "Redaktar uzero",
+	"bs-usermanager-labelnewpassword": "Pasovorto",
+	"bs-usermanager-endisable": "Permisar/despermisar"
+}

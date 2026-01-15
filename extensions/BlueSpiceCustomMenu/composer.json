@@ -1,0 +1,39 @@
+{
+	"name": "bluespice/custommenu",
+	"type": "mediawiki-extension",
+	"description": "Provides customizable menus",
+	"license": "GPL-3.0-only",
+	"require": {
+		"composer/installers": "~1.0|~2",
+		"mwstake/mediawiki-component-wikitext": "~7"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "45.0.0",
+		"mediawiki/mediawiki-phan-config": "0.14.0",
+		"mediawiki/minus-x": "1.1.3",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.4.0"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phan": "phan -d . --long-progress-bar",
+		"phpcs": "phpcs -sp --cache"
+	},
+	"extra": {
+		"installer-name": "BlueSpiceCustomMenu"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}

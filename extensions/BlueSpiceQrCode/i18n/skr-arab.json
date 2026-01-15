@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"bs-qr-code-tag-qrcode-title": "کیوآر کوڈ",
+	"bs-qr-code-tag-attr-page-label": "ورقہ",
+	"bs-qr-code-tag-attr-query-label": "پیرامیٹر",
+	"bs-qr-code-tag-attr-desc-label": "تفصیل",
+	"bs-qr-code-tag-attr-size-label": "سائز",
+	"bs-qr-code-droplet-name": "کیوآر کوڈ",
+	"bs-qr-code-tag-attr-size-option-small": "چھوٹا",
+	"bs-qr-code-tag-attr-size-option-medium": "درمیانہ",
+	"bs-qr-code-tag-attr-size-option-large": "وݙا"
+}

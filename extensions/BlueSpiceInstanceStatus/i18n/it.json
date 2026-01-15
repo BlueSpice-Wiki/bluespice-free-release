@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"bs-instancestatus-desc": "Aggiunge una panoramica dello stato dell'istanza wiki",
+	"instancestatus": "Stato istanza",
+	"bs-instancestatus-instance-status-bs-version-label": "Versione BlueSpice",
+	"bs-instancestatus-instance-status-last-update-label": "Ultimo aggiornamento il",
+	"bs-instancestatus-instance-status-created-label": "Istanza creata il",
+	"bs-instancestatus-instance-status-no-info": "Non disponibile",
+	"bs-instancestatus-instance-status-sales-contact-label": "Contatto BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "Mettiti in contatto qui: [$1 contatto BlueSpice]",
+	"bs-instancestatus-instance-status-main-label": "Generale"
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahrada2016",
+			"Oromoo",
+			"Tumsaa"
+		]
+	},
+	"bs-usermanager-idnotexist": "Fayyadamaan akkanaa hin jiru.",
+	"bs-usermanager-headerrealname": "Maqaa Dhugaa",
+	"bs-usermanager-headeremail": "Imeelii",
+	"bs-usermanager-headergroups": "Gareewwan",
+	"bs-usermanager-titleadduser": "Fayyadamaa ida'i",
+	"bs-usermanager-titleeditdetails": "Fayyadamaa jijjiiri"
+}

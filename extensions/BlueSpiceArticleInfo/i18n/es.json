@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Astroemi",
+			"Carlosmg.dg",
+			"Fitoschido",
+			"MarcoAurelio",
+			"Mcervera",
+			"Rodney Araujo",
+			"Warming Hearth"
+		]
+	},
+	"bs-articleinfo-desc": "Proporciona información sobre una página en la barra de estado",
+	"prefs-articleinfo": "Información de la página",
+	"bs-articleinfo-newrevision-info-text-reload": "Hay una versión nueva disponible de esta página. Por favor, [[:$1|vuelve a cargarla]] para ver el contenido más reciente."
+}

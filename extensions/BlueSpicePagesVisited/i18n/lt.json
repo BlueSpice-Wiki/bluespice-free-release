@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200",
+			"Nokeoo"
+		]
+	},
+	"bs-pagesvisited-desc": "Pateikia persignalizuotą neseniai lankytų puslapių sąrašą",
+	"prefs-pagesvisited": "Lankyti puslapiai",
+	"bs-pagesvisited-widget-title": "Lankyti puslapiai",
+	"bs-pagesvisited-pref-widgetlimit": "Įrašų limitas:",
+	"bs-pagesvisited-pref-widgetns": "Vardų sritis:",
+	"bs-pagesvisited-pref-widgetsortodr": "Rūšiuoti pagal:",
+	"bs-pagesvisited-pref-sort-time": "Laiką",
+	"bs-pagesvisited-pref-sort-pagename": "Pavadinimą",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Rodo neseniai lankytų puslapių sąrašą. Šis sąrašas gali būti apribotas parametrų.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Aplankyti puslapiai",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Skaičius",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Nustatyti sąraše rodomų puslapių skaičių",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Maksimalus pavadinimo ilgis",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Nustatyti maksimalų simbolių skaičių, po kurio pavadinimas nutraukiamas",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Tvarka",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Nustatyti puslapių rodymo tvarką",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Vardų sritys",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Rodyti tik šių vardų sričių puslapius",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Laikas",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Puslapio pavadinimas",
+	"bs-pagesvisited-droplet-name": "Aplankyti puslapiai",
+	"bs-pagesvisited-droplet-description": "Sąrašas su aplankytais puslapiais",
+	"bs-pagesvisited-label-anon-user": "Norėdami pamatyti puslapius, kuriuose lankėtės, prisijunkite prie savo paskyros"
+}

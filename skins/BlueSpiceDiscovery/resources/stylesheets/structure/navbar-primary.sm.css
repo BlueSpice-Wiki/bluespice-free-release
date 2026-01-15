@@ -1,0 +1,17 @@
+.navbar-primary-height {
+	height: calc( 2 * var( --navbar-primary-height ) );
+	max-height: calc( 2 * var( --navbar-primary-height ) );
+}
+
+.navbar-nav {
+	border-top: 0.3px solid #a6a6a7;
+	height: var( --navbar-primary-height );
+}
+
+#nb-pri .navbar-nav {
+	justify-content: space-around;
+}
+
+ul.navbar-nav {
+	margin: 0 1em;
+}

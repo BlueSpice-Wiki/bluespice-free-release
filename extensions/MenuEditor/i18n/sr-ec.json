@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"menueditor-toolbar-add-label": "Додај елемент",
+	"menueditor-ui-edit-label": "Уреди",
+	"menueditor-toolbar-save": "Сачувај",
+	"menueditor-ui-cancel-confirmation": "Сигурно желите да откажете измену? Све несачуване измене ће бити изгубљене."
+}

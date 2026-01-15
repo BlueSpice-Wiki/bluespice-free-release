@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"2nd-player",
+			"Aefgh39622",
+			"Shirayuki",
+			"カッパ鳥",
+			"背番号4のエース"
+		]
+	},
+	"bs-articleinfo-desc": "ステータス バーにページについての情報を提供する",
+	"prefs-articleinfo": "ページ情報",
+	"bs-articleinfo-newrevision-info-text-reload": "このページの新しいバージョンが用意されています。現在の内容をご覧になるには、このページを[[:$1|再読み込み]]してください。"
+}

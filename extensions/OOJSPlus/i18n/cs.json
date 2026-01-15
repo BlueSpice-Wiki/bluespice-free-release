@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fraxinus.cs",
+			"Kareyac"
+		]
+	},
+	"oojsplus-dialog-action-add": "Přidat",
+	"oojsplus-data-grid-toolbar-reload-label": "Znovu načíst"
+}

@@ -1,0 +1,222 @@
+{
+	"name": "ContentDroplets",
+	"version": "2.0.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[http://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ContentDroplets",
+	"descriptionmsg": "contentdroplets-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0"
+	},
+	"callback": "mwsInitComponents",
+	"ExtensionFunctions": [
+		"MediaWiki\\Extension\\ContentDroplets\\ResourceLoader\\DropletDefinitions::addPreloadModules"
+	],
+	"MessagesDirs": {
+		"ContentDroplets": "i18n"
+	},
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.contentdroplets.ve.toolbar"
+			]
+		},
+		"CollabPads": {
+			"PluginModules": [
+				"ext.contentdroplets.ve.toolbar"
+			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"text-box-success": {
+					"class": "\\MediaWiki\\Extension\\ContentDroplets\\Droplet\\TextBoxDroplet",
+					"args": [ "success", [ "content" ] ]
+				},
+				"text-box-warning": {
+					"class": "\\MediaWiki\\Extension\\ContentDroplets\\Droplet\\TextBoxDroplet",
+					"args": [ "warning", [ "content", "featured" ] ]
+				},
+				"text-box-important": {
+					"class": "\\MediaWiki\\Extension\\ContentDroplets\\Droplet\\TextBoxDroplet",
+					"args": [ "important", [ "content", "featured" ] ]
+				},
+				"text-box-note": {
+					"class": "\\MediaWiki\\Extension\\ContentDroplets\\Droplet\\TextBoxDroplet",
+					"args": [ "note", [ "content" ] ]
+				},
+				"text-box-tip": {
+					"class": "\\MediaWiki\\Extension\\ContentDroplets\\Droplet\\TextBoxDroplet",
+					"args": [ "tip", [ "content" ] ]
+				},
+				"text-box-neutral": {
+					"class": "\\MediaWiki\\Extension\\ContentDroplets\\Droplet\\TextBoxDroplet",
+					"args": [ "neutral", [ "content" ] ]
+				},
+				"icon": {
+					"class": "\\MediaWiki\\Extension\\ContentDroplets\\Droplet\\IconDroplet"
+				},
+				"code": {
+					"class": "\\MediaWiki\\Extension\\ContentDroplets\\Droplet\\CodeDroplet",
+					"requires": {
+						"SyntaxHighlight": "*"
+					}
+				}
+			}
+		},
+		"MWStakeContentProvisioner": {
+			"ContentManifests": {
+				"DefaultContentProvisioner": [
+					"extensions/ContentDroplets/data/Content/ContentDropletsTemplates/manifest.json"
+				]
+			}
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ContentDroplets\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\ContentDroplets\\Tests\\": "tests/phpunit/"
+	},
+	"ResourceModules": {
+		"ext.contentdroplets.ve.toolbar": {
+			"scripts": [
+				"ext.contentdroplets.toolbar.js",
+				"dialog/ContentDropletsDialog.js"
+			],
+			"styles": [
+				"stylesheets/droplets.css"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore",
+				"ext.contentdroplets.panel"
+			],
+			"messages": [
+				"contentdroplet-droplets-dialog-title",
+				"contentdroplet-dialog-action-close",
+				"contentdroplet-dialog-action-insert",
+				"contentdroplets-toolbar-icon-title"
+			]
+		},
+		"ext.contentdroplets.panel": {
+			"scripts": [
+				"layout/ContentDropletPanel.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.contentdroplets.booklet"
+			]
+		},
+		"ext.contentdroplets.booklet": {
+			"scripts": [
+				"booklet/ContentDropletBooklet.js",
+				"booklet/page/ContentDropletPage.js",
+				"booklet/page/AllDropletsPage.js",
+				"widget/DropletWidget.js"
+			],
+			"styles": [
+				"stylesheets/dropletdialog.css",
+				"stylesheets/dropletwidget.css"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.contentdroplets.bootstrap",
+				"oojs-ui.styles.icons-content"
+			],
+			"messages": [
+				"contentdroplets-droplet-dialog-search-placeholder-label"
+			]
+		},
+		"ext.contentdroplets.bootstrap": {
+			"scripts": [
+				"bootstrap.js",
+				"object/Droplet.js",
+				"object/CustomInspectorDroplet.js",
+				"object/TransclusionDroplet.js"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwtransclusion",
+				"oojs",
+				"oojs-ui"
+			]
+		},
+		"ext.contentdroplets.droplets.text": {
+			"packageFiles": [
+				"object/TextBox.js",
+				{
+					"name": "object/textboxtypes.json",
+					"callback": "MediaWiki\\Extension\\ContentDroplets\\ContentDropletsBoxTypes::getRegisteredBoxTypes"
+				}
+			],
+			"styles": [
+				"stylesheets/droplets.css"
+			],
+			"messages": [
+				"contentdroplets-droplet-text-box-header-label",
+				"contentdroplets-droplet-text-box-text-label",
+				"contentdroplets-droplet-text-box-show-icon-label",
+				"contentdroplets-droplet-text-box-type-label",
+				"contentdroplets-droplet-text-box-success",
+				"contentdroplets-droplet-text-box-warning",
+				"contentdroplets-droplet-text-box-important",
+				"contentdroplets-droplet-text-box-note",
+				"contentdroplets-droplet-text-box-tip",
+				"contentdroplets-droplet-text-box-neutral"
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"ext.contentdroplets.droplets.icon": {
+			"scripts": [
+				"object/Icon.js"
+			],
+			"styles": [
+				"stylesheets/droplets.css"
+			],
+			"messages": [
+				"contentdroplets-droplet-icon-class-label",
+				"contentdroplets-droplet-icon-font-size-label",
+				"contentdroplets-droplet-icon-color-label",
+				"contentdroplets-droplet-icon-orientation-label"
+			],
+			"dependencies": [
+				"oojs-ui"
+			]
+		},
+		"z-ext.contentdroplets.definition.preload": {
+			"class": "MediaWiki\\Extension\\ContentDroplets\\ResourceLoader\\DropletDefinitions"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "ContentDroplets/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "addModules"
+	},
+	"HookHandlers": {
+		"addModules": {
+			"class": "MediaWiki\\Extension\\ContentDroplets\\Hook\\BeforePageDisplay\\AddModules"
+		}
+	},
+	"RestRoutes": [
+		{
+			"path": "/contentdroplets/droplets",
+			"method": "GET",
+			"class": "\\MediaWiki\\Extension\\ContentDroplets\\Rest\\GetDropletsHandler",
+			"services": [ "ContentDropletsProvider" ]
+		}
+	],
+	"config": {
+		"ContentDropletsDroplets": {
+			"value": {}
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black",
+			"Ninjastrikers"
+		]
+	},
+	"prefs-readers": "စာဖတ်သူများ",
+	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|စာဖတ်သူ}}|စာဖတ်သူများ}}",
+	"bs-readers-header-username": "အသုံးပြုသူအမည်",
+	"bs-readers-header-readerspath": "စာဖတ်သူ",
+	"bs-readers-header-ts": "နေ့စွဲ",
+	"bs-readers-header-page": "စာမျက်နှာ"
+}

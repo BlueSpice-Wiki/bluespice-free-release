@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"bs-avatars-pref-generator": "Generateur:",
+	"bs-avatars-pref-userimage-img-alt": "Äert aktuellt Benotzerbild",
+	"bs-avatars-upload-complete": "D'Bild gouf eropgelueden.",
+	"bs-avatars-generate-complete": "En neien Avatar gouf generéiert.",
+	"bs-avatars-upload-label": "Bild",
+	"bs-avatars-file-upload-fieldset-title": "En neit Bild eroplueden",
+	"bs-avatars-upload-button": "Eroplueden",
+	"bs-avatars-generic-cancel": "Ofbriechen"
+}

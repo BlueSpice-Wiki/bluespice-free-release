@@ -1,0 +1,56 @@
+.skeleton {
+	background: linear-gradient( 90deg, #eee, #ddd, #eee );
+	background-size: 200% 100%;
+	animation: shimmer 1.5s infinite;
+	border-radius: 6px;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200% 0;
+	}
+
+	100% {
+		background-position: 200% 0;
+	}
+}
+
+.dropzone-skeleton {
+	height: 130px;
+	margin-bottom: 24px;
+}
+
+.header-skeleton {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.title-skeleton {
+	width: 60%;
+	height: 18px;
+}
+
+.toggle-icon-skeleton {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+}
+
+.input-group-skeleton {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.label-skeleton {
+	width: 40%;
+	height: 14px;
+	margin-bottom: 6px;
+}
+
+.input-skeleton {
+	width: 50%;
+	height: 36px;
+}

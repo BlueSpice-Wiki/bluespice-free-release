@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joquliina",
+			"MITO",
+			"Nike",
+			"Pyscowicz"
+		]
+	},
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Muokkaa sivun luokkia",
+	"bs-insertcategory-edit-dialog-button-label": "Muokkaa",
+	"bs-insertcategory-edit-dialog-title": "Muokkaa luokkia",
+	"bs-insertcategory-edit-dialog-button-submit": "Valmis",
+	"bs-insertcategory-edit-dialog-button-cancel": "Peruuta",
+	"bs-insertcategory-no-categories": "Luokkia ei määritetty"
+}

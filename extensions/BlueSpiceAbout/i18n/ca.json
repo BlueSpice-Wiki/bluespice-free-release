@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"Mguix",
+			"SMP"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informació sobre el BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "Quant al BlueSpice",
+	"bluespiceabout": "Quant al BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "veure la pàgina especial «{{int:bs-bluespiceabout-about-bluespice}}»",
+	"right-bluespiceabout-viewspecialpage": "Accedir a la pàgina especial [[Special:BlueSpiceAbout]]"
+}

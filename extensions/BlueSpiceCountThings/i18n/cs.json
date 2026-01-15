@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dvorapa",
+			"H4nek",
+			"Jrobicek"
+		]
+	},
+	"bs-countthings-files-label": "Soubory",
+	"bs-countthings-pages-label": "Stránky",
+	"bs-countthings-tag-countarticles-desc": "Zobrazí počet článků na wiki.",
+	"bs-countthings-tag-countfiles-desc": "Zobrazuje počet souborů na wiki.",
+	"bs-countthings-droplet-files-name": "Počet souborů"
+}

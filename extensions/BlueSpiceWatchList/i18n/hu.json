@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Csega",
+			"Krisztina"
+		]
+	},
+	"bs-watchlist-desc": "Figyelőlista widget és címke hozzáadása",
+	"bs-watchlist-pref-sort-time": "Idő",
+	"bs-watchlist-pref-sort-title": "Cím",
+	"bs-watchlist-tag-watchlist-desc": "Megjeleníti azokat a cikkeket, amelyekben friss módosításokat hajtottak végre, és amelyek szerepelnek a figyelőlistáján.",
+	"bs-watchlist-window-watchlist-title": "Figyelőlista",
+	"bs-watchlist-window-watchlist-intro": "Ez az áttekintője a figyelőlistáján lévő összes oldalnak. Válthat a [[Special:Watchlist|klasszikus figyelőlistára is]].",
+	"bs-watchlist-grid-watchlist-column-link-header": "Oldal",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "Olvasatlan változások",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "Ellenőrizze a változásokat",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "Vitalap",
+	"bs-watchlist-grid-watchlist-label-filter": "Szűrő",
+	"bs-watchlist-ve-watchlistinspector-title": "Figyelőlista",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Számláló",
+	"bs-watchlist-tag-watchlist-attr-count-help": "A figyelőlistán megjelenített bejegyzések száma",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Cím max hossza",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "A címben feltüntetendő betűk száma. 5 és 500 közötti szám lehet.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Rendezés",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Lista megjelenítése idő vagy oldal név alapján",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Oldalnév",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Idő",
+	"bs-watchlist-tag-watchlist-no-user": "A figyelőlista nem jeleníthető meg mert nincs bejelentkezett felhasználó",
+	"bs-watchlist-tag-watchlist-no-entries": "Nincs változás a figyelőlistán megjelenő oldalakon",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Oldalnév súgó",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Idő súgó",
+	"bs-watchlist-droplet-name": "Figyelőlista",
+	"bs-watchlist-droplet-description": "Legutóbbi változások a figyelőlistán megjelenő oldalakon"
+}

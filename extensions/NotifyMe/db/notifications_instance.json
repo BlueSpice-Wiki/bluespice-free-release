@@ -1,0 +1,71 @@
+[
+	{
+		"name": "notifications_instance",
+		"columns": [
+			{
+				"name": "ni_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "ni_event_type",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "ni_event_id",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "ni_target_user",
+				"type": "integer",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "ni_channel",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "ni_status",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "ni_payload",
+				"type": "blob",
+				"options": {
+					"notnull": true
+				}
+			}
+		],
+		"indexes": [
+			{
+				"name": "notifications_instance_event_channel_target",
+				"columns": [ "ni_event_id", "ni_channel", "ni_target_user" ],
+				"unique": true
+			}
+		],
+		"pk": [ "ni_id" ]
+	}
+]

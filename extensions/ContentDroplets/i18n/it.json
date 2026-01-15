@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"contentdroplets-droplet-text-box-success": "Messaggio di successo",
+	"contentdroplets-droplet-text-box-warning": "Messaggio di avvertimento",
+	"contentdroplets-droplet-text-box-important": "Messaggio importante",
+	"contentdroplets-droplet-text-box-note": "Nota",
+	"contentdroplets-droplet-text-box-neutral": "Messaggio",
+	"contentdroplets-category-label-content": "Contenuto",
+	"contentdroplets-category-label-media": "File multimediale",
+	"contentdroplets-category-label-visualization": "Visualizzazione",
+	"contentdroplets-category-label-data": "Dati",
+	"contentdroplets-category-label-navigation": "Navigazione",
+	"contentdroplets-category-label-lists": "Elenchi",
+	"contentdroplets-category-label-export": "Esporta",
+	"contentdroplets-category-label-all": "Tutto",
+	"contentdroplets-droplet-text-box-header-label": "Titolo",
+	"contentdroplets-droplet-text-box-text-label": "Testo",
+	"contentdroplets-droplet-text-box-show-icon-label": "Mostra icona",
+	"contentdroplets-droplet-icon-font-size-label": "Dimensione carattere",
+	"contentdroplets-droplet-icon-color-label": "Colore",
+	"contentdroplets-droplet-icon-orientation-label": "Orientamento verticale",
+	"contentdroplets-droplet-icon-name": "Icona",
+	"contentdroplets-droplet-icon-description": "Inserisci un'icona",
+	"contentdroplet-dialog-action-close": "Annulla",
+	"contentdroplet-dialog-action-insert": "Inserisci",
+	"contentdroplets-droplet-code-name": "Codice"
+}

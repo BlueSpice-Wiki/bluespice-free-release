@@ -1,0 +1,15 @@
+.enhanced-sidebar-edit-link-footer {
+	visibility: hidden;
+	display: block;
+	overflow: hidden;
+	background-color: transparent;
+	border-top: none;
+	padding: 0 16px;
+	font-size: 0.7rem;
+	text-align: right;
+	text-decoration: underline;
+}
+
+.enhanced-sidebar:hover .enhanced-sidebar-edit-link-footer {
+	visibility: visible;
+}

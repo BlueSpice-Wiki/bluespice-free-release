@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"ChiK",
+			"Mahaveer Indra",
+			"Pragathi. BH"
+		]
+	},
+	"enhanced-standard-uis-history-grid-header-summary-label": "ಸಾರಾಂಸೊ",
+	"enhanced-standard-uis-filter-results-label": "$1ದಾತ್ {{PLURAL:$1|result|ನಾಡಿನ ಫಲಿತಾಂಸೊ}}ಲು",
+	"enhanced-standard-uis-allpages-redirect-label": "$1 (ಮರುನಿರ್ದೇಶನ)"
+}

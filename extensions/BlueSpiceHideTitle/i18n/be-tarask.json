@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Red Winged Duck",
+			"W"
+		]
+	},
+	"bs-hidetitle-desc": "Дадае магічные слова <code><nowiki>__HIDETITLE__</nowiki></code>, каб схаваць загаловак старонкі",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Паказаць",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Схаваць",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Бачнасьць загалоўка"
+}

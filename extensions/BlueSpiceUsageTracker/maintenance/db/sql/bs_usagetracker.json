@@ -1,0 +1,56 @@
+[
+	{
+		"name": "bs_usagetracker",
+		"columns": [
+			{
+				"name": "ut_id",
+				"type": "integer",
+				"options": {
+					"length": 5,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "ut_identifier",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "ut_count",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true,
+					"default": 0
+				}
+			},
+			{
+				"name": "ut_type",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "ut_timestamp",
+				"type": "mwtimestamp",
+				"options": {
+					"notnull": true,
+					"default": ""
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [
+			"ut_id"
+		]
+	}
+]

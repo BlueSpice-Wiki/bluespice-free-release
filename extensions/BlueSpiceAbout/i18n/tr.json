@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"Chansey"
+		]
+	},
+	"bs-bluespiceabout-desc": "BlueSpice hakkında bilgi",
+	"bs-bluespiceabout-about-bluespice": "BlueSpice hakkında",
+	"bluespiceabout": "BlueSpice hakkında",
+	"action-bluespiceabout-viewspecialpage": "\"{{int:bs-bluespiceabout-about-bluespice}}\" özel sayfasını görüntüleyin",
+	"right-bluespiceabout-viewspecialpage": "Özel sayfaya erişim [[Special:BlueSpiceAbout]]"
+}

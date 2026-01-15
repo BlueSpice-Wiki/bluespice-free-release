@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Divya4232",
+			"Tmamatha",
+			"V Bhavya",
+			"Veeven"
+		]
+	},
+	"bs-distributionconnector-ve-categorytreeinspector-tb-depth": "లోతు",
+	"bs-distributionconnector-ve-categorytreeinspector-tb-namespace": "పేరుబరి",
+	"bs-distributionconnector-pref-eventbus-enableeventbus-key-all": "అన్నీ",
+	"bs-distributionconnector-pref-eventbus-enableeventbus-key-none": "ఏమీలేదు",
+	"droplets-create-input-button-label": "టెక్స్ట్ ఆన్ బటన్",
+	"droplets-create-input-placeholder-label": "ప్లేస్ హోల్డర్ టెక్స్ట్",
+	"droplets-create-input-alignment-label": "అమరిక",
+	"droplets-create-input-alignment-left-label": "ఎడమ",
+	"droplets-create-input-alignment-right-label": "కుడి",
+	"droplets-create-input-name": "పేజీని సృష్టించు",
+	"droplets-buttonlink-name": "బటన్",
+	"droplets-gallery-name": "చిత్ర ప్రదర్శన",
+	"droplets-map-name": "పటం",
+	"droplets-subpages-name": "ఉపపేజీలు",
+	"droplets-video-description": "వివిధ ప్లాట్‌ఫారమ్‌ల నుండి వీడియోలను పొందుపరుస్తుంది",
+	"droplets-pdflink-name": "PDF లింక్"
+}

@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fúlvio",
+			"Hamilton Abreu",
+			"Mansil alfalb",
+			"Vitorvicentevalente"
+		]
+	},
+	"bs-insertcategory-desc": "Diálogo para inserir uma hiperligação para uma categoria",
+	"bs-insertcategory-insertcat": "Inserir categoria",
+	"prefs-insertcategory": "Inserir categoria",
+	"bs-insertcategory-pref-withparents": "Inserir categoria com as suas parentes",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Editar as categorias desta página",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Editar as categorias desta página",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Abrir diálogo para editar as categorias desta página",
+	"bs-insertcategory-edit-dialog-button-label": "Editar",
+	"bs-insertcategory-edit-dialog-title": "Editar categorias",
+	"bs-insertcategory-edit-dialog-button-submit": "Concluído",
+	"bs-insertcategory-edit-dialog-button-cancel": "Cancelar",
+	"bs-insertcategory-edit-dialog-input-label": "Categorias atribuídas",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Categorias implícitas",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Essas categorias não estão definidas no texto wiki do conteúdo da página. É provável que sejam definidas dentro de uma predefinição.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Não foi possível obter as categorias de páginas",
+	"bs-insertcategory-no-categories": "Não foi atribuída nenhuma categoria",
+	"bs-insertcategory-edit-dialog-tree-view": "Mostrar todas as categorias"
+}

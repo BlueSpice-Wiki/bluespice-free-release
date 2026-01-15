@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos",
+			"Joao Xavier"
+		]
+	},
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorii",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dio",
+	"bs-statistics-aggregated-report-filter-interval-week": "Semano",
+	"bs-statistics-aggregated-report-filter-interval-month": "Monato",
+	"bs-statistics-aggregated-report-filter-namespace": "Nomaro (''namespace'')",
+	"bs-statistics-aggregated-report-filter-namespaces": "Nomari (''namespaces'')",
+	"bs-statistics-aggregated-report-filter-user": "Uzero",
+	"bs-statistics-aggregated-report-filter-user-multi": "Uzeri"
+}

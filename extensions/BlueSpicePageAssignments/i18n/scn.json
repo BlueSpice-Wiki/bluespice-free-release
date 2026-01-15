@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"pageassignments": "Assignazzioni",
+	"bs-pageassignments-dlg-title": "Assignazzioni",
+	"bs-pageassignments-dlg-fldlabel": "Assignazzioni",
+	"bs-pageassignments-column-title": "Tìtulu dâ pàggina",
+	"bs-pageassignments-column-assignments": "Assignazzioni",
+	"prefs-pageassign": "Assignazzioni",
+	"bs-pageassignments-assignee-special-everyone-label": "Tutti",
+	"bs-pageassignments-assignee-type-everyone": "Tutti",
+	"bs-pageassignments-assignee-type-user": "Utenti",
+	"bs-pageassignments-assignee-type-group": "Gruppu"
+}

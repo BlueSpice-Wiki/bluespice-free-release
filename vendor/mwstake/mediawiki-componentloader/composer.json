@@ -1,0 +1,38 @@
+{
+	"name": "mwstake/mediawiki-componentloader",
+	"description": "Required for proper initialization of MWStake components",
+	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "HalloWelt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "http://www.hallowelt.com"
+		}
+	],
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "1.0.0",
+		"jakub-onderka/php-console-highlighter": "0.4.0",
+		"mediawiki/mediawiki-codesniffer": "29.0.0",
+		"mediawiki/minus-x": "1.0.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"MWStake\\MediaWiki\\ComponentLoader\\": "src/",
+			"MWStake\\MediaWiki\\ComponentLoader\\Tests\\": "tests/"
+		},
+		"files": [
+			"bootstrap.php"
+		]
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"minus-x check .",
+			"phpcs -sp"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		]
+	}
+}

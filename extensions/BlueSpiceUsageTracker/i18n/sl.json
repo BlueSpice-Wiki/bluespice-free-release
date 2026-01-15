@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-usagetracker-desc": "Hrani statistične podatke o uporabi razširitev",
+	"apihelp-bs-usagetracker-store-summary": "Hrani statistične podatke o uporabi razširitev"
+}

@@ -1,0 +1,68 @@
+#sb-pri-cnt {
+	background-color: var( --sidebar-primary-bg );
+	color: var( --sidebar-primary-fg );
+	padding-top: 15px;
+	font-size: 15px;
+	border-right: 0.05px solid var( --sidebar-primary-border-marker );
+	z-index: 1000;
+}
+
+#sb-pri {
+	height: 100%;
+	max-height: calc( 100vh - calc( 15px + var( --navbar-primary-height ) ) );
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+#sb-pri:hover {
+	overflow-y: auto;
+}
+
+#sb-pri .card {
+	color: inherit;
+}
+
+#sb-pri::-webkit-scrollbar {
+	width: 8px;
+}
+
+#sb-pri::-webkit-scrollbar-thumb {
+	background-color: #d8d8d9;
+	border-radius: 5px;
+	border: 3px solid transparent;
+}
+
+#sb-pri .enhanced-sidebar-cnt {
+	/* A min-height is required to show edit link for empty MediaWiki:Sidebar.json */
+	min-height: 35px;
+}
+
+#sb-pri #enh-mw-sb-edit-sidebar-link {
+	height: 0;
+	overflow: hidden;
+	float: right;
+	display: block;
+	padding: 0 1em;
+	text-align: right;
+	width: 100%;
+	font-size: 0.7rem;
+	color: var( --sidebar-primary-fg );
+}
+
+#sb-pri .enhanced-sidebar-cnt:hover #enh-mw-sb-edit-sidebar-link {
+	height: inherit;
+}
+
+#sb-pri #enh-mw-sb-edit-sidebar-link:focus-visible {
+	height: inherit;
+	border: 2px solid var( --focus-visible );
+	outline-color: transparent;
+}
+
+@media ( max-width: 767.99px ) {
+	#sb-pri {
+		overflow: auto;
+		height: calc( 100vh - calc( 15px + calc( 2 * var( --navbar-primary-height ) ) ) );
+	}
+}

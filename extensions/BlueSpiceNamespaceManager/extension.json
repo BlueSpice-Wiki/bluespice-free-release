@@ -1,0 +1,181 @@
+{
+	"name": "BlueSpiceNamespaceManager",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceNamespaceManager",
+	"author": [
+		"Sebastian Ulbricht",
+		"Stefan Widmann",
+		"Robert Vogel"
+	],
+	"descriptionmsg": "bs-namespacemanager-desc",
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceNamespaceManager": {
+					"className": "\\BlueSpice\\NamespaceManager\\Extension",
+					"extPath": "/BlueSpiceNamespaceManager"
+				}
+			},
+			"AdminToolRegistry": {
+				"bs-namespace-manager": "BlueSpice\\NamespaceManager\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"namespacemanager-viewspecialpage": {
+					"type": "namespace",
+					"roles": [
+						"admin",
+						"maintenanceadmin",
+						"structuremanager"
+					]
+				}
+			}
+		}
+	},
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"LogTypes": [
+		"bs-namespace-manager"
+	],
+	"FilterLogTypes": {
+		"bs-namespace-manager": true
+	},
+	"LogActionsHandlers": {
+		"bs-namespace-manager/*": "LogFormatter"
+	},
+	"APIModules": {
+		"bs-namespace-store": "BlueSpice\\NamespaceManager\\Api\\NamespaceStore",
+		"bs-namespace-tasks": "BlueSpice\\NamespaceManager\\Api\\NamespaceTasks"
+	},
+	"SpecialPages": {
+		"NamespaceManager": {
+			"class": "BlueSpice\\NamespaceManager\\Special\\SpecialNamespaceManager",
+			"services": [
+				"BlueSpiceNamespaceManager.Manager"
+			]
+		}
+	},
+	"MessagesDirs": {
+		"NamespaceManager": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"NamespaceManagerAlias": "SpecialNamespaceManager.alias.php"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"NamespaceManagerNsOffset": {
+			"value": 2999
+		}
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\NamespaceManager\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\NamespaceManager\\Tests\\": "tests/phpunit/"
+	},
+	"AutoloadClasses": {
+		"NamespaceNuker": "includes/NamespaceNuker.php"
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\NamespaceManager\\HookHandler\\CommonUserInterface"
+		},
+		"registerDynamicConfig": {
+			"class": "\\BlueSpice\\NamespaceManager\\Hook\\RegisterDynamicConfig",
+			"services": [ "HookContainer" ]
+		},
+		"persistNamespaceFlags": {
+			"class": "BlueSpice\\NamespaceManager\\Hook\\NamespaceManagerBeforePersistSettings\\PersistNamespaceFlags"
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"\\BlueSpice\\NamespaceManager\\Hook\\LoadExtensionSchemaUpdates\\MigrateLegacySettings::callback"
+		],
+		"NamespaceManager::editNamespace": [
+			"\\BlueSpice\\NamespaceManager\\Hook\\NamespaceManagerEditNamespace\\SetContentFlag::callback",
+			"\\BlueSpice\\NamespaceManager\\Hook\\NamespaceManagerEditNamespace\\SetSubPagesFlag::callback"
+		],
+		"NamespaceManagerBeforePersistSettings": "persistNamespaceFlags",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
+		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig"
+	},
+	"ResourceModules": {
+		"ext.bluespice.namespaceManager": {
+			"scripts": [
+				"ui/dialog/DeleteNamespace.js",
+				"ui/dialog/EditNamespace.js",
+				"ui/column/NamespaceSettingColumn.js",
+				"ui/Panel.js",
+				"bluespice.namespaceManager.js"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.managerPanel",
+				"user.options",
+				"ext.bluespice",
+				"oojs-ui.styles.icons-user",
+				"oojs-ui.styles.icons-moderation",
+				"oojs-ui.styles.icons-editing-core",
+				"ext.oOJSPlus.data"
+			],
+			"messages": [
+				"bs-namespacemanager-label-pagecount",
+				"bs-namespacemanager-label-namespaces",
+				"bs-namespacemanager-label-id",
+				"bs-namespacemanager-save",
+				"bs-namespacemanager-cancel",
+				"bs-namespacemanager-delete",
+
+				"bs-namespacemanager-tipadd",
+				"bs-namespacemanager-tipedit",
+				"bs-namespacemanager-tipremove",
+				"bs-namespacemanager-msgnoteditabledelete",
+				"bs-namespacemanager-labelnsname",
+				"bs-namespacemanager-willdelete",
+				"bs-namespacemanager-willmove",
+				"bs-namespacemanager-willmovesuffix",
+				"bs-namespacemanager-deletewarning",
+				"bs-namespacemanager-pagepresent",
+				"bs-namespacemanager-label-editable",
+				"bs-ns_main",
+				"bs-from-something",
+				"bs-namespacemanager-label-istalk",
+				"bs-namespacemanager-nodeletetalk",
+				"bs-namespacemanager-hide-talk-label",
+				"bs-namespacemanager-hide-non-content-ns-label",
+				"bs-namespacemanager-labelnsalias",
+				"bs-namespacemanager-icon-tristate-disabled-aria-label",
+				"bs-namespacemanager-icon-tristate-true-aria-label",
+				"bs-namespacemanager-icon-tristate-false-aria-label"
+			]
+		},
+		"ext.bluespice.namespaceManager.styles": {
+			"styles": "bluespice.namespaceManager.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceNamespaceManager/resources"
+	},
+	"GroupPermissions": {
+		"sysop": {
+			"namespacemanager-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"namespacemanager-viewspecialpage"
+	],
+	"callback": "mwsInitComponents",
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

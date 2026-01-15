@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"filterspecialpages-desc": "Lägger till ett fält för att filtrera inlägg i [{{canonicalurl:Special:SpecialPages}} Special:Specialsidor].",
+	"filterspecialpages-hint-label": "Hitta sida"
+}

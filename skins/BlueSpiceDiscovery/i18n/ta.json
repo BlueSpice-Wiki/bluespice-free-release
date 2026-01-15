@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"ElangoRamanujam",
+			"Fahimrazick"
+		]
+	},
+	"bs-discovery-navbar-user-login-text": "புகுபதிகை",
+	"bs-discovery-navbar-user-login-title": "புகுபதிகை",
+	"bs-discovery-navbar-user-login-aria-label": "புகுபதிகை",
+	"bs-discovery-searchform-button-aria-label": "இப்போது தேடு",
+	"bs-discovery-header-create-button-text": "புதிய",
+	"bs-discovery-header-create-button-title": "ஒரு புதிய பக்கத்தை உருவாக்குக",
+	"bs-discovery-header-create-button-aria-label": "ஒரு புதிய பக்கத்தை உருவாக்குக.",
+	"bs-discovery-create-button-new-file-text": "புதிய கோப்பு",
+	"bs-discovery-breadcrumb-nav-node-ns-main": "பக்கங்கள்",
+	"bs-discovery-breadcrumb-nav-node-portal-page": "முதன்மைப் பக்கம்",
+	"bs-discovery-title-action-edit-button-title": "பக்கத்தைத் தொகு",
+	"bs-discovery-title-action-edit-button-aria-label": "பக்கத்தைத் தொகு",
+	"bs-discovery-title-action-language-button-title": "மொழியைத் தேர்க",
+	"bs-discovery-title-action-language-button-aria-label": "மொழியைத் தேர்க",
+	"bs-discovery-sidebar-secondary-share-sharebymail-text": "மின்னஞ்சல்",
+	"bs-discovery-breadcrumb-label-talk": "பேச்சு",
+	"bs-discovery-breadcrumb-label-action-history": "வரலாறு",
+	"bs-discovery-breadcrumb-label-action-edit": "தொகு",
+	"bs-discovery-first-heading-aria-label": "பக்கத் தலைப்பு",
+	"bs-discovery-personalurl-mycontributions-text": "பங்களிப்புகள்"
+}

@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"bs-statistics-targets-label": "Ciljevi",
+	"bs-statistics-paging-page-size": "Veličina stranice",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorije",
+	"bs-statistics-aggregated-report-filter-date-start": "Datum početka",
+	"bs-statistics-aggregated-report-filter-date-end": "Datum završetka",
+	"bs-statistics-aggregated-report-filter-interval": "Interval",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dan",
+	"bs-statistics-aggregated-report-filter-interval-week": "Nedelja",
+	"bs-statistics-aggregated-report-filter-interval-month": "Mesec",
+	"bs-statistics-aggregated-report-filter-interval-year": "Godina",
+	"bs-statistics-aggregated-report-filter-namespace": "Imenski prostor",
+	"bs-statistics-aggregated-report-filter-namespaces": "Imenski prostori",
+	"bs-statistics-aggregated-report-filter-page": "Stranica",
+	"bs-statistics-aggregated-report-filter-user": "Korisnik",
+	"bs-statistics-aggregated-report-filter-user-multi": "Korisnici",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "Filtriranje ili po kategorijama ili po imenskim prostorima",
+	"bs-statistics-aggregated-report-error": "Došlo je do greške!",
+	"bs-statistics-aggregated-report-loading": "Učitavanje podataka...",
+	"bs-statistics-ve-progressinspector-title": "Napredak",
+	"bs-statistics-droplet-progress-name": "Napredak"
+}

@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion",
+			"Samflint",
+			"Ата"
+		]
+	},
+	"bs-watchlist-desc": "Додає віджет і тег списку спостереження",
+	"bs-watchlist-pref-sort-time": "Час",
+	"bs-watchlist-pref-sort-title": "Назва",
+	"bs-watchlist-tag-watchlist-desc": "Показує список сторінок, які є у Вашому списку спостереження та мають найсвіжіші зміни.",
+	"bs-watchlist-ve-watchlistinspector-title": "Список спостереження",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Кількість",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Максимальна довжина заголовка",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Кількість літер, які повинні бути показані в назві. Може бути числом від 5 до 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Порядок",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Назва сторінки",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Час",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Довідка щодо назви сторінки",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Довідка щодо часу"
+}

@@ -1,0 +1,7 @@
+<ul {{#cnt-id}} id="{{.}}" {{/cnt-id}}class="list-group{{#cnt-class}} {{.}}{{/cnt-class}}"{{#cnt-aria}} {{{.}}}{{/cnt-aria}}{{#cnt-role}} role="{{.}}"{{/cnt-role}}>
+	{{#links}}
+	<li class="list-group-item"{{#item-role}} role="{{.}}"{{/item-role}}>
+		<a{{#id}} id="{{.}}"{{/id}}{{#class}} class="{{.}}"{{/class}} href="{{href}}"{{#title}} title="{{.}}"{{/title}}{{#data}} {{{.}}}{{/data}}{{#aria}} {{{.}}}{{/aria}}{{#rel}} rel="{{.}}"{{/rel}}{{#target}} target="{{.}}"{{/target}}{{#role}} role="{{.}}"{{/role}}>{{{text}}}</a>
+	</li>
+	{{/links}}
+</ul>

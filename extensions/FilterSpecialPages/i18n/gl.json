@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"filterspecialpages-desc": "Insire un campo para filtrar as entradas en [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages].",
+	"filterspecialpages-hint-label": "Atopar unha páxina"
+}

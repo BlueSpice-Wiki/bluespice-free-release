@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mahabarata"
+		]
+	},
+	"vuejsplus-desc": "Collection des composants VueJs",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Replier",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Développer",
+	"vuejsplus-data-grid-option-sort-string-asc": "Tri croissant",
+	"vuejsplus-data-grid-option-sort-string-desc": "Tri décroissant",
+	"vuejsplus-data-grid-option-filter-string": "Rechercher",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|Une ligne trouvée|$1 lignes trouvées}}",
+	"vuejsplus-data-grid-option-button-aria-label": "Options de la colonne $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Vérifié",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Non vérifiée",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Neutre",
+	"vuejsplus-data-grid-option-filter-date-from-label": "À partir de la date",
+	"vuejsplus-data-grid-option-filter-date-to-label": "Jusqu’à la date"
+}

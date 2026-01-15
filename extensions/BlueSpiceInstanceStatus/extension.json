@@ -1,0 +1,140 @@
+{
+	"name": "BlueSpiceInstanceStatus",
+	"version": "5.1.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"[http://www.hallowelt.com Hallo Welt! GmbH]"
+	],
+	"url": "http://www.bluespice.com",
+	"descriptionmsg": "bs-instancestatus-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0"
+	},
+	"MessagesDirs": {
+		"BlueSpiceInstanceStatus": "i18n"
+	},
+	"ExtensionMessagesFiles": {
+		"BlueSpiceInstanceStatusAlias": "languages/InstanceStatus.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\InstanceStatus\\": "src/"
+	},
+	"attributes": {
+		"BlueSpiceInstanceStatus": {
+			"PluginModules": [ "ext.bs.instancestatus.overview" ],
+			"InstanceStatusProvider": {
+				"bluespiceversion": {
+					"class": "BlueSpice\\InstanceStatus\\InstanceStatusProvider\\BlueSpiceVersion"
+				},
+				"created": {
+					"class": "BlueSpice\\InstanceStatus\\InstanceStatusProvider\\Created",
+					"services": [ "DBLoadBalancer", "ContentLanguage" ]
+				},
+				"lastupdate": {
+					"class": "BlueSpice\\InstanceStatus\\InstanceStatusProvider\\LastUpdate",
+					"services": [ "DBLoadBalancer", "ContentLanguage" ]
+				},
+				"salescontact": {
+					"class": "BlueSpice\\InstanceStatus\\InstanceStatusProvider\\SalesContact",
+					"services": [ "ConfigFactory" ]
+				}
+			},
+			"ApiInstanceStatusProvider": {
+				"bluespiceversion": {
+					"class": "BlueSpice\\InstanceStatus\\InstanceStatusProvider\\BlueSpiceVersion"
+				},
+				"memcached": {
+					"class": "\\BlueSpice\\InstanceStatus\\InstanceStatusProvider\\Memcached",
+					"services": [ "ObjectCacheFactory", "MainConfig" ]
+				},
+				"directories": {
+					"class": "\\BlueSpice\\InstanceStatus\\InstanceStatusProvider\\Directories",
+					"services": [ "MainConfig" ]
+				},
+				"mathoid": {
+					"class": "\\BlueSpice\\InstanceStatus\\InstanceStatusProvider\\Mathoid",
+					"services": [ "MainConfig", "HttpRequestFactory" ]
+				}
+			}
+		}
+	},
+	"ResourceModules": {
+		"ext.bs.instancestatus.overview": {
+			"scripts": [
+				"ui/page/OverviewPage.js"
+			],
+			"messages": [
+				"bs-instancestatus-instance-status-main-label"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.bluespice"
+			]
+		},
+		"ext.blueSpiceInstanceStatus.special": {
+			"class": "MWStake\\MediaWiki\\Component\\CommonUserInterface\\ResourceLoader\\LessVars",
+			"packageFiles": [
+				"ext.blueSpiceInstanceStatus.special.js",
+				{
+					"name": "pluginModules.json",
+					"callback": "BlueSpice\\InstanceStatus\\InstanceStatusPluginModules::getPluginModules"
+				}
+			],
+			"styles": [
+				"ext.blueSpiceInstanceStatus.special.less"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"oojs-ui.styles.icons-user",
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-alerts",
+				"oojs-ui.styles.icons-movement",
+				"oojs-ui.styles.icons-content",
+				"oojs-ui.styles.icons-moderation",
+				"oojs-ui.styles.icons-editing-core",
+				"oojs-ui.styles.icons-location"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceInstanceStatus/resources"
+	},
+	"SpecialPages": {
+		"InstanceStatus": {
+			"class": "BlueSpice\\InstanceStatus\\Special\\InstanceStatus",
+			"services": [ "BlueSpiceInstanceStatus.Report" ]
+		}
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"InstanceStatusBSContactLink": {
+			"value": "https://bluespice.com/contact/"
+		},
+		"InstanceStatusCheckAllowedIP": {
+			"value": null
+		}
+	},
+	"Hooks": {
+		"MWStakeCommonUIRegisterSkinSlotComponents": "addGlobalAction"
+	},
+	"HookHandlers": {
+		"addGlobalAction": {
+			"class": "BlueSpice\\InstanceStatus\\Hook\\AddGlobalAction",
+			"services": [ "SpecialPageFactory" ]
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"RestRoutes": [
+		{
+			"path": "/instance_status/v1/statuscheck",
+			"class": "BlueSpice\\InstanceStatus\\Rest\\StatusCheckHandler",
+			"services": [ "BlueSpiceInstanceStatus.Report", "ConfigFactory" ]
+		}
+	],
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

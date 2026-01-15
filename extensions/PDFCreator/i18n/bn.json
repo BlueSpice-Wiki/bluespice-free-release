@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"pdfcreator-name": "পিডিএফ স্রষ্টা",
+	"pdfcreator-desc": "উইকি পৃষ্ঠাগুলির পিডিএফ ফাইল তৈরি করুন",
+	"pdfcreator-tab-panel-header-label": "শীর্ষচরণ",
+	"pdfcreator-tab-panel-body-label": "বিষয়বস্তু",
+	"pdfcreator-tab-panel-footer-label": "পাদলেখ",
+	"pdfcreator-tab-panel-coverpage-label": "প্রচ্ছদ পৃষ্ঠা",
+	"pdfcreator-tab-panel-main-label": "বিবরণ",
+	"pdfcreator-editor-error-label": "<strong>$1</strong> ট্যাবে <strong>$2</strong> : $3 সারিতে ত্রুটি রয়েছে।",
+	"pdfcreator-editor-error-missing-content": "\"Content\" ট্যাবে <code>{{{content}}}</code> অনুপস্থিত",
+	"pdfcreator-tab-panel-styles-label": "শৈলী",
+	"pdfcreator-pdf-disclaimer": "এই PDF স্বয়ংক্রিয়ভাবে তৈরি হয়",
+	"pdfcreator-pdf-export-time": "রপ্তানি",
+	"pdfcreator-pdf-param-currentpagenumber-label": "পাতা",
+	"pdfcreator-pdf-param-totalpagescount-label": "এর",
+	"pdfcreator-tab-panel-intro-label": "নথির ভূমিকা",
+	"pdfcreator-tab-panel-outro-label": "নথি পরিশিষ্ট",
+	"pdfcreator-editor-action-save-label": "সংরক্ষণ",
+	"pdfcreator-editor-action-help-label": "সাহায্য",
+	"pdfcreator-config-template-provider": "PDFCreator টেমপ্লেট প্রদানকারী কনফিগার করুন",
+	"pdfcreator-export-mode-page-label": "পাতা",
+	"pdfcreator-dialog-export-title": "রপ্তানি",
+	"pdfcreator-dialog-export-action-export-label": "রপ্তানি",
+	"pdfcreator-dialog-export-mode-selection-label": "মোড",
+	"pdfcreator-dialog-export-template-selection-label": "টেমপ্লেট",
+	"pdfcreator-export-plugin-mode-option-subpages-label": "উপপাতাযুক্ত পাতা",
+	"pdfcreator-export-plugin-mode-option-recursive-label": "লিঙ্কযুক্ত পাতা",
+	"pdfcreator-dump-namespaces-mail-body-text-done": "সম্পন্ন",
+	"pdfcreator-dump-namespaces-mail-body-text-fail": "ব্যর্থ"
+}

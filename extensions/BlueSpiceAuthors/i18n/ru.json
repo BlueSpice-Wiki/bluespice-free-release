@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eroha",
+			"Kareyac",
+			"Meshkov.a",
+			"Movses",
+			"Okras",
+			"Patrick Star",
+			"Vlad5250"
+		]
+	},
+	"bs-authors-desc": "Выводит картинку профиля для авторов страницы",
+	"prefs-authors": "Авторы этой страницы",
+	"bs-authors-title": "{{GENDER:$2|Автор{{PLURAL:$1||а|ов}}}}",
+	"bs-authors-profileimage": "Изображение в профиле",
+	"bs-authors-profileimage-change": "Изменить изображение в профиле",
+	"bs-authors-show-all-authors": "Есть и другие авторы",
+	"bs-authors-navigation-link-title": "Авторы этой страницы",
+	"bs-authors-navigation-link-text": "Авторы",
+	"apihelp-bs-pageauthors-store-summary": "Перечислить всех авторов страницы, указанной в контексте",
+	"bs-authors-info-dialog": "Авторы этой страницы",
+	"bs-authors-info-dialog-grid-column-author": "Автор"
+}

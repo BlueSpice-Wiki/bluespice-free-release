@@ -1,0 +1,52 @@
+{
+	"name": "mediawiki/page-header",
+	"type": "mediawiki-extension",
+	"description": "Additional UI before the page content",
+	"license": "GPL-3.0-only",
+	"keywords": [
+		"mediawiki",
+		"wiki"
+	],
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "http://www.hallowelt.com"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0|~2",
+		"mwstake/mediawiki-component-manifestregistry": "~3",
+		"mwstake/mediawiki-component-commonuserinterface": "~6"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "39.0.0",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"minus-x check .",
+			"phpcs -sp"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		]
+	},
+	"autoload": {
+		"psr-4": {
+			"PageHeader\\": "src"
+		}
+	},
+	"extra": {
+		"installer-name": "PageHeader"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	}
+}

@@ -1,0 +1,62 @@
+#usr-login {
+	color: var( --navbar-primary-fg );
+	text-decoration: none;
+	margin: 0 0.5rem;
+}
+
+#usr-login:hover {
+	color: var( --navbar-primary-fg--hover );
+	background-color: transparent;
+}
+
+#usr-login:focus {
+	outline: 0;
+	border: 0 0 0 0.25rem var( --focus-visible );
+}
+
+#usr-btn {
+	padding: 5px;
+}
+
+#usr-btn::after {
+	display: none;
+}
+
+#usr-btn > img {
+	border-radius: 14px;
+	top: -5px;
+	position: relative;
+}
+
+.ico-usr {
+	background-image: url( ../../images/Avatar.png );
+}
+
+a.ico-btn {
+	text-decoration: none;
+}
+
+.attention-indicator::after {
+	color: #bd1d1d;
+	content: '\2B24';
+	padding-left: 5px;
+}
+
+#usr-btn.attention-indicator::after {
+	display: inline-block;
+	position: relative;
+	bottom: 13px;
+	left: auto;
+	right: 13px;
+	padding-left: 0;
+	border: none;
+	font-size: 10pt;
+	line-height: 1em;
+	text-decoration: none;
+}
+
+#usr-btn.attention-indicator.attention-indicator-icon::after {
+	bottom: 40px;
+	left: 10px;
+	right: auto;
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"ElangoRamanujam",
+			"Fahimrazick",
+			"Sridhar G"
+		]
+	},
+	"bs-countthings-words-label": "வார்த்தைகள்",
+	"bs-countthings-pages-label": "பக்கங்கள்",
+	"bs-countthings-droplet-articles-name": "பக்கங்களின் எண்ணிக்கை",
+	"bs-countthings-droplet-articles-description": "பக்க எண்ணிக்கையைக் காட்டுகிறது",
+	"bs-countthings-droplet-characters-name": "எழுத்துக்களின் எண்ணிக்கை",
+	"bs-countthings-droplet-characters-description": "ஒரு விக்கிப் பக்கத்தில் உள்ள எழுத்துகளின் அல்லது சொற்களின் எண்ணிக்கையைக் காட்டுகிறது",
+	"bs-countthings-droplet-files-name": "கோப்புகளின் எண்ணிக்கை",
+	"bs-countthings-droplet-files-description": "பதிவேற்றப்பட்ட எல்லாக் கோப்புகளினதும் எண்ணிக்கையைக் காட்டுகிறது",
+	"bs-countthings-droplet-user-name": "பயனர்களின் எண்ணிக்கை",
+	"bs-countthings-droplet-user-description": "எல்லாப் பயனர்களினதும் எண்ணிக்கையைக் காட்டுகிறது"
+}

@@ -1,0 +1,33 @@
+.bs-social-entity-content {
+	width: 70%;
+}
+
+.bs-social-entity .bs-social-entitylist .bs-social-entity-userimage {
+	margin-top: 5px !important;
+}
+
+.bs-social-entitylist .bs-social-entity-comment.bs-social-entity-output-Short div.bs-social-entity-right {
+	margin-left: 10px !important;
+}
+
+.bs-social-entity.bs-social-entity-output-Short .bs-social-entitylist-children,
+.bs-social-entity.bs-social-entity-output-Default .bs-social-entitylist-children {
+	margin-left: 10px;
+}
+
+.bs-rating-bssocial-numvotes {
+	font-size: 12px;
+}
+
+.bs-social-entity-actions-menu ul.bs-social-entity-actions-menu-content {
+	transform: none !important;
+	inset: 40px auto auto -40px !important;
+}
+
+.bs-social-entity-actions .dropdown .dropdown-item {
+	text-align: center;
+}
+
+#content .bs-social-entity-wrapper {
+	margin-bottom: 20px;
+}

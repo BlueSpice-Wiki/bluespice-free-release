@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"Can",
+			"Hedda",
+			"KediÇobanı",
+			"Melissadilara",
+			"Rapsar",
+			"Sayginer"
+		]
+	},
+	"bs-insertcategory-desc": "Kategori bağlantısı girmek için iletişim kutusu",
+	"bs-insertcategory-insertcat": "Kategori ekle",
+	"prefs-insertcategory": "Kategori ekle",
+	"bs-insertcategory-pref-withparents": "Ailesine kategori ekle",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Bu sayfanın kategorilerini düzenle",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Bu sayfanın kategorilerini düzenle",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Bu sayfanın kategorilerini düzenlemek için diyalog açın",
+	"bs-insertcategory-edit-dialog-button-label": "Değiştir",
+	"bs-insertcategory-edit-dialog-title": "Kategorileri düzenle",
+	"bs-insertcategory-edit-dialog-button-submit": "Tamam",
+	"bs-insertcategory-edit-dialog-button-cancel": "İptal",
+	"bs-insertcategory-edit-dialog-input-label": "Atanmış kategoriler",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Sayfa kategorileri alınamıyor",
+	"bs-insertcategory-no-categories": "Atanmış kategori yok"
+}

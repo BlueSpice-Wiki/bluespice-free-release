@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"menueditor-ui-menu-two-fold-link-spec-label": "لنک",
+	"menueditor-ui-dialog-action-done": "تھی ڳیا",
+	"menueditor-ui-dialog-action-cancel": "منسوخ",
+	"menueditor-ui-cancel": "منسوخ",
+	"menueditor-action-menueditsource": "ماخذ وچ لکھو",
+	"menueditor-toolbar-add-label": "عنصر شامل کرو",
+	"menueditor-ui-edit-label": "لکھو",
+	"menueditor-toolbar-save": "بچاؤ"
+}

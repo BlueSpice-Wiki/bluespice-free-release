@@ -1,0 +1,27 @@
+.droplet .icon-droplet.droplet-important {
+	background-image: url( './../images/contentdroplets-important-icon.svg' );
+}
+.droplet .icon-droplet.droplet-success {
+	background-image: url( './../images/contentdroplets-success-icon.svg' );
+}
+.droplet .icon-droplet.droplet-note {
+	background-image: url( './../images/contentdroplets-note-icon.svg' );
+}
+.droplet .icon-droplet.droplet-tip {
+	background-image: url( './../images/contentdroplets-tip-icon.svg' );
+}
+.droplet .icon-droplet.droplet-neutral {
+	background-image: url( './../images/contentdroplets-neutral-icon.svg' );
+}
+.droplet .icon-droplet.droplet-warning {
+	background-image: url( './../images/contentdroplets-warning-icon.svg' );
+}
+.droplet .icon-droplet.droplet-icon {
+	background-image: url( './../images/contentdroplets-icon-icon.svg' );
+}
+.droplet .icon-droplet.droplet-code {
+	background-image: url( './../images/contentdroplets-code-icon.svg' );
+}
+.oo-ui-icon-contentDroplet {
+	background-image: url( './../images/contentdroplet.svg' );
+}

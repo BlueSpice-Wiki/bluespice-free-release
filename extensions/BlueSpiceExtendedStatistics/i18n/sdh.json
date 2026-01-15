@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"TerranBoy"
+		]
+	},
+	"bs-statistics-paging-page-size": "ئەنازەێ پەڕە",
+	"bs-statistics-aggregated-report-filter-interval-day": "ڕووژ",
+	"bs-statistics-aggregated-report-filter-interval-week": "هەفتە",
+	"bs-statistics-aggregated-report-filter-interval-month": "مانگ",
+	"bs-statistics-aggregated-report-filter-interval-year": "ساڵ",
+	"bs-statistics-aggregated-report-filter-page": "پەڕە",
+	"bs-statistics-aggregated-report-filter-user": "وەکاربەر",
+	"bs-statistics-aggregated-report-filter-user-multi": "وەکاربەرەیل",
+	"bs-statistics-aggregated-report-loading": "بارکردن داتا...",
+	"bs-statistics-ve-progressinspector-title": "پێشکەفتن",
+	"bs-statistics-droplet-progress-name": "پێشکەفتن"
+}

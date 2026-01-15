@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alirezaaa",
+			"Ebrahim",
+			"Ebraminio",
+			"FarsiNevis",
+			"Jeeputer",
+			"LordProfo",
+			"Rtemis"
+		]
+	},
+	"bs-avatars-desc": "تصاویری عمومی و شخصی ازکاربر فراهم می‌کند",
+	"bs-avatars-pref-generator": "تولیدکننده:",
+	"bs-avatars-pref-userimage-img-alt": "تصویر کاربریِ کنونی شما",
+	"bs-avatars-upload-complete": "تصویر بارگذاری شد.",
+	"bs-avatars-generate-complete": "یک آواتار نو ساخته شد.",
+	"bs-avatars-upload-label": "تصویر",
+	"bs-avatars-generate-new-label": "ایجاد آواتار جدید",
+	"bs-avatars-file-upload-fieldset-title": "بارگذاری تصویر",
+	"bs-avatars-auto-generate-fieldset-title": "تولید خودکار نماد",
+	"bs-avatars-tag-profileimage-error-invalidusername": "پارامتر «نام کاربری» ضروری است و باید شامل یک نام کاربریِ معتبر باشد"
+}

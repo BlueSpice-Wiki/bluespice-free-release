@@ -1,0 +1,69 @@
+.bs-insert-category-tool {
+	font-size: 14px; /* stylelint-disable-line declaration-property-unit-disallowed-list */
+}
+
+.bs-category-label {
+	padding: 0 1rem;
+}
+
+#bs-insert-category {
+	background: none;
+	border: none; /* stylelint-disable-line declaration-property-value-disallowed-list */
+	color: var( --aftercontent-tools-fg );
+}
+
+#bs-insert-category:hover {
+	color: var( --content-fg-primary );
+}
+
+#bs-insert-category:focus {
+	border: 1px solid grey;
+}
+
+#bs-insert-category:disabled {
+	pointer-events: none;
+}
+
+#bs-category-link-edit {
+	font-size: 0.7rem;
+	line-height: 24px; /* stylelint-disable-line declaration-property-unit-disallowed-list */
+	visibility: hidden;
+}
+
+.bs-insert-category-tool:hover > #bs-category-link-edit {
+	visibility: visible;
+}
+
+.bs-insert-category-tool:hover > #bs-category-link-edit.isDisabled {
+	visibility: hidden;
+}
+
+.bs-insert-category-tool {
+	display: flex;
+}
+
+.bs-insert-category-tool > a,
+.bs-insert-category-tool > a:hover {
+	text-decoration: none;
+}
+
+.bs-insert-category-tool > a::before {
+	line-height: 1.5em;
+}
+
+.bs-insert-category-tool > ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+}
+
+.bs-insert-category-tool > ul > li {
+	padding-right: 1em;
+}
+
+/* HACK: this is generally true, and should go to skin or somewhere global */
+.oo-ui-defaultOverlay .oo-ui-menuSelectWidget {
+	z-index: 99999;
+}

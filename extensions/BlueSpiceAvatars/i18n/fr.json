@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Constructeur",
+			"DreZhsh",
+			"Gomoko",
+			"JLTRY",
+			"Mahabarata",
+			"Thibaut120094",
+			"Urhixidur",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-avatars-desc": "Fournit des images génériques et individuelles de l’utilisateur",
+	"bs-avatars-pref-generator": "Générateur :",
+	"bs-avatars-pref-userimage-img-alt": "Votre image utilisateur actuelle",
+	"bs-avatars-upload-complete": "L’image a été téléversée.",
+	"bs-avatars-generate-complete": "Un nouvel avatar a été généré.",
+	"bs-avatars-upload-label": "Image",
+	"bs-avatars-generate-new-label": "Générer un nouvel avatar",
+	"bs-avatars-file-upload-fieldset-title": "Téléverser une autre image",
+	"bs-avatars-auto-generate-fieldset-title": "Générer un avatar  automatiquement",
+	"apihelp-bs-avatars-tasks-summary": "Téléversement, génération et initialisation des avatars utilisateur",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Le paramètre « username » est obligatoire et doit contenir un nom d’utilisateur valide",
+	"bs-avatars-pref-generator-help": "L’image avatar est générée lorsqu’un utilisateur ne téléverse pas de photo de profil. InstantAvatar : génère une image avatar basée sur l’utilisation des initiales du nom réel ou des champs du nom d’utilisateur. Identicon : génère une image avatar basée sur des parties de l’identifiant de l’utilisateur.",
+	"bs-avatars-upload-button": "Téléverser",
+	"bs-avatars-generate-button": "Générer",
+	"bs-avatars-generic-cancel": "Annuler",
+	"bs-avatars-generate-description": "Générer un nouvel avatar automatique. Cela remplacera définitivement toute image de profil téléchargée (si définie)"
+}

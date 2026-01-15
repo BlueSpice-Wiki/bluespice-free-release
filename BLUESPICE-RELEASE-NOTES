@@ -1,0 +1,189 @@
+BlueSpice
+Copyright 2022 by Hallo Welt! GmbH
+https://bluespice.com
+https://hallowelt.com
+
+For latest release notes please refer to https://en.wiki.bluespice.com/wiki/Setup:Release_History
+
+===The Team===
+====Programmers====
+* Alexey Kulbii
+* Benedikt Hofmann
+* Daniel Lynge
+* Daniel Vogel
+* Dejan Savuljesku
+* Erwin Forster
+* Gerhard Diller
+* Jan Göttlich
+* Josef Konrad
+* Karl Waldmannstetter
+* Leonid Verhovskij
+* Mannfred Dennerlein
+* Marc Reymann
+* Markus Glaser
+* Mathias Scheer
+* Miriam Schlindwein
+* Patric Wirth
+* Peter Böhm
+* Philipp Pirzer
+* Radovan Kubani
+* Robert Vogel
+* Sebastian Ulbricht
+* Stefan Widmann
+* Stephan Muggli
+* Thomas Lorenz
+* Tobias Davids
+* Tobias Weichart
+
+====Design & Testing====
+* Angelika Müller
+* Anja Ebersbach
+* Anmol Arora
+* Astrid Scheffler
+* Benedikt Hofmann
+* Christian Graf
+* Christina Glaser
+* Dardan Diugan
+* David Schweiger
+* Eva Vogel
+* Florian Bäckmann
+* Gokhan Geyik
+* Karl Skodnik
+* Ljubica Sireta
+* Luisa Roth
+* Margit Link-Rodrigue
+* Michael Rödl
+* Michael Scherm
+* Miriam Schlindwein
+* Nathalie Köpff
+* Pramod Pradhan
+* Richard Heigl
+* Sabine Gürtler
+* Sabrina Dürr
+* Thomas Schnakenberg
+* Tobias Kornprobst
+* Verena Hösl
+
+====Contributors====
+* Aaron Schulz
+* Acamicamacaraca
+* Adam Wight
+* addshore
+* akulbii
+* Alangi Derick
+* Albert221
+* Alexander Vorwerk
+* Amir Sarabadani
+* Ammar
+* Ammarpad
+* amritsreekumar
+* Andrii Shykov
+* Antoine Musso
+* Aryeh Gregor
+* Aude
+* Basil Hershberger
+* bhofmann
+* Bill Pirkle
+* Brad Jorsch
+* Chad Horohoe
+* Christian Aistleitner
+* C. Scott Ananian
+* Daimona Eaytoy
+* DannyS712
+* David Sn
+* Demon
+* Derick Alangi
+* Dmitry Shevliakov
+* dragandanicic
+* DrishyaR
+* dvogel
+* Fabian Stelzer
+* Florian
+* Florianschmidtwelzow
+* Fomafix
+* Frederic Mohr
+* Gergő Tisza
+* Gerhard Diller
+* Guycn2
+* Hashar
+* hexmode
+* Holger Knust
+* idakuch
+* itSpiderman
+* James D. Forrester
+* Jan Göttlich
+* Jayprakash12345
+* Jenya Punchenko
+* Jforrester
+* jhsoby
+* Justin Du
+* Kunal Mehta
+* Legoktm
+* Leon
+* Lilu
+* Ljonka
+* Lucas Werkmeister
+* Manfred Dennerlein
+* MarcoAurelio
+* Mark A. Hershberger
+* MaxSem
+* Max Semenik
+* mglaser
+* miriam schlindwein
+* MtDu
+* nasty
+* Nikerabbit
+* Nikita Rana
+* oleksandrpinchuk
+* OmkarJ
+* Ori Livneh
+* Paladox
+* Peter Böhm
+* peter-ovchyn
+* Peter Starzer
+* Petr Pchelko
+* Phantom42
+* Pigpen
+* pmiguelpirzer
+* Prateek Saxena
+* ptrcnull
+* Purodha
+* pwirth
+* QChris
+* Rafid Aslam
+* Raimond Spekking
+* Raymond
+* RazeSoldier
+* Reedy
+* rlot
+* Rohan-cod
+* Rohitt Vashishtha
+* rvogel
+* sahil
+* Scott Shambarger
+* Shivam Shukla
+* Siebrand Mazeland
+* skuehn
+* Smuggli
+* Subin Siby
+* swidmann
+* TGC
+* Thalia
+* TheSandDoctor
+* Timo Tijhof
+* Tulsi Bhagat
+* Tweichart
+* Umherirrender
+* vladshapik
+* withoutaname
+* Yuki Shira
+* Yuriy Shnitkovskiy
+* ZabeMath
+* Zoranzoki21
+
+====Translation====
+BlueSpice is translated at translatewiki.net. Many, many thanks for your contributions!
+Special thanks go out to Raimond Spekking and Siebrand Mazeland for all the i18n reviews.
+
+===Standing on the shoulders of giants===
+We would like to thank all the people around MediaWiki. You've created a wonderful piece of software. Thanks a lot!

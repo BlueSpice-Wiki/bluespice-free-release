@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"A Chinese Wikipedian",
+			"Lakejason0",
+			"LittlePaw365",
+			"Liuxinyu970226",
+			"Wzl19371",
+			"佛壁灯",
+			"沈澄心"
+		]
+	},
+	"bs-watchlist-desc": "加入监视列表小组件和标签",
+	"bs-watchlist-pref-sort-time": "时间",
+	"bs-watchlist-pref-sort-title": "标题",
+	"bs-watchlist-tag-watchlist-desc": "显示由最多最近更改，且在您的监视列表上的页面。",
+	"bs-watchlist-ve-watchlistinspector-title": "监视列表",
+	"bs-watchlist-ve-watchlist-attr-count-label": "数量",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "最大标题长度",
+	"bs-watchlist-ve-watchlist-attr-order-label": "排序",
+	"bs-watchlist-tag-watchlist-attr-order-help": "显示按时间或页面名称排序的列表",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "页面名称",
+	"bs-watchlist-ve-watchlist-attr-time-label": "时间",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "页面名称帮助",
+	"bs-watchlist-droplet-name": "监视列表"
+}

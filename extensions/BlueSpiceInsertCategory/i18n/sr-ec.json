@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Kizule",
+			"Milicevic01",
+			"Zoranzoki21"
+		]
+	},
+	"bs-insertcategory-desc": "Дијалог за уношење линка ка категорији",
+	"bs-insertcategory-insertcat": "Унеси категорију",
+	"prefs-insertcategory": "Унеси категорију",
+	"bs-insertcategory-edit-dialog-button-label": "Уреди",
+	"bs-insertcategory-edit-dialog-title": "Уреди категорије",
+	"bs-insertcategory-edit-dialog-button-submit": "Готово",
+	"bs-insertcategory-edit-dialog-button-cancel": "Откажи",
+	"bs-insertcategory-edit-dialog-input-label": "Додељене категорије",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Подразумеване категорије",
+	"bs-insertcategory-no-categories": "Нема додељених категорија",
+	"bs-insertcategory-edit-dialog-tree-view": "Прикажи све категорије"
+}

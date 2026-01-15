@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chaduvari",
+			"Veeven"
+		]
+	},
+	"bs-pagesvisited-pref-widgetns": "పేరుబరులు:",
+	"bs-pagesvisited-pref-sort-time": "సమయం",
+	"bs-pagesvisited-pref-sort-pagename": "శీర్షిక",
+	"bs-pagesvisited-ve-pagesvisited-title": "చూసిన పేజీలు",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "లెక్క",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "జాబితాలో చూపిన పేజీల సంఖ్యను సెట్ చెయ్యి",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "శీర్షిక గరిష్ఠ నిడివి",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "శీర్షికను తుంచేసే ముందు గరిష్ఠంగా ఉండాల్సిన క్యారెక్టర్లను సెట్ చేసుకోండి",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "క్రమం",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "పేజీలు ఏ వరుసలో చూపించాలో సెట్ చేసుకోండి",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "పేరుబరులు",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "ఈ పేరుబరుల నుండి మాత్రమే పేజీలను చూపించు",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "సమయం",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "పేజీపేరు"
+}

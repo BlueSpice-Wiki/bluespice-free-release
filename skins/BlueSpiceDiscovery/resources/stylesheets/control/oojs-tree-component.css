@@ -1,0 +1,129 @@
+:root {
+	--bs-tree-expander-width: 40px;
+	--bs-tree-item-min-height: 35px;
+}
+
+.oojsplus-data-navigation-tree {
+	ul.tree-node-list > li > div,
+	ul.tree-node-list > li > ul.tree-node-list {
+		border-left: 5px solid transparent;
+		height: auto;
+		padding-left: 10px;
+	}
+
+	.oojs-ui-data-tree-item {
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+
+	ul.tree-node-list > li > div:hover,
+	ul.tree-node-list .active > div {
+		border-color: var( --sidebar-primary-marker--hover );
+		background-color: var( --sidebar-primary-bg--hover );
+		color: var( --sidebar-primary-fg--hover );
+	}
+
+	ul.tree-node-list .mws-tree-item a {
+		cursor: pointer;
+		text-decoration: none;
+		line-height: 1.5em;
+		padding: calc( (var( --bs-tree-item-min-height ) - 1.5em) / 2 ) 0;
+	}
+
+	ul.tree-node-list a:not( .new ),
+	ul.tree-node-list a:not( .new ):visited,
+	ul.tree-node-list a:not( .new ):hover {
+		color: var( --sidebar-primary-fg );
+	}
+
+	.tree-node-list .oojsplus-data-tree-expander {
+		position: relative !important;
+		margin-right: 0;
+	}
+
+	.oojsplus-data-tree-items .oojs-ui-data-tree-item .oojsplus-data-tree-expander a {
+		display: inline-block;
+		width: 20px;
+		padding: 5px 10px !important;
+	}
+
+	.oojsplus-data-tree-expander a:hover {
+		background-color: var( --sidebar-primary-bg--hover ) !important;
+	}
+
+	.oojsplus-data-tree-expander a::before {
+		font-family: 'fontawesome';
+		color: var( --sidebar-primary-marker--active );
+	}
+
+	.oojsplus-data-tree-expander.collapsed a::before {
+		content: '\f138';
+	}
+
+	.oojsplus-data-tree-expander.expanded a::before {
+		content: '\f13a';
+	}
+
+	.oojsplus-data-tree-expander a span.oo-ui-iconElement-icon {
+		display: none;
+	}
+
+	span.oojsplus-data-tree-label {
+		display: inline-block;
+		width: calc( 100% - var( --bs-tree-expander-width ) );
+		line-height: 1.5em;
+		padding: calc( (var( --mws-tree-item-min-height ) - 1.5em) / 2 ) 0;
+	}
+
+	li.leaf div > span:first-child {
+		margin-left: 32px;
+	}
+
+	ul.tree-node-list .mws-tree-item a:focus-visible {
+		outline: 1px solid var( --focus-visible );
+	}
+}
+
+/** Skeleton styles */
+.bs-skin-skeleton--tree-line {
+	background: linear-gradient( 90deg, #dadde3, #eaecf0, #dadde3 );
+	background-size: 200% 100%;
+	animation: shimmertree 2s infinite;
+	height: 20px;
+	margin: 15px 0;
+	border-radius: 4px;
+}
+
+.bs-skin-skeleton--tree {
+	padding-left: 20px;
+}
+
+.bs-skin-skeleton--tree-item {
+	margin-bottom: 8px;
+	position: relative;
+}
+
+.bs-skin-skeleton--tree-item::before {
+	content: '';
+	position: absolute;
+	left: -12px;
+	top: 6px;
+	width: 8px;
+	height: 8px;
+	background-color: #dadde3;
+	border-radius: 50%;
+}
+
+.bs-skin-skeleton--tree-item-last::before {
+	background-color: transparent;
+}
+
+@keyframes shimmertree {
+	0% {
+		background-position: -200% 0;
+	}
+
+	100% {
+		background-position: 200% 0;
+	}
+}

@@ -1,0 +1,27 @@
+.pdfcreator-excludestart,
+.pdfcreator-excludeend {
+	background-color: #f8f9fa;
+	padding: 5px 10px;
+	font-size: 0.6875rem;
+	color: #54595d;
+	font-style: italic;
+	text-align: center;
+	border: 1px solid #54595d;
+}
+
+.pdfcreator-excludestart {
+	border-bottom-color: transparent;
+}
+
+.pdfcreator-excludeend {
+	border-top-color: transparent;
+}
+
+.pagebreak {
+	border-top: 2px dotted #54595d;
+	background-color: #f8f9fa;
+	color: #54595d;
+	font-size: 0.6875rem;
+	font-style: italic;
+	text-align: center;
+}

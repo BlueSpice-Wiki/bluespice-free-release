@@ -1,0 +1,80 @@
+/* bootstrap overrides */
+.list-group .list-group-item {
+	background-color: transparent;
+	color: inherit;
+	padding: 0;
+	border: none;
+	font-size: 15px;
+}
+
+.list-group .list-group-item a {
+	width: 100%;
+	height: 100%;
+	min-height: 32px;
+	padding: 0 15px;
+}
+
+.btn-group button {
+	border-radius: 0;
+}
+
+.btn-group button:first-of-type {
+	border-right: 1px solid currentcolor;
+	border-radius: 5px 0 0 5px;
+}
+
+.btn-group button:last-of-type {
+	border-right: none;
+	border-radius: 0 5px 5px 0;
+}
+
+button.dropdown-toggle::after {
+	margin-left: 0;
+}
+
+.mediawiki [ class^='bi-' ]::before,
+.mediawiki [ class*=' bi-' ]::before {
+	vertical-align: 0;
+}
+
+/** bootstrap navbar-expand starts with navbar-expand-sm but we do need smaller devices as well! */
+.hw-navbar-expand {
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+.hw-navbar-expand .navbar-nav {
+	flex-direction: row;
+}
+
+.hw-navbar-expand .navbar-nav .dropdown-menu {
+	position: absolute;
+}
+
+.hw-navbar-expand .navbar-nav .nav-link {
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+.hw-navbar-expand .navbar-nav-scroll {
+	overflow: visible;
+}
+
+.hw-navbar-expand .navbar-collapse {
+	display: flex !important;
+	flex-basis: auto;
+}
+
+.hw-navbar-expand .navbar-toggler {
+	display: none;
+}
+
+div.nav.nav-tabs {
+	border-bottom: none;
+}
+
+/* necessary for tooltip who is online */
+.bs-tooltip.fade:not( .show ) {
+	filter: alpha( opacity=90 ); /* stylelint-disable-line function-no-unknown */
+	opacity: 0.9;
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sagan",
+			"З. ӘЙЛЕ",
+			"Лилиә",
+			"Янмурза Баки"
+		]
+	},
+	"bs-whoisonline-desc": "Хәҙерге ваҡытта \"online\" булған ҡатнашыусылар исемлеген күрһәтә.",
+	"bs-whoisonline-nousers": "Системаға берәү ҙә инмәне.",
+	"bs-whoisonline-widget-title": "Кем онлайн?",
+	"prefs-whoisonline": "Кем онлайн?",
+	"bs-whoisonline-pref-limitcount": "Күрһәтелгән ҡатнашыусыларҙың максималь иҫәбе:",
+	"bs-whoisonline-pref-orderby": "Айырыу:",
+	"bs-whoisonline-pref-orderby-time": "Эш ваҡыты",
+	"bs-whoisonline-pref-orderby-name": "Исеме"
+}

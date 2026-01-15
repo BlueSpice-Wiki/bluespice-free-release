@@ -1,0 +1,111 @@
+main .cs-comments {
+	margin-top: 25px;
+	border-top: 0.05px solid var( --comments-section-border-color );
+}
+
+main .cs-header {
+	margin: 25px 0;
+}
+
+main .cs-expanded .cs-comment-header {
+	background-color: transparent;
+}
+
+main .cs-stream {
+	margin-top: 1rem;
+}
+
+main .cs-stream .oo-ui-progressBarWidget {
+	margin: auto;
+}
+
+main .cs-avatar {
+	border-radius: 50%;
+}
+
+main .cs-comment {
+	background-color: var( --comments-bg );
+	padding: 10px;
+	border-radius: 2px;
+	overflow: visible;
+}
+
+main .cs-comment-header {
+	border-bottom: 1px solid var( --comments-section-border-color );
+}
+
+main .cs-head-comment > .cs-comment-header {
+	border-top-color: transparent;
+	background-color: transparent;
+}
+
+main a,
+main a:visited {
+	font-weight: normal;
+	color: var( --link-fg );
+}
+
+main .cs-comment-author a {
+	font-weight: normal;
+	color: var( --link-fg );
+}
+
+.cs-comment-body {
+	margin-left: 5px;
+}
+
+.cs-stream-footer {
+	margin: 25px 0 25px 30px;
+}
+
+/** edit mode **/
+main .cs-edit-box {
+	margin-top: 7px;
+	background-color: var( --comments-bg );
+	padding-bottom: 40px;
+}
+
+main .cs-title-edit-field,
+main .cs-body-edit-field {
+	border-color: var( --comments-edit-border-color );
+	font-family: 'Lato', sans-serif;
+}
+
+.cs-comments .cs-edit-box div.ve-ce-branchNode {
+	background-color: white;
+}
+
+.cs-edit-box.ve-area-wrapper .oo-ui-toolbar {
+	margin-bottom: 10px;
+}
+
+.cs-edit-box.ve-area-wrapper .oo-ui-toolbar-bar {
+	background-color: white;
+}
+
+.cs-submit-btn {
+	float: right;
+}
+
+.cs-cancel-btn {
+	float: right;
+}
+
+main .cs-target-comment {
+	border: 2px solid #3e5389;
+}
+
+main .cs-target-comment .cs-comment-header {
+	border: 2px solid transparent;
+}
+
+/* Prevent VEForAll from adding a border around normal VE editor */
+.ve-ce-branchNode:focus {
+	border-color: unset !important;
+	box-shadow: unset !important;
+}
+
+.ve-area-wrapper .ve-ce-branchNode:focus {
+	border-color: #52bad5 !important;
+	box-shadow: 0 0 7px rgba( 39, 128, 248, 0.15 ) !important;
+}

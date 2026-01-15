@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"San1joy23",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"standarddialogs-delete-subpages": "উপপাতা মুছে ফেলুন",
+	"standarddialogs-page-info-page-no-images-label": "এই পাতায় কোনও ছবি বা ফাইল নেই (অডিও এবং ভিডিও ফাইলসহ)",
+	"standarddialogs-page-info-page-no-templates-label": "এই পাতায় কোনও টেমপ্লেট নেই",
+	"standarddialogs-page-info-page-no-categories-label": "এই পাতায় কোনও বিষয়শ্রেণী নেই",
+	"standarddialogs-page-info-page-no-links-label": "এই পাতায় কোনও লিঙ্ক নেই",
+	"standarddialogs-page-info-page-no-extlinks-label": "এই পাতায় কোনও বহিঃসংযোগ নেই"
+}

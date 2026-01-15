@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Okras"
+		]
+	},
+	"bs-hidetitle-desc": "Добавляет волшебное слово <code><nowiki>__HIDETITLE__</nowiki></code>, чтобы скрыть заголовок страницы",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Показать",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Скрыть",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Видимость заголовка",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Здесь вы можете определить, будет ли отображаться заголовок или нет."
+}

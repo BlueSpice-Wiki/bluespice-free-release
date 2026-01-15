@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-instancestatus-desc": "Ajoute un aperçu de l’état de l’instance du wiki",
+	"instancestatus": "État de l’instance",
+	"bs-instancestatus-instance-status-bs-version-label": "Version de BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "Quota utilisateur",
+	"bs-instancestatus-instance-status-last-update-label": "Dernière mise à jour le",
+	"bs-instancestatus-instance-status-created-label": "Instance créée le",
+	"bs-instancestatus-instance-status-no-info": "Non disponible",
+	"bs-instancestatus-instance-status-sales-contact-label": "Contact BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "Contactez-nous ici : [$1 contact BlueSpice]",
+	"bs-instancestatus-overview-loader": "Collecte d’informations du wiki...",
+	"bs-instancestatus-instance-status-main-label": "Général"
+}

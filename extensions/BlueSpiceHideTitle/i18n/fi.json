@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Silvonen"
+		]
+	},
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Näytä",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Piilota",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Otsikon näkyvyys"
+}

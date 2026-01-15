@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alshamiri1",
+			"Asma",
+			"Meno25"
+		]
+	},
+	"bs-instancestatus-desc": "يضيف نظرة عامة على حالة مثيل wiki",
+	"instancestatus": "حالة المثيل",
+	"bs-instancestatus-instance-status-bs-version-label": "إصدار BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "حصة المستخدم",
+	"bs-instancestatus-instance-status-last-update-label": "آخر تحديث في",
+	"bs-instancestatus-instance-status-created-label": "تم إنشاء المثيل في",
+	"bs-instancestatus-instance-status-no-info": "غير متوفر",
+	"bs-instancestatus-instance-status-sales-contact-label": "اتصال BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "تواصل معنا هنا: [ $1 BlueSpice contact]",
+	"bs-instancestatus-overview-loader": "جمع معلومات الويكي ...",
+	"bs-instancestatus-instance-status-main-label": "عام"
+}

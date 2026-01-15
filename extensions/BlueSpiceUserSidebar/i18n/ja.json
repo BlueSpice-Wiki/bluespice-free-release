@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore",
+			"Shirayuki"
+		]
+	},
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "キーワードを編集",
+	"menueditor-ui-menu-keyword-usersidebar-label": "キーワード",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "キーワードを編集",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "キーワード"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aefgh39622",
+			"RYOUMA1117",
+			"Shirayuki",
+			"背番号4のエース"
+		]
+	},
+	"bs-authors-desc": "ページの作者のプロフィール画像を表示する",
+	"prefs-authors": "このページの作者",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|作者}}|作者}}",
+	"bs-authors-profileimage": "プロフィール画像",
+	"bs-authors-profileimage-change": "プロフィール画像を変更",
+	"bs-authors-show-all-authors": "より多くの作者が利用可能です",
+	"bs-authors-navigation-link-title": "このページの作者",
+	"bs-authors-navigation-link-text": "作者",
+	"apihelp-bs-pageauthors-store-summary": "コンテキストで提供されるページのすべての作成者を一覧表示する",
+	"bs-authors-info-dialog": "このページの作者"
+}

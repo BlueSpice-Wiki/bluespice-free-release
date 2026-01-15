@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"vuejsplus-desc": "Zbirka komponent Vuels",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Strni",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Razširi",
+	"vuejsplus-data-grid-option-sort-string-asc": "Razvrsti naraščajoče",
+	"vuejsplus-data-grid-option-sort-string-desc": "Razvrsti padajoče",
+	"vuejsplus-data-grid-option-filter-string": "Poišči",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|Ena najdena vrstica|$1 najdeni vrstici|$1 najdene vrstice|$1 najdenih vrstic}}",
+	"vuejsplus-data-grid-option-button-aria-label": "Možnosti stolpca $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Obkljukano",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Neobkljukano",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": " Nevtralno",
+	"vuejsplus-data-grid-option-filter-date-from-label": "Od datuma",
+	"vuejsplus-data-grid-option-filter-date-to-label": "Do datuma"
+}

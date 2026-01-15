@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"enhancedfilelist": "Filliste",
+	"enhanced-standard-uis-filelist-grid-file-title": "Filnavn",
+	"enhanced-standard-uis-filelist-grid-author-title": "Opphavsperson",
+	"enhanced-standard-uis-filelist-grid-date-title": "Dato",
+	"enhanced-standard-uis-filelist-grid-type-title": "Type",
+	"enhanced-standard-uis-filelist-grid-size-title": "Størrelse",
+	"enhanced-standard-uis-filelist-grid-categories-title": "Kategorier",
+	"enhanced-standard-uis-filelist-grid-comment-title": "Kommentar",
+	"enhanced-standard-uis-filelist-grid-info-title": "Info",
+	"enhanced-standard-uis-filelist-grid-reupload-title": "Last opp",
+	"enhanced-standard-uis-filelist-grid-delete-title": "Slett",
+	"enhanced-standard-uis-filelist-panel-search-placeholder-label": "Søk etter fil",
+	"enhanced-standard-uis-filelist-panel-new-file-label": "Ny fil",
+	"enhanced-standard-uis-filelist-panel-list-label": "Liste",
+	"enhanced-standard-uis-filelist-dialog-info": "Filinfo",
+	"enhanced-standard-uis-filelist-dialog-action-close-title": "Lukk",
+	"enhanced-standard-uis-filelist-dialog-action-done-label": "Ferdig",
+	"enhanced-standard-uis-filelist-dialog-action-file-label": "Åpne filside",
+	"enhanced-standard-uis-filelist-dialog-history-grid-version": "Versjon",
+	"enhanced-standard-uis-filelist-dialog-page-preview-label": "Forhåndsvis",
+	"enhanced-standard-uis-filelist-dialog-page-history-label": "Versjonshistorikk",
+	"enhanced-standard-uis-filelist-dialog-page-data-label": "Metadata",
+	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "Ingen metadata tilgjengelig for denne fila",
+	"enhanced-standard-uis-filelist-notify-copy-clipboard": "Fillenke kopiert til utklippstavlen.",
+	"enhanced-standard-uis-allpages-watch-label": "Overvåk siden $1",
+	"enhanced-standard-uis-allpages-unwatch-label": "Avslutt overvåking av siden $1",
+	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|resultat|resultater}} funnet"
+}

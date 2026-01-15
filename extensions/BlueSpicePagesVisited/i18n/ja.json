@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore",
+			"Otokoume",
+			"Shirayuki",
+			"Sou0012",
+			"しぃ",
+			"もなー(偽物)"
+		]
+	},
+	"bs-pagesvisited-desc": "最後に訪問したページのパーソナライズされたリストを提供します",
+	"prefs-pagesvisited": "閲覧したページ",
+	"bs-pagesvisited-widget-title": "閲覧したページ",
+	"bs-pagesvisited-error-nsnotvalid": "指定した{{PLURAL:$1|名前空間}} <code>$2</code> は有効ではありません。",
+	"bs-pagesvisited-pref-widgetlimit": "項目数の上限:",
+	"bs-pagesvisited-pref-widgetns": "名前空間:",
+	"bs-pagesvisited-pref-widgetsortodr": "並び順:",
+	"bs-pagesvisited-pref-sort-time": "日時",
+	"bs-pagesvisited-pref-sort-pagename": "ページ名",
+	"bs-pagesvisited-tag-pagesvisited-desc": "最近訪れたページのリストを表示します。このリストはパラメータで制限することができます。",
+	"bs-pagesvisited-ve-pagesvisited-title": "閲覧したページ",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "回数",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "リストに表示するページ数を設定する",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "並び順",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "名前空間",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "これらの名前空間のページのみを表示します",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "時刻",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "ページ名"
+}

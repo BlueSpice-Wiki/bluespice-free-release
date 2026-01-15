@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Pyscowicz",
+			"Rönttönen"
+		]
+	},
+	"flexiskin-label": "Ulkoasu",
+	"flexiskin-ui-plugin-content-header-color-label": "Väri",
+	"flexiskin-ui-plugin-color-settings-label": "Ulkoasun värit",
+	"flexiskin-ui-plugin-navbar-colors-label": "Otsikon väri",
+	"flexiskin-ui-plugin-colors-background-navbar-label": "Ylätunnisteen tausta",
+	"flexiskin-ui-plugin-colors-foreground-navbar-label": "Ylätunnisteen etuala",
+	"flexiskin-ui-plugin-sidebar-primary-colors-label": "Sivuvalikon värit",
+	"flexiskin-ui-plugin-colors-background-sidebar-primary-label": "Sivupalkin tausta",
+	"flexiskin-ui-plugin-colors-foreground-sidebar-primary-label": "Sivupalkin etuala",
+	"flexiskin-ui-plugin-footer-colors-label": "Alapalkin värit",
+	"flexiskin-ui-plugin-colors-background-footer-label": "Alaviitteen tausta",
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Alaviitteen etuala"
+}

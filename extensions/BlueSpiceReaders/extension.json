@@ -1,0 +1,214 @@
+{
+	"name": "BlueSpiceReaders",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceReaders",
+	"author": [
+		"Stephan Muggli",
+		"Leonid Verhovskij",
+		"Dejan Savuljesku"
+	],
+	"descriptionmsg": "bs-readers-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceReaders": {
+					"className": "\\BlueSpice\\Readers\\Extension",
+					"extPath": "/BlueSpiceReaders"
+				}
+			},
+			"PermissionRegistry": {
+				"viewreaders": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
+				},
+				"viewrevisionreaders": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
+				}
+			}
+		},
+		"BlueSpicePrivacy": {
+			"Handlers": [
+				"\\BlueSpice\\Readers\\Privacy\\Handler"
+			]
+		}
+	},
+	"GroupPermissions": {
+		"*": {
+			"viewreaders": false,
+			"viewrevisionreaders": false
+		},
+		"user": {
+			"viewreaders": false,
+			"viewrevisionreaders": false
+		},
+		"sysop": {
+			"viewreaders": true,
+			"viewrevisionreaders": true
+		}
+	},
+	"AvailableRights": [
+		"viewreaders",
+		"viewrevisionreaders"
+	],
+	"SpecialPages": {
+		"Readers": {
+			"class": "\\BlueSpice\\Readers\\Special\\Readers",
+			"services": [ "UserFactory" ]
+		},
+		"RevisionReaders": "\\BlueSpice\\Readers\\Special\\RevisionReaders"
+	},
+	"JobClasses": {
+		"BlueSpiceReadersInsertTrace": "\\BlueSpice\\Readers\\Job\\InsertTrace"
+	},
+	"APIModules": {
+		"bs-readers-data-store": "BSApiReadersDataStore",
+		"bs-readers-users-store": "BSApiReadersUsersStore",
+		"bs-readers-page-readers-store": "\\BlueSpice\\Readers\\Api\\Store\\PageReaders",
+		"bs-readers-revision-readers-store": "\\BlueSpice\\Readers\\Api\\Store\\RevisionReaders",
+		"bs-readers-tasks": "\\BlueSpice\\Readers\\Api\\Task\\PageReaders"
+	},
+	"MessagesDirs": {
+		"Readers": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ReadersAlias": "languages/SpecialReaders.alias.php"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"ReadersNamespaceBlacklist": {
+			"description": "Defaults to NS_FILE, NS_FILE_TALK, NS_MEDIAWIKI, NS_MEDIAWIKI_TALK, NS_CATEGORY, NS_CATEGORY_TALK",
+			"value": [ 6, 7, 8, 9, 14, 15 ],
+			"public": false
+		},
+		"ReadersCleanData": {
+			"description": "Set to 'true' if you want to remove old entries from the database",
+			"value": false
+		},
+		"ReadersCleanDataTTL": {
+			"description": "How many days each readers entry will be available in the database (365 days * 3 = 1095 days or 3 years)",
+			"value": 1095
+		}
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\Readers\\": "src/"
+	},
+	"AutoloadClasses": {
+		"BSApiReadersDataStore": "includes/api/BSApiReadersDataStore.php",
+		"BSApiReadersUsersStore": "includes/api/BSApiReadersUsersStore.php"
+	},
+	"TestAutoloadClasses": {
+		"BSReadersFixtures": "tests/phpunit/BSReadersFixtures.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.readers.specialReadersPage": {
+			"scripts": [
+				"ext.bluespice.readers.specialReadersPage.js",
+				"ui/panel/SpecialReadersPage.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			],
+			"messages": [
+				"bs-readers-header-username",
+				"bs-readers-header-readerspath",
+				"bs-readers-header-ts"
+			]
+		},
+		"ext.bluespice.readers.specialReadersUser": {
+			"scripts": [
+				"ext.bluespice.readers.specialReadersUser.js",
+				"ui/panel/SpecialReadersUser.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			],
+			"messages": [
+				"bs-readers-header-readerspath",
+				"bs-readers-header-ts",
+				"bs-readers-header-page"
+			]
+		},
+		"ext.bluespice.readers.specialRevisionReaders": {
+			"scripts": [
+				"ext.bluespice.readers.specialRevisionReaders.js",
+				"ui/panel/SpecialRevisionReaders.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			],
+			"messages": [
+				"bs-readers-header-read-by",
+				"bs-readers-header-revision-id",
+				"bs-readers-header-revision-date",
+				"bs-readers-header-read-on"
+			]
+		},
+		"ext.bluespice.readers.insertTrace": {
+			"scripts": [
+				"bluespice.readers.insertTrace.js"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.readers.dialoginfo.pages": {
+			"scripts": [
+				"bluespice.readers.ReadersInformationPage.js"
+			],
+			"messages": [
+				"bs-readers-info-dialog",
+				"bs-readers-info-dialog-column-readers",
+				"bs-readers-permission-error"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"oojs-ui-core"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceReaders/resources"
+	},
+	"HookHandlers": {
+		"standard-dialogs": {
+			"class": "\\BlueSpice\\Readers\\HookHandler\\StandardDialogs"
+		},
+		"addReaders": {
+			"class": "\\BlueSpice\\Readers\\HookHandler\\AddReaders"
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"\\BlueSpice\\Readers\\Hook\\LoadExtensionSchemaUpdates\\AddReadersTable::callback"
+		],
+		"BeforePageDisplay": [
+			"\\BlueSpice\\Readers\\Hook\\BeforePageDisplay\\AddResources::callback"
+		],
+		"SkinTemplateNavigation::Universal": "addReaders",
+		"UserMergeAccountFields": "\\BlueSpice\\Readers\\Hook\\UserMergeAccountFields\\MergeReadersDBFields::callback",
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

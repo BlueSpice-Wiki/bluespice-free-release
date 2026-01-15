@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"FarsiNevis"
+		]
+	},
+	"bs-bluespiceabout-desc": "اطلاعاتی در بارهٔ «چاشنی آبی»",
+	"bs-bluespiceabout-about-bluespice": "در بارهٔ «چاشنی آبی»",
+	"bluespiceabout": "در بارهٔ «چاشنی آبی»",
+	"action-bluespiceabout-viewspecialpage": "مشاهدهٔ صفحهٔ ویژهٔ «{{int:bs-bluespiceabout-about-bluespice}}»",
+	"right-bluespiceabout-viewspecialpage": "دسترسی به صفحهٔ ویژهٔ [[Special:BlueSpiceAbout]]"
+}

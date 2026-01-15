@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Mansil alfalb",
+			"Vitorvicentevalente"
+		]
+	},
+	"bs-whoisonline-desc": "Mostra uma lista de utilizadores que estão atualmente on-line",
+	"bs-whoisonline-nousers": "Ninguém está autenticado.",
+	"bs-whoisonline-widget-title": "Quem está on-line?",
+	"prefs-whoisonline": "Quem está on-line?",
+	"bs-whoisonline-pref-limitcount": "Número máximo de utilizadores mostrados:",
+	"bs-whoisonline-pref-orderby": "Ordenar por:",
+	"bs-whoisonline-pref-orderby-time": "Duração da sessão",
+	"bs-whoisonline-pref-orderby-name": "Nome",
+	"bs-whoisonline-collection-type-userlogin": "Autenticação do utilizador",
+	"bs-whoisonline-collection-var-login": "Entrar",
+	"bs-whoisonline-statistics-report-login-duration": "Duração de sessão",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Duração de sessão (seg)",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Mostra o número de utilizadores que iniciaram sessão nos últimos 10 minutos",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Contagem de quem está em linha",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Mostra todos os utilizadores que iniciaram sessão nos últimos 10 minutos. O resultado é um balão de diálogo quando um utilizador passa o ponteiro do rato sobre a hiperligação relacionada",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Janela flutuante de quem está em linha",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Número de inícios de sessão",
+	"bs-whoisonline-statistics-report-login-number": "Inícios de sessão",
+	"bs-whoisonline-droplet-count-name": "Número de utilizadores autenticados",
+	"bs-whoisonline-droplet-count-description": "Número de utilizadores atualmente autenticados",
+	"bs-whoisonline-droplet-popup-name": "Lista de utilizadores autenticados",
+	"bs-whoisonline-droplet-popup-description": "Janela flutuante com uma lista de todos os utilizadores que estão atualmente autenticados"
+}

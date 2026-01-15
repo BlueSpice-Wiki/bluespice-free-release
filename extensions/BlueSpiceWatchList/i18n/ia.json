@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-watchlist-desc": "Adde un widget e un etiquetta pro le observatorio",
+	"bs-watchlist-pref-sort-time": "Hora",
+	"bs-watchlist-pref-sort-title": "Titulo",
+	"bs-watchlist-tag-watchlist-desc": "Monstrar le articulos que ha le modificationes le plus recente e que es in tu observatorio.",
+	"bs-watchlist-window-watchlist-title": "Observatorio",
+	"bs-watchlist-window-watchlist-intro": "Isto es un vista general de tote le paginas sur tu observatorio. Tu pote etiam commutar al [[Special:Watchlist|pagina classic del observatorio]].",
+	"bs-watchlist-grid-watchlist-column-link-header": "Pagina",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "Modificationes non legite",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "Inspectar modificationes",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "Pagina de discussion",
+	"bs-watchlist-grid-watchlist-label-filter": "Filtro",
+	"bs-watchlist-ve-watchlistinspector-title": "Observatorio",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Numero",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Numero de entratas del observatorio que debe esser monstrate",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Longitude maximal del titulo",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Numero de litteras del titulo que debe esser monstrate. Pote esser un numero inter 5 e 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Ordine",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Monstra le lista in ordine de hora o de nomine de pagina",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Nomine de pagina",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Hora",
+	"bs-watchlist-tag-watchlist-no-user": "Le observatorio non pote esser monstrate perque necun usator ha aperite session",
+	"bs-watchlist-tag-watchlist-no-entries": "Nulle cambiamentos de paginas a monstrar in le observatorio",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Adjuta sur le nomine de pagina",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Adjuta sur le hora",
+	"bs-watchlist-droplet-name": "Observatorio",
+	"bs-watchlist-droplet-description": "Modificationes recente de paginas includite in le observatorio"
+}

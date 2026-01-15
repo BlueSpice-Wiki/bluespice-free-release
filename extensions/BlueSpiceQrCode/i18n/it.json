@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16",
+			"GpieroMW",
+			"Stefano"
+		]
+	},
+	"bs-qr-code-extension-description": "Mostra un codice QR con un link alla pagina corrente nella barra degli strumenti.",
+	"bs-qr-code-action-qr-code-text": "Codice QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Codice QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Codice QR per $1",
+	"bs-qr-code-api-no-page": "Parametro 'pagina' vuoto",
+	"apihelp-bs-qr-code-param-size": "Dimensione del codice QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Chiamata API predefinita",
+	"bs-qr-code-alt-text": "Codice QR per $1",
+	"bs-qr-code-tag-qrcode-title": "Codice QR",
+	"bs-qr-code-tag-attr-page-label": "Pagina",
+	"bs-qr-code-tag-attr-query-label": "Parametro",
+	"bs-qr-code-tag-attr-size-label": "Dimensione",
+	"bs-qr-code-droplet-name": "Codice QR",
+	"bs-qr-code-tag-attr-size-option-large": "grande"
+}

@@ -1,0 +1,14 @@
+[
+	{
+		"path": "/mws/v1/category-query-store",
+		"class": "MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Rest\\CategoryQueryStore",
+		"services": [
+			"HookContainer",
+			"DBLoadBalancer",
+			"TitleFactory",
+			"ContentLanguage",
+			"NamespaceInfo",
+			"PageProps"
+		]
+	}
+]

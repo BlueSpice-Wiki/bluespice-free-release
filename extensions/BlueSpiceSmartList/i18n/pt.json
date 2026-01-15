@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Osnard",
+			"Vitorvicentevalente"
+		]
+	},
+	"bs-smartlist-desc": "Mostra as cinco últimas alterações da wiki numa lista",
+	"prefs-smartlist": "Lista inteligente",
+	"bs-smartlist-recent-changes": "Mudanças recentes",
+	"bs-smartlist-no-entries": "Não foram encontrados resultados.",
+	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|O espaço nominal fornecido é inválido|Os espaços nominais fornecidos são inválidos}}: $2.",
+	"bs-smartlist-invalid-target": "O destino fornecido não é um título de página válido.",
+	"bs-smartlist-comment": "Comentário: $1.",
+	"bs-smartlist-sort-asc": "ascendente",
+	"bs-smartlist-sort-desc": "descendente",
+	"bs-smartlist-day": "Dia",
+	"bs-smartlist-week": "Semana",
+	"bs-smartlist-month": "Mês",
+	"bs-smartlist-time": "Hora",
+	"bs-smartlist-title": "Título",
+	"bs-smartlist-mostvisitedpages": "Páginas mais visitadas",
+	"bs-smartlist-mosteditedpages": "Páginas mais editadas",
+	"bs-smartlist-mostactiveusers": "Utilizadores mais ativos (por edições)",
+	"bs-smartlist-lastedits": "As minhas edições",
+	"bs-smartlist-noedits": "Não foram encontradas edições.",
+	"bs-smartlist-mostactiveusersdesc": "Lista dos utilizadores mais ativos ordenada pelo seu número de edições.",
+	"bs-smartlist-mosteditedpagesdesc": "Lista das páginas mais editadas ordenada pelo número de edições.",
+	"bs-smartlist-mostvisitedpagesdesc": "Lista das páginas mais visitadas ordenada pelo número de visitas.",
+	"bs-smartlist-lasteditsdesc": "Lista de páginas que editou.",
+	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> precisa de ser instalada."
+}

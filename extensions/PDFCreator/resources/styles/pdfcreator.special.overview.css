@@ -1,0 +1,18 @@
+.pdfcreator-template-edit-source-dlg-details-header {
+	margin: 1rem 0 1rem;
+	border-bottom: 1px solid #a5a5a5;
+	justify-content: space-between;
+}
+
+.pdfcreator-template-edit-source-dlg-details-header .toggle-icon {
+	float: right;
+}
+
+.pdfcreator-template-edit-source-dlg-switch-source {
+	margin: 1rem 0 0;
+	font-weight: bold;
+}
+
+.pdfcreator-no-edit-dlg-table {
+	margin: 10px;
+}

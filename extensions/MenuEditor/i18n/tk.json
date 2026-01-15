@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"TayfunEt.",
+			"Zolgoyo"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label-edit": "Wiki baglanyşygyny redaktirläň",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Salgy redaktirläň",
+	"menueditor-ui-menu-raw-text-label-edit": "Tekst ýa-da habar düwmesini redaktirläň",
+	"menueditor-ui-menu-keyword-label-edit": "Açar sözi redaktirläň",
+	"menueditor-ui-edit-label": "Düzet"
+}

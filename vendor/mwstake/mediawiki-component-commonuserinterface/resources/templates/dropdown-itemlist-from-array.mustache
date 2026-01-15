@@ -1,0 +1,5 @@
+<ul{{#list-id}} id="{{.}}"{{/list-id}}{{#list-class}} class="{{.}}"{{/list-class}}>
+{{#links}}
+	<li><a{{#id}} id="{{.}}"{{/id}} class="dropdown-item{{#class}} {{.}}{{/class}}" href="{{href}}"{{#title}} title="{{.}}"{{/title}}{{#data}} {{{.}}}{{/data}}{{#aria}} {{{.}}}{{/aria}}{{#rel}} rel="{{.}}"{{/rel}}{{#target}} target="{{.}}"{{/target}}>{{{text}}}</a></li>
+{{/links}}
+</ul>

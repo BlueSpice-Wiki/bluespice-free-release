@@ -1,0 +1,137 @@
+{
+	"name": "BlueSpiceQrCode",
+	"version": "5.1.0",
+	"license-name": "GPL-3.0-only",
+	"author": [
+		"Josef Konrad"
+	],
+	"descriptionmsg": "bs-qr-code-extension-description",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceQrCode",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceQrCode": {
+					"className": "\\BlueSpice\\QrCode\\Extension",
+					"extPath": "/BlueSpiceQrCode",
+					"package": "BlueSpice Pro"
+				}
+			},
+			"TagRegistry": {
+				"qrcode": "\\BlueSpice\\QrCode\\Tag\\QrCode"
+			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"TagDefinitions": [
+				"ext.bluespice.qrCode.visualEditor"
+			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"qr-code": {
+					"class": "\\BlueSpice\\QrCode\\ContentDroplet\\QrCodeDroplet"
+				}
+			}
+		},
+		"PDFCreator": {
+			"PreProcessors": {
+				"BSQrCode": {
+					"class": "BlueSpice\\QrCode\\Integration\\PDFCreator\\PreProcessor\\ImageProcessor",
+					"services": [ "UrlUtils", "TitleFactory", "RepoGroup" ]
+				}
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceExpiry": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\QrCode\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\QrCode\\Tests\\": "tests/phpunit/"
+	},
+	"ResourceModules": {
+		"ext.qrcode.dialog": {
+			"scripts": [
+				"QrCode.js",
+				"oojs/ui/dialog/OrCodeDialog.js"
+			],
+			"messages": [
+				"bs-qr-code-action-qr-code-dialog-title",
+				"bs-qr-code-action-qr-code-dialog-alt"
+			],
+			"dependencies": [
+				"ext.bluespice.oojs"
+			]
+		},
+		"ext.bluespice.qrCode.visualEditor": {
+			"scripts": [
+				"util/tag/QrCodeDefinition.js"
+			],
+			"styles": [
+				"stylesheets/ext.bluespice.qrcode.droplet.css"
+			],
+			"messages": [
+				"bs-qr-code-tag-qrcode-desc",
+				"bs-qr-code-tag-qrcode-title",
+				"bs-qr-code-tag-attr-page-label",
+				"bs-qr-code-tag-attr-page-help",
+				"bs-qr-code-tag-attr-query-label",
+				"bs-qr-code-tag-attr-query-help",
+				"bs-qr-code-tag-attr-desc-label",
+				"bs-qr-code-tag-attr-desc-help",
+				"bs-qr-code-tag-attr-size-label",
+				"bs-qr-code-tag-attr-size-help",
+				"bs-qr-code-tag-attr-size-option-small",
+				"bs-qr-code-tag-attr-size-option-medium",
+				"bs-qr-code-tag-attr-size-option-large"
+			],
+			"dependencies": [
+				"ext.bluespice.visualEditorConnector.tags.classes"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceQrCode/resources"
+	},
+	"HookHandlers": {
+		"skin": {
+			"class": "\\BlueSpice\\QrCode\\HookHandler\\Skin"
+		},
+		"discovery-skin": {
+			"class": "\\BlueSpice\\QrCode\\HookHandler\\BlueSpiceDiscovery"
+		},
+		"registerDynamicFileModule": {
+			"class": "\\BlueSpice\\QrCode\\Hook\\RegisterDynamicFileModule",
+			"services": [ "TitleFactory" ]
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"\\BlueSpice\\QrCode\\Hook\\BeforePageDisplay\\AddRessources::callback"
+		],
+		"SkinTemplateNavigation::Universal": [
+			"skin"
+		],
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": [
+			"discovery-skin"
+		],
+		"SetupAfterCache": "\\BlueSpice\\QrCode\\Hook\\SetupAfterCache\\AddFileRepo::callback",
+		"MWStakeDynamicFileDispatcherRegisterModule": "registerDynamicFileModule"
+	},
+	"APIModules": {
+		"bs-qr-code": "\\BlueSpice\\QrCode\\Api\\QrCodeApi"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

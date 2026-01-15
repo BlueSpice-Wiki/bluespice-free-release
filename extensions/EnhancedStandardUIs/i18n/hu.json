@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos"
+		]
+	},
+	"enhanced-standard-uis-history-grid-header-size-label": "Méret",
+	"enhanced-standard-uis-history-grid-header-summary-label": "Összefoglaló",
+	"enhanced-standard-uis-history-grid-header-undo-title": "Visszavonás"
+}

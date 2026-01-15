@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dinhxuanduyet",
+			"SongNgu.xyz"
+		]
+	},
+	"bs-avatars-desc": "Cung cấp hình ảnh chung và hình ảnh cá nhân của người dùng",
+	"bs-avatars-pref-generator": "Trình tạo ảnh đại diện:",
+	"bs-avatars-pref-userimage-img-alt": "Hình ảnh người dùng hiện tại của bạn",
+	"bs-avatars-upload-complete": "Hình ảnh đã được tải lên.",
+	"bs-avatars-generate-complete": "Một hình đại diện mới đã được tạo ra.",
+	"bs-avatars-upload-label": "Hình ảnh",
+	"bs-avatars-generate-new-label": "Tạo hình đại diện mới",
+	"bs-avatars-file-upload-fieldset-title": "Tải hình ảnh lên",
+	"bs-avatars-auto-generate-fieldset-title": "Tự động tạo ra avatar",
+	"apihelp-bs-avatars-tasks-summary": "Tải lên, tạo và thiết lập hình đại diện người dùng",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Tham số \"tên người dùng\" là bắt buộc và phải chứa tên người dùng hợp lệ",
+	"bs-avatars-pref-generator-help": "Ảnh đại diện được tạo khi người dùng không tải ảnh đại diện lên. InstantAvatar: Tạo ảnh đại diện dựa trên việc sử dụng chữ cái đầu của tên thật hoặc các trường tên người dùng. Identicon: Tạo ảnh đại diện dựa trên các phần ID của người dùng."
+}

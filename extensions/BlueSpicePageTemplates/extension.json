@@ -1,0 +1,254 @@
+{
+	"name": "BlueSpicePageTemplates",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageTemplates",
+	"author": [
+		"Markus Glaser",
+		"Stephan Muggli"
+	],
+	"descriptionmsg": "bs-pagetemplates-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0",
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpicePageTemplates": {
+					"className": "\\BlueSpice\\PageTemplates\\Extension",
+					"extPath": "/BlueSpicePageTemplates"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"PageTemplatesForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
+				"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
+				"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNs::getInstance"
+			},
+			"TagRegistry": {
+				"pagetemplates": "\\BlueSpice\\PageTemplates\\Tag\\PageTemplates"
+			},
+			"AdminToolRegistry": {
+				"bs-pagetemplates": "BlueSpice\\PageTemplates\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"pagetemplatesadmin-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin",
+						"structuremanager"
+					]
+				}
+			}
+		},
+		"MWStakeContentProvisioner": {
+			"ContentManifests": {
+				"DefaultContentProvisioner": [
+					"extensions/BlueSpicePageTemplates/data/Content/PageTemplates/manifest.json"
+				],
+				"DefaultPageTemplates": [
+					"extensions/BlueSpicePageTemplates/data/Content/PageTemplates/manifest.json"
+				]
+			},
+			"ContentProvisioners": {
+				"DefaultPageTemplates": {
+					"class": "\\BlueSpice\\PageTemplates\\ContentProvisioner\\PageTemplatesProvisioner",
+					"args": [
+						"DefaultPageTemplates"
+					],
+					"services": [
+						"ContentLanguage",
+						"LanguageFallback",
+						"TitleFactory",
+						"DBLoadBalancer"
+					]
+				}
+			}
+		},
+		"PDFCreator": {
+			"StylesheetsProvider": {
+				"PageTemplates": {
+					"class": "BlueSpice\\PageTemplates\\Integration\\PDFCreator\\StylesheetsProvider\\PageTemplates"
+				}
+			}
+		}
+	},
+	"GroupPermissions": {
+		"*": {
+			"pagetemplatesadmin-viewspecialpage": false
+		},
+		"user": {
+			"pagetemplatesadmin-viewspecialpage": false
+		},
+		"sysop": {
+			"pagetemplatesadmin-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"pagetemplatesadmin-viewspecialpage"
+	],
+	"APIModules": {
+		"bs-pagetemplates-store": "BSApiPageTemplatesStore",
+		"bs-pagetemplates-tasks": "BSApiPageTemplatesTasks",
+		"bs-pagetemplate-tags-store": "BSApiPageTemplateTagsStore"
+	},
+	"MessagesDirs": {
+		"PageTemplates": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\PageTemplates\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\PageTemplates\\Tests\\": "tests/phpunit/"
+	},
+	"AutoloadClasses": {
+		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",
+		"BSApiPageTemplatesTasks": "includes/api/BSApiPageTemplatesTasks.php",
+		"BSApiPageTemplateTagsStore": "includes/api/BSApiPageTemplateTagsStore.php",
+		"BSPageTemplateList": "includes/BSPageTemplateList.php",
+		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php",
+		"BSTransformNSData": "maintenance/BSTransformNSData.php"
+	},
+	"TestAutoloadClasses": {
+		"BSPageTemplateFixtures": "tests/phpunit/utility/BSPageTemplateFixtures.php"
+	},
+	"ExtensionMessagesFiles": {
+		"PageTemplatesAdminAlias": "SpecialPageTemplatesAdmin.alias.php"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"PageTemplatesExcludeNs": {
+			"value": [
+				-2, -1, 5, 6, 7, 8, 9, 10, 11, 14, 15
+			]
+		},
+		"PageTemplatesForceNamespace": {
+			"value": false,
+			"descriptionmsg": "bs-pagetemplates-pref-forcenamespace",
+			"public": true
+		},
+		"PageTemplatesHideIfNotInTargetNs": {
+			"value": true,
+			"descriptionmsg": "bs-pagetemplates-pref-hideifnotintargetns",
+			"public": true
+		},
+		"PageTemplatesHideDefaults": {
+			"value": false,
+			"descriptionmsg": "bs-pagetemplates-pref-hidedefaults",
+			"public": true
+		},
+		"PageTemplatesExcludeRegex": {
+			"value": [
+				"^.*\\/Sidebar$"
+			]
+		}
+	},
+	"SpecialPages": {
+		"PageTemplatesAdmin": {
+			"class": "BlueSpice\\PageTemplates\\Special\\PageTemplatesAdministration"
+		}
+	},
+	"ResourceModules": {
+		"ext.bluespice.pageTemplates": {
+			"scripts": [
+				"ui/dialog/EditTemplate.js",
+				"ui/dialog/DeleteTemplate.js",
+				"ui/Panel.js",
+				"bluespice.pageTemplates.js"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.managerPanel",
+				"ext.bluespice",
+				"oojs-ui.styles.icons-user",
+				"oojs-ui.styles.icons-moderation",
+				"oojs-ui.styles.icons-editing-core",
+				"ext.oOJSPlus.data"
+			],
+			"messages": [
+				"bs-pagetemplates-headerlabel",
+				"bs-pagetemplates-headertargetnamespace",
+				"bs-pagetemplates-headertags",
+				"bs-pagetemplates-tipeditdetails",
+				"bs-pagetemplates-tipdeletetemplate",
+				"bs-pagetemplates-tipaddtemplate",
+				"bs-pagetemplates-label-tpl",
+				"bs-pagetemplates-label-desc",
+				"bs-pagetemplates-label-tags",
+				"bs-pagetemplates-placeholder-tags",
+				"bs-pagetemplates-label-targetns",
+				"bs-pagetemplates-label-article",
+				"bs-pagetemplates-confirm-deletetpl",
+				"bs-pagetemplates-remove-message-unknown",
+				"bs-pagetemplates-remove-message-success",
+				"bs-pagetemplates-remove-message-failure"
+			]
+		},
+		"ext.bluespice.pageTemplates.tag": {
+			"scripts": [
+				"bluespice.pageTemplates.tag.js",
+				"TemplateSearch.js"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.oOJSPlus.widgets"
+			],
+			"messages": [
+				"bs-pagetemplates-no-matching-results-label",
+				"bs-pagetemplates-search-template-placeholder"
+			]
+		},
+		"ext.bluespice.pageTemplates.styles": {
+			"styles": "bluespice.pageTemplates.less",
+			"class": "\\BlueSpice\\ResourceModule\\LessVars"
+		},
+		"ext.bluespice.pageTemplates.standardtemplate.styles": {
+			"styles": "bluespice.pageTemplates.standardtemplate.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpicePageTemplates/resources"
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\CommonUserInterface"
+		},
+		"addPreloadForActions": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\AddPreloadForActions"
+		},
+		"writeNamespaceConfiguration": {
+			"class": "\\BlueSpice\\PageTemplates\\Hook\\WriteNamespaceConfiguration"
+		},
+		"handleShowingTemplateList": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\HandleShowingTemplateList",
+			"services": [ "ConfigFactory", "TitleFactory" ]
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"common-user-interface"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback"
+		],
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageTemplates\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageTemplatesTag::callback",
+		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
+		"BSApiNamespaceStoreMakeData": "BlueSpice\\PageTemplates\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
+		"NamespaceManager::editNamespace": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerEditNamespace\\SetPageTemplateValues::callback",
+		"NamespaceManagerBeforePersistSettings": "writeNamespaceConfiguration",
+		"HtmlPageLinkRendererBegin": "handleShowingTemplateList",
+		"MessagesPreLoad": "handleShowingTemplateList",
+		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
+		"SkinTemplateNavigation::Universal": "addPreloadForActions"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-instancestatus-instance-status-bs-version-label": "Verzija BlueSpice-a",
+	"bs-instancestatus-instance-status-last-update-label": "Poslednji put ažurirano na",
+	"bs-instancestatus-instance-status-no-info": "Nije dostupno",
+	"bs-instancestatus-instance-status-main-label": "Opšte"
+}

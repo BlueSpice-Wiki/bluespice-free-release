@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"Can",
+			"KediÇobanı",
+			"Sayginer",
+			"ToprakM"
+		]
+	},
+	"bs-avatars-desc": "Genel ve bireysel kullanıcı resimleri sağlar",
+	"bs-avatars-pref-generator": "Jeneratör:",
+	"bs-avatars-pref-userimage-img-alt": "Mevcut kullanıcı resminiz",
+	"bs-avatars-upload-complete": "Resim yüklendi.",
+	"bs-avatars-generate-complete": "Yeni bir avatar oluşturuldu.",
+	"bs-avatars-upload-label": "Resim",
+	"bs-avatars-generate-new-label": "Yeni avatar oluştur",
+	"bs-avatars-file-upload-fieldset-title": "Resim yükleme",
+	"bs-avatars-auto-generate-fieldset-title": "Otomatik avatar oluştur",
+	"apihelp-bs-avatars-tasks-summary": "Kullanıcı avatarlarını yükleme, oluşturma ve ayarlama",
+	"bs-avatars-tag-profileimage-error-invalidusername": "\"Kullanıcı adı\" parametresi gerekli ve geçerli bir kullanıcı adı içermelidir"
+}

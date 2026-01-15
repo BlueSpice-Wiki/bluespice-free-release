@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"Mido",
+			"Test Create account",
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-articleinfo-desc": "يوفر معلومات حول صفحة في شريط الحالة",
+	"prefs-articleinfo": "معلومات الصفحة",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "فترة التحديث (بالثواني)",
+	"bs-articleinfo-newrevision-info-text-reload": "هناك نسخة جديدة من هذه الصفحة متاحة، تُرجَى [[:$1|إعادة تحميل]] الصفحة لعرض المحتوى الحالي.",
+	"bs-articleinfo-pref-checkrevisioninterval-help-label": "يحدد عدد مرات تحديث قيمة \"آخر تعديل\". في كل فترة زمنية، يتم أيضًا فحص الصفحة بحثًا عن مراجعات جديدة"
+}

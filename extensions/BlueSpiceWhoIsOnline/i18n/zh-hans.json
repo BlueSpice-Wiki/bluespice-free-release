@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			")8",
+			"Liuxinyu970226",
+			"TsuyaMarisa",
+			"Xyb"
+		]
+	},
+	"bs-whoisonline-desc": "显示当前在线的用户列表",
+	"bs-whoisonline-nousers": "没人登录。",
+	"bs-whoisonline-widget-title": "谁在线？",
+	"prefs-whoisonline": "谁在线？",
+	"bs-whoisonline-pref-limitcount": "最多显示的用户人数：",
+	"bs-whoisonline-pref-orderby": "排序方式：",
+	"bs-whoisonline-pref-orderby-time": "运行总时",
+	"bs-whoisonline-pref-orderby-name": "名称",
+	"bs-whoisonline-collection-type-userlogin": "用户登录",
+	"bs-whoisonline-collection-var-login": "登录",
+	"bs-whoisonline-statistics-report-login-duration": "登录持续时间",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "登录持续时间（秒）",
+	"bs-whoisonline-droplet-popup-name": "已登录用户列表"
+}

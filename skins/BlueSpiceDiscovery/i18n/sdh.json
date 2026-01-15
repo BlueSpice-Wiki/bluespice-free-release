@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"TerranBoy"
+		]
+	},
+	"bs-discovery-header-create-button-text": "نوو",
+	"bs-discovery-create-button-new-file-text": "پەڕگەێ نوو",
+	"bs-discovery-create-button-new-file-title": "بارکردن پەڕگەێ نوو",
+	"bs-discovery-sidebar-secondary-share-sharebymail-text": "ئیمەیل",
+	"bs-discovery-dialog-details-action-cancel": "هەڵوەشاننەوە",
+	"bs-discovery-breadcrumb-label-talk": "گەپدان",
+	"bs-discovery-breadcrumb-label-special-linkliste": "بەسیارەگان",
+	"bs-discovery-breadcrumb-label-action-history": "دیرووک",
+	"bs-discovery-breadcrumb-label-action-edit": "دەسکاری",
+	"bs-discovery-first-heading-aria-label": "سەرناو پەڕە",
+	"bs-discovery-personalurl-userpage-text": "پرۆفایل",
+	"bs-discovery-globalactionentry-templates-text": "داڕێژە",
+	"bs-discovery-globalactionentry-templates-title": "گشت داڕێژەگان",
+	"bs-discovery-last-edit-by-system-user": "وەکاربەر سیستەم",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-page": "پەڕە",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-depth": "قووڵی",
+	"bs-discovery-enhanced-mediawiki-sidebar-header-text": "ڕێنیشاندەری"
+}

@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal",
+			"Kuldeepburjbhalaike"
+		]
+	},
+	"bs-discovery-navbar-user-button-requires-attention-aria-label": "ਵਰਤੋਂਕਾਰ ਮੇਨੂ (ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਹੈ)",
+	"bs-discovery-navbar-user-login-text": "ਦਾਖ਼ਲ ਹੋਵੋ",
+	"bs-discovery-navbar-user-login-title": "ਦਾਖ਼ਲ ਹੋਵੋ",
+	"bs-discovery-navbar-user-login-aria-label": "ਦਾਖ਼ਲ ਹੋਵੋ",
+	"bs-discovery-header-create-button-text": "ਨਵਾਂ",
+	"bs-discovery-breadcrumb-nav-node-ns-main": "ਸਫ਼ੇ",
+	"bs-discovery-breadcrumb-nav-node-portal-page": "ਮੁੱਖ ਸਫ਼ਾ",
+	"bs-discovery-sidebar-secondary-export-link-title": "ਬਰਾਮਦ ਚੋਣਾਂ",
+	"bs-discovery-dialog-detailssectionheading-toolbox": "ਸੰਦੂਕੜੀ",
+	"bs-discovery-breadcrumb-label-action-edit": "ਸੋਧੋ",
+	"bs-discovery-mainlinks-allpages-label": "ਸਫ਼ੇ",
+	"bs-discovery-personalurl-mycontributions-text": "ਯੋਗਦਾਨ",
+	"bs-discovery-globalactionentry-templates-text": "ਫਰਮੇ",
+	"bs-discovery-namespace-mainpage-links-pnl-header-text": "ਨਾਮ-ਸਥਾਨ ਮੁੱਢਲੇ ਵਰਕੇ",
+	"ns-main-label": "ਸਫ਼ੇ",
+	"bs-discovery-enhanced-mediawiki-sidebar-pnl-header-text": "ਮੁੱਖ ਮੀਨੂ",
+	"menueditor-ui-enhanced-sidebar-internal-link-label-edit": "ਅੰਦਰੂਨੀ ਕੜੀ",
+	"bs-discovery-requires-attention": "(ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਹੈ)"
+}

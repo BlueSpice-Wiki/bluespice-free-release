@@ -1,0 +1,113 @@
+{
+	"Toolbar": {
+		"file": "Toolbar.vue",
+		"name": "Toolbar",
+		"isComponent": true,
+		"src": "vuejs/components/Toolbar.vue",
+		"imports": [
+			"ToolbarItem"
+		]
+	},
+	"ToolbarItem": {
+		"file": "ToolbarItem.vue",
+		"name": "ToolbarItem",
+		"src": "vuejs/components/ToolbarItem.vue"
+	},
+	"Tree": {
+		"file": "Tree.vue",
+		"name": "Tree",
+		"isComponent": true,
+		"src": "vuejs/components/Tree.vue",
+		"imports": [
+			"TreeLeaf",
+			"TreeNode",
+			"TreeExpandableNode",
+			"Toolbar"
+		]
+	},
+	"TreeLeaf": {
+		"file": "TreeLeaf.vue",
+		"name": "TreeLeaf",
+		"src": "vuejs/components/TreeLeaf.vue"
+	},
+	"TreeNode": {
+		"file": "TreeNode.vue",
+		"name": "TreeNode",
+		"src": "vuejs/components/TreeNode.vue",
+		"imports": [
+			"TreeLeaf"
+		]
+	},
+	"TreeExpandableNode": {
+		"file": "TreeExpandableNode.vue",
+		"name": "TreeExpandableNode",
+		"src": "vuejs/components/TreeExpandableNode.vue",
+		"imports": [
+			"TreeLeaf"
+		]
+	},
+	"Grid": {
+		"file": "Grid.vue",
+		"name": "Grid",
+		"isComponent": true,
+		"src": "vuejs/components/Grid.vue",
+		"imports": [
+			"GridColCell",
+			"GridDataRow",
+			"Toolbar",
+			"@wikimedia/codex"
+		]
+	},
+	"GridColCell": {
+		"file": "GridColCell.vue",
+		"name": "GridColCell",
+		"src": "vuejs/components/GridColCell.vue",
+		"imports": [
+			"GridColOptions"
+		]
+	},
+	"GridColOptions": {
+		"file": "GridColOptions.vue",
+		"name": "GridColOptions",
+		"src": "vuejs/components/GridColOptions.vue",
+		"imports": [
+			"SortASC",
+			"SortDESC",
+			"StringFilter",
+			"DateFilter"
+		]
+	},
+	"SortASC": {
+		"file": "SortASC.vue",
+		"name": "SortASC",
+		"src": "vuejs/components/SortASC.vue"
+	},
+	"SortDESC": {
+		"file": "SortDESC.vue",
+		"name": "SortDESC",
+		"src": "vuejs/components/SortDESC.vue"
+	},
+	"StringFilter": {
+		"file": "StringFilter.vue",
+		"name": "StringFilter",
+		"src": "vuejs/components/StringFilter.vue"
+	},
+	"DateFilter": {
+		"file": "DateFilter.vue",
+		"name": "DateFilter",
+		"src": "vuejs/components/DateFilter.vue"
+	},
+	"GridDataRow": {
+		"file": "GridDataRow.vue",
+		"name": "GridDataRow",
+		"src": "vuejs/components/GridDataRow.vue",
+		"imports": [
+			"GridDataCell"
+		]
+	},
+	"GridDataCell": {
+		"file": "GridDataCell.vue",
+		"name": "GridDataCell",
+		"src": "vuejs/components/GridDataCell.vue"
+	}
+}

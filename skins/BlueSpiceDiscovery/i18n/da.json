@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"SiGNOUT"
+		]
+	},
+	"bs-discovery-enhanced-mediawiki-sidebar-field-page": "Side",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-text-help": "Tekst der skal vises for linket; kan indeholde en parserfunktion",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-depth": "Dybde",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-depth-help": "Maksimal dybde af undersider, der skal inkluderes",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-href": "URL",
+	"menueditor-ui-enhanced-sidebar-subpage-tree-label": "Undersidetræ",
+	"bs-discovery-enhanced-mediawiki-sidebar-show-for-groups-text": "Vis for grupper",
+	"menueditor-ui-enhanced-sidebar-panel-heading-label-edit": "Paneloverskrift",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-heading": "Overskriftstekst",
+	"bs-discovery-enhanced-mediawiki-sidebar-add-new-panel-button-label": "Tilføj nyt panel",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-classes": "CSS klasser"
+}

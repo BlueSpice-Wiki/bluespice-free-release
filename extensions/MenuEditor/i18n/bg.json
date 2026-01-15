@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"menueditor-desc": "Графичен редактор за страници с менюта",
+	"menueditor-ui-menu-wiki-link-label": "Уики препратка",
+	"menueditor-ui-menu-wiki-link-help": "Препратка към wiki страница",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Препратка",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Спецификация на препратката.<br> Целта може да бъде:<ul><li>ключ на съобщение, който се преобразува в име на страница</li><li> външна препратка</li><li>име на страницата в уики</li><li>междууики-препратка</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Текст или ключ на съобщение",
+	"menueditor-ui-menu-keyword-label": "Ключова дума",
+	"menueditor-ui-menu-keyword-help": "Една от наличните '''ключови думи''', която ще покаже подходяща джаджа",
+	"menueditor-ui-form-field-keyword": "Ключова дума",
+	"menueditor-ui-form-field-text": "Текст или ключ на съобщение",
+	"menueditor-ui-form-field-target": "Цел на връзката",
+	"menueditor-ui-form-field-label": "Етикет на връзката",
+	"menueditor-ui-dialog-action-done": "Готово",
+	"menueditor-ui-dialog-action-cancel": "Отказ",
+	"menueditor-ui-node-type-selector-label": "Тип на възела",
+	"menueditor-ui-submit": "Съхраняване",
+	"menueditor-ui-cancel": "Отказ",
+	"menueditor-ui-redlink-notice": "Това меню все още не съществува!",
+	"menueditor-action-menueditsource": "Редактиране на кода",
+	"menueditor-action-menuedit": "Редактиране"
+}

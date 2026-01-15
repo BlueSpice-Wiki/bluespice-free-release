@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Movses",
+			"Piramidion",
+			"Viiictorrr",
+			"Ата",
+			"Пан Хаунд"
+		]
+	},
+	"bs-insertcategory-desc": "Діалог введення посилання на категорію",
+	"bs-insertcategory-insertcat": "Вставити категорію",
+	"prefs-insertcategory": "Вставити категорію",
+	"bs-insertcategory-pref-withparents": "Вставити категорію з її батьківськими категоріями",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Редагування категорій цієї сторінки",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Відредагуйте категорії цієї сторінки",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Відкрити діалогове вікно для редагування категорій цієї сторінки",
+	"bs-insertcategory-edit-dialog-button-label": "Редагувати",
+	"bs-insertcategory-edit-dialog-title": "Редагувати категорії",
+	"bs-insertcategory-edit-dialog-button-submit": "Готово",
+	"bs-insertcategory-edit-dialog-button-cancel": "Скасувати",
+	"bs-insertcategory-edit-dialog-input-label": "Призначені категорії",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Неявні категорії",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Ці категорії не визначені у вмісті сторінки у вікітексті. Швидше за все, вони встановлюються всередині шаблону.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Не вдається отримати категорії сторінок",
+	"bs-insertcategory-no-categories": "Нема призначених категорій",
+	"bs-insertcategory-edit-dialog-tree-view": "Показати всі категорії"
+}

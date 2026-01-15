@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abijeet Patro",
+			"AnupamM"
+		]
+	},
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "गणना",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "सूची में दिखाए गए पृष्ठों की संख्या निर्धारित करें",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "अधिकतम शीर्षक लंबाई",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "क्रम",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "नामस्थान",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "समय"
+}

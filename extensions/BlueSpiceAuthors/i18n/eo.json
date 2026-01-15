@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jakub Fabijan",
+			"Mirin",
+			"Zarisi"
+		]
+	},
+	"prefs-authors": "Aŭtoroj de ĉi tiu paĝo",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Aŭtoro|Aŭtorino}}|Aŭtoroj}}",
+	"bs-authors-profileimage": "Profila bildo",
+	"bs-authors-profileimage-change": "Ŝanĝi profilan bildon",
+	"bs-authors-navigation-link-title": "Aŭtoroj de ĉi tiu paĝo",
+	"bs-authors-navigation-link-text": "Aŭtoroj"
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice versija",
+	"bs-instancestatus-instance-status-user-quota-label": "Naudotojų kvota",
+	"bs-instancestatus-instance-status-last-update-label": "Paskutinį kartą atnaujinta",
+	"bs-instancestatus-instance-status-no-info": "Nepasiekiama",
+	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice kontaktas",
+	"bs-instancestatus-instance-status-sales-contact": "Susisiekite čia: [$1 BlueSpice kontaktas]",
+	"bs-instancestatus-overview-loader": "Renkama viki informacija ..."
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bishnu Saikia",
+			"Simbu123"
+		]
+	},
+	"bs-weeks-duration": "{{PLURAL:$1|$1 সপ্তাহ}}",
+	"bs-ns": "নামস্থান"
+}

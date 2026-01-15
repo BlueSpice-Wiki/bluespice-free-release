@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sagan",
+			"З. ӘЙЛЕ"
+		]
+	},
+	"bs-insertcategory-desc": "Категорияға һылтанма керетеү диалогы",
+	"bs-insertcategory-insertcat": "Категория өҫтәргә",
+	"prefs-insertcategory": "Категория өҫтәргә",
+	"bs-insertcategory-pref-withparents": "Төп категориялар менән бергә категория өҫтәргә"
+}

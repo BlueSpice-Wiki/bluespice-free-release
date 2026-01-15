@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mikel Ibaiba",
+			"Subi"
+		]
+	},
+	"prefs-permissionmanager": "Baimen kudeatzailea",
+	"bs-permissionmanager-label": "Baimen kudeatzailea",
+	"bs-permissionmanager-header-permissions": "Baimenak",
+	"bs-permissionmanager-header-global": "Wiki",
+	"bs-permissionmanager-btn-save-label": "Gorde",
+	"bs-permissionmanager-affected-by-explicit": "$1 blokeatu da",
+	"bs-permissionmanager-affected-by-inherited": "$1tik oinordetzan jasota",
+	"bs-permissionmanager-affected-by-notset": "Ez da aktibatu",
+	"bs-permissionmanager-affected-by-explicitlyset": "Bereziki aktibatuta",
+	"bs-permissionmanager-affected-by-setonwiki": "Wiki maila aktibatu",
+	"bs-permissionmanager-namespace-picker": "Izen-tarteak"
+}

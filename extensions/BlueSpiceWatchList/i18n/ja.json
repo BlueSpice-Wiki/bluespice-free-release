@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore",
+			"Otokoume",
+			"Shirayuki",
+			"もなー(偽物)"
+		]
+	},
+	"bs-watchlist-desc": "ウォッチリストのウィジェットとタグを追加する",
+	"bs-watchlist-pref-sort-time": "日時",
+	"bs-watchlist-pref-sort-title": "ページ名",
+	"bs-watchlist-ve-watchlistinspector-title": "ウォッチリスト",
+	"bs-watchlist-ve-watchlist-attr-count-label": "カウント",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "ページ名",
+	"bs-watchlist-ve-watchlist-attr-time-label": "時刻",
+	"bs-watchlist-droplet-name": "ウォッチリスト",
+	"bs-watchlist-droplet-description": "ウォッチリストに含まれるページの最新の変更"
+}

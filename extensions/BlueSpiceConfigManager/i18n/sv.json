@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jopparn",
+			"Josve05a",
+			"Lokal Profil",
+			"Mjälten",
+			"Sturban",
+			"Technic2",
+			"WikiPhoenix"
+		]
+	},
+	"bs-bluespiceconfigmanager-admintool-label": "Konfigurationshanterare",
+	"action-bluespiceconfigmanager-viewspecialpage": "visa specialsidan \"{{int:bluespiceconfigmanager}}\"",
+	"bluespiceconfigmanager": "Konfigurationshanterare",
+	"bs-configmanager-desc": "Erbjuder möjligheten för administratörer att konfigurera hela wikin från en enda specialsida",
+	"bs-configmanager-noentry": "Ingen post hittades",
+	"bs-configmanager-search": "Sök",
+	"apihelp-bs-configmanager-tasks-summary": "Hantera uppgifter",
+	"apihelp-bs-configmanager-store-summary": "Hantera roller",
+	"right-bluespiceconfigmanager-viewspecialpage": "Åtkomst till specialsidan [[Special:BlueSpiceConfigManager]]."
+}

@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abijeet Patro"
+		]
+	},
+	"bs-distributionconnector-workflows-form-comment": "टिप्पणी",
+	"bs-distributionconnector-workflows-form-placeholder-comment": "टिप्पणी",
+	"bs-support": "सहायता",
+	"bs-distributionconnector-pref-eventbus-enableeventbus-key-all": "सभी",
+	"bs-distributionconnector-pref-eventbus-enableeventbus-key-none": "कोई नहीं",
+	"bs-distributionconnector-checkpermissions-label-user": "सदस्य",
+	"bs-distributionconnector-checkpermissions-label-title": "शीर्षक",
+	"droplets-buttonlink-format-blue": "नीला",
+	"droplets-buttonlink-format-neutral": "सफ़ेद",
+	"droplets-buttonlink-format-red": "लाल",
+	"bs-distributionconnector-videodropletinspector-title": "वीडियो",
+	"bs-distributionconnector-videodropletinspector-title-label": "शीर्षक",
+	"bs-distributionconnector-videodropletinspector-description-label": "विवरण",
+	"bs-distributionconnector-videodropletinspector-dimension-label": "आकार",
+	"bs-distributionconnector-videodropletinspector-alignment-left": "बाएँ ओर",
+	"bs-distributionconnector-videodropletinspector-alignment-center": "केंद्रित",
+	"bs-distributionconnector-videodropletinspector-alignment-right": "दाएँ ओर"
+}

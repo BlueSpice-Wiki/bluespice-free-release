@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alshamiri1",
+			"Meno25",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"menueditor-desc": "محرر رسومي لصفحات القائمة",
+	"menueditor-ui-menu-wiki-link-label": "رابط الويكي",
+	"menueditor-ui-menu-wiki-link-label-edit": "تعديل رابط الويكي",
+	"menueditor-ui-menu-wiki-link-help": "رابط لصفحة الويكي",
+	"menueditor-ui-menu-two-fold-link-spec-label": "وصلة",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "عدل الوصلة",
+	"menueditor-ui-menu-two-fold-link-spec-help": "مواصفات الرابط الهدف يمكن أن يكون: مفتاح رسالة، الذي يصل إلى رابط خارجي لـ \"موقع\"<br/><ul><li>مفتاح الرسالة ، والذي ينطلق إلى اسم الصفحة</li><li>رابط خارجي</li><li>اسم الصفحة على الويكي</li><li>رابط بين ويكي</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "مفتاح النص أو الرسالة",
+	"menueditor-ui-menu-raw-text-label-edit": "تحرير النص أو مفتاح الرسالة",
+	"menueditor-ui-menu-keyword-label": "الكلمة الرئيسية",
+	"menueditor-ui-menu-keyword-label-edit": "تحرير الكلمة الأساسية",
+	"menueditor-ui-menu-keyword-help": "إحدى '' الكلمات الرئيسية '' المتاحة ، والتي ستعرض الأداة المناسبة",
+	"menueditor-ui-form-field-keyword": "الكلمة الرئيسية",
+	"menueditor-ui-form-field-text": "نص أو مفتاح رسالة",
+	"menueditor-ui-form-field-target": "رابط الهدف",
+	"menueditor-ui-form-field-label": "تسمية الرابط",
+	"menueditor-ui-dialog-action-done": "تم",
+	"menueditor-ui-dialog-action-cancel": "إلغاء",
+	"menueditor-ui-node-type-selector-label": "نوع العقدة",
+	"menueditor-ui-submit": "احفظ",
+	"menueditor-ui-cancel": "إلغاء",
+	"menueditor-ui-redlink-notice": "هذه القائمة غير موجودة بعد!",
+	"menueditor-action-menueditsource": "عدل المصدر",
+	"menueditor-action-menuedit": "عدل",
+	"menueditor-ui-dialog-title": "تحرير العنصر",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "تحرير الكلمة الأساسية",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "الكلمة الرئيسية",
+	"menueditor-toolbar-cancel": "إلغاء التحرير",
+	"menueditor-toolbar-add-label": "أضف عنصرًا",
+	"menueditor-ui-edit-label": "تعديل",
+	"menueditor-ui-add-sub-element-label": "أضف عنصرًا فرعيًا",
+	"menueditor-footerlinks-banner-text": "قد تتم إضافة بعض الروابط تلقائيًا بواسطة الامتدادات. يرجى التحقق من تكوين الامتداد لمعرفة المزيد.",
+	"menueditor-toolbar-save": "حفظ",
+	"menueditor-ui-cancel-confirmation": "هل أنت متأكد من إلغاء التعديل؟ سيتم فقدان جميع التغييرات غير المحفوظة."
+}

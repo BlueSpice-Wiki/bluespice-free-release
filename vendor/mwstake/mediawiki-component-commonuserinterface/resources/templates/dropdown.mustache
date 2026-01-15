@@ -1,0 +1,6 @@
+<div class="dropdown{{#cnt-class}} {{.}}{{/cnt-class}}">
+	<a role="button" class="dropdown-toggle{{#btn-class}} {{.}}{{/btn-class}}"{{#id}} id="{{.}}"{{/id}} title="{{title}}"{{#btn-data}} {{{.}}}{{/btn-data}} data-bs-toggle="dropdown" aria-haspopup="true" aria-label="{{btn-aria-label}}" aria-expanded="false" aria-controls="{{id}}-menu" href="">{{{text}}}</a>
+	<div id="{{id}}-menu" class="dropdown-menu{{#menu-class}} {{.}}{{/menu-class}}" aria-labelledby="{{id}}">
+		{{{body}}}
+	</div>
+</div>

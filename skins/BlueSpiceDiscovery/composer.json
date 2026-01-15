@@ -1,0 +1,57 @@
+{
+	"name": "bluespice/discovery-skin",
+	"type": "mediawiki-skin",
+	"description": "A highly flexible MediaWiki skin using Bootstrap 5",
+	"keywords": [
+		"wiki",
+		"MediaWiki",
+		"skin",
+		"Twitter",
+		"Bootstrap"
+	],
+	"license": "GPL-3.0-only",
+	"extra": {
+		"installer-name": "BlueSpiceDiscovery"
+	},
+	"require": {
+		"composer/installers": "~1.0|~2",
+		"mwstake/mediawiki-component-commonuserinterface": "~6",
+		"mwstake/mediawiki-component-manifestregistry": "~3",
+		"mwstake/mediawiki-component-wikitext": "~7",
+		"mwstake/mediawiki-lib-nodes": "~1"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "45.0.0",
+		"mediawiki/mediawiki-phan-config": "0.14.0",
+		"mediawiki/minus-x": "1.1.3",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.4.0"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"minus-x check .",
+			"@phpcs"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"lint": [
+			"phan --no-progress-bar -m text | sed 's, ,:,'"
+		],
+		"phan": "phan -d . --long-progress-bar",
+		"phpcs": "phpcs -sp"
+	},
+	"autoload": {
+		"psr-4": {
+			"BlueSpice\\Discovery\\": "src"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}

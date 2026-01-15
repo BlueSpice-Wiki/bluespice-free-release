@@ -1,0 +1,77 @@
+.ext-notifyme-mail-template-edit-help {
+	z-index: 20;
+	max-height: 300px;
+
+	.oo-ui-popupWidget-popup {
+		background-color: #f8f9fa;
+		max-height: inherit;
+	}
+
+	.oo-ui-menuLayout-content {
+		.oo-ui-panelLayout {
+			max-height: 300px;
+			overflow: auto;
+		}
+	}
+
+	.ext-notifyme-mail-template-edit-help-color-container {
+		.ext-notifyme-mail-template-edit-help-color-layout {
+			width: 45%;
+			margin-right: 5%;
+			display: inline-block;
+			margin-top: 10px;
+		}
+
+		.ext-notifyme-mail-template-edit-help-color-color {
+			background-color: rgb( 255, 255, 255 ); // stylelint-disable-line function-disallowed-list
+			width: 40px;
+			height: 40px;
+			border-radius: 40px;
+			border: 2px solid gray;
+			display: table-cell;
+		}
+
+		.oo-ui-labelElement {
+			height: 40px;
+			vertical-align: middle;
+			display: table-cell;
+			padding-left: 10px;
+		}
+	}
+
+	.ext-notifyme-mail-template-edit-help-params-table {
+		thead {
+			border-bottom: 2px solid #d9d9d9;
+		}
+
+		tbody {
+			tr {
+				td {
+					padding: 10px;
+				}
+
+				pre {
+					margin: 0;
+					padding: 0;
+				}
+
+				&.sub td {
+					padding-left: 30px;
+				}
+
+				&:not( .sub ) {
+					border-top: 1px solid #d9d9d9;
+				}
+
+				:first-of-type {
+					border-top: 0;
+				}
+
+				&.sub-title td {
+					padding-top: 20px;
+					border-bottom: 2px solid #d9d9d9;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Awangba Mangang"
+		]
+	},
+	"menueditor-desc": "ꯃꯦꯅꯨ ꯂꯃꯥꯏꯁꯤꯡꯒꯤꯗꯃꯛ ꯒ꯭ꯔꯥꯐꯤꯀꯦꯜ ꯁꯦꯝꯒꯠ-ꯁꯥꯒꯠꯂꯤꯕꯁꯤꯡ",
+	"menueditor-ui-menu-wiki-link-label": "ꯋꯤꯀꯤ ꯁꯝꯅꯕ",
+	"menueditor-ui-menu-wiki-link-help": "ꯋꯤꯀꯤ ꯂꯃꯥꯏ ꯱ꯗ ꯁꯝꯅꯍꯟꯕ",
+	"menueditor-ui-menu-two-fold-link-spec-label": "ꯁꯝꯅꯐꯝ",
+	"menueditor-ui-menu-two-fold-link-spec-help": "ꯂꯤꯡꯛ ꯁ꯭ꯄꯦꯁꯤꯐꯤꯀꯦꯁꯟ ꯫<br>ꯇꯥꯔꯒꯦꯠ ꯑꯁꯤ ꯑꯣꯏꯕꯥ ꯌꯥꯏ:<ul><li>ꯃꯦꯁꯦꯖ-ꯀꯤ ꯑꯃꯥ, ꯃꯁꯤꯅꯥ ꯂꯃꯥꯏ ꯃꯃꯤꯡ ꯑꯃꯗꯥ ꯔꯤꯖꯣꯜꯕ ꯇꯧꯏ</li><li>ꯃꯄꯥꯟꯒꯤ ꯂꯤꯡꯛ ꯑꯃꯗꯥ</li><li>ꯋꯤꯀꯤꯗꯥ ꯂꯩꯕꯥ ꯂꯃꯥꯏꯒꯤ ꯃꯃꯤꯡ</li><li>ꯋꯤꯀꯤꯃꯁꯦꯜꯒꯤ ꯂꯤꯡꯛ</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "ꯋꯥꯍꯩ-ꯋꯥꯇꯥ ꯅꯠꯇ꯭ꯔꯒ ꯄꯥꯎꯖꯦꯜ ꯄꯣꯔꯣꯜ",
+	"menueditor-ui-menu-keyword-label": "ꯃꯔꯨꯑꯣꯏꯕ-ꯋꯥꯍꯩ",
+	"menueditor-ui-menu-keyword-help": "ꯂꯩꯔꯤꯕ '''ꯃꯔꯨꯑꯣꯏꯕ-ꯋꯥꯍꯩ''''ꯁꯤꯡꯒꯤ ꯃꯅꯨꯡꯗ ꯑꯃꯅꯤ, ꯃꯗꯨꯅ ꯃꯇꯤꯛ ꯆꯥꯕ ꯋꯤꯗꯖꯦꯠ ꯎꯠꯀꯅꯤ ꯫",
+	"menueditor-ui-form-field-keyword": "ꯃꯔꯨꯑꯣꯏꯕ-ꯋꯥꯍꯩ",
+	"menueditor-ui-form-field-text": "ꯋꯥꯍꯩ-ꯋꯥꯇꯥ ꯅꯠꯇ꯭ꯔꯒ ꯄꯥꯎꯖꯦꯜ ꯄꯣꯔꯣꯜ ꯑꯃꯥ ꯫",
+	"menueditor-ui-form-field-target": "ꯄꯥꯟꯊꯨꯡ ꯁꯝꯅꯍꯟꯕ",
+	"menueditor-ui-form-field-label": "ꯊꯥꯔꯤꯕ ꯋꯥꯍꯩ-ꯋꯥꯇ ꯁꯝꯅꯍꯟꯕ",
+	"menueditor-ui-dialog-action-done": "ꯇꯧꯔꯦ",
+	"menueditor-ui-dialog-action-cancel": "ꯇꯣꯛꯄ",
+	"menueditor-ui-node-type-selector-label": "ꯅꯣꯗ ꯃꯈꯜ",
+	"menueditor-ui-submit": "ꯇꯨꯡꯁꯤꯟꯕ",
+	"menueditor-ui-cancel": "ꯇꯣꯛꯄ",
+	"menueditor-ui-redlink-notice": "ꯃꯁꯤꯒꯤ ꯌꯦꯡꯅꯕ ꯑꯁꯤ ꯍꯧꯖꯤꯛ ꯐꯥꯎꯕ ꯂꯩꯇꯦ!",
+	"menueditor-action-menueditsource": "ꯍꯧꯔꯛꯐꯝ ꯁꯦꯝꯒꯠ-ꯁꯥꯒꯠꯂꯨ",
+	"menueditor-action-menuedit": "ꯁꯦꯝꯒꯠ-ꯁꯥꯒꯠꯄ"
+}

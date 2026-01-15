@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"З. ӘЙЛЕ"
+		]
+	},
+	"bs-saferedit-desc": "Битте икенсе ҡатнашыусылар мөхәррирләгәндә, иҫкәртә",
+	"bs-saferedit-user-editing": "Битте $1 {{GENDER:$1|мөхәррирләүсе}}{{PLURAL:$2|булып тора}}",
+	"bs-saferedit-someone-editing": "Был бит мөхәррирләнә"
+}

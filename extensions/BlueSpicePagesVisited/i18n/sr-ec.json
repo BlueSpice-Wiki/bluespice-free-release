@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kizule",
+			"Milicevic01"
+		]
+	},
+	"bs-pagesvisited-desc": "Пружа персонализован списак последње посећених страница",
+	"prefs-pagesvisited": "Посећене странице",
+	"bs-pagesvisited-widget-title": "Посећене странице",
+	"bs-pagesvisited-error-nsnotvalid": "Дати {{PLURAL:$1|именски простор|именски простори}} <code>$2</code> {{PLURAL:$1|није|нису}} исправни.",
+	"bs-pagesvisited-pref-widgetlimit": "Ограничење уноса:",
+	"bs-pagesvisited-pref-widgetns": "Именски простори:",
+	"bs-pagesvisited-pref-widgetsortodr": "Поређај по:",
+	"bs-pagesvisited-pref-sort-time": "Време",
+	"bs-pagesvisited-pref-sort-pagename": "Наслов",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Приказује списак скоро посећених страница. Овај списак је могуће подешавати по параметрима.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Посећене странице",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Број",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Постави број страница за приказ на списку",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Максимална дужина наслова",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Постави максималан број наслова пре него што је одсечен наслов",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Редослед",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Постави редослед којим се приказују странице",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Именски простори",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Прикажи само странице из ових именских простора",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Време",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Име странице",
+	"bs-pagesvisited-droplet-name": "Посећене странице",
+	"bs-pagesvisited-droplet-description": "Списак посећених страница",
+	"bs-pagesvisited-label-anon-user": "Да би сте видели странице које сте посетили, пријавите се на свој налог"
+}

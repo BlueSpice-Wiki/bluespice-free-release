@@ -1,0 +1,72 @@
+.row > .col-east-spacer,
+.row > .col-west-spacer {
+	display: none;
+}
+
+.row > .col-east,
+.row > .col-west {
+	min-width: 100vw;
+	min-height: calc( 100vh - 2 * var( --navbar-primary-height ) );
+	position: fixed;
+	top: calc( 2 * var( --navbar-primary-height ) );
+}
+
+.row > .col-west {
+	z-index: 3;
+}
+
+.row > .col-east {
+	z-index: 2;
+}
+
+/* VisualEditor */
+.ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
+.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+	top: calc( 2 * var( --navbar-primary-height ) );
+}
+
+#aftercontent > .inner {
+	max-width: var( --content-max-width );
+	margin: auto;
+	padding: 0;
+}
+
+#tools-after-content {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: block !important;
+}
+
+#tools-after-content > div {
+	margin: 15px 0;
+}
+
+#data-after-content {
+	margin: 0;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.discovery-mobile.ve-activated #header,
+.discovery-mobile.ve-activated .navbar-primary-height.d-block,
+.discovery-mobile.ve-activated #mwstake-alert-container,
+.discovery-mobile.ve-activated #data-before-content,
+.discovery-mobile.ve-activated #title-section {
+	display: none !important;
+}
+
+.discovery-mobile.ve-activated .oo-ui-toolbar-bar {
+	top: 0;
+}
+
+/* VE mobile view */
+.ve-init-target .oo-ui-toolbar-tools .ve-ui-toolbar-group-history .oo-ui-tool-name-undo,
+.ve-init-target .oo-ui-toolbar-tools .ve-ui-toolbar-group-history .oo-ui-tool-name-redo,
+.ve-init-target .oo-ui-toolbar-tools .ve-ui-toolbar-group-format .ve-init-target .oo-ui-toolbar-tools .ve-ui-toolbar-group-specialCharacter,
+.ve-init-target .oo-ui-toolbar-tools .ve-ui-toolbar-group-at-mention,
+.ve-init-target .oo-ui-toolbar-tools .ve-ui-toolbar-group-content-droplets,
+.ve-init-target .oo-ui-toolbar-tools .ve-ui-toolbar-group-help,
+.ve-init-target .oo-ui-toolbar-tools .ve-ui-toolbar-group-pageMenu {
+	display: none;
+}

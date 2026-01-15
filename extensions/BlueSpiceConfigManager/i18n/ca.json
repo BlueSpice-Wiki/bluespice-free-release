@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Edustus",
+			"Fitoschido",
+			"SMP"
+		]
+	},
+	"action-bluespiceconfigmanager-viewspecialpage": "veure la pàgina especial «{{int:bluespiceconfigmanager}}»",
+	"right-bluespiceconfigmanager-viewspecialpage": "Accedir a la pàgina especial [[Special:BlueSpiceConfigManager]]"
+}

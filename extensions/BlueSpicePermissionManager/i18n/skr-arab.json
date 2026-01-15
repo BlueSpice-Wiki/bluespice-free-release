@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"bs-permissionmanager-affected-by-explicit": "$1 بلاک کرݙتے",
+	"bs-permissionmanager-affected-by-notset": "سیٹ نی تھیا",
+	"bs-permissionmanager-affected-by-setonwiki": "وکی دی سطح تے پورا پورا فٹ تھی ڳئے",
+	"bs-permissionmanager-group-all": "یکے",
+	"bs-permissionmanager-header-role": "رول",
+	"bs-premissionmanager-reset-button-label": "ولدا ٹھیک کرو",
+	"bs-permissionmanager-save": "بچاؤ",
+	"bs-permissionmanager-cancel": "منسوخ",
+	"bs-permissionmanager-group-type-implicit": "پوشیدہ",
+	"bs-permissionmanager-group-manager-heading": "گروپس",
+	"bs-permissionmanager-group-header-groups": "گروپس",
+	"bs-permissionmanager-group-explicit-editor": "ایڈیٹر",
+	"bs-permissionmanager-group-explicit-reader": "قارئین",
+	"bs-permissionmanager-group-explicit-sysop": "منتظمین"
+}

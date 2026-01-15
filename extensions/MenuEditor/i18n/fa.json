@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeeputer"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label": "ویکی‌پیوند",
+	"menueditor-ui-menu-wiki-link-label-edit": "ویرایش ویکی‌پیوند",
+	"menueditor-ui-menu-wiki-link-help": "پیوند به یک صفحهٔ ویکی",
+	"menueditor-ui-menu-two-fold-link-spec-label": "پیوند",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "ویرایش پیوند",
+	"menueditor-ui-menu-two-fold-link-spec-help": "مشخصات پیوند<br>هدف‌های ممکن:<ul><li>یک پیام-کلید، که نام یک صفحه تبدیل می‌شود</li><li>یک پیوند بیرونی</li><li>نام صفحه در ویکی</li><li>پیوند میان‌ویکی</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "متن یا کلید پیام",
+	"menueditor-ui-menu-raw-text-label-edit": "ویرایش کلید متن یا پیام",
+	"menueditor-ui-menu-keyword-label": "کلیدواژه",
+	"menueditor-ui-menu-keyword-label-edit": "ویرایش کلیدواژه",
+	"menueditor-ui-menu-keyword-help": "یکی از '''کلیدواژه‌های''' در دسترس، که ویجت مناسب را نمایش خواهد داد",
+	"menueditor-ui-form-field-keyword": "کلیدواژه",
+	"menueditor-ui-form-field-text": "متن یا کلید پیام",
+	"menueditor-ui-form-field-target": "هدف پیوند",
+	"menueditor-ui-form-field-label": "برچسب پیوند",
+	"menueditor-ui-dialog-action-done": "انجام شد",
+	"menueditor-ui-dialog-action-cancel": "لغو",
+	"menueditor-ui-node-type-selector-label": "نوع گره",
+	"menueditor-ui-submit": "ذخیره",
+	"menueditor-ui-cancel": "لغو",
+	"menueditor-ui-redlink-notice": "این منو هنوز وجود ندارد!",
+	"menueditor-action-menueditsource": "ویرایش مبدأ",
+	"menueditor-action-menuedit": "ویرایش",
+	"menueditor-ui-dialog-title": "ویرایش عنصر",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "ویرایش کلیدواژه",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "کلیدواژه",
+	"menueditor-toolbar-cancel": "لغو ویرایش",
+	"menueditor-ui-edit-label": "ویرایش"
+}

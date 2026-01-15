@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"menueditor-desc": "עורך גרפי לדפי תפריט",
+	"menueditor-ui-menu-wiki-link-label": "קישור לוויקי",
+	"menueditor-ui-menu-wiki-link-label-edit": "עריכת קישור לוויקי",
+	"menueditor-ui-menu-wiki-link-help": "קישור לדף ויקי",
+	"menueditor-ui-menu-two-fold-link-spec-label": "קישור",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "עריכת קישור",
+	"menueditor-ui-menu-two-fold-link-spec-help": "הגדרת קישור.<br>היעד יכול להיות:<ul><li>מפתח הודעה שיכול להיפתר לשם דף</li><li>קישור חיצוני</li><li>שם של דף בוויקי</li><li>קישור בינוויקי</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "טקסט או מפתח הודעה",
+	"menueditor-ui-menu-raw-text-label-edit": "עריכת טקסט או מפתח הודעה",
+	"menueditor-ui-menu-keyword-label": "מילת מפתח",
+	"menueditor-ui-menu-keyword-label-edit": "עריכת מילת מפתח",
+	"menueditor-ui-menu-keyword-help": "אחת מ'''מילות המפתח''' הזמינות, שתציג כלי מתאים",
+	"menueditor-ui-form-field-keyword": "מילת מפתח",
+	"menueditor-ui-form-field-text": "טקסט או מפתח הודעה",
+	"menueditor-ui-form-field-target": "יעד הקישור",
+	"menueditor-ui-form-field-label": "תווית הקישור",
+	"menueditor-ui-dialog-action-done": "בוצע",
+	"menueditor-ui-dialog-action-cancel": "ביטול",
+	"menueditor-ui-node-type-selector-label": "סוג צומת",
+	"menueditor-ui-submit": "שמירה",
+	"menueditor-ui-cancel": "ביטול",
+	"menueditor-ui-redlink-notice": "התפריט הזה עדיין לא קיים!",
+	"menueditor-action-menueditsource": "עריכת קוד מקור",
+	"menueditor-action-menuedit": "עריכה",
+	"menueditor-ui-dialog-title": "עריכת רכיב",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "עריכת מילת מפתח",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "מילת מפתח",
+	"menueditor-toolbar-cancel": "ביטול עריכה",
+	"menueditor-toolbar-add-label": "הוספת רכיב",
+	"menueditor-ui-edit-label": "עריכה",
+	"menueditor-ui-add-sub-element-label": "הוסף רכיב־משנה",
+	"menueditor-footerlinks-banner-text": "חלק מהקישורים עשויים להתווסף באופן אוטומטי על־ידי הרחבות. נא לבדוק את תצורת ההרחבה למידע נוסף.",
+	"menueditor-toolbar-save": "שמירה",
+	"menueditor-ui-cancel-confirmation": "האם ברצונך באמת לבטל את העריכה? כל השינויים שלא נשמרו יאבדו."
+}

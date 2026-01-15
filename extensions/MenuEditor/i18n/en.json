@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mschlindwein"
+		]
+	},
+	"menueditor-desc": "Graphical editor for menu pages",
+	"menueditor-ui-menu-wiki-link-label": "Wiki link",
+	"menueditor-ui-menu-wiki-link-label-edit": "Edit wiki link",
+	"menueditor-ui-menu-wiki-link-help": "Link to a wiki page",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Link",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Edit link",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Link specification.<br>Target can be:<ul><li>a message-key, which resolves to a pagename</li><li>an external link</li><li>Name of the page on wiki</li><li>interwiki link</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Text or message key",
+	"menueditor-ui-menu-raw-text-label-edit": "Edit text or message key",
+	"menueditor-ui-menu-raw-text-help": "",
+	"menueditor-ui-menu-keyword-label": "Keyword",
+	"menueditor-ui-menu-keyword-label-edit": "Edit keyword",
+	"menueditor-ui-menu-keyword-help": "One of the available '''keywords''', that will show appropriate widget",
+	"menueditor-ui-form-field-keyword": "Keyword",
+	"menueditor-ui-form-field-text": "Text or a message key",
+	"menueditor-ui-form-field-target": "Link target",
+	"menueditor-ui-form-field-label": "Link label",
+	"menueditor-ui-dialog-action-done": "Done",
+	"menueditor-ui-dialog-action-cancel": "Cancel",
+	"menueditor-ui-node-type-selector-label": "Node type",
+	"menueditor-ui-submit": "Save",
+	"menueditor-ui-cancel": "Cancel",
+	"menueditor-ui-redlink-notice": "This menu does not exist yet!",
+	"menueditor-action-menueditsource": "Edit source",
+	"menueditor-action-menuedit": "Edit",
+	"menueditor-ui-dialog-title": "Edit element",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Edit keyword",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Keyword",
+	"menueditor-toolbar-cancel": "Cancel edit",
+	"menueditor-toolbar-add-label": "Add element",
+	"menueditor-ui-edit-label": "Edit",
+	"menueditor-ui-add-sub-element-label": "Add sub element",
+	"menueditor-footerlinks-banner-text": "Some links may be added automatically by extensions. Please check the extension's configuration to learn more.",
+	"menueditor-toolbar-save": "Save",
+	"menueditor-ui-cancel-confirmation": "Are you sure you want to cancel the edit? All unsaved changes will be lost."
+}

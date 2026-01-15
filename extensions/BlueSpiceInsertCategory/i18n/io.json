@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos",
+			"Joao Xavier"
+		]
+	},
+	"bs-insertcategory-edit-dialog-button-aria-label": "Apertez dialogo-buxo por redaktar la kategorii di ca pagino",
+	"bs-insertcategory-edit-dialog-title": "Redaktar kategorii",
+	"bs-insertcategory-edit-dialog-button-submit": "Facita",
+	"bs-insertcategory-edit-dialog-button-cancel": "Nuligar",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Implicita kategorii",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Ca kategorii ne definesas en la kontenajo dil texto di ca pagino. Posible li inkluzesis en ula shablono."
+}

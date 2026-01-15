@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Athena in Wonderland",
+			"Hamilton Abreu",
+			"Mansil",
+			"Mansil alfalb",
+			"Vitorvicentevalente"
+		]
+	},
+	"bs-usagetracker-desc": "Contém dados estatísticos sobre a utilização da extensão",
+	"apihelp-bs-usagetracker-store-summary": "Contém dados estatísticos sobre o uso da extensão"
+}

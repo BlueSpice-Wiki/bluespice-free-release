@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"500000000006城",
+			"A Chinese Wikipedian",
+			"LittlePaw365",
+			"Vikarna",
+			"佛壁灯",
+			"沈澄心"
+		]
+	},
+	"bs-qr-code-extension-description": "在工具栏中显示链接至当前页面的二维码。",
+	"bs-qr-code-action-qr-code-title": "打开二维码对话框",
+	"bs-qr-code-action-qr-code-text": "二维码",
+	"bs-qr-code-action-qr-code-dialog-title": "二维码",
+	"bs-qr-code-action-qr-code-dialog-alt": "$1的二维码",
+	"bs-qr-code-api-no-page": "参数“page”为空",
+	"apihelp-bs-qr-code-summary": "获取二维码作为页面的base64数据URI",
+	"apihelp-bs-qr-code-param-revid": "用于生成永久链接的页面修订ID",
+	"apihelp-bs-qr-code-param-page": "生成base64数据URI的页面之页面名称",
+	"apihelp-bs-qr-code-param-size": "二维码尺寸",
+	"apihelp-bs-qr-code-example-bs-qr-code": "默认API调用",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "某revid的API调用",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "自定义尺寸（size）的API调用",
+	"bs-qr-code-alt-text": "$1的二维码",
+	"bs-qr-code-tag-qrcode-desc": "在wiki页面中嵌入链接的二维码",
+	"bs-qr-code-tag-qrcode-title": "二维码",
+	"bs-qr-code-tag-attr-page-label": "页面",
+	"bs-qr-code-tag-attr-page-help": "要包含在二维码链接中的页面名称。要使用当前页面名称，请将此字段留空",
+	"bs-qr-code-tag-attr-query-label": "参数",
+	"bs-qr-code-tag-attr-query-help": "要添加到二维码码URL的其他参数。包括“action=edit”或“oldid=1”这类参数",
+	"bs-qr-code-tag-attr-desc-label": "描述",
+	"bs-qr-code-tag-attr-desc-help": "与二维码相关的描述。如要仅显示二维码，请将此字段留空",
+	"bs-qr-code-tag-attr-size-label": "大小",
+	"bs-qr-code-tag-attr-size-help": "更改嵌入二维码的大小",
+	"bs-qr-code-droplet-name": "二维码",
+	"bs-qr-code-droplet-desc": "在wiki页面中插入二维码",
+	"bs-qr-code-tag-attr-size-option-small": "小",
+	"bs-qr-code-tag-attr-size-option-medium": "中",
+	"bs-qr-code-tag-attr-size-option-large": "大"
+}

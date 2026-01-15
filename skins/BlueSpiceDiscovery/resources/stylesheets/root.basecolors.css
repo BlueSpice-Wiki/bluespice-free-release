@@ -1,0 +1,15 @@
+/* bluespice colors */
+:root {
+	--primary-color: #3e5389;
+	--primary-color--hover: #98a7c4;
+
+	--primary-fg: white;
+	--primary-fg--hover: white;
+	--primary-bg: #3e5389;
+	--primary-bg--hover: #98a7c4;
+
+	--primary-font-color: #252525;
+	--secondary-font-color: #747474;
+
+	--focus-visible: #3e5893;
+}

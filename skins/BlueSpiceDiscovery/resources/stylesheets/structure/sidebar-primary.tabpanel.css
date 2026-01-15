@@ -1,0 +1,98 @@
+#sb-pri-cnt .card {
+	border: 0 !important;
+	padding: 0;
+}
+
+#sb-pri-cnt .card-header.menu-title {
+	margin-bottom: 0.5rem;
+	padding-left: 25px;
+	border-left: 2px solid transparent;
+	border-bottom: 0.05px solid var( --sidebar-primary-header-border-color );
+	color: var( --sidebar-primary-header-fg );
+	font-size: 15px;
+	font-variant-caps: all-petite-caps;
+	letter-spacing: 0.15rem;
+}
+
+#sb-pri .nav-tabs a {
+	display: block;
+	width: 100%;
+	height: 35px;
+	font-size: 15px;
+	padding-left: 0.8rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-left: 5px solid transparent;
+	color: var( --sidebar-primary-tab-home-fg );
+}
+
+#sb-pri .nav-tabs > a:hover {
+	border-left: 5px solid transparent;
+	color: var( --sidebar-primary-tab-home-fg--hover );
+	cursor: pointer;
+}
+
+#sb-pri a.tab-home i {
+	margin-right: 1rem;
+	display: inline-block;
+}
+
+#sb-pri a.tab-home i::before {
+	position: relative;
+	top: 2px;
+}
+
+#sb-pri .list-group-item a,
+#sb-pri .list-group-item a:visited {
+	color: inherit;
+	text-decoration: none;
+	border-left: 5px solid transparent;
+}
+
+#sb-pri .list-group-item a:hover {
+	color: var( --sidebar-primary-fg--hover );
+	background-color: var( --sidebar-primary-bg--hover );
+	border-left: 5px solid var( --sidebar-primary-marker--hover );
+}
+
+#sb-pri .list-group-item a.active {
+	color: var( --sidebar-primary-fg--active );
+	background-color: var( --sidebar-primary-bg--active );
+	border-left: 5px solid var( --sidebar-primary-marker--active );
+}
+
+#sb-pri .nav.nav-tabs a {
+	border-color: transparent;
+	background-color: var( --sidebar-primary-tab-home-bg );
+	color: var( --sidebar-primary-tab-home-fg );
+}
+
+#sb-pri .nav.nav-tabs .list-group-item a:hover {
+	border-color: transparent;
+	background-color: var( --sidebar-primary-tab-home-bg--hover );
+	color: var( --sidebar-primary-marker--active );
+}
+
+#sb-pri ul {
+	margin-left: 0;
+}
+
+#sb-pri ul:empty {
+	height: 0;
+}
+
+#sb-pri .list-group .list-group-item > a {
+	display: inline-block;
+	width: 100%;
+	line-height: 35px;
+	vertical-align: middle;
+	padding-left: 40px;
+}
+
+#sb-pri .list-group .list-group-item > a:focus-visible {
+	outline: 1px solid var( --focus-visible );
+}
+/* hide outline for focus on click */
+#sb-pri .list-group .list-group-item > a:focus:not( :focus-visible ) {
+	outline: 0;
+}

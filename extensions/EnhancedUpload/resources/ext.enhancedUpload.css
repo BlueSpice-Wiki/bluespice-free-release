@@ -1,0 +1,153 @@
+.enhancedUpload-widget .oo-ui-selectFileInputWidget {
+	max-width: unset;
+}
+
+.enhancedUpload-widget .oo-ui-horizontalLayout {
+	justify-content: space-between;
+}
+
+.enhancedUpload-widget .oo-ui-horizontalLayout.heading {
+	margin: 1rem 0;
+	border-bottom: 1px solid #747474;
+}
+
+.enhancedUpload-widget .oo-ui-horizontalLayout .toggle-icon {
+	float: right;
+}
+
+.enhancedUpload-widget .buttonField {
+	margin: 1rem 0;
+	float: right;
+}
+
+.enhancedUpload-widget .file-preview-widget {
+	margin: 20px 0;
+	height: auto;
+	max-height: 180px;
+	overflow-x: auto;
+	border: 0.05px solid #00000020;
+	border-radius: 5px;
+	background-color: #f8f9fa;
+	display: flex;
+}
+
+.enhancedUpload-widget .file-preview-widget.no-files {
+	display: none;
+	margin: 0;
+}
+
+.enhancedUpload-widget .file-preview-widget.no-files ~ .buttonField {
+	display: none;
+}
+
+.enhancedUpload-widget .thumbnail-items {
+	border: 0.05px solid #00000020;
+	border-radius: 5px;
+	padding: 2px;
+	margin: 5px 15px;
+	width: 7.5em;
+	height: 75px;
+	position: relative;
+}
+
+.enhancedUpload-widget .thumbnail-preview {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.enhancedUpload-widget .thumbnail-icon {
+	opacity: 0.66;
+}
+
+.enhancedUpload-widget .thumbnail-icon .oo-ui-icon-attachment {
+	width: 5.5em;
+}
+
+.enhancedUpload-widget .thumbnail-items:hover {
+	box-shadow: 0 0 4px 0 #747474;
+}
+
+.enhancedUpload-widget .thumbnail-items a.oo-ui-buttonElement-button {
+	opacity: 0;
+	width: 12px;
+	border: transparent;
+	background-color: transparent;
+	right: 0;
+	position: absolute;
+	padding: 0;
+}
+
+.enhancedUpload-widget .thumbnail-items:hover a.oo-ui-buttonElement-button {
+	opacity: 1;
+}
+
+.enhancedUpload-widget .thumbnail-items a.oo-ui-buttonElement-button:hover {
+	opacity: 1;
+	background-color: transparent;
+}
+
+.enhancedUpload-widget .thumbnail-items a.oo-ui-buttonElement-button:focus-visible {
+	opacity: 1;
+}
+
+.enhancedUpload-widget span.oo-ui-indicator-clear {
+	height: 12px;
+	right: 2px !important; /* stylelint-disable-line declaration-no-important */
+	background-color: white; /* stylelint-disable-line color-named */
+	outline: 2px solid white; /* stylelint-disable-line color-named */
+}
+
+/* stylelint-disable declaration-no-important */
+body.upload-open {
+	margin-right: 0 !important;
+	position: relative;
+}
+/* stylelint-enable declaration-no-important */
+
+/* stylelint-disable declaration-no-important */
+.enhancedUpload-loading-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: auto;
+	background-color: rgba( 62, 83, 137, 0.3 ) !important;
+	z-index: 1051 !important;
+}
+/* stylelint-enable declaration-no-important */
+
+/* stylelint-disable function-disallowed-list */
+.progressbar-upload {
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	box-shadow: 0 2px 2px 0 rgb( 0 0 0 / 25% );
+	width: 100%;
+}
+/* stylelint-enable function-disallowed-list */
+
+label.enhancedupload-dialog-title {
+	font-weight: bold;
+	padding: 5px 10px;
+}
+
+.oo-ui-popupButtonWidget-popup.preview-label {
+	top: 15px;
+}
+
+/* stylelint-disable declaration-no-important */
+.thumbnail-items:hover .oo-ui-popupButtonWidget-popup.preview-label {
+	display: block !important;
+}
+/* stylelint-enable declaration-no-important */
+
+.oo-ui-popupButtonWidget-popup.preview-label label {
+	font-size: 0.75rem;
+}
+
+.index-width .oo-ui-horizontalLayout {
+	display: block;
+}

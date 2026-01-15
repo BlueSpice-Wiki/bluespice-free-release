@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"Justincheng12345",
+			"Kly",
+			"LNDDYL",
+			"Liuxinyu970226",
+			"Winston Sung"
+		]
+	},
+	"bs-authors-desc": "顯示頁面作者的個人資料圖片",
+	"prefs-authors": "此頁面作者",
+	"bs-authors-title": "$1 位{{GENDER:$2|作者}}",
+	"bs-authors-profileimage": "個人資料圖片",
+	"bs-authors-profileimage-change": "變更個人資料圖片",
+	"bs-authors-show-all-authors": "更多作者可用",
+	"bs-authors-navigation-link-title": "此頁面作者",
+	"bs-authors-navigation-link-text": "作者",
+	"apihelp-bs-pageauthors-store-summary": "列出提供在上下文裡的所有頁面作者",
+	"bs-authors-info-dialog": "此頁面作者",
+	"bs-authors-info-dialog-grid-column-author": "作者",
+	"bs-authors-info-dialog-grid-column-type": "作者類型"
+}

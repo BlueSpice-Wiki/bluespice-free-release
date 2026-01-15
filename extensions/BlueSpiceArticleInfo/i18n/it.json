@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Dansita",
+			"GpieroMW",
+			"Nemo bis"
+		]
+	},
+	"bs-articleinfo-desc": "Fornisce informazioni sulla pagina nella barra di stato",
+	"prefs-articleinfo": "Informazioni sulla pagina",
+	"bs-articleinfo-newrevision-info-text-reload": "È disponibile una nuova versione per questa pagina. Si prega di [[:$1|ricaricare]] la pagina per visualizzare il contenuto corrente."
+}

@@ -1,0 +1,7 @@
+.droplet .icon-droplet.droplet-pdf-pagebreak {
+	background-image: url( ./../images/contentdroplets-pdf-break-icon.svg );
+}
+
+.droplet .icon-droplet.droplet-pdf-no-export {
+	background-image: url( ./../images/contentdroplets-no-pdf-icon.svg );
+}

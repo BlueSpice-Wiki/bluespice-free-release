@@ -1,0 +1,14 @@
+[
+	{
+		"path": "/mws/v1/title-query-store",
+		"class": "MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Rest\\TitleQueryStore",
+		"services": [
+			"HookContainer",
+			"DBLoadBalancer",
+			"TitleFactory",
+			"ContentLanguage",
+			"NamespaceInfo",
+			"PageProps"
+		]
+	}
+]

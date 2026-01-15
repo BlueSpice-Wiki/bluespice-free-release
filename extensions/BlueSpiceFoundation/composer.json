@@ -1,0 +1,64 @@
+{
+	"name": "bluespice/foundation",
+	"description": "This package contains basic classes/functions/resources of BlueSpice MediaWiki",
+	"keywords": [
+		"mediawiki",
+		"wiki"
+	],
+	"license": "GPL-3.0-only",
+	"type": "mediawiki-extension",
+	"homepage": "https://www.bluespice.com",
+	"authors": [
+		{
+			"name": "Hallo Welt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "https://www.hallowelt.com"
+		}
+	],
+	"extra": {
+		"installer-name": "BlueSpiceFoundation"
+	},
+	"require": {
+		"ext-curl": "*",
+		"ext-gd": "*",
+		"param-processor/param-processor": "1.12.*",
+		"composer/installers": "~1.0|~2",
+		"mwstake/mediawiki-component-commonuserinterface": "~6",
+		"mwstake/mediawiki-component-runjobstrigger": "~2",
+		"mwstake/mediawiki-component-alertbanners": "~2",
+		"mwstake/mediawiki-component-manifestregistry": "~3",
+		"mwstake/mediawiki-component-utils": "~3",
+		"mwstake/mediawiki-component-datastore": "~2",
+		"mwstake/mediawiki-component-dynamicfiledispatcher": "~1.0"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "45.0.0",
+		"mediawiki/mediawiki-phan-config": "0.14.0",
+		"mediawiki/minus-x": "1.1.3",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.4.0"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phan": "phan -d . --long-progress-bar",
+		"phpcs": "phpcs -sp --cache"
+	},
+	"support": {
+		"issues": "https://sourceforge.net/projects/bluespice/support",
+		"wiki": "https://help.bluespice.com"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}

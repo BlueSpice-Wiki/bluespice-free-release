@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Caiofernandes",
+			"Hamilton Abreu"
+		]
+	},
+	"menueditor-desc": "Editor gráfico para páginas de menu",
+	"menueditor-ui-menu-wiki-link-label": "Hiperligação da wiki",
+	"menueditor-ui-menu-wiki-link-label-edit": "Editar hiperligação da wiki",
+	"menueditor-ui-menu-wiki-link-help": "Hiperligação para uma página wiki",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Hiperligação",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Editar hiperligação",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Especificação da hiperligação.<br>O destino pode ser:<ul><li>uma chave de mensagem, que resolve para um nome de página</li><li>uma hiperligação externa</li><li>Nome da página na wiki</li><li>hiperligação interwikis</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Texto ou chave de mensagem",
+	"menueditor-ui-menu-raw-text-label-edit": "Editar texto ou chave de mensagem",
+	"menueditor-ui-menu-keyword-label": "Palavra-chave",
+	"menueditor-ui-menu-keyword-label-edit": "Editar palavra-chave",
+	"menueditor-ui-menu-keyword-help": "Uma das '''palavras-chave''' disponíveis, que mostrará o ''widget'' apropriado",
+	"menueditor-ui-form-field-keyword": "Palavra-chave",
+	"menueditor-ui-form-field-text": "Texto ou uma chave de mensagem",
+	"menueditor-ui-form-field-target": "Destino da hiperligação",
+	"menueditor-ui-form-field-label": "Etiqueta da hiperligação",
+	"menueditor-ui-dialog-action-done": "Concluído",
+	"menueditor-ui-dialog-action-cancel": "Cancelar",
+	"menueditor-ui-node-type-selector-label": "Tipo de nó",
+	"menueditor-ui-submit": "Gravar",
+	"menueditor-ui-cancel": "Cancelar",
+	"menueditor-ui-redlink-notice": "Este menu ainda não existe!",
+	"menueditor-action-menueditsource": "Editar fonte",
+	"menueditor-action-menuedit": "Editar",
+	"menueditor-ui-dialog-title": "Editar elemento",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Editar palavra-chave",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Palavra-chave",
+	"menueditor-toolbar-cancel": "Cancelar edição",
+	"menueditor-toolbar-add-label": "Adicionar elemento",
+	"menueditor-ui-edit-label": "Editar",
+	"menueditor-ui-add-sub-element-label": "Adicionar subelemento",
+	"menueditor-footerlinks-banner-text": "Alguns links podem ser adicionados automaticamente por extensões. Verifique a configuração da extensão para saber mais."
+}

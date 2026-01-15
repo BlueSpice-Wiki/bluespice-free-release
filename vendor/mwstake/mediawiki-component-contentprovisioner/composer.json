@@ -1,0 +1,55 @@
+{
+	"name": "mwstake/mediawiki-component-contentprovisioner",
+	"description": "Provides classes and services to import content into MediaWiki",
+	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "HalloWelt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "http://www.hallowelt.com"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0|~2",
+		"mwstake/mediawiki-componentloader": "~1"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "45.0.0",
+		"mediawiki/mediawiki-phan-config": "0.14.0",
+		"mediawiki/minus-x": "1.1.3",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.4.0",
+		"phpunit/phpunit": "^8.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"MWStake\\MediaWiki\\Component\\ContentProvisioner\\": "src/",
+			"MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\": "tests/phpunit/"
+		},
+		"files": [
+			"bootstrap.php"
+		]
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phan": "phan -d . --long-progress-bar",
+		"phpcs": "phpcs -sp --cache",
+		"unittest": [
+			"../../../tests/phpunit/phpunit.php tests/phpunit"
+		]
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}

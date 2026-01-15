@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alshamiri1",
+			"Asma",
+			"XIDME",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"standarddialogs-copy-page-new": "اسم الصفحة الجديدة",
+	"standarddialogs-page-info-general": "عام",
+	"standarddialogs-page-info-page-language": "اللغة",
+	"standarddialogs-page-info-page-watch": "عدد المراقبين",
+	"standarddialogs-page-info-page-last-editor": "آخر مساهم",
+	"standarddialogs-page-info-page-templates": "القوالب",
+	"standarddialogs-create-button-new-page-text": "صفحة جديدة",
+	"standarddialogs-create-button-new-subpage-text": "صفحة فرعية جديدة",
+	"standarddialogs-delete-title": "حذف صفحة «$1»",
+	"standarddialogs-protect-btn": "احمِ",
+	"standarddialogs-protect-title": "حماية صفحة «$1»",
+	"standarddialogs-btn-cancel": "إلغاء",
+	"standarddialogs-delete-subpages": "حذف الصفحات الفرعية",
+	"standarddialogs-confirm-mass-deletion": "سيؤدي هذا إلى حذف $1 {{PLURAL:$1|page|pages}}. هل أنت متأكد؟"
+}

@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mahabarata",
+			"McDutchie",
+			"Verdy p"
+		]
+	},
+	"menueditor-desc": "Éditeur graphique pour les pages de menu",
+	"menueditor-ui-menu-wiki-link-label": "Lien wiki",
+	"menueditor-ui-menu-wiki-link-label-edit": "Modifier le lien wiki",
+	"menueditor-ui-menu-wiki-link-help": "Lien vers une page wiki",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Lien",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Modifier le lien",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Spécification du lien.<br /> La cible peut être :<ul><li>une clé de message, qui se résout en un nom de page ;</li><li>un lien externe ;</li><li>le nom d’une page sur le wiki ;</li><li>un lien interwiki.<li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Texte ou clé de message",
+	"menueditor-ui-menu-raw-text-label-edit": "Modifier le texte ou la clé de message",
+	"menueditor-ui-menu-keyword-label": "Mot-clé",
+	"menueditor-ui-menu-keyword-label-edit": "Modifier le mot-clé",
+	"menueditor-ui-menu-keyword-help": "Un des '''mots-clés''' disponibles, qui affichera le widget approprié",
+	"menueditor-ui-form-field-keyword": "Mot-clé",
+	"menueditor-ui-form-field-text": "Texte ou clé de message",
+	"menueditor-ui-form-field-target": "Cible du lien",
+	"menueditor-ui-form-field-label": "Libellé du lien",
+	"menueditor-ui-dialog-action-done": "Fait",
+	"menueditor-ui-dialog-action-cancel": "Annuler",
+	"menueditor-ui-node-type-selector-label": "Type de nœud",
+	"menueditor-ui-submit": "Enregistrer",
+	"menueditor-ui-cancel": "Annuler",
+	"menueditor-ui-redlink-notice": "Ce menu n’existe pas encore !",
+	"menueditor-action-menueditsource": "Modifier la source",
+	"menueditor-action-menuedit": "Modifier",
+	"menueditor-ui-dialog-title": "Modifier l’élément",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Modifier le mot-clé",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Mot-clé",
+	"menueditor-toolbar-cancel": "Annuler les modifications",
+	"menueditor-toolbar-add-label": "Ajouter un élément",
+	"menueditor-ui-edit-label": "Modifier",
+	"menueditor-ui-add-sub-element-label": "Ajouter un sous-élément",
+	"menueditor-footerlinks-banner-text": "Certains liens peuvent être ajoutés automatiquement par des extensions. Veuillez vérifier la configuration de l'extension pour en savoir plus.",
+	"menueditor-toolbar-save": "Enregistrer"
+}

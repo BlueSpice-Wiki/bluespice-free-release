@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Qiorly"
+		]
+	},
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Развити",
+	"vuejsplus-data-grid-option-filter-string": "Исканје",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Провєрјено",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Невтралны"
+}

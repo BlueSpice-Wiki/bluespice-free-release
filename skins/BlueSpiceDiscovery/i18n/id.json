@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agam Riyandana"
+		]
+	},
+	"bs-discovery-page-does-not-exist-title": "$1 (halaman belum tersedia)",
+	"bs-discovery-sidebar-primary-aria-label": "Tabel samping utama",
+	"bs-discovery-sidebar-secondary-aria-label": "Tabel sisi sekunder"
+}

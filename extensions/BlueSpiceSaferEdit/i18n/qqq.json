@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"Guycn2",
+			"Robby",
+			"Shirayuki",
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Ата"
+		]
+	},
+	"bs-saferedit-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of pages visited extension",
+	"bs-saferedit-user-editing": "Text in top bar for indicating there are users currently editing the page \n* $1 contains the user names of the users who are editing the page at the moment.\n* $2 is the count of editing users \n\nNo punctuation needed.",
+	"bs-saferedit-someone-editing": "Text in top bar for the page is being edited\n\nNo punctuation needed.",
+	"bs-saferedit-pref-edit-interval": "Label for config variable \"SaferEditInterval\"",
+	"bs-saferedit-pref-edit-interval-help": "Description for config variable \"SaferEditInterval\"",
+	"bs-saferedit-pref-show-editinguser": "Label for config variable \"SaferEditShowNameOfEditingUser\"",
+	"bs-saferedit-pref-show-editinguser-help": "Description for config variable \"SaferEditShowNameOfEditingUser\""
+}

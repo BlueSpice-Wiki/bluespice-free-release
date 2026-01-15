@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daud I.F. Argana",
+			"Rachmat.Wahidi",
+			"Rachmat04",
+			"Sonic Speedy"
+		]
+	},
+	"bs-smartlist-desc": "Menampilkan lima perubahan terakhir wiki dalam daftar",
+	"prefs-smartlist": "Daftar pintar",
+	"bs-smartlist-recent-changes": "Perubahan terbaru",
+	"bs-smartlist-no-entries": "Tidak ada hasil yang ditemukan.",
+	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Ruang nama}} yang diberikan tidaklah valid: $2.",
+	"bs-smartlist-invalid-target": "Target yang diberikan bukan judul halaman yang valid",
+	"bs-smartlist-comment": "Komentar: $1.",
+	"bs-smartlist-sort-asc": "Menaik",
+	"bs-smartlist-sort-desc": "Menurun",
+	"bs-smartlist-day": "Hari",
+	"bs-smartlist-week": "Minggu",
+	"bs-smartlist-month": "Bulan",
+	"bs-smartlist-time": "Waktu",
+	"bs-smartlist-title": "Judul",
+	"bs-smartlist-mostvisitedpages": "Halaman yang sering dikunjungi",
+	"bs-smartlist-mosteditedpages": "Halaman yang disunting teratas",
+	"bs-smartlist-mostactiveusers": "Pengguna paling aktif (menurut pengeditan)",
+	"bs-smartlist-lastedits": "Suntingan saya",
+	"bs-smartlist-noedits": "Tidak ada hasil yang ditemukan.",
+	"bs-smartlist-mostactiveusersdesc": "Daftar pengguna paling aktif yang diurutkan berdasarkan editan mereka.",
+	"bs-smartlist-mosteditedpagesdesc": "Daftar halaman yang paling banyak diedit diurutkan berdasarkan hasil editnya.",
+	"bs-smartlist-mostvisitedpagesdesc": "Daftar halaman yang paling banyak dilihat diurutkan berdasarkan tampilan mereka.",
+	"bs-smartlist-lasteditsdesc": "Daftar halaman yang telah Anda edit.",
+	"bs-smartlist-hitcounter-missing": "Ekstensi <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> harus dipasang."
+}

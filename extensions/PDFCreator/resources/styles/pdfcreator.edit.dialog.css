@@ -1,0 +1,112 @@
+.pdfcreator-edit-heading {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.pdfcreator-edit-desc {
+	display: block;
+}
+
+.pdfcreator-select-template-section-widget {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border: 1px solid #a2a9b1;
+	border-radius: 5px;
+	margin: 15px 0;
+}
+
+.pdfcreator-edit-dlg .pdfcreator-select-template-section-widget .oo-ui-fieldLayout-align-inline {
+	margin: auto 0;
+}
+
+.pdfcreator-select-template-section-widget .oo-ui-indicator-down {
+	rotate: -90deg;
+}
+
+.pdfcreator-header-preview-cnt {
+	margin: 0 16px 10px;
+}
+
+.pdfcreator-header-preview-text {
+	font-size: 0.8rem;
+	color: #747474;
+	margin: 10px 0;
+	display: block;
+}
+
+.pdfcreator-header-preview {
+	border: 1px solid #a2a9b1;
+	border-bottom-color: transparent;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #dadde3;
+}
+
+.pdfcreator-preview-table-header {
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+.pdfcreator-header-preview-image {
+	background-repeat: no-repeat;
+	height: 50px;
+	width: auto;
+}
+
+.pdfcreator-preview-table-header td,
+.pdfcreator-preview-table-footer td {
+	height: 50px;
+	padding: 0 5px;
+}
+
+.pdfcreator-preview-table-footer td {
+	vertical-align: top;
+}
+
+.pdfcreator-preview-table-header-right,
+.pdfcreator-preview-table-footer-right {
+	text-align: right;
+}
+
+.pdfcreator-footer-preview {
+	margin: 6px 0 0;
+	padding: 10px 16px;
+	font-size: 9pt;
+	border: 1px solid #a2a9b1;
+	border-top-color: transparent;
+	box-shadow: -5px -5px 5px #dadde3;
+}
+
+.pdfcreator-preview-table-footer {
+	width: 100%;
+	border-top: 1px solid black;
+}
+
+.pdfcreator-preview-table-footer td > *,
+.pdfcreator-preview-table-footer td div > * {
+	display: inline !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.pdfcreator-preview-table-footer-middle {
+	text-align: center;
+}
+
+.pdfcreator-edit-upload-options {
+	justify-content: space-between;
+	margin-top: 10px;
+	border-top: 1px solid #a2a9b1;
+	padding-top: 10px;
+}
+
+.pdfcreator-edit-upload-options > div {
+	width: 90%;
+}
+
+.pdfcreator-edit-upload-options > span {
+	margin: auto 0 0;
+}
+
+.pdfcreator-edit-dlg .pdfcreator-general-properties .oo-ui-fieldsetLayout-header .oo-ui-labelElement-label {
+	font-size: 1em;
+}

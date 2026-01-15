@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alojz.tic",
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-pagesvisited-desc": "Zagotavlja osebni seznam nazadnje obiskanih strani",
+	"prefs-pagesvisited": "Obiskane strani",
+	"bs-pagesvisited-widget-title": "Obiskane strani",
+	"bs-pagesvisited-error-nsnotvalid": "Dan{{PLURAL:$1|i imenski prostor|a imenska prostora|i imenski prostori}} {{PLURAL:$1|ni veljaven|nista veljavna|niso veljavni}}: <code>$2</code>",
+	"bs-pagesvisited-pref-widgetlimit": "Omejitev vnosov:",
+	"bs-pagesvisited-pref-widgetns": "Imenski prostor:",
+	"bs-pagesvisited-pref-widgetsortodr": "Razvrsti po:",
+	"bs-pagesvisited-pref-sort-time": "Čas",
+	"bs-pagesvisited-pref-sort-pagename": "Naslov",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Prikaže seznam nedavno obiskanih strani. Seznam lahko omejite s parametri.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Obiskane strani",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Število",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Nastavite število strani, prikazanih na seznamu",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Največja dolžina naslova",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Nastavite največje število znakov, preden je naslov odrezan",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Vrstni red",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Določitev vrstnega reda, v katerem so prikazane strani",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Imenski prostori",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Prikaži samo strani iz teh imenskih prostorov",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Čas",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Ime strani",
+	"bs-pagesvisited-droplet-name": "Obiskane strani",
+	"bs-pagesvisited-droplet-description": "Seznam z obiskanimi stranmi",
+	"bs-pagesvisited-label-anon-user": "Za ogled strani, ki ste jih obiskali, se prijavite v svoj račun"
+}

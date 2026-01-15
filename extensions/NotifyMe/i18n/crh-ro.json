@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Zolgoyo"
+		]
+	},
+	"notifyme-ui-email-frequency-daily": "Kúnlík",
+	"notifyme-ui-subscriptionset-category-label": "Ulam",
+	"notifyme-ui-subscriptionset-watchlist-label": "Kózetúw ğedwelí",
+	"notifyme-ui-dialog-set-editor-cancel": "Wazkeş",
+	"notifyme-ui-dialog-set-editor-create": "Píttí",
+	"notifyme-sample-data-link-2": "Sayipa keşmíşíne karaw",
+	"notifyme-mail-template-edit-help-category-colors": "Túsler",
+	"notifyme-mail-template-edit-help-header-description": "Taswir",
+	"notifyme-notification-center-filter-label-namespaces-none": "Esas",
+	"notifyme-ui-delete": "Síl",
+	"notifyme-notification-center-help-menu-aria-label": "Sazlamalar"
+}

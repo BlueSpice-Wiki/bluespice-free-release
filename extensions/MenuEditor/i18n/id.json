@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Farras",
+			"Veracious"
+		]
+	},
+	"menueditor-ui-menu-wiki-link-label-edit": "Sunting pranala wiki",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Sunting pranala",
+	"menueditor-ui-menu-keyword-label-edit": "Sunting kata kunci",
+	"menueditor-ui-dialog-action-done": "Selesai",
+	"menueditor-ui-dialog-action-cancel": "Batal",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Sunting kata kunci",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Kata kunci"
+}

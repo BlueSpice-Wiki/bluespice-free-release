@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-qr-code-extension-description": "Prikazuje QR kod s vezom do trenutne stranice u traci s alatkama.",
+	"bs-qr-code-action-qr-code-text": "QR kod",
+	"bs-qr-code-action-qr-code-dialog-title": "QR kod",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR kod za $1",
+	"bs-qr-code-api-no-page": "Parametar 'page' je prazan",
+	"apihelp-bs-qr-code-param-size": "Veličina QR koda",
+	"bs-qr-code-alt-text": "QR kod za $1",
+	"bs-qr-code-tag-qrcode-title": "QR kod",
+	"bs-qr-code-tag-attr-page-label": "Stranica",
+	"bs-qr-code-tag-attr-query-label": "Parametar",
+	"bs-qr-code-tag-attr-desc-label": "Opis",
+	"bs-qr-code-tag-attr-size-label": "Veličina",
+	"bs-qr-code-droplet-name": "QR kod",
+	"bs-qr-code-droplet-desc": "Umetni QR kod u viki stranicu",
+	"bs-qr-code-tag-attr-size-option-small": "mala",
+	"bs-qr-code-tag-attr-size-option-medium": "srednja",
+	"bs-qr-code-tag-attr-size-option-large": "velika"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tofeiku"
+		]
+	},
+	"standarddialogs-new-page-not-exist-label": "Laman tidak wujud",
+	"standarddialogs-page-info-page-no-images-label": "Laman ini tidak mengandungi imej atau fail (termasuk fail audio dan video)",
+	"standarddialogs-page-info-page-no-templates-label": "Laman ini tidak mengandungi templat",
+	"standarddialogs-page-info-page-no-categories-label": "Laman ini tidak mengandungi kategori",
+	"standarddialogs-page-info-page-no-links-label": "Laman ini tidak mengandungi pautan",
+	"standarddialogs-page-info-page-no-extlinks-label": "Laman ini tidak mengandungi pautan luar"
+}

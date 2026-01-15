@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Guycn2",
+			"Steeve815"
+		]
+	},
+	"bs-whoisonline-desc": "הצגת רשימה של המשתמשים המחוברים לאתר",
+	"bs-whoisonline-nousers": "אין משתמשים מחוברים.",
+	"bs-whoisonline-widget-title": "מי מחובר?",
+	"prefs-whoisonline": "מי מחובר?",
+	"bs-whoisonline-pref-limitcount": "המספר המרבי של המשתמשים להצגה:",
+	"bs-whoisonline-pref-orderby": "מיון לפי:",
+	"bs-whoisonline-pref-maxidletime-label": "זמן תפוגה ללא חיבור לרשת (בשניות)",
+	"bs-whoisonline-pref-orderby-time": "הזמן שחלף מאז הכניסה",
+	"bs-whoisonline-pref-orderby-name": "שם",
+	"bs-whoisonline-pref-interval-label": "מרווח זמן לעדכון (בשניות)",
+	"bs-whoisonline-collection-type-userlogin": "כניסת משתמש",
+	"bs-whoisonline-collection-var-login": "כניסה",
+	"bs-whoisonline-statistics-report-login-duration": "משך הכניסה",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "משך הכניסה (שניות)",
+	"bs-whoisonline-pref-interval-help-label": "מספר השניות שאחריהן רשימת המשתמשים מתעדכנת",
+	"bs-whoisonline-pref-maxidletime-help-label": "מספר השניות של חוסר פעילות שלאחריהן המשתמש מסומן בתור לא מחובר לרשת",
+	"bs-whoisonline-tag-whoisonlinecount-description": "הצגת מספר המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "מספר המחוברים",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "הצגת כל המשתמשים שהתחברו במהלך 10 הדקות האחרונות. הפלט הוא בועת דיבור כאשר משתמש מרחף מעל הקישור הקשור",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "חלון קופץ \"מי מחובר\"",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "מספר הכניסות",
+	"bs-whoisonline-statistics-report-login-number": "כניסות",
+	"bs-whoisonline-droplet-count-name": "מספר המשתמשים המחוברים",
+	"bs-whoisonline-droplet-count-description": "מספר המשתמשים שמחוברים כעת",
+	"bs-whoisonline-droplet-popup-name": "רשימת משתמשים המחוברים",
+	"bs-whoisonline-droplet-popup-description": "חלון קופץ עם רשימה של כל המשתמשים המחוברים כעת"
+}

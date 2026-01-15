@@ -1,0 +1,15 @@
+https://commons.wikimedia.org/wiki/File:Cross_CSS_Red.svg
+https://commons.wikimedia.org/wiki/File:Check_Mark_(0DBA2D).svg
+https://commons.wikimedia.org/wiki/File:Tabler-icons_sort-ascending-letters.svg
+https://commons.wikimedia.org/wiki/File:Tabler-icons_sort-descending-letters.svg
+https://commons.wikimedia.org/wiki/File:Tabler-icons_sort-ascending-numbers.svg
+https://commons.wikimedia.org/wiki/File:Tabler-icons_sort-descending-numbers.svg
+https://commons.wikimedia.org/wiki/File:Bootstrap_sort-up.svg
+https://commons.wikimedia.org/wiki/File:Bootstrap_sort-down.svg
+https://commons.wikimedia.org/wiki/File:Dash_icon.svg
+https://commons.wikimedia.org/wiki/File:Bootstrap_three-dots-vertical.svg
+https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_expand.svg
+https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_collapse.svg
+https://commons.wikimedia.org/wiki/File:OOUI-style-expand-tblr.svg
+https://commons.wikimedia.org/wiki/File:OOUI-style-collapse-tblr.svg
+https://commons.wikimedia.org/wiki/File:Codex_icon_close.svg

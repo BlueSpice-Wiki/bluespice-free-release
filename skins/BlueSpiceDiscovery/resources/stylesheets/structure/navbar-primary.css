@@ -1,0 +1,26 @@
+.navbar-primary-height {
+	height: var( --navbar-primary-height );
+	max-height: var( --navbar-primary-height );
+}
+
+#nb-pri {
+	background-color: var( --navbar-primary-bg );
+	color: var( --navbar-primary-fg );
+	box-shadow: 0 0 4px 0 var( --navbar-primary-border-color );
+	padding: 0;
+	z-index: 1050;
+}
+
+#nb-pri > .row {
+	height: var( --navbar-primary-height );
+}
+
+.navbar button:focus-visible {
+	outline: 0;
+	box-shadow: 0 0 0 0.1em var( --focus-visible );
+}
+
+#nb-pri .navbar-nav {
+	justify-content: flex-end;
+	margin-left: 0.5em;
+}

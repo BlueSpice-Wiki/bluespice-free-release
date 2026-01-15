@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"bs-usermanager-headerrealname": "Сапраўднае імя",
+	"bs-usermanager-headeremail": "Электронная пошта",
+	"bs-usermanager-labelnewpassword": "Пароль",
+	"bs-usermanager-labelpasswordcheck": "Пацьвердзіць пароль",
+	"bs-usermanager-editpassword": "Зьмяніць пароль",
+	"bs-usermanager-label-password-change-strategy": "Спосаб"
+}

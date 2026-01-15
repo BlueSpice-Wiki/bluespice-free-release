@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac"
+		]
+	},
+	"bs-statistics-paging-page-size": "Էջի չափը",
+	"bs-statistics-aggregated-report-filter-category-multi": "Կատեգորիաներ",
+	"bs-statistics-aggregated-report-filter-interval-day": "Օր"
+}

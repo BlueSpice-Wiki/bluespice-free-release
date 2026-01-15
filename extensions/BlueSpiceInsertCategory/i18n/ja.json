@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"A2y4",
+			"MathXplore",
+			"Otokoume",
+			"Shirayuki",
+			"もなー(偽物)",
+			"背番号4のエース"
+		]
+	},
+	"bs-insertcategory-desc": "カテゴリのリンクを入力するダイアログ",
+	"bs-insertcategory-insertcat": "カテゴリを挿入",
+	"prefs-insertcategory": "カテゴリの挿入",
+	"bs-insertcategory-pref-withparents": "親カテゴリも含めてカテゴリを挿入",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "このページのカテゴリを編集",
+	"bs-insertcategory-edit-dialog-button-tooltip": "このページのカテゴリを編集",
+	"bs-insertcategory-edit-dialog-button-aria-label": "このページのカテゴリを編集するためのダイアログを開く",
+	"bs-insertcategory-edit-dialog-button-label": "編集",
+	"bs-insertcategory-edit-dialog-title": "カテゴリを編集",
+	"bs-insertcategory-edit-dialog-button-submit": "完了",
+	"bs-insertcategory-edit-dialog-button-cancel": "キャンセル",
+	"bs-insertcategory-edit-dialog-input-label": "割り当てられたカテゴリ",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "暗黙のカテゴリ",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "これらのカテゴリは、ページのウィキテキスト コンテンツ内では定義されていません。ほとんどの場合、テンプレート内から設定されます。",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "ページ カテゴリを取得できません",
+	"bs-insertcategory-no-categories": "カテゴリが割り当てられていません",
+	"bs-insertcategory-edit-dialog-tree-view": "全てのカテゴリを表示する"
+}

@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"McDutchie",
+			"Romaine",
+			"Rots61"
+		]
+	},
+	"bs-setting-path-feature": "Functie",
+	"bs-setting-path-extension": "Uitbreiding",
+	"bs-setting-path-package": "Pakket",
+	"bs-setting-path-system": "Systeem",
+	"bs-setting-path-dataanalysis": "Gegevensanalyse",
+	"bs-setting-path-editor": "Bewerker",
+	"bs-setting-path-search": "Zoeken en Navigeren",
+	"bs-setting-path-personalisation": "Personalizatie",
+	"bs-setting-path-skinning": "Vormgeving",
+	"bs-setting-path-customizing": "Aanpassing",
+	"bs-setting-path-contentstructuring": "Inhoudsstructurering",
+	"bs-setting-path-communication": "Communicatie",
+	"bs-setting-path-administration": "Beheer",
+	"bs-setting-path-qualityassurance": "Kwaliteitscontrole",
+	"bs-setting-path-export": "Exporteren"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"bs-discovery-subpage-tree-pnl-header-text": "Podstranice",
+	"ns-main-label": "Stranice",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-text": "Oznaka",
+	"menueditor-ui-enhanced-sidebar-internal-link-label-edit": "Unutrašnja veza",
+	"menueditor-ui-enhanced-sidebar-external-link-label-edit": "Spoljašnja veza",
+	"menueditor-ui-enhanced-sidebar-external-link-label": "Spoljašnja veza",
+	"menueditor-ui-enhanced-sidebar-internal-link-label": "Unutrašnja veza",
+	"bs-discovery-page-does-not-exist-title": "$1 (stranica ne postoji)",
+	"bs-discovery-enhanced-mediawiki-sidebar-header-text": "Navigacija"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz",
+			"Rönttönen"
+		]
+	},
+	"bs-whoisonline-pref-orderby-name": "Nimi",
+	"bs-whoisonline-droplet-popup-name": "Luettelo sisäänkirjautuneista käyttäjistä"
+}

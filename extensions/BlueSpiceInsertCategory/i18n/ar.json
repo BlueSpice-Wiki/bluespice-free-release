@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"FiberAhmed",
+			"Meno25",
+			"أَحمد",
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-insertcategory-desc": "مربع حوار لإدخال رابط تصنيف",
+	"bs-insertcategory-insertcat": "ادرج تصنيفا",
+	"prefs-insertcategory": "ادرج تصنيفا",
+	"bs-insertcategory-pref-withparents": "إدراج تصنيف مع والديه",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "تحرير تصنيفات هذه الصفحة",
+	"bs-insertcategory-edit-dialog-button-tooltip": "تحرير فئات هذه الصفحة",
+	"bs-insertcategory-edit-dialog-button-aria-label": "فتح الحوار لتحرير فئات هذه الصفحة",
+	"bs-insertcategory-edit-dialog-button-label": "عدل",
+	"bs-insertcategory-edit-dialog-title": "تحرير الفئات",
+	"bs-insertcategory-edit-dialog-button-submit": "تم",
+	"bs-insertcategory-edit-dialog-button-cancel": "إلغاء",
+	"bs-insertcategory-edit-dialog-input-label": "الفئات المعينة",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "الفئات الضمنية",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "لم يتم تحديد هذه الفئات في محتوى نص ويكي للصفحة. على الأرجح تم تعيينهم من داخل قالب.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "لا يمكن استرداد فئات الصفحة",
+	"bs-insertcategory-no-categories": "لم يتم تعيين فئات",
+	"bs-insertcategory-edit-dialog-tree-view": "عرض كل الفئات",
+	"bs-insertcategory-pref-withparents-help": "يضيف كل من الفئة نفسها وفئاتها الأصلية إلى الصفحة",
+	"bs-insertcategory-pref-uploadintegration": "استخدم فئات الصفحات في مربع الحوار \"تحميل\"",
+	"bs-insertcategory-pref-uploadintegration-help": "تعيين فئات الصفحة كخيار افتراضي في مربع الحوار التحميل"
+}

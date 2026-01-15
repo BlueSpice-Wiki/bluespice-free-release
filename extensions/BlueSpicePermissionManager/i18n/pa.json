@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal"
+		]
+	},
+	"bs-permissionmanager-header-description": "ਵੇਰਵਾ",
+	"bs-permissionmanager-group-explicit-reader": "ਪਾਠਕਾਂ",
+	"bs-permissionmanager-group-explicit-sysop": "ਪ੍ਰਬੰਧਕ"
+}

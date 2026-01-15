@@ -1,0 +1,22 @@
+.row > .col-east-spacer,
+.row > .col-west-spacer {
+	display: none;
+}
+
+.row > .col-east,
+.row > .col-west {
+	min-height: calc( 100vh - var( --navbar-primary-height ) );
+	position: fixed;
+}
+
+.row > .col-west {
+	max-width: var( --sidebar-primary-width );
+	top: var( --navbar-primary-height );
+	left: 0;
+}
+
+.row > .col-east {
+	max-width: var( --sidebar-secondary-width );
+	top: var( --navbar-primary-height );
+	right: 0;
+}

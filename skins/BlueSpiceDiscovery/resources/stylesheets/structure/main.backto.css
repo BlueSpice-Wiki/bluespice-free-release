@@ -1,0 +1,17 @@
+.title-backlink-cnt {
+	margin-bottom: 10px;
+}
+
+#title-section .backto-link {
+	color: var( --link-fg );
+	margin-bottom: 10px;
+}
+
+#title-section .backto-link:hover {
+	text-decoration: underline;
+}
+
+#title-section .backto-link::before {
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}

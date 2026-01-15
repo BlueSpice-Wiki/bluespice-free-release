@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Facenapalm",
+			"Gehhrr",
+			"Kaganer",
+			"Kareyac",
+			"Mailman",
+			"Movses",
+			"Okras",
+			"Vlad5250"
+		]
+	},
+	"bs-avatars-desc": "Предоставляет возможность использования общих и индивидуальных пользовательских изображений",
+	"bs-avatars-pref-generator": "Генератор:",
+	"bs-avatars-pref-userimage-img-alt": "Ваше текущее изображение пользователя",
+	"bs-avatars-upload-complete": "Изображение было загружено.",
+	"bs-avatars-generate-complete": "Был создан новый аватар.",
+	"bs-avatars-upload-label": "Картинка",
+	"bs-avatars-generate-new-label": "Создать новый аватар",
+	"bs-avatars-file-upload-fieldset-title": "Загрузить новое изображение",
+	"bs-avatars-auto-generate-fieldset-title": "Создать аватар автоматически",
+	"apihelp-bs-avatars-tasks-summary": "Загружаемые, генерируемые и устанавливаемые пользовательские аватары",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Параметр «username» обязательный и должен содержать корректное имя участника",
+	"bs-avatars-pref-generator-help": "Если участник не загрузил фотографию для своей личной страницы, генерируется изображение аватара. InstantAvatar: генерирует изображение аватара на основе использования инициалов из полей настоящего имени или имени учётной записи. Identicon: генерирует изображение аватара на основе частей идентификатора пользователя."
+}

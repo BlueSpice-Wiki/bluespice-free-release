@@ -1,0 +1,17 @@
+/* overwrite bootstrap alert colors for WCAG */
+:root{
+	--bs-warning-text: #8C6A04;
+	--bs-info-text: #08768D;
+	--bs-secondary-text: #6B747C;
+
+	--bs-info-bg-subtle: #dfecfc;
+	--bs-info-border-subtle: #95bff4;
+	--bs-info-text-emphasis: #2e6096;
+
+	--bs-warning-bg-subtle: #fef6d8;
+	--bs-warning-border-subtle: #fee17f;
+
+	--bs-danger-bg-subtle: #f5dcdc;
+	--bs-danger-border-subtle: #dd8c8c;
+	--bs-danger-text-emphasis: #7e170d;
+}

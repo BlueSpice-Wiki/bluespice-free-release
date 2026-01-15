@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sator",
+			"Subi"
+		]
+	},
+	"bs-usermanager-headerrealname": "Benetako izena",
+	"bs-usermanager-headergroups": "Taldeak",
+	"bs-usermanager-titleadduser": "Gehitu erabiltzailea",
+	"bs-usermanager-labelnewpassword": "Pasahitza",
+	"bs-usermanager-labelpasswordcheck": "Berretsi pasahitza",
+	"bs-usermanager-headerenabled": "Gaitua",
+	"bs-usermanager-endisable": "Gaitu/desgaitu",
+	"bs-usermanager-titledisableuser": "Lankidea desgaitu",
+	"bs-usermanager-titleenableuser": "Lankidea gaitu",
+	"bs-usermanager-editpassword": "Pasahitza aldatu"
+}

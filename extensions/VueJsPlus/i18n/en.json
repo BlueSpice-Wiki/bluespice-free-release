@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daniel vogel"
+		]
+	},
+	"vuejsplus-desc": "Collection of VueJs components",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Collapse",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Expand",
+	"vuejsplus-data-grid-option-sort-string-asc": "Sort ascending",
+	"vuejsplus-data-grid-option-sort-string-desc": "Sort descending",
+	"vuejsplus-data-grid-option-filter-string": "Find",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|One row|$1 rows}} found",
+	"vuejsplus-data-grid-option-button-aria-label": "Column $1 options",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Checked",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Unchecked",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Neutral",
+	"vuejsplus-data-grid-option-filter-date-from-label": "From date",
+	"vuejsplus-data-grid-option-filter-date-to-label": "To date"
+}

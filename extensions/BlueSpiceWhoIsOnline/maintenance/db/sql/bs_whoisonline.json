@@ -1,0 +1,91 @@
+[
+	{
+		"name": "bs_whoisonline",
+		"comment": "BlueSpice: WhoIsOnline - Stores information on users activities",
+		"columns": [
+			{
+				"name": "wo_id",
+				"type": "bigint",
+				"options": {
+					"length": 30,
+					"unsigned": true,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "wo_user_id",
+				"type": "integer",
+				"options": {
+					"length": 30,
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "wo_user_name",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "wo_user_real_name",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "wo_page_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "wo_page_namespace",
+				"type": "integer",
+				"options": {
+					"length": 11,
+					"notnull": true
+				}
+			},
+			{
+				"name": "wo_page_title",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "wo_action",
+				"type": "binary",
+				"options": {
+					"length": 32,
+					"notnull": true
+				}
+			},
+			{
+				"name": "wo_log_ts",
+				"comment": "YmdHis",
+				"type": "mwtimestamp",
+				"options": {
+					"notnull": true,
+					"default": 0
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [
+			"wo_id"
+		]
+	}
+]

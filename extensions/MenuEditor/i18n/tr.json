@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hedda",
+			"Leo",
+			"Rapsar",
+			"Vito Genovese"
+		]
+	},
+	"menueditor-desc": "Menü sayfaları için grafik düzenleyici",
+	"menueditor-ui-menu-wiki-link-label": "Viki bağlantısı",
+	"menueditor-ui-menu-wiki-link-help": "Bir viki sayfasına bağlantı",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Bağlantı",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Bağlantı özellikleri.<br>Hedef şunlar olabilir:<ul><li>bir sayfa adına çözümlenen bir mesaj anahtarı</li><li>bir dış bağlantı</li><li>Viki'deki sayfanın adı</li><li>interwiki bağlantısı</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Metin veya mesaj anahtarı",
+	"menueditor-ui-menu-keyword-label": "Anahtar kelime",
+	"menueditor-ui-menu-keyword-help": "Uygun küçük aracı gösterecek mevcut '''anahtar kelimeler'''den biri",
+	"menueditor-ui-form-field-keyword": "Anahtar kelime",
+	"menueditor-ui-form-field-text": "Metin veya bir mesaj anahtarı",
+	"menueditor-ui-form-field-target": "Bağlantı hedefi",
+	"menueditor-ui-form-field-label": "Bağlantı etiketi",
+	"menueditor-ui-dialog-action-done": "Yapıldı",
+	"menueditor-ui-dialog-action-cancel": "İptal",
+	"menueditor-ui-node-type-selector-label": "Düğüm tipi",
+	"menueditor-ui-submit": "Kaydet",
+	"menueditor-ui-cancel": "İptal",
+	"menueditor-ui-redlink-notice": "Bu menü henüz mevcut değil!",
+	"menueditor-action-menueditsource": "Kaynağı düzenle",
+	"menueditor-action-menuedit": "Değiştir"
+}

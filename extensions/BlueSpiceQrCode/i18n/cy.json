@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau",
+			"Ceirios"
+		]
+	},
+	"bs-qr-code-extension-description": "Mae hyn yn dangos cod QR gyda dolen i'r dudalen gyfredol yn y bar offer.",
+	"bs-qr-code-action-qr-code-text": "Cod QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Cod QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Cod QR ar gyfer $1",
+	"apihelp-bs-qr-code-param-size": "Maint y cod QR"
+}

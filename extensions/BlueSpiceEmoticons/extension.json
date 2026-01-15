@@ -1,0 +1,46 @@
+{
+	"name": "BlueSpiceEmoticons",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceEmoticons",
+	"author": [
+		"Alex Wollangk",
+		"Marc Reymann",
+		"Sebastian Ulbricht",
+		"Mathias Scheer",
+		"Robert Vogel",
+		"Patric Wirth",
+		"Peter Böhm"
+	],
+	"descriptionmsg": "bs-emoticons-desc",
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceEmoticons": {
+					"className": "\\BlueSpice\\Emoticons\\Extension",
+					"extPath": "/BlueSpiceEmoticons"
+				}
+			}
+		}
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\Emoticons\\": "src/"
+	},
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"Hooks": {
+		"@note": "With BlueSpice 4.5, emoticons are handeled by Extension:VisualEditorPlus. To avoid issues with Extension:CollabPads, we diable this functionality entirely. The extension can be archived with the next major release.",
+		"@OutputPageBeforeHTML": "\\BlueSpice\\Emoticons\\Hook\\OutputPageBeforeHTML\\ReplaceEmoticons::callback"
+	},
+	"MessagesDirs": {
+		"BlueSpiceEmoticons": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

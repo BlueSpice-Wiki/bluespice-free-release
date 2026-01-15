@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Comjun04",
+			"Hwangjy9",
+			"Maoue",
+			"Underbaaar",
+			"Ykhwong"
+		]
+	},
+	"bs-statistics-desc": "BlueSpice의 통계 모듈",
+	"aggregatedstatistic": "스냅샷 통계",
+	"extendedstatisticssnapshots": "스냅샷",
+	"bs-statistics-button-label-apply": "필터 적용",
+	"bs-statistics-label-bar-chart": "막대도표",
+	"bs-statistics-label-line-chart": "선도표",
+	"bs-statistics-datasource-label": "데이터 원본",
+	"bs-statistics-paging-page-size": "문서 크기",
+	"bs-statistics-aggregated-report-picker-label": "보고 유형",
+	"bs-statistics-aggregated-report-filter-category-multi": "분류",
+	"bs-statistics-aggregated-report-filter-date-start": "시작일",
+	"bs-statistics-aggregated-report-filter-date-end": "끝 날짜",
+	"bs-statistics-aggregated-report-filter-interval": "간격",
+	"bs-statistics-aggregated-report-filter-interval-day": "일",
+	"bs-statistics-aggregated-report-filter-interval-week": "주",
+	"bs-statistics-aggregated-report-filter-interval-month": "월",
+	"bs-statistics-aggregated-report-filter-interval-year": "연도",
+	"bs-statistics-aggregated-report-filter-namespace": "이름공간",
+	"bs-statistics-aggregated-report-filter-namespaces": "이름공간",
+	"bs-statistics-aggregated-report-filter-page": "문서",
+	"bs-statistics-aggregated-report-filter-user": "사용자",
+	"bs-statistics-aggregated-report-filter-user-multi": "사용자",
+	"bs-statistics-aggregated-report-error": "오류가 발생했습니다!",
+	"bs-statistics-aggregated-report-loading": "데이터를 불러오는 중..."
+}

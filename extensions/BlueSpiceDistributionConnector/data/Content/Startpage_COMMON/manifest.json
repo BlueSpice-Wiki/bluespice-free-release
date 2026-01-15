@@ -1,0 +1,257 @@
+{
+	"Minutes": {
+		"lang": "en",
+		"label": "Minutes overview",
+		"description": "An overview of meeting minutes",
+		"target_title": "Minutes",
+		"content_path": "/pages/(Pages)/Minutes.wiki",
+		"sha1": "9eb9e2618b2411840d4fda95bdd4be4467685bbe",
+		"old_sha1": []
+	},
+	"MediaWiki:Dpl-parserfunc-tracking-category": {
+		"lang": "en",
+		"label": "DPL parserfunc message",
+		"description": "A system message",
+		"target_title": "MediaWiki:Dpl-parserfunc-tracking-category",
+		"content_path": "/pages/MediaWiki/Dpl-parserfunc-tracking-category.wiki",
+		"sha1": "3bc15c8aae3e4124dd409035f32ea2fd6835efc9",
+		"old_sha1": []
+	},
+	"MediaWiki:Dpl-tag-tracking-category": {
+		"lang": "en",
+		"label": "DPL tag message",
+		"description": "A system message",
+		"target_title": "MediaWiki:Dpl-tag-tracking-category",
+		"content_path": "/pages/MediaWiki/Dpl-tag-tracking-category.wiki",
+		"sha1": "3bc15c8aae3e4124dd409035f32ea2fd6835efc9",
+		"old_sha1": []
+	},
+	"Template:Bannerbox": {
+		"lang": "en",
+		"label": "Banner template",
+		"description": "A banner",
+		"target_title": "Template:Bannerbox",
+		"content_path": "/pages/Template/Bannerbox.wiki",
+		"sha1": "b5f648689ca565d833f957f709e68aa3a035723e",
+		"old_sha1": [
+			"15901720bfd0a6d72e4d4031a675e566206c3040",
+			"de4d9b311c8a02ea8afc974f4d04b3ff7daf0ba4"
+		]
+	},
+	"Template:Bannerbox/styles.css": {
+		"lang": "en",
+		"label": "Bannerbox template styles",
+		"description": "CSS for the banner",
+		"target_title": "Template:Bannerbox/styles.css",
+		"content_path": "/pages/Template/Bannerboxstyles.css.wiki",
+		"sha1": "46a2d927d191fd91d312e1a67ef405119b2ae0dc",
+		"old_sha1": [
+			"fa67a1afc80d3d17702da832116301120f3870c0"
+		]
+	},
+	"Template:Image_cards": {
+		"lang": "en",
+		"label": "Image card template",
+		"description": "Image card",
+		"target_title": "Template:Image cards",
+		"content_path": "/pages/Template/Image_cards.wiki",
+		"sha1": "d1fe7938989f470720721b79255099f4d8543d0a",
+		"old_sha1": []
+	},
+	"Template:Image_cards/end": {
+		"lang": "en",
+		"label": "Image cards end template",
+		"description": "End of image cards section",
+		"target_title": "Template:Image cards/end",
+		"content_path": "/pages/Template/Image_cardsend.wiki",
+		"sha1": "18c01d54409f1cc01a4cb51c55f37aea9b1e44d2",
+		"old_sha1": []
+	},
+	"Template:Image_cards/start": {
+		"lang": "en",
+		"label": "Image cards start template",
+		"description": "Start of image cards section",
+		"target_title": "Template:Image cards/start",
+		"content_path": "/pages/Template/Image_cardsstart.wiki",
+		"sha1": "d434eacab4f628f32258f47cb457d99d5f4ce70b",
+		"old_sha1": [
+			"c2cf7a8d3dff7a44e2b7966d4ca2719a31047ee7",
+			"b2f6dfb0188fa81cb4f62b98e78ee46dcfbe96a7"
+		]
+	},
+	"Template:Image_cards/styles.css": {
+		"lang": "en",
+		"label": "Image cards styles",
+		"description": "CSS for the image cards",
+		"target_title": "Template:Image cards/styles.css",
+		"content_path": "/pages/Template/Image_cardsstyles.css.wiki",
+		"sha1": "a8da8b32876d0377eb33cd940383c19e17fd8d6c",
+		"old_sha1": [
+			"d4abf03c13b52f79f4334f1377c90d1bbdbf7cf8",
+			"1057f15ae5899a16a44b6454c2d0c9ecc7feae79"
+		]
+	},
+	"Template:Startpage": {
+		"lang": "en",
+		"label": "Startpage",
+		"description": "List of available start pages",
+		"target_title": "Template:Startpage",
+		"content_path": "/pages/Template/Startpage.wiki",
+		"sha1": "e41172e3714f73e6e3b327c75d32b85254624087",
+		"old_sha1": []
+	},
+	"Template:Startpage/styles.css": {
+		"lang": "en",
+		"label": "Startpage styles",
+		"description": "CSS for the startpage",
+		"target_title": "Template:Startpage/styles.css",
+		"content_path": "/pages/Template/Startpagestyles.css.wiki",
+		"sha1": "cc2028e0841cb8a25508b34ff34f76ec3f5cddca",
+		"old_sha1": [
+			"6ff2eaa28845d5b4d4eb3a694fff48ab4bdaeb04"
+		]
+	},
+	"Template:Dropdown": {
+		"lang": "en",
+		"label": "Dropdown template",
+		"description": "A template for a dropdown",
+		"target_title": "Template:Dropdown",
+		"content_path": "/pages/Template/Dropdown.wiki",
+		"sha1": "6544a0c25bdcbb1093fcb50274df80479bac32de",
+		"old_sha1": [
+			"6829517636f4060feed1f9a62e233d09f84b5ff1"
+		]
+	},
+	"Template:Dropdown/styles.css": {
+		"lang": "en",
+		"label": "Dropdown styles",
+		"description": "Styles for the dropdown template",
+		"target_title": "Template:Dropdown/styles.css",
+		"content_path": "/pages/Template/Dropdownstyles.css.wiki",
+		"sha1": "dc55c4a3e484bc8a5b722e870c860d77f7131f69",
+		"old_sha1": []
+	},
+	"Template:Dropdown/de": {
+		"lang": "de",
+		"label": "Dropdown Vorlage",
+		"description": "Eine Vorlage f\u00fcr ein Dropdown",
+		"target_title": "Template:Dropdown",
+		"content_path": "/pages/Template/Dropdownde.wiki",
+		"sha1": "5da1bdbf029cba4cf830b8651035c484f9620f5b",
+		"old_sha1": [
+			"6d960054c0f7f12dbd1102640fc2195df4803bb0"
+		]
+	},
+	"Template:Dropdown/de/styles.css": {
+		"lang": "de",
+		"label": "Dropdown styles",
+		"description": "Styles for the dropdown template",
+		"target_title": "Template:Dropdown/styles.css",
+		"content_path": "/pages/Template/Dropdowndestyles.css.wiki",
+		"sha1": "dc55c4a3e484bc8a5b722e870c860d77f7131f69",
+		"old_sha1": []
+	},
+	"MediaWiki:Dpl-parserfunc-tracking-category/de": {
+		"lang": "de",
+		"label": "DPL Systemnachricht parserfunc",
+		"description": "Eine DPL Systemnachricht",
+		"target_title": "MediaWiki:Dpl-parserfunc-tracking-category",
+		"content_path": "/pages/MediaWiki/Dpl-parserfunc-tracking-categoryde.wiki",
+		"sha1": "3bc15c8aae3e4124dd409035f32ea2fd6835efc9",
+		"old_sha1": []
+	},
+	"MediaWiki:Dpl-tag-tracking-category/de": {
+		"lang": "de",
+		"label": "DPL Systemnachricht category",
+		"description": "Eine DPL Systemnachricht",
+		"target_title": "MediaWiki:Dpl-parserfunc-tracking-category",
+		"content_path": "/pages/MediaWiki/Dpl-tag-tracking-categoryde.wiki",
+		"sha1": "3bc15c8aae3e4124dd409035f32ea2fd6835efc9",
+		"old_sha1": []
+	},
+	"Template:Bannerbox/de": {
+		"lang": "de",
+		"label": "Bannerbox Vorlage",
+		"description": "Eine Vorlage f\u00fcr einen Banner",
+		"target_title": "Template:Bannerbox",
+		"content_path": "/pages/Template/Bannerboxde.wiki",
+		"sha1": "b5f648689ca565d833f957f709e68aa3a035723e",
+		"old_sha1": [
+			"15901720bfd0a6d72e4d4031a675e566206c3040",
+			"de4d9b311c8a02ea8afc974f4d04b3ff7daf0ba4"
+		]
+	},
+	"Template:Bannerbox/de/styles.css": {
+		"lang": "de",
+		"label": "Banner Vorlage Styles",
+		"description": "CSS f\u00fcr einen Banner",
+		"target_title": "Template:Bannerbox/styles.css",
+		"content_path": "/pages/Template/Bannerboxdestyles.css.wiki",
+		"sha1": "46a2d927d191fd91d312e1a67ef405119b2ae0dc",
+		"old_sha1": [
+			"fa67a1afc80d3d17702da832116301120f3870c0"
+		]
+	},
+	"Template:Bildkarten": {
+		"lang": "de",
+		"label": "Bildkarten Vorlage",
+		"description": "Eine Vorlage f\u00fcr Bildkarten",
+		"target_title": "Template:Bildkarten",
+		"content_path": "/pages/Template/Bildkarten.wiki",
+		"sha1": "c2d0c319c99593ae028258c66d09691212d4fe2e",
+		"old_sha1": [
+			"a479259cefa2d3318756426acb19a72761758254"
+		]
+	},
+	"Template:Bildkarten/end": {
+		"lang": "de",
+		"label": "Bildkarten Vorlage",
+		"description": "Eine Vorlage f\u00fcr das Ende eines Bildkartenabschnitts",
+		"target_title": "Template:Bildkarten/end",
+		"content_path": "/pages/Template/Bildkartenend.wiki",
+		"sha1": "18c01d54409f1cc01a4cb51c55f37aea9b1e44d2",
+		"old_sha1": []
+	},
+	"Template:Bildkarten/start": {
+		"lang": "de",
+		"label": "Bildkarten Vorlage Start",
+		"description": "Eine Vorlage f\u00fcr den Anfang eines Bildkartenabschnitts",
+		"target_title": "Template:Bildkarten/start",
+		"content_path": "/pages/Template/Bildkartenstart.wiki",
+		"sha1": "15ef1ec003ee9452364fdad11b773561f5f2f836",
+		"old_sha1": [
+			"15c0b5748c7dd4c3be042b3a5bf0647b3db8d8e8"
+		]
+	},
+	"Template:Bildkarten/styles.css": {
+		"lang": "de",
+		"label": "Bildkarten Vorlage Styles",
+		"description": "CSS f\u00fcr einen Bildkartenabschnitt",
+		"target_title": "Template:Bildkarten/styles.css",
+		"content_path": "/pages/Template/Bildkartenstyles.css.wiki",
+		"sha1": "354faaa03cf50b68b8290ad543adeeac2a1576fe",
+		"old_sha1": [
+			"71e3aee3075688b58dda7b0eb537851d81fe6e12"
+		]
+	},
+	"Template:Startseite": {
+		"lang": "de",
+		"label": "Startseite",
+		"description": "Liste der verf\u00fcgbaren Startseiten",
+		"target_title": "Template:Startseite",
+		"content_path": "/pages/Template/Startseite.wiki",
+		"sha1": "e7527d5975b8f40bee8f7947e83bfecdda15eba9",
+		"old_sha1": []
+	},
+	"Template:Startseite/styles.css": {
+		"lang": "de",
+		"label": "Startseite Styles",
+		"description": "CSS f\u00fcr die Startseite",
+		"target_title": "Template:Startseite/styles.css",
+		"content_path": "/pages/Template/Startseitestyles.css.wiki",
+		"sha1": "1776d96c5223210ba3ffef93e9b2bcd19b7ed056",
+		"old_sha1": [
+			"6ff2eaa28845d5b4d4eb3a694fff48ab4bdaeb04"
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"AnupamM",
+			"Fitoschido",
+			"Jmabel"
+		]
+	},
+	"bs-instancestatus-instance-status-bs-version-label": "Versión de BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "Cuota de usario",
+	"bs-instancestatus-instance-status-last-update-label": "Última actualización",
+	"bs-instancestatus-instance-status-no-info": "No disponible",
+	"bs-instancestatus-overview-loader": "Recopilando información sobre el wiki…",
+	"bs-instancestatus-instance-status-main-label": "General"
+}

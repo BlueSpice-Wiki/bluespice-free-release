@@ -1,0 +1,20 @@
+{
+	"members": {
+		"assigned": "{{randint|0,1000}}",
+		"unassigned": "{{randint|0,1000}}",
+		"namespace": {
+			"key": "{{{namespace}}}",
+			"value": {
+				"assigned": "{{randint|0,200}}",
+				"unassigned": "{{randint|0,200}}"
+			}
+		},
+		"categories": {
+			"key": "{{{category}}}",
+			"value": {
+				"assigned": "{{randint|0,200}}",
+				"unassigned": "{{randint|0,200}}"
+			}
+		}
+	}
+}

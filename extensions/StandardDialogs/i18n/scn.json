@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"standarddialogs-copy-page-new": "Nomu dâ pàggina novu",
+	"standarddialogs-page-info-close": "Chiudi",
+	"standarddialogs-page-info-general": "Ginirali",
+	"standarddialogs-page-info-history": "Ùrtimu canciamentu",
+	"standarddialogs-page-info-properties": "Prupità",
+	"standarddialogs-page-info-page-title": "Tìtulu",
+	"standarddialogs-page-info-page-language": "Lingua",
+	"standarddialogs-page-info-page-redirects": "Rimanni",
+	"standarddialogs-page-info-page-contributors": "Cuntribbutura",
+	"standarddialogs-page-info-page-last-edit": "Ùrtimu canciamentu",
+	"standarddialogs-page-info-page-templates": "Template",
+	"standarddialogs-page-info-page-categories": "Catigurìi",
+	"standarddialogs-page-info-page-internal": "Culligamenti nterni",
+	"standarddialogs-page-info-page-external": "Liami di fora",
+	"standarddialogs-page-info-page-images": "Mmàggini",
+	"standarddialogs-new-page-title": "Crea na pàggina nova",
+	"standarddialogs-new-page-label": "Nomu dâ pàggina",
+	"standarddialogs-new-subpage-label": "Nomu dâ suttapàggina",
+	"standarddialogs-create-button-new-page-text": "Pàggina nova",
+	"standarddialogs-create-button-new-page-title": "Crea na pàggina nova",
+	"standarddialogs-create-button-new-subpage-text": "Suttapàggina nova",
+	"standarddialogs-create-button-new-subpage-title": "Crea na suttapàggina nova",
+	"standarddialogs-delete-btn": "Cancella",
+	"standarddialogs-delete-title": "Cancella la pàggina \"$1\"",
+	"standarddialogs-protect-btn": "Pruteggi",
+	"standarddialogs-protect-title": "Pruteggi la pàggina \"$1\"",
+	"standarddialogs-btn-done": "Fattu",
+	"standarddialogs-btn-cancel": "Annulla"
+}

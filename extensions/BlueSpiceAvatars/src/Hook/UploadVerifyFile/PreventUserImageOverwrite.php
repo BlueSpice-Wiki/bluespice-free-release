@@ -1,0 +1,40 @@
+<?php
+
+namespace BlueSpice\Avatars\Hook\UploadVerifyFile;
+
+use MediaWiki\User\User;
+
+class PreventUserImageOverwrite extends \BlueSpice\Hook\UploadVerifyFile {
+
+	protected function skipProcessing() {
+		$file = $this->upload->getLocalFile();
+		if ( $file === null ) {
+			return true;
+		}
+		$fileName = $file->getName();
+		$fileExt = strrpos( $fileName, '.' );
+
+		if ( empty( $fileName ) || !$fileExt ) {
+			return true;
+		}
+
+		$userName = substr( $fileName, 0, $fileExt );
+
+		$user = $this->getServices()->getUserFactory()->newFromName( $userName );
+		if ( !$user instanceof User || $user->isAnon() ) {
+			return true;
+		}
+
+		if ( $user->getId() === $this->getContext()->getUser()->getId() ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	protected function doProcess() {
+		$this->error = 'bs-imageofotheruser';
+		return false;
+	}
+
+}

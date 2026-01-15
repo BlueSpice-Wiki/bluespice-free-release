@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Римма"
+		]
+	},
+	"bs-discovery-navbar-global-actions-overview-text": "Дженыта висьталӧм",
+	"bs-discovery-navbar-global-actions-editing-text": "Веськӧтӧм",
+	"bs-discovery-navbar-global-actions-administration-text": "Веськӧтланін",
+	"bs-discovery-mainlinks-allpages-label": "Листбоккез",
+	"bs-discovery-mainlinks-categories-label": "Категорияэз",
+	"bs-discovery-mainlinks-listfiles-label": "Файллэз",
+	"bs-discovery-config-mainlinks-allpages-label": "Мыччавны  \"Листбоккез\" пыранін",
+	"bs-discovery-config-mainlinks-allpages-help": "Мыччавны \" Листбоккез\" ыстісьӧм шульга навигация инданпӧв пыранінын",
+	"bs-discovery-config-mainlinks-listfiles-label": "Мыччавны  \"Файллэз\" пыранін",
+	"bs-discovery-config-mainlinks-listfiles-help": "Мыччавны \" Файллэз\" ыстісьӧм   шульга навигация инданпӧв пыранінын",
+	"bs-discovery-config-mainlinks-categories-label": "Мыччавны \"Категорияэз\" пыранін",
+	"bs-discovery-config-mainlinks-categories-help": "Мыччавны \" Категорияэз\" ыстісьӧм шульга навигация инданпӧв пыранінын"
+}

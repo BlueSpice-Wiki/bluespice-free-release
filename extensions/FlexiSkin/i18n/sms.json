@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"apihelp-flexiskin-new-summary": "Ođđ moduul",
+	"flexiskin-ui-plugin-colors-background-primary-label": "1. euʹnn",
+	"flexiskin-ui-plugin-colors-background-secondary-label": "2. euʹnn",
+	"flexiskin-ui-plugin-colors-background-tertiary-label": "3. euʹnn",
+	"flexiskin-ui-plugin-colors-background-quaternary-label": "4. euʹnn",
+	"flexiskin-ui-plugin-colors-foreground-primary-label": "1. euʹnn",
+	"flexiskin-ui-plugin-colors-foreground-secondary-label": "2. euʹnn",
+	"flexiskin-ui-plugin-colors-foreground-tertiary-label": "3. euʹnn",
+	"flexiskin-ui-plugin-colors-foreground-quaternary-label": "4. euʹnn",
+	"flexiskin-ui-plugin-images-label": "Kaart da snimldõõǥǥ",
+	"flexiskin-ui-plugin-content-header-color-label": "Euʹnn",
+	"flexiskin-ui-plugin-content-header-font-size-label": "Bukvai šorradvuõtt",
+	"flexiskin-ui-plugin-content-header-underline-label": "Vuâllacertldâsttmõš",
+	"flexiskin-ui-plugin-content-font-label": "Fontt"
+}

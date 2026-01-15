@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alexander Yukal",
+			"Kaganer",
+			"Movses",
+			"Okras",
+			"Putnik",
+			"Romanko Mikhail",
+			"Vlad5250"
+		]
+	},
+	"bs-articleinfo-desc": "Предоставляет сведения о странице в строке состояния",
+	"prefs-articleinfo": "Сведения о странице",
+	"bs-articleinfo-newrevision-info-text-reload": "Доступна новая версия страницы. Пожалуйста,  [[:$1|обновите]] страницу для просмотра содержимого."
+}

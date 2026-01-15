@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio",
+			"Fitoschido"
+		]
+	},
+	"bs-tagcloud-error-tagtype": "El valor dado \"$1\" no es un almacén válido.",
+	"bs-tagcloud-error-tagrenderer": "El valor dado \"$1\" no es un renderizador válido.",
+	"bs-tagcloud-tag-tagcloud-name": "Nube de etiquetas",
+	"bs-tagcloud-tag-tagcloud-title": "Nube de etiquetas",
+	"bs-tagcloud-tag-tagcloud-desc": "Crea una representación visual de etiquetas, en función de términos de búsqueda o una categoría",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Tipo",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Texto",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Lista",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "Tienda",
+	"bs-tagcloud-tag-tagcloud-attr-store-help": "Seleccionar los datos que se van a utilizar",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categorías",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Términos de búsqueda",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Anchura",
+	"bs-tagcloud-tag-tagcloud-attr-width-help": "Porcentaje de anchura de la nube de etiquetas",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Mostrar recuento",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Mostrar el número de elementos entre paréntesis",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Tamaño mínimo de letra",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Tamaño de letra de la entrada con menos elementos",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Tamaño máximo de letra",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Tamaño de letra de la entrada con más elementos",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluir páginas",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "No muestre estas páginas en la nube de etiquetas. Para más páginas, utilice una lista separada por comas, por ejemplo, \"Página principal, Prueba, MiPágina\"."
+}

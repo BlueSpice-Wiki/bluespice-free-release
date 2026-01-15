@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Erelon",
+			"Guycn2"
+		]
+	},
+	"bs-tagcloud-desc": "הצגת ענני תגים שונים",
+	"bs-tagcloud-error-tagtype": "הערך הנתון \"$1\" אינו מאגר תקין.",
+	"bs-tagcloud-error-tagrenderer": "הערך הנתון \"$1\" אינו מתצג תקין.",
+	"bs-tagcloud-tag-tagcloud-name": "ענן תגים",
+	"bs-tagcloud-tag-tagcloud-title": "ענן תגים",
+	"bs-tagcloud-tag-tagcloud-desc": "תיצוג ענן תגים על סמך קטגוריות או מונחי חיפוש",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "סוג",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "נא לבחור כיצד לתצג את ענן התגים",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "טקסט",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "רשימה",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "תלת־ממד",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "מאגר",
+	"bs-tagcloud-tag-tagcloud-attr-store-help": "יש לבחור באילו נתונים להשתמש",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "קטגוריות",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "ביטויים לחיפוש",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "רוחב",
+	"bs-tagcloud-tag-tagcloud-attr-width-help": "רוחב ענן התגים באחוזים",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "הצגת ספירה",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "הצגת מספר הפריטים בסוגריים",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "גודל גופן מזערי",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "גודל גופן עבור הערך עם הכי מעט פריטים",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "גודל גופן מרבי",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "גודל גופן עבור הערך עם הכי הרבה פריטים",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "ללא הדפים האלה",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "לא להציג את הדפים האלה בענן התגים. לדפים נוספים, להשתמש ברשימה מופרדת בפסיקים, למשל \"עמוד ראשי, בדיקה, דף שלי\"",
+	"bs-tagcloud-droplet-name": "ענן תגים",
+	"bs-tagcloud-droplet-description": "ענן תגים מבוסס על קטגוריות או שאילתות חיפוש"
+}

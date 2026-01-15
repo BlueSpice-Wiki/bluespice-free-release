@@ -1,0 +1,62 @@
+a.title-actions {
+	text-align: center;
+	vertical-align: middle;
+	color: var( --title-nav-fg );
+	line-height: 2rem;
+	padding: 4px 8px;
+	margin-left: 1rem;
+	height: 40px;
+	width: 40px;
+}
+
+.title-actions:hover {
+	color: var( --icon-primary-fg--hover );
+	background-color: var( --title-nav-bg--hover );
+	height: 40px;
+	padding: 4px 8px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.title-actions a:focus-visible {
+	outline: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.1em var( --focus-visible );
+}
+
+#title-actions a.ico-btn {
+	cursor: pointer;
+	text-align: center;
+	color: var( --title-nav-fg );
+}
+
+#title-actions a.ico-btn:hover {
+	color: var( --icon-primary-fg--hover );
+}
+
+.btn-group button.dropdown-icon {
+	border: none;
+	border-radius: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var( --icon-primary-bg );
+	color: var( --icon-primary-fg );
+	font-size: 22px;
+	text-align: center;
+}
+
+.btn-group button.dropdown-icon:focus-visible {
+	outline: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.1em var( --focus-visible );
+}
+
+.btn-group button.dropdown-icon[ disabled ] {
+	display: none;
+}
+
+.btn-group button.dropdown-icon:hover {
+	color: var( --icon-primary-fg--hover );
+	background-color: var( --icon-primary-bg );
+}

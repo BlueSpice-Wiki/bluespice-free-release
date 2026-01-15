@@ -1,0 +1,15 @@
+[
+	{
+		"path": "/mws/v1/file-query-store",
+		"class": "MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Rest\\FileQueryStore",
+		"services": [
+			"HookContainer",
+			"DBLoadBalancer",
+			"TitleFactory",
+			"ContentLanguage",
+			"NamespaceInfo",
+			"PageProps",
+			"RepoGroup"
+		]
+	}
+]

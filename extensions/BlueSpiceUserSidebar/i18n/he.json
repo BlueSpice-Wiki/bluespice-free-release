@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Erelon",
+			"Steeve815",
+			"YaronSh"
+		]
+	},
+	"bs-usersidebar-desc": "תפריט ניווט אישי הניתן להתאמה אישית",
+	"bs-edit-user-mm-link-text": "עריכת תפריט המשתמש",
+	"bs-edit-user-mm-link-title": "עריכת תפריט המשתמש",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "עריכת מילת מפתח",
+	"menueditor-ui-menu-keyword-usersidebar-label": "מילת מפתח",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "עריכת מילת מפתח",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "מילת מפתח"
+}

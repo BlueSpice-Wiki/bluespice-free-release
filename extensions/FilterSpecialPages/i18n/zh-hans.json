@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"StarrySky"
+		]
+	},
+	"filterspecialpages-desc": "插入一个字段以过滤 [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages] 中的条目。",
+	"filterspecialpages-hint-label": "查找页面"
+}

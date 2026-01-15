@@ -1,0 +1,64 @@
+/* Fix notification settings popup */
+body.mediawiki .mw-echo-ui-overlay {
+	z-index: 2;
+}
+
+.mw-echo-ui-datedSubGroupListWidget-title-primary {
+	margin-right: 0.5em;
+}
+
+body.mediawiki .mw-notification-area {
+	top: var( --navbar-primary-height );
+}
+
+/* Fix notification popup position */
+body.mediawiki .mw-notification-area-layout {
+	position: fixed;
+}
+
+.mw-category .mw-category-group {
+	display: table;
+}
+
+.oo-ui-defaultOverlay .oo-ui-floatableElement-floatable {
+	/* For popups in dialogs => dialog has a fixed 1054 z-index (with !important) */
+	z-index: 1100;
+}
+
+body .mw-rcfilters-ui-highlights {
+	padding-bottom: 3px;
+	padding-right: 0;
+}
+
+/* mediawiki styles a.new is also set outside of mw-content-text
+=> has to be adapted to our changes */
+body.mediawiki a.new {
+	color: var( --new-link-fg );
+}
+
+body.mw-special-Allpages ul.mw-allpages-chunk li a {
+	word-wrap: break-word;
+}
+
+/* fix contrast of non selected elements on Special:SemanticMediaWiki */
+.smw-tabs label.nav-label {
+	color: #6e6e6e;
+}
+
+.smw-tabs label.nav-label:hover {
+	color: #252525;
+}
+
+/* fix user setting links always underlined */
+body.mw-underline-always .mw-body-content a {
+	text-decoration: underline;
+}
+
+/* fix dialog container z-index */
+.skin-bluespicediscovery #mw-teleport-target {
+	z-index: 2000;
+}
+
+.skin-bluespicediscovery .oojs-plus-color-picker-standalone {
+	z-index: 2050;
+}

@@ -1,0 +1,55 @@
+#content .toc {
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+	background-color: var( --body-bg-color );
+	border-radius: 5px;
+	border: 0.5px solid var( --content-box-color );
+}
+
+#content .toctitle {
+	margin-bottom: 2rem;
+}
+
+.toc .toctitle {
+	text-align: left;
+}
+
+#content .toctitle h2 {
+	display: inline;
+	/* 1.8 * 16px 28.8px */
+	font-size: calc( 1.92 * var( --content-font-size ) );
+	font-weight: normal;
+}
+
+#toc .toctogglelabel {
+	/* 0.8 * 16px = 12.8 */
+	font-size: calc( 0.8534 * var( --content-font-size ) );
+	font-size: 0.8rem;
+}
+
+#toc .toctogglelabel:hover {
+	color: var( --content-fg-primary );
+	text-decoration: underline;
+}
+
+#content .toctogglelabel:focus-visible {
+	text-decoration: underline;
+}
+
+.toc ul {
+	list-style-type: none;
+	margin-left: 0;
+	text-decoration: none;
+}
+
+#content .toc ul li a {
+	text-decoration: none;
+}
+
+#content .toc ul li a:focus-visible {
+	text-decoration: underline;
+}
+
+.tocnumber {
+	color: var( --content-fg-secondary );
+}

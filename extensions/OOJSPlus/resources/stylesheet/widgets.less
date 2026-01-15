@@ -1,0 +1,174 @@
+.oojsplus-ui-widget-buttonselectwidget {
+	display: table;
+	width: 100%;
+
+	.oojsplus-ui-widget-buttonoptionwidget {
+		display: table-cell;
+		background-color: #eee;
+		padding: 10px !important;
+		border-right: 1px solid #a6a6a6;
+
+		&:last-child {
+			border-right: none; // stylelint-disable-line declaration-property-value-disallowed-list
+		}
+
+		&:hover {
+			background-color: #cecece;
+		}
+
+		a {
+			&:hover {
+				background-color: transparent !important;
+			}
+			font-size: 1.1rem;
+			padding-left: 6rem;
+			padding-right: 1rem;
+
+			.oo-ui-iconElement {
+				width: 4rem;
+			}
+		}
+		cursor: pointer;
+
+		.oojsplus-ui-widget-buttonoptionwidget-check {
+			display: none;
+		}
+
+		&.oo-ui-optionWidget-selected {
+			background-color: #b1b1b1;
+
+			.oojsplus-ui-widget-buttonoptionwidget-check {
+				position: absolute;
+				display: block;
+				right: 10px;
+				top: 10px;
+				width: 35px;
+				height: 35px;
+			}
+		}
+
+		.oojsplus-ui-widget-buttonoptionwidget-desc {
+			display: block;
+			font-size: 1rem;
+			word-break: break-word;
+			white-space: normal;
+		}
+	}
+
+	&.button-selectwidget-big {
+		a {
+			font-size: 1.5rem;
+		}
+	}
+
+	&.button-selectwidget-list {
+		display: block;
+		width: 100%;
+
+		.oojsplus-ui-widget-buttonoptionwidget {
+			border-right: none; // stylelint-disable-line declaration-property-value-disallowed-list
+			display: block;
+			width: 100%;
+
+			&:first-of-type {
+				margin-left: 0 !important;
+			}
+		}
+	}
+
+	@media screen and ( max-width: 760px ) {
+		display: block;
+		width: 100%;
+
+		.oojsplus-ui-widget-buttonoptionwidget {
+			border-right: none; // stylelint-disable-line declaration-property-value-disallowed-list
+			display: block;
+			width: 100%;
+
+			&:first-of-type {
+				margin-left: 0 !important;
+			}
+		}
+	}
+}
+
+.oojsplus-ui-widget-linkwidget {
+	position: relative;
+
+	&.oo-ui-iconElement {
+		padding: 5px 6px 5px 2em;
+		min-height: 32px;
+	}
+
+	.oo-ui-iconElement-icon {
+		left: 0.35714286em;
+	}
+}
+
+.oojsplus-ui-widget-labelwidget {
+	position: relative;
+
+	&.oo-ui-iconElement {
+		padding: 5px 6px 5px 2em;
+		min-height: 32px;
+	}
+
+	.oo-ui-iconElement-icon {
+		left: 0.35714286em;
+	}
+}
+
+.oojsplus-data-gridWidget-table .oojsplus-date-filter.mw-widget-calendarWidget {
+	width: 20em;
+}
+
+.oojsplus-data-gridWidget-table .oojsplus-date-filter.mw-widget-calendarWidget .mw-widget-calendarWidget-day,
+.oojsplus-data-gridWidget-table .oojsplus-date-filter.mw-widget-calendarWidget .mw-widget-calendarWidget-day-heading {
+	width: 1.7em;
+}
+
+.oo-ui-popupWidget-body .oojsplus-string-filter {
+	min-height: 75px;
+}
+
+.oojsplus-image-widget {
+	min-width: 28px;
+	height: 28px;
+}
+
+.oojsplus-contribution-widget {
+	.user-username {
+		display: inline !important;
+		padding-left: 10px;
+	}
+
+	.action-timestamp {
+		display: block;
+	}
+}
+
+.oojsplus-ui-widget-heading-label {
+	h2 {
+		margin: 0;
+	}
+}
+
+.oojsplus-widget-no-content-placeholder {
+	width: 100%;
+
+	.oo-ui-iconElement-icon {
+		height: 180px;
+		width: 100%;
+		display: block;
+		background-position: center;
+		background-size: 100% 100%;
+		position: relative;
+	}
+
+	.oo-ui-labelElement-label {
+		display: block;
+		text-align: center;
+		margin: 0;
+		font-size: 1em;
+	}
+}

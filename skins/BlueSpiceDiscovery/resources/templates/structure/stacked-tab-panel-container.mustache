@@ -1,0 +1,28 @@
+{{#sidebar}}
+<div id="{{id}}-cnt"{{#container-class}} class="{{.}}"{{/container-class}}>
+	<nav id="{{id}}" class="tab-content stacked-tabs" aria-label="{{aria-label}}">
+		{{#main}}
+		<div class="main-tab-pane tab-pane fade{{#class}}{{.}}{{/class}}" id="{{id}}" role="tabpanel" aria-describedby ="{{id}}-desc">
+			<div id="{{id}}-desc" class="visually-hidden">{{{desc}}}</div>
+			<div class="nav nav-tabs" role="tablist" aria-orientation="vertical">
+				{{#list}}
+				<a  class="tab-home" data-bs-target="{{id}}" data-bs-toggle="tab" aria-label="{{aria-label}}" title="{{title}}" href="" role="tab" aria-controls="{{id}}"><i class="bi-arrow-left-circle-fill"></i><span>{{text}}</span></a>
+				{{/list}}
+			</div>
+			{{{body}}}
+		</div>
+		{{/main}}
+		{{#other}}
+		<div class="tab-pane fade{{#class}}{{.}}{{/class}}" id="{{id}}" role="tabpanel" aria-describedby="{{id}}-desc">
+			<div id="{{id}}-desc" class="visually-hidden">{{{desc}}}</div>
+			<div class="nav nav-tabs" role="tablist">
+				{{#list}}
+				<a data-bs-target="{{id}}" data-bs-toggle="tab" role="tab" aria-label="{{aria-label}}" title="{{title}}" href="" role="tab" aria-controls="{{id}}">{{text}}</a>
+				{{/list}}
+			</div>
+			{{{body}}}
+		</div>
+		{{/other}}
+	</nav>
+</div>
+{{/sidebar}}

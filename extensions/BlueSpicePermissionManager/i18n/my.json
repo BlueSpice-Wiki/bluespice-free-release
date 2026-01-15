@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black",
+			"Ninjastrikers"
+		]
+	},
+	"bs-permissionmanager-text": "ခွင့်ပြုချက်များ",
+	"bs-permissionmanager-header-global": "ဝီကီ",
+	"bs-permissionmanager-btn-save-label": "သိမ်းရန်",
+	"bs-premissionmanager-reset-button-label": "ပြန်စရန်",
+	"bs-permissionmanager-namespace-picker": "အမည်ညွှန်းများ"
+}

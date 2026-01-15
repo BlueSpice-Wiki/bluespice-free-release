@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"prefs-readers": "Йешархой",
+	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Ешархо}}|Ешархой}}",
+	"readers-user": "АгӀонаш {{GENDER:$1|йешна}}: $1",
+	"readers": "«$1» агӀо йешархой",
+	"bs-readers-contentactions-label": "Гайта йешархой",
+	"bs-readers-pagenotexists": "Иштта агӀо йац",
+	"bs-readers-pref-active": "Жигара йешархой",
+	"bs-readers-emptyinput": "АгӀо йелла йац.",
+	"bs-readers-header-username": "Декъашхочун цӀе",
+	"bs-readers-header-readerspath": "Корта",
+	"bs-readers-header-ts": "Терахь",
+	"bs-readers-header-page": "АгӀо",
+	"bs-readers-header-revision-id": "Нисдаран ID",
+	"bs-readers-header-read-on": "Йешна"
+}

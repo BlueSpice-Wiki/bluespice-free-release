@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kumkumuk",
+			"Mirzali"
+		]
+	},
+	"bs-interwikilinks-headerprefix": "Verbend",
+	"bs-interwikilinks-titleaddinterwikilink": "Linkê interwiki dek",
+	"bs-interwikilinks-titleeditinterwikilink": "Grey interwiki bıvurnê",
+	"bs-interwikilinks-labelprefix": "Verbend",
+	"bs-interwikilinks-titledeleteinterwikilink": "Linkê interwiki esterne",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Şıma qayılê,  ena linka interwiki bıesteri yo?"
+}

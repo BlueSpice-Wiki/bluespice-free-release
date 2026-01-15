@@ -1,0 +1,39 @@
+<span style="margin-bottom: 10px">{{int:notifyme-mail-greeting}} {{target_user}},</span>
+
+<p>{{digestHeader}}</p>
+
+<ul>
+    {{#notifications}}
+        <li>
+            {{#type_group}}
+                <p>{{{message}}}</p>
+            {{/type_group}}
+            {{#type_single}}
+                {{#agent_is_bot}}
+                    <p>
+                        {{{message}}}
+                        {{#links}}
+                            <!-- Only show primary links -->
+                            {{#primary}}<a style="color: #ffffff;background-color: #0073e6;padding: 2px 10px;text-decoration: none;border-radius: 5px;display: inline-block;margin: 5px;" href="{{url}}">{{label}}</a>{{/primary}}
+                        {{/links}}
+                    </p>
+                {{/agent_is_bot}}
+                {{^agent_is_bot}}
+                    <p>
+                        {{#agent}}<a href="{{user_page}}">{{display_name}}</a>{{/agent}} {{{message}}}
+                        {{#links}}
+                            <!-- Only show primary links -->
+                            {{#primary}}<a style="color: #ffffff;background-color: #0073e6;padding: 2px 10px;text-decoration: none;border-radius: 5px;display: inline-block;margin: 5px;" href="{{url}}">{{label}}</a>{{/primary}}
+                        {{/links}}
+                    </p>
+                {{/agent_is_bot}}
+
+            {{/type_single}}
+        </li>
+
+    {{/notifications}}
+</ul>
+
+<div class="source" style="margin-top: 60px;padding: 20px;background-color: @notifications-mail-color-background;font-size: 0.8rem;">
+    {{int:notifyme-mail-manage-notifications}}: <a href="{{subscription_center_link}}">{{int:notifyme-mail-manage-notifications-link}}</a>
+</div>

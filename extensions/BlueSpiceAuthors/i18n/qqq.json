@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226",
+			"Robby",
+			"Shirayuki",
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-authors-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of authors extension",
+	"prefs-authors": "Used in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], headline of authors section preferences",
+	"bs-authors-title": "Headline of authors below page content\n*$1 is the number of authors - use for PLURAL distinction\n*$2 is the username - use for GENDER distinction\n{{Identical|Author}}",
+	"bs-authors-profileimage": "Image title for profile image, used on user page",
+	"bs-authors-profileimage-change": "Text for change your profile image, shown on user page",
+	"bs-authors-show-all-authors": "Image title for more authors available, used if there are too many authors",
+	"bs-authors-navigation-link-title": "Title for link to open graphical list with authors",
+	"bs-authors-navigation-link-text": "Text for link to open graphical list with authors\n{{Identical|Author}}",
+	"apihelp-bs-pageauthors-store-summary": "{{doc-apihelp-summary|bs-pageauthors-store}}",
+	"bs-authors-info-dialog": "Label of page for page information dialog",
+	"bs-authors-info-dialog-grid-column-author": "Label of column which shows author name",
+	"bs-authors-info-dialog-grid-column-type": "Label of column which shows type of author"
+}

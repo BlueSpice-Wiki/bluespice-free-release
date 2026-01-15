@@ -1,0 +1,11 @@
+'BSUsageTrackerRegisterCollectors': Register your extension's usage collector here.
+'class' 		= Class of the collector. Must be an instance of BS/UsageTracker/Collectors/Base.
+'internalDesc' 	= Hardcoded description of the collector.
+Example:
+		$this->collectorConfig['smartlist'] = [
+			'class' => 'Property', // Database, Basic, ModifiedPage
+			'config' => [
+				'identifier' => 'tag-smartlist'
+				'internalDesc' => 'Number of pages using the smartlist tag'
+			]
+		];

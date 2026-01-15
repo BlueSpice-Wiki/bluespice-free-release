@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"JohanahoJ",
+			"Lokal Profil",
+			"Mjälten",
+			"Sturban",
+			"WikiPhoenix"
+		]
+	},
+	"bs-statistics-desc": "Statistikmodul för BlueSpice",
+	"aggregatedstatistic": "Ögonblickbildstatistik",
+	"action-extendedstatistics-viewspecialpage-aggregated": "komma åt specialsidan [[Special:AggregatedStatistic]]",
+	"right-extendedstatistics-viewspecialpage-aggregated": "Komma åt specialsidan [[Special:AggregatedStatistic]]",
+	"extendedstatisticssnapshots": "Ögonblicksbilder",
+	"bs-statistics-button-label-apply": "Tillämpa filter",
+	"bs-statistics-label-bar-chart": "Stapeldiagram",
+	"bs-statistics-label-line-chart": "Linjediagram",
+	"bs-statistics-datasource-label": "Datakälla",
+	"bs-statistics-targets-label": "Mål",
+	"bs-statistics-paging-page-size": "Sidstorlek",
+	"bs-statistics-aggregated-report-filter-category-multi": "Kategorier",
+	"bs-statistics-aggregated-report-filter-date-start": "Startdatum",
+	"bs-statistics-aggregated-report-filter-date-end": "Slutdatum",
+	"bs-statistics-aggregated-report-filter-interval": "Intervall",
+	"bs-statistics-aggregated-report-filter-interval-day": "Dag",
+	"bs-statistics-aggregated-report-filter-interval-week": "Vecka",
+	"bs-statistics-aggregated-report-filter-interval-month": "Månad",
+	"bs-statistics-aggregated-report-filter-interval-year": "År",
+	"bs-statistics-aggregated-report-filter-namespace": "Namnrymd",
+	"bs-statistics-aggregated-report-filter-namespaces": "Namnrymder",
+	"bs-statistics-aggregated-report-filter-page": "Sida",
+	"bs-statistics-aggregated-report-filter-user": "Användare",
+	"bs-statistics-aggregated-report-filter-user-multi": "Användare",
+	"bs-statistics-aggregated-report-loading": "Laddar data...",
+	"bs-statistics-ve-progress-attr-width-label": "Bredd"
+}

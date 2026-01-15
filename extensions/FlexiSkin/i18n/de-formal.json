@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mschlindwein"
+		]
+	},
+	"flexiskin-ui-plugin-color-presets-custom-dirty-warning": "Wenn Sie zu einer Voreinstellung wechseln, gehen benutzerdefinierte Farbänderungen verloren. Sind Sie sicher, dass Sie fortfahren möchten?",
+	"flexiskin-configurator-prompt-on-save": "Änderungen am Skin werden sofort übernommen und wirken sich auf alle Benutzer im Wiki aus. Sind Sie sicher, dass Sie fortfahren möchten?",
+	"flexiskin-configurator-prompt-on-disable": "Mit der Deaktivierung der benutzerdefinierten Oberfläche werden alle Einstellungen für alle Benutzer auf die Standardwerte zurückgesetzt. Vorgenommene Änderungen gehen nicht verloren und können jederzeit wieder angewendet werden. Möchten Sie fortfahren?",
+	"flexiskin-ui-configurator-warning-disabled-skin": "FlexiSkin ist konfiguriert, derzeit aber deaktiviert. Um ihn wieder zu aktivieren, nutzen Sie den \"Speichern & aktivieren\"-Button. Sie können den aktuellen Stand überprüfen, indem Sie vor der Aktivierung den \"Vorschau\"-Button verwenden"
+}

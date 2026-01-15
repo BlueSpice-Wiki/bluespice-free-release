@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Link2xt",
+			"Person or Persons Unknown",
+			"Vlad5250"
+		]
+	},
+	"bs-usersidebar-desc": "Настраиваемое персональное меню навигации",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Изменить ключевое слово",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Ключевое слово",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Изменить ключевое слово",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Ключевое слово"
+}

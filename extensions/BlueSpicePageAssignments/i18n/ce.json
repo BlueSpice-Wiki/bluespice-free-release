@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-pageassignments-column-title": "АгӀонан цӀе",
+	"bs-pageassignments-api-error": "ГӀалат даьлла",
+	"bs-pageassignments-assignee-special-everyone-label": "ХӀора",
+	"bs-pageassignments-assignee-type-everyone": "ХӀора",
+	"bs-pageassignments-assignee-type-user": "Декъашхо",
+	"bs-pageassignments-assignee-type-group": "Тоба",
+	"bs-pageassignments-collection-var-namespacename": "ЦӀерийн меттиг"
+}

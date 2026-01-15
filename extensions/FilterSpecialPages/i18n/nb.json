@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"filterspecialpages-desc": "Setter inn et felt for å filtrere oppføringer på [{{canonicalurl:Special:SpecialPages}} Spesial:Spesialsider].",
+	"filterspecialpages-hint-label": "Finn side"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"bs-qr-code-extension-description": "Įrankių juostoje rodomas QR kodas su nuoroda į dabartinį puslapį.",
+	"bs-qr-code-action-qr-code-title": "Atidaryti dialogą su QR kodu",
+	"bs-qr-code-action-qr-code-text": "QR kodas",
+	"bs-qr-code-action-qr-code-dialog-title": "QR kodas",
+	"bs-qr-code-action-qr-code-dialog-alt": "$1 QR kodas",
+	"apihelp-bs-qr-code-param-size": "QR kodo dydis"
+}

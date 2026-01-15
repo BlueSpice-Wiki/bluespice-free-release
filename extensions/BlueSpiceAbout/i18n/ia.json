@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-bluespiceabout-desc": "Information sur BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "A proposito de BlueSpice",
+	"bluespiceabout": "A proposito de BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "vider le pagina special \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "Accesso al pagina special [[Special:BlueSpiceAbout]]"
+}

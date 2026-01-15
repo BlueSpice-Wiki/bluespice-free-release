@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"ديفيد"
+		]
+	},
+	"bs-usersidebar-desc": "قائمة التصفح الشخصية القابلة للتخصيص",
+	"bs-edit-user-mm-link-text": "تحرير قائمة المستخدم",
+	"bs-edit-user-mm-link-title": "تحرير قائمة المستخدم",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "تحرير الكلمة الأساسية",
+	"menueditor-ui-menu-keyword-usersidebar-label": "الكلمة الرئيسية",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "تحرير الكلمة الأساسية",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "الكلمة الرئيسية"
+}

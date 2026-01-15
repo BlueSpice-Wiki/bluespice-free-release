@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abijeet Patro"
+		]
+	},
+	"enhancedupload-list-header-warning": "चेतावनी",
+	"enhancedupload-attachments-tag-grid-details-title": "विवरण",
+	"enhancedupload-attachments-tag-grid-remove-title": "हटायें",
+	"enhancedupload-finished-dialog-action-close": "बंद करें",
+	"enhancedupload-config-height-label": "चित्र की ऊंचाई:",
+	"enhancedupload-droplet-attachments-name": "संलग्नक",
+	"enhancedupload-toggle-details-button-show-label": "विवरण दिखाएँ"
+}

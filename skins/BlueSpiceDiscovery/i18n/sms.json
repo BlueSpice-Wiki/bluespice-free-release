@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-discovery-back-to-top-text": "Mååust seeid aʹlǧǧe",
+	"bs-discovery-back-to-top-aria-label": "Mååust seeid aʹlǧǧe",
+	"bs-discovery-navbar-user-login-text": "Ǩeeʹrjtõõđ sizz",
+	"bs-discovery-navbar-user-login-title": "Ǩeeʹrjtõõđ sizz",
+	"bs-discovery-navbar-user-login-aria-label": "Ǩeeʹrjtõõđ sizz",
+	"bs-discovery-header-create-button-text": "Ođđ",
+	"bs-discovery-header-create-button-title": "Raaj ođđ seeid",
+	"bs-discovery-header-create-button-aria-label": "Raaj ođđ seeid",
+	"bs-discovery-create-button-new-file-text": "Ođđ teâttõs",
+	"bs-discovery-create-button-new-file-title": "Ruõkk ođđ teâttõõzz",
+	"bs-discovery-breadcrumb-nav-node-ns-main": "Seeid",
+	"bs-discovery-breadcrumb-nav-node-portal-page": "Ouddseidd",
+	"bs-discovery-title-action-edit-button-title": "Muuʹtt seeid",
+	"bs-discovery-title-action-edit-button-aria-label": "Muuʹtt seeid",
+	"bs-discovery-title-action-language-button-title": "Vaʹlljed ǩiõl",
+	"bs-discovery-title-action-language-button-aria-label": "Vaʹlljed ǩiõl",
+	"bs-discovery-sidebar-secondary-share-sharebymail-text": "E-pååʹštaddrõs",
+	"bs-discovery-sidebar-secondary-share-link-title": "Jueʹjj seeid",
+	"bs-discovery-sidebar-details-heading": "Teâđ",
+	"bs-discovery-dialog-details-action-cancel": "Jõõsk",
+	"bs-discovery-sidebar-secondary-watch-link-aria-label": "Vaalv seeid",
+	"bs-discovery-permalink-copy-text": "Kopiââʹst URL",
+	"bs-discovery-breadcrumb-label-talk": "Saǥstõõllâmseidd",
+	"bs-discovery-breadcrumb-label-special-linkliste": "Liiŋk",
+	"bs-discovery-breadcrumb-label-action-history": "Historia",
+	"bs-discovery-breadcrumb-label-action-edit": "Muuʹtt",
+	"bs-discovery-first-heading-aria-label": "Seiddnõmm",
+	"bs-discovery-mainlinks-categories-label": "Kategoria",
+	"bs-discovery-personalurl-mycontributions-text": "Muttâz",
+	"bs-discovery-globalactionentry-templates-text": "Maall",
+	"bs-discovery-enhanced-mediawiki-sidebar-pnl-header-text": "Väʹlddvaʹlljõk"
+}

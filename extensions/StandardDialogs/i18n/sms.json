@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"standarddialogs-copy-btn": "Kopiââʹst",
+	"standarddialogs-copy-title": "Kopiââʹst seeid \"$1\"",
+	"standarddialogs-copy-page-legend": "Kopiââʹst",
+	"standarddialogs-copy-page-new": "Ođđ seeid nõmm",
+	"standarddialogs-copy-discussion": "Kopiââʹst saǥstõõllâmseeid",
+	"standarddialogs-copy-subpages": "Kopiââʹst vueʹllseeidaid",
+	"standarddialogs-page-info-title": "Teâđ seeidast \"$1\"",
+	"standarddialogs-page-info-page-title": "Seiddnõmm",
+	"standarddialogs-page-info-page-id": "Seeid tobdstõk",
+	"standarddialogs-page-info-page-language": "Ǩiõll",
+	"standarddialogs-page-info-page-contributors": "Vuässõõtti",
+	"standarddialogs-page-info-page-templates": "Maall",
+	"standarddialogs-page-info-page-categories": "Kategoria",
+	"standarddialogs-page-info-page-images": "Snimldõõǥǥ",
+	"standarddialogs-new-page-title": "Raaj ođđ seeid",
+	"standarddialogs-new-page-label": "Seiddnõmm",
+	"standarddialogs-new-subpage-title": "Raaj ođđ vueʹllseeid sijddu $1",
+	"standarddialogs-new-subpage-label": "Vueʹllseeid nõmm",
+	"standarddialogs-create-button-new-page-text": "Ođđ seidd",
+	"standarddialogs-create-button-new-page-title": "Raaj ođđ seeid",
+	"standarddialogs-create-button-new-subpage-text": "Ođđ vueʹllseidd",
+	"standarddialogs-create-button-new-subpage-title": "Raaj ođđ vueʹllseeid",
+	"standarddialogs-delete-btn": "Jaukkâd",
+	"standarddialogs-delete-title": "Jaukkâd seeid \"$1\"",
+	"standarddialogs-move-btn": "Seeʹrd",
+	"standarddialogs-move-title": "Seeʹrd seeid \"$1\"",
+	"standarddialogs-protect-btn": "Suõjjâd",
+	"standarddialogs-protect-title": "Suõjjâd seeid \"$1\"",
+	"standarddialogs-purge-btn": "Peiʹvved",
+	"standarddialogs-purge-title": "Peiʹvved seeid \"$1\"",
+	"standarddialogs-btn-done": "Vaalmâš",
+	"standarddialogs-btn-cancel": "Jõõsk"
+}

@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-watchlist-desc": "Adds a watchlist widget and tag",
+	"bs-watchlist-pref-sort-time": "Time",
+	"bs-watchlist-pref-sort-title": "Title",
+	"bs-watchlist-tag-watchlist-desc": "Shows the articles which have most recent changes and are on your watchlist.",
+	"bs-watchlist-ve-watchlistinspector-title": "Watchlist",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Count",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Number of entries on watchlist should be shown",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Max title length",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Number of letters which should be shown of the title. Can be a number between 5 and 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Order",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Shows list sorted by time or page name",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Pagename",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Time",
+	"bs-watchlist-tag-watchlist-no-user": "Watchlist cannot be displayed because no user is logged in",
+	"bs-watchlist-tag-watchlist-no-entries": "No changes on pages to show in watchlist",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Pagename help",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Time help",
+	"bs-watchlist-droplet-name": "Watchlist",
+	"bs-watchlist-droplet-description": "Latest changes to pages included in the watchlist"
+}

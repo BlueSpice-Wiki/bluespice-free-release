@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Baisulis",
+			"Papuass"
+		]
+	},
+	"bs-discovery-enhanced-mediawiki-sidebar-field-href": "URL",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-href-help": "URL, uz kuru izveidot saiti",
+	"menueditor-ui-enhanced-sidebar-internal-link-label-edit": "Iekšējā saite",
+	"menueditor-ui-enhanced-sidebar-external-link-label-edit": "Ārējā saite",
+	"menueditor-ui-enhanced-sidebar-subpage-tree-label-edit": "Apakšlapu koks",
+	"bs-discovery-enhanced-mediawiki-sidebar-show-for-groups-text": "Rādīt grupām",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-heading": "Virsraksta teksts",
+	"bs-discovery-enhanced-mediawiki-sidebar-add-new-panel-button-label": "Pievienot jaunu paneli",
+	"bs-discovery-enhanced-mediawiki-sidebar-header-text": "Navigācija"
+}

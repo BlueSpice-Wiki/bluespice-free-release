@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dejan Savuljesku",
+			"Robert Vogel"
+		]
+	},
+	"bs-instancestatus-desc": "Adds an overview of the wiki instance status",
+	"instancestatus": "Instance status",
+	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice version",
+	"bs-instancestatus-instance-status-user-quota-label": "User quota",
+	"bs-instancestatus-instance-status-last-update-label": "Last update on",
+	"bs-instancestatus-instance-status-created-label": "Instance created on",
+	"bs-instancestatus-instance-status-no-info": "Not available",
+	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice contact",
+	"bs-instancestatus-instance-status-sales-contact": "Get in touch here: [$1 BlueSpice contact]",
+	"bs-instancestatus-overview-loader": "Collecting wiki information ...",
+	"bs-instancestatus-instance-status-main-label": "General"
+}

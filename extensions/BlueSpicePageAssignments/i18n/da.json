@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-pageassignments-column-title": "Sidetitel",
+	"bs-pageassignments-api-error": "Der opstod en fejl",
+	"bs-pageassignments-assignee-special-everyone-label": "Alle",
+	"bs-pageassignments-assignee-type-everyone": "Alle",
+	"bs-pageassignments-assignee-type-user": "Bruger",
+	"bs-pageassignments-assignee-type-group": "Gruppe",
+	"bs-pageassignments-collection-var-namespacename": "Navnerum",
+	"bs-pageassignments-collection-var-unassignedpages": "Ikke-tildelte sider"
+}

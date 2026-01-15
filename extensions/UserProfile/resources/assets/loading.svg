@@ -1,0 +1,29 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="white"/>
+
+    <!-- Left column for image -->
+    <circle cx="10%" cy="90px" r="85px" fill="lightgray">
+        <animate attributeName="fill" values="gainsboro;lightgray;gainsboro" dur="2s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Right column for heading -->
+    <rect x="25%" y="5%" width="40%" height="10%" fill="lightgray">
+        <animate attributeName="fill" values="gainsboro;lightgray;gainsboro" dur="2s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Right column for table -->
+    <!-- Table row 1 -->
+    <rect x="25%" y="17%" width="60%" height="5%" fill="lightgray">
+        <animate attributeName="fill" values="gainsboro;lightgray;gainsboro" dur="2s" repeatCount="indefinite" />
+    </rect>
+    <!-- Table row 2 -->
+    <rect x="25%" y="35%" width="60%" height="5%" fill="lightgray">
+        <animate attributeName="fill" values="gainsboro;lightgray;gainsboro" dur="2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="25%" y="45%" width="50%" height="5%" fill="lightgray">
+        <animate attributeName="fill" values="gainsboro;lightgray;gainsboro" dur="2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="25%" y="55%" width="45%" height="5%" fill="lightgray">
+        <animate attributeName="fill" values="gainsboro;lightgray;gainsboro" dur="2s" repeatCount="indefinite" />
+    </rect>
+</svg>

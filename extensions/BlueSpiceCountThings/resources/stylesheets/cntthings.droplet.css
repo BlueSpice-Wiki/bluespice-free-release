@@ -1,0 +1,15 @@
+.droplet .icon-droplet.droplet-articles {
+	background-image: url( ../images/contentdroplets-countarticles-icon.svg );
+}
+
+.droplet .icon-droplet.droplet-characters {
+	background-image: url( ../images/contentdroplets-countcharacters-icon.svg );
+}
+
+.droplet .icon-droplet.droplet-files {
+	background-image: url( ../images/contentdroplets-countfiles-icon.svg );
+}
+
+.droplet .icon-droplet.droplet-user {
+	background-image: url( ../images/contentdroplets-countuser-icon.svg );
+}

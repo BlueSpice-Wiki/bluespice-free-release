@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"McDutchie",
+			"Niknetniko",
+			"Ribert",
+			"SPQRobin",
+			"Siebrand",
+			"Sjoerddebruin"
+		]
+	},
+	"bs-articleinfo-desc": "Geeft informatie over een pagina in een statusbalk",
+	"prefs-articleinfo": "Paginagegevens",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "Interval voor bijwerken (in seconden)",
+	"bs-articleinfo-newrevision-info-text-reload": "Er is een nieuwe versie van deze pagina beschikbaar. [[:$1|Laad de pagina opnieuw]] om de huidige inhoud te bekijken.",
+	"bs-articleinfo-pref-checkrevisioninterval-help-label": "Stelt in hoe vaak de waarde “Laatste bewerking” wordt bijgewerkt. Bij elk interval wordt de pagina ook gecontroleerd op nieuwe versies."
+}

@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Kizule",
+			"Milicevic01",
+			"Zenfiric",
+			"Милан Јелисавчић"
+		]
+	},
+	"bs-visualeditorconnector-desc": "Повезује Parsoid са Визелним уређивачем",
+	"bs-visualeditorconnector-enable-visualeditor": "Омогући визуелни уређивач за додатке BlueSpice-а",
+	"bs-visualeditorconnector-upload-type-one-click": "Један клик",
+	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "Откажи уређивање",
+	"bs-visualeditorconnector-cancel-edit": "Откажи уређивање. Несачуване измене ће бити одбачене",
+	"bs-visualeditorconnector-cancel-edit-confirm-message": "Желите ли заиста да откажете уређивање? Несачуване измене ће бити одбачене.",
+	"bs-visualeditor-nsm-label": "Визуелни уређивач",
+	"bs-visualeditorconnector-inspector-tab-common-name": "Опште",
+	"bs-visualeditorconnector-inspector-tab-advanced-name": "Напредно",
+	"bs-visualeditorconnector-ve-style-option": "Стил табеле",
+	"bs-visualeditorconnector-text-style-tool-color-label": "Боја текста",
+	"bs-vec-table-inspector-column": "Колона",
+	"bs-vec-table-inspector-row": "Ред",
+	"bs-vec-contextitem-table-additional-options": "Додатне опције",
+	"bs-vec-dialog-table-create-number-of-rows": "Број редова",
+	"bs-vec-dialog-action-done": "Урађено",
+	"bs-vec-dialog-action-safe": "Откажи",
+	"bs-vec-table-style-cell-text-vert-align-bottom": "Дно",
+	"bs-vec-table-style-cell-text-vert-align-top": "Врх",
+	"bs-vec-table-style-cell-text-vert-align-middle": "Средина",
+	"bs-vec-table-style-cell-text-hor-align": "Поравнање текста",
+	"bs-vec-table-style-cell-text-hor-align-left": "Лево",
+	"bs-vec-table-style-cell-text-hor-align-center": "Средина",
+	"bs-vec-table-style-cell-text-hor-align-right": "Десно",
+	"bs-vec-table-border-none": "Ништа",
+	"bs-vec-table-border-left": "Лево",
+	"bs-vec-table-border-top": "Врх",
+	"bs-vec-table-border-right": "Десно",
+	"bs-vec-table-border-bottom": "Дно",
+	"bs-vec-table-border-all": "Све",
+	"bs-visualeditor-save-label": "Сачувај",
+	"bs-visualeditorconnector-upload-type": "Врста отпремања"
+}

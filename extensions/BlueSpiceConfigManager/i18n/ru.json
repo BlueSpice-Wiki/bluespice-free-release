@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Facenapalm",
+			"Gazimagomedov",
+			"Ice bulldog",
+			"Meerrahtar",
+			"Merrahtar",
+			"Okras",
+			"Romanko Mikhail",
+			"Tanzun",
+			"Vlad5250",
+			"WindEwriX",
+			"Yurina Tatiana"
+		]
+	},
+	"bs-bluespiceconfigmanager-admintool-label": "Менеджер конфигурации",
+	"action-bluespiceconfigmanager-viewspecialpage": "просмотр специальной страницы «{{int:bluespiceconfigmanager}}»",
+	"bluespiceconfigmanager": "Менеджер конфигурации",
+	"bs-configmanager-text": "Настройка",
+	"bs-configmanager-desc": "Дает возможность администраторам настроить всю вики на одной спецстранице",
+	"bs-configmanager-noentry": "Запись не найдена",
+	"bs-configmanager-mainpath": "Режим просмотра",
+	"bs-configmanager-search": "Поиск",
+	"apihelp-bs-configmanager-tasks-summary": "Управление заданиями",
+	"apihelp-bs-configmanager-store-summary": "Управление хранилищами",
+	"right-bluespiceconfigmanager-viewspecialpage": "доступ к служебной странице [[Special:BlueSpiceConfigManager]]",
+	"log-name-bs-config-manager": "Журнал Диспетчера конфигураций",
+	"log-description-bs-config-manager": "Изменения в журнале Диспетчера конфигураций",
+	"log-show-hide-bs-config-manager": "$1 журнал диспетчера конфигураций",
+	"logeventslist-bs-config-manager-log": "Журнал Диспетчера конфигураций",
+	"logentry-bs-config-manager-modify": "$1 изменена конфигурация $4: исходное значение — $5; новое значение — $6"
+}

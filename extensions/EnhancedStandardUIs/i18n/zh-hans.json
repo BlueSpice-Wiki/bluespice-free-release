@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Googology",
+			"GuoPC",
+			"沈澄心"
+		]
+	},
+	"enhanced-standard-uis-desc": "为MediaWiki标准用户界面提供用户界面",
+	"enhanced-standard-uis-history-grid-header-revision-label": "修订版本",
+	"enhanced-standard-uis-history-grid-header-author-label": "更改由",
+	"enhanced-standard-uis-history-grid-header-size-label": "大小",
+	"enhanced-standard-uis-history-grid-header-summary-label": "摘要",
+	"enhanced-standard-uis-history-grid-header-tags-label": "标签",
+	"enhanced-standard-uis-history-grid-header-undo-title": "撤销",
+	"enhanced-standard-uis-history-grid-header-hide-revision-title": "隐藏修订",
+	"enhanced-standard-uis-history-compare-tool-title": "对比修订",
+	"enhanced-standard-uis-history-grid-header-diff-label": "差异",
+	"enhancedallpages": "所有页面",
+	"enhanced-standard-uis-allpages-include-talk-ns": "显示讨论命名空间",
+	"enhanced-standard-uis-allpages-include-non-content-ns": "显示非内容命名空间",
+	"enhanced-standard-uis-allpages-include-redirect": "显示重定向",
+	"enhanced-standard-uis-allpages-config": "配置",
+	"enhanced-standard-uis-allpages-redirect-title": "重定向",
+	"enhanced-standard-uis-allpages-filter-pages-label": "过滤器",
+	"enhanced-standard-uis-allpages-namespace-list-label": "命名空间列表",
+	"enhanced-standard-uis-paginator-aria-label": "分页",
+	"enhanced-standard-uis-allpages-unwatch-label": "取消监视页面$1"
+}

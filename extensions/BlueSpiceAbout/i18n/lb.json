@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informatiounen iwwer BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "Iwwer BlueSpice",
+	"bluespiceabout": "Iwwer BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "kuckt d'Spezialsäit \"{{int:bs-bluespiceabout-about-bluespice}}\""
+}

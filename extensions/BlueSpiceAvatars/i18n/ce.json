@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-avatars-pref-generator": "Генератор:",
+	"bs-avatars-pref-userimage-img-alt": "Хьан декъашхочун карара сурт",
+	"bs-avatars-upload-complete": "Сурт чудаьккхина.",
+	"bs-avatars-generate-complete": "Кхоьллина керла аватар.",
+	"bs-avatars-upload-label": "Сурт",
+	"bs-avatars-generate-new-label": "Кхолла керла аватар",
+	"bs-avatars-file-upload-fieldset-title": "Чудаккха сурт",
+	"bs-avatars-auto-generate-fieldset-title": "Кхолла аватар автоматаца"
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ex-Diktator",
+			"Ghsuvr",
+			"Guycn2",
+			"MojoMann",
+			"דגש",
+			"דגש חזק"
+		]
+	},
+	"bs-bluespiceabout-desc": "מידע אודות BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "אודות BlueSpice",
+	"bluespiceabout": "אודות BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "לצפות בדף המיוחד \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "גישה לדף המיוחד [[Special:BlueSpiceAbout]]"
+}

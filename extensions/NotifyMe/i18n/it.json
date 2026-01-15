@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"prefs-notifications": "Notifiche",
+	"notifyme-event-page-missing-desc": "''Non esiste ancora una descrizione di questo evento''",
+	"notifyme-event-page-create-desc": "Una pagina è stata creata da un altro utente",
+	"notifyme-event-page-delete-desc": "Una pagina è stata cancellata da un altro utente",
+	"notifyme-event-page-move-desc": "Una pagina è stata spostata da un altro utente",
+	"notifyme-ui-dialog-popup-table-event-label": "Evento",
+	"notifyme-ui-dialog-popup-table-desc-label": "Descrizione"
+}

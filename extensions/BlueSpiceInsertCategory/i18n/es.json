@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agusbou2015",
+			"DiegoAmbrocio",
+			"Fitoschido",
+			"Jakeukalane",
+			"Macofe",
+			"Madamebiblio",
+			"Themasterriot"
+		]
+	},
+	"bs-insertcategory-desc": "Cuadro de diálogo para escribir un enlace a categoría",
+	"bs-insertcategory-insertcat": "Insertar categoría",
+	"prefs-insertcategory": "Insertar categoría",
+	"bs-insertcategory-pref-withparents": "Insertar categoría con sus padres",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Editar las categorías de esta página",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Editar las categorías de esta página",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Abrir diálogo para editar las categorías de esta página",
+	"bs-insertcategory-edit-dialog-button-label": "Editar",
+	"bs-insertcategory-edit-dialog-title": "Editar categorías",
+	"bs-insertcategory-edit-dialog-button-submit": "Hecho",
+	"bs-insertcategory-edit-dialog-button-cancel": "Cancelar",
+	"bs-insertcategory-edit-dialog-input-label": "Categorías asignadas",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Categorías implícitas",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Esas categorías no están definidas dentro del contenido del wikitexto de la página. Lo más probable es que se establezcan desde una plantilla.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "No se pueden recuperar las categorías de las páginas",
+	"bs-insertcategory-no-categories": "No hay categorías asignadas",
+	"bs-insertcategory-edit-dialog-tree-view": "Mostrar todas las categorías"
+}

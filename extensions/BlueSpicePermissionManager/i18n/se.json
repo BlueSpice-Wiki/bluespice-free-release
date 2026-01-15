@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
+		]
+	},
+	"bs-permissionmanager-text": "Geavahanvuoigatvuođat",
+	"bs-permissionmanager-btn-save-label": "Vurke",
+	"bs-permissionmanager-group-all": "buot",
+	"bs-permissionmanager-group-create": "Ráhkat",
+	"bs-permissionmanager-namespace-picker": "Nammagomuvuođat"
+}

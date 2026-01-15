@@ -1,0 +1,133 @@
+#notifications-mm {
+	background-image: url( ../images/bell-fill.svg );
+	background-size: 30vh 30vh;
+	background-repeat: no-repeat;
+	background-position: right;
+
+	.card.card-mn {
+		max-width: initial;
+	}
+
+	.notifications-list-wrapper {
+		position: relative;
+		padding-bottom: 40px;
+	}
+
+	.notifications-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.notifications-col {
+			width: 450px;
+
+			&:not( .notifications-single-col ):first-child {
+				margin-right: 20px;
+			}
+
+			.notification-item {
+				display: flex;
+				align-items: center;
+				position: relative;
+				min-height: 70px;
+				background-color: rgba( 62, 83, 137, 0.1 );
+				border-radius: 5px;
+				margin-top: 18px;
+				padding-right: 10px;
+
+				.notification-unread-circle-wrapper {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 30px;
+
+					.notification-unread-circle {
+						min-width: 13px;
+						min-height: 13px;
+						margin: 10px;
+						border-radius: 50%;
+						border: 0;
+						background-color: #3e5389;
+					}
+				}
+
+				.notification-message {
+					font-size: 14px;
+
+					a {
+						text-decoration: underline;
+					}
+				}
+
+				.notification-timestamp {
+					position: absolute;
+					right: 5px;
+					bottom: 5px;
+					font-size: 7pt;
+					color: #666;
+				}
+			}
+		}
+	}
+
+	.notification-center-link {
+		position: absolute;
+		bottom: -30px;
+		width: 100%;
+		text-align: center;
+		font-size: 15px;
+
+		/** Need to overwrite default links color **/
+		a {
+			color: var( --mm-primary-title-fg ) !important;
+		}
+	}
+
+	.notifications-no-notifications-wrapper {
+		position: relative;
+		width: 300px;
+		height: 350px;
+		padding-top: 50px;
+
+		p {
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+
+	.notifications-no-notifications-image {
+		width: 120px;
+		height: 120px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+		border-radius: 100%;
+		background-size: 80px;
+		background-image: url( ../images/icon_no_notifications.svg );
+		background-color: rgba( 62, 83, 137, 0.1 );
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+/** Button which opens mega menu **/
+.notifications-megamenu-btn {
+	position: relative;
+}
+
+.notifications-megamenu-btn.attention-indicator::after {
+	content: attr( data-unread-count );
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	height: 17px;
+	width: 17px;
+	border-radius: 100%;
+	padding-left: 1px;
+	line-height: 17px;
+	font-size: 9pt;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	background-color: #bd1d1d;
+}

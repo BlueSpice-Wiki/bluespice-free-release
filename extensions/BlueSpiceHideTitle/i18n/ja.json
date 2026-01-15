@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki",
+			"もなー(偽物)"
+		]
+	},
+	"bs-hidetitle-desc": "ページ名を非表示にするためのマジックワード <code><nowiki>__HIDETITLE__</nowiki></code> を追加する",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "表示",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "非表示",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "タイトルの可視性",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "タイトルの表示・非表示を定義できます。"
+}

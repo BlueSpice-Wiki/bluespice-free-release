@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-qr-code-extension-description": "V orodni vrstici prikaže kodo QR s povezavo do trenutne strani.",
+	"bs-qr-code-action-qr-code-title": "Odpri pogovorno okno s kodo QR",
+	"bs-qr-code-action-qr-code-text": "Koda QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Koda QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Koda QR za $1",
+	"bs-qr-code-api-no-page": "Parameter »page« je prazen",
+	"apihelp-bs-qr-code-summary": "Pridobite kodo QR kod URI podatkov, kodiranih v base64",
+	"apihelp-bs-qr-code-param-revid": "ID redakcije strani za ustvaritev trajne povezave",
+	"apihelp-bs-qr-code-param-page": "Ime strani za ustvaritev URI-ja podatkov, kodiranih v base64",
+	"apihelp-bs-qr-code-param-size": "Velikost kode QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Privzeti API-klic",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "API-klic za določen revid",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API-klic z velikostjo po meri",
+	"bs-qr-code-alt-text": "Koda QR za $1",
+	"bs-qr-code-tag-qrcode-desc": "Vdela povezano kodo QR v vikistran",
+	"bs-qr-code-tag-qrcode-title": "Koda QR",
+	"bs-qr-code-tag-attr-page-label": "Stran",
+	"bs-qr-code-tag-attr-page-help": "Ime strani, ki bo vključeno v povezavo kode QR. Če želite uporabiti trenutno ime strani, pustite to polje prazno.",
+	"bs-qr-code-tag-attr-query-label": "Parameter",
+	"bs-qr-code-tag-attr-query-help": "Dodatni parametri, ki jih je treba dodati URL-ju kode QR. To vključuje parametre, kot sta »action=edit« ali »oldid=1«.",
+	"bs-qr-code-tag-attr-desc-label": "Opis",
+	"bs-qr-code-tag-attr-desc-help": "Opis, povezan s kodo QR. Če želite prikazati samo kodo QR, pustite to polje prazno.",
+	"bs-qr-code-tag-attr-size-label": "Velikost",
+	"bs-qr-code-tag-attr-size-help": "Spremenite velikost vdelane kode QR",
+	"bs-qr-code-droplet-name": "Koda QR",
+	"bs-qr-code-droplet-desc": "Vstavi kodo QR v vikistran",
+	"bs-qr-code-tag-attr-size-option-small": "majhna",
+	"bs-qr-code-tag-attr-size-option-medium": "srednja",
+	"bs-qr-code-tag-attr-size-option-large": "velika"
+}

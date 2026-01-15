@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-contextmenu-page-edit": "Cancia la pàggina",
+	"bs-contextmenu-page-delete": "Cancella la pàggina",
+	"bs-contextmenu-page-history": "Talìa la crunuluggìa dâ pàggina",
+	"bs-contextmenu-page-protect": "Pruteggi la pàggina",
+	"bs-contextmenu-page-info": "Talìa li nfurmazzioni dâ pàggina",
+	"bs-contextmenu-media-reupload": "Càrrica na virsioni nova",
+	"bs-contextmenu-media-view-page": "Tàlia la pàggina di discrizzioni dû file e la crunuluggìa dû file",
+	"bs-contextmenu-file-download": "Scàrrica lu file"
+}

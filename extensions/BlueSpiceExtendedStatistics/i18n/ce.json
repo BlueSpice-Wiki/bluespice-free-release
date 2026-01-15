@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Исмаил Садуев",
+			"Умар"
+		]
+	},
+	"bs-statistics-label-bar-chart": "Гистограмма",
+	"bs-statistics-label-line-chart": "Сизийн графика",
+	"bs-statistics-datasource-label": "Хаамийн хьост",
+	"bs-statistics-aggregationmode-label": "Агрегацин раж",
+	"bs-statistics-aggregationfield-label": "Агрегацин меттиг",
+	"bs-statistics-aggregationtype-label": "Агрегацин тайпа",
+	"bs-statistics-targets-label": "Ӏалашонаш",
+	"bs-statistics-paging-page-size": "АгӀонан барам",
+	"bs-statistics-aggregated-report-picker-label": "Чоьтан тайпа",
+	"bs-statistics-aggregated-report-filter-category-multi": "Категореш",
+	"bs-statistics-aggregated-report-filter-date-start": "Йолайелла хан",
+	"bs-statistics-aggregated-report-filter-date-end": "Чекхйолу хан",
+	"bs-statistics-aggregated-report-filter-interval": "Йукъ",
+	"bs-statistics-aggregated-report-filter-interval-day": "Де",
+	"bs-statistics-aggregated-report-filter-interval-week": "КӀира",
+	"bs-statistics-aggregated-report-filter-interval-month": "Бутт",
+	"bs-statistics-aggregated-report-filter-interval-year": "Шо",
+	"bs-statistics-aggregated-report-filter-namespace": "ЦӀерийн меттиг",
+	"bs-statistics-aggregated-report-filter-namespaces": "ЦӀерийн меттиг",
+	"bs-statistics-aggregated-report-filter-page": "АгӀо",
+	"bs-statistics-aggregated-report-filter-user": "Декъашхо",
+	"bs-statistics-aggregated-report-filter-user-multi": "Декъашхой",
+	"bs-statistics-aggregated-report-loading": "Хаамаш дӀахӀуьттуш бу...",
+	"bs-statistics-ve-progressinspector-title": "Прогресс",
+	"bs-statistics-ve-progress-attr-width-label": "Шоралла",
+	"bs-statistics-droplet-progress-name": "Прогресс"
+}

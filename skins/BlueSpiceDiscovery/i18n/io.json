@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"bs-discovery-navbar-user-login-text": "Enirar",
+	"bs-discovery-navbar-user-login-title": "Enirar",
+	"bs-discovery-navbar-user-login-aria-label": "Enirar",
+	"bs-discovery-sidebar-secondary-share-sharebymail-text": "E-postal adreso",
+	"bs-discovery-sidebar-actions-heading": "Agadi",
+	"bs-discovery-sidebar-details-heading": "Detali",
+	"bs-discovery-dialog-details-action-cancel": "Nuligar",
+	"bs-discovery-breadcrumb-label-special-linkliste": "Ligili",
+	"bs-discovery-breadcrumb-label-action-history": "Kronologio",
+	"bs-discovery-breadcrumb-label-action-edit": "Redaktez",
+	"bs-discovery-personalurl-userpage-text": "Profilo",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-heading-help": "Texto por montrar kom titulo; povas kontenar funciono ''parser'' (por facar analizi)"
+}

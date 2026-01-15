@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stacy Lavuha"
+		]
+	},
+	"bs-discovery-navbar-global-actions-overview-text": "Muhtasari",
+	"bs-discovery-mainlinks-allpages-label": "Kurasa",
+	"bs-discovery-mainlinks-categories-label": "Kategoria",
+	"bs-discovery-mainlinks-listfiles-label": "Faili",
+	"bs-discovery-config-mainlinks-allpages-help": "Onyesha kiungo cha kuingilia cha \"Pages\" katika urambazaji wa kushoto",
+	"bs-discovery-config-mainlinks-listfiles-label": "Onyesha sehemu ya kuingilia ya \"Faili\"",
+	"bs-discovery-config-mainlinks-categories-label": "Onyesha sehemu ya kuingilia \"Kategoria\""
+}

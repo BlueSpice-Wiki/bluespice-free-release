@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Markus Glaser <glaser@hallowelt.com>",
+			"Leonid Verhovskij <verhovskij@hallowelt.com>"
+		]
+	},
+	"bs-bluespiceabout-desc": "Information about BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "About BlueSpice",
+	"bs-bluespiceabout-about-bluespice-page": "Special:BlueSpiceAbout",
+	"bluespiceabout": "About BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "view the special page \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "Access to the special page [[Special:BlueSpiceAbout]]"
+}

@@ -1,0 +1,76 @@
+.pdfcreator-page {
+	page-break-after: always;
+	clear: both;
+}
+
+.pdfcreator-page-new h1 {
+	color: #bd1d1d;
+}
+
+/* TOC page */
+.pdfcreator-type-toc .toc { margin: 0em; }
+.pdfcreator-type-toc .toc li > ul { margin: 0em; }
+
+.pdfcreator-type-toc .toc li > ul { margin-left: 0.85em; }
+.pdfcreator-type-toc .toc .toc-new span {
+	color: #bd1d1d;
+}
+
+/* TOC */
+.tocnumber.hidden,
+.mw-headline-number.hidden {
+	display: none;
+}
+
+/* Forced page break */
+.pagebreak {
+	page-break-after: always;
+	visibility: hidden;
+}
+
+/* Generated content elements */
+.pdfcreator-currentpagenumber:after {
+	content: counter( page );
+}
+
+.pdfcreator-totalpagescount:after {
+	content: counter( pages );
+}
+
+/* Parser wraps output in p and this has margin and padding so we want to remove it */
+.mw-parser-output > p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Common Elements */
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div, p, ul, ol, dl {
+	orphans: 3 !important;
+	widows: 5 !important;
+}
+
+img, ul, ol, dl {
+	page-break-before: avoid;
+}
+
+/* MediaWiki specific? --> mediawiki.css */
+div.thumb {
+	page-break-before: avoid;
+	page-break-inside: avoid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	page-break-after: avoid;
+	clear:both;
+}
+
+table {
+	clear: both; /* Is this wise? Prevents floating thumbs from overlapping into tables and TOC table */
+	-fs-table-paginate: paginate; /* special xhtmlrenderer (flying saucer -> fs) property */
+}

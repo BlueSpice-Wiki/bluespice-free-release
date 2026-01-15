@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geraki",
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"prefs-authors": "Συγγραφείς αυτής της σελίδας",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Συντάκτης}}|Συντάκτες}}",
+	"bs-authors-profileimage": "Εικόνα προφίλ",
+	"bs-authors-profileimage-change": "Αλλαγή εικόνας προφίλ",
+	"bs-authors-show-all-authors": "Περισσότεροι συγγραφείς διαθέσιμοι",
+	"bs-authors-navigation-link-title": "Συγγραφείς αυτής της σελίδας",
+	"bs-authors-navigation-link-text": "Συγγραφείς"
+}

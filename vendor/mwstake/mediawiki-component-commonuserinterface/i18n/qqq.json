@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"apihelp-mwstake-commonui-skinslot-summary" : "{{doc-apihelp-summary|mwstake-commonui-skinslot}}",
+	"apihelp-mwstake-commonui-skinslot-param-path" : "{{doc-apihelp-param|mwstake-commonui-skinslot|path}}",
+	"apihelp-mwstake-commonui-skinslot-param-context" : "{{doc-apihelp-param|mwstake-commonui-skinslot|context}}"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200",
+			"Nokeoo",
+			"Zygimantus"
+		]
+	},
+	"bs-interwikilinks-invalid-pfx-spc": "Priešdėlis yra neteisingas. Prašome nenaudoti tarpų.",
+	"bs-interwikilinks-invalid-url-spc": "URL yra neteisingas. Prašome nenaudoti tarpų.",
+	"bs-interwikilinks-nopfx": "Prašome pateikti priešdėlį.",
+	"bs-interwikilinks-nourl": "Prašome pateikti URL.",
+	"bs-interwikilinks-pfxtoolong": "Priešdėlis yra per ilgas. Prašome naudoti iki 32 simbolių.",
+	"bs-interwikilinks-pfxexists": "Priešdėlis jau egzistuoja.",
+	"bs-interwikilinks-headerprefix": "Priešdėlis",
+	"bs-interwikilinks-labelprefix": "Priešdėlis",
+	"action-interwikilinks-viewspecialpage": "žiūrėti specialų puslapį „{{int:bs-interwikilinks-label}}“",
+	"interwikilinks": "Tarpkalbinės nuorodos",
+	"right-interwikilinks-viewspecialpage": "Prieiga prie specialaus puslapio [[Special:InterWikiLinks]]"
+}

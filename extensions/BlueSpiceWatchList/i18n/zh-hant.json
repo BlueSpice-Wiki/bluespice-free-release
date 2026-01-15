@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"Kly",
+			"Liuxinyu970226",
+			"Willy1018",
+			"Winston Sung"
+		]
+	},
+	"bs-watchlist-desc": "添加監視清單小工具與標籤",
+	"bs-watchlist-pref-sort-time": "時間",
+	"bs-watchlist-pref-sort-title": "標題",
+	"bs-watchlist-tag-watchlist-desc": "顯示在您監視清單裡最近有被修改最多次的條目。",
+	"bs-watchlist-window-watchlist-title": "監視清單",
+	"bs-watchlist-window-watchlist-intro": "此為在您監視清單的所有頁面概要。您可以切回成[[Special:Watchlist|經典監視清單頁面]]。",
+	"bs-watchlist-grid-watchlist-column-link-header": "頁面",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "未讀變更",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "檢查變更",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "討論頁",
+	"bs-watchlist-grid-watchlist-label-filter": "篩選",
+	"bs-watchlist-ve-watchlistinspector-title": "監視清單",
+	"bs-watchlist-ve-watchlist-attr-count-label": "數量",
+	"bs-watchlist-tag-watchlist-attr-count-help": "應顯示的監視清單上項目數",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "最大標題長度",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "應顯示的標題字母數。可以是 5 到 500 之間的數字。",
+	"bs-watchlist-ve-watchlist-attr-order-label": "排序",
+	"bs-watchlist-tag-watchlist-attr-order-help": "顯示按時間或頁面名稱排序的清單",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "頁面名稱",
+	"bs-watchlist-ve-watchlist-attr-time-label": "時間",
+	"bs-watchlist-tag-watchlist-no-user": "因為沒有使用者登入，無法顯示監視清單",
+	"bs-watchlist-tag-watchlist-no-entries": "監視清單中顯示的頁面沒有變化",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "頁面名稱說明",
+	"bs-watchlist-tag-watchlist-attr-time-help": "時間說明",
+	"bs-watchlist-droplet-name": "監視清單",
+	"bs-watchlist-droplet-description": "包含在監視清單中頁面的最新更改"
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dirruw'o",
+			"Kareyac"
+		]
+	},
+	"enhanced-standard-uis-allpages-watch-label": "Посмотреть страницу $1",
+	"enhanced-standard-uis-allpages-unwatch-label": "Запретить просмотр страницы $1",
+	"enhanced-standard-uis-allpages-pageinfo-label": "Показать сведения о странице для $1",
+	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|результат|результата|результатов}}",
+	"enhanced-standard-uis-filelist-grid-preview-title": "Предпросмотр",
+	"enhanced-standard-uis-allpages-redirect-label": "$1 (перенаправление)",
+	"enhancedspecialpages": "Служебные страницы"
+}

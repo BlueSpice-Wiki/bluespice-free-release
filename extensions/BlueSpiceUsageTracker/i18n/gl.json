@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm",
+			"Toliño"
+		]
+	},
+	"bs-usagetracker-desc": "Contén datos estatísticos sobre o uso das extensións",
+	"apihelp-bs-usagetracker-store-summary": "Contén datos estatísticos sobre o uso da extensión"
+}

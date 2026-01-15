@@ -1,0 +1,21 @@
+{
+	"inputprocessor-error-processor-not-registered": "Processor type \"$1\" not registered",
+	"inputprocessor-error-invalid-processor-object": "Processor type \"$1\" not instance of IProcessor",
+	"inputprocessor-error-value-required": "Value for \"$1\" is required",
+	"inputprocessor-error-int-not-number": "Value \"$2\" for \"$1\" is not a valid integer",
+	"inputprocessor-error-int-out-of-range": "Value \"$2\" for \"$1\" is out of range",
+	"inputprocessor-error-boolean-not-boolean": "Value \"$2\" for \"$1\" is not a valid boolean",
+	"inputprocessor-error-title-invalid": "Value \"$2\" for \"$1\" is not a valid title",
+	"inputprocessor-error-title-not-exists": "Title \"$2\" for \"$1\" must exist",
+	"inputprocessor-error-title-not-allowed-namespace": "Namespace of title \"$2\" for \"$1\" is not allowed",
+	"inputprocessor-error-title-no-read-permission": "User has no read permission for title \"$2\" for \"$1\"",
+	"inputprocessor-error-keyword-not-keyword": "Value \"$2\" for \"$1\" is not an allowed keyword",
+	"inputprocessor-error-string-not-string": "Value \"$2\" for \"$1\" is not a valid string",
+	"inputprocessor-error-namespace-invalid": "Value \"$2\" for \"$1\" is not a valid namespace",
+	"inputprocessor-error-namespace-not-content": "Namespace \"$2\" for \"$1\" is not a content namespace",
+	"inputprocessor-error-namespace-not-subject": "Namespace \"$2\" for \"$1\" is not a subject namespace",
+	"inputprocessor-error-namespace-not-allowed": "Namespace \"$2\" for \"$1\" is not allowed",
+	"inputprocessor-error-user-invalid": "Value \"$2\" for \"$1\" is not a valid user",
+	"inputprocessor-error-user-not-exist": "User \"$2\" for \"$1\" must exist",
+	"inputprocessor-error-usergroup-invalid": "Value \"$2\" for \"$1\" is not a valid usergroup"
+}

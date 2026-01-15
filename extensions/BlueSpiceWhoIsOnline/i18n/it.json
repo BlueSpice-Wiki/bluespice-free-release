@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16",
+			"GpieroMW",
+			"Matteocng",
+			"Selven"
+		]
+	},
+	"bs-whoisonline-nousers": "Nessuno è connesso.",
+	"bs-whoisonline-widget-title": "Chi è online?",
+	"prefs-whoisonline": "Chi è online?",
+	"bs-whoisonline-pref-limitcount": "Numero massimo di utenti mostrati:",
+	"bs-whoisonline-pref-orderby": "Ordina per:",
+	"bs-whoisonline-pref-orderby-name": "Nome",
+	"bs-whoisonline-collection-var-login": "Entra",
+	"bs-whoisonline-statistics-report-login-duration": "Durata dell'inizio di sessione",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Numero di accessi",
+	"bs-whoisonline-statistics-report-login-number": "Accessi"
+}

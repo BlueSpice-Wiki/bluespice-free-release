@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"McDutchie",
+			"Siebrand"
+		]
+	},
+	"vuejsplus-desc": "Verzameling van VueJs-componenten",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Samenvouwen",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Uitvouwen",
+	"vuejsplus-data-grid-option-sort-string-asc": "Oplopend sorteren",
+	"vuejsplus-data-grid-option-sort-string-desc": "Aflopend sorteren",
+	"vuejsplus-data-grid-option-filter-string": "Zoeken",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|Één rij|$1 rijen}} gevonden",
+	"vuejsplus-data-grid-option-button-aria-label": "Opties kolom $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Aangevinkt",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Uitgevinkt",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Neutraal",
+	"vuejsplus-data-grid-option-filter-date-from-label": "Vanaf datum",
+	"vuejsplus-data-grid-option-filter-date-to-label": "Tot datum"
+}

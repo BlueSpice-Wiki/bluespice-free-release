@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daud I.F. Argana"
+		]
+	},
+	"filterspecialpages-desc": "Memasukkan isian untuk menyaring entri di [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages].",
+	"filterspecialpages-hint-label": "Cari halaman"
+}

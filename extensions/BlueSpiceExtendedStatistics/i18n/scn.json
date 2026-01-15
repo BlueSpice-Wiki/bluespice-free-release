@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"GianAntonucci"
+		]
+	},
+	"bs-statistics-aggregated-report-filter-category-multi": "Catigurìi",
+	"bs-statistics-aggregated-report-filter-interval-day": "Jornu",
+	"bs-statistics-aggregated-report-filter-interval-week": "Simana",
+	"bs-statistics-aggregated-report-filter-interval-month": "Misi",
+	"bs-statistics-aggregated-report-filter-interval-year": "Annu",
+	"bs-statistics-aggregated-report-filter-namespace": "Namespace",
+	"bs-statistics-aggregated-report-filter-namespaces": "Namespace",
+	"bs-statistics-aggregated-report-filter-page": "Pàggina",
+	"bs-statistics-aggregated-report-filter-user": "Utenti",
+	"bs-statistics-aggregated-report-filter-user-multi": "Utenti"
+}

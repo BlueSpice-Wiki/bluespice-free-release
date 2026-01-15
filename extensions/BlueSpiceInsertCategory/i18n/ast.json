@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe",
+			"Xuacu"
+		]
+	},
+	"bs-insertcategory-desc": "Diálogu p'amestar un enllaz a categoría",
+	"bs-insertcategory-insertcat": "Inxertar categoría",
+	"prefs-insertcategory": "Inxertar categoría",
+	"bs-insertcategory-pref-withparents": "Inxertar categoría y los sos padres"
+}

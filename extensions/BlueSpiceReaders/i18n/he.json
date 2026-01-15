@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Guycn2",
+			"YaronSh"
+		]
+	},
+	"bs-readers-desc": "יצירת רשימה של האנשים שקוראים דף",
+	"prefs-readers": "קוראים",
+	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|קורא|קוראת}}|קוראים}}",
+	"readers-user": "דפים {{GENDER:$1|שנקראו}} על־ידי: $1",
+	"readers": "קוראי הדף \"$1\"",
+	"bs-readers-contentactions-label": "הצגת הקוראים",
+	"bs-readers-pagenotexists": "הדף אינו קיים.",
+	"bs-readers-pref-active": "הפעלת קוראים",
+	"bs-readers-emptyinput": "לא סופק דף.",
+	"bs-readers-header-username": "שם משתמש",
+	"bs-readers-header-readerspath": "קורא",
+	"bs-readers-header-ts": "תאריך",
+	"bs-readers-header-page": "דף",
+	"apihelp-bs-readers-data-store-summary": "קבלת מידע על הקוראים של דף מסוים.",
+	"apihelp-bs-readers-users-store-summary": "קבלת מידע מלא על הקוראים של דף מסוים.",
+	"apihelp-bs-readers-page-readers-store-summary": "קבלת כל הקוראים של כל הדפים",
+	"apihelp-bs-readers-revision-readers-store-summary": "קבלת כל הקוראים של כל הגרסאות של דף",
+	"apihelp-bs-readers-tasks-summary": "מספק פעולות נפוצות ל־Readers",
+	"action-viewreaders": "לצפות בקוראים של דפים",
+	"action-viewrevisionreaders": "להציג את הקוראים של תיקונים בדף בודד",
+	"right-viewreaders": "הצגת הקוראים של דף",
+	"right-viewrevisionreaders": "הצגת קוראים של גרסה בודדת של דף",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|קראת}} את הדף $1 ב־$2",
+	"bs-readers-header-read-by": "נקראה על־ידי",
+	"bs-readers-header-revision-id": "מזהה גרסה",
+	"bs-readers-header-revision-date": "תאריך גרסה",
+	"bs-readers-header-read-on": "נקראה ב־",
+	"revisionreaders": "קוראים לפי גרסה של \"$1\"",
+	"bs-readers-info-dialog": "קוראי הדף הזה",
+	"bs-readers-info-dialog-column-readers": "קוראים",
+	"bs-readers-permission-error": "שגיאת הרשאה"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne",
+			"Yupik"
+		]
+	},
+	"bs-filerepo-labelupload": "Vuorkkii",
+	"bs-filerepo-labelfilter": "Sillee",
+	"bs-filerepo-headerfilename": "Tiätuvuárkkánommâ",
+	"bs-filerepo-headerfilesize": "Stuárudâh",
+	"bs-filerepo-headerpagecategories": "Luokah",
+	"bs-filerepo-headerfileusertext": "Kevttee",
+	"bs-filerepo-headerfiledescription": "Kuvvim",
+	"bs-filerepo-headerfilethumbnail": "Miniatyyrkove"
+}

@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman",
+			"আজিজ",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"bs-usermanager-desc": "ব্যবহারকারী যোগ, সম্পাদনা এবং মুছে ফেলার জন্য প্রশাসনিক ইন্টারফেস",
+	"bs-usermanager-idnotexist": "এই ব্যবহারকারীর অস্তিত্ব নেই।",
+	"bs-usermanager-invalid-pwd": "পাসওয়ার্ডটি ভুল।",
+	"bs-usermanager-invalid-email-gen": "ইমেল ঠিকানাটি অবৈধ।",
+	"bs-usermanager-label": "ব্যবহারকারী ব্যবস্থাপক",
+	"bs-usermanager-text": "ব্যবহারকারীগণ",
+	"bs-usermanager-user-exists": "ব্যবহারকারী নাম ইতিমধ্যে বিদ্যমান।",
+	"bs-usermanager-headerusername": "ব্যবহারকারী নাম",
+	"bs-usermanager-headerrealname": "প্রকৃত নাম",
+	"bs-usermanager-headeremail": "ইমেইল",
+	"bs-usermanager-headerregistration": "নিবন্ধন",
+	"bs-usermanager-headergroups": "দলসমূহ",
+	"bs-usermanager-titleadduser": "ব্যবহারকারী যোগ করুন",
+	"bs-usermanager-titleeditdetails": "ব্যবহারকারী সম্পাদনা",
+	"bs-usermanager-labelnewpassword": "পাসওয়ার্ড",
+	"bs-usermanager-labelpasswordcheck": "পাসওয়ার্ড নিশ্চিত করুন",
+	"bs-usermanager-no-self-block": "আপনি নিজেকে নিষ্ক্রিয় করতে পারবেন না।",
+	"bs-usermanager-block-error": "{{GENDER:$1|ব্যবহারকারী}} $1-কে নিষ্ক্রয় করা যায়নি।",
+	"bs-usermanager-unblock-error": "{{GENDER:$1|ব্যবহারকারী}} $1-কে সক্রিয় করা যায়নি।",
+	"bs-usermanager-headerenabled": "সক্রিয়",
+	"bs-usermanager-log-user-disabled": "ব্যবহারকারী-ব্যবস্থাপক {{GENDER:$1|ব্যবহারকারী}} $1-কে নিষ্ক্রিয় করেছেন",
+	"bs-usermanager-endisable": "সক্রিয়/নিষ্ক্রিয় করুন",
+	"bs-usermanager-confirmdisableuser": "আপনি কি সত্যি {{PLURAL:$1|এই ব্যবহারকারীকে|এই $1 জন ব্যবহারকারীকে}} নিষ্ক্রিয় করতে চান?",
+	"bs-usermanager-confirmenableuser": "আপনি কি সত্যি {{PLURAL:$1|এই ব্যবহারকারীকে|এই $1 জন ব্যবহারকারীকে}} সক্রিয় করতে চান?",
+	"bs-usermanager-titledisableuser": "ব্যবহারকারী নিষ্ক্রিয় করুন",
+	"bs-usermanager-titleenableuser": "ব্যবহারকারী সক্রিয় করুন",
+	"usermanager": "ব্যবহারকারী ব্যবস্থাপক",
+	"bs-usermanager-group-add-not-allowed": "আপনি $1 দলে ব্যবহারকারী যোগ করার জন্য অনুমিত নন",
+	"bs-usermanager-group-remove-not-allowed": "আপনি $1 দল থেকে ব্যবহারকারীদের সারানোর জন্য অনুমিত নন",
+	"bs-usermanager-label-password-change-strategy": "পদ্ধতি"
+}

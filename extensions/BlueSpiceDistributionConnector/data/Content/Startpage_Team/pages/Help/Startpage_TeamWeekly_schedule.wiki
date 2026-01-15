@@ -1,0 +1,24 @@
+{| class="wikitable small" style="width:100%;"
+!Support type
+!Mon
+!Tue
+!Wed
+!Thu
+!Fri
+|-
+!<span class="bi bi-headset"> Phone</span>
+|Michael
+|Claire
+|Justin
+|Atri
+|Christophe
+|-
+!<span class="bi bi-gear-fill"> Admin</span>
+|Joe
+|Elisa
+|Claudette
+|Mike
+|Robert
+|}
+What to do during [[{{NAMESPACE}}:{{ROOTPAGENAME}}/Weekly support|weekly support]]
+__NOEDITSECTION__

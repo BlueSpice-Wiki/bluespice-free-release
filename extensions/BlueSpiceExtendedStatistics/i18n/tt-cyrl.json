@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ерней"
+		]
+	},
+	"bs-statistics-label-bar-chart": "Баганалы диаграмма",
+	"bs-statistics-label-line-chart": "Сызыклы диаграмма",
+	"bs-statistics-datasource-label": "Мәгълүматлар чыганагы",
+	"bs-statistics-targets-label": "Максатлар"
+}

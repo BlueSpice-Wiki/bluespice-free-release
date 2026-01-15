@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Pickle12"
+		]
+	},
+	"bs-filerepo-labelupload": "Naloži",
+	"bs-filerepo-labelfilter": "Filter",
+	"bs-filerepo-headerfilename": "Ime datoteke",
+	"bs-filerepo-headerfilesize": "Velikost",
+	"bs-filerepo-headerpagecategories": "Kategorije",
+	"bs-filerepo-headerfilewidth": "Širina",
+	"bs-filerepo-headerfileheight": "Višina",
+	"bs-filerepo-headerfilemimetype": "Vrsta MIME",
+	"bs-filerepo-headerfileusertext": "Uporabnik",
+	"bs-filerepo-headerfileextension": "Dodatek",
+	"bs-filerepo-headerfiletimestamp": "Naloženo",
+	"bs-filerepo-headerfilemediatype": "Vrsta medija",
+	"bs-filerepo-headerfiledescription": "Opis",
+	"bs-filerepo-headerfilethumbnail": "Sličica",
+	"bs-filerepo-yes": "Da",
+	"bs-filerepo-no": "Ne",
+	"bs-filerepo-pagesize": "Vnosov na stran"
+}

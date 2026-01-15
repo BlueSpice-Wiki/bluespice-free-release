@@ -1,0 +1,14 @@
+body.mediawiki.x-body .x-tab-inner-default,
+body.mediawiki.x-body .x-grid-item,
+body.mediawiki.x-body .x-panel-body-default,
+body.mediawiki.x-body .x-toolbar-text-default,
+body.mediawiki.x-body .x-column-header,
+body.mediawiki.x-body .x-btn-inner-default-toolbar-small {
+	font-family: 'Lato';
+	font-weight: normal;
+}
+
+/* fix for portlets */
+body.mediawiki.x-body .x-surface {
+	position: absolute;
+}

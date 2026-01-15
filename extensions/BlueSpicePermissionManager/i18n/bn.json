@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman",
+			"Titodutta",
+			"আজিজ",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"prefs-permissionmanager": "অনুমতি ব্যবস্থাপক",
+	"bs-permissionmanager-label": "অনুমতি ব্যবস্থাপক",
+	"bs-permissionmanager-header-permissions": "অনুমতি",
+	"bs-permissionmanager-header-global": "উইকি",
+	"bs-permissionmanager-btn-save-label": "সংরক্ষণ",
+	"log-name-bs-permission-manager": "অনুমতি ব্যবস্থাপক লগ",
+	"log-show-hide-bs-permission-manager": "$1 অনুমতি ব্যবস্থাপক লগ",
+	"logeventslist-bs-permission-manager-log": "অনুমতি ব্যবস্থাপক লগ",
+	"permissionmanager": "অনুমতি ব্যবস্থাপক",
+	"bs-permissionmanager-affected-by-explicit": "$1 দ্বারা অবরুদ্ধ",
+	"bs-permissionmanager-group-all": "সমস্ত",
+	"bs-permissionmanager-header-role": "ভূমিকা",
+	"bs-permissionmanager-preset-private-label": "ব্যক্তিগত উইকি",
+	"bs-permissionmanager-preset-protected-label": "সুরক্ষিত উইকি",
+	"bs-permissionmanager-group-create": "তৈরি করুন",
+	"bs-permissionmanager-namespace-picker": "নামস্থান"
+}

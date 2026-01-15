@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore"
+		]
+	},
+	"contentdroplets-droplet-text-box-warning": "警告メッセージ",
+	"contentdroplets-droplet-text-box-neutral": "メッセージ",
+	"contentdroplets-category-label-media": "メディア",
+	"contentdroplets-category-label-data": "データ",
+	"contentdroplets-category-label-lists": "リスト",
+	"contentdroplets-category-label-export": "エクスポート",
+	"contentdroplets-category-label-all": "すべて",
+	"contentdroplets-droplet-text-box-text-label": "テキスト",
+	"contentdroplets-droplet-icon-font-size-label": "フォントサイズ",
+	"contentdroplets-droplet-icon-color-label": "色",
+	"contentdroplets-droplet-icon-name": "アイコン",
+	"contentdroplet-dialog-action-close": "キャンセル",
+	"contentdroplet-dialog-action-insert": "挿入",
+	"contentdroplets-droplet-code-name": "コード"
+}

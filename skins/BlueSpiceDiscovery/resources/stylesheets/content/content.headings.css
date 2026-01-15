@@ -1,0 +1,106 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var( --content-font-family );
+	padding-top: 0;
+}
+
+h1#firstHeading {
+	font-size: var( --content-h1-font-size );
+	font-weight: var( --content-h1-font-weight );
+	color: var( --content-h1-fg );
+	line-height: 1.5;
+	padding-top: 0;
+	border-bottom: var( --content-h1-border );
+}
+
+.mw-body-content h1 {
+	font-size: var( --content-h1-font-size );
+	font-weight: var( --content-h1-font-weight );
+	color: var( --content-h1-fg );
+	line-height: 1.5;
+	border-bottom: var( --content-h1-border );
+}
+
+.mw-body-content h2 {
+	font-size: var( --content-h2-font-size );
+	font-weight: var( --content-h2-font-weight );
+	color: var( --content-h2-fg );
+	border-bottom: var( --content-h2-border );
+	line-height: 1.5;
+	margin: 1.8rem 0;
+}
+
+.mw-body-content h3 {
+	font-size: var( --content-h3-font-size );
+	font-weight: var( --content-h3-font-weight );
+	color: var( --content-h3-fg );
+	border-bottom: var( --content-h3-border );
+	line-height: 1.5;
+	margin: 1.6rem 0;
+}
+
+.mw-body-content h4 {
+	font-size: var( --content-h4-font-size );
+	font-weight: var( --content-h4-font-weight );
+	color: var( --content-h4-fg );
+	border-bottom: var( --content-h4-border );
+	line-height: 1.5;
+	margin: 1.4rem 0;
+}
+
+.mw-body-content h5 {
+	font-size: var( --content-h5-font-size );
+	font-weight: var( --content-h5-font-weight );
+	color: var( --content-h5-fg );
+	border-bottom: var( --content-h5-border );
+	line-height: 1.5;
+	margin: 1.25rem 0;
+}
+
+.mw-body-content h6 {
+	font-size: var( --content-h6-font-size );
+	font-weight: var( --content-h6-font-weight );
+	color: var( --content-h6-fg );
+	border-bottom: var( --content-h6-border );
+	line-height: 1.5;
+	margin: 1.1rem 0;
+}
+
+.mw-editsection {
+	font-size: 0.875rem;
+	font-weight: normal;
+	margin-left: 0.5rem;
+}
+
+h1 .mw-editsection,
+h2 .mw-editsection,
+h3 .mw-editsection,
+h4 .mw-editsection,
+h5 .mw-editsection,
+h6 .mw-editsection {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+h1:hover .mw-editsection,
+h2:hover .mw-editsection,
+h3:hover .mw-editsection,
+h4:hover .mw-editsection,
+h5:hover .mw-editsection,
+h6:hover .mw-editsection {
+	visibility: visible;
+	opacity: 1;
+}
+
+#content .mw-editsection a {
+	color: var( --content-fg-secondary );
+}
+
+#content .mw-editsection a:hover {
+	color: var( --content-fg-primary );
+}

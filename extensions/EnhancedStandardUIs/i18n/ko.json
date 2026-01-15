@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Markingdots",
+			"Ykhwong"
+		]
+	},
+	"enhanced-standard-uis-history-grid-header-size-label": "크기",
+	"enhanced-standard-uis-history-grid-header-summary-label": "요약",
+	"enhanced-standard-uis-history-grid-header-tags-label": "태그",
+	"enhanced-standard-uis-history-grid-header-diff-label": "차이",
+	"enhancedfilelist": "파일 목록",
+	"enhanced-standard-uis-filelist-grid-file-title": "파일 이름",
+	"enhanced-standard-uis-filelist-grid-author-title": "만든이",
+	"enhanced-standard-uis-filelist-grid-date-title": "날짜",
+	"enhanced-standard-uis-filelist-grid-type-title": "유형",
+	"enhanced-standard-uis-filelist-grid-size-title": "크기",
+	"enhanced-standard-uis-filelist-grid-categories-title": "분류",
+	"enhanced-standard-uis-filelist-grid-comment-title": "의견",
+	"enhanced-standard-uis-filelist-grid-info-title": "정보",
+	"enhanced-standard-uis-filelist-grid-reupload-title": "업로드",
+	"enhanced-standard-uis-filelist-grid-delete-title": "삭제",
+	"enhanced-standard-uis-filelist-panel-search-placeholder-label": "파일 검색",
+	"enhanced-standard-uis-filelist-panel-new-file-label": "새 파일",
+	"enhanced-standard-uis-filelist-panel-tiles-label": "타일",
+	"enhanced-standard-uis-filelist-panel-list-label": "목록",
+	"enhanced-standard-uis-filelist-dialog-info": "파일 정보",
+	"enhanced-standard-uis-filelist-dialog-action-close-title": "닫기",
+	"enhanced-standard-uis-filelist-dialog-action-done-label": "완료",
+	"enhanced-standard-uis-filelist-dialog-action-file-label": "파일 문서 열기",
+	"enhanced-standard-uis-filelist-dialog-history-grid-version": "버전",
+	"enhanced-standard-uis-filelist-dialog-page-preview-label": "미리 보기",
+	"enhanced-standard-uis-filelist-dialog-page-history-label": "편집 역사",
+	"enhanced-standard-uis-filelist-dialog-page-data-label": "메타데이터",
+	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "이 파일에 사용할 수 있는 메타데이터가 없습니다",
+	"enhanced-standard-uis-filelist-notify-copy-clipboard": "파일 링크가 클립보드에 복사되었습니다",
+	"enhanced-standard-uis-allpages-namespace-list-label": "이름공간 목록",
+	"enhanced-standard-uis-allpages-redirect-label": "$1 (넘겨주기)",
+	"enhancedspecialpages": "특수 문서",
+	"enhanced-standard-uis-ve-filegrid-title": "고급 검색",
+	"enhanced-standard-uis-allpages-empty-namespaces-text": "사용 가능한 이름 공간이 없음"
+}

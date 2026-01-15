@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos",
+			"Krisztina"
+		]
+	},
+	"bs-usersidebar-desc": "Személyre szabható navigációs menü",
+	"bs-edit-user-mm-link-text": "Felhasználói menü szerkesztése",
+	"bs-edit-user-mm-link-title": "Felhasználói menü szerkesztése",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Kulcsszó szerkesztése",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Kulcsszó",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Kulcsszó szerkesztése",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Kulcsszó"
+}

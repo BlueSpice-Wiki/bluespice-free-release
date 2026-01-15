@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
+		]
+	},
+	"standarddialogs-copy-page-new": "Ođđa siiddu namma",
+	"standarddialogs-page-info-close": "Gidde",
+	"standarddialogs-page-info-properties": "Iešvuođat",
+	"standarddialogs-page-info-page-templates": "Mállet",
+	"standarddialogs-page-info-page-categories": "Kategoriijat",
+	"standarddialogs-new-page-label": "Siidonamma",
+	"standarddialogs-new-subpage-title": "Ráhkat ođđa oalgesiiddu siidui \"$1\"",
+	"standarddialogs-create-button-new-page-text": "Ođđa siidu",
+	"standarddialogs-delete-btn": "Sihko",
+	"standarddialogs-btn-cancel": "Gaskkalduhte"
+}

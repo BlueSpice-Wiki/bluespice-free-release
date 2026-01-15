@@ -1,0 +1,32 @@
+:root {
+    --mws-tree-expander-width: 1.5em;
+}
+ul.mws-tree,
+ul.mws-tree-item-children {
+    list-style: none;
+    padding-left: var(--mws-tree-expander-width);
+}
+ul.mws-tree-item-children {
+    display: none;
+}
+ul.mws-tree-item-children.show {
+    display: block;
+}
+.mws-tree-expander {
+    display: inline-block;
+    width: 1em;
+}
+.mws-tree-expander.expanded::before {
+    content: "-";
+}
+.mws-tree-expander.collapsed::before {
+    content: "+";
+}
+.mws-tree-item-label {
+    display: inline-block;
+    width: calc(100% - var(--mws-tree-expander-width));
+}
+.leaf .mws-tree-item-label {
+    display: inline-block;
+    width: 100%;
+}

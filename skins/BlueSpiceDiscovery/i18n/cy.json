@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau",
+			"Ceirios"
+		]
+	},
+	"bs-discovery-navbar-user-login-text": "Mewngofnodi",
+	"bs-discovery-navbar-user-login-title": "Mewngofnodi",
+	"bs-discovery-navbar-user-login-aria-label": "Mewngofnodi",
+	"bs-discovery-edit-mediawiki-sidebar-link-title": "Golygu MediaWiki:Sidebar",
+	"bs-discovery-permalink-copy-text": "Copïo URL",
+	"bs-discovery-enhanced-mediawiki-sidebar-header-text": "Llywio",
+	"bs-discovery-enhanced-sidebar-edit-button-title": "Golygu dewislen"
+}

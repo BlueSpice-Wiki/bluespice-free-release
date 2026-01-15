@@ -1,0 +1,5 @@
+<form id="{{form-id}}"{{#form-class}} class="{{.}}"{{/form-class}}{{#form-action}} action="{{.}}"{{/form-action}} role="search">
+	<button id="{{button-id}}"{{#button-class}} class="{{.}}"{{/button-class}}{{#button-aria-label}} aria-label="{{.}}"{{/button-aria-label}}{{#button-name}} name="{{.}}"{{/button-name}}{{#button-title}} title="{{.}}"{{/button-title}} type="submit"></button>
+	<input id="{{input-id}}"{{#input-class}} class="{{.}}"{{/input-class}} type="search"{{#input-placeholder}} placeholder="{{.}}"{{/input-placeholder}}{{#input-aria-label}} aria-label="{{.}}"{{/input-aria-label}}{{#input-autocomplete}} autocomplete="{{.}}"{{/input-autocomplete}}{{#input-maxlength}} maxlength="{{.}}"{{/input-maxlength}} name="search" >
+	<input type="hidden" name="title" value="Special:Search">
+</form>

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-avatars-desc": "Omogoča generične in individualne slike uporabnika",
+	"bs-avatars-pref-generator": "Generator:",
+	"bs-avatars-pref-userimage-img-alt": "Vaša trenutna uporabniška slika",
+	"bs-avatars-upload-complete": "Sliko smo naložili.",
+	"bs-avatars-generate-complete": "Ustvarjen je bil nov avatar.",
+	"bs-avatars-upload-label": "Slika",
+	"bs-avatars-generate-new-label": "Ustvari nov avatar",
+	"bs-avatars-file-upload-fieldset-title": "Nalaganje slike",
+	"bs-avatars-auto-generate-fieldset-title": "Samodejno ustvari avatar",
+	"apihelp-bs-avatars-tasks-summary": "Nalaganje, generiranje in nastavitev uporabniških avatarjev",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Parameter »uporabniško ime« je obvezen in mora vsebovati veljavno uporabniško ime",
+	"bs-avatars-pref-generator-help": "Slika avatarja se ustvari, ko uporabnik ne naloži slike profila. InstantAvatar: ustvari sliko avatarja z uporabo začetnic pravega imena ali polj uporabniškega imena. Identicon: ustvari sliko avatarja na podlagi delov uporabnikovega identifikatorja."
+}

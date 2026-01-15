@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"bs-permissionmanager-header-global": "Wiki",
+	"bs-permissionmanager-btn-save-label": "Ruõkk",
+	"bs-permissionmanager-group-all": "puk",
+	"bs-permissionmanager-preset-protected-label": "Suõjjuum wiki",
+	"bs-permissionmanager-group-create": "Raaj"
+}

@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "Скасаваць праўку",
+	"bs-visualeditorconnector-ve-style-option": "Стыль табліцы",
+	"bs-visualeditorconnector-text-style-tool-color-label": "Колер тэксту",
+	"bs-vec-table-inspector-column": "Слупок",
+	"bs-vec-table-inspector-row": "Радок",
+	"bs-vec-table-inspector-cell": "Ячэйка",
+	"bs-vec-table-style-column-width": "Шырыня слупка",
+	"bs-vec-table-style-row-height": "Вышыня слупка (пкс)",
+	"bs-vec-contextitem-row-duplicate": "Падвоіць радок",
+	"bs-vec-contextitem-column-duplicate": "Падвоіць слупок",
+	"bs-vec-dialog-table-create-number-of-rows": "Лік радкоў",
+	"bs-vec-dialog-table-create-number-of-columns": "Лік слупкоў",
+	"bs-vec-dialog-action-done": "Зроблена",
+	"bs-vec-dialog-action-safe": "Скасаваць",
+	"bs-vec-dialog-create-table-title": "Уставіць табліцу",
+	"bs-vec-dialog-media-change-file": "Зьмяніць файл",
+	"bs-vec-table-style-cell-text-vert-align-bottom": "Ніз",
+	"bs-vec-table-style-cell-text-vert-align-top": "Верх",
+	"bs-vec-table-style-cell-text-vert-align-middle": "Сярэдзіна",
+	"bs-vec-table-style-cell-text-hor-align-left": "Зьлева",
+	"bs-vec-table-style-cell-text-hor-align-center": "Пасярод",
+	"bs-vec-table-style-cell-text-hor-align-right": "Справа",
+	"bs-vec-ve-table-width-label": "Шырыня табліцы",
+	"bs-vec-table-border-borders": "Бакі ячэйкі",
+	"bs-vec-table-border-width": "Шырыня бакоў",
+	"bs-vec-table-border-styles": "Стылі бакоў",
+	"bs-vec-table-border-color": "Колер бакоў",
+	"bs-vec-table-border-left": "Зьлева",
+	"bs-vec-table-border-top": "Верх",
+	"bs-vec-table-border-right": "Справа",
+	"bs-vec-table-border-bottom": "Ніз"
+}

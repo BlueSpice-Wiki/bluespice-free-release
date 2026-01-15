@@ -1,0 +1,8 @@
+#sb-pri {
+	overflow: auto;
+	height: calc( 100vh - calc( 15px + calc( 2 * var( --navbar-primary-height ) ) ) );
+}
+
+#sb-pri .card-header.menu-title {
+	text-align: left;
+}

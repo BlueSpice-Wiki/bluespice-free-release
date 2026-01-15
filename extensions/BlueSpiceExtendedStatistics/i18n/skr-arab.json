@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"bs-statistics-paging-page-size": "ورقے دا سائز",
+	"bs-statistics-aggregated-report-filter-category-multi": "ونکیاں",
+	"bs-statistics-aggregated-report-filter-interval-day": "ݙین٘ہ",
+	"bs-statistics-aggregated-report-filter-interval-week": "ہفتہ",
+	"bs-statistics-aggregated-report-filter-interval-month": "مہیناں",
+	"bs-statistics-aggregated-report-filter-namespace": "ناں جاہ",
+	"bs-statistics-aggregated-report-filter-page": "ورقہ",
+	"bs-statistics-aggregated-report-filter-user": "ورتݨ آلا",
+	"bs-statistics-droplet-progress-name": "ترقی"
+}

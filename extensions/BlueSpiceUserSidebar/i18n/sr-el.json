@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-usersidebar-desc": "Prilagodljiv meni za ličnu navigaciju",
+	"bs-edit-user-mm-link-text": "Izmeni korisnički meni",
+	"bs-edit-user-mm-link-title": "Izmeni korisnički meni",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Izmeni ključnu reč",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Ključna reč",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Izmeni ključnu reč",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Ključna reč"
+}

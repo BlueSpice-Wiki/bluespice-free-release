@@ -1,0 +1,33 @@
+==NamespaceManager.class.php==
+
+'NamespaceManager::getMetaFields':
+&$aMetaFields.
+
+'NamespaceManager::getNamespaceData':
+&$aResults:
+
+'NamespaceManager::namespaceManagerRemoteSort'.
+$this:
+ $value1:
+ $value2:
+ $aSortConditions:
+
+'BSNamespaceManagerBeforeSetUsernamespaces':
+$this:
+&$bsgSystemNamespaces:
+
+'NamespaceManager::editNamespace':
+&$aUserNamespaces[ $iNS ]:
+
+''' Removed in 4.3 - Replaced with NamespaceManagerBeforePersistSettings (see interface) '''
+'NamespaceManager::writeNamespaceConfiguration':
+&$sSaveContent:
+ $sConstName:
+ $iNs:
+ $aDefinition:
+
+
+
+
+
+

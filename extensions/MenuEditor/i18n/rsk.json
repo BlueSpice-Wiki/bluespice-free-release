@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"menueditor-ui-menu-two-fold-link-spec-label": "Вяза",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Ушор вязу",
+	"menueditor-ui-dialog-action-done": "Готове",
+	"menueditor-ui-dialog-action-cancel": "Одкаж",
+	"menueditor-ui-submit": "Зочувай",
+	"menueditor-ui-cancel": "Одкаж",
+	"menueditor-action-menueditsource": "Ушор жридло",
+	"menueditor-action-menuedit": "Ушориц",
+	"menueditor-ui-dialog-title": "Ушор елемент"
+}

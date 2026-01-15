@@ -1,0 +1,470 @@
+{
+	"name": "BlueSpicePageAssignments",
+	"author": [
+		"Robert Vogel",
+		"Patric Wirth",
+		"Leonid Verhovskij"
+	],
+	"license-name": "GPL-3.0-only",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageAssignments",
+	"type": "bluespice",
+	"version": "5.1.0",
+	"descriptionmsg": "bs-pageassignments-desc",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0",
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpicePageAssignments": {
+					"className": "\\BlueSpice\\PageAssignments\\Extension",
+					"extPath": "/BlueSpicePageAssignments"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"PageAssignmentsLockdownGroups": "\\BlueSpice\\PageAssignments\\ConfigDefinition\\LockdownGroups::getInstance"
+			},
+			"TargetCacheTitleRegistry": {
+				"pageassignments-everyone-blacklist": "\\BlueSpice\\TargetCacheHandler"
+			},
+			"AdminToolRegistry": {
+				"bs-pageassignments-manager": "BlueSpice\\PageAssignments\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"pageassignable": {
+					"type": "namespace",
+					"roles": [
+						"reader",
+						"admin",
+						"author",
+						"editor",
+						"maintenanceadmin",
+						"reviewer"
+					]
+				},
+				"pageassignments": {
+					"type": "namespace",
+					"roles": [
+						"admin",
+						"maintenanceadmin",
+						"reviewer"
+					]
+				}
+			},
+			"RendererRegistry": {
+				"assignment": "\\BlueSpice\\PageAssignments\\Renderer\\Assignment::factory",
+				"assignment-user": "\\BlueSpice\\PageAssignments\\Renderer\\User::factory",
+				"pageheader-assignments": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignments::factory",
+				"pageheader-assignments-base": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignmentBase::factory",
+				"pageheader-assignments-user": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignmentUser::factory"
+			},
+			"PermissionLockdownRegistry": {
+				"pageassignments-secure": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Secure::getInstance"
+			},
+			"PermissionLockdownGroupModuleRegistry": {
+				"pageassignments": "\\BlueSpice\\PageAssignments\\Permission\\Lockdown\\Module\\Groups\\PageAssignment::getInstance"
+			},
+			"PageHeaderBeforeContentRegistry": {
+				"pageheader-assignments": "\\BlueSpice\\PageAssignments\\Renderer\\PageHeaderAssignments::factory"
+			}
+		},
+		"BlueSpicePageAssignments": {
+			"TargetRegistry": {
+				"title": "\\BlueSpice\\PageAssignments\\TitleTarget"
+			},
+			"TypeRegistry": {
+				"group": "\\BlueSpice\\PageAssignments\\Assignable\\Group",
+				"user": "\\BlueSpice\\PageAssignments\\Assignable\\User",
+				"specialeveryone": "\\BlueSpice\\PageAssignments\\Assignable\\Everyone"
+			}
+		},
+		"BlueSpicePrivacy": {
+			"Handlers": [
+				"\\BlueSpice\\PageAssignments\\Privacy\\Handler"
+			]
+		},
+		"BlueSpiceSMWConnector": {
+			"ExtraPropertyRegistry": {
+				"pageassignment": "\\BlueSpice\\PageAssignments\\PageAssignmentsPropertyValueProvider::factory"
+			}
+		},
+		"BlueSpiceExtendedStatistics": {
+			"SnapshotProviders": {
+				"pa-assignedpages": {
+					"class": "\\BlueSpice\\PageAssignments\\Statistics\\SnapshotProvider\\AssignedPages",
+					"services": [ "DBLoadBalancer" ]
+				}
+			},
+			"Reports": {
+				"pa-assignedpages": {
+					"class": "\\BlueSpice\\PageAssignments\\Statistics\\Report\\AssignedPages"
+				}
+			}
+		},
+		"NotifyMe": {
+			"ManualSubscriberProviderSets": {
+				"pa-assigned-pages": {
+					"class": "\\BlueSpice\\PageAssignments\\Notifications\\SubscriberProviderSet\\Assigned",
+					"services": [ "DBLoadBalancer", "BSPageAssignmentsAssignmentFactory", "UserGroupManager" ]
+				}
+			},
+			"Events": {
+				"bs-pa-assignment-add": {
+					"spec": {
+						"class": "\\BlueSpice\\PageAssignments\\Event\\AssignmentAddEvent"
+					},
+					"buckets": [ "personal" ]
+				},
+				"bs-pa-assignment-remove": {
+					"spec": {
+						"class": "\\BlueSpice\\PageAssignments\\Event\\AssignmentRemoveEvent"
+					},
+					"buckets": [ "personal" ]
+				}
+			}
+		},
+		"BlueSpiceBookshelf": {
+			"CreateNewBookModules": [
+				"ext.pageassignments.bookshelf.createNewBook"
+			]
+		},
+		"BlueSpiceWikiExplorer": {
+			"PluginModules": [
+				"ext.bluespice.pageassignments.wikiExplorer.columns"
+			]
+		}
+	},
+	"GroupPermissions": {
+		"*": {
+			"pageassignable": false,
+			"pageassignments": false
+		},
+		"user": {
+			"pageassignable": true,
+			"pageassignments": false
+		},
+		"sysop": {
+			"pageassignable": true,
+			"pageassignments": true
+		}
+	},
+	"AvailableRights": [
+		"pageassignable",
+		"pageassignments"
+	],
+	"DefaultUserOptions": {
+		"echo-subscriptions-web-bs-pageassignments-action-cat": true,
+		"echo-subscriptions-email-bs-pageassignments-action-cat": true
+	},
+	"SpecialPages": {
+		"PageAssignments": "\\BlueSpice\\PageAssignments\\Special\\PageAssignments",
+		"ManagePageAssignments": "\\BlueSpice\\PageAssignments\\Special\\ManagePageAssignments"
+	},
+	"LogTypes": [
+		"bs-pageassignments"
+	],
+	"FilterLogTypes": {
+		"bs-pageassignments": true
+	},
+	"LogActionsHandlers": {
+		"bs-pageassignments/*": "LogFormatter"
+	},
+	"MessagesDirs": {
+		"PageAssignments": [
+			"i18n"
+		]
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"APIModules": {
+		"bs-pageassignable-store": "\\BlueSpice\\PageAssignments\\Api\\Store\\Assignable",
+		"bs-pageassignment-store": "\\BlueSpice\\PageAssignments\\Api\\Store\\Page",
+		"bs-mypageassignment-store": "BSApiMyPageAssignmentStore",
+		"bs-pageassignment-tasks": "\\BlueSpice\\PageAssignments\\Api\\Task\\PageAssignments"
+	},
+	"ExtensionMessagesFiles": {
+		"PageAssignmentsAlias": "languages/PageAssignments.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\PageAssignments\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\PageAssignments\\Tests\\": "tests/phpunit/"
+	},
+	"AutoloadClasses": {
+		"BSApiMyPageAssignmentStore": "includes/api/BSApiMyPageAssignmentStore.php",
+		"PageAssignmentsHooks": "includes/PageAssignmentsHooks.php",
+		"PageAssignmentsBookmakerHooks": "includes/PageAssignmentsBookmakerHooks.php",
+		"PageAssignmentsWikiExplorerHooks": "includes/PageAssignmentsWikiExplorerHooks.php",
+		"BSPageAssignmentsMigrateRespEditors": "maintenance/BSPageAssignmentsMigrateRespEditors.php"
+	},
+	"ResourceModules": {
+		"ext.pageassignments.scripts": {
+			"scripts": [
+				"ext.bluespice.pageassignments.js"
+			],
+			"messages": [
+				"bs-pageassignments-dlg-title",
+				"bs-pageassignments-dlg-fldlabel",
+				"bs-pageassignments-action-apiedit-description"
+			],
+			"dependencies": [
+				"ext.bluespice.pageassignments.assignable.messages",
+				"mediawiki.api"
+			]
+		},
+		"ext.pageassignments.manager": {
+			"packageFiles": [
+				"ext.bluespice.pageassignments.manager.js",
+				{
+					"name": "config.json",
+					"callback": "BlueSpice\\PageAssignments\\ClientConfig::makeConfigJson"
+				}
+			],
+			"dependencies": [
+				"ext.pageassignments.manager.panel"
+			]
+		},
+		"ext.pageassignments.manager.panel": {
+			"scripts": [
+				"ui/panel/Manager.js"
+			],
+			"styles": [
+				"stylesheets/AssignmentsPanel.css"
+			],
+			"messages": [
+				"bs-pageassignments-column-title",
+				"bs-pageassignments-column-assignments",
+				"bs-pageassignments-action-log",
+				"bs-pageassignments-action-delete-confirm",
+				"bs-pageassignments-header-action-edit",
+				"bs-pageassignments-header-action-delete",
+				"bs-pageassignments-title-edit",
+				"bs-pageassignments-title-delete",
+				"bs-pageassignments-show-unassigned-pages"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"oojs-ui.styles.icons-alerts",
+				"oojs-ui.styles.icons-accessibility",
+				"ext.oOJSPlus.data",
+				"ext.oOJSPlus.managerPanel",
+				"ext.pageassignments.scripts",
+				"ext.bluespice.pageassignments.dialog.pages"
+			]
+		},
+		"ext.pageassignments.overview": {
+			"packageFiles": [
+				"ext.bluespice.pageassignments.overview.js",
+				{
+					"name": "config.json",
+					"callback": "BlueSpice\\PageAssignments\\ClientConfig::makeConfigJson"
+				}
+			],
+			"dependencies": [
+				"ext.pageassignments.overview.panel"
+			]
+		},
+		"ext.pageassignments.overview.panel": {
+			"scripts": [
+				"ui/panel/Overview.js"
+			],
+			"messages": [
+				"bs-pageassignments-column-title"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			]
+		},
+		"ext.bluespice.pageassignments.assignable.messages": {
+			"class": "\\BlueSpice\\PageAssignments\\ResourceLoader\\Messages"
+		},
+		"ext.bluespice.pageassignments.statistics": {
+			"scripts": [
+				"statistics/AssignedPagesReport.js"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.oOJSPlus.widgets"
+			],
+			"messages": [
+				"bs-pageassignments-statistics-report-assigned-pages",
+				"bs-pageassignments-statistics-report-assigned-pages-axis-assigned",
+				"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned",
+				"bs-pageassignments-statistics-report-assigned-pages-axis-label"
+			]
+		},
+		"ext.bluespice.pageassignments.dialog.pages": {
+			"scripts": [
+				"ui/page/AssignmentsPage.js"
+			],
+			"styles": [
+				"stylesheets/AssignmentsDialog.css"
+			],
+			"messages": [
+				"bs-pageassignments-dlg-title",
+				"bs-pageassignments-assignee-type-everyone",
+				"bs-pageassignments-assignee-type-user",
+				"bs-pageassignments-assignee-type-group",
+				"bs-pageassignments-dialog-input-placeholder"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.dialogs",
+				"ext.oOJSPlus.widgets",
+				"ext.oOJSPlus.data",
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-user"
+			]
+		},
+		"ext.bluespice.pageassignments.dialoginfo.pages": {
+			"scripts": [
+				"ext.bluespice.pageassignments.AssignmentInformationPage.js"
+			],
+			"messages": [
+				"bs-pageassignment-info-dialog",
+				"bs-pageassignments-column-assignedto",
+				"bs-pageassignments-column-assignee-type"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.pageassignments.notifications.subscriptionSet": {
+			"scripts": [
+				"ui/notifications/AssignedPagesSubscriptionSet.js"
+			],
+			"messages": [
+				"bs-pageassignments-notification-ui-subscriptionset-assigned-pages"
+			],
+			"dependencies": [
+				"ext.notifyme.subscription.set",
+				"ext.bluespice"
+			]
+		},
+		"ext.pageassignments.bookshelf.createNewBook": {
+			"scripts": [
+				"bluespice.pageassignments.bookshelf.createBook.js"
+			]
+		},
+		"ext.pageassignments.bookshelf.overviewAction": {
+			"scripts": [
+				"bluespice.pageassignments.bookshelf.overviewAction.js"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.dialogs",
+				"ext.oOJSPlus.widgets",
+				"ext.oOJSPlus.data",
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-user"
+			]
+		},
+		"ext.bluespice.pageassignments.wikiExplorer.columns": {
+			"scripts": [
+				"ext.bluespice.pageassignments.wikiExplorer.columns.js"
+			],
+			"messages": [
+				"pageassignments"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpicePageAssignments/resources"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"PageAssignmentsLockdownGroups": {
+			"value": [
+				"user"
+			],
+			"descriptionmsg": "bs-pageassignments-pref-lockdowngroups",
+			"public": true
+		},
+		"PageAssignmentsActivatedTypes": {
+			"value": [
+				"user",
+				"group"
+			]
+		},
+		"PageAssignmentsUseAdditionalPermissions": {
+			"value": false
+		},
+		"PageAssignmentsSecureEnabledNamespaces": {
+			"value": []
+		},
+		"PageAssignmentsSecureRemoveRightList": {
+			"value": [
+				"edit"
+			]
+		},
+		"PageAssignmentsTarget": {
+			"value": "title"
+		},
+		"PageAssignmentsPageHeaderLimit": {
+			"value": 3
+		}
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\CommonUserInterface"
+		},
+		"discovery-skin": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\DiscoverySkin"
+		},
+		"standard-dialogs": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\StandardDialogs"
+		},
+		"addMyPageAssignments": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SkinTemplateNavigation\\AddMyPageAssignments"
+		},
+		"addPageAssignmentsEntry": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\SkinTemplateNavigation\\AddPageAssignmentsEntry"
+		},
+		"writeNamespaceConfiguration": {
+			"class": "\\BlueSpice\\PageAssignments\\Hook\\WriteNamespaceConfiguration"
+		},
+		"bs-books-overview-page-actions": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\BSBookshelf"
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"\\BlueSpice\\PageAssignments\\Hook\\LoadExtensionSchemaUpdates\\AddPageAssignmentsTable::callback",
+			"\\BlueSpice\\PageAssignments\\Hook\\LoadExtensionSchemaUpdates\\AddMigrateRespEditorsUpdateMaintenance::callback"
+		],
+		"SkinTemplateNavigation::Universal": [
+			"addMyPageAssignments",
+			"addPageAssignmentsEntry"
+		],
+		"BeforePageDisplay": [
+			"\\BlueSpice\\PageAssignments\\Hook\\BeforePageDisplay\\AddResources::callback"
+		],
+		"PageMoveComplete": "\\BlueSpice\\PageAssignments\\Hook\\PageMoveComplete\\MoveAssignments::callback",
+		"ArticleDeleteComplete": [
+			"PageAssignmentsHooks::onArticleDeleteComplete"
+		],
+		"BSBookshelfManagerGetBookDataRow": "PageAssignmentsBookmakerHooks::onBSBookshelfManagerGetBookDataRow",
+		"WikiExplorer::queryPagesWithFilter": "PageAssignmentsWikiExplorerHooks::onWikiExplorerQueryPagesWithFilter",
+		"WikiExplorer::buildDataSets": "PageAssignmentsWikiExplorerHooks::onWikiExplorerBuildDataSets",
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageAssignments\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageAssignmentsPagesTag::callback",
+		"BSUserManagerAfterDeleteUser": "PageAssignmentsHooks::onBSUserManagerAfterDeleteUser",
+		"BSGroupManagerGroupNameChanged": "PageAssignmentsHooks::onBSGroupManagerGroupNameChanged",
+		"BSGroupManagerGroupDeleted": "PageAssignmentsHooks::onBSGroupManagerGroupDeleted",
+		"NamespaceManager::getMetaFields": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaFields::callback",
+		"BSApiNamespaceStoreMakeData": "\\BlueSpice\\PageAssignments\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
+		"NamespaceManager::editNamespace": "\\BlueSpice\\PageAssignments\\Hook\\NamespaceManagerEditNamespace\\SetValues::callback",
+		"NamespaceManagerBeforePersistSettings": "writeNamespaceConfiguration",
+		"MergeAccountFromTo": "\\BlueSpice\\PageAssignments\\Hook\\MergeAccountFromTo\\MergePageAssignmentsDBFields::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
+		"BSBookshelfBooksOverviewBeforeSetBookActions": "bs-books-overview-page-actions"
+	},
+	"manifest_version": 2
+}

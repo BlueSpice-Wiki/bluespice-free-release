@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-countthings-chars-label": "Tegn",
+	"bs-countthings-words-label": "Ord",
+	"bs-countthings-files-label": "Filer",
+	"bs-countthings-pages-label": "Sider",
+	"bs-countthings-ve-countcharacters-title": "Tæl tegn",
+	"bs-countthings-ve-countarticles-title": "Tæl artikler",
+	"bs-countthings-ve-countfiles-title": "Tæl filer",
+	"bs-countthings-ve-countusers-title": "Tæl brugere",
+	"bs-countthings-ve-countthingsinspector-mode": "Tilstand",
+	"bs-countthings-ve-countcharacters-mode-all": "alle",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "tegn",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "ord",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "tegn og ord",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "sider",
+	"bs-countthings-ve-countcharacters-input-label": "Sider",
+	"bs-countthings-error-not-exist": "Siden \"$1\" findes ikke."
+}

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"YoaR"
+		]
+	},
+	"bs-discovery-header-create-button-title": "Crear una nueva páxina",
+	"bs-discovery-header-create-button-aria-label": "Crear una nueva páxina",
+	"bs-discovery-navbar-global-actions-editing-text": "Editando",
+	"bs-discovery-breadcrumb-nav-node-ns-main": "Páxines",
+	"bs-discovery-permalink-copy-text": "Copiar URL"
+}

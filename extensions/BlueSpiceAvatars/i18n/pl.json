@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alan ffm",
+			"Chrumps",
+			"Mateuszek045",
+			"Matma Rex",
+			"Mro",
+			"Msz2001",
+			"Rail"
+		]
+	},
+	"bs-avatars-desc": "Zawiera ogólne i indywidualne zdjęcia użytkownika",
+	"bs-avatars-pref-generator": "Generator:",
+	"bs-avatars-pref-userimage-img-alt": "Twój bieżący obrazek użytkownika",
+	"bs-avatars-upload-complete": "Obrazek został przesłany.",
+	"bs-avatars-generate-complete": "Nowy awatar został wygenerowany.",
+	"bs-avatars-upload-label": "Obrazek",
+	"bs-avatars-generate-new-label": "Utwórz nowy awatar",
+	"bs-avatars-file-upload-fieldset-title": "Ładowanie obrazu",
+	"bs-avatars-auto-generate-fieldset-title": "Automatyczne tworzenie awatara",
+	"apihelp-bs-avatars-tasks-summary": "Przesyłanie, generowanie i ustawianie awatarów użytkowników",
+	"bs-avatars-tag-profileimage-error-invalidusername": "Parametr „nazwa użytkownika” jest wymagany i musi zawierać prawidłową nazwę użytkownika",
+	"bs-avatars-pref-generator-help": "Obraz awatara jest generowany, gdy użytkownik nie prześle zdjęcia profilowego. InstantAvatar: Generuje obraz awatara na podstawie inicjałów prawdziwego imienia lub pól nazwy użytkownika. Identicon: Generuje obraz awatara na podstawie części identyfikatora użytkownika."
+}

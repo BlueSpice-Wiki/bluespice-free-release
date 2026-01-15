@@ -1,0 +1,80 @@
+
+GET _all/_settings
+
+GET master/_mappings
+
+GET master/wikipage/_search?q=Predefined
+
+GET master/specialpage/_search?q=statistics
+
+GET master/external1/_search?q=extension:xlsx
+
+GET master/repofile/_search?q=jobs.jpg
+
+GET master/repofile/_search?q=*
+
+PUT /_ingest/pipeline/attachment
+{
+  "description" : "Extract attachment information",
+  "processors" : [
+    {
+      "attachment" : {
+        "field" : "the_file"
+      }
+    }
+  ]
+}
+
+GET _ingest/pipeline/attachment
+
+Sample queries
+
+# Fuzzy AC
+GET {index}/_search
+{
+  "query": {
+    "multi_match": {
+      "query": "tw one",
+      "type": "bool_prefix",
+      "fields": [
+        "suggestions",
+        "suggestions._2gram",
+        "suggestions._3gram"
+      ]
+    }
+  }
+}
+
+
+# Full-text
+GET _search
+{
+  "sort": [ {
+    "_score": {
+      "order": "desc"
+    }
+  } ],
+  "_source": [ "basename" ],
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "query_string": {
+            "default_operator": "AND",
+            "query": "test",
+            "fields": [
+              "attachment.content",
+              "basename^8",
+              "congregated",
+              "smwproperty",
+              "rendered_content",
+              "prefixed_title^19",
+              "display_title^200",
+              "entitydata.header^2"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

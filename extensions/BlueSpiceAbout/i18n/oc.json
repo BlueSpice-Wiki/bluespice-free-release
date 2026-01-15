@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nicolas Eynaud"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informacion sus BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "A prepaus de BlueSpice",
+	"bluespiceabout": "A prepaus de BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "Veire la pagina especiala \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "Accès a la pagina especiala [[Special:BlueSpiceAbout]]"
+}

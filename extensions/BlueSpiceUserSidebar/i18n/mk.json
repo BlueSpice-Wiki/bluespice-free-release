@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Vlad5250"
+		]
+	},
+	"bs-usersidebar-desc": "Прилагодлив личен прегледник",
+	"bs-edit-user-mm-link-text": "Уреди корисничко мени",
+	"bs-edit-user-mm-link-title": "Уреди корисничко мени",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Уреди клучен збор",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Клучен збор",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Уреди клучен збор",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Клучен збор"
+}

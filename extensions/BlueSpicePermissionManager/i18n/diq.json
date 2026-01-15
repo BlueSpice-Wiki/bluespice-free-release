@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirzali"
+		]
+	},
+	"bs-permissionmanager-btn-save-label": "Qeyd ke",
+	"bs-permissionmanager-group-all": "pêro",
+	"bs-permissionmanager-group-create": "Vıraze",
+	"bs-permissionmanager-save": "Qeyd ke",
+	"bs-permissionmanager-cancel": "Bıtexelne",
+	"bs-permissionmanager-namespace-picker": "Heruna nameyan"
+}

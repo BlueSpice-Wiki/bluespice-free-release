@@ -1,0 +1,301 @@
+.bs-social-entity {
+	font-size: 15px;
+	font-family: inherit;
+}
+
+ul.bs-social-entitylist {
+	padding: 10px 20px !important;
+	background-color: var( --discussion-section-bg );
+}
+
+#content [ class^='mw-content-' ] ul.bs-social-entitylist {
+	background-color: var( --discussion-section-bg );
+}
+
+.bs-social-entity .bs-social-entitylist-children div.bs-social-entity-right {
+	background-color: var( --discussion-section-bg );
+}
+
+/* input forms */
+.bs-social-entity.bs-social-entity-output-Short.dirty > form,
+.bs-social-entity.bs-social-entity-output-Default.dirty > form,
+.bs-social-entity.bs-social-entity-output-Page.dirty > form,
+.bs-social-entity.bs-social-entity-output-List.dirty > form {
+	background-color: transparent !important;
+}
+
+ul.bs-social-entitylist .bs-social-entity-edit-mode form.short input,
+ul.bs-social-entitylist .bs-social-entity-edit-mode form.short textarea {
+	border-radius: 5px !important;
+	width: auto !important;
+	font-weight: bold;
+	text-align: center;
+}
+
+ul.bs-social-entitylist .bs-social-entity-edit-mode form.short input:hover,
+ul.bs-social-entitylist .bs-social-entity-edit-mode form.short textarea:hover {
+	cursor: pointer;
+}
+
+.bs-social-entity.bs-social-entity-edit-mode form.oo-ui-formLayout.oo-ui-layout {
+	margin-bottom: 15px;
+}
+
+ul.bs-social-entitylist .bs-social-entity-edit-mode form fieldset {
+	width: 60%;
+}
+
+ul.bs-social-entitylist .bs-social-entity-edit-mode form input,
+ul.bs-social-entitylist .bs-social-entity-edit-mode form textarea {
+	width: 100%;
+}
+
+/* entity title */
+.bs-social-entity-title {
+	width: 80%;
+}
+
+.bs-social-entity .bs-social-entity-right .bs-social-entity-title {
+	padding-bottom: 0;
+}
+
+#aftercontent .bs-social-entity-title,
+#aftercontent .bs-social-entity .bs-social-entity-title a {
+	margin: 0;
+	margin-bottom: 10px;
+	color: var( --discussion-title-fg ) !important;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.bs-social-entity .bs-social-entity-profile .bs-social-entity-title h3::before {
+	color: var( --discussion-title-fg ) !important;
+}
+
+/* entity userimage */
+.bs-social-entity .bs-social-entity-userimage .bs-userminiprofile img {
+	border-radius: 50%;
+}
+
+.bs-social-entitylist-children .bs-social-entitylist .bs-social-entity .bs-social-entity-userimage .bs-userminiprofile img {
+	height: 35px;
+	width: 35px;
+}
+
+.bs-social-entitylist-children .bs-social-entity-userimage .bs-userminiprofile[ data-bs-whoisonline-marker ] div::after,
+.bs-social-entitylist-children .bs-social-entity-userimage .bs-userminiprofile[ data-bs-whoisonline-marker ] a::after {
+	font-size: 10px;
+}
+
+.bs-social-entity .bs-social-entity-userimage {
+	z-index: 2;
+	margin-top: 5px !important;
+}
+
+.bs-social-entity .bs-social-entitylist .bs-social-entity-userimage {
+	z-index: 2;
+}
+
+/* entity content */
+.bs-social-entity-content {
+	background-color: var( --discussion-content-bg );
+	border-radius: 5px;
+	margin: 0;
+	width: 75%;
+}
+
+.bs-social-entity.bs-social-entity-output-Short.resolved > .bs-social-entity-wrapper > .bs-social-entity-right,
+.bs-social-entity.bs-social-entity-output-Default.resolved > .bs-social-entity-wrapper > .bs-social-entity-right,
+.bs-social-entity.bs-social-entity-output-Page.resolved > .bs-social-entity-wrapper > .bs-social-entity-right,
+.bs-social-entity.bs-social-entity-output-Short.archived > .bs-social-entity-wrapper > .bs-social-entity-right,
+.bs-social-entity.bs-social-entity-output-Default.archived > .bs-social-entity-wrapper > .bs-social-entity-right,
+.bs-social-entity.bs-social-entity-output-Page.archived > .bs-social-entity-wrapper > .bs-social-entity-right {
+	background-color: var( --discussion-section-bg ) !important;
+}
+
+.resolved .bs-social-entity-content {
+	background-color: #d9f2da;
+}
+
+.archived .bs-social-entity-content {
+	background-color: #f1d8d8;
+}
+
+.bs-social-entity-content p {
+	padding: 5px;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	color: var( --footer-fg );
+}
+
+.bs-social-entity-comment .bs-social-entity-content {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* entity aftercontent */
+.bs-social-entity-aftercontent {
+	width: 60%;
+}
+
+.bs-social-entity .bs-social-entity-aftercontent a span {
+	color: var( --discussion-after-content-fg );
+	font-size: 11px;
+}
+
+.bs-social-entity .bs-social-entity-aftercontent a::before {
+	color: var( --discussion-after-content-fg ) !important;
+	font-size: 11px;
+}
+
+#content .bs-social-entity .bs-social-entity-right .bs-social-entity-aftercontent {
+	color: var( --discussion-after-content-fg ) !important;
+	font-size: 11px;
+}
+
+.bs-social-entity .bs-social-entity-right .bs-social-entity-timecreated,
+.bs-social-entity .bs-social-entitylist-children .bs-social-entity-right .bs-social-entity-timecreated {
+	color: var( --discussion-after-content-fg ) !important;
+	font-size: 11px;
+}
+
+.bs-social-entity .bs-social-entity-author a {
+	color: var( --discussion-after-content-fg ) !important;
+	font-size: 11px;
+}
+
+/* content more */
+.bs-social-entity-content-more {
+	width: 75%;
+	border-top: 0;
+	margin-bottom: 0;
+}
+
+/* entity attachments */
+.bs-social-entity-content-attachments {
+	padding: 2px 0 0 0;
+	width: 75%;
+}
+
+.bs-social-entitylist .bs-social-entity-comment.bs-social-entity-output-Short div.bs-social-entity-right {
+	margin: 0 0 0 50px !important;
+}
+
+ul.bs-social-entitylist {
+	padding-right: 0 !important;
+	padding-left: 10px !important;
+}
+
+/* menu actions */
+.bs-social-entity.bs-social-entity-comment .bs-social-entity-right .bs-social-entity-actions {
+	margin-right: 0 !important;
+}
+
+.bs-social-entity .bs-social-entity-right .bs-social-entity-actions {
+	margin-right: 0 !important;
+}
+
+.bs-social-entity .bs-social-entity-actions-menu-prio {
+	border-color: transparent;
+	background-color: transparent;
+	margin-right: 0;
+	padding: 6px 3px;
+}
+
+.bs-social-entity-actions-menu-prio .bs-social-entity-action-edit span {
+	display: none;
+}
+
+.bs-social-entity .bs-social-entity-actions-menu-prio .bs-social-entity-action-edit:hover {
+	color: var( --discussion-content-fg--hover ) !important;
+	background-color: transparent;
+}
+
+.bs-social-entity .bs-social-entity-actions-menu-prio:hover {
+	color: var( --discussion-content-fg--hover ) !important;
+}
+
+.bs-social-entity-actions-menu-prio .dropdown-item {
+	padding: 0;
+}
+
+.bs-social-entity .bs-social-entity-actions-menu-prio .dropdown-item:hover {
+	background-color: transparent;
+	color: var( --discussion-content-fg--hover ) !important;
+}
+
+.bs-social-entity .bs-social-entity-actions-menu button {
+	border-color: transparent;
+	background-color: transparent;
+	padding: 6px 3px;
+}
+
+.bs-social-entity-actions-menu ul.bs-social-entity-actions-menu-content {
+	transform: none !important;
+	inset: 40px auto auto -130px !important;
+}
+
+.bs-social-entity .bs-social-entity-right .bs-social-entity-actions {
+	margin-right: 10px;
+}
+
+.bs-social-entity.bs-social-entity-comment .bs-social-entity-right .bs-social-entity-actions {
+	margin-right: 20px;
+}
+
+/* entitylist in content */
+#content ul.entitylist {
+	border-radius: 5px;
+	padding-right: 10px !important;
+}
+
+#mw-content-text ul.entitylist a:hover {
+	text-decoration: none;
+	color: var( --discussion-content-fg--hover ) !important;
+}
+
+.bs-social-entity-profileleftcolumn .bs-social-entity-profilefields {
+	margin-bottom: 0;
+}
+
+#content .bs-social-entity-title a {
+	color: var( --discussion-title-fg ) !important;
+}
+
+#content .bs-social-entity-right a,
+#content .bs-social-entity-right a::before {
+	color: var( --discussion-after-content-fg ) !important;
+}
+
+#content .bs-social-entity-right a.highlight,
+#content .bs-social-entity-right a.highlight::before {
+	color: #3e5389 !important;
+}
+
+#content .bs-social-entity-right a:hover::before {
+	color: var( --discussion-content-fg--hover ) !important;
+}
+
+#mw-content-text a.bs-social-entity-content-more-button {
+	font-size: 11px;
+}
+
+#content .bs-social-entitylist-more-section-button a:hover {
+	text-decoration: none;
+}
+
+#content .bs-social-entity-content > div {
+	padding: 10px;
+}
+
+#content .bs-social-entity-actions .dropdown-menu {
+	z-index: 1001;
+}
+
+#content .bs-social-entity-content p {
+	padding: 0;
+}
+
+#content .bs-social-entity-content > p {
+	padding: 10px;
+}

@@ -1,0 +1,145 @@
+.menueditor-menu-node-form {
+	padding-top: 0;
+}
+
+.menueditor-menu-node-form .forms-section {
+	margin-top: 0;
+}
+
+.mw-ext-forms-form.menueditor-menu-node-form {
+	padding-top: 0;
+}
+
+.menueditor-menu-node-form.mw-ext-forms-form .forms-section {
+	margin-top: 0;
+}
+
+.menueditor-selector-widget {
+	margin-bottom: 10px;
+}
+
+.toolbar-actions {
+	float: right;
+}
+/* stylelint-disable selector-max-id */
+#contentSub,
+#contentSub2 {
+	margin: 0;
+}
+/* stylelint-enable selector-max-id */
+
+.oojsplus-data-treeWidget {
+	margin-top: 10px;
+}
+
+li > ul.tree-node-list li:last-child::before {
+	height: 50%;
+}
+
+/* stylelint-disable selector-max-id */
+#menuEditor-container .oojsplus-data-tree-label .oo-ui-iconElement-icon {
+	font-size: 0.8rem;
+	margin-left: 6px;
+}
+
+#menuEditor-container .oojsplus-data-tree-expander .oo-ui-iconElement-icon {
+	opacity: 0.6;
+}
+
+#mw-content-text .oojsplus-data-tree-label .oo-ui-iconElement-icon {
+	opacity: 0.2;
+}
+
+.tree-item-options-btn {
+	color: #e3e3e3;
+}
+
+.in-drag li > ul.tree-node-list li::after,
+.in-drag li > ul.tree-node-list li::before {
+	display: none;
+}
+
+.oo-ui-tool-name-save > a {
+	height: 45px;
+}
+
+.oo-ui-tool-name-save > a:focus {
+	text-decoration: none;
+}
+
+.oo-ui-tool-name-cancel {
+	width: 45px;
+	border-right: 1px solid #eaecf0;
+}
+
+#menuEditor-container .oojsplus-data-tree-expander a .oo-ui-iconElement-icon {
+	background-size: 80%;
+}
+
+#mw-content-text .oo-ui-tool-name-cancel a:hover {
+	background-color: #eaecf0;
+}
+
+.oo-ui-barToolGroup-tools > .oo-ui-tool + .oo-ui-tool {
+	margin-left: 0;
+}
+
+#menuEditor-container .oo-ui-buttonElement-button:hover {
+	background-color: transparent;
+}
+
+#menuEditor-container .tree-item-options-btn {
+	float: right;
+}
+
+#menuEditor-container .tree-item-options-btn .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {
+	opacity: 0.6;
+}
+
+#menuEditor-container .tree-item-options-btn .oo-ui-buttonElement-button:hover > .oo-ui-iconElement-icon {
+	opacity: 0.6;
+}
+
+#menuEditor-container .oo-ui-buttonWidget {
+	margin-right: 0;
+}
+
+#menuEditor-container li > :not( ul ) {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #f8f9fa;
+	border-radius: 2px;
+}
+
+#menuEditor-container li.dragged > :not( ul ) {
+	opacity: 0.5;
+}
+
+#menuEditor-container li:hover > :not( ul ) {
+	cursor: grabbing;
+}
+
+#menuEditor-container .oojsplus-data-tree-label .oo-ui-labelElement-label {
+	margin-left: 5px;
+}
+
+#menuEditor-container .oojsplus-data-tree-label {
+	margin-left: 5px;
+}
+
+#menuEditor-container .oojsplus-data-tree-expander {
+	top: 0;
+	margin-left: 5px;
+}
+
+#menuEditor-container .oo-ui-buttonElement-button > span {
+	font-weight: normal;
+	min-width: 0;
+}
+
+#menuEditor-container .oojsplus-data-tree-expander + div {
+	margin-bottom: 10px;
+}
+/* stylelint-enable selector-max-id */

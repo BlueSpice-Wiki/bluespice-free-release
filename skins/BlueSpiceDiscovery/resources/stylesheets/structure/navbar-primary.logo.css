@@ -1,0 +1,17 @@
+.navbar a.mw-wiki-logo {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: var( --logo-width );
+	height: 100%;
+}
+
+.navbar a.mw-wiki-logo:hover {
+	background-color: transparent;
+	border-radius: 0;
+}
+
+.navbar a.mw-wiki-logo:focus-visible {
+	outline: 0;
+	border: 0.1em solid var( --focus-visible );
+}

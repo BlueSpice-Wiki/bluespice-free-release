@@ -1,0 +1,40 @@
+body.mediawiki {
+	background-image: url( ./../../images/bs_background.png );
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ns-special.mw-special-Userlogin #main {
+	background-color: transparent;
+}
+
+#mw-content-text:has( #userloginprompt ) {
+	display: flex;
+}
+
+.mw-ui-container {
+	margin: 0 auto;
+	background: white;
+	padding: 15px 25px;
+	border: 1px solid #a2a9b1;
+	box-shadow: 0 2px 2px #0003;
+	border-radius: 2px;
+}
+
+#firstHeading {
+	text-align: center;
+	width: 100%;
+}
+
+#footer {
+	background-color: transparent;
+}
+
+#footer li a {
+	color: white;
+}
+
+#footer li a:hover {
+	color: white;
+	text-decoration: underline;
+}

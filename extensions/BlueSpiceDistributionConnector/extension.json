@@ -1,0 +1,637 @@
+{
+	"name": "BlueSpiceDistributionConnector",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceDistributionConnector",
+	"author": [
+		"Robert Vogel",
+		"Leonid Verhovskij",
+		"Markus Glaser",
+		"Daniel Vogel",
+		"Dejan Savuljesku",
+		"Peter Boehm",
+		"Patric Wirth"
+	],
+	"descriptionmsg": "bs-distributionconnector-extension-description",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceDistributionConnector": {
+					"className": "\\BlueSpice\\DistributionConnector\\Extension",
+					"extPath": "/BlueSpiceDistributionConnector"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"DistributionConnectorPluggableAuthConfig": "\\BlueSpice\\DistributionConnector\\ConfigDefinition\\PluggableAuth\\Config::getInstance",
+				"DistributionConnectorEnableAutoLogin": "\\BlueSpice\\DistributionConnector\\ConfigDefinition\\PluggableAuth\\EnableAutoLogin::getInstance",
+				"DistributionConnectorEventBusEnableEventBus": "\\BlueSpice\\DistributionConnector\\ConfigDefinition\\EventBus\\EnableEventBus::getInstance",
+				"DistributionConnectorEventBusEventServices": "\\BlueSpice\\DistributionConnector\\ConfigDefinition\\EventBus\\EventServices::getInstance",
+				"DistributionConnectorEventBusEventServiceDefault": "\\BlueSpice\\DistributionConnector\\ConfigDefinition\\EventBus\\EventServiceDefault::getInstance"
+			},
+			"PermissionRegistry": {
+				"dpl_param_delete_rules": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"editor",
+						"maintenanceadmin"
+					]
+				},
+				"dpl_param_update_rules": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"editor",
+						"maintenanceadmin"
+					]
+				},
+				"duplicate": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"author",
+						"editor",
+						"maintenanceadmin"
+					]
+				},
+				"editwidgets": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin",
+						"structuremanager"
+					]
+				},
+				"generatepages": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
+				},
+				"nuke": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin",
+						"structuremanager"
+					]
+				},
+				"renameuser": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"admin",
+						"maintenanceadmin"
+					]
+				},
+				"replacetext": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin",
+						"structuremanager"
+					]
+				},
+				"usermerge": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"admin",
+						"maintenanceadmin"
+					]
+				},
+				"gadgets-edit": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
+				},
+				"gadgets-definition-edit": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
+				},
+				"checkpermissions": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"maintenanceadmin",
+						"structuremanager"
+					]
+				}
+			},
+			"SettingPathRegistry": {
+				"authentication": "bs-distributionconnector-setting-path-authentication"
+			},
+			"TagRegistry": {
+				"uenoexport": "BlueSpice\\DistributionConnector\\Tag\\UENoExport"
+			}
+		},
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.bluespice.distribution.categoryTree.visualEditor"
+			]
+		},
+		"Workflows": {
+			"WorkflowDefinitions": {
+				"user-approval": "BlueSpiceDistributionConnector/workflow/UserApproval.bpmn",
+				"document-control": "BlueSpiceDistributionConnector/workflow/DocumentControl.bpmn"
+			},
+			"TriggerTypes": {
+				"time-smw-prop": {
+					"factory": "\\MediaWiki\\Extension\\Workflows\\Trigger\\TimeBasedTrigger::factory",
+					"services": [ "TitleFactory" ]
+				}
+			},
+			"TriggerEditors": {
+				"time-smw-prop": {
+					"supports": [ "time-smw-prop" ],
+					"module": "ext.bluespice.distribution.workflows.trigger.editor",
+					"class": "bs.distributionConnector.workflows.trigger.TimeSMWProperty"
+				}
+			}
+		},
+		"BlueSpiceExtendedStatistics": {
+			"SnapshotProviders": {
+				"dc-pagehits": {
+					"class": "\\BlueSpice\\DistributionConnector\\Statistics\\SnapshotProvider\\PageHits",
+					"services": [
+						"DBLoadBalancer",
+						"ExtendedStatisticsSnapshotStore",
+						"ExtendedStatisticsSnapshotFactory"
+					]
+				}
+			},
+			"Reports": {
+				"dc-pagehits": {
+					"class": "\\BlueSpice\\DistributionConnector\\Statistics\\Report\\PageHits"
+				},
+				"dc-pagetrends": {
+					"class": "\\BlueSpice\\DistributionConnector\\Statistics\\Report\\PageTrends"
+				},
+				"dc-pagehitsrelation": {
+					"class": "\\BlueSpice\\DistributionConnector\\Statistics\\Report\\PageHitsRelation"
+				}
+			}
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"gallery": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\GalleryDroplet"
+				},
+				"categorytree": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\CategoryTreeDroplet"
+				},
+				"circled-number": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\CircledNumberDroplet"
+				},
+				"subpages": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\SubpagesDroplet"
+				},
+				"map": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\MapDroplet"
+				},
+				"buttonlink": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\ButtonLinkDroplet"
+				},
+				"video": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\VideoDroplet",
+					"requires": {
+						"EmbedVideo": "*"
+					}
+				},
+				"createInput": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\CreateInputDroplet",
+					"requires": {
+						"InputBox": "*"
+					}
+				},
+				"pdflink": {
+					"class": "\\BlueSpice\\DistributionConnector\\ContentDroplets\\PDFLinkDroplet",
+					"requires": {
+						"PDFCreator": "*"
+					}
+				}
+			}
+		},
+		"MWStakeContentProvisioner": {
+			"ContentManifests": {
+				"DefaultContentProvisioner": [
+					"extensions/BlueSpiceDistributionConnector/data/Content/ContentDropletsTemplates/manifest.json",
+					"extensions/BlueSpiceDistributionConnector/data/Content/Startpage_COMMON/manifest.json",
+					"extensions/BlueSpiceDistributionConnector/data/Content/Startpage_Intranet/manifest.json",
+					"extensions/BlueSpiceDistributionConnector/data/Content/Startpage_Team/manifest.json",
+					"extensions/BlueSpiceDistributionConnector/data/Content/FooterLinks/manifest.json"
+				]
+			}
+		},
+		"BlueSpiceDistributionConnector": {
+			"EchoEventsCompatibilityMapping": {}
+		},
+		"BlueSpiceWikiExplorer": {
+			"PluginModules": [
+				"ext.bluespice.distribution.wikiExplorer.columns"
+			]
+		},
+		"PDFCreator": {
+			"TemplateProvider": {
+				"legacy": {
+					"class": "BlueSpice\\DistributionConnector\\Integration\\PDFCreator\\TemplateProvider\\Legacy",
+					"services": [ "ConfigFactory" ]
+				}
+			}
+		}
+	},
+	"GroupPermissions": {
+		"*": {
+			"checkpermissions": false
+		},
+		"user": {
+			"checkpermissions": false
+		},
+		"sysop": {
+			"checkpermissions": true
+		}
+	},
+	"AvailableRights": [
+		"checkpermissions"
+	],
+	"callback": "\\BlueSpice\\DistributionConnector\\Extension::onRegistration",
+	"MessagesDirs": {
+		"BlueSpiceDistributionConnector": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"BlueSpiceDistributionConnectorCheckPermissions": "languages/SpecialCheckPermissions.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\DistributionConnector\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\DistributionConnector\\Tests\\": "tests/phpunit/"
+	},
+	"SpecialPages": {
+		"CheckPermissions": {
+			"class": "BlueSpice\\DistributionConnector\\Specials\\CheckPermissions",
+			"services": [ "PermissionManager", "TitleFactory", "UserFactory" ]
+		}
+	},
+	"ResourceModules": {
+		"ext.bluespice.distribution.styles": {
+			"styles": [
+				"bluespice.distribution.less"
+			]
+		},
+		"ext.bluespice.distribution.categoryTree.visualEditor": {
+			"scripts": [
+				"ve/ve.ce.CategoryTreeNode.js",
+				"ve/ve.dm.CategoryTreeNode.js",
+				"ve/ve.ui.CategoryTreeInspector.js",
+				"ve/ve.ui.CategoryTreeInspectorTool.js"
+			],
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.categorytree.css"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"messages": [
+				"bs-distributionconnector-ve-categorytreeinpector-title",
+				"bs-distributionconnector-ve-categorytree-title",
+				"bs-distributionconnector-ve-categorytreeinspector-dd-mode",
+				"bs-distributionconnector-ve-categorytreeinspector-tb-depth",
+				"bs-distributionconnector-ve-categorytreeinspector-tb-hideroot",
+				"bs-distributionconnector-ve-categorytreeinspector-tb-showcount",
+				"bs-distributionconnector-ve-categorytreeinspector-dd-hideprefix",
+				"bs-distributionconnector-ve-categorytreeinspector-tb-namespace",
+				"bs-distributionconnector-ve-categorytreeinspector-tb-style"
+			]
+		},
+		"ext.bluespice.distributionconnector.statistics": {
+			"scripts": [
+				"statistics/PageHits.js",
+				"statistics/PageTrends.js",
+				"statistics/PageHitsRelation.js"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			],
+			"messages": [
+				"bs-distributionconnector-statistics-report-page-hits",
+				"bs-distributionconnector-statistics-report-page-hits-axis-label",
+				"bs-distributionconnector-statistics-report-page-trends",
+				"bs-distributionconnector-statistics-report-page-trends-axis-value",
+				"bs-distributionconnector-statistics-report-page-hits-relation",
+				"bs-distributionconnector-statistics-report-page-hits-relation-axis-label"
+			]
+		},
+		"ext.bluespice.distributionconnector.workflows.forms": {
+			"scripts": [
+				"workflows/GroupCollectDataForm.js",
+				"workflows/UserCollectDataForm.js",
+				"workflows/DocumentControlCollectDataForm.js"
+			],
+			"messages": [
+				"bs-distributionconnector-workflows-form-groupname",
+				"bs-distributionconnector-workflows-form-instructions",
+				"bs-distributionconnector-workflows-form-username",
+				"bs-distributionconnector-workflows-form-reportrecipient",
+				"bs-distributionconnector-workflows-form-feedback",
+				"bs-distributionconnector-workflows-form-group-instructions",
+				"bs-distributionconnector-workflows-form-label-editor",
+				"bs-distributionconnector-workflows-form-instructions-editor",
+				"bs-distributionconnector-workflows-form-label-reviewer",
+				"bs-distributionconnector-workflows-form-instructions-reviewer",
+				"bs-distributionconnector-workflows-form-label-approver",
+				"bs-distributionconnector-workflows-form-instructions-approver"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.oOJSPlus.formelements"
+			]
+		},
+		"ext.bluespice.distribution.workflows.trigger.editor": {
+			"scripts": [
+				"workflows/ui/trigger/TimeSMWProperty.js"
+			],
+			"dependencies": [
+				"ext.workflows.trigger.editors",
+				"ext.BSSMWConnector.widgets"
+			],
+			"messages": [
+				"bs-distributionconnector-workflows-ui-trigger-field-property",
+				"bs-distributionconnector-workflows-ui-trigger-field-days"
+			]
+		},
+		"ext.bluespice.distribution.usermanager.invite": {
+			"scripts": [
+				"usermanager/bluespice.distribution.invite.js"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"oojs-ui",
+				"oojs-ui.styles.icons-alerts"
+			],
+			"messages": [
+				"bs-distributionconnector-invite-signup-btn-tooltip-label",
+				"bs-distributionconnector-invite-signup-dialog-text"
+			]
+		},
+		"ext.bluespice.distribution.video.visualEditor": {
+			"scripts": [
+				"ve/ve.ce.VideoDropletNode.js",
+				"ve/ve.dm.VideoDropletNode.js",
+				"ve/ve.ui.VideoDropletInspector.js",
+				"ve/ve.ui.VideoDropletInspectorTool.js"
+			],
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.video.css"
+			],
+			"messages": [
+				"bs-distributionconnector-videodropletinspector-service-label",
+				"bs-distributionconnector-videodropletinspector-service-help",
+				"bs-distributionconnector-videodropletinspector-video-link-label",
+				"bs-distributionconnector-videodropletinspector-title",
+				"bs-distributionconnector-videodropletinspector-title-label",
+				"bs-distributionconnector-videodropletinspector-title-help",
+				"bs-distributionconnector-videodropletinspector-title-placeholder",
+				"bs-distributionconnector-videodropletinspector-description-label",
+				"bs-distributionconnector-videodropletinspector-description-help",
+				"bs-distributionconnector-videodropletinspector-description-placeholder",
+				"bs-distributionconnector-videodropletinspector-dimension-label",
+				"bs-distributionconnector-videodropletinspector-dimension-help",
+				"bs-distributionconnector-videodropletinspector-alignment-label",
+				"bs-distributionconnector-videodropletinspector-alignment-left",
+				"bs-distributionconnector-videodropletinspector-alignment-center",
+				"bs-distributionconnector-videodropletinspector-alignment-right",
+				"bs-distributionconnector-videodropletinspector-container-label",
+				"bs-distributionconnector-videodropletinspector-container-help"
+			]
+		},
+		"ext.bluespice.distribution.droplet.map": {
+			"scripts": [
+				"object/MapDroplet.js"
+			],
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.map.css"
+			],
+			"messages": [
+				"droplets-map-center-map-label",
+				"droplets-map-center-map-label-help",
+				"droplets-map-center-label",
+				"droplets-map-center-label-help"
+			]
+		},
+		"ext.bluespice.distribution.object.buttonlink": {
+			"scripts": [
+				"object/ButtonLinkDroplet.js"
+			],
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.button.css"
+			],
+			"dependencies": [
+				"oojs-ui"
+			],
+			"messages": [
+				"droplets-buttonlink-external-label",
+				"droplets-buttonlink-target-label",
+				"droplets-buttonlink-label-label",
+				"droplets-buttonlink-format-label",
+				"droplets-buttonlink-format-blue",
+				"droplets-buttonlink-format-neutral",
+				"droplets-buttonlink-format-red"
+			]
+		},
+		"ext.bluespice.distribution.droplet.subpages": {
+			"scripts": [
+				"object/SubpagesDroplet.js"
+			],
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.subpages.css"
+			],
+			"messages": [
+				"droplets-subpages-namespace-label",
+				"droplets-subpages-namespace-help",
+				"droplets-subpages-parentpage-label",
+				"droplets-subpages-parentpage-help",
+				"droplets-subpages-cols-label",
+				"droplets-subpages-cols-help",
+				"droplets-subpages-bullets-label",
+				"droplets-subpages-bullets-help"
+			]
+		},
+		"ext.bluespice.distribution.droplet.circlednumber": {
+			"scripts": [
+				"object/CircledNumberDroplet.js"
+			],
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.circled-number.css"
+			],
+			"dependencies": [
+				"ext.contentdroplets.bootstrap"
+			],
+			"messages": [
+				"droplets-circled-number-bg-color-label",
+				"droplets-circled-number-fg-color-label",
+				"droplets-circled-number-label"
+			]
+		},
+		"ext.bluespice.distribution.droplet.gallery": {
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.gallery.css"
+			]
+		},
+		"ext.bluespice.distribution.droplet.createInput": {
+			"scripts": [
+				"object/CreateInputDroplet.js"
+			],
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.createInput.css"
+			],
+			"messages": [
+				"droplets-create-input-button-label",
+				"droplets-create-input-preload-label",
+				"droplets-create-input-preload-help",
+				"droplets-create-input-placeholder-label",
+				"droplets-create-input-placeholder-help",
+				"droplets-create-input-prefix-label",
+				"droplets-create-input-prefix-help",
+				"droplets-create-input-alignment-label",
+				"droplets-create-input-alignment-help",
+				"droplets-create-input-alignment-left-label",
+				"droplets-create-input-alignment-right-label",
+				"droplets-create-input-alignment-center-label"
+			]
+		},
+		"ext.bluespice.distribution.droplet.pdflink": {
+			"packageFiles": [
+				"object/PDFLinkDroplet.js",
+				{
+					"name": "object/config.json",
+					"callback": "\\BlueSpice\\DistributionConnector\\ClientConfig::getPDFTemplates"
+				}
+			],
+			"styles": [
+				"stylesheets/bluespice.contentdroplets.pdflink.css"
+			],
+			"dependencies": [
+				"ext.contentdroplets.bootstrap"
+			],
+			"messages": [
+				"droplets-pdf-link-page-label",
+				"droplets-pdf-link-template-label",
+				"droplets-pdf-link-link-label"
+			]
+		},
+		"ext.bluespice.distribution.wikiExplorer.columns": {
+			"scripts": [
+				"wikiexplorer/bluespice.distribution.wikiExplorer.columns.js"
+			],
+			"messages": [
+				"bs-distributionconnector-hit-counter-wikiexplorer-column-name"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceDistributionConnector/resources"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"DistributionConnectorEnableAutoLogin": {
+			"value": false,
+			"descriptionmsg": "bs-distributionconnector-pref-pluggableauth-enableautologin",
+			"public": true
+		},
+		"DistributionConnectorPluggableAuthConfig": {
+			"value": [],
+			"descriptionmsg": "bs-distributionconnector-pref-pluggableauth-config",
+			"public": true
+		},
+		"DistributionConnectorEventBusEnableEventBus": {
+			"value": "TYPE_NONE",
+			"descriptionmsg": "bs-distributionconnector-pref-eventbus-enableeventbus",
+			"public": true
+		},
+		"DistributionConnectorEventBusEventServices": {
+			"value": {
+				"eventbus": {
+					"url": "http://localhost:3000/v1/events",
+					"timeout": 5
+				}
+			},
+			"descriptionmsg": "bs-distributionconnector-pref-eventbus-eventservices",
+			"public": true
+		},
+		"DistributionConnectorEventBusEventServiceDefault": {
+			"value": "eventbus",
+			"descriptionmsg": "bs-distributionconnector-pref-eventbus-eventservicedefault",
+			"public": true
+		},
+		"PDFCreatorLegacyTemplateDirectory": {
+			"value": ""
+		},
+		"PDFCreatorDefaultLegacyTemplate": {
+			"value": ""
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"\\BlueSpice\\DistributionConnector\\Hook\\BeforePageDisplay\\AddResources::callback",
+			"\\BlueSpice\\DistributionConnector\\Hook\\BeforePageDisplay\\AddEmbedVideoServices::callback"
+		],
+		"OutputPageBodyAttributes": "\\BlueSpice\\DistributionConnector\\Hook\\OutputPageBodyAttributes\\InitRcFilters::onOutputPageBodyAttributes",
+		"LoadExtensionSchemaUpdates": [
+			"BlueSpice\\DistributionConnector\\Hook\\LoadExtensionSchemaUpdates\\AddTemplateUserPageStandardContent::callback",
+			"migrate-pluggable-auth-config",
+			"fix-pluggable-auth-group-sync",
+			"addVariablesPageProperties"
+		],
+		"WikiExplorer::buildDataSets": "\\BlueSpice\\DistributionConnector\\Hook\\WikiExplorer\\AddHitCounterColumn::onBuildDataSets",
+		"UserLoggedIn": "BlueSpice\\DistributionConnector\\Hook\\UserLoggedIn\\AddLoginNotification::onUserLoggedIn",
+		"BSUserManagerRegisterModules": "user-manager",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "addGlobalAction",
+		"SkinTemplateNavigation::Universal": "addNewPageLink",
+		"ContentAlterParserOutput": "addVariablesPageProperty",
+		"BSUsageTrackerRegisterCollectors": "BlueSpice\\DistributionConnector\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfVariables::callback"
+	},
+	"HookHandlers": {
+		"user-manager": {
+			"class": "\\BlueSpice\\DistributionConnector\\Hook\\AddInviteLink"
+		},
+		"migrate-pluggable-auth-config": {
+			"class": "\\BlueSpice\\DistributionConnector\\Hook\\LoadExtensionSchemaUpdates\\MigratePluggableAuthConfig"
+		},
+		"fix-pluggable-auth-group-sync": {
+			"class": "\\BlueSpice\\DistributionConnector\\Hook\\LoadExtensionSchemaUpdates\\FixPluggableAuthGroupSync"
+		},
+		"addGlobalAction": {
+			"class": "\\BlueSpice\\DistributionConnector\\Hook\\AddGlobalAction",
+			"services": [ "SpecialPageFactory" ]
+		},
+		"addNewPageLink": {
+			"class": "\\BlueSpice\\DistributionConnector\\Hook\\SkinTemplateNavigation\\AddNewPageLink",
+			"services": [ "PermissionManager" ]
+		},
+		"addVariablesPageProperty": {
+			"class": "BlueSpice\\DistributionConnector\\HookHandler\\AddVariablesPageProperty"
+		},
+		"addVariablesPageProperties": {
+			"class": "BlueSpice\\DistributionConnector\\Hook\\LoadExtensionSchemaUpdates\\AddVariablesPageProperties"
+		}
+	},
+	"manifest_version": 2
+}

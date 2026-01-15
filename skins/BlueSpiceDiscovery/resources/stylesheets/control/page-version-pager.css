@@ -1,0 +1,28 @@
+.bs-revision-pager .bs-page-version-pager-toolbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0 0;
+}
+
+.bs-revision-pager .bs-page-version-pager-toolbar a {
+	cursor: pointer;
+	display: inline-block;
+	color: var( --bs-alert-color );
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.5;
+	user-select: none;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.bs-revision-pager .bs-page-version-pager-toolbar #bs-page-version-pager-previous::before {
+	content: '\F284';
+	font-family: 'bootstrap-icons';
+	padding-top: 0.3em;
+}
+
+.bs-revision-pager .bs-page-version-pager-toolbar #bs-page-version-pager-next::after {
+	content: '\F285';
+	font-family: 'bootstrap-icons';
+	padding-top: 0.3em;
+}

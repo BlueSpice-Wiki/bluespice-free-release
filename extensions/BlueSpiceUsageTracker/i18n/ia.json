@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-usagetracker-desc": "Mantene datos statistic sur le uso del extension",
+	"apihelp-bs-usagetracker-store-summary": "Mantene datos statistic sur le uso del extension"
+}

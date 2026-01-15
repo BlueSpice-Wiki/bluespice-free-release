@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informacije o BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "O BlueSpice",
+	"bluespiceabout": "O BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "ogled posebne strani »{{int:bs-bluespiceabout-about-bluespice}}«",
+	"right-bluespiceabout-viewspecialpage": "Dostop do posebne strani [[Special:BlueSpiceAbout]]"
+}

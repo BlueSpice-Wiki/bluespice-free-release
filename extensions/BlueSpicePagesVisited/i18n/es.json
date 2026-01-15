@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio",
+			"Macofe"
+		]
+	},
+	"bs-pagesvisited-desc": "Proporciona una lista personalizada de las últimas páginas visitadas",
+	"prefs-pagesvisited": "Páginas visitadas",
+	"bs-pagesvisited-widget-title": "Páginas visitadas",
+	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|El espacio|Los espacios}} de nombres <code>$2</code> no {{PLURAL:$1|es válido|son válidos}}.",
+	"bs-pagesvisited-pref-widgetlimit": "Límite de entradas:",
+	"bs-pagesvisited-pref-widgetns": "Espacios de nombresː",
+	"bs-pagesvisited-pref-widgetsortodr": "Ordenar por:",
+	"bs-pagesvisited-pref-sort-time": "Tiempo",
+	"bs-pagesvisited-pref-sort-pagename": "Título",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Muestra una lista de las páginas visitadas recientemente. Esta lista puede restringirse por parámetros.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Páginas visitadas",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Cantidad",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Establecer el número de páginas que se muestran en la lista",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Longitud máxima del título",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Establezca el número máximo de caracteres antes de que se corte un título",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Orden",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Establecer el orden de visualización de las páginas",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Espacios de nombres",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Mostrar sólo las páginas de estos espacios de nombres",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Hora",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nombre de la página"
+}

@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"DreZhsh",
+			"Gomoko",
+			"Pols12",
+			"Terio legale",
+			"Verdy p",
+			"Wladek92",
+			"Zarisi"
+		]
+	},
+	"bs-authors-desc": "Affiche l’image de profil des auteurs d’une page",
+	"prefs-authors": "Auteurs de cette page",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Auteur|Autrice}}|Auteurs}}",
+	"bs-authors-profileimage": "Image de profil",
+	"bs-authors-profileimage-change": "Modifier l’image de profil",
+	"bs-authors-show-all-authors": "Plus d’auteurs disponibles",
+	"bs-authors-navigation-link-title": "Auteurs de cette page",
+	"bs-authors-navigation-link-text": "Auteurs",
+	"apihelp-bs-pageauthors-store-summary": "Lister tous les auteurs d’une page fournie dans le contexte",
+	"bs-authors-info-dialog": "Auteurs de cette page",
+	"bs-authors-info-dialog-grid-column-author": "Auteur",
+	"bs-authors-info-dialog-grid-column-type": "Type d'auteur"
+}

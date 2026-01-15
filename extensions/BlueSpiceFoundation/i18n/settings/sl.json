@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-setting-path-feature": "Možnost",
+	"bs-setting-path-extension": "Razširitev",
+	"bs-setting-path-package": "Paket",
+	"bs-setting-path-system": "Sistem",
+	"bs-setting-path-dataanalysis": "Analiza podatkov",
+	"bs-setting-path-editor": "Urejevalec",
+	"bs-setting-path-search": "Iskanje in navigacija",
+	"bs-setting-path-personalisation": "Personalizacija",
+	"bs-setting-path-skinning": "Preobleke",
+	"bs-setting-path-customizing": "Prilagajanje",
+	"bs-setting-path-contentstructuring": "Strukturiranje vsebine",
+	"bs-setting-path-communication": "Komunikacija",
+	"bs-setting-path-administration": "Administracija",
+	"bs-setting-path-qualityassurance": "Zagotavljanje kakovosti",
+	"bs-setting-path-export": "Izvoz"
+}

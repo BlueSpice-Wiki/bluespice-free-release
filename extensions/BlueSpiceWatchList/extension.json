@@ -1,0 +1,99 @@
+{
+	"name": "BlueSpiceWatchList",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceWatchList",
+	"author": "Robert Vogel",
+	"descriptionmsg": "bs-watchlist-desc",
+	"type": "bluespice",
+	"license-name": "GPL-3.0-only",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceWatchList": {
+					"className": "\\BlueSpice\\WatchList\\Extension",
+					"extPath": "/BlueSpiceWatchList"
+				}
+			},
+			"TagRegistry": {
+				"watchlist": "\\BlueSpice\\WatchList\\Tag\\WatchList"
+			}
+		},
+		"BlueSpiceUserSidebar": {
+			"Widgets": {
+				"WATCHLIST": {
+					"callback": "\\BlueSpice\\WatchList\\Panel\\WatchList::factory",
+					"default": true
+				}
+			}
+		},
+		"BlueSpiceDiscovery": {
+			"AttentionIndicatorRegistry": {
+				"watchlist": "\\BlueSpice\\WatchList\\AttentionIndicator\\WatchList::factory"
+			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"TagDefinitions": [
+				"ext.bluespice.watchlist.visualEditor"
+			]
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"watchlist": {
+					"class": "\\BlueSpice\\WatchList\\ContentDroplets\\WatchlistDroplet"
+				}
+			}
+		}
+	},
+	"HookHandlers": {
+		"skin": {
+			"class": "\\BlueSpice\\WatchList\\HookHandler\\Skin"
+		}
+	},
+	"Hooks": {
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\WatchList\\Hook\\BSUsageTrackerRegisterCollectors\\AddWatchListTag::callback",
+		"SkinTemplateNavigation::Universal": "skin"
+	},
+	"ResourceModules": {
+		"ext.bluespice.watchlist.visualEditor": {
+			"scripts": [
+				"bs.watchlist/util/tag/WatchListDefinition.js"
+			],
+			"styles": "bluespice.watchlist.droplet.css",
+			"messages": [
+				"bs-watchlist-tag-watchlist-desc",
+				"bs-watchlist-ve-watchlistinspector-title",
+				"bs-watchlist-ve-watchlist-attr-count-label",
+				"bs-watchlist-tag-watchlist-attr-count-help",
+				"bs-watchlist-ve-watchlist-attr-maxtitlelength-label",
+				"bs-watchlist-tag-watchlist-attr-maxtitlelength-help",
+				"bs-watchlist-ve-watchlist-attr-order-label",
+				"bs-watchlist-tag-watchlist-attr-order-help",
+				"bs-watchlist-ve-watchlist-attr-pagename-label",
+				"bs-watchlist-ve-watchlist-attr-time-label"
+			],
+			"dependencies": [
+				"ext.bluespice.visualEditorConnector.tags.classes"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceWatchList/resources"
+	},
+	"MessagesDirs": {
+		"BSWatchList": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\WatchList\\": "src/"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

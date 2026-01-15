@@ -1,0 +1,7 @@
+== PDF templates ==
+
+Here you will find an overview of the existing PDF templates.
+To edit a template, you can edit the page.
+
+== Overview of templates ==
+{{Special:Prefixindex|prefix=MediaWiki:PDFCreator/|hideredirects=1|stripprefix=1}}

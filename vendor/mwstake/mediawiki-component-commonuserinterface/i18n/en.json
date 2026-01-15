@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"apihelp-mwstake-commonui-skinslot-summary" : "Allows access to the data tree of various UIs",
+	"apihelp-mwstake-commonui-skinslot-param-path" : "",
+	"apihelp-mwstake-commonui-skinslot-param-context" : ""
+}

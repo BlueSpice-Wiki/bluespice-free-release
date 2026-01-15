@@ -1,0 +1,158 @@
+#content {
+	font-size: var( --content-font-size );
+	color: var( --content-fg-primary );
+	font-weight: var( --content-font-weight );
+	margin: 0 auto;
+	height: 100%;
+}
+
+p {
+	font-weight: var( --content-font-weight );
+	line-height: 150%;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.p-sm {
+	font-size: 0.8rem;
+	/* 0.8 * 16px = 12.8 */
+	font-size: calc( 0.8534 * var( --content-font-size ) );
+}
+
+.mw-body-content a:not( [ class*='oo-ui-' ] ),
+[ class^='mw-content-' ] a:not( [ class*='oo-ui-' ] ) {
+	color: var( --link-fg );
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+}
+
+.mw-body-content a.new:not( [ class*='oo-ui-' ] ),
+[ class^='mw-content-' ] a.new:not( [ class*='oo-ui-' ] ) {
+	color: var( --new-link-fg );
+}
+
+.mw-body-content a:visited.new:not( [ class*='oo-ui-' ] ),
+[ class^='mw-content-' ] a:visited.new:not( [ class*='oo-ui-' ] ) {
+	color: var( --new-link-fg );
+}
+
+.mw-body-content a.stub,
+[ class^='mw-content-' ] a.stub {
+	color: var( --stub-link-fg );
+}
+
+.mw-body-content a:hover:not( [ class*='oo-ui-' ] ),
+[ class^='mw-content-' ] a:hover:not( [ class*='oo-ui-' ] ) {
+	text-decoration: underline;
+}
+
+.mw-body-content a:visited:not( [ class*='oo-ui-' ] ),
+[ class^='mw-content-' ] a:visited:not( [ class*='oo-ui-' ] ) {
+	color: var( --link-fg );
+}
+
+.mw-body-content a:focus {
+	text-decoration: underline;
+}
+/* external links in content.externallinks.less due to backgroundimage settings */
+
+pre {
+	font-family: monospace, 'Courier';
+	/* 0.8 * 16px = 12.8 */
+	font-size: calc( 0.8534 * var( --content-font-size ) );
+	margin: 2rem 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+pre,
+.mw-code {
+	background-color: var( --content-box-color );
+	padding: 1rem;
+}
+
+code {
+	font-family: monospace, 'Courier';
+	color: var( --content-fg-primary );
+	background-color: var( --content-box-color );
+	border-radius: 5px;
+	padding: 2px 4px;
+}
+
+dd {
+	margin-left: 1.5rem;
+}
+
+.center {
+	text-align: center;
+}
+
+/*
+.floatleft, .floatright, .tleft, .tright are legacy.
+They seem not to be used anymore but they are still part of mediawiki core. Therefore we keep our code.
+*/
+div.tleft,
+div.floatleft,
+table.floatleft,
+figure[ typeof~='mw:File' ].mw-halign-left,
+figure[ typeof~='mw:File/Frameless' ].mw-halign-left,
+figure[ typeof~='mw:File/Thumb' ].mw-halign-left,
+figure[ typeof~='mw:File/Frame' ].mw-halign-left {
+	float: left;
+	clear: left;
+	margin: 0 1rem 1rem 0;
+}
+
+div.tright,
+div.floatright,
+table.floatright,
+figure[ typeof~='mw:File' ].mw-halign-right,
+figure[ typeof~='mw:File/Frameless' ].mw-halign-right,
+figure[ typeof~='mw:File/Thumb' ].mw-halign-right,
+figure[ typeof~='mw:File/Frame' ].mw-halign-right {
+	float: right;
+	clear: right;
+	margin: 0 0 1rem 1rem;
+}
+
+.floatleft + ul,
+.floatright + ul,
+figure[ typeof~='mw:File' ].mw-halign-left + ul,
+figure[ typeof~='mw:File' ].mw-halign-right + ul,
+figure[ typeof~='mw:File/Frameless' ].mw-halign-left + ul,
+figure[ typeof~='mw:File/Frameless' ].mw-halign-right + ul,
+figure[ typeof~='mw:File/Thumb' ].mw-halign-left + ul,
+figure[ typeof~='mw:File/Thumb' ].mw-halign-right + ul,
+figure[ typeof~='mw:File/Frame' ].mw-halign-left + ul,
+figure[ typeof~='mw:File/Frame' ].mw-halign-right + ul {
+	display: inline-block;
+}
+
+.floatleft + ol,
+.floatright + ol,
+figure[ typeof~='mw:File' ].mw-halign-left + ol,
+figure[ typeof~='mw:File' ].mw-halign-right + ol,
+figure[ typeof~='mw:File/Frameless' ].mw-halign-left + ol,
+figure[ typeof~='mw:File/Frameless' ].mw-halign-right + ol,
+figure[ typeof~='mw:File/Thumb' ].mw-halign-left + ol,
+figure[ typeof~='mw:File/Thumb' ].mw-halign-right + ol,
+figure[ typeof~='mw:File/Frame' ].mw-halign-left + ol,
+figure[ typeof~='mw:File/Frame' ].mw-halign-right + ol {
+	display: inline-block;
+}
+
+blockquote {
+	border-left: 2px solid var( --primary-bg );
+	border-radius: 2px;
+	padding: 0.5rem 1rem;
+	background-color: #f5f5f7;
+}
+
+#contentSub #mw-content-subtitle {
+	margin-top: 1em;
+}
+
+#contentSub a {
+	color: var( --link-fg );
+}

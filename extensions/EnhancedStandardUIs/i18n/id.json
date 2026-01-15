@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veracious"
+		]
+	},
+	"enhancedfilelist": "Daftar berkas",
+	"enhanced-standard-uis-filelist-grid-file-title": "Nama berkas",
+	"enhanced-standard-uis-filelist-grid-author-title": "Pembuat",
+	"enhanced-standard-uis-filelist-grid-date-title": "Tanggal",
+	"enhanced-standard-uis-filelist-grid-type-title": "Jenis",
+	"enhanced-standard-uis-filelist-grid-size-title": "Ukuran",
+	"enhanced-standard-uis-filelist-grid-categories-title": "Kategori",
+	"enhanced-standard-uis-filelist-grid-comment-title": "Komentar",
+	"enhanced-standard-uis-filelist-grid-info-title": "Info",
+	"enhanced-standard-uis-filelist-grid-reupload-title": "Unggah",
+	"enhanced-standard-uis-filelist-grid-delete-title": "Hapus",
+	"enhanced-standard-uis-filelist-panel-search-placeholder-label": "Cari berkas",
+	"enhanced-standard-uis-filelist-panel-new-file-label": "Berkas baru",
+	"enhanced-standard-uis-filelist-panel-list-label": "Daftar",
+	"enhanced-standard-uis-filelist-dialog-info": "Info berkas",
+	"enhanced-standard-uis-filelist-dialog-action-close-title": "Tutup",
+	"enhanced-standard-uis-filelist-dialog-action-done-label": "Selesai",
+	"enhanced-standard-uis-filelist-dialog-history-grid-version": "Versi",
+	"enhanced-standard-uis-filelist-dialog-page-preview-label": "Pratayang",
+	"enhanced-standard-uis-filelist-dialog-page-history-label": "Riwayat versi",
+	"enhanced-standard-uis-filelist-notify-copy-clipboard": "Pranala telah disalin ke papan klip"
+}

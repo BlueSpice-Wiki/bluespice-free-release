@@ -1,0 +1,75 @@
+{
+	"before": {
+		"name": "mws_category_index",
+		"columns": [
+			{
+				"name": "mci_cat_id",
+				"type": "integer",
+				"options": {
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "mci_title",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "mci_count",
+				"type": "integer",
+				"options": {
+					"unsigned": true,
+					"notnull": true,
+					"default": 0
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [ "mci_cat_id" ]
+	},
+	"after": {
+		"name": "mws_category_index",
+		"columns": [
+			{
+				"name": "mci_cat_id",
+				"type": "integer",
+				"options": {
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "mci_title",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "mci_page_title",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "mci_count",
+				"type": "integer",
+				"options": {
+					"unsigned": true,
+					"notnull": true,
+					"default": 0
+				}
+			}
+		],
+		"indexes": [],
+		"pk": []
+	}
+}

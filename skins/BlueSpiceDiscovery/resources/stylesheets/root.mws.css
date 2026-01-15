@@ -1,0 +1,11 @@
+/* common dropdown and buttons */
+:root {
+	--mws-primary-bg: #3e5389;
+	--mws-primary-bg--hover: #98a7c4;
+	--mws-primary-fg: #fff;
+	--mws-primary-fg--hover: #252525;
+	--mws-secondary-bg: #fff;
+	--mws-secondary-bg--hover: #98a7c4;
+	--mws-secondary-fg: #252525;
+	--mws-secondary-fg--hover: #252525;
+}

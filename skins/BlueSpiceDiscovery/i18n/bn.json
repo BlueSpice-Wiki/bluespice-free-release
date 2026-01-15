@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Borhan",
+			"San1joy23",
+			"আফতাবুজ্জামান",
+			"জয়শ্রীরাম সরকার"
+		]
+	},
+	"bs-discovery-logo-return-to-aria-label": "{{SITENAME}} লোগো - $1-এ ফিরে যান",
+	"bs-discovery-navbar-global-actions-overview-text": "একনজরে",
+	"bs-discovery-navbar-global-actions-editing-text": "সম্পাদনা করছেন",
+	"bs-discovery-navbar-global-actions-administration-text": "প্রশাসন",
+	"bs-discovery-mainlinks-allpages-label": "পাতাসমূহ",
+	"bs-discovery-mainlinks-categories-label": "বিষয়শ্রেণীসমূহ",
+	"bs-discovery-mainlinks-listfiles-label": "ফাইলসমূহ",
+	"bs-discovery-config-mainlinks-listfiles-help": "বামের পরিভ্রমণে \"ফাইল\" ভুক্তির সংযোগ দেখান",
+	"bs-discovery-enhanced-mediawiki-sidebar-pnl-header-text": "প্রধান মেনু",
+	"bs-discovery-page-version-pager-deleted-user": "(ব্যবহারকারীর নাম সরানো হয়েছে)",
+	"bs-discovery-page-version-pager-previous": "পূর্ববর্তী",
+	"bs-discovery-page-version-pager-next": "পরবর্তী",
+	"bs-discovery-footerlinks-termsofservice-link-desc": "পরিষেবার শর্তাবলী",
+	"bs-discovery-footerlinks-termsofservice-link-page": "Site:পরিষেবার_শর্তাবলী",
+	"bs-discovery-tools-after-content-aria-label": "বিষয়বস্তু বিভাগের পর সরঞ্জাম",
+	"bs-discovery-data-after-content-aria-label": "বিষয়বস্তু বিভাগের পর তথ্য",
+	"bs-discovery-breadcrumb-label-diff": "পার্থক্য"
+}

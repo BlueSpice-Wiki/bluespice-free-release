@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"pdfcreator-tab-panel-footer-label": "Подножје",
+	"pdfcreator-tab-panel-main-label": "Опис",
+	"pdfcreator-pdf-disclaimer": "Овај PDF је направљен аутоматски",
+	"pdfcreator-pdf-export-time": "Извоз",
+	"pdfcreator-pdf-param-currentpagenumber-label": "Страница",
+	"pdfcreator-editor-action-help-label": "Помоћ",
+	"pdfcreator-export-mode-page-label": "Страница",
+	"pdfcreator-dialog-export-title": "Извоз",
+	"pdfcreator-dialog-export-action-export-label": "Извоз",
+	"pdfcreator-export-plugin-mode-option-subpages-label": "Страница са подстраницама",
+	"pdfcreator-toc-page-label": "Садржај",
+	"pdfcreator-export-pdf-inspector-export-template-label": "PDF шаблон",
+	"pdfcreator-content-non-existing-page": "Ова страница не постоји",
+	"pdfcreator-tab-panel-options-label": "Својства",
+	"pdfcreator-template-edit-dlg-action-next": "Следеће",
+	"pdfcreator-template-edit-dlg-action-save": "Сачувај",
+	"pdfcreator-template-edit-dlg-action-back": "Назад",
+	"pdfcreator-template-edit-dlg-footer-left-label": "Леви одељак",
+	"pdfcreator-template-edit-dlg-footer-right-label": "Десни одељак",
+	"pdfcreator-template-edit-dlg-general-size-label": "Величина странице",
+	"pdfcreator-template-edit-dlg-general-size-btn-portrait-label": "Усправно А4",
+	"pdfcreator-template-edit-dlg-general-size-btn-landscape-label": "Положено А4",
+	"pdfcreator-template-edit-dlg-general-template-input-label": "Име шаблона",
+	"pdfcreator-template-edit-dlg-upload-select-btn-text-label": "Изабери слику",
+	"pdfcreator-template-duplicate-dlg-action-copy": "Копирај",
+	"pdfcreator-panel-templates-overview-column-templates-label": "Шаблони",
+	"pdfcreator-panel-templates-overview-column-edit-title": "Уреди шаблон",
+	"pdfcreator-panel-templates-overview-column-edit-label": "Уреди",
+	"pdfcreator-panel-templates-overview-column-copy-label": "Копирај",
+	"pdfcreator-panel-templates-overview-column-delete-title": "Обриши шаблон",
+	"pdfcreator-template-edit-source-dlg-action-edit": "Уреди извор",
+	"pdfcreator-template-edit-dlg-general-redirect-label": "Игнориши преусмерење",
+	"pdfcreator-dump-namespaces-mail-body-text-done": "готово"
+}

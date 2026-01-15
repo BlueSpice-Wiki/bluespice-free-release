@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jrobicek"
+		]
+	},
+	"bs-insertcategory-edit-dialog-button-label": "Upravit",
+	"bs-insertcategory-edit-dialog-title": "Upravit kategorie",
+	"bs-insertcategory-edit-dialog-button-submit": "Hotovo",
+	"bs-insertcategory-edit-dialog-button-cancel": "Storno",
+	"bs-insertcategory-edit-dialog-input-label": "Přiřazené kategorie",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Implicitní kategorie",
+	"bs-insertcategory-edit-dialog-tree-view": "Zobrazit všechny kategorie"
+}

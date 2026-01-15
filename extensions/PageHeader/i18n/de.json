@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth"
+		]
+	},
+	"pageheader-desc": "Stellt zusätzliche Benutzeroberflächen vor dem Artikelinhalt zur verfügung",
+	"pageheader-pageinfosentence-no-item-label": "Keine Statusinformation",
+	"pageheader-pageinfosentence-no-item-tooltip": "Keine Statusinformation zu dieser Seite",
+	"pageheader-pageinfosentence": "Diese Seite ist $1",
+	"pageheader-pageinfosentence-item-separator": "und",
+	"pageheader-pageinfosentence-item-separator-greater-two": ",",
+	"pageheader-pageinfosentence-item-class-separator": "aber"
+}

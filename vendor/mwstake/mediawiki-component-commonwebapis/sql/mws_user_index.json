@@ -1,0 +1,33 @@
+[
+	{
+		"name": "mws_user_index",
+		"columns": [
+			{
+				"name": "mui_user_id",
+				"type": "integer",
+				"options": {
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "mui_user_name",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "mui_user_real_name",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [ "mui_user_id" ]
+	}
+]

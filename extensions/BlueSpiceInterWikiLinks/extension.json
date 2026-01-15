@@ -1,0 +1,130 @@
+{
+	"name": "BlueSpiceInterWikiLinks",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceInterWikiLinks",
+	"author": [
+		"Markus Glaser",
+		"Sebastian Ulbricht",
+		"Leonid Verhovskij"
+	],
+	"descriptionmsg": "bs-interwikilinks-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0",
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceInterWikiLinks": {
+					"className": "\\BlueSpice\\InterWikiLinks\\Extension",
+					"extPath": "/BlueSpiceInterWikiLinks"
+				}
+			},
+			"PermissionRegistry": {
+				"interwikilinks-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"editor",
+						"maintenanceadmin"
+					]
+				}
+			},
+			"AdminToolRegistry": {
+				"bs-interwikilinks-manager": "BlueSpice\\InterWikiLinks\\AdminTool"
+			}
+		}
+	},
+	"GroupPermissions": {
+		"*": {
+			"interwikilinks-viewspecialpage": false
+		},
+		"user": {
+			"interwikilinks-viewspecialpage": false
+		},
+		"sysop": {
+			"interwikilinks-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"interwikilinks-viewspecialpage"
+	],
+	"AutoloadNamespaces": {
+		"BlueSpice\\InterWikiLinks\\": "src/"
+	},
+	"SpecialPages": {
+		"InterWikiLinks": "\\BlueSpice\\InterWikiLinks\\Special\\InterWikiLinks"
+	},
+	"APIModules": {
+		"bs-interwikilinks-tasks": "BSApiTasksInterWikiLinksManager"
+	},
+	"MessagesDirs": {
+		"InterWikiLinks": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"BSApiTasksInterWikiLinksManager": "includes/api/BSApiTasksInterWikiLinksManager.php"
+	},
+	"ExtensionMessagesFiles": {
+		"InterWikiLinksAlias": "languages/SpecialInterWikiLinks.alias.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.interwikilinks.manager": {
+			"scripts": [
+				"ext.bluespice.interwikilinks.manager.js",
+				"ui/panel/Manager.js"
+			],
+			"messages": [
+				"bs-interwikilinks-headerprefix",
+				"bs-interwikilinks-headerurl",
+				"bs-interwikilinks-titleaddinterwikilink",
+				"bs-interwikilinks-titleeditinterwikilink",
+				"bs-interwikilinks-titledeleteinterwikilink",
+				"bs-interwikilinks-confirmdeleteinterwikilink"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data",
+				"ext.oOJSPlus.managerPanel",
+				"ext.bluespice.interwikilinks.dialog.pages"
+			]
+		},
+		"ext.bluespice.interwikilinks.dialog.pages": {
+			"scripts": [
+				"ui/page/InterWikiLinksPage.js"
+			],
+			"messages": [
+				"bs-interwikilinks-titleaddinterwikilink",
+				"bs-interwikilinks-labelprefix",
+				"bs-interwikilinks-labelurl"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"oojs-ui-core",
+				"ext.oOJSPlus.data",
+				"ext.oOJSPlus.dialogs",
+				"ext.oOJSPlus.widgets"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceInterWikiLinks/resources"
+	},
+	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\InterWikiLinks\\HookHandler\\CommonUserInterface"
+		}
+	},
+	"Hooks": {
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

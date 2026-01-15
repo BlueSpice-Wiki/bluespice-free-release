@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"JDíaz32",
+			"La Mantis",
+			"No se",
+			"Osnard",
+			"Samthony"
+		]
+	},
+	"bs-discovery-breadcrumb-nav-node-ns-main": "Páginas",
+	"bs-discovery-sidebar-actions-heading": "Acciones",
+	"bs-discovery-details-pnl-more-link-text": "... todas las acciones",
+	"bs-discovery-navigation-heading": "Comenzando",
+	"bs-discovery-main-links-heading": "Puntos de entrada",
+	"bs-discovery-breadcrumb-label-action-edit": "Editar",
+	"bs-discovery-mainlinks-allpages-label": "Páginas",
+	"bs-discovery-mainlinks-categories-label": "Categorías",
+	"bs-discovery-mainlinks-listfiles-label": "Ficheros",
+	"bs-discovery-config-mainlinks-categories-help": "Mostrar el enlace del punto de entrada «Categorías» en la navegación izquierda",
+	"ns-main-label": "Páginas",
+	"bs-discovery-enhanced-mediawiki-sidebar-header-text": "Navegación",
+	"bs-discovery-page-version-pager-previous": "Anterior",
+	"bs-discovery-page-version-pager-next": "Siguiente",
+	"bs-discovery-edit-footerlinks-link-text": "Editar enlaces de pie de página",
+	"bs-discovery-footerlinks-imprint-link-desc": "Imprimir",
+	"bs-discovery-footerlinks-imprint-link-page": "Proyecto:Impresión",
+	"bs-discovery-footerlinks-termsofservice-link-page": "Site:Términos_de_servicio"
+}

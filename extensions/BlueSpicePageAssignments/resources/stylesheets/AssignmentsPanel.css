@@ -1,0 +1,14 @@
+.assignments-widgets {
+	display: inline-flex;
+	gap: 15px;
+	flex-flow: wrap;
+}
+
+.assignments-widgets .oojsplus-user-widget {
+	width: auto;
+}
+
+.assignments-widgets-group {
+	min-height: 32px;
+	align-content: center;
+}

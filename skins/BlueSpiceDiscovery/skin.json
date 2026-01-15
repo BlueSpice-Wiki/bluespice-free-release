@@ -1,0 +1,758 @@
+{
+	"name": "BlueSpiceDiscovery",
+	"version": "5.1.0",
+	"author": [
+		"Daniel Vogel"
+	],
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceDiscovery",
+	"descriptionmsg": "bs-discovery-desc",
+	"namemsg": "bs-discovery-name",
+	"license-name": "GPL-3.0-only",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"OOJSPlus": ">= 3.0.0"
+		}
+	},
+	"ValidSkinNames": {
+		"bluespicediscovery": {
+			"DisplayName": "BlueSpiceDiscovery",
+			"class": "BlueSpice\\Discovery\\Skin"
+		}
+	},
+	"attributes": {
+		"BlueSpiceDiscovery": {
+			"LangLinksProviderRegistry": {
+				"interwiki": {
+					"class": "BlueSpice\\Discovery\\LangLinksProvider\\Interwiki"
+				},
+				"hardwired": {
+					"class": "BlueSpice\\Discovery\\LangLinksProvider\\Hardwired",
+					"services": [ "LanguageNameUtils", "ConfigFactory" ]
+				},
+				"subpages": {
+					"class": "BlueSpice\\Discovery\\LangLinksProvider\\Subpages",
+					"services": [ "LanguageNameUtils", "PageProps" ]
+				}
+			},
+			"LayoutRegistry": {
+				"bluespice": {
+					"factory": "BlueSpice\\Discovery\\Layout\\BlueSpice::factory",
+					"services": [ "ObjectFactory" ]
+				}
+			},
+			"StructureRegistry": {
+				"skip-to": {
+					"factory": "BlueSpice\\Discovery\\Structure\\SkipTo::factory",
+					"services": [
+						"BlueSpiceDiscoveryTemplateDataProvider",
+						"BlueSpiceDiscoveryComponentRenderer",
+						"BlueSpiceDiscoverySkinSlotRenderer",
+						"PermissionManager"
+					]
+				},
+				"navbar-primary": {
+					"factory": "BlueSpice\\Discovery\\Structure\\NavbarPrimary::factory",
+					"services": [
+						"BlueSpiceDiscoveryTemplateDataProvider",
+						"BlueSpiceDiscoveryComponentRenderer",
+						"BlueSpiceDiscoverySkinSlotRenderer",
+						"BlueSpiceDiscoveryCookieHandler",
+						"PermissionManager"
+					]
+				},
+				"main": {
+					"factory": "BlueSpice\\Discovery\\Structure\\Main::factory",
+					"services": [
+						"BlueSpiceDiscoveryTemplateDataProvider",
+						"BlueSpiceDiscoveryComponentRenderer",
+						"BlueSpiceDiscoverySkinSlotRenderer",
+						"BlueSpiceDiscoveryCookieHandler",
+						"PermissionManager",
+						"LinkRenderer",
+						"RevisionStore",
+						"ObjectFactory",
+						"BlueSpiceDiscoveryBackLinkProviderFactory"
+					]
+				},
+				"aftercontent": {
+					"factory": "BlueSpice\\Discovery\\Structure\\AfterContent::factory",
+					"services": [
+						"BlueSpiceDiscoveryTemplateDataProvider",
+						"BlueSpiceDiscoveryComponentRenderer",
+						"BlueSpiceDiscoverySkinSlotRenderer",
+						"PermissionManager"
+					]
+				},
+				"footer": {
+					"factory": "BlueSpice\\Discovery\\Structure\\Footer::factory",
+					"services": [
+						"BlueSpiceDiscoveryTemplateDataProvider",
+						"BlueSpiceDiscoveryComponentRenderer",
+						"BlueSpiceDiscoverySkinSlotRenderer",
+						"PermissionManager"
+					]
+				},
+				"back-to-top": {
+					"factory": "BlueSpice\\Discovery\\Structure\\BackToTop::factory",
+					"services": [
+						"BlueSpiceDiscoveryTemplateDataProvider",
+						"BlueSpiceDiscoveryComponentRenderer",
+						"BlueSpiceDiscoverySkinSlotRenderer",
+						"PermissionManager"
+					]
+				},
+				"sidebar-primary": {
+					"factory": "BlueSpice\\Discovery\\Structure\\SidebarPrimary::factory",
+					"services": [
+						"BlueSpiceDiscoveryTemplateDataProvider",
+						"BlueSpiceDiscoveryComponentRenderer",
+						"MWStakeSkinSlotRegistry",
+						"ObjectFactory"
+					]
+				},
+				"sidebar-secondary": {
+					"factory": "BlueSpice\\Discovery\\Structure\\SidebarSecondary::factory",
+					"services": [
+						"BlueSpiceDiscoveryTemplateDataProvider",
+						"BlueSpiceDiscoveryComponentRenderer",
+						"MWStakeSkinSlotRegistry",
+						"ObjectFactory"
+					]
+				}
+			},
+			"SkipToRegistry": {
+				"bluespice": {
+					"navbar-primary": {
+						"id": "nb-pri",
+						"msg": "bs-discovery-skip-to-navbar-primary-text"
+					},
+					"sidebar-primary": {
+						"id": "sb-pri-cnt",
+						"msg": "bs-discovery-skip-to-sidebar-primary-text"
+					},
+					"sidebar-secondary": {
+						"id": "sb-sec-cnt",
+						"msg": "bs-discovery-skip-to-sidebar-secondary-text"
+					},
+					"main": {
+						"id": "main",
+						"msg": "bs-discovery-skip-to-main-text"
+					}
+				}
+			},
+			"MenuProviderRegistry": {
+				"mediawiki-sidebar": {
+					"class": "BlueSpice\\Discovery\\MenuProvider\\MediawikiSidebar"
+				},
+				"namespace-mainpage-list": {
+					"class": "BlueSpice\\Discovery\\MenuProvider\\NamespaceMainPageList",
+					"services": [ "PageProps" ]
+				},
+				"subpage-tree": {
+					"class": "BlueSpice\\Discovery\\MenuProvider\\SubpageTree"
+				},
+				"enhanced-mediawiki-sidebar": {
+					"class": "BlueSpice\\Discovery\\MenuProvider\\EnhancedSidebar",
+					"args": [ "MediaWiki:Sidebar.json", "enh-mw-sb" ],
+					"services": [
+						"RevisionStore", "TitleFactory", "MWStakeWikitextParserFactory",
+						"MWStakeCommonUITreeDataGenerator", "BlueSpiceDiscoveryCookieHandler"
+					]
+				}
+			},
+			"AttentionIndicatorRegistry": {},
+			"BreadcrumbDataProviderRegistry": {
+				"special-actions": {
+					"class": "BlueSpice\\Discovery\\BreadcrumbDataProvider\\SpecialActionsProvider"
+				},
+				"without-subpages": {
+					"class": "BlueSpice\\Discovery\\BreadcrumbDataProvider\\PagesWithoutSubpagesProvider"
+				},
+				"diffmode": {
+					"class": "BlueSpice\\Discovery\\BreadcrumbDataProvider\\DiffModeProvider"
+				},
+				"base-breadcrumb": {
+					"class": "BlueSpice\\Discovery\\BreadcrumbDataProvider\\BaseBreadcrumbDataProvider"
+				}
+			},
+			"EnhancedSidebarNodeProcessors": {
+				"enhanced-sidebar-internal-link": {
+					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\NodeProcessor\\InternalLinkProcessor",
+					"services": [ "PermissionManager", "ParserFactory", "TitleFactory" ]
+				},
+				"enhanced-sidebar-external-link": {
+					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\NodeProcessor\\ExternalLinkProcessor",
+					"services": [ "ParserFactory" ]
+				},
+				"enhanced-sidebar-subpage-tree": {
+					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\NodeProcessor\\SubpageListProcessor",
+					"services": [ "PermissionManager", "ParserFactory", "TitleFactory" ]
+				},
+				"enhanced-sidebar-panel-heading": {
+					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\NodeProcessor\\PanelHeadingProcessor",
+					"services": [ "ParserFactory" ]
+				}
+			},
+			"MetaItemProviderRegistry": {},
+			"TemplateDataProviderRegistry": {
+				"bluespice": {
+					"class": "BlueSpice\\Discovery\\TemplateDataProvider\\TemplateDataProvider",
+					"services": [ "HookContainer", "PageProps" ]
+				}
+			},
+			"TitleActionPrimaryActionModifier": {
+			},
+			"LastEditInfoModifier": {
+			},
+			"BackLinkProviderRegistry": {
+				"diff": {
+					"class": "BlueSpice\\Discovery\\BackLinkProvider\\DiffBackLinkProvider",
+					"services": [ "TitleFactory" ]
+				},
+				"pages": {
+					"class": "BlueSpice\\Discovery\\BackLinkProvider\\PagesBackLinkProvider",
+					"services": [ "TitleFactory" ]
+				}
+			}
+		},
+		"BlueSpicePrivacy": {
+			"CookieConsentNativeMWCookies": {
+				"BlueSpiceDiscovery": {
+					"group": "convenience",
+					"addPrefix": true
+				}
+			}
+		},
+		"FlexiSkin": {
+			"SubscriberRegistry": {
+				"discovery": "\\BlueSpice\\Discovery\\FlexiSkin\\Subscriber::factory"
+			}
+		},
+		"BlueSpiceFoundation": {
+			"ConfigDefinitionRegistry": {
+				"DiscoveryMainLinksMainpage": "\\BlueSpice\\Discovery\\ConfigDefinition\\MainLinksMainpage::getInstance",
+				"DiscoveryMainLinksAllPages": "\\BlueSpice\\Discovery\\ConfigDefinition\\MainLinksAllPages::getInstance",
+				"DiscoveryMainLinksListFiles": "\\BlueSpice\\Discovery\\ConfigDefinition\\MainLinksListFiles::getInstance",
+				"DiscoveryMainLinksCategories": "\\BlueSpice\\Discovery\\ConfigDefinition\\MainLinksCategories::getInstance",
+				"DiscoveryMainLinksRecentChanges": "\\BlueSpice\\Discovery\\ConfigDefinition\\MainLinksRecentChanges::getInstance",
+				"DiscoverySidebarPrimaryMainTabPanelMenu": "\\BlueSpice\\Discovery\\ConfigDefinition\\SidebarPrimaryMainTabPanelMenu::getInstance",
+				"DiscoveryMetaItemsHeader": "\\BlueSpice\\Discovery\\ConfigDefinition\\MetaItemsHeader::getInstance",
+				"DiscoveryMetaItemsFooter": "\\BlueSpice\\Discovery\\ConfigDefinition\\MetaItemsFooter::getInstance"
+			},
+			"AlertProviderRegistry": {
+				"old-revision": "\\BlueSpice\\Discovery\\AlertProvider\\PageVersionPagerAlert::factory"
+			}
+		},
+		"MenuEditor": {
+			"Menus": {
+				"enhanced-sidebar": {
+					"class": "BlueSpice\\Discovery\\EnhancedSidebar\\Menu",
+					"args": [ "MediaWiki:Sidebar.json" ],
+					"services": [ "MWStakeWikitextParserFactory" ]
+				}
+			},
+			"Nodes": {
+				"enhanced-sidebar-external-link": {
+					"classname": "bs.skin.enhancedSidebar.tree.node.ExternalLink",
+					"module": "skin.discovery.enhancedSidebar.tree"
+				},
+				"enhanced-sidebar-internal-link": {
+					"classname": "bs.skin.enhancedSidebar.tree.node.InternalLink",
+					"module": "skin.discovery.enhancedSidebar.tree"
+				},
+				"enhanced-sidebar-subpage-tree": {
+					"classname": "bs.skin.enhancedSidebar.tree.node.SubpageList",
+					"module": "skin.discovery.enhancedSidebar.tree"
+				},
+				"enhanced-sidebar-panel-heading": {
+					"classname": "bs.skin.enhancedSidebar.tree.node.PanelHeading",
+					"module": "skin.discovery.enhancedSidebar.tree"
+				}
+			}
+		},
+		"PDFCreator": {
+			"StylesheetsProvider": {
+				"BlueSpiceDiscoveryBootstrapFontsStyles": {
+					"class": "\\BlueSpice\\Discovery\\Integration\\PDFCreator\\StylesheetsProvider\\BootstrapFontStyles"
+				}
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceDiscovery": [
+			"i18n"
+		]
+	},
+	"callback": "BlueSpice\\Discovery\\Setup::onCallback",
+	"AutoloadNamespaces": {
+		"BlueSpice\\Discovery\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\Discovery\\Tests\\": "tests/phpunit/"
+	},
+	"HookHandlers": {
+		"navbar-primary-searchform": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MWStakeCommonUIRegisterSkinSlotComponents\\NavbarPrimarySearchForm"
+		},
+		"global-actions": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MWStakeCommonUIRegisterSkinSlotComponents\\GlobalActions",
+			"services": [ "SpecialPageFactory" ]
+		},
+		"sidebar-primary-tabpanels": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MWStakeCommonUIRegisterSkinSlotComponents\\SidebarPrimaryTabPanels"
+		},
+		"sidebar-secondary-tabpanels": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MWStakeCommonUIRegisterSkinSlotComponents\\SidebarSecondaryTabPanels"
+		},
+		"main-links-panel": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MWStakeCommonUIRegisterSkinSlotComponents\\MainLinksPanel",
+			"services": [ "ConfigFactory" ]
+		},
+		"sidebar-secondary-toolbar": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MWStakeCommonUIRegisterSkinSlotComponents\\SidebarSecondaryToolbar"
+		},
+		"breadcrumb": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MWStakeCommonUIRegisterSkinSlotComponents\\Breadcrumb"
+		},
+		"create-content-options": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\SkinTemplateNavigation\\CreateContentOptions",
+			"services": [ "PermissionManager" ]
+		},
+		"share-options": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\SkinTemplateNavigation\\ShareOptions"
+		},
+		"sidebar": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\SidebarBeforeOutput\\AddSidebarLinks",
+			"services": [ "PermissionManager" ]
+		},
+		"body-classes": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\OutputPageBodyAttributes\\AddToBodyAttributes"
+		},
+		"setPageLanguage": {
+			"class": "\\BlueSpice\\Discovery\\Hook\\SetPageLanguage",
+			"services": [ "LanguageNameUtils" ]
+		},
+		"pdf-export": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\PdfExportHandler"
+		},
+		"set-less-vars": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\MWStakeCommonLessVars"
+		},
+		"addLoginPageResources": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\BeforePageDisplay\\SpecialLogin"
+		},
+		"addBacklinkOnSpecialPages": {
+			"class": "\\BlueSpice\\Discovery\\HookHandler\\BeforePageDisplay\\AddBacklink"
+		}
+	},
+	"Hooks": {
+		"MWStakeCommonUIRegisterSkinSlotComponents": [
+			"navbar-primary-searchform",
+			"global-actions",
+			"main-links-panel",
+			"breadcrumb",
+			"sidebar-primary-tabpanels",
+			"sidebar-secondary-tabpanels",
+			"sidebar-secondary-toolbar"
+		],
+		"SkinTemplateNavigation::Universal": [
+			"create-content-options",
+			"share-options"
+		],
+		"SidebarBeforeOutput": [
+			"sidebar"
+		],
+		"OutputPageBodyAttributes": [
+			"body-classes"
+		],
+		"BsAdapterAjaxPingResult": "\\BlueSpice\\Discovery\\Hook\\BsAdapterAjaxPingResult\\CheckAttentionIndicator::callback",
+		"PageSaveComplete": "setPageLanguage",
+		"BSUEModulePDFBeforeAddingContent": "pdf-export",
+		"BSUsageTrackerRegisterCollectors": [
+			"\\BlueSpice\\Discovery\\Hook\\BSUsageTrackerRegisterCollectors\\MediaWikiSidebarActive::callback",
+			"\\BlueSpice\\Discovery\\Hook\\BSUsageTrackerRegisterCollectors\\MediaWikiSidebarModified::callback",
+			"\\BlueSpice\\Discovery\\Hook\\BSUsageTrackerRegisterCollectors\\EnhancedSidebarActive::callback",
+			"\\BlueSpice\\Discovery\\Hook\\BSUsageTrackerRegisterCollectors\\EnhancedSidebarModified::callback"
+		],
+		"MWStakeCommonUILessVarsInit": "set-less-vars",
+		"BeforePageDisplay": [ "addLoginPageResources", "addBacklinkOnSpecialPages" ]
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"DiscoveryHardWiredLangLinks": {
+			"value": {}
+		},
+		"DiscoveryLangLinksMode": {
+			"value": "subpages"
+		},
+		"LayoutEnabled": {
+			"value": "bluespice"
+		},
+		"LayoutRenderer": {
+			"value": "BlueSpice\\Discovery\\Renderer\\SkinLayoutRenderer::factory"
+		},
+		"DiscoveryMainLinksMainpage": {
+			"value": true,
+			"public": true,
+			"descriptionmsg": "bs-discovery-config-mainlinks-mainpage-label"
+		},
+		"DiscoveryMainLinksAllPages": {
+			"value": true,
+			"public": true,
+			"descriptionmsg": "bs-discovery-config-mainlinks-allpages-label"
+		},
+		"DiscoveryMainLinksListFiles": {
+			"value": false,
+			"public": true,
+			"descriptionmsg": "bs-discovery-config-mainlinks-listfiles-label"
+		},
+		"DiscoveryMainLinksCategories": {
+			"value": false,
+			"public": true,
+			"descriptionmsg": "bs-discovery-config-mainlinks-categories-label"
+		},
+		"DiscoveryMainLinksRecentChanges": {
+			"value": true,
+			"public": true,
+			"descriptionmsg": "bs-discovery-config-mainlinks-recentchanges-label"
+		},
+		"DiscoverySidebarPrimaryMainTabPanelMenu": {
+			"value": "mediawiki-sidebar",
+			"public": true,
+			"descriptionmsg": "bs-discovery-config-config-sidebar-primary-main-tab-menu-label"
+		},
+		"DiscoveryMetaItemsHeader": {
+			"value": [],
+			"public": true
+		},
+		"DiscoveryMetaItemsFooter": {
+			"value": [],
+			"public": true
+		},
+		"DiscoveryTemplateDataProvider": {
+			"value": "bluespice"
+		}
+	},
+	"ResourceModules": {
+		"skin.discovery.styles": {
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"logo": true,
+				"content-links": true,
+				"content-links-external": true,
+				"content-media": true,
+				"content-tables": true,
+				"interface": true,
+				"interface-category": true,
+				"interface-edit-section-links": true,
+				"i18n-ordered-lists": true,
+				"i18n-headings": true
+			}
+		},
+		"skin.discovery.bootstrap.styles": {
+			"styles": {
+				"bootstrap/dist/css/bootstrap-grid.min.css": {},
+				"bootstrap/dist/css/bootstrap-reboot.min.css": {},
+				"bootstrap/dist/css/bootstrap-utilities.min.css": {},
+				"bootstrap/dist/css/bootstrap.min.css": {},
+				"bootstrap/icons/bootstrap-icons.css": {},
+				"bootstrap/overwrite/alert-colors.css": {}
+			}
+		},
+		"skin.discovery.bootstrap.rtl.styles": {
+			"styles": {
+				"bootstrap/dist/css/bootstrap-grid.rtl.min.css": {},
+				"bootstrap/dist/css/bootstrap-reboot.rtl.min.css": {},
+				"bootstrap/dist/css/bootstrap-utilities.rtl.min.css": {},
+				"bootstrap/dist/css/bootstrap.rtl.min.css": {}
+			}
+		},
+		"skin.discovery.bootstrap.scripts": {
+			"scripts": [
+				"bootstrap/dist/js/bootstrap.bundle.js"
+			]
+		},
+		"skin.discovery.bluespice.styles": {
+			"styles": {
+				"stylesheets/font.css": {},
+				"stylesheets/root.basecolors.css": {},
+				"stylesheets/root.mws.css": {},
+				"stylesheets/root.ui.css": {},
+				"stylesheets/mws.button.css": {},
+				"stylesheets/mws.dropdown.css": {},
+				"stylesheets/bootstrap.override.css": {},
+				"stylesheets/bluespice.css": {},
+				"stylesheets/bluespice.sm.css": { "media": "all and ( max-width: 767px )" },
+				"stylesheets/bluespice.md.css": { "media": "all and ( min-width: 767px ) and ( max-width: 1199px )" },
+				"stylesheets/bluespice.xl.css": { "media": "all and ( min-width: 1200px ) and ( max-width: 1399px )" },
+				"stylesheets/bluespice.xxl.css": { "media": "all and ( min-width: 1400px )" },
+				"stylesheets/megamenu.css": {},
+				"stylesheets/oo-ui/oo-ui.css": {},
+				"stylesheets/mediawiki.ui/components/radio.css": {},
+				"stylesheets/fixes/extension-fixes.css": {},
+				"stylesheets/control/page-version-pager.css": {},
+				"stylesheets/fixes/ve-fixes.css": {},
+				"stylesheets/fixes/mw-fixes.css": {},
+				"stylesheets/fixes/extjs-fixes.css": {},
+				"stylesheets/bluespice.print.css": { "media": "print" },
+				"stylesheets/control/mws-tree-component.css": {},
+				"stylesheets/control/oojs-tree-component.css": {},
+				"stylesheets/control/hide-title.css": {},
+				"stylesheets/wcag.css": { "media": "prefers-contrast: more" },
+				"stylesheets/fixes/diffmode.css": {},
+				"stylesheets/fixes/commentstreams.css": {}
+			}
+		},
+		"skin.discovery.bluespice.themes.default": {
+			"styles": {
+				"stylesheets/themes/default/colors.less": {},
+				"stylesheets/content/content.externallinks.less": {}
+			},
+			"class": "\\MWStake\\MediaWiki\\Component\\CommonUserInterface\\ResourceLoader\\LessVars"
+		},
+		"skin.discovery.bluespice.scripts": {
+			"scripts": [
+				"js/bootstrap.js",
+				"js/CookieHandler.js",
+				"js/BlueSpiceUI.js",
+				"js/BreadCrumbs.js",
+				"js/AttentionIndicator.js",
+				"js/StickyTitle.js",
+				"js/Jumpmarks.js",
+				"js/MobileContentTables.js",
+				"js/dblClickEdit.js",
+				"js/VEEditClick.js",
+				"js/AddTOCAriaLabel.js"
+			],
+			"messages": [
+				"bs-discovery-navbar-full-screen-button-enable-title",
+				"bs-discovery-navbar-full-screen-button-enable-aria-label",
+				"bs-discovery-navbar-full-screen-button-disable-title",
+				"bs-discovery-navbar-full-screen-button-disable-aria-label",
+				"bs-discovery-sidebar-primary-toggle-show-title",
+				"bs-discovery-sidebar-primary-toggle-show-aria-label",
+				"bs-discovery-sidebar-primary-toggle-hide-title",
+				"bs-discovery-sidebar-primary-toggle-hide-aria-label",
+				"bs-discovery-sidebar-secondary-toggle-show-title",
+				"bs-discovery-sidebar-secondary-toggle-show-aria-label",
+				"bs-discovery-sidebar-secondary-toggle-hide-title",
+				"bs-discovery-sidebar-secondary-toggle-hide-aria-label",
+				"bs-discovery-navbar-user-button-aria-label",
+				"bs-discovery-navbar-user-button-requires-attention-aria-label",
+				"bs-discovery-requires-attention",
+				"bs-discovery-table-of-contents-show-button-aria-label",
+				"bs-discovery-table-of-contents-hide-button-aria-label"
+			],
+			"dependencies": [
+				"mediawiki.cookie",
+				"mediawiki.jqueryMsg"
+			]
+		},
+		"skin.discovery.bluespice.sidebar-primary.scripts": {
+			"scripts": [
+				"js/StackedTabPanels.js"
+			],
+			"dependencies": [
+				"mediawiki.cookie",
+				"mediawiki.jqueryMsg"
+			]
+		},
+		"skin.discovery.navbar-primary.styles": {
+			"styles": {
+				"stylesheets/structure/navbar-primary.css": {},
+				"stylesheets/structure/navbar-primary.md.css": { "media": "all and ( min-width: 767px ) and ( max-width: 1199px )" },
+				"stylesheets/structure/navbar-primary.sm.css": { "media": "all and ( max-width: 767px )" },
+				"stylesheets/structure/navbar-primary.sidebar-toggle.css": {},
+				"stylesheets/structure/navbar-primary.logo.css": {},
+				"stylesheets/structure/navbar-primary.search-form.css": {},
+				"stylesheets/structure/navbar-primary.user-button.css": {}
+			}
+		},
+		"skin.discovery.main.styles": {
+			"styles": {
+				"stylesheets/structure/main.css": {},
+				"stylesheets/structure/main.sm.css": { "media": "all and ( max-width: 767px )" },
+				"stylesheets/structure/main.title-action.edit-button.css": {},
+				"stylesheets/structure/main.title-action.full-sceen-button.css": {},
+				"stylesheets/structure/main.breadcrumb.css": {},
+				"stylesheets/structure/main.title-section.last-edit-info.css": {},
+				"stylesheets/structure/main.title-section.data-after-title.css": {},
+				"stylesheets/content/content.css": {},
+				"stylesheets/content/content.headings.css": {},
+				"stylesheets/content/tables.css": {},
+				"stylesheets/content/images.css": {},
+				"stylesheets/content/content.toc.css": {},
+				"stylesheets/structure/userminiprofile.css": {},
+				"stylesheets/content/bluespiceSocial.css": {},
+				"stylesheets/content/bluespiceSocial.sm.css": { "media": "all and ( max-width: 720px )" },
+				"stylesheets/content/bluespiceSocial.xl.css": { "media": "all and ( min-width: 1024px )" },
+				"stylesheets/structure/main.backto.css": {}
+			}
+		},
+		"skin.discovery.aftercontent.styles": {
+			"styles": {
+				"stylesheets/structure/aftercontent.css": {}
+			}
+		},
+		"skin.discovery.main-area.styles": {
+			"styles": {
+				"stylesheets/structure/navbar-primary.css": {}
+			}
+		},
+		"skin.discovery.sidebar-primary.styles": {
+			"styles": {
+				"stylesheets/structure/sidebar-primary.css": {},
+				"stylesheets/structure/sidebar-primary.tabpanel.css": {},
+				"stylesheets/structure/sidebar-primary.sm.css": { "media": "all and ( max-width: 767px )" },
+				"stylesheets/structure/edit-sidebar.css": {}
+			}
+		},
+		"skin.discovery.sidebar-secondary.styles": {
+			"styles": {
+				"stylesheets/structure/sidebar-secondary.css": {},
+				"stylesheets/structure/sidebar-secondary.tabpanel.css": {},
+				"stylesheets/structure/sidebar-secondary.sm.css": { "media": "all and ( max-width: 767px )" }
+			}
+		},
+		"skin.discovery.skip-links.styles": {
+			"styles": {
+				"stylesheets/structure/skip-links.css": {}
+			}
+		},
+		"skin.discovery.back-to-top.styles": {
+			"styles": {
+				"stylesheets/structure/back-to-top.css": {}
+			}
+		},
+		"skin.discovery.back-to-top.scripts": {
+			"scripts": [
+				"js/BackToTop.js"
+			]
+		},
+		"skin.discovery.footer.styles": {
+			"styles": {
+				"stylesheets/structure/footer.css": {},
+				"stylesheets/structure/footer.sm.css": { "media": "all and ( max-width: 767px )" }
+			}
+		},
+		"skin.discovery.watch.scripts": {
+			"scripts": [
+				"js/Watch.js"
+			],
+			"messages": [
+				"watch",
+				"unwatch",
+				"tooltip-ca-watch",
+				"tooltip-ca-unwatch",
+				"addedwatchtext-short",
+				"removedwatchtext-short"
+			]
+		},
+		"skin.discovery.details-panel.scripts": {
+			"scripts": [
+				"js/DetailsDialogHandler.js"
+			]
+		},
+		"skin.discovery.dialog.details": {
+			"scripts": [
+				"js/ui/dialog/DetailsDialog.js"
+			],
+			"dependencies": [
+				"oojs-ui"
+			],
+			"messages": [
+				"bs-discovery-dialog-details-heading",
+				"bs-discovery-dialog-details-action-cancel",
+				"bs-discovery-dialog-detailssectionheading-namespaces",
+				"bs-discovery-dialog-detailssectionheading-views",
+				"bs-discovery-dialog-detailssectionheading-actions",
+				"bs-discovery-dialog-detailssectionheading-toolbox"
+			]
+		},
+		"skin.discovery.shareoptions": {
+			"scripts": [
+				"js/Permalink.js"
+			],
+			"messages": [
+				"mw-widgets-copytextlayout-copy-success"
+			]
+		},
+		"skin.discovery.enhancedSidebar.tree": {
+			"scripts": [
+				"js/enhancedSidebar/node/EnhancedSidebarNode.js",
+				"js/enhancedSidebar/node/ExternalLink.js",
+				"js/enhancedSidebar/node/InternalLink.js",
+				"js/enhancedSidebar/node/SubpageList.js",
+				"js/enhancedSidebar/node/PanelHeading.js",
+				"js/enhancedSidebar/Tree.js"
+			],
+			"messages": [
+				"bs-discovery-enhanced-mediawiki-sidebar-pnl-header-text",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-page",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-page-help",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-text",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-text-help",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-depth",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-depth-help",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-href",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-href-help",
+				"menueditor-ui-enhanced-sidebar-internal-link-label-edit",
+				"menueditor-ui-enhanced-sidebar-external-link-label-edit",
+				"menueditor-ui-enhanced-sidebar-subpage-tree-label-edit",
+				"menueditor-ui-enhanced-sidebar-external-link-label",
+				"menueditor-ui-enhanced-sidebar-internal-link-label",
+				"menueditor-ui-enhanced-sidebar-subpage-tree-label",
+				"bs-discovery-enhanced-mediawiki-sidebar-show-for-groups-text",
+				"menueditor-ui-enhanced-sidebar-panel-heading-label-edit",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-heading",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-heading-help",
+				"bs-discovery-enhanced-mediawiki-sidebar-add-new-panel-button-label",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-classes",
+				"bs-discovery-enhanced-mediawiki-sidebar-field-icon-cls"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.data",
+				"ext.menuEditor.tree",
+				"ext.menuEditor.node",
+				"oojs-ui.styles.icons-editing-core",
+				"oojs-ui.styles.icons-accessibility",
+				"oojs-ui.styles.icons-editing-list",
+				"ext.oOJSPlus.formelements"
+			]
+		},
+		"skin.discovery.enhanced-sidebar.styles": {
+			"styles": {
+				"stylesheets/control/enhanced-sidebar.css": {}
+			}
+		},
+		"skin.discovery.login.styles": {
+			"styles": {
+				"stylesheets/fixes/login.css": {}
+			}
+		},
+		"skin.discovery.backlink": {
+			"packageFiles": [
+				"js/AddBacklinks.js"
+			]
+		},
+		"skin.discovery.subpagetree-component": {
+			"packageFiles": [
+				"js/SubpageTreePanel.js"
+			],
+			"dependencies": [
+				"ext.oojsplus.navigation.treePanel",
+				"oojs-ui"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteSkinPath": "BlueSpiceDiscovery/resources"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

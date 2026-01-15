@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK",
+			"Can",
+			"Hedda",
+			"Sayginer",
+			"Sqances"
+		]
+	},
+	"bs-watchlist-desc": "Bir izleme listesi widget'ı ve etiketi ekler",
+	"bs-watchlist-pref-sort-time": "Zaman",
+	"bs-watchlist-pref-sort-title": "Başlık",
+	"bs-watchlist-tag-watchlist-desc": "Değişiklikleri olan ve izleme listenizdeki maddeleri gösterir.",
+	"bs-watchlist-ve-watchlistinspector-title": "Takip listesi",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Maks başlık uzunluğu",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Sayfa adı",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Zaman",
+	"bs-watchlist-tag-watchlist-no-entries": "İzleme listesindeki sayfalarda gösterilecek herhangi bir değişiklik yok",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Sayfa adı yardım",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Zaman yardım"
+}

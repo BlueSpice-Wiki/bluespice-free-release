@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"A2y4",
+			"Bonfire12",
+			"Omotecho",
+			"Shirayuki",
+			"Tmv",
+			"Yaakiyu.jp"
+		]
+	},
+	"flexiskin-extension-desc": "スキンのカスタマイズが可能",
+	"flexiskin-label": "スキン",
+	"right-flexiskin-viewspecialpage": "外装をカスタマイズするための[[Special:FlexiSkin|特別ページ]]を閲覧",
+	"action-flexiskin-viewspecialpage": "外装をカスタマイズするための[[Special:FlexiSkin|特別ページ]]の閲覧",
+	"right-flexiskin-api": "FlexiSkin API を使用",
+	"action-flexiskin-api": "FlexiSkin API の使用",
+	"flexiskin-ui-plugin-colors-highlight-navbar-label": "ヘッダーハイライト"
+}

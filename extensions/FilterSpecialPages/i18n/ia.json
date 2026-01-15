@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"filterspecialpages-desc": "Insere un campo pro filtrar entratas in [{{canonicalurl:Special:SpecialPages}} Special:Paginas special].",
+	"filterspecialpages-hint-label": "Cercar pagina"
+}

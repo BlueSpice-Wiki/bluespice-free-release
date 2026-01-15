@@ -1,0 +1,57 @@
+@keyframes shimmer {
+	0% {
+		background-position: -1000px 0;
+	}
+
+	100% {
+		background-position: 1000px 0;
+	}
+}
+
+.pdf-creator-skeleton {
+	display: inline-block;
+	background-color: #ddd;
+	border-radius: 4px;
+	margin: 8px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.pdf-creator-skeleton::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient( 90deg, rgba( 255, 255, 255, 0 ) 0, rgba( 255, 255, 255, 0.2 ) 50%, rgba( 255, 255, 255, 0 ) 100% );
+	animation: shimmer 2s infinite;
+}
+
+.pdf-creator-skeleton.text {
+	height: 16px;
+	width: 80%;
+}
+
+.pdf-creator-skeleton.tabheader {
+	height: 60px;
+	background-color: #eaecf0;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.pdf-creator-skeleton.tabheader .text {
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	margin: 30px 25px 0;
+	background-color: #fff;
+}
+
+.pdf-creator-skeleton.tabcontent {
+	margin-top: 0;
+	height: 300px;
+	border: 1px solid #eaecf0;
+	background-color: transparent;
+	width: 100%;
+}

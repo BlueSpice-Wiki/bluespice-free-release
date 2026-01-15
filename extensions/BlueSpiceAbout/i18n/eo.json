@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirin"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informo pri BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "Pri BlueSpice",
+	"bluespiceabout": "Pri BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "vidi la specialan paĝon \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "Aliro al la speciala paĝo [[Special:BlueSpiceAbout]]"
+}

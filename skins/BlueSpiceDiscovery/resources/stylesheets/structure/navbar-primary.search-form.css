@@ -1,0 +1,66 @@
+#nb-pri form {
+	align-items: center;
+	min-width: 180px;
+	max-width: 650px;
+}
+
+#nb-pri form button {
+	height: 40px;
+	border-radius: 5px 0 0 5px;
+	background-color: var( --navbar-primary-searchform-bg );
+	border-color: var( --navbar-primary-searchform-bg );
+	color: var( --navbar-primary-searchform-fg );
+	border-width: 0.5px 0 0.5px 0.5px;
+}
+
+#nb-pri form button:focus {
+	outline: 0;
+	box-shadow: none;
+	border: 2px solid var( --navbar-primary-border-color );
+	border-right: none;
+	color: var( --navbar-primary-searchform-fg );
+}
+
+#nb-pri form input {
+	height: 40px;
+	font-size: 15px;
+	background-color: var( --navbar-primary-searchform-bg );
+	border-color: var( --navbar-primary-searchform-bg );
+	border-width: 0.5px 0.5px 0.5px 0;
+	margin: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+#nb-pri form input:focus {
+	outline: 0;
+	box-shadow: none;
+	border: 1px solid var( --navbar-primary-border-color );
+	border-left: none;
+}
+
+#nb-pri .item-center-east .new-page-split-btn #new-content {
+	background: var( --navbar-primary-newbutton-bg );
+	color: var( --navbar-primary-newbutton-fg );
+	border: none;
+}
+
+#nb-pri .item-center-east .new-page-split-btn #new-content:hover {
+	background: var( --navbar-primary-newbutton-bg--hover );
+	color: var( --navbar-primary-newbutton-fg--hover );
+}
+
+#nb-pri .item-center-east .new-page-split-btn #new-content-menu-btn {
+	background-color: var( --icon-primary-bg );
+	color: var( --icon-primary-fg );
+	font-size: 22px;
+	border-radius: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+
+#nb-pri .item-center-east .new-page-split-btn #new-content-menu-btn:hover {
+	color: var( --icon-primary-fg--hover );
+	background-color: var( --icon-primary-bg );
+}

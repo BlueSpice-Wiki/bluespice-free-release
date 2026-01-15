@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby",
+			"Orf3us",
+			"Tarjeimo",
+			"Vukky"
+		]
+	},
+	"bs-readers-desc": "Oppretter en liste over personer som har lest en side",
+	"prefs-readers": "Lesere",
+	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Leser}}|Lesere}}",
+	"readers-user": "Sider {{GENDER:$1|lest}} av: $1",
+	"readers": "Lesere av «$1»",
+	"bs-readers-contentactions-label": "Vis lesere",
+	"bs-readers-pagenotexists": "Siden finnes ikke.",
+	"bs-readers-pref-active": "Aktiver lesere",
+	"bs-readers-emptyinput": "Ingen side har blitt angitt.",
+	"bs-readers-header-username": "Brukernavn",
+	"bs-readers-header-readerspath": "Leser",
+	"bs-readers-header-ts": "Dato",
+	"bs-readers-header-page": "Side",
+	"apihelp-bs-readers-data-store-summary": "Hent leserinformasjon for en spesifikk side.",
+	"apihelp-bs-readers-users-store-summary": "Hent all leserinformasjon for en spesifikk side.",
+	"apihelp-bs-readers-page-readers-store-summary": "Henter alle lesere for alle sider",
+	"apihelp-bs-readers-revision-readers-store-summary": "Henter alle lesere av alle sideversjoner av en side",
+	"apihelp-bs-readers-tasks-summary": "Gir felles operasjoner for lesere",
+	"action-viewreaders": "vise leserne av sider",
+	"action-viewrevisionreaders": "vise leserne av sideversjoner enkeltvis",
+	"right-viewreaders": "Se en sides lesere",
+	"right-viewrevisionreaders": "Vise leserne til sideversjoner enkeltvis",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|Du}} leste siden $1 $2",
+	"bs-readers-header-read-by": "Lest av",
+	"bs-readers-header-revision-id": "Sideversjons-ID",
+	"bs-readers-header-revision-date": "Sideversjonsdato",
+	"bs-readers-header-read-on": "Lest",
+	"revisionreaders": "Lesere etter sideversjon av «$1»",
+	"bs-readers-info-dialog": "Lesere av denne siden"
+}

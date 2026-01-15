@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"Rail"
+		]
+	},
+	"bs-usagetracker-desc": "Przechowuje dane statystyczne na temat wykorzystania rozszerzeń"
+}

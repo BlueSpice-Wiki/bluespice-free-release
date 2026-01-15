@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-interwikilinks-label": "Liami interwiki",
+	"bs-interwikilinks-link-created": "Lu liami interwiki fu criatu.",
+	"bs-interwikilinks-link-added": "Lu liami interwiki fu agghiunciutu.",
+	"bs-interwikilinks-link-deleted": "Lu liami interwiki fu cancillatu.",
+	"bs-interwikilinks-pfxexists": "Stu prifissu già esisti.",
+	"bs-interwikilinks-headerprefix": "Prifissu",
+	"bs-interwikilinks-titleaddinterwikilink": "Agghiunci lu liami interwiki",
+	"bs-interwikilinks-titleeditinterwikilink": "Cancia lu liami interwiki",
+	"bs-interwikilinks-labelprefix": "Prifissu",
+	"bs-interwikilinks-titledeleteinterwikilink": "Cancella lu liami interwiki",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Sî sicuru di vuliri cancillari stu liami interwiki?",
+	"bs-interwikilinks-link-edited": "Lu liami interwiki fu cancillatu",
+	"action-interwikilinks-viewspecialpage": "talìari la pàggina spiciali \"{{int:bs-interwikilinks-label}}\"",
+	"interwikilinks": "Liami interwiki"
+}

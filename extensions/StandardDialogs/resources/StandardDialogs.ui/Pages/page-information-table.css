@@ -1,0 +1,12 @@
+.page-information {
+	width: 100%;
+}
+
+.page-information td ul {
+	margin-left: 0;
+	padding-left: 1rem;
+}
+
+.editors-list {
+	list-style-type: none;
+}

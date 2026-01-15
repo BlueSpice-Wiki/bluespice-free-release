@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"1917 Ekim Devrimi",
+			"Gorizon",
+			"Mirzali"
+		]
+	},
+	"bs-insertcategory-edit-dialog-button-label": "Bıvurne",
+	"bs-insertcategory-edit-dialog-title": "Kategoriyan bıvurne",
+	"bs-insertcategory-edit-dialog-button-submit": "Temam",
+	"bs-insertcategory-edit-dialog-button-cancel": "Bıtexelne"
+}

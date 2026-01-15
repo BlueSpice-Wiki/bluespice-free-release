@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"bs-countthings-desc": "Liwwert Statistiken iwwer den Inhalt",
+	"bs-countthings-chars-label": "Zeechen",
+	"bs-countthings-words-label": "Wierder",
+	"bs-countthings-files-label": "Fichieren",
+	"bs-countthings-pages-label": "Säiten",
+	"bs-countthings-ve-countcharacters-title": "Zeechen zielen",
+	"bs-countthings-ve-countarticles-title": "Artikelen zielen",
+	"bs-countthings-ve-countfiles-title": "Fichieren zielen",
+	"bs-countthings-ve-countusers-title": "Benotzer zielen",
+	"bs-countthings-ve-countthingsinspector-mode": "Modus",
+	"bs-countthings-ve-countcharacters-mode-all": "all",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "Zeechen",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "Wierder",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "Zeechen a Wierder",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "Säiten",
+	"bs-countthings-ve-countcharacters-input-label": "Säiten",
+	"bs-countthings-error-no-input": "Keng Säit uginn.",
+	"bs-countthings-error-not-exist": "D'Säit ''$1'' gëtt et net.",
+	"bs-countthings-tag-countarticles-desc": "Weist d'Zuel vun de Säiten an der Wiki.",
+	"bs-countthings-tag-countusers-desc": "Weist d'Zuel vun de registréierte Benotzer.",
+	"bs-countthings-tag-countfiles-desc": "Weist d'Zuel vun de Fichieren an der Wiki.",
+	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: Wat gezielt gi soll <code>chars</code> (Zeechen), <code>words</code> (wierder) oder <code>pages</code> (Säiten).",
+	"bs-countthings-droplet-articles-name": "Zuel vun de Säiten",
+	"bs-countthings-droplet-characters-name": "Zuel vun den Zeechen",
+	"bs-countthings-droplet-characters-description": "Weist d'Zuel vun den Zeechen oder Wierder op enger Wikisäit",
+	"bs-countthings-droplet-files-name": "Zuel vun de Fichieren",
+	"bs-countthings-droplet-user-name": "Zuel vun de Benotzer",
+	"bs-countthings-droplet-user-description": "Weist d'Zuel vun alle Benotzer"
+}

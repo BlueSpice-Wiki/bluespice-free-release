@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamxo",
+			"Harunaningi",
+			"Nura A Sani"
+		]
+	},
+	"apihelp-query+statistics-reports-summary": "Gabatar da kididdigaggen rahotanni akan ire-iren kididdigogi",
+	"bs-statistics-aggregated-report-no-date": "Ba bayani akan saitin wannan matatar, muna rokon achanza darajar matatar",
+	"bs-statistics-aggregated-report-filter-category-multi": "RABE RABE",
+	"bs-statistics-aggregated-report-filter-date-start": "Ranar  farawa",
+	"bs-statistics-aggregated-report-filter-date-end": "Karshen rana",
+	"bs-statistics-aggregated-report-filter-interval": "Tsakani",
+	"bs-statistics-aggregated-report-filter-interval-day": "RANA",
+	"bs-statistics-aggregated-report-filter-interval-week": "SATI",
+	"bs-statistics-aggregated-report-filter-interval-month": "Wata",
+	"bs-statistics-aggregated-report-filter-interval-year": "Shekara",
+	"bs-statistics-aggregated-report-filter-namespace": "Filin suna",
+	"bs-statistics-aggregated-report-filter-page": "Shafi",
+	"bs-statistics-aggregated-report-filter-user": "Mai aiki",
+	"bs-statistics-aggregated-report-filter-user-multi": "Masu amfani",
+	"bs-statistics-aggregated-report-loading": "Kwaso bayani..."
+}

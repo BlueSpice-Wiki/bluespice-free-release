@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Kizule",
+			"Milicevic01",
+			"Aca"
+		]
+	},
+	"bs-readers-desc": "Прави списак људи који су прочитали страницу",
+	"prefs-readers": "Читаоци",
+	"bs-readers-header-username": "Корисничко име",
+	"bs-readers-header-ts": "Датум",
+	"bs-readers-header-page": "Страница",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Читате}} страницу $1 на $2",
+	"bs-readers-header-revision-id": "ID измене",
+	"bs-readers-header-revision-date": "Датум измене",
+	"bs-readers-permission-error": "Грешка у дозволама"
+}

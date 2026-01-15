@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Manke ruLpa"
+		]
+	},
+	"bs-discovery-navbar-user-login-text": "Konwe",
+	"bs-discovery-navbar-user-login-title": "Konwe",
+	"bs-discovery-navbar-user-login-aria-label": "Konwe",
+	"bs-discovery-logo-return-to-aria-label": "Amutun $1 püle.",
+	"bs-discovery-searchform-button-title": "Azo kintun",
+	"bs-discovery-searchform-button-aria-label": "Azo kintun",
+	"bs-discovery-header-create-button-text": "We",
+	"bs-discovery-header-create-button-title": "Zewman we tapülh",
+	"bs-discovery-header-create-button-aria-label": "Zewman we tapülh",
+	"bs-discovery-breadcrumb-nav-node-title": "Nülan $1",
+	"bs-discovery-breadcrumb-nav-node-aria-label": "Nülan $1",
+	"bs-discovery-title-action-language-button-title": "Zullinge zungun",
+	"bs-discovery-title-action-language-button-aria-label": "Zullinge zungun"
+}

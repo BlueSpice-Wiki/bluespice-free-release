@@ -1,0 +1,868 @@
+{
+	"name": "BlueSpiceExtendedSearch",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"author": [
+		"Robert Vogel",
+		"Dejan Savuljesku"
+	],
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceExtendedSearch",
+	"descriptionmsg": "bs-extsearch-desc",
+	"namemsg": "bs-extsearch-extensionname",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceExtendedSearch": {
+					"className": "BS\\ExtendedSearch\\Extension"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"ESExternalFilePaths": "BS\\ExtendedSearch\\ConfigDefinition\\ExternalFilePaths::getInstance",
+				"ESAutoSetLangFilter": "BS\\ExtendedSearch\\ConfigDefinition\\AutoSetLanguageFilter::getInstance",
+				"ExtendedSearchExternalFilePathsExcludes": "\\BS\\ExtendedSearch\\ConfigDefinition\\ExternalFilePathsExcludes::getInstance"
+			},
+			"AdminToolRegistry": {
+				"bs-extended-search": "BS\\ExtendedSearch\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"extendedsearch-search-specialpage": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"admin",
+						"author",
+						"bot",
+						"commenter",
+						"editor",
+						"maintenanceadmin",
+						"reader",
+						"reviewer",
+						"structuremanager"
+					]
+				},
+				"extendedsearch-search-wikipage": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"admin",
+						"author",
+						"bot",
+						"commenter",
+						"editor",
+						"maintenanceadmin",
+						"reader",
+						"reviewer",
+						"structuremanager"
+					]
+				},
+				"extendedsearch-search-repofile": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"admin",
+						"author",
+						"bot",
+						"commenter",
+						"editor",
+						"maintenanceadmin",
+						"reader",
+						"reviewer",
+						"structuremanager"
+					]
+				},
+				"extendedsearch-search-externalfile": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"admin",
+						"author",
+						"bot",
+						"commenter",
+						"editor",
+						"maintenanceadmin",
+						"reader",
+						"reviewer",
+						"structuremanager"
+					]
+				}
+			},
+			"TagRegistry": {
+				"bs-tagsearch": "BS\\ExtendedSearch\\Tag\\TagSearch"
+			},
+			"StatusCheckProvider": {
+				"bs-extendedsearch": {
+					"class": "\\BS\\ExtendedSearch\\Integration\\BlueSpiceFoundation\\StatusCheckProvider",
+					"services": [ "BSExtendedSearchBackend" ]
+				}
+			}
+		},
+		"BlueSpiceVisualEditorConnector": {
+			"TagDefinitions": [
+				"ext.bluespice.tagsearch.visualEditor"
+			]
+		},
+		"BlueSpiceExtendedSearch": {
+			"Sources": {
+				"wikipage": {
+					"class": "BS\\ExtendedSearch\\Source\\WikiPages",
+					"services": [ "ObjectFactory" ]
+				},
+				"specialpage": {
+					"class": "BS\\ExtendedSearch\\Source\\SpecialPages",
+					"services": [ "ObjectFactory" ]
+				},
+				"repofile": {
+					"class": "BS\\ExtendedSearch\\Source\\RepoFiles",
+					"services": [ "ObjectFactory" ]
+				},
+				"externalfile": {
+					"class": "BS\\ExtendedSearch\\Source\\ExternalFiles",
+					"services": [ "ObjectFactory" ]
+				}
+			},
+			"PluginRegistry": {
+				"context-provider-subpages": {
+					"class": "BS\\ExtendedSearch\\Plugin\\SubpageContextProvider",
+					"services": [ "NamespaceInfo", "TitleFactory" ]
+				},
+				"context-provider-namespace": {
+					"class": "BS\\ExtendedSearch\\Plugin\\NamespaceContextProvider",
+					"services": [ "NamespaceInfo" ]
+				},
+				"context-provider-null": {
+					"class": "BS\\ExtendedSearch\\Plugin\\NullContextProvider"
+				},
+				"shared-index": {
+					"class": "BS\\ExtendedSearch\\Plugin\\SharedIndex",
+					"services": [ "ConfigFactory" ]
+				}
+			},
+			"DefaultResultStructure": {
+				"headerText": "basename",
+				"headerUri": "uri",
+				"source": "source",
+				"secondaryInfos": {
+					"top": {
+						"items": []
+					},
+					"bottom": {
+						"items": [
+							{
+								"name": "typetext"
+							},
+							{
+								"name": "ctime"
+							},
+							{
+								"name": "mtime"
+							}
+						]
+					}
+				},
+				"featured": []
+			},
+			"Icons": {
+				"pdf": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/icon-pdf.png",
+				"docx": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/icon-docx.png",
+				"doc": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/icon-doc.png",
+				"xls": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/icon-xls.png",
+				"xlsx": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/icon-xlsx.png",
+				"ppt": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/icon-ppt.png",
+				"pptx": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/icon-pptx.png",
+				"mp4": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/icon-mp4.png",
+				"default": "/extensions/BlueSpiceExtendedSearch/resources/images/file-icon/default.png",
+				"redirect": "/extensions/BlueSpiceExtendedSearch/resources/images/icon/redirect.png"
+			},
+			"FieldsWithANDFilterEnabled": {
+				"fields": [ "categories" ]
+			},
+			"SpellCheck": {
+				"enabled": true,
+				"suggestField": "suggestions",
+				"replaceThreshold": 0.01,
+				"suggestThreshold": 0.3
+			},
+			"SingleSelectFilters": [
+				"page_language"
+			],
+			"ExternalIndexRegistry": {}
+		},
+		"BlueSpiceTagCloud": {
+			"StoreRegistry": {
+				"searchstats": "\\BS\\ExtendedSearch\\Data\\TagCloud\\Searchstats\\Store"
+			}
+		},
+		"BlueSpiceWikiFarm": {
+			"PostInstanceCreationCommandFactories": {
+				"initbackend": "BS\\ExtendedSearch\\WikiFarm\\CommandDescription\\InitBackend::factory",
+				"rebuildindex": "BS\\ExtendedSearch\\WikiFarm\\CommandDescription\\RebuildIndex::factory"
+			},
+			"PreInstanceDeletionCommandFactories": {
+				"deleteindices": "BS\\ExtendedSearch\\WikiFarm\\CommandDescription\\DeleteIndices::factory"
+			}
+		},
+		"BlueSpicePrivacy": {
+			"Handlers": [
+				"\\BS\\ExtendedSearch\\Privacy\\Handler"
+			]
+		},
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.bluespice.extendedsearch.tagsearch.visualEditor"
+			]
+		},
+		"BlueSpiceExtendedStatistics": {
+			"SnapshotProviders": {
+				"es-searchstats": {
+					"class": "\\BS\\ExtendedSearch\\Statistics\\SnapshotProvider\\SearchStats",
+					"services": [ "DBLoadBalancer" ]
+				}
+			},
+			"Reports": {
+				"es-searchterms": {
+					"class": "\\BS\\ExtendedSearch\\Statistics\\Report\\SearchTerms"
+				}
+			}
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"search": {
+					"class": "\\BS\\ExtendedSearch\\ContentDroplets\\SearchDroplet"
+				}
+			}
+		},
+		"PDFCreator": {
+			"Processors": {
+				"removeTagSearch": {
+					"class": "\\BS\\ExtendedSearch\\Integration\\PDFCreator\\Processor\\RemoveTagSearch"
+				}
+			}
+		}
+	},
+	"GroupPermissions": {
+		"*": {
+			"extendedsearch-search-specialpage": true,
+			"extendedsearch-search-wikipage": true,
+			"extendedsearch-search-repofile": true,
+			"extendedsearch-search-externalfile": true
+		},
+		"user": {
+			"extendedsearch-search-specialpage": true,
+			"extendedsearch-search-wikipage": true,
+			"extendedsearch-search-repofile": true,
+			"extendedsearch-search-externalfile": true
+		},
+		"sysop": {
+			"extendedsearch-search-specialpage": true,
+			"extendedsearch-search-wikipage": true,
+			"extendedsearch-search-repofile": true,
+			"extendedsearch-search-externalfile": true
+		}
+	},
+	"GrantPermissions": {
+		"basic": {
+			"extendedsearch-search-specialpage": true,
+			"extendedsearch-search-wikipage": true,
+			"extendedsearch-search-repofile": true,
+			"extendedsearch-search-externalfile": true
+		}
+	},
+	"AvailableRights": [
+		"extendedsearch-search-specialpage",
+		"extendedsearch-search-wikipage",
+		"extendedsearch-search-repofile",
+		"extendedsearch-search-externalfile"
+	],
+	"MessagesDirs": {
+		"BlueSpiceExtendedSearch": [
+			"i18n"
+		]
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"ExtensionMessagesFiles": {
+		"BlueSpiceExtendedSearchSpecial": "languages/BlueSpiceExtendedSearch.special.alias.php"
+	},
+	"ExtensionFunctions": [
+		"BS\\ExtendedSearch\\Setup::init"
+	],
+	"HookHandlers": {
+		"extendedsearchform": {
+			"class": "BS\\ExtendedSearch\\HookHandler\\SkinSlotNavbarPrimarySearchForm"
+		},
+		"addResources": {
+			"class": "BS\\ExtendedSearch\\Hook\\BeforePageDisplay\\AddResources",
+			"services": [ "NamespaceInfo", "ConfigFactory", "BSExtendedSearch.PluginManager" ]
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "addResources",
+		"LoadExtensionSchemaUpdates": [
+			"BS\\ExtendedSearch\\Hook\\LoadExtensionSchemaUpdates\\AddRelevanceTable::callback",
+			"BS\\ExtendedSearch\\Hook\\LoadExtensionSchemaUpdates\\AddHistoryTable::callback",
+			"BS\\ExtendedSearch\\Hook\\LoadExtensionSchemaUpdates\\AddTraceTable::callback"
+		],
+		"GetPreferences": "BS\\ExtendedSearch\\Hook\\GetPreferences\\AddUserPreferredNamespaces::callback",
+		"NamespaceManager::editNamespace": "\\BS\\ExtendedSearch\\Hook\\NamespaceManagerEditNamespace\\ReindexNamespace::callback",
+		"UserMergeAccountFields": "\\BS\\ExtendedSearch\\Hook\\UserMergeAccountFields\\MergeExtendedSearchDBFields::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": [ "extendedsearchform" ],
+		"MWStakeRunJobsTriggerRegisterHandlers": "\\BS\\ExtendedSearch\\Hook\\MWStakeRunJobsTriggerRegisterHandlers\\RegisterExternalFileUpdater::callback"
+	},
+	"SpecialPages": {
+		"BSSearchCenter": "BS\\ExtendedSearch\\MediaWiki\\Specials\\SearchCenter",
+		"BSSearchAdmin": "BS\\ExtendedSearch\\MediaWiki\\Specials\\SearchAdmin"
+	},
+	"APIModules": {
+		"bs-extendedsearch-query": "BS\\ExtendedSearch\\MediaWiki\\Api\\Query",
+		"bs-extendedsearch-stats": "BS\\ExtendedSearch\\MediaWiki\\Api\\Stats",
+		"bs-extendedsearch-triggerupdate": "BS\\ExtendedSearch\\MediaWiki\\Api\\TriggerUpdate",
+		"bs-extendedsearch-autocomplete": "BS\\ExtendedSearch\\MediaWiki\\Api\\Autocomplete",
+		"bs-extendedsearch-resultrelevance": "BS\\ExtendedSearch\\MediaWiki\\Api\\ResultRelevance",
+		"bs-extendedsearch-type-store": "BS\\ExtendedSearch\\MediaWiki\\Api\\TypeStore"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceExtendedSearch/resources"
+	},
+	"ResourceModules": {
+		"ext.blueSpiceExtendedSearch": {
+			"scripts": [
+				"ext.blueSpiceExtendedSearch.js",
+				"ext.blueSpiceExtendedSearch.utils.js",
+				"bs.extendedSearch/Lookup.js"
+			],
+			"messages": [
+				"bs-extendedsearch-recentlyfound-ignore"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"mediawiki.api",
+				"oojs",
+				"oojs-ui"
+			]
+		},
+		"ext.blueSpiceExtendedSearch.SearchBar": {
+			"packageFiles": [
+				{
+					"name": "searchBarConfig.json",
+					"callback": "\\BS\\ExtendedSearch\\ClientConfig::makeConfigJson"
+				},
+				"ext.blueSpiceExtendedSearch.SearchBar.js"
+			],
+			"styles": [
+				"ext.blueSpiceExtendedSearch.SearchBar.less"
+			],
+			"messages": [
+				"bs-extendedsearch-autocomplete-result-primary-no-results-label",
+				"bs-extendedsearch-autocomplete-result-type",
+				"bs-extendedsearch-autocomplete-result-top-match-label",
+				"bs-extendedsearch-autocomplete-result-secondary-results-label",
+				"bs-extendedsearch-close-search-button-aria-label"
+			],
+			"dependencies": [
+				"oojs-ui-core",
+				"ext.blueSpiceExtendedSearch"
+			]
+		},
+		"ext.blueSpiceExtendedSearch.SearchFieldAutocomplete": {
+			"packageFiles": [
+				"ext.blueSpiceExtendedSearch.Autocomplete.js"
+			],
+			"dependencies": [
+				"ext.blueSpiceExtendedSearch.Autocomplete"
+			]
+		},
+		"ext.blueSpiceExtendedSearch.Autocomplete": {
+			"class": "\\BlueSpice\\ResourceModule\\LessVars",
+			"scripts": [
+				"bs.extendedSearch/mixin/Result.js",
+				"bs.extendedSearch/mixin/ContextOptions.js",
+				"bs.extendedSearch/mixin/QuietSubpage.js",
+				"bs.extendedSearch/widget/autocomplete/AutocompleteResult.js",
+				"bs.extendedSearch/widget/autocomplete/Popup.js",
+				"bs.extendedSearch/Autocomplete.js"
+			],
+			"styles": [
+				"ext.blueSpiceExtendedSearch.Autocomplete.less"
+			],
+			"messages": [
+				"bs-extendedsearch-autocomplete-result-primary-no-results-label",
+				"bs-extendedsearch-autocomplete-result-type",
+				"bs-extendedsearch-autocomplete-result-top-match-label",
+				"bs-extendedsearch-autocomplete-result-secondary-results-label",
+				"bs-extendedsearch-autocomplete-create-page-link",
+				"bs-extendedsearch-autocomplete-modified-time-label",
+				"bs-extendedsearch-autocomplete-popup-quiet-subpage",
+				"bs-extendedsearch-autocomplete-popup-quiet-subpage-clear",
+				"bs-extendedsearch-searchbar-master-filter-tooltip",
+				"bs-extendedsearch-wikipage-title-original",
+				"bs-extendedsearch-recently-found-header",
+				"bs-extendedsearch-autocomplete-header-aria",
+				"bs-extendedsearch-recently-found-header-aria",
+				"bs-extendedsearch-autocomplete-popup-select-announcement",
+				"bs-extendedsearch-autocomplete-popup-primary-results-aria",
+				"bs-extendedsearch-autocomplete-popup-secondary-results-aria",
+				"bs-extendedsearch-autocomplete-popup-redirect-title",
+				"bs-extendedsearch-autocomplete-result-primary-results-label",
+				"bs-extendedsearch-autocomplete-context-options-label"
+			],
+			"dependencies": [
+				"ext.blueSpiceExtendedSearch.SearchBar",
+				"oojs-ui.styles.icons-interactions"
+			]
+		},
+		"ext.blueSpiceExtendedSearch.SearchCenter": {
+			"group": "es-search-center",
+			"scripts": [
+				"bs.extendedSearch/mixin/Result.js",
+				"bs.extendedSearch/mixin/Filter.js",
+				"bs.extendedSearch/widget/AddFilter.js",
+				"bs.extendedSearch/widget/Result.js",
+				"bs.extendedSearch/widget/ResultRedirect.js",
+				"bs.extendedSearch/widget/HitCount.js",
+				"bs.extendedSearch/widget/Spellcheck.js",
+				"bs.extendedSearch/widget/OperatorSuggest.js",
+				"bs.extendedSearch/widget/Filter.js",
+				"bs.extendedSearch/widget/ContextButton.js",
+				"bs.extendedSearch/widget/LoadMoreButton.js",
+				"bs.extendedSearch/dialog/OptionsDialog.js",
+				"bs.extendedSearch/panel/Results.js",
+				"bs.extendedSearch/panel/ResultMessage.js",
+				"bs.extendedSearch/OptionStorage.js",
+				"bs.extendedSearch/panel/Tools.js",
+				"ext.blueSpiceExtendedSearch.SearchCenter.js"
+			],
+			"styles": [
+				"ext.blueSpiceExtendedSearch.SearchCenter.less"
+			],
+			"messages": [
+				"bs-extendedsearch-search-center-hitcount-widget",
+				"bs-extendedsearch-search-center-hitcount-widget-approximately",
+				"bs-extendedsearch-search-center-addfilter-dialog-title",
+				"bs-extendedsearch-search-center-filter-extension-label",
+				"bs-extendedsearch-search-center-filter-tags-label",
+				"bs-extendedsearch-search-center-filter-namespace-label",
+				"bs-extendedsearch-search-center-filter-categories-label",
+				"bs-extendedsearch-search-center-filter-type-label",
+				"bs-extendedsearch-search-center-filter-extension-with-values-label",
+				"bs-extendedsearch-search-center-filter-tags-with-values-label",
+				"bs-extendedsearch-search-center-filter-namespace-with-values-label",
+				"bs-extendedsearch-search-center-filter-categories-with-values-label",
+				"bs-extendedsearch-search-center-filter-type-with-values-label",
+				"bs-extendedsearch-search-center-filter-no-options-label",
+				"bs-extendedsearch-search-center-result-categories-label",
+				"bs-extendedsearch-search-center-result-namespace_text-label",
+				"bs-extendedsearch-search-center-result-sections-label",
+				"bs-extendedsearch-search-center-result-ctime-label",
+				"bs-extendedsearch-search-center-result-mtime-label",
+				"bs-extendedsearch-search-center-result-no-results",
+				"bs-extendedsearch-search-center-pagesize-dialog-title",
+				"bs-extendedsearch-search-center-sort-order-asc",
+				"bs-extendedsearch-search-center-sort-order-desc",
+				"bs-extendedsearch-search-center-options-dialog-title",
+				"bs-extendedsearch-search-center-dialog-button-cancel-label",
+				"bs-extendedsearch-search-center-options-dialog-button-apply-label",
+				"bs-extendedsearch-search-center-options-page-size",
+				"bs-extendedsearch-search-center-options-sort-by",
+				"bs-extendedsearch-search-center-options-sort-order",
+				"bs-extendedsearch-search-center-result-help",
+				"bs-extendedsearch-searchcenter-filter-or-label",
+				"bs-extendedsearch-searchcenter-filter-and-label",
+				"bs-extendedsearch-searchcenter-sort-field-_score",
+				"bs-extendedsearch-searchcenter-sort-field-basename",
+				"bs-extendedsearch-searchcenter-sort-field-mtime",
+				"bs-extendedsearch-searchcenter-sort-field-ctime",
+				"bs-extendedsearch-searchcenter-sort-field-size",
+				"bs-extendedsearch-searchcenter-sort-field-namespace",
+				"bs-extendedsearch-search-center-filter-has-hidden",
+				"bs-extendedsearch-search-center-result-exception",
+				"bs-extendedsearch-search-center-hitcount-replaced",
+				"bs-extendedsearch-search-center-hitcount-suggest",
+				"bs-extendedsearch-loadmore-label",
+				"bs-extendedsearch-loadmore-error",
+				"bs-extendedsearch-filter-label-count-only",
+				"bs-extendedsearch-search-center-result-typetext-label",
+				"bs-extendedsearch-source-type-wikipage-label",
+				"bs-extendedsearch-source-type-specialpage-label",
+				"bs-extendedsearch-source-type-repofile-label",
+				"bs-extendedsearch-source-type-externalfile-label",
+				"bs-extendedsearch-result-relevance-relevant",
+				"bs-extendedsearch-result-relevance-not-relevant",
+				"bs-extendedsearch-search-center-result-redirects-label",
+				"bs-extendedsearch-redirect-target-label",
+				"bs-extendedsearch-search-center-filter-page_language-label",
+				"bs-extendedsearch-search-center-filter-page_language-with-values-label",
+				"bs-extendedsearch-wikipage-title-original",
+				"bs-extendedsearch-search-center-create-page-link",
+				"bs-extendedsearch-filter-add-button-label",
+				"bs-extendedsearch-options-button-label",
+				"bs-extendedsearch-export-button-label",
+				"bs-extendedsearch-search-center-result-file-usage-label",
+				"bs-extendedsearch-suggest-operator",
+				"bs-extendedsearch-remove-button-label"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.blueSpiceExtendedSearch.SearchBar",
+				"oojs-ui.styles.icons-layout"
+			]
+		},
+		"ext.blueSpiceExtendedSearch.SearchAdmin.styles": {
+			"styles": [
+				"ext.blueSpiceExtendedSearch.SearchAdmin.less"
+			]
+		},
+		"ext.blueSpiceExtendedSearch.TagSearch.styles": {
+			"styles": [
+				"ext.blueSpiceExtendedSearch.TagSearch.less"
+			]
+		},
+		"ext.blueSpiceExtendedSearch.TagSearch": {
+			"scripts": "ext.blueSpiceExtendedSearch.TagSearch.js",
+			"styles": "ext.blueSpiceExtendedSearch.contentdroplets.css",
+			"dependencies": [
+				"ext.blueSpiceExtendedSearch.Autocomplete"
+			]
+		},
+		"ext.bluespice.tagsearch.visualEditor": {
+			"scripts": [
+				"bs.extendedSearch/vec/ui/SearchTypeInputWidget.js",
+				"bs.extendedSearch/vec/tag/TagSearchDefinition.js"
+			],
+			"messages": [
+				"bs-extendedsearch-tagsearch-ve-tagsearch-title",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-desc",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-ns",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-ns-help",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-ns-placeholder",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-cat",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-cat-help",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-cat-placeholder",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-placeholder",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-placeholder-help",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-placeholder-placeholder",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-operator",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-operator-help",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-type",
+				"bs-extendedsearch-tagsearch-ve-tagsearch-tb-type-help"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore"
+			]
+		},
+		"ext.bluespice.extendedsearch.collection.searchhistory": {
+			"messages": [
+				"bs-extendedsearch-collection-type-searchhistory",
+				"bs-extendedsearch-collection-var-searchterm",
+				"bs-extendedsearch-collection-var-numbersearched"
+			]
+		},
+		"test.BlueSpiceExtendedSearch": {
+			"scripts": [
+				"tests/qunit/ext.blueSpiceExtendedSearch.utils.test.js",
+				"tests/qunit/bs.extendedSearch.Lookup.test.js"
+			],
+			"dependencies": [
+				"ext.blueSpiceExtendedSearch"
+			],
+			"localBasePath": "",
+			"remoteExtPath": "BlueSpiceExtendedSearch"
+		},
+		"ext.bluespice.extendedsearch.statistics": {
+			"scripts": [
+				"statistics/SearchTermsReport.js"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			],
+			"messages": [
+				"bs-extendedsearch-statistics-report-search-terms",
+				"bs-extendedsearch-statistics-report-search-terms-axis-label"
+			]
+		},
+		"ext.bluespice.extendedsearch.searchform": {
+			"scripts": [
+				"ext.blueSpiceExtendedSearch.Searchform.js"
+			],
+			"styles": [
+				"ext.blueSpiceExtendedSearch.searchform.css"
+			]
+		}
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"ESBackendClass": {
+			"value": "\\BS\\ExtendedSearch\\Backend"
+		},
+		"ESBackendHost": {
+			"value": "127.0.0.1"
+		},
+		"ESBackendPort": {
+			"value": "9200"
+		},
+		"ESBackendTransport": {
+			"value": "https"
+		},
+		"ESBackendUsername": {
+			"value": ""
+		},
+		"ESBackendPassword": {
+			"value": ""
+		},
+		"ESEnableSearchHistoryTracking": {
+			"value": true
+		},
+		"ESExternalFilePaths": {
+			"descriptionmsg": "bs-extendedsearch-external-file-paths-desc",
+			"public": true,
+			"value": {}
+		},
+		"ExtendedSearchExternalFilePathsExcludes": {
+			"descriptionmsg": "bs-extendedsearch-pref-external-file-paths-excludes",
+			"public": true,
+			"value": {}
+		},
+		"ESSearchCenterDefaultFilters": {
+			"descriptionmsg": "bs-extendedsearch-default-filters-desc",
+			"public": true,
+			"value": [ "namespace", "categories" ]
+		},
+		"ESAutoSetLangFilter": {
+			"descriptionmsg": "bs-extendedsearch-auto-set-lang-filter-desc",
+			"public": true,
+			"value": false
+		},
+		"ESWildcardingOperators": {
+			"public": false,
+			"value": [ "+", "|", "*", "(", ")", "~", " -" ]
+		},
+		"ESWildcardingSeparators": {
+			"public": false,
+			"value": [ ",", ".", ";", "_" ]
+		},
+		"ESRecentBoostFactor": {
+			"description": "Value must be between 0 and 1. If set to 1, very recent pages will almost double their score",
+			"public": false,
+			"value": "0.5"
+		},
+		"ESMatchPercentBoostFactor": {
+			"description": "How much to boost the result based on the percent of its title taken up by the search term. Set to 0 to disable",
+			"public": false,
+			"value": "0.5"
+		},
+		"ESMatchPercentTitleField": {
+			"description": "Field on which to base the match percent boosting. If empty, default title field of the source will be used",
+			"public": false,
+			"value": ""
+		},
+		"ESExcludeNamespaces": {
+			"description": "Namespaces to exclude from search. Add to `autocomplete` array to exclude from AC only, or to `search` array as well to exclude from both AC and fulltext",
+			"public": false,
+			"value": {
+				"autocomplete": [ 6, 7 ],
+				"search": []
+			}
+		},
+		"ESSourceConfig": {
+			"value": {
+				"wikipage": {
+					"skip_namespaces": [ 8, 9 ]
+				},
+				"repofile": {
+					"extension_blacklist": [ "mp4" ],
+					"max_size": 20000000
+				},
+				"externalfile": {
+					"extension_blacklist": [ "mp4" ],
+					"max_size": 20000000
+				}
+			},
+			"public": false
+		},
+		"ESUseSharedUploads": {
+			"description": "If `$wgUseSharedUploads` is set to true, this setting will allow to search for files in the shared upload directory",
+			"value": false
+		},
+		"ESSharedUploadsIndexPrefix": {
+			"description": "Prefix for the search index in the shared uploads wiki",
+			"value": false
+		},
+		"TagSearchSearchFieldTemplatePath": {
+			"value": "/resources/templates",
+			"path": true
+		},
+		"ESAllowIndexingDocumentsWithoutContent": {
+			"value": true
+		},
+		"ESAutoRecognizeSubpages": {
+			"description": "If true, search for subpages will automatically be recognized and filters adjusted",
+			"value": true
+		},
+		"ESSearchInRawWikitext": {
+			"value": true
+		},
+		"ESLookupModifierRegExPatterns": {
+			"value": [
+				"[0-9]{2}\\-[0-9]{2}\\-[0-9]{4}",
+				"[0-9]{4}\\-[0-9]{2}\\-[0-9]{2}",
+				"[0-9]{2}\\-[0-9]{4}\\-[0-9]{2}",
+
+				"[0-9]{2}\\/[0-9]{2}\\/[0-9]{4}",
+				"[0-9]{4}\\/[0-9]{2}\\/[0-9]{2}",
+				"[0-9]{2}\\/[0-9]{4}\\/[0-9]{2}",
+
+				"[0-9]{2}\\.[0-9]{2}\\.[0-9]{4}",
+				"[0-9]{4}\\.[0-9]{2}\\.[0-9]{2}",
+				"[0-9]{2}\\.[0-9]{4}\\.[0-9]{2}",
+
+				"[0-9]{2}\\\\[0-9]{2}\\\\[0-9]{4}",
+				"[0-9]{4}\\\\[0-9]{2}\\\\[0-9]{2}",
+				"[0-9]{2}\\\\[0-9]{4}\\\\[0-9]{2}",
+
+				"[0-9]{1}\\-[0-9]{2}\\-[0-9]{4}",
+				"[0-9]{4}\\-[0-9]{2}\\-[0-9]{1}",
+				"[0-9]{1}\\-[0-9]{4}\\-[0-9]{2}",
+				"[0-9]{4}\\-[0-9]{1}\\-[0-9]{2}",
+				"[0-9]{2}\\-[0-9]{4}\\-[0-9]{1}",
+				"[0-9]{2}\\-[0-9]{1}\\-[0-9]{4}",
+
+				"[0-9]{1}\\/[0-9]{2}\\/[0-9]{4}",
+				"[0-9]{4}\\/[0-9]{2}\\/[0-9]{1}",
+				"[0-9]{1}\\/[0-9]{4}\\/[0-9]{2}",
+				"[0-9]{4}\\/[0-9]{1}\\/[0-9]{2}",
+				"[0-9]{2}\\/[0-9]{4}\\/[0-9]{1}",
+				"[0-9]{2}\\/[0-9]{1}\\/[0-9]{4}",
+
+				"[0-9]{1}\\.[0-9]{2}\\.[0-9]{4}",
+				"[0-9]{4}\\.[0-9]{2}\\.[0-9]{1}",
+				"[0-9]{1}\\.[0-9]{4}\\.[0-9]{2}",
+				"[0-9]{4}\\.[0-9]{1}\\.[0-9]{2}",
+				"[0-9]{2}\\.[0-9]{4}\\.[0-9]{1}",
+				"[0-9]{2}\\.[0-9]{1}\\.[0-9]{4}",
+
+				"[0-9]{1}\\\\[0-9]{2}\\\\[0-9]{4}",
+				"[0-9]{4}\\\\[0-9]{2}\\\\[0-9]{1}",
+				"[0-9]{1}\\\\[0-9]{4}\\\\[0-9]{2}",
+				"[0-9]{4}\\\\[0-9]{1}\\\\[0-9]{2}",
+				"[0-9]{2}\\\\[0-9]{4}\\\\[0-9]{1}",
+				"[0-9]{2}\\\\[0-9]{1}\\\\[0-9]{4}",
+
+				"[0-9]{2}\\-[0-9]{2}\\-[0-9]{2}",
+				"[0-9]{2}\\/[0-9]{2}\\/[0-9]{2}",
+				"[0-9]{2}\\.[0-9]{2}\\.[0-9]{2}",
+				"[0-9]{2}\\\\[0-9]{2}\\\\[0-9]{2}",
+
+				"[0-9]{1}\\-[0-9]{1}\\-[0-9]{4}",
+				"[0-9]{4}\\-[0-9]{1}\\-[0-9]{1}",
+				"[0-9]{1}\\-[0-9]{4}\\-[0-9]{1}",
+
+				"[0-9]{1}\\/[0-9]{1}\\/[0-9]{4}",
+				"[0-9]{4}\\/[0-9]{1}\\/[0-9]{1}",
+				"[0-9]{1}\\/[0-9]{4}\\/[0-9]{1}",
+
+				"[0-9]{1}\\.[0-9]{1}\\.[0-9]{4}",
+				"[0-9]{4}\\.[0-9]{1}\\.[0-9]{1}",
+				"[0-9]{1}\\.[0-9]{4}\\.[0-9]{1}",
+
+				"[0-9]{1}\\\\[0-9]{1}\\\\[0-9]{4}",
+				"[0-9]{4}\\\\[0-9]{1}\\\\[0-9]{1}",
+				"[0-9]{1}\\\\[0-9]{4}\\\\[0-9]{1}",
+
+				"[0-9]{1}\\-[0-9]{1}\\-[0-9]{2}",
+				"[0-9]{2}\\-[0-9]{1}\\-[0-9]{1}",
+				"[0-9]{1}\\-[0-9]{2}\\-[0-9]{1}",
+
+				"[0-9]{1}\\/[0-9]{1}\\/[0-9]{2}",
+				"[0-9]{2}\\/[0-9]{1}\\/[0-9]{1}",
+				"[0-9]{1}\\/[0-9]{2}\\/[0-9]{1}",
+
+				"[0-9]{1}\\.[0-9]{1}\\.[0-9]{2}",
+				"[0-9]{2}\\.[0-9]{1}\\.[0-9]{1}",
+				"[0-9]{1}\\.[0-9]{2}\\.[0-9]{1}",
+
+				"[0-9]{1}\\\\[0-9]{1}\\\\[0-9]{2}",
+				"[0-9]{2}\\\\[0-9]{1}\\\\[0-9]{1}",
+				"[0-9]{1}\\\\[0-9]{2}\\\\[0-9]{1}",
+
+				"[0-9]{2}\\-[0-9]{4}",
+				"[0-9]{2}\\/[0-9]{4}",
+				"[0-9]{2}\\.[0-9]{4}",
+				"[0-9]{2}\\\\[0-9]{4}",
+
+				"[0-9]{4}\\-[0-9]{2}",
+				"[0-9]{4}\\/[0-9]{2}",
+				"[0-9]{4}\\.[0-9]{2}",
+				"[0-9]{4}\\\\[0-9]{2}",
+
+				"[0-9]{2}\\-[0-9]{2}",
+				"[0-9]{2}\\/[0-9]{2}",
+				"[0-9]{2}\\.[0-9]{2}",
+				"[0-9]{2}\\\\[0-9]{2}"
+			]
+		},
+		"ESOfferOperatorSuggestion": {
+			"value": true
+		},
+		"ESEnableTypeFilter": {
+			"value": true
+		},
+		"ESSubpageMasterFilterPatterns": {
+			"description": "List of regexes specifying pattern of page names on which to turn this feature on",
+			"value": []
+		},
+		"ESSubpageMasterFilterUseRootOnly": {
+			"description": "Whether to use the whole name of the current page or just the root part",
+			"value": true
+		},
+		"ESDefaultSearchOperator": {
+			"value": "AND"
+		},
+		"ESIndexPrefix": {
+			"description": "Which prefix to use on the index names. Will use `WikiMap::getCurrentWikiId()` if empty.",
+			"value": ""
+		}
+	},
+	"callback": "\\BS\\ExtendedSearch\\Setup::onRegistration",
+	"JobClasses": {
+		"updateWikiPageIndex": "BS\\ExtendedSearch\\Source\\Job\\UpdateWikiPage",
+		"updateSpecialPageIndex": "BS\\ExtendedSearch\\Source\\Job\\UpdateSpecialPage",
+		"updateRepoFileIndex": "BS\\ExtendedSearch\\Source\\Job\\UpdateRepoFile",
+		"updateExternalFileIndex": "BS\\ExtendedSearch\\Source\\Job\\UpdateExternalFile",
+		"updateLinkedFileIndex": "BS\\ExtendedSearch\\Source\\Job\\UpdateLinkedFile"
+	},
+	"AutoloadNamespaces": {
+		"BS\\ExtendedSearch\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BS\\ExtendedSearch\\Tests\\": "tests/phpunit/"
+	},
+	"RestRoutes": [
+		{
+			"method": "POST",
+			"path": "/bluespice/extendedsearch/track",
+			"class": "BS\\ExtendedSearch\\MediaWiki\\Rest\\InsertSearchTraceHandler",
+			"services": [ "BSExtendedSearchTracker" ]
+		},
+		{
+			"method": "DELETE",
+			"path": "/bluespice/extendedsearch/track",
+			"class": "BS\\ExtendedSearch\\MediaWiki\\Rest\\RemoveSearchTraceHandler",
+			"services": [ "BSExtendedSearchTracker" ]
+		},
+		{
+			"path": "/bluespice/extendedsearch/recentlyfound",
+			"class": "BS\\ExtendedSearch\\MediaWiki\\Rest\\RecentlyFoundHandler",
+			"services": [ "BSExtendedSearchTracker", "LinkRenderer" ]
+		}
+	],
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

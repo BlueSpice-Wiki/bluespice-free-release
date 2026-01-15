@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion",
+			"Samflint",
+			"Vlad5250",
+			"Пан Хаунд"
+		]
+	},
+	"bs-qr-code-extension-description": "Показує на панелі інструментів QR-код з посиланням на поточну сторінку.",
+	"bs-qr-code-action-qr-code-title": "Відкрити діалогове вікно з QR-кодом",
+	"bs-qr-code-action-qr-code-text": "QR-код",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-код",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-код для $1",
+	"bs-qr-code-api-no-page": "Параметр 'сторінка' порожній",
+	"apihelp-bs-qr-code-summary": "Отримати QR-код як URI даних base64 для сторінки",
+	"apihelp-bs-qr-code-param-revid": "Ідентифікатор редакції сторінки для створення постійного посилання",
+	"apihelp-bs-qr-code-param-page": "Назва сторінки для створення URI даних base64",
+	"apihelp-bs-qr-code-param-size": "Розмір QR-коду"
+}

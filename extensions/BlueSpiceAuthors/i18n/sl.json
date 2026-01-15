@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-authors-desc": "Prikaže sliko profila avtorjev strani",
+	"prefs-authors": "Avtorji te strani",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Avtor}}|{{GENDER:$2|Avtorji|Avtorice|Avtorji_ice}}}}",
+	"bs-authors-profileimage": "Slika profila",
+	"bs-authors-profileimage-change": "Spremeni sliko profila",
+	"bs-authors-show-all-authors": "Na voljo je več avtorjev",
+	"bs-authors-navigation-link-title": "Avtorji te strani",
+	"bs-authors-navigation-link-text": "Avtorji",
+	"apihelp-bs-pageauthors-store-summary": "Navede vse avtorje strani, podane v kontekstu",
+	"bs-authors-info-dialog": "Avtorji te strani",
+	"bs-authors-info-dialog-grid-column-author": "Avtor",
+	"bs-authors-info-dialog-grid-column-type": "Tip avtorja"
+}

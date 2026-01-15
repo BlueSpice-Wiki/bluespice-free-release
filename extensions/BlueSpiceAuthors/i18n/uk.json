@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andriykopanytsia",
+			"Base",
+			"DDPAT",
+			"Ice bulldog",
+			"Piramidion",
+			"Ата"
+		]
+	},
+	"bs-authors-desc": "Відображає зображення профілів для авторів сторінки",
+	"prefs-authors": "Автори цієї сторіки",
+	"bs-authors-title": "{{GENDER:$2|Автор{{PLURAL:$1||ів|и}}}}",
+	"bs-authors-profileimage": "Зображення профілю",
+	"bs-authors-profileimage-change": "Змінити зображення профілю",
+	"bs-authors-show-all-authors": "Доступно більше авторів",
+	"bs-authors-navigation-link-title": "Автори цієї сторінки",
+	"bs-authors-navigation-link-text": "Автори",
+	"apihelp-bs-pageauthors-store-summary": "Перелічити всіх авторів сторінки, поданої в контексті",
+	"bs-authors-info-dialog": "Автори цієї сторінки"
+}

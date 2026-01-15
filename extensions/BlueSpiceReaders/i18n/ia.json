@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-readers-desc": "Crea un lista de personas que ha legite un pagina",
+	"prefs-readers": "Lectores",
+	"bs-readers-title": "Lector{{PLURAL:$1|{{GENDER:$2|}}|es}}",
+	"readers-user": "Paginas legite per: $1",
+	"readers": "Lectores de \"$1\"",
+	"bs-readers-contentactions-label": "Monstrar lectores",
+	"bs-readers-pagenotexists": "Pagina non existe.",
+	"bs-readers-pref-active": "Activar lectores",
+	"bs-readers-emptyinput": "Nulle pagina ha essite indicate.",
+	"bs-readers-header-username": "Nomine de usator",
+	"bs-readers-header-readerspath": "Lector",
+	"bs-readers-header-ts": "Data",
+	"bs-readers-header-page": "Pagina",
+	"apihelp-bs-readers-data-store-summary": "Obtener informationes sur le lectores de un pagina specific.",
+	"apihelp-bs-readers-users-store-summary": "Obtener tote le informationes sur le lectores de un pagina specific.",
+	"apihelp-bs-readers-page-readers-store-summary": "Obtener tote le informationes sur le lectores de tote le paginas.",
+	"apihelp-bs-readers-revision-readers-store-summary": "Obtener tote le informationes sur le lectores de tote le paginas.",
+	"apihelp-bs-readers-tasks-summary": "Forni operationes commun pro Readers",
+	"action-viewreaders": "vider le lectores de paginas",
+	"action-viewrevisionreaders": "vider le lectores de versiones individual de un pagina",
+	"right-viewreaders": "Vider le lectores de un pagina",
+	"right-viewrevisionreaders": "Vider le lectores de versiones individual de un pagina",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Tu}} ha legite le pagina $1 a $2",
+	"bs-readers-header-read-by": "Legite per",
+	"bs-readers-header-revision-id": "ID del version",
+	"bs-readers-header-revision-date": "Data del version",
+	"bs-readers-header-read-on": "Legite le",
+	"revisionreaders": "Lectores per version de \"$1\"",
+	"bs-readers-info-dialog": "Lectores de iste pagina",
+	"bs-readers-info-dialog-column-readers": "Lectores",
+	"bs-readers-permission-error": "Error de permission"
+}

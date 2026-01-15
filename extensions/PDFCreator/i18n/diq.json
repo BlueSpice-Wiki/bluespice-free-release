@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirzali"
+		]
+	},
+	"pdfcreator-tab-panel-header-label": "Serek",
+	"pdfcreator-tab-panel-body-label": "Zerrek",
+	"pdfcreator-pdf-export-time": "Teberdayış",
+	"pdfcreator-pdf-param-currentpagenumber-label": "Pele",
+	"pdfcreator-editor-action-save-label": "Qeyd ke",
+	"pdfcreator-editor-action-help-label": "Peşti",
+	"pdfcreator-export-mode-page-label": "Pele",
+	"pdfcreator-dialog-export-title": "Teberdayış",
+	"pdfcreator-dialog-export-action-export-label": "Teberdayış",
+	"pdfcreator-dialog-export-mode-selection-label": "Mod",
+	"pdfcreator-dialog-export-template-selection-label": "Şablon",
+	"pdfcreator-export-pdf-inspector-title": "Teberdayış",
+	"pdfcreator-export-pdf-inspector-page-layout-label": "Sernameyê pele",
+	"pdfcreator-help-table-column-param-key": "Parametre",
+	"pdfcreator-help-table-column-param-desc": "Şınasnayış",
+	"pdfcreator-template-edit-dlg-action-next": "Bahdoyên",
+	"pdfcreator-template-edit-dlg-action-save": "Qeyd ke",
+	"pdfcreator-template-edit-dlg-action-upload": "Bar ke",
+	"pdfcreator-template-edit-dlg-action-back": "Peyser",
+	"pdfcreator-template-edit-dlg-general-size-label": "Ebadê pele",
+	"pdfcreator-template-edit-dlg-header-label": "Serek",
+	"pdfcreator-template-duplicate-dlg-action-copy": "Kopya ke",
+	"pdfcreator-template-delete-dlg-action-delete": "Bestere",
+	"pdfcreator-panel-templates-overview-column-templates-label": "Şabloni",
+	"pdfcreator-panel-templates-overview-column-edit-label": "Bıvurne",
+	"pdfcreator-panel-templates-overview-column-copy-label": "Kopya ke",
+	"pdfcreator-panel-templates-overview-column-delete-label": "Bestere",
+	"pdfcreator-template-edit-source-dlg-action-edit": "Çımeyi bıvurne"
+}

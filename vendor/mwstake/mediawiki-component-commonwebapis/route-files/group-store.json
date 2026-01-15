@@ -1,0 +1,11 @@
+[
+	{
+		"path": "/mws/v1/group-store",
+		"class": "MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Rest\\GroupStore",
+		"services": [
+			"HookContainer",
+			"MWStakeCommonUtilsFactory",
+			"MWStakeCommonUtilsConfig"
+		]
+	}
+]

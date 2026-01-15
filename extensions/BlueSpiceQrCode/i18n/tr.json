@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Can",
+			"Hedda"
+		]
+	},
+	"bs-qr-code-extension-description": "Araç çubuğundaki geçerli sayfaya bağlantı içeren bir QR kodu görüntüler.",
+	"bs-qr-code-action-qr-code-title": "QR kod ile diyalog aç",
+	"bs-qr-code-action-qr-code-text": "QR kodu",
+	"bs-qr-code-action-qr-code-dialog-title": "QR kodu",
+	"bs-qr-code-action-qr-code-dialog-alt": "$1 için QR Kodu",
+	"bs-qr-code-api-no-page": "'page' parametresi boş",
+	"apihelp-bs-qr-code-param-size": "QR kod boyutu",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Varsayılan API çağrısı"
+}

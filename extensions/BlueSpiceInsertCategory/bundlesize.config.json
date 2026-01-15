@@ -1,0 +1,10 @@
+[
+	{
+		"resourceModule": "ext.bluespice.insertcategory.discovery.styles",
+		"maxSize": "0.5 kB"
+	},
+	{
+		"resourceModule": "ext.bluespice.insertcategory.editor.dialog.bootstrap",
+		"maxSize": "0.4 kB"
+	}
+]

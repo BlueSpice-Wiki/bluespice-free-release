@@ -1,0 +1,123 @@
+{
+	"name": "BlueSpiceRSSFeeder",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceRSSFeeder",
+	"author": "Sebastian Ulbricht",
+	"descriptionmsg": "bs-rssfeeder-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceRSSFeeder": {
+					"className": "\\BlueSpice\\RSSFeeder\\Extension",
+					"extPath": "/BlueSpiceRSSFeeder"
+				}
+			},
+			"ConfigDefinitionRegistry": {
+				"RSSUrlWhitelist": "BlueSpice\\RSSFeeder\\ConfigDefinition\\URLWhitelist::getInstance",
+				"RSSUrlNumberOfAllowedRedirects": "BlueSpice\\RSSFeeder\\ConfigDefinition\\MaxRedirects::getInstance"
+			}
+		},
+		"BlueSpiceRSSFeeder": {
+			"Feeds": {
+				"recentchanges": "BlueSpice\\RSSFeeder\\RSSFeed\\RecentChanges::factory",
+				"followOwn": "BlueSpice\\RSSFeeder\\RSSFeed\\FollowOwn::factory",
+				"followPage": "BlueSpice\\RSSFeeder\\RSSFeed\\FollowPage::factory",
+				"namespace": "BlueSpice\\RSSFeeder\\RSSFeed\\NamespaceFeed::factory",
+				"category": "BlueSpice\\RSSFeeder\\RSSFeed\\Category::factory",
+				"watchlist": "BlueSpice\\RSSFeeder\\RSSFeed\\Watchlist::factory"
+			}
+		}
+	},
+	"SpecialPages": {
+		"RSSFeeder": "BlueSpice\\RSSFeeder\\Special\\RSSFeeder"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"APIModules": {
+		"bs-rssfeeder-tasks": "BSApiTasksRSSFeeder",
+		"bs-rss-standards-pages-store": "ApiRSSStandardsPagesStore"
+	},
+	"MessagesDirs": {
+		"BlueSpiceRSSFeeder": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"BlueSpiceRSSFeederAlias": "languages/SpecialRSSFeeder.alias.php"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\RSSFeeder\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\RSSFeeder\\Tests\\": "tests/phpunit"
+	},
+	"AutoloadClasses": {
+		"RSSCreator": "includes/RSSCreator.class.php",
+		"RSSItemCreator": "includes/RSSItemCreator.php",
+		"BSApiTasksRSSFeeder": "includes/api/BSApiTasksRSSFeeder.php",
+		"ApiRSSStandardsPagesStore": "includes/api/ApiRSSStandardsPagesStore.php",
+		"RSSAuthenticator": "includes/RSSAuthenticator.php"
+	},
+	"ResourceModules": {
+		"ext.bluespice.rssfeeder.styles": {
+			"styles": [
+				"ext.bluespice.rssfeeder.css"
+			]
+		},
+		"ext.bluespice.rssfeeder.specialRSSFeeder": {
+			"scripts": [
+				"ext.bluespice.rssfeeder.specialRSSFeeder.js",
+				"ui/panel/SpecialRSSFeederPanel.js"
+			],
+			"messages": [
+				"bs-rssfeeder-pagetext",
+				"bs-rssfeeder-recent-changes",
+				"bs-rssstandards-desc-rc",
+				"bs-rssfeeder-rcunique-checkbox",
+				"bs-rssfeeder-submit",
+				"bs-rssstandards-title-own",
+				"bs-rssstandards-desc-own",
+				"bs-rssstandards-title-page",
+				"bs-rssstandards-desc-page",
+				"bs-ns",
+				"bs-rssstandards-desc-ns",
+				"bs-rssstandards-title-cat",
+				"bs-rssstandards-desc-cat",
+				"bs-rssstandards-title-watch",
+				"bs-rssstandards-desc-watch",
+				"bs-rssstandards-link-text-watch"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceRSSFeeder/resources"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"RSSUrlNumberOfAllowedRedirects": {
+			"value": 0
+		},
+		"RSSUrlWhitelist": {
+			"value": []
+		}
+	},
+	"Hooks": {
+		"TitleReadWhitelist": "\\BlueSpice\\RSSFeeder\\Hook\\TitleReadWhitelist\\AddRSSFeeder::callback"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

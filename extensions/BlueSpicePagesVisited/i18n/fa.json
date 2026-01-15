@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alirezaaa",
+			"Beginneruser",
+			"Jeeputer"
+		]
+	},
+	"bs-pagesvisited-desc": "یک فهرست شخصی از آخرین صفحات بازدیدشده فراهم می‌کند",
+	"prefs-pagesvisited": "صفحه‌های بازدیدشده",
+	"bs-pagesvisited-widget-title": "صفحه‌های بازدیدشده",
+	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|فضای نام|فضاهای نام}} <code>$2</code> داده‌شده معتبر {{PLURAL:$1|نیست|نیستند}}.",
+	"bs-pagesvisited-pref-widgetlimit": "محدودیت ورودی‌ها:",
+	"bs-pagesvisited-pref-widgetns": "فضاهای نام:",
+	"bs-pagesvisited-pref-widgetsortodr": "ترتیب بر پایه:",
+	"bs-pagesvisited-pref-sort-time": "زمان",
+	"bs-pagesvisited-pref-sort-pagename": "عنوان",
+	"bs-pagesvisited-tag-pagesvisited-desc": "فهرستی از صفحاتی که اخیراً بازدید کردید را نشان می‌دهد. این فهرست می‌تواند با استفاده از پارامترها محدود شود.",
+	"bs-pagesvisited-ve-pagesvisited-title": "صفحه‌های بازدیدشده",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "شمار",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "بیشینهٔ طول عنوان",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "مرتب‌سازی",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "فضاهای نام",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "زمان",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "نام صفحه"
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sveinn í Felli"
+		]
+	},
+	"bs-discovery-enhanced-mediawiki-sidebar-field-page": "Síða",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-href": "Vefslóð",
+	"menueditor-ui-enhanced-sidebar-internal-link-label-edit": "Innri tengill",
+	"menueditor-ui-enhanced-sidebar-external-link-label-edit": "Ytri tengill",
+	"menueditor-ui-enhanced-sidebar-subpage-tree-label-edit": "Undirsíðugreinar",
+	"bs-discovery-enhanced-mediawiki-sidebar-show-for-groups-text": "Sýna fyrir hópa",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-heading": "Fyrirsagnartexti",
+	"bs-discovery-enhanced-mediawiki-sidebar-add-new-panel-button-label": "Bæta við nýju spjaldi"
+}

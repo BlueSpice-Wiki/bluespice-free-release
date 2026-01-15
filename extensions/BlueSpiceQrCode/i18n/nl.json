@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elroy",
+			"HanV",
+			"McDutchie",
+			"Nickthijssen1994",
+			"Romaine"
+		]
+	},
+	"bs-qr-code-extension-description": "Deze uitbreiding geeft een QR-code met een koppeling weer in de taakbalk van de huidige pagina.",
+	"bs-qr-code-action-qr-code-title": "Dialoogvenster openen met QR-code",
+	"bs-qr-code-action-qr-code-text": "QR-code",
+	"bs-qr-code-action-qr-code-dialog-title": "QR-code",
+	"bs-qr-code-action-qr-code-dialog-alt": "QR-code voor $1",
+	"bs-qr-code-api-no-page": "Parameter 'page' leeg",
+	"apihelp-bs-qr-code-summary": "QR-code ontvangen als base64-gegevens-URI voor een pagina",
+	"apihelp-bs-qr-code-param-revid": "Versie-ID van de pagina om een permalink te genereren",
+	"apihelp-bs-qr-code-param-page": "Paginanaam van de pagina om base64-gegevens-URI te genereren",
+	"apihelp-bs-qr-code-param-size": "Grootte van de QR code",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Standaard API-aanroep",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "API-aanroep voor een bepaalde revid",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "API-aanroep met eigen grootte",
+	"bs-qr-code-alt-text": "QR-code voor $1",
+	"bs-qr-code-tag-qrcode-desc": "Sluit een gekoppelde QR-code in op de wikipagina",
+	"bs-qr-code-tag-qrcode-title": "QR-code",
+	"bs-qr-code-tag-attr-page-label": "Pagina",
+	"bs-qr-code-tag-attr-page-help": "Paginanaam die moet worden opgenomen in de QR-codelink. Laat dit veld leeg om de huidige paginanaam te gebruiken",
+	"bs-qr-code-tag-attr-query-label": "Parameter",
+	"bs-qr-code-tag-attr-query-help": "Aanvullende parameters om toe te voegen aan de URL van de QR-code. Dit omvat parameters zoals \"action=edit\" of \"oldid=1\"",
+	"bs-qr-code-tag-attr-desc-label": "Beschrijving",
+	"bs-qr-code-tag-attr-desc-help": "Een aan de QR-code gerelateerde beschrijving. Laat dit veld leeg om alleen de QR-code weer te geven",
+	"bs-qr-code-tag-attr-size-label": "Grootte",
+	"bs-qr-code-tag-attr-size-help": "De grootte van de ingesloten QR-code wijzigen",
+	"bs-qr-code-droplet-name": "QR-code",
+	"bs-qr-code-droplet-desc": "Voegt een QR-code in op een wikipagina",
+	"bs-qr-code-tag-attr-size-option-small": "klein",
+	"bs-qr-code-tag-attr-size-option-medium": "medium",
+	"bs-qr-code-tag-attr-size-option-large": "groot"
+}

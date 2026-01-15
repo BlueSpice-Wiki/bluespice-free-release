@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cakkaparla",
+			"ReyLon Mrat",
+			"YaThaWinTha"
+		]
+	},
+	"bs-discovery-menu-provider-mediawiki-sidebar-label": "မီဒီယာဝီကီး ဘေးဘောင်",
+	"bs-discovery-menu-provider-namespace-mainpage-list-label": "နာမည်ပါရေ အဓိကမျက်နှာစာ စာရင်း",
+	"bs-discovery-menu-provider-subpage-tree-label": "စာမျက်နှာခွဲထားရေသစ်ပင်",
+	"bs-discovery-menu-provider-subpage-tree-desc": "ပင်ပွား အချက်ပြ လက်ရှိစာမျက်မှာ၏ မျက်နှာစာခွဲ",
+	"bs-discovery-subpage-tree-pnl-header-text": "စာမျက်နှာခွဲတိ",
+	"ns-main-label": "စာမျက်နှာတိ",
+	"bs-discovery-enhanced-mediawiki-sidebar-pnl-header-text": "အဓိကမန်နူး"
+}

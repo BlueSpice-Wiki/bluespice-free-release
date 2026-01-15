@@ -1,0 +1,10 @@
+<li{{#id}} id="{{.}}"{{/id}} class="mws-tree-item{{class}}" {{#role}} role="{{.}}"{{/role}}>
+	<div>
+		{{#expandBtn}}<a class="mws-tree-expander{{class}}" role="button" tabindex="0" aria-label="{{text}}"{{#id}} aria-controls="{{.}}-children"{{/id}}{{#hasChildren}} aria-expanded="{{expanded}}" aria-haspopup="true"{{/hasChildren}}></a>{{/expandBtn}}<span id="{{labelId}}" class="mws-tree-item-label{{#isNew}} new{{/isNew}}" tabindex="0">{{{preHtml}}}{{text}}</span>
+	</div>
+	{{#hasChildren}}
+	<ul {{#id}} id="{{.}}-children"{{/id}} class="mws-tree mws-tree-item-children{{#expanded}} show{{/expanded}}" role="tree" aria-labelledby="{{labelId}}" tabindex="0">
+		{{#children}}{{{.}}}{{/children}}
+	</ul>
+	{{/hasChildren}}
+</li>

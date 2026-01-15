@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Namoroka",
+			"Tensama0415",
+			"Ykhwong"
+		]
+	},
+	"bs-articleinfo-desc": "상태 표시줄에 문서에 관한 정보를 제공합니다",
+	"prefs-articleinfo": "문서 정보",
+	"bs-articleinfo-pref-checkrevisioninterval-label": "업데이트 간격(초)",
+	"bs-articleinfo-newrevision-info-text-reload": "이 문서의 새로운 판을 읽을 수 있습니다. 현재 내용을 보려면 문서를 [[:$1|다시 로드]]해 주십시오.",
+	"bs-articleinfo-pref-checkrevisioninterval-help-label": "\"마지막 편집\" 값이 업데이트되는 빈도를 설정합니다. 각 간격마다 문서의 새 개정판이 있는지도 확인합니다."
+}

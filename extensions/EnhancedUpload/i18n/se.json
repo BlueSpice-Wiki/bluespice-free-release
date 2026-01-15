@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
+		]
+	},
+	"enhancedupload-details-namespace-label": "Nammagomuvuohta",
+	"enhancedupload-details-categories-label": "Kategoriijat",
+	"enhancedupload-list-header-filename": "fiilanamma",
+	"enhancedupload-list-header-error": "meattáhus",
+	"enhancedupload-ve-dialog-title": "Vurke fiilla",
+	"enhancedupload-attachments-tag-grid-file-label": "Fiila",
+	"enhancedupload-attachments-tag-grid-category-label": "Kategoriijat",
+	"enhancedupload-attachments-media-dialog-cancel-title": "Gaskkalduhte",
+	"enhancedupload-attachments-media-dialog-add-title": "Lasit",
+	"enhancedupload-attachments-media-dialog-title": "Vállje fiilla",
+	"enhancedupload-ui-action-new-upload-text": "Ođđa fiila",
+	"enhancedupload-ui-action-new-upload-title": "Vurke ođđa fiilla",
+	"enhancedupload-upload-media-dialog-title": "Vurke fiilla",
+	"enhancedupload-upload-media-dialog-cancel-title": "Gaskkalduhte",
+	"enhancedupload-attachments-media-dialog-details-cancel": "Gaskkalduhte",
+	"enhancedupload-ve-attachment-title": "Mildosat",
+	"enhancedupload-ve-attachmentinspector-categories": "Kategoriijat",
+	"enhancedupload-ve-attachmentinspector-grid-version": "Čiega veršuvnna",
+	"enhancedupload-attachments-tag-grid-remove-title": "Sihko",
+	"enhancedupload-droplet-attachments-name": "Mildosat"
+}

@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200",
+			"Nokeoo"
+		]
+	},
+	"bs-countthings-desc": "Suteikia turiniu pagrįstą statistiką",
+	"bs-countthings-chars-label": "Simboliai",
+	"bs-countthings-words-label": "Žodžiai",
+	"bs-countthings-files-label": "Failai",
+	"bs-countthings-pages-label": "Puslapiai",
+	"bs-countthings-ve-countcharacters-title": "Skaičiuoti simbolius",
+	"bs-countthings-ve-countarticles-title": "Skaičiuoti straipsnius",
+	"bs-countthings-ve-countfiles-title": "Skaičiuoti failus",
+	"bs-countthings-ve-countusers-title": "Skaičiuoti naudotojus",
+	"bs-countthings-ve-countthingsinspector-mode": "Rėžimas",
+	"bs-countthings-ve-countcharacters-mode-all": "visi",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "simboliai",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "žodžiai",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "simboliai ir žodžiai",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "puslapiai",
+	"bs-countthings-ve-countcharacters-input-label": "Puslapiai",
+	"bs-countthings-error-no-input": "Puslapis nepateiktas.",
+	"bs-countthings-error-invalid-mode": "Režimas \"$1\" yra negalimas. Prašome naudoti \"chars\", \"words\", ar \"pages\".",
+	"bs-countthings-error-not-exist": "Puslapis \"$1\" neegzistuoja.",
+	"bs-countthings-tag-countarticles-desc": "Rodo viki straipsnių skaičių.",
+	"bs-countthings-tag-countusers-desc": "Rodo prisiregistravusių vartotojų skaičių.",
+	"bs-countthings-tag-countfiles-desc": "Rodo viki failų skaičių.",
+	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: Kas turi būti skaičiuojama <code>chars</code> (simboliai), <code>words</code> (žodžiai) ar <code>pages</code> (puslapiai).",
+	"bs-countthings-droplet-articles-name": "Puslapių skaičius",
+	"bs-countthings-droplet-articles-description": "Rodo puslapių skaičių",
+	"bs-countthings-droplet-characters-name": "Simbolių skaičius",
+	"bs-countthings-droplet-characters-description": "Rodo simbolių arba žodžių skaičių viki puslapyje",
+	"bs-countthings-droplet-files-name": "Failų skaičius",
+	"bs-countthings-droplet-files-description": "Rodo visų įkeltų failų skaičių",
+	"bs-countthings-droplet-user-name": "Naudotojų skaičius",
+	"bs-countthings-droplet-user-description": "Rodo visų naudotojų skaičių"
+}

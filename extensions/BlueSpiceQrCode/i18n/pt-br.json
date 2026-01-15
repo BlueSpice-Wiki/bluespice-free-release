@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Juan90264",
+			"VasbXBR",
+			"YuriNikolai"
+		]
+	},
+	"bs-qr-code-extension-description": "Exibe um código QR com um link para a página atual na barra de ferramentas.",
+	"bs-qr-code-action-qr-code-title": "Abrir caixa de diálogo com código QR",
+	"bs-qr-code-action-qr-code-text": "Código QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Código QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Código QR para $1",
+	"bs-qr-code-api-no-page": "Parâmetro 'page' vazio",
+	"apihelp-bs-qr-code-summary": "Obter código QR como URI de dados base64 para uma página",
+	"apihelp-bs-qr-code-param-revid": "ID de revisão da página para gerar um link permanente",
+	"apihelp-bs-qr-code-param-page": "Nome da página para gerar URI de dados base64",
+	"apihelp-bs-qr-code-param-size": "Tamanho do código QR",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Chamada de API padrão",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Chamada de API para uma determinada revisão",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Chamada de API com tamanho personalizado",
+	"bs-qr-code-tag-qrcode-title": "Código QR",
+	"bs-qr-code-tag-attr-page-label": "Página",
+	"bs-qr-code-tag-attr-query-label": "Parâmetro",
+	"bs-qr-code-tag-attr-desc-label": "Descrição",
+	"bs-qr-code-tag-attr-size-label": "Tamanho",
+	"bs-qr-code-tag-attr-size-option-small": "pequeno",
+	"bs-qr-code-tag-attr-size-option-medium": "médio"
+}

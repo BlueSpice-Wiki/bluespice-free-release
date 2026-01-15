@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamxo",
+			"Harunaningi",
+			"Umar-askirason"
+		]
+	},
+	"bs-insertcategory-edit-dialog-button-tooltip": "Gyara matakin wannan shafin",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Bude bayani ka gyara kategorin wannan shafin",
+	"bs-insertcategory-edit-dialog-title": "Gyara Rukunnai",
+	"bs-insertcategory-edit-dialog-button-submit": "Ya kammala",
+	"bs-insertcategory-edit-dialog-button-cancel": "Gogewa",
+	"bs-insertcategory-edit-dialog-input-label": "Sanya Katigorai",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "chanja rukunai",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Wa'innan rukunnai da baza a samesu a tsakanin rubutun fajin wiki ba. Mafi yawan su an tsara su ne tsakanin samfari.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Rukunnan shafuka baza'a iya maido su ba saboda wasu dalilai."
+}

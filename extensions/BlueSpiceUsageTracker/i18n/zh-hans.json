@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226",
+			"WQL",
+			"佛壁灯"
+		]
+	},
+	"bs-usagetracker-desc": "保留有关扩展使用的统计数据",
+	"apihelp-bs-usagetracker-store-summary": "保留有关扩展使用的统计数据"
+}

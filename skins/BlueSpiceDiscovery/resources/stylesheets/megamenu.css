@@ -1,0 +1,231 @@
+.dropdown.has-megamenu {
+	position: static !important;
+}
+
+.dropdown-menu.megamenu {
+	background-color: transparent;
+	height: 100vh;
+	top: var( --navbar-primary-height );
+	text-align: left;
+	right: 0;
+	width: 100%;
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+	color: var( --mm-primary-fg );
+	hyphens: auto;
+}
+
+.dropdown-menu[ data-bs-popper ].megamenu {
+	margin-top: 0;
+}
+
+.dropdown-menu.megamenu a {
+	background-size: 0 0;
+	padding: 0;
+	color: var( --mm-primary-fg );
+	text-decoration: none;
+}
+
+.dropdown-menu.megamenu ul {
+	margin-left: 0;
+}
+
+.dropdown-menu.megamenu a:hover {
+	color: var( --mm-primary-fg--hover );
+	background: 0;/* not sure if this is needed */
+}
+
+.mega-menu-wrapper {
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow-y: auto;
+	margin: 0;
+	max-height: 100vh;
+}
+
+.mega-menu .mm-edit-link {
+	font-size: 14px;
+	right: 0;
+	top: 1rem;
+	position: absolute;
+	margin-right: 2rem;
+	width: auto;
+	color: inherit;
+}
+
+.mega-menu .mm-edit-link:hover {
+	color: inherit;
+}
+
+.mega-menu .mm-edit-link:focus-visible {
+	outline: 1px solid var( --focus-visible );
+}
+
+.card.mega-menu {
+	background-color: var( --mm-primary-bg );
+	opacity: 1;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	height: fit-content;
+	border: 0;
+	border-radius: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: inset 0 2px 3px -2px var( --navbar-primary-border-color );
+}
+
+.card.card-mn {
+	border: 0;
+	width: max-content;
+	max-width: 30rem;
+	padding: 15px 50px 35px 0;
+	text-align: left;
+	background-color: transparent;
+	display: block;
+	margin-top: 1.5rem;
+	min-height: 450px;
+}
+
+.card-group {
+	justify-content: center;
+}
+
+.card-header.menu-title {
+	color: var( --mm-primary-title-fg );
+	font-size: 1rem;
+	border-bottom: 0.3px solid var( --mm-primary-title-border );
+	background-color: var( --mm-primary-title-bg );
+	padding-left: 0;
+}
+
+.card-header.menu-title:focus-visible {
+	outline: 1px solid var( --focus-visible );
+}
+
+.card-body.menu-card-body {
+	padding-left: 0;
+	border: 0;
+}
+
+.list-group.menu-list {
+	padding: 0;
+	margin-top: 1rem;
+}
+
+.list-group.menu-list li {
+	list-style-type: none;
+	padding-bottom: 5px;
+	border: 0;
+	padding-left: 0;
+	font-size: 15px;
+}
+
+.list-group.menu-list li a:hover {
+	text-decoration: none;
+	color: var( --mm-primary-fg--hover );
+	cursor: pointer;
+}
+
+.list-group.menu-list li a:focus-visible {
+	outline: 1px solid var( --focus-visible );
+}
+
+@media ( min-width: 768px ) {
+	#lang-mm {
+		background-image: url( ../images/translate_24px_menu.svg );
+		background-size: 40vh 40vh;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+
+	#p-tools-megamn {
+		background-image: url( ../images/person-circle.svg );
+		background-size: 30vh 30vh;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+
+	#p-tools {
+		columns: 2;
+		display: block;
+	}
+
+	#p-tools li {
+		display: inline-block;
+		width: 100%;
+	}
+
+	#ga-mm {
+		background-image: url( ../images/gear-fill.svg );
+		background-size: 30vh 30vh;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+
+	#ga-menu-overview,
+	#ga-menu-editing,
+	#ga-menu-administration {
+		columns: 2;
+		display: block;
+	}
+
+	#ga-menu-overview li,
+	#ga-menu-editing li,
+	#ga-menu-administration li {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.dropdown-menu.megamenu .mm-bg {
+		height: 100vh;
+		background-color: var( --mm-primary-separator );
+		opacity: 0.3;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
+
+/* https://getbootstrap.com/docs/5.0/layout/grid/ */
+@media ( max-width: 767.99px ) {
+	.dropdown-menu {
+		overflow-y: auto;
+		max-height: calc( 100vh - calc( 2 * var( --navbar-primary-height ) ) );
+	}
+
+	.dropdown-menu.megamenu {
+		background-color: var( --mm-secondary-bg );
+		top: calc( 2 * var( --navbar-primary-height ) - 0.125rem );
+		width: 100vw;
+	}
+
+	.card.mega-menu {
+		background-color: var( --mm-secondary-bg );
+	}
+
+	.card.card-mn {
+		width: 100%;
+		height: auto;
+		padding: 15px 0 5px 0;
+		float: both;
+		margin: 0 auto;
+	}
+
+	.card-header.menu-title {
+		text-align: center;
+		padding-top: 1.5rem;
+		font-size: 1.5rem;
+		border-bottom: 0.5px solid var( --mm-secondary-border );
+	}
+
+	.menu-list li {
+		background-color: var( --mm-secondary-bg );
+		padding-top: 1rem;
+		text-align: center;
+		line-height: 250%;
+		font-size: 1.5rem;
+	}
+}

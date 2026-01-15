@@ -1,0 +1,4 @@
+The functionality of this extension has moved to core.
+
+The extension now contains class aliases that point to core. The extension can
+be removed once all extensions have been migrated to use the new class names.

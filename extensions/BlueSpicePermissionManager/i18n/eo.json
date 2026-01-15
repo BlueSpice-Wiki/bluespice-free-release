@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirin",
+			"Robin van der Vliet",
+			"Surfo"
+		]
+	},
+	"bs-permissionmanager-btn-save-label": "Konservi",
+	"bs-premissionmanager-reset-button-label": "Rekomencu",
+	"bs-permissionmanager-namespace-picker": "Nomspacoj"
+}

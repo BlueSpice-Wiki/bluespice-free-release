@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Duke of Wikipädia",
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Felipe L. Ewald",
+			"Juan90264",
+			"Mello25",
+			"Re demz",
+			"Wiiformii"
+		]
+	},
+	"bs-watchlist-desc": "Adiciona um widget de páginas vigiadas e etiqueta",
+	"bs-watchlist-pref-sort-time": "Tempo",
+	"bs-watchlist-pref-sort-title": "Título",
+	"bs-watchlist-tag-watchlist-desc": "Mostra os artigos que têm as alterações mais recentes e estão na sua lista de páginas vigiadas.",
+	"bs-watchlist-window-watchlist-title": "Páginas vigiadas",
+	"bs-watchlist-window-watchlist-intro": "Esta é uma visão geral de todas as páginas de sua lista de vigiados. Você também pode mudar para o [[Special:Watchlist|página de lista de vigiados]].",
+	"bs-watchlist-grid-watchlist-column-link-header": "Página",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-header": "Alterações não lidas",
+	"bs-watchlist-grid-watchlist-column-hasunreadchanges-tooltip": "Inspecione as alterações",
+	"bs-watchlist-grid-watchlist-column-istalkpage-header": "Página de discussão",
+	"bs-watchlist-grid-watchlist-label-filter": "Filtrar",
+	"bs-watchlist-ve-watchlistinspector-title": "Páginas vigiadas",
+	"bs-watchlist-ve-watchlist-attr-count-label": "Contagem",
+	"bs-watchlist-tag-watchlist-attr-count-help": "O número de entradas na lista de páginas vigiadas deve ser mostrado",
+	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Comprimento máximo do título",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Número de letras do título que devem ser mostradas. Pode ser um número entre 5 e 500.",
+	"bs-watchlist-ve-watchlist-attr-order-label": "Ordem",
+	"bs-watchlist-tag-watchlist-attr-order-help": "Mostra a lista ordenada por hora ou por nome da página",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "Nome da página",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Tempo",
+	"bs-watchlist-tag-watchlist-no-user": "A lista de páginas vigiadas não pode ser apresentada porque não há nenhum usuário com sessão iniciada",
+	"bs-watchlist-tag-watchlist-no-entries": "Não há alterações nas páginas a mostrar nas páginas vigiadas",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "Ajuda do nome da página",
+	"bs-watchlist-tag-watchlist-attr-time-help": "Ajuda de tempo",
+	"bs-watchlist-droplet-name": "Lista de vigilância",
+	"bs-watchlist-droplet-description": "Últimas mundaças das páginas incluída na lista de vigilância"
+}

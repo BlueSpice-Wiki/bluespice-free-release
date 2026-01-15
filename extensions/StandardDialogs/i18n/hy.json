@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac"
+		]
+	},
+	"standarddialogs-copy-btn": "Պատճենել",
+	"standarddialogs-copy-page-legend": "Պատճենել",
+	"standarddialogs-page-info-close": "Փակել",
+	"standarddialogs-page-info-general": "Ընդհանուր",
+	"standarddialogs-page-info-history": "Վերջին խմբագրում",
+	"standarddialogs-page-info-page-language": "Լեզու",
+	"standarddialogs-page-info-page-watch": "Դիտողների քանակ",
+	"standarddialogs-page-info-page-redirects": "Վերահղումներ",
+	"standarddialogs-page-info-page-last-edit": "Վերջին խմբագրում",
+	"standarddialogs-page-info-page-last-editor": "Վերջին խմբագրող",
+	"standarddialogs-page-info-page-templates": "Կաղապարներ",
+	"standarddialogs-page-info-page-categories": "Կատեգորիաներ",
+	"standarddialogs-page-info-page-internal": "Ներքին հղումներ",
+	"standarddialogs-page-info-page-external": "Արտաքին հղումներ",
+	"standarddialogs-page-info-page-images": "Պատկերներ",
+	"standarddialogs-new-page-title": "Ստեղծել նոր էջ",
+	"standarddialogs-create-button-new-page-text": "Նոր էջ",
+	"standarddialogs-create-button-new-subpage-text": "Նոր ենթաէջ",
+	"standarddialogs-create-button-new-subpage-title": "Ստեղծել նոր ենթաէջ",
+	"standarddialogs-delete-btn": "Ջնջել",
+	"standarddialogs-move-btn": "Տեղափոխել",
+	"standarddialogs-protect-btn": "Պաշտպանել",
+	"standarddialogs-purge-btn": "Թարմացնել",
+	"standarddialogs-purge-title": "Թարմացնել «$1» էջը",
+	"standarddialogs-btn-done": "Արված է",
+	"standarddialogs-btn-cancel": "Չեղարկել"
+}

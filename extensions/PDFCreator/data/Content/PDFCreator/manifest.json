@@ -1,0 +1,16 @@
+{
+	"MediaWiki:PDFCreator": {
+		"lang": "en",
+		"target_title": "MediaWiki:PDFCreator",
+		"content_path": "/PDFCreator.wiki",
+		"sha1": "6cf25f131d9db43acd6b44b8f10b68dc1d2429ab",
+		"old_sha1": []
+	},
+	"MediaWiki:PDFCreator DE": {
+		"lang": "de",
+		"target_title": "MediaWiki:PDFCreator",
+		"content_path": "/PDFCreator.DE.wiki",
+		"sha1": "1d156a064a08750a8cea5d0c38f46bfbe5b3e848",
+		"old_sha1": []
+	}
+}

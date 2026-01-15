@@ -1,0 +1,12 @@
+{
+	"name": "Renameuser",
+	"private": true,
+	"scripts": {
+		"test": "grunt test"
+	},
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.28.2",
+		"grunt": "1.6.1",
+		"grunt-eslint": "24.3.0"
+	}
+}

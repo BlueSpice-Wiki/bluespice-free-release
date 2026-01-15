@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Pamputt",
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informations sur BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "À propos de BlueSpice",
+	"bluespiceabout": "À propos de BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "afficher la page spéciale « {{int:bs-bluespiceabout-sur-bluespice}} »",
+	"right-bluespiceabout-viewspecialpage": "Accès à la page spéciale [[Special:BlueSpiceAbout]]"
+}

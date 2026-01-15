@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200",
+			"Nokeoo"
+		]
+	},
+	"bs-whoisonline-desc": "Rodo šiuo metu prisijungusių vartotojų sąrašą",
+	"bs-whoisonline-nousers": "Nėra prisijungusių.",
+	"bs-whoisonline-widget-title": "Kas yra prisijungę?",
+	"prefs-whoisonline": "Kas yra prisijungę?",
+	"bs-whoisonline-pref-limitcount": "Maksimalus rodomų vartotojų skaičius:",
+	"bs-whoisonline-pref-orderby": "Rūšiuoti pagal:",
+	"bs-whoisonline-pref-orderby-time": "Veikimo laikas",
+	"bs-whoisonline-pref-orderby-name": "Pavadinimas",
+	"bs-whoisonline-collection-type-userlogin": "Naudotojo prisijungimas",
+	"bs-whoisonline-collection-var-login": "Prisijungimas",
+	"bs-whoisonline-statistics-report-login-duration": "Prisijungimo trukmė",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Prisijungimo trukmė (sek.)",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Rodo naudotojų, kurie prisijungė per paskutines 10 minučių, skaičių",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Kas yra prisijungęs, skaičius",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Rodomi visi naudotojai, kurie buvo prisijungę per paskutines 10 minučių. Išvestis yra kalbos burbulas, kai naudotojas užveda pelės žymeklį ant susijusios nuorodos",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Kas yra prisijungęs, iššokantis langas",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Prisijungimų skaičius",
+	"bs-whoisonline-statistics-report-login-number": "Prisijungimai",
+	"bs-whoisonline-droplet-count-name": "Prisijungusių naudotojų skaičius",
+	"bs-whoisonline-droplet-count-description": "Šiuo metu prisijungusių naudotojų skaičius",
+	"bs-whoisonline-droplet-popup-name": "Prisijungusių naudotojų sąrašas",
+	"bs-whoisonline-droplet-popup-description": "Iššokantis langas su visų šiuo metu prisijungusių naudotojų sąrašu"
+}

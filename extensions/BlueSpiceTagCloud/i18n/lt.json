@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"bs-tagcloud-desc": "Rodo įvairius žymų debesis",
+	"bs-tagcloud-tag-tagcloud-name": "Žymių debesis",
+	"bs-tagcloud-tag-tagcloud-title": "Žymių debesis",
+	"bs-tagcloud-tag-tagcloud-desc": "Pateikia žymų debesį pagal kategorijas arba paieškos terminus",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Tipas",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "Pasirinkite, kaip turėtų būti pateikiamas žymų debesis",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Tekstas",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Sąrašas",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
+	"bs-tagcloud-tag-tagcloud-attr-store-help": "Pasirinkite, kuriuos duomenis naudoti",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Kategorijos",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Paieškos terminai",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Plotis",
+	"bs-tagcloud-tag-tagcloud-attr-width-help": "Žymių debesies plotis procentais",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Rodyti skaičių",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Skliausteliuose rodyti elementų skaičių",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Minimalus šrifto dydis",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Įrašo, kuriame yra mažiausiai elementų, šrifto dydis",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Maksimalus šrifto dydis",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Įrašo, kuriame yra daugiausiai elementų, šrifto dydis",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Neįtraukti puslapių",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Nerodyti šių puslapių žymų debesyje. Norėdami įtraukti daugiau puslapių, naudokite kableliais atskirtą sąrašą, pvz., „PagrindinisPuslapis, Testas, ManoPuslapis“",
+	"bs-tagcloud-droplet-name": "Žymių debesis",
+	"bs-tagcloud-droplet-description": "Žymų debesis pagal kategorijas arba paieškos užklausas"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black",
+			"Ninjastrikers",
+			"ခွန်ပညာႏ(တောင်ႏကီꩻ)"
+		]
+	},
+	"bs-statistics-aggregated-report-filter-category-multi": "ကဏ္ဍများ",
+	"bs-statistics-aggregated-report-filter-date-start": "စတင်သည့်ရက်စွဲ",
+	"bs-statistics-aggregated-report-filter-date-end": "ပြီးဆုံးရက်",
+	"bs-statistics-aggregated-report-filter-interval-day": "ရက်",
+	"bs-statistics-aggregated-report-filter-interval-week": "အပတ်",
+	"bs-statistics-aggregated-report-filter-interval-month": "လ",
+	"bs-statistics-aggregated-report-filter-interval-year": "ခုနှစ်",
+	"bs-statistics-aggregated-report-filter-namespace": "အမည်ညွှန်း",
+	"bs-statistics-aggregated-report-filter-page": "စာမျက်နှာ",
+	"bs-statistics-aggregated-report-filter-user": "အသုံးပြုသူ",
+	"bs-statistics-aggregated-report-filter-user-multi": "အသုံးပြုသူများ"
+}

@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Duke of Wikipädia",
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
+			"Felipe L. Ewald",
+			"Fúlvio",
+			"Re demz",
+			"Svjatysberega"
+		]
+	},
+	"bs-whoisonline-desc": "Mostra uma lista de usuários que estão atualmente on-line",
+	"bs-whoisonline-nousers": "Ninguém está logado.",
+	"bs-whoisonline-widget-title": "Quem está online?",
+	"prefs-whoisonline": "Quem está online?",
+	"bs-whoisonline-pref-limitcount": "Número máximo de usuários a serem exibidos:",
+	"bs-whoisonline-pref-orderby": "Ordenar por:",
+	"bs-whoisonline-pref-orderby-time": "Tempo de atividade",
+	"bs-whoisonline-pref-orderby-name": "Nome",
+	"bs-whoisonline-collection-type-userlogin": "Entrada de usuário",
+	"bs-whoisonline-collection-var-login": "Entrar",
+	"bs-whoisonline-statistics-report-login-duration": "Duração de sessão",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Duração de sessão (seg)",
+	"bs-whoisonline-tag-whoisonlinecount-description": "Mostra o número de usuários que se conectaram nos últimos 10 minutos",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Contagem de quem está conectado",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Mostra todos os usuários que se conectaram nos últimos 10 minutos. A saída é um balão de diálogo quando um usuário passa o mouse sobre a hiperligação relacionada",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Janela flutuante de quem conectado",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "Número de entradas",
+	"bs-whoisonline-statistics-report-login-number": "Entradas",
+	"bs-whoisonline-droplet-count-name": "Número de usuários conectados"
+}

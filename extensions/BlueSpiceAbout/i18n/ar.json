@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"bs-bluespiceabout-desc": "معلومات حول BlueSpice.",
+	"bs-bluespiceabout-about-bluespice": "حول BlueSpice",
+	"bluespiceabout": "حول BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "اعرض الصفحة الخاصة \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:BlueSpiceAbout]]."
+}

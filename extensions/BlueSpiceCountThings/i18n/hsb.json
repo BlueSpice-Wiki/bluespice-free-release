@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"J budissin"
+		]
+	},
+	"bs-countthings-desc": "Skići statistiki na zakładźe wobsaha",
+	"bs-countthings-chars-label": "Znamješka",
+	"bs-countthings-words-label": "Słowa",
+	"bs-countthings-files-label": "Dataje",
+	"bs-countthings-pages-label": "Strony",
+	"bs-countthings-ve-countcharacters-title": "Znamješka ličić",
+	"bs-countthings-ve-countarticles-title": "Zapiski ličić",
+	"bs-countthings-ve-countfiles-title": "Dataje ličić",
+	"bs-countthings-ve-countusers-title": "Wužiwarjow ličić",
+	"bs-countthings-ve-countthingsinspector-mode": "Modus",
+	"bs-countthings-ve-countcharacters-mode-all": "wšě",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "znamješka",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "słowa",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "znamješka a słowa",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "strony",
+	"bs-countthings-ve-countcharacters-input-label": "Strony",
+	"bs-countthings-error-no-input": "Njebu žana strona podata.",
+	"bs-countthings-error-invalid-mode": "Konfiguraciski parameter „$1“ njeje dowoleny. Prošu wužiwaj „chars“, „words“ abo „pages“.",
+	"bs-countthings-error-not-exist": "Strona „$1“ njeeksistuje.",
+	"bs-countthings-tag-countarticles-desc": "Pokazuje ličbu zapiskow we wikiju.",
+	"bs-countthings-tag-countusers-desc": "Pokazuje ličbu zapisanych wužiwarjow.",
+	"bs-countthings-tag-countfiles-desc": "Pokazuje ličbu datajow we wikiju.",
+	"bs-countthings-tag-countcharacters-desc": "Wutworja metadaty wo wobsahu podateho zapiska. Wudaće je infokašćik, kiž hodźi so do zapiska zatwarić. Z parametrom „mode“ hodźa so dalše družiny informacijow pokazać.",
+	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: Što ma so ličić <code>chars</code> (znamješka), <code>words</code> (słowa) abo <code>pages</code> (strony).",
+	"bs-countthings-droplet-articles-name": "Ličba stronow",
+	"bs-countthings-droplet-articles-description": "Pokazuje ličbu wšěch stronow",
+	"bs-countthings-droplet-characters-name": "Ličba znamješkow",
+	"bs-countthings-droplet-characters-description": "Ličba znamješkow abo słowow na jednej stronje",
+	"bs-countthings-droplet-files-name": "Ličba datajow",
+	"bs-countthings-droplet-files-description": "Pokazuje ličbu wšěch nahratych datajow",
+	"bs-countthings-droplet-user-name": "Ličba wužiwarjow",
+	"bs-countthings-droplet-user-description": "Pokazuje ličbu wšěch wužiwarjow"
+}

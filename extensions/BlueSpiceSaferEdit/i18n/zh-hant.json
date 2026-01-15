@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"Kly",
+			"列维劳德",
+			"捍粵者"
+		]
+	},
+	"bs-saferedit-desc": "若其他使用者在編輯頁面時提供警告",
+	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|正在}}{{GENDER:$1|編輯}}頁面",
+	"bs-saferedit-someone-editing": "有人在編輯頁面"
+}

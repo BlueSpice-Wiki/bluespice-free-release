@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth"
+		]
+	},
+	"pageheader-desc": "{{desc|name=PageHeader}}",
+	"pageheader-pageinfosentence-no-item-label": "Default label if there is no page information",
+	"pageheader-pageinfosentence-no-item-tooltip": "Default tooltip if there is no page information",
+	"pageheader-pageinfosentence": "Sentence wrapping page information",
+	"pageheader-pageinfosentence-item-separator": "Separator for page information items (AND)",
+	"pageheader-pageinfosentence-item-separator-greater-two": "{{optional}}\nSeparator for more then two page information items (COMMA)",
+	"pageheader-pageinfosentence-item-class-separator": "Separator for page information items (BUT)"
+}

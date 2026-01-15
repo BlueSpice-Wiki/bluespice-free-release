@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16",
+			"GpieroMW",
+			"Matteocng",
+			"Stefano"
+		]
+	},
+	"bs-smartlist-desc": "Mostra le ultime cinque modifiche del wiki in un elenco",
+	"bs-smartlist-recent-changes": "Ultime modifiche",
+	"bs-smartlist-no-entries": "Nessun risultato trovato.",
+	"bs-smartlist-comment": "Commento: $1.",
+	"bs-smartlist-sort-asc": "crescente",
+	"bs-smartlist-sort-desc": "decrescente",
+	"bs-smartlist-day": "Giorno",
+	"bs-smartlist-week": "Settimana",
+	"bs-smartlist-month": "Mese",
+	"bs-smartlist-time": "Ora",
+	"bs-smartlist-title": "Titolo",
+	"bs-smartlist-mostvisitedpages": "Pagine più viste",
+	"bs-smartlist-mosteditedpages": "Pagine più modificate",
+	"bs-smartlist-mostactiveusers": "Utenti più attivi (per modifiche)",
+	"bs-smartlist-lastedits": "Le mie modifiche",
+	"bs-smartlist-noedits": "Nessuna modifica trovata.",
+	"bs-smartlist-mostactiveusersdesc": "Elenco degli utenti più attivi ordinati in base alle loro modifiche.",
+	"bs-smartlist-mosteditedpagesdesc": "Elenco delle pagine più modificate ordinate in base alle modifiche.",
+	"bs-smartlist-mostvisitedpagesdesc": "Elenco delle pagine più visualizzate ordinate in base alle visualizzazioni.",
+	"bs-smartlist-lasteditsdesc": "Elenco di pagine che hai modificato.",
+	"bs-smartlist-ve-userlist-title": "Elenco degli utenti",
+	"bs-smartlist-ve-userlistinspector-groups": "Gruppi",
+	"bs-smartlist-ve-userlistinspector-limit": "Limite di utenti mostrati",
+	"bs-smartlist-ve-userlistinspector-no-group": "Nessun gruppo selezionato. Scegli un gruppo per elencare i suoi utenti"
+}

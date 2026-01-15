@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Zesummeklappen",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Opklappen",
+	"vuejsplus-data-grid-option-filter-string": "Sichen",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|Eng Zeil|$1 Zeile}} fonnt",
+	"vuejsplus-data-grid-option-button-aria-label": "Kolonn $1 Optiounen",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Neutral"
+}

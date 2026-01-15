@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajiniyaz Nurniyazov"
+		]
+	},
+	"bs-qr-code-tag-qrcode-title": "QR kod",
+	"bs-qr-code-tag-attr-page-label": "Bet",
+	"bs-qr-code-tag-attr-size-label": "Ólshem",
+	"bs-qr-code-droplet-name": "QR kod",
+	"bs-qr-code-tag-attr-size-option-small": "kishkene",
+	"bs-qr-code-tag-attr-size-option-large": "úlken"
+}

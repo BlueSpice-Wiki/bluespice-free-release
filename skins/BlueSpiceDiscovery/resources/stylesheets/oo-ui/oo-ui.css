@@ -1,0 +1,38 @@
+body.mediawiki .oo-ui-windowManager-modal > .oo-ui-dialog {
+	background-color: rgba( 62, 83, 137, 0.3 ) !important;
+	font-size: 15px;
+	/* header has 1050 */
+	z-index: 1051 !important;
+}
+
+.oo-ui-defaultOverlay .mw-widget-dateInputWidget-calendar {
+	z-index: 1051;
+}
+
+.alert .oo-ui-horizontalLayout > .oo-ui-widget {
+	margin-bottom: 0;
+}
+
+.mw-body-content .oo-ui-widget.oo-ui-buttonElement a:hover {
+	text-decoration: none;
+}
+
+/* padding in dialog for primary action is too small, therefore set it in relation to font-size */
+.oo-ui-windowManager .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
+	padding: 0.75rem;
+}
+
+/* apply min-height to buttons in oo-ui-numberInputWidget-field */
+.oo-ui-numberInputWidget-field input.oo-ui-inputWidget-input {
+	min-height: 32px;
+}
+
+.oo-ui-numberInputWidget-field > span,
+.oo-ui-numberInputWidget-field > input {
+	position: relative;
+}
+
+/* ERM31377 Ensure that tabOptionWidget is underlined when selected despite focus */
+.oo-ui-tabSelectWidget-framed.oo-ui-widget-enabled .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected .oo-ui-labelElement-label {
+	border-bottom-color: #36c;
+}

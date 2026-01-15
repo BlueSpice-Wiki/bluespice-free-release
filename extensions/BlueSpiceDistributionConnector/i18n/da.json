@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fugithora",
+			"Saederup92"
+		]
+	},
+	"bs-distributionconnector-yourdomainname": "Dit domæne",
+	"bs-distributionconnector-ve-categorytreeinspector-dd-mode": "Tilstand",
+	"bs-distributionconnector-ve-categorytreeinspector-tb-depth": "Dybde",
+	"bs-distributionconnector-ve-categorytreeinspector-tb-namespace": "Navnerum",
+	"bs-distributionconnector-pref-openidconnect-config": "Udbyder",
+	"bs-distributionconnector-pref-openidconnect-userealnameasusername": "Brug rigtige navn som brugernavn",
+	"bs-distributionconnector-pref-openidconnect-useemailasusername": "Brug e-mailadresse som brugernavn",
+	"bs-distributionconnector-pref-openidconnect-config-clientid": "Klient-ID",
+	"bs-distributionconnector-pref-openidconnect-config-scope": "Omfang",
+	"bs-distributionconnector-workflows-form-groupname": "Gruppe",
+	"bs-distributionconnector-workflows-form-instructions": "Instruktioner",
+	"bs-distributionconnector-workflows-form-username": "Bruger",
+	"bs-distributionconnector-workflows-form-expert-user": "Ekspert",
+	"bs-distributionconnector-workflows-form-comment": "Kommentar",
+	"bs-distributionconnector-workflows-form-placeholder-comment": "Kommentar",
+	"bs-distributionconnector-statistics-report-page-trends-axis-value": "% vækst",
+	"bs-sandbox": "Sandkasse",
+	"bs-distributionconnector-checkpermissions-label-user": "Bruger",
+	"bs-distributionconnector-checkpermissions-label-title": "Titel",
+	"bs-distributionconnector-invite-signup-btn-tooltip-label": "Invitér",
+	"droplets-subpages-name": "Undersider"
+}

@@ -1,0 +1,38 @@
+<main class="scrollit">
+	<a id='top'></a> <!-- TODO: can we just jump to #content instead of this? -->
+	{{{sitenotice}}}
+	{{{skin-slot-data-before-content}}}
+	<div id="title-section">
+		<div id="title-nav" class="row align-items-start">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+				{{{breadcrumb-nav}}}
+			</div>
+			<div class="last-edit-info col-xs-12 col-sm-12 col-md-3 col-lg-4 text-end">
+				{{{last-edit}}}
+			</div>
+		</div>
+		<div id="title-line">
+			<div class="row">
+				<h1 id="firstHeading" class="firstHeading col-xs-12 col-sm-12 col-md-9 col-lg-10">{{{title}}}</h1>
+				<nav id="title-actions" class="col-xs-12 col-sm-12 col-md-3 col-lg-2 right-align d-flex justify-content-end" aria-label="{{title-actions-aria-label}}">
+					<div class="mw-indicators mw-body-content">{{{indicators}}}</div>
+					{{{title-action-edit}}}
+					{{{title-action-language}}}
+					{{{skin-slot-title-actions}}}
+					{{{fullscreen-button}}}
+				</nav>
+			</div>
+		</div>
+		<div class="title-backlink-cnt">{{{backTo}}}</div>
+		{{{redirect}}}
+		{{{skin-slot-data-after-title}}}
+		{{{undelete}}}
+	</div>
+	<article  id="content" tabindex="-1">
+		<div id='bodyContent'>
+			<div id="contentSub">{{{html-subtitle}}}</div>
+			{{{bodytext}}}
+			{{{catlinks}}}
+		</div>
+	</article>
+</main>

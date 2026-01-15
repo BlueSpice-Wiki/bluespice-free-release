@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="64" height="64" viewBox="0 0 16.933333 16.933333" version="1.1" id="svg8" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)" sodipodi:docname="contentdroplets-whoisonline-popup-icon.svg">
+  <defs id="defs2">
+    <marker inkscape:stockid="Arrow1Lstart" orient="auto" refY="0.0" refX="0.0" id="marker1178" style="overflow:visible" inkscape:isstock="true">
+      <path id="path1176" d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z " style="fill-rule:evenodd;stroke:black;stroke-width:1pt;stroke-opacity:1" transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker inkscape:stockid="Arrow1Lstart" orient="auto" refY="0.0" refX="0.0" id="Arrow1Lstart" style="overflow:visible" inkscape:isstock="true">
+      <path id="path900" d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z " style="fill-rule:evenodd;stroke:black;stroke-width:1pt;stroke-opacity:1" transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="10" inkscape:cx="21.2" inkscape:cy="33.665038" inkscape:document-units="px" inkscape:current-layer="g883" showgrid="false" units="px" width="64px" inkscape:pagecheckerboard="false" inkscape:snap-text-baseline="false" showguides="true" inkscape:guide-bbox="true" inkscape:window-width="1920" inkscape:window-height="1009" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1">
+    <sodipodi:guide position="8.4666665,22.749442" orientation="1,0" id="guide890" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide position="17.727083,13.096875" orientation="0,1" id="guide892" inkscape:locked="false" inkscape:label="" inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide position="3.5671502,6.1539247" orientation="1,0" id="guide894" inkscape:locked="false" />
+    <sodipodi:guide position="13.255625,1.6933333" orientation="1,0" id="guide896" inkscape:locked="false" />
+    <sodipodi:guide position="7.9512683,10.664054" orientation="1,0" id="guide1887" inkscape:locked="false" />
+    <sodipodi:guide position="8.9989648,9.3357244" orientation="1,0" id="guide1889" inkscape:locked="false" />
+    <sodipodi:guide position="15.345833,15.24" orientation="0,1" id="guide1909" inkscape:locked="false" />
+    <sodipodi:guide position="8.9989648,2.3547916" orientation="0,1" id="guide1911" inkscape:locked="false" />
+    <sodipodi:guide position="15.372291,17.277291" orientation="0,1" id="guide1915" inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata id="metadata5">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Ebene 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-280.06666)">
+    <g id="g861" transform="translate(0,3e-6)" />
+    <g id="g872" transform="translate(-0.36987244,0.16524316)">
+      <g style="stroke-width:1.08401775" id="g4587-6-36" transform="matrix(0.92249414,0,0,0.92249414,3.6730698,20.446052)" />
+      <g transform="matrix(0.14623302,0,0,0.1461129,-7.2688624,265.64999)" style="fill:#3e5389;fill-opacity:1;stroke-width:6.84121084" id="g824-3">
+        <ellipse style="opacity:1;fill:#3e5389;fill-opacity:1;stroke:none;stroke-width:16.8635807;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:74.26771545;stroke-opacity:1;paint-order:fill markers stroke" id="path827-6" cx="102.81169" cy="138.21843" rx="22.451504" ry="22.01775" />
+        <path style="fill:#3e5389;fill-opacity:1;stroke:none;stroke-width:1.81007016px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 62.155718,197.31295 c 0,0 3.774778,-38.29063 40.999712,-38.45497 37.22493,-0.16433 40.01866,38.45497 40.01866,38.45497 z" id="path855-7" inkscape:connector-curvature="0" />
+      </g>
+      <g id="g933" transform="translate(-1.6139584,-0.873125)">
+        <g id="g894">
+          <circle style="opacity:1;fill:#bd1d1d;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:74.26771545;stroke-opacity:1;paint-order:fill markers stroke" id="path861-5" cx="9.5112257" cy="288.71442" r="1.8520833" />
+        </g>
+        <g id="g918">
+          <text transform="translate(0,1.047487e-5)" id="text895-6" y="289.84256" x="8.4936161" style="font-style:normal;font-weight:normal;font-size:3.09803724px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:white;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve"><tspan style="fill:white;fill-opacity:1;stroke-width:0.26458332" y="289.84256" x="8.4936161" id="tspan893-2" sodipodi:role="line">1</tspan></text>
+          <g id="g899">
+            <circle r="1.8520833" cy="291.17505" cx="5.5953932" id="path861-3-3" style="opacity:1;fill:#00897b;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:74.26771545;stroke-opacity:1;paint-order:fill markers stroke" />
+            <text id="text895-7-9" y="292.31137" x="4.6355991" style="font-style:normal;font-weight:normal;font-size:3.09803724px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:white;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve"><tspan style="fill:white;fill-opacity:1;stroke-width:0.26458332" y="292.31137" x="4.6355991" id="tspan893-5-1" sodipodi:role="line">2</tspan></text>
+          </g>
+          <g id="g904">
+            <circle r="1.8520833" cy="293.3446" cx="9.5112267" id="path861-3-6-5" style="opacity:1;fill:#fdc300;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:74.26771545;stroke-opacity:1;paint-order:fill markers stroke" />
+            <text id="text895-7-3-2" y="294.47165" x="8.5397463" style="font-style:normal;font-weight:normal;font-size:3.09803724px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:white;fill-opacity:1;stroke:none;stroke-width:0.26458332" xml:space="preserve"><tspan style="fill:white;fill-opacity:1;stroke-width:0.26458332" y="294.47165" x="8.5397463" id="tspan893-5-5-7" sodipodi:role="line">3</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g id="g883" transform="translate(-1.349375,-8.0301066)">
+        <path inkscape:connector-curvature="0" id="path892" d="m 13.360914,291.15944 h 3.175" style="fill:none;stroke:#747474;stroke-width:0.79904169;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path inkscape:connector-curvature="0" id="path892-7-5" d="m 13.360914,294.78423 h 3.175" style="fill:none;stroke:#747474;stroke-width:0.79904163;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path inkscape:connector-curvature="0" id="path892-3-6" d="m 13.360914,292.99542 h 3.175" style="fill:none;stroke:#747474;stroke-width:0.79904169;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path inkscape:connector-curvature="0" id="path892-7-5-3" d="m 13.360914,296.47757 h 3.175" style="fill:none;stroke:#747474;stroke-width:0.79904163;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+    </g>
+  </g>
+  <style id="style817" type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;}
+	.st2{fill:#3E5389;}
+</style>
+</svg>

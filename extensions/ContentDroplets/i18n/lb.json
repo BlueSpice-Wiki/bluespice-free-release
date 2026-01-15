@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"contentdroplets-droplet-text-box-warning": "Warnmeldung",
+	"contentdroplets-droplet-text-box-important": "Wichtege Message",
+	"contentdroplets-droplet-text-box-note": "Notiz",
+	"contentdroplets-droplet-text-box-tip": "Tipp",
+	"contentdroplets-droplet-text-box-neutral": "Message",
+	"contentdroplets-category-label-content": "Inhalt",
+	"contentdroplets-category-label-media": "Medien",
+	"contentdroplets-category-label-visualization": "Visualisatioun",
+	"contentdroplets-category-label-data": "Donnéeën",
+	"contentdroplets-category-label-navigation": "Navigatioun",
+	"contentdroplets-category-label-lists": "Lëschten",
+	"contentdroplets-category-label-export": "Export",
+	"contentdroplets-category-label-all": "All",
+	"contentdroplets-droplet-text-box-header-label": "Iwwerschrëft",
+	"contentdroplets-droplet-text-box-text-label": "Text",
+	"contentdroplets-droplet-text-box-show-icon-label": "Symbol weisen",
+	"contentdroplets-droplet-icon-font-size-label": "Schrëftgréisst",
+	"contentdroplets-droplet-icon-color-label": "Faarf",
+	"contentdroplets-droplet-icon-name": "Symbol",
+	"contentdroplet-dialog-action-close": "Ofbriechen",
+	"contentdroplet-dialog-action-insert": "Drasetzen",
+	"contentdroplets-droplet-code-name": "Code"
+}

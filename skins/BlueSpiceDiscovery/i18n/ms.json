@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tofeiku"
+		]
+	},
+	"bs-discovery-logo-return-to-aria-label": "Logo {{SITENAME}} - Kembali ke $1",
+	"bs-discovery-title-last-edit-info": "Kali terakhir disunting $1 <br /> oleh $2",
+	"bs-discovery-enhanced-mediawiki-sidebar-header-text": "Pandu arah",
+	"bs-discovery-enhanced-sidebar-edit-button-title": "Sunting menu ini"
+}

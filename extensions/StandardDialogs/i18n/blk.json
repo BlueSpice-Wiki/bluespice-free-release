@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Khun Kt"
+		]
+	},
+	"standarddialogs-page-info-page-last-edit": "အဆုဲင်ꩻသွတ်ꩻ မွဉ်းဖျင်မုꩻ",
+	"standarddialogs-page-info-page-categories": "ကဏ္ဍဖိုင်ႏ",
+	"standarddialogs-page-info-page-images": "ရုက်ပုင်ႏဖိုင်ႏ",
+	"standarddialogs-create-button-new-page-title": "ဖန်ဆင်ꩻ လိတ်မဲ့ငါတသာ",
+	"standarddialogs-protect-btn": "ရဲးကမ်းသွော့",
+	"standarddialogs-protect-title": "ရဲးကမ်းလိတ်မဲ့ငါ \"$1\"",
+	"standarddialogs-btn-cancel": "မာꩻတဝ်းဒွုမ်"
+}

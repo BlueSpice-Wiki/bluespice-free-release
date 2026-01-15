@@ -1,0 +1,177 @@
+/**
+ * Running header styles.
+ */
+.pdfcreator-runningheaderfix {
+	position: running( topleft );
+	margin: 0 -1.75cm 0 -1.75cm;
+	padding: 0 1.75cm 0 1.75cm;
+	height: 2.3cm;
+}
+.pdfcreator-runningheaderfix > table {
+	width: 100%;
+	max-height: 99%;
+	background: transparent;
+	border-bottom: 0.1mm solid black;
+}
+.pdfcreator-runningheaderfix > table td {
+	vertical-align: center;
+	text-align: center;
+}
+.pdfcreator-runningheaderfix > table td:first-child {
+	width: 25%;
+	text-align: left;
+}
+.pdfcreator-runningheaderfix > table td:last-child {
+	width: 75%;
+	text-align: right;
+}
+.pdfcreator-runningheaderfix > table .pdfcreator-runningheader-logo {
+	display: block;
+	width: 100%;
+	height: 2cm;
+}
+.pdfcreator-runningheaderfix > table .pdfcreator-runningheader-logo p {
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+.pdfcreator-runningheaderfix > table .pdfcreator-runningheader-logo img {
+	width: auto;
+	height: 1.5cm;
+}
+.pdfcreator-runningheaderfix > table h1.title {
+	font-size: 9pt;
+	font-weight: normal;
+	max-height: 2.4em;
+	line-height: 1.2em;
+	overflow: hidden;
+	text-align: right;
+}
+
+/**
+ * Running footer styles.
+ */
+.pdfcreator-runningfooterfix {
+	position: running( bottomleft );
+	margin: 0 -1.75cm 0 -1.75cm;
+	padding: 0 1.75cm 0 1.75cm;
+	height: 1.3cm;
+}
+.pdfcreator-runningfooterfix > table {
+	width: 100%;
+	background: transparent;
+	max-height: 99%;
+	border-top: 0.1mm solid black;
+}
+.pdfcreator-runningfooterfix > table td {
+	width: 32%;
+	padding-top: 0.1cm;
+	vertical-align: top;
+	text-align: center;
+}
+.pdfcreator-runningfooterfix > table td p {
+	font-size: 9pt !important;
+	line-height: 1.2em;
+}
+.pdfcreator-runningfooterfix > table td:first-child {
+	width: 32%;
+	text-align: left;
+}
+.pdfcreator-runningfooterfix > table td:last-child {
+	width: 32%;
+	text-align: right;
+}
+
+/**
+ * The default page definition.
+ */
+@page {
+	size: A4 portrait;
+	margin: 2.5cm 1.75cm 1.5cm 1.75cm;
+
+	@top-left {
+		content: element( topleft );
+	}
+
+	@top-center {
+		content: element( topcenter );
+	}
+
+	@top-right {
+		content: element( topright );
+	}
+
+	@bottom-left {
+		content: element( bottomleft );
+	}
+
+	@bottom-center {
+		content: element( bottomcenter );
+	}
+
+	@bottom-right {
+		content: element( bottomright );
+	}
+}
+
+/**
+ * The "coverpage" definition.
+ */
+@page coverpage {
+	margin: 0cm 0cm 0cm 0cm;
+	size: A4 portrait;
+
+	@top-left {
+		content: none;
+	}
+
+	@top-center {
+		content: none;
+	}
+
+	@top-right {
+		content: none;
+	}
+
+	@bottom-left {
+		content: none;
+	}
+
+	@bottom-center {
+		content: none;
+	}
+
+	@bottom-right {
+		content: none;
+	}
+}
+
+.pdfcreator-type-intro {
+	page: coverpage;
+	background-size: 21cm;
+	width: 21cm;
+	height: 29.7cm;
+	background-repeat: no-repeat;
+}
+
+.pdfcreator-intro-cover-cnt {
+	position: absolute;
+	top: 12.5cm;
+	left: 1.75cm;
+	width: 17.5cm;
+	max-height: 6.5cm;
+	overflow: hidden;
+}
+
+.pdfcreator-intro-title {
+	font-size: 40px;
+	color: #3E5389;
+	font-weight: 900;
+	line-height: 1.3em;
+}
+
+.pdfcreator-intro-text {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.3em;
+}

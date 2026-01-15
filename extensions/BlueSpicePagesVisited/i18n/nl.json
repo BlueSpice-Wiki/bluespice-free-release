@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arg",
+			"Esketti",
+			"HanV",
+			"Mainframe98",
+			"McDutchie",
+			"Nieuwsgierige Gebruiker",
+			"SPQRobin",
+			"Siebrand",
+			"Sjoerddebruin"
+		]
+	},
+	"bs-pagesvisited-desc": "Biedt een gepersonaliseerde lijst van de laatst bezochte pagina's",
+	"prefs-pagesvisited": "Bezochte pagina's",
+	"bs-pagesvisited-widget-title": "Pagina's bezocht",
+	"bs-pagesvisited-error-nsnotvalid": "De opgegeven {{PLURAL:$1|namespace|naamruimten}} <code>$2</code> {{PLURAL:$1|is|zijn}} niet geldig.",
+	"bs-pagesvisited-pref-widgetlimit": "Maximum aantal resultaten:",
+	"bs-pagesvisited-pref-widgetns": "Naamruimten:",
+	"bs-pagesvisited-pref-widgetsortodr": "Sorteren op:",
+	"bs-pagesvisited-pref-sort-time": "Tijd",
+	"bs-pagesvisited-pref-sort-pagename": "Naam",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Toont een lijst met recent bezochte pagina's. Deze lijst kan worden beperkt met parameters.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Bezochte pagina's",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Aantal",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Het aantal pagina's instellen dat in de lijst wordt weergegeven",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Maximale titellengte",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Het maximumaantal tekens instellen voordat een titel wordt afgebroken",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Volgorde",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "De volgorde instellen waarin de pagina's worden weergegeven",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Naamruimten",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Alleen pagina's uit deze naamruimten weergeven",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Tijd",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Paginanaam",
+	"bs-pagesvisited-droplet-name": "Bezochte pagina's",
+	"bs-pagesvisited-droplet-description": "Lijst met bezochte pagina's",
+	"bs-pagesvisited-label-anon-user": "Meld u aan bij uw account om pagina’s te zien die u hebt bezocht"
+}

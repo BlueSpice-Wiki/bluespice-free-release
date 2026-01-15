@@ -1,0 +1,5 @@
+.mw-body-content:not( .ve-ui-surface ) .pdfcreator-excludestart,
+.mw-body-content:not( .ve-ui-surface ) .pdfcreator-excludeend,
+.mw-body-content:not( .ve-ui-surface ) .pagebreak {
+	display: none;
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"instancestatus": "인스턴스 상태",
+	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice 버전",
+	"bs-instancestatus-instance-status-no-info": "사용할 수 없음",
+	"bs-instancestatus-instance-status-main-label": "일반"
+}

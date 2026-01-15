@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"আফতাবুজ্জামান"
+		]
+	},
+	"vuejsplus-desc": "VueJs উপাদানগুলির সংকলন",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "সংকোচন",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "প্রসারণ",
+	"vuejsplus-data-grid-option-sort-string-asc": "ঊর্দ্ধানুক্রমে সাজান",
+	"vuejsplus-data-grid-option-sort-string-desc": "উল্টো বর্ণক্রমে সাজান",
+	"vuejsplus-data-grid-option-filter-string": "খুঁজুন",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1|একটি সারি|$1টি সারি}} পাওয়া গেছে",
+	"vuejsplus-data-grid-option-button-aria-label": "$1 নং কলামের বিকল্প",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "পরীক্ষিত",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "অপরীক্ষিত",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "নিরপেক্ষ",
+	"vuejsplus-data-grid-option-filter-date-from-label": "এ তারিখ থেকে",
+	"vuejsplus-data-grid-option-filter-date-to-label": "এ তারিখ পর্যন্ত"
+}

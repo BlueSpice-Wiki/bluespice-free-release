@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piano1forte2"
+		]
+	},
+	"bs-insertcategory-desc": "Dialogue to enter a category link",
+	"bs-insertcategory-pref-uploadpanelintegration": "Set page categories as default in upload dialogue",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Open dialogue to edit the categories of this page"
+}

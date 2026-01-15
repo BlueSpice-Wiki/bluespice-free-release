@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"bs-whoisonline-desc": "Viser en liste over brukere som er online for øyeblikket",
+	"bs-whoisonline-nousers": "Ingen er logget inn.",
+	"bs-whoisonline-widget-title": "Hvem er online?",
+	"prefs-whoisonline": "Hvem er online?",
+	"bs-whoisonline-pref-limitcount": "Maksimalt antall brukere som skal vises:",
+	"bs-whoisonline-pref-orderby": "Sorter etter:",
+	"bs-whoisonline-pref-orderby-time": "Driftstid",
+	"bs-whoisonline-pref-orderby-name": "Navn",
+	"bs-whoisonline-collection-type-userlogin": "Brukerinnlogging",
+	"bs-whoisonline-collection-var-login": "Innlogging",
+	"bs-whoisonline-statistics-report-login-duration": "Varighet på innlogging",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "Varighet på innlogging (sek.)",
+	"bs-whoisonline-statistics-report-login-number": "Innlogginger"
+}

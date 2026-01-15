@@ -1,0 +1,12 @@
+<div class="dropdown{{#cnt-class}} {{.}}{{/cnt-class}}">
+	<div class="btn-group{{#btn-group-class}} {{.}}{{/btn-group-class}}">
+		<a role="button" href="{{href}}" {{#btn-class}}class="{{.}}"{{/btn-class}}{{#id}} id={{.}}{{/id}} title="{{btn-title}}" aria-label="{{btn-aria-label}}"{{#btn-rel}} rel="{{.}}"{{/btn-rel}}{{#btn-disabled}} disabled{{/btn-disabled}}>
+			<i{{#icon-class}} class="{{.}}"{{/icon-class}}></i>
+		</a>
+		<button class="dropdown-toggle{{#split-btn-class}} {{.}}{{/split-btn-class}}"{{#id}} id="{{.}}-menu-btn"{{/id}} title="{{split-btn-title}}" data-bs-toggle="dropdown" aria-haspopup="true" aria-label="{{split-btn-aria-label}}" aria-expanded="false" aria-controls="{{id}}-menu"{{#split-btn-disabled}} disabled{{/split-btn-disabled}}>
+		</button>
+		<div id="{{id}}-menu" class="dropdown-menu{{#menu-class}} {{.}}{{/menu-class}}" aria-labelledby="{{id}}-menu-btn">
+			{{{body}}}
+		</div>
+	</div>
+</div>

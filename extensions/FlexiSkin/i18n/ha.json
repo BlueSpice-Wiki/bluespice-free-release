@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Em-em",
+			"Hamxo",
+			"Umar-askirason"
+		]
+	},
+	"flexiskin-ui-plugin-color-settings-label": "Launin Fage",
+	"flexiskin-ui-plugin-navbar-colors-label": "Launin saman shafi",
+	"flexiskin-ui-plugin-colors-background-navbar-label": "bayan sama",
+	"flexiskin-ui-plugin-colors-foreground-navbar-label": "Rubutun Saman shafi",
+	"flexiskin-ui-plugin-colors-highlight-navbar-label": "Kanun bayanai",
+	"flexiskin-ui-plugin-sidebar-primary-colors-label": "Launin sashe",
+	"flexiskin-ui-plugin-colors-background-sidebar-primary-label": "Bayan shafin gefe",
+	"flexiskin-ui-plugin-colors-foreground-sidebar-primary-label": "Laulin rubutun sashen gefe",
+	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Mazaunin inda abun zabe",
+	"flexiskin-ui-plugin-footer-colors-label": "kalolin kafa",
+	"flexiskin-ui-plugin-colors-background-footer-label": "Bayan kasa.",
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Rubutn kasan Shafi."
+}

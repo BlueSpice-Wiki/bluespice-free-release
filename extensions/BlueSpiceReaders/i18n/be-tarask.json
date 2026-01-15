@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"prefs-readers": "Чытачы(-кі)",
+	"bs-readers-pagenotexists": "Старонка не існуе.",
+	"bs-readers-header-readerspath": "Чытач(-ка)",
+	"bs-readers-header-ts": "Дата",
+	"bs-readers-header-page": "Старонка"
+}

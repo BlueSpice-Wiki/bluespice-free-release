@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aefgh39622",
+			"Trisorn Triboon"
+		]
+	},
+	"prefs-pagesvisited": "หน้าที่เข้าชมแล้ว",
+	"bs-pagesvisited-widget-title": "หน้าที่เข้าชมแล้ว",
+	"bs-pagesvisited-pref-widgetns": "เนมสเปซ:",
+	"bs-pagesvisited-pref-widgetsortodr": "จัดเรียงตาม:",
+	"bs-pagesvisited-pref-sort-time": "เวลา",
+	"bs-pagesvisited-pref-sort-pagename": "ชื่อเรื่อง",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "จำนวน",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "เนมสเปซ",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "เวลา"
+}

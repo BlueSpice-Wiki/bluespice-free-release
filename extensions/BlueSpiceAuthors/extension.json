@@ -1,0 +1,88 @@
+{
+	"name": "BlueSpiceAuthors",
+	"license-name": "GPL-3.0-only",
+	"version": "5.1.0",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceAuthors",
+	"author": [
+		"Markus Glaser",
+		"Robert Vogel"
+	],
+	"descriptionmsg": "bs-authors-desc",
+	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.43.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 5.0.0"
+		}
+	},
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceAuthors": {
+					"className": "\\BlueSpice\\Authors\\Extension",
+					"extPath": "/BlueSpiceAuthors"
+				}
+			}
+		}
+	},
+	"MessagesDirs": {
+		"Authors": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"AuthorsMagic": "languages/Authors.i18n.magic.php"
+	},
+	"APIModules": {
+		"bs-pageauthors-store": "BlueSpice\\Authors\\Api\\Store\\PageAuthors"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"AuthorsBlacklist": {
+			"value": [
+				"MediaWiki default"
+			]
+		},
+		"AuthorsNamespaceBlacklist": {
+			"description": "Defaults to NS_FILE, NS_FILE_TALK, NS_MEDIAWIKI, NS_MEDIAWIKI_TALK, NS_CATEGORY, NS_CATEGORY_TALK",
+			"value": [ 6, 7, 8, 9, 14, 15 ],
+			"public": false
+		}
+	},
+	"Hooks": {
+		"GetDoubleUnderscoreIDs": "\\BlueSpice\\Authors\\Hook\\GetDoubleUnderscoreIDs\\AddNoAuthors::callback",
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
+	},
+	"HookHandlers": {
+		"standard-dialogs": {
+			"class": "\\BlueSpice\\Authors\\HookHandler\\StandardDialogs"
+		}
+	},
+	"ResourceModules": {
+		"ext.bluespice.authors.dialoginfo.pages": {
+			"scripts": [
+				"ui/page/bluespice.authors.AuthorsInformationPage.js"
+			],
+			"messages": [
+				"bs-authors-info-dialog",
+				"bs-authors-info-dialog-grid-column-author",
+				"bs-authors-info-dialog-grid-column-type"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceAuthors/resources"
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\Authors\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\Authors\\Tests\\": "tests/phpunit/"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bosogo"
+		]
+	},
+	"standarddialogs-page-info-close": "Жабуу",
+	"standarddialogs-page-info-page-title": "Аталыш",
+	"standarddialogs-page-info-page-language": "Тил",
+	"standarddialogs-page-info-page-templates": "Калыптар",
+	"standarddialogs-page-info-page-categories": "Категориялар",
+	"standarddialogs-page-info-page-images": "Сүрөттөр",
+	"standarddialogs-protect-btn": "Коргоо",
+	"standarddialogs-btn-done": "Даяр",
+	"standarddialogs-btn-cancel": "Жокко чыгаруу"
+}

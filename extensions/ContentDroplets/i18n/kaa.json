@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajiniyaz Nurniyazov"
+		]
+	},
+	"contentdroplets-droplet-text-box-neutral": "Xabar",
+	"contentdroplets-category-label-content": "Mazmunı",
+	"contentdroplets-category-label-media": "Media",
+	"contentdroplets-category-label-visualization": "Vizualizaciya",
+	"contentdroplets-category-label-data": "Maǵlıwmat",
+	"contentdroplets-category-label-navigation": "Navigaciya",
+	"contentdroplets-category-label-lists": "Dizimler",
+	"contentdroplets-category-label-export": "Eksport",
+	"contentdroplets-category-label-all": "Hámme",
+	"contentdroplets-droplet-text-box-text-label": "Tekst",
+	"contentdroplets-droplet-icon-color-label": "Reń",
+	"contentdroplet-dialog-action-close": "Biykarlaw"
+}

@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"F Samaritani"
+		]
+	},
+	"bs-discovery-navbar-user-button-personal-menu-text": "Isthrumenti passunari",
+	"bs-discovery-navbar-user-login-text": "Intra",
+	"bs-discovery-navbar-user-login-title": "Intra",
+	"bs-discovery-navbar-user-login-aria-label": "Intra",
+	"bs-discovery-logo-return-to-aria-label": "Torra a $1",
+	"bs-discovery-header-create-button-text": "Nobo",
+	"bs-discovery-header-create-button-title": "Crià 'na noba pàgina",
+	"bs-discovery-create-button-new-section-title": "Cria 'na sezzioni noba",
+	"bs-discovery-create-button-new-file-text": "Nobo file",
+	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Tipi di pàgina",
+	"bs-discovery-breadcrumb-nav-node-ns-main": "Pàgini",
+	"bs-discovery-breadcrumb-nav-node-portal-page": "Pàgina prinzipari",
+	"bs-discovery-title-last-edit-info-timestamp-aria-label": "Attuarizaddu l'ùlthima voltha $1",
+	"bs-discovery-last-edit-by-anon-user": "Utenti anònimu",
+	"bs-discovery-title-action-edit-button-title": "Mudifiggà pàgini",
+	"bs-discovery-title-action-edit-button-aria-label": "Mudifiggà pàgini",
+	"bs-discovery-title-action-language-button-title": "Isciubarà lìnga",
+	"bs-discovery-sidebar-secondary-share-sharebymail-text": "Postha erettrònica",
+	"bs-discovery-sidebar-secondary-share-link-title": "Saivvà la pàgina",
+	"bs-discovery-sidebar-actions-heading": "Azioni",
+	"bs-discovery-sidebar-details-heading": "Dettàgli",
+	"bs-discovery-dialog-details-action-cancel": "Annullà",
+	"bs-discovery-dialog-detailssectionheading-views": "Vìsiti",
+	"bs-discovery-breadcrumb-label-talk": "Dischussioni",
+	"bs-discovery-breadcrumb-label-action-history": "Isthòria",
+	"bs-discovery-breadcrumb-label-action-edit": "Mudificà",
+	"bs-discovery-first-heading-aria-label": "Tìturu di la pàgina",
+	"bs-discovery-personalurl-mycontributions-text": "Cuntributi",
+	"bs-discovery-globalactionentry-templates-text": "Mudelli",
+	"bs-discovery-globalactionentry-templates-title": "Tutti li mudelli"
+}

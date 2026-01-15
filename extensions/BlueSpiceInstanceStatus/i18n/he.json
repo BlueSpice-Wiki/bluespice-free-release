@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"bs-instancestatus-desc": "הוספת סקירה כללית של מצב מופע הוויקי",
+	"instancestatus": "מצב המופע",
+	"bs-instancestatus-instance-status-bs-version-label": "גרסת BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "מכסת משתמשים",
+	"bs-instancestatus-instance-status-last-update-label": "זמן עדכון אחרון",
+	"bs-instancestatus-instance-status-created-label": "זמן יצירת המופע",
+	"bs-instancestatus-instance-status-no-info": "לא זמין",
+	"bs-instancestatus-instance-status-sales-contact-label": "איש קשר של BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "יש ליצור קשר כאן: [$1 איש קשר של BlueSpice]",
+	"bs-instancestatus-overview-loader": "איסוף מידע על ויקי...",
+	"bs-instancestatus-instance-status-main-label": "כללי"
+}

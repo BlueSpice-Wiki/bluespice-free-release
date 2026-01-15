@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
+		]
+	},
+	"bs-discovery-back-to-top-text": "Ruovttoluotta bajás",
+	"bs-discovery-back-to-top-aria-label": "Ruovttoluotta bajás",
+	"bs-discovery-navbar-user-login-text": "Čálit sisa",
+	"bs-discovery-navbar-user-login-title": "Čálit sisa",
+	"bs-discovery-navbar-user-login-aria-label": "Čálit sisa",
+	"bs-discovery-header-create-button-text": "Ođđa",
+	"bs-discovery-create-button-new-file-text": "Ođđa fiila",
+	"bs-discovery-create-button-new-file-title": "Vurke ođđa fiilla",
+	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Nammagomuvuohta",
+	"bs-discovery-last-edit-by-anon-user": "Anonyma geavaheaddji",
+	"bs-discovery-title-action-language-button-title": "Vállje giela",
+	"bs-discovery-title-action-language-button-aria-label": "Vállje giela",
+	"bs-discovery-dialog-details-action-cancel": "Gaskkalduhte",
+	"bs-discovery-dialog-detailssectionheading-namespaces": "Nammagomuvuođat",
+	"bs-discovery-first-heading-aria-label": "Siidonamma",
+	"bs-discovery-mainlinks-categories-label": "Kategoriijat",
+	"bs-discovery-enhanced-mediawiki-sidebar-pnl-header-text": "Váldofállu"
+}

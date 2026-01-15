@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-tagcloud-desc": "Monstra varie nubes de etiquettas",
+	"bs-tagcloud-error-tagtype": "Le valor date, \"$1\", non es un magazin valide.",
+	"bs-tagcloud-error-tagrenderer": "Le valor date, \"$1\", non es un renditor valide.",
+	"bs-tagcloud-tag-tagcloud-name": "Etiquettario",
+	"bs-tagcloud-tag-tagcloud-title": "Etiquettario",
+	"bs-tagcloud-tag-tagcloud-desc": "Genera un nube de etiquettas a base de categorias o terminos de recerca",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Typo",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "Selige le forma in que le nube de etiquettas debe apparer",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Texto",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Lista",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
+	"bs-tagcloud-tag-tagcloud-attr-store-label": "Magazin",
+	"bs-tagcloud-tag-tagcloud-attr-store-help": "Selige qual datos usar",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categorias",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Terminos de recerca",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Latitude",
+	"bs-tagcloud-tag-tagcloud-attr-width-help": "Latitude del etiquettario in percentage",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Monstrar quantitate",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Monstrar le numero de elementos inter parentheses",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Dimension minime de litteras",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Grandor del typo de litteras pro le entrata con le numero minor de elementos",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Dimension maxime de litteras",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Grandor del typo de litteras pro le entrata con le numero major de elementos",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Excluder paginas",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Non monstrar iste paginas in le etiquettario. Pro plus paginas, usa un lista separate per commas, p.ex. \"Pagina principal, Test, MiPagina\"",
+	"bs-tagcloud-droplet-name": "Etiquettario",
+	"bs-tagcloud-droplet-description": "Nube de etiquettas basate sur categorias o consultas de recerca"
+}

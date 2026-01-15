@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"FiberAhmed",
+			"Meno25",
+			"أَحمد",
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-readers-desc": "ينشئ قائمة بالأشخاص الذين يقرؤون صفحة",
+	"prefs-readers": "القراء",
+	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|قارئ|قارئة}}|قراء}}",
+	"readers-user": "{{GENDER:$1|قرأ|قرأت}} الصفحات: $1",
+	"readers": "قراء \"$1\"",
+	"bs-readers-contentactions-label": "عرض القراء",
+	"bs-readers-pagenotexists": "الصفحة غير موجودة.",
+	"bs-readers-pref-active": "تنشيط القراء",
+	"bs-readers-emptyinput": "لم يتم تقديم أية صفحة.",
+	"bs-readers-header-username": "اسم المستخدم",
+	"bs-readers-header-readerspath": "قارئ",
+	"bs-readers-header-ts": "التاريخ",
+	"bs-readers-header-page": "الصفحة",
+	"apihelp-bs-readers-data-store-summary": "احصل على معلومات القارئ لصفحة محددة.",
+	"apihelp-bs-readers-users-store-summary": "الحصول على جميع معلومات القراء لصفحة محددة.",
+	"apihelp-bs-readers-page-readers-store-summary": "يحصل على جميع قراء جميع الصفحات",
+	"apihelp-bs-readers-revision-readers-store-summary": "يحصل على جميع قراء كل المراجعات للصفحة",
+	"apihelp-bs-readers-tasks-summary": "يوفر عمليات مشتركة للقراء",
+	"action-viewreaders": "عرض قراء الصفحات",
+	"action-viewrevisionreaders": "عرض قراء المراجعات من صفحة واحدة",
+	"right-viewreaders": "عرض قراء صفحة",
+	"right-viewrevisionreaders": "عرض قراء المراجعات من صفحة واحدة",
+	"bs-readers-privacy-transparency-working-readers": "قراء بلو سبيس - {{GENDER:$3|أنت}} قرأت الصفحة $1 في $2",
+	"bs-readers-header-read-by": "قرأ من قبل",
+	"bs-readers-header-revision-id": "معرف المراجعة",
+	"bs-readers-header-revision-date": "تاريخ المراجعة",
+	"bs-readers-header-read-on": "القراءة في",
+	"revisionreaders": "القراء من خلال مراجعة \" $1 \"",
+	"bs-readers-info-dialog": "قراء هذه الصفحة",
+	"bs-readers-info-dialog-column-readers": "القراء",
+	"bs-readers-permission-error": "خطأ في الإذن"
+}

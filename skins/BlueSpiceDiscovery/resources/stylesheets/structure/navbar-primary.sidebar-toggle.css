@@ -1,0 +1,54 @@
+#sb-pri-tgl-btn {
+	font-size: 25px;
+	margin-left: 35px;
+	padding: 4px 6px;
+	color: var( --icon-primary-fg--hover );
+	background-color: var( --icon-primary-bg--hover );
+}
+
+#sb-pri-tgl-btn:hover {
+	padding: 4px 6px;
+}
+
+#sb-pri-tgl-btn[ aria-expanded='false' ] {
+	color: var( --title-nav-fg );
+	background-color: transparent;
+}
+
+.fs-mode-enabled #sb-pri-tgl-btn {
+	color: var( --title-nav-fg );
+	background-color: transparent;
+}
+
+#sb-tgl-mobile-pri {
+	font-size: 25px;
+	padding: 4px 6px;
+	color: var( --icon-primary-fg--hover );
+	background-color: var( --icon-primary-bg--hover );
+}
+
+#sb-tgl-mobile-pri[ aria-expanded='false' ] {
+	color: var( --title-nav-fg );
+	background-color: transparent;
+}
+
+a#sb-sec-tgl-btn {
+	color: var( --icon-primary-fg--hover );
+	background-color: var( --title-nav-bg--hover );
+	height: 32px;
+	width: 32px;
+	transform: rotate( 90deg );
+	font-size: 18px;
+	padding-top: 4px;
+	margin-left: 5px;
+}
+
+a#sb-sec-tgl-btn[ aria-expanded='false' ] {
+	color: var( --title-nav-fg );
+	background-color: transparent;
+}
+
+.fs-mode-enabled #sb-sec-tgl-btn {
+	color: var( --title-nav-fg );
+	background-color: transparent;
+}

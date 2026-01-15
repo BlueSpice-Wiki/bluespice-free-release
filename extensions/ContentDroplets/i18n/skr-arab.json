@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"contentdroplets-droplet-text-box-important": "اہم سنیہا",
+	"contentdroplets-droplet-text-box-note": "نوٹ",
+	"contentdroplets-droplet-text-box-tip": "گُر",
+	"contentdroplets-droplet-text-box-neutral": "سنیہا",
+	"contentdroplets-category-label-featured": "خاص",
+	"contentdroplets-category-label-content": "شامل حصے",
+	"contentdroplets-category-label-media": "میڈیا",
+	"contentdroplets-category-label-data": "ڈیٹا",
+	"contentdroplets-category-label-navigation": "نیوی ڳیشݨ",
+	"contentdroplets-category-label-lists": "تندیراں",
+	"contentdroplets-category-label-export": "ٻاہر بھیڄو",
+	"contentdroplets-category-label-all": "یکے",
+	"contentdroplets-droplet-text-box-header-label": "سرخی",
+	"contentdroplets-droplet-text-box-text-label": "عبارت",
+	"contentdroplets-droplet-text-box-show-icon-label": "آئیکان ݙکھاؤ",
+	"contentdroplets-droplet-icon-font-size-label": "فونٹ سائز",
+	"contentdroplets-droplet-icon-color-label": "رنگ",
+	"contentdroplets-droplet-icon-name": "آئیکان",
+	"contentdroplet-dialog-action-close": "منسوخ",
+	"contentdroplet-dialog-action-insert": "درج کرو",
+	"contentdroplets-droplet-code-name": "کوڈ"
+}

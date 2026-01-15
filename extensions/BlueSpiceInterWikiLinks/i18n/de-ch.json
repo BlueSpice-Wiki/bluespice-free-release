@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Filzstift"
+		]
+	},
+	"bs-interwikilinks-invalid-pfx-spc": "Das Präfix ist ungültig. Verwende keine Leerschläge und keine Sonderzeichen.",
+	"bs-interwikilinks-invalid-url-spc": "Die URL ist ungültig. Verwende keine Leerschläge."
+}

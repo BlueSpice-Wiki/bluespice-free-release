@@ -1,0 +1,15 @@
+[
+	{
+		"path": "/mws/v1/title-tree-store",
+		"class": "MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Rest\\TitleTreeStore",
+		"services": [
+			"HookContainer",
+			"DBLoadBalancer",
+			"TitleFactory",
+			"ContentLanguage",
+			"NamespaceInfo",
+			"PageProps",
+			"PermissionManager"
+		]
+	}
+]

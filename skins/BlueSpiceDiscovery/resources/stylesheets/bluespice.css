@@ -1,0 +1,102 @@
+body.mediawiki,
+body.mediawiki.x-body {
+	font-family: 'Lato';
+	font-size: 14px;
+	font-weight: normal;
+	background-color: var( --body-bg );
+
+	/* scrollbar for FF */
+	scrollbar-width: thin;
+	scrollbar-color: #d8d8d9 white;
+}
+
+body.mediawiki.ns-special,
+body.mediawiki.x-body.ns-special {
+	background-color: var( --body-special-bg );
+}
+/* scrollbar for Chrome, Safari, Edge */
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #d8d8d9;
+	border-radius: 5px;
+	border: 3px solid transparent;
+}
+
+a.ico-btn,
+a.ico-btn:visited {
+	display: block;
+	height: 40px;
+	width: 40px;
+	padding: 6px 6px;
+	border-radius: 50%;
+	font-size: var( --navbar-icon-size );
+	color: var( --icon-primary-fg );
+}
+
+a.ico-btn i {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var( --icon-primary-bg );
+	text-align: center;
+}
+
+a.ico-btn:hover {
+	color: var( --icon-primary-fg--hover );
+	background-color: var( --icon-primary-bg--hover );
+}
+
+a.ico-btn:focus {
+	box-shadow: none;
+}
+
+a.ico-btn:focus-visible {
+	outline: 2px solid var( --icon-primary--focus-visible );
+}
+
+.bg-transp {
+	background-color: transparent !important;
+}
+
+legend {
+	font-size: 15px !important;
+	font-weight: normal;
+}
+
+label {
+	font-size: 15px;
+}
+
+/* Hide smw loading indicator - results in swining conent! */
+.smw-entity-examiner.smw-indicator-vertical-bar-loader {
+	display: none;
+}
+
+.ve-activated.ve-active #title-actions {
+	visibility: hidden;
+}
+
+#title-section #mw-indicator-mw-helplink {
+	display: none;
+}
+
+.hide-title .ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
+.hide-title .ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
+	top: var( --navbar-primary-height );
+}
+
+.bs-destructive {
+	color: var( --bs-destructive-fg );
+}
+
+.bs-progressive {
+	color: var( --bs-progressive-fg );
+}

@@ -1,0 +1,1 @@
+ALTER TABLE /*$wgDBprefix*/bs_extendedstatistics_snapshot ADD COLUMN `ess_secondary_data` LONGBLOB AFTER `ess_data`;

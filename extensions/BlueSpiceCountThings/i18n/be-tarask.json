@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"bs-countthings-words-label": "Словы",
+	"bs-countthings-pages-label": "Старонкі",
+	"bs-countthings-ve-countcharacters-mode-all": "усе",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "словы",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "старонкі",
+	"bs-countthings-ve-countcharacters-input-label": "Старонкі"
+}

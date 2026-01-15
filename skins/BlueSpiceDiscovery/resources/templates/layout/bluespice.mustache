@@ -1,0 +1,18 @@
+<script{{#nonce}} nonce="{{.}}"{{/nonce}}>/** I should prevent fouc */</script>
+<div class="navbar-primary-height d-block"></div>
+{{{skip-to}}}
+<div id="header">
+	{{{navbar-primary}}}
+</div>
+<div id="wrapper" class="row align-items-center wrapper mx-0">
+	{{{sidebar-primary}}}
+	<div class="col col-center" id="main">
+		{{{main}}}
+		{{{back-to-top}}}
+	</div>
+	{{{aftercontent}}}
+	{{{sidebar-secondary}}}
+</div>
+{{{footer}}}
+<div class="mw-notification-area" role="status" data-mw="interface"></div>
+<div id="mws-wcag-generic-status-container" class="visually-hidden" role="status"></div>

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"bs-insertcategory-desc": "Dijalog za unošenje linka ka kategoriji",
+	"bs-insertcategory-insertcat": "Unesi kategoriju",
+	"prefs-insertcategory": "Unesi kategoriju",
+	"bs-insertcategory-edit-dialog-button-label": "Uredi",
+	"bs-insertcategory-edit-dialog-title": "Izmeni kategorije",
+	"bs-insertcategory-edit-dialog-button-submit": "Gotovo",
+	"bs-insertcategory-edit-dialog-button-cancel": "Otkaži",
+	"bs-insertcategory-edit-dialog-input-label": "Dodeljene kategorije",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Implicitne kategorije",
+	"bs-insertcategory-no-categories": "Nema dodeljenih kategorija",
+	"bs-insertcategory-edit-dialog-tree-view": "Prikaži sve kategorije"
+}

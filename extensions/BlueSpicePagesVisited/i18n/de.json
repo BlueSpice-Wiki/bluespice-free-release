@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64",
+			"Mschlindwein",
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bs-pagesvisited-desc": "Stellt eine personalisierte Liste der zuletzt besuchten Seiten zur Verfügung",
+	"prefs-pagesvisited": "Besuchte Seiten",
+	"bs-pagesvisited-widget-title": "Besuchte Seiten",
+	"bs-pagesvisited-error-nsnotvalid": "{{PLURAL:$1|Der|Die}} angegebene{{PLURAL:$1||n}} Namens{{PLURAL:$1|raum|räume}} <code>$2</code> {{PLURAL:$1|ist|sind}} nicht gültig.",
+	"bs-pagesvisited-pref-widgetlimit": "Anzahl der Einträge:",
+	"bs-pagesvisited-pref-widgetns": "Anzuzeigende Namensräume:",
+	"bs-pagesvisited-pref-widgetsortodr": "Sortieren nach:",
+	"bs-pagesvisited-pref-sort-time": "Zeit",
+	"bs-pagesvisited-pref-sort-pagename": "Titel",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Zeigt eine Liste kürzlich besuchter Seiten an. Diese Liste kann durch Parameter beschränkt werden.",
+	"bs-pagesvisited-ve-pagesvisited-title": "Besuchte Seiten",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Anzahl",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Definition der Anzahl von Seiten, die in der Liste angezeigt werden",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Maximale Titellänge",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Definition der maximalen Anzahl an Zeichen, bevor ein Titel abgeschnitten wird",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Reihenfolge",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Definition der Reihenfolge, in der die Seiten angezeigt werden",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Namensräume",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Nur Seiten aus diesen Namensräumen anzeigen",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Zeit",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Seitenname",
+	"bs-pagesvisited-droplet-name": "Besuchte Seiten",
+	"bs-pagesvisited-droplet-description": "Liste mit besuchten Seiten",
+	"bs-pagesvisited-label-anon-user": "Um besuchte Seiten zu sehen, melde dich bitte bei deinem Benutzerkonto an"
+}

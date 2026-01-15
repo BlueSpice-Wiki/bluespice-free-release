@@ -1,0 +1,22 @@
+.last-edit-info {
+	color: var( --title-nav-fg );
+	font-size: 0.875rem;
+}
+
+.last-edit-info a,
+.last-edit-info a:visited {
+	color: var( --title-nav-fg );
+	font-weight: bold;
+}
+
+.last-edit-info a:hover {
+	color: var( --title-nav-fg--hover );
+}
+
+.last-edit-info a:focus-visible {
+	outline: 1px solid var( --focus-visible );
+}
+
+.last-edit-info a:focus:not( :focus-visible ) {
+	outline: 0;
+}

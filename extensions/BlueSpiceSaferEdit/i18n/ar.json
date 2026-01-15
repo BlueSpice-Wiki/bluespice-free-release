@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"ديفيد"
+		]
+	},
+	"bs-saferedit-desc": "يوفر تحذيرات إذا قام المستخدمون الآخرون بتحرير الصفحة",
+	"bs-saferedit-user-editing": "$1 {{PLURAL:$2| هي | are}} {{GENDER:$1| تحرير}} الصفحة",
+	"bs-saferedit-someone-editing": "الصفحة قيد التحرير",
+	"bs-saferedit-pref-interval": "الفاصل الزمني للبحث عن التعديلات المتزامنة:",
+	"bs-saferedit-pref-shownameofeditinguser": "إظهار اسم المحرر الحالي",
+	"bs-saferedit-pref-interval-help": "يضبط الوقت بالثواني للتحقق مما إذا كان شخص آخر يقوم بتحرير الصفحة.",
+	"bs-saferedit-pref-shownameofeditinguser-help": "يُظهر المستخدمين الذين يقومون حاليًا بتحرير الصفحة كتلميح أعلى الصفحة.",
+	"bs-saferedit-pref-edit-interval": "فترة التحقق من التحرير (بالثواني)",
+	"bs-saferedit-pref-edit-interval-help": "يحدد عدد المرات، بالثواني، للتحقق مما إذا كان شخص آخر يقوم بتحرير الصفحة (افتراضي: 3 ثوانٍ)",
+	"bs-saferedit-pref-show-editinguser": "إظهار المحرر الحالي",
+	"bs-saferedit-pref-show-editinguser-help": "إضافة اسم المستخدم الذي يقوم حاليًا بتحرير الصفحة إلى أعلى الصفحة"
+}

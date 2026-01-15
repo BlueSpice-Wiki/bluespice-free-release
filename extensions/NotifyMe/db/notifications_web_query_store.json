@@ -1,0 +1,78 @@
+[
+	{
+		"name": "notifications_web_query_store",
+		"columns": [
+			{
+				"name": "nwqs_notification_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "nwqs_status",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true
+				}
+			},
+			{
+				"name": "nwqs_target_user",
+				"type": "integer",
+				"options": {
+					"unsigned": true,
+					"notnull": true
+				}
+			},
+			{
+				"name": "nwqs_notification_timestamp",
+				"type": "mwtimestamp",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "nwqs_namespace_id",
+				"type": "integer",
+				"options": {
+					"notnull": false
+				}
+			},
+			{
+				"name": "nwqs_namespace_text",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": false
+				}
+			},
+			{
+				"name": "nwqs_title",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": false
+				}
+			},
+			{
+				"name": "nwqs_categories",
+				"type": "text",
+				"options": {
+					"notnull": false
+				}
+			},
+			{
+				"name": "nwqs_buckets",
+				"type": "text",
+				"options": {
+					"notnull": false
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [ "nwqs_notification_id" ]
+	}
+]

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"NikosLikomitros",
+			"Nikosgranturismogt"
+		]
+	},
+	"bs-watchlist-pref-sort-time": "Ώρα",
+	"bs-watchlist-pref-sort-title": "Τίτλος",
+	"bs-watchlist-tag-watchlist-desc": "Εμφανίζει τα λήμματα που έχουν τις πιο πρόσφατες αλλαγές και είναι στην λίστα παρακολούθησής σας."
+}

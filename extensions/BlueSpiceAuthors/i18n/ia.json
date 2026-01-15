@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-authors-desc": "Monstra le imagines de profilo del autores de un pagina",
+	"prefs-authors": "Autores de iste pagina",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Autor}}|Autores}}",
+	"bs-authors-profileimage": "Imagine de profilo",
+	"bs-authors-profileimage-change": "Cambiar imagine de profilo",
+	"bs-authors-show-all-authors": "Altere autores disponibile",
+	"bs-authors-navigation-link-title": "Autores de iste pagina",
+	"bs-authors-navigation-link-text": "Autores",
+	"apihelp-bs-pageauthors-store-summary": "Lista tote le autores de un pagina fornite in le contexto",
+	"bs-authors-info-dialog": "Autores de iste pagina",
+	"bs-authors-info-dialog-grid-column-author": "Autor",
+	"bs-authors-info-dialog-grid-column-type": "Typo de autor"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kimberli Mäkäräinen (WMNO)",
+			"MITO",
+			"Pyscowicz",
+			"Silvonen"
+		]
+	},
+	"bs-permissionmanager-text": "Käyttöoikeudet",
+	"bs-permissionmanager-header-global": "Wiki",
+	"bs-permissionmanager-btn-save-label": "Tallenna",
+	"bs-permissionmanager-group-all": "kaikki",
+	"bs-permissionmanager-header-role": "Rooli",
+	"bs-permissionmanager-namespace-picker": "Nimiavaruudet"
+}

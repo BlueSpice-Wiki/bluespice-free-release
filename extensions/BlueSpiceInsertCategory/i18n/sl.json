@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Eleassar",
+			"Skalcaa"
+		]
+	},
+	"bs-insertcategory-desc": "Pogovorno okno za vnos povezave kategorije",
+	"bs-insertcategory-insertcat": "Vstavi kategorijo",
+	"prefs-insertcategory": "Vstavi kategorijo",
+	"bs-insertcategory-pref-withparents": "Vstavi kategorijo skupaj s starši",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Uredite kategorije te strani",
+	"bs-insertcategory-edit-dialog-button-tooltip": "Uredite kategorije te strani",
+	"bs-insertcategory-edit-dialog-button-aria-label": "Odpri pogovorno okno za urejanje kategorij teh strani",
+	"bs-insertcategory-edit-dialog-button-label": "Uredi",
+	"bs-insertcategory-edit-dialog-title": "Uredi kategorije",
+	"bs-insertcategory-edit-dialog-button-submit": "Končano",
+	"bs-insertcategory-edit-dialog-button-cancel": "Prekliči",
+	"bs-insertcategory-edit-dialog-input-label": "Dodeljene kategorije",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "Implicitne kategorije",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "Te kategorije niso opredeljene v vikibesedilni vsebini strani. Najverjetneje so nastavljene znotraj predloge.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Ni mogoče pridobiti kategorij strani",
+	"bs-insertcategory-no-categories": "Ni dodeljenih kategorij",
+	"bs-insertcategory-edit-dialog-tree-view": "Prikaži vse kategorije"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"Mro",
+			"Superjurek",
+			"Vengir"
+		]
+	},
+	"bs-authors-desc": "Wyświetla zdjęcie profilowe autorów strony",
+	"prefs-authors": "Autorzy tej strony",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Autor|Autorka}}|Autorów}}",
+	"bs-authors-profileimage": "Avatar",
+	"bs-authors-profileimage-change": "Zmień avatar",
+	"bs-authors-show-all-authors": "Więcej autorów…",
+	"bs-authors-navigation-link-title": "Autorzy tej strony",
+	"bs-authors-navigation-link-text": "Autorzy",
+	"apihelp-bs-pageauthors-store-summary": "Lista wszystkich autorów strony podana w kontekście",
+	"bs-authors-info-dialog": "Autorzy tej strony"
+}

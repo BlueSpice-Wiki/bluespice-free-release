@@ -1,0 +1,30 @@
+.oojsplus-data-gridWidget-cell.action-cell > span {
+	opacity: 0;
+}
+
+.enhanced-ui-filelist-panel .oojsplus-data-gridWidget-cell[ data-column='categories' ] .oo-ui-fieldsetLayout-group > span {
+	padding: 3px 10px;
+	border: 1px solid #747474;
+	border-radius: 26px;
+	margin: 5px 2px;
+	background-color: #f8f9fa;
+	color: #202122;
+}
+
+.oojsplus-data-gridWidget-row:hover .oojsplus-data-gridWidget-cell.action-cell > span,
+.oojsplus-data-gridWidget-row .oojsplus-data-gridWidget-cell.action-cell > span:has( a:focus-visible ) {
+	opacity: 1;
+}
+
+.enhancedUI-paginator .oo-ui-buttonSelectWidget {
+	margin-right: -1px;
+}
+
+.enhanced-filelist-tools {
+	display: flex;
+	justify-content: space-between;
+}
+
+.enhanced-filelist-tools-btn-select .oo-ui-fieldLayout-header {
+	display: none;
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Papuass"
+		]
+	},
+	"enhancedupload-finished-dialog-action-close": "Aizvērt",
+	"enhancedupload-config-type-label": "Attēla veids:",
+	"enhancedupload-config-height-label": "Attēla augstums:",
+	"enhancedupload-config-width-label": "Attēla platums:"
+}

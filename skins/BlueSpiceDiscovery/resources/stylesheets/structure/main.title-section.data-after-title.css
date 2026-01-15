@@ -1,0 +1,11 @@
+#data-after-title {
+	color: var( --title-nav-fg );
+	font-size: 0.875rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#data-after-title a,
+#data-after-title a.dropdown-toggle {
+	color: var( --title-nav-fg );
+}

@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abijeet Patro"
+		]
+	},
+	"contentdroplets-droplet-text-box-note": "नोट",
+	"contentdroplets-droplet-text-box-neutral": "संदेश",
+	"contentdroplets-category-label-content": "सामग्री",
+	"contentdroplets-category-label-media": "मीडिया",
+	"contentdroplets-category-label-lists": "सूचियाँ",
+	"contentdroplets-category-label-export": "निर्यात",
+	"contentdroplets-category-label-all": "सभी",
+	"contentdroplets-droplet-icon-font-size-label": "फ़ॉण्ट का आकार",
+	"contentdroplets-droplet-icon-color-label": "रंग",
+	"contentdroplet-dialog-action-close": "रद्द करें"
+}

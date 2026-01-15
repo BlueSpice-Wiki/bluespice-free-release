@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"DaSupremo"
+		]
+	},
+	"filterspecialpages-desc": "E dey insert field so say e go filter entries inside [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages].",
+	"filterspecialpages-hint-label": "Search page"
+}

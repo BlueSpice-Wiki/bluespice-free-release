@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lakejason0",
+			"Liuxinyu970226"
+		]
+	},
+	"notifyme-desc": "通知",
+	"prefs-notifications": "通知",
+	"notifyme-subscriber-provider-preferences-desc": "从通知中心订阅",
+	"notifyme-link-label-view-page": "查看页面",
+	"notifyme-link-label-diff": "查看差异"
+}

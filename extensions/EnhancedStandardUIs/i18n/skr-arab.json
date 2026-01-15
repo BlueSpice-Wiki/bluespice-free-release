@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"enhanced-standard-uis-history-grid-header-revision-label": "دہرائی",
+	"enhanced-standard-uis-history-grid-header-size-label": "سائز",
+	"enhanced-standard-uis-history-grid-header-summary-label": "خلاصہ",
+	"enhanced-standard-uis-history-grid-header-tags-label": "ٹیگ",
+	"enhanced-standard-uis-history-grid-header-undo-title": "واپس",
+	"enhanced-standard-uis-history-grid-header-diff-label": "فرق",
+	"enhancedfilelist": "فائل لسٹ",
+	"enhanced-standard-uis-filelist-grid-file-title": "فائل دا ناں",
+	"enhanced-standard-uis-filelist-grid-author-title": "مصنف",
+	"enhanced-standard-uis-filelist-grid-date-title": "تریخ",
+	"enhanced-standard-uis-filelist-grid-type-title": "قسم",
+	"enhanced-standard-uis-filelist-grid-size-title": "سائز",
+	"enhanced-standard-uis-filelist-grid-categories-title": "ونکیاں",
+	"enhanced-standard-uis-filelist-grid-comment-title": "تبصرہ",
+	"enhanced-standard-uis-filelist-grid-info-title": "معلومات",
+	"enhanced-standard-uis-filelist-grid-reupload-title": "اپلوڈ",
+	"enhanced-standard-uis-filelist-grid-delete-title": "مٹاؤ",
+	"enhanced-standard-uis-filelist-panel-new-file-label": "نویں فائل",
+	"enhanced-standard-uis-filelist-panel-list-label": "تندیر",
+	"enhanced-standard-uis-filelist-dialog-info": "فائل معلومات",
+	"enhanced-standard-uis-filelist-dialog-action-close-title": "بند کرو",
+	"enhanced-standard-uis-filelist-dialog-action-done-label": "تھی ڳیا",
+	"enhanced-standard-uis-filelist-dialog-history-grid-version": "ورژن",
+	"enhanced-standard-uis-filelist-dialog-page-data-label": "میٹا ڈیٹا",
+	"enhanced-standard-uis-allpages-filter-pages-label": "چھاݨاں",
+	"enhanced-standard-uis-filelist-grid-preview-title": "پیشگی ݙکھالا",
+	"enhanced-standard-uis-filelist-ga-title": "فائلاں",
+	"enhanced-standard-uis-allpages-untitled": "عنوان ٻاجھ",
+	"enhancedspecialpages": "خاص ورقے"
+}

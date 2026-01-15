@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dogogos123",
+			"KATRINE1993"
+		]
+	},
+	"bs-qr-code-extension-description": "Προβάλλει έναν κωδικό QR με σύνδεσμο στην τρέχουσα σελίδα της γραμμής εργαλείων.",
+	"bs-qr-code-alt-text": "Κωδικός QR για $1",
+	"bs-qr-code-tag-qrcode-title": "Κωδικός QR",
+	"bs-qr-code-tag-attr-page-label": "Σελίδα",
+	"bs-qr-code-tag-attr-page-help": "Όνομα σελίδας που θα συμπεριληφθεί στον σύνδεσμο κωδικού QR. Για να χρησιμοποιήσετε το όνομα της τρέχουσας σελίδας, αφήστε αυτό το πεδίο κενό",
+	"bs-qr-code-tag-attr-query-label": "Παράμετρος",
+	"bs-qr-code-tag-attr-desc-help": "Μια περιγραφή που σχετίζεται με τον κωδικό QR. Για να εμφανίσετε μόνο τον κωδικό QR, αφήστε αυτό το πεδίο κενό",
+	"bs-qr-code-tag-attr-size-label": "Μέγεθος",
+	"bs-qr-code-tag-attr-size-help": "Αλλάξτε το μέγεθος του ενσωματωμένου κωδικού QR",
+	"bs-qr-code-droplet-name": "Κωδικός QR",
+	"bs-qr-code-droplet-desc": "Εισάγει έναν κωδικό QR στη wikipage",
+	"bs-qr-code-tag-attr-size-option-small": "μικρό",
+	"bs-qr-code-tag-attr-size-option-medium": "Μέσο",
+	"bs-qr-code-tag-attr-size-option-large": "μεγάλο"
+}

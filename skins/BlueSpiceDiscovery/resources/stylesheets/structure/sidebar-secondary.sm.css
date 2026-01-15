@@ -1,0 +1,8 @@
+#sb-sec {
+	overflow: auto;
+	height: calc( 100vh - calc( 15px + calc( 2 * var( --navbar-primary-height ) ) ) );
+}
+
+#sb-sec .card-header.menu-title {
+	text-align: left;
+}

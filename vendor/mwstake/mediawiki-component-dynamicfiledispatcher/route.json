@@ -1,0 +1,9 @@
+[
+	{
+		"path": "/mws/v1/dynamic-file-dispatcher/{module}",
+		"class": "MWStake\\MediaWiki\\Component\\DynamicFileDispatcher\\Rest\\Handler",
+		"services": [
+			"MWStake.DynamicFileDispatcher.Factory"
+		]
+	}
+]

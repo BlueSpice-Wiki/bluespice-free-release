@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"menueditor-ui-menu-keyword-label": "Palavras-chave",
+	"menueditor-ui-menu-keyword-label-edit": "Editar palavra-chave",
+	"menueditor-ui-form-field-keyword": "Palavras-chave",
+	"menueditor-ui-form-field-target": "Destino do link",
+	"menueditor-ui-dialog-action-done": "Feito",
+	"menueditor-ui-dialog-action-cancel": "Cancelar",
+	"menueditor-ui-submit": "Salvar",
+	"menueditor-ui-cancel": "Cancelar",
+	"menueditor-action-menueditsource": "Editar código-fonte",
+	"menueditor-action-menuedit": "Editar",
+	"menueditor-ui-dialog-title": "Editar elemento",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Editar palavra-chave",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Palavras-chave",
+	"menueditor-toolbar-cancel": "Cancelar as edições"
+}

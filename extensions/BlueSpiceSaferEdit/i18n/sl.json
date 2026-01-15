@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-saferedit-desc": "Pošlje opozorilo, če stran urejanjo drugi oporabniki",
+	"bs-saferedit-user-editing": "stran {{PLURAL:$2|je {{GENDER:$1|urejal|urejala|urejal_a}}|sta urejala|so urejali}} $1",
+	"bs-saferedit-someone-editing": "Stran se ureja"
+}

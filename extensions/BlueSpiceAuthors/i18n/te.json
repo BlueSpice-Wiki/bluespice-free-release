@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veeven"
+		]
+	},
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|రచయిత|రచయిత్రి}}|రచయితలు}}",
+	"bs-authors-navigation-link-text": "రచయితలు"
+}

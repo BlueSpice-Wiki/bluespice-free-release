@@ -1,0 +1,137 @@
+#sb-sec-cnt .card {
+	border: 0 !important;
+	padding: 0;
+}
+
+#sb-sec-cnt .card-header.menu-title {
+	margin-bottom: 0.5rem;
+	padding-left: 25px;
+	border-bottom: 0.05px solid var( --sidebar-secondary-header-border-color );
+	color: var( --sidebar-secondary-header-fg );
+	font-size: 15px;
+	font-variant-caps: all-petite-caps;
+	letter-spacing: 0.15rem;
+}
+
+#sb-sec .nav-tabs a {
+	display: block;
+	width: 100%;
+	height: 35px;
+	font-size: 15px;
+	padding-left: 0.8rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-left: 5px solid transparent;
+	color: var( --sidebar-secondary-tab-home-fg );
+}
+
+#sb-sec .nav-tabs > a:hover {
+	background-color: transparent;
+	border-left: 5px solid transparent;
+	color: var( --sidebar-secondary-tab-home-fg--hover );
+	cursor: pointer;
+}
+
+#sb-sec a.tab-home i {
+	margin-right: 1rem;
+	display: inline-block;
+}
+
+#sb-sec a.tab-home i::before {
+	position: relative;
+	top: 2px;
+}
+
+#sb-sec .list-group-item a,
+#sb-sec .list-group-item a:visited {
+	color: inherit;
+	text-decoration: none;
+	border-left: 5px solid transparent;
+}
+
+#sb-sec .list-group-item a:hover {
+	color: var( --sidebar-secondary-fg--hover );
+	background-color: var( --sidebar-secondary-bg--hover );
+	border-left: 5px solid var( --sidebar-secondary-marker--hover );
+}
+
+#sb-sec a.active {
+	color: var( --sidebar-secondary-fg--active );
+	background-color: var( --sidebar-secondary-bg--active );
+	border-left: 5px solid var( --sidebar-secondary-marker--active );
+}
+
+#sb-sec ul {
+	margin-left: 0;
+}
+
+#sb-sec .list-group .list-group-item:last-child {
+	padding-bottom: 5px;
+}
+
+#sb-sec .list-group .list-group-item > a {
+	display: inline-block;
+	width: 100%;
+	line-height: 35px;
+	vertical-align: middle;
+	padding-left: 40px;
+}
+
+#sb-sec .list-group .list-group-item > a:focus-visible {
+	outline: 1px solid var( --focus-visible );
+}
+/* hide outline for focus on click */
+#sb-sec .list-group .list-group-item > a:focus:not( :focus-visible ) {
+	outline: 0;
+}
+
+#sb-sec #toolbar {
+	flex-direction: row;
+	justify-content: space-between;
+	height: 60px;
+	padding: 10px 30px;
+	background-color: var( --sidebar-secondary-toolbar-bg ) !important;
+	margin-bottom: 5px;
+}
+
+#sb-sec #toolbar .ico-toolbar {
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 10px;
+	margin: 20px 0;
+}
+
+#sb-sec #toolbar .dropdown {
+	height: 100%;
+}
+
+#toolbar a.ico-btn {
+	align-items: center;
+	padding: 7px 9px;
+}
+
+#toolbar a.ico-btn:hover {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#sb-sec-close {
+	margin-left: 30px;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+#sb-sec-close:hover {
+	background-color: var( --content-box-color );
+}
+
+#actions-pnl-list-pri {
+	padding-bottom: 0.5rem;
+}
+
+#actions-pnl-list-sec {
+	border-top: 0.05px solid var( --sidebar-secondary-header-border-color );
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}

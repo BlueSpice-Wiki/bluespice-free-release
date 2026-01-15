@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ainali",
+			"Sabelöga",
+			"WikiPhoenix"
+		]
+	},
+	"lingo-desc": "Tillhandahåller verktygstips på sidor när muspekaren förs över ord definierade på en wikisida.",
+	"lingo-terminologypagename": "Terminologi",
+	"lingo-noterminologypage": "Terminologisidan \"$1\" finns inte.",
+	"lingo-notatextpage": "Terminologisidan \"$1\" är inte en textsida.",
+	"lingo-terminologypagenotlocal": "Sidan \"$1\" är inte en lokal sida.",
+	"lingo-noapprovedrevs": "Stöd för ApprovedRevs har aktiverats i Lingo. Men ApprovedRevs hittades inte.",
+	"lingo-invalidlinktarget": "Ogiltigt länkmål för termen \"$1\": $2"
+}

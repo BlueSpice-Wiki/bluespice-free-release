@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Thibaut120094",
+			"Verdy p",
+			"Wladek92"
+		]
+	},
+	"bs-usagetracker-desc": "Maintient des données statistiques sur l’utilisation des extensions",
+	"apihelp-bs-usagetracker-store-summary": "Détient des données statistiques concernant l’utilisation de l’extension"
+}

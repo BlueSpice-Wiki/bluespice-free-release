@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"CiaPan",
+			"DeRudySoulStorm",
+			"Mro",
+			"Rail",
+			"Wiochman"
+		]
+	},
+	"bs-articleinfo-desc": "Udostępnia informacje o stronie w pasku stanu",
+	"prefs-articleinfo": "Informacja o stronie",
+	"bs-articleinfo-newrevision-info-text-reload": "Dostępna jest nowa wersja tej strony. [[:$1|Załaduj ponownie]] stronę, aby wyświetlić aktualną zawartość."
+}

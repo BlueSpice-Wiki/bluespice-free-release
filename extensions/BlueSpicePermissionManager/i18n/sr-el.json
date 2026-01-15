@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"bs-permissionmanager-text": "Dozvole",
+	"bs-permissionmanager-header-permissions": "Dozvole",
+	"bs-permissionmanager-header-global": "Viki",
+	"bs-permissionmanager-btn-save-label": "Sačuvaj",
+	"bs-permissionmanager-affected-by-notset": "Nije postavljeno",
+	"bs-permissionmanager-group-all": "sve",
+	"bs-permissionmanager-header-role": "Uloga",
+	"bs-premissionmanager-reset-button-label": "Resetuj",
+	"bs-permissionmanager-preset-private-label": "Privatan viki",
+	"bs-permissionmanager-preset-protected-label": "Zaštićen viki",
+	"bs-permissionmanager-preset-public-label": "Javni viki",
+	"bs-permissionmanager-preset-save-error": "Nije moguće čuvanje podešavanja! Izmene nisu primenjene!",
+	"bs-permissionmanager-preset-save-success": "Podešavanja su sačuvana!",
+	"bs-permissionmanager-namespace-picker": "Imenski prostori"
+}
