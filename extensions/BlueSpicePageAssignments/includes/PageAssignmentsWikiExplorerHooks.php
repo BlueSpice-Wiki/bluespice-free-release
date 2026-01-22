@@ -20,10 +20,8 @@ class PageAssignmentsWikiExplorerHooks {
 		&$aFields, &$aConditions, &$aJoinConditions ) {
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
 			->getConnection( DB_REPLICA );
-		$sTablePrefix = $dbr->tablePrefix();
-		$tableName = $sTablePrefix . 'bs_pageassignments';
-		$aTables[] = "$tableName";
-		$aJoinConditions["$tableName"] = [
+		$aTables[] = 'bs_pageassignments';
+		$aJoinConditions['bs_pageassignments'] = [
 			'LEFT OUTER JOIN',
 			"page_id=pa_page_id"
 		];

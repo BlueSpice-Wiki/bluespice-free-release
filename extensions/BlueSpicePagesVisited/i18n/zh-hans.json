@@ -6,6 +6,7 @@
 			"Kishinsagi",
 			"Liuxinyu970226",
 			"NigelSoft",
+			"Peterxy12",
 			"StarrySky",
 			"Wzl19371",
 			"Xiplus",
@@ -30,5 +31,10 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "时间",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "页面名称",
 	"bs-pagesvisited-droplet-name": "访问过的页面",
-	"bs-pagesvisited-droplet-description": "包含已访问页面的列表"
+	"bs-pagesvisited-droplet-description": "包含已访问页面的列表",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "设置清单中显示的页数",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "设置标题的最多字符长度",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "设置页面的显示顺序",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "仅显示来自这些命名空间的页面",
+	"bs-pagesvisited-label-anon-user": "若要查看您访问过的页面，请登录您的账号"
 }

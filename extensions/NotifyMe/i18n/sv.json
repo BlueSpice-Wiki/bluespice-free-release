@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lokal Profil"
+			"Lokal Profil",
+			"Yupik"
 		]
 	},
-	"prefs-notifications": "Meddelanden"
+	"prefs-notifications": "Meddelanden",
+	"notifyme-ui-subscriptionset-editor-category-label": "Kategori",
+	"notifyme-ui-subscriptionset-category-label": "Kategori"
 }

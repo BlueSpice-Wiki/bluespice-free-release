@@ -14,7 +14,7 @@
 	border-bottom: 0.1mm solid black;
 }
 .pdfcreator-runningheaderfix > table td {
-	vertical-align: center;
+	vertical-align: middle;
 	text-align: center;
 }
 .pdfcreator-runningheaderfix > table td:first-child {

@@ -3,7 +3,7 @@
         'name' => 'bluespice/core',
         'pretty_version' => 'dev-REL1_43-5.1.x',
         'version' => 'dev-REL1_43-5.1.x',
-        'reference' => 'c08dab2a750be68c83dad440959aff74bdfb05fb',
+        'reference' => '5798e30c479b5ad18f628f4513b611c559a4277c',
         'type' => 'mediawiki-core',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'bluespice/about' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '976afa885866568618ff8e28272ee2a626cb8e0b',
+            'reference' => '96f670e5eab7cc6ade922e72449d5512fb62a07b',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceAbout',
             'aliases' => array(),
@@ -31,7 +31,7 @@
         'bluespice/articleinfo' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '9ebf1adc65883c476e8272b737afe894b389786c',
+            'reference' => '5d4a7911110c8fc6c630b5adeb570a4c5b6eab8c',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceArticleInfo',
             'aliases' => array(),
@@ -40,7 +40,7 @@
         'bluespice/authors' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '7de2cd29b3de4f4a86e021eebe21275a05ed2e87',
+            'reference' => '4e3565291924b31dba8029608c4aff76e1bb7b1c',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceAuthors',
             'aliases' => array(),
@@ -49,7 +49,7 @@
         'bluespice/avatars' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '0f77da294316e230eb3fc301742ee03dae2a7eb8',
+            'reference' => 'ae305ec31a02812b96cce22a0345f2dd282ef2b5',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceAvatars',
             'aliases' => array(),
@@ -58,7 +58,7 @@
         'bluespice/checklist' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '2ed63ca8d698f9f5059bd58d52541bdf8552ede2',
+            'reference' => '996915b52cc8b71eb69fb69383b8893e4bfe7aa6',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceChecklist',
             'aliases' => array(),
@@ -67,7 +67,7 @@
         'bluespice/configmanager' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'b59295e5d86cbd36a4aad1a9fd9db8f441d1f87e',
+            'reference' => 'f6cb57f4a643bae3d107591ef58b35ea103700e3',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceConfigManager',
             'aliases' => array(),
@@ -76,7 +76,7 @@
         'bluespice/contextmenu' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '22a9be5f061b046b9117bc06a8455cb4209f04d2',
+            'reference' => '7419ecea0790e84ee0954f265c97a2a3fc128b12',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceContextMenu',
             'aliases' => array(),
@@ -85,7 +85,7 @@
         'bluespice/core' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'c08dab2a750be68c83dad440959aff74bdfb05fb',
+            'reference' => '5798e30c479b5ad18f628f4513b611c559a4277c',
             'type' => 'mediawiki-core',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -94,7 +94,7 @@
         'bluespice/countthings' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '92de39a4d4c92b81624fa2eb73e3d8190e98986c',
+            'reference' => 'bb4d12584b831aa2bef56829a78f63435cbbea7a',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceCountThings',
             'aliases' => array(),
@@ -103,7 +103,7 @@
         'bluespice/custommenu' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '229f77ee96df47ea379dc7ff4ddb4ed93dd54c34',
+            'reference' => 'f3ca182b33f3adbc1cc91c1b8910f7c595824422',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceCustomMenu',
             'aliases' => array(),
@@ -112,7 +112,7 @@
         'bluespice/discovery-skin' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '6f5cc56bfcca2731a8f50c20d9fe59bd926c1d6d',
+            'reference' => 'f137b1cfd6c6569d576b04a863d9726af046a66c',
             'type' => 'mediawiki-skin',
             'install_path' => __DIR__ . '/../../skins/BlueSpiceDiscovery',
             'aliases' => array(),
@@ -121,7 +121,7 @@
         'bluespice/distributionconnector' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'fb67b7033e4117b03abe41043af799201c0ef39c',
+            'reference' => 'ee9c803c4e5cbf28b25611622d393f7046b02191',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceDistributionConnector',
             'aliases' => array(),
@@ -130,7 +130,7 @@
         'bluespice/emoticons' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'c55e236a78c80ed79f57d22dc70875d3afee8f3a',
+            'reference' => '3076008ff253670aa4c9f35b09d56ab8b98183e9',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceEmoticons',
             'aliases' => array(),
@@ -139,7 +139,7 @@
         'bluespice/extendedsearch' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'c85500e2a56901fd59d12acb9a90a7bd8bcdecc8',
+            'reference' => '2e97c9426f22b795233839576f575acfcd6bcc9d',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceExtendedSearch',
             'aliases' => array(),
@@ -148,7 +148,7 @@
         'bluespice/extendedstatistics' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'ee2039a5c1989deb1609ac4ef67fd1ef44f84d75',
+            'reference' => 'cc1e0348a1c89544e76b4f25d8c178db6a5c9e80',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceExtendedStatistics',
             'aliases' => array(),
@@ -157,7 +157,7 @@
         'bluespice/foundation' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'b83401e98fbed75206e3553738358b9e4936214f',
+            'reference' => '3516da94f46e323d06fcfb9a8eb83eee6efe84af',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceFoundation',
             'aliases' => array(),
@@ -166,7 +166,7 @@
         'bluespice/hidetitle' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'adb342744b967d52c41ca5637833c41361f0a79a',
+            'reference' => 'fd9704249b38701b23f1b0707fd6675174c3adf8',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceHideTitle',
             'aliases' => array(),
@@ -175,7 +175,7 @@
         'bluespice/insertcategory' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '780482a8644eb67c00bd2d973b1f885b0ac46509',
+            'reference' => 'b903654d8628891d454d24de30a4f320600ba44d',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceInsertCategory',
             'aliases' => array(),
@@ -184,7 +184,7 @@
         'bluespice/instancestatus' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '377ca36ea7bb82a27531fb0dee9f7e14a440402e',
+            'reference' => 'cc18ce7634f3413141a21b1847bcdf2fb549040d',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceInstanceStatus',
             'aliases' => array(),
@@ -193,7 +193,7 @@
         'bluespice/interwikilinks' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'e68aebcf6e61b9756fc537b9dc6b453ddcf93775',
+            'reference' => '10ebeefdddc3d252f133fba88ab8fc99f7df6a0b',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceInterWikiLinks',
             'aliases' => array(),
@@ -202,7 +202,7 @@
         'bluespice/namespacemanager' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '40b1101f463e127e14bb1cc8b765f1deaf8359f5',
+            'reference' => '9166361ff5e3e80ad5e2e77aa1f2f33d19d3fcb0',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceNamespaceManager',
             'aliases' => array(),
@@ -211,7 +211,7 @@
         'bluespice/pageaccess' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '4062408a54e363927f2aab75efa9f00e663b04c6',
+            'reference' => '848c56a7aad483a74029367452032be5574ca7eb',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpicePageAccess',
             'aliases' => array(),
@@ -220,7 +220,7 @@
         'bluespice/pageassignments' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '10bd12080df126f156c842f171245402aa329af8',
+            'reference' => '1daccc556872e42e447a301cd48d9bddcc4dff6a',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpicePageAssignments',
             'aliases' => array(),
@@ -229,7 +229,7 @@
         'bluespice/pagesvisited' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '0b342c1f21941e137ff847b65481112d56d2340b',
+            'reference' => 'e055125150df8e1f2ba925f65a32970110e427d7',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpicePagesVisited',
             'aliases' => array(),
@@ -238,7 +238,7 @@
         'bluespice/pagetemplates' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '451174b401f8e82570516ab024ed9dfff91d6316',
+            'reference' => 'c057b4e3f7b51c737cfacd8ab661c518dfaf4f3a',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpicePageTemplates',
             'aliases' => array(),
@@ -247,7 +247,7 @@
         'bluespice/permissionmanager' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '05f579154b1f1935d1d6a31c8e5c5b8fe89dee9d',
+            'reference' => '592aade51b5b35d5d1aae9a14fc3ba8dcb444382',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpicePermissionManager',
             'aliases' => array(),
@@ -256,7 +256,7 @@
         'bluespice/qrcode' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '034ddf9c8e75fe4b485cb3c6fd5b4dd26b8b0f9a',
+            'reference' => 'bf69bb1982ed74944c5ecae0d2966fac492baa13',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceQrCode',
             'aliases' => array(),
@@ -265,7 +265,7 @@
         'bluespice/readers' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '93ad9a6375f179c1921382da9dc9d256cab1013e',
+            'reference' => 'd0b9414558eb0c784d5680479ee867b089d4acbf',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceReaders',
             'aliases' => array(),
@@ -274,7 +274,7 @@
         'bluespice/rssfeeder' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'd923c530c9bb78239d685a97d54b408cc5a34a57',
+            'reference' => '3ab8476b040bbfe40fd02432fdb10f59881a47ca',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceRSSFeeder',
             'aliases' => array(),
@@ -283,7 +283,7 @@
         'bluespice/saferedit' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'fde1b4770c3c790452df4699da3a5fd3b00ce017',
+            'reference' => 'de5ad3096cf2f2f62d483dd04d68ad5342f3b992',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceSaferEdit',
             'aliases' => array(),
@@ -292,7 +292,7 @@
         'bluespice/smartlist' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '5a1c9c56b2ef956d71c7577f6a4e82786afa5634',
+            'reference' => '675e8330a10026fe2f41ef2d836caf3cc22a1c69',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceSmartList',
             'aliases' => array(),
@@ -301,7 +301,7 @@
         'bluespice/tagcloud' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '12a6343619c31b6b4341d0258dd1bdf9d764d4ca',
+            'reference' => 'bcc6d38ca4c01f1959a38eadce2c7e449af80db0',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceTagCloud',
             'aliases' => array(),
@@ -310,7 +310,7 @@
         'bluespice/usagetracker' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '41226f59237d51bf2e0f60e9ee842fc7a12a6575',
+            'reference' => 'a5c65db1392b049ce1e46e24b1f8f1204fa92607',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceUsageTracker',
             'aliases' => array(),
@@ -319,7 +319,7 @@
         'bluespice/usermanager' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'a7937c040fd49c6e7d884006e526c85744a61429',
+            'reference' => '3279670e9322f0f60993c5113000648b0179497e',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceUserManager',
             'aliases' => array(),
@@ -328,7 +328,7 @@
         'bluespice/usersidebar' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '4d09c24dd1820dacf0b8cd1e9788c80db2db6c31',
+            'reference' => '5206e1d89fc503233583e36b574160002ba29c89',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceUserSidebar',
             'aliases' => array(),
@@ -337,7 +337,7 @@
         'bluespice/visualeditorconnector' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '6dbf65eb78462c28ddab1508e2c41cb171afca69',
+            'reference' => '35885f3de3e133dc40d1d79dca42a86287352639',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceVisualEditorConnector',
             'aliases' => array(),
@@ -346,7 +346,7 @@
         'bluespice/watchlist' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => 'd8eb13cb1e8a9c097733fcc4b827f8f8fa7070e5',
+            'reference' => '3eb052835ac277151abd5c5ffb54c1208bfbfaec',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceWatchList',
             'aliases' => array(),
@@ -355,7 +355,7 @@
         'bluespice/whoisonline' => array(
             'pretty_version' => 'dev-REL1_43-5.1.x',
             'version' => 'dev-REL1_43-5.1.x',
-            'reference' => '60b238d79194fed3e8d1ea94a4e3c669b6e3db56',
+            'reference' => 'd4777d101cb0b6ea2ae0073a524ec21f127e6623',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/BlueSpiceWhoIsOnline',
             'aliases' => array(),
@@ -496,7 +496,7 @@
         'hallowelt/filter-special-pages' => array(
             'pretty_version' => 'dev-REL1_43-3.0.x',
             'version' => 'dev-REL1_43-3.0.x',
-            'reference' => '3daf03fe654f372421a9d0efe8a9067e8c130e8d',
+            'reference' => '99743fb3076c70bcf7b3c6353eb9a6ce8d348d8f',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/FilterSpecialPages',
             'aliases' => array(),
@@ -512,9 +512,9 @@
             'dev_requirement' => false,
         ),
         'justinrainbow/json-schema' => array(
-            'pretty_version' => '5.3.0',
-            'version' => '5.3.0.0',
-            'reference' => 'feb2ca6dd1cebdaf1ed60a4c8de2e53ce11c4fd8',
+            'pretty_version' => '5.3.1',
+            'version' => '5.3.1.0',
+            'reference' => 'b5a44b6391a3bbb75c9f2b73e1ef03d6045e1e20',
             'type' => 'library',
             'install_path' => __DIR__ . '/../justinrainbow/json-schema',
             'aliases' => array(),
@@ -550,7 +550,7 @@
         'mediawiki/content-droplets' => array(
             'pretty_version' => 'dev-REL1_43-2.0.x',
             'version' => 'dev-REL1_43-2.0.x',
-            'reference' => '5e4ef32d308fbcf14bdd3c5d97a312e286ffc4d9',
+            'reference' => '4faf45f40882f3f5f434c744262c5dcb13ddba09',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/ContentDroplets',
             'aliases' => array(),
@@ -565,7 +565,7 @@
         'mediawiki/enhanced-standard-uis' => array(
             'pretty_version' => 'dev-REL1_43-2.0.x',
             'version' => 'dev-REL1_43-2.0.x',
-            'reference' => 'f18ee717232fe9407ed87019330920b24a768383',
+            'reference' => '673cb871f47e2a27a6b7612ee21678755f345d37',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/EnhancedStandardUIs',
             'aliases' => array(),
@@ -574,7 +574,7 @@
         'mediawiki/enhanced-upload' => array(
             'pretty_version' => 'dev-REL1_43-4.0.x',
             'version' => 'dev-REL1_43-4.0.x',
-            'reference' => '956199e36734f24c2f004586a237cd203390585b',
+            'reference' => '985a04bfec19ab78b18b24037cdbecc5306d07c4',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/EnhancedUpload',
             'aliases' => array(),
@@ -583,7 +583,7 @@
         'mediawiki/flexiskin' => array(
             'pretty_version' => 'dev-REL1_43-3.0.x',
             'version' => 'dev-REL1_43-3.0.x',
-            'reference' => '6022dab0fe308a774aeca73a0733314627dd9f50',
+            'reference' => '0435b9317f4ebf67bbbcccb0ce4308defdbe5805',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/FlexiSkin',
             'aliases' => array(),
@@ -610,7 +610,7 @@
         'mediawiki/image-map-edit' => array(
             'pretty_version' => 'dev-REL1_43-3.0.x',
             'version' => 'dev-REL1_43-3.0.x',
-            'reference' => 'fbfb241193194298bc3ca67a368a983edb814115',
+            'reference' => 'ea11bdff6f966e5785e3016ac3ce6a95805d3161',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/ImageMapEdit',
             'aliases' => array(),
@@ -646,7 +646,7 @@
         'mediawiki/menu-editor' => array(
             'pretty_version' => 'dev-REL1_43-3.1.x',
             'version' => 'dev-REL1_43-3.1.x',
-            'reference' => '0a1f272d8415c2e783cf66f42bb3fc0dc424a663',
+            'reference' => '50f5b32a5536343b59e81bed35b30db45aa15fa7',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/MenuEditor',
             'aliases' => array(),
@@ -655,7 +655,7 @@
         'mediawiki/notify-me' => array(
             'pretty_version' => 'dev-REL1_43-2.0.x',
             'version' => 'dev-REL1_43-2.0.x',
-            'reference' => 'ca397084a907c3bb025d97dc78ece0d33fef7437',
+            'reference' => '1b0d769451580af18104bce7f941920d8905b725',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/NotifyMe',
             'aliases' => array(),
@@ -664,7 +664,7 @@
         'mediawiki/oojsplus' => array(
             'pretty_version' => 'dev-REL1_43-3.1.x',
             'version' => 'dev-REL1_43-3.1.x',
-            'reference' => '66cbb34ecb8f48efdbd59b35f8275e3228934cd7',
+            'reference' => '2fe3f4e5b455373e2f6701b6967cdeb1483eb93f',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/OOJSPlus',
             'aliases' => array(),
@@ -673,7 +673,7 @@
         'mediawiki/page-header' => array(
             'pretty_version' => 'dev-REL1_43-3.0.x',
             'version' => 'dev-REL1_43-3.0.x',
-            'reference' => '505d0aa449e59929744be40feaaa08f5687b9737',
+            'reference' => 'ceaefcd6945e3e0677a44b11bbd1f4ec4db12d0a',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/PageHeader',
             'aliases' => array(),
@@ -682,7 +682,7 @@
         'mediawiki/pdf-creator' => array(
             'pretty_version' => 'dev-REL1_43-1.1.x',
             'version' => 'dev-REL1_43-1.1.x',
-            'reference' => '538d022ea267ef9267c8c73122aecdedaac7f957',
+            'reference' => 'd27a2fa48dcced8ec0bf523019c4debcbb21fe68',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/PDFCreator',
             'aliases' => array(),
@@ -709,7 +709,7 @@
         'mediawiki/standard-dialogs' => array(
             'pretty_version' => 'dev-REL1_43-3.0.x',
             'version' => 'dev-REL1_43-3.0.x',
-            'reference' => 'bb5ebb3e6604e890368f52bcdf6838fc57f60943',
+            'reference' => '631979ce5b6ae267b6408985c242e85c36074fee',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/StandardDialogs',
             'aliases' => array(),
@@ -763,7 +763,7 @@
         'mediawiki/user-profile' => array(
             'pretty_version' => 'dev-REL1_43-1.1.x',
             'version' => 'dev-REL1_43-1.1.x',
-            'reference' => '4a3b3bb44f3ec68b1d5fb79519c712017dd08f0b',
+            'reference' => 'de7ee79b6e80c577f97ce1a1cd5a93e3f5147cb7',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/UserProfile',
             'aliases' => array(),
@@ -781,7 +781,7 @@
         'mediawiki/visual-editor-plus' => array(
             'pretty_version' => 'dev-REL1_43-2.1.x',
             'version' => 'dev-REL1_43-2.1.x',
-            'reference' => '7ca47215f8804b28a379b9cb3ea85e5c0afa96ca',
+            'reference' => '483ffecc0168fb671a6d76fd91d53b08d0fc9973',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/VisualEditorPlus',
             'aliases' => array(),
@@ -790,7 +790,7 @@
         'mediawiki/vuejs-plus' => array(
             'pretty_version' => 'dev-REL1_43-2.0.x',
             'version' => 'dev-REL1_43-2.0.x',
-            'reference' => '5d8c6165e5636355a623bb68a187495e023bea3b',
+            'reference' => 'f92aff3e3a41e4ef12d7107961f3ea7a780a2b0f',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/VueJsPlus',
             'aliases' => array(),
@@ -824,9 +824,9 @@
             'dev_requirement' => false,
         ),
         'mwstake/mediawiki-component-commonwebapis' => array(
-            'pretty_version' => '3.1.0',
-            'version' => '3.1.0.0',
-            'reference' => '83115d36e46a688647b24e35a91808ab0e5d3631',
+            'pretty_version' => '3.1.4',
+            'version' => '3.1.4.0',
+            'reference' => '2f9fecf1e621dbf7b2b8f2cd8f8eb034c111156d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../mwstake/mediawiki-component-commonwebapis',
             'aliases' => array(),
@@ -1049,9 +1049,9 @@
             'dev_requirement' => false,
         ),
         'pear/pear-core-minimal' => array(
-            'pretty_version' => 'v1.10.16',
-            'version' => '1.10.16.0',
-            'reference' => 'c0f51b45f50683bf5bbf558036854ebc9b54d033',
+            'pretty_version' => 'v1.10.17',
+            'version' => '1.10.17.0',
+            'reference' => 'c7b55789d01de0ce090d289b73f1bbd6a2f113b1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../pear/pear-core-minimal',
             'aliases' => array(),
@@ -1177,7 +1177,7 @@
         'rsky/pear-core-min' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => 'v1.10.16',
+                0 => 'v1.10.17',
             ),
         ),
         'shama/baton' => array(
@@ -1286,9 +1286,9 @@
             'dev_requirement' => false,
         ),
         'symfony/process' => array(
-            'pretty_version' => 'v6.4.26',
-            'version' => '6.4.26.0',
-            'reference' => '48bad913268c8cafabbf7034b39c8bb24fbc5ab8',
+            'pretty_version' => 'v6.4.31',
+            'version' => '6.4.31.0',
+            'reference' => '8541b7308fca001320e90bca8a73a28aa5604a6e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/process',
             'aliases' => array(),
@@ -1306,7 +1306,7 @@
         'universal-omega/dynamic-page-list3' => array(
             'pretty_version' => '3.6.4',
             'version' => '3.6.4.0',
-            'reference' => 'db57791cd0a822f4bc55eb9edc4a6e6c53d24342',
+            'reference' => '3.6.4',
             'type' => 'mediawiki-extension',
             'install_path' => __DIR__ . '/../../extensions/DynamicPageList3',
             'aliases' => array(),
@@ -1439,9 +1439,9 @@
             'dev_requirement' => false,
         ),
         'wikimedia/less.php' => array(
-            'pretty_version' => 'v5.1.2',
-            'version' => '5.1.2.0',
-            'reference' => '39b1fbbdd3d95c5279f231d2298f3866fa869fcd',
+            'pretty_version' => 'v5.5.0',
+            'version' => '5.5.0.0',
+            'reference' => 'f12e470d4fb4478b8af759d4c5da99707af3db10',
             'type' => 'library',
             'install_path' => __DIR__ . '/../wikimedia/less.php',
             'aliases' => array(),
@@ -1475,9 +1475,9 @@
             'dev_requirement' => false,
         ),
         'wikimedia/parsoid' => array(
-            'pretty_version' => 'v0.20.4',
-            'version' => '0.20.4.0',
-            'reference' => '75f04e1f7b6f46af9437a34ecf72b1953c5ab59c',
+            'pretty_version' => 'v0.20.5',
+            'version' => '0.20.5.0',
+            'reference' => '00202f22425c1d56a2c189713e57149336da3953',
             'type' => 'library',
             'install_path' => __DIR__ . '/../wikimedia/parsoid',
             'aliases' => array(),

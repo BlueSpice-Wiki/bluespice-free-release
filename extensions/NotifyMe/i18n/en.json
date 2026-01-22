@@ -94,7 +94,7 @@
 	"notifyme-schema-source-providers-link": "Link to the place where user can change preferences (if applicable)",
 	"notifyme-mail-template-edit-help-colors": "Following color variables are available. They will be automatically adjusted to the colors fo the wiki skin.",
 	"notifyme-mail-template-edit-help-int": "Internationalization messages can be used in the content via <pre><nowiki>{{int:message-key}}</nowiki></pre>",
-	"notifyme-mail-template-edit-help-logo": "To add the logo of your wiki, which is set in the skin, use <pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-logo": "To add the logo of your wiki, which is set in the skin, <pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre> can be used",
 	"notifyme-mail-template-edit-help-category-params": "Content variables",
 	"notifyme-mail-template-edit-help-category-logo": "Logo",
 	"notifyme-mail-template-edit-help-category-int": "Internationalization",

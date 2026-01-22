@@ -35,5 +35,6 @@
 	"bs-countthings-droplet-files-name": "Number of files",
 	"bs-countthings-droplet-files-description": "Shows the number of all uploaded files",
 	"bs-countthings-droplet-user-name": "Number of users",
-	"bs-countthings-droplet-user-description": "Shows the number of all users"
+	"bs-countthings-droplet-user-description": "Shows the number of all users",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Specify what should be counted: everything, characters, words, characters and words, or pages"
 }

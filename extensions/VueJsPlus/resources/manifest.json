@@ -54,8 +54,7 @@
 		"imports": [
 			"GridColCell",
 			"GridDataRow",
-			"Toolbar",
-			"@wikimedia/codex"
+			"Toolbar"
 		]
 	},
 	"GridColCell": {

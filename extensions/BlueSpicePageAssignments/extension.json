@@ -8,7 +8,7 @@
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageAssignments",
 	"type": "bluespice",
-	"version": "5.1.4",
+	"version": "5.1.5",
 	"descriptionmsg": "bs-pageassignments-desc",
 	"requires": {
 		"MediaWiki": ">= 1.43.0",

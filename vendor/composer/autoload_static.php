@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c
+class ComposerStaticInit924421280f09a8c571b0f7c1788af706
 {
     public static $files = array (
         'ef0a3cc8d59aacc0241af9c20bb29c47' => __DIR__ . '/..' . '/mwstake/mediawiki-componentloader/bootstrap.php',
@@ -732,6 +732,7 @@ class ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c
         'BS\\ExtendedSearch\\HookHandler\\OverrideSpecialSearch' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/HookHandler/OverrideSpecialSearch.php',
         'BS\\ExtendedSearch\\HookHandler\\SkinSlotNavbarPrimarySearchForm' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/HookHandler/SkinSlotNavbarPrimarySearchForm.php',
         'BS\\ExtendedSearch\\Hook\\BeforePageDisplay\\AddResources' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Hook/BeforePageDisplay/AddResources.php',
+        'BS\\ExtendedSearch\\Hook\\GetPreferences\\AddUserPreferenceSearchShortCut' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Hook/GetPreferences/AddUserPreferenceSearchShortCut.php',
         'BS\\ExtendedSearch\\Hook\\GetPreferences\\AddUserPreferredNamespaces' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Hook/GetPreferences/AddUserPreferredNamespaces.php',
         'BS\\ExtendedSearch\\Hook\\LoadExtensionSchemaUpdates\\AddHistoryTable' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Hook/LoadExtensionSchemaUpdates/AddHistoryTable.php',
         'BS\\ExtendedSearch\\Hook\\LoadExtensionSchemaUpdates\\AddRelevanceTable' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Hook/LoadExtensionSchemaUpdates/AddRelevanceTable.php',
@@ -987,6 +988,7 @@ class ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c
         'BlueSpice\\Discovery\\BreadcrumbDataProvider\\DiffModeProvider' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/BreadcrumbDataProvider/DiffModeProvider.php',
         'BlueSpice\\Discovery\\BreadcrumbDataProvider\\PagesWithoutSubpagesProvider' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/BreadcrumbDataProvider/PagesWithoutSubpagesProvider.php',
         'BlueSpice\\Discovery\\BreadcrumbDataProvider\\SpecialActionsProvider' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/BreadcrumbDataProvider/SpecialActionsProvider.php',
+        'BlueSpice\\Discovery\\BreadcrumbDataProvider\\SpecialEditWatchlistProvider' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/BreadcrumbDataProvider/SpecialEditWatchlistProvider.php',
         'BlueSpice\\Discovery\\Component\\ActionsPanel' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Component/ActionsPanel.php',
         'BlueSpice\\Discovery\\Component\\AsyncSubpageTree' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Component/AsyncSubpageTree.php',
         'BlueSpice\\Discovery\\Component\\AsyncSubpageTreePanel' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Component/AsyncSubpageTreePanel.php',
@@ -1214,6 +1216,7 @@ class ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c
         'BlueSpice\\DistributionConnector\\Integration\\PDFCreator\\Utility\\PDFHandlerAttachmentFinder' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Integration/PDFCreator/Utility/PDFHandlerAttachmentFinder.php',
         'BlueSpice\\DistributionConnector\\Integration\\PDFCreator\\Utility\\PDFHandlerThumbFileResolver' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Integration/PDFCreator/Utility/PDFHandlerThumbFileResolver.php',
         'BlueSpice\\DistributionConnector\\Integration\\PDFCreator\\Utility\\PDFHandlerThumbFinder' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Integration/PDFCreator/Utility/PDFHandlerThumbFinder.php',
+        'BlueSpice\\DistributionConnector\\Integration\\WikiFarm\\PluggableAuthMigrationCommand' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Integration/WikiFarm/PluggableAuthMigrationCommand.php',
         'BlueSpice\\DistributionConnector\\Maintenance\\PostDatabaseUpdate\\AddTemplateUserPageStandardContent' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Maintenance/PostDatabaseUpdate/AddTemplateUserPageStandardContent.php',
         'BlueSpice\\DistributionConnector\\Maintenance\\PostDatabaseUpdate\\AddVariablesPageProperties' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Maintenance/PostDatabaseUpdate/AddVariablesPageProperties.php',
         'BlueSpice\\DistributionConnector\\Maintenance\\PostDatabaseUpdate\\FixPluggableAuthGroupSync' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Maintenance/PostDatabaseUpdate/FixPluggableAuthGroupSync.php',
@@ -4444,11 +4447,11 @@ class ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit38eac9f4345f9cdcce0c13c5674aaf6c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit924421280f09a8c571b0f7c1788af706::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit924421280f09a8c571b0f7c1788af706::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit924421280f09a8c571b0f7c1788af706::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit924421280f09a8c571b0f7c1788af706::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit924421280f09a8c571b0f7c1788af706::$classMap;
 
         }, null, ClassLoader::class);
     }

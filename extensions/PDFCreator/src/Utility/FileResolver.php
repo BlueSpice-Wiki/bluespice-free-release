@@ -52,14 +52,14 @@ class FileResolver {
 		if ( strpos( $src, '?' ) ) {
 			$src = substr( $src, 0, strpos( $src, '?' ) );
 		}
-		$srcUrl = urldecode( $src );
 
 		// Extracting the filename
 		foreach ( $pathsForRegex as $path ) {
-			$srcUrl = preg_replace( "#" . preg_quote( $path, "#" ) . "#", '', $srcUrl );
-			$srcUrl = preg_replace( '/(&.*)/', '', $srcUrl );
+			$src = preg_replace( "#" . preg_quote( $path, "#" ) . "#", '', $src );
+			$src = preg_replace( '/(&.*)/', '', $src );
 		}
 
+		$srcUrl = urldecode( $src );
 		$srcFilename = wfBaseName( $srcUrl );
 
 		$thumbFilenameExtractor = new ThumbFilenameExtractor();

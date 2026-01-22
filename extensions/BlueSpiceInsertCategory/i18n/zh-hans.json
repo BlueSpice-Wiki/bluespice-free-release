@@ -5,6 +5,7 @@
 			"D41D8CD98F",
 			"Diskdance",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Tranve",
 			"Vikarna",
 			"沈澄心",
@@ -27,5 +28,7 @@
 	"bs-insertcategory-edit-dialog-implicit-categories-help": "这些分类尚未在页面的wikitext内容中定义。它们很可能在模板中设置。",
 	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "无法检索页面分类",
 	"bs-insertcategory-no-categories": "没有分类分配",
-	"bs-insertcategory-edit-dialog-tree-view": "显示所有分类"
+	"bs-insertcategory-edit-dialog-tree-view": "显示所有分类",
+	"bs-insertcategory-pref-uploadintegration": "在上传对话框中使用页面分类",
+	"bs-insertcategory-pref-uploadintegration-help": "将页面分类设置成上传对话框中的默认选项"
 }

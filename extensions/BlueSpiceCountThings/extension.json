@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceCountThings",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.1.5",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceCountThings",
 	"author": [
 		"Markus Glaser",
@@ -72,7 +72,7 @@
 				"bs-countthings-ve-countthingsinspector-mode",
 				"bs-countthings-ve-countcharacters-title",
 				"bs-countthings-ve-countcharacters-input-label",
-				"bs-countthings-tag-countcharacters-desc-param-mode",
+				"bs-countthings-tag-countcharacters-desc-mode-help",
 				"bs-countthings-ve-countcharacters-mode-all",
 				"bs-countthings-ve-countcharacters-mode-charsonly",
 				"bs-countthings-ve-countcharacters-mode-wordsonly",

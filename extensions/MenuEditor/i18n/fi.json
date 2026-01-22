@@ -3,7 +3,8 @@
 		"authors": [
 			"MITO",
 			"Nike",
-			"Pyscowicz"
+			"Pyscowicz",
+			"Yupik"
 		]
 	},
 	"menueditor-ui-menu-wiki-link-label": "Wikilinkki",
@@ -17,5 +18,6 @@
 	"menueditor-ui-cancel": "Peruuta",
 	"menueditor-action-menueditsource": "Muokkaa wikitekstiä",
 	"menueditor-action-menuedit": "Muokkaa",
-	"menueditor-ui-edit-label": "Muokkaa"
+	"menueditor-ui-edit-label": "Muokkaa",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Muokkaa linkkiä"
 }

@@ -228,53 +228,6 @@ class NotificationStore {
 	}
 
 	/**
-	 * @param int $eventId
-	 * @param string $status
-	 *
-	 * @return void
-	 */
-	public function updateEventProcessStatus( int $eventId, string $status ) {
-		$dbw = $this->loadBalancer->getConnection( DB_PRIMARY );
-		$dbw->update(
-			'notifications_event',
-			[
-				'ne_process_result' => $status,
-			],
-			[
-				'ne_id' => $eventId,
-			],
-			__METHOD__
-		);
-	}
-
-	/**
-	 * Get process IDs for events that are still active
-	 * @return array
-	 */
-	public function getPendingEventProcesses(): array {
-		$dbr = $this->loadBalancer->getConnection( ILoadBalancer::DB_REPLICA );
-		$res = $dbr->select(
-			'notifications_event',
-			[ 'ne_id', 'ne_process', 'ne_process_result' ],
-			[
-				'ne_process_result' => 'active'
-			],
-			__METHOD__
-		);
-
-		$processes = [];
-		foreach ( $res as $row ) {
-			$processes[] = [
-				'id' => (int)$row->ne_id,
-				'process' => $row->ne_process,
-				'status' => $row->ne_process_result
-			];
-		}
-
-		return $processes;
-	}
-
-	/**
 	 * @param Notification $notification
 	 *
 	 * @return void

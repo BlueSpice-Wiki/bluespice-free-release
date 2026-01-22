@@ -205,5 +205,7 @@
 	"bs-discovery-data-after-content-cnt-aria-label": "Seitenanhang",
 	"bs-discovery-footer-places-alt-text-mediawiki": "Unterstützt durch MediaWiki",
 	"bs-discovery-footer-places-alt-text-bluespice": "Unterstützt durch BlueSpice",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Unterstützt durch Semantic MediaWiki"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Unterstützt durch Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Bearbeiten",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Leeren"
 }

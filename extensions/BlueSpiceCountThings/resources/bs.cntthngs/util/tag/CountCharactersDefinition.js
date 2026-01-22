@@ -17,7 +17,7 @@ bs.cntthngs.util.tag.CountCharactersDefinition.prototype.getCfg = function () {
 		attributes: [ {
 			name: 'mode',
 			labelMsg: 'bs-countthings-ve-countthingsinspector-mode',
-			helpMsg: 'bs-countthings-tag-countcharacters-desc-param-mode',
+			helpMsg: 'bs-countthings-tag-countcharacters-desc-mode-help',
 			type: 'dropdown',
 			default: 'all',
 			options: [

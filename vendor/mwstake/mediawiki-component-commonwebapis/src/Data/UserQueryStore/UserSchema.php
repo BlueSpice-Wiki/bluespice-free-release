@@ -48,6 +48,11 @@ class UserSchema extends Schema {
 				self::SORTABLE => false,
 				self::TYPE => FieldType::LISTVALUE
 			],
+			UserRecord::GROUPS_ALL => [
+				self::FILTERABLE => false,
+				self::SORTABLE => false,
+				self::TYPE => FieldType::LISTVALUE
+			],
 			UserRecord::ENABLED => [
 				self::FILTERABLE => true,
 				self::SORTABLE => true,

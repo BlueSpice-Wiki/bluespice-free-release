@@ -5,8 +5,10 @@ namespace MediaWiki\Extension\PDFCreator\Rest;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\PDFCreator\Factory\ExportSpecificationFactory;
 use MediaWiki\Extension\PDFCreator\Factory\ModeFactory;
+use MediaWiki\Extension\PDFCreator\Factory\TemplateProviderFactory;
 use MediaWiki\Extension\PDFCreator\ITargetResult;
 use MediaWiki\Extension\PDFCreator\PDFCreator;
+use MediaWiki\Extension\PDFCreator\Utility\BoolValueGet;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Rest\SimpleHandler;
@@ -21,6 +23,9 @@ class Export extends SimpleHandler {
 
 	/** @var ExportSpecificationFactory */
 	private $exportSpecFactory;
+
+	/** @var TemplateProviderFactory */
+	private $templateProviderFactory;
 
 	/** @var ModeFactory */
 	private $modeFactory;
@@ -44,14 +49,15 @@ class Export extends SimpleHandler {
 	public function __construct( TitleFactory $titleFactory,
 		ExportSpecificationFactory $exportSpecFactory,
 		ModeFactory $modeFactory, PDFCreator $pdfCreator,
-		PermissionManager $permissionManager
+		PermissionManager $permissionManager,
+		TemplateProviderFactory $templateProviderFactory
 	) {
 		$this->titleFactory = $titleFactory;
 		$this->exportSpecFactory = $exportSpecFactory;
 		$this->modeFactory = $modeFactory;
 		$this->pdfCreator = $pdfCreator;
 		$this->permissionManager = $permissionManager;
-
+		$this->templateProviderFactory = $templateProviderFactory;
 		$this->exportTitle = null;
 	}
 
@@ -82,12 +88,47 @@ class Export extends SimpleHandler {
 			$relevantTitle = $this->titleFactory->newFromText( $data['relevantTitle'] );
 		}
 
+		if ( !$relevantTitle ) {
+			return $this->getResponseFactory()->createHttpError( 404, [ 'Relevanttitle not successful' ] );
+		}
+
+		$context = new ExportContext(
+			$user,
+			$relevantTitle
+		);
+
 		$mode = isset( $data['mode'] ) ? $data['mode'] : 'page';
+
+		$template = null;
+		$options = [];
+		if ( isset( $data['template'] ) && $data['template'] !== '' ) {
+			$templateProvider = $this->templateProviderFactory->getTemplateProviderFor( $data['template'] );
+			$template = $templateProvider->getTemplate( $context, $data['template'] );
+			if ( !$template ) {
+				return $this->getResponseFactory()->createHttpError( 404, [ 'Invalid template requested' ] );
+			}
+			$options = $template->getOptions();
+		} else {
+			$allTemplateNames = $this->templateProviderFactory->getAvailableTemplateNames();
+			if ( empty( $allTemplateNames ) ) {
+				return $this->getResponseFactory()->createHttpError( 404, [ 'No templates available' ] );
+			}
+			$templateProvider = $this->templateProviderFactory->getTemplateProviderFor( $allTemplateNames[0] );
+			if ( !$template ) {
+				return $this->getResponseFactory()->createHttpError( 404, [ 'Invalid template requested' ] );
+			}
+			$options = $template->getOptions();
+		}
+
+		$title = $relevantTitle->getText();
+		if ( isset( $options['nsPrefix'] ) && BoolValueGet::from( $options['nsPrefix'] ) === true ) {
+			$title = $relevantTitle->getPrefixedText();
+		}
 
 		$params = [
 			'mode' => $mode,
-			'template' => isset( $data['template'] ) ? $data['template'] : null,
-			'title' => $relevantTitle->getPrefixedDBkey(),
+			'template' => $template ? $data['template'] : null,
+			'title' => $title,
 			'filename' => $relevantTitle->getPrefixedDBkey() . '.pdf'
 		];
 
@@ -115,14 +156,6 @@ class Export extends SimpleHandler {
 
 		$spec = $this->exportSpecFactory->createNewSpec( $specParams );
 
-		if ( !$relevantTitle ) {
-			return $this->getResponseFactory()->createHttpError( 404, [ 'Relevanttitle not successful' ] );
-		}
-
-		$context = new ExportContext(
-			$user,
-			$relevantTitle
-		);
 		$result = $this->pdfCreator->create( $spec, $context );
 		$exportResult = $result->getResult();
 		if ( $exportResult instanceof ITargetResult === false ) {

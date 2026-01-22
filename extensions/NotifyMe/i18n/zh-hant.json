@@ -192,5 +192,13 @@
 	"prefs-subs": "通知訂閱",
 	"notifyme-notification-filter-count-aria-label": "包含 {{PLURAL:$1|1|$1}} 則通知",
 	"notifyme-notification-filter-aria-label": "通知過濾器",
-	"notifyme-notification-center-pagination-number-aria-label": "已顯示 $1 至 $2 的通知"
+	"notifyme-notification-center-pagination-number-aria-label": "已顯示 $1 至 $2 的通知",
+	"notifyme-notification-tester-event": "事件鍵",
+	"notifyme-notification-tester-event-info": "從以下表格貼上其中一個「事件鍵」。",
+	"notifyme-channel-web": "應用中",
+	"notifyme-schema-source-providers-key": "來源提供者欄位",
+	"notifyme-notification-center-filter-label-buckets": "儲存桶",
+	"notifyme-notification-tester-buckets": "儲存桶",
+	"notifyme-notification-tester-banner": "使用此頁面觸發系統上註冊的任何通知。請注意：\n* 並非所有通知都支援測試觸發。這取決於所需的資源以及是否可以模擬（請參閱表格）。\n* 某些通知依賴特定參數的設定（例如頁面、目標使用者），如果未發送這些參數則無法觸發。此外，某些通知需要參數的特定值。例如：如果要觸發討論頁面上的通知，必須指定討論命名空間中的頁面才能使其生效。\n* 發送通知將遵循與實際事件觸發相同的規則，因此使用者偏好設定將適用。這表示如果使用者未訂閱事件儲存桶，則不會觸發任何通知。",
+	"notifyme-notification-center-navigation-hint": "提示：您可使用左、右方向鍵在清單裡的分頁切換。"
 }

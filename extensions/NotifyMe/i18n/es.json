@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Yupik"
 		]
 	},
-	"prefs-notifications": "Notificaciones"
+	"prefs-notifications": "Notificaciones",
+	"notifyme-ui-subscriptionset-editor-category-label": "Categoría",
+	"notifyme-ui-subscriptionset-category-label": "Categoría"
 }

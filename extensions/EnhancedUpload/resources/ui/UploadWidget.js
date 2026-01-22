@@ -134,7 +134,10 @@ enhancedUpload.ui.UploadWidget.prototype.setupDetailsWidgets = function () {
 		classes: [ 'heading' ]
 	} );
 
-	this.detailsWidget = new enhancedUpload.ui.widget.DetailsUploadWidget();
+	this.detailsWidget = new enhancedUpload.ui.widget.DetailsUploadWidget( {
+		categories: this.defaultCategories,
+		description: this.defaultDescription
+	} );
 
 	if ( !this.expanded ) {
 		this.detailsWidget.$element.hide();
@@ -303,25 +306,31 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 
 			const uploadDfd = me.doUpload( items[ i ].data, params );
 
-			uploadDfd.done( function ( dfd, progress, maxUpload ) {
+			const progress = i;
+			const maxUpload = items.length;
+
+			uploadDfd.done( () => {
+				let replaceText = params.comment;
+
 				if ( categories.length > 0 ) {
-					const catEditParams = {
-						action: 'edit',
-						title: 'File:' + params.filename,
-						appendtext: params.comment + '\n' + categories
-					};
-					const editCategoriesDfd = me.doCategoriesEdit( catEditParams );
-					$.when.apply( me, editCategoriesDfd ).done( () => {
-						uploadDfds.push( dfd );
-					} );
-				} else {
-					uploadDfds.push( dfd );
-					me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
+					replaceText += '\n' + categories;
 				}
-			}( uploadDfd, i, items.length ) ).fail( function ( dfd, progress, maxUpload ) {
-				uploadDfds.push( dfd );
+
+				const catEditParams = {
+					action: 'edit',
+					title: 'File:' + params.filename,
+					text: replaceText
+				};
+
+				const editCategoriesDfd = me.doCategoriesEdit( catEditParams );
+				uploadDfds.push( editCategoriesDfd );
+
 				me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
-			}( uploadDfd, i, items.length ) );
+			} ).fail( () => {
+				me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
+			} );
+
+			uploadDfds.push( uploadDfd );
 		}
 
 		$.when.apply( me, uploadDfds ).done( () => {

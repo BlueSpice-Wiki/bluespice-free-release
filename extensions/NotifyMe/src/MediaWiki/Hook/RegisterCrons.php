@@ -4,7 +4,6 @@ namespace MediaWiki\Extension\NotifyMe\MediaWiki\Hook;
 
 use MediaWiki\Extension\NotifyMe\Process\SendDailyDigest;
 use MediaWiki\Extension\NotifyMe\Process\SendWeeklyDigest;
-use MediaWiki\Extension\NotifyMe\Process\UpdateEventProcessStatus;
 use MediaWiki\Hook\MediaWikiServicesHook;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\ProcessManager\ManagedProcess;
@@ -32,12 +31,6 @@ class RegisterCrons implements MediaWikiServicesHook {
 			'send-daily' => [
 				'class' => SendWeeklyDigest::class,
 				'services' => [ 'NotifyMe.Store', 'NotifyMe.ChannelFactory', 'NotifyMe.Logger' ],
-			]
-		] ) );
-		$cronManager->registerCron( 'notifyme-update-event-process-status', '*/30 * * * *', new ManagedProcess( [
-			'update-event-process-status' => [
-				'class' => UpdateEventProcessStatus::class,
-				'services' => [ 'NotifyMe.Store', 'ProcessManager', 'NotifyMe.Logger' ],
 			]
 		] ) );
 	}

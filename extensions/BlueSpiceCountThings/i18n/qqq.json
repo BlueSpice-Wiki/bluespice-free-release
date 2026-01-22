@@ -39,5 +39,6 @@
 	"bs-countthings-droplet-files-name": "Title of droplet for tag Count files",
 	"bs-countthings-droplet-files-description": "Description of droplet for tag Count files",
 	"bs-countthings-droplet-user-name": "Title of droplet for tag Count user",
-	"bs-countthings-droplet-user-description": "Description of droplet for tag Count user"
+	"bs-countthings-droplet-user-description": "Description of droplet for tag Count user",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Description of the tag attribute <code>mode</code>, which specifies what items shall be counted on the article including the tag"
 }

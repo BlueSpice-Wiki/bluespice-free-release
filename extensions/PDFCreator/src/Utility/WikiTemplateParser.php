@@ -25,6 +25,9 @@ class WikiTemplateParser {
 	/** @var IContextSource */
 	private $context;
 
+	/** @var int|null */
+	private $revisionId = null;
+
 	/**
 	 * @param ParserFactory $parserFactory
 	 * @param TitleFactory $titleFactory
@@ -42,6 +45,14 @@ class WikiTemplateParser {
 	}
 
 	/**
+	 * @param int $revisionId
+	 * @return void
+	 */
+	public function setRevisionId( int $revisionId ): void {
+		$this->revisionId = $revisionId;
+	}
+
+	/**
 	 * @param string $input
 	 * @param PageIdentity|null $pageIdentity
 	 * @return string
@@ -55,7 +66,12 @@ class WikiTemplateParser {
 
 		$parser = $this->parserFactory->getInstance();
 		$parser->startExternalParse( $title, $options, Parser::OT_PREPROCESS );
-		$output = $parser->preprocess( $input, $title, $options );
+		$output = $parser->preprocess(
+			$input,
+			$title,
+			$options,
+			$this->revisionId
+		);
 
 		$parsedOutput = $parser->parse( $output, $pageIdentity, $options );
 

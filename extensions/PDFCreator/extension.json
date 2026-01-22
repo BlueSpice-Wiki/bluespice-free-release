@@ -1,6 +1,6 @@
 {
 	"name": "PDFCreator",
-	"version": "1.1.4",
+	"version": "1.1.5",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Daniel Vogel",
@@ -44,14 +44,16 @@
 					"class": "MediaWiki\\Extension\\PDFCreator\\HtmlProvider\\Intro",
 					"services": [
 						"TitleFactory", "PDFCreator.PageParamsFactory",
-						"PDFCreator.WikiTemplateParser", "PDFCreator.MustacheTemplateParser"
+						"PDFCreator.WikiTemplateParser", "PDFCreator.MustacheTemplateParser",
+						"RevisionRenderer", "RevisionLookup", "HookContainer"
 					]
 				},
 				"outro": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\HtmlProvider\\Outro",
 					"services": [
 						"TitleFactory", "PDFCreator.PageParamsFactory",
-						"PDFCreator.WikiTemplateParser", "PDFCreator.MustacheTemplateParser"
+						"PDFCreator.WikiTemplateParser", "PDFCreator.MustacheTemplateParser",
+						"RevisionRenderer", "RevisionLookup", "HookContainer"
 					]
 				},
 				"raw": {
@@ -565,7 +567,8 @@
 				"PDFCreator.ExportSpecificationFactory",
 				"PDFCreator.ExportModeFactory",
 				"PDFCreator",
-				"PermissionManager"
+				"PermissionManager",
+				"PDFCreator.TemplateProviderFactory"
 			]
 		},
 		{

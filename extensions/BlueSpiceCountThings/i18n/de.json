@@ -38,5 +38,6 @@
 	"bs-countthings-droplet-files-name": "Anzahl aller Dateien",
 	"bs-countthings-droplet-files-description": "Anzeige der Anzahl aller hochgeladenen Dateien",
 	"bs-countthings-droplet-user-name": "Anzahl aller Benutzer",
-	"bs-countthings-droplet-user-description": "Anzeige der Anzahl aller Benutzer"
+	"bs-countthings-droplet-user-description": "Anzeige der Anzahl aller Benutzer",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Angabe, was gezählt werden soll: alles, Zeichen, Wörter, Zeichen und Wörter oder Seiten"
 }

@@ -86,5 +86,6 @@
 	"enhanced-standard-uis-prefs-menu-aria-label": "Aria label for select options on Special:EnhancedPreferences to select a section with preferences",
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Aria label for button select widget to select view mode of files",
 	"enhanced-standard-uis-paginator-page-aria-label": "Aria label for page buttons in paginator.\nParameters:\n* $1 - number of page",
-	"enhanced-standard-uis-allpages-section-heading-aria-label": "Aria label for section headings on Special:Pages.\nParameters:\n* $1 - index letter"
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Aria label for section headings on Special:Pages.\nParameters:\n* $1 - index letter",
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Label for search input field"
 }

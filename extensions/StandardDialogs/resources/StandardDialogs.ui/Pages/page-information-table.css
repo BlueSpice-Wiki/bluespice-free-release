@@ -2,8 +2,8 @@
 	width: 100%;
 }
 
-.page-information td ul {
-	margin-left: 0;
+.page-information > tr > th {
+	text-align: left;
 }
 
 .editors-list {

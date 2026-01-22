@@ -5,6 +5,7 @@
 			"Lakejason0",
 			"LittlePaw365",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Wzl19371",
 			"佛壁灯",
 			"沈澄心"
@@ -22,5 +23,12 @@
 	"bs-watchlist-ve-watchlist-attr-pagename-label": "页面名称",
 	"bs-watchlist-ve-watchlist-attr-time-label": "时间",
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "页面名称帮助",
-	"bs-watchlist-droplet-name": "监视列表"
+	"bs-watchlist-droplet-name": "监视列表",
+	"bs-watchlist-tag-watchlist-attr-count-help": "应显示的监视列表上项目数",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "应显示的标题字母数。可以是5到500之间的数字。",
+	"bs-watchlist-tag-watchlist-no-user": "因为没有用户登入，无法显示监视列表",
+	"bs-watchlist-tag-watchlist-no-entries": "监视列表中显示的页面没有变化",
+	"bs-watchlist-tag-watchlist-attr-time-help": "时间帮助",
+	"bs-watchlist-droplet-description": "包含在监视列表中页面的最新更改",
+	"bs-watchlist-usersidebar-title": "监视列表"
 }
