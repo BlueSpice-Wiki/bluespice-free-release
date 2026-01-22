@@ -8,7 +8,6 @@
 	"bs-usermanager-idnotexist": "N'eus ket eus an implijer-mañ.",
 	"bs-usermanager-invalid-pwd": "Direizh eo ar ger-tremen.",
 	"bs-usermanager-invalid-email-gen": "Direizh eo ar chomlec'h postel.",
-	"bs-usermanager-label": "Merout implijerien",
 	"bs-usermanager-user-exists": "An anv implijer zo anezhañ dija.",
 	"bs-usermanager-headerusername": "Anv implijer",
 	"bs-usermanager-headerrealname": "Gwir anv",
@@ -17,6 +16,5 @@
 	"bs-usermanager-titleadduser": "Ouzhpennañ un implijer",
 	"bs-usermanager-titleeditdetails": "Aozañ an implijer",
 	"bs-usermanager-labelnewpassword": "Ger-tremen",
-	"bs-usermanager-labelpasswordcheck": "Kadarnaat ar ger-tremen",
-	"bs-usermanager-invalid-realname": "Direizh eo ar gwir anv."
+	"bs-usermanager-labelpasswordcheck": "Kadarnaat ar ger-tremen"
 }

@@ -18,6 +18,10 @@
 			"BlueSpice\\WhoIsOnline\\": "src"
 		}
 	},
+	"require": {
+		"composer/installers": "~1.0|~2",
+		"mwstake/mediawiki-component-generictaghandler": "~1"
+	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "45.0.0",
 		"mediawiki/mediawiki-phan-config": "0.14.0",

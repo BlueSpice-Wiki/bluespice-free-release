@@ -54,7 +54,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "允許對頁面模板的操控",
 	"apihelp-bs-pagetemplate-tags-store-summary": "列出所有頁面模板。允許排序、篩選，以及分頁。執行 ExtJS 所儲存的變數。",
 	"action-pagetemplatesadmin-viewspecialpage": "檢視特殊頁面「{{int:pagetemplatesadmin}}」",
-	"pagetemplatesadmin": "頁面模板管理",
 	"bs-usagetracker-pagetemplates": "頁面模板",
 	"bs-pagetemplates-nsm-label": "頁面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。",
@@ -62,11 +61,5 @@
 	"bs-pagetemplates-search-template-placeholder": "查找頁面模板",
 	"bs-pagetemplates-headertags": "標籤",
 	"bs-pagetemplates-tag-untagged": "取消標記",
-	"bs-pagetemplates-ns-undefined": "未定義的命名空間",
-	"bs-pagetemplates-config-forcenamespace": "使用來自模板連結的命名空間",
-	"bs-pagetemplates-config-forcenamespace-help": "當建立新頁面時，套用在模板連結所選取命名空間。",
-	"bs-pagetemplates-config-hideifnotintargetns": "隱藏未選取命名空間的模板",
-	"bs-pagetemplates-config-hidedefaults": "隱藏標準模板",
-	"bs-pagetemplates-config-hidedefaults-help": "在頁面建立期間，從可用頁面模板清單移除標準模板「Empty Page」。",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目標命名空間與頁面建立期間的頁面命名空間不匹配，則從可用頁面模板清單中移除該模板。"
+	"bs-pagetemplates-ns-undefined": "未定義的命名空間"
 }

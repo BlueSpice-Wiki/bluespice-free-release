@@ -65,6 +65,8 @@ class SecondaryDataProvider implements ISecondaryDataProvider {
 		if ( $title->isSubpage() ) {
 			$dataSet->set( TitleRecord::LEAF_TITLE, $title->getSubpageText() );
 			$dataSet->set( TitleRecord::BASE_TITLE, $title->getBaseText() );
+		} else {
+			$dataSet->set( TitleRecord::BASE_TITLE, $title->getText() );
 		}
 	}
 

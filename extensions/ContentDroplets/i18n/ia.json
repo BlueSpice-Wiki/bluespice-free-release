@@ -42,8 +42,5 @@
 	"contentdroplets-droplet-code-name": "Codice",
 	"contentdroplets-droplet-code-desc": "Section mittite in evidentia pro exemplos de codice",
 	"contentdroplets-droplet-dialog-search-placeholder-label": "Cercar guttettas de contento",
-	"contentdroplets-toolbar-icon-title": "Adder guttettas de contento",
-	"contentdroplets-droplet-icon-font-size-help": "Pro adjustar le dimension del typo de litteras, es necessari specificar le unitate, p.ex. 15px, 0.83em o 1.2rem",
-	"contentdroplets-droplet-icon-color-help": "Tote le valores hexadecimal (p.ex. ‘#3366cc’) pote esser usate pro colores, assi como descriptiones de color CSS in anglese como ‘yellow’ (jalne), ‘blue’ (blau) o ‘black’ (nigre)",
-	"contentdroplets-droplet-icon-orientation-help": "Es possibile definir valores pro le proprietate CSS ‘vertical-align’ pro ajustar le alineamento del icone: ‘baseline’, ‘text-top’, ‘text-bottom’, ‘sub’ o ‘super’."
+	"contentdroplets-toolbar-icon-title": "Adder guttettas de contento"
 }

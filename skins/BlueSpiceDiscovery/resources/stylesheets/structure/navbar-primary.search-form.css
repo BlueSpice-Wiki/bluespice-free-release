@@ -23,7 +23,7 @@
 
 #nb-pri form input {
 	height: 40px;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	background-color: var( --navbar-primary-searchform-bg );
 	border-color: var( --navbar-primary-searchform-border-inactive );
 	border-width: 0.5px 0.5px 0.5px 0;
@@ -38,18 +38,18 @@
 	border-left: none;
 }
 
-#nb-pri .item-center-east .new-page-split-btn #new-content {
+#nb-pri .item-center-west .new-page-split-btn #new-content {
 	background: var( --navbar-primary-newbutton-bg );
 	color: var( --navbar-primary-newbutton-fg );
 	border: none;
 }
 
-#nb-pri .item-center-east .new-page-split-btn #new-content:hover {
+#nb-pri .item-center-west .new-page-split-btn #new-content:hover {
 	background: var( --navbar-primary-newbutton-bg--hover );
 	color: var( --navbar-primary-newbutton-fg--hover );
 }
 
-#nb-pri .item-center-east .new-page-split-btn #new-content-menu-btn {
+#nb-pri .item-center-west .new-page-split-btn #new-content-menu-btn {
 	background-color: var( --icon-primary-bg );
 	color: var( --icon-primary-fg );
 	font-size: 22px;
@@ -60,7 +60,7 @@
 	border: none;
 }
 
-#nb-pri .item-center-east .new-page-split-btn #new-content-menu-btn:hover {
+#nb-pri .item-center-west .new-page-split-btn #new-content-menu-btn:hover {
 	color: var( --icon-primary-fg--hover );
 	background-color: var( --icon-primary-bg );
 }

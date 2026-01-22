@@ -2,7 +2,10 @@
 
 namespace MWStake\MediaWiki\Component\AlertBanners;
 
+use InvalidArgumentException;
 use MediaWiki\MediaWikiServices;
+use stdClass;
+use UnexpectedValueException;
 use Wikimedia\ObjectFactory\ObjectFactory as WikimediaObjectFactory;
 
 class ObjectFactory {

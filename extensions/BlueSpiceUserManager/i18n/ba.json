@@ -12,7 +12,6 @@
 	"bs-usermanager-idnotexist": "Был ҡатнашыусы юҡ.",
 	"bs-usermanager-invalid-pwd": "Серһүҙ дөрөҫ түгел.",
 	"bs-usermanager-invalid-email-gen": "Электрон почтаның яраҡһыҙ адресы.",
-	"bs-usermanager-label": "Иҫәп яҙмалары менән идара итеү",
 	"bs-usermanager-user-exists": "Бындай исемле ҡатнашыусы бар инде.",
 	"bs-usermanager-headerusername": "Ҡатнашыусы исеме",
 	"bs-usermanager-headerrealname": "Ысын исем",
@@ -22,6 +21,5 @@
 	"bs-usermanager-titleeditdetails": "Ҡатнашыусыны мөхәррирләргә",
 	"bs-usermanager-labelnewpassword": "Серһүҙ",
 	"bs-usermanager-labelpasswordcheck": "Серһүҙҙе раҫлағыҙ",
-	"bs-usermanager-no-self-desysop": "Хаким хоҡуғын үҙегеҙ һала алмайһығыҙ.",
-	"bs-usermanager-invalid-realname": "Ҡатнашыусының бындай ысын исеме ярамай."
+	"bs-usermanager-no-self-desysop": "Хаким хоҡуғын үҙегеҙ һала алмайһығыҙ."
 }

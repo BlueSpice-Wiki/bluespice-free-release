@@ -5,15 +5,15 @@
 			"Krisztina"
 		]
 	},
+	"bs-pagesvisited-desc": "Személyre szabott listát készít a legutóbb meglátogatott oldalakról",
 	"prefs-pagesvisited": "Meglátogatott oldalak",
 	"bs-pagesvisited-widget-title": "Meglátogatott oldalak",
+	"bs-pagesvisited-error-nsnotvalid": "A megadott {{PLURAL:$1|névtér|névterek}} <code>$2</code> {{PLURAL:$1|nem érvényes|nem érvényesek}} .",
+	"bs-pagesvisited-pref-widgetlimit": "Bejegyzés korlát",
 	"bs-pagesvisited-pref-widgetns": "Névterek:",
 	"bs-pagesvisited-pref-widgetsortodr": "Rendezés:",
 	"bs-pagesvisited-pref-sort-time": "Idő",
 	"bs-pagesvisited-pref-sort-pagename": "Cím",
-	"bs-pagesvisited-desc": "Személyre szabott listát készít a legutóbb meglátogatott oldalakról",
-	"bs-pagesvisited-error-nsnotvalid": "A megadott {{PLURAL:$1|névtér|névterek}} <code>$2</code> {{PLURAL:$1|nem érvényes|nem érvényesek}} .",
-	"bs-pagesvisited-pref-widgetlimit": "Bejegyzés korlát",
 	"bs-pagesvisited-tag-pagesvisited-desc": "Megjeleníti a nemrég meglátogatott oldalak listáját. Ez a lista paraméterekkel szűkíthető.",
 	"bs-pagesvisited-ve-pagesvisited-title": "Meglátogatott oldalak",
 	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Számláló",

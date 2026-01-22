@@ -34,17 +34,11 @@
 	& .oo-ui-tabOptionWidget {
 		width: 150px;
 	}
-}
 
-/** Accessibility hint for TabSelectWidget **/
-
-/*
- * Hide, when not keyboard focussed.
- * Copied from "resources/src/mediawiki.special.preferences.ooui/tabs.js"
- */
-.client-js .notifications-ui-widget-TabSelectWidget-navigation-hint:not( :focus ) {
-	height: 0;
-	overflow: hidden;
+	&:focus {
+		box-shadow: inset 0 0 0 2px var( --box-shadow-color-progressive--focus, #36c );
+		border: initial;
+	}
 }
 
 /** NotificationTab **/
@@ -84,14 +78,16 @@
 	margin-left: 10px !important;
 }
 
+.notifications-ui-panel-NotificationTab-markAllAllRead-btn {
+	display: flex;
+	justify-content: end;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .notifications-ui-widget-DatedNotificationsWidget-mark-as-read-button {
-	& .oo-ui-labelElement-label {
-		color: #777575;
-		font-weight: 600;
-	}
-	position: absolute;
-	right: 0;
-	margin-left: 20px;
+	display: flex;
+	justify-content: right;
 	margin-bottom: 4px;
 }
 
@@ -100,8 +96,8 @@
 .notifications-ui-widget-FilterWidget {
 	display: inline-block;
 	width: 23%;
-	margin-left: 10px !important;
-	margin-right: 5px !important;
+	margin-left: 10px;
+	margin-right: 5px;
 }
 
 .notifications-ui-widget-FilterWidget { // stylelint-disable-line no-duplicate-selectors
@@ -164,11 +160,15 @@
 	min-height: 100px;
 	padding: 10px;
 	margin-bottom: 20px;
-	background-color: #fff;
+	background-color: #f8f9fa;
 }
 
 .notifications-ui-widget-NotificationItemWidget-notification-content .oojsplus-user-widget {
 	width: auto;
+
+	.user-display {
+		font-weight: normal;
+	}
 }
 
 .notifications-ui-widget-NotificationItemWidget-markAsReadButton {
@@ -179,7 +179,7 @@
 
 .notifications-ui-widget-NotificationItemWidget-secondary-links-wrapper {
 	margin-top: 10px;
-	margin-left: 68px;
+	margin-left: 2.5rem;
 
 	& .oo-ui-iconWidget {
 		min-height: initial;
@@ -191,10 +191,6 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 5px;
-}
-
-.notifications-ui-widget-NotificationItemWidget-secondary-link {
-	margin-left: 10px;
 }
 
 .notifications-ui-widget-NotificationItemWidget-notification-content-in-group {
@@ -242,23 +238,11 @@
 	margin: 2px 30px 0 5px;
 }
 
-.notifications-ui-widget-NotificationItemWidget-content-message-timestamp {
-	position: absolute;
-	bottom: 16px;
-	right: 7px;
-}
-
 .notifications-ui-widget-NotificationItemWidget-user-widget {
 	min-width: initial;
 	margin-right: 0 !important;
 	margin-left: 10px;
 	white-space: nowrap;
-}
-
-.notifications-ui-widget-NotificationItemWidget-timestamp {
-	font-style: italic;
-	font-weight: bold;
-	color: #777575;
 }
 
 /** NotificationGroupWidget **/
@@ -280,17 +264,8 @@
 	}
 
 	& .oo-ui-labelElement-label {
-		margin-left: 10px;
 		font-weight: normal;
 	}
-}
-
-/** HelpMenuWidget **/
-
-.notifications-ui-widget-HelpMenuWidget {
-	position: absolute;
-	bottom: 2px;
-	right: 0;
 }
 
 /** PaginationWidget **/
@@ -323,8 +298,7 @@
 
 		// Mark as unread
 		&-unread {
-			background-color: #eaecf0;
-			border: 1px solid #ccc;
+			background-color: #72777d;
 		}
 	}
 
@@ -339,7 +313,7 @@
 
 		// Mark as unread
 		&-unread {
-			background-color: #c8ccd1;
+			background-color: #54595d;
 		}
 	}
 }

@@ -27,7 +27,6 @@
 	"bs-visualeditorconnector-ve-style-option": "Tabellenstil",
 	"bs-visualeditorconnector-upload-dialog-type": "Arbeitsablauf zum Hochladen von Dateien in MediaDialog",
 	"bs-visualeditorconnector-text-style-tool-color-label": "Textfarbe",
-	"bs-visualeditorconnector-color-annotation-desc": "Fügt dem Text Farben hinzu, indem die Eigenschaft \"color\" oder \"class\" zugewiesen wird",
 	"bs-visualeditorconnector-dialog-media-link": "Datei verlinken",
 	"bs-visualeditorconnector-dialog-media-meta-link": "Dateibeschreibungsseite verlinken",
 	"bs-visualeditorconnector-dialog-media-embed": "Datei einbetten",
@@ -46,7 +45,6 @@
 	"bs-vec-dialog-table-create-number-of-columns": "Anzahl der Spalten",
 	"bs-vec-dialog-action-done": "Fertig",
 	"bs-vec-dialog-action-safe": "Abbrechen",
-	"bs-vec-dialog-create-table-title": "Tabelle einfügen",
 	"bs-vec-widget-text-direction-tooltip": "Vertikaler Text",
 	"bs-vec-row-duplicate-has-merged": "Die ausgewählte Zeile enthält Zellen, die sich über mehrere Zeilen erstrecken und kann daher nicht dupliziert werden.",
 	"bs-vec-dialog-media-change-file": "Datei ändern",
@@ -96,7 +94,7 @@
 	"bs-visualeditorconnector-upload-type": "Hochladetyp",
 	"bs-visualeditorconnector-upload-type-help": "Original: Hochlade-Recht wird geprüft. Dateiname, Namensraum und Kategorie sind editierbar. Die Beschreibung ist erforderlich.\nEinfach: Hochlade-Recht wird nicht geprüft. Dateiname, Namensraum und Kategorie sind editierbar. Beschreibung ist optional.\nEin Klick: Hochlade-Recht wird nicht geprüft. Dateiname und Kategorie sind nicht editierbar. Der Namensraum ist editierbar.",
 	"bs-visualeditorconnector-tab-file": "Link auf Datei",
+	"bs-visualeditor-request-entity-too-large": "Die Datei ist zu groß, um hochgeladen zu werden.",
 	"bs-visualeditorconnector-dialog-table-title": "Tabelle",
-	"bs-visualeditorconnector-dialog-action-insert": "Einfügen",
-	"bs-visualeditor-request-entity-too-large": "Die Datei ist zu groß, um hochgeladen zu werden."
+	"bs-visualeditorconnector-dialog-action-insert": "Einfügen"
 }

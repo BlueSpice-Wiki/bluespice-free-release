@@ -46,6 +46,9 @@
 			} catch ( error ) {}
 
 			this.authorGrid = new OOJSPlus.ui.data.GridWidget( {
+				selectable: false,
+				sortable: false,
+				orderable: false,
 				columns: {
 					user_name: { // eslint-disable-line camelcase
 						headerText: mw.message( 'bs-authors-info-dialog-grid-column-author' ).text(),

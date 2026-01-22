@@ -3,8 +3,8 @@
 		"authors": [
 			"Darafsh",
 			"Jeeputer",
-			"LordProfo",
-			"Rulebased"
+			"Rulebased",
+			"LordProfo"
 		]
 	},
 	"enhanced-standard-uis-desc": "رابط‌های کاربری را برای مجموعه رابط‌های کاربری استاندارد مدیاویکی تهیه می‌کند",
@@ -52,8 +52,8 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-label": "فراداده",
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "هیچ فراداده‌ای برای این پرونده در دسترس نیست",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "پیوند پرونده در کلیپ‌بورد کپی شد",
-	"enhanced-standard-uis-filter-results-label": "$1 {{PLURAL:$1|نتیجه}} یافت شد",
 	"enhanced-standard-uis-allpages-namespace-list-label": "فضای نام",
+	"enhanced-standard-uis-filter-results-label": "$1 {{PLURAL:$1|نتیجه}} یافت شد",
 	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "حاوی {{PLURAL:$1|یک صفحه|$1 صفحه}} است",
 	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "زیرصفحه‌ها",
 	"enhancedpreferences": "ترجیحات",

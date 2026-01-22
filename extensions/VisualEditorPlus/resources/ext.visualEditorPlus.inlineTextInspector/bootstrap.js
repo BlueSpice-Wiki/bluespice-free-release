@@ -4,7 +4,7 @@ mw.hook( 've.activationComplete' ).add( () => {
 	registerInlineTextInspectors( target );
 } );
 
-function registerInlineTextInspectors( target ) { // eslint-disable-line no-implicit-globals
+function registerInlineTextInspectors( target ) {
 	if ( target.getSurface().getMode() === 'visual' ) {
 		const $popupTarget = $( '<div>' ).addClass( 'veplus-popup-cnt-inline-inspector' );
 		// eslint-disable-next-line no-jquery/no-global-selector

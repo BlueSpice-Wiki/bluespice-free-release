@@ -11,7 +11,6 @@
 	"bs-usermanager-idnotexist": "Este utilizador não existe.",
 	"bs-usermanager-invalid-pwd": "A palavra-passe é inválida.",
 	"bs-usermanager-invalid-email-gen": "O endereço de correio eletrónico é inválido.",
-	"bs-usermanager-label": "Administrador de utilizadores",
 	"bs-usermanager-text": "Utilizadores",
 	"bs-usermanager-user-exists": "O nome de utilizador já existe.",
 	"bs-usermanager-headerusername": "Nome de utilizador",
@@ -49,6 +48,5 @@
 	"bs-usermanager-save": "Guardar",
 	"bs-usermanager-cancel": "Cancelar",
 	"bs-usermanager-showdisabled": "Mostrar utilizadores desativados",
-	"bs-usermanager-disabled": "Desativado",
-	"bs-usermanager-invalid-realname": "O nome verdadeiro é inválido."
+	"bs-usermanager-disabled": "Desativado"
 }

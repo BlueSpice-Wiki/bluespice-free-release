@@ -55,4 +55,11 @@ abstract class TagDroplet implements IDropletDescription {
 		}
 		return $formatted;
 	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function listDroplet(): bool {
+		return true;
+	}
 }

@@ -52,4 +52,11 @@ abstract class ParserFunctionDroplet implements IDropletDescription {
 	public function getVeCommand(): ?string {
 		return null;
 	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function listDroplet(): bool {
+		return true;
+	}
 }

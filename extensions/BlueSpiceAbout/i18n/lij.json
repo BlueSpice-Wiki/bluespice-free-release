@@ -5,7 +5,6 @@
 		]
 	},
 	"bs-bluespiceabout-desc": "Informaçioin sciu BlueSpice.",
-	"bs-bluespiceabout-about-bluespice": "Rigoardo BlueSpice",
 	"bluespiceabout": "Riguardo BlueSpice",
 	"action-bluespiceabout-viewspecialpage": "vixualizza a paggina speciale \"{{int:bs-bluespiceabout-about-bluespice}}\""
 }

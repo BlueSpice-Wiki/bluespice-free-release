@@ -13,16 +13,14 @@
 	"bs-whoisonline-pref-maxidletime-label": "Offline timeout (seconds)",
 	"bs-whoisonline-pref-orderby-time": "Uptime",
 	"bs-whoisonline-pref-orderby-name": "Name",
-	"bs-whoisonline-pref-interval-label": "Update interval (seconds)",
 	"bs-whoisonline-collection-type-userlogin": "User login",
 	"bs-whoisonline-collection-var-login": "Login",
 	"bs-whoisonline-statistics-report-login-duration": "Login duration",
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Login duration (sec)",
-	"bs-whoisonline-pref-interval-help-label": "The number of seconds after which the list of users is updated",
 	"bs-whoisonline-pref-maxidletime-help-label": "The number of seconds of inactivity after which a user is marked as offline",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Shows the number of users who have logged in within the last 10 minutes",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Who is online count",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "Shows all users who have been logged in within the last 10 minutes. The output is a speech bubble when a user hovers over the related link",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Shows all users who have been logged in within the last 10 minutes. The list is visible when a user hovers over the related link",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Who is online popup",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Number of logins",
 	"bs-whoisonline-statistics-report-login-number": "Logins",
@@ -30,5 +28,7 @@
 	"bs-whoisonline-droplet-count-name": "Number of users logged in",
 	"bs-whoisonline-droplet-count-description": "Number of currently logged in users",
 	"bs-whoisonline-droplet-popup-name": "List of users logged in",
-	"bs-whoisonline-droplet-popup-description": "Pop-up with a list of all users that are currently logged in"
+	"bs-whoisonline-droplet-popup-description": "Pop-up with a list of all users that are currently logged in",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Link text",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Text displayed for the link that opens the user list"
 }

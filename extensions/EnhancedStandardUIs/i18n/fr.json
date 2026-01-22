@@ -2,14 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Derugon",
-			"Escargot bleu",
 			"Graineahumus",
 			"Iketsi",
 			"JLTRY",
 			"MacOS Weed",
 			"Mahabarata",
 			"Nikop",
-			"SleaY"
+			"SleaY",
+			"Escargot bleu"
 		]
 	},
 	"enhanced-standard-uis-desc": "Fournit des interfaces utilisateur pour les interfaces utilisateur standard de MédiaWiki",
@@ -62,7 +62,6 @@
 	"enhanced-standard-uis-allpages-namespace-list-label": "Espace de noms",
 	"enhanced-standard-uis-paginator-aria-label": "Pagination",
 	"enhanced-standard-uis-allpages-watch-label": "Regarder la page $1",
-	"enhanced-standard-uis-allpages-unwatch-label": "Ne plus suivre la page $1",
 	"enhanced-standard-uis-allpages-pageinfo-label": "Afficher les informations de la page $1",
 	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|résultat|résultats}} {{PLURAL:$1|trouvé|trouvés}}",
 	"enhanced-standard-uis-filelist-grid-preview-title": "Prévisualiser",

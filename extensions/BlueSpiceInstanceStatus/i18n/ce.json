@@ -5,13 +5,13 @@
 		]
 	},
 	"instancestatus": "Инстанцин статус",
-	"bs-instancestatus-instance-status-last-update-label": "ТӀаьххьара карладаккхар",
-	"bs-instancestatus-instance-status-no-info": "ТӀекхочехь йац",
-	"bs-instancestatus-instance-status-main-label": "Йукъара",
 	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice верси",
 	"bs-instancestatus-instance-status-user-quota-label": "Декъашхочун квота",
+	"bs-instancestatus-instance-status-last-update-label": "ТӀаьххьара карладаккхар",
 	"bs-instancestatus-instance-status-created-label": "Экземпляр кхоьллина тӀехь",
+	"bs-instancestatus-instance-status-no-info": "ТӀекхочехь йац",
 	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice контакташ",
 	"bs-instancestatus-instance-status-sales-contact": "ЗӀене довла кхузахь: [$1 BlueSpice контакташ]",
-	"bs-instancestatus-overview-loader": "Вики-информаци гулйар ..."
+	"bs-instancestatus-overview-loader": "Вики-информаци гулйар ...",
+	"bs-instancestatus-instance-status-main-label": "Йукъара"
 }

@@ -13,7 +13,6 @@
 	},
 	"bs-discovery-name": "BlueSpice Discovery",
 	"bs-discovery-desc": "BlueSpice-Oberfläche",
-	"bs-discovery-skip-links-navigation-aria-label": "Zu den Links",
 	"bs-discovery-skip-to-navbar-primary-text": "Zur Kopfleiste",
 	"bs-discovery-skip-to-sidebar-primary-text": "Zur Hauptnavigation",
 	"bs-discovery-skip-to-sidebar-secondary-text": "Zu den Seitenwerkzeugen",
@@ -53,7 +52,6 @@
 	"bs-discovery-navbar-full-screen-button-disable-title": "Vollbildmodus deaktivieren",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "Vollbildmodus deaktivieren",
 	"bs-discovery-breadcrumb-nav-aria-label": "Brotkrumen",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Namensraum",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "Seiten",
 	"bs-discovery-breadcrumb-nav-node-title": "Öffne $1",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "Öffne $1",
@@ -185,13 +183,7 @@
 	"bs-discovery-footerlinks-imprint-link-page": "Site:Impressum",
 	"bs-discovery-footerlinks-termsofservice-link-desc": "Nutzungsbedingungen",
 	"bs-discovery-footerlinks-termsofservice-link-page": "Site:Nutzungsbedingungen",
-	"bs-discovery-sidebar-primary-aria-label": "Primäre Seitenleiste",
-	"bs-discovery-sidebar-secondary-aria-label": "Sekundäre Seitenleiste",
-	"bs-discovery-tools-after-content-aria-label": "Werkzeuge nach dem Inhaltsabschnitt",
-	"bs-discovery-data-after-content-aria-label": "Daten nach dem Inhaltsabschnitt",
 	"bs-discovery-requires-attention": "(erfordert Aufmerksamkeit)",
-	"bs-discovery-table-of-contents-show-button-aria-label": "Inhaltsverzeichnis anzeigen",
-	"bs-discovery-table-of-contents-hide-button-aria-label": "Inhaltsverzeichnis ausblenden",
 	"bs-discovery-breadcrumb-label-diff": "Unterschiede",
 	"bs-discovery-back-to-page": "Zurück zu $1",
 	"bs-discovery-back-to-page-title": "Zurück zur Seite $1",
@@ -205,5 +197,7 @@
 	"bs-discovery-data-after-content-cnt-aria-label": "Seitenanhang",
 	"bs-discovery-footer-places-alt-text-mediawiki": "Unterstützt durch MediaWiki",
 	"bs-discovery-footer-places-alt-text-bluespice": "Unterstützt durch BlueSpice",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Unterstützt durch Semantic MediaWiki"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Unterstützt durch Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Bearbeiten",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Leeren"
 }

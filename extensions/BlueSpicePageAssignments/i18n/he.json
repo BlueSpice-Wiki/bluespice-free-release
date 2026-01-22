@@ -68,6 +68,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "דפים לא משויכים",
 	"bs-pageassignments-pageheader-label": "שיוכים",
 	"bs-pageassignments-statistics-report-assigned-pages": "דפים משויכים",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "דפים ששויכו וששיוכם בוטל בתקופה שנבחרה, עם אפשרות סינון לפי קטגוריה ומרחב שם",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "משויכים",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "לא משויכים",
 	"bs-pageassignments-dialog-input-placeholder": "הוספת שיוכים...",
@@ -90,6 +91,5 @@
 	"bs-pageassignments-header-action-delete": "מחיקה",
 	"bs-pageassignments-title-edit": "עריכת שיוכים",
 	"bs-pageassignments-title-delete": "מחיקת שיוכים",
-	"bs-pageassignments-show-unassigned-pages": "הצגת דפים שלא שויכו",
-	"bs-pageassignments-statistics-report-assigned-pages-desc": "דפים ששויכו וששיוכם בוטל בתקופה שנבחרה, עם אפשרות סינון לפי קטגוריה ומרחב שם"
+	"bs-pageassignments-show-unassigned-pages": "הצגת דפים שלא שויכו"
 }

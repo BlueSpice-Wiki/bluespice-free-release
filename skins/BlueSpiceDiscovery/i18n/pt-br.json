@@ -4,6 +4,8 @@
 			"Eduardoaddad"
 		]
 	},
+	"bs-discovery-back-to-top-aria-label": "Voltar ao topo",
+	"bs-discovery-navbar-aria-label": "Barra de cabeçalho",
 	"bs-discovery-navbar-user-button-title": "Menu do usuário",
 	"bs-discovery-navbar-user-button-aria-label": "Menu do usuário",
 	"bs-discovery-navbar-user-button-personal-menu-text": "Ferramentas pessoais",
@@ -29,7 +31,6 @@
 	"bs-discovery-navbar-full-screen-button-enable-aria-label": "Ativar o modo de tela inteira",
 	"bs-discovery-navbar-full-screen-button-disable-title": "Desativar o modo de tela inteira",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "Desativar o modo de tela inteira",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Espaço nominal",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "Páginas",
 	"bs-discovery-breadcrumb-nav-node-title": "Abrir $1",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "Abrir $1",
@@ -113,10 +114,6 @@
 	"bs-discovery-footerlinks-imprint-link-desc": "Imprimir",
 	"bs-discovery-footerlinks-imprint-link-page": "Site:Imprimir",
 	"bs-discovery-footerlinks-termsofservice-link-desc": "Termos de serviço",
-	"bs-discovery-sidebar-primary-aria-label": "Barra lateral primária",
-	"bs-discovery-sidebar-secondary-aria-label": "Barra lateral secundária",
 	"bs-discovery-breadcrumb-label-diff": "Diferenças",
-	"bs-discovery-back-to-top-aria-label": "Voltar ao topo",
-	"bs-discovery-navbar-aria-label": "Barra de cabeçalho",
 	"bs-discovery-back-to-version-history": "Voltar ao histórico de versões"
 }

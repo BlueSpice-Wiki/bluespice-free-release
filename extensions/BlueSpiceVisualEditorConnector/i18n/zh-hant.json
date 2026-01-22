@@ -24,7 +24,6 @@
 	"bs-visualeditorconnector-ve-style-option": "表格類型",
 	"bs-visualeditorconnector-upload-dialog-type": "用於在 MediaDialog 上傳檔案的工作流",
 	"bs-visualeditorconnector-text-style-tool-color-label": "文字色彩",
-	"bs-visualeditorconnector-color-annotation-desc": "透過分配「color」或「class」屬性來添加色彩到文字",
 	"bs-visualeditorconnector-dialog-media-link": "連結至檔案",
 	"bs-visualeditorconnector-dialog-media-meta-link": "連結檔案描述頁面",
 	"bs-visualeditorconnector-dialog-media-embed": "嵌入此檔案",
@@ -43,7 +42,6 @@
 	"bs-vec-dialog-table-create-number-of-columns": "直行數目",
 	"bs-vec-dialog-action-done": "完成",
 	"bs-vec-dialog-action-safe": "取消",
-	"bs-vec-dialog-create-table-title": "插入表格",
 	"bs-vec-widget-text-direction-tooltip": "垂直文字",
 	"bs-vec-row-duplicate-has-merged": "所選的橫列包含單元格而橫跨成多個橫列，因此不能做出複製。",
 	"bs-vec-dialog-media-change-file": "變更檔案",
@@ -85,13 +83,5 @@
 	"bs-vec-insert-line-break-title": "換行（<br />）",
 	"bs-visualeditorconnector-text-style-indent-label": "縮排",
 	"bs-visualeditorconnector-indent-annotation-desc": "縮排已選取的文字",
-	"bs-visualeditorconnector-upload-type": "上傳類型",
-	"bs-visualeditorconnector-upload-type-help": "原始模式：驗證上傳權限。檔案名稱、命名空間和分類均可編輯。描述為必填。\n\n簡易模式：不驗證上傳權限。檔案名稱、命名空間和分類均可編輯。描述為選填。\n\n一鍵模式：不驗證上傳權限。檔案名稱與分類不可編輯。命名空間可編輯。",
-	"bs-visualeditorconnector-text-style-tool-align-center-label": "置中對齊",
-	"bs-visualeditorconnector-align-center-annotation-desc": "所選文字置中",
-	"bs-visualeditor-save-label": "儲存",
-	"bs-visualeditorconnector-tab-file": "連結至檔案",
-	"bs-visualeditor-request-entity-too-large": "檔案太大無法上傳。",
-	"bs-visualeditorconnector-dialog-table-title": "表格",
-	"bs-visualeditorconnector-dialog-action-insert": "插入"
+	"bs-visualeditorconnector-upload-type": "上傳類型"
 }

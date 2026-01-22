@@ -6,11 +6,11 @@
 			"Tacsipacsi"
 		]
 	},
-	"bs-countthings-pages-label": "Lapok",
 	"bs-countthings-desc": "Tartalom alapú statisztikákat biztosít",
 	"bs-countthings-chars-label": "Karakterek",
 	"bs-countthings-words-label": "Szavak",
 	"bs-countthings-files-label": "Fájlok",
+	"bs-countthings-pages-label": "Lapok",
 	"bs-countthings-ve-countcharacters-title": "Karakterek számlálása",
 	"bs-countthings-ve-countarticles-title": "Szócikkek számlálása",
 	"bs-countthings-ve-countfiles-title": "Fájlok számlálása",

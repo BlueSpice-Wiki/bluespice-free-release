@@ -46,7 +46,7 @@
 }
 
 .mega-menu .mm-edit-link {
-	font-size: 14px;
+	font-size: 0.875rem;
 	right: 0;
 	top: 1rem;
 	position: absolute;
@@ -120,7 +120,7 @@
 	padding-bottom: 5px;
 	border: 0;
 	padding-left: 0;
-	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .list-group.menu-list li a:hover {

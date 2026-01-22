@@ -1,79 +1,79 @@
-(function( mw, $, mwstake ) {
+( function ( mw, $, mwstake ) {
 
-	var _alerts = {};
+	const _alerts = {}; // eslint-disable-line no-underscore-dangle
 
 	/**
 	 * Types and markup inspired by
 	 * https://getbootstrap.com/docs/3.3/components/#alerts
-	 * @param string id
-	 * @param jQuery $elem
-	 * @param string type May be 'success', 'info', 'warning', 'danger'
-	 * @returns jQuery The actual alert wrapper element
+	 *
+	 * @param {string} id
+	 * @param {jQuery} $elem
+	 * @param {string} type May be 'success', 'info', 'warning', 'danger'
+	 * @return {jQuery} The actual alert wrapper element
 	 */
-	function _add( id, $elem, type ) {
+	function _add( id, $elem, type ) { // eslint-disable-line no-underscore-dangle
 		type = type || mwstake.alerts.TYPE_WARNING;
 
-		if( _alerts[id] ) {
-			var $oldAlert = _alerts[id];
+		if ( _alerts[ id ] ) {
+			const $oldAlert = _alerts[ id ];
 			$oldAlert.remove();
 		}
 
-		var $box = $( '<div class="alert alert-' + type + '" role="alert">' );
+		const $box = $( '<div class="alert alert-' + type + '" role="alert">' );
 		$box.append( $elem );
-		var $container = _getContainer();
+		const $container = _getContainer();
 		$container.append( $box );
 
-		_alerts[id] = $box;
+		_alerts[ id ] = $box;
 
 		return $box;
 	}
 
-	function _remove( id ) {
-		var $box = _alerts[id];
-		if( $box ) {
+	function _remove( id ) { // eslint-disable-line no-underscore-dangle
+		const $box = _alerts[ id ];
+		if ( $box ) {
 			$box.remove();
-			delete( _alerts[id] );
+			delete ( _alerts[ id ] );
 		}
 	}
 
-	function _getContainer() {
-		var $container = $( '#mwstake-alert-container' );
+	function _getContainer() { // eslint-disable-line no-underscore-dangle
+		const $container = $( '#mwstake-alert-container' );
 		return $container;
 	}
 
-	//Init server-side generated alerts
-	$(function() {
-		var $container = _getContainer();
-		var $boxes = $container.find( '[data-mwstake-alert-id]' );
-		$boxes.each( function() {
-			var $box = $(this);
-			var id = $box.data( 'mwstake-alert-id' );
-			_alerts[id] = $box;
+	// Init server-side generated alerts
+	$( () => {
+		const $container = _getContainer();
+		const $boxes = $container.find( '[data-mwstake-alert-id]' );
+		$boxes.each( function () {
+			const $box = $( this );
+			const id = $box.data( 'mwstake-alert-id' );
+			_alerts[ id ] = $box;
 		} );
 
 		wireDismissableAlertButtons();
-	});
+	} );
 
 	window.mwstake = window.mwstake || {};
 	window.mwstake.alerts = {
 		add: _add,
 		remove: _remove,
 
-		//Keep in sync with IAlertProvider constants
+		// Keep in sync with IAlertProvider constants
 		TYPE_SUCCESS: 'success',
 		TYPE_INFO: 'info',
 		TYPE_WARNING: 'warning',
 		TYPE_DANGER: 'danger'
 	};
 
-
 	function wireDismissableAlertButtons() {
-		$( '.dismiss-btn' ).each( function( k, el ) {
-			var $button = $( el );
-			var btn = OO.ui.infuse( $button );
+		$( '.dismiss-btn' ).each( ( k, el ) => {
+			const $button = $( el );
+			const btn = OO.ui.infuse( $button );
 			btn.connect( btn, {
-				click: function() {
-					var $alert = this.$element.parents( '.alert' );
+				click: function () {
+					const $alert = this.$element.parents( '.alert' );
 					mw.hook( 'mwstake.components.alertbanners.alert.dismiss' ).fire( $alert, this );
 					$alert.remove();
 				}
@@ -81,4 +81,4 @@
 		} );
 	}
 
-})( mediaWiki, jQuery );
+}( mediaWiki, jQuery ) );

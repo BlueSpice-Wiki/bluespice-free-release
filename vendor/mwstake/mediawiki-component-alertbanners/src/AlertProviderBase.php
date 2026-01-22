@@ -2,37 +2,27 @@
 
 namespace MWStake\MediaWiki\Component\AlertBanners;
 
-use Config;
-use ConfigException;
+use MediaWiki\Config\Config;
+use MediaWiki\Config\ConfigException;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
-use RequestContext;
+use MediaWiki\User\User;
 use Skin;
-use User;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\LoadBalancer;
 
 abstract class AlertProviderBase implements IAlertProvider {
 
-	/**
-	 *
-	 * @var LoadBalancer
-	 */
-	protected $loadBalancer = null;
+	/** @var LoadBalancer */
+	protected $loadBalancer;
+
+	/** @var Skin */
+	protected $skin;
+
+	/** @var Config */
+	protected $config;
 
 	/**
-	 *
-	 * @var Skin
-	 */
-	protected $skin = null;
-
-	/**
-	 *
-	 * @var Config
-	 */
-	protected $config = null;
-
-	/**
-	 *
 	 * @param Skin $skin
 	 * @param LoadBalancer $loadBalancer
 	 * @param Config $config
@@ -44,7 +34,6 @@ abstract class AlertProviderBase implements IAlertProvider {
 	}
 
 	/**
-	 *
 	 * @param Skin|null $skin
 	 * @return IAlertProvider
 	 */
@@ -61,8 +50,7 @@ abstract class AlertProviderBase implements IAlertProvider {
 			// https://gerrit.wikimedia.org/r/c/mediawiki/extensions/BlueSpiceFoundation/+/790268
 			// is merged _and_ published!
 			$config = $services->getConfigFactory()->makeConfig( 'bsg' );
-		}
-		catch ( ConfigException $ex ) {
+		} catch ( ConfigException $ex ) {
 			$config = $services->getMainConfig();
 		}
 
@@ -76,7 +64,6 @@ abstract class AlertProviderBase implements IAlertProvider {
 	}
 
 	/**
-	 *
 	 * @param int $type
 	 * @return IDatabase
 	 */
@@ -85,7 +72,6 @@ abstract class AlertProviderBase implements IAlertProvider {
 	}
 
 	/**
-	 *
 	 * @return Config
 	 */
 	protected function getConfig() {
@@ -93,7 +79,6 @@ abstract class AlertProviderBase implements IAlertProvider {
 	}
 
 	/**
-	 *
 	 * @return User
 	 */
 	protected function getUser() {

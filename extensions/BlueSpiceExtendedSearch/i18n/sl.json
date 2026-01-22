@@ -74,7 +74,6 @@
 	"bs-extendedsearch-autocomplete-result-primary-no-results-label": "Za vašo poizvedbo ni veljavnih ujemanj",
 	"bs-extendedsearch-autocomplete-result-type": "Vrsta: $1",
 	"bs-extendedsearch-autocomplete-result-top-match-label": "Najboljša ujemanja",
-	"bs-extendedsearch-autocomplete-result-secondary-results-label": "Mogoče iščete tudi ...",
 	"bs-extendedsearch-search-center-result-help": "V iskalno vrstico zgoraj nekaj vnesite ...",
 	"bs-extendedsearch-searchcenter-filter-or-label": "ali",
 	"bs-extendedsearch-searchcenter-filter-and-label": "in",
@@ -173,6 +172,5 @@
 	"apihelp-bs-extendedsearch-recently-found-pages-summary": "Navede strani, do katerih je uporabnik pred kratkim dostopal iz zadetkov iskanja",
 	"bs-extendedsearch-rest-trace-insert-failure": "Podatkov o sledenju ni bilo mogoče vstaviti",
 	"bs-extendedsearch-rest-trace-remove-failure": "Podatkov o sledenju ni bilo mogoče odstraniti",
-	"bs-extendedsearch-recently-found-header": "Nedavno ogledano",
-	"bs-extendedsearch-recentlyfound-ignore": "Odstrani"
+	"bs-extendedsearch-recently-found-header": "Nedavno ogledano"
 }

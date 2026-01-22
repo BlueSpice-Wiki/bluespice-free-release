@@ -6,6 +6,8 @@ h5,
 h6 {
 	font-family: var( --content-font-family );
 	padding-top: 0;
+	word-break: break-word;
+	hyphens: auto;
 }
 
 h1#firstHeading {

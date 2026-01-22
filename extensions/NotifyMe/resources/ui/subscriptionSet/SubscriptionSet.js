@@ -63,7 +63,7 @@ ext.notifyme.ui.SubscriptionSet.prototype.render = function () {
 		classes: [ 'ext-notifyme-subscriptionSet-header' ]
 	} );
 	this.deliveryLabel = new OO.ui.LabelWidget( {
-		label: this.makeDeliveryLabel()
+		label: mw.msg( 'notifyme-ui-delivery-label' )
 	} );
 	this.deliveryIconsLayout = new OO.ui.HorizontalLayout( {
 		classes: [ 'ext-notifyme-subscriptionSet-delivery-icons' ],
@@ -79,6 +79,10 @@ ext.notifyme.ui.SubscriptionSet.prototype.render = function () {
 
 ext.notifyme.ui.SubscriptionSet.prototype.getHeaderKeyValue = function () {
 	return '';
+};
+
+ext.notifyme.ui.SubscriptionSet.prototype.setChannelLabels = function ( channelLabels ) {
+	this.channelLabels = channelLabels;
 };
 
 ext.notifyme.ui.SubscriptionSet.prototype.getBucketLabel = function () {
@@ -113,30 +117,26 @@ ext.notifyme.ui.SubscriptionSet.prototype.getButtons = function () {
 	} );
 };
 
-ext.notifyme.ui.SubscriptionSet.prototype.makeDeliveryLabel = function () {
-	const channels = this.value.channels || [];
-
-	if ( channels.includes( 'web' ) && channels.includes( 'email' ) ) {
-		return mw.msg( 'notifyme-ui-delivery-web-email' );
-	}
-	if ( channels.includes( 'web' ) ) {
-		return mw.msg( 'notifyme-ui-delivery-web' );
-	}
-	return '';
-};
-
 ext.notifyme.ui.SubscriptionSet.prototype.makeDeliveryIcons = function () {
 	const channels = this.value.channels || [],
 		icons = [];
-	if ( channels.includes( 'web' ) ) {
-		icons.push( new OO.ui.IconWidget( {
-			icon: 'bell'
-		} ) );
-	}
-	if ( channels.includes( 'email' ) ) {
-		icons.push( new OO.ui.IconWidget( {
-			icon: 'message'
-		} ) );
-	}
+	const standardMapping = { web: 'bell', email: 'message' };
+
+	channels.forEach( ( channel ) => {
+		if ( !this.channelLabels.hasOwnProperty( channel ) ) {
+			return;
+		}
+		if ( standardMapping.hasOwnProperty( channel ) ) {
+			icons.push( new OO.ui.IconWidget( {
+				icon: standardMapping[ channel ],
+				title: this.channelLabels[ channel ].label
+			} ) );
+		} else {
+			icons.push( new OO.ui.IconWidget( {
+				icon: this.channelLabels[ channel ].icon,
+				title: this.channelLabels[ channel ].label
+			} ) );
+		}
+	} );
 	return icons;
 };

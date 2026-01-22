@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceDistributionConnector",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceDistributionConnector",
 	"author": [
 		"Robert Vogel",
@@ -134,9 +134,6 @@
 			},
 			"SettingPathRegistry": {
 				"authentication": "bs-distributionconnector-setting-path-authentication"
-			},
-			"TagRegistry": {
-				"uenoexport": "BlueSpice\\DistributionConnector\\Tag\\UENoExport"
 			}
 		},
 		"VisualEditor": {
@@ -246,17 +243,16 @@
 			]
 		},
 		"PDFCreator": {
-			"TemplateProvider": {
-				"legacy": {
-					"class": "BlueSpice\\DistributionConnector\\Integration\\PDFCreator\\TemplateProvider\\Legacy",
-					"services": [ "ConfigFactory" ]
-				}
-			},
 			"Processors": {
 				"PDFHandler": {
 					"class": "\\BlueSpice\\DistributionConnector\\Integration\\PDFCreator\\Processor\\PDFHandlerProcessor",
 					"services": [ "TitleFactory", "MainConfig", "RepoGroup", "UrlUtils" ]
 				}
+			}
+		},
+		"BlueSpiceWikiFarm": {
+			"PostInstanceCreationCommandFactories": {
+				"migratePluggableAuthSettings": "BlueSpice\\DistributionConnector\\Integration\\WikiFarm\\PluggableAuthMigrationCommand::factory"
 			}
 		}
 	},
@@ -318,13 +314,21 @@
 			"messages": [
 				"bs-distributionconnector-ve-categorytreeinpector-title",
 				"bs-distributionconnector-ve-categorytree-title",
-				"bs-distributionconnector-ve-categorytreeinspector-dd-mode",
-				"bs-distributionconnector-ve-categorytreeinspector-tb-depth",
-				"bs-distributionconnector-ve-categorytreeinspector-tb-hideroot",
-				"bs-distributionconnector-ve-categorytreeinspector-tb-showcount",
-				"bs-distributionconnector-ve-categorytreeinspector-dd-hideprefix",
-				"bs-distributionconnector-ve-categorytreeinspector-tb-namespace",
-				"bs-distributionconnector-ve-categorytreeinspector-tb-style"
+				"bs-distributionconnector-ve-categorytreeinspector-mode-label",
+				"bs-distributionconnector-ve-categorytreeinspector-mode-cat-label",
+				"bs-distributionconnector-ve-categorytreeinspector-mode-pages-label",
+				"bs-distributionconnector-ve-categorytreeinspector-mode-all-label",
+				"bs-distributionconnector-ve-categorytreeinspector-mode-parents-label",
+				"bs-distributionconnector-ve-categorytreeinspector-depth-label",
+				"bs-distributionconnector-ve-categorytreeinspector-hideroot-label",
+				"bs-distributionconnector-ve-categorytreeinspector-hideprefix-label",
+				"bs-distributionconnector-ve-categorytreeinspector-prefix-always-label",
+				"bs-distributionconnector-ve-categorytreeinspector-prefix-never-label",
+				"bs-distributionconnector-ve-categorytreeinspector-prefix-auto-label",
+				"bs-distributionconnector-ve-categorytreeinspector-prefix-categories-label",
+				"bs-distributionconnector-ve-categorytreeinspector-showcount-label",
+				"bs-distributionconnector-ve-categorytreeinspector-namespaces-label",
+				"bs-distributionconnector-ve-categorytreeinspector-style-label"
 			]
 		},
 		"ext.bluespice.distributionconnector.statistics": {
@@ -477,14 +481,13 @@
 				"stylesheets/bluespice.contentdroplets.subpages.css"
 			],
 			"messages": [
-				"droplets-subpages-namespace-label",
 				"droplets-subpages-namespace-help",
-				"droplets-subpages-parentpage-label",
 				"droplets-subpages-parentpage-help",
-				"droplets-subpages-cols-label",
-				"droplets-subpages-cols-help",
-				"droplets-subpages-bullets-label",
-				"droplets-subpages-bullets-help"
+				"bs-distributionconnector-droplets-subpages-namespace-label",
+				"bs-distributionconnector-droplets-subpages-parentpage-label",
+				"bs-distributionconnector-droplets-subpages-cols-label",
+				"bs-distributionconnector-droplets-subpages-cols-help",
+				"bs-distributionconnector-droplets-subpages-bullets-label"
 			]
 		},
 		"ext.bluespice.distribution.droplet.circlednumber": {
@@ -500,7 +503,8 @@
 			"messages": [
 				"droplets-circled-number-bg-color-label",
 				"droplets-circled-number-fg-color-label",
-				"droplets-circled-number-label"
+				"droplets-circled-number-label",
+				"bs-distributionconnector-droplets-circled-number-color-help"
 			]
 		},
 		"ext.bluespice.distribution.droplet.gallery": {
@@ -594,12 +598,6 @@
 			"value": "eventbus",
 			"descriptionmsg": "bs-distributionconnector-pref-eventbus-eventservicedefault",
 			"public": true
-		},
-		"PDFCreatorLegacyTemplateDirectory": {
-			"value": ""
-		},
-		"PDFCreatorDefaultLegacyTemplate": {
-			"value": ""
 		}
 	},
 	"Hooks": {
@@ -620,7 +618,8 @@
 		"MWStakeCommonUIRegisterSkinSlotComponents": "addGlobalAction",
 		"SkinTemplateNavigation::Universal": "addNewPageLink",
 		"ContentAlterParserOutput": "addVariablesPageProperty",
-		"BSUsageTrackerRegisterCollectors": "BlueSpice\\DistributionConnector\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfVariables::callback"
+		"BSUsageTrackerRegisterCollectors": "BlueSpice\\DistributionConnector\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfVariables::callback",
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
 	},
 	"HookHandlers": {
 		"user-manager": {
@@ -645,6 +644,9 @@
 		},
 		"addVariablesPageProperties": {
 			"class": "BlueSpice\\DistributionConnector\\Hook\\LoadExtensionSchemaUpdates\\AddVariablesPageProperties"
+		},
+		"registerTags": {
+			"class": "\\BlueSpice\\DistributionConnector\\HookHandler\\RegisterTags"
 		}
 	},
 	"manifest_version": 2

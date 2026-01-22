@@ -8,6 +8,7 @@
 		]
 	},
 	"apihelp-query+statistics-reports-summary": "Gabatar da kididdigaggen rahotanni akan ire-iren kididdigogi",
+	"apihelp-query+statistics-reports-param-aggregate": "Ko don tara kididdiga",
 	"bs-statistics-aggregated-report-no-date": "Ba bayani akan saitin wannan matatar, muna rokon achanza darajar matatar",
 	"bs-statistics-aggregated-report-filter-category-multi": "RABE RABE",
 	"bs-statistics-aggregated-report-filter-date-start": "Ranar  farawa",
@@ -21,6 +22,5 @@
 	"bs-statistics-aggregated-report-filter-page": "Shafi",
 	"bs-statistics-aggregated-report-filter-user": "Mai aiki",
 	"bs-statistics-aggregated-report-filter-user-multi": "Masu amfani",
-	"bs-statistics-aggregated-report-loading": "Kwaso bayani...",
-	"apihelp-query+statistics-reports-param-aggregate": "Ko don tara kididdiga"
+	"bs-statistics-aggregated-report-loading": "Kwaso bayani..."
 }

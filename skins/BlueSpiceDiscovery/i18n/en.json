@@ -193,5 +193,7 @@
 	"bs-discovery-data-after-content-cnt-aria-label": "Page appendix",
 	"bs-discovery-footer-places-alt-text-mediawiki": "Powered by MediaWiki",
 	"bs-discovery-footer-places-alt-text-bluespice": "Powered by BlueSpice",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Powered by Semantic MediaWiki"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Powered by Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Edit",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Clear"
 }

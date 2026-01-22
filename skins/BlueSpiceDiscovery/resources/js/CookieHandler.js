@@ -5,7 +5,7 @@
  *
  * @constructor
  */
-var CookieHandler = function () { // eslint-disable-line no-implicit-globals, no-var
+var CookieHandler = function () { // eslint-disable-line no-var
 	// This name has to be kept in sync with \BlueSpice\Discovery\CookieHandler::$cookieName
 	this.cookieName = 'BlueSpiceDiscovery';
 };

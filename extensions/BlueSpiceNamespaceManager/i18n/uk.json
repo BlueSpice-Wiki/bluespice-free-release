@@ -11,7 +11,6 @@
 		]
 	},
 	"bs-namespacemanager-desc": "Адміністративний інтерфейс для додавання, редагування та видалення просторів назв",
-	"bs-namespacemanager-label": "Керівник просторами назв",
 	"bs-namespacemanager-text": "Простори назв",
 	"bs-namespacemanager-wrong-name": "Простір назв містить неприпустимі символи.",
 	"bs-namespacemanager-wrong-alias": "Псевдонім простору назв містить недійсні символи.",
@@ -61,7 +60,7 @@
 	"bs-namespacemanager-nodeletetalk": "Простір назв Обговорення вилучити неможливо",
 	"bs-namespacemanager-label-istalk": "Обговорення",
 	"right-namespacemanager-viewspecialpage": "Доступ до спеціальної сторінки [[Special:NamespaceManager]]",
+	"bs-namespacemanager-hide-talk-label": "Приховати простори назв обговорень",
 	"bs-namespacemanager-labelnsalias": "Псевдонім",
-	"bs-namespacemanager-invalid-namespace": "Простір назв, який редагується, є недійсним",
-	"bs-namespacemanager-hide-talk-label": "Приховати простори назв обговорень"
+	"bs-namespacemanager-invalid-namespace": "Простір назв, який редагується, є недійсним"
 }

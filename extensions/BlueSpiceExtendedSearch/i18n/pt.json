@@ -75,7 +75,6 @@
 	"bs-extendedsearch-autocomplete-result-primary-no-results-label": "Não há correspondências válidas para a sua consulta",
 	"bs-extendedsearch-autocomplete-result-type": "Tipo: $1",
 	"bs-extendedsearch-autocomplete-result-top-match-label": "Melhores correspondências",
-	"bs-extendedsearch-autocomplete-result-secondary-results-label": "Pode também estar à procura de...",
 	"bs-extendedsearch-search-center-result-help": "Introduza texto na barra de pesquisa acima...",
 	"bs-extendedsearch-searchcenter-filter-or-label": "ou",
 	"bs-extendedsearch-searchcenter-filter-and-label": "e",
@@ -96,6 +95,7 @@
 	"bs-extendedsearch-source-type-wikipage-label": "Página wiki",
 	"bs-extendedsearch-source-type-repofile-label": "Ficheiro local",
 	"bs-extendedsearch-source-type-specialpage-label": "Página especial",
+	"bs-extendedsearch-source-type-externalfile-label": "Ficheiro externo",
 	"bs-extendedsearch-result-relevance-relevant": "O resultado é importante para mim",
 	"bs-extendedsearch-result-relevance-not-relevant": "O resultado não é importante para mim",
 	"prefs-extendedsearch": "Pesquisa avançada",
@@ -168,9 +168,6 @@
 	"bs-extendedsearch-statistics-report-search-terms-axis-label": "Número de consultas de pesquisa",
 	"bs-extendedsearch-droplet-search-name": "Campo de pesquisa",
 	"bs-extendedsearch-droplet-search-description": "Adiciona um campo de pesquisa ao conteúdo da página",
-	"bs-extendedsearch-autocomplete-result-secondary-results-header-label": "Resultados similares",
-	"prefs-search": "Definições de procura",
-	"bs-extendedsearch-source-type-externalfile-label": "Ficheiro externo",
 	"bs-extendedsearch-source-label-externalfile": "Ficheiro externo",
 	"bs-extendedsearch-tagsearch-input-aria-label": "Procurar",
 	"bs-extendedsearch-autocomplete-popup-select-announcement": "$1 de $2",
@@ -182,6 +179,8 @@
 	"bs-extendedsearch-autocomplete-context-none": "em toda a wiki",
 	"bs-extendedsearch-autocomplete-result-primary-results-label": "Resultados",
 	"bs-extendedsearch-autocomplete-context-options-label": "Procurar",
+	"bs-extendedsearch-autocomplete-result-secondary-results-header-label": "Resultados similares",
 	"prefs-searchsection": "Áreas de procura",
-	"bs-extendedsearch-autocomplete-context-options-aria-label": "Procurar $1 $2"
+	"bs-extendedsearch-autocomplete-context-options-aria-label": "Procurar $1 $2",
+	"prefs-search": "Definições de procura"
 }

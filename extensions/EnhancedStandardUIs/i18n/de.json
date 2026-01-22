@@ -3,8 +3,8 @@
 		"authors": [
 			"Justman10000",
 			"Miriam Schlindwein",
-			"Mschlindwein",
-			"PretzelRocky"
+			"PretzelRocky",
+			"Mschlindwein"
 		]
 	},
 	"enhanced-standard-uis-desc": "Stellt Benutzeroberflächen für die Standard-Benutzeroberflächen von MediaWiki zur Verfügung",
@@ -57,7 +57,6 @@
 	"enhanced-standard-uis-allpages-namespace-list-label": "Namensraum",
 	"enhanced-standard-uis-paginator-aria-label": "Paginierung",
 	"enhanced-standard-uis-allpages-watch-label": "Seite $1 beobachten",
-	"enhanced-standard-uis-allpages-unwatch-label": "Seite $1 nicht mehr beobachten",
 	"enhanced-standard-uis-allpages-pageinfo-label": "Seiteninformationen für $1 anzeigen",
 	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|Ergebnis|Ergebnisse}} gefunden",
 	"enhanced-standard-uis-filelist-grid-preview-title": "Vorschau",
@@ -89,5 +88,6 @@
 	"enhanced-standard-uis-prefs-menu-aria-label": "Abschnitte der Einstellungen",
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Ansichtsmodus auswählen",
 	"enhanced-standard-uis-paginator-page-aria-label": "Seite $1",
-	"enhanced-standard-uis-allpages-section-heading-aria-label": "Seiten beginnend mit $1"
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Seiten beginnend mit $1",
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Nach Datei suchen"
 }

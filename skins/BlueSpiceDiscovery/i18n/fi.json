@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"MITO",
-			"Minilammas",
 			"Nike",
 			"Pyscowicz",
-			"Rönttönen"
+			"Rönttönen",
+			"Minilammas"
 		]
 	},
 	"bs-discovery-desc": "BlueSpice-ulkoasu",
@@ -34,7 +34,6 @@
 	"bs-discovery-navbar-full-screen-button-enable-aria-label": "Ota koko näytön tila käyttöön",
 	"bs-discovery-navbar-full-screen-button-disable-title": "Poista koko näytön tila käytöstä",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "Poista koko näytön tila käytöstä",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Nimiavaruus",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "Sivut",
 	"bs-discovery-breadcrumb-nav-node-title": "Avaa $1",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "Avaa $1",

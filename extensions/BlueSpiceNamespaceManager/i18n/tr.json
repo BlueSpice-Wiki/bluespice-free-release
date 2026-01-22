@@ -8,7 +8,6 @@
 		]
 	},
 	"bs-namespacemanager-desc": "Ad alanları eklemek, düzenlemek ve silmek için yönetim arayüzü",
-	"bs-namespacemanager-label": "Ad alanı yöneticisi",
 	"bs-namespacemanager-wrong-name": "Ad alanı geçersiz karakterler içeriyor.",
 	"bs-namespacemanager-wrong-alias": "Ad alanı diğer adı geçersiz karakterler içeriyor.",
 	"bs-namespacemanager-alias-exists": "Ad alanı takma adı zaten ad alanı $1 için ayarlanmış",
@@ -56,7 +55,7 @@
 	"bs-namespacemanager-nodeletetalk": "Tartışma ad alanı silinemez",
 	"bs-namespacemanager-label-istalk": "Tartışma",
 	"right-namespacemanager-viewspecialpage": "[[Special:NamespaceManager]] özel sayfaya erişin",
+	"bs-namespacemanager-hide-talk-label": "Tartışma ad alanlarını gizle",
 	"bs-namespacemanager-labelnsalias": "Takma ad",
-	"bs-namespacemanager-invalid-namespace": "Düzenlenen ad alanı geçersiz",
-	"bs-namespacemanager-hide-talk-label": "Tartışma ad alanlarını gizle"
+	"bs-namespacemanager-invalid-namespace": "Düzenlenen ad alanı geçersiz"
 }

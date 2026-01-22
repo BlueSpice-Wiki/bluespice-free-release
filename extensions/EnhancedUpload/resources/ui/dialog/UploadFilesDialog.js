@@ -135,6 +135,7 @@ enhancedUpload.ui.dialog.UploadFilesDialog.prototype.getActionProcess = function
 					page.upload.startUpload();
 					break;
 				case 'done':
+					this.emit( 'uploadcompleted' );
 					this.close();
 					break;
 			}

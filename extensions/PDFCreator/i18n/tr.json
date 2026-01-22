@@ -1,8 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hedda",
-			"Sakblue"
+			"Hedda"
 		]
 	},
 	"pdfcreator-name": "PDF Oluşturucu",
@@ -36,6 +35,8 @@
 	"pdfcreator-config-default-pdf-template-help": "Sayfa dışa aktarımlarında kullanılacak varsayılan şablonu belirler. Şablonun, MediaWiki:PDFOluşturucu'nun bir alt sayfası olarak mevcut olması gerekir.",
 	"pdfcreator-dialog-button-title": "Dışa aktarma penceresini aç",
 	"pdfcreator-dialog-button-text": "Dışa aktar",
+	"pdfcreator-config-suppress-namespace": "PDF’de ad alanı ön ekini gizle",
+	"pdfcreator-config-suppress-namespace-help": "PDF çıktısında başlıklardan ve \"başlık\" şablon parametresinden ad alanı ön ekini kaldırır",
 	"pdfcreator-config-coverbackground": "PDF şablonlarında varsayılan kapak arkaplan resmi",
 	"pdfcreator-config-coverbackground-help": "Varsayılan intro-wrapper (giriş kapsayıcısı) ayarı bulunan tüm PDF şablonları için bir kapak arka plan resmi tanımlar. Resim, viki’ye yüklenmiş bir dosya ya da geçerli bir dosya yolu olmalıdır.",
 	"pdfcreator-pageparam-username": "Dışa aktaran kullanıcının kullanıcı adını gösterir",
@@ -151,7 +152,5 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "yapıldı",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "başarısız",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF hariç tut - başlat",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF hariç tut - son",
-	"pdfcreator-global-action-overview": "PDF şablonları",
-	"pdfcreator-global-action-overview-desc": "Wiki'deki tüm PDF şablonlarına genel bakış"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF hariç tut - son"
 }

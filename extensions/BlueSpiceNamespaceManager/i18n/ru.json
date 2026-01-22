@@ -13,7 +13,6 @@
 		]
 	},
 	"bs-namespacemanager-desc": "Административный интерфейс для добавления, правки и удаления пространств имён",
-	"bs-namespacemanager-label": "Диспетчер пространств имён",
 	"bs-namespacemanager-text": "Пространства имён",
 	"bs-namespacemanager-wrong-name": "Пространство имён содержит недопустимые символы.",
 	"bs-namespacemanager-ns-exists": "Пространство имён уже существует.",
@@ -59,9 +58,9 @@
 	"namespacemanager": "Диспетчер пространств имён",
 	"bs-namespacemanager-label-istalk": "Обсуждение",
 	"right-namespacemanager-viewspecialpage": "доступ к служебной странице [[Special:NamespaceManager]]",
+	"bs-namespacemanager-hide-talk-label": "Скрыть пространства имён для обсуждения",
 	"bs-namespacemanager-labelnsalias": "Псевдоним",
 	"bs-namespacemanager-icon-tristate-disabled-aria-label": "отключено",
 	"bs-namespacemanager-icon-tristate-true-aria-label": "помечено",
-	"bs-namespacemanager-icon-tristate-false-aria-label": "не помечено",
-	"bs-namespacemanager-hide-talk-label": "Скрыть пространства имён для обсуждения"
+	"bs-namespacemanager-icon-tristate-false-aria-label": "не помечено"
 }

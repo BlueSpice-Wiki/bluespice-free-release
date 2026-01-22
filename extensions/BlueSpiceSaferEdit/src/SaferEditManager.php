@@ -3,17 +3,26 @@
 namespace BlueSpice\SaferEdit;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
+use Config;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use Wikimedia\Rdbms\IDatabase;
+use MWStake\MediaWiki\Component\Wire\WireChannelFactory;
+use MWStake\MediaWiki\Component\Wire\WireMessage;
+use MWStake\MediaWiki\Component\Wire\WireMessenger;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 class SaferEditManager {
 	/**
-	 * @var IDatabase
+	 * @var ILoadBalancer
 	 */
-	protected $db;
+	protected $lb;
+
+	/**
+	 * @var Config
+	 */
+	private $config;
 
 	/**
 	 * @var IContextSource
@@ -26,14 +35,26 @@ class SaferEditManager {
 	protected $checkerRegistry;
 
 	/**
-	 * @param IDatabase $db
-	 * @param IContextSource $context
-	 * @param ExtensionAttributeBasedRegistry $checkerRegistry
+	 * @var WireMessenger
 	 */
-	public function __construct( $db, $context, $checkerRegistry ) {
+	protected $wireMessenger;
+
+	/**
+	 * @param ILoadBalancer $lb
+	 * @param IContextSource $context
+	 * @param Config $config
+	 * @param ExtensionAttributeBasedRegistry $checkerRegistry
+	 * @param WireMessenger $wireMessenger
+	 */
+	public function __construct(
+		ILoadBalancer $lb, IContextSource $context, Config $config,
+		ExtensionAttributeBasedRegistry $checkerRegistry, WireMessenger $wireMessenger
+	) {
 		$this->context = $context;
-		$this->db = $db;
+		$this->lb = $lb;
+		$this->config = $config;
 		$this->checkerRegistry = $checkerRegistry;
+		$this->wireMessenger = $wireMessenger;
 	}
 
 	/**
@@ -66,7 +87,7 @@ class SaferEditManager {
 			'LIMIT' => 1,
 		];
 
-		$row = $this->db->selectRow(
+		$row = $this->lb->getConnection( DB_REPLICA )->selectRow(
 			$table,
 			[ 'se_id' ],
 			$conditions,
@@ -75,23 +96,25 @@ class SaferEditManager {
 		);
 		if ( $row ) {
 			$title->invalidateCache();
-			$updateOk = $this->db->update(
+			$updateOk = $this->lb->getConnection( DB_PRIMARY )->update(
 				$table,
 				$fields,
 				[ "se_id" => $row->se_id ],
 				__METHOD__
 			);
 			if ( $updateOk ) {
+				$this->emitWireMessage( $user, $title );
 				return Status::newGood();
 			}
 		} else {
 			$title->invalidateCache();
-			$insertOk = $this->db->insert(
+			$insertOk = $this->lb->getConnection( DB_PRIMARY )->insert(
 				$table,
 				$conditions + $fields,
 				__METHOD__
 			);
 			if ( $insertOk ) {
+				$this->emitWireMessage( $user, $title );
 				return Status::newGood();
 			}
 		}
@@ -107,7 +130,7 @@ class SaferEditManager {
 	 * @return Status
 	 */
 	public function doClearSaferEdit( User $user, Title $title ) {
-		$deleteOk = $this->db->delete(
+		$deleteOk = $this->lb->getConnection( DB_PRIMARY )->delete(
 			'bs_saferedit',
 			[
 				"se_user_name" => $user->getName(),
@@ -118,6 +141,7 @@ class SaferEditManager {
 		);
 
 		if ( $deleteOk ) {
+			$this->emitWireMessage( $user, $title );
 			$title->invalidateCache();
 			return Status::newGood();
 		}
@@ -144,4 +168,28 @@ class SaferEditManager {
 			}
 		}
 	}
+
+	/**
+	 * @param User $user
+	 * @param Title $title
+	 * @return void
+	 */
+	private function emitWireMessage( User $user, Title $title ) {
+		$warningBuilder = new EditWarningBuilder(
+			$this->lb,
+			$this->config,
+			$user,
+			$title
+		);
+
+		$wireMessage = new WireMessage(
+			( new WireChannelFactory() )->getChannelForPage( $title ),
+			[
+				'action' => 'bsSaferEditWarning',
+				'data' => $warningBuilder->getData()
+			]
+		);
+		$this->wireMessenger->send( $wireMessage );
+	}
+
 }

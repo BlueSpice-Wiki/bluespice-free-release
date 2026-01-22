@@ -58,6 +58,9 @@
 			} catch ( error ) {}
 
 			this.readerGrid = new OOJSPlus.ui.data.GridWidget( {
+				selectable: false,
+				sortable: false,
+				orderable: false,
 				columns: {
 					readers_user_name: { // eslint-disable-line camelcase
 						headerText: mw.message( 'bs-readers-info-dialog-column-readers' ).text(),

@@ -99,7 +99,7 @@ enhancedUpload.ui.booklet.ResultPage.prototype.initializeFinishedPanel = functio
 
 enhancedUpload.ui.booklet.ResultPage.prototype.initializeWarningPanel = function () {
 	const label = new OO.ui.LabelWidget( {
-		label: mw.message( 'enhancedupload-warning-dialog-label', this.warningData.length ).text(),
+		label: mw.message( 'enhancedupload-warning-dialog-upload-label', this.warningData.length ).text(),
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
 	const listView = new enhancedUpload.ui.panel.WarningList( {

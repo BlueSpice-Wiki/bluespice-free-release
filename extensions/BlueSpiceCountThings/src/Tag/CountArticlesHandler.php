@@ -2,36 +2,23 @@
 
 namespace BlueSpice\CountThings\Tag;
 
-use BlueSpice\Tag\Handler;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\PPFrame;
+use MediaWiki\SiteStats\SiteStats;
 use MediaWiki\Title\NamespaceInfo;
-use SiteStats;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
-class CountArticlesHandler extends Handler {
-
-	/** @var NamespaceInfo */
-	private $namespaceInfo = null;
+class CountArticlesHandler implements ITagHandler {
 
 	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
 	 * @param NamespaceInfo $namespaceInfo
 	 */
-	public function __construct( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame, NamespaceInfo $namespaceInfo ) {
-		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
-		$this->namespaceInfo = $namespaceInfo;
+	public function __construct(
+		private readonly NamespaceInfo $namespaceInfo
+	) {
 	}
 
-	/**
-	 *
-	 * @return string
-	 */
-	public function handle() {
+	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
 		$count = 0;
 		$namespaces = $this->namespaceInfo->getValidNamespaces();
 		foreach ( $namespaces as $namespace ) {

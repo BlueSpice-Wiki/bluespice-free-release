@@ -3,7 +3,7 @@ OOJSPlus.ui.data.filter.Boolean = function ( cfg ) {
 	this.value = this.getFilterValue();
 	this.trueLabel = cfg.trueLabel || mw.message( 'oojsplus-data-grid-filter-boolean-true' ).text();
 	this.falseLabel = cfg.falseLabel || mw.message( 'oojsplus-data-grid-filter-boolean-false' ).text();
-	cfg.closePopupOnChange = true;
+	cfg.autoClosePopup = true;
 	OOJSPlus.ui.data.filter.Boolean.parent.call( this, cfg );
 };
 
@@ -26,8 +26,12 @@ OOJSPlus.ui.data.filter.Boolean.prototype.getLayout = function () {
 		select: 'changeValue'
 	} );
 
+	let label = mw.message( 'oojsplus-data-grid-filter-label' ).text();
+	if ( this.filterName !== '' ) {
+		label = mw.message( 'oojsplus-data-grid-filter-input-label', this.filterName ).text();
+	}
 	return new OO.ui.FieldLayout( this.valueInput, {
-		label: mw.message( 'oojsplus-data-grid-filter-label' ).text(),
+		label: label,
 		align: 'top'
 	} );
 };
@@ -70,15 +74,24 @@ OOJSPlus.ui.data.filter.Boolean.prototype.doChangeValue = function ( value ) {
 	let shouldClosePopup = this.closePopupOnChange;
 	if ( value === null ) {
 		this.value = null;
-		this.clearButton.setDisabled( true );
 		shouldClosePopup = true;
 	} else {
 		this.conditionValue = value;
 		this.value = this.getFilterValue();
-		this.clearButton.setDisabled( false );
 	}
 
 	this.emit( 'change', this, shouldClosePopup );
+};
+
+OOJSPlus.ui.data.filter.Boolean.prototype.getDisplayValue = function () {
+	if ( Object.keys( this.value ).includes( 'value' ) && this.value.value !== undefined ) {
+		if ( this.value.value === true ) {
+			return this.trueLabel;
+		} else if ( this.value.value === false ) {
+			return this.falseLabel;
+		}
+	}
+	return '';
 };
 
 OOJSPlus.ui.data.registry.filterRegistry.register( 'boolean', OOJSPlus.ui.data.filter.Boolean );

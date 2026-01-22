@@ -15,17 +15,17 @@
 	"bs-pagesvisited-pref-sort-pagename": "Title",
 	"bs-pagesvisited-tag-pagesvisited-desc": "Shows a list of recently visited pages. This list can be restricted by parameters.",
 	"bs-pagesvisited-ve-pagesvisited-title": "Pages visited",
-	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Count",
 	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Set the number of pages shown in the list",
-	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Maximum title length",
 	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Set the maximum number of characters before a title is cut off",
-	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Order",
 	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Set the order in which the pages are displayed",
-	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Namespaces",
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Only show pages from these namespaces",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Time",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Pagename",
 	"bs-pagesvisited-droplet-name": "Visited pages",
 	"bs-pagesvisited-droplet-description": "List with visited pages",
-	"bs-pagesvisited-label-anon-user": "To see pages you have visited, please log in to your account"
+	"bs-pagesvisited-label-anon-user": "To see pages you have visited, please log in to your account",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Number of shown results",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Maximum length of page titles",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Sort by",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Filter by namespaces"
 }

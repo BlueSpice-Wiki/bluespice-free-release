@@ -30,9 +30,9 @@
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Pop-up met gebruikers online",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Aantal aanmeldingen",
 	"bs-whoisonline-statistics-report-login-number": "Aanmeldingen",
+	"bs-whoisonline-statistics-report-login-number-desc": "Dagelijkse aanmeldingen gedurende de geselecteerde periode",
 	"bs-whoisonline-droplet-count-name": "Aantal ingelogde gebruikers",
 	"bs-whoisonline-droplet-count-description": "Aantal momenteel ingelogde gebruikers",
 	"bs-whoisonline-droplet-popup-name": "Lijst met ingelogde gebruikers",
-	"bs-whoisonline-droplet-popup-description": "Pop-up met een lijst van alle gebruikers die momenteel zijn aangemeld",
-	"bs-whoisonline-statistics-report-login-number-desc": "Dagelijkse aanmeldingen gedurende de geselecteerde periode"
+	"bs-whoisonline-droplet-popup-description": "Pop-up met een lijst van alle gebruikers die momenteel zijn aangemeld"
 }

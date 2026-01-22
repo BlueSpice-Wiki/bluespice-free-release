@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mansil alfalb",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Mansil alfalb"
 		]
 	},
 	"bs-installer-title": "Instalação do MediaWiki $1 e BlueSpice $2"

@@ -39,7 +39,7 @@ class QrCodeDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.qrCode.visualEditor' ];
+		return [ 'ext.bluespice.qrCode.droplet' ];
 	}
 
 	/**
@@ -72,6 +72,6 @@ class QrCodeDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getVeCommand(): ?string {
-		return 'qrCodeCommand';
+		return 'qrcodeCommand';
 	}
 }

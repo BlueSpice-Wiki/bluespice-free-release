@@ -26,6 +26,7 @@
 	"apihelp-query+statistics-reports-example": "Oppgi alle rapporter av typen «mytype» for datoene 2021-09-14 og 2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "Statistikktype (rapportnøkkel)",
 	"apihelp-query+statistics-reports-param-filter": "JSON-kodede filterdata",
+	"apihelp-query+statistics-reports-param-aggregate": "Hvorvidt statistikken skal aggregeres",
 	"bs-statistics-aggregated-report-picker-label": "Rapporttype",
 	"bs-statistics-aggregated-report-no-date": "Ingen data for nåværende filtersett, endre filterverdiene",
 	"bs-statistics-aggregated-report-filter-category-multi": "Kategorier",
@@ -46,6 +47,7 @@
 	"bs-statistics-aggregated-report-loading": "Laster inn data …",
 	"bs-statistics-pref-excludeusers-help": "Noen brukere, f.eks. med administratorrettigheter, kan forvrenge statistikkene på Special:ExtendedStatistics. De kan ekskluderes fra statistiske resultater.",
 	"bs-statistics-tag-progress-desc": "Genererer en fremdriftslinje. Verdien avhenger av utseendet til angitt tekst i brødteksten og en øvre grense definert av brukeren.",
+	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>fremdrift</span>",
 	"bs-statistics-ve-progressinspector-title": "Framgang",
 	"bs-statistics-ve-progress-attr-basecount-label": "Grunntall",
 	"bs-statistics-ve-progress-attr-basecount-help": "Angir øvre grense på hvor ofte det gitte fremdriftselementet må forekomme på siden for at fremdriftslinja skal fylles helt",
@@ -56,7 +58,5 @@
 	"bs-statistics-ve-progress-attr-width-label": "Bredde",
 	"bs-statistics-ve-progress-attr-width-help": "Bredde på fremdriftslinje i piksler",
 	"bs-statistics-droplet-progress-name": "Framgang",
-	"bs-statistics-droplet-progress-description": "Visualiserer fremgang mot gitte målevariabler",
-	"apihelp-query+statistics-reports-param-aggregate": "Hvorvidt statistikken skal aggregeres",
-	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>fremdrift</span>"
+	"bs-statistics-droplet-progress-description": "Visualiserer fremgang mot gitte målevariabler"
 }

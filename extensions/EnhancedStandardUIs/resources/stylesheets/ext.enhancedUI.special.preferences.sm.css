@@ -1,0 +1,32 @@
+.enhanced-preferences-page-content {
+	padding: 0;
+}
+
+.enhanced-ui-preferences-content .oo-ui-bookletLayout {
+	margin-top: 1.8em;
+}
+
+.enhanced-preferences-page-content-section {
+	border-bottom: 1px solid #a2a9b1;
+	margin: 0 0 1em 0;
+	padding: 1em;
+	line-height: 1.5em;
+}
+
+.enhanced-preferences-page-content-section h2 {
+	padding-top: 0;
+	margin: 0;
+	font-size: 18px;
+}
+
+.enhanced-ui-preferences-search .oo-ui-fieldLayout-header {
+	text-align: left;
+}
+
+#enhanced-preferences .enhanced-ui-preferences-search .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-field {
+	width: 100%;
+}
+
+#enhanced-preferences .enhanced-ui-preferences-mobile-pref-dropdown {
+	margin-top: 1.8em;
+}

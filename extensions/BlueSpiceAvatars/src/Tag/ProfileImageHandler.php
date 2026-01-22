@@ -5,78 +5,41 @@ namespace BlueSpice\Avatars\Tag;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Renderer\UserImage;
 use BlueSpice\RendererFactory;
-use BlueSpice\Tag\Handler;
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\PPFrame;
-use MWException;
+use MediaWiki\User\UserFactory;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\DynamicFileDispatcherFactory;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
+use RuntimeException;
 
-class ProfileImageHandler extends Handler {
+class ProfileImageHandler implements ITagHandler {
 
-	/**
-	 *
-	 * @var DynamicFileDispatcherFactory
-	 */
-	protected $dfdFactory = null;
-
-	/**
-	 *
-	 * @var RendererFactory
-	 */
-	protected $rendererFactory = null;
-
-	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @param DynamicFileDispatcherFactory $dfdFactory
-	 * @param RendererFactory $rendererFactory
-	 */
-	public function __construct( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame, DynamicFileDispatcherFactory $dfdFactory, RendererFactory $rendererFactory ) {
-		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
-		$this->dfdFactory = $dfdFactory;
-		$this->rendererFactory = $rendererFactory;
+	public function __construct(
+		private readonly DynamicFileDispatcherFactory $dfdFactory,
+		private readonly RendererFactory $rendererFactory,
+		private readonly UserFactory $userFactory
+	) {
 	}
 
 	/**
-	 *
-	 * @return string
+	 * @inheritDoc
 	 */
-	public function handle() {
-		$this->processedArgs['username'] = isset( $this->processedArgs['username'] )
-			? $this->processedArgs['username']
-			: '';
-		$this->processedArgs['width'] = isset( $this->processedArgs['width'] )
-			? (int)$this->processedArgs['width']
-			: 32;
-		$this->processedArgs['height'] = isset( $this->processedArgs['height'] )
-			? (int)$this->processedArgs['height']
-			: 32;
-		$this->processedArgs['raw'] = isset( $this->processedArgs['raw'] )
-			&& $this->processedArgs['raw']
-			? true
-			: false;
-
-		if ( $this->processedArgs['raw'] === true ) {
-			return $this->handleRaw();
+	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
+		if ( $params['raw'] ) {
+			return $this->handleRaw( $params );
 		}
-		$user = MediaWikiServices::getInstance()->getUserFactory()
-			->newFromName( $this->processedArgs['username'] );
+		$user = $this->userFactory->newFromName( $params['username'] );
 		if ( !$user ) {
 			$msg = Message::newFromKey(
 				'bs-avatars-tag-profileimage-error-invalidusername'
 			);
-			throw new MWException( $msg );
+			throw new RuntimeException( $msg );
 		}
 		$params = [
-			UserImage::PARAM_HEIGHT => $this->processedArgs['height'],
-			UserImage::PARAM_WIDTH => $this->processedArgs['width'],
+			UserImage::PARAM_HEIGHT => $params['height'],
+			UserImage::PARAM_WIDTH => $params['width'],
 			UserImage::PARAM_USER => $user,
 			UserImage::PARAM_CLASS => 'bs-avatars-userimage-tag'
 		];
@@ -90,22 +53,22 @@ class ProfileImageHandler extends Handler {
 	 *
 	 * @return string
 	 */
-	protected function handleRaw() {
+	protected function handleRaw( array $params ) {
 		$url = $this->dfdFactory->getUrl( 'userprofileimage', [
-			'username' => $this->processedArgs['username'],
-			'width' => $this->processedArgs['width'],
-			'height' => $this->processedArgs['height']
+			'username' => $params['username'],
+			'width' => $params['width'],
+			'height' => $params['height']
 		] );
 
 		return Html::element( 'img', [
 			'src' => $url,
 			'alt' => Message::newFromKey(
 				'bs-avatars-tag-userimage-img-alt',
-				$this->processedArgs['username']
+				$params['username']
 			)->text(),
 			'class' => 'bs-avatars-userimage-tag',
-			'width' => $this->processedArgs['width'],
-			'height' => $this->processedArgs['height']
+			'width' => $params['width'],
+			'height' => $params['height']
 		] );
 	}
 }

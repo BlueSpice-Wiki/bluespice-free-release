@@ -93,7 +93,7 @@ ext.notifyme.ui.dialog.SubscriptionSetEditor.prototype.initialize = function () 
 		}
 		const config = {
 			data: channelKey,
-			label: mw.message( 'notifyme-ui-dialog-set-editor-channels-prefixed', this.channelLabels[ channelKey ] ).text()
+			label: mw.message( 'notifyme-ui-dialog-set-editor-channels-prefixed', this.channelLabels[ channelKey ].label ).text()
 		};
 		if ( channelKey === 'web' ) {
 			continue;

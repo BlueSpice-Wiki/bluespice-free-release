@@ -9,8 +9,6 @@ ext.notifyme.ui.widget.NotificationItemWidget = function ( data, cfg ) {
 		this.$content.addClass( 'notifications-ui-widget-NotificationItemWidget-notification-content-in-group' );
 	}
 
-	const timestampWidget = this.getTimestampWidget( data.timestamp );
-
 	const $message = this.composeMessage( data.message, data.agent, data.icon );
 
 	this.markAsReadButton = this.getMarkAsReadButton( data.unread );
@@ -25,16 +23,10 @@ ext.notifyme.ui.widget.NotificationItemWidget = function ( data, cfg ) {
 
 	const $secondaryLinks = this.getSecondaryLinks( data.links );
 
-	const $timestamp = new OO.ui.LabelWidget( {
-		label: new OO.ui.HtmlSnippet( timestampWidget.$element ),
-		classes: [ 'notifications-ui-widget-NotificationItemWidget-content-message-timestamp' ]
-	} ).$element;
-
 	// Compose body (contains secondary links)
 	let $body = $( '<div>' )
 		.addClass( 'notifications-ui-widget-NotificationItemWidget-body' )
-		.append( $secondaryLinks )
-		.append( $timestamp );
+		.append( $secondaryLinks );
 
 	// If any of "child" classes need to modify body somehow
 	// Example: ext.notifyme.ui.widget.NotificationGroupWidget
@@ -63,19 +55,6 @@ ext.notifyme.ui.widget.NotificationItemWidget.prototype.getMarkAsReadButton = fu
 	} );
 
 	return markAsReadButton;
-};
-
-ext.notifyme.ui.widget.NotificationItemWidget.prototype.getTimestampWidget = function ( timestamp ) {
-	// Timestamp
-	const itemMoment = moment.utc( timestamp );
-	itemMoment.local();
-
-	const timestampWidget = new OO.ui.LabelWidget( {
-		classes: [ 'notifications-ui-widget-NotificationItemWidget-timestamp' ],
-		label: itemMoment.fromNow( false )
-	} );
-
-	return timestampWidget;
 };
 
 ext.notifyme.ui.widget.NotificationItemWidget.prototype.composeMessage = function (
@@ -140,7 +119,7 @@ ext.notifyme.ui.widget.NotificationItemWidget.prototype.getSecondaryLinks = func
 		const $linkWrapper = $( '<div>' ).addClass( 'notifications-ui-widget-NotificationItemWidget-secondary-link-wrapper' );
 
 		const icon = new OO.ui.IconWidget( {
-			icon: 'next'
+			icon: 'arrowNext'
 		} );
 
 		const $link = $( '<a>' )

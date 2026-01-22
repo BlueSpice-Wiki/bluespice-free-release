@@ -14,7 +14,6 @@
 	"bs-usermanager-idnotexist": "Цей користувач не існує.",
 	"bs-usermanager-invalid-pwd": "Неприпустимий пароль.",
 	"bs-usermanager-invalid-email-gen": "Адреса електронної пошти недійсна.",
-	"bs-usermanager-label": "Менеджер користувачів",
 	"bs-usermanager-text": "Користувачі",
 	"bs-usermanager-user-exists": "Ім'я користувача вже існує.",
 	"bs-usermanager-headerusername": "Ім'я користувача",
@@ -48,6 +47,5 @@
 	"bs-usermanager-label-password-change-strategy": "Метод",
 	"bs-usermanager-label-password-change-strategy-reset": "Надіслати користувачеві посилання для скидання пароля",
 	"bs-usermanager-label-password-change-strategy-pw": "Змінюйте пароль безпосередньо",
-	"bs-usermanager-no-mail": "Вибраний користувач не має підтвердженої адреси електронної пошти",
-	"bs-usermanager-invalid-realname": "Справжнє ім'я неприпустиме."
+	"bs-usermanager-no-mail": "Вибраний користувач не має підтвердженої адреси електронної пошти"
 }

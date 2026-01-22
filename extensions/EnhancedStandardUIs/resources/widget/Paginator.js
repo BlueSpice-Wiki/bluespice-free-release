@@ -77,10 +77,13 @@ ext.enhancedUI.widget.Paginator.prototype.createPageButtons = function () {
 		this.splitPageButtons = true;
 	}
 	for ( let i = 0; i <= this.numberOfPages; i++ ) {
+		const pageNumber = ( i + 1 ).toString();
 		const button = new OO.ui.ButtonOptionWidget( {
-			label: ( i + 1 ).toString(),
+			label: pageNumber,
 			data: i
 		} );
+		button.$element.attr( 'aria-label',
+			mw.message( 'enhanced-standard-uis-paginator-page-aria-label', pageNumber ).text() );
 		if ( this.splitPageButtons && i > this.splitBreakPoint ) {
 			button.toggle( false );
 		}
@@ -89,8 +92,6 @@ ext.enhancedUI.widget.Paginator.prototype.createPageButtons = function () {
 	this.buttonSelect = new OO.ui.ButtonSelectWidget( {
 		items: buttons
 	} );
-	this.buttonSelect.$element.attr( 'aria-label',
-		mw.message( '' ).text() );
 	this.buttonSelect.selectItem( this.buttonSelect.findFirstSelectableItem() );
 	this.buttonSelect.connect( this, {
 		select: 'selectNumberButton'

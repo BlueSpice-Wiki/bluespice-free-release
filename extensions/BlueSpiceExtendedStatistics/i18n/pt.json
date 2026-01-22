@@ -24,6 +24,7 @@
 	"apihelp-query+statistics-reports-example": "Fornecer todos os relatórios do tipo \"mytype\", nas datas 2021-09-14 e 2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "Tipo de estatística (chave do relatório)",
 	"apihelp-query+statistics-reports-param-filter": "Dados de filtro codificados em JSON",
+	"apihelp-query+statistics-reports-param-aggregate": "Se as estatísticas devem ser agregadas",
 	"bs-statistics-aggregated-report-picker-label": "Tipo de relatório",
 	"bs-statistics-aggregated-report-no-date": "Não existem dados para o conjunto de filtros atual; altere os valores dos filtros, por favor",
 	"bs-statistics-aggregated-report-filter-category-multi": "Categorias",
@@ -54,6 +55,5 @@
 	"bs-statistics-ve-progress-attr-width-label": "Largura",
 	"bs-statistics-ve-progress-attr-width-help": "Largura da barra de progresso em píxeis",
 	"bs-statistics-droplet-progress-name": "Progresso",
-	"bs-statistics-droplet-progress-description": "Visualiza o progresso em relação a determinadas variáveis de medição",
-	"apihelp-query+statistics-reports-param-aggregate": "Se as estatísticas devem ser agregadas"
+	"bs-statistics-droplet-progress-description": "Visualiza o progresso em relação a determinadas variáveis de medição"
 }

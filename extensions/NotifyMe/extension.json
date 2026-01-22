@@ -1,6 +1,6 @@
 {
 	"name": "NotifyMe",
-	"version": "2.0.4",
+	"version": "2.1.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
@@ -195,7 +195,8 @@
 				"notifyme-ui-subscription-set-empty",
 				"notifyme-ui-dialog-popup-table-event-label",
 				"notifyme-ui-dialog-popup-table-desc-label",
-				"notifyme-ui-dialog-popup-header-label"
+				"notifyme-ui-dialog-popup-header-label",
+				"notifyme-ui-delivery-label"
 			],
 			"styles": [
 				"styles.less"
@@ -245,9 +246,7 @@
 			],
 			"messages": [
 				"notifyme-ui-edit",
-				"notifyme-ui-delete",
-				"notifyme-ui-delivery-web-email",
-				"notifyme-ui-delivery-web"
+				"notifyme-ui-delete"
 			],
 			"dependencies": [
 				"oojs-ui",
@@ -259,16 +258,16 @@
 				"ui/panel/NotificationCenter.js",
 				"ui/panel/NotificationTab.js",
 				"ui/widget/DatedNotificationsWidget.js",
-				"ui/widget/HelpMenuWidget.js",
 				"ui/widget/NotificationItemWidget.js",
 				"ui/widget/NotificationGroupWidget.js",
 				"ui/widget/PaginationWidget.js",
 				"ui/widget/ToggleReadCircleButtonWidget.js",
 				"ui/widget/Filter/FilterWidget.js"
 			],
-			"styles": [
-				"ext.notifyme.NotificationCenter.less"
-			],
+			"styles": {
+				"ext.notifyme.NotificationCenter.less": {},
+				"ext.notifyme.NotificationCenter.sm.less": { "media": "all and ( max-width: 767px )" }
+			},
 			"messages": [
 				"notifyme-notification-center-tab-label-unread",
 				"notifyme-notification-center-tab-label-read",
@@ -277,16 +276,17 @@
 				"notifyme-notifications-group-mark-group-as-read-label",
 				"notifyme-notifications-group-expander-label-expanded",
 				"notifyme-notifications-group-expander-label-collapsed",
-				"notifyme-notification-center-help-menu-aria-label",
 				"notifyme-notification-center-help-menu-mark-all-read-label",
-				"notifyme-notification-center-help-menu-preferences-label",
 				"notifyme-notification-center-mark-as-read-circle-title",
 				"notifyme-notification-center-mark-as-unread-circle-title",
 				"notifyme-notification-center-no-new-notifications-label",
 				"notifyme-notification-center-pagination-aria-next",
 				"notifyme-notification-center-pagination-aria-previous",
 				"notifyme-notification-center-navigation-hint",
-				"notifyme-notification-center-filter-item-aria-label"
+				"notifyme-notification-center-filter-item-aria-label",
+				"notifyme-notification-filter-count-aria-label",
+				"notifyme-notification-filter-aria-label",
+				"notifyme-notification-center-pagination-number-aria-label"
 			],
 			"dependencies": [
 				"oojs-ui",

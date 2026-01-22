@@ -27,12 +27,6 @@ class NotificationCenter extends SpecialPage {
 		$output->enableOOUI();
 		$output->addModules( 'ext.notifyme.specialPage' );
 
-		$output->addJsConfigVars( 'wgNotificationsSpecialPageLinks', [
-			'preferences' => SpecialPage::getTitleFor(
-				'Preferences', false, 'mw-prefsection-notifications'
-			)->getLinkURL(),
-		] );
-
 		$output->addHTML( Html::element( 'div', [
 			'id' => 'notifications-overview'
 		] ) );

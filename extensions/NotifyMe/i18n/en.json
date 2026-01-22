@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"[http://www.hallowelt.com Hallo Welt! GmbH]"
-		]
+		"authors": [ "[http://www.hallowelt.com Hallo Welt! GmbH]" ]
 	},
 	"notifyme-desc": "Notifications",
 	"prefs-notifications": "Notifications",
@@ -94,7 +92,7 @@
 	"notifyme-schema-source-providers-link": "Link to the place where user can change preferences (if applicable)",
 	"notifyme-mail-template-edit-help-colors": "Following color variables are available. They will be automatically adjusted to the colors fo the wiki skin.",
 	"notifyme-mail-template-edit-help-int": "Internationalization messages can be used in the content via <pre><nowiki>{{int:message-key}}</nowiki></pre>",
-	"notifyme-mail-template-edit-help-logo": "To add the logo of your wiki, which is set in the skin, use <pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-logo": "To add the logo of your wiki, which is set in the skin, <pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre> can be used",
 	"notifyme-mail-template-edit-help-category-params": "Content variables",
 	"notifyme-mail-template-edit-help-category-logo": "Logo",
 	"notifyme-mail-template-edit-help-category-int": "Internationalization",
@@ -161,8 +159,6 @@
 	"notifyme-notification-generic-links-intro": "You can visit the page directly by using the following link",
 	"notifyme-ui-edit": "Edit",
 	"notifyme-ui-delete": "Delete",
-	"notifyme-ui-delivery-web-email": "Web and email",
-	"notifyme-ui-delivery-web": "Web only",
 	"notifyme-notification-tester-event-info": "Paste one of \"event key\"s from the table below",
 	"notifyme-notifications-mega-menu-no-notifications": "No new notifications!",
 	"notifyme-notification-center-filter-title": "Notifications",
@@ -179,9 +175,7 @@
 	"notifyme-notifications-group-mark-group-as-read-label": "Mark group as read",
 	"notifyme-notifications-group-expander-label-expanded": "hide $1 more {{PLURAL:$1|edit|edits}} of this page",
 	"notifyme-notifications-group-expander-label-collapsed": "show $1 more {{PLURAL:$1|edit|edits}} of this page",
-	"notifyme-notification-center-help-menu-aria-label": "Settings",
 	"notifyme-notification-center-help-menu-mark-all-read-label": "Mark all as read",
-	"notifyme-notification-center-help-menu-preferences-label": "Preferences",
 	"notifyme-notification-center-mark-as-read-circle-title": "Mark as read",
 	"notifyme-notification-center-mark-as-unread-circle-title": "Mark as unread",
 	"notifyme-notification-center-timestamp-ago": "$1 ago",

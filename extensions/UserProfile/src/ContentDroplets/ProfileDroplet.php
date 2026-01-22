@@ -32,7 +32,7 @@ class ProfileDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.userProfile.visualEditorTagDefinition', 'ext.userProfile.styles' ];
+		return [ 'ext.userProfile.styles' ];
 	}
 
 	/**
@@ -70,7 +70,7 @@ class ProfileDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'userprofileCommand';
+		return 'user-profileCommand';
 	}
 
 }

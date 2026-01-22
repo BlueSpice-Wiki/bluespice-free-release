@@ -1,4 +1,4 @@
-( function ( mw, $ ) {
+$( () => {
 	const indicators = {};
 	const keys = [];
 	$( '[data-attentionindicator]' ).each( function () {
@@ -8,63 +8,60 @@
 	if ( keys.length < 1 ) {
 		return;
 	}
-	mw.loader.using( 'ext.bluespice' ).done( () => {
-		const callback = function ( result, Listener ) { // eslint-disable-line no-unused-vars
-			let indication = false;
-			if ( result.success !== true ) {
-				return;
+
+	const callback = async () => {
+		const url =
+			mw.util.wikiScript( 'rest' ) +
+			'/bluespice/discovery/attention-indicators?indicators=' + encodeURIComponent( keys.join( ',' ) );
+
+		const res = await fetch( url );
+		if ( !res.ok ) {
+			console.warn( 'AttentionIndicator: Failed to fetch indicator data' ); // eslint-disable-line no-console
+			return;
+		}
+		const result = await res.json();
+		if ( Object.keys( result ).length < 1 ) {
+			return;
+		}
+
+		let indication = false;
+		let msg = false;
+		let $children = [];
+		for ( const i in result ) {
+			if ( !indicators[ i ] ) {
+				continue;
 			}
-			BSPing.registerListener(
-				'AttentionIndicator',
-				1000,
-				{ indicators: keys },
-				callback.bind( this )
-			);
-			let msg = false;
-			let $children = [];
-			for ( const i in result.indicators ) {
-				if ( !indicators[ i ] ) {
-					continue;
+			if ( result[ i ] ) {
+				if ( !indicators[ i ].hasClass( 'attention-indicator' ) ) {
+					msg = mw.message( 'bs-discovery-requires-attention' );
+					const $span = $( '<span>' );
+					$span.addClass( 'visually-hidden' );
+					$span.html( msg.escaped() );
+					indicators[ i ].append( $span );
 				}
-				if ( result.indicators[ i ] ) {
-					if ( !indicators[ i ].hasClass( 'attention-indicator' ) ) {
-						msg = mw.message( 'bs-discovery-requires-attention' );
-						const $span = $( '<span>' );
-						$span.addClass( 'visually-hidden' );
-						$span.html( msg.escaped() );
-						indicators[ i ].append( $span );
-					}
-					indicators[ i ].addClass( 'attention-indicator' );
-					indication = true;
-					continue;
-				}
-				if ( indicators[ i ].hasClass( 'attention-indicator' ) ) {
-					$children = indicators[ i ].children( '.visually-hidden' );
-					if ( $children.length > 0 ) {
-						$children.first().remove();
-					}
-				}
-				indicators[ i ].removeClass( 'attention-indicator' );
+				indicators[ i ].addClass( 'attention-indicator' );
+				indication = true;
+				continue;
 			}
-			if ( indication ) {
-				$( '#usr-btn' ).addClass( 'attention-indicator' );
-				msg = mw.message( 'bs-discovery-navbar-user-button-requires-attention-aria-label' );
-				$( '#usr-btn' ).attr( 'aria-label', msg.escaped() );
-				$( '#usr-btn > i' ).parent().addClass( 'attention-indicator-icon' );
-				return;
+			if ( indicators[ i ].hasClass( 'attention-indicator' ) ) {
+				$children = indicators[ i ].children( '.visually-hidden' );
+				if ( $children.length > 0 ) {
+					$children.first().remove();
+				}
 			}
-			$( '#usr-btn' ).removeClass( 'attention-indicator' );
-			msg = mw.message( 'bs-discovery-navbar-user-button-aria-label' );
+			indicators[ i ].removeClass( 'attention-indicator' );
+		}
+		if ( indication ) {
+			$( '#usr-btn' ).addClass( 'attention-indicator' );
+			msg = mw.message( 'bs-discovery-navbar-user-button-requires-attention-aria-label' );
 			$( '#usr-btn' ).attr( 'aria-label', msg.escaped() );
-			$( '#usr-btn > i' ).parent().removeClass( 'attention-indicator-icon' );
-
-		};
-		BSPing.registerListener(
-			'AttentionIndicator',
-			1000,
-			{ indicators: keys },
-			callback
-		);
-
-	} );
-}( mediaWiki, jQuery ) );
+			$( '#usr-btn > i' ).parent().addClass( 'attention-indicator-icon' );
+			return;
+		}
+		$( '#usr-btn' ).removeClass( 'attention-indicator' );
+		msg = mw.message( 'bs-discovery-navbar-user-button-aria-label' );
+		$( '#usr-btn' ).attr( 'aria-label', msg.escaped() );
+		$( '#usr-btn > i' ).parent().removeClass( 'attention-indicator-icon' );
+	};
+	callback();
+} );

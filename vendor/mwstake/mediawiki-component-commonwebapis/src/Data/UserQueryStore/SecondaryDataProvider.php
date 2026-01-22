@@ -44,12 +44,6 @@ class SecondaryDataProvider implements ISecondaryDataProvider {
 			$dataSet->set( UserRecord::PAGE_LINK, $userPageLink );
 			$dataSet->set( UserRecord::PAGE_URL, $userPage->getLocalURL() );
 			$dataSet->set( UserRecord::PAGE_PREFIXED_TEXT, $userPage->getPrefixedText() );
-			$groups = $dataSet->get( UserRecord::GROUPS );
-			$groups = array_map( static function ( $group ) {
-				$msg = Message::newFromKey( 'group-' . $group );
-				return $msg->exists() ? $msg->text() : $group;
-			}, $groups );
-			$dataSet->set( UserRecord::GROUPS, $groups );
 		}
 
 		return $dataSets;

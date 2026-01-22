@@ -6,13 +6,13 @@
 			"Tacsipacsi"
 		]
 	},
-	"bs-checklist-menu-insert-list-title": "Lista beszúrása",
-	"bs-checklist-menu-insert-checkbox": "Jelölőnégyzet",
-	"bs-checklist-dlg-insert-list-value-list": "Értéklista",
 	"bs-checklist-desc": "Ellenőrzőlista funkció engedélyezése",
 	"bs-checklist-button-checkbox-title": "Ellenőrzőlista elemei",
+	"bs-checklist-menu-insert-list-title": "Lista beszúrása",
+	"bs-checklist-menu-insert-checkbox": "Jelölőnégyzet",
 	"bs-checklist-menu-insert-no-list-loaded": "Nincs betöltve lista",
 	"bs-checklist-dlg-insert-list-title": "Ellenőrzőlista beszúrása",
+	"bs-checklist-dlg-insert-list-value-list": "Értéklista",
 	"bs-checklist-tag-checklist-desc": "Létrehoz egy kiválasztó menüt. Az ellenőrzőlista különböző paraméterekkel módosítható.",
 	"bs-checklist-dlg-new-list": "Új lista létrehozása",
 	"bs-checklist-dlg-save-list": "Változtatások mentése a listába",

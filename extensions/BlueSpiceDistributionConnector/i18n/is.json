@@ -1,10 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stefán Örvar Sigmundsson",
-			"Sveinn í Felli"
+			"Stefán Örvar Sigmundsson"
 		]
 	},
-	"droplets-create-input-name": "Búa til síðu",
-	"bs-distributionconnector-pref-eventbus-eventservicedefault-help": "Nota þessa viðburðaþjónustu sem sjálfgefna fyrir alla viðburði"
+	"droplets-create-input-name": "Búa til síðu"
 }

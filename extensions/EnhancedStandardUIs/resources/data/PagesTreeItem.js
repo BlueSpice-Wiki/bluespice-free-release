@@ -96,14 +96,12 @@ ext.enhancedUI.data.PagesTreeItem.prototype.addWatchIcon = function () {
 		action = 'unwatch';
 	}
 
-	this.watch = new OOJSPlus.ui.widget.ButtonWidget( {
+	this.watch = new OO.ui.ToggleButtonWidget( {
 		framed: false,
 		role: 'button',
 		icon: iconClass,
-		// Messages that can be used here:
-		// * enhanced-standard-uis-allpages-watch-label
-		// * enhanced-standard-uis-allpages-unwatch-label
-		label: mw.message( 'enhanced-standard-uis-allpages-' + action + '-label', this.buttonCfg.title ).text(),
+		value: isWatched,
+		label: mw.message( 'enhanced-standard-uis-allpages-watch-label', this.buttonCfg.title ).text(),
 		invisibleLabel: true,
 		title: this.buttonCfg.title,
 		data: {

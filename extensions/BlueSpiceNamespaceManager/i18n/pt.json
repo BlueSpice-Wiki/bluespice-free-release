@@ -2,12 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
-			"Mansil alfalb",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Mansil alfalb"
 		]
 	},
 	"bs-namespacemanager-desc": "Interface de administração para criar, editar e eliminar domínios/espaços nominais",
-	"bs-namespacemanager-label": "Administração de domínios/espaços nominais",
 	"bs-namespacemanager-text": "Espaços nominais",
 	"bs-namespacemanager-wrong-name": "O domínio contém caracteres inválidos.",
 	"bs-namespacemanager-wrong-alias": "O nome alternativo do espaço nominal contém caracteres inválidos.",
@@ -58,9 +57,9 @@
 	"bs-namespacemanager-nodeletetalk": "O espaço nominal de discussão não pode ser eliminado",
 	"bs-namespacemanager-label-istalk": "Discussão",
 	"right-namespacemanager-viewspecialpage": "Acesso à página especial [[Special:NamespaceManager]]",
+	"bs-namespacemanager-hide-talk-label": "Ocultar os espaços nominais de discussão",
 	"bs-namespacemanager-labelnsalias": "Nome alternativo",
 	"bs-namespacemanager-invalid-namespace": "O espaço nominal que está a ser editado é inválido",
-	"bs-namespacemanager-hide-talk-label": "Ocultar os espaços nominais de discussão",
 	"bs-namespacemanager-icon-tristate-disabled-aria-label": "desativado",
 	"bs-namespacemanager-icon-tristate-true-aria-label": "verificado",
 	"bs-namespacemanager-icon-tristate-false-aria-label": "não verificado",

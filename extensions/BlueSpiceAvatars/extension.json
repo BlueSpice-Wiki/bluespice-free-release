@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceAvatars",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceAvatars",
 	"author": [
 		"Marc Reymann",
@@ -26,9 +26,6 @@
 			},
 			"ConfigDefinitionRegistry": {
 				"AvatarsGenerator": "\\BlueSpice\\Avatars\\ConfigDefinition\\AvatarsGenerator::getInstance"
-			},
-			"TagRegistry": {
-				"profileimage": "\\BlueSpice\\Avatars\\Tag\\ProfileImage"
 			}
 		},
 		"BlueSpicePrivacy": {
@@ -122,10 +119,14 @@
 		}
 	},
 	"HookHandlers": {
+		"registerTags": {
+			"class": "\\BlueSpice\\Avatars\\Hook\\RegisterTags"
+		}
 	},
 	"Hooks": {
 		"UploadVerifyFile": "\\BlueSpice\\Avatars\\Hook\\UploadVerifyFile\\PreventUserImageOverwrite::callback",
-		"SetupAfterCache": "\\BlueSpice\\Avatars\\Hook\\SetupAfterCache\\AddForeignFileRepo::callback"
+		"SetupAfterCache": "\\BlueSpice\\Avatars\\Hook\\SetupAfterCache\\AddForeignFileRepo::callback",
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
 	},
 	"manifest_version": 2
 }

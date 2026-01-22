@@ -55,7 +55,6 @@
 	"enhanced-standard-uis-allpages-namespace-list-label": "מרחב שם",
 	"enhanced-standard-uis-paginator-aria-label": "חלוקה לדפים",
 	"enhanced-standard-uis-allpages-watch-label": "לעקוב אחר הדף $1",
-	"enhanced-standard-uis-allpages-unwatch-label": "להפסיק לעקוב אחר הדף $1",
 	"enhanced-standard-uis-allpages-pageinfo-label": "הצגת פרטי הדף עבור $1",
 	"enhanced-standard-uis-allpages-filter-results-label": "{{PLURAL:$1|נמצאה תוצאה אחת|נמצאו $1 תוצאות}}",
 	"enhanced-standard-uis-filelist-grid-preview-title": "תצוגה מקדימה",
@@ -70,12 +69,12 @@
 	"enhanced-standard-uis-ve-filegrid-title": "חיפוש מתקדם",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "אין מרחבי שם זמינים",
 	"enhanced-standard-uis-allpages-empty-pages-text": "כרגע אין דפים במרחב השם הזה",
-	"enhancedpreferences": "העדפות",
-	"enhanced-pref-username": "שם {{GENDER:$1|משתמש|משתמשת}}",
-	"enhanced-standard-uis-prefs-panel-search-label": "חיפוש",
 	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "מכיל {{PLURAL:$1|דף אחד|$1 דפים}}",
 	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "דפי־משנה",
+	"enhancedpreferences": "העדפות",
+	"enhanced-pref-username": "שם {{GENDER:$1|משתמש|משתמשת}}",
 	"enhanced-prefs-memberingroups": "{{GENDER:$2|חבר|חברה}} {{PLURAL:$1|בקבוצה|בקבוצות}}",
 	"enhanced-standard-uis-preferences-date-label": "נא לבחור תסדיר תצוגה",
+	"enhanced-standard-uis-prefs-panel-search-label": "חיפוש",
 	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "מידע על הקובץ"
 }

@@ -65,42 +65,80 @@ class EditWarningBuilder {
 	}
 
 	/**
-	 * @return string
+	 * @return array
 	 */
-	public function getMessage() {
+	public function getData() {
 		$this->loadFromDB();
 		$this->findIntermediateEdit();
-		$this->message = $this->makeMessage();
 
+		$explicitMessage = '';
 		$this->services->getHookContainer()->run(
 			'BSSaferEditMessage',
-			[ $this->title, &$this->message ]
+			[ $this->title, &$explicitMessage ]
 		);
+		if ( $explicitMessage ) {
+			return [ 'type' => 'explicit', 'message' => $explicitMessage ];
+		}
 
-		return $this->message;
+		$data = [];
+		if ( !empty( $this->intermediateEditUsernames ) && !$this->config->get( 'SaferEditShowNameOfEditingUser' ) ) {
+			$data = [ 'message' => 'bs-saferedit-someone-editing' ];
+		} elseif ( !empty( $this->intermediateEditUsernames ) ) {
+			$data = [
+				'type' => 'with-users',
+				'message' => 'bs-saferedit-user-editing',
+				'userDisplayNames' => $this->intermediateEditUsernames,
+				'users' => array_keys( $this->intermediateEditUsernames ),
+			];
+		}
+		$this->services->getHookContainer()->run(
+			'BSSaferEditMessageData',
+			[ $this->title, &$data ]
+		);
+		if ( $data['hideForCurrentUser'] ?? false ) {
+			$data['excludeFor'] = $this->user->getName();
+			unset( $data['hideForCurrentUser'] );
+		}
+
+		return $data;
 	}
 
 	/**
+	 * Called on page load, not over the wire
 	 * @return string
 	 */
-	protected function makeMessage(): string {
-		if ( empty( $this->intermediateEditUsernames ) ) {
+	public function getMessage(): string {
+		$data = $this->getData();
+		if ( !$data ) {
 			return '';
 		}
-
-		$showName = $this->config->get( 'SaferEditShowNameOfEditingUser' );
-		if ( !$showName ) {
-			return wfMessage( 'bs-saferedit-someone-editing' )->text();
+		$type = $data['type'] ?? '';
+		if ( $type === 'explicit' ) {
+			return $data['message'];
 		}
-
-		$message = wfMessage( 'bs-saferedit-user-editing' )
-			->params(
-				Message::listParam( $this->intermediateEditUsernames, 'text' ),
-				count( $this->intermediateEditUsernames )
-			)
-			->parse();
-
-		return $message;
+		if ( $type === 'with-users' ) {
+			$users = $data['users'];
+			// Filter out $this->user
+			$users = array_filter( $users, function ( $user ) {
+				return $user !== $this->user->getName();
+			} );
+			$displayNames = array_map(
+				function ( $user ) {
+					return $this->intermediateEditUsernames[$user] ?? $user;
+				},
+				$users
+			);
+			if ( empty( $displayNames ) ) {
+				return '';
+			}
+			$params = [ Message::listParam( $displayNames, 'text' ), count( $displayNames ) ];
+			return Message::newFromKey( $data['message'], ...$params )->text();
+		}
+		if ( isset( $data['message'] ) ) {
+			$params = $data['params'] ?? [];
+			return Message::newFromKey( $data['message'], ...$params )->text();
+		}
+		return '';
 	}
 
 	/** @var array */
@@ -125,39 +163,25 @@ class EditWarningBuilder {
 	}
 
 	protected function findIntermediateEdit() {
-		$interval = $this->getInterval();
-		$thresholdTS = wfTimestamp( TS_MW, time() - $interval );
-		$currentUserName = $this->user->getName();
 		$userFactory = $this->services->getUserFactory();
-
+		$hasAnon = false;
 		foreach ( $this->intermediateEdits as $row ) {
-			if ( $row->se_user_name === $currentUserName ) {
-				continue;
+			$displayName = $row->se_user_name;
+			$user = $userFactory->newFromName( $displayName );
+			if ( !$user ) {
+				if ( $hasAnon ) {
+					// No sense in showing multiple anonymous users
+					continue;
+				}
+				$hasAnon = true;
+				$user = $userFactory->newAnonymous();
+				$displayName = Message::newFromKey( 'bs-saferedit-anonymous-editor' )->text();
 			}
-
-			if ( $row->se_timestamp < $thresholdTS ) {
-				continue;
+			if ( $user->isRegistered() && $user->getRealName() ) {
+				$displayName = $user->getRealName();
 			}
-
-			$userName = $row->se_user_name;
-			$user = $userFactory->newFromName( $userName );
-			if ( $user && $user->getRealName() ) {
-				$userName = $user->getRealName();
-			}
-			$this->intermediateEditUsernames[] = $userName;
+			$this->intermediateEditUsernames[$user->getName()] = $displayName;
 		}
-	}
-
-	/**
-	 *
-	 * @return int
-	 */
-	protected function getInterval() {
-		$saferEditInterval = $this->config->get( 'SaferEditInterval' );
-		$pingInterval = $this->config->get( 'PingInterval' );
-
-		// HINT PW from the ancient times: +1 secound response time is enough
-		return $saferEditInterval + $pingInterval + 1;
 	}
 
 }

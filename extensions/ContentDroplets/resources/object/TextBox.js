@@ -21,7 +21,8 @@ ext.contentdroplets.object.TextBox.prototype.getFormItems = function () {
 		{
 			name: 'icon',
 			label: mw.message( 'contentdroplets-droplet-text-box-show-icon-label' ).text(),
-			type: 'checkbox'
+			type: 'checkbox',
+			labelAlign: 'inline'
 		},
 		{
 			name: 'boxtype',

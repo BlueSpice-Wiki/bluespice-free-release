@@ -70,24 +70,24 @@ mw.loader.using( [ 'ext.bluespice.visualEditorConnector' ], () => {
 				},
 				{
 					data: 'categories',
-					label: 'categories'
+					label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-mode-cat-label' )
 				},
 				{
 					data: 'pages',
-					label: 'pages'
+					label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-mode-pages-label' )
 				},
 				{
 					data: 'all',
-					label: 'all'
+					label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-mode-all-label' )
 				},
 				{
 					data: 'parents',
-					label: 'parents'
+					label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-mode-parents-label' )
 				}
 			]
 		} );
 		this.depthInput = new OO.ui.NumberInputWidget( { min: 1, max: 50, isInteger: true } );
-		this.hideRootInput = new OO.ui.ToggleSwitchWidget();
+		this.hideRootInput = new OO.ui.CheckboxInputWidget();
 		this.hidePrefixInput = new OO.ui.DropdownInputWidget( {
 			options: [
 				{
@@ -96,55 +96,55 @@ mw.loader.using( [ 'ext.bluespice.visualEditorConnector' ], () => {
 				},
 				{
 					data: 'always',
-					label: 'always'
+					label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-prefix-always-label' )
 				},
 				{
 					data: 'never',
-					label: 'never'
+					label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-prefix-never-label' )
 				},
 				{
 					data: 'auto',
-					label: 'auto'
+					label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-prefix-auto-label' )
 				},
 				{
 					data: 'categories',
-					label: 'categories'
+					label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-prefix-categories-label' )
 				}
 			]
 		} );
-		this.showCountInput = new OO.ui.ToggleSwitchWidget();
+		this.showCountInput = new OO.ui.CheckboxInputWidget();
 		this.namespaceInput = new OO.ui.TextInputWidget();
 		this.styleInput = new OO.ui.TextInputWidget();
 	};
 
 	ve.ui.CategoryTreeInspector.prototype.setLayouts = function () {
 		this.modeLayout = new OO.ui.FieldLayout( this.modeInput, {
-			align: 'right',
-			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-dd-mode' )
+			align: 'top',
+			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-mode-label' )
 		} );
 		this.depthLayout = new OO.ui.FieldLayout( this.depthInput, {
-			align: 'right',
-			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-tb-depth' )
+			align: 'top',
+			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-depth-label' )
 		} );
 		this.hideRootLayout = new OO.ui.FieldLayout( this.hideRootInput, {
-			align: 'right',
-			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-tb-hideroot' )
+			align: 'inline',
+			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-hideroot-label' )
 		} );
 		this.hidePrefixLayout = new OO.ui.FieldLayout( this.hidePrefixInput, {
-			align: 'right',
-			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-dd-hideprefix' )
+			align: 'top',
+			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-hideprefix-label' )
 		} );
 		this.showCountLayout = new OO.ui.FieldLayout( this.showCountInput, {
-			align: 'right',
-			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-tb-showcount' )
+			align: 'inline',
+			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-showcount-label' )
 		} );
 		this.namespaceLayout = new OO.ui.FieldLayout( this.namespaceInput, {
-			align: 'right',
-			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-tb-namespace' )
+			align: 'top',
+			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-namespaces-label' )
 		} );
 		this.styleLayout = new OO.ui.FieldLayout( this.styleInput, {
-			align: 'right',
-			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-tb-style' )
+			align: 'top',
+			label: ve.msg( 'bs-distributionconnector-ve-categorytreeinspector-style-label' )
 		} );
 	};
 
@@ -163,10 +163,10 @@ mw.loader.using( [ 'ext.bluespice.visualEditorConnector' ], () => {
 					this.depthInput.setValue( attributes.depth );
 				}
 				if ( attributes.hideroot === 'on' ) {
-					this.hideRootInput.setValue( true );
+					this.hideRootInput.setSelected( true );
 				}
 				if ( attributes.showcount === 'on' ) {
-					this.showCountInput.setValue( true );
+					this.showCountInput.setSelected( true );
 				}
 
 				this.namespaceInput.setValue( attributes.namespaces || '' );
@@ -194,7 +194,7 @@ mw.loader.using( [ 'ext.bluespice.visualEditorConnector' ], () => {
 			delete ( mwData.attrs.depth );
 		}
 
-		if ( this.hideRootInput.getValue() === true ) {
+		if ( this.hideRootInput.isSelected() === true ) {
 			mwData.attrs.hideroot = 'on';
 		} else {
 			delete ( mwData.attrs.hideroot );
@@ -206,7 +206,7 @@ mw.loader.using( [ 'ext.bluespice.visualEditorConnector' ], () => {
 			delete ( mwData.attrs.hideprefix );
 		}
 
-		if ( this.showCountInput.getValue() === true ) {
+		if ( this.showCountInput.isSelected() === true ) {
 			mwData.attrs.showcount = 'on';
 		} else {
 			delete ( mwData.attrs.showcount );

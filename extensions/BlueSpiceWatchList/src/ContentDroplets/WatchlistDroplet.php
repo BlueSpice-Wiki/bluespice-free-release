@@ -32,7 +32,7 @@ class WatchlistDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.watchlist.visualEditor' ];
+		return [ 'ext.bluespice.watchlist.droplet' ];
 	}
 
 	/**

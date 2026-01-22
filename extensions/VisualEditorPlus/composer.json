@@ -13,7 +13,9 @@
 		"installer-name": "VisualEditorPlus"
 	},
 	"require": {
-		"composer/installers": "~1.0|~2.0"
+		"composer/installers": "~1.0|~2.0",
+		"mwstake/mediawiki-component-generictaghandler": "~1",
+		"mwstake/mediawiki-component-formengine": "~3"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "45.0.0",

@@ -16,8 +16,6 @@
 	"bs-readers-header-readerspath": "Корта",
 	"bs-readers-header-ts": "Терахь",
 	"bs-readers-header-page": "АгӀо",
-	"bs-readers-header-revision-id": "Нисдаран ID",
-	"bs-readers-header-read-on": "Йешна",
 	"apihelp-bs-readers-data-store-summary": "Билгалйаьккхинчу агӀонан йешархойх лаьцна информаци схьаэца.",
 	"apihelp-bs-readers-users-store-summary": "Билгалйаьккхинчу агӀонан массо а йешархочух лаьцна информаци схьаэца.",
 	"apihelp-bs-readers-page-readers-store-summary": "Массо а агӀонан массо а йешархо схьаэца",
@@ -25,7 +23,9 @@
 	"right-viewreaders": "агӀо йешархошка хьажа",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — $2 {{GENDER:$3|ахь}} йешна $1 агӀо",
 	"bs-readers-header-read-by": "Йешна",
+	"bs-readers-header-revision-id": "Нисдаран ID",
 	"bs-readers-header-revision-date": "Йуха хьаьжна хан",
+	"bs-readers-header-read-on": "Йешна",
 	"bs-readers-info-dialog-column-readers": "Йешархой",
 	"bs-readers-permission-error": "ТӀекхачарехь гӀалат"
 }

@@ -8,7 +8,6 @@
 	"bs-usermanager-idnotexist": "Stu utende non g'esiste.",
 	"bs-usermanager-invalid-pwd": "'A passuord non g'è valide.",
 	"bs-usermanager-invalid-email-gen": "'U 'ndirizze email non g'è valide.",
-	"bs-usermanager-label": "Gestore de l'utende",
 	"bs-usermanager-text": "Utinde",
 	"bs-usermanager-user-exists": "'U nome de l'utende già esiste.",
 	"bs-usermanager-headerusername": "Nome utende",
@@ -42,6 +41,5 @@
 	"bs-usermanager-label-password-change-strategy": "Metode",
 	"bs-usermanager-label-password-change-strategy-reset": "Manne 'u collegamende pe azzerà 'a password a l'utende",
 	"bs-usermanager-label-password-change-strategy-pw": "Cange 'a password direttamende",
-	"bs-usermanager-no-mail": "L'utende scacchiate non g'ave confermate l'indirizze email",
-	"bs-usermanager-invalid-realname": "'U nome vere non g'è valide."
+	"bs-usermanager-no-mail": "L'utende scacchiate non g'ave confermate l'indirizze email"
 }

@@ -32,7 +32,7 @@ class ProgressDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.extendedstatistics.visualEditorTagDefinition' ];
+		return [ 'ext.bluespice.extendedstatistics.droplet' ];
 	}
 
 	/**
@@ -73,7 +73,7 @@ class ProgressDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'progressCommand';
+		return 'bs_statistics_progressCommand';
 	}
 
 }

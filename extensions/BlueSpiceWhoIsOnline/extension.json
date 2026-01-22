@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceWhoIsOnline",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceWhoIsOnline",
 	"author": [
@@ -24,25 +24,11 @@
 				}
 			},
 			"ConfigDefinitionRegistry": {
-				"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance",
-				"WhoIsOnlineInterval": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\Interval::getInstance"
+				"WhoIsOnlineMaxIdleTime": "\\BlueSpice\\WhoIsOnline\\ConfigDefinition\\MaxIdleTime::getInstance"
 			},
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-whoisonline-deleteoldentries": "\\BlueSpice\\WhoIsOnline\\RunJobsTriggerHandler\\DeleteOldEntries::factory"
-			},
-			"TagRegistry": {
-				"whoisonlinecount": "\\BlueSpice\\WhoIsOnline\\Tag\\Count",
-				"whoisonlinepopup": "\\BlueSpice\\WhoIsOnline\\Tag\\PopUp"
-			},
-			"RendererRegistry": {
-				"whoisonline-userlist": "\\BlueSpice\\WhoIsOnline\\Renderer\\UserList::factory"
 			}
-		},
-		"BlueSpiceVisualEditorConnector": {
-			"TagDefinitions": [
-				"ext.bluespice.whoisonlinecount.visualEditorTagDefinition",
-				"ext.bluespice.whoisonlinepopup.visualEditorTagDefinition"
-			]
 		},
 		"BlueSpiceExtendedStatistics": {
 			"SnapshotProviders": {
@@ -117,30 +103,10 @@
 				"bs-whoisonline-statistics-report-login-number-desc"
 			]
 		},
-		"ext.bluespice.whoisonlinecount.visualEditorTagDefinition": {
-			"scripts": [
-				"bs.whoisonline/util/tag/CountDefinition.js"
-			],
-			"styles": "bluespice.whoIsOnline.droplets.count.css",
-			"messages": [
-				"bs-whoisonline-tag-whoisonlinecount-description",
-				"bs-whoisonline-ve-whoisonlinecountinspector-title"
-			],
-			"dependencies": [
-				"ext.bluespice.visualEditorConnector.tags.classes"
-			]
-		},
-		"ext.bluespice.whoisonlinepopup.visualEditorTagDefinition": {
-			"scripts": [
-				"bs.whoisonline/util/tag/PopUpDefinition.js"
-			],
-			"styles": "bluespice.whoIsOnline.droplets.popup.css",
-			"messages": [
-				"bs-whoisonline-tag-whoisonlinepopup-description",
-				"bs-whoisonline-ve-whoisonlinepopupinspector-title"
-			],
-			"dependencies": [
-				"ext.bluespice.visualEditorConnector.tags.classes"
+		"ext.bluespice.whoisonlinecount.droplet": {
+			"styles": [
+				"bluespice.whoIsOnline.droplets.popup.css",
+				"bluespice.whoIsOnline.droplets.count.css"
 			]
 		}
 	},
@@ -161,23 +127,20 @@
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddClearTableLoggedUpdate::callback"
 		],
-		"BsAdapterAjaxPingResult": [
-			"\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdatePortlets::callback",
-			"\\BlueSpice\\WhoIsOnline\\Hook\\BsAdapterAjaxPingResult\\UpdateOnlineMarkers::callback"
-		],
 		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\WhoIsOnline\\Hook\\BSFoundationRendererMakeTagAttribs\\AddUserProfileOnlineMarkerMetaData::callback",
-		"MergeAccountFromTo": "\\BlueSpice\\WhoIsOnline\\Hook\\MergeAccountFromTo\\MergeWhoIsOnlineDBFields::callback"
+		"MergeAccountFromTo": "\\BlueSpice\\WhoIsOnline\\Hook\\MergeAccountFromTo\\MergeWhoIsOnlineDBFields::callback",
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
+	},
+	"HookHandlers": {
+		"registerTags": {
+			"class": "\\BlueSpice\\WhoIsOnline\\Hook\\RegisterTags"
+		}
 	},
 	"config_prefix": "bsg",
 	"config": {
 		"WhoIsOnlineMaxIdleTime": {
 			"value": 600,
 			"descriptionmsg": "bs-whoisonline-pref-maxidletime",
-			"public": true
-		},
-		"WhoIsOnlineInterval": {
-			"value": 10,
-			"descriptionmsg": "bs-whoisonline-pref-interval",
 			"public": true
 		},
 		"WhoIsOnlineLimitCount": {

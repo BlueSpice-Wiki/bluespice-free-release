@@ -50,6 +50,9 @@ bs.pageassignments.ui.AssignmentsPage.prototype.getItems = function () {
 		noHeader: true,
 		toolbar: null,
 		paginator: null,
+		selectable: false,
+		sortable: false,
+		orderable: false,
 		columns: {
 			type: {
 				type: 'icon',

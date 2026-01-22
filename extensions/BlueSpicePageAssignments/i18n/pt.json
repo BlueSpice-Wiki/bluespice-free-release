@@ -11,7 +11,6 @@
 	},
 	"bs-pageassignments-desc": "Permite atribuir uma página a utilizadores ou grupos",
 	"pageassignments": "Atribuições de páginas",
-	"managepageassignments": "Administração de atribuições de páginas",
 	"bs-pageassignments-text": "Atribuições",
 	"bs-pageassignments-pref-assignedusersadditionalpermissions": "Permissões adicionais para utilizadores com atribuições de páginas",
 	"bs-pageassignments-dlg-title": "Atribuições",
@@ -20,6 +19,7 @@
 	"bs-pageassignments-column-title": "Título de página",
 	"bs-pageassignments-column-assignments": "Atribuições",
 	"bs-pageassignments-column-assignedto": "Atribuída a",
+	"bs-pageassignments-column-assignee-type": "Tipo",
 	"bs-pageassignments-action-log": "Registo de atribuições de páginas",
 	"bs-pageassignments-action-delete-confirm": "Remover atribuição?",
 	"bs-pageassignments-api-error": "Ocorreu um erro",
@@ -76,7 +76,6 @@
 	"bs-pageassignments-notification-pagereview-summary": "$1 reviu $3",
 	"bs-pageassignments-notification-pagereview-subject": "Revisão da página $2",
 	"bs-pageassignments-notification-pagereview-body": "$1 reviu a página $2.",
-	"bs-pageassignments-column-assignee-type": "Tipo",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Atribuir",
 	"bs-pageassignments-header-action-edit": "Editar",
 	"bs-pageassignments-header-action-delete": "Eliminar"

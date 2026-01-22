@@ -9,6 +9,6 @@
 	"prefs-notifications": "آگاه‌سازی‌ها",
 	"notifyme-digest-header-daily": "خلاصه‌ای از فعالیت‌ها در $1 در ۲۴ ساعت گذشته در اینجا آمده است",
 	"notifyme-digest-header-weekly": "خلاصه‌ای از فعالیت‌ها در $1 در هفتهٔ گذشته در اینجا آمده است",
-	"prefs-subs": "اشتراک‌های آگاه‌سازی",
-	"notifyme-notification-center-filter-label-namespaces": "فضاهای نام"
+	"notifyme-notification-center-filter-label-namespaces": "فضاهای نام",
+	"prefs-subs": "اشتراک‌های آگاه‌سازی"
 }

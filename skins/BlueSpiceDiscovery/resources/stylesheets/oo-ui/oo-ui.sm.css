@@ -1,0 +1,7 @@
+/** ERM44496 - in mobile view action field is kept in one line and not readable */
+.oo-ui-fieldLayout.oo-ui-actionFieldLayout > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header,
+.oo-ui-fieldLayout.oo-ui-actionFieldLayout > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-field {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}

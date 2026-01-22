@@ -1,6 +1,6 @@
 {
 	"name": "EnhancedUpload",
-	"version": "4.0.4",
+	"version": "4.1.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]",
@@ -72,7 +72,8 @@
 		"BeforePageDisplay": "addModules",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"SkinTemplateNavigation::Universal": "addContentActions",
-		"SpecialPage_initList": "special-upload"
+		"SpecialPage_initList": "special-upload",
+		"LoadExtensionSchemaUpdates": "runDatabaseUpdates"
 	},
 	"HookHandlers": {
 		"tag": {
@@ -99,6 +100,9 @@
 		},
 		"special-upload": {
 			"class": "MediaWiki\\Extension\\EnhancedUpload\\Hook\\SpecialPage_initList\\OverwriteSpecialUpload"
+		},
+		"runDatabaseUpdates": {
+			"class": "MediaWiki\\Extension\\EnhancedUpload\\HookHandler\\RunDatabaseUpdates"
 		}
 	},
 	"RestRoutes": [
@@ -206,13 +210,13 @@
 				"enhancedupload-tab-failed-upload",
 				"enhancedupload-tab-successfull-upload",
 				"enhancedupload-tab-warnings-upload",
-				"enhancedupload-warning-dialog-label",
 				"enhancedupload-preview-widget-label",
 				"enhancedupload-tab-updated-upload",
 				"enhancedupload-updated-dialog-label",
 				"enhancedupload-finished-dialog-action-close",
 				"enhancedupload-attachments-tag-grid-remove-title",
-				"enhancedupload-preview-widget-remove-label"
+				"enhancedupload-preview-widget-remove-label",
+				"enhancedupload-warning-dialog-upload-label"
 			]
 		},
 		"ext.enhancedupload.attachments.bootstrap": {
@@ -382,15 +386,17 @@
 			],
 			"messages": [
 				"enhancedupload-ve-attachment-title",
-				"enhancedupload-ve-attachmentinspector-title",
-				"enhancedupload-ve-attachmentinspector-prefix",
 				"enhancedupload-ve-attachmentinspector-categories",
 				"enhancedupload-ve-attachmentinspector-desc",
 				"enhancedupload-ve-attachmentinspector-options",
 				"enhancedupload-ve-attachmentinspector-grid-version",
 				"enhancedupload-ve-attachmentinspector-grid-editor",
 				"enhancedupload-ve-attachmentinspector-grid-size",
-				"enhancedupload-ve-attachmentinspector-grid-categories"
+				"enhancedupload-ve-attachmentinspector-grid-categories",
+				"enhancedupload-ve-attachmentinspector-title-label",
+				"enhancedupload-ve-attachmentinspector-title-help",
+				"enhancedupload-ve-attachmentinspector-prefix-label",
+				"enhancedupload-ve-attachmentinspector-prefix-help"
 			],
 			"dependencies": [
 				"ext.visualEditor.mwcore"
@@ -462,11 +468,11 @@
 			"public": true
 		},
 		"EnhancedUploadDragDropImagesHeight": {
-			"value": "auto",
+			"value": "",
 			"public": true
 		},
 		"EnhancedUploadDragDropImagesWidth": {
-			"value": "300",
+			"value": "",
 			"public": true
 		},
 		"EnhancedUploadAllowMismatchedMimeTypes": {

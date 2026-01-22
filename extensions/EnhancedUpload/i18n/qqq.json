@@ -31,6 +31,8 @@
 	"enhancedupload-tab-successfull-upload": "Tab title for files where upload was sucessfull",
 	"enhancedupload-tab-warnings-upload": "Tab title for file where warnings occured",
 	"enhancedupload-warning-dialog-label": "An warning message that tells how many files could not be uploaded with warning\n\nParameters:\n* $1 - a positive number for the plural rule",
+	"enhancedupload-ve-dialog-title": "Title for dialog to upload and insert file to content",
+	"enhancedupload-ve-dialog-filename-label": "Label for input to insert file name",
 	"enhancedupload-ve-dialog-title-exists": "Label to insert new file name if filename already exists",
 	"enhancedupload-preview-widget-label": "Label for preview widget which contains files selected for upload",
 	"enhancedupload-attachments-add-media-button-title": "Title for button which opens dialog to add existing file to a list",
@@ -55,8 +57,6 @@
 	"enhancedupload-attachments-media-dialog-details-upload": "Label for action in details dialog upload",
 	"enhancedupload-attachments-media-dialog-details-settings": "Title for details dialog",
 	"enhancedupload-ve-attachment-title": "Title for tag inspector dialog",
-	"enhancedupload-ve-attachmentinspector-title": "Label for titel input field",
-	"enhancedupload-ve-attachmentinspector-prefix": "Label for prefix input field",
 	"enhancedupload-ve-attachmentinspector-categories": "Label for categories input field",
 	"enhancedupload-ve-attachmentinspector-desc": "Label for description input field",
 	"enhancedupload-ve-attachmentinspector-options": "Label for switch if options should be skipped or not",
@@ -96,7 +96,9 @@
 	"enhancedupload-reset-button-label": "Label for button to reset upload files",
 	"enhancedupload-ve-file-dialog-title": "Title for dialog to upload and insert file to content",
 	"enhancedupload-ve-file-dialog-filename-label": "Label for input to insert file name",
-	"enhancedupload-ve-dialog-title": "Title for dialog to upload and insert file to content",
-	"enhancedupload-ve-dialog-filename-label": "Label for input to insert file name",
-	"enhancedupload-warning-dialog-upload-label": "A warning message that tells how many files are uploaded with a warning\n\nParameters:\n* $1 - number of files"
+	"enhancedupload-warning-dialog-upload-label": "A warning message that tells how many files are uploaded with a warning\n\nParameters:\n* $1 - number of files",
+	"enhancedupload-ve-attachmentinspector-title-label": "Label for input field to set title of attachment section",
+	"enhancedupload-ve-attachmentinspector-title-help": "Help text for input field to set title of attachment section",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Label for input field to set prefix for files",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Help text for input field to set prefix for files"
 }

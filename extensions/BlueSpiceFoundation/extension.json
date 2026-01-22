@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceFoundation",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
@@ -435,8 +435,7 @@
 			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddBSGConfig::callback",
 			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddGraphicalListRegistry::callback",
 			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddExtendedSiteToolsRegistry::callback",
-			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddAssetsPaths::callback",
-			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddPingVars::callback"
+			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddAssetsPaths::callback"
 		],
 		"getUserPermissionsErrors": [
 			"\\BlueSpice\\Hook\\GetUserPermissionsErrors\\ApplyLockdown::callback"
@@ -727,11 +726,6 @@
 			],
 			"value": {}
 		},
-		"PingOnInit": {
-			"descriptionmsg": "bs-ping-on-init-desc",
-			"public": true,
-			"value": false
-		},
 		"HttpRequestDefaultOptions": {
 			"description": [
 				"Default connection options for all HTTP requests made via HttpRequestFactory"
@@ -813,8 +807,6 @@
 		"HTMLMultiSelectPlusAdd": "includes/html/htmlformfields/HTMLMultiSelectPlusAdd.php",
 		"HTMLMultiSelectSortList": "includes/html/htmlformfields/HTMLMultiSelectSortList.php",
 		"BsArticleHelper": "includes/utility/ArticleHelper.class.php",
-		"BsCacheHelper": "includes/utility/CacheHelper.class.php",
-		"BsConnectionHelper": "includes/utility/ConnectionHelper.class.php",
 		"BsDOMHelper": "includes/utility/DOMHelper.class.php",
 		"BsFormatConverter": "includes/utility/FormatConverter.class.php",
 		"BsFileSystemHelper": "includes/utility/FileSystemHelper.class.php",

@@ -4,11 +4,6 @@
 			"Умар"
 		]
 	},
-	"bs-qr-code-tag-attr-page-label": "АгӀо",
-	"bs-qr-code-tag-attr-query-label": "Параметр",
-	"bs-qr-code-tag-attr-desc-label": "Цуьнах лаьцна",
-	"bs-qr-code-tag-attr-size-label": "Барам",
-	"bs-qr-code-droplet-name": "QR-код",
 	"bs-qr-code-action-qr-code-text": "QR-код",
 	"bs-qr-code-action-qr-code-dialog-title": "QR-код",
 	"bs-qr-code-action-qr-code-dialog-alt": "QR-код $1-на",
@@ -16,7 +11,12 @@
 	"apihelp-bs-qr-code-example-bs-qr-code": "Ӏад йитаран кепаца API кхайкхам",
 	"bs-qr-code-alt-text": "QR-код $1-на",
 	"bs-qr-code-tag-qrcode-title": "QR-код",
+	"bs-qr-code-tag-attr-page-label": "АгӀо",
+	"bs-qr-code-tag-attr-query-label": "Параметр",
+	"bs-qr-code-tag-attr-desc-label": "Цуьнах лаьцна",
 	"bs-qr-code-tag-attr-desc-help": "QR-кодца боьзна болу хаам. QR-код бен ца гайта, хӀара меттиг йаьсса йита",
+	"bs-qr-code-tag-attr-size-label": "Барам",
+	"bs-qr-code-droplet-name": "QR-код",
 	"bs-qr-code-tag-attr-size-option-small": "жима",
 	"bs-qr-code-tag-attr-size-option-medium": "йукъара",
 	"bs-qr-code-tag-attr-size-option-large": "Йоккха"

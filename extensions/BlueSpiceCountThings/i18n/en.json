@@ -27,7 +27,6 @@
 	"bs-countthings-tag-countusers-desc": "Shows the number of registered users.",
 	"bs-countthings-tag-countfiles-desc": "Displays the number of files in the wiki.",
 	"bs-countthings-tag-countcharacters-desc": "Generates metadata on the content of the indicated article. The output is an infobox that can be integrated into an article. With the parameter \"mode\" different kind of information can be displayed.",
-	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: What should be counted <code>chars</code> (characters), <code>words</code> (words) or <code>pages</code> (pages).",
 	"bs-countthings-droplet-articles-name": "Number of pages",
 	"bs-countthings-droplet-articles-description": "Shows the number of pages",
 	"bs-countthings-droplet-characters-name": "Number of characters",
@@ -35,5 +34,7 @@
 	"bs-countthings-droplet-files-name": "Number of files",
 	"bs-countthings-droplet-files-description": "Shows the number of all uploaded files",
 	"bs-countthings-droplet-user-name": "Number of users",
-	"bs-countthings-droplet-user-description": "Shows the number of all users"
+	"bs-countthings-droplet-user-description": "Shows the number of all users",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Count duplicates",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Specify what should be counted: everything, characters, words, characters and words, or pages"
 }

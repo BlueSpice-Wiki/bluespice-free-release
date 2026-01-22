@@ -6,7 +6,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_ALERTBANNERS_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_ALERTBANNERS_VERSION', '2.0.7' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_ALERTBANNERS_VERSION', '3.0.0' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'alertbanners', static function () {
@@ -23,7 +23,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 		]
 	];
 
-	$GLOBALS['wgExtensionFunctions'][] = static function() {
+	$GLOBALS['wgExtensionFunctions'][] = static function () {
 		$hookContainer = \MediaWiki\MediaWikiServices::getInstance()->getHookContainer();
 		$hookContainer->register( 'SiteNoticeAfter', [ AddAlerts::class, 'callback' ] );
 	};

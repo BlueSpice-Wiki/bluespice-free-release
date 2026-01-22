@@ -65,7 +65,7 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	 * @return array
 	 */
 	protected function rerank( string $query, ResultWrapper $res ) {
-		$query = mb_strtolower( str_replace( ' ', '_', $query ) );
+		$query = mb_strtolower( str_replace( '_', ' ', $query ) );
 		/**
 		 * First determine the "main" field to match against
 		 * - displaytitle if exists

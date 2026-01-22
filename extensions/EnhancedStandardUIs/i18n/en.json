@@ -54,7 +54,6 @@
 	"enhanced-standard-uis-allpages-namespace-list-label": "Namespace",
 	"enhanced-standard-uis-paginator-aria-label": "Pagination",
 	"enhanced-standard-uis-allpages-watch-label": "Watch page $1",
-	"enhanced-standard-uis-allpages-unwatch-label": "Unwatch page $1",
 	"enhanced-standard-uis-allpages-pageinfo-label": "Show page info for $1",
 	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|result|results}} found",
 	"enhanced-standard-uis-filelist-grid-preview-title": "Preview",
@@ -69,7 +68,7 @@
 	"enhanced-standard-uis-ve-filegrid-title": "Advanced search",
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "No namespaces available",
 	"enhanced-standard-uis-allpages-empty-pages-text": "There are currently no pages in this namespace",
-	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "contains {{PLURAL:$1|one page|$1 pages}}",
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "contains {{PLURAL:$1|one page| $1 pages}}",
 	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Subpages",
 	"enhancedpreferences": "Preferences",
 	"enhanced-pref-username": "{{GENDER:$1|Username}}",
@@ -86,5 +85,6 @@
 	"enhanced-standard-uis-prefs-menu-aria-label": "Sections of preferences",
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Select view mode",
 	"enhanced-standard-uis-paginator-page-aria-label": "Page $1",
-	"enhanced-standard-uis-allpages-section-heading-aria-label": "Pages starting with $1"
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Pages starting with $1",
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Search for file"
 }

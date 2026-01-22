@@ -13,7 +13,6 @@
 		]
 	},
 	"bs-namespacemanager-desc": "Interfaz administrativa para añadir, editar y eliminar espacios de nombres",
-	"bs-namespacemanager-label": "Gestor de espacios de nombres",
 	"bs-namespacemanager-text": "Espacios de nombres",
 	"bs-namespacemanager-wrong-name": "El espacio de nombres contiene caracteres no válidos.",
 	"bs-namespacemanager-wrong-alias": "El alias del espacio de nombres contiene caracteres no válidos.",
@@ -63,10 +62,10 @@
 	"bs-namespacemanager-nodeletetalk": "No se puede borrar el espacio de nombres Discusión",
 	"bs-namespacemanager-label-istalk": "Discusión",
 	"right-namespacemanager-viewspecialpage": "Acceso a la página especial [[Special:NamespaceManager]]",
+	"bs-namespacemanager-hide-talk-label": "Ocultar espacios de nombres de discusión",
 	"bs-namespacemanager-labelnsalias": "Alias",
 	"bs-namespacemanager-invalid-namespace": "El espacio de nombres bajo edición no es válido",
 	"bs-namespacemanager-icon-tristate-disabled-aria-label": "desactivado",
 	"bs-namespacemanager-icon-tristate-true-aria-label": "marcada",
-	"bs-namespacemanager-icon-tristate-false-aria-label": "sin marcar",
-	"bs-namespacemanager-hide-talk-label": "Ocultar espacios de nombres de discusión"
+	"bs-namespacemanager-icon-tristate-false-aria-label": "sin marcar"
 }

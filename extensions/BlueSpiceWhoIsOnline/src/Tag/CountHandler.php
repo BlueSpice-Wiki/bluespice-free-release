@@ -2,51 +2,33 @@
 
 namespace BlueSpice\WhoIsOnline\Tag;
 
-use BlueSpice\Tag\Handler;
 use BlueSpice\WhoIsOnline\Tracer;
-use MediaWiki\Config\Config;
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\PPFrame;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
-class CountHandler extends Handler {
+class CountHandler implements ITagHandler {
 
 	/**
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @param Tracer|null $tracer
+	 * @param Tracer $tracer
 	 */
 	public function __construct(
-		$processedInput, array $processedArgs, Parser $parser, PPFrame $frame, ?Tracer $tracer = null
+		private readonly Tracer $tracer
 	) {
-		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
-		if ( !$tracer ) {
-			$tracer = MediaWikiServices::getInstance()->getService( 'BSWhoIsOnlineTracer' );
-		}
-		$this->tracer = $tracer;
 	}
 
 	/**
-	 * @return string
+	 * @inheritDoc
 	 */
-	public function handle() {
+	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
 		$recordSet = $this->tracer->getTracedRecords();
 
-		$this->parser->getOutput()->setPageProperty( 'bs-tag-userscount', 1 );
+		$parser->getOutput()->setPageProperty( 'bs-tag-userscount', 1 );
 		return Html::element(
 			'span',
 			[ 'class' => 'bs-whoisonline-count' ],
 			$recordSet->getTotal()
 		);
-	}
-
-	/**
-	 * @return Config
-	 */
-	protected function getConfig() {
-		return MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 	}
 }

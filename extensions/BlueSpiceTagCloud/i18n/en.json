@@ -10,7 +10,6 @@
 	"bs-tagcloud-tag-tagcloud-name": "Tag cloud",
 	"bs-tagcloud-tag-tagcloud-title": "Tag cloud",
 	"bs-tagcloud-tag-tagcloud-desc": "Renders a tag cloud based on categories or search terms",
-	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Type",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "Select how the tag cloud should be rendered",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Text",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "List",
@@ -19,10 +18,8 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Select which data to use",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categories",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Search terms",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Width",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Width of tag cloud",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Width of the tag cloud in percent",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Show count",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Display the number of items in parentheses",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Min font size",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Font size for the entry with the fewest items",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Max font size",
@@ -32,5 +29,8 @@
 	"bs-tagcloud-droplet-name": "Tag cloud",
 	"bs-tagcloud-droplet-description": "Tag cloud based on categories or search queries",
 	"bs-tagcloud-tag-tagcloud-tab-common": "Common",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "Advanced"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Advanced",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Display mode",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Show frequency",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Adds the number of used categories or search queries"
 }

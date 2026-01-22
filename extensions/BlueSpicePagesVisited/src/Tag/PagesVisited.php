@@ -2,127 +2,137 @@
 
 namespace BlueSpice\PagesVisited\Tag;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
-use BlueSpice\Tag\GenericHandler;
-use BlueSpice\Tag\MarkerType\NoWiki;
-use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
+use MediaWiki\Language\Language;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
+use MediaWiki\Title\NamespaceInfo;
+use MWStake\MediaWiki\Component\FormEngine\StandaloneFormSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
+use MWStake\MediaWiki\Component\GenericTagHandler\MarkerType;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\IntValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\KeywordValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\NamespaceListValue;
 
-class PagesVisited extends \BlueSpice\Tag\Tag {
-	public const PARAM_COUNT = 'count';
-	public const PARAM_MAX_TITLE_LENGTH = 'maxtitlelength';
-	public const PARAM_NAMESPACES = 'namespaces';
-	public const PARAM_ORDER = 'order';
+class PagesVisited extends GenericTag {
 
-	/**
-	 *
-	 * @return bool
-	 */
-	public function needsDisabledParserCache() {
-		return true;
+	public function __construct(
+		private readonly NamespaceInfo $namespaceInfo,
+		private readonly Language $language
+	) {
 	}
 
 	/**
-	 *
-	 * @return string
+	 * @inheritDoc
 	 */
-	public function getContainerElementName() {
-		return GenericHandler::TAG_DIV;
+	public function getTagNames(): array {
+		return [ 'pagesvisited', 'bs:pagesvisited' ];
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
-	public function needsParsedInput() {
+	public function hasContent(): bool {
 		return false;
 	}
 
 	/**
-	 *
-	 * @return bool
+	 * @inheritDoc
 	 */
-	public function needsParseArgs() {
-		return true;
+	public function getMarkerType(): MarkerType {
+		return new MarkerType\NoWiki();
 	}
 
 	/**
-	 *
-	 * @return NoWiki
+	 * @inheritDoc
 	 */
-	public function getMarkerType() {
-		return new NoWiki();
+	public function getContainerElementName(): ?string {
+		return 'div';
 	}
 
 	/**
-	 *
-	 * @return null
+	 * @inheritDoc
 	 */
-	public function getInputDefinition() {
-		return null;
+	public function getHandler( MediaWikiServices $services ): ITagHandler {
+		return new PagesVisitedHandler( $services->getTitleFactory(),
+		$services->getLinkRenderer() );
 	}
 
 	/**
-	 *
-	 * @return ParamDefinition[]
+	 * @inheritDoc
 	 */
-	public function getArgsDefinitions() {
-		$namespaces = new \BSNamespaceListParam(
-			ParamType::NAMESPACE_LIST,
-			static::PARAM_NAMESPACES,
-			[],
-			null,
-			true
-		);
-		$namespaces->setDelimiter( ',' );
+	public function getParamDefinition(): ?array {
+		$namespaces = ( new NamespaceListValue( $this->namespaceInfo, $this->language ) )
+			->setRequired( false )
+			->setListSeparator( ',' )
+			->setDefaultValue( [] );
+		$count = ( new IntValue() )->setDefaultValue( 7 );
+		$maxTitleLength = ( new IntValue() )->setDefaultValue( 20 );
+		$order = ( new KeywordValue() )->setKeywords( [ 'time', 'pagename' ] );
+
 		return [
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::PARAM_COUNT,
-				5
-			),
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::PARAM_MAX_TITLE_LENGTH,
-				20
-			),
-			$namespaces,
-			new ParamDefinition(
-				ParamType::STRING,
-				static::PARAM_ORDER,
-				'time'
-			),
+			'namespaces' => $namespaces,
+			'maxtitlelength' => $maxTitleLength,
+			'count' => $count,
+			'order' => $order
 		];
 	}
 
 	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return PopUpHandler
+	 * @inheritDoc
 	 */
-	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
-		return new PagesVisitedHandler(
-			$processedInput,
-			$processedArgs,
-			$parser,
-			$frame
+	public function getClientTagSpecification(): ClientTagSpecification|null {
+		$formSpec = new StandaloneFormSpecification();
+		$formSpec->setItems( [
+			[
+				'type' => 'number',
+				'name' => 'count',
+				'label' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-number-label' )->text(),
+				'help' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-count-help' )->text(),
+				'value' => 7,
+			],
+			[
+				'type' => 'number',
+				'name' => 'maxtitlelength',
+				'label' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-maxlength-label' )->text(),
+				'help' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help' )->text(),
+				'value' => 20,
+			],
+			[
+				'type' => 'dropdown',
+				'name' => 'order',
+				'label' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-orderby-label' )->text(),
+				'help' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-order-help' )->text(),
+				'value' => 'time',
+				'options' => [
+					[
+						'data' => 'time',
+						'label' => Message::newFromKey(
+							'bs-pagesvisited-tag-pagesvisited-attr-order-option-time'
+						)->plain()
+					],
+					[
+						'data' => 'pagename',
+						'label' => Message::newFromKey(
+							'bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename'
+						)->plain()
+					]
+				]
+			],
+			[
+				'type' => 'text',
+				'name' => 'namespaces',
+				'label' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label' )->text(),
+				'help' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-namespaces-help' )->text(),
+			]
+		] );
+
+		return new ClientTagSpecification(
+			'Pagesvisited',
+			Message::newFromKey( 'bs-pagesvisited-tag-pagesvisited-desc' ),
+			$formSpec,
+			Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-title' )
 		);
 	}
-
-	/**
-	 *
-	 * @return string[]
-	 */
-	public function getTagNames() {
-		return [
-			'pagesvisited',
-			'bs:pagesvisited',
-		];
-	}
-
 }

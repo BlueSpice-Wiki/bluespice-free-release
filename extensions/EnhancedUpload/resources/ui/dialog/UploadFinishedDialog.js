@@ -15,9 +15,8 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.static.name = 'uploadfinished-dial
 enhancedUpload.ui.dialog.UploadFinishedDialog.static.title = mw.message( 'enhancedupload-finished-dialog-title' ).plain();
 enhancedUpload.ui.dialog.UploadFinishedDialog.static.actions = [
 	{
-		title: mw.message( 'enhancedupload-finished-dialog-action-close' ).plain(),
-		icon: 'close',
-		flags: 'safe'
+		label: mw.message( 'enhancedupload-finished-dialog-action-close' ).plain(),
+		flags: [ 'primary' ]
 	}
 ];
 
@@ -131,7 +130,7 @@ enhancedUpload.ui.dialog.UploadFinishedDialog.prototype.initializeWarningPanel =
 		expanded: false
 	} );
 	const label = new OO.ui.LabelWidget( {
-		label: mw.message( 'enhancedupload-warning-dialog-label', this.warningData.length ).text(),
+		label: mw.message( 'enhancedupload-warning-dialog-upload-label', this.warningData.length ).text(),
 		classes: [ 'enhancedupload-dialog-title' ]
 	} );
 	const listView = new enhancedUpload.ui.panel.WarningList( {

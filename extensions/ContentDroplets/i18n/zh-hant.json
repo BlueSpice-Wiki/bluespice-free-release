@@ -42,8 +42,5 @@
 	"contentdroplets-droplet-code-name": "代碼",
 	"contentdroplets-droplet-code-desc": "代碼範例的突顯部分",
 	"contentdroplets-droplet-dialog-search-placeholder-label": "搜尋內容片段",
-	"contentdroplets-toolbar-icon-title": "添加內容片段",
-	"contentdroplets-droplet-icon-font-size-help": "若要調整字體大小需指定單位，例如：15px、0.83em 或 1.2rem。",
-	"contentdroplets-droplet-icon-color-help": "所有十六進位值（例如：#3366cc）均可用於顏色，CSS 顏色描述（例如，yellow、blue、或 black）也可用於顏色。",
-	"contentdroplets-droplet-icon-orientation-help": "可透過設定 CSS 屬性「vertical-align」的值來調整圖示對齊方式，這些值可以是：「baseline」、「text-top」、「text-bottom」、「sub」或「super」。"
+	"contentdroplets-toolbar-icon-title": "添加內容片段"
 }

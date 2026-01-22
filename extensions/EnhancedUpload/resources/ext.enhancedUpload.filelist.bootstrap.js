@@ -2,6 +2,9 @@ $( document ).on( 'click', '.enhanced-filelist-upload-file a', ( e ) => {
 	e.preventDefault();
 	mw.loader.using( [ 'ext.enhancedUpload.upload.dialog' ] ).done( () => {
 		const dialog = new enhancedUpload.ui.dialog.UploadFilesDialog();
+		dialog.on( 'uploadcompleted', () => {
+			window.location.reload();
+		} );
 		dialog.show();
 	} );
 	return false;

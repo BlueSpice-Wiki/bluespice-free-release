@@ -8,6 +8,7 @@
 			"Yupik"
 		]
 	},
+	"enhanced-standard-uis-history-grid-header-size-label": "Tamaño",
 	"enhanced-standard-uis-history-grid-header-undo-title": "Deshacer",
 	"enhancedfilelist": "Lista de archivos",
 	"enhanced-standard-uis-filelist-grid-file-title": "Nombre del archivo",
@@ -25,6 +26,5 @@
 	"enhanced-standard-uis-allpages-filter-pages-label": "Filtrar páginas",
 	"enhanced-standard-uis-allpages-namespace-list-label": "Lista de espacios de nombres",
 	"enhanced-standard-uis-paginator-aria-label": "Paginación",
-	"enhanced-standard-uis-allpages-watch-label": "Ver página $1",
-	"enhanced-standard-uis-history-grid-header-size-label": "Tamaño"
+	"enhanced-standard-uis-allpages-watch-label": "Ver página $1"
 }

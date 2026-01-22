@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\PDFCreator\Utility;
 use DOMDocument;
 use DOMElement;
 use DOMXPath;
+use OldLocalFile;
 
 class AttachmentFinder extends ImageFinder {
 
@@ -33,7 +34,8 @@ class AttachmentFinder extends ImageFinder {
 				continue;
 			}
 			$absPath = $file->getLocalRefPath();
-			$filename = $file->getName();
+
+			$filename = ( $file instanceof OldLocalFile ) ? $file->getArchiveName() : $file->getName();
 			$filename = $this->uncollideFilenames( $filename, $absPath );
 			$url = $attachment->getAttribute( 'href' );
 

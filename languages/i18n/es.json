@@ -267,7 +267,9 @@
 			"Sophocrat",
 			"Weritabris16",
 			"Geom",
-			"Jemily1"
+			"Jemily1",
+			"SrGarga",
+			"Tecbs"
 		]
 	},
 	"sunday": "domingo",
@@ -1026,6 +1028,7 @@
 	"unstrip-size-category-desc": "La página supera el límite de tamaño de extracción.",
 	"bad-language-code-category": "Páginas con códigos inválidos de idioma",
 	"bad-language-code-category-desc": "La página contiene <code><nowiki>{{#dir}}</nowiki></code> con un código de idioma no válido.",
+	"bad-double-underscore-category": "Páginas con modificadores de comportamiento no válidos",
 	"double-px-category": "Páginas con tamaños de imagen que contienen px adicionales",
 	"double-px-category-desc": "La página contiene una imagen cuyo tamaño contiene un sufijo <code>px</code> adicional, como <code>100pxpx</code>.",
 	"converter-manual-rule-error": "Se ha detectado un error en una regla manual de conversión de idioma",
@@ -2703,7 +2706,7 @@
 	"sp-contributions-concurrency-user": "Disculpa, hay muchas solicitudes que se están haciendo desde tu usuario en este momento. Por favor intenta más tarde.",
 	"sp-contributions-concurrency-ip": "Disculpa, hay muchas solicitudes desde tu dirección IP en este momento. Por favor intenta más tarde.",
 	"whatlinkshere": "Lo que enlaza aquí",
-	"whatlinkshere-count": "Muestrando $1 {{PLURAL:$1|elemento|elementos}}.",
+	"whatlinkshere-count": "Mostrando $1 {{PLURAL:$1|elemento|elementos}}.",
 	"whatlinkshere-title": "Páginas que enlazan con «$1»",
 	"whatlinkshere-page": "Página:",
 	"linkshere": "Las siguientes páginas enlazan a <strong>$2</strong>:",

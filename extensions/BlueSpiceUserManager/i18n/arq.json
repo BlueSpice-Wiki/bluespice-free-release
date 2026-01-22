@@ -8,13 +8,11 @@
 	"bs-usermanager-desc": "الوجيهة تاع التنضام باش تسيّر المستعمليّين",
 	"bs-usermanager-idnotexist": "هاد أسمٰ المستعملي ما كاينش منّهُ",
 	"bs-usermanager-invalid-email-gen": "لادريسة تاع ليمال ماشي مقبولة",
-	"bs-usermanager-label": "المسيار تاع المستعمليّين",
 	"bs-usermanager-user-exists": "هاد الأسم المستعملي راه كاين مقبل.",
 	"bs-usermanager-headerusername": "أسمٰ المستعملي",
 	"bs-usermanager-headerrealname": "الأسم الصحّاني",
 	"bs-usermanager-headeremail": "لادريسة تاع ليمال",
 	"bs-usermanager-headergroups": "جماعات",
 	"bs-usermanager-labelnewpassword": "كلمتٰ السرّ",
-	"bs-usermanager-labelpasswordcheck": "أكّد كلمتٰ السرّ",
-	"bs-usermanager-invalid-realname": "الأسم الصحّاني هادا ماشي مقبول."
+	"bs-usermanager-labelpasswordcheck": "أكّد كلمتٰ السرّ"
 }

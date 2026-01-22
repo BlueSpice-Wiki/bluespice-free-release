@@ -2,8 +2,7 @@
 	opacity: 0;
 }
 
-.enhanced-ui-filelist-panel .oojsplus-data-gridWidget-cell[ data-column='categories' ] span.oojsplus-ui-widget-linkwidget-label,
-.enhanced-ui-filelist-panel .oojsplus-data-gridWidget-cell[ data-column='categories' ] .oo-ui-fieldsetLayout-group > span {
+.enhanced-ui-filelist-panel .oojsplus-data-gridWidget-cell[ data-column='categories' ] span.oojsplus-ui-widget-linkwidget-label {
 	padding: 3px 10px;
 	border: 1px solid #747474;
 	border-radius: 26px;
@@ -22,8 +21,12 @@
 }
 
 .enhanced-filelist-tools {
-	display: flex;
 	justify-content: space-between;
+}
+
+.enhanced-filelist-search-field {
+	max-width: 50em;
+	width: 100%;
 }
 
 .enhanced-filelist-tools-btn-select .oo-ui-fieldLayout-header {

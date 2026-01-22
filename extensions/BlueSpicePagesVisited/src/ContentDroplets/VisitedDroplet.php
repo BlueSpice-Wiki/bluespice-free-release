@@ -32,7 +32,7 @@ class VisitedDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.pagesvisited.visualEditorTagDefinition' ];
+		return [ 'ext.bluespice.pagesvisited.droplet' ];
 	}
 
 	/**
@@ -70,5 +70,4 @@ class VisitedDroplet extends TagDroplet {
 	public function getVeCommand(): ?string {
 		return 'pagesvisitedCommand';
 	}
-
 }

@@ -40,4 +40,11 @@ interface IDropletDescription {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string;
+
+	/**
+	 * Whether to show this droplet in the list of available droplets
+	 *
+	 * @return bool
+	 */
+	public function listDroplet(): bool;
 }

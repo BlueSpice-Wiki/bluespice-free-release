@@ -55,7 +55,6 @@
 	"enhanced-standard-uis-allpages-namespace-list-label": "Naamruimte",
 	"enhanced-standard-uis-paginator-aria-label": "Paginering",
 	"enhanced-standard-uis-allpages-watch-label": "Pagina “$1” volgen",
-	"enhanced-standard-uis-allpages-unwatch-label": "Pagina “$1” ontvolgen",
 	"enhanced-standard-uis-allpages-pageinfo-label": "Pagina-info voor “$1” weergeven",
 	"enhanced-standard-uis-allpages-filter-results-label": "{{PLURAL:$1|Eén resultaat|$1 resultaten}} gevonden",
 	"enhanced-standard-uis-filelist-grid-preview-title": "Voorvertoning",

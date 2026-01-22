@@ -3,8 +3,8 @@
 		"authors": [
 			"LaMagiaaa",
 			"Meno25",
-			"Mohammed Qays",
-			"ديفيد"
+			"ديفيد",
+			"Mohammed Qays"
 		]
 	},
 	"bs-visualeditorconnector-desc": "يربط BlueSpice بالمحرر المرئي",
@@ -22,7 +22,6 @@
 	"bs-visualeditorconnector-ve-style-option": "نمط الجدول",
 	"bs-visualeditorconnector-upload-dialog-type": "سير العمل لرفع الملفات في MediaDialog",
 	"bs-visualeditorconnector-text-style-tool-color-label": "لون النص",
-	"bs-visualeditorconnector-color-annotation-desc": "يضيف الألوان إلى نص عن طريق تعيين خاصية \"اللون\" أو \"الفئة",
 	"bs-visualeditorconnector-dialog-media-link": "ربط هذا الملف",
 	"bs-visualeditorconnector-dialog-media-meta-link": "ربط صفحة وصف الملف",
 	"bs-visualeditorconnector-dialog-media-embed": "تضمين هذا الملف",
@@ -41,7 +40,6 @@
 	"bs-vec-dialog-table-create-number-of-columns": "عدد الأعمدة",
 	"bs-vec-dialog-action-done": "نُفّذ",
 	"bs-vec-dialog-action-safe": "إلغاء",
-	"bs-vec-dialog-create-table-title": "إدراج جدول",
 	"bs-vec-widget-text-direction-tooltip": "نص عمودي",
 	"bs-vec-row-duplicate-has-merged": "يحتوي الصف المحدد على خلايا تمتد عبر صفوف متعددة، وبالتالي لا يمكن تكرارها.",
 	"bs-vec-dialog-media-change-file": "تغيير الملف",

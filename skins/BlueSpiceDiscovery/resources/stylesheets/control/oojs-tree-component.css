@@ -6,7 +6,7 @@
 .oojsplus-data-navigation-tree {
 	ul.tree-node-list > li > div,
 	ul.tree-node-list > li > ul.tree-node-list {
-		border-left: 5px solid transparent;
+		margin-left: 5px;
 		height: auto;
 		padding-left: 10px;
 	}
@@ -18,7 +18,8 @@
 
 	ul.tree-node-list > li > div:hover,
 	ul.tree-node-list .active > div {
-		border-color: var( --sidebar-primary-marker--hover );
+		margin-left: 0;
+		border-left: 5px solid var( --sidebar-primary-marker--hover );
 		background-color: var( --sidebar-primary-bg--hover );
 		color: var( --sidebar-primary-fg--hover );
 	}

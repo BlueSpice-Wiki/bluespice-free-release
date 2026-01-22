@@ -9,7 +9,6 @@
 	"bs-usermanager-idnotexist": "Ta uporabnik ne obstaja.",
 	"bs-usermanager-invalid-pwd": "Geslo ni veljavno.",
 	"bs-usermanager-invalid-email-gen": "E-poštni naslov ni veljaven.",
-	"bs-usermanager-label": "Upravitelj uporabnikov",
 	"bs-usermanager-text": "Uporabniki",
 	"bs-usermanager-user-exists": "To uporabniško ime že obstaja.",
 	"bs-usermanager-headerusername": "Uporabniško ime",
@@ -44,6 +43,5 @@
 	"bs-usermanager-label-password-change-strategy-reset": "Povezava za ponastavitev gesla po e-pošti",
 	"bs-usermanager-label-password-change-strategy-pw": "Neposredna sprememba gesla",
 	"bs-usermanager-no-mail": "Izbrani uporabnik nima potrjenega e-poštnega naslova",
-	"bs-usermanager-mass-disable": "Blokiraj uporabnike",
-	"bs-usermanager-invalid-realname": "Pravo ime ni veljavno."
+	"bs-usermanager-mass-disable": "Blokiraj uporabnike"
 }

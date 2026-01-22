@@ -11,6 +11,7 @@
 	"enhancedupload-list-header-error": "meattáhus",
 	"enhancedupload-ve-dialog-title": "Vurke fiilla",
 	"enhancedupload-attachments-tag-grid-file-label": "Fiila",
+	"enhancedupload-attachments-tag-grid-size-label": "Sturrodat",
 	"enhancedupload-attachments-tag-grid-category-label": "Kategoriijat",
 	"enhancedupload-attachments-media-dialog-cancel-title": "Gaskkalduhte",
 	"enhancedupload-attachments-media-dialog-add-title": "Lasit",
@@ -24,6 +25,5 @@
 	"enhancedupload-ve-attachmentinspector-categories": "Kategoriijat",
 	"enhancedupload-ve-attachmentinspector-grid-version": "Čiega veršuvnna",
 	"enhancedupload-attachments-tag-grid-remove-title": "Sihko",
-	"enhancedupload-droplet-attachments-name": "Mildosat",
-	"enhancedupload-attachments-tag-grid-size-label": "Sturrodat"
+	"enhancedupload-droplet-attachments-name": "Mildosat"
 }

@@ -1,8 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar",
-			"شاه زمان پټان"
+			"Eleassar"
 		]
 	},
 	"bs-tagcloud-desc": "Prikaže različne oblake oznak",
@@ -15,7 +14,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "Izberite, kako naj bo prikazan oblak oznak",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Besedilo",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Seznam",
-	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "درې‌اړخيز",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
 	"bs-tagcloud-tag-tagcloud-attr-store-label": "Shramba",
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Izberite, kateri podatki naj se uporabijo",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Kategorije",

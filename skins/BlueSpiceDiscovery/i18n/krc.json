@@ -5,7 +5,6 @@
 		]
 	},
 	"bs-discovery-desc": "BlueSpice Тема",
-	"bs-discovery-skip-links-navigation-aria-label": "Джибериулеге кёч",
 	"bs-discovery-skip-to-navbar-primary-text": "Башлыкъны панелине кёч",
 	"bs-discovery-skip-to-sidebar-primary-text": "Баш навигациягъа кёч",
 	"bs-discovery-skip-to-sidebar-secondary-text": "Бетни адырларына кёч",
@@ -44,7 +43,6 @@
 	"bs-discovery-navbar-full-screen-button-disable-title": "Толу экран режимни джукълат",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "Толу экран режимни джукълат",
 	"bs-discovery-breadcrumb-nav-aria-label": "Навигация сынджыр",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Ат алам",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "Бетле",
 	"bs-discovery-breadcrumb-nav-node-title": "$1 ач",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "$1 ач",

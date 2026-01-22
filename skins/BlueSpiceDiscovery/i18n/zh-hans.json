@@ -9,7 +9,6 @@
 			"Lakejason0",
 			"LittlePaw365",
 			"MangoFanFanw",
-			"Peterxy12",
 			"SolidBlock",
 			"StarrySky",
 			"Tr jason",
@@ -17,7 +16,6 @@
 		]
 	},
 	"bs-discovery-desc": "BlueSpice皮肤",
-	"bs-discovery-skip-links-navigation-aria-label": "跳到链接",
 	"bs-discovery-skip-to-navbar-primary-text": "跳到顶栏",
 	"bs-discovery-skip-to-sidebar-primary-text": "跳到主导航栏",
 	"bs-discovery-skip-to-sidebar-secondary-text": "跳到页面工具",
@@ -57,7 +55,6 @@
 	"bs-discovery-navbar-full-screen-button-disable-title": "禁用全屏模式",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "禁用全屏模式",
 	"bs-discovery-breadcrumb-nav-aria-label": "面包屑",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "命名空间",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "页面",
 	"bs-discovery-breadcrumb-nav-node-title": "打开$1",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "打开$1",
@@ -189,13 +186,7 @@
 	"bs-discovery-footerlinks-imprint-link-page": "Site:Imprint",
 	"bs-discovery-footerlinks-termsofservice-link-desc": "服务条款",
 	"bs-discovery-footerlinks-termsofservice-link-page": "Site:服务条款",
-	"bs-discovery-sidebar-primary-aria-label": "主要侧边栏",
-	"bs-discovery-sidebar-secondary-aria-label": "次要侧边栏",
-	"bs-discovery-tools-after-content-aria-label": "内容章节之后的工具",
-	"bs-discovery-data-after-content-aria-label": "内容章节之后的数据",
 	"bs-discovery-requires-attention": "（需注意）",
-	"bs-discovery-table-of-contents-show-button-aria-label": "显示目录",
-	"bs-discovery-table-of-contents-hide-button-aria-label": "隐藏目录",
 	"bs-discovery-breadcrumb-label-diff": "差异",
 	"bs-discovery-back-to-page": "回到$1",
 	"bs-discovery-back-to-page-title": "返回到$1页",
@@ -207,8 +198,5 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "主导航",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "页面工具",
 	"bs-discovery-tools-after-content-cnt-aria-label": "额外页面信息",
-	"bs-discovery-data-after-content-cnt-aria-label": "页面附录",
-	"bs-discovery-footer-places-alt-text-mediawiki": "由MediaWiki驱动",
-	"bs-discovery-footer-places-alt-text-bluespice": "由BlueSpice提供驱动",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "由Semantic MediaWiki提供驱动"
+	"bs-discovery-data-after-content-cnt-aria-label": "页面附录"
 }

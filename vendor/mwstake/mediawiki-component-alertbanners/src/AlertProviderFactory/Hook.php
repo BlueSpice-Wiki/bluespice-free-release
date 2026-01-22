@@ -8,13 +8,10 @@ use MWStake\MediaWiki\Component\AlertBanners\ObjectFactory;
 
 class Hook extends Base {
 
-	/**
-	 * @var HookContainer
-	 */
-	private $hookContainer = null;
+	/** @var HookContainer */
+	private $hookContainer;
 
 	/**
-	 *
 	 * @param ObjectFactory $objectFactory
 	 * @param HookContainer $hookContainer
 	 */

@@ -16,7 +16,6 @@
 	"bs-insertcategory-desc": "對話框中輸入分類連結",
 	"bs-insertcategory-insertcat": "插入分類",
 	"prefs-insertcategory": "插入分類",
-	"bs-insertcategory-pref-withparents": "插入分類與其父分類",
 	"bs-insertcategory-page-header-categories-edit-tooltip": "編輯此頁面的分類",
 	"bs-insertcategory-edit-dialog-button-tooltip": "編輯此頁面的分類",
 	"bs-insertcategory-edit-dialog-button-aria-label": "開啟對話框來編輯此頁面的分類",

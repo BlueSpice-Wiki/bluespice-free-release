@@ -3,8 +3,8 @@
 		"authors": [
 			"Googology",
 			"GuoPC",
-			"Libamidi",
-			"沈澄心"
+			"沈澄心",
+			"Libamidi"
 		]
 	},
 	"enhanced-standard-uis-desc": "为MediaWiki标准用户界面提供用户界面",
@@ -25,6 +25,5 @@
 	"enhanced-standard-uis-allpages-redirect-title": "重定向",
 	"enhanced-standard-uis-allpages-filter-pages-label": "过滤器",
 	"enhanced-standard-uis-allpages-namespace-list-label": "命名空间",
-	"enhanced-standard-uis-paginator-aria-label": "分页",
-	"enhanced-standard-uis-allpages-unwatch-label": "取消监视页面$1"
+	"enhanced-standard-uis-paginator-aria-label": "分页"
 }

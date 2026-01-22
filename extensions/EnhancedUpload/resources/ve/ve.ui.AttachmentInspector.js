@@ -61,51 +61,56 @@ ve.ui.AttachmentInspector.prototype.initialize = function () {
 ve.ui.AttachmentInspector.prototype.createFields = function () {
 	this.titleInput = new OO.ui.TextInputWidget();
 	this.prefixInput = new OO.ui.TextInputWidget();
-	this.catInput = new OO.ui.TextInputWidget();
+	this.catInput = new OOJSPlus.ui.widget.CategoryMultiSelectWidget( {
+		allowArbitrary: true
+	} );
 	this.descInput = new OO.ui.MultilineTextInputWidget();
-	this.optionsInput = new OO.ui.ToggleSwitchWidget();
-	this.hideVersion = new OO.ui.ToggleSwitchWidget();
-	this.hideEditor = new OO.ui.ToggleSwitchWidget();
-	this.showSize = new OO.ui.ToggleSwitchWidget();
-	this.showCategories = new OO.ui.ToggleSwitchWidget();
+	this.optionsInput = new OO.ui.CheckboxInputWidget();
+	this.hideVersion = new OO.ui.CheckboxInputWidget();
+	this.hideEditor = new OO.ui.CheckboxInputWidget();
+	this.showSize = new OO.ui.CheckboxInputWidget();
+	this.showCategories = new OO.ui.CheckboxInputWidget();
 };
 
 ve.ui.AttachmentInspector.prototype.setLayouts = function () {
 	this.titleLayout = new OO.ui.FieldLayout( this.titleInput, {
-		align: 'right',
-		label: ve.msg( 'enhancedupload-ve-attachmentinspector-title' )
+		align: 'top',
+		label: ve.msg( 'enhancedupload-ve-attachmentinspector-title-label' ),
+		help: ve.msg( 'enhancedupload-ve-attachmentinspector-title-help' )
 	} );
 
 	this.prefixLayout = new OO.ui.FieldLayout( this.prefixInput, {
-		align: 'right',
-		label: ve.msg( 'enhancedupload-ve-attachmentinspector-prefix' )
+		align: 'top',
+		label: ve.msg( 'enhancedupload-ve-attachmentinspector-prefix-label' ),
+		help: ve.msg( 'enhancedupload-ve-attachmentinspector-prefix-help' )
 	} );
 	this.catLayout = new OO.ui.FieldLayout( this.catInput, {
-		align: 'right',
+		align: 'top',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-categories' )
 	} );
 	this.descLayout = new OO.ui.FieldLayout( this.descInput, {
-		align: 'right',
-		label: ve.msg( 'enhancedupload-ve-attachmentinspector-desc' )
+		align: 'top',
+		label: ve.msg( 'enhancedupload-ve-attachmentinspector-desc' ),
+		help: ''
 	} );
 	this.optionsLayout = new OO.ui.FieldLayout( this.optionsInput, {
-		align: 'right',
+		align: 'inline',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-options' )
 	} );
 	this.versionLayout = new OO.ui.FieldLayout( this.hideVersion, {
-		align: 'right',
+		align: 'inline',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-grid-version' )
 	} );
 	this.editorLayout = new OO.ui.FieldLayout( this.hideEditor, {
-		align: 'right',
+		align: 'inline',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-grid-editor' )
 	} );
 	this.sizeLayout = new OO.ui.FieldLayout( this.showSize, {
-		align: 'right',
+		align: 'inline',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-grid-size' )
 	} );
 	this.categoriesLayout = new OO.ui.FieldLayout( this.showCategories, {
-		align: 'right',
+		align: 'inline',
 		label: ve.msg( 'enhancedupload-ve-attachmentinspector-grid-categories' )
 	} );
 };
@@ -119,23 +124,27 @@ ve.ui.AttachmentInspector.prototype.getSetupProcess = function ( data ) {
 			const attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
 
 			this.titleInput.setValue( attributes.title || '' );
-			this.catInput.setValue( attributes.categories || '' );
+			if ( attributes.categories ) {
+				const categoryInput = attributes.categories.split( '|' );
+				this.catInput.setValue( categoryInput );
+			}
+
 			this.descInput.setValue( attributes.description || '' );
 			this.prefixInput.setValue( attributes.prefix || '' );
 			if ( attributes.skipoptions ) {
-				this.optionsInput.setValue( attributes.skipoptions );
+				this.optionsInput.setSelected( attributes.skipoptions );
 			}
 			if ( attributes.hideversion ) {
-				this.hideVersion.setValue( attributes.hideversion );
+				this.hideVersion.setSelected( attributes.hideversion );
 			}
 			if ( attributes.hideeditor ) {
-				this.hideEditor.setValue( attributes.hideeditor );
+				this.hideEditor.setSelected( attributes.hideeditor );
 			}
 			if ( attributes.showsize ) {
-				this.showSize.setValue( attributes.showsize );
+				this.showSize.setSelected( attributes.showsize );
 			}
 			if ( attributes.showcategories ) {
-				this.showCategories.setValue( attributes.showcategories );
+				this.showCategories.setSelected( attributes.showcategories );
 			}
 
 			this.actions.setAbilities( { done: true } );
@@ -167,8 +176,18 @@ ve.ui.AttachmentInspector.prototype.updateMwData = function ( mwData ) {
 	} else {
 		delete ( mwData.attrs.prefix );
 	}
-	if ( this.catInput.getValue() !== '' ) {
-		mwData.attrs.categories = this.catInput.getValue();
+	if ( this.catInput.getSelectedCategories().length > 0 ) {
+		let categories = '';
+		const selectedCategories = this.catInput.getSelectedCategories();
+		for ( let i = 0; i < selectedCategories.length; i++ ) {
+			const catText = selectedCategories[ i ];
+			const catTitle = mw.Title.newFromText( catText, 14 );
+			categories += catTitle.getMainText();
+			if ( i + 1 < selectedCategories.length ) {
+				categories += '|';
+			}
+		}
+		mwData.attrs.categories = categories;
 	} else {
 		delete ( mwData.attrs.categories );
 	}
@@ -177,27 +196,27 @@ ve.ui.AttachmentInspector.prototype.updateMwData = function ( mwData ) {
 	} else {
 		delete ( mwData.attrs.description );
 	}
-	if ( this.optionsInput.getValue() === true ) {
+	if ( this.optionsInput.isSelected() ) {
 		mwData.attrs.skipoptions = '1';
 	} else {
 		delete ( mwData.attrs.skipoptions );
 	}
-	if ( this.hideVersion.getValue() === true ) {
+	if ( this.hideVersion.isSelected() ) {
 		mwData.attrs.hideversion = '1';
 	} else {
 		delete ( mwData.attrs.hideversion );
 	}
-	if ( this.hideEditor.getValue() === true ) {
+	if ( this.hideEditor.isSelected() ) {
 		mwData.attrs.hideeditor = '1';
 	} else {
 		delete ( mwData.attrs.hideeditor );
 	}
-	if ( this.showSize.getValue() === true ) {
+	if ( this.showSize.isSelected() ) {
 		mwData.attrs.showsize = '1';
 	} else {
 		delete ( mwData.attrs.showsize );
 	}
-	if ( this.showCategories.getValue() === true ) {
+	if ( this.showCategories.isSelected() ) {
 		mwData.attrs.showcategories = '1';
 	} else {
 		delete ( mwData.attrs.showcategories );

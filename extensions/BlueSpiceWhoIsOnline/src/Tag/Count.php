@@ -2,91 +2,18 @@
 
 namespace BlueSpice\WhoIsOnline\Tag;
 
-use BlueSpice\Tag\GenericHandler;
-use BlueSpice\Tag\MarkerType\NoWiki;
-use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
+use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
-class Count extends \BlueSpice\Tag\Tag {
-
-	/**
-	 *
-	 * @return bool
-	 */
-	public function needsDisabledParserCache() {
-		return true;
-	}
+class Count extends GenericTag {
 
 	/**
-	 *
-	 * @return string
+	 * @inheritDoc
 	 */
-	public function getContainerElementName() {
-		return GenericHandler::TAG_SPAN;
-	}
-
-	/**
-	 *
-	 * @return bool
-	 */
-	public function needsParsedInput() {
-		return false;
-	}
-
-	/**
-	 *
-	 * @return bool
-	 */
-	public function needsParseArgs() {
-		return true;
-	}
-
-	/**
-	 *
-	 * @return NoWiki
-	 */
-	public function getMarkerType() {
-		return new NoWiki();
-	}
-
-	/**
-	 *
-	 * @return null
-	 */
-	public function getInputDefinition() {
-		return null;
-	}
-
-	/**
-	 *
-	 * @return ParamDefinition[]
-	 */
-	public function getArgsDefinitions() {
-		return [];
-	}
-
-	/**
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return CountHandler
-	 */
-	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
-		return new CountHandler(
-			$processedInput,
-			$processedArgs,
-			$parser,
-			$frame
-		);
-	}
-
-	/**
-	 *
-	 * @return string[]
-	 */
-	public function getTagNames() {
+	public function getTagNames(): array {
 		return [
 			'userscount',
 			'bs:whoisonline:count',
@@ -94,4 +21,43 @@ class Count extends \BlueSpice\Tag\Tag {
 		];
 	}
 
+	/**
+	 * @return bool
+	 */
+	public function hasContent(): bool {
+		return false;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getHandler( MediaWikiServices $services ): ITagHandler {
+		return new CountHandler( $services->getService( 'BSWhoIsOnlineTracer' ) );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getParamDefinition(): ?array {
+		return null;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getClientTagSpecification(): ClientTagSpecification|null {
+		return new ClientTagSpecification(
+			'Whoisonlinecount',
+			Message::newFromKey( 'bs-whoisonline-tag-whoisonlinecount-description' ),
+			null,
+			Message::newFromKey( 'bs-whoisonline-ve-whoisonlinecountinspector-title' )
+		);
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getContainerElementName(): ?string {
+		return 'span';
+	}
 }

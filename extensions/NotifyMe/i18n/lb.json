@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"GilPe",
 			"Robby",
-			"Volvox"
+			"Volvox",
+			"GilPe"
 		]
 	},
 	"notifyme-desc": "Notifikatiounen",
@@ -21,6 +21,7 @@
 	"notifyme-bucket-content-low-freq-desc": "Manner heefeg Säitenevenementer (uleeën, läschen, réckelen…)",
 	"notifyme-bucket-content-high-freq-desc": "Méi heefeg Säitenevenementer (Ännerungen, Kommentaren…)",
 	"notifyme-bucket-qm": "Qualitéitsmonitoring",
+	"notifyme-bucket-qm-label": "Evenementer am Zesummenhang mat der Säitequalitéit",
 	"notifyme-bucket-personal": "Perséinlech Säitenevenementer",
 	"notifyme-bucket-personal-desc": "Säitenevenementer, déi nëmme fir Iech relevant sinn (Zoudeelungen, Erënnerungen…)",
 	"notifyme-channel-email": "E-Mail",
@@ -91,11 +92,6 @@
 	"notifyme-notification-center-filter-label-categories": "Kategorien",
 	"notifyme-notification-center-filter-label-namespaces-none": "Haapt",
 	"notifyme-notification-center-filter-label-categories-none": "Keng Kategorie",
-	"notifyme-event-discussion-edit-key-desc": "Kommentaren op Diskussiounssäiten",
-	"notifyme-event-discussion-edit": "{{GENDER:$1|huet}} e Kommentar op Ärer Diskussiounssäit $2 gemaach",
-	"notifyme-event-discussion-edit-bot": "Neie Kommentar op Ärer Diskussiounssäit $1",
-	"notifyme-links-intro-discussion-edit": "Gitt wgl. op d'Säit vum follgende Link fir de Message ze gesinn",
-	"notifyme-event-discussion-edit-group": "{{PLURAL:$2|neie Message|nei Messagen}} op Ärer Diskussiounssäit $1",
 	"notifyme-event-page-linked-key-desc": "Säit verlinkt",
 	"notifyme-event-page-linked": "huet Är Säit $2 op d'Säit $3 verlinkt",
 	"notifyme-event-page-linked-bot": "Är Säit $1 gouf op d'Säit $2 verlinkt",
@@ -123,8 +119,6 @@
 	"notifyme-notification-generic-links-intro": "Dir kënnt d'Säit direkt opruffen, andeems Dir op de follgende Link gitt",
 	"notifyme-ui-edit": "Änneren",
 	"notifyme-ui-delete": "Läschen",
-	"notifyme-ui-delivery-web-email": "Web an E-Mail",
-	"notifyme-ui-delivery-web": "Nëmme Web",
 	"notifyme-notifications-mega-menu-no-notifications": "Keng nei Notifikatiounen!",
 	"notifyme-notification-center-filter-title": "Notifikatiounen",
 	"notifyme-navbar-button-title": "Notifikatiounen",
@@ -140,9 +134,7 @@
 	"notifyme-notifications-group-mark-group-as-read-label": "Grupp als net gelies markéieren",
 	"notifyme-notifications-group-expander-label-expanded": "$1 {{PLURAL:$1|Ännerung|Ännerungen}} op dëser Säit manner weisen",
 	"notifyme-notifications-group-expander-label-collapsed": "nach $1 {{PLURAL:$1|Ännerung|Ännerungen}} op dëser Säit méi weisen",
-	"notifyme-notification-center-help-menu-aria-label": "Astellungen",
 	"notifyme-notification-center-help-menu-mark-all-read-label": "All als gelies markéieren",
-	"notifyme-notification-center-help-menu-preferences-label": "Astellungen",
 	"notifyme-notification-center-mark-as-read-circle-title": "Als gelies markéieren",
 	"notifyme-notification-center-mark-as-unread-circle-title": "Als net gelies markéieren",
 	"notifyme-notification-center-timestamp-ago": "viru(n) $1",
@@ -151,7 +143,6 @@
 	"notifyme-notification-center-pagination-aria-next": "Nächst Säit",
 	"notifyme-notification-center-pagination-aria-previous": "Vireg Säit",
 	"notifyme-notification-center-filter-item-aria-label": "Filter $1",
-	"notifyme-bucket-qm-label": "Evenementer am Zesummenhang mat der Säitequalitéit",
 	"notifyme-event-page-missing-desc": "''Et gëtt nach keng Beschreiwung fir dëst Evenement''",
 	"notifyme-ui-dialog-popup-table-event-label": "Evenement",
 	"notifyme-ui-dialog-popup-table-desc-label": "Beschreiwung",

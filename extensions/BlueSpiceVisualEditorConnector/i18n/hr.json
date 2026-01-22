@@ -22,7 +22,6 @@
 	"bs-vec-dialog-table-create-number-of-columns": "Broj stupaca",
 	"bs-vec-dialog-action-done": "Gotovo",
 	"bs-vec-dialog-action-safe": "Otkaži",
-	"bs-vec-dialog-create-table-title": "Umetni tablicu",
 	"bs-vec-widget-text-direction-tooltip": "Vertikalni tekst",
 	"bs-vec-row-duplicate-has-merged": "Odabrani red sadrži ćelije koje obuhvaćaju više redova, te se ne mogu duplicirati.",
 	"bs-vec-table-style-cell-text-vert-align-bottom": "Dno",

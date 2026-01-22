@@ -11,9 +11,9 @@
 	"prefs-whoisonline": "Quen está en liña?",
 	"bs-whoisonline-pref-limitcount": "Número máximo de usuarios amosados:",
 	"bs-whoisonline-pref-orderby": "Ordenar por:",
+	"bs-whoisonline-pref-maxidletime-label": "Tempo de espera de inactividade (segundos)",
 	"bs-whoisonline-pref-orderby-time": "Duración",
 	"bs-whoisonline-pref-orderby-name": "Nome",
-	"bs-whoisonline-pref-maxidletime-label": "Tempo de espera de inactividade (segundos)",
 	"bs-whoisonline-pref-interval-label": "Intervalo de actualización (segundos)",
 	"bs-whoisonline-collection-type-userlogin": "Inicio de sesión de usuario",
 	"bs-whoisonline-collection-var-login": "Iniciar sesión",
@@ -27,9 +27,9 @@
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Ventá emerxente de quen está en liña",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Número de inicios de sesión",
 	"bs-whoisonline-statistics-report-login-number": "Inicios de sesión",
+	"bs-whoisonline-statistics-report-login-number-desc": "Inicios de sesión diarios durante o período seleccionado",
 	"bs-whoisonline-droplet-count-name": "Número de usuarios que iniciaron sesión",
 	"bs-whoisonline-droplet-count-description": "Número de usuarios coa sesión iniciada nestes intres",
 	"bs-whoisonline-droplet-popup-name": "Lista de usuarios que iniciaron sesión",
-	"bs-whoisonline-droplet-popup-description": "Ventá emerxente cunha lista de todos os usuarios coa sesión iniciada nestes intres",
-	"bs-whoisonline-statistics-report-login-number-desc": "Inicios de sesión diarios durante o período seleccionado"
+	"bs-whoisonline-droplet-popup-description": "Ventá emerxente cunha lista de todos os usuarios coa sesión iniciada nestes intres"
 }

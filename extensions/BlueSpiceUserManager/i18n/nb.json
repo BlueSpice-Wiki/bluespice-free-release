@@ -8,7 +8,6 @@
 	"bs-usermanager-idnotexist": "Denne brukeren finnes ikke.",
 	"bs-usermanager-invalid-pwd": "Passordet er ugyldig.",
 	"bs-usermanager-invalid-email-gen": "Epostadressen er ugyldig.",
-	"bs-usermanager-label": "Brukerbehandler",
 	"bs-usermanager-text": "Brukere",
 	"bs-usermanager-user-exists": "Brukernavnet finnes allerede.",
 	"bs-usermanager-headerusername": "Brukernavn",
@@ -42,6 +41,5 @@
 	"bs-usermanager-label-password-change-strategy": "Metode",
 	"bs-usermanager-label-password-change-strategy-reset": "Send lenke for tilbakestilling av passord til brukeren",
 	"bs-usermanager-label-password-change-strategy-pw": "Endre passord direkte",
-	"bs-usermanager-no-mail": "Den valgte brukeren har ingen bekreftet epostadresse",
-	"bs-usermanager-invalid-realname": "Det virkelige navnet er ugyldig."
+	"bs-usermanager-no-mail": "Den valgte brukeren har ingen bekreftet epostadresse"
 }

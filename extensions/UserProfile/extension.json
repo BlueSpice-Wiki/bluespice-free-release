@@ -1,6 +1,6 @@
 {
 	"name": "UserProfile",
-	"version": "1.1.4",
+	"version": "1.2.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
@@ -71,11 +71,6 @@
 			"ExtraPropertyRegistry": {
 				"socialprofilefields": "\\MediaWiki\\Extension\\UserProfile\\UserProfilePropertyValueProvider::factory"
 			}
-		},
-		"BlueSpiceVisualEditorConnector": {
-			"TagDefinitions": [
-				"ext.userProfile.visualEditorTagDefinition"
-			]
 		},
 		"ContentDroplets": {
 			"Droplets": {
@@ -153,27 +148,6 @@
 				"ext.forms.standalone"
 			]
 		},
-		"ext.userProfile.visualEditorTagDefinition": {
-			"scripts": [
-				"visualEditorTagDefinition.js"
-			],
-			"dependencies": [
-				"ext.userProfile.bootstrap"
-			],
-			"class": "MediaWiki\\Extension\\UserProfile\\ResourceModule\\BSVECModule",
-			"messages": [
-				"userprofile-droplet-name",
-				"userprofile-droplet-name-description",
-				"userprofile-ve-attr-user-label",
-				"userprofile-ve-attr-user-help",
-				"userprofile-ve-attr-framed-label",
-				"userprofile-ve-attr-orientation-label",
-				"userprofile-ve-attr-orientation-horizontal",
-				"userprofile-ve-attr-orientation-vertical",
-				"userprofile-ve-attr-fields",
-				"userprofile-ve-attr-fields-label-help"
-			]
-		},
 		"ext.userProfile.profileImage.bootstrap": {
 			"scripts": [
 				"profileImage.js",
@@ -212,7 +186,7 @@
 		"OutputPageBeforeHTML": "renderProfileSlot",
 		"SkinTemplateNavigation::Universal": "renderProfileSlot",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "renderProfileSlot",
-		"ParserFirstCallInit": "addTag",
+		"MWStakeGenericTagHandlerInitTags": "addTag",
 		"UserProfileBeforeSetProfileData": "handleExternalProfileData",
 		"UserProfileGetProfileData": "handleExternalProfileData",
 		"GetPreferences": "addPreferences",
@@ -230,7 +204,7 @@
 		},
 		"addTag": {
 			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\AddTag",
-			"services": [ "MWStake.InputProcessor", "UserFactory", "UserProfile.Manager" ]
+			"services": [ "UserFactory", "UserProfile.FieldRegistry" ]
 		},
 		"handleExternalProfileData": {
 			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\HandleExternalProfileData",
@@ -247,8 +221,7 @@
 			"services": [ "UserFactory", "UserProfile.ImageProviderFactory" ]
 		},
 		"addModules": {
-			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\AddModules",
-			"services": [ "UserProfile.FieldRegistry" ]
+			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\AddModules"
 		},
 		"commentStreamsAvatar": {
 			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\CommentStreamsAvatar"

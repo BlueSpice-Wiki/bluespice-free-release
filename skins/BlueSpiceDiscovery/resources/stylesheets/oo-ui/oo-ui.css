@@ -1,6 +1,6 @@
 body.mediawiki .oo-ui-windowManager-modal > .oo-ui-dialog {
 	background-color: rgba( 62, 83, 137, 0.3 ) !important;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	/* header has 1050 */
 	z-index: 1051 !important;
 }

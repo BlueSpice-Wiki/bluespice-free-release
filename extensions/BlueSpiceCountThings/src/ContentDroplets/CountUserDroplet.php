@@ -32,7 +32,7 @@ class CountUserDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.countthings.visualEditorTagDefinition' ];
+		return [ 'ext.bluespice.countthings.droplet' ];
 	}
 
 	/**
@@ -68,7 +68,7 @@ class CountUserDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'countUsersCommand';
+		return 'countusersCommand';
 	}
 
 }

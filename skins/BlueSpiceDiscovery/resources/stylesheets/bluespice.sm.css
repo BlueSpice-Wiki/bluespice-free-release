@@ -19,12 +19,6 @@
 	z-index: 2;
 }
 
-/* VisualEditor */
-.ve-init-target-visual > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar,
-.ve-init-target-source > .ve-ui-toolbar-floating > .oo-ui-toolbar-bar {
-	top: calc( 2 * var( --navbar-primary-height ) );
-}
-
 #aftercontent > .inner {
 	max-width: var( --content-max-width );
 	margin: auto;
@@ -48,6 +42,30 @@
 	padding-right: 1rem;
 }
 
+/** Hide container since navbar is not sticky */
+.discovery-mobile div.navbar-primary-height.d-block {
+	display: none !important;
+}
+
+/* Remove fixed position of header */
+.discovery-mobile #nb-pri {
+	position: relative;
+}
+
+/* Hide logo in mobile header */
+.discovery-mobile #nb-pri .east-col-nav {
+	display: none !important;
+}
+
+.discovery-mobile #nb-pri .center-col-nav {
+	width: 100%;
+}
+
+/* Fix scroll behavior with open menu in header */
+.discovery-mobile #nb-pri:has( .nav-item a[ aria-expanded='true' ] ) {
+	position: fixed;
+}
+
 .discovery-mobile.ve-activated #header,
 .discovery-mobile.ve-activated .navbar-primary-height.d-block,
 .discovery-mobile.ve-activated #mwstake-alert-container,
@@ -56,7 +74,9 @@
 	display: none !important;
 }
 
-.discovery-mobile.ve-activated .oo-ui-toolbar-bar {
+/* Fix toolbar with non sticky header */
+.discovery-mobile.ve-activated .oo-ui-toolbar-bar,
+.discovery-mobile.ve-activated .hide-title .oo-ui-toolbar-bar {
 	top: 0;
 }
 

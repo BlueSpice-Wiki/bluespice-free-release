@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceReaders",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceReaders",
 	"author": [
 		"Stephan Muggli",
@@ -196,6 +196,10 @@
 		},
 		"addReaders": {
 			"class": "\\BlueSpice\\Readers\\HookHandler\\AddReaders"
+		},
+		"wikiRAGMetadata": {
+			"class": "\\BlueSpice\\Readers\\HookHandler\\WikiRAGMetadata",
+			"services": [ "DBLoadBalancer" ]
 		}
 	},
 	"Hooks": {
@@ -207,7 +211,8 @@
 		],
 		"SkinTemplateNavigation::Universal": "addReaders",
 		"UserMergeAccountFields": "\\BlueSpice\\Readers\\Hook\\UserMergeAccountFields\\MergeReadersDBFields::callback",
-		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
+		"WikiRAGMetadata": "wikiRAGMetadata"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

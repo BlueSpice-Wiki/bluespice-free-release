@@ -46,7 +46,7 @@ body.ns-special #title-section .breadcrumb-item {
 }
 
 #title-section .mw-redirectedfrom {
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: var( --title-nav-fg );
 }
 
@@ -58,7 +58,7 @@ body.ns-special #title-section .breadcrumb-item {
 
 #title-section .mw-indicators {
 	margin: 6px;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 #title-line .mw-indicators {

@@ -9,20 +9,13 @@ use Wikimedia\ObjectFactory\ObjectFactory;
 
 abstract class Base implements IAlertProviderFactory {
 
-	/**
-	 *
-	 * @var ObjectFactory
-	 */
-	protected $objectFactory = null;
+	/** @var ObjectFactory */
+	protected $objectFactory;
+
+	/** @var IAlertProvider */
+	protected $currentAlertProvider;
 
 	/**
-	 *
-	 * @var IAlertProvider
-	 */
-	protected $currentAlertProvider = null;
-
-	/**
-	 *
 	 * @param ObjectFactory $objectFactory
 	 */
 	public function __construct( $objectFactory ) {
@@ -30,7 +23,6 @@ abstract class Base implements IAlertProviderFactory {
 	}
 
 	/**
-	 *
 	 * @param string $regKey
 	 * @throws Exception
 	 */

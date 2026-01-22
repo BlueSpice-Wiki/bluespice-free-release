@@ -2,8 +2,6 @@
 
 namespace BlueSpice\SmartList\Mode;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\User\User;
@@ -21,19 +19,16 @@ abstract class SmartListBaseMode extends BaseMode {
 	 * @inheritDoc
 	 */
 	public function getParams(): array {
-		$parentParams = parent::getParams();
-		return array_merge( $parentParams, [
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_NS,
-				''
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_CAT,
-				'-'
-			)
-		] );
+		$params = parent::getParams();
+		$params[ static::ATTR_NS ] = [
+			'type' => 'string',
+			'required' => false,
+		];
+		$params[ static::ATTR_CAT ] = [
+			'type' => 'category',
+			'required' => false,
+		];
+		return $params;
 	}
 
 	/**

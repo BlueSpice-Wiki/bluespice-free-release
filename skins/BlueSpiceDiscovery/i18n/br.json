@@ -7,7 +7,6 @@
 		]
 	},
 	"bs-discovery-desc": "Gwiskadur BlueSpice",
-	"bs-discovery-skip-links-navigation-aria-label": "Mont d’al liammoù",
 	"bs-discovery-skip-to-navbar-primary-text": "Mont d’ar varrenn dalbenn",
 	"bs-discovery-skip-to-sidebar-primary-text": "Mont d’ar merdeerezh pennañ",
 	"bs-discovery-skip-to-sidebar-secondary-text": "Mont da bajenn an ostilhoù",
@@ -39,7 +38,6 @@
 	"bs-discovery-navbar-full-screen-button-enable-aria-label": "Gweredekaat ar mod skramm leun",
 	"bs-discovery-navbar-full-screen-button-disable-title": "Diweredekaat ar mod skramm leun",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "Diweredekaat ar mod skramm leun",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Esaouenn anv",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "Pajennoù",
 	"bs-discovery-breadcrumb-nav-node-title": "Digeriñ $1",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "Digeriñ $1",

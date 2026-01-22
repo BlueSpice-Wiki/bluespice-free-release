@@ -8,7 +8,7 @@
 	cursor: pointer;
 	display: inline-block;
 	color: var( --bs-alert-color );
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-weight: normal;
 	line-height: 1.5;
 	user-select: none;

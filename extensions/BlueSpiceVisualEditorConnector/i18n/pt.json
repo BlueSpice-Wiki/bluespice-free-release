@@ -22,7 +22,6 @@
 	"bs-visualeditorconnector-ve-style-option": "Estilo de tabela",
 	"bs-visualeditorconnector-upload-dialog-type": "Fluxo de trabalho para carregar ficheiros no MediaDialog",
 	"bs-visualeditorconnector-text-style-tool-color-label": "Cor do texto",
-	"bs-visualeditorconnector-color-annotation-desc": "Adiciona cores ao texto atribuindo a propriedade \"color\" ou \"class\"",
 	"bs-visualeditorconnector-dialog-media-link": "Hiperligação para este ficheiro",
 	"bs-visualeditorconnector-dialog-media-meta-link": "Hiperligar a página de descrição do ficheiro",
 	"bs-visualeditorconnector-dialog-media-embed": "Incorporar este ficheiro",
@@ -41,7 +40,6 @@
 	"bs-vec-dialog-table-create-number-of-columns": "Número de colunas",
 	"bs-vec-dialog-action-done": "Concluído",
 	"bs-vec-dialog-action-safe": "Cancelar",
-	"bs-vec-dialog-create-table-title": "Inserir tabela",
 	"bs-vec-widget-text-direction-tooltip": "Texto vertical",
 	"bs-vec-row-duplicate-has-merged": "A linha selecionada contém células que ocupam várias linhas e, portanto, não pode ser duplicada.",
 	"bs-vec-dialog-media-change-file": "Alterar ficheiro",
@@ -85,9 +83,9 @@
 	"bs-visualeditorconnector-align-center-annotation-desc": "Centra o texto selecionado",
 	"bs-visualeditorconnector-text-style-indent-label": "Indentar",
 	"bs-visualeditorconnector-indent-annotation-desc": "Indenta (afasta da margem) o texto selecionado",
+	"bs-visualeditor-save-label": "Guardar",
 	"bs-visualeditorconnector-upload-type": "Tipo de carregamento",
 	"bs-visualeditorconnector-upload-type-help": "Original: o direito de carregamento é verificado. O nome do ficheiro, o espaço nominal e a categoria são editáveis. A descrição é obrigatória.\nSimples: o direito de carregamento não é verificado. O nome do ficheiro, o espaço nominal e a categoria são editáveis. A descrição é opcional.\nUm clique: o direito de carregamento não é verificado. O nome do ficheiro e a categoria não são editáveis. O espaço nominal é editável.",
 	"bs-visualeditorconnector-dialog-table-title": "Tabela",
-	"bs-visualeditorconnector-dialog-action-insert": "Inserir",
-	"bs-visualeditor-save-label": "Guardar"
+	"bs-visualeditorconnector-dialog-action-insert": "Inserir"
 }

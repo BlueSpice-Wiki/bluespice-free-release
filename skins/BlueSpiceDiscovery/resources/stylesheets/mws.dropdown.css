@@ -19,7 +19,7 @@
 	height: 2em;
 	width: 100%;
 	line-height: 2em;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	color: var( --mws-primary-fg );
 	padding: 0 1em;
 	text-decoration: none;
@@ -57,7 +57,7 @@
 	height: 2em;
 	width: 100%;
 	line-height: 2em;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	color: var( --mws-secondary-fg );
 	padding: 0 1em;
 	text-decoration: none;

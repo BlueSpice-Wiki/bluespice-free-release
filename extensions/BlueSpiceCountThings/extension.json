@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceCountThings",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceCountThings",
 	"author": [
 		"Markus Glaser",
@@ -24,20 +24,9 @@
 					"extPath": "/BlueSpiceCountThings"
 				}
 			},
-			"TagRegistry": {
-				"countfiles": "BlueSpice\\CountThings\\Tag\\CountFiles",
-				"countarticles": "BlueSpice\\CountThings\\Tag\\CountArticles",
-				"countusers": "BlueSpice\\CountThings\\Tag\\CountUsers",
-				"countcharacters": "BlueSpice\\CountThings\\Tag\\CountCharacters"
-			},
 			"RendererRegistry": {
 				"countthings-countcharacters": "BlueSpice\\CountThings\\Renderer\\CountCharacters::factory"
 			}
-		},
-		"BlueSpiceVisualEditorConnector": {
-			"TagDefinitions": [
-				"ext.bluespice.countthings.visualEditorTagDefinition"
-			]
 		},
 		"ContentDroplets": {
 			"Droplets": {
@@ -57,44 +46,9 @@
 		}
 	},
 	"ResourceModules": {
-		"ext.bluespice.countthings.visualEditorTagDefinition": {
-			"scripts": [
-				"bs.cntthngs/util/tag/CountArticlesDefinition.js",
-				"bs.cntthngs/util/tag/CountCharactersDefinition.js",
-				"bs.cntthngs/util/tag/CountFilesDefinition.js",
-				"bs.cntthngs/util/tag/CountUsersDefinition.js"
-			],
+		"ext.bluespice.countthings.droplet": {
 			"styles": [
-				"stylesheets/cntthings.droplet.css"
-			],
-			"messages": [
-				"bs-countthings-tag-countcharacters-desc",
-				"bs-countthings-ve-countthingsinspector-mode",
-				"bs-countthings-ve-countcharacters-title",
-				"bs-countthings-ve-countcharacters-input-label",
-				"bs-countthings-tag-countcharacters-desc-param-mode",
-				"bs-countthings-ve-countcharacters-mode-all",
-				"bs-countthings-ve-countcharacters-mode-charsonly",
-				"bs-countthings-ve-countcharacters-mode-wordsonly",
-				"bs-countthings-ve-countcharacters-mode-wordsandchars",
-				"bs-countthings-ve-countcharacters-mode-pagesonly",
-				"bs-countthings-ve-countarticles-title",
-				"bs-countthings-tag-countarticles-desc",
-				"bs-countthings-ve-countfiles-title",
-				"bs-countthings-tag-countfiles-desc",
-				"bs-countthings-ve-countusers-title",
-				"bs-countthings-tag-countusers-desc",
-				"bs-countthings-droplet-articles-name",
-				"bs-countthings-droplet-articles-description",
-				"bs-countthings-droplet-characters-name",
-				"bs-countthings-droplet-characters-description",
-				"bs-countthings-droplet-files-name",
-				"bs-countthings-droplet-files-description",
-				"bs-countthings-droplet-user-name",
-				"bs-countthings-droplet-user-description"
-			],
-			"dependencies": [
-				"ext.bluespice.visualEditorConnector.tags.classes"
+				"stylesheets/countthings.droplet.css"
 			]
 		}
 	},
@@ -116,7 +70,13 @@
 			"\\BlueSpice\\CountThings\\Hook\\BSUsageTrackerRegisterCollectors\\AddCountCaractersTag::callback",
 			"\\BlueSpice\\CountThings\\Hook\\BSUsageTrackerRegisterCollectors\\AddCountFilesTag::callback",
 			"\\BlueSpice\\CountThings\\Hook\\BSUsageTrackerRegisterCollectors\\AddCountUsersTag::callback"
-		]
+		],
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
+	},
+	"HookHandlers": {
+		"registerTags": {
+			"class": "\\BlueSpice\\CountThings\\Hook\\RegisterTags"
+		}
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

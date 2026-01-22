@@ -35,6 +35,8 @@
 	"pdfcreator-config-default-pdf-template-help": "設定頁面匯出的預設範本。此範本必須以 MediaWiki:PDFCreator 的子頁面存在。",
 	"pdfcreator-dialog-button-title": "開啟匯出對話框",
 	"pdfcreator-dialog-button-text": "匯出",
+	"pdfcreator-config-suppress-namespace": "在 PDF 隱藏命名空間前綴",
+	"pdfcreator-config-suppress-namespace-help": "從 PDF 輸出中的標題和範本參數「title」裡移除命名空間前綴",
 	"pdfcreator-config-coverbackground": "PDF 範本中的預設封面背景圖片",
 	"pdfcreator-config-coverbackground-help": "為所有已設定預設 intro-wrapper 的 PDF 範本定義封面背景圖片。圖片必須是已上傳到 wiki 的檔案，或是有效的檔案路徑。",
 	"pdfcreator-pageparam-username": "顯示進行匯出使用者的使用者名稱",
@@ -150,7 +152,5 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "完成",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "失敗",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF 排除 - 開始",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF 排除 - 結束",
-	"pdfcreator-global-action-overview": "PDF 範本",
-	"pdfcreator-global-action-overview-desc": "Wiki 中所有 PDF 範本概要"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF 排除 - 結束"
 }

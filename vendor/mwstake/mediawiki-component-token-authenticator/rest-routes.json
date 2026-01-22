@@ -1,0 +1,16 @@
+[
+	{
+		"path": "/mws/v1/user-token/generate",
+		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\GenerateTokenHandler",
+		"services": [
+			"MWStake.TokenAuthenticator.Authenticator"
+		]
+	},
+	{
+		"path": "/mws/v1/user-token/verify/{token}",
+		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\VerifyTokenHandler",
+		"services": [
+			"MWStake.TokenAuthenticator.Authenticator"
+		]
+	}
+]

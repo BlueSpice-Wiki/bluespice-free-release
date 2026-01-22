@@ -14,4 +14,10 @@ abstract class MagicWordDroplet implements IDropletDescription {
 	 */
 	abstract protected function getMagicWord(): string;
 
+	/**
+	 * @inheritDoc
+	 */
+	public function listDroplet(): bool {
+		return true;
+	}
 }

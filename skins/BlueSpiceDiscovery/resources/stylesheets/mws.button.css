@@ -1,7 +1,7 @@
 .mws-button-primary {
 	background-color: var( --mws-primary-bg );
 	color: var( --mws-primary-fg );
-	font-size: 15px;
+	font-size: 0.9375rem;
 	display: inline-block;
 	font-weight: normal;
 	height: 40px;
@@ -31,7 +31,7 @@
 	border: 0.5px solid var( --mws-secondary-fg );
 	color: var( --mws-secondary-fg );
 	background-color: var( --mws-secondary-bg );
-	font-size: 15px;
+	font-size: 0.9375rem;
 	display: inline-block;
 	font-weight: normal;
 	line-height: 1.5;

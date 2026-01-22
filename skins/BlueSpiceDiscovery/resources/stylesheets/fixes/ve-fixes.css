@@ -35,5 +35,5 @@ body.mediawiki .ve-init-sa-target-toolbar > .oo-ui-toolbar-bar > .oo-ui-toolbar-
 .ve-ce-documentNode-codeEditor-webkit-hide::spelling-error,
 .ve-ce-documentNode-codeEditor-webkit-hide::grammar-error,
 .ve-ce-documentNode-codeEditor-webkit-hide::selection {
-    color: transparent;
+	color: transparent;
 }

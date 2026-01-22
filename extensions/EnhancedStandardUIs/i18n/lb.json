@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"GilPe",
 			"Robby",
-			"Volvox"
+			"Volvox",
+			"GilPe"
 		]
 	},
 	"enhanced-standard-uis-desc": "Stellt Benotzerinterface fir Standard-MediaWiki-Benotzer-interfacen zur Verfügung",
@@ -43,7 +43,6 @@
 	"enhanced-standard-uis-allpages-filter-pages-label": "Filteren",
 	"enhanced-standard-uis-allpages-namespace-list-label": "Nummraum",
 	"enhanced-standard-uis-allpages-watch-label": "D'Säit $1 iwwerwaachen",
-	"enhanced-standard-uis-allpages-unwatch-label": "D'Säit $1 net méi iwwerwaachen",
 	"enhanced-standard-uis-allpages-pageinfo-label": "Säiteninformatioune fir $1 weisen",
 	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|Resultat|Resultater}} fonnt",
 	"enhanced-standard-uis-filelist-ga-title": "Fichieren",
@@ -57,8 +56,8 @@
 	"enhanced-standard-uis-allpages-page-tree-item-expander-label": "Ënnersäiten",
 	"enhancedpreferences": "Astellungen",
 	"enhanced-pref-username": "{{GENDER:$1|Benotzernumm}}",
-	"enhanced-standard-uis-prefs-panel-search-label": "Sichen",
 	"enhanced-prefs-memberingroups": "{{GENDER:$2|Member}} vun {{PLURAL:$1|der Grupp|de Gruppen}}",
+	"enhanced-standard-uis-prefs-panel-search-label": "Sichen",
 	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Informatiounen iwwer de Fichier",
 	"enhanced-standard-uis-prefs-reset-dlg-action-label": "Zerécksetzen",
 	"enhanced-standard-uis-prefs-reset-dlg-confirm-label": "Sidd Dir sécher, datt Dir Är Astellungen op d'Standardwäerter zerécksetze wëllt? Dat kann net réckgängeg gemaach ginn.",

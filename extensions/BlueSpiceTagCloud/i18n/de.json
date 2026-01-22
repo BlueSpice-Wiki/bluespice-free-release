@@ -3,7 +3,6 @@
 		"authors": [
 			"Metalhead64",
 			"MoritzMT20",
-			"Mschlindwein",
 			"Patric Wirth",
 			"Russianbabe1978"
 		]
@@ -36,5 +35,8 @@
 	"bs-tagcloud-droplet-name": "Wortwolke",
 	"bs-tagcloud-droplet-description": "Wortwolke basierend auf Kategorien oder Suchanfragen",
 	"bs-tagcloud-tag-tagcloud-tab-advanced": "Erweitert",
-	"bs-tagcloud-tag-tagcloud-tab-common": "Allgemein"
+	"bs-tagcloud-tag-tagcloud-tab-common": "öffentliche Grünfläche (brit.)",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Anzeigemodus",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Häufigkeit anzeigen",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Fügt die Anzahl der verwendeten Kategorien oder Suchanfragen ein"
 }

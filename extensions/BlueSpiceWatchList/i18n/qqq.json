@@ -14,11 +14,8 @@
 	"bs-watchlist-pref-sort-title": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], option for title\n{{Identical|Title}}",
 	"bs-watchlist-tag-watchlist-desc": "Used in InsertMagic extension, tag description for \"creates a list of pages which are on your watchlist and have a non-sighted change\".\n{{Related|Bs-tag-desc}}",
 	"bs-watchlist-ve-watchlistinspector-title": "Title for watchlist tag",
-	"bs-watchlist-ve-watchlist-attr-count-label": "Label for the parameter \"count\"",
 	"bs-watchlist-tag-watchlist-attr-count-help": "Help message for the parameter \"count\"",
-	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Label for the parameter \"maxtitlelength\"",
 	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Help message for the parameter \"maxtitlelength\"",
-	"bs-watchlist-ve-watchlist-attr-order-label": "Label for the parameter \"order\"\n\n{{Identical|Order}}",
 	"bs-watchlist-tag-watchlist-attr-order-help": "Help message for the parameter \"order\"",
 	"bs-watchlist-ve-watchlist-attr-pagename-label": "Label for the parameter \"pagename\"",
 	"bs-watchlist-ve-watchlist-attr-time-label": "Label for the parameter \"time\"\n\n{{Identical|Time}}",
@@ -28,5 +25,8 @@
 	"bs-watchlist-tag-watchlist-attr-time-help": "Help message for the parameter \"time\"",
 	"bs-watchlist-droplet-name": "Title of droplet for tag Watchlist",
 	"bs-watchlist-droplet-description": "Description of droplet for tag Watchlist",
-	"bs-watchlist-usersidebar-title": "Title of user sidebar widget Watchlist\n{{Identical|Watchlist}}"
+	"bs-watchlist-usersidebar-title": "Title of user sidebar widget Watchlist\n{{Identical|Watchlist}}",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "Label for the parameter \"count\"",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "Label for the parameter \"maxtitlelength\"",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Label for the parameter \"order\""
 }

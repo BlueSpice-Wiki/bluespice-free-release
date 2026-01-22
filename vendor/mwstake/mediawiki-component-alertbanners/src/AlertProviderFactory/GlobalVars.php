@@ -2,16 +2,14 @@
 
 namespace MWStake\MediaWiki\Component\AlertBanners\AlertProviderFactory;
 
-use Config;
-use GlobalVarConfig;
+use MediaWiki\Config\Config;
+use MediaWiki\Config\GlobalVarConfig;
 use Wikimedia\ObjectFactory\ObjectFactory;
 
 class GlobalVars extends Base {
 
-	/**
-	 * @var Config
-	 */
-	private $config = null;
+	/** @var Config */
+	private $config;
 
 	/**
 	 * @param ObjectFactory $objectFactory

@@ -3,13 +3,13 @@
 		"authors": [
 			"CaiusSPQR",
 			"Hamilton Abreu",
-			"Mansil alfalb",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Mansil alfalb"
 		]
 	},
 	"bs-saferedit-desc": "Fornece avisos se outros utilizadores estiverem a editar a página",
 	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|está|estão}} {{GENDER:$1|a editar}} a página",
 	"bs-saferedit-someone-editing": "A página está a ser editada",
-	"bs-saferedit-anonymous-editor": "Utilizador anónimo",
-	"bs-saferedit-pref-show-editinguser": "Mostrar editor atual"
+	"bs-saferedit-pref-show-editinguser": "Mostrar editor atual",
+	"bs-saferedit-anonymous-editor": "Utilizador anónimo"
 }

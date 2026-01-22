@@ -32,7 +32,7 @@ class WhoIsOnlinePopupDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.whoisonlinepopup.visualEditorTagDefinition' ];
+		return [ 'ext.bluespice.whoisonlinecount.droplet' ];
 	}
 
 	/**
@@ -68,7 +68,7 @@ class WhoIsOnlinePopupDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'whoisonlinepopupCommand';
+		return 'userslinkCommand';
 	}
 
 }

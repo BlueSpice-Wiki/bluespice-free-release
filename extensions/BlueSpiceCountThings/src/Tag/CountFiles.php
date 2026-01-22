@@ -2,70 +2,74 @@
 
 namespace BlueSpice\CountThings\Tag;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
-use BlueSpice\Tag\GenericHandler;
-use BlueSpice\Tag\Tag;
 use MediaWiki\MediaWikiServices;
-use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
+use MediaWiki\Message\Message;
+use MWStake\MediaWiki\Component\FormEngine\StandaloneFormSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\BooleanValue;
 
-class CountFiles extends Tag {
-
-	public const ATTR_NODUPLICATES = 'noduplicates';
-
-	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return \BlueSpice\CountThings\Tag\CountFilesHandler
-	 */
-	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
-		$loadBalancer = MediaWikiServices::getInstance()->getDBLoadBalancer();
-		return new CountFilesHandler(
-			$loadBalancer,
-			$processedArgs[ static::ATTR_NODUPLICATES ]
-		);
-	}
+class CountFiles extends GenericTag {
 
 	/**
-	 *
-	 * @return string[]
+	 * @inheritDoc
 	 */
-	public function getTagNames() {
+	public function getTagNames(): array {
 		return [ 'bs:countfiles', 'countfiles' ];
 	}
 
 	/**
-	 *
-	 * @return string
+	 * @inheritDoc
 	 */
-	public function getContainerElementName() {
-		return GenericHandler::TAG_SPAN;
+	public function getContainerElementName(): ?string {
+		return 'span';
 	}
 
 	/**
-	 *
-	 * @return bool
+	 * @inheritDoc
 	 */
-	public function disableParserCache() {
-		return true;
+	public function hasContent(): bool {
+		return false;
 	}
 
 	/**
-	 *
-	 * @return ParamDefinition[]
+	 * @inheritDoc
 	 */
-	public function getArgsDefinitions() {
-		return [
-			new ParamDefinition(
-				ParamType::BOOLEAN,
-				static::ATTR_NODUPLICATES,
-				true
-			)
-		];
+	public function getHandler( MediaWikiServices $services ): ITagHandler {
+		return new CountFilesHandler( $services->getDBLoadBalancer() );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getParamDefinition(): ?array {
+		$noDuplicated = ( new BooleanValue() )->setDefaultValue( false );
+
+		return [ 'noduplicates' => $noDuplicated ];
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getClientTagSpecification(): ClientTagSpecification|null {
+		$formSpec = new StandaloneFormSpecification();
+		$formSpec->setItems(
+			[
+				[
+					'type' => 'checkbox',
+					'name' => 'noduplicates',
+					'label' => Message::newFromKey( 'bs-countthings-tag-countfiles-count-duplicates-label' )->text(),
+					'labelAlign' => 'inline'
+				]
+			]
+		);
+
+		return new ClientTagSpecification(
+			'CountFiles',
+			Message::newFromKey( 'bs-countthings-tag-countfiles-desc' ),
+			$formSpec,
+			Message::newFromKey( 'bs-countthings-ve-countfiles-title' )
+		);
 	}
 }

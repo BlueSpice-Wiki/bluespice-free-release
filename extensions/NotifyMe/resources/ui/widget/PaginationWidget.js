@@ -35,6 +35,9 @@ ext.notifyme.ui.widget.PaginationWidget = function ( cfg ) {
 	} );
 
 	this.labelWidget.setLabel( '1 - ' + this.itemPerPage );
+	this.labelWidget.$element.attr( 'aria-label',
+		mw.message( 'notifyme-notification-center-pagination-number-aria-label', '1', this.itemPerPage ).text()
+	);
 	this.$element
 		.addClass( 'notifications-ui-widget-PaginationWidget' )
 		.append(
@@ -124,4 +127,7 @@ ext.notifyme.ui.widget.PaginationWidget.prototype.updateLabel = function () {
 	const label = firstItem + ' - ' + lastItem;
 
 	this.labelWidget.setLabel( label );
+	this.labelWidget.$element.attr( 'aria-label',
+		mw.message( 'notifyme-notification-center-pagination-number-aria-label', firstItem, lastItem ).text()
+	);
 };

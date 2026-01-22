@@ -18,12 +18,10 @@
 	"bs-whoisonline-pref-maxidletime-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for time in seconds until a user is marked as offline. See {{msg-mw|Bs-whoisonline-pref-maxidletime-help-label}}.",
 	"bs-whoisonline-pref-orderby-time": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], option label for uptime.\n\n\"Uptime\" is internally called \"onlinetime\" (Online time).\n{{Identical|Uptime}}",
 	"bs-whoisonline-pref-orderby-name": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], option label for name\n{{Identical|Name}}",
-	"bs-whoisonline-pref-interval-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for update interval in seconds:",
 	"bs-whoisonline-collection-type-userlogin": "Label for source type \"userlogin\" in entry field \"type\"\n{{Identical|User login}}",
 	"bs-whoisonline-collection-var-login": "Label for entry field \"login\"\n{{Identical|Login}}",
 	"bs-whoisonline-statistics-report-login-duration": "Statistics report name",
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Label for the \"value\" axis",
-	"bs-whoisonline-pref-interval-help-label": "Description for config variable \"WhoIsOnlineInterval\"",
 	"bs-whoisonline-pref-maxidletime-help-label": "Description for config variable \"WhoIsOnlineMaxIdleTime\"",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Description for whoisonline tag",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Title for whoisonline tag",
@@ -35,5 +33,7 @@
 	"bs-whoisonline-droplet-count-name": "Title of droplet for tag WhoIsOnlineCount",
 	"bs-whoisonline-droplet-count-description": "Description of droplet for tag WhoIsOnlineCount",
 	"bs-whoisonline-droplet-popup-name": "Title of droplet for tag WhoIsOnlinePopup",
-	"bs-whoisonline-droplet-popup-description": "Description of droplet for tag WhoIsOnlinePopup"
+	"bs-whoisonline-droplet-popup-description": "Description of droplet for tag WhoIsOnlinePopup",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Label for input field to define link text",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Help text for text input field to define link text"
 }

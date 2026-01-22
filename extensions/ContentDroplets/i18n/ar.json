@@ -43,8 +43,5 @@
 	"contentdroplets-droplet-code-name": "شفرة",
 	"contentdroplets-droplet-code-desc": "قسم مميز لأمثلة التعليمات البرمجية",
 	"contentdroplets-droplet-dialog-search-placeholder-label": "ابحث عن قطرات المحتوى",
-	"contentdroplets-toolbar-icon-title": "إضافة قطرات المحتوى",
-	"contentdroplets-droplet-icon-font-size-help": "لضبط حجم الخط، يجب تحديد الوحدة، على سبيل المثال، 15 بكسل، أو 0.83em، أو 1.2rem",
-	"contentdroplets-droplet-icon-color-help": "يمكن استخدام جميع قيم السداسية العشرية (على سبيل المثال، '#3366cc') للألوان، بالإضافة إلى أوصاف ألوان CSS مثل 'yellow' أو 'blue' أو 'black'",
-	"contentdroplets-droplet-icon-orientation-help": "يمكن تعيين قيم لخاصية CSS \"vertical-align\" لضبط محاذاة الرمز: \"baseline\"، أو \"text-top\"، أو \"text-bottom\"، أو \"sub\"، أو \"super\""
+	"contentdroplets-toolbar-icon-title": "إضافة قطرات المحتوى"
 }

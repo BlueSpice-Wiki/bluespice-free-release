@@ -2,7 +2,6 @@
 	"@metadata": {
 		"authors": []
 	},
-	"oojsplus-data-grid-widget-popup-title": "Više stavki",
 	"oojsplus-color-picker-color-blue": "Plava",
 	"oojsplus-color-picker-color-red": "Crvena",
 	"oojsplus-color-picker-color-green": "Zelena",
@@ -21,6 +20,7 @@
 	"oojsplus-dialog-action-create": "Napravi",
 	"oojsplus-dialog-action-add": "Dodaj",
 	"oojsplus-dialog-action-cancel": "Otkaži",
+	"oojsplus-data-grid-widget-popup-title": "Više stavki",
 	"oojsplus-data-grid-filter-label": "Filter",
 	"oojsplus-data-grid-filter-clear": "Očisti",
 	"oojsplus-data-grid-filter-number-value": "Vrednost",
@@ -39,7 +39,6 @@
 	"oojsplus-data-grid-toolbar-settings-columns-label": "Kolone",
 	"oojsplus-data-grid-grouper-no-group": "(nema grupa)",
 	"oojsplus-data-grid-selection-column-label": "Izaberi",
-	"oojsplus-data-grid-filter-close": "Zatvori",
 	"oojsplus-namespace-content": "Imenski prostori sadržaja",
 	"oojsplus-namespace-system": "Sistemski imenski prostori",
 	"oojsplus-namespace-content-talk": "Imenski prostori stranice za razgovor sadržaja",

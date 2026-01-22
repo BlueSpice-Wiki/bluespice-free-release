@@ -23,7 +23,6 @@
 	"bs-discovery-create-button-new-file-title": "ဖိုင်အသစ်တစ်ခု အက်ပလုဒ်တင်ရန်",
 	"bs-discovery-navbar-global-actions-button-title": "ဂလိုဘယ်ဆောင်ရွက်ချက်များ",
 	"bs-discovery-navbar-global-actions-button-aria-label": "ဂလိုဘယ်ဆောင်ရွက်ချက်များ",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "အမည်ညွှန်း",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "စာမျက်နှာများ",
 	"bs-discovery-breadcrumb-nav-node-title": "$1 ကိုဖွင့်ရန်",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "$1 ကိုဖွင့်ရန်",

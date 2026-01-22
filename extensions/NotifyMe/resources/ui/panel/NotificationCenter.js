@@ -4,6 +4,7 @@ ext.notifyme.ui.panel.NotificationCenter = function ( cfg ) {
 	cfg.expanded = false;
 
 	this.filter = 'title-all';
+	this.mobileView = cfg.mobileView || false;
 
 	// Parent constructor
 	ext.notifyme.ui.panel.NotificationCenter.parent.call( this, cfg );
@@ -15,8 +16,6 @@ ext.notifyme.ui.panel.NotificationCenter = function ( cfg ) {
 	this.itemPerPage = cfg.itemPerPage || 10;
 
 	this.addTabs();
-	this.addButtons();
-	this.addAriaNavigationHint();
 
 	this.connect( this, {
 		set: 'tabSelected'
@@ -94,51 +93,30 @@ ext.notifyme.ui.panel.NotificationCenter.prototype.addTabs = function () {
 	);
 
 	this.tabPanelUnread.connect( this, {
-		filterDataRetrieved: 'updateFilter'
+		filterDataRetrieved: 'updateFilter',
+		markAllRead: 'markNotificationsAllRead'
 	} );
 	this.tabPanelRead.connect( this, {
 		filterDataRetrieved: 'updateFilter'
 	} );
 	this.tabPanelAll.connect( this, {
-		filterDataRetrieved: 'updateFilter'
+		filterDataRetrieved: 'updateFilter',
+		markAllRead: 'markNotificationsAllRead'
 	} );
 
 	this.addTabPanels( [ this.tabPanelUnread, this.tabPanelRead, this.tabPanelAll ] );
 };
 
 ext.notifyme.ui.panel.NotificationCenter.prototype.addFilterWidget = function () {
-	this.filterWidget = new ext.notifyme.ui.widget.FilterWidget();
+	this.filterWidget = new ext.notifyme.ui.widget.FilterWidget( {
+		mobileView: this.mobileView
+	} );
 
 	this.filterWidget.connect( this, {
 		selectItem: 'filterItemSelected'
 	} );
 
 	$( '#notifications-overview' ).prepend( this.filterWidget.$element );
-};
-
-ext.notifyme.ui.panel.NotificationCenter.prototype.addButtons = function () {
-	// Settings menu
-	this.settingsMenu = new ext.notifyme.ui.widget.HelpMenuWidget( { framed: true } );
-
-	this.settingsMenu.connect( this, { markAllRead: 'markNotificationsAllRead' } );
-
-	// Settings menu should not be part of tabs layout itself,
-	// for tabs to work correctly with switching using keyboard arrows,
-	// but still should be visually on the same line with tabs (by design)
-	this.tabSelectWidget.$element.parent().append( this.settingsMenu.$element );
-};
-
-ext.notifyme.ui.panel.NotificationCenter.prototype.addAriaNavigationHint = function () {
-	// Make sure the accessibility tip is focussable so that keyboard users take notice,
-	// but hide it by default to reduce visual clutter.
-	// Make sure it becomes visible when focused.
-	const $navigationHint = $( '<div>' ).addClass( 'notifications-ui-widget-TabSelectWidget-navigation-hint' )
-		.text( mw.msg( 'notifyme-notification-center-navigation-hint' ) )
-		.attr( {
-			tabIndex: 0
-		} );
-
-	this.tabSelectWidget.$element.parent().prepend( $navigationHint );
 };
 
 /**

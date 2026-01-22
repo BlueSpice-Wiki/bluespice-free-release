@@ -13,6 +13,7 @@ class UserRecord extends Record {
 	public const USER_EMAIL = 'user_email';
 	public const GROUPS = 'groups';
 	public const GROUPS_RAW = 'groups_raw';
+	public const GROUPS_ALL = 'groups_all';
 	public const ENABLED = 'enabled';
 	public const DISPLAY_NAME = 'display_name';
 	public const DISPLAY_HTML = 'display_html';

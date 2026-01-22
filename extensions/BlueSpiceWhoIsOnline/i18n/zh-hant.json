@@ -27,8 +27,5 @@
 	"bs-whoisonline-droplet-count-name": "已登入使用者數",
 	"bs-whoisonline-droplet-count-description": "目前已登入使用者數",
 	"bs-whoisonline-droplet-popup-name": "已登入使用者清單",
-	"bs-whoisonline-droplet-popup-description": "目前已登入所有使用者清單的彈跳視窗",
-	"bs-whoisonline-pref-maxidletime-label": "離線逾時時間（秒）",
-	"bs-whoisonline-pref-maxidletime-help-label": "超過連續無互動秒數後，使用者會被標記為離線",
-	"bs-whoisonline-statistics-report-login-number-desc": "所選期間的每日登入次數"
+	"bs-whoisonline-droplet-popup-description": "目前已登入所有使用者清單的彈跳視窗"
 }

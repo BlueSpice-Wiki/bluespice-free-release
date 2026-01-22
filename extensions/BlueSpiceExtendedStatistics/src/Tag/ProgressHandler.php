@@ -2,64 +2,68 @@
 
 namespace BlueSpice\ExtendedStatistics\Tag;
 
-use BlueSpice\Tag\Handler;
 use BsPageContentProvider;
-use MediaWiki\Context\RequestContext;
 use MediaWiki\Html\Html;
 use MediaWiki\Message\Message;
+use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\PPFrame;
+use MediaWiki\Title\Title;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
-class ProgressHandler extends Handler {
+class ProgressHandler implements ITagHandler {
 
 	/**
-	 * @return string
+	 * @param BsPageContentProvider $pageContentProvider
+	 * @param Title|null $title
 	 */
-	public function handle() {
-		$this->parser->getOutput()->setPageProperty( 'bs-tag-statistics-progress', 1 );
-		$iBaseCount = $this->processedArgs[Progress::ATTR_BASE_COUNT];
-		$sBaseItem  = $this->processedArgs[Progress::ATTR_BASE_ITEM];
-		$sFraction  = $this->processedArgs[Progress::ATTR_PROGRESS_ITEM];
-		$iWidth     = $this->processedArgs[Progress::ATTR_WIDTH];
+	public function __construct(
+		private readonly BsPageContentProvider $pageContentProvider,
+		private readonly ?Title $title
+	) {
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
+		$parser->getOutput()->setPageProperty( 'bs-tag-statistics-progress', 1 );
 
 		// no Article when in cli mode
-		if ( !RequestContext::getMain()->getTitle() ) {
+		if ( !$this->title ) {
 			return '';
 		}
 
-		$sText = BsPageContentProvider::getInstance()->getContentFromTitle(
-			RequestContext::getMain()->getTitle()
-		);
+		$text = $this->pageContentProvider->getContentFromTitle( $this->title );
 
 		// substract 1 because one item is in the progressitem attribute
-		$iFraction = substr_count( $sText, $sFraction ) - 1;
+		$fraction = substr_count( $text, $params['progressitem'] ) - 1;
 
-		if ( $sBaseItem ) {
-			$iBase = substr_count( $sText, $sBaseItem ) - 1;
+		if ( $params['baseitem'] ) {
+			$base = substr_count( $text, $params['baseitem'] ) - 1;
 		} else {
-			$iBase = $iBaseCount;
+			$base = $params['basecount'];
 		}
 
-		$fPercent = $iFraction / $iBase;
-
-		$iWidthGreen = floor( $iWidth * $fPercent );
-		$iWidthRemain = $iWidth - $iWidthGreen;
-
-		$sPercent = sprintf( "%0.1f", $fPercent * 100 );
-		$sBar = Html::rawElement(
+		$percent = $fraction / $base;
+		if ( $percent < 0 ) {
+			$percent = 0;
+		}
+		$percent = sprintf( "%0.1f", $percent * 100 );
+		$bar = Html::rawElement(
 			'div',
 			[
 				'class' => 'progress',
-				'style' => 'height: 25px; width:' . $iWidth . 'px;',
+				'style' => 'height: 25px; width:' . $params['width'] . 'px;',
 			],
 			Html::element(
 				'div',
 				[
 					'class' => 'progress-bar bg-success',
-					'style' => 'width:' . $sPercent . '%;',
+					'style' => 'width:' . $percent . '%;',
 				],
-				$sPercent . '%'
+				$percent . '%'
 			)
 		);
-		$sOut = Message::newFromKey( 'bs-statistics-tag-progress-label-text', $sBar )->text();
-		return $sOut;
+		return Message::newFromKey( 'bs-statistics-tag-progress-label-text', $bar )->text();
 	}
 }

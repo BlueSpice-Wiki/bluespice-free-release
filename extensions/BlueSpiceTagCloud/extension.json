@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceTagCloud",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceTagCloud",
 	"author": [
 		"Patric Wirth"
@@ -18,9 +18,6 @@
 					"status": "beta"
 				}
 			},
-			"TagRegistry": {
-				"tagcloud": "\\BlueSpice\\TagCloud\\Tag\\TagCloud"
-			},
 			"RendererRegistry": {
 				"tagcloudtext": "\\BlueSpice\\TagCloud\\Renderer\\TagCloud\\Text::factory",
 				"tagcloudlist": "\\BlueSpice\\TagCloud\\Renderer\\TagCloud\\LinkList::factory",
@@ -36,11 +33,6 @@
 				"list": "tagcloudlist",
 				"canvas3d": "tagcloudcanvas3d"
 			}
-		},
-		"BlueSpiceVisualEditorConnector": {
-			"TagDefinitions": [
-				"ext.bluespice.tagcloud.visualEditorPlugin"
-			]
 		},
 		"ContentDroplets": {
 			"Droplets": {
@@ -94,41 +86,16 @@
 				"ext.bluespice"
 			]
 		},
-		"ext.bluespice.tagcloud.visualEditorPlugin": {
-			"scripts": [
-				"bs.tgcld/util/tag/TagCloudDefinition.js"
-			],
-			"styles": [
-				"bluespice.tagcloud.droplet.css",
-				"bs.tgcld/oojs.icon.css"
-			],
-			"messages": [
-				"bs-tagcloud-tag-tagcloud-name",
-				"bs-tagcloud-tag-tagcloud-title",
-				"bs-tagcloud-tag-tagcloud-desc",
-				"bs-tagcloud-tag-tagcloud-attr-renderer-label",
-				"bs-tagcloud-tag-tagcloud-attr-renderer-help",
-				"bs-tagcloud-tag-tagcloud-attr-renderer-option-text",
-				"bs-tagcloud-tag-tagcloud-attr-renderer-option-list",
-				"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d",
-				"bs-tagcloud-tag-tagcloud-attr-store-label",
-				"bs-tagcloud-tag-tagcloud-attr-store-help",
-				"bs-tagcloud-tag-tagcloud-attr-store-option-category",
-				"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats",
-				"bs-tagcloud-tag-tagcloud-attr-width-label",
-				"bs-tagcloud-tag-tagcloud-attr-width-help",
-				"bs-tagcloud-tag-tagcloud-attr-showcount-label",
-				"bs-tagcloud-tag-tagcloud-attr-showcount-help",
-				"bs-tagcloud-tag-tagcloud-attr-minsize-label",
-				"bs-tagcloud-tag-tagcloud-attr-minsize-help",
-				"bs-tagcloud-tag-tagcloud-attr-maxsize-label",
-				"bs-tagcloud-tag-tagcloud-attr-maxsize-help",
-				"bs-tagcloud-tag-tagcloud-attr-exclude-label",
-				"bs-tagcloud-tag-tagcloud-attr-exclude-help"
-			],
-			"dependencies": [
-				"ext.bluespice.visualEditorConnector.tags.classes"
-			]
+		"ext.bluespice.tagcloud.droplet": {
+			"styles": "bluespice.tagcloud.droplet.css"
+		}
+	},
+	"Hooks": {
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
+	},
+	"HookHandlers": {
+		"registerTags": {
+			"class": "\\BlueSpice\\TagCloud\\Hook\\RegisterTags"
 		}
 	},
 	"ResourceFileModulePaths": {

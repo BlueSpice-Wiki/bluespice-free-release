@@ -29,7 +29,8 @@ return [
 		}
 		return new ChannelFactory(
 			ExtensionRegistry::getInstance()->getAttribute( 'NotifyMeChannels' ),
-			$services->getObjectFactory()
+			$services->getObjectFactory(),
+			$services->getHookContainer()
 		);
 	},
 	'NotifyMe.Serializer' => static function ( MediaWikiServices $services ) {
@@ -87,7 +88,8 @@ return [
 			$services->getRevisionLookup(),
 			$services->getParserFactory(),
 			$services->getUserOptionsLookup(),
-			$services->getContentLanguage()
+			$services->getContentLanguage(),
+			$services->getRepoGroup()
 		);
 	},
 	'NotifyMe.WebQueryStore' => static function ( MediaWikiServices $services ) {

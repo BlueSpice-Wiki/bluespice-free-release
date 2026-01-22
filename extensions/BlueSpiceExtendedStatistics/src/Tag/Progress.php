@@ -2,106 +2,100 @@
 
 namespace BlueSpice\ExtendedStatistics\Tag;
 
-use BlueSpice\ParamProcessor\IParamDefinition;
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
-use BlueSpice\Tag\MarkerType;
-use BlueSpice\Tag\MarkerType\NoWiki;
-use BlueSpice\Tag\Tag;
-use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
+use BsPageContentProvider;
+use MediaWiki\Context\RequestContext;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
+use MWStake\MediaWiki\Component\FormEngine\StandaloneFormSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\IntValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\StringValue;
 
-class Progress extends Tag {
-	public const ATTR_BASE_COUNT = 'basecount';
-	public const ATTR_BASE_ITEM = 'baseitem';
-	public const ATTR_PROGRESS_ITEM = 'progressitem';
-	public const ATTR_WIDTH = 'width';
+class Progress extends GenericTag {
 
 	/**
-	 *
+	 * @inheritDoc
+	 */
+	public function getTagNames(): array {
+		return [ 'bs:statistics:progress' ];
+	}
+
+	/**
 	 * @return bool
 	 */
-	public function needsParsedInput() {
+	public function hasContent(): bool {
 		return false;
 	}
 
 	/**
-	 *
-	 * @return bool
+	 * @inheritDoc
 	 */
-	public function needsParseArgs() {
-		return false;
-	}
-
-	/**
-	 *
-	 * @return MarkerType
-	 */
-	public function getMarkerType() {
-		return new NoWiki();
-	}
-
-	/**
-	 * @return bool
-	 */
-	public function needsDisabledParserCache() {
-		return true;
-	}
-
-	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return WatchlistHandler
-	 */
-	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
+	public function getHandler( MediaWikiServices $services ): ITagHandler {
 		return new ProgressHandler(
-			$processedInput,
-			$processedArgs,
-			$parser,
-			$frame
+			BsPageContentProvider::getInstance(),
+			RequestContext::getMain()->getTitle()
 		);
 	}
 
 	/**
-	 *
-	 * @return string[]
+	 * @inheritDoc
 	 */
-	public function getTagNames() {
+	public function getParamDefinition(): ?array {
+		$count = ( new IntValue() )->setDefaultValue( 100 );
+		$baseItem = ( new StringValue() )->setDefaultValue( '' );
+		$progressItem = ( new StringValue() )->setDefaultValue( 'OK' );
+		$width = ( new IntValue() )->setDefaultValue( 100 );
+
 		return [
-			'bs:statistics:progress',
+			'basecount' => $count,
+			'baseitem' => $baseItem,
+			'progressitem' => $progressItem,
+			'width' => $width
 		];
 	}
 
 	/**
-	 * @return IParamDefinition[]
+	 * @inheritDoc
 	 */
-	public function getArgsDefinitions() {
-		return [
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_BASE_COUNT,
-				100
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_BASE_ITEM,
-				''
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_PROGRESS_ITEM,
-				'OK'
-			),
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_WIDTH,
-				100
-			)
-		];
-	}
+	public function getClientTagSpecification(): ClientTagSpecification|null {
+		$formSpec = new StandaloneFormSpecification();
+		$formSpec->setItems( [
+			[
+				'type' => 'number',
+				'name' => 'basecount',
+				'label' => Message::newFromKey( 'bs-statistics-ve-progress-attr-basecount-label' )->text(),
+				'help' => Message::newFromKey( 'bs-statistics-ve-progress-attr-basecount-help' )->text(),
+				'value' => 100
+			],
+			[
+				'type' => 'text',
+				'name' => 'baseitem',
+				'label' => Message::newFromKey( 'bs-statistics-ve-progress-attr-baseitem-label' )->text(),
+				'help' => Message::newFromKey( 'bs-statistics-ve-progress-attr-baseitem-help' )->text(),
+			],
+			[
+				'type' => 'text',
+				'name' => 'progressitem',
+				'label' => Message::newFromKey( 'bs-statistics-ve-progress-attr-progressitem-label' )->text(),
+				'help' => Message::newFromKey( 'bs-statistics-ve-progress-attr-progressitem-help' )->text(),
+				'value' => 'OK'
+			],
+			[
+				'type' => 'number',
+				'name' => 'width',
+				'label' => Message::newFromKey( 'bs-statistics-ve-progress-attr-width-label' )->text(),
+				'help' => Message::newFromKey( 'bs-statistics-ve-progress-attr-width-help' )->text(),
+				'value' => 150
+			]
+		] );
 
+		return new ClientTagSpecification(
+			'Progress',
+			Message::newFromKey( 'bs-statistics-tag-progress-desc' ),
+			$formSpec,
+			Message::newFromKey( 'bs-statistics-ve-progressinspector-title' )
+		);
+	}
 }

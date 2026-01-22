@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceQrCode",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Josef Konrad"
@@ -22,15 +22,7 @@
 					"extPath": "/BlueSpiceQrCode",
 					"package": "BlueSpice Pro"
 				}
-			},
-			"TagRegistry": {
-				"qrcode": "\\BlueSpice\\QrCode\\Tag\\QrCode"
 			}
-		},
-		"BlueSpiceVisualEditorConnector": {
-			"TagDefinitions": [
-				"ext.bluespice.qrCode.visualEditor"
-			]
 		},
 		"ContentDroplets": {
 			"Droplets": {
@@ -73,30 +65,9 @@
 				"ext.bluespice.oojs"
 			]
 		},
-		"ext.bluespice.qrCode.visualEditor": {
-			"scripts": [
-				"util/tag/QrCodeDefinition.js"
-			],
+		"ext.bluespice.qrCode.droplet": {
 			"styles": [
 				"stylesheets/ext.bluespice.qrcode.droplet.css"
-			],
-			"messages": [
-				"bs-qr-code-tag-qrcode-desc",
-				"bs-qr-code-tag-qrcode-title",
-				"bs-qr-code-tag-attr-page-label",
-				"bs-qr-code-tag-attr-page-help",
-				"bs-qr-code-tag-attr-query-label",
-				"bs-qr-code-tag-attr-query-help",
-				"bs-qr-code-tag-attr-desc-label",
-				"bs-qr-code-tag-attr-desc-help",
-				"bs-qr-code-tag-attr-size-label",
-				"bs-qr-code-tag-attr-size-help",
-				"bs-qr-code-tag-attr-size-option-small",
-				"bs-qr-code-tag-attr-size-option-medium",
-				"bs-qr-code-tag-attr-size-option-large"
-			],
-			"dependencies": [
-				"ext.bluespice.visualEditorConnector.tags.classes"
 			]
 		}
 	},
@@ -114,6 +85,10 @@
 		"registerDynamicFileModule": {
 			"class": "\\BlueSpice\\QrCode\\Hook\\RegisterDynamicFileModule",
 			"services": [ "TitleFactory" ]
+		},
+		"registerTags": {
+			"class": "\\BlueSpice\\QrCode\\HookHandler\\RegisterTags",
+			"services": [ "TitleFactory", "PermissionManager" ]
 		}
 	},
 	"Hooks": {
@@ -127,7 +102,8 @@
 			"discovery-skin"
 		],
 		"SetupAfterCache": "\\BlueSpice\\QrCode\\Hook\\SetupAfterCache\\AddFileRepo::callback",
-		"MWStakeDynamicFileDispatcherRegisterModule": "registerDynamicFileModule"
+		"MWStakeDynamicFileDispatcherRegisterModule": "registerDynamicFileModule",
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
 	},
 	"APIModules": {
 		"bs-qr-code": "\\BlueSpice\\QrCode\\Api\\QrCodeApi"

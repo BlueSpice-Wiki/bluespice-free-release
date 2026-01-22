@@ -4,7 +4,6 @@
 			"BaRaN6161 TURK",
 			"Can",
 			"KediÇobanı",
-			"SaldırganSincap",
 			"Sayginer",
 			"ToprakM"
 		]
@@ -16,7 +15,7 @@
 	"bs-avatars-generate-complete": "Yeni bir avatar oluşturuldu.",
 	"bs-avatars-upload-label": "Resim",
 	"bs-avatars-generate-new-label": "Yeni avatar oluştur",
-	"bs-avatars-file-upload-fieldset-title": "Yeni bir resim yükle",
+	"bs-avatars-file-upload-fieldset-title": "Resim yükleme",
 	"bs-avatars-auto-generate-fieldset-title": "Otomatik avatar oluştur",
 	"apihelp-bs-avatars-tasks-summary": "Kullanıcı avatarlarını yükleme, oluşturma ve ayarlama",
 	"bs-avatars-tag-profileimage-error-invalidusername": "\"Kullanıcı adı\" parametresi gerekli ve geçerli bir kullanıcı adı içermelidir"

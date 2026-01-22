@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceExtendedStatistics",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceExtendedStatistics",
 	"author": [
 		"Markus Glaser",
@@ -48,9 +48,6 @@
 						"maintenanceadmin"
 					]
 				}
-			},
-			"TagRegistry": {
-				"progress": "\\BlueSpice\\ExtendedStatistics\\Tag\\Progress"
 			}
 		},
 		"BlueSpiceExtendedStatistics": {
@@ -71,11 +68,6 @@
 				"BsDiagramSearches": "\\BsDiagramSearches::factory"
 			},
 			"PluginModules": []
-		},
-		"BlueSpiceVisualEditorConnector": {
-			"TagDefinitions": [
-				"ext.bluespice.extendedstatistics.visualEditorTagDefinition"
-			]
 		},
 		"ContentDroplets": {
 			"Droplets": {
@@ -128,7 +120,13 @@
 	"load_composer_autoloader": true,
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\ExtendedStatistics\\Hook\\LoadExtensionSchemaUpdates\\AddSnapshotTable::callback",
-		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSUsageTrackerRegisterCollectors\\AddStatisticsProgressTag::callback"
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\ExtendedStatistics\\Hook\\BSUsageTrackerRegisterCollectors\\AddStatisticsProgressTag::callback",
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
+	},
+	"HookHandlers": {
+		"registerTags": {
+			"class": "\\BlueSpice\\ExtendedStatistics\\Hook\\RegisterTags"
+		}
 	},
 	"config_prefix": "bsg",
 	"config": {
@@ -223,26 +221,8 @@
 				"bs-ns_main"
 			]
 		},
-		"ext.bluespice.extendedstatistics.visualEditorTagDefinition": {
-			"scripts": [
-				"bs.extendedstatistics/util/tag/ProgressDefinition.js"
-			],
-			"styles": "bluespice.statistics.droplet.css",
-			"messages": [
-				"bs-statistics-tag-progress-desc",
-				"bs-statistics-ve-progressinspector-title",
-				"bs-statistics-ve-progress-attr-basecount-label",
-				"bs-statistics-ve-progress-attr-basecount-help",
-				"bs-statistics-ve-progress-attr-baseitem-label",
-				"bs-statistics-ve-progress-attr-baseitem-help",
-				"bs-statistics-ve-progress-attr-progressitem-label",
-				"bs-statistics-ve-progress-attr-progressitem-help",
-				"bs-statistics-ve-progress-attr-width-label",
-				"bs-statistics-ve-progress-attr-width-help"
-			],
-			"dependencies": [
-				"ext.bluespice.visualEditorConnector.tags.classes"
-			]
+		"ext.bluespice.extendedstatistics.droplet": {
+			"styles": "bluespice.statistics.droplet.css"
 		}
 	},
 	"ResourceFileModulePaths": {

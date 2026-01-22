@@ -1,6 +1,6 @@
 {
 	"name": "EnhancedStandardUIs",
-	"version": "2.0.4",
+	"version": "2.1.1",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
@@ -58,7 +58,8 @@
 	"ExtensionMessagesFiles": {
 		"EnhancedAllPagesAlias": "languages/EnhancedAllPages.i18n.alias.php",
 		"EnhancedFilelist": "languages/EnhancedFilelist.i18n.alias.php",
-		"EnhancedSpecialPages": "languages/EnhancedSpecialPages.i18n.alias.php"
+		"EnhancedSpecialPages": "languages/EnhancedSpecialPages.i18n.alias.php",
+		"EnhancedPreferences": "languages/EnhancedPreferences.i18n.alias.php"
 	},
 	"MessagesDirs": {
 		"EnhancedStandardUIs": [
@@ -68,7 +69,11 @@
 	"SpecialPages": {
 		"EnhancedAllPages": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedAllPages",
 		"EnhancedFilelist": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedFilelist",
-		"EnhancedSpecialPages": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedSpecialPages"
+		"EnhancedSpecialPages": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedSpecialPages",
+		"EnhancedPreferences": {
+			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedPreferences",
+			"services": [ "PreferencesFactory", "MainConfig", "MessageFormatterFactory" ]
+		}
 	},
 	"config": {
 		"EnhancedUIsVersionHistoryToolbarOffset": {
@@ -91,6 +96,20 @@
 		"EnhancedUIsVersionHistoryDiffMode": {
 			"value": "visual",
 			"public": true
+		},
+		"EnhancedUIsPrefSectionIcons": {
+			"value": {
+				"editing": "edit",
+				"extendedsearch": "search",
+				"notifications": "bell",
+				"personal": "userAvatar",
+				"rc": "history",
+				"rendering": "palette",
+				"watchlist": "watchlist"
+			}
+		},
+		"EnhancedUIsSpecialPreferencesOverride": {
+			"value": false
 		}
 	},
 	"Hooks": {
@@ -100,7 +119,8 @@
 			"addFilePath"
 		],
 		"SpecialPage_initList": "special-pages",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "registerGlobalActions"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "registerGlobalActions",
+		"MessageCacheFetchOverrides": "overrideMessages"
 	},
 	"HookHandlers": {
 		"userpreference": {
@@ -120,6 +140,9 @@
 		},
 		"registerGlobalActions": {
 			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\RegisterGlobalActions"
+		},
+		"overrideMessages": {
+			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\MessageCacheFetchGetOverrides"
 		}
 	},
 	"DefaultUserOptions": {
@@ -213,7 +236,6 @@
 				"enhanced-standard-uis-allpages-namespace-list-label",
 				"enhanced-standard-uis-paginator-aria-label",
 				"enhanced-standard-uis-allpages-watch-label",
-				"enhanced-standard-uis-allpages-unwatch-label",
 				"enhanced-standard-uis-allpages-pageinfo-label",
 				"enhanced-standard-uis-allpages-filter-results-label",
 				"enhanced-standard-uis-allpages-untitled",
@@ -221,7 +243,9 @@
 				"enhanced-standard-uis-allpages-empty-namespaces-text",
 				"enhanced-standard-uis-allpages-empty-pages-text",
 				"enhanced-standard-uis-allpages-namespace-badge-aria-label",
-				"enhanced-standard-uis-allpages-page-tree-item-expander-label"
+				"enhanced-standard-uis-allpages-page-tree-item-expander-label",
+				"enhanced-standard-uis-paginator-page-aria-label",
+				"enhanced-standard-uis-allpages-section-heading-aria-label"
 			],
 			"dependencies": [
 				"oojs-ui",
@@ -286,7 +310,9 @@
 				"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label",
 				"enhanced-standard-uis-filelist-notify-copy-clipboard",
 				"enhanced-standard-uis-filelist-grid-preview-title",
-				"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label"
+				"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label",
+				"enhanced-standard-uis-filelist-panel-select-view-aria-label",
+				"enhanced-standard-uis-filelist-panel-search-aria-label"
 			],
 			"dependencies": [
 				"oojs-ui",
@@ -320,6 +346,46 @@
 			"dependencies": [
 				"ext.enhancedstandarduis.filelist.panel"
 			]
+		},
+		"ext.enhancedstandarduis.special.preferences": {
+			"es6": true,
+			"packageFiles": [
+				"ext.enhancedUI.special.preferences.js",
+				"panel/PreferencesPanel.js",
+				"booklet/pages/PreferencesPage.js",
+				{
+					"name": "booklet/pages/icons.json",
+					"config": { "icons": "EnhancedUIsPrefSectionIcons" }
+				},
+				"dialog/ResetPrefsDialog.js"
+			],
+			"styles": {
+				"stylesheets/ext.enhancedUI.special.preferences.css": {},
+				"stylesheets/ext.enhancedUI.special.preferences.sm.css": { "media": "all and ( max-width: 767px )" }
+			},
+			"messages": [
+				"enhanced-standard-uis-prefs-panel-search-label",
+				"savedprefs",
+				"enhanced-standard-uis-prefs-reset-dlg-title",
+				"cancel",
+				"enhanced-standard-uis-prefs-reset-dlg-action-label",
+				"enhanced-standard-uis-prefs-reset-dlg-confirm-label",
+				"enhanced-standard-uis-prefs-reset-button-label",
+				"enhanced-standard-uis-prefs-reset-notify",
+				"enhanced-standard-uis-prefs-menu-aria-label"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"oojs-ui.styles.icons-user",
+				"oojs-ui.styles.icons-alerts",
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-editing-core",
+				"oojs-ui.styles.icons-editing-advanced",
+				"ext.oOJSPlus.managerPanel",
+				"ext.oOJSPlus.widgets",
+				"mediawiki.widgets.SelectWithInputWidget",
+				"mediawiki.confirmCloseWindow"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -345,6 +411,23 @@
 				"NamespaceInfo",
 				"LanguageFactory"
 			]
+		},
+		{
+			"path": "/standarduis/preferences",
+			"method": "POST",
+			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\Rest\\SavePreferences",
+			"services": [
+				"UserOptionsManager",
+				"PreferencesFactory",
+				"SpecialPageFactory",
+				"MainConfig"
+			]
+		},
+		{
+			"path": "/standarduis/reset-preferences",
+			"method": "POST",
+			"class": "MediaWiki\\Extension\\EnhancedStandardUIs\\Rest\\ResetPreferences",
+			"services": [ "UserOptionsManager" ]
 		}
 	],
 	"manifest_version": 2,

@@ -7,12 +7,6 @@
 	"bs-saferedit-desc": "Emitte advertimentos si altere usatores modifica le pagina",
 	"bs-saferedit-user-editing": "$1 modifica justo ora iste pagina{{PLURAL:$2|}}{{GENDER:$1|}}",
 	"bs-saferedit-someone-editing": "Qualcuno modifica justo ora iste pagina",
-	"bs-saferedit-pref-interval": "Intervallo de verification de modificationes concurrente:",
-	"bs-saferedit-pref-shownameofeditinguser": "Monstrar le nomine del autor actual",
-	"bs-saferedit-pref-interval-help": "Defini le tempore in secundas pro verificar si un altere persona modifica presentemente le pagina.",
-	"bs-saferedit-pref-shownameofeditinguser-help": "Monstra le usatores que modifica presentemente le pagina como aviso in alto del pagina.",
-	"bs-saferedit-pref-edit-interval": "Intervallo pro le controlo de modification (in secundas)",
-	"bs-saferedit-pref-edit-interval-help": "Specifica le frequentia, in secundas, pro verificar si un altere persona modifica le pagina (valor predefinite: 3 secundas)",
 	"bs-saferedit-pref-show-editinguser": "Monstrar le redactor actual",
 	"bs-saferedit-pref-show-editinguser-help": "Adde al initio del pagina le nomine del usator qui modifica actualmente le pagina",
 	"bs-saferedit-anonymous-editor": "Usator anonyme"

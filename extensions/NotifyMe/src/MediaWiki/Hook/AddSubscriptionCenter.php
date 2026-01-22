@@ -48,8 +48,8 @@ class AddSubscriptionCenter implements GetPreferencesHook, UserGetDefaultOptions
 		HTMLForm::$typeMappings['notifications-subscriptions'] = NotificationsSubscriptionsElement::class;
 		$preferences['ext-notification-subscriptions'] = [
 			'type' => 'notifications-subscriptions',
-			'section' => 'notifications',
-			'rl-modules' => $additionalModules,
+			'section' => 'notifications/subs',
+			'rl-modules' => array_merge( [ 'ext.notifyme.subscription-preferences' ], $additionalModules ),
 			'value' => [
 				'configuration' => $config,
 				'bucketData' => $this->configurator->getBucketData(),

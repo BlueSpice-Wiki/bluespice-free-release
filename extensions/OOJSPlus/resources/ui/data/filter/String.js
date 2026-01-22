@@ -16,8 +16,12 @@ OOJSPlus.ui.data.filter.String.prototype.getLayout = function () {
 		change: 'changeValue'
 	} );
 
+	let label = mw.message( 'oojsplus-data-grid-filter-label' ).text();
+	if ( this.filterName !== '' ) {
+		label = mw.message( 'oojsplus-data-grid-filter-input-label', this.filterName ).text();
+	}
 	return new OO.ui.FieldLayout( this.input, {
-		label: mw.message( 'oojsplus-data-grid-filter-label' ).text(),
+		label: label,
 		align: 'top'
 	} );
 };
@@ -39,6 +43,7 @@ OOJSPlus.ui.data.filter.String.prototype.setValue = function ( value ) {
 
 OOJSPlus.ui.data.filter.String.prototype.clearValues = function () {
 	this.input.setValue( '' );
+	OOJSPlus.ui.data.filter.String.parent.prototype.clearValues.call( this );
 };
 
 OOJSPlus.ui.data.filter.String.prototype.matches = function ( value ) {

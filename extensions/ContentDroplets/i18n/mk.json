@@ -42,8 +42,5 @@
 	"contentdroplets-droplet-code-name": "Код",
 	"contentdroplets-droplet-code-desc": "Истакнат оддел за кодни примери",
 	"contentdroplets-droplet-dialog-search-placeholder-label": "Пребарај содржински капки",
-	"contentdroplets-toolbar-icon-title": "Додај содржински капики",
-	"contentdroplets-droplet-icon-font-size-help": "За да ја прилагодите големината на фонтот, ќе мора да наведете единица, како на пр. 15px, 0.83em или 1.2rem",
-	"contentdroplets-droplet-icon-color-help": "Сите шеснаесетеречни вредности (на пр. „#3366cc“) може д асе користат за бои, како и како CSS-описи на бои како „yellow“, „blue“ или „black“",
-	"contentdroplets-droplet-icon-orientation-help": "За CSS-својството може да се зададат вредности „vertical-align“ за да се приалгоди порамнетоста на иконата: „baseline“, „text-top“, „text-bottom“, „sub“ или „super“"
+	"contentdroplets-toolbar-icon-title": "Додај содржински капики"
 }

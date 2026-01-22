@@ -14,7 +14,6 @@
 	"notifyme-notification-center-filter-label-namespaces": "Именски простори",
 	"notifyme-notification-center-filter-label-categories": "Категорије",
 	"notifyme-notification-center-filter-label-categories-none": "Нема категорије",
-	"notifyme-event-discussion-edit-bot": "Нови пост на Вашој дискусионој страници $1",
 	"notifyme-event-page-linked-bot": "Ваша страница $1 је повезана са страницом $2",
 	"notifyme-event-page-edit-revert": "{{GENDER:$1|вратио|вратила}} Вашу измену странице $2",
 	"notifyme-notifications-group-mark-group-as-unread-label": "Означи групу непрочитаном",

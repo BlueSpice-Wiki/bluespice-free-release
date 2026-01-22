@@ -1,7 +1,6 @@
-body.mediawiki,
-body.mediawiki.x-body {
+body.mediawiki {
 	font-family: 'Lato';
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: normal;
 	background-color: var( --body-bg );
 
@@ -67,12 +66,12 @@ a.ico-btn:focus-visible {
 }
 
 legend {
-	font-size: 15px !important;
+	font-size: 0.9375rem !important;
 	font-weight: normal;
 }
 
 label {
-	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 /* Hide smw loading indicator - results in swining conent! */

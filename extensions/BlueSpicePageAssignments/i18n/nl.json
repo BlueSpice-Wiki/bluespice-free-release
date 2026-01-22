@@ -69,6 +69,7 @@
 	"bs-pageassignments-collection-var-unassignedpages": "Niet-toegewezen pagina's",
 	"bs-pageassignments-pageheader-label": "Toewijzingen",
 	"bs-pageassignments-statistics-report-assigned-pages": "Toegewezen pagina's",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Toegewezen en niet toegewezen pagina’s in de geselecteerde periode, te filteren op categorie en naamruimte",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Toegewezen",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Niet toegewezen",
 	"bs-pageassignments-dialog-input-placeholder": "Toewijzingen toevoegen…",
@@ -91,6 +92,5 @@
 	"bs-pageassignments-header-action-delete": "Verwijderen",
 	"bs-pageassignments-title-edit": "Toewijzingen bewerken",
 	"bs-pageassignments-title-delete": "Toewijzingen intrekken",
-	"bs-pageassignments-show-unassigned-pages": "Niet-toegewezen pagina’s weergeven",
-	"bs-pageassignments-statistics-report-assigned-pages-desc": "Toegewezen en niet toegewezen pagina’s in de geselecteerde periode, te filteren op categorie en naamruimte"
+	"bs-pageassignments-show-unassigned-pages": "Niet-toegewezen pagina’s weergeven"
 }

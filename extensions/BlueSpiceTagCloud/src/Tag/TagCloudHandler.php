@@ -2,55 +2,38 @@
 
 namespace BlueSpice\TagCloud\Tag;
 
-use BlueSpice\Tag\Handler;
 use BlueSpice\TagCloud\Context;
+use BlueSpice\TagCloud\Factory;
 use BlueSpice\TagCloud\Renderer;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Context\RequestContext;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\PPFrame;
 use MediaWiki\User\UserFactory;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
-class TagCloudHandler extends Handler {
+class TagCloudHandler implements ITagHandler {
 
-	/**
-	 * @var UserFactory
-	 */
-	private $userFactory = null;
-
-	/**
-	 * @var ConfigFactory
-	 */
-	private $configFactory = null;
-
-	/**
-	 * @param string $input
-	 * @param array $args
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @param UserFactory $userFactory
-	 * @param ConfigFactory $configFactory
-	 */
-	public function __construct( $input, array $args, Parser $parser,
-		 PPFrame $frame, UserFactory $userFactory, ConfigFactory $configFactory ) {
-		parent::__construct( $input, $args, $parser, $frame );
-		$this->userFactory = $userFactory;
-		$this->configFactory = $configFactory;
+	public function __construct(
+		private readonly Factory $factory,
+		private readonly UserFactory $userFactory,
+		private readonly ConfigFactory $configFactory
+	) {
 	}
 
-	public function handle() {
-		$storeType = '';
-		// backwards compatibility
-		if ( isset( $this->processedArgs['type'] ) ) {
-			$storeType = $this->processedArgs['type'];
-		} elseif ( isset( $this->processedArgs['store'] ) ) {
-			$storeType = $this->processedArgs['store'];
+	/**
+	 * @inheritDoc
+	 */
+	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
+		if ( isset( $params['type'] ) && $params['type'] !== '' ) {
+			$storeType = $params['type'];
+		} elseif ( isset( $params['store'] ) ) {
+			$storeType = $params['store'];
 		} else {
-			$storeType = $this->getFactory()->getDefaultStoreType();
+			$storeType = $this->factory->getDefaultStoreType();
 		}
 
-		$user = $this->userFactory->newFromUserIdentity( $this->parser->getUserIdentity() );
+		$user = $this->userFactory->newFromUserIdentity( $parser->getUserIdentity() );
 		$config = $this->configFactory->makeConfig( 'bsg' );
 
 		$context = new Context(
@@ -58,43 +41,31 @@ class TagCloudHandler extends Handler {
 			$config,
 			$user
 		);
-		$store = $this->getFactory()->getStore( $storeType, $context );
+		$store = $this->factory->getStore( $storeType, $context );
 
-		$readerParams = $store->makeReaderParams(
-			$this->processedArgs
-		);
+		$readerParams = $store->makeReaderParams( $params );
 
 		$result = $store->getReader()->read( $readerParams );
 
-		$rendererType = '';
-		// backwards compatibility
-		if ( isset( $this->processedArgs['viewtype'] ) ) {
-			$rendererType = $this->processedArgs['viewtype'];
-		} elseif ( isset( $this->processedArgs['renderer'] ) ) {
-			$rendererType = $this->processedArgs['renderer'];
+		if ( isset( $params['viewtype'] ) && $params['viewtype'] !== '' ) {
+			$rendererType = $params['viewtype'];
+		} elseif ( isset( $params['renderer'] ) && $params['renderer'] !== '' ) {
+			$rendererType = $params['renderer'];
 		} else {
-			$rendererType = $this->getFactory()->getDefaultRendererType();
+			$rendererType = $this->factory->getDefaultRendererType();
 		}
 
-		$params = array_merge( $this->processedArgs, [
+		$params = array_merge( $params, [
 			Renderer::PARAM_RESULT => $result,
 			Renderer::PARAM_CONTEXT => $context,
 			Renderer::PARAM_STORE => $storeType,
 			Renderer::PARAM_RENDERER => $rendererType,
 		] );
 
-		$renderer = $this->getFactory()->getRenderer(
+		$renderer = $this->factory->getRenderer(
 			$rendererType,
 			$params
 		);
 		return $renderer->render();
-	}
-
-	/**
-	 *
-	 * @return \BlueSpice\TagCloud\Factory
-	 */
-	protected function getFactory() {
-		return MediaWikiServices::getInstance()->getService( 'BSTagCloudFactory' );
 	}
 }

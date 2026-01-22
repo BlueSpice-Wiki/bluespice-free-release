@@ -10,6 +10,7 @@ use BlueSpice\Discovery\Renderer\ComponentRenderer;
 use BlueSpice\Discovery\Renderer\SkinSlotRenderer;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Revision\RevisionStore;
 use MediaWiki\Title\TitleFactory;
@@ -120,10 +121,11 @@ class Footer extends SkinStructureBase implements IBaseTemplateAware {
 	 */
 	private function getFooterIcons(): array {
 		$items = [];
-		$footericons = $this->template->get( 'footericons' );
+		$footericons = $this->services->getMainConfig()->get( 'FooterIcons' );
 		$items = $footericons['poweredby'];
 		$urlUtils = $this->services->getUrlUtils();
 
+		$mustacheFooterLinks = [];
 		foreach ( $items as $key => &$item ) {
 			$validHref = isset( $item['url'] )
 				&& ( $item['url'] !== '' )
@@ -135,8 +137,15 @@ class Footer extends SkinStructureBase implements IBaseTemplateAware {
 					$item['target'] = '_blank';
 				}
 			}
+
+			$item['alt'] = Message::newFromKey(
+				"bs-discovery-footer-places-alt-text-{$key}"
+			)->text();
+
+			$mustacheFooterLinks[] = $item;
 		}
-		return $items;
+
+		return $mustacheFooterLinks;
 	}
 
 	/**

@@ -30,7 +30,6 @@
 	"bs-vec-dialog-table-create-number-of-columns": "Число столбцов",
 	"bs-vec-dialog-action-done": "Готово",
 	"bs-vec-dialog-action-safe": "Отмена",
-	"bs-vec-dialog-create-table-title": "Вставить таблицу",
 	"bs-vec-widget-text-direction-tooltip": "Вертикальный текст",
 	"bs-vec-row-duplicate-has-merged": "Выбранная строка содержит ячейки, занимающие несколько строк, и поэтому её невозможно продублировать.",
 	"bs-vec-dialog-media-change-file": "Изменить файл",

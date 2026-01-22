@@ -52,7 +52,6 @@
 	"enhanced-standard-uis-allpages-filter-pages-label": "Филтер",
 	"enhanced-standard-uis-allpages-namespace-list-label": "Именски простор",
 	"enhanced-standard-uis-allpages-watch-label": "Надгледај страницу $1",
-	"enhanced-standard-uis-allpages-unwatch-label": "Прекини надгледање странице $1",
 	"enhanced-standard-uis-allpages-pageinfo-label": "Прикажи информације о страници $1",
 	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|резултата}} пронађено",
 	"enhanced-standard-uis-filelist-grid-preview-title": "Преглед",
@@ -66,8 +65,8 @@
 	"enhanced-standard-uis-allpages-empty-namespaces-text": "Нема доступног именског простора",
 	"enhancedpreferences": "Подешавања",
 	"enhanced-pref-username": "{{GENDER:$1|Корисничко име}}",
-	"enhanced-standard-uis-prefs-panel-search-label": "Претрага",
 	"enhanced-prefs-memberingroups": "{{GENDER:$2|Члан|Чланица}} {{PLURAL:$1|групе|група}}",
+	"enhanced-standard-uis-prefs-panel-search-label": "Претрага",
 	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Информације о датотеци",
 	"enhanced-standard-uis-paginator-page-aria-label": "Страница $1"
 }

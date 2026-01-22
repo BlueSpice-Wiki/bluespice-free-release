@@ -170,10 +170,10 @@ ext.enhancedUI.panel.AllPagesPanel.prototype.updatePages = function () {
 		return;
 	}
 	for ( const i in this.pages ) {
-		// eslint-disable-next-line no-jquery/variable-pattern
-		const section = $( '<section>' );
-		// eslint-disable-next-line no-jquery/variable-pattern
-		const pageTreeLetter = $( '<h2>' ).text( this.alphabetIndex[ i ] );
+		const $section = $( '<section>' );
+		const $pageTreeLetter = $( '<h2>' ).text( this.alphabetIndex[ i ] );
+		$pageTreeLetter.attr( 'aria-label',
+			mw.message( 'enhanced-standard-uis-allpages-section-heading-aria-label', this.alphabetIndex[ i ] ).text() );
 		const pageTree = new ext.enhancedUI.data.PagesTree( {
 			style: {
 				IconExpand: 'next',
@@ -184,9 +184,9 @@ ext.enhancedUI.panel.AllPagesPanel.prototype.updatePages = function () {
 			includeRedirect: this.includeRedirect,
 			id: 'tree-' + this.alphabetIndex[ i ]
 		} );
-		section.append( pageTreeLetter );
-		section.append( pageTree.$element );
-		this.$treeCnt.append( section );
+		$section.append( $pageTreeLetter );
+		$section.append( pageTree.$element );
+		this.$treeCnt.append( $section );
 	}
 };
 

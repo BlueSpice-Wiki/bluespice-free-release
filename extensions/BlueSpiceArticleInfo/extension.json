@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceArticleInfo",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceArticleInfo",
 	"author": [
@@ -22,9 +22,6 @@
 					"className": "\\BlueSpice\\ArticleInfo\\Extension",
 					"extPath": "/BlueSpiceArticleInfo"
 				}
-			},
-			"ConfigDefinitionRegistry": {
-				"ArticleInfoCheckRevisionInterval": "\\BlueSpice\\ArticleInfo\\ConfigDefinition\\CheckRevisionInterval::getInstance"
 			}
 		}
 	},
@@ -39,21 +36,17 @@
 	"TestAutoloadNamespaces": {
 		"BlueSpice\\ArticleInfo\\Tests\\": "tests/phpunit/"
 	},
-	"config_prefix": "bsg",
-	"config": {
-		"ArticleInfoCheckRevisionInterval": {
-			"value": 10,
-			"descriptionmsg": "bs-articleinfo-pref-checkrevisioninterval-label",
-			"public": true
-		}
-	},
 	"ResourceModules": {
 		"ext.bluespice.articleinfo.general": {
 			"scripts": [
 				"bluespice.articleInfo.general.js"
 			],
 			"dependencies": [
-				"ext.bluespice"
+				"ext.bluespice",
+				"mwstake.component.wire"
+			],
+			"messages": [
+				"bs-articleinfo-newrevision-info-text-reload"
 			]
 		}
 	},
@@ -63,7 +56,13 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "\\BlueSpice\\ArticleInfo\\Hook\\BeforePageDisplay\\AddModules::callback",
-		"BsAdapterAjaxPingResult": "\\BlueSpice\\ArticleInfo\\Hook\\BsAdapterAjaxPingResult\\HandleArticleInfo::callback"
+		"PageSaveComplete": "revisionSaved"
+	},
+	"HookHandlers": {
+		"revisionSaved": {
+			"class": "\\BlueSpice\\ArticleInfo\\Hook\\RevisionSaved",
+			"services": [ "MWStake.Wire.Messenger", "HookContainer" ]
+		}
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

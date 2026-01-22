@@ -78,7 +78,6 @@
 	"bs-extendedsearch-autocomplete-result-primary-no-results-label": "אין התאמות תקינות לשאילתה שלך",
 	"bs-extendedsearch-autocomplete-result-type": "סוג: $1",
 	"bs-extendedsearch-autocomplete-result-top-match-label": "תוצאות מובילות",
-	"bs-extendedsearch-autocomplete-result-secondary-results-label": "ייתכן שחיפשת...",
 	"bs-extendedsearch-search-center-result-help": "נא להקליד בתיבת החיפוש מעל...",
 	"bs-extendedsearch-searchcenter-filter-or-label": "או",
 	"bs-extendedsearch-searchcenter-filter-and-label": "וגם",
@@ -167,6 +166,7 @@
 	"bs-extendedsearch-autocomplete-popup-quiet-subpage-clear": "הצגת תוצאות גלובליות",
 	"bs-extendedsearch-searchbar-master-filter-tooltip": "חיפוש בדף \"$1\"",
 	"bs-extendedsearch-statistics-report-search-terms": "ביטויים לחיפוש",
+	"bs-extendedsearch-statistics-report-search-terms-desc": "מונחי החיפוש המובילים בתקופה שנבחרה",
 	"bs-extendedsearch-statistics-report-search-term-by-user": "מונחי חיפוש לכל משתמש",
 	"bs-extendedsearch-pref-auto-set-lang-filter-help": "החזרת תוצאות חיפוש עבור משתמש רק בשפת המשתמש. משתמשים יכולים להגדיר את השפה שלהם בהעדפות שלהם",
 	"bs-extendedsearch-statistics-report-search-terms-axis-label": "מספר שאילתות החיפוש",
@@ -178,7 +178,6 @@
 	"bs-extendedsearch-rest-trace-insert-failure": "לא היה אפשר להכניס את נתוני העקבה",
 	"bs-extendedsearch-rest-trace-remove-failure": "לא היה אפשר להסיר את נתוני העקבה",
 	"bs-extendedsearch-recently-found-header": "הוצגו לאחרונה",
-	"bs-extendedsearch-recentlyfound-ignore": "הסרה",
 	"bs-extendedsearch-tagsearch-btn-aria-label": "להתחיל חיפוש",
 	"bs-extendedsearch-tagsearch-input-aria-label": "חיפוש",
 	"bs-extendedsearch-autocomplete-header-aria": "{{PLURAL:$1|נמצאה תוצאה אחת|נמצאו $1 תוצאות}}",
@@ -194,6 +193,5 @@
 	"bs-extendedsearch-autocomplete-context-options-label": "חיפוש",
 	"bs-extendedsearch-autocomplete-result-secondary-results-header-label": "תוצאות דומות",
 	"prefs-searchsection": "אזורים לחיפוש",
-	"bs-extendedsearch-statistics-report-search-terms-desc": "מונחי החיפוש המובילים בתקופה שנבחרה",
 	"bs-extendedsearch-autocomplete-context-options-aria-label": "חיפוש $1 $2"
 }

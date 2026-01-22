@@ -13,7 +13,6 @@
 			"LaoShuBaby",
 			"LittlePaw365",
 			"Liuxinyu970226",
-			"Peterxy12",
 			"Phenolla",
 			"Shimamura Sakura",
 			"TsuyaMarisa",
@@ -26,7 +25,8 @@
 			"沈澄心",
 			"落花有意12138",
 			"铁桶",
-			"飞小RAN"
+			"飞小RAN",
+			"Peterxy12"
 		]
 	},
 	"bs-statistics-desc": "用于BlueSpice的统计模块",
@@ -47,6 +47,7 @@
 	"apihelp-query+statistics-reports-example": "提供所有「mytype」类型的报告，日期为2021-09-14与2021-09-15",
 	"apihelp-query+statistics-reports-param-type": "统计数据的类型（关键报告）",
 	"apihelp-query+statistics-reports-param-filter": "JSON编码的过滤数据",
+	"apihelp-query+statistics-reports-param-aggregate": "是否聚合统计数据",
 	"bs-statistics-aggregated-report-picker-label": "报告类型",
 	"bs-statistics-aggregated-report-no-date": "目前没有过滤器集合，请更改过滤器值",
 	"bs-statistics-aggregated-report-filter-category-multi": "分类",
@@ -70,14 +71,13 @@
 	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>进度条位于</span>$1",
 	"bs-statistics-ve-progressinspector-title": "进度",
 	"bs-statistics-ve-progress-attr-basecount-label": "碱基数",
+	"bs-statistics-ve-progress-attr-basecount-help": "指定进度条完全填充时给定进度元素在页面上出现频率的上限",
 	"bs-statistics-ve-progress-attr-baseitem-label": "基本条目",
+	"bs-statistics-ve-progress-attr-baseitem-help": "替代基数，可使用文本计算进度。文本中基数项的出现次数是根据进度项的出现次数设置的，从而指示进度",
 	"bs-statistics-ve-progress-attr-progressitem-label": "进度项目",
 	"bs-statistics-ve-progress-attr-progressitem-help": "正文中出现的文本定义进度",
 	"bs-statistics-ve-progress-attr-width-label": "宽度",
 	"bs-statistics-ve-progress-attr-width-help": "进度条的宽度（像素）",
 	"bs-statistics-droplet-progress-name": "进度",
-	"apihelp-query+statistics-reports-param-aggregate": "是否聚合统计数据",
-	"bs-statistics-ve-progress-attr-basecount-help": "指定进度条完全填充时给定进度元素在页面上出现频率的上限",
-	"bs-statistics-ve-progress-attr-baseitem-help": "替代基数，可使用文本计算进度。文本中基数项的出现次数是根据进度项的出现次数设置的，从而指示进度",
 	"bs-statistics-droplet-progress-description": "根据给定的测量变量可视化进度"
 }

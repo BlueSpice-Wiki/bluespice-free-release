@@ -12,7 +12,6 @@
 	"bs-whoisonline-pref-maxidletime-label": "오프라인 타임아웃 (초)",
 	"bs-whoisonline-pref-orderby-time": "가동 시간",
 	"bs-whoisonline-pref-orderby-name": "이름",
-	"bs-whoisonline-pref-interval-label": "업데이트 간격(초)",
 	"bs-whoisonline-collection-type-userlogin": "사용자 로그인",
 	"bs-whoisonline-collection-var-login": "로그인",
 	"bs-whoisonline-pref-maxidletime-help-label": "사용자가 오프라인으로 표시한 이후 비활동 초 단위 시간",

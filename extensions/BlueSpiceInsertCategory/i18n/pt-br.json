@@ -12,7 +12,6 @@
 	"bs-insertcategory-desc": "Campo para digitar um link de categoria",
 	"bs-insertcategory-insertcat": "Inserir categoria",
 	"prefs-insertcategory": "Inserir categoria",
-	"bs-insertcategory-pref-withparents": "Inserir categoria com seus parentes",
 	"bs-insertcategory-page-header-categories-edit-tooltip": "Edite as categorias desta página",
 	"bs-insertcategory-edit-dialog-button-tooltip": "Edite as categorias desta página",
 	"bs-insertcategory-edit-dialog-button-aria-label": "Abra a caixa de diálogo para editar as categorias desta página",

@@ -5,8 +5,13 @@
 			<a id="nb-logo" href="{{logo-href}}" title="{{logo-title}}" class="mx-4 mw-wiki-logo" style="background-image: url({{logo-src}});" role="link" tabindex="0" aria-label="{{logo-aria-label}}"></a>
 		</div>
 		<div class="center-col-nav col-xxl-6 col-xl-6 col-md-4 col-sm-8 col-8 d-flex justify-content-center h-100">
-			{{{search-form}}}
 			<div class="navbar-nav align-items-center item-center-east">
+				<ul class="navbar-nav w-100 align-items-center">
+					{{#navbar-center-items}}{{{.}}}{{/navbar-center-items}}
+				</ul>
+			</div>
+			{{{search-form}}}
+			<div class="navbar-nav align-items-center item-center-west">
 				{{{new-content-button}}}
 			</div>
 		</div>

@@ -22,13 +22,6 @@ class StandardEdit extends Base {
 	 * @inheritDoc
 	 */
 	public function shouldShowWarning( &$result ) {
-		$isEdit = false;
-		$this->isEditMode( $isEdit );
-		if ( $isEdit ) {
-			$result = false;
-			return false;
-		}
-
 		$title = $this->context->getTitle();
 		if ( $title && $title->isContentPage() ) {
 			$result = true;

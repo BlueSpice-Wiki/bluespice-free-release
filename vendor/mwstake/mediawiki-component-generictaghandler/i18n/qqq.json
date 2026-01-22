@@ -1,0 +1,6 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"generictaghandler-error": "Error message when a tag cannot be rendered."
+}

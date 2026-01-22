@@ -16,7 +16,12 @@
 	 * orderable: true|false, // Default to true
 	 * resizable: true|false, // Default to true
 	 * actionsVisibleOnHover: true|false, // Default to false
+	 * filtering: { // optional
+	 *  showQueryField: true|false, // Default to true
+	 *  queryPlaceholder: 'Search...', // Placeholder for the query field
+	 * stateId: {string}, // Id of the state to use for saving the grid state
 	 * }
+	 * filtering: null // no filter toolbar at all
 	 *
 	 * @type {OOJSPlus.ui.data.GridWidget}
 	 */
@@ -26,23 +31,20 @@
 		OOJSPlus.ui.data.GridWidget.parent.call( this, cfg );
 
 		this.$element.addClass( 'oojsplus-data-gridWidget' );
-		this.$filterCnt = $( '<div>' ).attr( 'id', 'grid-filter-announcement' )
-			.attr( 'aria-live', 'polite' ).addClass( 'visually-hidden' );
-		this.$sortCnt = $( '<div>' ).attr( 'id', 'grid-sorting-announcement' )
-			.attr( 'aria-live', 'polite' ).addClass( 'visually-hidden' );
-		this.$element.append( this.$filterCnt );
-		this.$element.append( this.$sortCnt );
 		this.$table = $( '<table>' ).addClass( 'oojsplus-data-gridWidget-table' );
 		this.$table.append( $( '<caption>' ).addClass( 'oojsplus-data-gridWidget-caption' ) );
 		this.$table.append( $( '<thead>' ).addClass( 'oojsplus-data-gridWidget-header' ) );
 		this.$table.append( $( '<tbody>' ).addClass( 'oojsplus-data-gridWidget-tbody' ) );
 		this.$wrapper = $( '<div>' );
+		this.stateId = cfg.stateId || null;
 
 		if ( $( document ).find( '#oojsplus-skeleton-cnt' ) ) {
 			$( '#oojsplus-skeleton-cnt' ).empty();
 		}
-		this.$element.append( this.$wrapper.append( this.$table ) );
-		this.$overlay = cfg.$overlay || null;
+
+		this.$filterWidgetCnt = $( '<div>' ).addClass( 'oojsplus-data-gridWidget-filter-widget' );
+		this.$element.append( this.$filterWidgetCnt, this.$wrapper.append( this.$table ) );
+		this.$overlay = cfg.$overlay || false;
 
 		OO.ui.mixin.PendingElement.call( this, {
 			$pending: $( this.$table ).find( 'thead' )
@@ -62,6 +64,7 @@
 		this.data = cfg.data || [];
 		this.resizable = typeof cfg.resizable === 'undefined' ? true : cfg.resizable;
 		this.orderable = typeof cfg.orderable === 'undefined' ? true : cfg.orderable;
+		this.selectable = typeof cfg.selectable === 'undefined' ? true : cfg.selectable;
 		this.collapsible = cfg.collapsible || false;
 		this.collapsed = cfg.collapsed || false;
 		this.actionsVisibleOnHover = cfg.actionsVisibleOnHover || false;
@@ -70,10 +73,24 @@
 			this.orderable = false;
 			this.resizable = false;
 		}
+
+		this.state = this.getStateIfApplicable();
 		this.alwaysVisibleColumns = [];
 		this.visibleColumns = [];
 
 		this.selectedRows = [];
+		this.noFilter = false;
+		if ( Object.keys( cfg ).includes( 'filtering' ) && cfg.filtering === null ) {
+			this.noFilter = true;
+		} else {
+			cfg.filtering = cfg.filtering || {};
+			this.externalFilterConfig = {
+				store: this.store,
+				showQueryField: cfg.filtering.showQueryField || false,
+				queryPlaceholder: cfg.filtering.queryPlaceholder || null,
+				sortOptions: {}, filterOptions: {}, sort: null, filter: null
+			};
+		}
 
 		this.columns = {};
 		this.buildColumns( cfg.columns );
@@ -95,6 +112,35 @@
 					}
 				}
 			} );
+		}
+		if (
+			!this.noFilter &&
+			Object.keys( this.externalFilterConfig.sortOptions ).length === 0 &&
+			Object.keys( this.externalFilterConfig.filterOptions ).length === 0 &&
+			!this.externalFilterConfig.showQueryField
+		) {
+			// Implicit no filter (nothing to filter/sort/query on)
+			this.noFilter = true;
+		}
+		if ( !this.noFilter ) {
+			this.externalFilter = new OOJSPlus.ui.data.grid.ExternalFilter( this.externalFilterConfig );
+			this.externalFilter.connect( this, {
+				columnSort: ( column, direction ) => {
+					const selector = 'th[data-field="' + column + '"]';
+					if ( this.columns[column].grid.$table.find( selector ).length < 1 ) {
+						return;
+					}
+					const $columnHeader = this.columns[ column ].grid.$table.find( selector )[ 0 ];
+					if ( direction.toLowerCase() === 'asc' ) {
+						$( $columnHeader ).attr( 'aria-sort', 'ascending' );
+					} else if ( direction.toLowerCase() === 'desc' ) {
+						$( $columnHeader ).attr( 'aria-sort', 'descending' );
+					} else {
+						$( $columnHeader ).attr( 'aria-sort', 'none' );
+					}
+				}
+			} );
+			this.$filterWidgetCnt.append( this.externalFilter.$element );
 		}
 
 		this.toolbar = typeof cfg.toolbar === 'undefined' ?
@@ -127,13 +173,13 @@
 			} else {
 				this.setItems( Object.values( data ) );
 			}
-			const filterAnnouncement = mw.message( 'oojsplus-data-grid-filter-update-results', this.store.getTotal() ).text();
-			this.$filterCnt.text( filterAnnouncement );
 		} );
 
-		this.connect( this, {
-			selected: 'clickOnRow'
-		} );
+		if ( this.selectable ) {
+			this.connect( this, {
+				selected: 'clickOnRow'
+			} );
+		}
 
 		if ( this.orderable ) {
 			this.$table.sorttable( {} );
@@ -146,6 +192,10 @@
 		if ( this.collapsible ) {
 			this.appendCollapseButton();
 		}
+
+		this.connect( this, {
+			stateChange: 'onStateChange'
+		} );
 	};
 
 	OO.inheritClass( OOJSPlus.ui.data.GridWidget, OO.ui.Widget );
@@ -180,21 +230,56 @@
 					console.error( 'OOJSPlus.data: Tried to instantiate non-registered column for type: ' + type ); // eslint-disable-line no-console
 					columnClass = OOJSPlus.ui.data.registry.columnRegistry.lookup( 'text' );
 				}
+
+				if (
+					this.state.size &&
+					this.state.size.hasOwnProperty( field ) &&
+					this.resizable
+				) {
+					column.width = this.state.size[ field ];
+				}
 				columnWidget = new columnClass( Object.assign( column, { resizable: this.resizable, $overlay: this.$overlay } ) ); // eslint-disable-line new-cap
 				if ( !columnWidget.canChangeVisibility() ) {
 					this.alwaysVisibleColumns.push( field );
 				}
-				if ( columnWidget.getVisibility() === 'visible' ) {
+				if ( this.state.columns ) {
+					if ( this.state.columns.includes( field ) ) {
+						this.visibleColumns.push( field );
+					}
+				} else if ( columnWidget.getVisibility() === 'visible' ) {
 					this.visibleColumns.push( field );
 				}
 			} else {
 				columnWidget = column;
 			}
-			columnWidget.connect( this, {
-				filter: 'onFilter',
-				filterToggle: 'onFilterToggle',
-				sort: 'onSort'
-			} );
+
+			if ( !this.noFilter ) {
+				if ( column.sortable ) {
+					this.externalFilterConfig.sortOptions[ field ] = columnWidget.headerText || field;
+				}
+				if ( typeof column.filter === 'object' && Object.keys( column.filter ).length > 0 ) {
+					let filter = null;
+					if ( column.filter instanceof OOJSPlus.ui.data.filter.Filter ) {
+						filter = column.filter;
+					} else {
+						const filterFactory = new OOJSPlus.ui.data.FilterFactory();
+						if ( column.autoClosePopup ) {
+							column.filter.autoClosePopup = true;
+						}
+						column.filter.filterName = column.headerText;
+						filter = filterFactory.makeFilter( column.filter );
+					}
+					if ( filter ) {
+						this.externalFilterConfig.filterOptions[ field ] = {
+							key: field,
+							label: column.headerText || field,
+							filter: filter,
+							$overlay: this.$overlay
+						};
+					}
+				}
+			}
+
 			columnWidget.bindToGrid( this );
 			this.columns[ field ] = columnWidget;
 		}
@@ -218,18 +303,6 @@
 		} );
 	};
 
-	OOJSPlus.ui.data.GridWidget.prototype.onFilterToggle = function ( filterButton, visible ) {
-		// Prevent multiple open filters at the same time
-		if ( visible ) {
-			if ( this.openedFilter ) {
-				this.openedFilter.popup.toggle( false );
-			}
-			this.openedFilter = filterButton;
-		} else {
-			this.openedFilter = null;
-		}
-	};
-
 	OOJSPlus.ui.data.GridWidget.prototype.makeToolbar = function ( tools ) {
 		return new OOJSPlus.ui.data.grid.Toolbar( {
 			store: this.store,
@@ -245,13 +318,7 @@
 		} );
 	};
 
-	OOJSPlus.ui.data.GridWidget.prototype.onFilter = function ( filter, field ) {
-		this.clearItems();
-		this.store.filter( filter, field );
-	};
-
-	OOJSPlus.ui.data.GridWidget.prototype.onStoreLoaded = function ( rows ) { // eslint-disable-line no-unused-vars
-		this.setActiveFilters( Object.keys( this.store.getFilters() ) );
+	OOJSPlus.ui.data.GridWidget.prototype.onStoreLoaded = function () {
 		this.setLoading( false );
 	};
 
@@ -266,15 +333,6 @@
 		}
 		while ( this.isPending() ) {
 			this.popPending();
-		}
-	};
-
-	OOJSPlus.ui.data.GridWidget.prototype.setActiveFilters = function ( fields ) {
-		for ( const columnKey in this.columns ) {
-			if ( !this.columns.hasOwnProperty( columnKey ) ) {
-				continue;
-			}
-			this.columns[ columnKey ].setHasActiveFilter( fields.indexOf( columnKey ) !== -1 );
 		}
 	};
 
@@ -298,11 +356,6 @@
 			}
 			const $cell = this.columns[ field ].getHeader();
 			$cell.attr( 'data-field', field );
-			// Set the default filter values from the store
-			const filters = this.store.getFilters();
-			if ( filters.hasOwnProperty( field ) ) {
-				this.columns[ field ].setFilter( filters[ field ].getValue() );
-			}
 			$row.append( $cell );
 		}
 		$header.append( $row );
@@ -335,11 +388,12 @@
 			change: 'setColumnsVisibility'
 		} );
 
-		const settingsPanel = new OO.ui.PanelLayout( {
-			expanded: false,
-			padded: false
-		} );
-		settingsPanel.$element.append( columnsWidget.$element );
+		const columnsField = new OO.ui.FieldLayout( columnsWidget,
+			{
+				label: mw.message( 'oojsplus-data-grid-toolbar-show-widgets-label' ).text(),
+				align: 'top'
+			}
+		);
 
 		return new OO.ui.PopupButtonWidget( {
 			icon: 'settings',
@@ -347,11 +401,9 @@
 			framed: false,
 			label: mw.message( 'oojsplus-data-grid-toolbar-settings-aria-label' ).text(),
 			invisibleLabel: true,
-			$overlay: this.$overlay || true,
+			$overlay: this.$overlay || false,
 			popup: {
-				head: true,
-				label: mw.message( 'oojsplus-data-grid-toolbar-settings-columns-label' ).text(),
-				$content: settingsPanel.$element,
+				$content: columnsField.$element,
 				padded: true,
 				align: 'backwards',
 				autoFlip: true,
@@ -369,6 +421,7 @@
 			}
 			this.doSetColumnVisibility( field, visible.indexOf( field ) !== -1 );
 		}
+		this.emit( 'stateChange', { columns: this.visibleColumns } );
 	};
 
 	OOJSPlus.ui.data.GridWidget.prototype.doSetColumnVisibility = function ( field, visible ) {
@@ -490,21 +543,23 @@
 			}
 			const $cell = this.columns[ columnField ].renderCell( item[ columnField ], item );
 			$cell.attr( 'data-field', columnField );
-			$cell.on( 'click', {
-				$cell: $cell,
-				item: item
-			}, this.onCellClick.bind( this ) );
-			$cell.on( 'dblclick', {
-				$cell: $cell,
-				item: item
-			}, this.onCellDblClick.bind( this ) );
+			if ( this.selectable ) {
+				$cell.on( 'click', {
+					$cell: $cell,
+					item: item
+				}, this.onCellClick.bind( this ) );
+				$cell.on( 'dblclick', {
+					$cell: $cell,
+					item: item
+				}, this.onCellDblClick.bind( this ) );
+			}
 			$row.append( $cell );
 		}
 
 		if ( this.multiSelect && this.multiSelectSelectedByDefault ) {
 			this.selectedRows.push( item );
 		}
-		if ( !this.multiSelect ) {
+		if ( !this.multiSelect && this.selectable ) {
 			$row.on( 'click', { $row: $row, item: item },
 				this.clickOnRow.bind( this ) );
 		}
@@ -527,19 +582,6 @@
 		this.emit( 'cellDblClick', $cell, e );
 	};
 
-	OOJSPlus.ui.data.GridWidget.prototype.onSort = function ( sorter, field ) {
-		const columnName = this.columns[ field ].headerText;
-		let directionMsg = mw.message( 'oojsplus-data-grid-sort-direction-desc', columnName ).text();
-		if ( !sorter ) {
-			directionMsg = mw.message( 'oojsplus-data-grid-sort-direction-none', columnName ).text();
-		} else if ( sorter.direction === 'ASC' ) {
-			directionMsg = mw.message( 'oojsplus-data-grid-sort-direction-asc', columnName ).text();
-		}
-		this.$sortCnt.text( directionMsg ).text();
-		this.clearItems();
-		this.store.sort( sorter, field );
-	};
-
 	OOJSPlus.ui.data.GridWidget.prototype.setItems = function ( data ) {
 		this.clearItems();
 		this.setLoading( false );
@@ -549,34 +591,12 @@
 		} else {
 			this.addItemsInternally( data );
 			this.setColumnsVisibility( this.visibleColumns );
-			this.adjustFilterAnnouncement();
+			if ( this.externalFilter ) {
+				this.externalFilter.adjustFilterAnnouncement();
+			}
 		}
 
 		this.emit( 'datasetChange' );
-	};
-
-	OOJSPlus.ui.data.GridWidget.prototype.adjustFilterAnnouncement = function () {
-		const filters = this.store.getFilters();
-		const filterKeys = Object.keys( filters );
-		if ( filterKeys.length === 0 ) {
-			const announcement = mw.message( 'oojsplus-data-grid-filter-update-no-filter' ).text();
-			this.$filterCnt.text( announcement );
-		} else {
-			let filterNames = '';
-			filterKeys.forEach( ( key ) => {
-				const filterName = filters[ key ].getName();
-				const filterValue = filters[ key ].getFilterValue().value;
-				filterNames += mw.message( 'oojsplus-data-grid-filter-list-with-value', filterName, filterValue ).text();
-				if ( filterKeys[ filterKeys.length - 1 ] !== key ) {
-					filterNames += ', ';
-				} else {
-					filterNames += '.';
-				}
-			} );
-			const filterAnnouncement = mw.message( 'oojsplus-data-grid-filter-update-active-filter',
-				filterKeys.length, filterNames ).text();
-			this.$filterCnt.text( filterAnnouncement );
-		}
 	};
 
 	OOJSPlus.ui.data.GridWidget.prototype.clickOnRow = function ( e ) {
@@ -716,5 +736,32 @@
 		$cell.append( placeHolderWidget.$element );
 		$row.append( $cell );
 		$body.append( $row );
+	};
+
+	OOJSPlus.ui.data.GridWidget.prototype.onStateChange = function ( state ) {
+		if ( !this.stateId ) {
+			return;
+		}
+		const stateManager = new OOJSPlus.ui.data.StateManager();
+		const oldState = stateManager.getState( this.stateId );
+		if ( !oldState ) {
+			stateManager.setState( this.stateId, state );
+			return;
+		}
+		// Merge old state with new state
+		state = Object.assign( {}, oldState, state );
+		stateManager.setState( this.stateId, state );
+	};
+
+	OOJSPlus.ui.data.GridWidget.prototype.getStateIfApplicable = function () {
+		if ( !this.stateId ) {
+			return {};
+		}
+		const stateManager = new OOJSPlus.ui.data.StateManager();
+		const state = stateManager.getState( this.stateId );
+		if ( !state ) {
+			return {};
+		}
+		return state;
 	};
 }( mediaWiki, jQuery ) );

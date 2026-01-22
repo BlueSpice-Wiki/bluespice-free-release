@@ -1,0 +1,41 @@
+{
+	"name": "mwstake/mediawiki-component-token-authenticator",
+	"description": "Real time messaging",
+	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "HalloWelt! GmbH",
+			"email": "info@hallowelt.com",
+			"homepage": "http://www.hallowelt.com"
+		}
+	],
+	"require": {
+		"mwstake/mediawiki-componentloader": "~1"
+	},
+	"require-dev": {
+		"php-parallel-lint/php-console-highlighter": "0.5.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.1",
+		"mediawiki/mediawiki-codesniffer": "38.0.0",
+		"mediawiki/minus-x": "1.1.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"MWStake\\MediaWiki\\Component\\TokenAuthenticator\\": "src/",
+			"MWStake\\MediaWiki\\Component\\TokenAuthenticator\\Tests\\": "tests/"
+		},
+		"files": [
+			"bootstrap.php"
+		]
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor --exclude node_modules",
+			"minus-x check .",
+			"phpcs -sp"
+		],
+		"fix": [
+			"minus-x fix .",
+			"phpcbf"
+		]
+	}
+}

@@ -5,54 +5,76 @@ namespace BlueSpice\CountThings\Tag;
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\RendererFactory;
-use BlueSpice\Tag\Handler;
-use MediaWiki\MediaWikiServices;
+use BsPageContentProvider;
+use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\PPFrame;
-use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFactory;
+use Message;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
-class CountCharactersHandler extends Handler {
-
-	/** @var string */
-	protected $tagInput = '';
-
-	/** @var string[] */
-	protected $tagArgs = [ 'mode' ];
+class CountCharactersHandler implements ITagHandler {
 
 	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
+	 * @param LinkRenderer $linkRenderer
+	 * @param RendererFactory $rendererFactory
+	 * @param TitleFactory $titleFactory
 	 */
-	public function __construct( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
-		$this->tagInput = explode( ' ', trim( $processedInput ) );
-		$this->tagArgs = $processedArgs;
-		parent::__construct( $processedInput, $processedArgs, $parser, $frame );
+	public function __construct(
+		private readonly LinkRenderer $linkRenderer,
+		private readonly RendererFactory $rendererFactory,
+		private readonly TitleFactory $titleFactory
+	) {
+	}
+
+	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
+		$return = '';
+		$countAllData = $this->magicWordBsCountCharacters( $input, $params );
+		foreach ( $countAllData as $title => $countData ) {
+			$content = [];
+			foreach ( $countData as $key => $value ) {
+				$content[] = [
+					'label' => Message::newFromKey( 'bs-countthings-' . $key . '-label' )->text(),
+					'count' => $value
+				];
+			}
+
+			$params = new Params( [
+				'title' => $title,
+				'titlelink' => $this->linkRenderer->makeLink(
+					$this->titleFactory->newFromText( $title ),
+				),
+				Renderer::PARAM_CONTENT => $content
+			] );
+			$return .= $this->rendererFactory->get( 'countthings-countcharacters', $params )->render();
+		}
+		return $return;
 	}
 
 	/**
 	 *
 	 * @return array
 	 */
-	public function magicWordBsCountCharacters() {
+	private function magicWordBsCountCharacters( string $input, array $params ) {
+		$input = explode( ' ', trim( $input ) );
 		$out = [];
-		if ( isset( $this->tagArgs['mode']
-			) ) {
-			$mode = $this->tagArgs['mode'];
-			if ( strpos( $mode, 'chars' ) === false &&
-				strpos( $mode, 'words' ) === false &&
-				strpos( $mode, 'pages' ) === false ) {
+		if (
+			isset( $params['mode'] )
+		) {
+			$mode = $params['mode'];
+			if (
+				!str_contains( $mode, 'chars' ) &&
+				!str_contains( $mode, 'words' ) &&
+				!str_contains( $mode, 'pages' )
+			) {
 				$mode = 'all';
 			}
 		} else {
 			$mode = 'all';
 		}
 		$titles = [];
-		foreach ( $this->tagInput as $title ) {
-			$titleInstance = Title::newFromText( $title );
+		foreach ( $input as $title ) {
+			$titleInstance = $this->titleFactory->newFromText( $title );
 			if ( $titleInstance ) {
 				$titles[$title] = $titleInstance;
 			}
@@ -60,54 +82,21 @@ class CountCharactersHandler extends Handler {
 		foreach ( $titles as $title => $titleInstance ) {
 			$out[$title] = [];
 
-			$content = $content = preg_replace(
-				"/\s+/", " ", \BsPageContentProvider::getInstance()->
-					getContentFromTitle( $titleInstance )
+			$content = preg_replace(
+				"/\s+/", " ", BsPageContentProvider::getInstance()->
+			getContentFromTitle( $titleInstance )
 			);
-			if ( strpos( $mode, 'chars' ) !== false || strpos( $mode, 'all' ) !== false ) {
+			if ( str_contains( $mode, 'chars' ) || str_contains( $mode, 'all' ) ) {
 				$out[$title]['chars'] = strlen( $content );
 			}
-			if ( strpos( $mode, 'words' ) !== false || strpos( $mode, 'all' ) !== false ) {
+			if ( str_contains( $mode, 'words' ) || str_contains( $mode, 'all' ) ) {
 				$out[$title]['words'] = count( explode( ' ', trim( $content ) ) );
 			}
-			if ( strpos( $mode, 'pages' ) !== false || strpos( $mode, 'all' ) !== false ) {
+			if ( str_contains( $mode, 'pages' ) || str_contains( $mode, 'all' ) ) {
 				$out[$title]['pages'] = ceil( strlen( $content ) / 2000 );
 			}
 		}
 
 		return $out;
 	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	public function handle() {
-		$return = '';
-		$countAllData = $this->magicWordBsCountCharacters();
-		foreach ( $countAllData as $title => $countData ) {
-			$services = MediaWikiServices::getInstance();
-			$rendererFactory = $services->getService( 'BSRendererFactory' );
-			$rendererFactory instanceof RendererFactory;
-
-			$content = [];
-			foreach ( $countData as $key => $value ) {
-				$content[] = [
-					'label' => wfMessage( 'bs-countthings-' . $key . '-label' ),
-					'count' => $value
-				];
-			}
-
-			$lr = MediaWikiServices::getInstance()->getLinkRenderer();
-
-			$params = new Params( [
-				'title' => $title,
-				'titlelink' => $lr->makeLink( Title::newFromText( $title ) ),
-				Renderer::PARAM_CONTENT => $content
-				] );
-			$return .= $rendererFactory->get( 'countthings-countcharacters', $params )->render();
-		}
-		return $return;
-	}
-
 }

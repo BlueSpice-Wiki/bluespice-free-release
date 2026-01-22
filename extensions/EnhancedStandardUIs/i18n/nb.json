@@ -5,6 +5,7 @@
 			"Yupik"
 		]
 	},
+	"enhanced-standard-uis-history-grid-header-size-label": "Størrelse",
 	"enhancedfilelist": "Filliste",
 	"enhanced-standard-uis-filelist-grid-file-title": "Filnavn",
 	"enhanced-standard-uis-filelist-grid-author-title": "Opphavsperson",
@@ -30,7 +31,5 @@
 	"enhanced-standard-uis-filelist-dialog-page-data-no-metadata-label": "Ingen metadata tilgjengelig for denne fila",
 	"enhanced-standard-uis-filelist-notify-copy-clipboard": "Fillenke kopiert til utklippstavlen.",
 	"enhanced-standard-uis-allpages-watch-label": "Overvåk siden $1",
-	"enhanced-standard-uis-allpages-unwatch-label": "Avslutt overvåking av siden $1",
-	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|resultat|resultater}} funnet",
-	"enhanced-standard-uis-history-grid-header-size-label": "Størrelse"
+	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|resultat|resultater}} funnet"
 }

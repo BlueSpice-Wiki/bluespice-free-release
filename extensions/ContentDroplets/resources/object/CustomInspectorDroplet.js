@@ -18,6 +18,14 @@ ext.contentdroplets.object.CustomInspectorDroplet.prototype.updateMWData =
 	};
 
 ext.contentdroplets.object.CustomInspectorDroplet.prototype.getForm = function ( data ) {
+	const formItems = this.getFormItems();
+	formItems.map( ( obj ) => {
+		if ( obj.labelAlign ) {
+			return obj;
+		}
+		obj.labelAlign = 'top';
+		return obj;
+	} );
 	const form = new mw.ext.forms.standalone.Form( {
 		data: data,
 		definition: {
@@ -28,7 +36,7 @@ ext.contentdroplets.object.CustomInspectorDroplet.prototype.getForm = function (
 					// eslint-disable-next-line camelcase
 					widget_label: this.getDescription()
 				}
-			].concat( this.getFormItems() )
+			].concat( formItems )
 		}
 	} );
 

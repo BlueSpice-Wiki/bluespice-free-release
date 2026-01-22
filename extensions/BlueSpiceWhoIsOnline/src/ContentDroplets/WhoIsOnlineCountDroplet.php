@@ -32,7 +32,7 @@ class WhoIsOnlineCountDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.whoisonlinecount.visualEditorTagDefinition' ];
+		return [ 'ext.bluespice.whoisonlinecount.droplet' ];
 	}
 
 	/**
@@ -68,7 +68,7 @@ class WhoIsOnlineCountDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'whoisonlinecountCommand';
+		return 'userscountCommand';
 	}
 
 }

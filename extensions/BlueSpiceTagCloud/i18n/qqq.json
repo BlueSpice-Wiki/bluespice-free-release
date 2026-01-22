@@ -11,7 +11,6 @@
 	"bs-tagcloud-tag-tagcloud-name": "Name of the tagcloud tag, used in various contexts",
 	"bs-tagcloud-tag-tagcloud-title": "Title for the tagcloud tag VisualEditor inspector",
 	"bs-tagcloud-tag-tagcloud-desc": "Description of the tagcloud tag shown in the VisualEditor tag inspector",
-	"bs-tagcloud-tag-tagcloud-attr-renderer-label": "Label of the \"renderer\" attribute input field in the VisualEditor tag inspector\n{{Identical|Type}}",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "Help message for the \"renderer\" attribute input field  in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Label for the option \"text\" of the \"renderer\" attribute input field in the VisualEditor tag inspector\n{{Identical|Text}}",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Label for the option \"list\" of the \"renderer\" attribute input field in the VisualEditor tag inspector",
@@ -22,8 +21,6 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Label for the option \"searchstats\" of the \"store\" attribute input field in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-width-label": "Label of the \"width\" attribute input field in the VisualEditor tag inspector\n{{Identical|Width}}",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Help message for the \"width\" attribute input field  in the VisualEditor tag inspector",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Label of the \"showcount\" attribute input field in the VisualEditor tag inspector",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Help message for the \"showcount\" attribute input field  in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Label of the \"minsize\" attribute input field in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Help message for the \"minsize\" attribute input field  in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Label of the \"maxsize\" attribute input field in the VisualEditor tag inspector",
@@ -33,5 +30,8 @@
 	"bs-tagcloud-droplet-name": "Title of droplet for tag TagCloud",
 	"bs-tagcloud-droplet-description": "Description of droplet for tag TagCloud",
 	"bs-tagcloud-tag-tagcloud-tab-common": "Label for the VE inspector tab",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "Label for the VE inspector tab"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Label for the VE inspector tab",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Label for dropdown field to select view mode",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Label for checkbox",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Help text for checkbox"
 }

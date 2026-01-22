@@ -11,7 +11,8 @@
 			"Meursault2004",
 			"Rachmat04",
 			"Rex",
-			"Veracious"
+			"Veracious",
+			"Penyuwangi"
 		]
 	},
 	"exif-imagewidth": "Lebar",
@@ -97,7 +98,7 @@
 	"exif-devicesettingdescription": "Deskripsi pengaturan alat",
 	"exif-subjectdistancerange": "Jarak subjek",
 	"exif-imageuniqueid": "ID unik gambar",
-	"exif-gpsversionid": "Versi tag GPS",
+	"exif-gpsversionid": "Versi tanda GPS",
 	"exif-gpslatituderef": "Lintang Utara atau Selatan",
 	"exif-gpslatitude": "Lintang",
 	"exif-gpslongituderef": "Bujur Timur atau Barat",
@@ -171,7 +172,7 @@
 	"exif-datetimemetadata": "Tanggal terakhir perubahan metadata",
 	"exif-nickname": "Nama informal gambar",
 	"exif-rating": "Nilai (dari 5)",
-	"exif-rightscertificate": "Sertifikat manajemen hak",
+	"exif-rightscertificate": "Sertifikat pengelolaan hak",
 	"exif-copyrighted": "Status hak cipta",
 	"exif-copyrightowner": "Pemilik hak cipta",
 	"exif-usageterms": "Ketentuan penggunaan",

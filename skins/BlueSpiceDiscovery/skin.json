@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceDiscovery",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"author": [
 		"Daniel Vogel"
 	],
@@ -165,6 +165,10 @@
 			},
 			"AttentionIndicatorRegistry": {},
 			"BreadcrumbDataProviderRegistry": {
+				"edit-watchlist": {
+					"class": "BlueSpice\\Discovery\\BreadcrumbDataProvider\\SpecialEditWatchlistProvider",
+					"services": [ "SpecialPageFactory" ]
+				},
 				"special-actions": {
 					"class": "BlueSpice\\Discovery\\BreadcrumbDataProvider\\SpecialActionsProvider"
 				},
@@ -378,7 +382,6 @@
 		"OutputPageBodyAttributes": [
 			"body-classes"
 		],
-		"BsAdapterAjaxPingResult": "\\BlueSpice\\Discovery\\Hook\\BsAdapterAjaxPingResult\\CheckAttentionIndicator::callback",
 		"PageSaveComplete": [ "setPageLanguage", "invalidateEnhancedSidebarCache" ],
 		"BSUEModulePDFBeforeAddingContent": "pdf-export",
 		"BSUsageTrackerRegisterCollectors": [
@@ -505,8 +508,10 @@
 				"stylesheets/bluespice.xxl.css": { "media": "all and ( min-width: 1400px )" },
 				"stylesheets/megamenu.css": {},
 				"stylesheets/oo-ui/oo-ui.css": {},
+				"stylesheets/oo-ui/oo-ui.sm.css": { "media": "all and ( max-width: 767px )" },
 				"stylesheets/mediawiki.ui/components/radio.css": {},
 				"stylesheets/fixes/extension-fixes.css": {},
+				"stylesheets/fixes/extension-fixes.sm.css": { "media": "all and ( max-width: 767px )" },
 				"stylesheets/control/page-version-pager.css": {},
 				"stylesheets/fixes/ve-fixes.css": {},
 				"stylesheets/fixes/mw-fixes.css": {},
@@ -539,7 +544,8 @@
 				"js/MobileContentTables.js",
 				"js/dblClickEdit.js",
 				"js/VEEditClick.js",
-				"js/TreeComponent.js"
+				"js/TreeComponent.js",
+				"js/AccessibilityFocusFix.js"
 			],
 			"messages": [
 				"bs-discovery-navbar-full-screen-button-enable-title",
@@ -764,6 +770,13 @@
 		"localBasePath": "resources",
 		"remoteSkinPath": "BlueSpiceDiscovery/resources"
 	},
+	"RestRoutes": [
+		{
+			"path": "/bluespice/discovery/attention-indicators",
+			"class": "BlueSpice\\Discovery\\Rest\\AttentionIndicatorHandler",
+			"services": [ "BSAttentionIndicatorFactory" ]
+		}
+	],
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }

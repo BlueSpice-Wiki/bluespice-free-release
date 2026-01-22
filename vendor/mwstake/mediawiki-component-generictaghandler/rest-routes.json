@@ -1,0 +1,14 @@
+[
+	{
+		"method": "GET",
+		"path": "/mws/v1/tags",
+		"class": "MWStake\\MediaWiki\\Component\\GenericTagHandler\\Rest\\ListTagsHandler",
+		"services": [ "MWStake.GenericTagHandler.TagFactory", "MWStake.InputProcessor.Factory" ]
+	},
+	{
+		"path": "/mws/v1/tags/parse/{tag}",
+		"method": "POST",
+		"class": "MWStake\\MediaWiki\\Component\\GenericTagHandler\\Rest\\RenderTagHandler",
+		"services": [ "MWStake.GenericTagHandler.TagFactory", "TitleFactory" ]
+	}
+]

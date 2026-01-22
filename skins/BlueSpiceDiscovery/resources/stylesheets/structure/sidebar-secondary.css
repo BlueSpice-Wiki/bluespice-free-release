@@ -2,7 +2,7 @@
 	background-color: var( --sidebar-secondary-bg );
 	color: var( --sidebar-secondary-fg );
 	padding-top: 15px;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	border-left: 0.05px solid var( --sidebar-secondary-border-marker );
 	z-index: 1000;
 }

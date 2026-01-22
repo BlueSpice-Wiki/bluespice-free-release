@@ -215,7 +215,6 @@ class Tracer {
 		);
 
 		$idleSeconds = $this->config->get( 'WhoIsOnlineMaxIdleTime' )
-			+ $this->config->get( 'WhoIsOnlineInterval' )
 			+ ( $this->config->get( 'WhoIsOnlineMaxIdleTime' ) * 0.1 );
 
 		$nextLogTs = Timestamp::getInstance( $lastLoggedTime )->timestamp;

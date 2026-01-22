@@ -1,49 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"बडा काजी"
+			"पर्वत सुबेदी",
+			"बिप्लब आनन्द",
+			"हिमाल सुबेदी"
 		]
-	},
-	"bs-statistics-desc": "ब्लुस्पाइसका लागि तथ्याङ्क मोड्युल",
-	"aggregatedstatistic": "स्न्यापसट तथ्याङ्क",
-	"extendedstatisticssnapshots": "स्न्यापसटहरू",
-	"bs-statistics-button-label-apply": "फिल्टरहरू लागु गर्नुहोस्",
-	"bs-statistics-label-bar-chart": "बार चार्ट",
-	"bs-statistics-label-line-chart": "रेखा चित्र",
-	"bs-statistics-datasource-label": "डेटा स्रोत",
-	"bs-statistics-aggregationmode-label": "एकत्रीकरण मोड",
-	"bs-statistics-aggregationfield-label": "एकत्रीकरण क्षेत्र",
-	"bs-statistics-aggregationtype-label": "एकत्रीकरण प्रकार",
-	"bs-statistics-targets-label": "लक्ष्य",
-	"bs-statistics-paging-page-size": "पृष्ठको आकार",
-	"apihelp-query+statistics-reports-summary": "विभिन्न तथ्याङ्क प्रकारहरूका लागि तथ्याङ्क प्रतिवेदनहरू प्रदान गर्दछ",
-	"apihelp-query+statistics-reports-param-type": "तथ्याङ्कको प्रकार (रिपोर्ट कुञ्जी)",
-	"apihelp-query+statistics-reports-param-aggregate": "तथ्याङ्कहरू एकत्रित गर्ने कि नगर्ने",
-	"bs-statistics-aggregated-report-picker-label": "प्रतिवेदन प्रकार",
-	"bs-statistics-aggregated-report-filter-category-multi": "श्रेणीहरू",
-	"bs-statistics-aggregated-report-filter-date-start": "सुरु मिति",
-	"bs-statistics-aggregated-report-filter-date-end": "अन्त्य मिति",
-	"bs-statistics-aggregated-report-filter-interval": "अन्तराल",
-	"bs-statistics-aggregated-report-filter-interval-day": "दिन",
-	"bs-statistics-aggregated-report-filter-interval-week": "हप्ता",
-	"bs-statistics-aggregated-report-filter-interval-month": "महिना",
-	"bs-statistics-aggregated-report-filter-interval-year": "वर्ष",
-	"bs-statistics-aggregated-report-filter-namespace": "नामपद",
-	"bs-statistics-aggregated-report-filter-namespaces": "नामपदहरू",
-	"bs-statistics-aggregated-report-filter-page": "पृष्ठ",
-	"bs-statistics-aggregated-report-filter-user": "प्रयोगकर्ता",
-	"bs-statistics-aggregated-report-filter-user-multi": "प्रयोगकर्ताहरू",
-	"bs-statistics-aggregated-filter-category-namespace-notice": "श्रेणीहरू वा नामपदहरूद्वारा फिल्टर गर्नुहोस्",
-	"bs-statistics-aggregated-report-error": "एउटा त्रुटि भएको छ!",
-	"bs-statistics-aggregated-report-loading": "डेटा लोड हुँदै...",
-	"bs-statistics-tag-progress-label-text": "$1 <span class='visually-hidden'>मा प्रगति पट्टी</span>",
-	"bs-statistics-ve-progressinspector-title": "प्रगति",
-	"bs-statistics-ve-progress-attr-basecount-label": "आधार गणना",
-	"bs-statistics-ve-progress-attr-baseitem-label": "आधारभूत वस्तु",
-	"bs-statistics-ve-progress-attr-progressitem-label": "प्रगति वस्तु",
-	"bs-statistics-ve-progress-attr-progressitem-help": "मुख्य भागमा देखिने पाठले प्रगतिलाई परिभाषित गर्दछ",
-	"bs-statistics-ve-progress-attr-width-label": "चौडाइ",
-	"bs-statistics-ve-progress-attr-width-help": "पिक्सेलमा प्रगति पट्टीको चौडाइ",
-	"bs-statistics-droplet-progress-name": "प्रगति",
-	"bs-statistics-droplet-progress-description": "दिइएको मापन चरहरू विरुद्ध प्रगतिको कल्पना गर्दछ"
+	}
 }

@@ -13,7 +13,6 @@
 	"bs-usermanager-idnotexist": "यो प्रयोगकर्ता अस्तित्वमा छैन।",
 	"bs-usermanager-invalid-pwd": "प्रवेश शब्द मान्य छैन।",
 	"bs-usermanager-invalid-email-gen": "इमेल ठेगाना अमान्य छ।",
-	"bs-usermanager-label": "प्रयोगकर्ता प्रबन्धक",
 	"bs-usermanager-user-exists": "यो प्रयोगकर्तानाम पहिले देखि समावेस छ।",
 	"bs-usermanager-headerusername": "प्रयोगकर्ता नाम",
 	"bs-usermanager-headerrealname": "वास्तविक नाम",
@@ -27,7 +26,5 @@
 	"bs-usermanager-no-self-desysop": "तपाईँ आफुले आफ्नो प्रवन्धक अधिकार फिर्ता गर्न सक्नुहुन्न।",
 	"bs-usermanager-endisable": "सक्षम/असक्षम",
 	"bs-usermanager-titledisableuser": "असक्षम गरिएका प्रयाेगकर्ताहरू",
-	"bs-usermanager-editpassword": "प्रवेश शब्द परिवर्तन गर्नुहाेस्",
-	"bs-usermanager-invalid-realname": "वास्तविक नाम अमान्य छ।",
-	"bs-usermanager-text": "प्रयोगकर्ताहरू"
+	"bs-usermanager-editpassword": "प्रवेश शब्द परिवर्तन गर्नुहाेस्"
 }

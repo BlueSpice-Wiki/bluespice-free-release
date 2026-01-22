@@ -9,7 +9,6 @@
 		]
 	},
 	"bs-discovery-desc": "Тема оформлення для BlueSpice",
-	"bs-discovery-skip-links-navigation-aria-label": "Перейти до посилань",
 	"bs-discovery-skip-to-navbar-primary-text": "Перейти до панелі заголовка",
 	"bs-discovery-skip-to-sidebar-primary-text": "Перейти до основної навігації",
 	"bs-discovery-skip-to-sidebar-secondary-text": "Перейти до інструментів сторінки",
@@ -48,7 +47,6 @@
 	"bs-discovery-navbar-full-screen-button-disable-title": "Вимкнути повноекранний режим",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "Вимкнути повноекранний режим",
 	"bs-discovery-breadcrumb-nav-aria-label": "Навігаційна стежка",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "Простір назв",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "Сторінки",
 	"bs-discovery-breadcrumb-nav-node-title": "Відкрити $1",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "Відкрити $1",

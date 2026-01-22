@@ -76,6 +76,7 @@ ext.enhancedUI.data.PagesTree.prototype.expandNode = function ( name ) {
 	const $element = node.$element.find( '> ul.tree-node-list' );
 	if ( $( $element[ 0 ] ).children().length === 0 ) {
 		this.store.getSubpages( node.elementId ).done( ( result ) => {
+			const $ul = $( '<ul>' ).addClass( 'tree-node-list' );
 			const data = this.prepareData( result );
 			const nodes = this.build( data, node.level + 1 );
 
@@ -89,9 +90,9 @@ ext.enhancedUI.data.PagesTree.prototype.expandNode = function ( name ) {
 				const itemId = $labelEl.attr( 'id' );
 				$li.append( this.doDraw( nodes[ nodeElement ].children || {},
 					nodes[ nodeElement ].widget, itemId, this.expanded ) );
-				$( $element ).append( $li );
+				$( $ul ).append( $li );
 				this.reEvaluateParent( nodeElement );
-				$( $element ).show();
+				node.$element.append( $ul );
 			}
 		} );
 	} else {

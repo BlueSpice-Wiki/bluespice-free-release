@@ -1,6 +1,6 @@
 {
 	"name": "OOJSPlus",
-	"version": "3.1.4",
+	"version": "3.2.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
@@ -78,7 +78,15 @@
 				"ui/widget/ContributionWidget.js",
 				"ui/widget/HeadingLabel.js",
 				"ui/widget/NoContentPlaceholderWidget.js",
-				"ui/widget/OutlineSelectWidget.js"
+				"ui/widget/OutlineSelectWidget.js",
+				"ui/widget/NumberInputWidget.js",
+				"ui/booklet/Booklet.js",
+				"ui/widget/FilterableComboBoxWidget.js",
+				"ui/widget/BatchOptionWidget.js",
+				"ui/widget/GroupedSelectWidget.js",
+				"ui/widget/PercentInput.js",
+				"ui/widget/DropdownMenuOption.js",
+				"ui/widget/DateInputWidget.js"
 			],
 			"messages": [
 				"oojsplus-namespace-content",
@@ -102,7 +110,8 @@
 				"ext.oOJSPlus",
 				"ext.mws.commonwebapis",
 				"oojs-ui.styles.icons-content",
-				"oojs-ui.styles.icons-interactions"
+				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-movement"
 			]
 		},
 		"ext.oOJSPlus.widgets.stepProgressBar": {
@@ -146,11 +155,14 @@
 		},
 		"ext.oOJSPlus.data": {
 			"scripts": [
+				"ui/data/StateManager.js",
 				"ui/data/lib/jquery.sorttable.js",
 				"ui/data/store/Store.js",
 				"ui/data/store/RemoteStore.js",
 				"ui/data/store/RemoteRestStore.js",
 				"ui/data/sorter/Sorter.js",
+				"ui/data/sorter/SortItem.js",
+				"ui/data/sorter/SortSelector.js",
 				"ui/data/FilterFactory.js",
 				"ui/data/filter/Filter.js",
 				"ui/data/filter/String.js",
@@ -160,6 +172,8 @@
 				"ui/data/filter/TagList.js",
 				"ui/data/filter/User.js",
 				"ui/data/filter/Date.js",
+				"ui/data/filter/FilterItem.js",
+				"ui/data/filter/FilterSelector.js",
 				"ui/data/column/Column.js",
 				"ui/data/column/Text.js",
 				"ui/data/column/Number.js",
@@ -174,6 +188,7 @@
 				"ui/data/column/Image.js",
 				"ui/data/Grid.js",
 				"ui/data/grid/Paginator.js",
+				"ui/data/grid/ExternalFilter.js",
 				"ui/data/grid/Toolbar.js",
 				"ui/data/tree/Item.js",
 				"ui/data/Tree.js",
@@ -194,6 +209,8 @@
 				"ext.oOJSPlus.IDGenerator",
 				"oojs-ui.styles.icons-layout",
 				"oojs-ui.styles.icons-interactions",
+				"oojs-ui.styles.icons-movement",
+				"oojs-ui.styles.icons-user",
 				"mediawiki.widgets.DateInputWidget",
 				"ext.oOJSPlus.icons"
 			],
@@ -205,8 +222,6 @@
 				"oojsplus-data-grid-widget-popup-title",
 				"oojsplus-data-grid-filter-label",
 				"oojsplus-data-grid-filter-clear",
-				"oojsplus-data-grid-filter-operator",
-				"oojsplus-data-grid-filter-number-value",
 				"oojsplus-data-paginator-aria-label",
 				"oojsplus-data-paginator-next",
 				"oojsplus-data-paginator-previous",
@@ -222,7 +237,6 @@
 				"oojsplus-data-grid-toolbar-settings-columns-label",
 				"oojsplus-data-grid-grouper-no-group",
 				"oojsplus-data-grid-selection-column-label",
-				"oojsplus-data-grid-filter-close",
 				"oojsplus-data-grid-filter-update-active-filter",
 				"oojsplus-data-grid-filter-update-results",
 				"oojsplus-data-grid-filter-update-no-filter",
@@ -246,7 +260,29 @@
 				"oojsplus-data-grid-no-results",
 				"oojsplus-field-label-query",
 				"oojsplus-data-navigation-tree-expander-label",
-				"oojsplus-data-tree-expander-label"
+				"oojsplus-data-tree-expander-label",
+				"oojsplus-data-sorter-remove",
+				"oojsplus-data-sorter-picker",
+				"oojsplus-data-filter-picker",
+				"oojsplus-data-grid-date-filter-operator-label-eq",
+				"oojsplus-data-grid-date-filter-operator-label-gt",
+				"oojsplus-data-grid-date-filter-operator-label-lt",
+				"oojsplus-data-grid-number-filter-operator-label-eq",
+				"oojsplus-data-grid-number-filter-operator-label-gt",
+				"oojsplus-data-grid-number-filter-operator-label-lt",
+				"oojsplus-data-grid-filter-input-label",
+				"oojsplus-data-grid-filter-number-input-label",
+				"oojsplus-data-grid-filter-user-input-label",
+				"oojsplus-data-grid-filter-date-input-label",
+				"oojsplus-data-grid-filter-date-operator-input-label",
+				"oojsplus-data-grid-filter-date-operator-eq-label",
+				"oojsplus-data-grid-filter-date-operator-gt-label",
+				"oojsplus-data-grid-filter-date-operator-lt-label",
+				"oojsplus-data-grid-filter-number-operator-input-label",
+				"oojsplus-data-grid-filter-number-operator-eq-label",
+				"oojsplus-data-grid-filter-number-operator-gt-label",
+				"oojsplus-data-grid-filter-number-operator-lt-label",
+				"oojsplus-data-grid-toolbar-show-widgets-label"
 			]
 		},
 		"ext.oOJSPlus.icons": {
@@ -261,7 +297,8 @@
 				"ui/formelement/GroupMultiselect.js",
 				"ui/formelement/UserMultiselect.js",
 				"ui/formelement/TitleMultiselect.js",
-				"ui/formelement/DatePicker.js"
+				"ui/formelement/DatePicker.js",
+				"ui/formelement/Percent.js"
 			],
 			"messages": [
 				"oojsplus-formelement-type-user-picker",
@@ -269,7 +306,8 @@
 				"oojsplus-formelement-type-group-multiselect",
 				"oojsplus-formelement-type-user-multiselect",
 				"oojsplus-formelement-type-title-multiselect",
-				"oojsplus-formelement-type-date-picker"
+				"oojsplus-formelement-type-date-picker",
+				"oojsplus-formelement-type-percent"
 			],
 			"dependencies": [
 				"ext.forms.formelements.bootstrap",
@@ -295,7 +333,8 @@
 				"oojsplus-dialog-action-delete",
 				"oojsplus-dialog-action-create",
 				"oojsplus-dialog-action-add",
-				"oojsplus-dialog-action-cancel"
+				"oojsplus-dialog-action-cancel",
+				"oojsplus-dialog-action-back"
 			]
 		},
 		"ext.oOJSPlus.IDGenerator": {

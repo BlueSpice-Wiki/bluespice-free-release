@@ -2,99 +2,69 @@
 
 namespace BlueSpice\Avatars\Tag;
 
-use BlueSpice\Tag\MarkerType;
-use BlueSpice\Tag\MarkerType\NoWiki;
 use MediaWiki\MediaWikiServices;
-use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
+use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\BooleanValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\IntValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\StringValue;
 
-class ProfileImage extends \BlueSpice\Tag\Tag {
+class ProfileImage extends GenericTag {
 
 	/**
-	 *
+	 * @inheritDoc
+	 */
+	public function getTagNames(): array {
+		return [ 'bs:profileimage', 'profileimage' ];
+	}
+
+	/**
 	 * @return bool
 	 */
-	public function needsDisabledParserCache() {
+	public function hasContent(): bool {
 		return false;
 	}
 
 	/**
-	 *
-	 * @return string
+	 * @inheritDoc
 	 */
-	public function getContainerElementName() {
+	public function getContainerElementName(): ?string {
 		return 'div';
 	}
 
 	/**
-	 *
-	 * @return bool
+	 * @inheritDoc
 	 */
-	public function needsParsedInput() {
-		return false;
-	}
-
-	/**
-	 *
-	 * @return bool
-	 */
-	public function needsParseArgs() {
-		return true;
-	}
-
-	/**
-	 *
-	 * @return MarkerType
-	 */
-	public function getMarkerType() {
-		return new NoWiki();
-	}
-
-	/**
-	 *
-	 * @return null
-	 */
-	public function getInputDefinition() {
-		return null;
-	}
-
-	/**
-	 *
-	 * @return array
-	 */
-	public function getArgsDefinitions() {
-		return [];
-	}
-
-	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return ProfileImageHandler
-	 */
-	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
+	public function getHandler( MediaWikiServices $services ): ITagHandler {
 		return new ProfileImageHandler(
-			$processedInput,
-			$processedArgs,
-			$parser,
-			$frame,
-			MediaWikiServices::getInstance()->getService( 'MWStake.DynamicFileDispatcher.Factory' ),
-			MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )
+			$services->getService( 'MWStake.DynamicFileDispatcher.Factory' ),
+			$services->getService( 'BSRendererFactory' ),
+			$services->getUserFactory()
 		);
 	}
 
 	/**
-	 *
-	 * @return string[]
+	 * @inheritDoc
 	 */
-	public function getTagNames() {
+	public function getParamDefinition(): ?array {
+		$username = ( new StringValue() )->setDefaultValue( '' );
+		$width = ( new IntValue() )->setDefaultValue( 32 )->setMin( 1 );
+		$height = ( new IntValue() )->setDefaultValue( 32 )->setMin( 1 );
+		$raw = ( new BooleanValue() )->setDefaultValue( false );
+
 		return [
-			'bs:profileimage',
-			'profileimage'
+			'username' => $username,
+			'width' => $width,
+			'height' => $height,
+			'raw' => $raw,
 		];
 	}
 
+	/**
+	 * @inheritDoc
+	 */
+	public function getClientTagSpecification(): ClientTagSpecification|null {
+		return null;
+	}
 }

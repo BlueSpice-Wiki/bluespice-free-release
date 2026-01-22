@@ -12,7 +12,6 @@
 	"bs-usermanager-idnotexist": "Esse usuário não existe.",
 	"bs-usermanager-invalid-pwd": "A senha é inválida.",
 	"bs-usermanager-invalid-email-gen": "o endereço de email é inválido.",
-	"bs-usermanager-label": "Administrador de usuários",
 	"bs-usermanager-text": "Usuários",
 	"bs-usermanager-user-exists": "O nome de usuário já existe.",
 	"bs-usermanager-headerusername": "Nome de usuário",
@@ -46,6 +45,5 @@
 	"bs-usermanager-label-password-change-strategy": "Método",
 	"bs-usermanager-label-password-change-strategy-reset": "Enviar link de redefinição de senha para o usuário",
 	"bs-usermanager-label-password-change-strategy-pw": "Alterar a senha diretamente",
-	"bs-usermanager-no-mail": "O usuário selecionado não tem endereço de e-mail confirmado",
-	"bs-usermanager-invalid-realname": "O nome verdadeiro é inválido."
+	"bs-usermanager-no-mail": "O usuário selecionado não tem endereço de e-mail confirmado"
 }

@@ -2,8 +2,8 @@
 
 namespace MWStake\MediaWiki\Component\AlertBanners\Hook\SiteNoticeAfter;
 
-use GlobalVarConfig;
-use Html;
+use MediaWiki\Config\GlobalVarConfig;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProvider;
 use MWStake\MediaWiki\Component\AlertBanners\IAlertProviderFactory;
@@ -13,7 +13,6 @@ use Wikimedia\ObjectFactory\ObjectFactory;
 class AddAlerts {
 
 	/**
-	 *
 	 * @param string &$siteNotice
 	 * @param Skin $skin
 	 * @return bool
@@ -24,20 +23,13 @@ class AddAlerts {
 		return $provider->process();
 	}
 
-	/**
-	 *
-	 * @var string
-	 */
+	/** @var string */
 	private $siteNotice = '';
 
-	/**
-	 *
-	 * @var ObjectFactory
-	 */
-	private $objectFactory = null;
+	/** @var ObjectFactory */
+	private $objectFactory;
 
 	/**
-	 *
 	 * @param string &$siteNotice
 	 * @param Skin $skin
 	 * @param ObjectFactory $objectFactory
@@ -48,8 +40,6 @@ class AddAlerts {
 	}
 
 	/**
-	 * Undocumented function
-	 *
 	 * @return void
 	 */
 	public function process() {
@@ -112,7 +102,6 @@ class AddAlerts {
 	}
 
 	/**
-	 *
 	 * @param string $registryKey
 	 * @param IAlertProvider $provider
 	 * @return string

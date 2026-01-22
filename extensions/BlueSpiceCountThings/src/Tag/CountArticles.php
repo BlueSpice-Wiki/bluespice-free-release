@@ -3,54 +3,57 @@
 namespace BlueSpice\CountThings\Tag;
 
 use MediaWiki\MediaWikiServices;
-use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
+use MediaWiki\Message\Message;
+use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
-class CountArticles extends \BlueSpice\Tag\Tag {
+class CountArticles extends GenericTag {
 
 	/**
-	 *
-	 * @return bool
+	 * @inheritDoc
 	 */
-	public function needsDisabledParserCache() {
-		return true;
+	public function getTagNames(): array {
+		return [ 'bs:countarticles', 'countarticles' ];
 	}
 
 	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return CountArticlesHandler
+	 * @inheritDoc
 	 */
-	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
-		$namespaceInfo = MediaWikiServices::getInstance()->getNamespaceInfo();
-		return new CountArticlesHandler(
-			$processedInput,
-			$processedArgs,
-			$parser,
-			$frame,
-			$namespaceInfo
-		);
-	}
-
-	/**
-	 *
-	 * @return string[]
-	 */
-	public function getTagNames() {
-		return [
-			'bs:countarticles'
-		];
-	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	public function getContainerElementName() {
+	public function getContainerElementName(): ?string {
 		return 'span';
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function hasContent(): bool {
+		return false;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getHandler( MediaWikiServices $services ): ITagHandler {
+		return new CountArticlesHandler( $services->getNamespaceInfo() );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getParamDefinition(): ?array {
+		return null;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getClientTagSpecification(): ClientTagSpecification|null {
+		return new ClientTagSpecification(
+			'CountArticles',
+			Message::newFromKey( 'bs-countthings-tag-countarticles-desc' ),
+			null,
+			Message::newFromKey( 'bs-countthings-ve-countarticles-title' )
+		);
 	}
 }

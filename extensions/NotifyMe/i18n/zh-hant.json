@@ -5,8 +5,8 @@
 			"Kly"
 		]
 	},
-	"prefs-notifications": "通知",
 	"notifyme-desc": "通知",
+	"prefs-notifications": "通知",
 	"notifyme-subscriber-provider-preferences-desc": "從通知中心訂閱",
 	"notifyme-link-label-view-page": "查看頁面",
 	"notifyme-link-label-diff": "查看差異",
@@ -191,6 +191,5 @@
 	"notifyme-ui-delivery-label": "傳遞",
 	"prefs-subs": "通知訂閱",
 	"notifyme-notification-filter-count-aria-label": "包含 {{PLURAL:$1|1|$1}} 則通知",
-	"notifyme-notification-filter-aria-label": "通知過濾器",
-	"notifyme-notification-center-pagination-number-aria-label": "已顯示 $1 至 $2 的通知"
+	"notifyme-notification-filter-aria-label": "通知過濾器"
 }

@@ -10,5 +10,5 @@
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Anzeigen",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Verstecken",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Titelsichtbarkeit",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "{{#FORMAL:Du kannst|Sie können}} hier festlegen, ob der Titel angezeigt wird oder nicht."
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Du kannst hier festlegen, ob der Titel angezeigt wird oder nicht."
 }

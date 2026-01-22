@@ -2,43 +2,31 @@
 
 namespace BlueSpice\CountThings\Tag;
 
-use BlueSpice\Tag\Handler;
+use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\PPFrame;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
+use Wikimedia\Rdbms\ILoadBalancer;
 
-class CountFilesHandler extends Handler {
-
-	/**
-	 *
-	 * @var \Wikimedia\Rdbms\IDatabase
-	 */
-	protected $dbr = null;
+class CountFilesHandler implements ITagHandler {
 
 	/**
-	 *
-	 * @var bool
+	 * @param ILoadBalancer $lb
 	 */
-	protected $noduplicates = true;
-
-	/**
-	 *
-	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
-	 * @param bool $noduplicates
-	 */
-	public function __construct( $loadBalancer, $noduplicates ) {
-		$this->dbr = $loadBalancer->getConnection( DB_REPLICA );
-		$this->noduplicates = $noduplicates;
+	public function __construct(
+		private readonly ILoadBalancer $lb
+	) {
 	}
 
-	public function handle() {
-		$distinct = '';
-		if ( $this->noduplicates ) {
-			$distinct = 'DISTINCT';
+	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
+		$distinct = 'DISTINCT';
+		if ( $params['noduplicates'] ) {
+			$distinct = '';
 		}
-		$number = $this->dbr->selectField(
-			'image',
-			"COUNT( $distinct img_sha1 )",
-			'',
-			__METHOD__
-		);
+		$number = $this->lb->getConnection( DB_REPLICA )->newSelectQueryBuilder()
+			->from( 'image' )
+			->select( 'COUNT( ' . $distinct . ' img_sha1 )' )
+			->caller( __METHOD__ )
+			->fetchField();
 		return " $number ";
 	}
 }

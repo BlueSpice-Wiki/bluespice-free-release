@@ -199,5 +199,7 @@
 	"bs-discovery-data-after-content-cnt-aria-label": "Aria-label for data after content section",
 	"bs-discovery-footer-places-alt-text-mediawiki": "Alt text for powered by MediaWiki footer link image",
 	"bs-discovery-footer-places-alt-text-bluespice": "Alt text for powered by BlueSpice footer link image",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Alt text for powered by Semantic MediaWiki footer link image"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Alt text for powered by Semantic MediaWiki footer link image",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Label for mode raw in breadcrumbs on [[Special:EditWatchlist]]",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Label for mode clear in breadcrumbs on [[Special:EditWatchlist]]"
 }

@@ -8,7 +8,6 @@
 	"bs-usermanager-idnotexist": "Iste usator non existe.",
 	"bs-usermanager-invalid-pwd": "Le contrasigno non es valide.",
 	"bs-usermanager-invalid-email-gen": "Le adresse de e-mail non es valide.",
-	"bs-usermanager-label": "Gestor de usatores",
 	"bs-usermanager-text": "Usatores",
 	"bs-usermanager-user-exists": "Le nomine de usator jam existe.",
 	"bs-usermanager-headerusername": "Nomine de usator",
@@ -52,7 +51,5 @@
 	"bs-usermanager-showenabled": "Monstrar usatores active",
 	"bs-usermanager-mass-enable": "Activar usatores",
 	"bs-usermanager-mass-disable": "Disactivar usatores",
-	"bs-usermanager-error-generic": "Un error ha occurrite",
-	"bs-usermanager-invalid-realname": "Le nomine real es invalide",
-	"bs-usermanager-password-repeat-mismatch-label": "Le contrasignos non es identic. Per favor verifica tu entrata."
+	"bs-usermanager-error-generic": "Un error ha occurrite"
 }

@@ -17,6 +17,20 @@ body.hide-title.title-fixed .enhanced-history-toolbar {
 	top: var( --navbar-primary-height ) !important;
 }
 
+/* Fix chatbot button color */
+.base-bluespicediscovery #chat button#maximizeChat {
+	border-color: var( --sidebar-secondary-bg );
+}
+
+.base-bluespicediscovery #chat button#maximizeChat.attention {
+	background-color: #3e5389;
+	background-image: url( ./../../images/chatbot_logo_white.svg );
+}
+
+.base-bluespicediscovery #chat button#maximizeChat.active {
+	background-color: #f1f3f9;
+}
+
 /* ERM43801 - Fix contrast mode of browser with forced colors */
 @media ( forced-colors: active ) {
 	.notifications-ui-widget-ToggleReadCircleButtonWidget-circle,

@@ -4,7 +4,6 @@
 			"Lancine.kounfantoh.fofana"
 		]
 	},
-	"bs-discovery-skip-links-navigation-aria-label": "ߛߘߌ߬ߜߋ߲ ߠߊߝߘߏ߬",
 	"bs-discovery-skip-to-main-text": "ߊ߬ ߟߊߜߊ߲߫ ߞߊ߬ ߥߊ߫ ߓߊ߯ߙߊ߫ ߞߣߍ ߞߊ߲߬",
 	"bs-discovery-back-to-top-text": "ߌ ߞߐߛߊ߬ߦߌ߬ ߛߊ߲ߝߍ߬",
 	"bs-discovery-back-to-top-aria-label": "ߌ ߞߐߛߊ߬ߦߌ߬ ߛߊ߲ߝߍ߬",
@@ -29,7 +28,6 @@
 	"bs-discovery-navbar-full-screen-button-enable-aria-label": "ߊ߬ ߓߌ߬ߟߊ߬ ߘߊ߬ߣߊ߲߬ߥߟߊ ߡߎ߰ߡߍ ߗߏ߯ߦߊ ߟߊ߫",
 	"bs-discovery-navbar-full-screen-button-disable-title": "ߊ߬ ߓߐ߫ ߘߊ߬ߣߊ߲߬ߥߟߊ ߡߎ߰ߡߍ ߗߏ߯ߦߊ ߟߊ߫",
 	"bs-discovery-navbar-full-screen-button-disable-aria-label": "ߊ߬ ߓߐ߫ ߘߊ߬ߣߊ߲߬ߥߟߊ ߡߎ߰ߡߍ ߗߏ߯ߦߊ ߟߊ߫",
-	"bs-discovery-breadcrumb-nav-node-ns-aria-label": "ߕߐ߯ߛߓߍ ߞߣߍ",
 	"bs-discovery-breadcrumb-nav-node-ns-main": "ߞߐߜߍ ߟߎ߬",
 	"bs-discovery-breadcrumb-nav-node-title": "$1 ߟߊߞߊ߬",
 	"bs-discovery-breadcrumb-nav-node-aria-label": "$1 ߘߊߦߟߍ߬",

@@ -18,6 +18,11 @@ ext.enhancedUI.api.Api.prototype.get = function ( path, params ) {
 	return this.ajax( path, params, 'GET' );
 };
 
+ext.enhancedUI.api.Api.prototype.post = function ( path, params ) {
+	params = params || {};
+	return this.ajax( path, JSON.stringify( { options: params } ), 'POST' );
+};
+
 ext.enhancedUI.api.Api.prototype.ajax = function ( path, data, method ) {
 	data = data || {};
 	const dfd = $.Deferred();
@@ -52,4 +57,12 @@ ext.enhancedUI.api.Api.prototype.getFileMetadata = function ( filename ) {
 
 ext.enhancedUI.api.Api.prototype.getNamespaces = function () {
 	return this.get( 'namespaces' );
+};
+
+ext.enhancedUI.api.Api.prototype.savePreferences = function ( prefs ) {
+	return this.post( 'preferences', prefs );
+};
+
+ext.enhancedUI.api.Api.prototype.resetPreferences = function () {
+	return this.post( 'reset-preferences' );
 };

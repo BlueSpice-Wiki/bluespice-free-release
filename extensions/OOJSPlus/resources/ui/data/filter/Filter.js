@@ -3,14 +3,11 @@ OOJSPlus.ui.data.filter.Filter = function ( cfg ) {
 	this.type = cfg.type;
 	this.conditionValue = cfg.value || '';
 	this.value = this.getFilterValue();
-	this.filterName = '';
-	this.closePopupOnChange = cfg.closePopupOnChange || false;
+	this.filterName = cfg.filterName || '';
+	this.closePopupOnChange = cfg.autoClosePopup || false;
 	this.delayChange = cfg.delayChange || false;
+	this.icon = cfg.icon || 'funnel';
 
-	this.$element.append( new OO.ui.HorizontalLayout( {
-		items: [ this.getCloseButton(), this.getClearButton() ],
-		classes: [ 'grid-filter-popup-head' ]
-	} ).$element );
 	this.$element.append( this.getLayout().$element );
 };
 
@@ -46,41 +43,6 @@ OOJSPlus.ui.data.filter.Filter.prototype.setOverlay = function ( $overlay ) {
 	this.$overlay = $overlay;
 };
 
-OOJSPlus.ui.data.filter.Filter.prototype.getClearButton = function () {
-	this.clearButton = new OO.ui.ButtonWidget( {
-		framed: true,
-		label: mw.message( 'oojsplus-data-grid-filter-clear' ).text(),
-		flags: [ 'primary', 'destructive' ],
-		classes: [ 'grid-filter-popup-clear' ],
-		disabled: true
-	} );
-
-	this.clearButton.connect( this, {
-		click: function () {
-			this.clearValues();
-			this.emit( 'clear' );
-
-		}
-	} );
-	return this.clearButton;
-};
-
-OOJSPlus.ui.data.filter.Filter.prototype.getCloseButton = function () {
-	this.closeButton = new OO.ui.ButtonWidget( {
-		framed: false,
-		title: mw.message( 'oojsplus-data-grid-filter-close' ).text(),
-		classes: [ 'grid-filter-popup-close' ],
-		icon: 'close'
-	} );
-
-	this.closeButton.connect( this, {
-		click: function () {
-			this.emit( 'closePopup' );
-		}
-	} );
-	return this.closeButton;
-};
-
 OOJSPlus.ui.data.filter.Filter.prototype.getValue = function () {
 	return this.value;
 };
@@ -106,12 +68,10 @@ OOJSPlus.ui.data.filter.Filter.prototype.doChangeValue = function ( value ) {
 	let shouldClosePopup = this.closePopupOnChange;
 	if ( !value ) {
 		this.value = null;
-		this.clearButton.setDisabled( true );
 		shouldClosePopup = true;
 	} else {
 		this.conditionValue = value;
 		this.value = this.getFilterValue();
-		this.clearButton.setDisabled( false );
 	}
 
 	this.emit( 'change', this, shouldClosePopup );
@@ -132,4 +92,10 @@ OOJSPlus.ui.data.filter.Filter.prototype.getFilterValue = function () {
 
 OOJSPlus.ui.data.filter.Filter.prototype.matches = function ( value ) { // eslint-disable-line no-unused-vars
 	return true;
+};
+
+OOJSPlus.ui.data.filter.Filter.prototype.getDisplayValue = function () {
+	if ( this.value && this.value.value ) {
+		return this.value.value.toString();
+	}
 };

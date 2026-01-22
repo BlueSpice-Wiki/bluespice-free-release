@@ -20,17 +20,17 @@
 	"bs-pagesvisited-pref-sort-pagename": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], option label for title\n{{Identical|Title}}",
 	"bs-pagesvisited-tag-pagesvisited-desc": "Used in InsertMagic extension, tag description for show a list of pages you have visited.\n{{Related|Bs-tag-desc}}",
 	"bs-pagesvisited-ve-pagesvisited-title": "Title for pagesvisited tag in visualeditor",
-	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Label for the parameter \"count\"\n{{Identical|Count}}",
 	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Help message for the parameter \"count\"",
-	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label": "Label for the parameter \"maxtitlelength\"",
 	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "Help message for the parameter \"maxtitlelength\"",
-	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Label for the parameter \"order\"\n{{Identical|Order}}",
 	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "Help message for the parameter \"order\"",
-	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Label for the parameter \"namespaces\"\n{{Identical|Namespace}}",
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Help message for the parameter \"namespaces\"",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Label for the option \"time\" of the \"order\" attribute input field in the visualeditor tag inspector",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Label for the option \"pagename\" of the \"order\" attribute input field in the visualeditor tag inspector",
 	"bs-pagesvisited-droplet-name": "Title of droplet for tag pagesvisited",
 	"bs-pagesvisited-droplet-description": "Description of droplet for tag pagesvisited",
-	"bs-pagesvisited-label-anon-user": "Output of a tag for anonymous users"
+	"bs-pagesvisited-label-anon-user": "Output of a tag for anonymous users",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Label for the parameter \"count\"",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Label for the parameter \"maxtitlelength\"",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Label for the parameter \"order\"",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Label for the parameter \"namespaces\""
 }

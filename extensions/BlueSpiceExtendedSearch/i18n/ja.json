@@ -85,7 +85,6 @@
 	"bs-extendedsearch-autocomplete-result-primary-no-results-label": "クエリに有効な一致がありません",
 	"bs-extendedsearch-autocomplete-result-type": "種類: $1",
 	"bs-extendedsearch-autocomplete-result-top-match-label": "該当するものは存在しません。",
-	"bs-extendedsearch-autocomplete-result-secondary-results-label": "あなたも探しているかもしれません...",
 	"bs-extendedsearch-search-center-result-help": "上の検索バーに何か入力してください...",
 	"bs-extendedsearch-searchcenter-filter-or-label": "または",
 	"bs-extendedsearch-searchcenter-filter-and-label": "と",
@@ -181,6 +180,5 @@
 	"bs-extendedsearch-droplet-search-description": "ページのコンテンツに検索欄を追加",
 	"bs-extendedsearch-source-label-externalfile": "外部ファイル",
 	"bs-extendedsearch-trace-error-invalid-data": "トレース データが提供されていないか無効です。このページに直接アクセスしないでください。",
-	"apihelp-bs-extendedsearch-recently-found-pages-summary": "利用者が最近検索結果から閲覧したページをリスト表示します。",
-	"bs-extendedsearch-recentlyfound-ignore": "除去"
+	"apihelp-bs-extendedsearch-recently-found-pages-summary": "利用者が最近検索結果から閲覧したページをリスト表示します。"
 }

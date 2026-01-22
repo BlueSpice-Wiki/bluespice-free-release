@@ -9,7 +9,5 @@
 	},
 	"bs-articleinfo-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of article info extension",
 	"prefs-articleinfo": "Used in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], headline for article information section in preferences.\n{{Identical|Page information}}",
-	"bs-articleinfo-pref-checkrevisioninterval-label": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], timespan until article informations are updated in seconds:",
-	"bs-articleinfo-newrevision-info-text-reload": "Message within an alert box, presented to the user when a new page revision is available. Link on the word 'reload'.",
-	"bs-articleinfo-pref-checkrevisioninterval-help-label": "Description for config variable \"ArticleInfoCheckRevisionInterval\""
+	"bs-articleinfo-newrevision-info-text-reload": "Message within an alert box, presented to the user when a new page revision is available. Link on the word 'reload'."
 }

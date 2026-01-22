@@ -54,7 +54,6 @@
 	"enhanced-standard-uis-allpages-namespace-list-label": "Spatio de nomines",
 	"enhanced-standard-uis-paginator-aria-label": "Pagination",
 	"enhanced-standard-uis-allpages-watch-label": "Observar pagina $1",
-	"enhanced-standard-uis-allpages-unwatch-label": "Disobservar pagina $1",
 	"enhanced-standard-uis-allpages-pageinfo-label": "Monstrar information pro le pagina $1",
 	"enhanced-standard-uis-allpages-filter-results-label": "$1 resultato{{PLURAL:$1||s}} trovate",
 	"enhanced-standard-uis-filelist-grid-preview-title": "Previsualisation",

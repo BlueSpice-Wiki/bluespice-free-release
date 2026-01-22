@@ -6,7 +6,7 @@ bs.namespaceManager.ui.column.NamespaceSettingColumn = function ( cfg ) {
 
 OO.inheritClass( bs.namespaceManager.ui.column.NamespaceSettingColumn, OOJSPlus.ui.data.column.Boolean );
 
-bs.namespaceManager.ui.column.NamespaceSettingColumn.prototype.getHeader = function ( data ) {
+bs.namespaceManager.ui.column.NamespaceSettingColumn.prototype.getHeader = function () {
 	const $cell = $( '<th>' ).addClass(
 		'oojsplus-data-gridWidget-cell oojsplus-data-gridWidget-column-header bs-namespace-manager-column-setting'
 	);
@@ -18,38 +18,22 @@ bs.namespaceManager.ui.column.NamespaceSettingColumn.prototype.getHeader = funct
 		invisibleLabel: this.invisibleLabel,
 		classes: [ 'header-button' ]
 	} );
-	let direction = this.sorter.getValue().direction ? this.sorter.getValue().direction : 'other';
-	this.setSortValue( $cell, direction );
 
 	if ( this.sorter ) {
 		this.headerButton.connect( this, {
 			click: function () {
 				this.toggleSort();
-				direction = this.sorter.getValue().direction ? this.sorter.getValue().direction : 'other';
+				const direction = this.sorter.getValue().direction ? this.sorter.getValue().direction : 'other';
 				this.setSortValue( $cell, direction );
 				this.emit( 'sort-update', $cell, direction );
 			}
 		} );
 	}
-	this.filter.connect( this, {
-		closePopup: function () {
-			if ( this.filterButton ) {
-				this.filterButton.getPopup().toggle( false );
-			}
-		}
-	} );
 	$cell.append();
-	this.headerButton.$element.addClass( 'filterable' );
 
 	const $textCnt = $( '<div>' ).addClass( 'header-text' );
 	$textCnt.append( this.headerButton.$element );
-	const $filterCnt = $( '<div>' ).addClass( 'header-filter' );
-	this.sortIndicator = new OO.ui.IndicatorWidget( {
-		indicator: null
-	} );
-	$filterCnt.append( this.sortIndicator.$element, this.createFilterLayout( data ).$element );
-	this.filterButton.$element.removeClass( 'filter-button' );
-	$cell.append( $textCnt, $filterCnt );
+	$cell.append( $textCnt );
 	return $cell;
 };
 

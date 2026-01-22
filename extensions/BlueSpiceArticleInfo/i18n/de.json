@@ -19,7 +19,7 @@
 	"bs-articleinfo-flyout-templatelinks-emptytext": "Keine Vorlagen verwendet",
 	"bs-articleinfo-flyout-lasteditedtime-text": "Letzte Bearbeitung",
 	"bs-articleinfo-flyout-lastediteduser-text": "Letzter Bearbeiter",
-	"bs-articleinfo-newrevision-info-text-reload": "Es ist eine neue Version dieser Seite verfügbar. {{#FORMAL:[[:$1|Lade]]|[[:$1|Laden]] Sie}} bitte die Seite neu, um den aktuellen Inhalt anzusehen.",
+	"bs-articleinfo-newrevision-info-text-reload": "Es ist eine neue Version dieser Seite verfügbar. [[:$1|Lade]] bitte die Seite neu, um den aktuellen Inhalt anzusehen.",
 	"bs-articleinfo-flyout-subpages-title": "Unterseiten",
 	"bs-articleinfo-pagetool-subpages-tooltip": "Unterseiten",
 	"bs-articleinfo-dialog-subpages-title": "Unterseiten",

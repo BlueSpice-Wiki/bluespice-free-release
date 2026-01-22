@@ -172,22 +172,25 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertMedia = function ( 
 		if ( !fragment ) {
 			fragment = this.getFragment();
 		}
+
 		title = mw.Title.newFromText( 'File:' + fileName );
+
 		const config = require( './insertMediaConfig.json' );
 		const alignConfig = config.imagesAlignment;
 		const typeConfig = config.imagesType;
-		let heightConfig = config.imagesHeight;
-		if ( heightConfig !== 'auto' ) {
-			heightConfig = parseInt( heightConfig );
+
+		let heightConfig = config.imagesHeight || null;
+		let widthConfig = config.imagesWidth || null;
+
+		if ( heightConfig ) {
+			heightConfig = parseInt( heightConfig, 10 );
 		}
-		let widthConfig = config.imagesWidth;
-		if ( widthConfig !== 'auto' ) {
-			widthConfig = parseInt( widthConfig );
+		if ( widthConfig ) {
+			widthConfig = parseInt( widthConfig, 10 );
 		}
-		let isDefaultSize = false;
-		if ( heightConfig === 'auto' && widthConfig === 'auto' ) {
-			isDefaultSize = true;
-		}
+
+		const isDefaultSize = !heightConfig && !widthConfig;
+
 		this.imageModel = ve.dm.MWImageModel.static.newFromImageAttributes(
 			{
 				src: url,
@@ -244,7 +247,7 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.insertExistingMedia = fun
 	}
 };
 
-enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors = function ( error, results, fileName, fragment ) { // eslint-disable-line no-shadow-restricted-names
+enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.handleErrors = function ( error, results, fileName, fragment ) {
 	const dfd = $.Deferred();
 	if ( error === 'fileexists-no-change' ) {
 		this.insertExistingMedia( fragment, fileName );

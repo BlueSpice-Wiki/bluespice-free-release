@@ -13,7 +13,6 @@
 	"bs-usermanager-idnotexist": "Denna användare existerar inte.",
 	"bs-usermanager-invalid-pwd": "Lösenordet är ogiltigt.",
 	"bs-usermanager-invalid-email-gen": "E-postadressen är ogiltig.",
-	"bs-usermanager-label": "Användaradministrering",
 	"bs-usermanager-user-exists": "Användarnamnet existerar redan.",
 	"bs-usermanager-headerusername": "Användarnamn",
 	"bs-usermanager-headerrealname": "Riktigt namn",
@@ -42,6 +41,5 @@
 	"bs-usermanager-editpassword": "Ändra lösenord",
 	"bs-usermanager-multipleuserselected": "Du kan endast ändra lösenordet för en användare i taget",
 	"action-usermanager-editpassword": "ändra en användares lösenord",
-	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]",
-	"bs-usermanager-invalid-realname": "Det riktiga namnet är ogiltigt."
+	"right-usermanager-editpassword": "Ändra användarlösenord med hanteraren på specialsidan [[Special:UserManager]]"
 }

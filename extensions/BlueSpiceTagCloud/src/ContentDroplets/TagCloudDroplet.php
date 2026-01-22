@@ -32,7 +32,7 @@ class TagCloudDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.tagcloud.visualEditorPlugin' ];
+		return [ 'ext.bluespice.tagcloud.droplet' ];
 	}
 
 	/**
@@ -68,7 +68,7 @@ class TagCloudDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'tagCloudCommand';
+		return 'bs_tagcloudCommand';
 	}
 
 }

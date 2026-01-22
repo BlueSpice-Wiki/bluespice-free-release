@@ -1,0 +1,13 @@
+[
+	{
+		"method": "POST",
+		"path": "/mws/v1/wire/send",
+		"class": "MWStake\\MediaWiki\\Component\\Wire\\Rest\\SendMessageHandler",
+		"services": [ "MWStake.Wire.Messenger" ]
+	}, {
+		"method": "POST",
+		"path": "/mws/v1/wire/check-can-subscribe",
+		"class": "MWStake\\MediaWiki\\Component\\Wire\\Rest\\CheckCanSubscribeHandler",
+		"services": [ "MWStake.Wire.ChannelAuthorizer" ]
+	}
+]

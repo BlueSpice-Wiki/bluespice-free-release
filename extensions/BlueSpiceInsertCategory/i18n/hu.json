@@ -9,6 +9,7 @@
 	"bs-insertcategory-desc": "Párbeszédpanel kategória link beírásához",
 	"bs-insertcategory-insertcat": "Kategória beillesztése",
 	"prefs-insertcategory": "Kategória beillesztése",
+	"bs-insertcategory-pref-withparents": "Kategória beszúrása a szülőivel együtt",
 	"bs-insertcategory-page-header-categories-edit-tooltip": "A lap kategóriáinak szerkesztése",
 	"bs-insertcategory-edit-dialog-button-tooltip": "A lap kategóriáinak szerkesztése",
 	"bs-insertcategory-edit-dialog-button-aria-label": "Párbeszédpanel megnyitása a lap kategóriáinak szerkesztéséhez",
@@ -22,6 +23,7 @@
 	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "Nem sikerült lekérni a lap kategóriáit",
 	"bs-insertcategory-no-categories": "Nincs hozzárendelve kategória",
 	"bs-insertcategory-edit-dialog-tree-view": "Összes kategória megjelenítése",
+	"bs-insertcategory-pref-withparents-help": "Hozzáadja a laphoz magát a kategóriát és a szülőkategóriáit is",
 	"bs-insertcategory-pref-uploadintegration": "Lap kategóriák használata a feltöltési párbeszédpanelen",
 	"bs-insertcategory-pref-uploadintegration-help": "Lap kategóriákat alapértelmezettként  állítja be a feltöltési párbeszédpanelen"
 }

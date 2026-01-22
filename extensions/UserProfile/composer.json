@@ -17,6 +17,7 @@
 		"composer/installers": "~1.0|~2",
 		"mwstake/mediawiki-component-dynamicfiledispatcher": "~1",
 		"mwstake/mediawiki-component-formengine": "~3.0",
+		"mwstake/mediawiki-component-generictaghandler": "~1",
 		"mwstake/mediawiki-component-inputprocessor": "~1"
 	},
 	"require-dev": {

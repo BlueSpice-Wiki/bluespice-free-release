@@ -30,7 +30,7 @@
 				align-items: center;
 				position: relative;
 				min-height: 70px;
-				background-color: rgba( 62, 83, 137, 0.1 );
+				background-color: #f1f3f9;
 				border-radius: 5px;
 				margin-top: 18px;
 				padding-right: 10px;
@@ -52,7 +52,9 @@
 				}
 
 				.notification-message {
-					font-size: 14px;
+					font-size: 0.9375rem;
+					padding: 1.2em 0;
+					color: var( --color-base, #202122 );
 
 					a {
 						text-decoration: underline;
@@ -62,9 +64,10 @@
 				.notification-timestamp {
 					position: absolute;
 					right: 5px;
-					bottom: 5px;
-					font-size: 7pt;
-					color: #666;
+					top: 0;
+					font-size: 0.9375rem;
+					font-style: italic;
+					color: var( --color-base, #202122 );
 				}
 			}
 		}
@@ -75,7 +78,7 @@
 		bottom: -30px;
 		width: 100%;
 		text-align: center;
-		font-size: 15px;
+		font-size: 0.9375rem;
 
 		/** Need to overwrite default links color **/
 		a {
@@ -92,6 +95,8 @@
 		p {
 			font-weight: bold;
 			text-align: center;
+			font-size: 0.9375rem;
+			color: var( --color-base, #202122 );
 		}
 	}
 

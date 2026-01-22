@@ -28,9 +28,9 @@
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "חלון קופץ \"מי מחובר\"",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "מספר הכניסות",
 	"bs-whoisonline-statistics-report-login-number": "כניסות",
+	"bs-whoisonline-statistics-report-login-number-desc": "כניסות מדי יום בתקופה שנבחרה",
 	"bs-whoisonline-droplet-count-name": "מספר המשתמשים המחוברים",
 	"bs-whoisonline-droplet-count-description": "מספר המשתמשים שמחוברים כעת",
 	"bs-whoisonline-droplet-popup-name": "רשימת משתמשים המחוברים",
-	"bs-whoisonline-droplet-popup-description": "חלון קופץ עם רשימה של כל המשתמשים המחוברים כעת",
-	"bs-whoisonline-statistics-report-login-number-desc": "כניסות מדי יום בתקופה שנבחרה"
+	"bs-whoisonline-droplet-popup-description": "חלון קופץ עם רשימה של כל המשתמשים המחוברים כעת"
 }

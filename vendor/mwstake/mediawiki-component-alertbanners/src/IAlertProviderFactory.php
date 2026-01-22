@@ -2,6 +2,8 @@
 
 namespace MWStake\MediaWiki\Component\AlertBanners;
 
+use Exception;
+
 interface IAlertProviderFactory {
 
 	/**

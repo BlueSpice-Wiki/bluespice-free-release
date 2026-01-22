@@ -2,7 +2,6 @@
 	"@metadata": {
 		"authors": [
 			"1233qwer1234qwer4",
-			"EneshTranslates",
 			"Kaganer",
 			"Kareyac",
 			"Mailman",
@@ -17,7 +16,6 @@
 	"bs-usermanager-idnotexist": "Такого участника не существует.",
 	"bs-usermanager-invalid-pwd": "Пароль неверен.",
 	"bs-usermanager-invalid-email-gen": "Недопустимый адрес электронной почты.",
-	"bs-usermanager-label": "Управление учётными записями",
 	"bs-usermanager-text": "Пользователи",
 	"bs-usermanager-user-exists": "Такое имя участника уже существует.",
 	"bs-usermanager-headerusername": "Имя участника",
@@ -39,7 +37,5 @@
 	"right-usermanager-editpassword": "может изменять пароли участников на служебной странице [[Special:UserManager]].",
 	"bs-usermanager-label-password-change-strategy-pw": "Сменить пароль напрямую",
 	"bs-usermanager-save": "Сохранить",
-	"bs-usermanager-cancel": "Отмена",
-	"bs-usermanager-invalid-realname": "Настоящее имя указано неверно",
-	"bs-usermanager-password-repeat-mismatch-label": "Пароли не совпадают. Пожалуйста, проверьте введённое."
+	"bs-usermanager-cancel": "Отмена"
 }

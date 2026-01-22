@@ -9,12 +9,6 @@
 	"bs-saferedit-desc": "מספקת אזהרות אם משתמשים אחרים עורכים את הדף",
 	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|{{GENDER:$1|עורך|עורכת}}|עורכים}} את הדף",
 	"bs-saferedit-someone-editing": "הדף נערך כרגע",
-	"bs-saferedit-pref-interval": "הפרש לחיפוש בעריכות בו־זמניות:",
-	"bs-saferedit-pref-shownameofeditinguser": "הצגת שם העורך הנוכחי",
-	"bs-saferedit-pref-interval-help": "הגדרת הזמן בשניות לבדיקה אם אדם אחר עורך את הדף.",
-	"bs-saferedit-pref-shownameofeditinguser-help": "הצגת המשתמשים שעורכים כעת את הדף כרמז בראש הדף.",
-	"bs-saferedit-pref-edit-interval": "מרווח לבדיקת עריכה (שניות)",
-	"bs-saferedit-pref-edit-interval-help": "באיזו תדירות, בשניות, לבדוק אם אדם אחר עורך את הדף (ברירת מחדל: 3 שניות)",
 	"bs-saferedit-pref-show-editinguser": "הצגת העורך הנוכחי",
 	"bs-saferedit-pref-show-editinguser-help": "הוספת שם המשתמש שעורך כעת את הדף לראש הדף"
 }

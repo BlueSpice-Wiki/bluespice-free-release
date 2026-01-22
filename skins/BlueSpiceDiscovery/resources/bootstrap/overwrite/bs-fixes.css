@@ -8,3 +8,7 @@
 label {
 	display: inline;
 }
+
+.card > .list-group:last-child {
+	border-radius: unset;
+}

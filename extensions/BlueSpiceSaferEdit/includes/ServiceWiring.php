@@ -11,10 +11,12 @@ use MediaWiki\MediaWikiServices;
 
 return [
 	'BSSaferEditManager' => static function ( MediaWikiServices $services ) {
-		$db = $services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$lb = $services->getDBLoadBalancer();
+		$config = $services->getConfigFactory()->makeConfig( 'bsg' );
 		$context = RequestContext::getMain();
 		$registry = new ExtensionAttributeBasedRegistry( 'BlueSpiceSaferEditEnvironmentCheckers' );
-		return new SaferEditManager( $db, $context, $registry );
+		$wireMessenger = $services->getService( 'MWStake.Wire.Messenger' );
+		return new SaferEditManager( $lb, $context, $config, $registry, $wireMessenger );
 	},
 ];
 

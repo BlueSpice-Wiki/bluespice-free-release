@@ -36,7 +36,7 @@ a.ico-btn {
 	text-decoration: none;
 }
 
-.attention-indicator::after {
+.dropdown .dropdown-toggle.attention-indicator::after {
 	color: #bd1d1d;
 	content: '\2B24';
 	padding-left: 5px;
@@ -45,12 +45,12 @@ a.ico-btn {
 #usr-btn.attention-indicator::after {
 	display: inline-block;
 	position: relative;
-	bottom: 13px;
+	bottom: 18px;
 	left: auto;
-	right: 13px;
+	right: 12px;
 	padding-left: 0;
 	border: none;
-	font-size: 10pt;
+	font-size: 11pt;
 	line-height: 1em;
 	text-decoration: none;
 }

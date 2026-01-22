@@ -1,6 +1,6 @@
 {
 	"name": "VisualEditorPlus",
-	"version": "2.1.4",
+	"version": "2.2.1",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
@@ -14,9 +14,15 @@
 		"VisualEditor": {
 			"PluginModules":
 				[
+					"ext.visualEditorPlus.tags",
 					"ext.visualEditorPlus",
 					"ext.visualEditorPlus.inlineTextInspector"
 				]
+		},
+		"CollabPads": {
+			"PluginModules": [
+				"ext.visualEditorPlus.tags"
+			]
 		}
 	},
 	"MessagesDirs": {
@@ -66,8 +72,28 @@
 			"dependencies": [
 				"ext.visualEditor.core"
 			]
+		},
+		"ext.visualEditorPlus.tags.definition": {
+			"scripts": [
+				"ext.visualEditorPlus.tags/Definition.js"
+			],
+			"dependencies": [
+				"ext.visualEditorPlus.bootstrap",
+				"oojs"
+			]
+		},
+		"ext.visualEditorPlus.tags": {
+			"scripts": [
+				"ext.visualEditorPlus.tags/Registry.js",
+				"ext.visualEditorPlus.tags.js"
+			],
+			"dependencies": [
+				"ext.visualEditorPlus.bootstrap",
+				"ext.visualEditorPlus.tags.definition"
+			]
 		}
 	},
+	"callback": "MediaWiki\\Extension\\VisualEditorPlus\\Extension::callback",
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "VisualEditorPlus/resources"

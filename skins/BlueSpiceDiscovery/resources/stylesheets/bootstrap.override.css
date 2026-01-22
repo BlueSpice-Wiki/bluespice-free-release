@@ -4,7 +4,7 @@
 	color: inherit;
 	padding: 0;
 	border: none;
-	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .list-group .list-group-item a {
@@ -28,8 +28,22 @@
 	border-radius: 0 5px 5px 0;
 }
 
-button.dropdown-toggle::after {
+button.dropdown-toggle::after,
+.dropdown .dropdown-toggle::after {
 	margin-left: 0;
+	/** border did not work for custom browser colors */
+	border: none;
+	display: inline-block;
+	font-family: 'bootstrap-icons' !important;
+	font-style: normal;
+	font-weight: normal !important;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: -0.125em;
+	content: '\f229';
+	color: inherit;
+	font-size: 0.75em;
 }
 
 .mediawiki [ class^='bi-' ]::before,

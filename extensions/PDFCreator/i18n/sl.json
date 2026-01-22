@@ -35,8 +35,6 @@
 	"pdfcreator-config-default-pdf-template-help": "Nastavi privzeto predlogo za izvoz strani. Predloga mora obstajati kot podstran MediaWiki:PDFCreator.",
 	"pdfcreator-dialog-button-title": "Opdri izvozno okno",
 	"pdfcreator-dialog-button-text": "Izvozi",
-	"pdfcreator-config-suppress-namespace": "V PDF-ju skrij predpono imenskega prostora",
-	"pdfcreator-config-suppress-namespace-help": "Iz naslovov in iz parametra predloge »title« v izhodu PDF odstrani predpono imenskega prostora",
 	"pdfcreator-config-coverbackground": "Privzeta slika ozadja naslovnice v predlogah PDF",
 	"pdfcreator-config-coverbackground-help": "Določa sliko ozadja naslovnice za vse predloge PDF, ki imajo nastavljen privzeti uvodni ovoj. Slika mora biti naložena datoteka v vikiju ali veljavna pot do datoteke.",
 	"pdfcreator-pageparam-username": "Prikaže uporabniško ime uporabnika, ki izvaža",

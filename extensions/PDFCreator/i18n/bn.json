@@ -31,11 +31,11 @@
 	"pdfcreator-dialog-export-template-selection-label": "টেমপ্লেট",
 	"pdfcreator-export-plugin-mode-option-subpages-label": "উপপাতাযুক্ত পাতা",
 	"pdfcreator-export-plugin-mode-option-recursive-label": "লিঙ্কযুক্ত পাতা",
-	"pdfcreator-dump-namespaces-mail-body-text-done": "সম্পন্ন",
-	"pdfcreator-dump-namespaces-mail-body-text-fail": "ব্যর্থ",
 	"pdfcreator-toc-page-label": "সূচিপত্র",
 	"pdfcreator-template-edit-dlg-action-next": "পরবর্তী",
 	"pdfcreator-template-edit-dlg-action-save": "সংরক্ষণ",
 	"pdfcreator-template-edit-dlg-action-upload": "আপলোড",
-	"pdfcreator-template-edit-dlg-action-back": "পিছনে"
+	"pdfcreator-template-edit-dlg-action-back": "পিছনে",
+	"pdfcreator-dump-namespaces-mail-body-text-done": "সম্পন্ন",
+	"pdfcreator-dump-namespaces-mail-body-text-fail": "ব্যর্থ"
 }

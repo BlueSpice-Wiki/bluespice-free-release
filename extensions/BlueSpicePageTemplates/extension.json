@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpicePageTemplates",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.4",
+	"version": "5.2.1",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageTemplates",
 	"author": [
 		"Markus Glaser",
@@ -28,9 +28,6 @@
 				"PageTemplatesForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
 				"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
 				"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNs::getInstance"
-			},
-			"TagRegistry": {
-				"pagetemplates": "\\BlueSpice\\PageTemplates\\Tag\\PageTemplates"
 			},
 			"PermissionRegistry": {
 				"pagetemplatesadmin-viewspecialpage": {
@@ -228,6 +225,9 @@
 		},
 		"runDatabaseUpdates": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\RunDatabaseUpdates"
+		},
+		"registerTags": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\RegisterTags"
 		}
 	},
 	"Hooks": {
@@ -242,7 +242,8 @@
 		"MessagesPreLoad": "handleShowingTemplateList",
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"SkinTemplateNavigation::Universal": "addPreloadForActions"
+		"SkinTemplateNavigation::Universal": "addPreloadForActions",
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

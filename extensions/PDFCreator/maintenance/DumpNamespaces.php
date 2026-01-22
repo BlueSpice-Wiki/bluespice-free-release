@@ -38,6 +38,9 @@ class DumpNamespaces extends Maintenance {
 	/** @var UserIdentity|null */
 	private $user = null;
 
+	/** @var array */
+	private $namespaces = [];
+
 	/** @var int|null */
 	private $limit = null;
 
@@ -59,6 +62,9 @@ class DumpNamespaces extends Maintenance {
 	/** @var array */
 	private $mailData = [];
 
+	/** @var array */
+	private $titleLog = [];
+
 	/**
 	 *
 	 */
@@ -73,9 +79,13 @@ class DumpNamespaces extends Maintenance {
 			'Limit the number of wiki pages for each pdf.',
 			false, true, 'l'
 		);
+		$this->addOption(
+			'namespaces',
+			"Comma segmented list of namespace id's. If not set all content namespaces will be used.",
+			false, true, 'n' );
 		$this->addOption( 'verbose', 'Verbose output', false, false, 'v' );
-		$this->addOption( 'mail-recipient', 'E-mail recipient for notification email', false, true, 'm' );
-		$this->addOption( 'mail-subject', 'E-mail subject for notification email', false, true, 'm' );
+		$this->addOption( 'mail-recipient', 'E-mail recipient for notification email', false, true, 'r' );
+		$this->addOption( 'mail-subject', 'E-mail subject for notification email', false, true, 's' );
 	}
 
 	/**
@@ -88,6 +98,7 @@ class DumpNamespaces extends Maintenance {
 		$this->setDest();
 		$this->setTemplate();
 		$this->setLimit();
+		$this->setNamespaceIds();
 		$this->setVerboseState();
 		$this->setEmailRecipient();
 		$this->setEmailSubject();
@@ -107,7 +118,16 @@ class DumpNamespaces extends Maintenance {
 		}
 
 		if ( $this->verbose ) {
-			$this->output( "Complete\n" );
+			foreach ( $this->titleLog as $namespace => $titles ) {
+				$this->output( "\n{$namespace}:\n" );
+				foreach ( $titles as $title ) {
+					$this->output( "\t- {$title}\n" );
+				}
+			}
+		}
+
+		if ( $this->verbose ) {
+			$this->output( "\nComplete\n" );
 		}
 	}
 
@@ -160,6 +180,33 @@ class DumpNamespaces extends Maintenance {
 	/**
 	 * @return void
 	 */
+	private function setNamespaceIds(): void {
+		$namespaces = $this->getOption( 'namespaces', null );
+		$contentNamespaces = $this->namespaceInfo->getContentNamespaces();
+
+		if ( $namespaces !== null ) {
+			$nsIds = explode( ',', $namespaces );
+			foreach ( $nsIds as $nsId ) {
+				$nsId = trim( $nsId );
+				if ( $nsId === '' ) {
+					continue;
+				}
+				$nsId = (int)$nsId;
+				if ( !in_array( $nsId, $contentNamespaces ) ) {
+					continue;
+				}
+				$this->namespaces[] = $nsId;
+			}
+		} else {
+			$this->namespaces = $contentNamespaces;
+		}
+
+		sort( $this->namespaces );
+	}
+
+	/**
+	 * @return void
+	 */
 	private function setVerboseState(): void {
 		$verbose = $this->getOption( 'verbose', false );
 
@@ -204,9 +251,7 @@ class DumpNamespaces extends Maintenance {
 		/** @var IMaintainableDatabase */
 		$dbr = $this->getDB( DB_REPLICA );
 
-		$namespaces = $this->namespaceInfo->getContentNamespaces();
-
-		foreach ( $namespaces as $namespace ) {
+		foreach ( $this->namespaces as $namespace ) {
 			$res = $dbr->select(
 				'page',
 				[ 'page_title', 'page_namespace' ],
@@ -235,9 +280,16 @@ class DumpNamespaces extends Maintenance {
 		$data = [];
 		$splitData = [];
 		$namespaceName = '';
-		$counter = 0;
+		$counter = 1;
 		foreach ( $result as $page ) {
 			$title = $this->titleFactory->makeTitle( $page->page_namespace, $page->page_title );
+			if ( $title instanceof Title === false ) {
+				$this->error( "\nInvalid title \"{$title->getPrefixedDBKey()}\"" );
+				continue;
+			}
+			if ( $this->verbose ) {
+				$this->output( "\nAdd title \"{$title->getPrefixedDBKey()}\"" );
+			}
 			if ( $namespaceName === '' ) {
 				$namespaceName = $this->getNamespaceName( $title->getNsText() );
 			}
@@ -253,8 +305,13 @@ class DumpNamespaces extends Maintenance {
 			}
 			$splitData[] = [
 				'type' => 'page',
-				'target' => $title->getPrefixedDBkey()
+				'target' => $title->getPrefixedDBkey(),
+				'label' => $title->getText()
 			];
+			if ( !isset( $titleLog[$namespaceName] ) ) {
+				$titleLog[$namespaceName] = [];
+			}
+			$titleLog[$namespaceName][] = $title->getPrefixedDBkey();
 		}
 		// Adding remaining pages afer last split
 		if ( !empty( $splitData ) ) {
@@ -292,7 +349,9 @@ class DumpNamespaces extends Maintenance {
 			if ( $this->template !== '' ) {
 				$params["template"] = $this->template;
 			}
-			$options = [];
+			$options = [
+				'attachments' => true
+			];
 			$specs[] = new ExportSpecification(
 				'batch', 'page', 'filesystem', '', $pageSpecs, $params, $options
 			);
@@ -307,6 +366,7 @@ class DumpNamespaces extends Maintenance {
 	private function doExport( array $specs ): void {
 		$context = new ExportContext( $this->user );
 
+		$this->output( "\n" );
 		foreach ( $specs as $specification ) {
 			$params = $specification->getParams();
 			$filename = $params['filename'] ?? 'unknown.pdf';
@@ -321,9 +381,12 @@ class DumpNamespaces extends Maintenance {
 				$this->output( "PDFCreator failed creating pdf for filename: {$filename}\n" );
 				$this->output( $exportStatus->getText() );
 			} else {
-				$sucess = true;
+				$success = true;
+				if ( $this->verbose ) {
+					$this->output( "PDFCreator created pdf with filename: {$filename}\n" );
+				}
 			}
-			$this->addMailData( $filename, $sucess );
+			$this->addMailData( $filename, $success );
 		}
 	}
 

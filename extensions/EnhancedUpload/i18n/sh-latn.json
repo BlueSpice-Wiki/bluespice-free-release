@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aca",
-			"Winston Sung"
+			"Winston Sung",
+			"Aca"
 		]
 	},
 	"enhancedupload": "Poboljšano otpremanje",
-	"enhancedupload-desc": "Pruža posebnu stranicu s mogućnošću postavljanja datoteka na projektu",
+	"enhancedupload-desc": "Nudi posebnu stranicu s mogućnošću otpremanja jedne ili više datoteka na wiki",
 	"enhancedupload-text": "Otpremanje datoteka",
 	"enhancedupload-details-header-label": "Detalji",
 	"enhancedupload-details-namespace-label": "Imenski prostor",
