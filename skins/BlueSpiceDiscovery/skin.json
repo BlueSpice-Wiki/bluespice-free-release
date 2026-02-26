@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceDiscovery",
-	"version": "5.1.5",
+	"version": "5.1.6",
 	"author": [
 		"Daniel Vogel"
 	],
@@ -757,6 +757,16 @@
 		"skin.discovery.subpagetree-component": {
 			"packageFiles": [
 				"js/SubpageTreePanel.js"
+			],
+			"dependencies": [
+				"ext.oojsplus.navigation.treePanel",
+				"oojs-ui"
+			]
+		},
+		"skin.discovery.enhancedsidebar-subpagetree": {
+			"scripts": [
+				"js/EnhancedSidebarSubpageTree.js",
+				"js/EnhancedSidebarLocalStorage.js"
 			],
 			"dependencies": [
 				"ext.oojsplus.navigation.treePanel",

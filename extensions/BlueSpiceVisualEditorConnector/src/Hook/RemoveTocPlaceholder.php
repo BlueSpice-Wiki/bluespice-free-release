@@ -19,14 +19,23 @@ class RemoveTocPlaceholder implements APIAfterExecuteHook {
 		if ( !$content ) {
 			return;
 		}
+
+		// ERM43554: Remove TOC meta tag only if there are more than 3 sections
+		$sections = $this->countSections( $content );
+		$autoInsertTocSectionThreshold = 4;
+		if ( $sections < $autoInsertTocSectionThreshold ) {
+			return;
+		}
+
 		$content = preg_replace(
 			'/<meta\\b[^>]*\\bproperty\\s*=\\s*"mw:PageProp\\/toc"[^>]*>/',
 			'',
 			$content
 		);
+
 		// Parser inserts a placeholder at the point where TOC should go
 		// In VE, if TOC comes from a template, this insertion breaks the model
-		// and prevents VE from recognizing whole template content as a translusion
+		// and prevents VE from recognizing whole template content as a transclusion
 		// Since in VE, TOC placeholder is never replaced anyways, we can remove it
 		$result->removeValue( [ 'visualeditor' ], 'content' );
 		$result->addValue(
@@ -34,5 +43,20 @@ class RemoveTocPlaceholder implements APIAfterExecuteHook {
 			'content',
 			$content
 		);
+	}
+
+	/**
+	 * @param string $content
+	 *
+	 * @return int
+	 */
+	private function countSections( string $content ): int {
+		preg_match_all(
+			'/<section\b[^>]*>\s*(<h[1-6]\b[^>]*>.*?<\/h[1-6]>)/is',
+			$content,
+			$matches
+		);
+
+		return count( $matches[0] );
 	}
 }

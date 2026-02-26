@@ -75,6 +75,13 @@ ext.enhancedUI.data.PagesTree.prototype.expandNode = function ( name ) {
 
 	const $element = node.$element.find( '> ul.tree-node-list' );
 	if ( $( $element[ 0 ] ).children().length === 0 ) {
+		const skeleton = new OOJSPlus.ui.widget.SkeletonWidget( {
+			variant: 'list',
+			rows: 3,
+			visible: true
+		} );
+		node.$element.append( skeleton.$element );
+		node.$element.attr( 'aria-busy', true );
 		this.store.getSubpages( node.elementId ).done( ( result ) => {
 			const data = this.prepareData( result );
 			const nodes = this.build( data, node.level + 1 );
@@ -93,6 +100,8 @@ ext.enhancedUI.data.PagesTree.prototype.expandNode = function ( name ) {
 				this.reEvaluateParent( nodeElement );
 				$( $element ).show();
 			}
+			skeleton.hide();
+			node.$element.removeAttr( 'aria-busy' );
 		} );
 	} else {
 		$( $element ).show();

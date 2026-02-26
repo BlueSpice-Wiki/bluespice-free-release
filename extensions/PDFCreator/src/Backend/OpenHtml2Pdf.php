@@ -158,13 +158,13 @@ class OpenHtml2Pdf implements IExportBackend, LoggerAwareInterface {
 			}
 
 			$postData[] = [
-				'name' => $filename,
+				'name' => md5( $filename ),
 				'contents' => file_get_contents( $path ),
 				'filename' => $filename
 			];
 			$postData[] = [
-				'name' => "{$filename}_name",
-				'contents' => $filename
+				'name' => md5( $filename ) . "_name",
+				'contents' => md5( $filename )
 			];
 			$totalSize = $newSize;
 			$totalCount = $newCount;

@@ -193,7 +193,7 @@ class NotificationStore {
 			[
 				'ne_key' => $event->getKey(),
 				'ne_agent' => $event->getAgent()->getId(),
-				'ne_timestamp' => $event->getTime()->format( 'YmdHis' ),
+				'ne_timestamp' => $dbw->timestamp( $event->getTime()->format( 'YmdHis' ) ),
 				'ne_payload' => json_encode( $this->serializer->serializeEvent( $event ) ),
 			],
 			__METHOD__

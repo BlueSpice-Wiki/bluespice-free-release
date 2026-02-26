@@ -55,11 +55,11 @@ body.mw-underline-always .mw-body-content a {
 }
 
 /* fix dialog container z-index */
-.skin-bluespicediscovery #mw-teleport-target {
+.base-bluespicediscovery #mw-teleport-target {
 	z-index: 2000;
 }
 
-.skin-bluespicediscovery .oojs-plus-color-picker-standalone {
+.base-bluespicediscovery .oojs-plus-color-picker-standalone {
 	z-index: 2050;
 }
 

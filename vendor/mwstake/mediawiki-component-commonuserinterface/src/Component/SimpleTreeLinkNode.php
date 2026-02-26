@@ -23,7 +23,9 @@ class SimpleTreeLinkNode extends ComponentBase implements ITreeNode, ITreeLinkNo
 			'title' => '',
 			'href' => '',
 			'expanded' => false,
+			'isLeaf' => true,
 			'preHtml' => new HtmlArmor( '' ),
+			'data' => []
 		], $options );
 	}
 
@@ -99,5 +101,19 @@ class SimpleTreeLinkNode extends ComponentBase implements ITreeNode, ITreeLinkNo
 	 */
 	public function getPreHtml(): HtmlArmor {
 		return $this->options['preHtml'];
+	}
+
+	/**
+	 * @return array
+	 */
+	public function getData(): array {
+		return $this->options['data'];
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function getIsLeaf(): bool {
+		return $this->options['isLeaf'];
 	}
 }

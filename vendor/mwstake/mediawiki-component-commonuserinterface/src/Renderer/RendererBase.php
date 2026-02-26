@@ -3,8 +3,8 @@
 namespace MWStake\MediaWiki\Component\CommonUserInterface\Renderer;
 
 use HtmlArmor;
+use MediaWiki\Html\TemplateParser;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponentRenderer;
-use TemplateParser;
 
 abstract class RendererBase implements IComponentRenderer {
 

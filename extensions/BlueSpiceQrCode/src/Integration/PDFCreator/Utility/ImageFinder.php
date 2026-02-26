@@ -95,6 +95,9 @@ class ImageFinder {
 			$origUrl = $this->urlUtils->expand( $src );
 			$parseUrl = $this->urlUtils->parse( $origUrl );
 			$params = wfCgiToArray( $parseUrl['query'] );
+			if ( !isset( $parseUrl['path'] ) || !is_string( $parseUrl['path'] ) ) {
+				continue;
+			}
 			if ( !str_ends_with( $parseUrl['path'], '/dynamic-file-dispatcher/qrcode' ) ) {
 				continue;
 			}

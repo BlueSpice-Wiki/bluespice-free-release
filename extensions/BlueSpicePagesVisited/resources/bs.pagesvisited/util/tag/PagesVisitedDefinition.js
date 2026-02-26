@@ -19,13 +19,15 @@ bs.pagesvisited.util.tag.PagesVisitedDefinition.prototype.getCfg = function () {
 			labelMsg: 'bs-pagesvisited-ve-pagesvisited-attr-count-label',
 			helpMsg: 'bs-pagesvisited-ve-pagesvisited-attr-count-help',
 			type: 'number',
-			default: '7'
+			default: '7',
+			min: 1
 		}, {
 			name: 'maxtitlelength',
 			labelMsg: 'bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-label',
 			helpMsg: 'bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help',
 			type: 'number',
-			default: '40'
+			default: '40',
+			min: 1
 		}, {
 			name: 'order',
 			labelMsg: 'bs-pagesvisited-ve-pagesvisited-attr-order-label',

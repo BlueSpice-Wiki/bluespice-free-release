@@ -8,7 +8,7 @@
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageAssignments",
 	"type": "bluespice",
-	"version": "5.1.5",
+	"version": "5.1.6",
 	"descriptionmsg": "bs-pageassignments-desc",
 	"requires": {
 		"MediaWiki": ">= 1.43.0",
@@ -428,6 +428,9 @@
 		},
 		"bs-books-overview-page-actions": {
 			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\BSBookshelf"
+		},
+		"addNamespaceProperties": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\NamespaceManagerCollectNamespaceProperties\\AddNamespaceProperties"
 		}
 	},
 	"Hooks": {
@@ -461,7 +464,8 @@
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
-		"BSBookshelfBooksOverviewBeforeSetBookActions": "bs-books-overview-page-actions"
+		"BSBookshelfBooksOverviewBeforeSetBookActions": "bs-books-overview-page-actions",
+		"NamespaceManagerCollectNamespaceProperties": "addNamespaceProperties"
 	},
 	"manifest_version": 2
 }

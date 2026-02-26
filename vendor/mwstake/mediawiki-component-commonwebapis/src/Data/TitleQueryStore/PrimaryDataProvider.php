@@ -22,7 +22,6 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	/** @var NamespaceInfo */
 	protected $nsInfo;
 
-
 	/**
 	 * @param IDatabase $db
 	 * @param Schema $schema
@@ -38,6 +37,9 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 		$this->contentNamespaces = $nsInfo->getContentNamespaces();
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function makeData( $params ) {
 		$this->data = [];
 
@@ -152,6 +154,30 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 				$filter->setApplied( true );
 			}
 
+			// Apply namespace text filter
+			if ( $filter->getField() === TitleRecord::PAGE_NAMESPACE_TEXT ) {
+				$filterValue = $filter->getValue();
+
+				$nsIndex = $this->language->getLocalNsIndex( $filterValue );
+				if ( !$nsIndex ) {
+					$nsIndex = $this->nsInfo->getCanonicalIndex( strtolower( $filterValue ) );
+				}
+
+				$filter->setApplied( true );
+
+				if ( $nsIndex === false ) {
+					continue;
+				}
+
+				$filter = new Filter\StringValue( [
+					Filter::KEY_FIELD => TitleRecord::PAGE_NAMESPACE,
+					Filter::KEY_VALUE => [ (string)$nsIndex ],
+					Filter::KEY_COMPARISON => 'in'
+				] );
+
+				$nsFilter = array_merge( $nsFilter, $filter->getValue() );
+			}
+
 			if ( $filter->getField() === TitleRecord::IS_CONTENT_PAGE ) {
 				if ( $filter->getValue() ) {
 					$nsFilter = array_merge( $nsFilter, $this->contentNamespaces );
@@ -172,6 +198,7 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			}
 		}
 
+		// Check for namespace text filter in query
 		if ( $query !== '' ) {
 			$colonPos = mb_strpos( $query, ':' );
 			if ( $colonPos !== false ) {

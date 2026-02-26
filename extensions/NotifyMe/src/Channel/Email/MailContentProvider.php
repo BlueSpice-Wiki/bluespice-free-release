@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\NotifyMe\Channel\Email;
 
+use DOMDocument;
 use Exception;
 use MediaWiki\Config\Config;
 use MediaWiki\Html\TemplateParser;
@@ -16,6 +17,7 @@ use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\CommonUserInterface\LessVars;
+use RepoGroup;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class MailContentProvider {
@@ -45,6 +47,9 @@ class MailContentProvider {
 	/** @var Language */
 	private $language;
 
+	/** @var RepoGroup */
+	private $repoGroup;
+
 	/**
 	 * @param ILoadBalancer $lb
 	 * @param TitleFactory $titleFactory
@@ -53,10 +58,14 @@ class MailContentProvider {
 	 * @param ParserFactory $parserFactory
 	 * @param UserOptionsLookup $userOptionsLookup
 	 * @param Language $language
+	 * @param RepoGroup $repoGroup
 	 */
 	public function __construct(
 		ILoadBalancer $lb, TitleFactory $titleFactory, Config $config, RevisionLookup $revisionLookup,
-		ParserFactory $parserFactory, UserOptionsLookup $userOptionsLookup, Language $language
+		ParserFactory $parserFactory,
+		UserOptionsLookup $userOptionsLookup,
+		Language $language,
+		RepoGroup $repoGroup
 	) {
 		$this->lb = $lb;
 		$this->titleFactory = $titleFactory;
@@ -65,6 +74,7 @@ class MailContentProvider {
 		$this->parserFactory = $parserFactory;
 		$this->userOptionsLookup = $userOptionsLookup;
 		$this->language = $language;
+		$this->repoGroup = $repoGroup;
 	}
 
 	/**
@@ -141,7 +151,9 @@ class MailContentProvider {
 		if ( !$content ) {
 			throw new Exception( 'Mail wrapper not found' );
 		}
-		return $this->getHtmlFromData( $content, $user, [ 'content' => $contentHtml ] );
+
+		$html = $this->getHtmlFromData( $content, $user, [ 'content' => $contentHtml ] );
+		return $this->base64encodeImages( $html );
 	}
 
 	/**
@@ -341,5 +353,77 @@ class MailContentProvider {
 		} else {
 			$lessVars->setVar( $var, $default );
 		}
+	}
+
+	/**
+	 * Replace images them with base64 representation
+	 *
+	 * ERM43895
+	 *
+	 * @param string $html
+	 *
+	 * @return string
+	 */
+	private function base64encodeImages( string $html ): string {
+		$dom = new DOMDocument();
+		$dom->loadHTML( $html, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD );
+		$images = $dom->getElementsByTagName( 'img' );
+		$hasBeenUpdated = false;
+
+		foreach ( $images as $img ) {
+			$url = $img->getAttribute( 'src' );
+
+			// Skip if already base64
+			if ( preg_match( '/^data:image\/[a-zA-Z]+;base64,/', $url ) ) {
+				continue;
+			}
+
+			$filename = basename( $url );
+			$file = $this->repoGroup->findFile( $filename );
+
+			if ( !$file || !$file->exists() ) {
+				continue;
+			}
+
+			if ( $file->getMediaType() !== MEDIATYPE_BITMAP && $file->getMediaType() !== MEDIATYPE_DRAWING ) {
+				continue;
+			}
+
+			$storagePath = $file->getLocalRefPath();
+
+			if ( !is_string( $storagePath ) || !file_exists( $storagePath ) ) {
+				continue;
+			}
+
+			try {
+				$img->setAttribute( 'src', $this->encodeImageFile( $storagePath, $file->getMimeType() ) );
+				$hasBeenUpdated = true;
+			} catch ( Exception $e ) {
+				// Ignore and continue
+			}
+		}
+
+		if ( !$hasBeenUpdated ) {
+			return $html;
+		}
+
+		return $dom->saveHTML();
+	}
+
+	/**
+	 * @param string $filePath
+	 * @param string $mimeType
+	 *
+	 * @return string
+	 * @throws Exception
+	 */
+	private function encodeImageFile( string $filePath, string $mimeType ): string {
+		$imageData = file_get_contents( $filePath );
+
+		if ( !$imageData ) {
+			throw new Exception( 'Failed to read image file: ' . $filePath );
+		}
+
+		return 'data:' . $mimeType . ';base64,' . base64_encode( $imageData );
 	}
 }

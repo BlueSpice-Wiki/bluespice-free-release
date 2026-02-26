@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceDistributionConnector",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.5",
+	"version": "5.1.6",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceDistributionConnector",
 	"author": [
 		"Robert Vogel",
@@ -253,6 +253,9 @@
 				}
 			},
 			"Processors": {
+				"Lingo": {
+					"class": "\\BlueSpice\\DistributionConnector\\Integration\\PDFCreator\\Processor\\LingoProcessor"
+				},
 				"PDFHandler": {
 					"class": "\\BlueSpice\\DistributionConnector\\Integration\\PDFCreator\\Processor\\PDFHandlerProcessor",
 					"services": [ "TitleFactory", "MainConfig", "RepoGroup", "UrlUtils" ]

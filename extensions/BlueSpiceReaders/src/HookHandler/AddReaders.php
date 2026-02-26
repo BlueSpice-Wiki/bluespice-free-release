@@ -44,12 +44,13 @@ class AddReaders implements SkinTemplateNavigation__UniversalHook {
 		}
 
 		$special = SpecialPage::getTitleFor( 'Readers' );
+		$urlSafePageTitle = rawurlencode( $sktemplate->getTitle()->getPrefixedText() );
 
 		// Add menu entry
 		$links['actions']['readers'] = [
 			'class' => false,
 			'text' => $sktemplate->msg( 'bs-readers-contentactions-label' ),
-			'href' => $special->getLocalURL( "page={$sktemplate->getTitle()->getPrefixedText()}" ),
+			'href' => $special->getLocalURL( "page={$urlSafePageTitle}" ),
 			'id' => 'ca-readers',
 			'bs-group' => 'hidden'
 		];

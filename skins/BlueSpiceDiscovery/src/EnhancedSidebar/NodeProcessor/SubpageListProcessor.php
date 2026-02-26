@@ -4,7 +4,6 @@ namespace BlueSpice\Discovery\EnhancedSidebar\NodeProcessor;
 
 use BlueSpice\Discovery\EnhancedSidebar\Node\EnhancedSidebarNode;
 use BlueSpice\Discovery\EnhancedSidebar\Node\SubpageListNode;
-use BlueSpice\Discovery\SubpageDataGenerator;
 use Exception;
 use MWStake\MediaWiki\Lib\Nodes\INode;
 
@@ -40,31 +39,30 @@ class SubpageListProcessor extends InternalLinkProcessor {
 		$data = parent::serializeNodeTree( $node );
 		$classes = array_diff( $node->getOutputCssClasses(), [ 'new' ] );
 
+		$title = $this->getTitleFromNode( $node );
+		if ( !$title ) {
+			return $data;
+		}
+
+		if ( $this->isActivePageNode( $title ) ) {
+			$classes = array_merge( $classes, [ 'active' ] );
+		}
+
+		$hasSubpages = $title->hasSubpages();
+		$titleDBKey = $title->getPrefixedDBkey();
+		if ( $title->getNamespace() === 0 ) {
+			$titleDBKey = ':' . $titleDBKey;
+		}
+
 		return array_merge(
 			$data,
 			[
+				'data' => [ 'root' => $titleDBKey, 'depth' => $node->getDepth() ],
 				'classes' => $classes,
-				'items' => $this->getNodeSubpages( $node ),
+				'items' => [],
+				'isLeaf' => !$hasSubpages
 			]
 		);
-	}
-
-	/**
-	 *
-	 * @param EnhancedSidebarNode $node
-	 *
-	 * @return array
-	 */
-	private function getNodeSubpages( EnhancedSidebarNode $node ): array {
-		$title = $this->getTitleFromNode( $node );
-		if ( !$title || !$title->hasSubpages() ) {
-			return [];
-		}
-
-		$subpageDataGenerator = new SubpageDataGenerator();
-		$subpageDataGenerator->setTreeRootTitle( $title );
-
-		return $subpageDataGenerator->generate( $title, $node->getDepth() );
 	}
 
 	/**
