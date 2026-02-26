@@ -1,8 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Jon Harald Søby"
-		]
-	},
-	"standarddialogs-confirm-mass-deletion": "Dette vil slette $1 {{PLURAL:$1|side|sider}}. Er du sikker?"
-}

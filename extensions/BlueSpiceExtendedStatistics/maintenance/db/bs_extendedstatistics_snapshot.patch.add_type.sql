@@ -1,1 +1,0 @@
-ALTER TABLE /*$wgDBprefix*/bs_extendedstatistics_snapshot ADD COLUMN `ess_type` VARCHAR (255) FIRST;

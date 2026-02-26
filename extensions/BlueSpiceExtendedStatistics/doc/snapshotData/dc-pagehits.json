@@ -1,8 +1,0 @@
-{
-	"members": {
-		"key": "{{{page}}}",
-		"value": {
-			"hitDiff": "{{randint|0,1000}}"
-		}
-	}
-}

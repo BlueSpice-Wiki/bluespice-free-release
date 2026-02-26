@@ -1,1 +1,0 @@
-<exportpdf mode="page" template={{{template|}}} page={{{page|}}} label={{{label|}}}></exportpdf>

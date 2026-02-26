@@ -1,35 +1,7 @@
-# MediaWiki
+<img alt="BlueSpice Logo" align="right" src="https://bluespice.com/wp-content/uploads/2022/09/bluespice_logo.png" />
 
-MediaWiki is a free and open-source wiki software package written in PHP. It
-serves as the platform for Wikipedia and the other Wikimedia projects, used
-by hundreds of millions of people each month. MediaWiki is localised in over
-350 languages and its reliability and robust feature set have earned it a large
-and vibrant community of third-party users and developers.
+# BlueSpice MediaWiki - Free Edition
 
-MediaWiki is:
+Installation can be done via [BlueSpice MediaWiki deployment stack](https://github.com/hallowelt/bluespice-deploy). Instructions on how to use it can be found on the [official helpdesk 📚](https://en.wiki.bluespice.com/wiki/Setup:Installation_Guide/Docker). For questions and support, please use the [contact form 🌐](https://bluespice.com/contact/) or visit the [community forums 💡](https://community.bluespice.com/).
 
-* feature-rich and extensible, both on-wiki and with hundreds of extensions;
-* scalable and suitable for both small and large sites;
-* simple to install, working on most hardware/software combinations; and
-* available in your language.
-
-For system requirements, installation, and upgrade details, see the files
-RELEASE-NOTES, INSTALL, and UPGRADE.
-
-* Ready to get started?
-  * https://www.mediawiki.org/wiki/Special:MyLanguage/Download
-* Setting up your local development environment?
-  * https://www.mediawiki.org/wiki/Local_development_quickstart
-* Looking for the technical manual?
-  * https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Contents
-* Seeking help from a person?
-  * https://www.mediawiki.org/wiki/Special:MyLanguage/Communication
-* Looking to file a bug report or a feature request?
-  * https://bugs.mediawiki.org/
-* Interested in helping out?
-  * https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute
-
-MediaWiki is the result of global collaboration and cooperation. The CREDITS
-file lists technical contributors to the project. The COPYING file explains
-MediaWiki's copyright and license (GNU General Public License, version 2 or
-later). Many thanks to the Wikimedia community for testing and suggestions.
+The `main` branch of this repository is intentionally kept empty. Please refer to the specific version branches (e.g., `5.1.x`, `5.2.x`, etc.) for the relevant code files of each BlueSpice version.

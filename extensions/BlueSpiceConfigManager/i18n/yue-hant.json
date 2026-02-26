@@ -1,9 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"JeffreyKim"
-		]
-	},
-	"bs-configmanager-toolbar-action-save-label": "儲存",
-	"bs-configmanager-toolbar-action-discard-label": "放棄"
-}

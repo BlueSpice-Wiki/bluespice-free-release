@@ -1,9 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Jon Harald Søby"
-		]
-	},
-	"bs-usagetracker-desc": "Holder statistiske data om utvidelsesbruk",
-	"apihelp-bs-usagetracker-store-summary": "Holder statistisk data om utvidelsesbruk"
-}

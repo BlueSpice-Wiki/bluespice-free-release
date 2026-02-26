@@ -1,1 +1,0 @@
-ALTER TABLE /*$wgDBprefix*/bs_whoisonline DROP COLUMN wo_timestamp;

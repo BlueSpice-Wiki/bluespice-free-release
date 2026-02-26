@@ -1,1 +1,0 @@
-ALTER TABLE /*$wgDBprefix*/bs_whoisonline ADD COLUMN wo_log_ts varchar(16) NOT NULL DEFAULT '0';

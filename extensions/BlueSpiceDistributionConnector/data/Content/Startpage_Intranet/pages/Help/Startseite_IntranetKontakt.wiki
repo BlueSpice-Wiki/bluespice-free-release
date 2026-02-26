@@ -1,4 +1,0 @@
-<div class="profileimg">[[User:WikiSysop|<profileimage username="WikiSysop" width="60" height="60" raw="1" />]]</div>Wenn Sie nicht über die erforderlichen Berechtigungen für dieses Wiki verfügen, wenden Sie sich bitte an die [[User:WikiSysop| Wiki Administration]].
-
-
-Für inhaltliche Fragen wenden Sie sich an Ihren Abteilungsleiter.

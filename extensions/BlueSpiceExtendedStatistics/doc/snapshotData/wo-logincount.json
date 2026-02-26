@@ -1,9 +1,0 @@
-{
-	"members": {
-		"total": "{{randint|10,1000}}",
-		"users": {
-			"key": "{{{user}}}",
-			"value": "{{randint|0,55}}"
-		}
-	}
-}

@@ -1,1 +1,0 @@
-<templatestyles src="Template:CircledNumber/styles.css" /><span class="circled-number wcag-invertable" style="background-color:{{{bgColor|#dd8c8c}}}; color:{{{fgColor|white}}}">{{{number|1}}}</span>
