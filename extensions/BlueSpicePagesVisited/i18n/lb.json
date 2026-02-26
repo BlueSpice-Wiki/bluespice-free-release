@@ -18,5 +18,6 @@
 	"bs-pagesvisited-ve-pagesvisited-attr-order-label": "Reiefolleg",
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Nummraim",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Zäit",
-	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Numm vun der Säit"
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Numm vun der Säit",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Sortéieren no"
 }

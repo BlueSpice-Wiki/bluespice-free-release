@@ -5,7 +5,8 @@
 			"Mainframe98",
 			"McDutchie",
 			"Nickthijssen1994",
-			"Romaine"
+			"Romaine",
+			"Siebrand"
 		]
 	},
 	"bs-discovery-name": "BlueSpice Discovery",
@@ -194,5 +195,10 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Hoofdnavigatie",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "Paginahulpmiddelen",
 	"bs-discovery-tools-after-content-cnt-aria-label": "Aanvullende pagina-informatie",
-	"bs-discovery-data-after-content-cnt-aria-label": "Pagina-appendix"
+	"bs-discovery-data-after-content-cnt-aria-label": "Pagina-appendix",
+	"bs-discovery-footer-places-alt-text-mediawiki": "Mogelijk gemaakt door MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "Mogelijk gemaakt door BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Mogelijk gemaakt door Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Bewerken",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Wissen"
 }

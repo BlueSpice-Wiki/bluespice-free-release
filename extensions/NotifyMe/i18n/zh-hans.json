@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"GuoPC",
 			"Lakejason0",
-			"Liuxinyu970226",
-			"GuoPC"
+			"Liuxinyu970226"
 		]
 	},
 	"notifyme-desc": "通知",
@@ -96,7 +96,7 @@
 	"notifyme-schema-source-providers-link": "链接到用户可以更改参数设置的位置（如果适用）",
 	"notifyme-mail-template-edit-help-colors": "以下为可用的颜色变量。它们会自动调整为wiki皮肤的颜色。",
 	"notifyme-mail-template-edit-help-int": "国际化消息可以通过<pre><nowiki>{{int:message-key}}</nowiki></pre>在内容中使用",
-	"notifyme-mail-template-edit-help-logo": "要添加您设置在皮肤中的wiki标志，请使用<pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-logo": "要添加您设置在皮肤中的wiki标志，可使用<pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
 	"notifyme-mail-template-edit-help-category-params": "内容变量",
 	"notifyme-mail-template-edit-help-category-logo": "标志",
 	"notifyme-mail-template-edit-help-category-int": "国际化",

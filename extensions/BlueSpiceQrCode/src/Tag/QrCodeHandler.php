@@ -20,10 +20,11 @@ class QrCodeHandler implements ITagHandler {
 	 * @inheritDoc
 	 */
 	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
-		$altText = Message::newFromKey( 'bs-qr-code-alt-text', $params['page']->getText() )->text();
+		$altText = Message::newFromKey( 'bs-qr-code-alt-text', $params['page'] )->text();
+		$page = $parser->recursiveTagParse( $params['page'], $frame );
 
 		$url = $this->dfdFactory->getUrl( 'qrcode', [
-			'pagename' => $params['page']->getPrefixedText(),
+			'pagename' => $page,
 			'query' => $params['query'] ?? '',
 			'size' => $params['size'],
 		] );

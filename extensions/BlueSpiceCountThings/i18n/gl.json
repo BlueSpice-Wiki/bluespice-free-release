@@ -17,7 +17,7 @@
 	"bs-countthings-ve-countfiles-title": "Conta de ficheiros",
 	"bs-countthings-ve-countusers-title": "Conta de usuarios",
 	"bs-countthings-ve-countthingsinspector-mode": "Modo",
-	"bs-countthings-ve-countcharacters-mode-all": "todos",
+	"bs-countthings-ve-countcharacters-mode-all": "todo",
 	"bs-countthings-ve-countcharacters-mode-charsonly": "caracteres",
 	"bs-countthings-ve-countcharacters-mode-wordsonly": "palabras",
 	"bs-countthings-ve-countcharacters-mode-pagesonly": "páxinas",
@@ -38,5 +38,7 @@
 	"bs-countthings-droplet-files-name": "Número de ficheiros",
 	"bs-countthings-droplet-files-description": "Amosa o número total de ficheiros subidos",
 	"bs-countthings-droplet-user-name": "Número de usuarios",
-	"bs-countthings-droplet-user-description": "Amosa o número total de usuarios"
+	"bs-countthings-droplet-user-description": "Amosa o número total de usuarios",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Contar os duplicados",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Especifica aquilo que se debe contar: todo, caracteres, palabras, caracteres e palabras ou páxinas"
 }

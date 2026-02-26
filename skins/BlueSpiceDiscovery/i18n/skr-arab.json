@@ -39,5 +39,6 @@
 	"bs-discovery-page-version-pager-previous": "پچھلا",
 	"bs-discovery-page-version-pager-next": "اڳلا",
 	"bs-discovery-footerlinks-termsofservice-link-desc": "خدمت شرطاں",
-	"bs-discovery-breadcrumb-label-diff": "فرق"
+	"bs-discovery-breadcrumb-label-diff": "فرق",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "صاف"
 }

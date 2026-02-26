@@ -88,14 +88,16 @@ class TreeTextNode extends RendererBase {
 		): void {
 		$class = $templateData['class'] ?? '';
 
-		if ( !empty( $subComponentNodes ) ) {
-			$templateData['hasChildren'] = 'true';
-			$templateData['children'] = $subComponentNodes;
+		if ( ( isset( $templateData['isLeaf'] ) && !$templateData['isLeaf'] ) || !empty( $subComponentNodes ) ) {
 			$templateData['expandBtn'] = $this->getExpandButtonParams( $component );
+
+			if ( !empty( $subComponentNodes ) ) {
+				$templateData['hasChildren'] = 'true';
+				$templateData['children'] = $subComponentNodes;
+			}
 
 			if ( $component->isExpanded() ) {
 				$templateData['expanded'] = 'true';
-				$templateData['class'] = $class . ' expanded';
 			}
 		} else {
 			$templateData['class'] = $class . ' leaf';

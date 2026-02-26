@@ -5,7 +5,8 @@
 			"Jim-by",
 			"Red Winged Duck",
 			"Renessaince",
-			"Wizardist"
+			"Wizardist",
+			"Ucukor"
 		]
 	},
 	"cite-desc": "Дадае тэгі <code>&lt;ref&gt;</code> і <code>&lt;references/&gt;</code> для зносак",
@@ -15,7 +16,7 @@
 	"cite_error_ref_no_key": "Пачатковы тэг <code>&lt;ref&gt;</code> зьяўляецца няслушным або мае кепскую назву",
 	"cite_error_ref_too_many_keys": "Няслушны парамэтар у цэтліку <code>&lt;ref&gt;</code>",
 	"cite_error_ref_no_input": "Няслушны тэг <code>&lt;ref&gt;</code>; крыніцы бяз назваў мусяць мець зьмест",
-	"cite_error_references_duplicate_key": "Няслушны тэг <code>&lt;ref&gt;</code>; назва «$1» вызначаная некалькі разоў з розным зьместам",
+	"cite_error_references_duplicate_key": "Няслушны тэґ <code>&lt;ref&gt;</code>; назва «$1» вызначаная колькі разоў з розным зьместам",
 	"cite_error_references_invalid_parameters": "Няслушны парамэтар у тэгу <code>&lt;references&gt;</code>",
 	"cite_error_references_no_backlink_label": "Скончыліся нестандартныя меткі для адваротных спасылак. Неабходна пашырыць сыстэмнае паведамленьне [[MediaWiki:Cite references link many format backlink labels]]",
 	"cite_error_no_link_label_group": "Скончыліся нестандартныя меткі спасылак для групы «$1». Вызначце болей у паведамленьні [[MediaWiki:$2]].",
@@ -45,7 +46,7 @@
 	"cite-wikieditor-tool-reference": "Зноска",
 	"cite-wikieditor-help-page-references": "Зноскі",
 	"cite-wikieditor-help-content-reference-description": "Зноска",
-	"cite-wikieditor-help-content-rereference-description": "Паўторнае выкарыстаньне той жа зноскі",
+	"cite-wikieditor-help-content-rereference-description": "Паўторны ўжытак той жа зноскі",
 	"cite-wikieditor-help-content-showreferences-description": "Паказваць зноскі",
 	"popups-prefs-navpopups-gadget-conflict-info": "У вас уключаны інструмэнт [[$1|Выплыўныя вокны]], таму вы ня ўбачыце папярэдніх праглядаў, якія забясьпечвае гэтая функцыя. У залежнасьці ад вікі назва інструмэнту можа троху адрозьнівацца. Калі праблемы застануцца, праглядзіце свае інструмэнты і карыстальніцкія сцэнары, улучна з глябальнымі.",
 	"popups-prefs-reftooltips-and-navpopups-gadget-conflict-info": "У вас уключаныя інструмэнты [[$1|Выплыўныя вокны]] і [[$1|Выплыўныя падказкі]], таму вы ня ўбачыце папярэдніх праглядаў, якія забясьпечвае гэтая функцыя. У залежнасьці ад вікі назва інструмэнту можа троху адрозьнівацца. Калі праблемы застануцца, праглядзіце свае інструмэнты і карыстальніцкія сцэнары, улучна з глябальнымі.",

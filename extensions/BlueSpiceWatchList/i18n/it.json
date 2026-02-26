@@ -11,5 +11,8 @@
 	"bs-watchlist-pref-sort-title": "Titolo",
 	"bs-watchlist-tag-watchlist-desc": "Mostra le voci che hanno le modifiche più recenti e sono nella tua lista di osservazione.",
 	"bs-watchlist-ve-watchlistinspector-title": "Osservati speciali",
-	"bs-watchlist-droplet-name": "Osservati speciali"
+	"bs-watchlist-droplet-name": "Osservati speciali",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "Numero di pagine mostrate",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "Lunghezza massima dei titoli di pagina",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Ordina per"
 }

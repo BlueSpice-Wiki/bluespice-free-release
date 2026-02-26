@@ -8,7 +8,6 @@ use MediaWiki\Extension\UserProfile\ProfileImage\IProfileImageProvider;
 use MediaWiki\Extension\UserProfile\ProfileImage\ProfileImageInfo;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
-use MWException;
 use ThumbnailImage;
 
 class GenerateImage implements IProfileImageProvider {
@@ -44,7 +43,6 @@ class GenerateImage implements IProfileImageProvider {
 	 * @param UserIdentity $user
 	 * @param array $params
 	 * @return void
-	 * @throws MWException
 	 */
 	private function generateFile( UserIdentity $user, array $params ) {
 		$file = $this->generator->getAvatarFile( $user );

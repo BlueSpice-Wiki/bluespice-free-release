@@ -65,7 +65,8 @@
 				"bs-insertcategory-edit-dialog-implicit-categories-label",
 				"bs-insertcategory-edit-dialog-implicit-categories-help",
 				"bs-insertcategory-edit-dialog-page-categories-get-error-message",
-				"bs-insertcategory-edit-dialog-tree-view"
+				"bs-insertcategory-edit-dialog-tree-view",
+				"bs-insertcategory-set-categories-error"
 			],
 			"dependencies": [
 				"ext.bluespice",
@@ -97,12 +98,38 @@
 		"addInsertCategoryAction": {
 			"class": "\\BlueSpice\\InsertCategory\\HookHandler\\AddInsertCategoryAction",
 			"services": [ "PermissionManager", "WikiPageFactory" ]
+		},
+		"registerCategoryStorageSlot": {
+			"class": "\\BlueSpice\\InsertCategory\\HookHandler\\RegisterCategorySlot"
+		},
+		"applyCategoriesFromCategorySlot": {
+			"class": "\\BlueSpice\\InsertCategory\\HookHandler\\ApplyCategoriesFromCategorySlot",
+			"services": [ "TitleFactory", "WikiPageFactory", "BlueSpiceInsertCategory.CategoryManipulatorFactory" ]
 		}
 	},
 	"Hooks": {
 		"SkinTemplateNavigation::Universal": "addInsertCategoryAction",
-		"BeforePageDisplay": "\\BlueSpice\\InsertCategory\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": "\\BlueSpice\\InsertCategory\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"MediaWikiServices": "registerCategoryStorageSlot",
+		"ContentAlterParserOutput": "applyCategoriesFromCategorySlot",
+		"BSApiStoreBaseBeforeReturnData": "applyCategoriesFromCategorySlot"
 	},
+	"RestRoutes": [
+		{
+			"method": "POST",
+			"path": "/bluespice/insertcategory/v1/set_categories/{page_id}",
+			"class": "\\BlueSpice\\InsertCategory\\Rest\\SetCategoriesHandler",
+			"services": [ "BlueSpiceInsertCategory.CategoryManipulatorFactory", "TitleFactory", "WikiPageFactory" ]
+		}
+	],
+	"ContentHandlers": {
+		"category_storage": {
+			"class": "BlueSpice\\InsertCategory\\Content\\CategoryContentHandler"
+		}
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }

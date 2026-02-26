@@ -114,7 +114,7 @@ class TreeDataGenerator {
 		$nodeName = $this->getNodeName( $nodeType );
 
 		if ( !isset( $this->treeNodeRegistry[$nodeName] ) ) {
-			return false;
+			return null;
 		}
 
 		$spec = $this->treeNodeRegistry[$nodeName];

@@ -37,5 +37,6 @@
 	"bs-countthings-droplet-files-name": "Numero di file",
 	"bs-countthings-droplet-files-description": "Mostra il numero di tutti i file caricati",
 	"bs-countthings-droplet-user-name": "Numero di utenti",
-	"bs-countthings-droplet-user-description": "Mostra il numero di tutti gli utenti"
+	"bs-countthings-droplet-user-description": "Mostra il numero di tutti gli utenti",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Specifica cosa deve essere conteggiato: tutto, caratteri, parole, caratteri e parole o pagine"
 }

@@ -7,5 +7,6 @@
 	},
 	"bs-bluespiceabout-desc": "Informatiounen iwwer BlueSpice",
 	"bluespiceabout": "Iwwer BlueSpice",
-	"action-bluespiceabout-viewspecialpage": "kuckt d'Spezialsäit \"{{int:bs-bluespiceabout-about-bluespice}}\""
+	"action-bluespiceabout-viewspecialpage": "kuckt d'Spezialsäit \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"bs-bluespiceabout-about-bluespice": "Iwwer BlueSpice"
 }

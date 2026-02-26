@@ -31,16 +31,13 @@ class BSApiAvatarsTasks extends BSApiTasksBase {
 		];
 	}
 
-	// phpcs:disable
 	/**
-	 *
 	 * @param stdClass $oTaskData
 	 * @param array $aParams
 	 * @return Standard
-	 * @throws MWException
+	 * @throws RuntimeException
 	 */
-	public function task_uploadFile( $oTaskData, $aParams ) {
-		// phpcs:enable
+	public function task_uploadFile( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResponse = $this->makeStandardReturn();
 		$oUser = $this->getUser();
 		\BlueSpice\Avatars\Extension::unsetUserImage( $oUser );
@@ -61,7 +58,7 @@ class BSApiAvatarsTasks extends BSApiTasksBase {
 			true
 		);
 		if ( !$oStatus->isGood() ) {
-			throw new MWException( 'FATAL: Avatar thumbs could no be deleted!' );
+			throw new RuntimeException( 'FATAL: Avatar thumbs could no be deleted!' );
 		}
 
 		$oResponse->message = $this->msg( 'bs-avatars-upload-complete' )->text();
@@ -69,16 +66,12 @@ class BSApiAvatarsTasks extends BSApiTasksBase {
 		return $oResponse;
 	}
 
-	// phpcs:disable
 	/**
-	 *
 	 * @param stdClass $oTaskData
 	 * @param array $aParams
 	 * @return Standard
-	 * @throws MWException
 	 */
-	public function task_generateAvatar( $oTaskData, $aParams ) {
-		// phpcs:enable
+	public function task_generateAvatar( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResponse = $this->makeStandardReturn();
 
 		$oUser = $this->getUser();

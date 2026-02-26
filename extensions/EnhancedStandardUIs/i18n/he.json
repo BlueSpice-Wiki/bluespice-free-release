@@ -21,10 +21,10 @@
 	"enhanced-standard-uis-allpages-include-redirect": "הצגת הפניות",
 	"enhanced-standard-uis-allpages-config-ns": "הגדרת בחירת מרחב השם",
 	"enhanced-standard-uis-allpages-config": "הגדרות",
-	"enhanced-standard-uis-allpages-paginator-first": "הראשון",
-	"enhanced-standard-uis-allpages-paginator-previous": "הקודם",
-	"enhanced-standard-uis-allpages-paginator-next": "הבא",
-	"enhanced-standard-uis-allpages-paginator-last": "האחרון",
+	"enhanced-standard-uis-allpages-paginator-first": "הדף הראשון",
+	"enhanced-standard-uis-allpages-paginator-previous": "הדף הקודם",
+	"enhanced-standard-uis-allpages-paginator-next": "הדף הבא",
+	"enhanced-standard-uis-allpages-paginator-last": "הדף האחרון",
 	"enhanced-standard-uis-allpages-redirect-title": "הפניה",
 	"enhancedfilelist": "רשימת קבצים",
 	"enhanced-standard-uis-filelist-grid-file-title": "שם הקובץ",
@@ -76,5 +76,6 @@
 	"enhanced-prefs-memberingroups": "{{GENDER:$2|חבר|חברה}} {{PLURAL:$1|בקבוצה|בקבוצות}}",
 	"enhanced-standard-uis-preferences-date-label": "נא לבחור תסדיר תצוגה",
 	"enhanced-standard-uis-prefs-panel-search-label": "חיפוש",
-	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "מידע על הקובץ"
+	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "מידע על הקובץ",
+	"enhanced-standard-uis-prefs-reset-dlg-action-label": "איפוס"
 }

@@ -1,14 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bananax47",
 			"Gomoko",
 			"Mahabarata",
 			"SnowedEarth",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92",
-			"Yasten",
-			"Bananax47"
+			"Yasten"
 		]
 	},
 	"bs-whoisonline-desc": "Affiche une liste d’utilisateurs actuellement en ligne",

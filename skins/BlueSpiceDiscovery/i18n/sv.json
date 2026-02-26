@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Sabelöga",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -183,5 +184,15 @@
 	"bs-discovery-back-to-version-history": "Tillbaka till versionshistoriken",
 	"bs-discovery-back-to-version-history-title": "Gå tillbaka till versionshistoriken för sidan $1",
 	"bs-discovery-ext-credentials-desc-hyperlegible-font": "Atkinson Hyperlegible Next Font som används för BlueSpiceDiscovery och dess innehåll. ([https://www.brailleinstitute.org https://www.brailleinstitute.org])",
-	"bs-toc-hide-button-aria-label": "Dölj innehållsförteckning"
+	"bs-toc-hide-button-aria-label": "Dölj innehållsförteckning",
+	"bs-discovery-skip-links-nav-aria-label": "Hoppa över länkar",
+	"bs-discovery-sidebar-primary-cnt-aria-label": "Huvudnavigering",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "Sidverktyg",
+	"bs-discovery-tools-after-content-cnt-aria-label": "Ytterligare sidinformation",
+	"bs-discovery-data-after-content-cnt-aria-label": "Sidtillägg",
+	"bs-discovery-footer-places-alt-text-mediawiki": "Drivs av MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "Drivs av BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Drivs av Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Redigera",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Rensa"
 }

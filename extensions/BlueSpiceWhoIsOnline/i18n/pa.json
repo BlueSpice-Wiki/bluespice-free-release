@@ -7,5 +7,6 @@
 	"bs-whoisonline-collection-type-userlogin": "ਵਰਤੋਂਕਾਰ ਦਾਖ਼ਲਾ",
 	"bs-whoisonline-collection-var-login": "ਦਾਖ਼ਲ ਹੋਵੋ",
 	"bs-whoisonline-statistics-report-login-duration": "ਦਾਖ਼ਲੇ ਦੀ ਮਿਆਦ",
-	"bs-whoisonline-statistics-report-login-duration-axis-value": "ਦਾਖ਼ਲ ਹੋਣ ਦੀ ਮਿਆਦ (ਸਕਿੰਟ)"
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "ਦਾਖ਼ਲ ਹੋਣ ਦੀ ਮਿਆਦ (ਸਕਿੰਟ)",
+	"bs-whoisonline-pref-orderby": "ਇਸ ਮੁਤਾਬਕ ਛਾਂਟੋ:"
 }

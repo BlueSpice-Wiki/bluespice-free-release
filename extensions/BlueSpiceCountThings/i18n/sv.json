@@ -3,6 +3,7 @@
 		"authors": [
 			"Josve05a",
 			"Lokal Profil",
+			"Stefan2255",
 			"Sturban",
 			"WikiPhoenix"
 		]
@@ -33,5 +34,12 @@
 	"bs-countthings-tag-countcharacters-desc-param-mode": "<code>mode</code>: Vad ska räknas <code>chars</code> (tecken), <code>words</code> (ord) eller <code>pages</code> (sidor).",
 	"bs-countthings-droplet-articles-name": "Antal sidor",
 	"bs-countthings-droplet-articles-description": "Visar antalet sidor",
-	"bs-countthings-droplet-characters-name": "Antal tecken"
+	"bs-countthings-droplet-characters-name": "Antal tecken",
+	"bs-countthings-droplet-characters-description": "Visar antalet tecken eller ord på en wikisida",
+	"bs-countthings-droplet-files-name": "Antal filer",
+	"bs-countthings-droplet-files-description": "Visar antalet uppladdade filer",
+	"bs-countthings-droplet-user-name": "Antal användare",
+	"bs-countthings-droplet-user-description": "Visar antalet användare",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Räkna dubbletter",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Ange vad som ska räknas: allt, tecken, ord, tecken och ord, eller sidor"
 }

@@ -187,5 +187,10 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Navigation principal",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "Instrumentos de pagina",
 	"bs-discovery-tools-after-content-cnt-aria-label": "Information additional sur le pagina",
-	"bs-discovery-data-after-content-cnt-aria-label": "Appendice del pagina"
+	"bs-discovery-data-after-content-cnt-aria-label": "Appendice del pagina",
+	"bs-discovery-footer-places-alt-text-mediawiki": "Actionate per MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "Actionate per BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Actionate per Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Modificar",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Rader"
 }

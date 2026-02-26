@@ -24,5 +24,8 @@
 	"bs-watchlist-tag-watchlist-attr-time-help": "Axuda coa hora",
 	"bs-watchlist-droplet-name": "Lista de vixilancia",
 	"bs-watchlist-droplet-description": "Últimos cambios feitos nas páxinas incluídas na lista de vixilancia",
-	"bs-watchlist-usersidebar-title": "Lista de vixilancia"
+	"bs-watchlist-usersidebar-title": "Lista de vixilancia",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "Número de páxinas mostradas",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "Lonxitude máxima dos títulos das páxinas",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Ordenar por"
 }

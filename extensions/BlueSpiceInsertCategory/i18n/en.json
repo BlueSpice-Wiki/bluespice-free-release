@@ -21,5 +21,7 @@
 	"bs-insertcategory-no-categories": "No categories assigned",
 	"bs-insertcategory-edit-dialog-tree-view": "Show all categories",
 	"bs-insertcategory-pref-uploadintegration": "Use page categories in upload dialog",
-	"bs-insertcategory-pref-uploadintegration-help": "Sets the page categories as the default option in the upload dialog"
+	"bs-insertcategory-pref-uploadintegration-help": "Sets the page categories as the default option in the upload dialog",
+	"bs-insertcategory-set-categories-summary": "Updated page categories",
+	"bs-insertcategory-set-categories-error": "Failed to set categories"
 }

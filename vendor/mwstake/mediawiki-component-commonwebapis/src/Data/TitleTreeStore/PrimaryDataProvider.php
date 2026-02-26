@@ -305,7 +305,7 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 				if ( str_contains( $subpage, '/' ) ) {
 					continue;
 				}
-				if ( $subpageRow->page_namespace !== $row->page_namespace ) {
+				if ( (int)$subpageRow->page_namespace !== $row->page_namespace ) {
 					continue;
 				}
 				$pages[] = $subpageRow;
@@ -346,7 +346,10 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	private function splitNode( string $node ): ?array {
 		$bits = explode( ':', $node );
 		if ( count( $bits ) === 1 ) {
-			return '0:' . $bits[0];
+			return [
+				'page_namespace' => 0,
+				'page_title' => $bits[0]
+			];
 		}
 		$ns = $bits[0];
 		$nsIndex = $this->language->getNsIndex( $ns );

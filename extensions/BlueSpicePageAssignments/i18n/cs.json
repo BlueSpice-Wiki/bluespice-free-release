@@ -31,5 +31,6 @@
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Přiřadit",
 	"bs-pageassignments-header-action-edit": "Upravit",
 	"bs-pageassignments-title-edit": "Upravit úkoly",
-	"bs-pageassignments-title-delete": "Smazat přiřazení"
+	"bs-pageassignments-title-delete": "Smazat přiřazení",
+	"managepageassignments": "Správa přiřazení"
 }

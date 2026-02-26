@@ -26,4 +26,9 @@ interface ITreeLinkNode {
 	 * @return HtmlArmor
 	 */
 	public function getPreHtml(): HtmlArmor;
+
+	/**
+	 * @return array
+	 */
+	public function getData(): array;
 }

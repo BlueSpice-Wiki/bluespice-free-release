@@ -764,6 +764,16 @@
 				"ext.oojsplus.navigation.treePanel",
 				"oojs-ui"
 			]
+		},
+		"skin.discovery.enhancedsidebar-subpagetree": {
+			"scripts": [
+				"js/EnhancedSidebarSubpageTree.js",
+				"js/EnhancedSidebarLocalStorage.js"
+			],
+			"dependencies": [
+				"ext.oojsplus.navigation.treePanel",
+				"oojs-ui"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {

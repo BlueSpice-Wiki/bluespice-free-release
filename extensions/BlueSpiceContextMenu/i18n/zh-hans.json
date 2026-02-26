@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Peterxy12"
 		]
 	},
 	"bs-contextmenu-desc": "为多个链接提供上下文菜单",
@@ -21,5 +22,7 @@
 	"bs-contextmenu-user-mail": "发送邮件",
 	"bs-contextmenu-user-talk": "在讨论页留下信息",
 	"bs-contextmenu-file-download": "下载文件",
-	"apihelp-bs-contextmenu-tasks-summary": "在环境中提供环境菜单项"
+	"apihelp-bs-contextmenu-tasks-summary": "在环境中提供环境菜单项",
+	"bs-contextmenu-open-in-new-tab": "在新标签页打开",
+	"bs-contextmenu-no-items": "没有可用的上下文项目"
 }

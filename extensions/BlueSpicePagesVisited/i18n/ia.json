@@ -27,5 +27,9 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nomine de pagina",
 	"bs-pagesvisited-droplet-name": "Paginas visitate",
 	"bs-pagesvisited-droplet-description": "Lista con paginas visitate",
-	"bs-pagesvisited-label-anon-user": "Pro vider le paginas que tu ha visitate, per favor aperi session a tu conto"
+	"bs-pagesvisited-label-anon-user": "Pro vider le paginas que tu ha visitate, per favor aperi session a tu conto",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Numero de resultatos monstrate",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Longitude maxime de titulos de pagina",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Ordinar per",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Filtrar per spatios de nomines"
 }

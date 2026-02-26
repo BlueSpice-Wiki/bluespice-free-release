@@ -41,5 +41,6 @@
 	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Изменение заданий для $1",
 	"bs-pageassignments-header-action-delete": "Удалить",
 	"bs-pageassignments-title-edit": "Редактировать задания",
-	"bs-pageassignments-title-delete": "Удалить задания"
+	"bs-pageassignments-title-delete": "Удалить задания",
+	"managepageassignments": "Управление назначениями"
 }

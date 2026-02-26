@@ -3,10 +3,11 @@
 		"authors": [
 			"Amire80",
 			"McDutchie",
+			"Umherirrender",
 			"[http://www.hallowelt.com Hallo Welt! GmbH]"
 		]
 	},
-	"notifyme-desc": "Description of Notifications for [[Special:Version]]",
+	"notifyme-desc": "{{desc|name=NotifyMe|url=https://www.mediawiki.org/wiki/Extension:NotifyMe}}",
 	"prefs-notifications": "Used in [{{canonicalurl:Special:Preferences}} Special:Preferences], headline for notify me section in preferences.",
 	"notifyme-subscriber-provider-preferences-desc": "Description for preferences related to subscribers in the notification system.",
 	"notifyme-link-label-view-page": "Label for a link that directs users to view a specific page.",

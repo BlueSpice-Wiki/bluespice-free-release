@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sabelöga"
+			"Sabelöga",
+			"Stefan2255"
 		]
 	},
 	"contentdroplets-desc": "Integrering av VisualEditor för att infoga fördefinierade utdrag",
@@ -41,5 +42,9 @@
 	"contentdroplet-dialog-action-insert": "Infoga",
 	"contentdroplets-droplet-code-name": "Kod",
 	"contentdroplets-droplet-code-desc": "Markerat avsnitt för kodexempel",
-	"contentdroplets-droplet-dialog-search-placeholder-label": "Sök efter innehållsutdrag"
+	"contentdroplets-droplet-dialog-search-placeholder-label": "Sök efter innehållsutdrag",
+	"contentdroplets-toolbar-icon-title": "Lägg till innehållsdroppar",
+	"contentdroplets-droplet-icon-font-size-help": "För att justera teckenstorleken måste enheten anges, t.ex. 15px, 0.83em eller 1.2rem.",
+	"contentdroplets-droplet-icon-color-help": "Alla hex-värden (t.ex. '#3366cc') kan användas för färger, såväl som CSS-färgbeskrivningar som 'gul', 'blå' eller 'svart'.",
+	"contentdroplets-droplet-icon-orientation-help": "Värden kan ställas in för CSS-egenskapen 'vertical-align' för att justera ikonens justering: 'baseline', 'text-top', 'text-bottom', 'sub' eller 'super'"
 }

@@ -66,6 +66,10 @@ class WikiCron extends Maintenance {
 				return;
 			}
 
+			if ( $cron === null ) {
+				$this->error( "Requested cron not found\n" );
+				return;
+			}
 			$this->outputCronInfo( $cron, $manager );
 			$this->outputHistory( $history );
 			return;
@@ -80,10 +84,14 @@ class WikiCron extends Maintenance {
 	 */
 	private function forceRun( string $name, WikiCronManager $manager ) {
 		$cron = $manager->getProcessFromCronName( $name );
+		if ( !$cron ) {
+			$this->error( "Requested cron not found\n" );
+			return;
+		}
 		/** @var ProcessManager $processManager */
 		$processManager = MediaWikiServices::getInstance()->getService( 'ProcessManager' );
 		$pid = $processManager->startProcess( $cron );
-		$manager->storeHistory( $name, $pid );
+		$manager->storeHistory( $name, '', $pid );
 		$this->output( "Started process: $pid" );
 	}
 
@@ -104,6 +112,9 @@ class WikiCron extends Maintenance {
 		);
 		$this->output( str_repeat( '-', 110 ) . "\n" );
 		foreach ( $crons as $cron ) {
+			if ( !$manager->isRegistered( $cron['wc_name'] ) ) {
+				continue;
+			}
 			$cron = $this->getCronInfo( $cron, $manager );
 			$this->output(
 				str_pad( $cron['wc_interval'], 22 ) .
@@ -191,6 +202,10 @@ class WikiCron extends Maintenance {
 		);
 		$this->output( str_repeat( '-', 110 ) . "\n" );
 		foreach ( $history as $row ) {
+			if ( !$row->p_state ) {
+				// Missing process
+				continue;
+			}
 			$this->output(
 				str_pad( $row->wch_time, 25 ) .
 				str_pad( $row->p_state, 20 ) .
@@ -200,6 +215,7 @@ class WikiCron extends Maintenance {
 					str_split( $row->p_output, 100 )
 				) . "\n"
 			);
+			$this->output( str_repeat( '-', 110 ) . "\n" );
 		}
 		$this->output( str_repeat( '-', 110 ) . "\n" );
 	}

@@ -21,7 +21,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "اختر أية بيانات لاستخدامها",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "تصنيفات",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "مصطلحات البحث",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "العرض",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "عرض سحابة الكلمات المفتاحية",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "عرض سحابة الوسم في المئة",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "إظهار العد",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "عرض عدد العناصر الموجودة بين قوسين",
@@ -34,5 +34,8 @@
 	"bs-tagcloud-droplet-name": "سحابة وسم",
 	"bs-tagcloud-droplet-description": "سحابة الوسم على أساس الفئات أو استفسارات البحث",
 	"bs-tagcloud-tag-tagcloud-tab-common": "شائع",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "متقدم"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "متقدم",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "وضع العرض",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "إظهار التكرار",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "يضيف عدد الفئات المستخدمة أو استعلامات البحث"
 }

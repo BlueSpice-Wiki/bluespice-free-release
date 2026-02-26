@@ -40,10 +40,6 @@ class ApiQueryReports extends ApiQueryBase {
 		$this->reportFactory = $services->getService( 'ExtendedStatisticsReportFactory' );
 	}
 
-	/**
-	 * @throws \MWException
-	 * @throws \ReflectionException
-	 */
 	public function execute() {
 		$this->filter = $this->getFilter();
 		$type = $this->getType();
@@ -131,6 +127,7 @@ class ApiQueryReports extends ApiQueryBase {
 
 	/**
 	 * @return mixed
+	 * @throws InvalidArgumentException
 	 */
 	private function getType() {
 		$param = $this->getParameter( 'type' );

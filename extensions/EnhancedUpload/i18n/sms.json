@@ -51,5 +51,6 @@
 	"enhancedupload-attachments-tag-grid-remove-title": "Jaukkâd",
 	"enhancedupload-attachments-confirm-remove": "Haaʹlääk-a ton teâttõõzz \"$1\" jaukkeed liistâst?",
 	"enhancedupload-droplet-attachments-name": "Meâlddõõzz",
-	"enhancedupload-single-file-dlg-title": "Ođđ versio teâttõõzzâst \"$1\""
+	"enhancedupload-single-file-dlg-title": "Ođđ versio teâttõõzzâst \"$1\"",
+	"enhancedupload-config-width-label": "Kaart kobddâdvuõtt:"
 }

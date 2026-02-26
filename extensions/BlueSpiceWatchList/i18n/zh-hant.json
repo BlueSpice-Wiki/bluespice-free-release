@@ -27,5 +27,8 @@
 	"bs-watchlist-tag-watchlist-attr-time-help": "時間說明",
 	"bs-watchlist-droplet-name": "監視清單",
 	"bs-watchlist-droplet-description": "包含在監視清單中頁面的最新更改",
-	"bs-watchlist-usersidebar-title": "監視清單"
+	"bs-watchlist-usersidebar-title": "監視清單",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "顯示的頁數",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "頁面標題的最大長度",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "排序依"
 }

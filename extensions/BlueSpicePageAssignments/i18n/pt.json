@@ -78,5 +78,6 @@
 	"bs-pageassignments-notification-pagereview-body": "$1 reviu a página $2.",
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Atribuir",
 	"bs-pageassignments-header-action-edit": "Editar",
-	"bs-pageassignments-header-action-delete": "Eliminar"
+	"bs-pageassignments-header-action-delete": "Eliminar",
+	"managepageassignments": "Administração de atribuições de páginas"
 }

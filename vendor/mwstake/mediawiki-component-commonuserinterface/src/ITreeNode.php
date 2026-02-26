@@ -26,4 +26,9 @@ interface ITreeNode {
 	 * @return void
 	 */
 	public function setNodeOptions( array $options ): void;
+
+	/**
+	 * @return bool
+	 */
+	public function getIsLeaf(): bool;
 }

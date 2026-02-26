@@ -2,7 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
+			"Anterdc99",
+			"Key0121",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Xyb"
 		]
 	},
@@ -21,7 +24,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "选择要使用的数据",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "分类",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "搜索表单",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "宽",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "标签云宽度",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "标签云的宽度百分比",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "展示数",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "显示括号内项目的数量",
@@ -32,5 +35,10 @@
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "排除的页面",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "不要在标签云中显示这些页面。对于更多的页面，使用逗号分隔列表，例如“主页, 测试, MyPage”。",
 	"bs-tagcloud-droplet-name": "标签云",
-	"bs-tagcloud-droplet-description": "基于类别或搜索查询的标签云"
+	"bs-tagcloud-droplet-description": "基于类别或搜索查询的标签云",
+	"bs-tagcloud-tag-tagcloud-tab-common": "普通",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "高级",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "显示模式",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "显示频率",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "增加已使用分类或是搜索查询的数目"
 }

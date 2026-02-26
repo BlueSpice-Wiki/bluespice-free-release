@@ -70,8 +70,6 @@ class GenerateSnapshot extends Maintenance {
 
 	/**
 	 * @param SnapshotDate $date
-	 * @throws MWException
-	 * @throws ReflectionException
 	 */
 	private function generateForDate( SnapshotDate $date ) {
 		/**
@@ -106,8 +104,6 @@ class GenerateSnapshot extends Maintenance {
 
 	/**
 	 * @param string $interval
-	 * @throws MWException
-	 * @throws ReflectionException
 	 */
 	private function aggregate( $interval ) {
 		$range = null;

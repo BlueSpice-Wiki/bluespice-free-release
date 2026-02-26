@@ -100,5 +100,7 @@
 	"mwstake-formengine-edit-password-strength-indicator-medium": "Mittel",
 	"mwstake-formengine-edit-password-strength-indicator-weak": "Schwach",
 	"mwstake-formengine-edit-password-error-mismatch": "Passwörter stimmen nicht überein",
-	"mwstake-formengine-type-message": "Nachrichten-Banner"
+	"mwstake-formengine-type-message": "Nachrichten-Banner",
+	"mwstake-formengine-edit-title-wikitext-input-toggle-btn-label": "Als Wikitext bearbeiten",
+	"mwstake-formengine-edit-title-wikitext-no-valid-title-error": "Die Eingabe ist kein gültiger Seitentitel. {{#FORMAL:Wechsle|Wechseln Sie}} in den Wikitext-Modus, um diesen Inhalt zu verwenden."
 }

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stefan2255"
+		]
+	},
+	"bs-usagetracker-desc": "Innehåller statistiska data om användning av tillägg",
+	"apihelp-bs-usagetracker-store-summary": "Innehåller statistiska data om användning av tillägg"
+}

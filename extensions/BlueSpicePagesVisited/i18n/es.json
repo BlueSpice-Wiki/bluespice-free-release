@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Avengium",
 			"DiegoAmbrocio",
 			"Macofe"
 		]
@@ -25,5 +26,9 @@
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Espacios de nombres",
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Mostrar sólo las páginas de estos espacios de nombres",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Hora",
-	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nombre de la página"
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nombre de la página",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Número de resultados mostrados",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Longitud máxima de los títulos de página",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Ordenar por",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Filtrar por espacios de nombres"
 }

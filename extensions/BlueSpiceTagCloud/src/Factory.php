@@ -7,9 +7,9 @@ use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\RendererFactory;
 use BlueSpice\TagCloud\Data\TagCloud\IStore;
+use InvalidArgumentException;
 use MediaWiki\Config\Config;
 use MediaWiki\Message\Message;
-use MWException;
 
 class Factory {
 
@@ -55,7 +55,7 @@ class Factory {
 	 * @param string $type
 	 * @param Context $context
 	 * @return IStore
-	 * @throws MWException
+	 * @throws InvalidArgumentException
 	 */
 	public function getStore( $type, Context $context ) {
 		// backwards compatibillity
@@ -65,7 +65,7 @@ class Factory {
 		$store = $this->storeRegistry->getValue( $type, false );
 		if ( !$store ) {
 			$msg = Message::newFromKey( 'bs-tagcloud-error-tagtype' );
-			throw new MWException( $msg->params( $type )->text() );
+			throw new InvalidArgumentException( $msg->params( $type )->text() );
 		}
 
 		return new $store( $context );
@@ -84,13 +84,13 @@ class Factory {
 	 * @param string $type
 	 * @param array $data
 	 * @return Renderer
-	 * @throws MWException
+	 * @throws InvalidArgumentException
 	 */
 	public function getRenderer( $type, array $data = [] ) {
 		$renderer = $this->rendererRegistry->getValue( $type, false );
 		if ( !$renderer ) {
 			$msg = Message::newFromKey( 'bs-tagcloud-error-tagrenderer' );
-			throw new MWException( $msg->params( $type )->text() );
+			throw new InvalidArgumentException( $msg->params( $type )->text() );
 		}
 		return $this->rendererFactory->get(
 			$renderer,

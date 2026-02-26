@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Neriah"
 		]
 	},
 	"notifyme-desc": "התראות",
@@ -15,7 +16,7 @@
 	"notifyme-event-page-delete-key-desc": "נמחק דף",
 	"notifications-subscriptions": "ניהול מינויים להתראות",
 	"notifyme-digest-header-daily": "הינה סיכום של הפעילויות באתר $1 ב־24 השעות האחרונות",
-	"notifyme-digest-header-weekly": "הנה סיכום של הפעילויות באתר $1 בשבוע האחרון",
+	"notifyme-digest-header-weekly": "הינה סיכום של הפעילויות באתר $1 בשבוע האחרון",
 	"notifyme-digest-subject-daily": "סיכום יומי של התראות",
 	"notifyme-digest-subject-weekly": "סיכום שבועי של התראות",
 	"notifyme-bucket-content-low-freq": "תוכן בתדירות גבוהה",
@@ -94,7 +95,7 @@
 	"notifyme-schema-source-providers-link": "קישור למקום שהמשתמש יכול לשנות בו העדפות (אם רלוונטי)",
 	"notifyme-mail-template-edit-help-colors": "זמינים משתני הצבע הבאים. הם יותאמו אוטומטית לצבעים של עיצוב הוויקי.",
 	"notifyme-mail-template-edit-help-int": "ניתן להשתמש בהודעות לתרגום בתוכן באמצעות <pre><nowiki>{{int:message-key}}</nowiki></pre>",
-	"notifyme-mail-template-edit-help-logo": "כדי להוסיף את הסמל של הוויקי שלך, המוגדר בעיצוב, יש להשתמש ב־<pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-logo": "כדי להוסיף את הסמל של הוויקי שלך, המוגדר בעיצוב, ניתן להשתמש ב־<pre dir=\"ltr\">&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
 	"notifyme-mail-template-edit-help-category-params": "משתני תוכן",
 	"notifyme-mail-template-edit-help-category-logo": "סמל",
 	"notifyme-mail-template-edit-help-category-int": "בנאום",
@@ -183,8 +184,8 @@
 	"notifyme-notification-center-timestamp-ago": "לפני $1",
 	"notifyme-notification-center-no-new-notifications-label": "אין התראות חדשות",
 	"notifyme-navbar-button-aria-label-unread-notifications": "יש לך {{PLURAL:$1|התראה שלא נקראה|$1 התראות שלא נקראו}}",
-	"notifyme-notification-center-pagination-aria-next": "הבא",
-	"notifyme-notification-center-pagination-aria-previous": "הקודם",
+	"notifyme-notification-center-pagination-aria-next": "הדף הבא",
+	"notifyme-notification-center-pagination-aria-previous": "הדף הקודם",
 	"notifyme-notification-center-navigation-hint": "עצה: ניתן להשתמש במקשי החיצים הימני והשמאלי כדי לנווט בין הלשוניות ברשימת הלשוניות.",
 	"notifyme-notification-center-filter-item-aria-label": "מסנן $1",
 	"notifyme-event-page-missing-desc": "''עדיין אין תיאור של האירוע הזה''",

@@ -4,6 +4,7 @@
 			"Jopparn",
 			"Magol",
 			"Sabelöga",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -14,8 +15,13 @@
 	"bs-avatars-generate-complete": "En ny avatar har genererats.",
 	"bs-avatars-upload-label": "Bild",
 	"bs-avatars-generate-new-label": "Generera ny avatar",
-	"bs-avatars-file-upload-fieldset-title": "Bilduppladdning",
+	"bs-avatars-file-upload-fieldset-title": "Ladda upp en ny bild",
 	"bs-avatars-auto-generate-fieldset-title": "Autogenerera avatar",
 	"apihelp-bs-avatars-tasks-summary": "Laddar upp, genererar och ändrar användaravatarer",
-	"bs-avatars-tag-profileimage-error-invalidusername": "Parametern \"username\" är nödvändig och måste innehålla ett giltigt användarnamn"
+	"bs-avatars-tag-profileimage-error-invalidusername": "Parametern \"username\" är nödvändig och måste innehålla ett giltigt användarnamn",
+	"bs-avatars-pref-generator-help": "Avatarbilden genereras när en användare inte laddar upp en profilbild. InstantAvatar: Genererar en avatarbild baserat på initialerna i det riktiga namnet eller användarnamnsfälten. Identicon: Genererar en avatarbild baserat på delar av användarens ID.",
+	"bs-avatars-upload-button": "Ladda upp",
+	"bs-avatars-generate-button": "Generera",
+	"bs-avatars-generic-cancel": "Avbryt",
+	"bs-avatars-generate-description": "Generera en ny automatisk avatar. Detta kommer permanent att ersätta alla uppladdade profilbilder (om de är inställda)."
 }

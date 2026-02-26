@@ -74,9 +74,9 @@
 	"enhancedupload-config-type-label": "Typo de imagine:",
 	"enhancedupload-config-type-help": "Parametro de typo pro traher e deponer imagines in le editor visual",
 	"enhancedupload-config-height-label": "Altitude del imagine:",
-	"enhancedupload-config-height-help": "Parametro de altitude pro traher e deponer imagines in le editor visual. Mitter a 'auto' pro calcular un altitude in proportion con le latitude. Si ambes es mittite a 'auto', le dimension predefinite essera usate.",
+	"enhancedupload-config-height-help": "Parametro de altitude pro traher e deponer imagines in le editor visual. Lassar vacue pro calcular un altitude in proportion con le latitude. Si ambes es lassate vacue, le dimension predefinite essera usate.",
 	"enhancedupload-config-width-label": "Latitude del imagine:",
-	"enhancedupload-config-width-help": "Parametro de latitude pro traher e deponer imagines in le editor visual. Mitter a 'auto' pro calcular un latitude in proportion con le altitude. Si ambes es mittite a 'auto', le dimension predefinite essera usate.",
+	"enhancedupload-config-width-help": "Parametro de latitude pro traher e deponer imagines in le editor visual. Lassar vacue pro calcular un latitude in proportion con le altitude. Si ambes es lassate vacue, le dimension predefinite essera usate.",
 	"enhancedupload-config-extensions-label": "Permitter typos MIME non correspondente (risco potential pro le securitate)",
 	"enhancedupload-config-extensions-help": "Permitter le incargamento de files con extension de nomine de file non correspondente al typo MIME. Attention: risco potential pro le securitate.",
 	"enhancedupload-droplet-attachments-name": "Annexos",
@@ -94,5 +94,9 @@
 	"enhancedupload-reset-button-label": "Reinitialisar",
 	"enhancedupload-ve-file-dialog-title": "File",
 	"enhancedupload-ve-file-dialog-filename-label": "Nomine de file",
-	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Un advertimento|Advertimentos}} se ha producite con iste file{{PLURAL:$1||s}} incargate"
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Un advertimento|Advertimentos}} se ha producite con iste file{{PLURAL:$1||s}} incargate",
+	"enhancedupload-ve-attachmentinspector-title-label": "Titulo pro le section de annexos",
+	"enhancedupload-ve-attachmentinspector-title-help": "Titulo del area ubi se monstra le files",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Prefixo de files",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Identificator a inserer ante le nomine de file"
 }

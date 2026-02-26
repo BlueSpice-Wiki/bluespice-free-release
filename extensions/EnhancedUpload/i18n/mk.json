@@ -75,9 +75,9 @@
 	"enhancedupload-config-type-label": "Вид на слика",
 	"enhancedupload-config-type-help": "Можност за вид при влечење и пуштање на слики во нагледниот уредник",
 	"enhancedupload-config-height-label": "Висина на сликата:",
-	"enhancedupload-config-height-help": "Можност за висина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина.",
+	"enhancedupload-config-height-help": "Можност за висина при влечење и пуштање на слики во нагледниот уредник. Оставете непополнето за да се сразмери со ширината. Ако двете се оставени непополнети тогаш се користи основно зададената големина.",
 	"enhancedupload-config-width-label": "Ширина на сликата:",
-	"enhancedupload-config-width-help": "Можност за ширина при влечење и пуштање на слики во нагледниот уредник. Задајте „auto“ за да се сразмери со ширината. Ако свете се на „auto“, тогаш се користи основно зададената големина.",
+	"enhancedupload-config-width-help": "Можност за ширина при влечење и пуштање на слики во нагледниот уредник. Оставете непополнето за да се сразмери со ширината. Ако двете се оставени непополнети, тогаш се користи основно зададената големина.",
 	"enhancedupload-config-extensions-label": "Дозволи несовпаднати MIME-типови (потенцијален безбедносен ризик)",
 	"enhancedupload-config-extensions-help": "Дозволи подигање на податотечни наставки со несовпаднати MIME-типови. Предупредување: потенцијален безбедносен ризик.",
 	"enhancedupload-droplet-attachments-name": "Прилози",
@@ -95,5 +95,9 @@
 	"enhancedupload-reset-button-label": "Одново",
 	"enhancedupload-ve-file-dialog-title": "Податотека",
 	"enhancedupload-ve-file-dialog-filename-label": "Име на податотеката",
-	"enhancedupload-warning-dialog-upload-label": "За {{PLURAL:$1|оваа подигната податотека|овие подигнати податотеки}} {{PLURAL:$1|се јави предупредување|се јавија предупредувања}}"
+	"enhancedupload-warning-dialog-upload-label": "За {{PLURAL:$1|оваа подигната податотека|овие подигнати податотеки}} {{PLURAL:$1|се јави предупредување|се јавија предупредувања}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "Наслов на одделот за прилог",
+	"enhancedupload-ve-attachmentinspector-title-help": "Наслов на одделот кајшто се прикажуваат податотеките",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Податотечна претставка",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Назнака што се вметнува пред податотечното име"
 }

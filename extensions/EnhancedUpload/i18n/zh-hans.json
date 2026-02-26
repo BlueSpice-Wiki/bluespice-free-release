@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Anterdc99",
 			"GuoPC",
 			"Lakejason0",
+			"Pawsdt",
+			"Peterxy12",
 			"Wzl19371",
 			"沈澄心"
 		]
@@ -75,5 +78,31 @@
 	"enhancedupload-config-alignment-label": "图像对齐：",
 	"enhancedupload-config-type-label": "图像类型：",
 	"enhancedupload-config-height-label": "图像高度：",
-	"enhancedupload-config-width-label": "图像宽度："
+	"enhancedupload-config-width-label": "图像宽度：",
+	"enhancedupload-config-alignment-help": "在可视化编辑器中拖放图片的对齐设置",
+	"enhancedupload-config-type-help": "在可视化编辑器中拖放图片的类型设置",
+	"enhancedupload-config-height-help": "在可视化编辑器中拖放图片的高度设置。留空可随宽度缩放。如果两个都留空则将使用默认大小。",
+	"enhancedupload-config-width-help": "在可视化编辑器中拖放图片的宽度设置。若留空可随高度缩放。如果两个都留空则会使用默认大小。",
+	"enhancedupload-config-extensions-label": "允许不匹配的MIME类型（具潜在的资安风险）",
+	"enhancedupload-config-extensions-help": "允许上传MIME类型不匹配的后缀名。警告：具潜在的资安风险",
+	"enhancedupload-droplet-attachments-name": "附件",
+	"enhancedupload-droplet-attachments-description": "整理附件的区域",
+	"enhancedupload-upload-warning-exists": "已存在此名称的文件",
+	"enhancedupload-upload-warning-duplicate": "此为重复文件",
+	"enhancedupload-upload-warning-was-deleted": "此文件名称先前已删除。",
+	"enhancedupload-upload-error-duplicate": "与此文件（$1）相同的文件先前已被删除。",
+	"enhancedupload-upload-error-badfilename": "文件名称“$1”包含无效字符。",
+	"enhancedupload-upload-error-unhandled": "发生未处理的异常。",
+	"enhancedupload-single-file-dlg-title": "新版本的“$1”",
+	"enhancedupload-toggle-details-button-hide-label": "隐藏详细数据",
+	"enhancedupload-toggle-details-button-show-label": "显示详细数据",
+	"enhancedupload-preview-widget-remove-label": "移除$1",
+	"enhancedupload-reset-button-label": "重设",
+	"enhancedupload-ve-file-dialog-title": "文件",
+	"enhancedupload-ve-file-dialog-filename-label": "文件名",
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|这个|这些}}上传文件出现{{PLURAL:$1|一个警告|警告}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "附件部分标题",
+	"enhancedupload-ve-attachmentinspector-title-help": "文件显示区域的标题",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "文件前缀",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "在文件名称前方插入识别码"
 }

@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Avengium",
+			"Macofe",
+			"Yupik"
 		]
 	},
-	"prefs-notifications": "Notificaciones"
+	"prefs-notifications": "Notificaciones",
+	"notifyme-ui-subscriptionset-editor-category-label": "Categoría",
+	"notifyme-ui-subscriptionset-category-label": "Categoría",
+	"notifyme-mail-template-edit-help-logo": "Para agregar el logotipo de tu wiki, que está configurado en la máscara,<pre>&lt;img src=\"{{logo}}\" alt=\"Logotipo de Wiki\" /&gt;</pre> se puede utilizar"
 }

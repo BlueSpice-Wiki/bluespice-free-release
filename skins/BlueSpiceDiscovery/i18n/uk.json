@@ -3,6 +3,7 @@
 		"authors": [
 			"DDPAT",
 			"Ice bulldog",
+			"Movses",
 			"Samflint",
 			"Vlad5250",
 			"Ата"
@@ -69,7 +70,7 @@
 	"bs-discovery-tabpanel-page-text": "Навігація по діях сторінки",
 	"bs-discovery-tabpanel-page-title": "Вкладка з діями та інструментами на сторінці",
 	"bs-discovery-tabpanel-page-aria-label": "Навігація по діям сторінки та інструментам",
-	"bs-discovery-tabpanel-page-desc": "Навігація по діям сторінки та інструментам містить вкладки, панель інструментів і дії",
+	"bs-discovery-tabpanel-page-desc": "Навігація по діях сторінки та інструментам містить вкладки, панель інструментів і дії",
 	"bs-discovery-sidebar-primary-toggle-show-title": "Відкрити основну бічну панель",
 	"bs-discovery-sidebar-primary-toggle-show-aria-label": "Відкрити основну бічну панель",
 	"bs-discovery-sidebar-primary-toggle-hide-title": "Закрити основну бічну панель",

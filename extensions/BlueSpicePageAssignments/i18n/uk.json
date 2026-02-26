@@ -71,5 +71,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Призначено",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Не призначено",
 	"bs-pageassignments-dialog-input-placeholder": "Додати завдання…",
-	"bs-pageassignment-info-dialog": "Призначення"
+	"bs-pageassignment-info-dialog": "Призначення",
+	"managepageassignments": "Управління призначеннями"
 }

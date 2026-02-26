@@ -28,7 +28,7 @@ class UrlHelper {
 	 * @return Title|null
 	 */
 	public function getTitleFromUrl( string $url ): ?Title {
-		$parts = parse_url( $url );
+		$parts = parse_url( urldecode( $url ) );
 
 		if ( !isset( $parts['path'] ) ) {
 			return null;

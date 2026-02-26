@@ -45,5 +45,8 @@
 	"contentdroplets-droplet-code-name": "Code",
 	"contentdroplets-droplet-code-desc": "Gemarkeerde sectie voor codevoorbeelden",
 	"contentdroplets-droplet-dialog-search-placeholder-label": "Zoeken naar inhoudsdruppels",
-	"contentdroplets-toolbar-icon-title": "Inhoudsdruppels toevoegen"
+	"contentdroplets-toolbar-icon-title": "Inhoudsdruppels toevoegen",
+	"contentdroplets-droplet-icon-font-size-help": "Om de lettergrootte aan te passen, moet de eenheid worden opgegeven, bijvoorbeeld 15px, 0.83em of 1.2rem",
+	"contentdroplets-droplet-icon-color-help": "Alle hexadecimale waarden (bijv. '#3366cc') kunnen worden gebruikt voor kleuren, evenals CSS-kleurbeschrijvingen zoals 'yellow', 'blue' of 'black'",
+	"contentdroplets-droplet-icon-orientation-help": "Voor de CSS-eigenschap 'vertical-align' kunnen waarden worden ingesteld om de uitlijning van het pictogram aan te passen: 'baseline', 'text-top', 'text-bottom', 'sub' of 'super'"
 }

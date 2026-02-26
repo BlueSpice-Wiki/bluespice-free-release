@@ -60,11 +60,17 @@ class Page implements IExportMode {
 	 * @inheritDoc
 	 */
 	public function getExportPages( $title, $data ): array {
+		$revId = isset( $data['revId'] ) ? $data['revId'] : $title->getLatestRevID();
+		$params = $data;
+		$params['rev-id'] = $revId;
+		if ( isset( $params['revId'] ) ) {
+			unset( $params['revId'] );
+		}
+
 		$pages[] = [
 			'type' => 'page',
 			'target' => $title->getPrefixedDBkey(),
-			'rev-id' => isset( $data['revId'] ) ? $data['revId'] : $title->getLatestRevID(),
-			'params' => $data
+			'params' => $params
 		];
 		return $pages;
 	}

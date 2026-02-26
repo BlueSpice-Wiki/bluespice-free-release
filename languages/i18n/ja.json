@@ -157,7 +157,9 @@
 			"Winston Sung",
 			"Yaakiyu.jp",
 			"Shulmj",
-			"YeBoy371"
+			"YeBoy371",
+			"X200b",
+			"Gurio318"
 		]
 	},
 	"sunday": "日曜日",
@@ -261,7 +263,7 @@
 	"history_small": "履歴",
 	"updatedmarker": "前回の閲覧以降に更新されました",
 	"printableversion": "印刷用バージョン",
-	"printableversion-deprecated-warning": "印刷用ページはサポート対象外です。表示エラーが発生する可能性があります。ブラウザーのブックマークを更新し、印刷にはブラウザーの印刷機能を使用してください。",
+	"printableversion-deprecated-warning": "印刷用ページはサポート対象外になりました。そのため表示エラーが発生している場合があります。ブラウザーのブックマークを更新するとともに、印刷にはブラウザー組み込みの印刷機能を使用してください。",
 	"permalink": "この版への固定リンク",
 	"print": "印刷",
 	"view": "閲覧",
@@ -3475,7 +3477,7 @@
 	"hebrew-calendar-m11-gen": "アブ",
 	"hebrew-calendar-m12-gen": "エルール",
 	"signature": "[[{{ns:user}}:$1|$2]] ([[{{ns:user_talk}}:$1|トーク]])",
-	"signature-temp": "[[{{#special:Contributions}}/$1|$2]] ([[{{ns:user_talk}}:$1|会話]])",
+	"signature-temp": "[[{{#special:Contributions}}/$1|$2]] ([[{{ns:user_talk}}:$1|トーク]])",
 	"timezone-utc": "UTC",
 	"timezone-local": "ローカル",
 	"duplicate-defaultsort": "<strong>警告:</strong> 既定のソートキー「$2」が、その前に書かれている既定のソートキー「$1」を上書きしています。",

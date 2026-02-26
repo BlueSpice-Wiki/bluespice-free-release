@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hedda"
+			"Hedda",
+			"Sakblue"
 		]
 	},
 	"pdfcreator-name": "PDF Oluşturucu",
@@ -152,5 +153,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "yapıldı",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "başarısız",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF hariç tut - başlat",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF hariç tut - son"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF hariç tut - son",
+	"pdfcreator-global-action-overview": "PDF şablonları",
+	"pdfcreator-global-action-overview-desc": "Wiki'deki tüm PDF şablonlarına genel bakış"
 }

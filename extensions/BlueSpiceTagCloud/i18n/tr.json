@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"Hedda"
+			"Hedda",
+			"SaldırganSincap"
 		]
 	},
 	"bs-tagcloud-desc": "Çeşitli etiket bulutlarını görüntüler",
@@ -20,7 +21,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Kullanılacak veriyi seçin",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Kategoriler",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Arama terimleri",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Genişlik",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Etiket bulutunun genişliği",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Etiket bulutunun yüzde cinsinden genişliği",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Sayacı göster",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Parantez içindeki öge sayısını görüntüle",

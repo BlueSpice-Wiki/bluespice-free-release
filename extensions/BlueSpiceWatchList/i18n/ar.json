@@ -30,5 +30,8 @@
 	"bs-watchlist-tag-watchlist-attr-time-help": "مساعدة الوقت",
 	"bs-watchlist-droplet-name": "قائمة المراقبة",
 	"bs-watchlist-droplet-description": "أحدث التغييرات على الصفحات المدرجة في قائمة المراقبة",
-	"bs-watchlist-usersidebar-title": "قائمة المراقبة"
+	"bs-watchlist-usersidebar-title": "قائمة المراقبة",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "عدد الصفحات المعروضة",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "الحد الأقصى لطول عناوين الصفحات",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "فرز حسب"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Bananax47",
+			"Escargot bleu",
 			"JLTRY"
 		]
 	},
@@ -153,5 +154,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "terminé",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "Échec",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF exclure - démarrer",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF exclure - fin"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF exclure - fin",
+	"pdfcreator-global-action-overview": "Modèles de PDF",
+	"pdfcreator-global-action-overview-desc": "Aperçu de tous les modèles PDF du wiki"
 }

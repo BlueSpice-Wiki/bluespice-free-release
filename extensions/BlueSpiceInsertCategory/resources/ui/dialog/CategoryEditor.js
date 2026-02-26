@@ -152,20 +152,24 @@
 	ext.InsertCategory.ui.dialog.CategoryEditor.prototype.getActionProcess = function ( action ) {
 		if ( action === 'submit' ) {
 			return new OO.ui.Process( () => {
+				const dfd = $.Deferred();
 				const categories = this.selector.getValue();
 
-				bs.api.tasks.exec( 'wikipage', 'setCategories', {
-					page_id: this.pageId, // eslint-disable-line camelcase
-					categories: categories
-				} )
-					.done( () => {
-						window.location.reload();
-					} )
-					.fail( ( result ) => {
-						console.dir( result ); // eslint-disable-line no-console
-					} );
+				$.ajax( {
+					url: mw.util.wikiScript( 'rest' ) + '/bluespice/insertcategory/v1/set_categories/' + this.pageId,
+					dataType: 'json',
+					type: 'POST',
+					data: JSON.stringify( {
+						categories: categories
+					} ),
+					contentType: 'application/json; charset=utf-8'
+				} ).done( () => {
+					window.location.reload();
+				} ).fail( () => {
+					dfd.reject( new OO.ui.Error( mw.msg( 'bs-insertcategory-set-categories-error' ) ) );
+				} );
 
-				this.close();
+				return dfd.promise();
 			} );
 		}
 
@@ -179,7 +183,20 @@
 	};
 
 	ext.InsertCategory.ui.dialog.CategoryEditor.prototype.getBodyHeight = function () {
-		return this.$body.outerHeight( true ) + 30;
+		if ( !this.$errors.hasClass( 'oo-ui-element-hidden' ) ) {
+			return this.$element.find( '.oo-ui-processDialog-errors' )[ 0 ].scrollHeight;
+		}
+		return this.$body[ 0 ].scrollHeight;
+	};
+
+	ext.InsertCategory.ui.dialog.CategoryEditor.prototype.onDismissErrorButtonClick = function () {
+		this.hideErrors();
+		this.updateSize();
+	};
+
+	ext.InsertCategory.ui.dialog.CategoryEditor.prototype.showErrors = function () {
+		ext.InsertCategory.ui.dialog.CategoryEditor.parent.prototype.showErrors.call( this, arguments );
+		this.updateSize();
 	};
 
 	ext.InsertCategory.ui.dialog.CategoryEditor.prototype.onTreeItemSelected = function ( item ) {

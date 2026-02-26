@@ -23,7 +23,7 @@
 	"bs-whoisonline-pref-maxidletime-help-label": "عدد ثواني عدم النشاط التي بعدها يتم وضع علامة على المستخدم بأنه غير متصل بالإنترنت",
 	"bs-whoisonline-tag-whoisonlinecount-description": "يظهر عدد المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "من هو على الإنترنت العد",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "يظهر كل المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق. الإخراج عبارة عن فقاعة كلامية عندما يقوم المستخدم بتمرير الماوس فوق الارتباط ذي الصلة",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "يعرض هذا القسم جميع المستخدمين الذين قاموا بتسجيل الدخول خلال آخر 10 دقائق. تظهر القائمة عند تمرير مؤشر الماوس فوق الرابط ذي الصلة.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "من هو على الإنترنت المنبثقة",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "عدد مرات تسجيل الدخول",
 	"bs-whoisonline-statistics-report-login-number": "تسجيل الدخول",
@@ -31,5 +31,7 @@
 	"bs-whoisonline-droplet-count-name": "عدد المستخدمين الذين قاموا بتسجيل الدخول",
 	"bs-whoisonline-droplet-count-description": "عدد المستخدمين المسجلين دخول حاليا",
 	"bs-whoisonline-droplet-popup-name": "قائمة المستخدمين الذين قاموا بتسجيل الدخول",
-	"bs-whoisonline-droplet-popup-description": "نافذة منبثقة تحتوي على قائمة بجميع المستخدمين الذين قاموا بتسجيل الدخول حاليًا"
+	"bs-whoisonline-droplet-popup-description": "نافذة منبثقة تحتوي على قائمة بجميع المستخدمين الذين قاموا بتسجيل الدخول حاليًا",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "نص الرابط",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "النص المعروض للرابط الذي يفتح قائمة المستخدمين"
 }

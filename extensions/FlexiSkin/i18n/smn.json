@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
-	"flexiskin-label": "Olgoldâshäämi"
+	"flexiskin-label": "Olgoldâshäämi",
+	"flexiskin-ui-plugin-sidebar-primary-colors-label": "Robdâvuoli ivneh"
 }

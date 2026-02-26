@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Neriah"
+		]
+	},
+	"userprofile-field-email": "דוא\"ל",
+	"userprofile-edit-image": "שינוי תמונה",
+	"userprofile-view-profile": "הצגת פרופיל המשתמש",
+	"userprofile-editor-toolbar-cancel": "ביטול",
+	"userprofile-editor-toolbar-save": "שמירה",
+	"userprofile-profile-image-alt": "תמונת פרופיל",
+	"userprofile-profile-username-title": "שם המשתמש",
+	"userprofile-ve-attr-user-label": "משתמש"
+}

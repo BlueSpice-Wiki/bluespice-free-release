@@ -415,7 +415,7 @@ flexiskin.ui.Configurator.prototype.doSave = function () {
 	OO.ui.confirm( confirmationMessage, { size: 'large' } ).done( ( confirmed ) => {
 		if ( confirmed ) {
 			this.getValue( 'save' ).done( ( value ) => {
-				new mw.Api().get( {
+				new mw.Api().postWithToken( 'csrf', {
 					action: 'flexiskin-save',
 					skinname: this.skin.name,
 					config: JSON.stringify( value )

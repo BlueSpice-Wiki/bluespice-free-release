@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Avengium",
 			"DiegoAmbrocio",
 			"Fitoschido",
 			"Macofe"
@@ -20,6 +21,8 @@
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Duración del inicio de sesión (seg)",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Muestra el número de usuarios que se han conectado en los últimos 10 minutos",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "¿Quién está en línea?",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "Muestra todos los usuarios que se han conectado en los últimos 10 minutos. La salida es un cuadro de diálogo cuando un usuario pasa por encima del enlace relacionado",
-	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Who is online popup"
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Muestra todos los usuarios que han iniciado sesión en los últimos 10 minutos. La lista es visible cuando un usuario desplaza el cursor por encima del enlace relacionado",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Who is online popup",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Enlazar texto",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Texto que se muestra para el enlace que abre la lista de usuarios"
 }

@@ -49,5 +49,6 @@
 	"bs-pageassignments-assignee-type-user": "کاربر",
 	"bs-pageassignments-assignee-type-group": "گروه",
 	"bs-pageassignments-collection-var-namespacename": "فضای نام",
-	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "تعداد صفحه‌ها"
+	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "تعداد صفحه‌ها",
+	"managepageassignments": "مدیریت تکلیف"
 }

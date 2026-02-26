@@ -19,7 +19,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "選擇要使用的資料",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "分類",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "搜尋項",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "寬度",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "標籤雲寬度",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "標籤雲寬度百分比",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "顯示次數",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "顯示在括號內的項目數量",
@@ -32,5 +32,8 @@
 	"bs-tagcloud-droplet-name": "標籤雲",
 	"bs-tagcloud-droplet-description": "根據分類或搜尋查詢的標籤雲",
 	"bs-tagcloud-tag-tagcloud-tab-common": "一般",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "進階"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "進階",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "顯示模示",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "顯示頻率",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "增加已使用分類或是搜尋查詢的數目"
 }

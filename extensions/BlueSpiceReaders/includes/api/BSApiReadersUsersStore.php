@@ -25,6 +25,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
+use MediaWiki\Title\Title;
+
 /**
  * GroupManager Api class
  * @package BlueSpice_Extensions

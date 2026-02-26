@@ -37,7 +37,7 @@
 	"bs-readers-header-revision-id": "Versienummer",
 	"bs-readers-header-revision-date": "Revisiedatum",
 	"bs-readers-header-read-on": "Gelezen op",
-	"revisionreaders": "Lezers per revisie van \"$1\"",
+	"revisionreaders": "Lezers per versie van \"$1\"",
 	"bs-readers-info-dialog": "Lezers van deze pagina",
 	"bs-readers-info-dialog-column-readers": "Lezers",
 	"bs-readers-permission-error": "Toestemmingsfout"

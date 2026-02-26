@@ -33,10 +33,20 @@ class PageWithSubpages extends Page {
 	 * @inheritDoc
 	 */
 	public function getExportPages( $title, $data ): array {
+		$revId = isset( $data['revId'] ) ? $data['revId'] : $title->getLatestRevID();
+		$params = $data;
+		$params['rev-id'] = $revId;
+		if ( isset( $params['revId'] ) ) {
+			unset( $params['revId'] );
+		}
+		if ( isset( $data['revId'] ) ) {
+			unset( $data['revId'] );
+		}
+
 		$pages[] = [
 			'type' => 'page',
 			'target' => $title->getPrefixedDBkey(),
-			'rev-id' => isset( $data['revId'] ) ? $data['revId'] : $title->getLatestRevID()
+			'params' => $params
 		];
 		$subModulePages = $title->getSubpages();
 		foreach ( $subModulePages as $subPage ) {

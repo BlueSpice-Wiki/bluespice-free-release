@@ -196,5 +196,10 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "التنقل الرئيسي",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "أدوات الصفحة",
 	"bs-discovery-tools-after-content-cnt-aria-label": "معلومات إضافية عن الصفحة",
-	"bs-discovery-data-after-content-cnt-aria-label": "ملحق الصفحة"
+	"bs-discovery-data-after-content-cnt-aria-label": "ملحق الصفحة",
+	"bs-discovery-footer-places-alt-text-mediawiki": "مدعوم بواسطة ميدياويكي",
+	"bs-discovery-footer-places-alt-text-bluespice": "مدعوم من BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "مدعوم من Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "عدل",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "مسح"
 }

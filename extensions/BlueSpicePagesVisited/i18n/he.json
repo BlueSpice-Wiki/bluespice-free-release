@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"Guycn2"
+			"Guycn2",
+			"Neriah"
 		]
 	},
 	"bs-pagesvisited-desc": "אספקת רשימה מותאמת אישית של הדפים האחרונים שנצפו",
@@ -28,5 +29,7 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "שם דף",
 	"bs-pagesvisited-droplet-name": "ביקרת בדפים",
 	"bs-pagesvisited-droplet-description": "רשימה עם דפים שביקרת בהם",
-	"bs-pagesvisited-label-anon-user": "כדי לראות דפים שביקרת בהם, נא להיכנס לחשבונך"
+	"bs-pagesvisited-label-anon-user": "כדי לראות דפים שביקרת בהם, נא להיכנס לחשבונך",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "מיון לפי",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "סינון לפי מרחב שמות"
 }

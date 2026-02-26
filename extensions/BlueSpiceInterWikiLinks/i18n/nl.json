@@ -26,7 +26,7 @@
 	"bs-interwikilinks-labelprefix": "Voorvoegsel",
 	"bs-interwikilinks-titledeleteinterwikilink": "Interwikilink verwijderen",
 	"bs-interwikilinks-confirmdeleteinterwikilink": "Weet u zeker dat u deze interwikikoppeling wilt verwijderen?",
-	"bs-interwikilinks-link-edited": "De interwiki-link is aangepast",
+	"bs-interwikilinks-link-edited": "De interwiki-koppeling is aangepast",
 	"apihelp-bs-interwikilinks-tasks-summary": "Voorziet in de taken voor de uitbreiding InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "de speciale pagina \"{{int:bs-interwikilinks-label}}\" te bekijken",
 	"interwikilinks": "Interwikilinks",

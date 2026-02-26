@@ -32,5 +32,9 @@
 	"imagemapedit-imagedisplayposition-right": "יישור לימין",
 	"imagemapedit-imagedisplaytype-thumbnail": "ממוזער",
 	"imagemapedit-imagedisplaytype-border": "גבול",
-	"imagemapedit-imagedisplaytype-frameless": "ללא מסגרת"
+	"imagemapedit-imagedisplaytype-frameless": "ללא מסגרת",
+	"imagemapedit-bottomleft": "שמאל למטה",
+	"imagemapedit-bottomright": "ימין למטה",
+	"imagemapedit-topleft": "שמאל למעלה",
+	"imagemapedit-topright": "ימין למעלה"
 }

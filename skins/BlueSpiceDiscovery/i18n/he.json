@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Neriah"
 		]
 	},
 	"bs-discovery-desc": "עיצוב BlueSpice",
@@ -187,5 +188,10 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "ניווט ראשי",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "כלי דף",
 	"bs-discovery-tools-after-content-cnt-aria-label": "מידע נוסף על הדף",
-	"bs-discovery-data-after-content-cnt-aria-label": "נספח לדף"
+	"bs-discovery-data-after-content-cnt-aria-label": "נספח לדף",
+	"bs-discovery-footer-places-alt-text-mediawiki": "מופעל על ידי MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "מופעל על ידי BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "מופעל על ידי Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "עריכה",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "ניקוי"
 }

@@ -12,7 +12,6 @@ use MWStake\MediaWiki\Component\GenericTagHandler\GenericTag;
 use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 use MWStake\MediaWiki\Component\InputProcessor\Processor\IntValue;
 use MWStake\MediaWiki\Component\InputProcessor\Processor\StringValue;
-use MWStake\MediaWiki\Component\InputProcessor\Processor\TitleValue;
 
 class QrCode extends GenericTag {
 
@@ -47,7 +46,7 @@ class QrCode extends GenericTag {
 	 * @inheritDoc
 	 */
 	public function getParamDefinition(): ?array {
-		$page = ( new TitleValue( $this->titleFactory, $this->permissionManager ) )->setRequired( true );
+		$page = ( new StringValue() )->setRequired( true );
 		$query = new StringValue();
 		$desc = new StringValue();
 		$size = ( new IntValue() )->setDefaultValue( 120 )->setMin( 1 );
@@ -67,7 +66,7 @@ class QrCode extends GenericTag {
 		$formSpec = new StandaloneFormSpecification();
 		$formSpec->setItems( [
 			[
-				'type' => 'title',
+				'type' => 'enhanced-title',
 				'name' => 'page',
 				'label' => Message::newFromKey( 'bs-qr-code-tag-attr-page-label' )->text(),
 				'help' => Message::newFromKey( 'bs-qr-code-tag-attr-page-help' )->text(),

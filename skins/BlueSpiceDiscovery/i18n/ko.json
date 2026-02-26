@@ -138,5 +138,7 @@
 	"bs-discovery-breadcrumb-label-diff": "차이",
 	"bs-discovery-back-to-page": "$1 항목으로 돌아가기",
 	"bs-discovery-back-to-page-title": "$1 문서로 돌아가기",
-	"bs-toc-hide-button-aria-label": "목차 숨기기"
+	"bs-toc-hide-button-aria-label": "목차 숨기기",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "편집",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "지우기"
 }

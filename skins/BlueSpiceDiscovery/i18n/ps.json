@@ -187,5 +187,7 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "آر چلند",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "مخ‌ توکي",
 	"bs-discovery-tools-after-content-cnt-aria-label": "زياتي مخ مالومات",
-	"bs-discovery-data-after-content-cnt-aria-label": "مخ کولمه"
+	"bs-discovery-data-after-content-cnt-aria-label": "مخ کولمه",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "سمول",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "سپينول"
 }

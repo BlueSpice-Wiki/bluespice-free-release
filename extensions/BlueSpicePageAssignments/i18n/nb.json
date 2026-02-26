@@ -71,5 +71,7 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Antall sider",
 	"bs-pageassignments-notification-pagereview-summary": "$1 har gjennomgått $3",
 	"bs-pageassignments-notification-pagereview-subject": "Gjennomgang av $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 har gjennomgått $2"
+	"bs-pageassignments-notification-pagereview-body": "$1 har gjennomgått $2",
+	"managepageassignments": "Tildelingsbehandling",
+	"bs-pageassignments-statistics-report-assigned-pages-desc": "Tidelte og ikke-tildelte sider i den valgte tidsperioden, kan filtreres etter kategori og navnerom"
 }

@@ -5,6 +5,7 @@ namespace BlueSpice\Avatars;
 use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\User;
+use RuntimeException;
 
 class Generator {
 	public const FILE_PREFIX = "BS_avatar_";
@@ -44,10 +45,10 @@ class Generator {
 	}
 
 	/**
-	 *
 	 * @param User $user
 	 * @param array $params
 	 * @return string
+	 * @throws RuntimeException
 	 */
 	public function generate( User $user, array $params = [] ) {
 		$defaultSize = 1024;
@@ -62,7 +63,7 @@ class Generator {
 				$this->config->get( 'AvatarsGenerator' )
 			);
 			if ( !$generator ) {
-				throw new \MWException(
+				throw new RuntimeException(
 					"Avatar generator '{$this->config->get( 'AvatarsGenerator' )}' not found!"
 				);
 			}
@@ -75,8 +76,8 @@ class Generator {
 				'Avatars'
 			);
 			if ( !$status->isGood() ) {
-				throw new \MWException(
-					'FATAL: Avatar could not be saved! ' . $status->getMessage()
+				throw new RuntimeException(
+					'FATAL: Avatar could not be saved! ' . $status->getMessage()->plain()
 				);
 			}
 			# Delete thumb folder if it exists
@@ -85,7 +86,7 @@ class Generator {
 				true
 			);
 			if ( !$status->isGood() ) {
-				throw new \MWException(
+				throw new RuntimeException(
 					'FATAL: Avatar thumbs could no be deleted!'
 				);
 			}

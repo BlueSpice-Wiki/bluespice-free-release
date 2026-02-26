@@ -6,5 +6,7 @@
 	},
 	"bs-pageassignments-column-assignee-type": "ਕਿਸਮ",
 	"bs-pageassignments-header-action-edit": "ਸੋਧੋ",
-	"bs-pageassignments-header-action-delete": "ਮਿਟਾਓ"
+	"bs-pageassignments-header-action-delete": "ਮਿਟਾਓ",
+	"echo-category-title-bs-pageassignments-action-cat": "ਵਰਕਾ ਜ਼ਿੰਮੇਵਾਰੀਆਂ",
+	"prefs-pageassignments": "ਵਰਕਾ ਜ਼ਿੰਮੇਵਾਰੀਆਂ"
 }

@@ -187,5 +187,10 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Hovednavigasjon",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "Sideverktøy",
 	"bs-discovery-tools-after-content-cnt-aria-label": "Ytterligere sideinformasjon",
-	"bs-discovery-data-after-content-cnt-aria-label": "Sidevedlegg"
+	"bs-discovery-data-after-content-cnt-aria-label": "Sidevedlegg",
+	"bs-discovery-footer-places-alt-text-mediawiki": "Drevet av MediaWiki",
+	"bs-discovery-footer-places-alt-text-bluespice": "Drevet av BlueSpice",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Drevet av Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Rediger",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Tøm"
 }

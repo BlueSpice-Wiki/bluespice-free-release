@@ -152,5 +152,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "klaar",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "mislukt",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF-uitsluiting - begin",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF-uitsluiting - einde"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF-uitsluiting - einde",
+	"pdfcreator-global-action-overview": "PDF-sjablonen",
+	"pdfcreator-global-action-overview-desc": "Overzicht van alle PDF-sjablonen in de wiki"
 }

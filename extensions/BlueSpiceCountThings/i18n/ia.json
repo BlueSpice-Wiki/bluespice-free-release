@@ -35,5 +35,7 @@
 	"bs-countthings-droplet-files-name": "Numero de files",
 	"bs-countthings-droplet-files-description": "Monstra le numero de tote le files incargate",
 	"bs-countthings-droplet-user-name": "Numero de usatores",
-	"bs-countthings-droplet-user-description": "Monstra le numero de tote le usatores"
+	"bs-countthings-droplet-user-description": "Monstra le numero de tote le usatores",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Contar duplicatos",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Specifica lo que debe esser contate: toto, characteres, parolas, characteres e parolas, o paginas"
 }

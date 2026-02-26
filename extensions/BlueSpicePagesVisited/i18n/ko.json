@@ -22,5 +22,8 @@
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "이름공간",
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "이 이름공간의 문서만 표시",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "시간",
-	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "문서 이름"
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "문서 이름",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "문서 제목의 최대 길이",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "정렬 기준",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "이름공간별 필터"
 }

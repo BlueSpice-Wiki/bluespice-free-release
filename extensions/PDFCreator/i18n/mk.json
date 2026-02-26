@@ -152,5 +152,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "готово",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "неуспех",
 	"pdfcreator-tag-no-export-start-ve-label": "Изземи од PDF — почеток",
-	"pdfcreator-tag-no-export-end-ve-label": "Изземи од PDF — крај"
+	"pdfcreator-tag-no-export-end-ve-label": "Изземи од PDF — крај",
+	"pdfcreator-global-action-overview": "PDF-предлошки",
+	"pdfcreator-global-action-overview-desc": "Преглед на сите PDF-предлошки на викито"
 }

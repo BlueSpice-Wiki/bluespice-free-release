@@ -165,7 +165,8 @@
 				"oojs-ui",
 				"ext.enhancedUpload.widgets",
 				"ext.enhancedUpload.detailsUploadWidget",
-				"ext.enhancedUpload.paramsProcessor"
+				"ext.enhancedUpload.paramsProcessor",
+				"mediawiki.ForeignApi"
 			]
 		},
 		"ext.enhancedUpload.widgets": {

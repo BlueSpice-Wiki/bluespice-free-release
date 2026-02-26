@@ -428,6 +428,9 @@
 		},
 		"bs-books-overview-page-actions": {
 			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\BSBookshelf"
+		},
+		"addNamespaceProperties": {
+			"class": "\\BlueSpice\\PageAssignments\\HookHandler\\NamespaceManagerCollectNamespaceProperties\\AddNamespaceProperties"
 		}
 	},
 	"Hooks": {
@@ -461,7 +464,8 @@
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
 		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs",
-		"BSBookshelfBooksOverviewBeforeSetBookActions": "bs-books-overview-page-actions"
+		"BSBookshelfBooksOverviewBeforeSetBookActions": "bs-books-overview-page-actions",
+		"NamespaceManagerCollectNamespaceProperties": "addNamespaceProperties"
 	},
 	"manifest_version": 2
 }

@@ -12,10 +12,11 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Seleziona quali dati utilizzare",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categorie",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Termini di ricerca",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Larghezza",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Larghezza della nuvola di etichette",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Mostra conteggio",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Mostra il numero di elementi tra parentesi",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Dimensione minima carattere",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Dimensione massima carattere",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Escludi pagine"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Escludi pagine",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Mostra frequenza"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Avengium",
 			"Fitoschido",
 			"JDíaz32",
 			"La Mantis",
@@ -26,5 +27,7 @@
 	"bs-discovery-edit-footerlinks-link-text": "Editar enlaces de pie de página",
 	"bs-discovery-footerlinks-imprint-link-desc": "Imprimir",
 	"bs-discovery-footerlinks-imprint-link-page": "Proyecto:Impresión",
-	"bs-discovery-footerlinks-termsofservice-link-page": "Site:Términos_de_servicio"
+	"bs-discovery-footerlinks-termsofservice-link-page": "Site:Términos_de_servicio",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Editar",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Limpiar"
 }

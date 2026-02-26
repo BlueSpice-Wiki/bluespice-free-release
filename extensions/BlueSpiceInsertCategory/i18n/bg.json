@@ -1,9 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac",
-			"StanProg",
-			"Ted Masters"
+			"StanProg"
 		]
 	},
 	"bs-insertcategory-edit-dialog-button-cancel": "Отказ"

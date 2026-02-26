@@ -4,11 +4,15 @@
 			"Jopparn",
 			"Lokal Profil",
 			"Sabelöga",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
 	"bs-watchlist-desc": "Lägger till en bevakningslista-widget och -tagg",
 	"bs-watchlist-pref-sort-time": "Tid",
 	"bs-watchlist-pref-sort-title": "Titel",
-	"bs-watchlist-tag-watchlist-desc": "Visar artiklarna på din bevakningslista som har nyligen ändrats."
+	"bs-watchlist-tag-watchlist-desc": "Visar artiklarna på din bevakningslista som har nyligen ändrats.",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "Antal visade sidor",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "Maximal längd på sidtitlar",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Sortera efter"
 }

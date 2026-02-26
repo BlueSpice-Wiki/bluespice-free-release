@@ -4,7 +4,8 @@
 			"Freked",
 			"Lokal Profil",
 			"Magol",
-			"Platinawolf"
+			"Platinawolf",
+			"Stefan2255"
 		]
 	},
 	"bs-contextmenu-desc": "Ger snabbmenyer för olika länkar",
@@ -23,5 +24,7 @@
 	"bs-contextmenu-media-view-page": "Visa filbeskrivningssida och filhistorik",
 	"bs-contextmenu-user-mail": "Skicka e-post",
 	"bs-contextmenu-user-talk": "Lämna meddelande på diskussionssidan",
-	"bs-contextmenu-file-download": "Ladda ner filen"
+	"bs-contextmenu-file-download": "Ladda ner filen",
+	"bs-contextmenu-open-in-new-tab": "Öppna i ny flik",
+	"bs-contextmenu-no-items": "Inga kontextobjekt tillgängliga"
 }

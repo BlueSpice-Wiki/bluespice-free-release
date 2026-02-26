@@ -22,6 +22,7 @@ class SimpleTreeTextNode extends ComponentBase implements ITreeNode, ITreeTextNo
 			'text' => '',
 			'expanded' => false,
 			'preHtml' => new HtmlArmor( '' ),
+			'isLeaf' => true
 		], $options );
 	}
 
@@ -83,5 +84,12 @@ class SimpleTreeTextNode extends ComponentBase implements ITreeNode, ITreeTextNo
 	 */
 	public function getPreHtml(): HtmlArmor {
 		return $this->options['preHtml'];
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function getIsLeaf(): bool {
+		return $this->options['isLeaf'];
 	}
 }

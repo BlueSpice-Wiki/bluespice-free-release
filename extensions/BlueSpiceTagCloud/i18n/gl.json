@@ -19,7 +19,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Selecciona que datos usar",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categorías",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Termos de procura",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Ancho",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Ancho da nube de etiquetas",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Ancho da nube de etiquetas en porcentaxe",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Mostrar a cantidade",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Mostrar o número de elementos entre parénteses",
@@ -32,5 +32,8 @@
 	"bs-tagcloud-droplet-name": "Nube de etiquetas",
 	"bs-tagcloud-droplet-description": "Nube de etiquetas segundo as categorías ou os termos de procura",
 	"bs-tagcloud-tag-tagcloud-tab-common": "Común",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avanzado"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avanzado",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Modo de visualización",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Mostrar a frecuencia",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Engade o número de categorías ou consultas de procura empregadas"
 }

@@ -3,10 +3,12 @@
 namespace BlueSpice\PageAssignments\Data\Assignable;
 
 use BlueSpice\PageAssignments\Data\Record;
+use LogicException;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use RuntimeException;
 
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
@@ -39,19 +41,20 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	}
 
 	/**
-	 *
 	 * @param ReaderParams $params
 	 * @return array
+	 * @throws LogicException
+	 * @throws RuntimeException
 	 */
 	public function makeData( $params ) {
 		$this->data = [];
 
 		$title = $this->context->getTitle();
 		if ( !$title ) {
-			throw new \MWException( "Missing assignable title" );
+			throw new LogicException( "Missing assignable title" );
 		}
 		if ( $title->getArticleID() < 1 ) {
-			throw new \MWException(
+			throw new RuntimeException(
 				"Not an assignable title: '{$title->getFullText()}'"
 			);
 		}

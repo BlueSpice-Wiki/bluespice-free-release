@@ -194,4 +194,19 @@ abstract class EnhancedSidebarNodeProcessor implements INodeProcessor {
 
 		return $this->titleFactory->newFromDBkey( $target );
 	}
+
+	/**
+	 * @param Title $title
+	 * @return bool
+	 */
+	protected function isActivePageNode( $title ) {
+		$pageTitle = RequestContext::getMain()->getTitle();
+		if ( !$pageTitle ) {
+			return false;
+		}
+		if ( $pageTitle->getPrefixedDBkey() === $title->getPrefixedDBkey() ) {
+			return true;
+		}
+		return false;
+	}
 }

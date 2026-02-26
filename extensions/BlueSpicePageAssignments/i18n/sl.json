@@ -79,5 +79,6 @@
 	"bs-pageassignments-event-assignment-links-intro": "Obiščite stran na naslednji povezavi in preverite svojo nalogo",
 	"bs-pageassignments-event-assignment-remove-key-desc": "Odstranjena naloga s strani",
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|je odstranil|je odstranila|je odstranil_a}} vašo nalogo s strani $2",
-	"bs-pageassignments-event-assignment-remove-bot": "Vaša naloga je bila odstranjena s strani $1"
+	"bs-pageassignments-event-assignment-remove-bot": "Vaša naloga je bila odstranjena s strani $1",
+	"managepageassignments": "Upravljanje dodelitev"
 }

@@ -31,5 +31,9 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "頁面名稱",
 	"bs-pagesvisited-droplet-name": "已造訪的頁面",
 	"bs-pagesvisited-droplet-description": "已造訪頁面的清單",
-	"bs-pagesvisited-label-anon-user": "若要查看您造訪過的頁面，請登入您的帳號"
+	"bs-pagesvisited-label-anon-user": "若要查看您造訪過的頁面，請登入您的帳號",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "顯示結果數量",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "頁面標題的最大長度",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "排序依",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "依命名空間篩選"
 }
