@@ -23,5 +23,7 @@
 	"bs-insertcategory-no-categories": "Non hai categorías asignadas",
 	"bs-insertcategory-edit-dialog-tree-view": "Mostrar todas as categorías",
 	"bs-insertcategory-pref-uploadintegration": "Usar as categorías da páxina na xanela de subida",
-	"bs-insertcategory-pref-uploadintegration-help": "Define as categorías da páxina como a opción predeterminada na xanela de subida"
+	"bs-insertcategory-pref-uploadintegration-help": "Define as categorías da páxina como a opción predeterminada na xanela de subida",
+	"bs-insertcategory-set-categories-summary": "Actualización das categorías da páxina",
+	"bs-insertcategory-set-categories-error": "Non se puideron establecer as categorías"
 }

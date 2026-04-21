@@ -70,5 +70,7 @@
 	"standarddialogs-new-page-btn-label": "Erstellen",
 	"standarddialogs-new-subpage-btn-label": "Erstellen",
 	"standarddialogs-protect-btn-label": "Schützen",
-	"standarddialogs-purge-btn-label": "Neu laden"
+	"standarddialogs-purge-btn-label": "Neu laden",
+	"standarddialogs-create-subpage-btn-label": "Unterseite erstellen",
+	"standarddialogs-create-subpage-btn-title": "Unterseite von $1 erstellen"
 }

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"AtTheTownHouse"
+		]
+	},
+	"flexiskin-extension-desc": "ni la, sina ken ante e selo.",
+	"flexiskin-label": "selo",
+	"flexiskin-ui-plugin-colors-background-primary-label": "kule nanpa wan",
+	"flexiskin-ui-plugin-colors-background-secondary-label": "kule nanpa tu",
+	"flexiskin-ui-plugin-colors-background-tertiary-label": "kule nanpa tu wan",
+	"flexiskin-ui-plugin-colors-background-quaternary-label": "kule nanpa tu tu",
+	"flexiskin-ui-plugin-colors-foreground-primary-label": "kule nanpa wan",
+	"flexiskin-ui-plugin-colors-foreground-secondary-label": "kule nanpa tu",
+	"flexiskin-ui-plugin-colors-foreground-tertiary-label": "kule nanpa tu wan",
+	"flexiskin-ui-plugin-colors-foreground-quaternary-label": "kule nanpa tu tu",
+	"flexiskin-ui-plugin-images-label": "sitelen"
+}

@@ -140,7 +140,7 @@ class ComponentManager {
 		$this->hookContainer = $hookContainer;
 		$this->slotRegistry = $slotRegistry;
 		$this->componentFilterFactory = $componentFilterFactory;
-		$this->filters = $this->componentFilterFactory->getAllFilters();
+
 		if ( $this->objectFactory instanceof ObjectFactory === false ) {
 			$this->objectFactory = MediaWikiServices::getInstance()->getObjectFactory();
 		}
@@ -151,9 +151,9 @@ class ComponentManager {
 			$this->slotRegistry = MediaWikiServices::getInstance()->getService( 'MWStakeSkinSlotRegistry' );
 		}
 		if ( $this->componentFilterFactory instanceof ComponentFilterFactory === false ) {
-			// phpcs:ignore Generic.Files.LineLength.TooLong
-			$this->componentFilterFactory = MediaWikiServices::getInstance()->getService( 'MWStakeCommonUIComponentFilterFactory' );
+			$this->componentFilterFactory = MediaWikiServices::getInstance()->getService( 'MWStakeCommonUIComponentFilterFactory' ); // phpcs:ignore Generic.Files.LineLength.TooLong
 		}
+		$this->filters = $this->componentFilterFactory->getAllFilters();
 	}
 
 	/**

@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceWhoIsOnline",
-	"version": "5.2.1",
+	"version": "5.2.2",
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceWhoIsOnline",
 	"author": [
@@ -124,7 +124,7 @@
 			"\\BlueSpice\\WhoIsOnline\\Hook\\BeforePageDisplay\\InsertTrace::callback"
 		],
 		"LoadExtensionSchemaUpdates": [
-			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable::callback",
+			"runDatabaseUpdates",
 			"\\BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddClearTableLoggedUpdate::callback"
 		],
 		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\WhoIsOnline\\Hook\\BSFoundationRendererMakeTagAttribs\\AddUserProfileOnlineMarkerMetaData::callback",
@@ -134,6 +134,9 @@
 	"HookHandlers": {
 		"registerTags": {
 			"class": "\\BlueSpice\\WhoIsOnline\\Hook\\RegisterTags"
+		},
+		"runDatabaseUpdates": {
+			"class": "BlueSpice\\WhoIsOnline\\Hook\\LoadExtensionSchemaUpdates\\AddWhoIsOnlineTable"
 		}
 	},
 	"config_prefix": "bsg",

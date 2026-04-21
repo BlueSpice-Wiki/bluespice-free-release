@@ -85,5 +85,6 @@
 	"enhanced-standard-uis-prefs-menu-aria-label": "Оддели на нагодувања",
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Изберете режим на преглед",
 	"enhanced-standard-uis-paginator-page-aria-label": "Страница $1",
-	"enhanced-standard-uis-allpages-section-heading-aria-label": "Страници што почнуваат со $1"
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Страници што почнуваат со $1",
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Пребарај податотека"
 }

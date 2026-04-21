@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"userprofile-desc": "Interface do usuário e dados adicionais para perfis de usuário",
+	"userprofile-field-email": "E-mail",
+	"userprofile-edit-image": "Mudar imagem",
+	"userprofile-view-profile": "Ver perfil de usuário(a)",
+	"userprofile-edit-profile": "Editar dados do perfil",
+	"userprofile-field-department": "Departamento",
+	"userprofile-field-function": "Função",
+	"userprofile-field-location": "Localização",
+	"userprofile-field-phone": "Telefone",
+	"userprofile-editor-toolbar-cancel": "Cancelar",
+	"userprofile-editor-toolbar-save": "Salvar",
+	"userprofile-profile-image-alt": "Imagem de perfil",
+	"userprofile-profile-username-title": "Nome de usuário",
+	"userprofile-droplet-name": "Perfil de usuário(a)",
+	"userprofile-ve-attr-user-label": "Usuário",
+	"userprofile-pref-userimage-link": "Ver perfil",
+	"userprofile-ve-attr-orientation-label": "Orientação",
+	"userprofile-ve-attr-orientation-horizontal": "Horizontal",
+	"userprofile-ve-attr-orientation-vertical": "Vertical"
+}

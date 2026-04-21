@@ -1,0 +1,6 @@
+[
+	{
+		"resourceModule": "ext.bluespice.readers.insertTrace",
+		"maxSize": "2 kB"
+	}
+]

@@ -4,7 +4,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '3.0.11' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '3.1.0' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', static function () {
@@ -140,6 +140,8 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"formElement/Date.js",
 			"widget/view/HorizontalRule.js",
 			"formElement/HorizontalRule.js",
+			"widget/edit/TitleOrWikitextInputWidget.js",
+			"formElement/EnhancedTitle.js"
 		],
 		'styles' => [ "ext.forms.form.less" ],
 		'dependencies' => [
@@ -147,7 +149,8 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"oojs-ui",
 			"mediawiki.widgets.CategoryMultiselectWidget",
 			"mediawiki.widgets.DateInputWidget",
-			"ext.forms.formelements.bootstrap"
+			"ext.forms.formelements.bootstrap",
+			"oojs-ui.styles.icons-editing-advanced"
 		],
 		'messages' => [
 			"mwstake-formengine-error-invalid-form",
@@ -175,7 +178,9 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"mwstake-formengine-edit-password-strength-indicator-medium",
 			"mwstake-formengine-edit-password-strength-indicator-weak",
 			"mwstake-formengine-edit-password-error-mismatch",
-			"mwstake-formengine-type-message"
+			"mwstake-formengine-type-message",
+			"mwstake-formengine-edit-title-wikitext-input-toggle-btn-label",
+			"mwstake-formengine-edit-title-wikitext-no-valid-title-error"
 		]
 	];
 

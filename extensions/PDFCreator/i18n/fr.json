@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Bananax47",
-			"JLTRY"
+			"Escargot bleu",
+			"JLTRY",
+			"Yupik"
 		]
 	},
 	"pdfcreator-name": "Créateur de PDF",
@@ -21,7 +23,7 @@
 	"pdfcreator-pdf-param-totalpagescount-label": "de",
 	"pdfcreator-tab-panel-intro-label": "Préface du document",
 	"pdfcreator-tab-panel-outro-label": "Annexe du document",
-	"pdfcreator-editor-action-save-label": "Sauvegarder",
+	"pdfcreator-editor-action-save-label": "Enregistrer",
 	"pdfcreator-editor-action-help-label": "Aide",
 	"pdfcreator-config-template-provider": "Configurer le fournisseur de modèles PDFCreator",
 	"pdfcreator-export-mode-page-label": "Page",
@@ -153,5 +155,7 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "terminé",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "Échec",
 	"pdfcreator-tag-no-export-start-ve-label": "PDF exclure - démarrer",
-	"pdfcreator-tag-no-export-end-ve-label": "PDF exclure - fin"
+	"pdfcreator-tag-no-export-end-ve-label": "PDF exclure - fin",
+	"pdfcreator-global-action-overview": "Modèles de PDF",
+	"pdfcreator-global-action-overview-desc": "Aperçu de tous les modèles PDF du wiki"
 }

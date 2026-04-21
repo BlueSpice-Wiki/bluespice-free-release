@@ -41,5 +41,7 @@
 	"bs-countthings-droplet-files-name": "Aantal bestanden",
 	"bs-countthings-droplet-files-description": "Toont het aantal van alle geüploade bestanden",
 	"bs-countthings-droplet-user-name": "Aantal gebruikers",
-	"bs-countthings-droplet-user-description": "Toont het aantal van alle gebruikers"
+	"bs-countthings-droplet-user-description": "Toont het aantal van alle gebruikers",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Duplicaten tellen",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Geef aan wat er geteld moet worden: alles, tekens, woorden, tekens en woorden of pagina's."
 }

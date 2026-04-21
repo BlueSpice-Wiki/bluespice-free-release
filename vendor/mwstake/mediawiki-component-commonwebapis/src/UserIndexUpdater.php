@@ -39,7 +39,7 @@ class UserIndexUpdater {
 		return $db->upsert(
 			'mws_user_index',
 			$data,
-			[ 'mui_user_id' ],
+			[ [ 'mui_user_id' ] ],
 			$data,
 			__METHOD__
 		);

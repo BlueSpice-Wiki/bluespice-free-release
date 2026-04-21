@@ -4,6 +4,7 @@
 			"Jopparn",
 			"Lokal Profil",
 			"Paracel63",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -16,5 +17,9 @@
 	"bs-pagesvisited-pref-widgetsortodr": "Sortera efter:",
 	"bs-pagesvisited-pref-sort-time": "Tid",
 	"bs-pagesvisited-pref-sort-pagename": "Titel",
-	"bs-pagesvisited-tag-pagesvisited-desc": "Visar en lista över nyligen besökta sidor. Denna lista kan begränsas med parametrar."
+	"bs-pagesvisited-tag-pagesvisited-desc": "Visar en lista över nyligen besökta sidor. Denna lista kan begränsas med parametrar.",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Antal visade resultat",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Maximal längd på sidtitlar",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Sortera efter",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Filtrera efter namnrymd"
 }

@@ -6,6 +6,7 @@ use BlueSpice\Renderer\Params;
 use BlueSpice\TagCloud\Data\TagCloud\Record;
 use BlueSpice\TagCloud\Data\TagCloud\ResultSet;
 use BlueSpice\Utility\CacheHelper;
+use InvalidArgumentException;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Linker\LinkRenderer;
@@ -39,6 +40,7 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	 * @param IContextSource|null $context
 	 * @param string $name | ''
 	 * @param CacheHelper|null $cacheHelper
+	 * @throws InvalidArgumentException
 	 */
 	protected function __construct( Config $config, Params $params,
 		?LinkRenderer $linkRenderer = null, ?IContextSource $context = null,
@@ -57,7 +59,7 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 			null
 		);
 		if ( !$result instanceof DataStoreResultSet ) {
-			throw new \MWException(
+			throw new InvalidArgumentException(
 				__CLASS__ . ':' . __METHOD__ . ' - invalid "' . static::PARAM_RESULT
 			);
 		}
@@ -68,7 +70,7 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 			null
 		);
 		if ( !$this->context instanceof Context ) {
-			throw new \MWException(
+			throw new InvalidArgumentException(
 				__CLASS__ . ':' . __METHOD__ . ' - invalid "' . static::PARAM_CONTEXT
 			);
 		}

@@ -8,7 +8,8 @@
 			"TitleFactory",
 			"ContentLanguage",
 			"NamespaceInfo",
-			"PageProps"
+			"PageProps",
+			"PermissionManager"
 		]
 	}
 ]

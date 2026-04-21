@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"GuoPC",
 			"LittlePaw365"
 		]
 	},
-	"visualeditorplus-desc": "给可视化编辑器添加多种功能"
+	"visualeditorplus-desc": "给可视化编辑器添加多种功能",
+	"visualeditorplus-table-contextitemwidget-label-remove": "移除表格",
+	"visualeditorplus-table-contextitem-properties-label": "表格属性",
+	"visualeditorplus-table-contextitem-additional-options-label": "额外单元格选项",
+	"visualeditorplus-table-cell-actions-dialog-title": "单元格选项",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "完成"
 }

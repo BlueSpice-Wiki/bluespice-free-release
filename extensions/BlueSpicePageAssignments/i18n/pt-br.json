@@ -73,5 +73,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Número de páginas",
 	"bs-pageassignments-notification-pagereview-summary": "$1 revisou $3",
 	"bs-pageassignments-notification-pagereview-subject": "Revisão da página $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 revisou a página $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 revisou a página $2.",
+	"managepageassignments": "Administração de atribuições de páginas"
 }

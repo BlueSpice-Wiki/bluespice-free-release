@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Sabelöga",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -81,5 +82,19 @@
 	"flexiskin-ui-plugin-content-colors-new-link-label": "Trasig länk",
 	"flexiskin-special-loading-ph": "FlexiSkin laddar komponenter...",
 	"flexiskin-ui-configurator-warning-disabled-skin": "FlexiSkin har konfigurerats, men är för tillfället inaktiverad. För att återaktivera det, tryck på knappen \"Spara och aktivera\". Du kan kontrollera aktuell status genom att trycka på knappen \"Förhandsvisning\" innan du aktiverar det.",
-	"flexiskin-ui-plugin-free-css-label": "Fri CSS"
+	"flexiskin-ui-plugin-free-css-label": "Fri CSS",
+	"flexiskin-label": "Utseende",
+	"apihelp-flexiskin-skinoperation-param-skinname": "Utseendenamnet för att hantera en FlexiSkin",
+	"flexiskin-ui-plugin-color-settings-label": "Layoutfärger",
+	"flexiskin-ui-plugin-navbar-colors-label": "Rubrikfärg",
+	"flexiskin-ui-plugin-colors-background-navbar-label": "Bakgrund för rubrik",
+	"flexiskin-ui-plugin-colors-foreground-navbar-label": "Rubrikens förgrund",
+	"flexiskin-ui-plugin-colors-highlight-navbar-label": "Rubrikmarkering",
+	"flexiskin-ui-plugin-sidebar-primary-colors-label": "Färger på sidofältet",
+	"flexiskin-ui-plugin-colors-background-sidebar-primary-label": "Bakgrund i sidofältet",
+	"flexiskin-ui-plugin-colors-foreground-sidebar-primary-label": "Sidofältets förgrund",
+	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Sidofältets markering",
+	"flexiskin-ui-plugin-footer-colors-label": "Sidfotsfärger",
+	"flexiskin-ui-plugin-colors-background-footer-label": "Sidfotsbakgrund",
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Sidfotsförgrund"
 }

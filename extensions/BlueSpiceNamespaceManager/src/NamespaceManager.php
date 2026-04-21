@@ -49,10 +49,12 @@ class NamespaceManager {
 		if ( !$configObject ) {
 			return [];
 		}
+
 		$raw = $this->configManager->retrieveRaw( $configObject );
 		if ( !$raw ) {
 			return [];
 		}
+
 		$data = unserialize( $raw );
 		$userNamespaces = array_values( $data['constants'] );
 
@@ -120,9 +122,17 @@ class NamespaceManager {
 		$constantsNames = [];
 		$aliasesMap = [];
 		foreach ( $userNSDefinition as $nsId => $definition ) {
-			$aliasesMap[$nsId] = BsNamespaceHelper::getNamespaceAliases( $nsId );
+			$alias = $definition['alias'] ?? null;
+			if ( $alias ) {
+				$aliasesMap[$nsId] = [ $alias ];
+				$this->setNamespaceAlias( $alias, $nsId );
+			} elseif ( $alias === '' ) {
+				$this->unsetNamespaceAlias( $nsId );
+			} else {
+				$aliasesMap[$nsId] = BsNamespaceHelper::getNamespaceAliases( $nsId );
+			}
 
-			$name = isset( $definition['name'] ) ? $definition['name'] : null;
+			$name = $definition['name'] ?? null;
 			$constantsNames[$nsId] = BsNamespaceHelper::getNamespaceConstName( $nsId, $name, true );
 		}
 
@@ -137,6 +147,7 @@ class NamespaceManager {
 		} catch ( Exception $e ) {
 			return Status::newFatal( $e->getMessage() );
 		}
+
 		return Status::newGood();
 	}
 
@@ -171,4 +182,38 @@ class NamespaceManager {
 
 		return $metaFields;
 	}
+
+	/**
+	 * @param string $alias
+	 * @param int $nsId
+	 */
+	public function setNamespaceAlias( string $alias, int $nsId ): void {
+		$this->unsetNamespaceAlias( $nsId );
+		$GLOBALS['wgNamespaceAliases'][$alias] = $nsId;
+	}
+
+	/**
+	 * @param int $nsId
+	 */
+	public function unsetNamespaceAlias( int $nsId ): void {
+		foreach ( $GLOBALS['wgNamespaceAliases'] as $existingAlias => $id ) {
+			if ( $id === $nsId ) {
+				unset( $GLOBALS['wgNamespaceAliases'][$existingAlias] );
+			}
+		}
+	}
+
+	/**
+	 * @param int $nsId
+	 * @return string
+	 */
+	protected function getNamespaceAlias( int $nsId ): string {
+		foreach ( $GLOBALS['wgNamespaceAliases'] as $alias => $id ) {
+			if ( $id === $nsId ) {
+				return $alias;
+			}
+		}
+		return '';
+	}
+
 }

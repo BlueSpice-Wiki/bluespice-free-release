@@ -1,14 +1,28 @@
 [
 	{
 		"path": "/mws/v1/user-token/generate",
-		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\GenerateTokenHandler",
+		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\Rest\\GenerateUserTokenHandler",
 		"services": [
 			"MWStake.TokenAuthenticator.Authenticator"
 		]
 	},
 	{
+		"path": "/mws/v1/app-token/generate",
+		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\Rest\\GenerateAppTokenHandler",
+		"services": [
+			"MWStake.TokenAuthenticator.AppAuthenticator", "MWStake.TokenAuthenticator._CIDRValidator"
+		]
+	},
+	{
+		"path": "/mws/v1/app-token/verify/{token}",
+		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\Rest\\VerifyAppTokenHandler",
+		"services": [
+			"MWStake.TokenAuthenticator.AppAuthenticator"
+		]
+	},
+	{
 		"path": "/mws/v1/user-token/verify/{token}",
-		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\VerifyTokenHandler",
+		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\Rest\\VerifyUserTokenHandler",
 		"services": [
 			"MWStake.TokenAuthenticator.Authenticator"
 		]

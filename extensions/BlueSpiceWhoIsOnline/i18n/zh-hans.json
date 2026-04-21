@@ -3,6 +3,8 @@
 		"authors": [
 			")8",
 			"Liuxinyu970226",
+			"Pawsdt",
+			"Peterxy12",
 			"TsuyaMarisa",
 			"Xyb"
 		]
@@ -19,5 +21,19 @@
 	"bs-whoisonline-collection-var-login": "登录",
 	"bs-whoisonline-statistics-report-login-duration": "登录持续时间",
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "登录持续时间（秒）",
-	"bs-whoisonline-droplet-popup-name": "已登录用户列表"
+	"bs-whoisonline-droplet-popup-name": "已登录用户列表",
+	"bs-whoisonline-pref-maxidletime-label": "离线超时时间（秒）",
+	"bs-whoisonline-pref-maxidletime-help-label": "超过连续无互动秒数后，用户会被标记为离线",
+	"bs-whoisonline-tag-whoisonlinecount-description": "显示最近10分钟内登录的用户人数",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "谁在在线计数",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "显示最近十分钟内登录的用户数。当用户将鼠标悬停在相关链接上时，即可看到该列表",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "谁在在线弹跳窗口",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "登录数",
+	"bs-whoisonline-statistics-report-login-number": "登录",
+	"bs-whoisonline-statistics-report-login-number-desc": "所选期间的每日登录次数",
+	"bs-whoisonline-droplet-count-name": "已登录用户数",
+	"bs-whoisonline-droplet-count-description": "目前已登录用户数",
+	"bs-whoisonline-droplet-popup-description": "目前已登录所有用户列表的弹跳窗口",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "链接文本",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "用于开启用户列表的链接所显示文本"
 }

@@ -9,5 +9,8 @@
 	},
 	"bs-saferedit-desc": "若其他使用者在編輯頁面時提供警告",
 	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|正在}}{{GENDER:$1|編輯}}頁面",
-	"bs-saferedit-someone-editing": "有人在編輯頁面"
+	"bs-saferedit-someone-editing": "有人在編輯頁面",
+	"bs-saferedit-pref-show-editinguser": "顯示目前編輯者",
+	"bs-saferedit-pref-show-editinguser-help": "在頁面頂部新增目前做出編輯的使用者名稱。",
+	"bs-saferedit-anonymous-editor": "匿名使用者"
 }

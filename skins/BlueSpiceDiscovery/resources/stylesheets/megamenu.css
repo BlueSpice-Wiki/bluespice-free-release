@@ -191,6 +191,10 @@
 
 /* https://getbootstrap.com/docs/5.0/layout/grid/ */
 @media ( max-width: 767.99px ) {
+	#p-tools-megamn .mega-menu-wrapper {
+		margin-top: 15px;
+	}
+
 	.dropdown-menu {
 		overflow-y: auto;
 		max-height: calc( 100vh - calc( 2 * var( --navbar-primary-height ) ) );
@@ -208,6 +212,7 @@
 
 	.card.card-mn {
 		width: 100%;
+		min-height: 5px;
 		height: auto;
 		padding: 15px 0 5px 0;
 		float: both;

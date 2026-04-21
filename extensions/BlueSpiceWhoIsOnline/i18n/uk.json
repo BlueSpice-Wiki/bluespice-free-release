@@ -23,6 +23,6 @@
 	"bs-whoisonline-statistics-report-login-duration-axis-value": "Тривалість входу (с)",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Показує кількість користувачів, які увійшли протягом останніх 10 хвилин",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Лічильник тих, хто в мережі",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "Показує всіх користувачів, які ввійшли в систему протягом останніх 10 хвилин. Коли користувач наводить курсор на пов’язане посилання, результатом є спливаюча підказка",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Показує всіх користувачів, які ввійшли в систему протягом останніх 10 хвилин. Цей список користувачів показується якщо навести курсор на пов’язане посилання",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Спливаюче вікно «Хто в мережі»"
 }

@@ -70,5 +70,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Puslapių skaičius",
 	"bs-pageassignments-notification-pagereview-summary": "$1 peržiūrėjo $3",
 	"bs-pageassignments-notification-pagereview-subject": "Puslapio $2 apžvalga",
-	"bs-pageassignments-notification-pagereview-body": "$1 peržiūrėjo puslapį $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 peržiūrėjo puslapį $2.",
+	"managepageassignments": "Užduoties valdymas"
 }

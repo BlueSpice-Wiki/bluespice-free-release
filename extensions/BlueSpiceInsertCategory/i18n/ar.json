@@ -3,10 +3,10 @@
 		"authors": [
 			"FiberAhmed",
 			"Meno25",
+			"Mohammed Qays",
 			"أَحمد",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح",
-			"Mohammed Qays"
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-insertcategory-desc": "مربع حوار لإدخال رابط تصنيف",
@@ -26,5 +26,7 @@
 	"bs-insertcategory-no-categories": "لم يتم تعيين فئات",
 	"bs-insertcategory-edit-dialog-tree-view": "عرض كل الفئات",
 	"bs-insertcategory-pref-uploadintegration": "استخدم فئات الصفحات في مربع الحوار \"تحميل\"",
-	"bs-insertcategory-pref-uploadintegration-help": "تعيين فئات الصفحة كخيار افتراضي في مربع الحوار التحميل"
+	"bs-insertcategory-pref-uploadintegration-help": "تعيين فئات الصفحة كخيار افتراضي في مربع الحوار التحميل",
+	"bs-insertcategory-set-categories-error": "فشل في تحديد التصنيفات",
+	"bs-insertcategory-set-categories-summary": "تم تحديث فئات الصفحة"
 }

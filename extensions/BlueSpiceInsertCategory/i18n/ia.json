@@ -24,5 +24,7 @@
 	"bs-insertcategory-edit-dialog-tree-view": "Monstrar tote le categorias",
 	"bs-insertcategory-pref-withparents-help": "Adde le categoria mesme e su categorias genitores al pagina",
 	"bs-insertcategory-pref-uploadintegration": "Usar le categorias de pagina in le dialogo de incargamento",
-	"bs-insertcategory-pref-uploadintegration-help": "Defini le categorias de pagina como option predefinite in le dialogo de incargamento"
+	"bs-insertcategory-pref-uploadintegration-help": "Defini le categorias de pagina como option predefinite in le dialogo de incargamento",
+	"bs-insertcategory-set-categories-summary": "Actualisation del categorias del pagina",
+	"bs-insertcategory-set-categories-error": "Le definition del categorias ha fallite"
 }

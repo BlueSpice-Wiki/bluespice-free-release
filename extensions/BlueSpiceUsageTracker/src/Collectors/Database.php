@@ -2,6 +2,7 @@
 namespace BS\UsageTracker\Collectors;
 
 use BS\UsageTracker\CollectorResult;
+use LogicException;
 
 class Database extends Base {
 
@@ -53,12 +54,12 @@ class Database extends Base {
 	/**
 	 *
 	 * @return \BS\UsageTracker\CollectorResult
-	 * @throws \MWException
+	 * @throws LogicException
 	 */
 	public function getUsageData() {
 		$oRes = new \BS\UsageTracker\CollectorResult( $this );
 		if ( !$this->table || !$this->uniqueColumns ) {
-			throw new \MWException( "UsageTracker::DatabaseCollector: table or columns are not set." );
+			throw new LogicException( "UsageTracker::DatabaseCollector: table or columns are not set." );
 		}
 
 		$dbr = $this->loadBalancer->getConnection( DB_REPLICA );

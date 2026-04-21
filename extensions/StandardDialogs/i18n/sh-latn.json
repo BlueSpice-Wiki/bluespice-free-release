@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -17,7 +18,7 @@
 	"standarddialogs-page-info-properties": "Svojstva",
 	"standarddialogs-page-info-page-title": "Naslov",
 	"standarddialogs-page-info-page-length": "Dužina stranice (u bajtovima)",
-	"standarddialogs-page-info-page-id": "Naznaka stranice",
+	"standarddialogs-page-info-page-id": "ID stranice",
 	"standarddialogs-page-info-page-language": "Jezik",
 	"standarddialogs-page-info-page-model": "Model sadržaja",
 	"standarddialogs-page-info-page-watch": "Broj pratitelja",
@@ -44,8 +45,8 @@
 	"standarddialogs-move-title": "Premjesti stranicu \"$1\"",
 	"standarddialogs-protect-btn": "Zaštiti",
 	"standarddialogs-protect-title": "Zaštiti stranicu \"$1\"",
-	"standarddialogs-purge-btn": "Preučitaj",
-	"standarddialogs-purge-title": "Preučitaj stranicu \"$1\"",
+	"standarddialogs-purge-btn": "Osvježi",
+	"standarddialogs-purge-title": "Osvježavanje stranice \"$1\"",
 	"standarddialogs-btn-done": "Gotovo",
 	"standarddialogs-btn-cancel": "Otkaži",
 	"standarddialogs-protect-level-editor": "Dopusti samo uređivačima i administratorima"

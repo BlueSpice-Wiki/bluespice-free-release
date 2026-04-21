@@ -4,5 +4,12 @@
 			"Toliño"
 		]
 	},
-	"visualeditorplus-desc": "Engade varias funcionalidades ao editor visual"
+	"visualeditorplus-desc": "Engade varias funcionalidades ao editor visual",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Eliminar a táboa",
+	"visualeditorplus-table-contextitem-properties-label": "Propiedades da táboa",
+	"visualeditorplus-table-contextitem-additional-options-label": "Opcións de cela adicionais",
+	"visualeditorplus-table-cell-actions-dialog-title": "Opcións de cela",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Feito",
+	"visualeditorplus-ui-label-unwrap": "Eliminar (manter o contido)",
+	"visualeditorplus-ui-label-delete": "Eliminar"
 }

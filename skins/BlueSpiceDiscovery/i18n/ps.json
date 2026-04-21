@@ -187,5 +187,11 @@
 	"bs-discovery-sidebar-primary-cnt-aria-label": "آر چلند",
 	"bs-discovery-sidebar-secondary-cnt-aria-label": "مخ‌ توکي",
 	"bs-discovery-tools-after-content-cnt-aria-label": "زياتي مخ مالومات",
-	"bs-discovery-data-after-content-cnt-aria-label": "مخ کولمه"
+	"bs-discovery-data-after-content-cnt-aria-label": "مخ کولمه",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "سمول",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "سپينول",
+	"bs-discovery-footer-places-alt-text-mediawiki": "د مېډياويکي له خوا پرمخ وړل کېږي",
+	"bs-discovery-footer-places-alt-text-bluespice": "د بلوسپيس له خوا پرمخ وړل کېږي",
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "د ماناپوهنيزه مېډياويکي له خوا پرمخ وړل کېږي",
+	"bs-discovery-breadcrumb-nav-root-node-title": "په $1 نوم‌تشيال کې ټول مخونه ښودل"
 }

@@ -48,7 +48,7 @@ return [
 		$storeType = $config->get( 'StatisticsSnapshotStoreType' );
 
 		if ( !isset( $registry[$storeType] ) ) {
-			throw new MWException( 'Snapshot store ' . $storeType . ' is not registered' );
+			throw new LogicException( 'Snapshot store ' . $storeType . ' is not registered' );
 		}
 		$specs = $registry[$storeType];
 		if ( is_string( $specs ) && is_callable( $specs ) ) {
@@ -59,7 +59,7 @@ return [
 
 		$instance = $objectFactory->createObject( $specs );
 		if ( !$instance instanceof ISnapshotStore ) {
-			throw new MWException(
+			throw new LogicException(
 				"SnapshotStore must implement " . ISnapshotStore::class .
 				', given ' . get_class( $instance )
 			);

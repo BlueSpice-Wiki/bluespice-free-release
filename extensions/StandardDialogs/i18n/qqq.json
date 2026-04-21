@@ -70,5 +70,7 @@
 	"standarddialogs-new-page-btn-label": "Label for primary action button of new page dialog.\n{{Identical|Create}}",
 	"standarddialogs-new-subpage-btn-label": "Label for primary action button of new page dialog.\n{{Identical|Create}}",
 	"standarddialogs-protect-btn-label": "Label for primary action button of protect dialog.\n{{Identical|Protect}}",
-	"standarddialogs-purge-btn-label": "Label for primary action button of purge dialog"
+	"standarddialogs-purge-btn-label": "Label for primary action button of purge dialog",
+	"standarddialogs-create-subpage-btn-label": "Button label to create subpage of a page",
+	"standarddialogs-create-subpage-btn-title": "Button title to create subpage of a page\nParameters:\n* - $1: name of page"
 }

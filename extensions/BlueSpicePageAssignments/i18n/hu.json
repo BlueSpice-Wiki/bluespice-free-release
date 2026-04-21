@@ -84,5 +84,6 @@
 	"bs-pageassignments-header-action-delete": "Törlés",
 	"bs-pageassignments-title-edit": "Hozzárendelések szerkesztése",
 	"bs-pageassignments-title-delete": "Hozzárendelések törlése",
-	"bs-pageassignments-show-unassigned-pages": "Hozzárendelés nélküli lapok megjelenítése"
+	"bs-pageassignments-show-unassigned-pages": "Hozzárendelés nélküli lapok megjelenítése",
+	"managepageassignments": "Hozzárendelések kezelése"
 }

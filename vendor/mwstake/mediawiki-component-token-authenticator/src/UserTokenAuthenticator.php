@@ -2,7 +2,6 @@
 
 namespace MWStake\MediaWiki\Component\TokenAuthenticator;
 
-use InvalidArgumentException;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Language\Language;
 use MediaWiki\Languages\LanguageNameUtils;
@@ -14,8 +13,7 @@ use MediaWiki\Utils\UrlUtils;
 use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\ObjectCache\BagOStuff;
 
-class UserTokenAuthenticator {
-	private const TTL = 10;
+class UserTokenAuthenticator extends TokenAuthenticator {
 
 	/**
 	 * @param UrlUtils $urlUtils
@@ -30,15 +28,16 @@ class UserTokenAuthenticator {
 	 */
 	public function __construct(
 		private readonly UrlUtils $urlUtils,
-		private readonly BagOStuff $sessionCache,
+		BagOStuff $sessionCache,
 		private readonly UserFactory $userFactory,
 		private readonly UserGroupManager $groupManager,
 		private readonly UserOptionsLookup $userOptionsLookup,
 		private readonly LanguageNameUtils $languageNameUtils,
 		private readonly Language $contentLanguage,
 		private readonly HookContainer $hookContainer,
-		private readonly string $salt = ''
+		string $salt = ''
 	) {
+		parent::__construct( $sessionCache, $salt );
 	}
 
 	/**
@@ -47,39 +46,24 @@ class UserTokenAuthenticator {
 	 * @throws \Random\RandomException
 	 */
 	public function generateToken( UserIdentity $user ) {
-		$username = $user->getName();
-		$token = bin2hex( random_bytes( 16 ) );
-		if ( $this->sessionCache->set(
-			$this->sessionCache->makeKey( $token ),
-			[ 'user' => $username, 'registered' => $user->isRegistered(), 'wiki' => WikiMap::getCurrentWikiId() ],
-			static::TTL
-		) ) {
-			return $token;
-		} else {
-			throw new InvalidArgumentException( 'Failed to store user token in cache.' );
-		}
+		$data = [
+			'user' => $user->getName(),
+			'registered' => $user->isRegistered(),
+		];
+		return parent::doGenerateToken( $data );
 	}
 
 	/**
-	 * Generates a token and bakes in the issues, to be used for verification.
-	 * Salt must be set for this method to work
-	 *
 	 * @param UserIdentity $user
 	 * @return string
 	 * @throws \Random\RandomException
 	 */
 	public function generateTokenWithIssuer( UserIdentity $user ) {
-		if ( !$this->salt ) {
-			throw new InvalidArgumentException( 'Salt must be set to generate a token with issuer.' );
-		}
-		$token = $this->generateToken( $user );
-		$callbackUrl = wfScript( 'rest' );
-		$signature = hash_hmac( 'sha256', "$callbackUrl$token", $this->salt );
-		return base64_encode( json_encode( [
-			'verifyCallback' => $callbackUrl,
-			'token' => $token,
-			'sig' => $signature,
-		] ) );
+		$data = [
+			'user' => $user->getName(),
+			'registered' => $user->isRegistered(),
+		];
+		return parent::doGenerateTokenWithIssuer( $data );
 	}
 
 	/**
@@ -87,15 +71,14 @@ class UserTokenAuthenticator {
 	 * @return UserIdentity|null
 	 */
 	public function verifyToken( string $token ): ?UserIdentity {
-		$key = $this->sessionCache->makeKey( $token );
-		$value = $this->sessionCache->get( $key );
-		if ( !$value ) {
+		$data = parent::doVerifyToken( $token );
+		if ( !$data ) {
 			return null;
 		}
-		if ( $value['registered'] ) {
-			return $this->userFactory->newFromName( $value['user'] );
+		if ( $data['registered'] ) {
+			return $this->userFactory->newFromName( $data['user'] );
 		} else {
-			return $this->userFactory->newAnonymous( $value['user'] );
+			return $this->userFactory->newAnonymous( $data['user'] );
 		}
 	}
 

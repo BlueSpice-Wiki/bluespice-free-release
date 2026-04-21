@@ -21,16 +21,15 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	/** @var array */
 	private $nodeCache = [];
 
-	/** @var PermissionManager */
-	private $permissionManager;
-
 	/**
 	 * @inheritDoc
 	 */
 	public function __construct( IDatabase $db, Schema $schema, Language $language,
-		NamespaceInfo $nsInfo, PermissionManager $permissionManager ) {
-		parent::__construct( $db, $schema, $language, $nsInfo );
-		$this->permissionManager = $permissionManager;
+		NamespaceInfo $nsInfo, ?PermissionManager $permissionManager = null ) {
+		if ( $permissionManager === null ) {
+			$permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		}
+		parent::__construct( $db, $schema, $language, $nsInfo, $permissionManager );
 	}
 
 	/**
@@ -305,7 +304,7 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 				if ( str_contains( $subpage, '/' ) ) {
 					continue;
 				}
-				if ( $subpageRow->page_namespace !== $row->page_namespace ) {
+				if ( (int)$subpageRow->page_namespace !== $row->page_namespace ) {
 					continue;
 				}
 				$pages[] = $subpageRow;
@@ -346,7 +345,10 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	private function splitNode( string $node ): ?array {
 		$bits = explode( ':', $node );
 		if ( count( $bits ) === 1 ) {
-			return '0:' . $bits[0];
+			return [
+				'page_namespace' => 0,
+				'page_title' => $bits[0]
+			];
 		}
 		$ns = $bits[0];
 		$nsIndex = $this->language->getNsIndex( $ns );

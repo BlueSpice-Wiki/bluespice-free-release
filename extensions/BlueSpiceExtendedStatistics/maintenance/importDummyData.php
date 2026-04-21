@@ -77,9 +77,6 @@ class ImportDummyData extends Maintenance {
 
 	/**
 	 * @return void
-	 * @throws MWException
-	 * @throws ReflectionException
-	 * @throws Exception
 	 */
 	public function execute() {
 		$this->setServices();
@@ -157,19 +154,16 @@ class ImportDummyData extends Maintenance {
 	}
 
 	/**
-	 *
 	 * @param ISnapshotProvider $provider
 	 *
 	 * @return void
-	 * @throws DateInvalidOperationException
-	 * @throws Exception
 	 */
 	private function processProvider( ISnapshotProvider $provider ): void {
 		$type = $provider->getType();
 
 		try {
 			$template = $this->loadTemplate( $type );
-		} catch ( Exception $e ) {
+		} catch ( Throwable $e ) {
 			$this->output( $e->getMessage() );
 		}
 
@@ -196,7 +190,6 @@ class ImportDummyData extends Maintenance {
 	 * @param DateTime $date
 	 *
 	 * @return void
-	 * @throws Exception
 	 */
 	private function processDummyDay(
 		string $type,
@@ -227,8 +220,6 @@ class ImportDummyData extends Maintenance {
 	 * @param DateTime $date
 	 *
 	 * @return void
-	 * @throws DateInvalidOperationException
-	 * @throws Exception
 	 */
 	private function processDummyAggregate(
 		ISnapshotProvider $provider,
@@ -281,18 +272,18 @@ class ImportDummyData extends Maintenance {
 	 * @param string $key
 	 *
 	 * @return array
-	 * @throws Exception
+	 * @throws RuntimeException
 	 */
 	private function loadTemplate( string $key ): array {
 		$file = __DIR__ . '/../doc/snapshotData/' . $key . '.json';
 		if ( !file_exists( $file ) ) {
-			throw new Exception( "File $file does not exist!\n" );
+			throw new RuntimeException( "File $file does not exist!\n" );
 		}
 
 		$template = json_decode( file_get_contents( $file ), 1 );
 		if ( !$template ) {
 			$this->output( "Template for $key not readable!\n" );
-			throw new Exception( "Template for $key not readable!\n" );
+			throw new RuntimeException( "Template for $key not readable!\n" );
 		}
 
 		return $template;
@@ -437,8 +428,6 @@ class ImportDummyData extends Maintenance {
 	 * @param ISnapshotProvider $provider
 	 * @param string $interval
 	 * @param DateTime $date
-	 *
-	 * @throws Exception
 	 */
 	private function insertAggregate(
 		ISnapshotProvider $provider,

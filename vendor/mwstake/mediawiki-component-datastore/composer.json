@@ -19,7 +19,8 @@
 	"autoload": {
 		"psr-4": {
 			"MWStake\\MediaWiki\\Component\\DataStore\\": "src/",
-			"MWStake\\MediaWiki\\Component\\DataStore\\Tests\\": "tests/phpunit/"
+			"MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\": "tests/phpunit/unit/",
+			"MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Integration\\": "tests/phpunit/integration/"
 		},
 		"files": [
 			"bootstrap.php"

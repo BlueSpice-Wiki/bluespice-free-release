@@ -4,5 +4,8 @@
 			"Milicevic01"
 		]
 	},
-	"visualeditorplus-desc": "Даје Визуелном уређивачу разне функционалности"
+	"visualeditorplus-desc": "Даје Визуелном уређивачу разне функционалности",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Готово",
+	"visualeditorplus-ui-label-unwrap": "Уклони (задржи садржај)",
+	"visualeditorplus-ui-label-delete": "Уклони"
 }

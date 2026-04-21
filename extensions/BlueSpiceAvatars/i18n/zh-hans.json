@@ -5,6 +5,7 @@
 			"GuoPC",
 			"Key0121",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Shimamura Sakura",
 			"列维劳德"
 		]
@@ -20,5 +21,9 @@
 	"bs-avatars-auto-generate-fieldset-title": "自动生成头像",
 	"apihelp-bs-avatars-tasks-summary": "上传、生成与设置用户头像",
 	"bs-avatars-tag-profileimage-error-invalidusername": "用户名为空或无效",
-	"bs-avatars-pref-generator-help": "用户未上传个人头像时会自动生成替身头像。InstantAvatar: 基于用户真实姓名或用户名生成替身头像。Identicon: 基于用户的 ID 的部分片段生成替身头像"
+	"bs-avatars-pref-generator-help": "用户未上传个人头像时会自动生成替身头像。InstantAvatar: 基于用户真实姓名或用户名生成替身头像。Identicon: 基于用户的 ID 的部分片段生成替身头像",
+	"bs-avatars-upload-button": "上传",
+	"bs-avatars-generate-button": "生成",
+	"bs-avatars-generic-cancel": "取消",
+	"bs-avatars-generate-description": "生成新的自动化头像。此操作将永久替换任何已上传的个人文件图片（若是已设置）。"
 }

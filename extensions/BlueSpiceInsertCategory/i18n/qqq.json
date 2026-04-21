@@ -25,5 +25,7 @@
 	"bs-insertcategory-no-categories": "Label when no categories are assigned to a page",
 	"bs-insertcategory-edit-dialog-tree-view": "Label for the tree view toggle in category editor dialog",
 	"bs-insertcategory-pref-uploadintegration": "Label for config variable \"BlueSpiceInsertCategoryUploadPanelIntegration\" at [[Special:BlueSpiceConfigManager]]",
-	"bs-insertcategory-pref-uploadintegration-help": "Description for config variable \"BlueSpiceInsertCategoryUploadPanelIntegration\""
+	"bs-insertcategory-pref-uploadintegration-help": "Description for config variable \"BlueSpiceInsertCategoryUploadPanelIntegration\"",
+	"bs-insertcategory-set-categories-summary": "Summary message for the edit when categories are set via the category editor dialog",
+	"bs-insertcategory-set-categories-error": "Generic error message when setting categories via the category editor dialog fails"
 }

@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
 	"bs-insertcategory-insertcat": "Уставіць катэгорыю",
 	"prefs-insertcategory": "Уставіць катэгорыю",
-	"bs-insertcategory-page-header-categories-edit-tooltip": "Правіць катэгорыі гэтай старонкі"
+	"bs-insertcategory-page-header-categories-edit-tooltip": "Правіць катэгорыі гэтай старонкі",
+	"bs-insertcategory-edit-dialog-button-label": "Рэдагаваць"
 }

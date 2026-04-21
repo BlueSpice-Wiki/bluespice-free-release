@@ -241,6 +241,7 @@ final class NotificationSerializer {
 		$lang = $this->getUserLanguage( $user );
 		$channel = $notification->getChannel();
 		$message = $notification->getEvent()->getMessage( $channel )->inLanguage( $lang )->parse();
+		$message = $this->removeMessageWrapper( $message );
 		if ( $channel instanceof WebChannel ) {
 			$message = $this->prepareMessageForWeb( $message );
 		}
@@ -545,6 +546,8 @@ final class NotificationSerializer {
 	 * @return array
 	 */
 	private function prepareMessageForWeb( string $message ): array {
+		// Remove all `<p>`/`</p>` tags
+		$message = preg_replace( '#</?p>#', '', $message );
 		// Split on \n or <br>
 		$lines = preg_split( '/\n|<br\s*\/?>/', $message );
 		// Remove empty lines
@@ -552,6 +555,7 @@ final class NotificationSerializer {
 			return trim( $line ) !== '';
 		} );
 		$firstLine = array_shift( $lines );
+		// Remove `<p>` wrapping
 		$rest = implode( '<br>', $lines );
 		return [ 'main' => $firstLine, 'secondary' => $rest ];
 	}
@@ -572,4 +576,17 @@ final class NotificationSerializer {
 		}
 		return $mostRecent;
 	}
+
+	/**
+	 * @param string $message
+	 * @return string|void
+	 */
+	private function removeMessageWrapper( string $message ): string {
+		// Remove wrapping <p> tags added by Message::parse()
+		if ( preg_match( '#^<p>(.*)</p>$#s', $message, $matches ) ) {
+			return $matches[1];
+		}
+		return $message;
+	}
+
 }

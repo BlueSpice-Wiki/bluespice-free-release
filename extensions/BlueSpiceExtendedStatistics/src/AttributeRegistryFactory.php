@@ -2,8 +2,7 @@
 
 namespace BlueSpice\ExtendedStatistics;
 
-use MWException;
-use ReflectionException;
+use RuntimeException;
 use Wikimedia\ObjectFactory\ObjectFactory;
 
 class AttributeRegistryFactory {
@@ -38,13 +37,12 @@ class AttributeRegistryFactory {
 	/**
 	 * @param string $type
 	 * @return stdClass
-	 * @throws MWException
-	 * @throws ReflectionException
+	 * @throws RuntimeException
 	 */
 	public function get( $type ) {
 		if ( !isset( $this->providers[$type] ) ) {
 			if ( !$this->hasType( $type ) ) {
-				throw new MWException( "Type $type is not registered" );
+				throw new RuntimeException( "Type $type is not registered" );
 			}
 			$specs = $this->registry[$type];
 			if ( is_string( $specs ) && is_callable( $specs ) ) {
@@ -55,7 +53,7 @@ class AttributeRegistryFactory {
 			if ( !$instance instanceof $this->targetClass ) {
 				$actual = get_class( $instance );
 				$target = $this->targetClass;
-				throw new MWException(
+				throw new RuntimeException(
 					"Instance must implement $target, $actual given"
 				);
 			}
@@ -68,8 +66,6 @@ class AttributeRegistryFactory {
 
 	/**
 	 * @return array
-	 * @throws MWException
-	 * @throws ReflectionException
 	 */
 	public function getAll(): array {
 		foreach ( array_keys( $this->registry ) as $key ) {

@@ -7,6 +7,7 @@
 			"EagerLin",
 			"Kly",
 			"LNDDYL",
+			"LowensteinYang",
 			"Tranve",
 			"Willy1018",
 			"Winston Sung",
@@ -30,5 +31,7 @@
 	"bs-insertcategory-no-categories": "沒有分配分類",
 	"bs-insertcategory-edit-dialog-tree-view": "顯示所有分類",
 	"bs-insertcategory-pref-uploadintegration": "在上傳對話框中使用頁面分類",
-	"bs-insertcategory-pref-uploadintegration-help": "將頁面分類設定成上傳對話框中的預設選項"
+	"bs-insertcategory-pref-uploadintegration-help": "將頁面分類設定成上傳對話框中的預設選項",
+	"bs-insertcategory-set-categories-summary": "已更新的頁面分類",
+	"bs-insertcategory-set-categories-error": "設定類別失敗"
 }

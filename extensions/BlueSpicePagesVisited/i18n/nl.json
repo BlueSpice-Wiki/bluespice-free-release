@@ -35,5 +35,9 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Paginanaam",
 	"bs-pagesvisited-droplet-name": "Bezochte pagina's",
 	"bs-pagesvisited-droplet-description": "Lijst met bezochte pagina's",
-	"bs-pagesvisited-label-anon-user": "Meld u aan bij uw account om pagina’s te zien die u hebt bezocht"
+	"bs-pagesvisited-label-anon-user": "Meld u aan bij uw account om pagina’s te zien die u hebt bezocht",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Aantal weer te geven resultaten",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Maximale lengte van paginatitels",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Sorteren op",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Filteren op naamruimten"
 }

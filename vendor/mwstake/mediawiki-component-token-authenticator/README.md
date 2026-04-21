@@ -3,7 +3,7 @@
 This component provides everything needed to generate random tokens for users that can be later
 exchanged for user information.
 
-# Usage
+# Usage - User token
 ## Generate token
 
 REST API endpoint `/mws/v1/user-token/generate` can be used to generate a token for the user.
@@ -85,3 +85,20 @@ Configuring user that the service token represents:
 This is the default user and it will be create and configured automatically.
 If you want to use a different user, create it manually and set this variable to the username.
 Due to user token limitations, only "actual" (non-system) users can be used here.
+
+# Dynamic token for service authentication
+
+As static token limits the amount of APIs you can access, in order to access full range of APIs, use dynamic token.
+This token is similar to a user token, but instead of being issued for a user, it's issued for a service,
+and can be used to authenticate the service on the behalf of the "Service user".
+
+This tokens are always encrypted and salted, so you will need to decode it first using the salt value, to get
+the actual token, and callbackUrl
+
+Generate using `/mws/v1/app-token/generate`.
+
+When making requests provide header: `Authorization AppToken {decoded token}`. This will provide you with
+a full-access session.
+
+Note that this will authenticate as user `mwsgTokenAuthenticatorServiceUser`. It will give this user `sysop` group,
+to ensure it can execute all APIs. If another user is assigned to this, make sure it is ok that this user gets sysop group.

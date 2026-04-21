@@ -23,5 +23,8 @@
 	"bs-watchlist-tag-watchlist-attr-time-help": "Adjuta sur le hora",
 	"bs-watchlist-droplet-name": "Observatorio",
 	"bs-watchlist-droplet-description": "Modificationes recente de paginas includite in le observatorio",
-	"bs-watchlist-usersidebar-title": "Observatorio"
+	"bs-watchlist-usersidebar-title": "Observatorio",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "Numero de paginas monstrate",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "Longitude maxime de titulos de pagina",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Ordinar per"
 }

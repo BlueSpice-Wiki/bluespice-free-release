@@ -3,6 +3,7 @@
 		"authors": [
 			"MathXplore",
 			"Shirayuki",
+			"YeBoy371",
 			"つぶあん派"
 		]
 	},
@@ -16,5 +17,9 @@
 	"bs-whoisonline-statistics-report-login-number-axis-value": "ログイン数",
 	"bs-whoisonline-statistics-report-login-number": "ログイン",
 	"bs-whoisonline-droplet-count-name": "ログインしている利用者の数",
-	"bs-whoisonline-droplet-popup-name": "ログインしている利用者のリスト"
+	"bs-whoisonline-droplet-popup-name": "ログインしている利用者のリスト",
+	"bs-whoisonline-collection-type-userlogin": "利用者ログイン",
+	"bs-whoisonline-collection-var-login": "ログイン",
+	"bs-whoisonline-statistics-report-login-duration": "ログイン時間",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "ログイン時間（秒）"
 }

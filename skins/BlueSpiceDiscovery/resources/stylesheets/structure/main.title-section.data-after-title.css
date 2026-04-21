@@ -9,3 +9,7 @@
 #data-after-title a.dropdown-toggle {
 	color: var( --title-nav-fg );
 }
+
+#data-after-title a.new {
+	color: var( --new-link-fg );
+}

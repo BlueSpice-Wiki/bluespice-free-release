@@ -2,6 +2,7 @@
 
 namespace BS\ExtendedSearch\Source\DocumentProvider;
 
+use LogicException;
 use MediaWiki\Content\Content;
 use MediaWiki\Content\Renderer\ContentRenderer;
 use MediaWiki\Content\TextContent;
@@ -11,13 +12,13 @@ use MediaWiki\Page\PageProps;
 use MediaWiki\Page\RedirectLookup;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\ParserOutput;
+use MediaWiki\Parser\ParserOutputLinkTypes;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\RevisionRenderer;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
-use MWException;
 use WikiPage as WikiPageObject;
 
 class WikiPage extends Base {
@@ -329,12 +330,11 @@ class WikiPage extends Base {
 	 * @return array
 	 */
 	protected function getUsedFiles() {
-		return array_keys( $this->parserOutput->getImages() );
+		return array_keys( $this->parserOutput->getLinkList( ParserOutputLinkTypes::MEDIA ) );
 	}
 
 	/**
 	 * @return RevisionRecord|null
-	 * @throws MWException
 	 */
 	protected function getRevision() {
 		$revision = $this->revisionLookup->getRevisionByTitle( $this->title );
@@ -369,7 +369,7 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 * @throws MWException
+	 * @throws LogicException
 	 */
 	private function assertWikiPage() {
 		if ( !$this->wikipage instanceof WikiPageObject ) {
@@ -378,12 +378,12 @@ class WikiPage extends Base {
 				__METHOD__, WikiPageObject::class,
 				$this->wikipage === null ? 'null' : get_class( $this->wikipage )
 			);
-			throw new MWException( $exceptionMessage );
+			throw new LogicException( $exceptionMessage );
 		}
 	}
 
 	/**
-	 * @throws MWException
+	 * @throws LogicException
 	 */
 	private function assertRevision() {
 		if ( $this->revision === null ) {
@@ -391,7 +391,7 @@ class WikiPage extends Base {
 				'%s: could not retrieve revision for %s',
 				__METHOD__, $this->title->getPrefixedDBkey()
 			);
-			throw new MWException( $exceptionMessage );
+			throw new LogicException( $exceptionMessage );
 		}
 	}
 }

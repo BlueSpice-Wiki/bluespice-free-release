@@ -39,6 +39,14 @@ abstract class TitleEvent extends NotificationEvent implements ITitleEvent {
 	}
 
 	/**
+	 * @param Title $title
+	 * @return void
+	 */
+	public function setTitle( Title $title ): void {
+		$this->title = $title;
+	}
+
+	/**
 	 * @return Message
 	 */
 
@@ -87,8 +95,14 @@ abstract class TitleEvent extends NotificationEvent implements ITitleEvent {
 	 */
 	protected function getTitleDisplayText( ?Title $title = null ): string {
 		$title = $title ?? $this->getTitle();
+		$label = $title->getPrefixedText();
+		$interwiki = $title->getInterwiki();
+		if ( $interwiki ) {
+			# Remove interwiki prefix from label, as it is already included in the URL
+			$label = preg_replace( '/^' . preg_quote( $interwiki, '/' ) . ':/', '', $label );
+		}
 		if ( !$title->exists() ) {
-			return $title->getPrefixedText();
+			return $label;
 		}
 		$props = MediaWikiServices::getInstance()->getPageProps()
 			->getProperties( $title, 'displaytext' );
@@ -96,7 +110,7 @@ abstract class TitleEvent extends NotificationEvent implements ITitleEvent {
 			return $props[$title->getArticleID()];
 		}
 
-		return $title->getPrefixedText();
+		return $label;
 	}
 
 	/**

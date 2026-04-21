@@ -15,6 +15,12 @@ StandardDialogs.ui.MoveDialog.prototype.makeSetupProcessData = function () {
 	return data;
 };
 
+StandardDialogs.ui.MoveDialog.prototype.initialize = function () {
+	StandardDialogs.ui.MoveDialog.super.prototype.initialize.call( this );
+	// Validate the title immediately to disable the button if the title is invalid at the beginning
+	this.validateTitleNotExist( this.getDialogTitlePageName() );
+};
+
 StandardDialogs.ui.MoveDialog.prototype.getPrimaryActionLabel = function () {
 	return mw.message( 'standarddialogs-move-btn-label' ).plain();
 };
@@ -22,7 +28,7 @@ StandardDialogs.ui.MoveDialog.prototype.getPrimaryActionLabel = function () {
 StandardDialogs.ui.MoveDialog.prototype.getFormItems = function () {
 	this.mainInput = this.targetTitle = new OOJSPlus.ui.widget.TitleInputWidget( {
 		id: this.elementId + '-tf-target',
-		value: this.getDialogTitlePageName() + ' (2)',
+		value: this.getDialogTitlePageName(),
 		$overlay: this.$overlay,
 		mustExist: false,
 		contentPagesOnly: false
@@ -30,6 +36,7 @@ StandardDialogs.ui.MoveDialog.prototype.getFormItems = function () {
 	this.mainInput.connect( this, {
 		change: 'onTitleChange'
 	} );
+
 	this.moveReasonText = new OO.ui.TextInputWidget( {} );
 	this.moveLeaveRedirectCheckbox = new OO.ui.CheckboxInputWidget( {
 		id: this.elementId + '-cb-redirect',

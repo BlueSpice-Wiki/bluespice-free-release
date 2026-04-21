@@ -2,7 +2,6 @@
 
 namespace BlueSpice\InsertCategory;
 
-use MediaWiki\Content\WikitextContent;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
@@ -49,11 +48,18 @@ class InsertCategoryTool extends Literal {
 		/** @var Title */
 		$title = $context->getTitle();
 
-		$this->btnDisabled =
-			!$this->permissionManager->userCan( 'edit', $user, $title );
-		if ( $title && $title->canExist() ) {
+		if ( !$this->permissionManager->userCan( 'edit', $user, $title ) ) {
+			$this->btnDisabled = true;
+		} elseif ( !$title || !$title->canExist() || !$title->exists() ) {
+			$this->btnDisabled = true;
+		} else {
+			/** @var CategoryManipulatorFactory $manipulatorFactory */
+			$manipulatorFactory = $this->services->getService( 'BlueSpiceInsertCategory.CategoryManipulatorFactory' );
 			$content = $this->wikiPageFactory->newFromTitle( $title )->getContent();
-			$this->btnDisabled = $this->btnDisabled || !( $content instanceof WikitextContent );
+
+			if ( !$manipulatorFactory->getManipulatorForContent( $content, $title ) ) {
+				$this->btnDisabled = true;
+			}
 		}
 
 		parent::__construct(

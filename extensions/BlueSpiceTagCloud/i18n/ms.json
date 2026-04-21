@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hakimi97"
+			"Hakimi97",
+			"Tofeiku"
 		]
 	},
-	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Teks"
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Teks",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Mod paparan",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Tunjukkan kekerapan"
 }

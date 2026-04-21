@@ -55,5 +55,7 @@
 	"notifyme-notification-center-pagination-aria-next": "اڳلا",
 	"notifyme-notification-center-pagination-aria-previous": "پچھلا",
 	"notifyme-ui-dialog-popup-table-event-label": "ایونٹ",
-	"notifyme-ui-dialog-popup-table-desc-label": "تفصیل"
+	"notifyme-ui-dialog-popup-table-desc-label": "تفصیل",
+	"notifyme-arbitrary-event-action-message-label": "سنیہا",
+	"notifyme-notification-center-filter-label-source": "وکی"
 }

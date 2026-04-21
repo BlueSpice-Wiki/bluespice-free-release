@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Daniel vogel"
+			"Daniel vogel",
+			"Umherirrender"
 		]
 	},
-	"vuejsplus-desc": "Description of VueJsPlus for [[Special:Version]]",
+	"vuejsplus-desc": "{{desc|name=VueJsPlus|url=https://www.mediawiki.org/wiki/Extension:VueJsPlus}}",
 	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Aria label for button to toggle expanded tree element",
 	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Aria label for button to toggle collapsed tree element",
 	"vuejsplus-data-grid-option-sort-string-asc": "Label for button with sort ascending function",

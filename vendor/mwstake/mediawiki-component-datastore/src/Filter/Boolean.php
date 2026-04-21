@@ -39,7 +39,7 @@ class Boolean extends Filter {
 	}
 
 	/**
-	 * Converts specific strings to boolean values
+	 * Normalise a value to boolean
 	 * Returns null if the value is invalid
 	 *
 	 * @param mixed $value The value to normalise
@@ -50,12 +50,22 @@ class Boolean extends Filter {
 			return $value;
 		}
 
-		if ( is_string( $value ) ) {
-			$lower = strtolower( $value );
-			if ( in_array( $lower, [ 'true', 'yes' ], true ) ) {
+		if ( is_int( $value ) ) {
+			if ( $value === 1 ) {
 				return true;
 			}
-			if ( in_array( $lower, [ 'false', 'no' ], true ) ) {
+			if ( $value === 0 ) {
+				return false;
+			}
+			return null;
+		}
+
+		if ( is_string( $value ) ) {
+			$lower = strtolower( $value );
+			if ( in_array( $lower, [ 'true', 'yes', '1' ] ) ) {
+				return true;
+			}
+			if ( in_array( $lower, [ 'false', 'no', '0' ] ) ) {
 				return false;
 			}
 		}

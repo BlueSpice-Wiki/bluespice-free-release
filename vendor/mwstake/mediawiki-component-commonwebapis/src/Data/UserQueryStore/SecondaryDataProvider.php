@@ -3,11 +3,13 @@
 namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore;
 
 use MediaWiki\Linker\LinkRenderer;
-use MediaWiki\Message\Message;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserFactory;
 use MWStake\MediaWiki\Component\DataStore\ISecondaryDataProvider;
 
+/*
+ * @stable to extend
+ */
 class SecondaryDataProvider implements ISecondaryDataProvider {
 	/** @var UserFactory */
 	protected $userFactory;

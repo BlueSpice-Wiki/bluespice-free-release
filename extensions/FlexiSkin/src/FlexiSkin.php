@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\FlexiSkin;
 
-use MWException;
+use InvalidArgumentException;
 
 class FlexiSkin implements IFlexiSkin {
 	/**
@@ -41,11 +41,11 @@ class FlexiSkin implements IFlexiSkin {
 	/**
 	 * @param array $data
 	 * @return static|null
-	 * @throws MWException
+	 * @throws InvalidArgumentException
 	 */
 	public static function newFromData( $data ) {
 		if ( !isset( $data['name'] ) || !isset( $data['config'] ) ) {
-			throw new MWException( __METHOD__ . ': Invalid data passed' );
+			throw new InvalidArgumentException( __METHOD__ . ': Invalid data passed' );
 		}
 
 		return new static(

@@ -11,5 +11,7 @@
 	"bs-interwikilinks-labelurl": "URL",
 	"bs-interwikilinks-titledeleteinterwikilink": "Jaukkâd interwiki-liiŋk",
 	"action-interwikilinks-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-interwikilinks-label}}\"",
-	"interwikilinks": "Interwiki-liiŋk"
+	"interwikilinks": "Interwiki-liiŋk",
+	"bs-interwikilinks-headerprefix": "Prefikss",
+	"bs-interwikilinks-labelprefix": "Prefikss"
 }

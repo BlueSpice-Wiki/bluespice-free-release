@@ -4,7 +4,8 @@
 			"Alicia Agyeiwaa",
 			"Obed554",
 			"Yaw tuba",
-			"SaldırganSincap"
+			"SaldırganSincap",
+			"TMg"
 		]
 	},
 	"pagecategories": "{{PLURAL:$1|Nkyekyɛmu|Nkyekyɛmu ahorow}}",
@@ -268,7 +269,7 @@
 	"resetpass_submit": "Yɛ kukuwa mu ahyɛnsodeɛ ne kɔ mu",
 	"changepassword-success": "Wo kukuwa mu ahyɛnsodeɛ he asesa!",
 	"resetpass_forbidden": "Bɛ ntumi nsesa wo kukuwa mu ahyɛnsodeɛ",
-	"resetpass_forbidden-reason": "Bɛ ntumi nsesa wo kukuwa mu ahyɛnsodeɛ",
+	"resetpass_forbidden-reason": "Bɛ ntumi nsesa wo kukuwa mu ahyɛnsodeɛ: $1",
 	"resetpass-submit-loggedin": "Sesa kukuwa mu ahyɛnsodeɛ he",
 	"resetpass-submit-cancel": "Twa mu",
 	"resetpass-temp-password": "Kukuwa mu ahyɛnsodeɛ a ɛnkyɛ:",
@@ -467,7 +468,7 @@
 	"restriction-edit": "Siesie",
 	"restriction-move": "Kɔ",
 	"namespace": "Beaeɛ a din ahodoɔ wɔ",
-	"blanknamespace": "Ne titire",
+	"blanknamespace": "(Ne titire)",
 	"contributions": "Wo mmoa",
 	"mycontris": "Mmoa ahodoɔ",
 	"anoncontribs": "Mmoa ahodoɔ",

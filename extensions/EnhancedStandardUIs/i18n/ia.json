@@ -85,5 +85,6 @@
 	"enhanced-standard-uis-prefs-menu-aria-label": "Sectiones de preferentias",
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Selige modo de visualisation",
 	"enhanced-standard-uis-paginator-page-aria-label": "Pagina $1",
-	"enhanced-standard-uis-allpages-section-heading-aria-label": "Paginas que comencia per $1"
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "Paginas que comencia per $1",
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Cercar file"
 }

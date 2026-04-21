@@ -41,6 +41,14 @@ class AddModules extends BeforePageDisplay {
 	private function shouldShowWarning() {
 		$result = false;
 		$this->seManager->askEnvironmentalCheckers( 'shouldShowWarning', $result );
+
+		/**
+		 * Fix for collab banner also shown for unauthorized users
+		 */
+		$pageTitle = $this->getContext()->getTitle();
+		$userCanEdit = $this->getContext()->getAuthority()->probablyCan( 'edit', $pageTitle );
+		$result = $result && $userCanEdit;
+
 		return $result;
 	}
 }

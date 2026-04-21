@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hallo Welt! GmbH <support@hallowelt.com>"
+			"Hallo Welt! GmbH <support@hallowelt.com>",
+			"Umherirrender"
 		]
 	},
-	"imagemapedit-desc": "Description message for the ImageMapEdit extension.",
+	"imagemapedit-desc": "{{desc|name=ImageMapEdit|url=https://www.mediawiki.org/wiki/Extension:ImageMapEdit}}",
 	"imagemapedit-bottomleft": "Label for '{{msg-mw|imagemapedit-bottomleft}}' position option for the info link.",
 	"imagemapedit-bottomright": "Label for '{{msg-mw|imagemapedit-bottomright}}' position option for the info link.",
 	"imagemapedit-circle": "Label for creating a circle area.",

@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"GilPe",
 			"Robby",
-			"Volvox",
-			"GilPe"
+			"Volvox"
 		]
 	},
 	"enhanced-standard-uis-desc": "Stellt Benotzerinterface fir Standard-MediaWiki-Benotzer-interfacen zur Verfügung",

@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Ucukor"
 		]
 	},
-	"standarddialogs-page-info-page-language": "Мова"
+	"standarddialogs-page-info-page-language": "Мова",
+	"standarddialogs-btn-cancel": "Скасаваць"
 }

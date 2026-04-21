@@ -21,5 +21,10 @@
 	"notifyme-notification-center-mark-as-unread-circle-title": "Означи непрочитаним",
 	"notifyme-notification-center-no-new-notifications-label": "Нема нових обавештења",
 	"notifyme-notification-center-pagination-aria-next": "Следећа страница",
-	"notifyme-notification-center-pagination-aria-previous": "Претходна страница"
+	"notifyme-notification-center-pagination-aria-previous": "Претходна страница",
+	"notifyme-automation-arbitrary-notification-action": "Пошаљи обавештење",
+	"notifyme-arbitrary-event-action-message-label": "Порука",
+	"notifyme-notification-center-filter-label-source": "Вики",
+	"notifyme-notification-center-filter-label-source-local": "Овај вики",
+	"notifyme-arbitrary-event-default-subject": "Аутоматско обавештење"
 }

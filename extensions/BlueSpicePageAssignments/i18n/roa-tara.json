@@ -69,5 +69,6 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Numere de pàggene",
 	"bs-pageassignments-notification-pagereview-summary": "$1 ave reviste $3",
 	"bs-pageassignments-notification-pagereview-subject": "Revisitazione d'a pàgene $2",
-	"bs-pageassignments-notification-pagereview-body": "$1 ave reviste 'a pàgene $2."
+	"bs-pageassignments-notification-pagereview-body": "$1 ave reviste 'a pàgene $2.",
+	"managepageassignments": "Gestione de le assegnaziune"
 }

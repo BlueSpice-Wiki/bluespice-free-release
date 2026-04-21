@@ -6,7 +6,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_TOKEN_AUTHENTICATOR_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_TOKEN_AUTHENTICATOR_VERSION', '1.1.0' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_TOKEN_AUTHENTICATOR_VERSION', '1.2.1' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'token-authenticator', static function () {
@@ -20,7 +20,7 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 	$GLOBALS['mwsgTokenAuthenticatorServiceCIDR'] = $GLOBALS['mwsgTokenAuthenticatorServiceCIDR'] ?? null;
 	// If you change this value, you are responsible for making sure user is available and is NOT a system user
 	$GLOBALS['mwsgTokenAuthenticatorServiceUser'] =
-		$GLOBALS['mwsgTokenAuthenticatorServiceUser'] ?? 'ChatBot service user';
+		$GLOBALS['mwsgTokenAuthenticatorServiceUser'] ?? 'Internal service user';
 
 	$GLOBALS['mwsgTokenAuthenticatorServiceAllowedAPIModules'] =
 		$GLOBALS['mwsgTokenAuthenticatorServiceAllowedAPIModules'] ?? [];
@@ -53,10 +53,14 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 		'args' => [ [
 			'service-user' => $GLOBALS['mwsgTokenAuthenticatorServiceUser'],
 			'token' => $GLOBALS['mwsgTokenAuthenticatorServiceToken'],
-			'cidr' => $GLOBALS['mwsgTokenAuthenticatorServiceCIDR'],
-			"allow-action" => $GLOBALS['mwsgTokenAuthenticatorServiceAllowedAPIModules' ],
-			"allow-rest" => $GLOBALS['mwsgTokenAuthenticatorServiceAllowedRestPaths' ],
+			'allow-action' => $GLOBALS['mwsgTokenAuthenticatorServiceAllowedAPIModules' ],
+			'allow-rest' => $GLOBALS['mwsgTokenAuthenticatorServiceAllowedRestPaths' ],
 		] ],
-		'services' => [ 'UserFactory' ]
+		'services' => [
+			'UserFactory',
+			'MWStake.TokenAuthenticator._CIDRValidator',
+			'MWStake.TokenAuthenticator.AppAuthenticator',
+			'UserGroupManager'
+		]
 	];
 } );

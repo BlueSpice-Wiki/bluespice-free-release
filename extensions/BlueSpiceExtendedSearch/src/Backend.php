@@ -7,8 +7,10 @@ use BS\ExtendedSearch\Plugin\IFormattingModifier;
 use BS\ExtendedSearch\Plugin\IIndexProvider;
 use BS\ExtendedSearch\Plugin\ILookupModifier;
 use BS\ExtendedSearch\Plugin\IMappingModifier;
+use BS\ExtendedSearch\Plugin\IRankingModifier;
 use BS\ExtendedSearch\Plugin\ISearchPlugin;
 use Exception;
+use InvalidArgumentException;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\HashConfig;
 use MediaWiki\Config\MultiConfig;
@@ -19,7 +21,6 @@ use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\WikiMap\WikiMap;
-use MWException;
 use MWStake\MediaWiki\Component\ManifestRegistry\ManifestRegistryFactory;
 use OpenSearch\Client;
 use OpenSearch\ClientBuilder;
@@ -81,10 +82,8 @@ class Backend {
 	}
 
 	/**
-	 *
 	 * @param string $sourceKey
 	 * @return ISearchSource
-	 * @throws Exception
 	 */
 	public function getSource( $sourceKey ) {
 		if ( isset( $this->sources[$sourceKey] ) ) {
@@ -97,9 +96,7 @@ class Backend {
 	}
 
 	/**
-	 *
 	 * @return ISearchSource[]
-	 * @throws Exception
 	 */
 	public function getSources() {
 		foreach ( $this->sourceFactory->getSourceKeys() as $sourceKey ) {
@@ -150,6 +147,7 @@ class Backend {
 
 	/**
 	 * @return void
+	 * @throws RuntimeException
 	 */
 	public function deleteIndexes() {
 		foreach ( $this->sources as $source ) {
@@ -181,11 +179,11 @@ class Backend {
 	 * @param string $sourceKey
 	 *
 	 * @return bool
-	 * @throws MWException
+	 * @throws InvalidArgumentException
 	 */
 	public function createIndex( $sourceKey ) {
 		if ( !isset( $this->sources[$sourceKey] ) ) {
-			throw new MWException( "Source \"$sourceKey\" does not exist!" );
+			throw new InvalidArgumentException( "Source \"$sourceKey\" does not exist!" );
 		}
 		$source = $this->sources[$sourceKey];
 
@@ -295,7 +293,6 @@ class Backend {
 	 * @param Lookup $lookup
 	 * @param array $searchData
 	 * @return array
-	 * @throws Exception
 	 */
 	public function runAutocompleteLookup( Lookup $lookup, $searchData ) {
 		$lookupModifiers = $this->getLookupModifiers( $lookup, static::QUERY_TYPE_AUTOCOMPLETE );
@@ -311,13 +308,11 @@ class Backend {
 	}
 
 	/**
-	 *
 	 * @param \BS\ExtendedSearch\Lookup $lookup
 	 * @param array $searchData
 	 * @param array $secondaryRequestData
 	 *
 	 * @return array
-	 * @throws Exception
 	 */
 	public function runAutocompleteSecondaryLookup( Lookup $lookup, $searchData, $secondaryRequestData ) {
 		$results = $this->runAutocompleteLookup( $lookup, $searchData );
@@ -326,12 +321,10 @@ class Backend {
 	}
 
 	/**
-	 *
 	 * @param array $resultData
 	 * @param array $searchData
 	 *
 	 * @return array
-	 * @throws Exception
 	 */
 	protected function formatQuerySuggestions( $resultData, $searchData ) {
 		$results = array_values( $this->getQuerySuggestionList( $resultData ) );
@@ -339,12 +332,10 @@ class Backend {
 	}
 
 	/**
-	 *
 	 * @param array $results
 	 * @param array $searchData
 	 *
 	 * @return array
-	 * @throws Exception
 	 */
 	protected function formatSuggestions( $results, $searchData ) {
 		$searchData['value'] = strtolower( $searchData['value'] );
@@ -354,10 +345,15 @@ class Backend {
 			// when results are ranked based on original data, it can be modified
 			$source->getFormatter()->formatAutocompleteResults( $results, $searchData );
 		}
-		$plugins = $this->pluginManager->getPluginsImplementing( IFormattingModifier::class );
-		/** @var IFormattingModifier $plugin */
-		foreach ( $plugins as $plugin ) {
-			$plugin->formatAutocompleteResults( $results, $searchData );
+
+		$rankers = $this->pluginManager->getPluginsImplementing( IRankingModifier::class );
+		foreach ( $rankers as $ranker ) {
+			$ranker->rankAutocompleteResults( $results, $searchData );
+		}
+		$formatters = $this->pluginManager->getPluginsImplementing( IFormattingModifier::class );
+		/** @var IFormattingModifier $formatter */
+		foreach ( $formatters as $formatter ) {
+			$formatter->formatAutocompleteResults( $results, $searchData );
 		}
 
 		usort( $results, static function ( $e1, $e2 ) {
@@ -400,7 +396,6 @@ class Backend {
 	 * @param array|null $limitToSources
 	 *
 	 * @return SearchResultSet
-	 * @throws Exception
 	 */
 	public function runRawQuery( Lookup $lookup, ?array $limitToSources = null ): SearchResultSet {
 		$limitToSources = $lookup['searchInTypes'] ?? $limitToSources;
@@ -455,7 +450,6 @@ class Backend {
 	 * @param Lookup $lookup
 	 *
 	 * @return stdClass
-	 * @throws Exception
 	 */
 	public function runLookup( $lookup ) {
 		$origQS = $lookup->getQueryString();
@@ -689,7 +683,6 @@ class Backend {
 	 * @param Lookup $lookup
 	 *
 	 * @return array
-	 * @throws Exception
 	 */
 	protected function formatResults( array $results, Lookup $lookup ): array {
 		$formattedResults = [];
@@ -714,11 +707,9 @@ class Backend {
 	}
 
 	/**
-	 *
 	 * @param SearchResultSet $results
 	 *
 	 * @return array
-	 * @throws Exception
 	 */
 	protected function getFilterConfig( $results ) {
 		// Fields that have "AND/OR" option enabled. Would be better if this could
@@ -852,7 +843,6 @@ class Backend {
 	/**
 	 * @param string $searchType
 	 * @return PostProcessor
-	 * @throws Exception
 	 */
 	private function getPostProcessor( $searchType ) {
 		$backend = $this;
@@ -865,7 +855,6 @@ class Backend {
 	 * @param array|null $limitToSources
 	 *
 	 * @return array
-	 * @throws Exception
 	 */
 	public function getAllIndicesForQuery( ?array $limitToSources = null ): array {
 		$indices = [];

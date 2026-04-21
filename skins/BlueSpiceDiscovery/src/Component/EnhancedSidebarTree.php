@@ -93,6 +93,7 @@ class EnhancedSidebarTree extends SimpleTreeContainer implements LoggerAwareInte
 		// Scipts are placed in gereral layout styles to make it usable for other extensions
 		$scripts = parent::getRequiredRLModules();
 
-		return $scripts;
+		return array_merge(
+			$scripts, [ 'skin.discovery.enhancedsidebar-subpagetree' ] );
 	}
 }

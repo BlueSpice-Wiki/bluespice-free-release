@@ -10,5 +10,6 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "編輯關鍵字",
 	"menueditor-ui-menu-keyword-usersidebar-label": "關鍵字",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "編輯關鍵字",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "關鍵字"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "關鍵字",
+	"bs-usersidebar-empty-menu-label": "沒有可用的項目"
 }

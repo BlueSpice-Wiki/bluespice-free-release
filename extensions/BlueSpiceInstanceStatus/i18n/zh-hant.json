@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Arielyurusova",
+			"Kly",
 			"Winston Sung"
 		]
 	},
@@ -12,5 +13,8 @@
 	"bs-instancestatus-instance-status-no-info": "無法使用",
 	"bs-instancestatus-instance-status-sales-contact-label": "BlueSpice聯絡人",
 	"bs-instancestatus-overview-loader": "正在收集wiki資訊…",
-	"bs-instancestatus-instance-status-main-label": "綜合"
+	"bs-instancestatus-instance-status-main-label": "綜合",
+	"bs-instancestatus-desc": "新增 wiki 實例狀態概要",
+	"bs-instancestatus-instance-status-last-update-label": "最後更新於",
+	"bs-instancestatus-instance-status-sales-contact": "請在此聯絡：[$1 BlueSpice 聯絡方式]"
 }

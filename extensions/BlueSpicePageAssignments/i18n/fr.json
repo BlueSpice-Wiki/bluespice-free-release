@@ -98,5 +98,6 @@
 	"bs-pageassignments-header-action-delete": "Supprimer",
 	"bs-pageassignments-title-edit": "Modifier des assignations",
 	"bs-pageassignments-title-delete": "Supprimer des assignations",
-	"bs-pageassignments-show-unassigned-pages": "Afficher les pages non attribuées"
+	"bs-pageassignments-show-unassigned-pages": "Afficher les pages non attribuées",
+	"managepageassignments": "Gestion des assignations"
 }

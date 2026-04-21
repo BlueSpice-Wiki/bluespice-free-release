@@ -2,5 +2,10 @@
 	"@metadata": {
 		"authors": []
 	},
-	"visualeditorplus-desc": "Fügt dem visuellen Editor verschiedene Funktionen hinzu"
+	"visualeditorplus-desc": "Fügt dem visuellen Editor verschiedene Funktionen hinzu",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Tabelle entfernen",
+	"visualeditorplus-table-contextitem-properties-label": "Tabelleneigenschaften",
+	"visualeditorplus-table-contextitem-additional-options-label": "Weitere Zelloptionen",
+	"visualeditorplus-table-cell-actions-dialog-title": "Zelloptionen",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Fertig"
 }

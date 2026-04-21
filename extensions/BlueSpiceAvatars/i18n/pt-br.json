@@ -15,9 +15,12 @@
 	"bs-avatars-generate-complete": "Um novo avatar foi gerado.",
 	"bs-avatars-upload-label": "Imagem",
 	"bs-avatars-generate-new-label": "Gerar novo avatar",
-	"bs-avatars-file-upload-fieldset-title": "Envio de imagem",
+	"bs-avatars-file-upload-fieldset-title": "Carregar uma nova imagem",
 	"bs-avatars-auto-generate-fieldset-title": "Gerar avatar automaticamente",
 	"apihelp-bs-avatars-tasks-summary": "Fazendo upload, gerando e configurando avatares de usuários",
 	"bs-avatars-tag-profileimage-error-invalidusername": "O parâmetro \"username\" é obrigatório e deve conter um nome de usuário válido",
-	"bs-avatars-pref-generator-help": "A imagem de avatar é gerada quando um usuário não carrega uma foto de perfil. InstantAvatar: Gera uma imagem de avatar com base no uso das iniciais do nome real ou dos campos de nome de usuário. Identicon: Gera uma imagem de avatar com base em partes do ID do usuário."
+	"bs-avatars-pref-generator-help": "A imagem de avatar é gerada quando um usuário não carrega uma foto de perfil. InstantAvatar: Gera uma imagem de avatar com base no uso das iniciais do nome real ou dos campos de nome de usuário. Identicon: Gera uma imagem de avatar com base em partes do ID do usuário",
+	"bs-avatars-upload-button": "Enviar",
+	"bs-avatars-generate-button": "Gerar",
+	"bs-avatars-generic-cancel": "Cancelar"
 }

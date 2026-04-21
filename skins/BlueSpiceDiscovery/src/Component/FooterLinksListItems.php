@@ -3,7 +3,6 @@
 namespace BlueSpice\Discovery\Component;
 
 use BlueSpice\Discovery\HookRunner;
-use Exception;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Extension\MenuEditor\Node\TwoFoldLinkSpec;
 use MediaWiki\Extension\MenuEditor\Parser\WikitextMenuParser;
@@ -20,6 +19,7 @@ use MWStake\MediaWiki\Component\CommonUserInterface\LinkFormatter;
 use MWStake\MediaWiki\Component\Wikitext\ParserFactory;
 use MWStake\MediaWiki\Lib\Nodes\INode;
 use Skin;
+use Throwable;
 
 class FooterLinksListItems extends Literal {
 
@@ -282,18 +282,19 @@ class FooterLinksListItems extends Literal {
 	 * @return INode[]
 	 */
 	private function getParserData(): array {
-		$parser = new WikitextMenuParser(
-			$this->revisionStore->getRevisionByTitle( $this->footerLinksSourceTitle ),
-			$this->parserFactory->getNodeProcessors()
-		);
-
-		if ( !$parser ) {
+		$revision = $this->revisionStore->getRevisionByTitle( $this->footerLinksSourceTitle );
+		if ( !$revision ) {
 			return [];
 		}
 
+		$parser = new WikitextMenuParser(
+			$revision,
+			$this->parserFactory->getNodeProcessors()
+		);
+
 		try {
 			return $parser->parse();
-		} catch ( Exception $ex ) {
+		} catch ( Throwable ) {
 			return [];
 		}
 	}

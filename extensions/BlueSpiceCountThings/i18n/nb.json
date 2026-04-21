@@ -35,5 +35,7 @@
 	"bs-countthings-droplet-files-name": "Antall filer",
 	"bs-countthings-droplet-files-description": "Viser antall opplastede filer",
 	"bs-countthings-droplet-user-name": "Antall brukere",
-	"bs-countthings-droplet-user-description": "Viser antall brukere"
+	"bs-countthings-droplet-user-description": "Viser antall brukere",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Tell duplikater",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Angi hva som skal telles: alt, tegn, ord, tegn og ord, eller sider"
 }

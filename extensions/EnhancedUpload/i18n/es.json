@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Avengium",
 			"Eulalio",
 			"Fitoschido",
 			"MarcoAurelio",
@@ -46,5 +47,9 @@
 	"enhancedupload-upload-warning-was-deleted": "Este nombre de archivo se eliminó previamente.",
 	"enhancedupload-upload-error-duplicate": "Un archivo idéntico a este archivo ($1) se ha eliminado previamente.",
 	"enhancedupload-upload-error-badfilename": "El nombre de archivo $1 contiene caracteres no válidos.",
-	"enhancedupload-upload-error-unhandled": "Se produjo una excepción no controlada."
+	"enhancedupload-upload-error-unhandled": "Se produjo una excepción no controlada.",
+	"enhancedupload-ve-attachmentinspector-title-label": "Título para la sección de adjuntos",
+	"enhancedupload-ve-attachmentinspector-title-help": "Título del área donde se muestran los archivos",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Prefijo de archivo",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Identificador insertado antes del nombre del archivo"
 }

@@ -137,5 +137,6 @@
 	"pdfcreator-dump-namespaces-mail-body-text-done": "בוצע",
 	"pdfcreator-dump-namespaces-mail-body-text-fail": "נכשל",
 	"pdfcreator-tag-no-export-start-ve-label": "אי הכללת PDF - התחלה",
-	"pdfcreator-tag-no-export-end-ve-label": "אי הכללת PDF - סוף"
+	"pdfcreator-tag-no-export-end-ve-label": "אי הכללת PDF - סוף",
+	"pdfcreator-global-action-overview": "תבניות PDF"
 }

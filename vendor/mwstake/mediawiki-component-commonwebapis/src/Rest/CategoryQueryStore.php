@@ -11,6 +11,7 @@ class CategoryQueryStore extends TitleQueryStore {
 	 * @return IStore
 	 */
 	protected function getStore(): IStore {
-		return new Store( $this->lb, $this->titleFactory, $this->language, $this->nsInfo, $this->pageProps );
+		return new Store( $this->lb, $this->titleFactory, $this->language, $this->nsInfo,
+			$this->pageProps, $this->permissionManager );
 	}
 }

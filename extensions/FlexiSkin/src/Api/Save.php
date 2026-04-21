@@ -20,6 +20,16 @@ class Save extends FlexiSkinOperation {
 		];
 	}
 
+	/** @inheritDoc */
+	public function mustBePosted() {
+		return true;
+	}
+
+	/** @inheritDoc */
+	public function needsToken() {
+		return 'csrf';
+	}
+
 	/**
 	 * @param string $name
 	 * @param array $settings

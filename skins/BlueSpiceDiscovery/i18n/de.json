@@ -199,5 +199,6 @@
 	"bs-discovery-footer-places-alt-text-bluespice": "Unterstützt durch BlueSpice",
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Unterstützt durch Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Bearbeiten",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Leeren"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Leeren",
+	"bs-discovery-breadcrumb-nav-root-node-title": "Alle Seiten im Namensraum $1 anzeigen"
 }

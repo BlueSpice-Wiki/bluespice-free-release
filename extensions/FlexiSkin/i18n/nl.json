@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"McDutchie",
-			"Romaine"
+			"Romaine",
+			"Siebrand"
 		]
 	},
 	"flexiskin-extension-desc": "Maakt het aanpassen van de vormgeving mogelijk",
@@ -78,8 +79,8 @@
 	"flexiskin-ui-widget-border-dashed": "Gestreept",
 	"flexiskin-ui-widget-border-dotted": "Gestippeld",
 	"flexiskin-ui-widget-border-double": "Dubbel",
-	"flexiskin-ui-plugin-content-colors-link-label": "Geldige link",
-	"flexiskin-ui-plugin-content-colors-new-link-label": "Kapotte link",
+	"flexiskin-ui-plugin-content-colors-link-label": "Geldige koppeling",
+	"flexiskin-ui-plugin-content-colors-new-link-label": "Kapotte koppeling",
 	"flexiskin-special-loading-ph": "FlexiSkin is componenten aan het laden…",
 	"flexiskin-ui-configurator-warning-disabled-skin": "FlexiSkin is ingesteld, maar momenteel uitgeschakeld. Om FlexiSkin opnieuw in te schakelen, gebruikt u de knop “Opslaan en activeren”. U kunt vóór het activeren de huidige status controleren met de knop “Voorvertoning”.",
 	"flexiskin-ui-plugin-free-css-label": "Vrije CSS",

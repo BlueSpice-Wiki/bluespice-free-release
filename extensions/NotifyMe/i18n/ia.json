@@ -199,5 +199,14 @@
 	"prefs-subs": "Abonamentos a notificationes",
 	"notifyme-notification-filter-count-aria-label": "contine {{PLURAL:$1|un notification|$1 notificationes}}",
 	"notifyme-notification-filter-aria-label": "Filtro de notificationes",
-	"notifyme-notification-center-pagination-number-aria-label": "Notificationes de $1 a $2 monstrate"
+	"notifyme-notification-center-pagination-number-aria-label": "Notificationes de $1 a $2 monstrate",
+	"notifyme-automation-arbitrary-notification-action": "Inviar un notification",
+	"notifyme-automation-arbitrary-title-notification-action": "Inviar un notification concernente le pagina",
+	"notifyme-arbitrary-event-action-message-label": "Message",
+	"notifyme-arbitrary-event-action-event-target-user-label": "Usator(es) de destination",
+	"notifyme-arbitrary-event-action-send-as-bot-label": "Inviar como usator de robot",
+	"notifyme-notification-center-filter-label-source": "Wiki",
+	"notifyme-notification-center-filter-label-source-local": "Iste wiki",
+	"notifyme-arbitrary-event-default-subject": "Notification automatic",
+	"notifyme-arbitrary-event-action-subject-label": "Topico del notification"
 }

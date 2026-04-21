@@ -32,5 +32,9 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "اسم الصفحة",
 	"bs-pagesvisited-droplet-name": "الصفحات التي تمت زيارتها",
 	"bs-pagesvisited-droplet-description": "قائمة بالصفحات التي تمت زيارتها",
-	"bs-pagesvisited-label-anon-user": "لرؤية الصفحات التي قمت بزيارتها ، يرجى تسجيل الدخول إلى حسابك"
+	"bs-pagesvisited-label-anon-user": "لرؤية الصفحات التي قمت بزيارتها ، يرجى تسجيل الدخول إلى حسابك",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "عدد النتائج المعروضة",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "الحد الأقصى لطول عناوين الصفحات",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "الترتيب حسب",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "تصفية حسب مساحات الأسماء"
 }

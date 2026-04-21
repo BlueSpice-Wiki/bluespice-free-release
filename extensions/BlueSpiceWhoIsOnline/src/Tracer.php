@@ -87,14 +87,17 @@ class Tracer {
 		if ( isset( $this->trancedRecords[$maxIdleSeconds] ) ) {
 			return $this->trancedRecords[$maxIdleSeconds];
 		}
-		$maxTS = Timestamp::getInstance();
-		$maxTS->timestamp->modify( "- $idleSeconds seconds" );
+		$dbr = $this->lb->getConnection( DB_REPLICA );
+		$ts = Timestamp::getInstance();
+		$ts->timestamp->modify( "- $idleSeconds seconds" );
+		$ts = $ts->getTimestamp( TS_MW );
+
 		$readerParams = new ReaderParams(
 			[
 				ReaderParams::PARAM_FILTER => [ [
 					Filter::KEY_COMPARISON => Date::COMPARISON_GREATER_THAN,
 					Filter::KEY_PROPERTY => Record::TIMESTAMP,
-					Filter::KEY_VALUE => $maxTS->getTimestamp( TS_MW ),
+					Filter::KEY_VALUE => $dbr->addQuotes( $dbr->timestamp( $ts ) ),
 					Filter::KEY_TYPE => FieldType::DATE
 				]
 				] ], [

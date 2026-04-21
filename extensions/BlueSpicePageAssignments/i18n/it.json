@@ -72,5 +72,6 @@
 	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Assegna",
 	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Modifica le assegnazioni per $1",
 	"bs-pageassignments-header-action-edit": "Modifica",
-	"bs-pageassignments-header-action-delete": "Cancella"
+	"bs-pageassignments-header-action-delete": "Cancella",
+	"managepageassignments": "Gestore assegnazioni"
 }

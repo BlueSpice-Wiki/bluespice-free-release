@@ -68,7 +68,9 @@ ext.pdfcreator.api.Api.prototype.export = function ( id, data ) {
 	data = data || {};
 	const dfd = $.Deferred();
 
-	this.doExport( 'export/' + id + '/' + JSON.stringify( data ), 'GET' )
+	const encodedData = encodeURIComponent( JSON.stringify( data ) );
+
+	this.doExport( 'export/' + id + '/' + encodedData, 'GET' )
 		.done( async ( response, statusText, jqXHR ) => {
 			const filename = decodeURIComponent( jqXHR.getResponseHeader( 'X-Filename' ) ) || mw.config.get( 'wgPageName' ) + '.pdf';
 

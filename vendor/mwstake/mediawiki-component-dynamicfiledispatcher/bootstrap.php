@@ -6,7 +6,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_DYNAMICFILEDISPATCHER_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_DYNAMICFILEDISPATCHER_VERSION', '1.0.2' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_DYNAMICFILEDISPATCHER_VERSION', '1.0.3' );
 
 Bootstrapper::getInstance()
 	->register( 'dynamicFileDispatcher', static function () {

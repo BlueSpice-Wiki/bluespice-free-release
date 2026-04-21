@@ -62,13 +62,20 @@ class InternalLinkProcessor extends EnhancedSidebarNodeProcessor {
 	public function serializeNodeTree( EnhancedSidebarNode $node ): array {
 		$title = $this->getTitleFromNode( $node );
 
+		$data = parent::serializeNodeTree( $node );
 		if ( !$title ) {
-			return parent::serializeNodeTree( $node );
+			return $data;
 		}
 
-		return parent::serializeNodeTree( $node ) + [
+		$classes = $node->getOutputCssClasses();
+		if ( $this->isActivePageNode( $title ) ) {
+			$classes = array_merge( $classes, [ 'active' ] );
+		}
+
+		return array_merge( $data, [
 			'href' => $title->getLocalURL(),
-		];
+			'classes' => $classes
+		] );
 	}
 
 	/**

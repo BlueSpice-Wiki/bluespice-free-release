@@ -26,7 +26,7 @@
 	"bs-whoisonline-pref-maxidletime-help-label": "Het aantal seconden van inactiviteit waarna een gebruiker als offline wordt gemarkeerd",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Toont het aantal gebruikers die zich de afgelopen 10 minuten hebben aangemeld",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Aantal gebruikers online",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "Toont alle gebruikers die de afgelopen 10 minuten waren aangemeld. De uitvoer is een tekstballon wanneer een gebruiker de muisaanwijzer boven de betreffende koppeling houdt.",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Toont alle gebruikers die de afgelopen 10 minuten zijn aangemeld. De lijst is zichtbaar wanneer een gebruiker de muisaanwijzer boven de betreffende koppeling houdt.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Pop-up met gebruikers online",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Aantal aanmeldingen",
 	"bs-whoisonline-statistics-report-login-number": "Aanmeldingen",
@@ -34,5 +34,7 @@
 	"bs-whoisonline-droplet-count-name": "Aantal ingelogde gebruikers",
 	"bs-whoisonline-droplet-count-description": "Aantal momenteel ingelogde gebruikers",
 	"bs-whoisonline-droplet-popup-name": "Lijst met ingelogde gebruikers",
-	"bs-whoisonline-droplet-popup-description": "Pop-up met een lijst van alle gebruikers die momenteel zijn aangemeld"
+	"bs-whoisonline-droplet-popup-description": "Pop-up met een lijst van alle gebruikers die momenteel zijn aangemeld",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Koppelingstekst",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "De tekst die wordt weergegeven voor de koppeling waarmee de gebruikerslijst wordt geopend"
 }

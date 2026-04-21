@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Edustus"
+			"Edustus",
+			"Yupik"
 		]
 	},
-	"prefs-notifications": "Notificacions"
+	"prefs-notifications": "Notificacions",
+	"notifyme-ui-subscriptionset-editor-category-label": "Categoria",
+	"notifyme-ui-subscriptionset-category-label": "Categoria"
 }

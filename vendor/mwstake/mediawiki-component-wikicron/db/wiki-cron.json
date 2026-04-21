@@ -63,12 +63,18 @@
 					"length": 255,
 					"notnull": false
 				}
+			},
+			{
+				"name": "wc_wiki_id",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": false
+				}
 			}
 		],
 		"indexes": [],
-		"pk": [
-			"wc_id"
-		]
+		"pk": [	"wc_id" ]
 	},
 	{
 		"name": "wiki_cron_history",
@@ -94,6 +100,14 @@
 				"options": {
 					"length": 128,
 					"notnull": true
+				}
+			},
+			{
+				"name": "wch_wiki_id",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": false
 				}
 			}
 		],

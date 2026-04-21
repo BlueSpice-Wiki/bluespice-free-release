@@ -107,5 +107,6 @@
 	"bs-discovery-back-to-page-title": "Zréck op d'Säit $1",
 	"bs-discovery-skip-links-nav-aria-label": "Linken iwwersprangen",
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Haaptnavigatioun",
-	"bs-discovery-tools-after-content-cnt-aria-label": "Zousätzlech Säiteninformatiounen"
+	"bs-discovery-tools-after-content-cnt-aria-label": "Zousätzlech Säiteninformatiounen",
+	"bs-discovery-breadcrumb-nav-root-node-title": "All d'Säiten am Nummraum $1 weisen"
 }

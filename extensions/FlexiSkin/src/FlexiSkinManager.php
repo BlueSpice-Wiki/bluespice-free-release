@@ -5,7 +5,6 @@ namespace MediaWiki\Extension\FlexiSkin;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Json\FormatJson;
 use MediaWiki\Registration\ExtensionRegistry;
-use MWException;
 
 class FlexiSkinManager implements IFlexiSkinManager {
 	/** @var string */
@@ -72,7 +71,6 @@ class FlexiSkinManager implements IFlexiSkinManager {
 	/**
 	 * @param bool|null $reload
 	 * @param string $skinname
-	 * @throws MWException
 	 * @return void
 	 */
 	private function load( $reload = false, $skinname = '' ) {

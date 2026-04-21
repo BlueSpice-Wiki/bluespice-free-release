@@ -1,6 +1,6 @@
 {
 	"name": "FlexiSkin",
-	"version": "3.0.6",
+	"version": "3.0.9",
 	"license-name": "GPL-3.0-only",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:FlexiSkin",
 	"author": [
@@ -264,6 +264,9 @@
 		},
 		"main": {
 			"class": "MediaWiki\\Extension\\FlexiSkin\\HookHandler\\Main"
+		},
+		"whitelistImages": {
+			"class": "MediaWiki\\Extension\\FlexiSkin\\HookHandler\\WhitelistImages"
 		}
 	},
 	"Hooks": {
@@ -273,7 +276,8 @@
 		"ContentStabilizationIsStabilizationEnabled": "stabilizationExceptionForImages",
 		"MWStakeCommonUILessVarsOverride": "discovery-skin",
 		"MediaWikiServices": "main",
-		"BeforePageDisplay": "main"
+		"BeforePageDisplay": "main",
+		"CheckFileWhitelisted": "whitelistImages"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",

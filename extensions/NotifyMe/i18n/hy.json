@@ -18,5 +18,7 @@
 	"notifyme-notification-center-filter-label-namespaces": "Անվանատարածքներ",
 	"notifyme-notification-center-filter-label-categories": "Կատեգորիաներ",
 	"notifyme-event-page-linked-key-desc": "Էջը կապված է",
-	"notifyme-notifications-mega-menu-title": "Ծանուցումներ"
+	"notifyme-notifications-mega-menu-title": "Ծանուցումներ",
+	"notifyme-notification-center-filter-label-source": "Վիքի",
+	"notifyme-notification-center-filter-label-source-local": "Այս վիքի"
 }

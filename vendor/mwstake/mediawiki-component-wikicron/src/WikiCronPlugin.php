@@ -37,27 +37,23 @@ class WikiCronPlugin implements IProcessManagerPlugin, LoggerAwareInterface {
 		$infos = [];
 		try {
 			$due = $this->cronManager->getDue( $lastRun );
-			foreach ( $due as $name => $process ) {
-				$pid = $manager->startProcess( $process );
-				$info = $manager->getProcessInfo( $pid );
-				$this->cronManager->storeHistory( $name, $pid );
-				if ( $info instanceof ProcessInfo ) {
-					$infos[] = $info;
+			foreach ( $due as $name => $wikiProcesses ) {
+				foreach ( $wikiProcesses as $wikiId => $process ) {
+					$pid = $manager->startProcess( $process );
+					$info = $manager->getProcessInfo( $pid );
+					$this->cronManager->storeHistory( $name, $wikiId, $pid );
+					if ( $info instanceof ProcessInfo ) {
+						$infos[] = $info;
+					}
 				}
+
 			}
 		} catch ( Exception $e ) {
 			$this->logger->error( "Wiki-cron plugin: failed getting due crons: " . $e->getMessage() );
+			var_dump( $e->getTraceAsString() );
 		}
 
 		return $infos;
-	}
-
-	/**
-	 * @param ProcessInfo $info
-	 * @return void
-	 */
-	public function finishProcess( ProcessInfo $info ): void {
-		// NOOP
 	}
 
 	/**
@@ -73,5 +69,13 @@ class WikiCronPlugin implements IProcessManagerPlugin, LoggerAwareInterface {
 	 */
 	public function setLogger( LoggerInterface $logger ) {
 		$this->logger = $logger;
+	}
+
+	/**
+	 * @param ProcessInfo $info
+	 * @return void
+	 */
+	public function finishProcess( ProcessInfo $info ): void {
+		// NOOP - Compatibility
 	}
 }

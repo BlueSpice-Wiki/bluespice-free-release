@@ -65,5 +65,7 @@
 	"standarddialogs-new-page-btn-label": "Crear",
 	"standarddialogs-new-subpage-btn-label": "Crear",
 	"standarddialogs-protect-btn-label": "Proteger",
-	"standarddialogs-purge-btn-label": "Refrescar"
+	"standarddialogs-purge-btn-label": "Refrescar",
+	"standarddialogs-create-subpage-btn-label": "Crear subpagina",
+	"standarddialogs-create-subpage-btn-title": "Crear subpagina pro $1"
 }

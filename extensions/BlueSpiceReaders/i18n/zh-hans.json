@@ -5,6 +5,7 @@
 			"Cosine02",
 			"Liuxinyu970226",
 			"NACHOgao3",
+			"Peterxy12",
 			"SkEy",
 			"Stang",
 			"佛壁灯"
@@ -35,5 +36,10 @@
 	"bs-readers-header-revision-id": "修订版本ID",
 	"bs-readers-header-revision-date": "修订版本日期",
 	"revisionreaders": "“$1”各个版本的读者",
-	"bs-readers-info-dialog": "此页面的阅读者"
+	"bs-readers-info-dialog": "此页面的阅读者",
+	"apihelp-bs-readers-tasks-summary": "提供适用于读者的通用操作",
+	"action-viewrevisionreaders": "查看单一页面修订的读者",
+	"bs-readers-header-read-on": "阅读于",
+	"bs-readers-info-dialog-column-readers": "读者",
+	"bs-readers-permission-error": "权限错误"
 }

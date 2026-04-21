@@ -1,6 +1,6 @@
 {
 	"name": "OOJSPlus",
-	"version": "3.2.1",
+	"version": "3.2.2",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
@@ -86,7 +86,8 @@
 				"ui/widget/GroupedSelectWidget.js",
 				"ui/widget/PercentInput.js",
 				"ui/widget/DropdownMenuOption.js",
-				"ui/widget/DateInputWidget.js"
+				"ui/widget/DateInputWidget.js",
+				"ui/widget/SkeletonWidget.js"
 			],
 			"messages": [
 				"oojsplus-namespace-content",

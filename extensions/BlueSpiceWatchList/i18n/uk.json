@@ -5,6 +5,7 @@
 			"Ice bulldog",
 			"Piramidion",
 			"Samflint",
+			"Vlad5250",
 			"Ата"
 		]
 	},
@@ -20,5 +21,11 @@
 	"bs-watchlist-ve-watchlist-attr-pagename-label": "Назва сторінки",
 	"bs-watchlist-ve-watchlist-attr-time-label": "Час",
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "Довідка щодо назви сторінки",
-	"bs-watchlist-tag-watchlist-attr-time-help": "Довідка щодо часу"
+	"bs-watchlist-tag-watchlist-attr-time-help": "Довідка щодо часу",
+	"bs-watchlist-tag-watchlist-attr-count-help": "Кількість записів у списку спостереження, які повинні бути показані",
+	"bs-watchlist-droplet-name": "Список спостереження",
+	"bs-watchlist-droplet-description": "Останні зміни на сторінках, включених до списку спостереження",
+	"bs-watchlist-usersidebar-title": "Список спостереження",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "Кількість показаних сторінок",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Сортувати за"
 }

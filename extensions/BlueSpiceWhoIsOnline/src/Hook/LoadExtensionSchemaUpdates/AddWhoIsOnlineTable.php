@@ -2,67 +2,59 @@
 
 namespace BlueSpice\WhoIsOnline\Hook\LoadExtensionSchemaUpdates;
 
-class AddWhoIsOnlineTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
+use MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook;
+
+class AddWhoIsOnlineTable implements LoadExtensionSchemaUpdatesHook {
 
 	/**
-	 *
-	 * @return bool
+	 * @inheritDoc
 	 */
-	protected function doProcess() {
-		$dbType = $this->updater->getDB()->getType();
-		$dir = $this->getExtensionPath();
+	public function onLoadExtensionSchemaUpdates( $updater ) {
+		$dbType = $updater->getDB()->getType();
+		$dir = dirname( __DIR__, 3 );
 
-		$this->updater->addExtensionTable(
+		$updater->addExtensionTable(
 			'bs_whoisonline',
-			"$dir/maintenance/db/sql/$dbType/bs_whoisonline-generated.sql"
+			"$dir/maintenance/db/$dbType/bs_whoisonline.sql"
 		);
 
-		if ( $dbType == 'mysql' ) {
-			$this->updater->addExtensionField(
+		if ( $dbType === 'mysql' ) {
+			$updater->addExtensionField(
 				'bs_whoisonline',
 				'wo_action',
 				"$dir/maintenance/db/bs_whoisonline.patch.wo_action.sql"
 			);
 
-			$this->updater->dropExtensionField(
+			$updater->dropExtensionField(
 				'bs_whoisonline',
 				'wo_timestamp',
 				"$dir/maintenance/db/bs_whoisonline.patch.wo_timestamp.sql"
 			);
 
-			$this->updater->addExtensionField(
+			$updater->addExtensionField(
 				'bs_whoisonline',
 				'wo_log_ts',
 				"$dir/maintenance/db/bs_whoisonline.patch.wo_log_ts.sql"
 			);
 
-			$this->updater->addExtensionIndex(
+			$updater->addExtensionIndex(
 				'bs_whoisonline',
 				'wo_user_id',
 				"$dir/maintenance/db/bs_whoisonline.patch.wo_user_id.index.sql"
 			);
 
-			$this->updater->addExtensionIndex(
+			$updater->addExtensionIndex(
 				'bs_whoisonline',
 				'wo_page_namespace',
 				"$dir/maintenance/db/bs_whoisonline.patch.wo_page_namespace.index.sql"
 			);
 
-			$this->updater->addExtensionIndex(
+			$updater->addExtensionIndex(
 				'bs_whoisonline',
 				'wo_log_ts',
 				"$dir/maintenance/db/bs_whoisonline.patch.wo_log_ts.index.sql"
 			);
 		}
-		return true;
-	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	protected function getExtensionPath() {
-		return dirname( dirname( dirname( __DIR__ ) ) );
 	}
 
 }

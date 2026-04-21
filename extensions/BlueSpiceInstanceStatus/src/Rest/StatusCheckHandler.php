@@ -8,7 +8,6 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
-use MWException;
 use Wikimedia\IPUtils;
 
 class StatusCheckHandler extends SimpleHandler {
@@ -43,7 +42,6 @@ class StatusCheckHandler extends SimpleHandler {
 
 	/**
 	 * @return string
-	 * @throws MWException
 	 */
 	private function getClientIP() {
 		return RequestContext::getMain()->getRequest()->getIP();

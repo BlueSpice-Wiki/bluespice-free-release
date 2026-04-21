@@ -50,8 +50,8 @@ class ImageUrlUpdater {
 
 				$src = $imgElement->getAttribute( $srcAttr );
 				if ( isset( $map[$src] ) ) {
-					$newSrc = "images/{$map[$src]}";
-					$imgElement->setAttribute( $srcAttr, $newSrc );
+					$newSrc = urlencode( $map[$src] );
+					$imgElement->setAttribute( $srcAttr, "images/{$newSrc}" );
 				}
 			}
 		}

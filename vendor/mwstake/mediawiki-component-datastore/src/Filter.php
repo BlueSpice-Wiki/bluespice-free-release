@@ -133,6 +133,13 @@ abstract class Filter {
 	}
 
 	/**
+	 * @return bool
+	 */
+	public function isApplied() {
+		return $this->applied;
+	}
+
+	/**
 	 *
 	 * @param stdClass[]|array[] $filters
 	 * @return Filter[]

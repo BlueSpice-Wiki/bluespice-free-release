@@ -91,6 +91,7 @@ class PagesVisited extends GenericTag {
 				'label' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-number-label' )->text(),
 				'help' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-count-help' )->text(),
 				'value' => 7,
+				'min' => '1'
 			],
 			[
 				'type' => 'number',
@@ -98,6 +99,7 @@ class PagesVisited extends GenericTag {
 				'label' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-maxlength-label' )->text(),
 				'help' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help' )->text(),
 				'value' => 20,
+				'min' => '1'
 			],
 			[
 				'type' => 'dropdown',

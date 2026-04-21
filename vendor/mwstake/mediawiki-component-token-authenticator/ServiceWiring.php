@@ -1,6 +1,8 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\TokenAuthenticator\AppTokenAuthenticator;
+use MWStake\MediaWiki\Component\TokenAuthenticator\CIDRValidator;
 use MWStake\MediaWiki\Component\TokenAuthenticator\UserTokenAuthenticator;
 
 return [
@@ -17,4 +19,13 @@ return [
 			$GLOBALS['mwsgTokenAuthenticatorSalt']
 		);
 	},
+	'MWStake.TokenAuthenticator.AppAuthenticator' => static function ( MediaWikiServices $services ) {
+		return new AppTokenAuthenticator(
+			$services->getObjectCacheFactory()->getInstance( $GLOBALS['wgSessionCacheType'] ),
+			$GLOBALS['mwsgTokenAuthenticatorSalt']
+		);
+	},
+	'MWStake.TokenAuthenticator._CIDRValidator' => static function () {
+		return new CIDRValidator( $GLOBALS['mwsgTokenAuthenticatorServiceCIDR'] );
+	}
 ];

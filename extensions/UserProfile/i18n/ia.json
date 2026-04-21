@@ -38,7 +38,7 @@
 	"userprofile-droplet-name": "Profilo del usator",
 	"userprofile-droplet-name-description": "Monstra le informationes del profilo de un usator",
 	"userprofile-ve-attr-user-label": "Usator",
-	"userprofile-ve-attr-user-help": "Nomine de usator",
+	"userprofile-ve-attr-user-help": "Nomine del usator cuje profilo debe esser monstrate",
 	"userprofile-set-userimage-failed": "Iste imagine non pote esser usate como imagine de profilo",
 	"userprofile-changeuserimage-title": "Cambiar le imagine del profilo",
 	"userprofile-userimage-choose-title": "Selige un imagine inter le imagines in le wiki",

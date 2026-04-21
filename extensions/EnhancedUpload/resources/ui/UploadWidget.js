@@ -409,11 +409,16 @@ enhancedUpload.ui.UploadWidget.prototype.doUpload = function ( file, params ) {
 					errorCode = 'was-deleted';
 				}
 
-				// The following messages are used here
-				// * enhancedupload-upload-warning-exists
-				// * enhancedupload-upload-warning-duplicate
-				// * enhancedupload-upload-warning-was-deleted
-				errorMessage = mw.message( 'enhancedupload-upload-warning-' + errorCode ).text();
+				// errorCode could be filename and will insert message
+				// since its not reproducible and file will be uploaded anyways hide warning message
+				// ERM39162
+				if ( errorCode !== params.filename ) {
+					// The following messages are used here
+					// * enhancedupload-upload-warning-exists
+					// * enhancedupload-upload-warning-duplicate
+					// * enhancedupload-upload-warning-was-deleted
+					errorMessage = mw.message( 'enhancedupload-upload-warning-' + errorCode ).text();
+				}
 			}
 		}
 

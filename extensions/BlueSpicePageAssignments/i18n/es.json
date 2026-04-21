@@ -68,7 +68,7 @@
 	"bs-pageassignments-assignee-type-group": "Grupo",
 	"bs-pageassignments-secure-nsm-label": "Asignaciones de páginas aseguradas",
 	"bs-pageassignments-secure-lockdown-reason": "La acción «$1» solo está disponible para {{PLURAL:$2|el grupo|los grupos}} $3",
-	"bs-pageassignments-group-lockdown-reason": "No se te ha asignado la página $1",
+	"bs-pageassignments-group-lockdown-reason": "No se {{#FORMAL:te|le}} ha asignado la página $1",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - Asignado a {{PLURAL:$2|página|páginas}}: $1",
 	"bs-pageassignments-collection-type-assignedpages": "Asignaciones",
 	"bs-pageassignments-collection-var-namespacename": "Espacio de nombres",
@@ -88,5 +88,6 @@
 	"bs-pageassignments-event-assignment-links-intro": "Por favor visite la página en el siguiente enlace para verificar su tarea.",
 	"bs-pageassignments-event-assignment-remove-key-desc": "Se eliminó la tarea de una página.",
 	"bs-pageassignments-event-assignment-remove": "{{GENDER:$1|eliminado}} tu asignación de la página $2",
-	"bs-pageassignments-event-assignment-remove-bot": "Tu tarea fue eliminada de la página $1"
+	"bs-pageassignments-event-assignment-remove-bot": "Tu tarea fue eliminada de la página $1",
+	"managepageassignments": "Gestión de asignaciones"
 }

@@ -52,5 +52,16 @@
 	"bs-statistics-pref-excludeusers-help": "對於某些使用者，例如具有管理員權限的人，可以篡改頁面 Special:ExtendedStatistics 的統計內容。他們可以從統計結果裡排除。",
 	"bs-statistics-ve-progressinspector-title": "進度",
 	"bs-statistics-ve-progress-attr-width-label": "寬度",
-	"bs-statistics-droplet-progress-name": "進度"
+	"bs-statistics-droplet-progress-name": "進度",
+	"apihelp-query+statistics-reports-param-aggregate": "是否匯總統計數據",
+	"bs-statistics-tag-progress-desc": "產生進度列。進度列的值取決於正文中所指定文字外觀，以及使用者定義的上限。",
+	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>進度列顯示在</span>$1",
+	"bs-statistics-ve-progress-attr-basecount-label": "基數總數",
+	"bs-statistics-ve-progress-attr-basecount-help": "指定將進度列完全填滿的所給定進度元素在頁面上出現的次數上限。",
+	"bs-statistics-ve-progress-attr-baseitem-label": "基礎項目",
+	"bs-statistics-ve-progress-attr-baseitem-help": "除了使用基數數字外，還可以使用文字來計算進度。在文字中基準項目出現的次數與進度項目出現的次數成正比，因而表明出進度。",
+	"bs-statistics-ve-progress-attr-progressitem-label": "進度項目",
+	"bs-statistics-ve-progress-attr-progressitem-help": "正文中出現的文字定義進度",
+	"bs-statistics-ve-progress-attr-width-help": "進度列寬度（像素）",
+	"bs-statistics-droplet-progress-description": "根據指定測量變數視覺化進度"
 }

@@ -112,16 +112,16 @@ class PageSpecFactory implements LoggerAwareInterface {
 		}
 
 		$revId = null;
-		if ( isset( $data['rev-id'] ) && is_numeric( $data['rev-id'] ) ) {
-			$revId = $data['rev-id'];
+		if ( isset( $params['rev-id'] ) && is_numeric( $params['rev-id'] ) ) {
+			$revId = $params['rev-id'];
 		}
 
 		$label = '';
 		if ( isset( $data['label'] ) && $data['label'] !== '' ) {
-			$label = htmlspecialchars( $data['label'] );
+			$label = $data['label'];
 			$params['force-label'] = true;
 		} elseif ( $title instanceof Title ) {
-			$label = htmlspecialchars( $this->getLabelFromTitle( $title, $options ) );
+			$label = $this->getLabelFromTitle( $title, $options );
 		}
 		if ( $label === '' ) {
 			return null;

@@ -5,8 +5,7 @@ namespace MWStake\MediaWiki\Component\Events;
 use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\Delivery\NotificationStatus;
-
-final class Notification {
+class Notification {
 	/** @var INotificationEvent */
 	private $event;
 	/** @var User */

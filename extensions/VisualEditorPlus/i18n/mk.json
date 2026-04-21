@@ -4,5 +4,10 @@
 			"Bjankuloski06"
 		]
 	},
-	"visualeditorplus-desc": "Додава разни функции во нагледниот уредник"
+	"visualeditorplus-desc": "Додава разни функции во нагледниот уредник",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Отстрани табела",
+	"visualeditorplus-table-contextitem-properties-label": "Својства на табелата",
+	"visualeditorplus-table-contextitem-additional-options-label": "Дополнителни можности за ќелии",
+	"visualeditorplus-table-cell-actions-dialog-title": "Можности за ќелии",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Готово"
 }

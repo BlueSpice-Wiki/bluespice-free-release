@@ -111,6 +111,9 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	/** @var bool */
 	protected $embedPageToc;
 
+	/** @var int */
+	protected $pageCount = 0;
+
 	/** @var ExportSpecification|null */
 	private ExportSpecification|null $specification;
 
@@ -436,6 +439,7 @@ class Batch implements IExportModule, LoggerAwareInterface {
 			$pages[] = $this->exportPageFactory->getPageFromSpec( $pageSpec, $template, $context, $workspace );
 		}
 
+		$this->pageCount = count( $pages );
 		return $pages;
 	}
 
@@ -622,23 +626,26 @@ class Batch implements IExportModule, LoggerAwareInterface {
 	protected function addTocPage(
 		array &$pages, ExportContext $context, bool $embedPageToc = false
 	): void {
-		if ( count( $pages ) > 1 ) {
+		$pageCount = $this->pageCount;
+		if ( $pageCount > 1 ) {
 			$tocPageBuilder = new TocBuilder( $this->titleFactory );
 			$html = $tocPageBuilder->getHtml( $pages, $embedPageToc );
 			$labelMsg = Message::newFromKey( 'pdfcreator-toc-page-label' );
 			$pageSpec = new PageSpec( 'raw', $labelMsg->text(), '', null, [
 				'content' => $html
 			] );
-			$page = $this->exportPageFactory->getPageFromSpec( $pageSpec, $this->template, $context, $this->workspace );
+			$tocPage = $this->exportPageFactory->getPageFromSpec(
+				$pageSpec, $this->template, $context, $this->workspace
+			);
 
 			// Toc page should be placed after intro page if it exists.
 			$firstPage = array_shift( $pages );
 			if ( $firstPage->getType() === 'intro' ) {
-				array_unshift( $pages, $page );
+				array_unshift( $pages, $tocPage );
 				array_unshift( $pages, $firstPage );
 			} else {
 				array_unshift( $pages, $firstPage );
-				array_unshift( $pages, $page );
+				array_unshift( $pages, $tocPage );
 			}
 		}
 	}

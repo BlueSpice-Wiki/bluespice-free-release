@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"Guycn2",
+			"Neriah",
 			"Steeve815"
 		]
 	},
@@ -24,7 +25,7 @@
 	"bs-whoisonline-pref-maxidletime-help-label": "מספר השניות של חוסר פעילות שלאחריהן המשתמש מסומן בתור לא מחובר לרשת",
 	"bs-whoisonline-tag-whoisonlinecount-description": "הצגת מספר המשתמשים שהיו מחוברים לחשבון ב־10 הדקות האחרונות",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "מספר המחוברים",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "הצגת כל המשתמשים שהתחברו במהלך 10 הדקות האחרונות. הפלט הוא בועת דיבור כאשר משתמש מרחף מעל הקישור הקשור",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "הצגת כל המשתמשים שהתחברו במהלך 10 הדקות האחרונות. הרשימה מוצגת כאשר משתמש מרחף מעל הקישור הקשור",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "חלון קופץ \"מי מחובר\"",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "מספר הכניסות",
 	"bs-whoisonline-statistics-report-login-number": "כניסות",
@@ -32,5 +33,6 @@
 	"bs-whoisonline-droplet-count-name": "מספר המשתמשים המחוברים",
 	"bs-whoisonline-droplet-count-description": "מספר המשתמשים שמחוברים כעת",
 	"bs-whoisonline-droplet-popup-name": "רשימת משתמשים המחוברים",
-	"bs-whoisonline-droplet-popup-description": "חלון קופץ עם רשימה של כל המשתמשים המחוברים כעת"
+	"bs-whoisonline-droplet-popup-description": "חלון קופץ עם רשימה של כל המשתמשים המחוברים כעת",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "טקסט הקישור"
 }

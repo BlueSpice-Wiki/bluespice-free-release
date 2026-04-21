@@ -12,23 +12,22 @@ use Wikimedia\Rdbms\ILoadBalancer;
 
 class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\Reader {
 
-	/** @var PermissionManager */
-	protected $permissionManager;
-
 	/**
 	 * @param ILoadBalancer $lb
 	 * @param TitleFactory $titleFactory
 	 * @param Language $language
 	 * @param NamespaceInfo $nsInfo
 	 * @param PageProps $pageProps
-	 * @param PermissionManager $permissionManager
+	 * @param PermissionManager|null $permissionManager
 	 */
 	public function __construct(
 		ILoadBalancer $lb, TitleFactory $titleFactory, Language $language,
-		NamespaceInfo $nsInfo, PageProps $pageProps, PermissionManager $permissionManager
+		NamespaceInfo $nsInfo, PageProps $pageProps, ?PermissionManager $permissionManager = null
 	) {
-		parent::__construct( $lb, $titleFactory, $language, $nsInfo, $pageProps );
-		$this->permissionManager = $permissionManager;
+		if ( $permissionManager === null ) {
+			$permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		}
+		parent::__construct( $lb, $titleFactory, $language, $nsInfo, $pageProps, $permissionManager );
 	}
 
 	/**

@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceUsageTracker",
 	"license-name": "GPL-3.0-only",
-	"version": "5.2.1",
+	"version": "5.2.2",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceUsageTracker",
 	"author": "Markus Glaser",
 	"descriptionmsg": "bs-usagetracker-desc",
@@ -39,13 +39,18 @@
 		"BlueSpice\\UsageTracker\\": "src/"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "BS\\UsageTracker\\Hook\\LoadExtensionSchemaUpdates\\AddUsageTrackerTable::callback",
+		"LoadExtensionSchemaUpdates": "runDatabaseUpdates",
 		"BSUsageTrackerRegisterCollectors": [
 			"BlueSpice\\UsageTracker\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfCategories::callback",
 			"BlueSpice\\UsageTracker\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfUsersPerGroup::callback",
 			"BlueSpice\\UsageTracker\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfPagesByPageProperty::callback",
 			"BlueSpice\\UsageTracker\\Hook\\BSUsageTrackerRegisterCollectors\\NoOfPageContentModels::callback"
 		]
+	},
+	"HookHandlers": {
+		"runDatabaseUpdates": {
+			"class": "BlueSpice\\UsageTracker\\Hook\\LoadExtensionSchemaUpdates\\AddUsageTrackerTable"
+		}
 	},
 	"JobClasses": {
 		"usageTrackerCollectJob": "BS\\UsageTracker\\Jobs\\UsageTrackerCollectJob"

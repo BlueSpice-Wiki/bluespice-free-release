@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Songhee",
+			"YeBoy371",
 			"Ykhwong",
 			"아라"
 		]
@@ -9,7 +10,7 @@
 	"flexiskin-extension-desc": "스킨의 사용자 지정 허용",
 	"flexiskin-label": "스킨",
 	"flexiskin": "스킨 환경 설정",
-	"action-flexiskin-viewspecialpage": "특수문서 \"Flexiskin\" 보기",
+	"action-flexiskin-viewspecialpage": "스킨을 적용하기 위해 [[Special:FlexiSkin|특수 문서]]를 참고",
 	"apihelp-flexiskin-skinoperation-param-skinname": "FlexiSkin을 관리할 스킨 이름",
 	"apihelp-flexiskin-activation-param-active": "사용 중인 스킨의 ID",
 	"flexiskin-ui-preview-loading-message": "미리 보기를 생성 중입니다...",

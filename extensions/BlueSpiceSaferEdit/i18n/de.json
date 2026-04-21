@@ -3,6 +3,7 @@
 		"authors": [
 			"Hwboehm",
 			"Metalhead64",
+			"Mschlindwein",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
@@ -10,5 +11,6 @@
 	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|bearbeitet|bearbeiten}} die Seite gerade",
 	"bs-saferedit-someone-editing": "Die Seite wird gerade bearbeitet",
 	"bs-saferedit-pref-show-editinguser": "Aktuellen Bearbeiter anzeigen",
-	"bs-saferedit-pref-show-editinguser-help": "Fügt den Namen des Benutzers, der die Seite gerade bearbeitet, am Seitenanfang ein"
+	"bs-saferedit-pref-show-editinguser-help": "Fügt den Namen des Benutzers, der die Seite gerade bearbeitet, am Seitenanfang ein",
+	"bs-saferedit-anonymous-editor": "Anonymer Benutzer"
 }

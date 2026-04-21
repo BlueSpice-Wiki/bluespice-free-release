@@ -128,14 +128,15 @@ class CreatePDF extends Maintenance {
 		$exportResult = $result->getResult();
 		if ( $exportResult instanceof ITargetResult === false ) {
 			echo 'PDFCreator return value does not contain not ITargetResult';
-		}
-		$exportStatus = $exportResult->getStatus();
-		if ( !$exportStatus ) {
-			echo $exportStatus->getText();
 		} else {
-			$data = $exportResult->getData();
-			echo "done ... ";
-			echo var_export( $data['data'], true ) . "\n";
+			$exportStatus = $exportResult->getStatus();
+			if ( !$exportStatus ) {
+				echo $exportStatus->getText();
+			} else {
+				$data = $exportResult->getData();
+				echo "done ... ";
+				echo var_export( $data['data'], true ) . "\n";
+			}
 		}
 	}
 }

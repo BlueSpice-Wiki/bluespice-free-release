@@ -100,5 +100,7 @@
 	"mwstake-formengine-edit-password-strength-indicator-stong": "Indicator message",
 	"mwstake-formengine-edit-password-strength-indicator-medium": "Indicator message",
 	"mwstake-formengine-edit-password-strength-indicator-weak": "Indicator message",
-	"mwstake-formengine-edit-password-error-mismatch": "Error message"
+	"mwstake-formengine-edit-password-error-mismatch": "Error message",
+	"mwstake-formengine-edit-title-wikitext-input-toggle-btn-label": "Button label for switch to wikitext button",
+	"mwstake-formengine-edit-title-wikitext-no-valid-title-error": "Label for error if input is no valid page title"
 }

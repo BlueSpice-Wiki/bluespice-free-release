@@ -6,6 +6,7 @@ use BlueSpice\Context;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\PageAssignments\Data\Assignment\Store;
 use BlueSpice\PageAssignments\Data\Record;
+use LogicException;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
@@ -55,7 +56,7 @@ class AssignmentFactory {
 	 *
 	 * @param Title $title
 	 * @return bool|ITarget
-	 * @throws \MWException
+	 * @throws LogicException
 	 */
 	public function newFromTargetTitle( Title $title ) {
 		if ( $title->getArticleID() < 1 ) {
@@ -69,7 +70,7 @@ class AssignmentFactory {
 		$assignments = $this->getAssignments( $title );
 		$targetClass = $this->getTargetClass();
 		if ( $targetClass === null ) {
-			throw new \MWException( 'No target specified' );
+			throw new LogicException( 'No target specified' );
 		}
 
 		$instance = call_user_func_array( "$targetClass::factory", [

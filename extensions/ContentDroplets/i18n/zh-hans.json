@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anterdc99"
+			"Anterdc99",
+			"ExoHyper2026"
 		]
 	},
 	"contentdroplets-desc": "用于插入预定义内容片段的可视化编辑器集成",
@@ -42,5 +43,8 @@
 	"contentdroplets-droplet-code-name": "代码",
 	"contentdroplets-droplet-code-desc": "代码示例的高亮部分",
 	"contentdroplets-droplet-dialog-search-placeholder-label": "搜索内容片段",
-	"contentdroplets-toolbar-icon-title": "添加内容片段"
+	"contentdroplets-toolbar-icon-title": "添加内容片段",
+	"contentdroplets-droplet-icon-font-size-help": "要调整字体大小，必须指定单位（例如：15px、0.83em 或 1.2rem）。",
+	"contentdroplets-droplet-icon-color-help": "所有十六进制值（例如：#3366cc）均可用于颜色，CSS 颜色描述（例如：yellow、blue 或 black）也可用于颜色。",
+	"contentdroplets-droplet-icon-orientation-help": "可以通过设置 CSS 属性“vertical-align”的值来调整图标的对齐方式，这些值可以是：“baseline”、“text-top”、“text-bottom”、“sub”或“super”。"
 }

@@ -25,7 +25,7 @@ class PageContext extends RequestContext {
 		$this->setUser( $user );
 		$this->setTitle( $title );
 		$revId =
-			$data['revId'] ?? $originalContext?->getRequest()->getInt( 'oldid', null ) ?? $title->getLatestRevID();
+			$data['rev-id'] ?? $originalContext?->getRequest()->getInt( 'oldid', null ) ?? $title->getLatestRevID();
 		$this->setRequest( new FauxRequest(
 			array_merge(
 				$originalContext?->getRequest()->getValues() ?? [],

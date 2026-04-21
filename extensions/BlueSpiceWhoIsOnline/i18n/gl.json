@@ -23,7 +23,7 @@
 	"bs-whoisonline-pref-maxidletime-help-label": "O número de segundos de inactividade despois dos cales un usuario se marca como sen conexión",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Mostra o número de usuarios que iniciaron sesión nos últimos 10 minutos",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Contador de quen está en liña",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "Mostra todos os usuarios que iniciaron sesión nos últimos 10 minutos. A saída é unha burbulla de diálogo cando un usuario pasa o cursor por riba da ligazón relacionada.",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Mostra todos os usuarios que iniciaron sesión nos últimos 10 minutos. A lista é visible cando un usuario pasa o cursor do rato por riba da ligazón relacionada.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Ventá emerxente de quen está en liña",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Número de inicios de sesión",
 	"bs-whoisonline-statistics-report-login-number": "Inicios de sesión",
@@ -31,5 +31,7 @@
 	"bs-whoisonline-droplet-count-name": "Número de usuarios que iniciaron sesión",
 	"bs-whoisonline-droplet-count-description": "Número de usuarios coa sesión iniciada nestes intres",
 	"bs-whoisonline-droplet-popup-name": "Lista de usuarios que iniciaron sesión",
-	"bs-whoisonline-droplet-popup-description": "Ventá emerxente cunha lista de todos os usuarios coa sesión iniciada nestes intres"
+	"bs-whoisonline-droplet-popup-description": "Ventá emerxente cunha lista de todos os usuarios coa sesión iniciada nestes intres",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Texto da ligazón",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Texto que se mostra na ligazón que abre a lista de usuarios"
 }

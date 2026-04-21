@@ -2,6 +2,8 @@
 
 namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\FileQueryStore;
 
+use MediaWiki\Context\RequestContext;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\PrimaryDataProvider as TitlePrimaryDataProvider;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\TitleRecord;
 use MWStake\MediaWiki\Component\DataStore\Filter;
@@ -24,10 +26,10 @@ class PrimaryDataProvider extends TitlePrimaryDataProvider {
 	 */
 	protected function makePreFilterConds( ReaderParams $params ) {
 		$filters = $params->getFilter();
-		$conds = parent::makePreFilterConds( $params );
+		$conds = [];
 		$conds[] = 'mti_namespace = ' . NS_FILE;
 		foreach ( $filters as $filter ) {
-			if ( $filter->getField() === 'namespace_text' ) {
+			if ( $filter->getField() === TitleRecord::PAGE_NAMESPACE_TEXT ) {
 				$filterValue = $filter->getValue();
 				if ( !is_array( $filterValue ) ) {
 					$filterValue = [ $filterValue ];
@@ -75,6 +77,8 @@ class PrimaryDataProvider extends TitlePrimaryDataProvider {
 				$filter->setApplied( true );
 			}
 		}
+
+		$conds = array_merge( $conds, parent::makePreFilterConds( $params ) );
 		return $conds;
 	}
 
@@ -168,6 +172,10 @@ class PrimaryDataProvider extends TitlePrimaryDataProvider {
 	 * @return void
 	 */
 	protected function appendRowToData( \stdClass $row ) {
+		$user = RequestContext::getMain()->getUser();
+		if ( !$this->permissionManager->userCan( 'read', $user, Title::newFromRow( $row ) ) ) {
+			return;
+		}
 		$this->data[] = new TitleRecord( (object)[
 			TitleRecord::PAGE_ID => (int)$row->mti_page_id,
 			TitleRecord::PAGE_NAMESPACE => NS_FILE,

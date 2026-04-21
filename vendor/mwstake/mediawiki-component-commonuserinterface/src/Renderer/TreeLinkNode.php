@@ -3,6 +3,7 @@
 namespace MWStake\MediaWiki\Component\CommonUserInterface\Renderer;
 
 use Exception;
+use MWStake\MediaWiki\Component\CommonUserInterface\DataAttributesBuilder;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponent;
 use MWStake\MediaWiki\Component\CommonUserInterface\ITreeLinkNode;
 
@@ -53,6 +54,7 @@ class TreeLinkNode extends TreeTextNode {
 				'href' => $component->getHref(),
 				'labelId' => "$id-label",
 				'preHtml' => $component->getPreHtml(),
+				'isLeaf' => $component->getIsLeaf()
 			];
 
 			$title = $component->getTitle()->text();
@@ -62,6 +64,7 @@ class TreeLinkNode extends TreeTextNode {
 
 			$this->getClasses( $component, $templateData );
 			$this->getChildren( $component, $subComponentNodes, $templateData );
+			$this->getData( $component, $templateData );
 
 			// Is target external?
 			$parsedUrl = wfParseUrl( $component->getHref() );
@@ -102,7 +105,22 @@ class TreeLinkNode extends TreeTextNode {
 	 * @inheritDoc
 	 */
 	protected function getHtmlArmorExcludedFields() {
-		return [ 'text' ];
+		return [ 'text', 'data' ];
+	}
+
+	/**
+	 * @param ITreeLinkNode $component
+	 * @param array &$templateData
+	 * @return void
+	 */
+	protected function getData( $component, array &$templateData ) {
+		$data = $component->getData();
+		if ( empty( $data ) ) {
+			return;
+		}
+		$dataAttributesBuilder = new DataAttributesBuilder();
+		$dataLinks = $dataAttributesBuilder->toString( $data );
+		$templateData['data'] = $dataLinks;
 	}
 
 }

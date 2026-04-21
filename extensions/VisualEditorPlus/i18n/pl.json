@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail",
+			"Woytecr"
+		]
+	},
+	"visualeditorplus-desc": "Dodaje różne funkcjonalności do edytora wizualnego",
+	"visualeditorplus-ui-label-unwrap": "Usuń (zachowaj treść)",
+	"visualeditorplus-ui-label-delete": "Usuń"
+}

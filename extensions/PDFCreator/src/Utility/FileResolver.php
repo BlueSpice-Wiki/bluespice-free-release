@@ -8,7 +8,7 @@ use MediaWiki\Config\Config;
 use MediaWiki\Title\TitleFactory;
 use RepoGroup;
 
-/*
+/**
  * @stable to extend
  */
 class FileResolver {

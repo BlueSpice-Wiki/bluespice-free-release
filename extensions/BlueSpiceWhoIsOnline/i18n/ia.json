@@ -22,7 +22,7 @@
 	"bs-whoisonline-pref-maxidletime-help-label": "Le numero de secundas de inactivitate post le quales un usator es marcate como foras de linea",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Monstra le numero de usatores que con session aperte in le ultime 10 minutas.",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Numero de usatores in linea",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "Monstra tote le usatores con session aperte in le ultime 10 minutas. Le sortita es un bulla de dialogo que appare quando un usator passa supra le ligamine associate.",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Monstra tote le usatores con session aperte in le ultime 10 minutas. Le lista es visibile quando le cursor del mouse passa supra le ligamine associate.",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Fenestra emergente de qui es in linea",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Numero de sessiones",
 	"bs-whoisonline-statistics-report-login-number": "Sessiones",
@@ -30,5 +30,7 @@
 	"bs-whoisonline-droplet-count-name": "Numero de usatores in session",
 	"bs-whoisonline-droplet-count-description": "Numero de usatores actualmente in session aperte",
 	"bs-whoisonline-droplet-popup-name": "Lista de usatores in session",
-	"bs-whoisonline-droplet-popup-description": "Fenestra emergente con un lista de tote le usatores que es actualmente in session aperte"
+	"bs-whoisonline-droplet-popup-description": "Fenestra emergente con un lista de tote le usatores que es actualmente in session aperte",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Texto del ligamine",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Texto monstrate pro le ligamine que aperi le lista de usatores"
 }

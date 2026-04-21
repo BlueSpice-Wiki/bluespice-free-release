@@ -67,7 +67,7 @@ class ExportPageFactory implements LoggerAwareInterface {
 		foreach ( $headings as $heading ) {
 			$class = $heading->getAttribute( 'class' );
 			if ( str_contains( $class, 'firstHeading' ) ) {
-				$label = $heading->nodeValue;
+				$label = html_entity_decode( $heading->nodeValue );
 			}
 		}
 

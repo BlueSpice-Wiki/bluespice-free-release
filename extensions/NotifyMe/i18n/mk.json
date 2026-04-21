@@ -199,5 +199,14 @@
 	"prefs-subs": "Претплати на известувања",
 	"notifyme-notification-filter-count-aria-label": "содржи {{PLURAL:$1|едно известување| $1 известувања}}",
 	"notifyme-notification-filter-aria-label": "Филтер на известувања",
-	"notifyme-notification-center-pagination-number-aria-label": "Прикажани известувањата $1 до $2"
+	"notifyme-notification-center-pagination-number-aria-label": "Прикажани известувањата $1 до $2",
+	"notifyme-automation-arbitrary-notification-action": "Испрати известување",
+	"notifyme-automation-arbitrary-title-notification-action": "Испрати известување поврзано со страницата",
+	"notifyme-arbitrary-event-action-message-label": "Порака",
+	"notifyme-arbitrary-event-action-event-target-user-label": "Целни корисници",
+	"notifyme-arbitrary-event-action-send-as-bot-label": "Испрати како ботовски корисник",
+	"notifyme-notification-center-filter-label-source": "Вики",
+	"notifyme-notification-center-filter-label-source-local": "Ова вики",
+	"notifyme-arbitrary-event-default-subject": "Автоматско известување",
+	"notifyme-arbitrary-event-action-subject-label": "Тема на известувањето"
 }

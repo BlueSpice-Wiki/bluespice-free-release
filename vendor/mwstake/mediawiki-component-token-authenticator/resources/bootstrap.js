@@ -1,6 +1,6 @@
 mws = window.mws || {};
 mws.tokenAuthenticator = {
-	generateToken: ( withIssuer ) =>  {
+	generateToken: ( withIssuer ) => {
 		const dfd = $.Deferred();
 		mw.loader.using( 'mediawiki.util' ).then( () => {
 			$.ajax( {
@@ -8,7 +8,7 @@ mws.tokenAuthenticator = {
 				dataType: 'json',
 				type: 'GET',
 				contentType: 'application/json; charset=utf-8'
-			} ).done(  ( data ) => {
+			} ).done( ( data ) => {
 				if ( data && data.value ) {
 					dfd.resolve( data.value );
 				} else {
@@ -17,7 +17,9 @@ mws.tokenAuthenticator = {
 			} ).fail( () => {
 				dfd.reject();
 			} );
-		}, () => { dfd.reject(); } );
+		}, () => {
+			dfd.reject();
+		} );
 		return dfd.promise();
 	}
 };

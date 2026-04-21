@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"menueditor-desc": "د غوره‌نۍ مخونو لپاره گرافيکي سموونکی",
+	"menueditor-ui-menu-wiki-link-label": "ويکي تړونی",
+	"menueditor-ui-menu-wiki-link-label-edit": "ويکي تړونی سمول",
+	"menueditor-ui-menu-wiki-link-help": "ويکي مخ ورتړل",
+	"menueditor-ui-menu-two-fold-link-spec-label": "تړونی",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "تړونی سمول",
+	"menueditor-ui-menu-two-fold-link-spec-help": "د تړوني مشخصات. <br>موخه کېدی شي:<ul><li>يو کونجي-پيغام چې د مخنوم سره بدلېږي</li><li>يو باندنی تړونی</li><li> په ويکي کې د مخ نوم</li><li>ويکي‌خپلمنځي تړونی</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "ليک يا پيغام کونجي",
+	"menueditor-ui-menu-raw-text-label-edit": "ليک يا پيغام کونجي سمول",
+	"menueditor-ui-menu-keyword-label": "آرويی",
+	"menueditor-ui-menu-keyword-label-edit": "آرويی سمول",
+	"menueditor-ui-menu-keyword-help": "د شته '''آرويونو''' څخه يو چې مناسب پراخت‌توکی به وښيي",
+	"menueditor-ui-form-field-keyword": "آرويی",
+	"menueditor-ui-form-field-text": "ليک يا پيغام کونجي",
+	"menueditor-ui-form-field-target": "تړوني موخه",
+	"menueditor-ui-form-field-label": "تړوني نښلن",
+	"menueditor-ui-dialog-action-done": "وشو",
+	"menueditor-ui-dialog-action-cancel": "ناگارل",
+	"menueditor-ui-node-type-selector-label": "غوټې ډول",
+	"menueditor-ui-submit": "خوندي‌کول",
+	"menueditor-ui-cancel": "ناگارل",
+	"menueditor-ui-redlink-notice": "دا غوره‌نۍ تراوسه نشته!",
+	"menueditor-action-menueditsource": "سرچينه سمول",
+	"menueditor-action-menuedit": "سمول",
+	"menueditor-ui-dialog-title": "عنصر سمول",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "آرويی سمول",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "آرويی",
+	"menueditor-toolbar-cancel": "سمون ناگارل",
+	"menueditor-toolbar-add-label": "عنصر ورگډول",
+	"menueditor-ui-edit-label": "سمول",
+	"menueditor-ui-add-sub-element-label": "څېرمه عنصر ورگډول",
+	"menueditor-footerlinks-banner-text": "ځينې تړوني ښايي د شاتاړو له خوا په خپلکاري ډول ورگډ شي. مهرباني وکړئ د نورو مالوماتو لپاره د شاتاړي ترتيب وگورئ.",
+	"menueditor-toolbar-save": "خوندي‌کول",
+	"menueditor-ui-cancel-confirmation": "ايا تاسو ډاډه ياست چې سمون ناگارل غواړئ؟\nټول ناخوندي شوي بدلونونه به له لاسه ورکړئ."
+}
