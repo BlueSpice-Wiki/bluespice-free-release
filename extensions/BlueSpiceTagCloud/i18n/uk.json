@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Movses",
 			"Piramidion"
 		]
 	},
@@ -19,7 +20,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Виберіть, які дані використовувати",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Категорії",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Пошукові терміни",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Ширина",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Ширина хмарки тегів",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Ширина хмарки тегів у відсотках",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Показати кількість",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Показати кількість елементів у дужках",
@@ -28,5 +29,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Максимальний розмір шрифту",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Розмір шрифту для запису з найбільшою кількістю елементів",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Виключити сторінки",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Не показувати ці сторінки в хмарці тегів. Щоб додати більше сторінок, використовуйте список, елементи якого відокремлюйте комами, напр., «Головна сторінка, Тест, МояСторінка»"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Не показувати ці сторінки в хмарці тегів. Щоб додати більше сторінок, використовуйте список, елементи якого відокремлюйте комами, напр., «Головна сторінка, Тест, МояСторінка»",
+	"bs-tagcloud-droplet-name": "Хмарка тегів",
+	"bs-tagcloud-droplet-description": "Хмарка тегів на основі категорій або пошукових запитів"
 }

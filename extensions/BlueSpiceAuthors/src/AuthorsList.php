@@ -5,6 +5,7 @@ namespace BlueSpice\Authors;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Title\Title;
+use Wikimedia\Rdbms\SelectQueryBuilder;
 
 class AuthorsList {
 
@@ -138,36 +139,22 @@ class AuthorsList {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	protected function loadAllUserTexts() {
-		$dbr = $this->loadBalancer->getConnection( DB_REPLICA );
-		$query = $this->services->getRevisionStore()->getQueryInfo();
-		$query['fields'][] = 'MAX(rev_timestamp) AS ts';
-		$conds['rev_page'] = $this->title->getArticleID();
-		$options = [
-			'GROUP BY' => 'rev_user_text',
-			'ORDER BY' => 'ts DESC'
-		];
-		$res = $dbr->select(
-			$query['tables'],
-			$query['fields'],
-			$conds,
-			__METHOD__,
-			$options,
-			$query['joins']
-		);
-
-		if ( $res->numRows() == 0 ) {
-			return [];
-		}
+		$dbr = $this->services->getConnectionProvider()->getReplicaDatabase();
+		$res = $this->services->getRevisionStore()
+			->newSelectQueryBuilder( $dbr )
+			->where( [ 'rev_page' => $this->title->getArticleID() ]	)
+			->orderBy( 'rev_timestamp', SelectQueryBuilder::SORT_DESC )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		$authors = [];
 		foreach ( $res as $row ) {
 			$authors[] = $row->rev_user_text;
 		}
 
-		return $authors;
+		return array_values( array_unique( $authors ) );
 	}
 }

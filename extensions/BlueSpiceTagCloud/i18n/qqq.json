@@ -33,5 +33,8 @@
 	"bs-tagcloud-droplet-name": "Title of droplet for tag TagCloud",
 	"bs-tagcloud-droplet-description": "Description of droplet for tag TagCloud",
 	"bs-tagcloud-tag-tagcloud-tab-common": "Label for the VE inspector tab",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "Label for the VE inspector tab"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Label for the VE inspector tab",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Label for dropdown field to select view mode",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Label for checkbox",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Help text for checkbox"
 }

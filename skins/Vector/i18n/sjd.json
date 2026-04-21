@@ -12,7 +12,7 @@
 	"vector-action-addsection": "Лажьхэ те̄ма",
 	"vector-action-delete": "Вэ̄цксэ",
 	"vector-action-move": "Воа̄йхэ нэ̄м",
-	"vector-action-protect": "Пынне",
+	"vector-action-protect": "Пя̄ллшэ",
 	"vector-view-create": "Лыһкэ",
 	"vector-view-edit": "Воа̄йхэ",
 	"vector-view-history": "Исторья",
@@ -40,6 +40,7 @@
 	"vector-toc-collapsible-button-label": "Вӯзьхэ/Пе̄ҋҋтэ сыська",
 	"vector-main-menu-label": "Шурьмусс меню",
 	"vector-feature-custom-font-size-exclusion-notice": "Тэнн лыстэсьт пай ме̄вв шрифт ме̄ррь о̄ннъювв.",
+	"vector-feature-limited-width-exclusion-notice": "Контэннт лӣ ко̄ммтамусс то̄н браузэр эһкан гуэйкэ.",
 	"vector-page-tools-label": "Тӯййшэмка̄вьн",
 	"vector-page-tools-general-label": "Э̄ххтса",
 	"vector-page-tools-actions-label": "Лыһкмуж",
@@ -50,6 +51,7 @@
 	"vector-prefs-limited-width-help": "Ключчей ре̄ввьнлаһтма ко̄ммтвуд режим ло̄гкэм ноа̄ц шӣгнэм гуэйкэ.",
 	"vector-toc-unpinned-popup": "Сыська выгкъювэ тэсса.",
 	"vector-page-tools-unpinned-popup": "Тӯййшэмкоа̄вьнэ меню адтҍ тэсьт лӣ.",
+	"vector-main-menu-unpinned-popup": "Шурьмусс меню тэсса выгкъювэ.",
 	"vector-appearance-unpinned-popup": "Ка̄вь меню тэсса выгкъювэ.",
 	"vector-night-mode-issue-reporting-link-label": "Це̄ӆӆькэ се̄ввьнэсь коа̄венҍ рэ̄з баяс"
 }

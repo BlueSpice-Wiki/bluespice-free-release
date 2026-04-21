@@ -86,5 +86,6 @@
 	"enhanced-standard-uis-prefs-menu-aria-label": "偏好設定部分",
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "選擇查看模式",
 	"enhanced-standard-uis-paginator-page-aria-label": "第 $1 頁",
-	"enhanced-standard-uis-allpages-section-heading-aria-label": "從第 $1 頁開始"
+	"enhanced-standard-uis-allpages-section-heading-aria-label": "從第 $1 頁開始",
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "搜尋檔案"
 }

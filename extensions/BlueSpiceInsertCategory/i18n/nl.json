@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"HanV",
 			"Jeroen N",
 			"Mainframe98",
 			"McDutchie",
@@ -30,5 +31,7 @@
 	"bs-insertcategory-edit-dialog-tree-view": "Alle categorieën weergeven",
 	"bs-insertcategory-pref-withparents-help": "Voegt zowel de categorie zelf als de bovenliggende categorieën toe aan de pagina",
 	"bs-insertcategory-pref-uploadintegration": "Paginacategorieën in de uploaddialoog gebruiken",
-	"bs-insertcategory-pref-uploadintegration-help": "Stelt de paginacategorieën in als de standaardoptie in het uploaddialoogvenster"
+	"bs-insertcategory-pref-uploadintegration-help": "Stelt de paginacategorieën in als de standaardoptie in het uploaddialoogvenster",
+	"bs-insertcategory-set-categories-summary": "Bijgewerkte paginacategorieën",
+	"bs-insertcategory-set-categories-error": "Instellen categorieën mislukt"
 }

@@ -94,5 +94,9 @@
 	"enhancedupload-ve-file-dialog-filename-label": "Filename",
 	"enhancedupload-ve-dialog-title": "Upload file",
 	"enhancedupload-ve-dialog-filename-label": "Insert filename",
-	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|A warning has|Warnings have}} occurred with {{PLURAL:$1|this uploaded file|these uploaded files}}"
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|A warning has|Warnings have}} occurred with {{PLURAL:$1|this uploaded file|these uploaded files}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "Title for attachment section",
+	"enhancedupload-ve-attachmentinspector-title-help": "Title of the area where the files are displayed",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "File prefix",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Identifier inserted before the file name"
 }

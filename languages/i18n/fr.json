@@ -228,7 +228,11 @@
 			"Lenchanteur",
 			"Codeurluce",
 			"HenriCab",
-			"Pa2chant.bis"
+			"Pa2chant.bis",
+			"Muisha wiki hke",
+			"Raveloaritiana Mamisoa",
+			"Antimuonium",
+			"Serieminou"
 		]
 	},
 	"sunday": "dimanche",
@@ -1224,7 +1228,7 @@
 	"search-external": "Recherche externe",
 	"searchdisabled": "La recherche sur {{SITENAME}} est désactivée.\nEn attendant la réactivation, vous pouvez effectuer une recherche via Google.\nNotez que leur indexation du contenu de {{SITENAME}} peut ne pas être à jour.",
 	"search-error": "Une erreur s’est produite en recherchant : $1",
-	"search-warning": "Un avertissement s’est produit en recherchant : $1",
+	"search-warning": "Avertissement : $1",
 	"mypreferences": "Préférences",
 	"prefs-labs": "Fonctionnalités « Labs »",
 	"prefs-misc": "Préférences diverses",
@@ -3205,7 +3209,7 @@
 	"pageinfo-subpages-value-unknown": "Inconnu ($1)",
 	"pageinfo-firstuser": "Créat{{GENDER:$1|eur|rice}} de la page",
 	"pageinfo-firsttime": "Date de création de la page",
-	"pageinfo-lastuser": "Derni{{GENDER:$1|er|ère}} rédact{{GENDER:$1|eur|rice}}",
+	"pageinfo-lastuser": "Derni{{GENDER:$1|er|ère}} contribut{{GENDER:$1|eur|rice}}",
 	"pageinfo-lasttime": "Date de la dernière modification",
 	"pageinfo-edits": "Nombre total de modifications",
 	"pageinfo-authors": "Nombre total d’auteurs distincts",

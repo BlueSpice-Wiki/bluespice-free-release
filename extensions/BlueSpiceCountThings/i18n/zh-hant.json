@@ -39,5 +39,7 @@
 	"bs-countthings-droplet-files-name": "擋案數量",
 	"bs-countthings-droplet-files-description": "顯示所有擋案的總數量",
 	"bs-countthings-droplet-user-name": "用戶數量",
-	"bs-countthings-droplet-user-description": "顯示所有用戶的總數量"
+	"bs-countthings-droplet-user-description": "顯示所有用戶的總數量",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "計算重複項",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "指定應計數內容：全部、字元、單字、字元與單字、或頁數。"
 }

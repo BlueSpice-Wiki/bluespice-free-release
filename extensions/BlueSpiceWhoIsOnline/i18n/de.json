@@ -40,5 +40,7 @@
 	"bs-whoisonline-droplet-count-name": "Anzahl angemeldeter Benutzer",
 	"bs-whoisonline-droplet-count-description": "Zahl der aktuell angemeldeten Benutzer",
 	"bs-whoisonline-droplet-popup-name": "Liste angemeldeter Benutzer",
-	"bs-whoisonline-droplet-popup-description": "Popup mit einer Liste der aktuell angemeldeten Benutzer"
+	"bs-whoisonline-droplet-popup-description": "Popup mit einer Liste der aktuell angemeldeten Benutzer",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Linktext",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Text, der für den Link angezeigt wird, der die Benutzerliste öffnet"
 }

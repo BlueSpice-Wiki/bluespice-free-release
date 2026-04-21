@@ -28,7 +28,7 @@ var cache = { // eslint-disable-line no-var
 	}
 };
 
-function querySingle( store, property, value, cacheKey, recache ) {
+function querySingle( store, property, value, cacheKey, recache, additionalParams ) {
 	const dfd = $.Deferred();
 	if ( !value || typeof value !== 'string' || value.length < 2 ) {
 		return dfd.resolve( {} ).promise();
@@ -38,7 +38,7 @@ function querySingle( store, property, value, cacheKey, recache ) {
 		dfd.resolve( cache.get( cacheKey ) );
 		return dfd.promise();
 	}
-	mws.commonwebapis[ store ].query( '', {
+	mws.commonwebapis[ store ].query( '', Object.assign( {
 		filter: JSON.stringify( [
 			{
 				type: 'string',
@@ -48,7 +48,7 @@ function querySingle( store, property, value, cacheKey, recache ) {
 			}
 		] ),
 		limit: 1
-	} ).done( ( response ) => {
+	}, additionalParams || {} ) ).done( ( response ) => {
 		if ( response.length > 0 ) {
 			dfd.resolve( response[ 0 ] );
 			return;
@@ -116,7 +116,9 @@ mws.commonwebapis = {
 		},
 		getByGroupName: function ( groupname, recache ) {
 			return cache.getCachedPromise( 'promise-group-data-' + groupname, () => querySingle(
-				'group', 'group_name', groupname, 'group-' + groupname, recache
+				'group', 'group_name', groupname, 'group-' + groupname, recache, {
+					allowEveryone: true
+				}
 			) );
 		}
 	},

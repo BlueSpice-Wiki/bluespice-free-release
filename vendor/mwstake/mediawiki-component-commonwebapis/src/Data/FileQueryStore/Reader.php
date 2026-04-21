@@ -4,6 +4,7 @@ namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\FileQueryStore;
 
 use MediaWiki\Language\Language;
 use MediaWiki\Page\PageProps;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
@@ -22,6 +23,8 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	protected $pageProps;
 	/** @var \RepoGroup */
 	protected $repoGroup;
+	/** @var PermissionManager */
+	protected $permissionManager;
 
 	/**
 	 * @param ILoadBalancer $lb
@@ -30,10 +33,12 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	 * @param NamespaceInfo $nsInfo
 	 * @param PageProps $pageProps
 	 * @param \RepoGroup $repoGroup
+	 * @param PermissionManager|null $permissionManager
 	 */
 	public function __construct(
 		ILoadBalancer $lb, TitleFactory $titleFactory, Language $language,
-		NamespaceInfo $nsInfo, PageProps $pageProps, \RepoGroup $repoGroup
+		NamespaceInfo $nsInfo, PageProps $pageProps, \RepoGroup $repoGroup,
+		?PermissionManager $permissionManager = null
 	) {
 		parent::__construct();
 		$this->lb = $lb;
@@ -42,6 +47,10 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 		$this->nsInfo = $nsInfo;
 		$this->pageProps = $pageProps;
 		$this->repoGroup = $repoGroup;
+		$this->permissionManager = $permissionManager;
+		if ( $this->permissionManager === null ) {
+			$this->permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		}
 	}
 
 	/**
@@ -58,7 +67,8 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	 */
 	public function makePrimaryDataProvider( $params ) {
 		return new PrimaryDataProvider(
-			$this->lb->getConnection( DB_REPLICA ), $this->getSchema(), $this->language, $this->nsInfo
+			$this->lb->getConnection( DB_REPLICA ), $this->getSchema(), $this->language,
+			$this->nsInfo, $this->permissionManager
 		);
 	}
 

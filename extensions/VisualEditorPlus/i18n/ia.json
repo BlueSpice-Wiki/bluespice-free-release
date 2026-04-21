@@ -4,5 +4,10 @@
 			"McDutchie"
 		]
 	},
-	"visualeditorplus-desc": "Adde varie functionalitates al editor visual"
+	"visualeditorplus-desc": "Adde varie functionalitates al editor visual",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Remover tabella",
+	"visualeditorplus-table-contextitem-properties-label": "Proprietates del tabella",
+	"visualeditorplus-table-contextitem-additional-options-label": "Optiones additional de cellulas",
+	"visualeditorplus-table-cell-actions-dialog-title": "Optiones de cellulas",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Facite"
 }

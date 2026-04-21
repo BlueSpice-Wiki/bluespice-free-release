@@ -108,7 +108,10 @@
 			"Penyuwangi",
 			"Felianiwiki",
 			"HyperAnd",
-			"RaymondSutanto94"
+			"RaymondSutanto94",
+			"Deepturquoise",
+			"Bayahiu",
+			"Budhiastawa"
 		]
 	},
 	"sunday": "Minggu",
@@ -268,7 +271,7 @@
 	"pool-servererror": "Layanan penghitung pool ini tidak tersedia ($1).",
 	"poolcounter-usage-error": "Galat penggunaan: $1",
 	"aboutsite": "Tentang {{SITENAME}}",
-	"aboutpage": "Project:Tentang",
+	"aboutpage": "Project:Perihal",
 	"copyright-footer": "Konten tersedia sesuai di bawah $1.",
 	"copyrightpage": "{{ns:project}}:Hak cipta",
 	"currentevents": "Peristiwa terkini",
@@ -2107,6 +2110,7 @@
 	"apisandbox-request-php-label": "Minta larik PHP:",
 	"apisandbox-request-time": "Lama permintaan: {{PLURAL:$1|$1 ms}}",
 	"apisandbox-request-post": "Permintaan ini harus dikirim menggunakan metode HTTP POST.",
+	"apisandbox-request-post2": "Karena ukuran muatannya, permintaan ini telah dikirim menggunakan cara HTTP POST.",
 	"apisandbox-request-formdata": "Permintaan ini harus dikirim sebagai unggahan berkas (menggunakan <code>multipart/form-data</code> ).",
 	"apisandbox-results-fixtoken": "Perbaiki token dan kirim kembali",
 	"apisandbox-results-fixtoken-fail": "Gagal mendapatkan token \"$1\".",

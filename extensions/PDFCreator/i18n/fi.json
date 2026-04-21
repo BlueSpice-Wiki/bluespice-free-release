@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"pdfcreator-tab-panel-main-label": "Kuvaus",
+	"pdfcreator-tab-panel-styles-label": "Tyylit",
+	"pdfcreator-pdf-export-time": "Vienti",
+	"pdfcreator-pdf-param-currentpagenumber-label": "Sivu",
+	"pdfcreator-pdf-param-totalpagescount-label": "/",
+	"pdfcreator-editor-action-save-label": "Tallenna",
+	"pdfcreator-editor-action-help-label": "Ohje",
+	"pdfcreator-export-mode-page-label": "Sivu",
+	"pdfcreator-dialog-export-title": "Vie",
+	"pdfcreator-dialog-export-template-selection-label": "Malline",
+	"pdfcreator-toc-page-label": "Sisällysluettelo",
+	"pdfcreator-template-edit-dlg-action-save": "Tallenna"
+}

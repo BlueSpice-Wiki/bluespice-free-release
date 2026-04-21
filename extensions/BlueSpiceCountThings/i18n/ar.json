@@ -40,5 +40,7 @@
 	"bs-countthings-droplet-files-name": "عدد الملفات",
 	"bs-countthings-droplet-files-description": "يظهر عدد جميع الملفات التي تم تحميلها",
 	"bs-countthings-droplet-user-name": "عدد المستخدمين",
-	"bs-countthings-droplet-user-description": "اعرض عدد كل المستخدمين"
+	"bs-countthings-droplet-user-description": "اعرض عدد كل المستخدمين",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "عد النسخ المكررة",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "حدد ما يجب احتسابه: كل شيء، الأحرف، الكلمات، الأحرف والكلمات، أو الصفحات"
 }

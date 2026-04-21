@@ -38,7 +38,7 @@
 	"userprofile-droplet-name": "Benutzerprofil",
 	"userprofile-droplet-name-description": "Zeigt die Profilinformationen eines Benutzers an",
 	"userprofile-ve-attr-user-label": "Benutzer",
-	"userprofile-ve-attr-user-help": "Benutzername",
+	"userprofile-ve-attr-user-help": "Name des Benutzers, dessen Profil angezeigt werden soll",
 	"userprofile-set-userimage-failed": "Dieses Bild kann nicht als Profilbild verwendet werden",
 	"userprofile-changeuserimage-title": "Profilbild ändern",
 	"userprofile-userimage-choose-title": "Wähle ein Bild aus den Bildern im Wiki aus",
@@ -49,5 +49,6 @@
 	"userprofile-ve-attr-orientation-horizontal": "Horizontal",
 	"userprofile-ve-attr-orientation-vertical": "Vertikal",
 	"userprofile-ve-attr-fields": "Angezeigte Informationen",
-	"userprofile-ve-attr-fields-label-help": "Informationen, die angezeigt werden sollen. Leer lassen, um alle verfügbaren Informationen anzuzeigen."
+	"userprofile-ve-attr-fields-label-help": "Informationen, die angezeigt werden sollen. Leer lassen, um alle verfügbaren Informationen anzuzeigen.",
+	"userprofile-user-not-exist-error": "Dieser Benutzer existiert nicht. Bitte den Administrator kontaktieren."
 }

@@ -137,5 +137,7 @@
 	"bs-discovery-table-of-contents-hide-button-aria-label": "Сакриј табелу са садржајем",
 	"bs-discovery-back-to-page": "Назад на $1",
 	"bs-discovery-back-to-page-title": "Назад на страницу $1",
-	"bs-toc-hide-button-aria-label": "Сакриј табелу са садржајем"
+	"bs-toc-hide-button-aria-label": "Сакриј табелу са садржајем",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Уреди",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Очисти"
 }

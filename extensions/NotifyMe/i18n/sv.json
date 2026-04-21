@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Lokal Profil",
+			"Stefan2255",
 			"Yupik"
 		]
 	},
 	"prefs-notifications": "Meddelanden",
 	"notifyme-ui-subscriptionset-editor-category-label": "Kategori",
-	"notifyme-ui-subscriptionset-category-label": "Kategori"
+	"notifyme-ui-subscriptionset-category-label": "Kategori",
+	"notifyme-mail-template-edit-help-logo": "För att lägga till logotypen för din wiki, som är inställd i skalet,<pre> &lt;img src=\"{{logotyp}}\" alt=\"Wiki-logotyp\" /></pre> kan användas"
 }

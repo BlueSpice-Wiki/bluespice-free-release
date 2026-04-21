@@ -2,7 +2,6 @@
 
 namespace MediaWiki\Extension\EnhancedStandardUIs\Action;
 
-use ChangeTags;
 use HistoryAction;
 use InvalidArgumentException;
 use LogEventsList;
@@ -256,32 +255,31 @@ class EnhancedHistoryAction extends HistoryAction {
 	}
 
 	/**
-	 *
 	 * @param MediaWikiServices $services
 	 * @param array $conds
 	 * @param string|null $tagFilter
 	 * @return array
 	 */
 	private function getQueryInfo( $services, $conds, $tagFilter ) {
-		$revQuery = $services->getRevisionStore()->getQueryInfo( [ 'user' ] );
+		$dbr = $services->getConnectionProvider()->getReplicaDatabase();
+		$queryBuilder = $services->getRevisionStore()->newSelectQueryBuilder( $dbr )
+			->joinUser()
+			->joinComment()
+			->where(
+				array_merge(
+					[ 'rev_page' => $this->getWikiPage()->getId() ],
+					$conds
+				)
+			)
+			->caller( __METHOD__ );
 
-		$queryInfo = [
-			'tables' => $revQuery['tables'],
-			'fields' => $revQuery['fields'],
-			'conds' => array_merge(
-				[ 'rev_page' => $this->getWikiPage()->getId() ],
-				$conds ),
-			'options' => [ 'USE INDEX' => [ 'revision' => 'rev_page_timestamp' ] ],
-			'join_conds' => $revQuery['joins'],
-		];
-		ChangeTags::modifyDisplayQuery(
-			$queryInfo['tables'],
-			$queryInfo['fields'],
-			$queryInfo['conds'],
-			$queryInfo['join_conds'],
-			$queryInfo['options'],
+		$services->getChangeTagsStore()->modifyDisplayQueryBuilder(
+			$queryBuilder,
+			'revision',
 			$tagFilter
 		);
+
+		$queryInfo = $queryBuilder->getQueryInfo();
 
 		$this->getHookRunner()->onPageHistoryPager__getQueryInfo( $this, $queryInfo );
 

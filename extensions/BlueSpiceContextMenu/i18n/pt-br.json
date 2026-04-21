@@ -23,5 +23,7 @@
 	"bs-contextmenu-user-mail": "Enviar e-mail",
 	"bs-contextmenu-user-talk": "Deixa uma mensagem na página de discussão",
 	"bs-contextmenu-file-download": "Baixar arquivo",
-	"apihelp-bs-contextmenu-tasks-summary": "Fornece os itens do menu de contexto em contexto"
+	"apihelp-bs-contextmenu-tasks-summary": "Fornece os itens do menu de contexto em contexto",
+	"bs-contextmenu-open-in-new-tab": "Abrir em uma nova guia",
+	"bs-contextmenu-no-items": "Não há itens de contexto disponíveis"
 }

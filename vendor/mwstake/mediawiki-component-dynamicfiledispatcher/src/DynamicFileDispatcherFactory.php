@@ -2,6 +2,7 @@
 
 namespace MWStake\MediaWiki\Component\DynamicFileDispatcher;
 
+use LogicException;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Utils\UrlUtils;
 
@@ -26,7 +27,6 @@ class DynamicFileDispatcherFactory {
 	 * @param array $modules
 	 * @param HookContainer $hookContainer
 	 * @param UrlUtils $urlUtils
-	 * @throws \MWException
 	 */
 	public function __construct( array $modules, HookContainer $hookContainer, UrlUtils $urlUtils ) {
 		$this->hookContainer = $hookContainer;
@@ -37,13 +37,13 @@ class DynamicFileDispatcherFactory {
 	/**
 	 * @param array $modules
 	 * @return void
-	 * @throws \MWException
+	 * @throws LogicException
 	 */
 	private function setModules( array $modules ) {
 		$this->hookContainer->run( 'MWStakeDynamicFileDispatcherRegisterModule', [ &$modules ] );
 		foreach ( $modules as $moduleName => $module ) {
 			if ( !( $module instanceof IDynamicFileModule ) ) {
-				throw new \MWException(
+				throw new LogicException(
 					"Module '$moduleName' is not an instance of IDynamicFileModule"
 				);
 			}

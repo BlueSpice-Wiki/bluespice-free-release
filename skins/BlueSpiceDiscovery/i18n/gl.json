@@ -199,5 +199,8 @@
 	"bs-discovery-data-after-content-cnt-aria-label": "Apéndice da páxina",
 	"bs-discovery-footer-places-alt-text-mediawiki": "Desenvolvido por MediaWiki",
 	"bs-discovery-footer-places-alt-text-bluespice": "Desenvolvido por BlueSpice",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Desenvolvido por Semantic MediaWiki"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Desenvolvido por Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Editar",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Limpar",
+	"bs-discovery-breadcrumb-nav-root-node-title": "Mostrar todas as páxinas no espazo de nomes «$1»"
 }

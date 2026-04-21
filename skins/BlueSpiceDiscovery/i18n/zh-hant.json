@@ -201,5 +201,7 @@
 	"bs-discovery-data-after-content-cnt-aria-label": "頁面附錄",
 	"bs-discovery-footer-places-alt-text-mediawiki": "由 MediaWiki 提供支援",
 	"bs-discovery-footer-places-alt-text-bluespice": "由 BlueSpice 提供支援",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "由 Semantic MediaWiki 提供支援"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "由 Semantic MediaWiki 提供支援",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "編輯",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "清除"
 }

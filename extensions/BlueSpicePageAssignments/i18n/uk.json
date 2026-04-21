@@ -72,5 +72,13 @@
 	"bs-pageassignments-statistics-report-assigned-pages-axis-assigned": "Призначено",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-unassigned": "Не призначено",
 	"bs-pageassignments-dialog-input-placeholder": "Додати завдання…",
-	"bs-pageassignment-info-dialog": "Призначення"
+	"bs-pageassignment-info-dialog": "Призначення",
+	"bs-pageassignments-column-assignee-type": "Тип",
+	"bs-pageassignments-books-overview-page-book-action-assignment-text": "Призначити",
+	"bs-pageassignments-books-overview-page-book-action-assignment-title": "Редагувати призначення для $1",
+	"bs-pageassignments-header-action-edit": "Редагувати",
+	"bs-pageassignments-header-action-delete": "Вилучити",
+	"bs-pageassignments-title-edit": "Редагувати призначення",
+	"bs-pageassignments-title-delete": "Вилучити призначення",
+	"bs-pageassignments-show-unassigned-pages": "Показати непризначені сторінки"
 }

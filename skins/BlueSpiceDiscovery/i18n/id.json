@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Agam Riyandana",
+			"Fafau06",
 			"Penyuwangi"
 		]
 	},
@@ -10,5 +11,7 @@
 	"bs-discovery-sidebar-secondary-aria-label": "Tabel sisi sekunder",
 	"bs-discovery-footer-places-alt-text-mediawiki": "Diberdayakan oleh MediaWiki",
 	"bs-discovery-footer-places-alt-text-bluespice": "Diberdayakan oleh BlueSpice",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Diberdayakan oleh Semantic MediaWiki"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Diberdayakan oleh Semantic MediaWiki",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Sunting",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Kosongkan"
 }

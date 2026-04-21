@@ -33,7 +33,7 @@
 	ul.tree-node-list a:not( .new ),
 	ul.tree-node-list a:not( .new ):visited,
 	ul.tree-node-list a:not( .new ):hover {
-		color: var( --sidebar-primary-fg );
+		color: inherit;
 	}
 
 	.tree-node-list .oojsplus-data-tree-expander {

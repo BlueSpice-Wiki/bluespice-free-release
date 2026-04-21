@@ -83,9 +83,9 @@
 	"enhancedupload-config-type-label": "نوع الصورة:",
 	"enhancedupload-config-type-help": "إعداد الكتابة لسحب وإسقاط الصور في المحرر المرئي",
 	"enhancedupload-config-height-label": "ارتفاع الصورة:",
-	"enhancedupload-config-height-help": "إعداد الارتفاع لسحب وإسقاط الصور في المحرر المرئي. اضبط على \"تلقائي\" للقياس مع العرض. إذا تم ضبط كلاهما على \"تلقائي\" ، فسيتم استخدام الحجم الافتراضي.",
+	"enhancedupload-config-height-help": "تحديد ارتفاع الصور عند سحبها وإفلاتها في المحرر المرئي. اتركه فارغًا لتغيير الحجم مع العرض. في حال ترك كلا الحقلين فارغين، سيتم استخدام الحجم الافتراضي.",
 	"enhancedupload-config-width-label": "عرض الصورة:",
-	"enhancedupload-config-width-help": "إعداد العرض لسحب الصور وإفلاتها في المحرر المرئي ، اضبط على \"تلقائي\" للقياس مع الارتفاع. إذا تم ضبط كلاهما على \"تلقائي\" ، فسيتم استخدام الحجم الافتراضي.",
+	"enhancedupload-config-width-help": "إعداد عرض الصور عند سحبها وإفلاتها في المحرر المرئي. اتركه فارغًا لتغيير الحجم مع الارتفاع. إذا تُرك كلا الحقلين فارغين، فسيتم استخدام الحجم الافتراضي.",
 	"enhancedupload-config-extensions-label": "السماح بأنواع MIME غير المتطابقة (خطر أمني محتمل)",
 	"enhancedupload-config-extensions-help": "السماح بتحميل ملحقات الملفات التي تحتوي على أنواع MIME غير متطابقة. تحذير: خطر أمني محتمل.",
 	"enhancedupload-droplet-attachments-name": "المرفقات",
@@ -103,5 +103,9 @@
 	"enhancedupload-reset-button-label": "إعادة ضبط",
 	"enhancedupload-ve-file-dialog-title": "ملف",
 	"enhancedupload-ve-file-dialog-filename-label": "اسم الملف",
-	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|حدث تحذير}} مع {{PLURAL:$1| هذا الملف الذي تم تحميله|هذه الملفات التي تم تحميلها}}"
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|حدث تحذير}} مع {{PLURAL:$1| هذا الملف الذي تم تحميله|هذه الملفات التي تم تحميلها}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "عنوان قسم المرفقات",
+	"enhancedupload-ve-attachmentinspector-title-help": "عنوان المنطقة التي تُعرض فيها الملفات",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "بادئة الملف",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "تم إدراج المعرف قبل اسم الملف"
 }

@@ -3,6 +3,7 @@
 namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
 use MediaWiki\Config\GlobalVarConfig;
+use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 
@@ -15,9 +16,15 @@ class Store extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\S
 	 * @param UtilityFactory $utilityFactory
 	 * @param GlobalVarConfig $mwsgConfig
 	 * @param Title $contextTitle
+	 * @param HookContainer $hookContainer
 	 */
-	public function __construct( UtilityFactory $utilityFactory, GlobalVarConfig $mwsgConfig, Title $contextTitle ) {
-		parent::__construct( $utilityFactory, $mwsgConfig );
+	public function __construct(
+		UtilityFactory $utilityFactory,
+		GlobalVarConfig $mwsgConfig,
+		Title $contextTitle,
+		HookContainer $hookContainer
+	) {
+		parent::__construct( $utilityFactory, $mwsgConfig, $hookContainer );
 		$this->contextTitle = $contextTitle;
 	}
 
@@ -26,7 +33,7 @@ class Store extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\S
 	 * @return Reader
 	 */
 	public function getReader() {
-		return new Reader( $this->groupHelper, $this->mwsgConfig, $this->contextTitle );
+		return new Reader( $this->groupHelper, $this->mwsgConfig, $this->contextTitle, $this->hookContainer );
 	}
 
 }

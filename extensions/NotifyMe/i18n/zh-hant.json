@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Cwlin0416",
-			"Kly"
+			"Kly",
+			"LowensteinYang"
 		]
 	},
 	"prefs-notifications": "通知",
@@ -93,7 +94,7 @@
 	"notifyme-schema-source-providers-link": "連結到使用者可以更改偏好設定的地方（如果適用）",
 	"notifyme-mail-template-edit-help-colors": "以下為可用的色彩變數。這些會自動調整成 wiki 外觀的色彩。",
 	"notifyme-mail-template-edit-help-int": "國際化訊息可以透過 <pre><nowiki>{{int:message-key}}</nowiki></pre> 在內容中使用",
-	"notifyme-mail-template-edit-help-logo": "要新增設定在外觀的您的 wiki 標誌，請使用 <pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-logo": "要新增您的那個在外觀中設定的wiki標誌，可使用<pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
 	"notifyme-mail-template-edit-help-category-params": "內容變數",
 	"notifyme-mail-template-edit-help-category-logo": "標識",
 	"notifyme-mail-template-edit-help-category-int": "國際化",

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saurmandal"
+		]
+	},
+	"visualeditorplus-desc": "यथादृश्य सम्पादिका में अलग-अलग कार्यक्षमताएँ जोड़ता है",
+	"visualeditorplus-table-contextitemwidget-label-remove": "टेबल हटाएँ",
+	"visualeditorplus-table-contextitem-properties-label": "टेबल के गुणधर्म",
+	"visualeditorplus-table-contextitem-additional-options-label": "अतिरिक्त कोशिका विकल्प",
+	"visualeditorplus-table-cell-actions-dialog-title": "कोशिका विकल्प",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "हो गया",
+	"visualeditorplus-ui-label-unwrap": "हटाएँ (सामग्री रखें)",
+	"visualeditorplus-ui-label-delete": "हटाएँ"
+}

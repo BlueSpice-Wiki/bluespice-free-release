@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"pdfcreator-tab-panel-main-label": "Deskriptt",
+	"pdfcreator-pdf-param-currentpagenumber-label": "Seidd",
+	"pdfcreator-pdf-param-totalpagescount-label": "/",
+	"pdfcreator-editor-action-save-label": "Ruõkk",
+	"pdfcreator-editor-action-help-label": "Vuäʹppõõzz",
+	"pdfcreator-export-mode-page-label": "Seidd",
+	"pdfcreator-dialog-export-template-selection-label": "Mall",
+	"pdfcreator-toc-page-label": "Siiskâžlooǥǥtõs",
+	"pdfcreator-export-pdf-inspector-export-template-label": "PDF-mall",
+	"pdfcreator-help-table-column-param-key": "Paramettar",
+	"pdfcreator-help-table-column-param-desc": "Deskriptt",
+	"pdfcreator-content-non-existing-page": "Tät seidd ij kaunnu",
+	"pdftemplatesoverview": "PDF-maall",
+	"pdfcreator-template-edit-dlg-action-save": "Ruõkk",
+	"pdfcreator-template-edit-dlg-action-upload": "Ruõkk",
+	"pdfcreator-template-edit-dlg-action-back": "Mååusat",
+	"pdfcreator-template-duplicate-dlg-action-copy": "Kopiââʹst",
+	"pdfcreator-panel-templates-overview-column-edit-title": "Muuʹtt maall",
+	"pdfcreator-panel-templates-overview-column-copy-label": "Kopiââʹst",
+	"pdfcreator-template-edit-source-dlg-title": "Muuʹtt PDF-maall"
+}

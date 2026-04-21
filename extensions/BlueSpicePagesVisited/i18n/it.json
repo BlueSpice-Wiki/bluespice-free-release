@@ -27,5 +27,9 @@
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-label": "Namespace",
 	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "Mostra solo pagine da questi namespace",
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Ora",
-	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nome della pagina"
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nome della pagina",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Numero di risultati mostrati",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Lunghezza massima dei titoli di pagina",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Ordina per",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Filtra per namespace"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ioe2015",
+			"Minh Nguyen",
 			"Nvdtn19"
 		]
 	},
@@ -22,7 +23,7 @@
 	"bs-contextmenu-user-mail": "Gửi thư",
 	"bs-contextmenu-user-talk": "Để lại tin nhắn trên trang thảo luận",
 	"bs-contextmenu-file-download": "Tải xuống tập tin",
-	"apihelp-bs-contextmenu-tasks-summary": "Hiện các mục menu ngữ cảnh trong trình đơn",
+	"apihelp-bs-contextmenu-tasks-summary": "Hiện các mục bảng chọn ngữ cảnh trong bảng chọn",
 	"bs-contextmenu-open-in-new-tab": "Mở trong thẻ mới",
 	"bs-contextmenu-no-items": "Không có mục menu ngữ cảnh"
 }

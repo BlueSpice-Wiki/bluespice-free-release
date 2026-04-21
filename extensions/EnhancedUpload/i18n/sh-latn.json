@@ -29,7 +29,7 @@
 	"enhancedupload-attachments-tag-grid-category-label": "Kategorije",
 	"enhancedupload-attachments-media-dialog-cancel-title": "Otkaži",
 	"enhancedupload-attachments-media-dialog-add-title": "Dodaj",
-	"enhancedupload-attachments-media-dialog-title": "Odaberi datoteku",
+	"enhancedupload-attachments-media-dialog-title": "Izaberite datoteku",
 	"enhancedupload-attachments-media-dialog-label": "Traži datoteku",
 	"enhancedupload-ui-action-new-upload-text": "Nova datoteka",
 	"enhancedupload-ui-action-new-upload-title": "Postavi novu datoteku",
@@ -48,6 +48,6 @@
 	"enhancedupload-attachments-tag-grid-editor-label": "Uređivač",
 	"enhancedupload-attachments-tag-grid-details-title": "Detalji",
 	"enhancedupload-attachments-tag-grid-remove-title": "Ukloni",
-	"enhancedupload-tab-updated-upload": "Podnovljene datoteke",
+	"enhancedupload-tab-updated-upload": "Ažurirane datoteke",
 	"enhancedupload-finished-dialog-action-close": "Zatvori"
 }

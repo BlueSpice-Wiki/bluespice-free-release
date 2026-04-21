@@ -5,6 +5,7 @@
 			"Erelon",
 			"Guycn2",
 			"LaG roiL",
+			"Neriah",
 			"Steeve815",
 			"שוקו מוקה"
 		]
@@ -40,5 +41,6 @@
 	"bs-countthings-droplet-files-name": "מספר הקבצים",
 	"bs-countthings-droplet-files-description": "הצגת המספר של כל הקבצים שהועלו",
 	"bs-countthings-droplet-user-name": "מספר המשתמשים",
-	"bs-countthings-droplet-user-description": "הצגת המספר של כל המשתמשים"
+	"bs-countthings-droplet-user-description": "הצגת המספר של כל המשתמשים",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "מספר כפילויות"
 }

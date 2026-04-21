@@ -2,5 +2,12 @@
 	"@metadata": {
 		"authors": []
 	},
-	"visualeditorplus-desc": "Description of VisualEditorPlus for [[Special:Version]]"
+	"visualeditorplus-desc": "Description of VisualEditorPlus for [[Special:Version]]",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Label for table context item button to remove table",
+	"visualeditorplus-table-contextitem-properties-label": "Label for table context item button to edit properties of table",
+	"visualeditorplus-table-contextitem-additional-options-label": "Label for table context item button with additional cell options",
+	"visualeditorplus-table-cell-actions-dialog-title": "Title for dialog with additional cell options",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Label for button\n{{Identical|Done}}",
+	"visualeditorplus-ui-label-unwrap": "Action button label to remove wrapper from content",
+	"visualeditorplus-ui-label-delete": "Action button label to remove wrapper and content inside"
 }

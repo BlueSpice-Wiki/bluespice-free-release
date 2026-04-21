@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpicePermissionManager",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.6",
+	"version": "5.1.7",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePermissionManager",
 	"author": "Dejan Savuljesku <savuljesku@hallowelt.com>",
 	"descriptionmsg": "bs-permissionmanager-desc",
@@ -9,7 +9,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.43.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 5.0.0",
+			"BlueSpiceFoundation": ">= 5.1",
+			"BlueSpiceConfigManager": ">= 5.1",
 			"OOJSPlus": ">= 3.0.0"
 		}
 	},

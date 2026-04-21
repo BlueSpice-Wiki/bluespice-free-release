@@ -35,5 +35,7 @@
 	"bs-whoisonline-droplet-count-name": "Title of droplet for tag WhoIsOnlineCount",
 	"bs-whoisonline-droplet-count-description": "Description of droplet for tag WhoIsOnlineCount",
 	"bs-whoisonline-droplet-popup-name": "Title of droplet for tag WhoIsOnlinePopup",
-	"bs-whoisonline-droplet-popup-description": "Description of droplet for tag WhoIsOnlinePopup"
+	"bs-whoisonline-droplet-popup-description": "Description of droplet for tag WhoIsOnlinePopup",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Label for input field to define link text",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Help text for text input field to define link text"
 }

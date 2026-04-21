@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal"
+		]
+	},
+	"bs-contextmenu-page-edit": "ਵਰਕਾ ਸੋਧੋ",
+	"bs-contextmenu-page-delete": "ਵਰਕਾ ਮਿਟਾਓ",
+	"bs-contextmenu-page-move": "ਵਰਕਾ ਟਿਕਾਣਾ ਬਦਲੋ",
+	"bs-contextmenu-page-protect": "ਵਰਕਾ ਸੁਰੱਖਿਅਤ ਕਰੋ"
+}

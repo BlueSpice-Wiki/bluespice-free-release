@@ -37,5 +37,8 @@
 	"bs-watchlist-tag-watchlist-attr-time-help": "Zeit helfen",
 	"bs-watchlist-droplet-name": "Beobachtungsliste",
 	"bs-watchlist-droplet-description": "Letzte Änderungen an Seiten, die in der Beobachtungsliste enthalten sind",
-	"bs-watchlist-usersidebar-title": "Beobachtungsliste"
+	"bs-watchlist-usersidebar-title": "Beobachtungsliste",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "Anzahl angezeigter Seiten",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "Maximale Länge der Seitentitel",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Sortierung nach"
 }

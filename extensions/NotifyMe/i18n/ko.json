@@ -99,8 +99,8 @@
 	"notifyme-notification-center-mark-as-unread-circle-title": "읽지 않은 것으로 표시",
 	"notifyme-notification-center-timestamp-ago": "$1 전",
 	"notifyme-notification-center-no-new-notifications-label": "새 알림이 없습니다",
-	"notifyme-notification-center-pagination-aria-next": "다음",
-	"notifyme-notification-center-pagination-aria-previous": "이전",
+	"notifyme-notification-center-pagination-aria-next": "다음 페이지",
+	"notifyme-notification-center-pagination-aria-previous": "이전 페이지",
 	"notifyme-notification-center-filter-item-aria-label": "필터 $1",
 	"notifyme-sample-data-agent": "홍길동",
 	"notifyme-sample-data-target": "홍길순",
@@ -116,5 +116,8 @@
 	"notifyme-event-page-create-desc": "다른 사용자가 문서를 만들었습니다.",
 	"notifyme-event-page-delete-desc": "다른 사용자가 문서를 삭제했습니다.",
 	"notifyme-event-page-move-desc": "다른 사용자가 문서를 이동했습니다.",
-	"notifyme-notification-filter-aria-label": "알림 필터"
+	"notifyme-notification-filter-aria-label": "알림 필터",
+	"notifyme-notification-center-filter-label-source": "위키",
+	"notifyme-notification-center-filter-label-source-local": "이 위키",
+	"notifyme-arbitrary-event-default-subject": "자동 알림"
 }

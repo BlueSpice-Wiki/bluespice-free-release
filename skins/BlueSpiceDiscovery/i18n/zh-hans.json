@@ -210,5 +210,7 @@
 	"bs-discovery-data-after-content-cnt-aria-label": "页面附录",
 	"bs-discovery-footer-places-alt-text-mediawiki": "由MediaWiki驱动",
 	"bs-discovery-footer-places-alt-text-bluespice": "由BlueSpice提供驱动",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "由Semantic MediaWiki提供驱动"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "由Semantic MediaWiki提供驱动",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "编辑",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "清空"
 }

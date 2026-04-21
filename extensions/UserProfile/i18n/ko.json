@@ -25,7 +25,7 @@
 	"userprofile-profile-panel-aria-label": "$1 사용자의 프로필 패널",
 	"userprofile-droplet-name": "사용자 프로필",
 	"userprofile-ve-attr-user-label": "사용자",
-	"userprofile-ve-attr-user-help": "사용자 이름",
+	"userprofile-ve-attr-user-help": "프로필을 표시할 사용자의 이름",
 	"userprofile-changeuserimage-title": "프로필 사진 바꾸기",
 	"userprofile-pref-userimage": "프로필 사진",
 	"userprofile-pref-userimage-link": "프로필 보기",

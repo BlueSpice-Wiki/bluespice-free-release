@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
+class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
 {
     public static $files = array (
         'ef0a3cc8d59aacc0241af9c20bb29c47' => __DIR__ . '/..' . '/mwstake/mediawiki-componentloader/bootstrap.php',
@@ -119,7 +119,8 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
             'MWStake\\MediaWiki\\Component\\ProcessManager\\' => 43,
             'MWStake\\MediaWiki\\Component\\ManifestRegistry\\Tests\\' => 51,
             'MWStake\\MediaWiki\\Component\\ManifestRegistry\\' => 45,
-            'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\' => 49,
+            'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\' => 54,
+            'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Integration\\' => 61,
             'MWStake\\MediaWiki\\Component\\InputProcessor\\' => 43,
             'MWStake\\MediaWiki\\Component\\FormEngine\\Tests\\' => 45,
             'MWStake\\MediaWiki\\Component\\FormEngine\\' => 39,
@@ -129,9 +130,11 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
             'MWStake\\MediaWiki\\Component\\DynamicFileDispatcher\\' => 50,
             'MWStake\\MediaWiki\\Component\\DynamicConfig\\Tests\\' => 48,
             'MWStake\\MediaWiki\\Component\\DynamicConfig\\' => 42,
-            'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\' => 44,
+            'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\' => 49,
+            'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Integration\\' => 56,
             'MWStake\\MediaWiki\\Component\\DataStore\\' => 38,
-            'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\' => 53,
+            'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\Unit\\' => 58,
+            'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\Integration\\' => 65,
             'MWStake\\MediaWiki\\Component\\ContentProvisioner\\' => 47,
             'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Tests\\Unit\\' => 53,
             'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\' => 42,
@@ -443,9 +446,13 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
         array (
             0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-manifestregistry/src',
         ),
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\' => 
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\' => 
         array (
-            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit',
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit',
+        ),
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Integration\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/integration',
         ),
         'MWStake\\MediaWiki\\Component\\InputProcessor\\' => 
         array (
@@ -483,17 +490,25 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
         array (
             0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/src',
         ),
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\' => 
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\' => 
         array (
-            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit',
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit',
+        ),
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Integration\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/integration',
         ),
         'MWStake\\MediaWiki\\Component\\DataStore\\' => 
         array (
             0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src',
         ),
-        'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\' => 
+        'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\Unit\\' => 
         array (
-            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/tests/phpunit',
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/tests/phpunit/unit',
+        ),
+        'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\Integration\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/tests/phpunit/integration',
         ),
         'MWStake\\MediaWiki\\Component\\ContentProvisioner\\' => 
         array (
@@ -1265,6 +1280,7 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
         'BlueSpice\\PageAccess\\Extension' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Extension.php',
         'BlueSpice\\PageAccess\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageAccessTag' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Hook/BSUsageTrackerRegisterCollectors/AddPageAccessTag.php',
         'BlueSpice\\PageAccess\\Hook\\PageContentSave\\EditPageAccess' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Hook/PageContentSave/EditPageAccess.php',
+        'BlueSpice\\PageAccess\\Hook\\SpecialPageBeforeExecute\\CheckBrowsePagePermission' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Hook/SpecialPageBeforeExecute/CheckBrowsePagePermission.php',
         'BlueSpice\\PageAccess\\Permission\\Lockdown\\Module\\BlockActionsOnTagPageAccess' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Permission/Lockdown/Module/BlockActionsOnTagPageAccess.php',
         'BlueSpice\\PageAccess\\Special\\PageAccess' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Special/PageAccess.php',
         'BlueSpice\\PageAccess\\Tag\\PageAccess' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Tag/PageAccess.php',
@@ -2131,6 +2147,8 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\UserQueryStore\\UserSchema' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/UserQueryStore/UserSchema.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\EndpointManager' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/EndpointManager.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Hook\\MWStakeCommonWebAPIsQueryStoreResultHook' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Hook/MWStakeCommonWebAPIsQueryStoreResultHook.php',
+        'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Hook\\MWStakeGroupStoreGroupDisplayNameHook' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Hook/MWStakeGroupStoreGroupDisplayNameHook.php',
+        'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Hook\\MWStakeGroupStoreGroupTypeFilterHook' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Hook/MWStakeGroupStoreGroupTypeFilterHook.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Maintenance\\PopulateCategoryIndex' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Maintenance/PopulateCategoryIndex.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Maintenance\\PopulateTitleIndex' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Maintenance/PopulateTitleIndex.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Maintenance\\PopulateUserIndex' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Maintenance/PopulateUserIndex.php',
@@ -2165,7 +2183,10 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
         'MWStake\\MediaWiki\\Component\\ContentProvisioner\\OutputInterface' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/src/OutputInterface.php',
         'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Output\\NullOutput' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/src/Output/NullOutput.php',
         'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Output\\PrintOutput' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/src/Output/PrintOutput.php',
-        'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\ContentProvisioner\\DefaultContentProvisionerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/tests/phpunit/ContentProvisioner/DefaultContentProvisionerTest.php',
+        'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\Integration\\ContentProvisioner\\DefaultContentProvisionerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/tests/phpunit/integration/ContentProvisioner/DefaultContentProvisionerTest.php',
+        'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\Unit\\ContentProvisionerProvider\\ContentProvisionerProviderTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/tests/phpunit/unit/ContentProvisionerProvider/ContentProvisionerProviderTest.php',
+        'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\Unit\\ImportLanguageTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/tests/phpunit/unit/ImportLanguageTest.php',
+        'MWStake\\MediaWiki\\Component\\ContentProvisioner\\Tests\\Unit\\ManifestListProvider\\StaticManifestProviderTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/tests/phpunit/unit/ManifestListProvider/StaticManifestProviderTest.php',
         'MWStake\\MediaWiki\\Component\\ContentProvisioner\\UpdateLogStorageTrait' => __DIR__ . '/..' . '/mwstake/mediawiki-component-contentprovisioner/src/UpdateLogStorageTrait.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\BucketedResultSet' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/BucketedResultSet.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\DatabaseReader' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/DatabaseReader.php',
@@ -2207,17 +2228,17 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
         'MWStake\\MediaWiki\\Component\\DataStore\\SecondaryDataProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/SecondaryDataProvider.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\Sort' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/Sort.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\Sorter' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/Sorter.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Filter\\BooleanTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/Filter/BooleanTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Filter\\DateTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/Filter/DateTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Filter\\ListValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/Filter/ListValueTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Filter\\NumericValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/Filter/NumericValueTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Filter\\StringValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/Filter/StringValueTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Filter\\TemplateTitleTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/Filter/TemplateTitleTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Filter\\TitleTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/Filter/TitleTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\FiltererTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/FiltererTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\LimitOffsetTrimmerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/LimitOffsetTrimmerTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\ReaderParamsTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/ReaderParamsTest.php',
-        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\SorterTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/SorterTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Integration\\Filter\\TemplateTitleTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/integration/Filter/TemplateTitleTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Integration\\Filter\\TitleTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/integration/Filter/TitleTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\Filter\\BooleanTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/Filter/BooleanTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\Filter\\DateTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/Filter/DateTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\Filter\\ListValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/Filter/ListValueTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\Filter\\NumericValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/Filter/NumericValueTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\Filter\\StringValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/Filter/StringValueTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\FiltererTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/FiltererTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\LimitOffsetTrimmerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/LimitOffsetTrimmerTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\ReaderParamsTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/ReaderParamsTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\SorterTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/SorterTest.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\Writer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/Writer.php',
         'MWStake\\MediaWiki\\Component\\DynamicConfig\\DynamicConfigManager' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/src/DynamicConfigManager.php',
         'MWStake\\MediaWiki\\Component\\DynamicConfig\\GlobalsAwareDynamicConfig' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/src/GlobalsAwareDynamicConfig.php',
@@ -2286,17 +2307,17 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
         'MWStake\\MediaWiki\\Component\\InputProcessor\\Processor\\UserListValue' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/src/Processor/UserListValue.php',
         'MWStake\\MediaWiki\\Component\\InputProcessor\\Processor\\UserValue' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/src/Processor/UserValue.php',
         'MWStake\\MediaWiki\\Component\\InputProcessor\\Runner' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/src/Runner.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\BooleanValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/BooleanValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\GroupValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/GroupValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\IntListValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/IntListValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\IntValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/IntValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\KeywordValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/KeywordValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\NamespaceValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/NamespaceValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\ProcessorTestBase' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/ProcessorTestBase.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\StringValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/StringValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\TitleValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/TitleValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Processor\\UserValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/Processor/UserValueTest.php',
-        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\RunnerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/RunnerTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Integration\\Processor\\GroupValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/integration/Processor/GroupValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\BooleanValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/BooleanValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\IntListValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/IntListValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\IntValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/IntValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\KeywordValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/KeywordValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\NamespaceValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/NamespaceValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\ProcessorTestBase' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/ProcessorTestBase.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\StringValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/StringValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\TitleValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/TitleValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\Processor\\UserValueTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/Processor/UserValueTest.php',
+        'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\RunnerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/tests/phpunit/unit/RunnerTest.php',
         'MWStake\\MediaWiki\\Component\\ManifestRegistry\\IRegistry' => __DIR__ . '/..' . '/mwstake/mediawiki-component-manifestregistry/src/IRegistry.php',
         'MWStake\\MediaWiki\\Component\\ManifestRegistry\\ManifestAttributeBasedRegistry' => __DIR__ . '/..' . '/mwstake/mediawiki-component-manifestregistry/src/ManifestAttributeBasedRegistry.php',
         'MWStake\\MediaWiki\\Component\\ManifestRegistry\\ManifestObjectFactory' => __DIR__ . '/..' . '/mwstake/mediawiki-component-manifestregistry/src/ManifestObjectFactory.php',
@@ -4461,11 +4482,11 @@ class ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit8a7e37efe58c3909a586509f71f3ee16::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$classMap;
 
         }, null, ClassLoader::class);
     }

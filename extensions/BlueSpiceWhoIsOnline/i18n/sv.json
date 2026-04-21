@@ -5,6 +5,7 @@
 			"Lokal Profil",
 			"Mjälten",
 			"Sabelöga",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -17,5 +18,8 @@
 	"bs-whoisonline-pref-orderby-time": "Drifttid",
 	"bs-whoisonline-pref-orderby-name": "Namn",
 	"bs-whoisonline-collection-type-userlogin": "Användarinloggning",
-	"bs-whoisonline-collection-var-login": "Logga in"
+	"bs-whoisonline-collection-var-login": "Logga in",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Visar alla användare som har varit inloggade under de senaste 10 minuterna. Listan visas när en användare håller muspekaren över den relaterade länken.",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Länktext",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "Text som visas för länken som öppnar användarlistan"
 }

@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ella Lachow"
+			"Ella Lachow",
+			"Malaalaa"
 		]
 	},
 	"contentdroplets-category-label-data": "Daataa",
 	"contentdroplets-droplet-text-box-header-label": "Huuphebaa",
 	"contentdroplets-droplet-text-box-text-label": "Xuufiya",
-	"contentdroplet-dialog-action-close": "Qucca"
+	"contentdroplet-dialog-action-close": "Agga"
 }

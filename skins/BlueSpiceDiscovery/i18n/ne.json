@@ -44,5 +44,6 @@
 	"bs-discovery-dialog-detailssectionheading-toolbox": "उपकरणको बाकस",
 	"bs-discovery-footer-places-alt-text-mediawiki": "मिडियाविकि द्वारा संचालित",
 	"bs-discovery-footer-places-alt-text-bluespice": "ब्लुस्पाइस द्वारा संचालित",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "सिमान्टिक मिडियाविकि द्वारा संचालित"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "सिमान्टिक मिडियाविकि द्वारा संचालित",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "सम्पादन"
 }

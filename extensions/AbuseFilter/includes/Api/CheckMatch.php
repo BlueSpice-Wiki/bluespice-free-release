@@ -2,9 +2,7 @@
 
 namespace MediaWiki\Extension\AbuseFilter\Api;
 
-use LogEventsList;
 use LogicException;
-use LogPage;
 use MediaWiki\Api\ApiBase;
 use MediaWiki\Api\ApiMain;
 use MediaWiki\Api\ApiResult;
@@ -18,7 +16,6 @@ use MediaWiki\Extension\AbuseFilter\Variables\LazyLoadedVariable;
 use MediaWiki\Extension\AbuseFilter\Variables\VariableHolder;
 use MediaWiki\Extension\AbuseFilter\Variables\VariablesBlobStore;
 use MediaWiki\Json\FormatJson;
-use MediaWiki\Revision\RevisionRecord;
 use RecentChange;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -95,21 +92,7 @@ class CheckMatch extends ApiBase {
 				$this->dieWithError( [ 'apierror-nosuchrcid', $params['rcid'] ] );
 			}
 
-			$type = (int)$rc->getAttribute( 'rc_type' );
-			$deletedValue = $rc->getAttribute( 'rc_deleted' );
-			if (
-				(
-					$type === RC_LOG &&
-					!LogEventsList::userCanBitfield(
-						$deletedValue,
-						LogPage::SUPPRESSED_ACTION | LogPage::SUPPRESSED_USER,
-						$performer
-					)
-				) || (
-					$type !== RC_LOG &&
-					!RevisionRecord::userCanBitfield( $deletedValue, RevisionRecord::SUPPRESSED_ALL, $performer )
-				)
-			) {
+			if ( !$this->afPermManager::hasRCEntryAccess( $rc, $performer ) ) {
 				// T223654 - Same check as in AbuseFilterChangesList
 				$this->dieWithError( 'apierror-permissiondenied-generic', 'deletedrc' );
 			}

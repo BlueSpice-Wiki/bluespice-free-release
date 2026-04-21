@@ -36,6 +36,7 @@ a.ico-btn {
 	text-decoration: none;
 }
 
+.dropdown .dropdown-toggle.attention-indicator::after,
 .attention-indicator::after {
 	color: #bd1d1d;
 	content: '\2B24';

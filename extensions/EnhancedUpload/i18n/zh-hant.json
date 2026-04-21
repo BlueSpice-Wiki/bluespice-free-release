@@ -75,9 +75,9 @@
 	"enhancedupload-config-type-label": "圖片類型：",
 	"enhancedupload-config-type-help": "在可視化編輯器中拖放圖片的類型設定",
 	"enhancedupload-config-height-label": "圖片高度：",
-	"enhancedupload-config-height-help": "在可視化編輯器中拖放圖片的高度設定。設定為「自動」可隨寬度縮放。如果兩邊都設定為「自動」，則將使用預設大小。",
+	"enhancedupload-config-height-help": "在可視化編輯器中拖放圖片的高度設定。留空可隨寬度縮放。如果兩個都留空則將使用預設大小。",
 	"enhancedupload-config-width-label": "圖片寬度：",
-	"enhancedupload-config-width-help": "在視覺化編輯器中拖放圖片的寬度設定。設為「自動」可隨高度縮放。如果兩邊都設為「自動」則會使用預設大小。",
+	"enhancedupload-config-width-help": "在視覺化編輯器中拖放圖片的寬度設定。若留空可隨高度縮放。如果兩個都留空則會使用預設大小。",
 	"enhancedupload-config-extensions-label": "允許不匹配的 MIME 類型（具潛在的資安風險）",
 	"enhancedupload-config-extensions-help": "允許上傳 MIME 類型不匹配的副檔名。警告：具潛在的資安風險",
 	"enhancedupload-droplet-attachments-name": "附件",
@@ -95,5 +95,9 @@
 	"enhancedupload-reset-button-label": "重設",
 	"enhancedupload-ve-file-dialog-title": "檔案",
 	"enhancedupload-ve-file-dialog-filename-label": "檔案名稱",
-	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|這個|這些}}上傳檔案出現{{PLURAL:$1|一個警告|警告}}"
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|這個|這些}}上傳檔案出現{{PLURAL:$1|一個警告|警告}}",
+	"enhancedupload-ve-attachmentinspector-title-label": "附件部分標題",
+	"enhancedupload-ve-attachmentinspector-title-help": "檔案顯示區域的標題",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "檔案前綴",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "在檔案名稱前方插入識別碼"
 }

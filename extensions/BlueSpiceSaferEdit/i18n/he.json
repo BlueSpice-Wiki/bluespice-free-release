@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"Guycn2",
+			"Neriah",
 			"Steeve815"
 		]
 	},
@@ -16,5 +17,6 @@
 	"bs-saferedit-pref-edit-interval": "מרווח לבדיקת עריכה (שניות)",
 	"bs-saferedit-pref-edit-interval-help": "באיזו תדירות, בשניות, לבדוק אם אדם אחר עורך את הדף (ברירת מחדל: 3 שניות)",
 	"bs-saferedit-pref-show-editinguser": "הצגת העורך הנוכחי",
-	"bs-saferedit-pref-show-editinguser-help": "הוספת שם המשתמש שעורך כעת את הדף לראש הדף"
+	"bs-saferedit-pref-show-editinguser-help": "הוספת שם המשתמש שעורך כעת את הדף לראש הדף",
+	"bs-saferedit-anonymous-editor": "משתמש אלמוני"
 }

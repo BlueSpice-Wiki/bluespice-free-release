@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"inputprocessor-error-processor-not-registered": "Error message processor not registered",
+	"inputprocessor-error-invalid-processor-object": "Error message invalid processor object",
+	"inputprocessor-error-value-required": "Error message value required",
+	"inputprocessor-error-int-not-number": "Error message integer not number",
+	"inputprocessor-error-int-out-of-range": "Error message integer out of range",
+	"inputprocessor-error-boolean-not-boolean": "Error message invalid boolean",
+	"inputprocessor-error-title-invalid": "Error message invalid title",
+	"inputprocessor-error-title-not-exists": "Error message title not exists",
+	"inputprocessor-error-title-not-allowed-namespace": "Error message title namespace not allowed",
+	"inputprocessor-error-title-no-read-permission": "Error message no read permission for title",
+	"inputprocessor-error-keyword-not-keyword": "Error message invalid keyword",
+	"inputprocessor-error-string-not-string": "Error message invalid string",
+	"inputprocessor-error-namespace-invalid": "Error message invalid namespace",
+	"inputprocessor-error-namespace-not-content": "Error message namespace not content",
+	"inputprocessor-error-namespace-not-subject": "Error message namespace not subject",
+	"inputprocessor-error-namespace-not-allowed": "Error message namespace not allowed",
+	"inputprocessor-error-user-invalid": "Error message invalid user",
+	"inputprocessor-error-user-not-exist": "Error message user not exists",
+	"inputprocessor-error-usergroup-invalid": "Error message invalid user group"
+}

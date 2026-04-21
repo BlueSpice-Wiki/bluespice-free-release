@@ -3,6 +3,7 @@
 		"authors": [
 			"MITO",
 			"Minilammas",
+			"Mschlindwein",
 			"Nike",
 			"Pyscowicz",
 			"Rönttönen"
@@ -42,7 +43,7 @@
 	"bs-discovery-breadcrumb-nav-node-split-button-aria-label": "Lisää alasivuja",
 	"bs-discovery-breadcrumb-nav-node-portal-page": "Etusivu",
 	"bs-discovery-title-last-edit-info-date-only": "Viimeksi muokattu $1",
-	"bs-discovery-title-last-edit-info": "Viimeksi muokannut käyttäjä $1 <br /> kello $2",
+	"bs-discovery-title-last-edit-info": "Viimeksi muokattu $1 <br /> käyttäjältä $2",
 	"bs-discovery-title-last-edit-info-timestamp-aria-label": "Viimeisin muokkaus $1",
 	"bs-discovery-title-last-edit-info-user-aria-label": "Viimeksi muokannut käyttäjä $1",
 	"bs-discovery-last-edit-by-anon-user": "Anonyymi käyttäjä",

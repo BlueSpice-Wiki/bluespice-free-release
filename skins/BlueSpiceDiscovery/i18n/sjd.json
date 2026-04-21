@@ -6,5 +6,11 @@
 	},
 	"bs-discovery-header-create-button-text": "О̄дт",
 	"bs-discovery-header-create-button-title": "Лыһкэ о̄дт лыст",
-	"bs-discovery-last-edit-by-anon-user": "Нэ̄мхэмь оаннӭй"
+	"bs-discovery-last-edit-by-anon-user": "Нэ̄мхэмь оаннӭй",
+	"bs-discovery-create-button-new-file-title": "Лоа̄дтэ о̄дт фа̄ял",
+	"menueditor-ui-enhanced-sidebar-internal-link-label-edit": "Вики сыссенҍ ушш",
+	"menueditor-ui-enhanced-sidebar-external-link-label-edit": "Оалкма ушш",
+	"menueditor-ui-enhanced-sidebar-external-link-label": "Оалкма ушш",
+	"menueditor-ui-enhanced-sidebar-internal-link-label": "Вики сыссенҍ ушш",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-heading": "Вуэййв текст"
 }

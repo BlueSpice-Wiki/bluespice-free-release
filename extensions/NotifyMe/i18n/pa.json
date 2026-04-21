@@ -10,5 +10,10 @@
 	"notifyme-ui-subscriptionset-watchlist-label": "ਨਿਗਰਾਨ-ਸੂਚੀ",
 	"notifyme-sample-data-link-1": "ਫਰਕ ਵੇਖੋ",
 	"notifyme-mail-template-edit-help-button-label": "ਡਾਕ ਸਮੱਗਰੀ ਨਾਲ ਮਦਦ",
-	"notifyme-notification-center-help-menu-mark-all-read-label": "ਸਾਰੇ ਪੜ੍ਹੇ ਵਜੋਂ ਨਿਸ਼ਾਨ ਲਾਓ"
+	"notifyme-notification-center-help-menu-mark-all-read-label": "ਸਾਰੇ ਪੜ੍ਹੇ ਵਜੋਂ ਨਿਸ਼ਾਨ ਲਾਓ",
+	"notifyme-notification-center-filter-label-namespaces-none": "ਮੁੱਢਲਾ",
+	"notifyme-notification-tester-field-title": "ਵਰਕਾ",
+	"notifyme-automation-arbitrary-title-notification-action": "ਵਰਕੇ ਨਾਲ ਮੇਲ-ਖਾਂਦਾ ਸੁਨੇਹਾ ਭੇਜੋ",
+	"notifyme-arbitrary-event-default-subject": "ਆਪਮੁਹਾਰੀ ਸੁਨੇਹੇ",
+	"notifyme-arbitrary-event-action-subject-label": "ਸੁਨੇਹੇ ਦਾ ਵਿਸ਼ਾ"
 }

@@ -28,5 +28,8 @@
 	"bs-watchlist-tag-watchlist-attr-time-help": "Help message for the parameter \"time\"",
 	"bs-watchlist-droplet-name": "Title of droplet for tag Watchlist",
 	"bs-watchlist-droplet-description": "Description of droplet for tag Watchlist",
-	"bs-watchlist-usersidebar-title": "Title of user sidebar widget Watchlist\n{{Identical|Watchlist}}"
+	"bs-watchlist-usersidebar-title": "Title of user sidebar widget Watchlist\n{{Identical|Watchlist}}",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "Label for the parameter \"count\"",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "Label for the parameter \"maxtitlelength\"",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Label for the parameter \"order\""
 }

@@ -198,5 +198,8 @@
 	"bs-discovery-data-after-content-cnt-aria-label": "Прилог кон страницата",
 	"bs-discovery-footer-places-alt-text-mediawiki": "Овозможено од MediaWiki",
 	"bs-discovery-footer-places-alt-text-bluespice": "Овозможено од BlueSpice",
-	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Овозможено од Семантички МедијаВики"
+	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Овозможено од Семантички МедијаВики",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Уреди",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Исчисти",
+	"bs-discovery-breadcrumb-nav-root-node-title": "Прикажи ги сите страници во именскиот простор $1"
 }

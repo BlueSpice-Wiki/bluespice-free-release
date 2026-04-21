@@ -38,7 +38,7 @@
 	"userprofile-droplet-name": "Perfil de usuario",
 	"userprofile-droplet-name-description": "Mostra a información do perfil dun usuario",
 	"userprofile-ve-attr-user-label": "Usuario",
-	"userprofile-ve-attr-user-help": "Nome de usuario",
+	"userprofile-ve-attr-user-help": "Nome do usuario cuxo perfil debería mostrarse",
 	"userprofile-set-userimage-failed": "Esta imaxe non se pode usar como imaxe de perfil",
 	"userprofile-changeuserimage-title": "Cambiar a imaxe de perfil",
 	"userprofile-userimage-choose-title": "Selecciona unha imaxe entre as imaxes do wiki",

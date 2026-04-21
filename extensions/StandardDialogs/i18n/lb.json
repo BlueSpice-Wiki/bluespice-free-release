@@ -45,8 +45,8 @@
 	"standarddialogs-delete-title": "Säit \"$1\" läschen",
 	"standarddialogs-move-btn": "Réckelen",
 	"standarddialogs-move-title": "Säit \"$1\" réckelen",
-	"standarddialogs-protect-btn": "Spären",
-	"standarddialogs-protect-title": "Säit \"$1\" spären",
+	"standarddialogs-protect-btn": "Protegéieren",
+	"standarddialogs-protect-title": "Säit „$1“ protegéieren",
 	"standarddialogs-purge-btn": "Aktualiséieren",
 	"standarddialogs-purge-title": "Säit \"$1\" nei lueden",
 	"standarddialogs-btn-done": "Fäerdeg",
@@ -58,5 +58,8 @@
 	"standarddialogs-copy-btn-label": "Kopéieren",
 	"standarddialogs-new-page-btn-label": "Uleeën",
 	"standarddialogs-new-subpage-btn-label": "Uleeën",
-	"standarddialogs-purge-btn-label": "Nei lueden"
+	"standarddialogs-purge-btn-label": "Nei lueden",
+	"standarddialogs-protect-btn-label": "Protegéieren",
+	"standarddialogs-create-subpage-btn-label": "Ënnersäit uleeën",
+	"standarddialogs-create-subpage-btn-title": "Ënnersäit vun $1 uleeën"
 }

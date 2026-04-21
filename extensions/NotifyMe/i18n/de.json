@@ -3,6 +3,7 @@
 		"authors": [
 			"Brettchenweber",
 			"McDutchie",
+			"Mschlindwein",
 			"Vhoesl",
 			"[http://www.hallowelt.com Hallo Welt! GmbH]"
 		]
@@ -97,7 +98,7 @@
 	"notifyme-schema-source-providers-link": "Link zu der Stelle, an der der Nutzer seine Einstellungen ändern kann (falls zutreffend)",
 	"notifyme-mail-template-edit-help-colors": "Die folgenden Farbvariablen sind verfügbar. Sie werden automatisch an die Farben der Oberfläche des Wikis angepasst.",
 	"notifyme-mail-template-edit-help-int": "Nachrichten zur Internationalisierung können im Inhalt über <pre><nowiki>{{int:message-key}}</nowiki></pre> verwendet werden",
-	"notifyme-mail-template-edit-help-logo": "Um das Logo des Wikis hinzuzufügen, das im Skin festgelegt ist, {{#FORMAL:verwende|verwenden Sie}} <pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-logo": "Um das Logo des Wikis hinzuzufügen, das im Skin festgelegt ist, kann <pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre> verwendet werden",
 	"notifyme-mail-template-edit-help-category-params": "Inhaltliche Variablen",
 	"notifyme-mail-template-edit-help-category-logo": "Logo",
 	"notifyme-mail-template-edit-help-category-int": "Internationalisierung",
@@ -196,7 +197,7 @@
 	"notifyme-notification-center-no-new-notifications-label": "Es gibt keine neuen Benachrichtigungen",
 	"notifyme-navbar-button-aria-label-unread-notifications": "{{#FORMAL:Du hast|Sie haben}} $1 ungelesene {{PLURAL:$1|Benachrichtigung|Benachrichtigungen}}",
 	"notifyme-notification-center-pagination-aria-next": "Nächste",
-	"notifyme-notification-center-pagination-aria-previous": "Vorherige",
+	"notifyme-notification-center-pagination-aria-previous": "Vorherige Seite",
 	"notifyme-notification-center-navigation-hint": "Tipp: Du kannst die linke und rechte Pfeiltasten benutzen, um zwischen den Registerkarten in der Reiterliste zu navigieren.",
 	"notifyme-notification-center-filter-item-aria-label": "Filter $1",
 	"notifyme-event-page-missing-desc": "''Es gibt noch keine Beschreibung für dieses Ereignis''",
@@ -211,5 +212,7 @@
 	"prefs-subs": "Benachrichtigungsabonnements",
 	"notifyme-notification-filter-count-aria-label": "enthält {{PLURAL:$1|eine Benachrichtigung| $1 Benachrichtigungen}}",
 	"notifyme-notification-filter-aria-label": "Benachrichtigungsfilter",
-	"notifyme-notification-center-pagination-number-aria-label": "Benachrichtigungen $1 bis $2 angezeigt"
+	"notifyme-notification-center-pagination-number-aria-label": "Benachrichtigungen $1 bis $2 angezeigt",
+	"notifyme-automation-arbitrary-notification-action": "Senden einer Benachrichtigung",
+	"notifyme-automation-arbitrary-title-notification-action": "Senden einer titelbezogenen Benachrichtigung"
 }

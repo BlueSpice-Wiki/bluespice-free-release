@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
-	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "Скасаваць праўку",
+	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "Скасаваць рэдагаваньне",
 	"bs-visualeditorconnector-ve-style-option": "Стыль табліцы",
 	"bs-visualeditorconnector-text-style-tool-color-label": "Колер тэксту",
 	"bs-vec-table-inspector-column": "Слупок",

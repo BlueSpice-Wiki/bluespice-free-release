@@ -3,6 +3,7 @@
 		"authors": [
 			"Jopparn",
 			"Josve05a",
+			"Stefan2255",
 			"Technic2",
 			"WikiPhoenix"
 		]
@@ -28,5 +29,6 @@
 	"bs-interwikilinks-link-edited": "Interwikilänken har redigerats",
 	"action-interwikilinks-viewspecialpage": "visa specialsidan \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Interwiki-länkar",
-	"right-interwikilinks-viewspecialpage": "Åtkomst till specialsidan [[Special:InterWikiLinks]]."
+	"right-interwikilinks-viewspecialpage": "Åtkomst till specialsidan [[Special:InterWikiLinks]].",
+	"apihelp-bs-interwikilinks-tasks-summary": "Tillhandahåller uppgifterna för tillägget InterWikiLinks."
 }

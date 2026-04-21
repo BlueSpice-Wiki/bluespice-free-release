@@ -1,5 +1,6 @@
 {
 	"name": "mwstake/mediawiki-component-inputprocessor",
+	"description": "Provides a simple framework for processing user input",
 	"license": "GPL-3.0-only",
 	"authors": [
 		{
@@ -21,7 +22,8 @@
 	"autoload": {
 		"psr-4": {
 			"MWStake\\MediaWiki\\Component\\InputProcessor\\": "src/",
-			"MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\": "tests/phpunit/"
+			"MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\": "tests/phpunit/unit/",
+			"MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Integration\\": "tests/phpunit/integration/"
 		},
 		"files": [
 			"bootstrap.php"

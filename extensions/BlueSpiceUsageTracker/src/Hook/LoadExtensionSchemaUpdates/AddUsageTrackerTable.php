@@ -1,33 +1,22 @@
 <?php
 
-namespace BS\UsageTracker\Hook\LoadExtensionSchemaUpdates;
+namespace BlueSpice\UsageTracker\Hook\LoadExtensionSchemaUpdates;
 
-use BlueSpice\Hook\LoadExtensionSchemaUpdates;
+use MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook;
 
-class AddUsageTrackerTable extends LoadExtensionSchemaUpdates {
+class AddUsageTrackerTable implements LoadExtensionSchemaUpdatesHook {
 
 	/**
-	 *
-	 * @return bool
+	 * @inheritDoc
 	 */
-	protected function doProcess() {
-		$dbType = $this->updater->getDB()->getType();
-		$dir = $this->getExtensionPath();
+	public function onLoadExtensionSchemaUpdates( $updater ) {
+		$dbType = $updater->getDB()->getType();
+		$dir = dirname( __DIR__, 3 );
 
-		$this->updater->addExtensionTable(
+		$updater->addExtensionTable(
 			'bs_usagetracker',
-			"$dir/maintenance/db/sql/$dbType/bs_usagetracker-generated.sql"
+			"$dir/maintenance/db/$dbType/bs_usagetracker.sql"
 		);
-
-		return true;
-	}
-
-	/**
-	 *
-	 * @return string
-	 */
-	protected function getExtensionPath() {
-		return dirname( dirname( dirname( __DIR__ ) ) );
 	}
 
 }

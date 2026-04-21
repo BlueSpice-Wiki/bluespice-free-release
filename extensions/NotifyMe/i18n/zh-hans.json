@@ -96,7 +96,7 @@
 	"notifyme-schema-source-providers-link": "链接到用户可以更改参数设置的位置（如果适用）",
 	"notifyme-mail-template-edit-help-colors": "以下为可用的颜色变量。它们会自动调整为wiki皮肤的颜色。",
 	"notifyme-mail-template-edit-help-int": "国际化消息可以通过<pre><nowiki>{{int:message-key}}</nowiki></pre>在内容中使用",
-	"notifyme-mail-template-edit-help-logo": "要添加您设置在皮肤中的wiki标志，请使用<pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-logo": "要添加您设置在皮肤中的wiki标志，可使用<pre>&lt;img src=\"{{logo}}\" alt=\"Wiki logo\" /&gt;</pre>",
 	"notifyme-mail-template-edit-help-category-params": "内容变量",
 	"notifyme-mail-template-edit-help-category-logo": "标志",
 	"notifyme-mail-template-edit-help-category-int": "国际化",
@@ -201,5 +201,12 @@
 	"prefs-subs": "通知订阅",
 	"notifyme-notification-filter-count-aria-label": "包含{{PLURAL:$1|1|$1}}条通知",
 	"notifyme-notification-filter-aria-label": "通知过滤器",
-	"notifyme-notification-center-pagination-number-aria-label": "已显示通知$1至$2"
+	"notifyme-notification-center-pagination-number-aria-label": "已显示通知$1至$2",
+	"notifyme-automation-arbitrary-notification-action": "发送通知",
+	"notifyme-automation-arbitrary-title-notification-action": "发送标题相关通知",
+	"notifyme-arbitrary-event-action-message-label": "消息",
+	"notifyme-arbitrary-event-action-event-target-user-label": "目标用户",
+	"notifyme-arbitrary-event-action-send-as-bot-label": "以机器用户身份发送",
+	"notifyme-notification-center-filter-label-source": "Wiki",
+	"notifyme-notification-center-filter-label-source-local": "此wiki"
 }

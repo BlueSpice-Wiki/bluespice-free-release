@@ -19,7 +19,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Selige qual datos usar",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Categorias",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Terminos de recerca",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Latitude",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Latitude del nube de etiquettas",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Latitude del etiquettario in percentage",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Monstrar quantitate",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Monstrar le numero de elementos inter parentheses",
@@ -32,5 +32,8 @@
 	"bs-tagcloud-droplet-name": "Etiquettario",
 	"bs-tagcloud-droplet-description": "Nube de etiquettas basate sur categorias o consultas de recerca",
 	"bs-tagcloud-tag-tagcloud-tab-common": "Commun",
-	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avantiate"
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avantiate",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Modo de visualisation",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Monstrar frequentia",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Adde le numero de categorias usate o de consultas de recerca"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Avengium",
 			"Carlosmg.dg",
 			"Dgstranz",
 			"Fitoschido",
@@ -41,5 +42,6 @@
 	"bs-countthings-droplet-files-name": "Número de archivos",
 	"bs-countthings-droplet-files-description": "Muestra la cantidad total de archivos cargados",
 	"bs-countthings-droplet-user-name": "Número de cuentas de usuario",
-	"bs-countthings-droplet-user-description": "Muestra la cantidad total de cuentas de usuario"
+	"bs-countthings-droplet-user-description": "Muestra la cantidad total de cuentas de usuario",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Contar duplicados"
 }

@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tensama0415"
+			"Tensama0415",
+			"Ykhwong"
 		]
 	},
-	"visualeditorplus-desc": "시각 편집기에 다양한 기능을 추가합니다"
+	"visualeditorplus-desc": "시각 편집기에 다양한 기능을 추가합니다",
+	"visualeditorplus-table-cell-actions-dialog-title": "셀 옵션",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "완료"
 }

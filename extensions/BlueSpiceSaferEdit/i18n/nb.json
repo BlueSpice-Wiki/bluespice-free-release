@@ -6,5 +6,8 @@
 	},
 	"bs-saferedit-desc": "Gir advarsler om andre brukere redigerer siden",
 	"bs-saferedit-user-editing": "$1 {{GENDER:$1|{{PLURAL:$2|redigerer}}}} siden",
-	"bs-saferedit-someone-editing": "Siden blir redigert"
+	"bs-saferedit-someone-editing": "Siden blir redigert",
+	"bs-saferedit-pref-show-editinguser": "Vis den gjeldende bidragsyteren",
+	"bs-saferedit-pref-show-editinguser-help": "Legger til navnet på brukeren som redigerer siden i toppen av siden",
+	"bs-saferedit-anonymous-editor": "Anonym bruker"
 }

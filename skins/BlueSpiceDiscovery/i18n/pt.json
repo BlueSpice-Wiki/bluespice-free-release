@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"BraunOBruno",
 			"Hamilton Abreu",
 			"Mansil alfalb",
 			"Maria Manuela Silva",
@@ -123,8 +124,8 @@
 	"bs-discovery-config-mainlinks-recentchanges-help": "Mostrar hiperligação do ponto de entrada \"Mudanças recentes\" na navegação à esquerda",
 	"bs-discovery-personalurl-mycontributions-text": "Contribuições",
 	"bs-discovery-personalurl-userpage-text": "Perfil",
-	"bs-discovery-globalactionentry-templates-text": "Modelos",
-	"bs-discovery-globalactionentry-templates-title": "Todas os modelos",
+	"bs-discovery-globalactionentry-templates-text": "Predefinições",
+	"bs-discovery-globalactionentry-templates-title": "Todas as predefinições",
 	"bs-discovery-last-edit-by-system-user": "utilizador do sistema",
 	"bs-discovery-config-sidebar-primary-main-tab-menu-label": "Menu no painel principal da barra lateral principal",
 	"bs-discovery-config-sidebar-primary-main-tab-menu-help": "Selecione o menu no painel principal da barra lateral principal",

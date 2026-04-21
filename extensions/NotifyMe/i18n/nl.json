@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Elphie",
 			"McDutchie",
 			"Siebrand"
 		]
@@ -118,9 +119,9 @@
 	"notifyme-event-page-edit-bot": "De pagina “$1” is bewerkt",
 	"notifyme-event-page-edit-group": "De pagina “$1” is $2 keer bewerkt",
 	"notifyme-links-intro-edit": "Via de volgende koppeling kunt u de wijzigingen op de pagina direct bekijken",
-	"notifyme-event-page-move-bot": "De pagina “$1” is hernoemd tot “$2”",
+	"notifyme-event-page-move-bot": "De pagina “$1” is hernoemd naar “$2”",
 	"notifyme-event-page-delete-bot": "De pagina “$1” is verwijderd",
-	"notifyme-event-page-move": "{{GENDER:$1|heeft}} de pagina “$2” hernoemd tot “$3”",
+	"notifyme-event-page-move": "{{GENDER:$1|heeft}} de pagina “$2” hernoemd naar “$3”",
 	"notifyme-event-page-delete": "{{GENDER:$1|heeft}} de pagina “$2” verwijderd",
 	"notifyme-mail-manage-notifications": "Bezoek de volgende koppeling om te bepalen welke meldingen u ontvangt",
 	"notifyme-mail-manage-notifications-link": "Meldingsvoorkeuren",
@@ -209,5 +210,14 @@
 	"prefs-subs": "Meldingsabonnementen",
 	"notifyme-notification-filter-count-aria-label": "bevat {{PLURAL:$1|één melding|$1 meldingen}}",
 	"notifyme-notification-filter-aria-label": "Meldingsfilter",
-	"notifyme-notification-center-pagination-number-aria-label": "Meldingen $1 tot $2 worden weergegeven"
+	"notifyme-notification-center-pagination-number-aria-label": "Meldingen $1 tot $2 worden weergegeven",
+	"notifyme-automation-arbitrary-notification-action": "Een melding sturen",
+	"notifyme-automation-arbitrary-title-notification-action": "Een paginagerelateerde melding verzenden",
+	"notifyme-arbitrary-event-action-message-label": "Bericht",
+	"notifyme-arbitrary-event-action-event-target-user-label": "Ontvanger(s)",
+	"notifyme-arbitrary-event-action-send-as-bot-label": "Als botgebruiker verzenden",
+	"notifyme-notification-center-filter-label-source": "Wiki",
+	"notifyme-notification-center-filter-label-source-local": "Deze wiki",
+	"notifyme-arbitrary-event-default-subject": "Automatische melding",
+	"notifyme-arbitrary-event-action-subject-label": "Onderwerp van de melding"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"AnupamM",
+			"Avengium",
 			"Eulalio",
 			"No se",
 			"Rajadinho",
@@ -26,5 +27,6 @@
 	"enhanced-standard-uis-allpages-namespace-list-label": "Lista de espacios de nombres",
 	"enhanced-standard-uis-paginator-aria-label": "Paginación",
 	"enhanced-standard-uis-allpages-watch-label": "Ver página $1",
-	"enhanced-standard-uis-history-grid-header-size-label": "Tamaño"
+	"enhanced-standard-uis-history-grid-header-size-label": "Tamaño",
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Buscar por archivo"
 }

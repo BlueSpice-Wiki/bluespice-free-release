@@ -4,5 +4,8 @@
 			"Ucukor"
 		]
 	},
-	"standarddialogs-btn-cancel": "Скасаваць"
+	"standarddialogs-btn-cancel": "Скасаваць",
+	"standarddialogs-copy-btn": "Капіяваць",
+	"standarddialogs-copy-page-legend": "Капіяваць",
+	"standarddialogs-copy-btn-label": "Капіяваць"
 }

@@ -48,6 +48,11 @@ class CategoryValue extends TitleValue {
 	protected function getTitle( mixed $value ): ?Title {
 		$value = (string)$value;
 		$title = $this->titleFactory->newFromText( $value );
+
+		if ( !$title ) {
+			return null;
+		}
+
 		if ( $title->getNamespace() !== NS_CATEGORY ) {
 			if ( $title->getNamespace() !== NS_MAIN ) {
 				// Title in another namespace

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fafau06",
 			"Rachmat.Wahidi",
 			"Rachmat04",
 			"Syman51",
@@ -19,5 +20,6 @@
 	"bs-watchlist-ve-watchlist-attr-time-label": "Waktu",
 	"bs-watchlist-tag-watchlist-attr-pagename-help": "Nama halaman bantuan",
 	"bs-watchlist-tag-watchlist-attr-time-help": "Bantuan waktu",
-	"bs-watchlist-droplet-name": "Daftar pantauan"
+	"bs-watchlist-droplet-name": "Daftar pantauan",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Urut berdasarkan"
 }

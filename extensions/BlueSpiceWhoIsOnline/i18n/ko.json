@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hwangjy9",
+			"YeBoy371",
 			"Ykhwong"
 		]
 	},
@@ -17,5 +18,8 @@
 	"bs-whoisonline-collection-var-login": "로그인",
 	"bs-whoisonline-pref-maxidletime-help-label": "사용자가 오프라인으로 표시한 이후 비활동 초 단위 시간",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "로그인 수",
-	"bs-whoisonline-statistics-report-login-number": "로그인"
+	"bs-whoisonline-statistics-report-login-number": "로그인",
+	"bs-whoisonline-statistics-report-login-duration": "로그인 시간",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "로그인 시간 (초)",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "링크 텍스트"
 }

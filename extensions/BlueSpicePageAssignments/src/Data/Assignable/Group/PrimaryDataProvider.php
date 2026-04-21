@@ -4,6 +4,7 @@ namespace BlueSpice\PageAssignments\Data\Assignable\Group;
 
 use BlueSpice\PageAssignments\IAssignment;
 use MediaWiki\Config\GlobalVarConfig;
+use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\GroupRecord;
@@ -18,9 +19,15 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	 * @param GroupHelper $groupHelper
 	 * @param GlobalVarConfig $mwsgConfig
 	 * @param Title $title
+	 * @param HookContainer $hookContainer
 	 */
-	public function __construct( GroupHelper $groupHelper, GlobalVarConfig $mwsgConfig, Title $title ) {
-		parent::__construct( $groupHelper, $mwsgConfig );
+	public function __construct(
+		GroupHelper $groupHelper,
+		GlobalVarConfig $mwsgConfig,
+		Title $title,
+		HookContainer $hookContainer
+	) {
+		parent::__construct( $groupHelper, $mwsgConfig, $hookContainer );
 		$this->title = $title;
 	}
 

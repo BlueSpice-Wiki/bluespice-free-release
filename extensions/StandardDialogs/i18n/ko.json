@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bisang",
 			"Dr1t jg",
 			"Suleiman the Magnificent Television",
 			"YeBoy371",
@@ -61,5 +62,7 @@
 	"standarddialogs-page-info-page-no-templates-label": "이 문서에는 틀이 없습니다",
 	"standarddialogs-page-info-page-no-categories-label": "이 문서에는 분류가 없습니다",
 	"standarddialogs-page-info-page-no-links-label": "이 문서에는 링크가 없습니다",
-	"standarddialogs-page-info-page-no-extlinks-label": "이 문서에는 외부 링크가 없습니다"
+	"standarddialogs-page-info-page-no-extlinks-label": "이 문서에는 외부 링크가 없습니다",
+	"standarddialogs-create-subpage-btn-label": "하위 문서 만들기",
+	"standarddialogs-create-subpage-btn-title": "$1의 하위 문서 만들기"
 }

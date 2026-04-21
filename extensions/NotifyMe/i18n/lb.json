@@ -155,5 +155,10 @@
 	"notifyme-event-page-missing-desc": "''Et gëtt nach keng Beschreiwung fir dëst Evenement''",
 	"notifyme-ui-dialog-popup-table-event-label": "Evenement",
 	"notifyme-ui-dialog-popup-table-desc-label": "Beschreiwung",
-	"notifyme-notification-filter-aria-label": "Notifikatiounsfilter"
+	"notifyme-notification-filter-aria-label": "Notifikatiounsfilter",
+	"notifyme-arbitrary-event-action-message-label": "Message",
+	"notifyme-arbitrary-event-action-event-target-user-label": "Zilbenotzer",
+	"notifyme-arbitrary-event-action-send-as-bot-label": "Als Bot-Benotzer schécken",
+	"notifyme-notification-center-filter-label-source": "Wiki",
+	"notifyme-notification-center-filter-label-source-local": "Dës Wiki"
 }

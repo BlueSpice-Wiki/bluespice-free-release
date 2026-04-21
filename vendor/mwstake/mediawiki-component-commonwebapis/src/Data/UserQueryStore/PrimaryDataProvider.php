@@ -13,6 +13,9 @@ use MWStake\MediaWiki\Component\DataStore\Schema;
 use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use Wikimedia\Rdbms\IDatabase;
 
+/*
+ * @stable to extend
+ */
 class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	/** @var array */
 	private $groupLabels = [];
@@ -343,6 +346,6 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	 */
 	private function getAllowedGroups( array $groups ): array {
 		$allowed = $this->utilityFactory->getGroupHelper()->getAvailableGroups();
-		return array_intersect( $groups, $allowed );
+		return array_values( array_intersect( $groups, $allowed ) );
 	}
 }

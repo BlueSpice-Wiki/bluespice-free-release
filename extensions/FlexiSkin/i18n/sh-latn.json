@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -8,6 +9,6 @@
 	"flexiskin-label": "Izgled",
 	"right-flexiskin-viewspecialpage": "Pregled [[Special:FlexiSkin|posebne stranice]] za prilagođavanje izgleda",
 	"action-flexiskin-viewspecialpage": "pregled [[Special:FlexiSkin|posebne stranice]] za prilagođavanje izgleda",
-	"right-flexiskin-api": "Korištenje priložnikâ u ''Fleksi izgledu''",
-	"action-flexiskin-api": "korištenje priložnikâ u ''Fleksi izgledu''"
+	"right-flexiskin-api": "Korištenje API-ja u ''Fleksi izgledu''",
+	"action-flexiskin-api": "korištenje API-ja u ''Fleksi izgledu''"
 }

@@ -98,5 +98,9 @@
 	"enhancedupload-ve-file-dialog-filename-label": "Label for input to insert file name",
 	"enhancedupload-ve-dialog-title": "Title for dialog to upload and insert file to content",
 	"enhancedupload-ve-dialog-filename-label": "Label for input to insert file name",
-	"enhancedupload-warning-dialog-upload-label": "A warning message that tells how many files are uploaded with a warning\n\nParameters:\n* $1 - number of files"
+	"enhancedupload-warning-dialog-upload-label": "A warning message that tells how many files are uploaded with a warning\n\nParameters:\n* $1 - number of files",
+	"enhancedupload-ve-attachmentinspector-title-label": "Label for input field to set title of attachment section",
+	"enhancedupload-ve-attachmentinspector-title-help": "Help text for input field to set title of attachment section",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Label for input field to set prefix for files",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Help text for input field to set prefix for files"
 }

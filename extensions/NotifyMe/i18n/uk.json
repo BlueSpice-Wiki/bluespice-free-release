@@ -96,7 +96,7 @@
 	"notifyme-schema-source-providers-link": "Посилання на місце, де користувач може змінити налаштування (якщо застосовно)",
 	"notifyme-mail-template-edit-help-colors": "Доступні такі змінні кольорів. Вони будуть автоматично підлаштовані відповідно до кольорів оформлення вікі.",
 	"notifyme-mail-template-edit-help-int": "Повідомлення інтернаціоналізації можна використовувати в контенті через<pre><nowiki> {{int:ключ-повідомлення}}</nowiki></pre>",
-	"notifyme-mail-template-edit-help-logo": "Щоб додати логотип вашої вікі, який встановлено в оформленні, використовуйте<pre>&lt;img src=\"{{logo}}\" alt=\"Логотип вікі\" /&gt;</pre>",
+	"notifyme-mail-template-edit-help-logo": "Щоб додати логотип вашої вікі, який встановлено в оформленні, використовуйте <pre>&lt;img src=\"{{logo}}\" alt=\"Логотип вікі\" /&gt;</pre>",
 	"notifyme-mail-template-edit-help-category-params": "Змінні вмісту",
 	"notifyme-mail-template-edit-help-category-logo": "Логотип",
 	"notifyme-mail-template-edit-help-category-int": "Інтернаціоналізація",

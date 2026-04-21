@@ -2,8 +2,11 @@
 
 namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore;
 
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Language\Language;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\NamespaceInfo;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\PrimaryDatabaseDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
@@ -11,6 +14,9 @@ use MWStake\MediaWiki\Component\DataStore\Schema;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\ResultWrapper;
 
+/*
+ * @stable to extend
+ */
 class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 
 	/** @var Language */
@@ -22,18 +28,27 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	/** @var NamespaceInfo */
 	protected $nsInfo;
 
+	/** @var PermissionManager */
+	protected $permissionManager;
+
 	/**
 	 * @param IDatabase $db
 	 * @param Schema $schema
 	 * @param Language $language
 	 * @param NamespaceInfo $nsInfo
+	 * @param PermissionManager|null $permissionManager
 	 */
 	public function __construct(
-		IDatabase $db, Schema $schema, Language $language, NamespaceInfo $nsInfo
+		IDatabase $db, Schema $schema, Language $language, NamespaceInfo $nsInfo,
+		?PermissionManager $permissionManager = null
 	) {
 		parent::__construct( $db, $schema );
 		$this->language = $language;
 		$this->nsInfo = $nsInfo;
+		$this->permissionManager = $permissionManager;
+		if ( $this->permissionManager === null ) {
+			$this->permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		}
 		$this->contentNamespaces = $nsInfo->getContentNamespaces();
 	}
 
@@ -155,25 +170,31 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			}
 
 			// Apply namespace text filter
-			if ( $filter->getField() === TitleRecord::PAGE_NAMESPACE_TEXT ) {
+			if ( $filter->getField() === TitleRecord::PAGE_NAMESPACE_TEXT && !$filter->isApplied() ) {
 				$filterValue = $filter->getValue();
 
-				$nsIndex = $this->language->getLocalNsIndex( $filterValue );
-				if ( !$nsIndex ) {
-					$nsIndex = $this->nsInfo->getCanonicalIndex( strtolower( $filterValue ) );
+				if ( !is_array( $filterValue ) ) {
+					$filterValue = [ $filterValue ];
 				}
 
-				$filter->setApplied( true );
+				foreach ( $filterValue as $value ) {
+					$nsIndex = $this->language->getLocalNsIndex( $value );
+					if ( !$nsIndex ) {
+						$nsIndex = $this->nsInfo->getCanonicalIndex( strtolower( $value ) );
+					}
 
-				if ( $nsIndex === false ) {
-					continue;
+					$filter->setApplied( true );
+
+					if ( $nsIndex === false ) {
+						continue;
+					}
+
+					$filter = new Filter\StringValue( [
+						Filter::KEY_FIELD => TitleRecord::PAGE_NAMESPACE,
+						Filter::KEY_VALUE => [ (string)$nsIndex ],
+						Filter::KEY_COMPARISON => 'in'
+					] );
 				}
-
-				$filter = new Filter\StringValue( [
-					Filter::KEY_FIELD => TitleRecord::PAGE_NAMESPACE,
-					Filter::KEY_VALUE => [ (string)$nsIndex ],
-					Filter::KEY_COMPARISON => 'in'
-				] );
 
 				$nsFilter = array_merge( $nsFilter, $filter->getValue() );
 			}
@@ -286,6 +307,11 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	 * @return void
 	 */
 	protected function appendRowToData( \stdClass $row ) {
+		$user = RequestContext::getMain()->getUser();
+		if ( !$this->permissionManager->userCan( 'read', $user, Title::newFromRow( $row ) ) ) {
+			return;
+		}
+
 		$this->data[] = new TitleRecord( (object)[
 			TitleRecord::PAGE_ID => (int)$row->mti_page_id,
 			TitleRecord::PAGE_NAMESPACE => (int)$row->page_namespace,

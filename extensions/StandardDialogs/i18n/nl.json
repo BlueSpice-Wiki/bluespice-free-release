@@ -69,5 +69,7 @@
 	"standarddialogs-new-page-btn-label": "Aanmaken",
 	"standarddialogs-new-subpage-btn-label": "Aanmaken",
 	"standarddialogs-protect-btn-label": "Beveiligen",
-	"standarddialogs-purge-btn-label": "Vernieuwen"
+	"standarddialogs-purge-btn-label": "Vernieuwen",
+	"standarddialogs-create-subpage-btn-label": "Subpagina maken",
+	"standarddialogs-create-subpage-btn-title": "Subpagina van $1 maken"
 }

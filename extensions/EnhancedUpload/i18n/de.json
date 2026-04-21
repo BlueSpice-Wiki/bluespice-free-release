@@ -96,5 +96,9 @@
 	"enhancedupload-reset-button-label": "Zurücksetzen",
 	"enhancedupload-ve-file-dialog-title": "Datei",
 	"enhancedupload-ve-file-dialog-filename-label": "Dateiname",
-	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Eine Warnung ist|Warnungen sind}} bei {{PLURAL:$1|dieser hochgeladenenen Datei|diesen hochgeladenenen Dateien}} aufgetreten"
+	"enhancedupload-warning-dialog-upload-label": "{{PLURAL:$1|Eine Warnung ist|Warnungen sind}} bei {{PLURAL:$1|dieser hochgeladenenen Datei|diesen hochgeladenenen Dateien}} aufgetreten",
+	"enhancedupload-ve-attachmentinspector-title-label": "Titel für Anhangsbereich",
+	"enhancedupload-ve-attachmentinspector-title-help": "Titel des Bereichs, in dem die Dateien angezeigt werden",
+	"enhancedupload-ve-attachmentinspector-prefix-label": "Dateipräfix",
+	"enhancedupload-ve-attachmentinspector-prefix-help": "Kennzeichen, das vor dem Dateinamen eingefügt wird"
 }

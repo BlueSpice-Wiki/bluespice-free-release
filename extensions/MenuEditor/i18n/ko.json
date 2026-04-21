@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"YeBoy371",
 			"Ykhwong"
 		]
 	},
@@ -25,5 +26,8 @@
 	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "키워드 편집",
 	"menueditor-ui-mediawiki-sidebar-keyword-label": "키워드",
 	"menueditor-toolbar-cancel": "편집 취소",
-	"menueditor-toolbar-save": "저장"
+	"menueditor-toolbar-save": "저장",
+	"menueditor-ui-form-field-target": "링크 대상",
+	"menueditor-ui-form-field-label": "링크 레이블",
+	"menueditor-ui-edit-label": "편집"
 }

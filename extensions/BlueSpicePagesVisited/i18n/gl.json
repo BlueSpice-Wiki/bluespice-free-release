@@ -28,5 +28,9 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Nome da páxina",
 	"bs-pagesvisited-droplet-name": "Páxinas visitadas",
 	"bs-pagesvisited-droplet-description": "Lista das páxinas visitadas",
-	"bs-pagesvisited-label-anon-user": "Para ver as páxinas que visitaches, inicia sesión na túa conta"
+	"bs-pagesvisited-label-anon-user": "Para ver as páxinas que visitaches, inicia sesión na túa conta",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Número de resultados mostrados",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Lonxitude máxima dos títulos das páxinas",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Ordenar por",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Filtrar por espazos de nomes"
 }

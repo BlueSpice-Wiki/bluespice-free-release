@@ -3,10 +3,13 @@
 		"authors": [
 			"Josve05a",
 			"Lokal Profil",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
 	"bs-hidetitle-desc": "Lägger till det magiska ordet <code><nowiki>__HIDETITLE__</nowiki></code> vilket döljer sidans titel",
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Visa",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Dölj"
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Dölj",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Rubrikens synlighet",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Här kan du ange om rubriken ska visas eller inte."
 }

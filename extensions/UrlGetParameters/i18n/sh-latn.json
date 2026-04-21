@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Aca"
 		]
 	},
-	"urlgetparameters-desc": "Omogućuje korištenje i/ili prikaz parametara \"GET\" URL-adrese na wiki-stranici"
+	"urlgetparameters-desc": "Omogućuje korištenje i/ili prikaz parametara \"GET\" URL-a na wiki-stranici"
 }

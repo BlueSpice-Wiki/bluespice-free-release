@@ -30,5 +30,8 @@
 	"bs-watchlist-tag-watchlist-no-entries": "监视列表中显示的页面没有变化",
 	"bs-watchlist-tag-watchlist-attr-time-help": "时间帮助",
 	"bs-watchlist-droplet-description": "包含在监视列表中页面的最新更改",
-	"bs-watchlist-usersidebar-title": "监视列表"
+	"bs-watchlist-usersidebar-title": "监视列表",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "显示的页数",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "页面标题的最大长度",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "排序方式"
 }

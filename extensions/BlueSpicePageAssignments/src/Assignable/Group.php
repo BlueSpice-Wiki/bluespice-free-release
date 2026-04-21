@@ -12,10 +12,12 @@ class Group extends \BlueSpice\PageAssignments\Assignable {
 	 * @return Store
 	 */
 	public function getStore() {
+		$services = MediaWikiServices::getInstance();
 		return new Store(
-			MediaWikiServices::getInstance()->getService( 'MWStakeCommonUtilsFactory' ),
-			MediaWikiServices::getInstance()->getService( 'MWStakeCommonUtilsConfig' ),
-			$this->context->getTitle()
+			$services->getService( 'MWStakeCommonUtilsFactory' ),
+			$services->getService( 'MWStakeCommonUtilsConfig' ),
+			$this->context->getTitle(),
+			$services->getHookContainer()
 		);
 	}
 

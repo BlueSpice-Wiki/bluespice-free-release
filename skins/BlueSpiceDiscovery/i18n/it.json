@@ -3,7 +3,9 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"Daimona Eaytoy",
 			"Emabarto01",
+			"FL2226",
 			"GpieroMW"
 		]
 	},
@@ -119,5 +121,8 @@
 	"bs-discovery-back-to-version-history": "Torna alla cronologia delle versioni",
 	"bs-discovery-back-to-version-history-title": "Torna alla cronologia delle versioni della pagina $1",
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Navigazione principale",
-	"bs-discovery-tools-after-content-cnt-aria-label": "Informazioni aggiuntive sulla pagina"
+	"bs-discovery-tools-after-content-cnt-aria-label": "Informazioni aggiuntive sulla pagina",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Modifica",
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Pulisci",
+	"bs-discovery-breadcrumb-nav-root-node-title": "Mostra tutte le pagine nel namespace $1"
 }

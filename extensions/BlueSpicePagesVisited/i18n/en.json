@@ -27,5 +27,9 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "Pagename",
 	"bs-pagesvisited-droplet-name": "Visited pages",
 	"bs-pagesvisited-droplet-description": "List with visited pages",
-	"bs-pagesvisited-label-anon-user": "To see pages you have visited, please log in to your account"
+	"bs-pagesvisited-label-anon-user": "To see pages you have visited, please log in to your account",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "Number of shown results",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "Maximum length of page titles",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Sort by",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "Filter by namespaces"
 }

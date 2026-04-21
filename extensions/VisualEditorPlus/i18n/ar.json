@@ -4,5 +4,12 @@
 			"Meno25"
 		]
 	},
-	"visualeditorplus-desc": "يضيف وظائف مختلفة إلى المحرر المرئي"
+	"visualeditorplus-desc": "يضيف وظائف مختلفة إلى المحرر المرئي",
+	"visualeditorplus-table-contextitemwidget-label-remove": "إزالة الجدول",
+	"visualeditorplus-table-contextitem-properties-label": "خصائص الجدول",
+	"visualeditorplus-table-contextitem-additional-options-label": "خيارات إضافية للخلايا",
+	"visualeditorplus-table-cell-actions-dialog-title": "خيارات الخلية",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "منتهي",
+	"visualeditorplus-ui-label-unwrap": "إزالة (الاحتفاظ بالمحتوى)",
+	"visualeditorplus-ui-label-delete": "يزيل"
 }

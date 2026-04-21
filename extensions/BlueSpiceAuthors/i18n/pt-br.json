@@ -16,5 +16,7 @@
 	"bs-authors-navigation-link-title": "Autores desta página",
 	"bs-authors-navigation-link-text": "Autores",
 	"apihelp-bs-pageauthors-store-summary": "Listar todos os autores de uma página fornecida no contexto",
-	"bs-authors-info-dialog": "Autores desta página"
+	"bs-authors-info-dialog": "Autores desta página",
+	"bs-authors-info-dialog-grid-column-author": "Autor",
+	"bs-authors-info-dialog-grid-column-type": "Tipo de autor"
 }

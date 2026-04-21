@@ -4,5 +4,7 @@
 			"Ucukor"
 		]
 	},
-	"menueditor-action-menueditsource": "Рэдагаваць код"
+	"menueditor-action-menueditsource": "Рэдагаваць код",
+	"menueditor-action-menuedit": "Рэдагаваць",
+	"menueditor-ui-edit-label": "Рэдагаваць"
 }

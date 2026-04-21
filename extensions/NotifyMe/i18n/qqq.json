@@ -3,10 +3,11 @@
 		"authors": [
 			"Amire80",
 			"McDutchie",
+			"Umherirrender",
 			"[http://www.hallowelt.com Hallo Welt! GmbH]"
 		]
 	},
-	"notifyme-desc": "Description of Notifications for [[Special:Version]]",
+	"notifyme-desc": "{{desc|name=NotifyMe|url=https://www.mediawiki.org/wiki/Extension:NotifyMe}}",
 	"prefs-notifications": "Used in [{{canonicalurl:Special:Preferences}} Special:Preferences], headline for notify me section in preferences.",
 	"notifyme-subscriber-provider-preferences-desc": "Description for preferences related to subscribers in the notification system.",
 	"notifyme-link-label-view-page": "Label for a link that directs users to view a specific page.",
@@ -213,5 +214,14 @@
 	"prefs-subs": "Header label for subscription section on [[Special:Preferences]]",
 	"notifyme-notification-filter-count-aria-label": "Aria label for filter batch text to display number of notifications in filter option\n\n$1 - notifications count",
 	"notifyme-notification-filter-aria-label": "Aria label for select widget to filter notifications",
-	"notifyme-notification-center-pagination-number-aria-label": "Aria label to indicate which notifications are shown\nParameters:\n* $1 - number of first shown notification\n* $2 - number of last shown notification"
+	"notifyme-notification-center-pagination-number-aria-label": "Aria label to indicate which notifications are shown\nParameters:\n* $1 - number of first shown notification\n* $2 - number of last shown notification",
+	"notifyme-automation-arbitrary-notification-action": "Wiki automation integration action name",
+	"notifyme-automation-arbitrary-title-notification-action": "Wiki automation integration action name",
+	"notifyme-arbitrary-event-action-message-label": "Field label",
+	"notifyme-arbitrary-event-action-event-target-user-label": "Field label",
+	"notifyme-arbitrary-event-action-send-as-bot-label": "Field label",
+	"notifyme-notification-center-filter-label-source": "Filter bucket label for selection of which wiki to show notifications from",
+	"notifyme-notification-center-filter-label-source-local": "Filter bucket option label that shows notifications from the local wiki only",
+	"notifyme-arbitrary-event-default-subject": "Label/subject for arbitrary notification when no subject is provided",
+	"notifyme-arbitrary-event-action-subject-label": "Field label"
 }

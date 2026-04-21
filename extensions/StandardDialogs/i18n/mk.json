@@ -65,5 +65,7 @@
 	"standarddialogs-new-page-btn-label": "Создај",
 	"standarddialogs-new-subpage-btn-label": "Создај",
 	"standarddialogs-protect-btn-label": "Заштити",
-	"standarddialogs-purge-btn-label": "Превчитај"
+	"standarddialogs-purge-btn-label": "Превчитај",
+	"standarddialogs-create-subpage-btn-label": "Создај потстраница",
+	"standarddialogs-create-subpage-btn-title": "Создај потстраница на $1"
 }
