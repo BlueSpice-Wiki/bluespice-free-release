@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong",
 			"Yunbj"
 		]
@@ -68,5 +69,14 @@
 	"bs-vec-insert-softhyphen-title": "소프트 하이픈",
 	"bs-visualeditor-save-label": "저장",
 	"bs-visualeditorconnector-dialog-table-title": "표",
-	"bs-visualeditorconnector-dialog-action-insert": "넣기"
+	"bs-visualeditorconnector-dialog-action-insert": "넣기",
+	"bs-visualeditorconnector-upload-type-original": "원본",
+	"bs-visualeditorconnector-upload-type-simple": "간단",
+	"bs-visualeditorconnector-upload-type": "업로드 유형",
+	"bs-vec-table-border-solid": "실선",
+	"bs-vec-table-border-dashed": "파선",
+	"bs-vec-insert-line-break-title": "줄바꿈 (<br />)",
+	"bs-visualeditorconnector-text-style-tool-align-center-label": "가운데 정렬",
+	"bs-visualeditorconnector-text-style-indent-label": "들여쓰기",
+	"bs-visualeditor-request-entity-too-large": "파일 크기가 너무 커서 업로드할 수 없습니다."
 }

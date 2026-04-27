@@ -5,9 +5,12 @@
 			"Ykhwong"
 		]
 	},
-	"visualeditorplus-desc": "시각 편집기에 다양한 기능을 추가합니다",
+	"visualeditorplus-desc": "시각편집기에 다양한 기능을 추가합니다",
 	"visualeditorplus-table-cell-actions-dialog-title": "셀 옵션",
 	"visualeditorplus-table-cell-actions-dialog-done-label": "완료",
 	"visualeditorplus-ui-label-unwrap": "제거 (내용은 유지)",
-	"visualeditorplus-ui-label-delete": "제거"
+	"visualeditorplus-ui-label-delete": "제거",
+	"visualeditorplus-table-contextitemwidget-label-remove": "표 제거",
+	"visualeditorplus-table-contextitem-properties-label": "표 속성",
+	"visualeditorplus-table-contextitem-additional-options-label": "추가 셀 옵션"
 }

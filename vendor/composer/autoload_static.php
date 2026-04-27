@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
+class ComposerStaticInitd9124a0fe8690d554c69e061e4ae634e
 {
     public static $files = array (
         'ef0a3cc8d59aacc0241af9c20bb29c47' => __DIR__ . '/..' . '/mwstake/mediawiki-componentloader/bootstrap.php',
@@ -3466,6 +3466,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'Wikimedia\\AtEase\\AtEase' => __DIR__ . '/..' . '/wikimedia/at-ease/src/AtEase.php',
         'Wikimedia\\Bcp47Code\\Bcp47Code' => __DIR__ . '/..' . '/wikimedia/bcp-47-code/src/Bcp47Code.php',
         'Wikimedia\\Bcp47Code\\Bcp47CodeValue' => __DIR__ . '/..' . '/wikimedia/bcp-47-code/src/Bcp47CodeValue.php',
+        'Wikimedia\\CSS\\Exception\\ParseException' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Exception/ParseException.php',
         'Wikimedia\\CSS\\Grammar\\Alternative' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Grammar/Alternative.php',
         'Wikimedia\\CSS\\Grammar\\AnythingMatcher' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Grammar/AnythingMatcher.php',
         'Wikimedia\\CSS\\Grammar\\BlockMatcher' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Grammar/BlockMatcher.php',
@@ -3511,6 +3512,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'Wikimedia\\CSS\\Parser\\StringDataSource' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Parser/StringDataSource.php',
         'Wikimedia\\CSS\\Parser\\TokenListTokenizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Parser/TokenListTokenizer.php',
         'Wikimedia\\CSS\\Parser\\Tokenizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Parser/Tokenizer.php',
+        'Wikimedia\\CSS\\Sanitizer\\CounterStyleAtRuleSanitizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Sanitizer/CounterStyleAtRuleSanitizer.php',
         'Wikimedia\\CSS\\Sanitizer\\FontFaceAtRuleSanitizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Sanitizer/FontFaceAtRuleSanitizer.php',
         'Wikimedia\\CSS\\Sanitizer\\ImportAtRuleSanitizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Sanitizer/ImportAtRuleSanitizer.php',
         'Wikimedia\\CSS\\Sanitizer\\KeyframesAtRuleSanitizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Sanitizer/KeyframesAtRuleSanitizer.php',
@@ -4563,11 +4565,11 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd9124a0fe8690d554c69e061e4ae634e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd9124a0fe8690d554c69e061e4ae634e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitd9124a0fe8690d554c69e061e4ae634e::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInitd9124a0fe8690d554c69e061e4ae634e::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInitd9124a0fe8690d554c69e061e4ae634e::$classMap;
 
         }, null, ClassLoader::class);
     }
