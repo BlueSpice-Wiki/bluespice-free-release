@@ -4,13 +4,13 @@ namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore;
 
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Language\Language;
-use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\NamespaceInfo;
-use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\PrimaryDatabaseDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\Schema;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\ResultWrapper;
 
@@ -28,28 +28,27 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	/** @var NamespaceInfo */
 	protected $nsInfo;
 
-	/** @var PermissionManager */
-	protected $permissionManager;
+	/** @var UtilityFactory */
+	protected $utilityFactory;
 
 	/**
 	 * @param IDatabase $db
 	 * @param Schema $schema
 	 * @param Language $language
 	 * @param NamespaceInfo $nsInfo
-	 * @param PermissionManager|null $permissionManager
+	 * @param UtilityFactory|null $utilityFactory
 	 */
 	public function __construct(
-		IDatabase $db, Schema $schema, Language $language, NamespaceInfo $nsInfo,
-		?PermissionManager $permissionManager = null
+		IDatabase $db, Schema $schema, Language $language, NamespaceInfo $nsInfo, ?UtilityFactory $utilityFactory = null
 	) {
 		parent::__construct( $db, $schema );
 		$this->language = $language;
 		$this->nsInfo = $nsInfo;
-		$this->permissionManager = $permissionManager;
-		if ( $this->permissionManager === null ) {
-			$this->permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
-		}
 		$this->contentNamespaces = $nsInfo->getContentNamespaces();
+		if ( !$utilityFactory ) {
+			$utilityFactory = MediaWikiServices::getInstance()->getService( 'MWStakeCommonUtilsFactory' );
+		}
+		$this->utilityFactory = $utilityFactory;
 	}
 
 	/**
@@ -66,6 +65,7 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			$this->makePreOptionConds( $params ),
 			$this->getJoinConds( $params )
 		);
+
 		if ( $params->getQuery() !== '' ) {
 			$res = $this->rerank( $params->getQuery(), $res );
 		}
@@ -217,6 +217,10 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 				$filter->setApplied( true );
 				$conds[] = 'page_content_model IN (' . $this->db->makeList( $filter->getValue() ) . ')';
 			}
+			if ( $filter->getField() === 'sortkey' ) {
+				$filter->setApplied( true );
+				$conds['mti_first_letter'] = $filter->getValue();
+			}
 		}
 
 		// Check for namespace text filter in query
@@ -237,11 +241,39 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			$conds[] = $this->processQuery( $query );
 		}
 
+		$restrictedNamespaces = $this->utilityFactory->getReadableNamespacesHelper()->getRestrictedNamespaces(
+			RequestContext::getMain()->getUser()
+		);
+
 		if ( !empty( $nsFilter ) ) {
-			$conds[] = 'mti_namespace IN (' . $this->db->makeList( $nsFilter ) . ')';
+			$nsFilter = array_diff( $nsFilter, $restrictedNamespaces );
+			if ( !empty( $nsFilter ) ) {
+				$conds[] = 'mti_namespace IN (' . $this->db->makeList( $nsFilter ) . ')';
+			}
+		} elseif ( !empty( $restrictedNamespaces ) ) {
+			$conds[] = 'mti_namespace NOT IN (' . $this->db->makeList( $restrictedNamespaces ) . ')';
 		}
 
 		return $conds;
+	}
+
+	/**
+	 * @param ReaderParams $params
+	 * @return array
+	 */
+	protected function makePreOptionConds( ReaderParams $params ) {
+		$options = parent::makePreOptionConds( $params );
+		foreach ( $params->getSort() as $sort ) {
+			if ( $sort->getProperty() === 'sortkey' ) {
+				if ( !isset( $options['ORDER BY'] ) ) {
+					$options['ORDER BY'] = "";
+				} else {
+					$options['ORDER BY'] .= ",";
+				}
+				$options['ORDER BY'] = 'mti_first_letter ' . $sort->getDirection();
+			}
+		}
+		return $options;
 	}
 
 	/**
@@ -287,7 +319,7 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	protected function getFields() {
 		return [
 			'mti_page_id', 'mti_title', 'mti_displaytitle', 'mti_leaf_title', 'page_namespace', 'page_title',
-			'page_content_model', 'page_lang'
+			'page_content_model', 'page_lang', 'mti_first_letter'
 		];
 	}
 
@@ -307,11 +339,6 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	 * @return void
 	 */
 	protected function appendRowToData( \stdClass $row ) {
-		$user = RequestContext::getMain()->getUser();
-		if ( !$this->permissionManager->userCan( 'read', $user, Title::newFromRow( $row ) ) ) {
-			return;
-		}
-
 		$this->data[] = new TitleRecord( (object)[
 			TitleRecord::PAGE_ID => (int)$row->mti_page_id,
 			TitleRecord::PAGE_NAMESPACE => (int)$row->page_namespace,
@@ -323,7 +350,8 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 			TitleRecord::PAGE_EXISTS => true,
 			TitleRecord::LEAF_TITLE => '',
 			TitleRecord::BASE_TITLE => '',
-			'_score' => $row->_score ?? 0
+			'_score' => $row->_score ?? 0,
+			TitleRecord::SORTKEY => $row->mti_first_letter
 		] );
 	}
 

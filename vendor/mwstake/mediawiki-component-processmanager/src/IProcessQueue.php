@@ -58,7 +58,15 @@ interface IProcessQueue {
 	public function recordFinish( string $pid, int $exitCode, string $exitStatus = '', array $data = [] ): bool;
 
 	/**
-	 * @return ProcessInfo[]
+	 * @param string $runnerUUID
+	 * @return ProcessInfo|null Returns null if no process in the queue
 	 */
-	public function getEnqueuedProcesses(): array;
+	public function pluckOneFromQueue( string $runnerUUID ): ?ProcessInfo;
+
+	/**
+	 * @param IProcessManagerPlugin $plugin
+	 * @param string $requester
+	 * @return bool
+	 */
+	public function claimPlugin( IProcessManagerPlugin $plugin, string $requester ): bool;
 }

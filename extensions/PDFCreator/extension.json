@@ -1,6 +1,6 @@
 {
 	"name": "PDFCreator",
-	"version": "1.1.7",
+	"version": "1.1.8",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Daniel Vogel",
@@ -13,7 +13,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.43.0",
 		"extensions": {
-			"OOJSPlus": ">= 3.0.0"
+			"OOJSPlus": ">= 3.0.0",
+			"VueJsPlus": "*"
 		}
 	},
 	"attributes": {

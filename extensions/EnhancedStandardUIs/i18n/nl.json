@@ -88,5 +88,14 @@
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Kies weergavemodus",
 	"enhanced-standard-uis-paginator-page-aria-label": "Pagina $1",
 	"enhanced-standard-uis-allpages-section-heading-aria-label": "Pagina’s die met $1 beginnen",
-	"enhanced-standard-uis-filelist-panel-search-aria-label": "Zoeken naar bestand"
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Zoeken naar bestand",
+	"enhanced-standard-uis-allpages-create-new-page-title": "Nieuwe pagina maken",
+	"enhanced-standard-uis-allpages-create-new-page-aria-label": "Nieuwe pagina maken",
+	"enhanced-standard-uis-filelist-upload-new-file-title": "Nieuw bestand uploaden",
+	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Nieuw bestand uploaden",
+	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "Alle pagina's in de naamruimte",
+	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Alfabetische pagina-index",
+	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "Resultaten $1 van ~ $2 {{PLURAL:$2|pagina|pagina's}}",
+	"enhanced-standard-uis-allpages-panel-counter-label": "Resultaten $1 van $2 {{PLURAL:$2|pagina|pagina's}}",
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Meer pagina's laden"
 }

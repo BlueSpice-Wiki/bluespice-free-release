@@ -2,7 +2,7 @@
 
 namespace MWStake\MediaWiki\Component\DataStore;
 
-abstract class Filter {
+abstract class Filter implements \JsonSerializable {
 	public const COMPARISON_EQUALS = 'eq';
 	public const COMPARISON_NOT_EQUALS = 'neq';
 
@@ -170,4 +170,15 @@ abstract class Filter {
 	 * @return bool
 	 */
 	abstract protected function doesMatch( $dataSet );
+
+	/**
+	 * @return mixed
+	 */
+	public function jsonSerialize(): mixed {
+		return [
+			static::KEY_FIELD => $this->getField(),
+			static::KEY_VALUE => $this->getValue(),
+			static::KEY_COMPARISON => $this->getComparison()
+		];
+	}
 }

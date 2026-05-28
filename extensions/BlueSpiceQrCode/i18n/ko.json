@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong",
 			"아라"
 		]
@@ -10,13 +11,28 @@
 	"bs-qr-code-action-qr-code-text": "QR코드",
 	"bs-qr-code-action-qr-code-dialog-title": "QR코드",
 	"bs-qr-code-action-qr-code-dialog-alt": "$1의 QR코드",
-	"bs-qr-code-api-no-page": "'page' 변수가 비었습니다",
+	"bs-qr-code-api-no-page": "'page' 매개변수가 비었습니다",
 	"apihelp-bs-qr-code-param-size": "QR코드의 크기",
 	"apihelp-bs-qr-code-example-bs-qr-code": "기본 API 호출",
 	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "사용자 지정 크기의 API 호출",
 	"bs-qr-code-alt-text": "$1의 QR코드",
-	"bs-qr-code-tag-qrcode-desc": "위키문서에 링크된 QR코드를 삽입합니다",
+	"bs-qr-code-tag-qrcode-desc": "위키페이지에 링크된 QR코드를 삽입합니다",
 	"bs-qr-code-tag-qrcode-title": "QR코드",
 	"bs-qr-code-droplet-name": "QR코드",
-	"bs-qr-code-droplet-desc": "위키문서에 QR코드를 삽입합니다"
+	"bs-qr-code-droplet-desc": "위키페이지에 QR코드를 삽입합니다",
+	"bs-qr-code-tag-attr-page-label": "문서",
+	"bs-qr-code-tag-attr-query-label": "매개변수",
+	"bs-qr-code-tag-attr-desc-label": "설명",
+	"bs-qr-code-tag-attr-size-label": "크기",
+	"bs-qr-code-tag-attr-size-help": "삽입된 QR 코드의 크기를 변경합니다",
+	"bs-qr-code-tag-attr-size-option-small": "작음",
+	"bs-qr-code-tag-attr-size-option-medium": "중간",
+	"bs-qr-code-tag-attr-size-option-large": "큼",
+	"apihelp-bs-qr-code-summary": "문서의 QR 코드를 base64 데이터 URI로 가져옵니다",
+	"apihelp-bs-qr-code-param-revid": "영구 링크를 생성할 문서의 판 ID입니다",
+	"apihelp-bs-qr-code-param-page": "base64 데이터 URI를 생성할 문서의 이름",
+	"bs-qr-code-tag-attr-page-help": "QR 코드 링크에 포함될 문서 이름입니다. 현재 문서 이름을 사용하려면 이 필드를 비워 두세요.",
+	"bs-qr-code-tag-attr-query-help": "QR 코드 URL에 추가될 매개변수입니다. 예를 들어 \"action=edit\" 또는 \"oldid=1\"과 같은 매개변수가 포함됩니다.",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "특정 revid에 대한 API 호출",
+	"bs-qr-code-tag-attr-desc-help": "QR 코드와 관련된 설명입니다. QR 코드만 표시하려면 이 필드를 비워 두세요"
 }

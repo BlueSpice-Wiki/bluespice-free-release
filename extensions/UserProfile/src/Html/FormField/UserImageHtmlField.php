@@ -19,13 +19,12 @@ class UserImageHtmlField extends HTMLFormField {
 		$this->mParent->getOutput()->addModules( [ 'ext.userProfile.profileImage.pref' ] );
 		/** @var DynamicFileDispatcherFactory $dfdFactory */
 		$dfdFactory = MediaWikiServices::getInstance()->getService( 'MWStake.DynamicFileDispatcher.Factory' );
-		$url = $dfdFactory->getUrl( 'userprofileimage', [
-			'width' => 128,
-			'height' => 128,
-		] );
+		$url = $dfdFactory->getUrl( 'userprofileimage', [] );
 		$img = Html::element( 'img', [
 			'src' => $url,
-			'alt' => 'userprofile-profile-image-alt'
+			'alt' => 'userprofile-profile-image-alt',
+			'width' => 128,
+			'height' => 128,
 		] );
 		$button = new ButtonInputWidget( [
 			'label' => $this->msg( 'userprofile-changeuserimage-title' )->plain(),

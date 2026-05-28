@@ -30,18 +30,16 @@ class Store implements IStore {
 	 * @param Language $language
 	 * @param NamespaceInfo $nsInfo
 	 * @param PageProps $pageProps
-	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct(
 		ILoadBalancer $lb, TitleFactory $titleFactory, Language $language,
-		NamespaceInfo $nsInfo, PageProps $pageProps, PermissionManager $permissionManager
+		NamespaceInfo $nsInfo, PageProps $pageProps
 	) {
 		$this->lb = $lb;
 		$this->titleFactory = $titleFactory;
 		$this->language = $language;
 		$this->nsInfo = $nsInfo;
 		$this->pageProps = $pageProps;
-		$this->permissionManager = $permissionManager;
 	}
 
 	/**

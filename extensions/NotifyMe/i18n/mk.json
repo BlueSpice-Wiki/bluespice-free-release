@@ -217,5 +217,8 @@
 	"notifyme-notification-center-filter-label-source": "Вики",
 	"notifyme-notification-center-filter-label-source-local": "Ова вики",
 	"notifyme-arbitrary-event-default-subject": "Автоматско известување",
-	"notifyme-arbitrary-event-action-subject-label": "Тема на известувањето"
+	"notifyme-arbitrary-event-action-subject-label": "Тема на известувањето",
+	"notifyme-arbitrary-event-action-subject-help": "Ќе се користи како наслов на известувањето по е-пошта. Вредноста може да биде прост текст или клуч на порака",
+	"notifyme-arbitrary-event-action-message-help": "Вредноста може да биде прост текст или клуч на порака",
+	"notifyme-arbitrary-event-action-with-title-message-help": "Вредноста може да биде прост текст или клуч за порака. Насловната котва на релевантата страница се дава како прв параметар. Пример: Страницата $1 беше уредена, ќе гласи Страницата <a href=\"...\">Моја страница</a> беше уредена, што ќе биде соодветно расчленето кога се испишува известувањето за приказ на врска до страницата. Ако е укажан клуч на пораката, се очекува дека тој ќе ракува со параметарот $1."
 }

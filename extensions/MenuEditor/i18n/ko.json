@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bisang",
+			"Tensama0415",
 			"YeBoy371",
-			"Ykhwong"
+			"Ykhwong",
+			"解浪"
 		]
 	},
 	"menueditor-ui-menu-wiki-link-label": "위키 링크",
@@ -29,5 +32,16 @@
 	"menueditor-toolbar-save": "저장",
 	"menueditor-ui-form-field-target": "링크 대상",
 	"menueditor-ui-form-field-label": "링크 레이블",
-	"menueditor-ui-edit-label": "편집"
+	"menueditor-ui-edit-label": "편집",
+	"menueditor-ui-node-type-selector-label": "노드 유형",
+	"menueditor-toolbar-add-label": "요소 추가",
+	"menueditor-ui-add-sub-element-label": "하위 요소 추가",
+	"menueditor-desc": "메뉴 페이지용 그래픽 편집기",
+	"menueditor-ui-menu-two-fold-link-spec-help": "링크 사양입니다.<br>목표는 다음이 될 수 있습니다:<ul><li>pagename으로 해석되는 메시지 키</li><li>외부 링크</li><li>위키에서의 문서 이름</li><li>인터위키 링크</li></ul>",
+	"menueditor-ui-menu-keyword-help": "사용 가능한 '''키워드'''' 중 하나를 선택하면 적절한 위젯이 표시됩니다.",
+	"menueditor-ui-redlink-notice": "이 메뉴는 아직 존재하지 않습니다!",
+	"menueditor-footerlinks-banner-text": "일부 링크는 확장 기능에 의해 자동으로 추가될 수 있습니다. 자세한 내용은 확장 기능 설정을 확인하세요.",
+	"menueditor-ui-cancel-confirmation": "편집을 취소하시겠습니까? 변경사항이 사라집니다.",
+	"menueditor-ui-notices": "알림",
+	"menueditor-ui-oldrevision-notice": "이 문서의 오래된 판을 편집하고 있습니다. 저장하면 이 판 이후의 변경된 사항은 사라집니다."
 }

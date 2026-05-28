@@ -38,7 +38,14 @@ class ProgressHandler extends Handler {
 			$iBase = $iBaseCount;
 		}
 
-		$fPercent = $iFraction / $iBase;
+		if ( $iBase === 0 ) {
+			$fPercent = 0;
+		} else {
+			$fPercent = $iFraction / $iBase;
+			if ( $fPercent < 0 ) {
+				$fPercent = 0;
+			}
+		}
 
 		$iWidthGreen = floor( $iWidth * $fPercent );
 		$iWidthRemain = $iWidth - $iWidthGreen;

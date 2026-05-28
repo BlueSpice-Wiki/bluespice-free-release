@@ -9,8 +9,8 @@
 		]
 	},
 	"bs-interwikilinks-desc": "Beheerinterface voor het toevoegen, bewerken en verwijderen van interwiki-koppelingen",
-	"bs-interwikilinks-invalid-pfx-spc": "Het voorvoegsel is ongeldig. Gebruik geen spaties.",
-	"bs-interwikilinks-invalid-url-spc": "De URL is ongeldig. Gebruik geen spaties.",
+	"bs-interwikilinks-invalid-pfx-spc": "Het voorvoegsel is onjuist. Gebruik geen spaties.",
+	"bs-interwikilinks-invalid-url-spc": "De URL is onjuist. Gebruik geen spaties.",
 	"bs-interwikilinks-label": "Interwikilinks",
 	"bs-interwikilinks-link-created": "De interwikikoppeling is aangemaakt.",
 	"bs-interwikilinks-link-added": "De interwikikoppeling is toegevoegd.",

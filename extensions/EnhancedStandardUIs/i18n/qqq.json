@@ -87,5 +87,14 @@
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Aria label for button select widget to select view mode of files",
 	"enhanced-standard-uis-paginator-page-aria-label": "Aria label for page buttons in paginator.\nParameters:\n* $1 - number of page",
 	"enhanced-standard-uis-allpages-section-heading-aria-label": "Aria label for section headings on Special:Pages.\nParameters:\n* $1 - index letter",
-	"enhanced-standard-uis-filelist-panel-search-aria-label": "Label for search input field"
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Label for search input field",
+	"enhanced-standard-uis-allpages-create-new-page-title": "Title for button to create a new page",
+	"enhanced-standard-uis-allpages-create-new-page-aria-label": "Aria label for button to create a new page",
+	"enhanced-standard-uis-filelist-upload-new-file-title": "Title for button to upload a new file",
+	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Aria label for button to upload a new file",
+	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "Button label to remove sortkey filter",
+	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Aria label for a pager that filters pages by their sortkey. A-Z, 0-9 in latin languages",
+	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "Label to show number of pages approximately shown\nParameters:\n* $1 - number of pages\n* $2 - total number of pages",
+	"enhanced-standard-uis-allpages-panel-counter-label": "Label to show number of pages shown\nParameters:\n* $1 - number of pages\n* $2 - total number of pages",
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Label for button to load more pages in allpages panel"
 }

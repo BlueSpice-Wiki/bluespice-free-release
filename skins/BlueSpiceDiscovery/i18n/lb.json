@@ -25,7 +25,7 @@
 	"bs-discovery-create-button-new-section-text": "Neien Abschnitt",
 	"bs-discovery-create-button-new-section-title": "En neien Abschnitt uleeën",
 	"bs-discovery-create-button-new-file-text": "Neie Fichier",
-	"bs-discovery-create-button-new-file-title": "En Neie Fichier eroplueden",
+	"bs-discovery-create-button-new-file-title": "En neie Fichier eroplueden",
 	"bs-discovery-navbar-global-actions-button-title": "Global Aktiounen",
 	"bs-discovery-navbar-global-actions-button-aria-label": "Global Aktiounen",
 	"bs-discovery-navbar-global-actions-overview-text": "Iwwersiicht",
@@ -110,5 +110,12 @@
 	"bs-discovery-skip-links-nav-aria-label": "Linken iwwersprangen",
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Haaptnavigatioun",
 	"bs-discovery-tools-after-content-cnt-aria-label": "Zousätzlech Säiteninformatiounen",
-	"bs-discovery-breadcrumb-nav-root-node-title": "All d'Säiten am Nummraum $1 weisen"
+	"bs-discovery-breadcrumb-nav-root-node-title": "All d'Säiten am Nummraum $1 weisen",
+	"bs-discovery-personalurl-blog-text": "Blog",
+	"bs-discovery-menu-provider-namespace-tree-label": "All Säiten",
+	"bs-discovery-menu-provider-namespace-tree-desc": "All Säiten am aktuellen Nummraum als Bam",
+	"bs-discovery-namespace-tree-pnl-header-text": "Säiten",
+	"bs-discovery-namespace-tree-search-btn-label": "Sich weisen",
+	"bs-discovery-namespace-tree-create-btn-label": "Eng nei Säit uleeën",
+	"bs-discovery-namespace-tree-search-label": "No enger Säit sichen"
 }

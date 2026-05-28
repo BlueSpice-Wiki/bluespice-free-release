@@ -37,5 +37,7 @@
 	"menueditor-ui-add-sub-element-label": "Unterpunkt hinzufügen",
 	"menueditor-footerlinks-banner-text": "Einige Links können von Erweiterungen automatisch hinzugefügt werden. Bitte überprüfe die Konfiguration der Erweiterung, um mehr zu erfahren.",
 	"menueditor-toolbar-save": "Speichern",
-	"menueditor-ui-cancel-confirmation": "Bist du sicher, dass du die Bearbeitung abbrechen willst? Alle ungespeicherten Änderungen gehen verloren."
+	"menueditor-ui-cancel-confirmation": "Bist du sicher, dass du die Bearbeitung abbrechen willst? Alle ungespeicherten Änderungen gehen verloren.",
+	"menueditor-ui-notices": "Hinweise",
+	"menueditor-ui-oldrevision-notice": "{{#FORMAL:Du bearbeitest|Sie bearbeiten}} eine alte Version dieser Seite. Wenn {{#FORMAL:du speicherst|Sie speichern}}, gehen alle Änderungen seit dieser Version verloren."
 }

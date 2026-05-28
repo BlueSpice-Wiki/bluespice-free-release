@@ -50,6 +50,9 @@ class MailContentProvider {
 	/** @var RepoGroup */
 	private $repoGroup;
 
+	/** @var array */
+	private $images = [];
+
 	/**
 	 * @param ILoadBalancer $lb
 	 * @param TitleFactory $titleFactory
@@ -88,12 +91,24 @@ class MailContentProvider {
 	 * @throws Exception
 	 */
 	public function getFinalEmailHtml( string $type, array $serialized, User $user ): string {
+		$this->clearImages();
 		$content = $this->getContentForType( $type );
 		if ( !$content ) {
 			throw new Exception( 'No content found for notification type: ' . $type );
 		}
 		$content = $this->getHtmlFromData( $content, $user, $serialized );
 		return $this->wrap( $content, $user );
+	}
+
+	/**
+	 * @return array<string,mixed>
+	 */
+	public function getImages(): array {
+		return $this->images;
+	}
+
+	public function clearImages() {
+		$this->images = [];
 	}
 
 	/**
@@ -147,13 +162,14 @@ class MailContentProvider {
 	 * @throws Exception
 	 */
 	public function wrap( string $contentHtml, User $user ): string {
+		$this->images = [];
 		$content = $this->getContentForType( 'wrapper' );
 		if ( !$content ) {
 			throw new Exception( 'Mail wrapper not found' );
 		}
 
 		$html = $this->getHtmlFromData( $content, $user, [ 'content' => $contentHtml ] );
-		return $this->base64encodeImages( $html );
+		return $this->replaceImagesWithCids( $html );
 	}
 
 	/**
@@ -356,15 +372,13 @@ class MailContentProvider {
 	}
 
 	/**
-	 * Replace images them with base64 representation
-	 *
-	 * ERM43895
+	 * Replace images with CID references and register matching files
 	 *
 	 * @param string $html
 	 *
 	 * @return string
 	 */
-	private function base64encodeImages( string $html ): string {
+	private function replaceImagesWithCids( string $html ): string {
 		$dom = new DOMDocument();
 		$dom->loadHTML( $html, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD );
 		$images = $dom->getElementsByTagName( 'img' );
@@ -373,12 +387,16 @@ class MailContentProvider {
 		foreach ( $images as $img ) {
 			$url = $img->getAttribute( 'src' );
 
-			// Skip if already base64
-			if ( preg_match( '/^data:image\/[a-zA-Z]+;base64,/', $url ) ) {
+			// Skip if already CID
+			if ( preg_match( '/^cid:/', $url ) ) {
 				continue;
 			}
 
-			$filename = basename( $url );
+			$filename = $this->extractFileNameFromUrl( $url );
+			if ( !$filename ) {
+				continue;
+			}
+
 			$file = $this->repoGroup->findFile( $filename );
 
 			if ( !$file || !$file->exists() ) {
@@ -395,12 +413,12 @@ class MailContentProvider {
 				continue;
 			}
 
-			try {
-				$img->setAttribute( 'src', $this->encodeImageFile( $storagePath, $file->getMimeType() ) );
-				$hasBeenUpdated = true;
-			} catch ( Exception $e ) {
-				// Ignore and continue
+			$cid = $this->makeCidForFileName( $filename );
+			$img->setAttribute( 'src', "cid:$cid" );
+			if ( !isset( $this->images[$cid] ) ) {
+				$this->images[$cid] = $file;
 			}
+			$hasBeenUpdated = true;
 		}
 
 		if ( !$hasBeenUpdated ) {
@@ -411,19 +429,39 @@ class MailContentProvider {
 	}
 
 	/**
-	 * @param string $filePath
-	 * @param string $mimeType
-	 *
-	 * @return string
-	 * @throws Exception
+	 * @param string $url
+	 * @return string|null
 	 */
-	private function encodeImageFile( string $filePath, string $mimeType ): string {
-		$imageData = file_get_contents( $filePath );
-
-		if ( !$imageData ) {
-			throw new Exception( 'Failed to read image file: ' . $filePath );
+	private function extractFileNameFromUrl( string $url ): ?string {
+		$path = parse_url( $url, PHP_URL_PATH );
+		if ( !is_string( $path ) || $path === '' ) {
+			return null;
+		}
+		// for `thumb.php` URLs, check if `f` param is set, if yes, that is the filename
+		$query = parse_url( $url, PHP_URL_QUERY );
+		if ( is_string( $query ) ) {
+			parse_str( $query, $queryParams );
+			if ( isset( $queryParams['f'] ) && is_string( $queryParams['f'] ) ) {
+				return urldecode( $queryParams['f'] );
+			}
 		}
 
-		return 'data:' . $mimeType . ';base64,' . base64_encode( $imageData );
+		$pathParts = explode( '/', trim( $path, '/' ) );
+		$isThumb = in_array( 'thumb', $pathParts, true );
+		if ( $isThumb && count( $pathParts ) > 1 ) {
+			// MediaWiki thumbnail URL: .../thumb/.../<origName>/<thumbName>
+			return urldecode( $pathParts[count( $pathParts ) - 2] );
+		}
+
+		return urldecode( basename( $path ) );
+	}
+
+	/**
+	 * @param string $fileName
+	 *
+	 * @return string
+	 */
+	private function makeCidForFileName( string $fileName ): string {
+		return 'notifyme-' . sha1( $fileName );
 	}
 }

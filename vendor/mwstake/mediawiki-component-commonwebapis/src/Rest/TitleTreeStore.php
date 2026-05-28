@@ -30,9 +30,6 @@ class TitleTreeStore extends TitleQueryStore {
 		HookContainer $hookContainer, ILoadBalancer $lb, TitleFactory $titleFactory,
 		Language $language, NamespaceInfo $nsInfo, PageProps $pageProps, ?PermissionManager $permissionManager = null
 	) {
-		if ( $permissionManager === null ) {
-			$permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
-		}
 		parent::__construct( $hookContainer, $lb, $titleFactory, $language, $nsInfo, $pageProps, $permissionManager );
 	}
 
@@ -54,15 +51,10 @@ class TitleTreeStore extends TitleQueryStore {
 	 * @return ReaderParams
 	 */
 	protected function getReaderParams(): ReaderParams {
-		return new TitleTreeReaderParams( [
-			'query' => $this->getQuery(),
-			'start' => $this->getOffset(),
-			'limit' => $this->getLimit(),
-			'filter' => $this->getFilter(),
-			'sort' => $this->getSort(),
+		return new TitleTreeReaderParams( array_merge( $this->getReaderParamsData(), [
 			'node' => $this->getValidatedParams()['node'] ?? '',
 			'expand-paths' => $this->getValidatedParams()['expand-paths'] ?? [],
-		] );
+		] ) );
 	}
 
 	/**

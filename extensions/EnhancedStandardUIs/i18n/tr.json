@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hedda",
+			"Nabbegat",
 			"İmmortalance"
 		]
 	},
@@ -15,5 +16,9 @@
 	"enhanced-standard-uis-history-grid-header-hide-revision-title": "Sürümü gizle",
 	"enhanced-standard-uis-history-compare-tool-title": "Sürümleri karşılaştır",
 	"enhanced-standard-uis-filelist-ga-title": "Dosyalar",
-	"enhanced-standard-uis-filelist-ga-aria": "Dosya listesi"
+	"enhanced-standard-uis-filelist-ga-aria": "Dosya listesi",
+	"enhanced-standard-uis-allpages-create-new-page-title": "Yeni bir sayfa oluştur",
+	"enhanced-standard-uis-allpages-create-new-page-aria-label": "Yeni bir sayfa oluştur",
+	"enhanced-standard-uis-filelist-upload-new-file-title": "Yeni bir dosya yükle",
+	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Yeni bir dosya yükle"
 }

@@ -21,7 +21,7 @@
 	"bs-pagesvisited-pref-widgetsortodr": "Sorteren op:",
 	"bs-pagesvisited-pref-sort-time": "Tijd",
 	"bs-pagesvisited-pref-sort-pagename": "Naam",
-	"bs-pagesvisited-tag-pagesvisited-desc": "Toont een lijst met recent bezochte pagina's. Deze lijst kan worden beperkt met parameters.",
+	"bs-pagesvisited-tag-pagesvisited-desc": "Geeft een lijst weer met recent bezochte pagina's. Deze lijst kan worden beperkt met parameters.",
 	"bs-pagesvisited-ve-pagesvisited-title": "Bezochte pagina's",
 	"bs-pagesvisited-ve-pagesvisited-attr-count-label": "Aantal",
 	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "Het aantal pagina's instellen dat in de lijst wordt weergegeven",

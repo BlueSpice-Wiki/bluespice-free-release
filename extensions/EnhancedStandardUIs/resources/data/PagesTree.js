@@ -28,9 +28,8 @@ ext.enhancedUI.data.PagesTree.prototype.build = function ( data, lvl ) {
 		let isLeaf = true;
 		let expanded = false;
 
-		// eslint-disable-next-line no-prototype-builtins
 		if ( ( item.hasOwnProperty( 'leaf' ) && item.leaf === false ) &&
-			// eslint-disable-next-line no-prototype-builtins
+
 			( item.hasOwnProperty( 'children' ) && item.children.length > 0 )
 		) {
 			isLeaf = false;
@@ -87,7 +86,7 @@ ext.enhancedUI.data.PagesTree.prototype.expandNode = function ( name ) {
 			const nodes = this.build( data, node.level + 1 );
 
 			for ( const nodeElement in nodes ) {
-				// eslint-disable-next-line no-prototype-builtins
+
 				if ( !nodes.hasOwnProperty( nodeElement ) ) {
 					continue;
 				}

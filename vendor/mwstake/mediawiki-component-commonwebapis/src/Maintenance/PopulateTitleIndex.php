@@ -26,7 +26,9 @@ class PopulateTitleIndex extends LoggedUpdateMaintenance {
 			[ 'pp' => [ 'LEFT OUTER JOIN', [ 'p.page_id = pp.pp_page', 'pp.pp_propname' => 'displaytitle' ] ] ]
 		);
 
-		$nsInfo = $this->getServiceContainer()->getNamespaceInfo();
+		$collationFactory = $this->getServiceContainer()->getCollationFactory();
+		$contentLanguage = $this->getServiceContainer()->getContentLanguage();
+		$collation = $collationFactory->makeCollation( 'uca-' . $contentLanguage->getCode() );
 
 		$toInsert = [];
 		$cnt = 0;
@@ -37,12 +39,22 @@ class PopulateTitleIndex extends LoggedUpdateMaintenance {
 				$bits = explode( '/', $title->page_title );
 				$leafTitle = array_pop( $bits );
 			}
+
+			$rootTitle = str_replace( '_', ' ', explode( '/', $title->page_title )[0] );
+			$firstLetter = $collation->getFirstLetter( $rootTitle );
+			if ( $firstLetter === '' ) {
+				$firstLetter = '#';
+			} elseif ( ctype_digit( $firstLetter ) ) {
+				$firstLetter = '0-9';
+			}
+
 			$toInsert[] = [
 				'mti_page_id' => $title->page_id,
 				'mti_namespace' => mb_strtolower( $title->page_namespace ),
 				'mti_title' => mb_strtolower( str_replace( '_', ' ', $title->page_title ) ),
 				'mti_displaytitle' => mb_strtolower( str_replace( '_', ' ', $title->pp_value ?? '' ) ),
 				'mti_leaf_title' => mb_strtolower( str_replace( '_', ' ', $leafTitle ) ),
+				'mti_first_letter' => $firstLetter,
 			];
 			if ( $cnt % $batch === 0 ) {
 				$this->insertBatch( $toInsert );
@@ -76,7 +88,7 @@ class PopulateTitleIndex extends LoggedUpdateMaintenance {
 	 * @return string
 	 */
 	protected function getUpdateKey() {
-		return 'mws-title-index-init-with-redirect-with-leaf';
+		return 'mws-title-index-init-with-redirect-with-leaf-with-first-letter';
 	}
 }
 

@@ -8,6 +8,7 @@
 			"RYOUMA1117",
 			"S2KTS",
 			"Shirayuki",
+			"Tensama0415",
 			"背番号4のエース"
 		]
 	},
@@ -18,9 +19,9 @@
 	"bs-avatars-generate-complete": "新しいアバターを生成しました。",
 	"bs-avatars-upload-label": "画像",
 	"bs-avatars-generate-new-label": "新しいアバターを生成",
-	"bs-avatars-file-upload-fieldset-title": "画像のアップロード",
+	"bs-avatars-file-upload-fieldset-title": "新しい画像をアップロード",
 	"bs-avatars-auto-generate-fieldset-title": "アバターの自動生成",
 	"apihelp-bs-avatars-tasks-summary": "利用者アバターのアップロード、生成、設定",
 	"bs-avatars-tag-profileimage-error-invalidusername": "「username」は必須であり、利用者名が含まれている必要があります",
-	"bs-avatars-pref-generator-help": "アバター画像は、利用者がプロフィール写真をアップロードしない場合に生成されます。 InstantAvatar: 本名のイニシャルまたは利用者名フィールドの使用に基づいてアバター画像を生成します。 Identicon: 利用者の ID の一部に基づいてアバター画像を生成します。"
+	"bs-avatars-pref-generator-help": "アバター画像は、利用者がプロフィール写真をアップロードしない場合に生成されます。 InstantAvatar: 本名のイニシャルまたは利用者名フィールドの使用に基づいてアバター画像を生成します。 Identicon: 利用者の ID の一部に基づいてアバター画像を生成します"
 }

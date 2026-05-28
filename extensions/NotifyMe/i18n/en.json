@@ -220,5 +220,8 @@
 	"notifyme-notification-center-filter-label-source": "Wiki",
 	"notifyme-notification-center-filter-label-source-local": "This wiki",
 	"notifyme-arbitrary-event-default-subject": "Automatic notification",
-	"notifyme-arbitrary-event-action-subject-label": "Topic of notification"
+	"notifyme-arbitrary-event-action-subject-label": "Topic of notification",
+	"notifyme-arbitrary-event-action-subject-help": "Will be used as the subject for mail notification. Value can be plain text or a message key",
+	"notifyme-arbitrary-event-action-message-help": "Value can be plain text or a message key",
+	"notifyme-arbitrary-event-action-with-title-message-help": "Value can be plain text or message key. Title anchor of the relevant page is passed as first parameter. Example: Page $1 was edited, will resolve to Page <a href=\"...\">My page</a> was edited, which will get properly parsed when rendering the notification to show the link to the page. If message key is specified, it is expected that it handles $1 parameter."
 }

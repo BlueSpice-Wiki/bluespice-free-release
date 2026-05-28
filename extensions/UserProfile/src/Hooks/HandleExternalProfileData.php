@@ -79,8 +79,8 @@ class HandleExternalProfileData implements
 	private function getImageUrl( User $user ): string {
 		return $this->dynamicFileDispatcherFactory->getUrl( 'userprofileimage', [
 			'username' => $user->getName(),
-			'width' => 200,
-			'height' => 200
+			// No caching, in order to natively support changing image, without worrying about invalidating cache
+			'cacheBuster' => time()
 		] );
 	}
 }

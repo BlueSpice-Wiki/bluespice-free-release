@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpicePermissionManager",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.7",
+	"version": "5.1.8",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePermissionManager",
 	"author": "Dejan Savuljesku <savuljesku@hallowelt.com>",
 	"descriptionmsg": "bs-permissionmanager-desc",
@@ -214,6 +214,10 @@
 		},
 		"migrateSettings": {
 			"class": "\\BlueSpice\\PermissionManager\\Hook\\MigrateSettings"
+		},
+		"provideReadableNamespaces": {
+			"class": "\\BlueSpice\\PermissionManager\\Hook\\ProvideReadableNamespaces",
+			"services": [ "ConfigFactory" ]
 		}
 	},
 	"Hooks": {
@@ -221,7 +225,8 @@
 		"BSPermissionManagerGroupEdited": "reactToGroupChanges",
 		"LoadExtensionSchemaUpdates": "migrateSettings",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig"
+		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig",
+		"MWStakeUtilsGetReadableNamespaces": "provideReadableNamespaces"
 	},
 	"ServiceWiringFiles": [
 		"ServiceWiring.php"

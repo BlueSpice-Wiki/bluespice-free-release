@@ -214,5 +214,15 @@
 	"notifyme-notification-filter-aria-label": "Benachrichtigungsfilter",
 	"notifyme-notification-center-pagination-number-aria-label": "Benachrichtigungen $1 bis $2 angezeigt",
 	"notifyme-automation-arbitrary-notification-action": "Senden einer Benachrichtigung",
-	"notifyme-automation-arbitrary-title-notification-action": "Senden einer titelbezogenen Benachrichtigung"
+	"notifyme-automation-arbitrary-title-notification-action": "Senden einer seitenbezogenen Benachrichtigung",
+	"notifyme-arbitrary-event-action-message-label": "Nachricht",
+	"notifyme-arbitrary-event-action-event-target-user-label": "Zielbenutzer",
+	"notifyme-arbitrary-event-action-send-as-bot-label": "Als Bot-Nutzer senden",
+	"notifyme-notification-center-filter-label-source": "Wiki",
+	"notifyme-notification-center-filter-label-source-local": "Dieses Wiki",
+	"notifyme-arbitrary-event-default-subject": "Automatische Benachrichtigung",
+	"notifyme-arbitrary-event-action-subject-label": "Thema der Benachrichtigung",
+	"notifyme-arbitrary-event-action-subject-help": "Wird als Betreff für die E-Mail-Benachrichtigung verwendet. Der Wert kann Klartext oder ein Nachrichtenschlüssel sein.",
+	"notifyme-arbitrary-event-action-message-help": "Der Wert kann Klartext oder ein Nachrichtenschlüssel sein.",
+	"notifyme-arbitrary-event-action-with-title-message-help": "Der Wert kann Klartext oder ein Nachrichtenschlüssel sein. Der Titelanker der relevanten Seite wird als erster Parameter übergeben. Beispiel: „Seite $1 wurde bearbeitet“ wird zu „Seite <a href=\"...\">Meine Seite</a> wurde bearbeitet“ aufgelöst, was beim Rendern der Benachrichtigung korrekt interpretiert wird, um den Link zur Seite anzuzeigen. Wenn ein Nachrichtenschlüssel angegeben ist, wird erwartet, dass er den Parameter $1 verarbeitet."
 }

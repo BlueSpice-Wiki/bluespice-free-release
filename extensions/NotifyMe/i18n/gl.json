@@ -209,5 +209,8 @@
 	"notifyme-notification-center-filter-label-source": "Wiki",
 	"notifyme-notification-center-filter-label-source-local": "Este wiki",
 	"notifyme-arbitrary-event-default-subject": "Notificación automática",
-	"notifyme-arbitrary-event-action-subject-label": "Tema da notificación"
+	"notifyme-arbitrary-event-action-subject-label": "Tema da notificación",
+	"notifyme-arbitrary-event-action-subject-help": "Usarase como asunto da notificación por correo. O valor pode ser texto sen formato ou unha clave de mensaxe.",
+	"notifyme-arbitrary-event-action-message-help": "O valor pode ser texto simple ou unha clave de mensaxe",
+	"notifyme-arbitrary-event-action-with-title-message-help": "O valor pode ser texto simple ou unha clave de mensaxe. A áncora do título da páxina relevante pásase como primeiro parámetro. Exemplo: \"Editouse a páxina «$1»\", resolverase como \"Editouse a páxina «<a href=\"...\">A miña páxina</a>»\", que se analizará correctamente ao renderizar a notificación para mostrar a ligazón cara á páxina. Se se especifica a clave de mensaxe, espérase que xestione o parámetro «$1»."
 }

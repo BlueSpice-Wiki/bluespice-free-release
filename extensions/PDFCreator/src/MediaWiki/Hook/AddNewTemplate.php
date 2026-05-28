@@ -2,14 +2,12 @@
 
 namespace MediaWiki\Extension\PDFCreator\MediaWiki\Hook;
 
-use BlueSpice\Discovery\Hook\BlueSpiceDiscoveryTemplateDataProviderAfterInit;
-use BlueSpice\Discovery\ITemplateDataProvider;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\TitleFactory;
 use SkinTemplate;
 
-class AddNewTemplate implements SkinTemplateNavigation__UniversalHook, BlueSpiceDiscoveryTemplateDataProviderAfterInit {
+class AddNewTemplate implements SkinTemplateNavigation__UniversalHook {
 
 	/** @var PermissionManager */
 	private $permissionManager;
@@ -43,10 +41,9 @@ class AddNewTemplate implements SkinTemplateNavigation__UniversalHook, BlueSpice
 	}
 
 	/**
-	 * // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 	 * @inheritDoc
 	 */
-	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
+	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		if ( $this->skipProcessing( $sktemplate ) ) {
 			return;
 		}
@@ -66,8 +63,7 @@ class AddNewTemplate implements SkinTemplateNavigation__UniversalHook, BlueSpice
 	}
 
 	/**
-	 *
-	 * @param ITemplateDataProvider $registry
+	 * @param \BlueSpice\Discovery\ITemplateDataProvider $registry
 	 * @return void
 	 */
 	public function onBlueSpiceDiscoveryTemplateDataProviderAfterInit( $registry ): void {

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hwangjy9",
+			"Tensama0415",
 			"Ykhwong",
 			"Yunbj"
 		]
@@ -25,5 +26,13 @@
 	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "문서 이름",
 	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "문서 제목의 최대 길이",
 	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "정렬 기준",
-	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "이름공간별 필터"
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "이름공간별 필터",
+	"bs-pagesvisited-droplet-name": "방문한 문서",
+	"bs-pagesvisited-droplet-description": "방문한 문서 목록",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "표시되는 결과 개수",
+	"bs-pagesvisited-desc": "최근 방문한 문서 목록을 맞춤형으로 제공합니다",
+	"bs-pagesvisited-error-nsnotvalid": "주어진 {{PLURAL:$1|이름공간}} <code>$2</code>{{PLURAL:$1|이(가)}} 유효하지 않습니다.",
+	"bs-pagesvisited-pref-widgetlimit": "항목 수 제한:",
+	"bs-pagesvisited-tag-pagesvisited-desc": "최근 방문한 문서 목록을 보여줍니다. 이 목록은 매개변수를 사용하여 제한할 수 있습니다.",
+	"bs-pagesvisited-label-anon-user": "방문한 문서를 보려면 계정에 로그인하세요"
 }

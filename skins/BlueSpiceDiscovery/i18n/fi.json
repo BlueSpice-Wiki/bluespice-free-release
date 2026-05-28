@@ -6,7 +6,8 @@
 			"Mschlindwein",
 			"Nike",
 			"Pyscowicz",
-			"Rönttönen"
+			"Rönttönen",
+			"Wikipeedikko"
 		]
 	},
 	"bs-discovery-desc": "BlueSpice-ulkoasu",
@@ -107,5 +108,6 @@
 	"bs-discovery-page-version-pager-previous": "Edellinen",
 	"bs-discovery-page-version-pager-next": "Seuraava",
 	"bs-discovery-footerlinks-termsofservice-link-desc": "Käyttöehdot",
-	"bs-discovery-skip-links-nav-aria-label": "Ohita linkit"
+	"bs-discovery-skip-links-nav-aria-label": "Ohita linkit",
+	"bs-discovery-personalurl-blog-text": "Blogi"
 }

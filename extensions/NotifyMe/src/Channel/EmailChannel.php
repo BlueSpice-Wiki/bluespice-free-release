@@ -106,6 +106,7 @@ class EmailChannel implements IExternalChannel {
 
 		$mail = $this->getSingleMail( $notification, $user );
 		$this->send( $mail, $user );
+		$this->mailContentProvider->clearImages();
 		return true;
 	}
 
@@ -131,6 +132,7 @@ class EmailChannel implements IExternalChannel {
 		}
 
 		$this->send( $mail, $user );
+		$this->mailContentProvider->clearImages();
 
 		/** @var Notification $notification */
 		foreach ( $notifications as $notification ) {
@@ -183,13 +185,15 @@ class EmailChannel implements IExternalChannel {
 	 * @throws Exception
 	 */
 	protected function getSingleMail( Notification $notification, User $user ) {
+		$body = $this->mailContentProvider->getFinalEmailHtml(
+			'single',
+			$this->serializer->serializeForOutput( $notification, $user ),
+			$user
+		);
+
 		return [
 			'subject' => $this->generateSubject( $notification->getEvent(), $user ),
-			'body' => $this->mailContentProvider->getFinalEmailHtml(
-				'single',
-				$this->serializer->serializeForOutput( $notification, $user ),
-				$user
-			),
+			'body' => $body,
 			'options' => [
 				'contentType' => 'text/html;charset=UTF-8'
 			],

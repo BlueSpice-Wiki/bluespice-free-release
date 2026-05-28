@@ -7,12 +7,10 @@
 	opacity: 1;
 }
 
-/* stylelint-disable declaration-no-important */
 #enhanced-history-cnt .oojsplus-data-gridWidget-column-header[ data-field='undo' ] {
 	/* oojs style is added with important */
 	border-right: 0 !important;
 }
-/* stylelint-enable declaration-no-important */
 
 .enhanced-history-diff-minus .text-cell[ data-column='diff' ] {
 	color: #8b0000;

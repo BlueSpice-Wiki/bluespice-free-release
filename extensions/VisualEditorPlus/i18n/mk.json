@@ -9,5 +9,7 @@
 	"visualeditorplus-table-contextitem-properties-label": "Својства на табелата",
 	"visualeditorplus-table-contextitem-additional-options-label": "Дополнителни можности за ќелии",
 	"visualeditorplus-table-cell-actions-dialog-title": "Можности за ќелии",
-	"visualeditorplus-table-cell-actions-dialog-done-label": "Готово"
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Готово",
+	"visualeditorplus-ui-label-unwrap": "Отстрани (задржи ја содржината)",
+	"visualeditorplus-ui-label-delete": "Отстрани"
 }

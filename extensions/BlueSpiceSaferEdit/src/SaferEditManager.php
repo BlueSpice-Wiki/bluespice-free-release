@@ -4,36 +4,41 @@ namespace BlueSpice\SaferEdit;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use MediaWiki\Context\IContextSource;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 class SaferEditManager {
-	/**
-	 * @var IDatabase
-	 */
-	protected $db;
 
-	/**
-	 * @var IContextSource
-	 */
+	/** @var ILoadBalancer */
+	protected $lb;
+
+	/** @var IContextSource */
 	protected $context;
 
-	/**
-	 * @var ExtensionAttributeBasedRegistry
-	 */
+	/** @var ExtensionAttributeBasedRegistry */
 	protected $checkerRegistry;
 
+	/** @var PermissionManager */
+	protected $permissionManager;
+
 	/**
-	 * @param IDatabase $db
+	 * @param ILoadBalancer $lb
 	 * @param IContextSource $context
 	 * @param ExtensionAttributeBasedRegistry $checkerRegistry
+	 * @param PermissionManager $permissionManager
 	 */
-	public function __construct( $db, $context, $checkerRegistry ) {
+	public function __construct(
+		ILoadBalancer $lb, IContextSource $context,
+		ExtensionAttributeBasedRegistry $checkerRegistry,
+		PermissionManager $permissionManager
+	) {
 		$this->context = $context;
-		$this->db = $db;
+		$this->lb = $lb;
 		$this->checkerRegistry = $checkerRegistry;
+		$this->permissionManager = $permissionManager;
 	}
 
 	/**
@@ -43,16 +48,14 @@ class SaferEditManager {
 	 * @return Status
 	 */
 	public function saveUserEditing( User $user, Title $title, $section = -1 ) {
-		if ( !\MediaWiki\MediaWikiServices::getInstance()
-			->getPermissionManager()
-			->userCan( 'edit', $user, $title )
-		) {
+		if ( !$this->permissionManager->userCan( 'edit', $user, $title ) ) {
 			return Status::newFatal( "User cannot edit the page" );
 		}
 
+		$dbr = $this->lb->getConnection( DB_REPLICA );
 		$table = 'bs_saferedit';
 		$fields = [
-			"se_timestamp" => wfTimestamp( TS_MW, time() )
+			"se_timestamp" => $dbr->timestamp( wfTimestamp( TS_MW, time() ) )
 		];
 		$conditions = [
 			"se_user_name" => $user->getName(),
@@ -66,7 +69,7 @@ class SaferEditManager {
 			'LIMIT' => 1,
 		];
 
-		$row = $this->db->selectRow(
+		$row = $dbr->selectRow(
 			$table,
 			[ 'se_id' ],
 			$conditions,
@@ -75,7 +78,7 @@ class SaferEditManager {
 		);
 		if ( $row ) {
 			$title->invalidateCache();
-			$updateOk = $this->db->update(
+			$updateOk = $this->lb->getConnection( DB_PRIMARY )->update(
 				$table,
 				$fields,
 				[ "se_id" => $row->se_id ],
@@ -86,7 +89,7 @@ class SaferEditManager {
 			}
 		} else {
 			$title->invalidateCache();
-			$insertOk = $this->db->insert(
+			$insertOk = $this->lb->getConnection( DB_PRIMARY )->insert(
 				$table,
 				$conditions + $fields,
 				__METHOD__
@@ -107,7 +110,7 @@ class SaferEditManager {
 	 * @return Status
 	 */
 	public function doClearSaferEdit( User $user, Title $title ) {
-		$deleteOk = $this->db->delete(
+		$deleteOk = $this->lb->getConnection( DB_PRIMARY )->delete(
 			'bs_saferedit',
 			[
 				"se_user_name" => $user->getName(),

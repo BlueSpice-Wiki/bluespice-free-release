@@ -11,7 +11,7 @@
 	],
 	"require": {
 		"mwstake/mediawiki-componentloader": "~1",
-		"mwstake/mediawiki-component-datastore": "~2",
+		"mwstake/mediawiki-component-datastore": "~3",
 		"mwstake/mediawiki-component-utils": "~3"
 	},
 	"require-dev": {

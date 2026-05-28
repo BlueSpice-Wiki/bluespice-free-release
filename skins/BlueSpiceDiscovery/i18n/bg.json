@@ -4,5 +4,8 @@
 			"StanProg"
 		]
 	},
-	"bs-discovery-first-heading-aria-label": "Заглавие на страницата"
+	"bs-discovery-first-heading-aria-label": "Заглавие на страницата",
+	"bs-discovery-breadcrumb-nav-node-ns-main": "Страници",
+	"bs-discovery-mainlinks-allpages-label": "Страници",
+	"ns-main-label": "Страници"
 }

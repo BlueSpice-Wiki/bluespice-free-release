@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceDiscovery",
-	"version": "5.1.7",
+	"version": "5.1.8",
 	"author": [
 		"Daniel Vogel"
 	],
@@ -342,10 +342,6 @@
 			"class": "\\BlueSpice\\Discovery\\Hook\\SetPageLanguage",
 			"services": [ "LanguageNameUtils" ]
 		},
-		"invalidateEnhancedSidebarCache": {
-			"class": "\\BlueSpice\\Discovery\\Hook\\InvalidateEnhancedSidebarCache",
-			"services": [ "MainWANObjectCache" ]
-		},
 		"pdf-export": {
 			"class": "\\BlueSpice\\Discovery\\HookHandler\\PdfExportHandler"
 		},
@@ -383,7 +379,7 @@
 			"body-classes"
 		],
 		"BsAdapterAjaxPingResult": "\\BlueSpice\\Discovery\\Hook\\BsAdapterAjaxPingResult\\CheckAttentionIndicator::callback",
-		"PageSaveComplete": [ "setPageLanguage", "invalidateEnhancedSidebarCache" ],
+		"PageSaveComplete": [ "setPageLanguage" ],
 		"BSUEModulePDFBeforeAddingContent": "pdf-export",
 		"BSUsageTrackerRegisterCollectors": [
 			"\\BlueSpice\\Discovery\\Hook\\BSUsageTrackerRegisterCollectors\\MediaWikiSidebarActive::callback",

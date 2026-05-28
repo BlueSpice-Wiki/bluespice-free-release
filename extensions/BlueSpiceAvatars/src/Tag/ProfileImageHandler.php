@@ -93,8 +93,6 @@ class ProfileImageHandler extends Handler {
 	protected function handleRaw() {
 		$url = $this->dfdFactory->getUrl( 'userprofileimage', [
 			'username' => $this->processedArgs['username'],
-			'width' => $this->processedArgs['width'],
-			'height' => $this->processedArgs['height']
 		] );
 
 		return Html::element( 'img', [

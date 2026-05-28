@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -8,5 +9,8 @@
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "키워드 편집",
 	"menueditor-ui-menu-keyword-usersidebar-label": "키워드",
 	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "키워드 편집",
-	"menueditor-ui-menu-user-sidebar-keyword-label": "키워드"
+	"menueditor-ui-menu-user-sidebar-keyword-label": "키워드",
+	"bs-edit-user-mm-link-text": "사용자 메뉴 편집",
+	"bs-edit-user-mm-link-title": "사용자 메뉴 편집",
+	"bs-usersidebar-empty-menu-label": "사용 가능한 항목이 없음"
 }

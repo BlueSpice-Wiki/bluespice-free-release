@@ -3,6 +3,7 @@
 		"authors": [
 			"HDNua",
 			"Hwangjy9",
+			"Tensama0415",
 			"Tyey",
 			"Ykhwong",
 			"아라"
@@ -17,8 +18,11 @@
 	"bs-avatars-file-upload-fieldset-title": "새 이미지 올리기",
 	"bs-avatars-auto-generate-fieldset-title": "아바타 자동 생성",
 	"apihelp-bs-avatars-tasks-summary": "사용자 아바타의 업로드, 생성, 설정",
-	"bs-avatars-tag-profileimage-error-invalidusername": "\"username\" 변수는 필수이며 유효한 사용자 이름이 포함되어야 합니다",
+	"bs-avatars-tag-profileimage-error-invalidusername": "\"username\" 매개변수는 필수이며 유효한 사용자 이름이 포함되어야 합니다",
 	"bs-avatars-upload-button": "업로드",
 	"bs-avatars-generate-button": "생성",
-	"bs-avatars-generic-cancel": "취소"
+	"bs-avatars-generic-cancel": "취소",
+	"bs-avatars-desc": "일반 및 개별 사용자 사진을 제공합니다",
+	"bs-avatars-pref-generator-help": "아바타 이미지는 사용자가 프로필 사진을 업로드하지 않은 경우 생성됩니다. InstantAvatar: 실명의 이니셜 또는 사용자 이름 필드를 기반으로 아바타 이미지를 생성합니다. Identicon: 사용자 ID의 일부를 기반으로 아바타 이미지를 생성합니다",
+	"bs-avatars-generate-description": "자동 아바타를 새롭게 생성합니다. 이렇게 하면 기존에 업로드된 프로필 이미지(설정된 경우)가 영구적으로 교체됩니다"
 }

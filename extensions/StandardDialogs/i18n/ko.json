@@ -4,12 +4,14 @@
 			"Bisang",
 			"Dr1t jg",
 			"Suleiman the Magnificent Television",
+			"Tensama0415",
 			"YeBoy371",
 			"Ykhwong",
+			"解浪",
 			"렌즈"
 		]
 	},
-	"standarddialogs-desc": "공통 문서 동작을 위한 대화 상자 사용자 인터페이스를 제공합니다",
+	"standarddialogs-desc": "공통 문서 작업을 위한 대화 상자 사용자 인터페이스를 제공합니다",
 	"standarddialogs-copy-btn": "복사",
 	"standarddialogs-copy-title": "\"$1\" 문서 복사",
 	"standarddialogs-copy-page-legend": "복사",
@@ -64,5 +66,13 @@
 	"standarddialogs-page-info-page-no-links-label": "이 문서에는 링크가 없습니다",
 	"standarddialogs-page-info-page-no-extlinks-label": "이 문서에는 외부 링크가 없습니다",
 	"standarddialogs-create-subpage-btn-label": "하위 문서 만들기",
-	"standarddialogs-create-subpage-btn-title": "$1의 하위 문서 만들기"
+	"standarddialogs-create-subpage-btn-title": "$1의 하위 문서 만들기",
+	"standarddialogs-validation-page-exist-info-label": "이 이름의 문서가 이미 존재합니다. 다른 제목을 선택해 주세요.",
+	"standarddialogs-delete-btn-label": "삭제",
+	"standarddialogs-move-btn-label": "이동",
+	"standarddialogs-copy-btn-label": "복사",
+	"standarddialogs-new-page-btn-label": "만들기",
+	"standarddialogs-new-subpage-btn-label": "만들기",
+	"standarddialogs-protect-btn-label": "보호",
+	"standarddialogs-purge-btn-label": "새로 고침"
 }

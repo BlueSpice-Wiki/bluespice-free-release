@@ -10,6 +10,8 @@ class ReaderParams {
 	public const PARAM_START = 'start';
 	public const PARAM_SORT = 'sort';
 	public const PARAM_FILTER = 'filter';
+	public const PARAM_CONTINUE_FROM = 'continue';
+	public const PARAM_NO_CACHE = 'no-cache';
 
 	/**
 	 * For pre filtering
@@ -42,13 +44,25 @@ class ReaderParams {
 	protected $filter = [];
 
 	/**
+	 * @var array
+	 */
+	protected $continueFrom = [];
+
+	/**
+	 * @var bool
+	 */
+	protected $noCache = false;
+
+	/**
 	 *
 	 * @param array $params
 	 */
 	public function __construct( $params = [] ) {
+		$this->setIfAvailable( $this->noCache, $params, static::PARAM_NO_CACHE );
 		$this->setIfAvailable( $this->query, $params, static::PARAM_QUERY );
 		$this->setIfAvailable( $this->start, $params, static::PARAM_START );
 		$this->setIfAvailable( $this->limit, $params, static::PARAM_LIMIT );
+		$this->setIfAvailable( $this->continueFrom, $params, static::PARAM_CONTINUE_FROM );
 		$this->setSort( $params );
 		$this->setFilter( $params );
 	}
@@ -78,8 +92,6 @@ class ReaderParams {
 	 * @return int The "start" parameter
 	 */
 	public function getStart() {
-		// TODO: mabye this can be calculated from "page" and "limit";
-		// Examine behavior of Ext.data.Store / Ext.data.Proxy
 		return $this->start;
 	}
 
@@ -108,6 +120,35 @@ class ReaderParams {
 	}
 
 	/**
+	 * @return array
+	 */
+	public function getContinueFrom(): array {
+		return $this->continueFrom;
+	}
+
+	/**
+	 * Get hash that uniquely identifies this set of parameters, for caching purposes
+	 *
+	 * @return string
+	 */
+	public function getHash(): string {
+		return md5(
+			json_encode( [
+				'query' => $this->query,
+				'sort' => $this->sort,
+				'filter' => $this->filter,
+			] )
+		);
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function getDisableCache(): bool {
+		return $this->noCache;
+	}
+
+	/**
 	 *
 	 * @param array $params
 	 * @return void
@@ -133,5 +174,4 @@ class ReaderParams {
 		}
 		$this->filter = Filter::newCollectionFromArray( $params[static::PARAM_FILTER] );
 	}
-
 }

@@ -5,6 +5,7 @@
 			"Ice bulldog",
 			"Movses",
 			"Piramidion",
+			"Repakr",
 			"Vlad5250",
 			"Ата",
 			"Пан Хаунд"
@@ -87,5 +88,12 @@
 	"bs-visualeditorconnector-align-center-annotation-desc": "Центрує виділений текст",
 	"bs-visualeditorconnector-text-style-indent-label": "Відступ",
 	"bs-visualeditorconnector-upload-type": "Тип завантаження",
-	"bs-visualeditorconnector-upload-type-help": "Оригінал: право на завантаження перевірено. Ім'я файлу, простір назв та категорію можна редагувати. Опис обов’язковий.\nПростий: право на завантаження не перевірено. Ім'я файлу, простір назв та категорію можна редагувати. Опис необов’язковий.\nОдин клік: право на завантаження не перевірено. Ім'я файлу та категорію не можна редагувати. Простір назв можна редагувати."
+	"bs-visualeditorconnector-upload-type-help": "Оригінал: право на завантаження перевірено. Ім'я файлу, простір назв та категорію можна редагувати. Опис обов’язковий.\nПростий: право на завантаження не перевірено. Ім'я файлу, простір назв та категорію можна редагувати. Опис необов’язковий.\nОдин клік: право на завантаження не перевірено. Ім'я файлу та категорію не можна редагувати. Простір назв можна редагувати.",
+	"bs-vec-insert-line-break-title": "Розрив рядка (<br />)",
+	"bs-visualeditorconnector-indent-annotation-desc": "Відступи вибраного тексту",
+	"bs-visualeditor-save-label": "Зберегти",
+	"bs-visualeditorconnector-tab-file": "Посилання на файл",
+	"bs-visualeditor-request-entity-too-large": "Файл занадто великий, щоб його завантажити.",
+	"bs-visualeditorconnector-dialog-table-title": "Таблиця",
+	"bs-visualeditorconnector-dialog-action-insert": "Вставити"
 }

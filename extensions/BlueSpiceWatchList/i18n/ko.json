@@ -3,6 +3,7 @@
 		"authors": [
 			"Hwangjy9",
 			"Suleiman the Magnificent Television",
+			"Tensama0415",
 			"YeBoy371",
 			"Ykhwong"
 		]
@@ -14,5 +15,19 @@
 	"bs-watchlist-ve-watchlist-attr-count-label": "개수",
 	"bs-watchlist-ve-watchlist-attr-order-label": "순서",
 	"bs-watchlist-usersidebar-title": "주시문서 목록",
-	"bs-watchlist-ve-watchlist-attr-sort-by-label": "정렬 기준"
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "정렬 기준",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "문서 이름",
+	"bs-watchlist-ve-watchlist-attr-time-label": "시간",
+	"bs-watchlist-tag-watchlist-no-user": "로그인한 사용자가 없으므로 주시문서 목록을 표시할 수 없습니다",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "문서 이름 도움말",
+	"bs-watchlist-tag-watchlist-attr-time-help": "시간 도움말",
+	"bs-watchlist-droplet-name": "주시문서 목록",
+	"bs-watchlist-tag-watchlist-desc": "최근 변경 사항이 가장 많고 내 주시문서 목록에 있는 문서를 보여줍니다.",
+	"bs-watchlist-tag-watchlist-attr-count-help": "주시문서 목록에서 표시되어야 하는 항목 수",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "제목에 표시되어야 하는 글자 수입니다. 5에서 500 사이의 숫자가 될 수 있습니다.",
+	"bs-watchlist-tag-watchlist-attr-order-help": "시간 또는 문서 이름 순으로 정렬된 목록을 보기",
+	"bs-watchlist-tag-watchlist-no-entries": "주시문서 목록에 표시할 문서에 변경 사항이 없습니다",
+	"bs-watchlist-droplet-description": "주시문서 목록에 포함된 문서의 최근 변경 사항",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "표시된 문서 수",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "문서 제목의 최대 길이"
 }

@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cookie4782",
 			"Shulmj"
 		]
 	},
-	"visualeditorplus-desc": "ビジュアルエディターにさまざまな機能を追加する"
+	"visualeditorplus-desc": "ビジュアルエディターにさまざまな機能を追加する",
+	"visualeditorplus-table-contextitemwidget-label-remove": "テーブルを除去",
+	"visualeditorplus-table-contextitem-properties-label": "テーブルのプロパティ",
+	"visualeditorplus-table-contextitem-additional-options-label": "追加のセルオプション",
+	"visualeditorplus-table-cell-actions-dialog-title": "セルオプション",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "完了",
+	"visualeditorplus-ui-label-unwrap": "除去（コンテンツを維持）",
+	"visualeditorplus-ui-label-delete": "除去"
 }

@@ -194,5 +194,6 @@
 	"bs-discovery-footer-places-alt-text-bluespice": "Drevet av BlueSpice",
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Drevet av Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Rediger",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Tøm"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Tøm",
+	"bs-discovery-breadcrumb-nav-root-node-title": "Vis alle sider i navnerommet $1"
 }

@@ -3,6 +3,7 @@
 		"authors": [
 			"DDPAT",
 			"Ice bulldog",
+			"Movses",
 			"Piramidion",
 			"Renamerr",
 			"Ата"
@@ -98,5 +99,6 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Виділення бічної панелі",
 	"flexiskin-ui-plugin-footer-colors-label": "Кольори нижнього колонтитула",
 	"flexiskin-ui-plugin-colors-background-footer-label": "Колонтитул фону",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "Передній план нижнього колонтитула"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Передній план нижнього колонтитула",
+	"flexiskin-label": "Скін"
 }

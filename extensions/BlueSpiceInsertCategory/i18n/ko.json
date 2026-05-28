@@ -3,6 +3,7 @@
 		"authors": [
 			"HDNua",
 			"Hwangjy9",
+			"Tensama0415",
 			"Tyey",
 			"YeBoy371",
 			"Ykhwong",
@@ -23,5 +24,12 @@
 	"bs-insertcategory-edit-dialog-input-label": "할당된 분류",
 	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "문서 분류를 검색할 수 없습니다",
 	"bs-insertcategory-no-categories": "할당된 분류 없음",
-	"bs-insertcategory-edit-dialog-tree-view": "모든 분류 보기"
+	"bs-insertcategory-edit-dialog-tree-view": "모든 분류 보기",
+	"bs-insertcategory-edit-dialog-button-aria-label": "이 문서의 분류를 편집하기 위해 대화 상자 열기",
+	"bs-insertcategory-set-categories-summary": "문서 분류 업데이트됨",
+	"bs-insertcategory-set-categories-error": "분류 설정 실패함",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "자동으로 추가된 분류",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "해당 분류는 문서의 위키텍스트 내용 안에 정의되어 있지 않습니다. 틀 안에 정의되어 있을 가능성이 높습니다.",
+	"bs-insertcategory-pref-uploadintegration": "업로드 대화 상자에서 문서 분류를 사용합니다",
+	"bs-insertcategory-pref-uploadintegration-help": "업로드 대화 상자에서 문서 분류를 기본 옵션으로 설정합니다"
 }

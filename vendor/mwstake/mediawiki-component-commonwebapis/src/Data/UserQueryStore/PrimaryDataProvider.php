@@ -7,6 +7,7 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Parser\Sanitizer;
 use MWStake\MediaWiki\Component\DataStore\Filter;
+use MWStake\MediaWiki\Component\DataStore\IBucketProvider;
 use MWStake\MediaWiki\Component\DataStore\PrimaryDatabaseDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\Schema;
@@ -16,7 +17,7 @@ use Wikimedia\Rdbms\IDatabase;
 /*
  * @stable to extend
  */
-class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
+class PrimaryDataProvider extends PrimaryDatabaseDataProvider implements IBucketProvider {
 	/** @var array */
 	private $groupLabels = [];
 	/** @var array */
@@ -347,5 +348,14 @@ class PrimaryDataProvider extends PrimaryDatabaseDataProvider {
 	private function getAllowedGroups( array $groups ): array {
 		$allowed = $this->utilityFactory->getGroupHelper()->getAvailableGroups();
 		return array_values( array_intersect( $groups, $allowed ) );
+	}
+
+	/**
+	 * @return array[]
+	 */
+	public function getBuckets(): array {
+		return [
+			'groups' => $this->getGroupBuckets()
+		];
 	}
 }

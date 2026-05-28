@@ -53,7 +53,7 @@ class GenerateImage implements IProfileImageProvider {
 		}
 
 		$this->file = $this->getThumbnailImageFile(
-			$file, $params['width'] ?? 32, $params['height'] ?? 32
+			$file, 200, 200
 		);
 	}
 

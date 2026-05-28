@@ -37,5 +37,7 @@
 	"menueditor-ui-add-sub-element-label": "Engadir un subelemento",
 	"menueditor-footerlinks-banner-text": "As extensións poden engadir automaticamente algunhas ligazóns. Consulta a configuración da extensión para obter máis información.",
 	"menueditor-toolbar-save": "Gardar",
-	"menueditor-ui-cancel-confirmation": "Queres cancelar a edición? Perderanse todos os cambios non gardados."
+	"menueditor-ui-cancel-confirmation": "Queres cancelar a edición? Perderanse todos os cambios non gardados.",
+	"menueditor-ui-notices": "Avisos",
+	"menueditor-ui-oldrevision-notice": "Estás a editar unha revisión antiga desta páxina. Se a gardas, perderanse os cambios realizados desde esta revisión."
 }

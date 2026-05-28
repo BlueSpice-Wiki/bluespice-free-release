@@ -42,5 +42,7 @@
 	"bs-discovery-sidebar-primary-aria-label": "بݨیادی سائڈ بار",
 	"bs-discovery-sidebar-secondary-aria-label": "ثانوی سائڈ بار",
 	"bs-discovery-breadcrumb-label-diff": "فرق",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "صاف"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "صاف",
+	"bs-discovery-menu-provider-namespace-tree-label": "سارے ورقے",
+	"bs-discovery-namespace-tree-pnl-header-text": "ورقے"
 }

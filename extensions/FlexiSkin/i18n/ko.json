@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Songhee",
+			"Tensama0415",
 			"YeBoy371",
 			"Ykhwong",
 			"아라"
@@ -9,7 +10,7 @@
 	},
 	"flexiskin-extension-desc": "스킨의 사용자 지정 허용",
 	"flexiskin-label": "스킨",
-	"flexiskin": "스킨 환경 설정",
+	"flexiskin": "플렉시스킨",
 	"action-flexiskin-viewspecialpage": "스킨을 적용하기 위해 [[Special:FlexiSkin|특수 문서]]를 참고",
 	"apihelp-flexiskin-skinoperation-param-skinname": "FlexiSkin을 관리할 스킨 이름",
 	"apihelp-flexiskin-activation-param-active": "사용 중인 스킨의 ID",
@@ -82,5 +83,21 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "사이드바 강조",
 	"flexiskin-ui-plugin-footer-colors-label": "푸터 색",
 	"flexiskin-ui-plugin-colors-background-footer-label": "푸터 배경",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "푸터 전경"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "푸터 전경",
+	"right-flexiskin-viewspecialpage": "스킨을 적용하기 위해 [[Special:FlexiSkin|특수 문서]]를 참고",
+	"right-flexiskin-api": "FlexiSkin API를 사용",
+	"action-flexiskin-api": "FlexiSkin API를 사용",
+	"apihelp-flexiskin-activation-summary": "활성화 모듈",
+	"apihelp-flexiskin-save-summary": "저장 모듈",
+	"apihelp-flexiskin-preview-summary": "미리 보기 모듈",
+	"apihelp-flexiskin-new-summary": "새 모듈",
+	"apihelp-flexiskin-delete-summary": "삭제 모듈",
+	"apihelp-flexiskin-restore-summary": "복구 모듈",
+	"apihelp-flexiskin-preview-param-config": "구성 매개변수",
+	"apihelp-flexiskin-save-param-config": "구성 매개변수",
+	"apihelp-flexiskin-save-param-id": "id 매개변수",
+	"apihelp-flexiskin-save-param-name": "이름 매개변수",
+	"flexiskin-ui-configurator-warning-disabled-skin": "FlexiSkin은 구성되어 있지만 현재 비활성화되어 있습니다. 다시 활성화하려면 \"저장 및 활성화\" 버튼을 사용하세요. 현재 상태를 활성화하기 전에 \"미리 보기\" 버튼을 사용하여 확인할 수 있습니다.",
+	"flexiskin-ui-plugin-free-css-label": "Free CSS",
+	"flexiskin-extension-name": "플렉시스킨"
 }

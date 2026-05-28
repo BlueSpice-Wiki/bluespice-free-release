@@ -65,7 +65,8 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 		);
 		$this->rawData = [];
 		$this->user = RequestContext::getMain()->getUser();
-		$this->dataCacheUserKey = $objectCache->makeKey( self::CACHE_KEY, $this->user->getId() );
+		$this->dataCacheUserKey = $objectCache->makeKey( self::CACHE_KEY, $this->user->getId(),
+			$revision->getId(), $this->user->getTouched() );
 	}
 
 	/**
@@ -89,34 +90,37 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	 * @throws Exception
 	 */
 	public function parseForOutput(): array {
-		return $this->objectCache->getWithSetCallback( $this->dataCacheUserKey, self::CACHE_TTL, function () {
-			$data = [];
+		return $this->objectCache->getWithSetCallback(
+			$this->dataCacheUserKey,
+			self::CACHE_TTL,
+			function () {
+				$data = [];
 
-			$this->setUserOnProcessors( $this->user );
+				$this->setUserOnProcessors( $this->user );
 
-			$this->setFullParse( true );
-			$nodes = $this->parse();
-			$this->setFullParse( false );
+				$this->setFullParse( true );
+				$nodes = $this->parse();
+				$this->setFullParse( false );
 
-			foreach ( $nodes as $node ) {
-				// Convert usual flat list of nodes into a tree
-				if ( $node->getLevel() !== 1 ) {
-					continue;
+				foreach ( $nodes as $node ) {
+					// Convert usual flat list of nodes into a tree
+					if ( $node->getLevel() !== 1 ) {
+						continue;
+					}
+					if ( $this->isNodeHidden( $node ) ) {
+						continue;
+					}
+					$nodeData = $this->serializeNodeTree( $node ) + $this->getTreeChildren( $nodes, $node );
+					$isLeaf = empty( $nodeData['items'] );
+					if ( isset( $nodeData['isLeaf'] ) ) {
+						$isLeaf = $nodeData['isLeaf'];
+					}
+					$nodeData['leaf'] = $isLeaf;
+					$data[] = $nodeData;
 				}
-				if ( $this->isNodeHidden( $node ) ) {
-					continue;
-				}
-				$nodeData = $this->serializeNodeTree( $node ) + $this->getTreeChildren( $nodes, $node );
-				$isLeaf = empty( $nodeData['items'] );
-				if ( isset( $nodeData['isLeaf'] ) ) {
-					$isLeaf = $nodeData['isLeaf'];
-				}
-				$nodeData['leaf'] = $isLeaf;
-				$data[] = $nodeData;
-			}
 
-			return $data;
-		} );
+				return $data;
+			} );
 	}
 
 	/**

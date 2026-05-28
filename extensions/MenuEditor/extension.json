@@ -1,6 +1,6 @@
 {
 	"name": "MenuEditor",
-	"version": "3.1.8",
+	"version": "3.1.10",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
@@ -65,6 +65,15 @@
 					"group": {
 						"name": "new",
 						"priority": 1
+					},
+					"module": "ext.menuEditor.tools"
+				},
+				"oldRevisionNotice": {
+					"classname": "ext.menueditor.ui.tools.OldRevisionNoticeTool",
+					"group": {
+						"name": "page-actions",
+						"priority": 10,
+						"classes": [ "toolbar-actions" ]
 					},
 					"module": "ext.menuEditor.tools"
 				},
@@ -250,7 +259,15 @@
 			"scripts": [
 				"ui/tools/SaveTool.js",
 				"ui/tools/CancelTool.js",
-				"ui/tools/NewItemTool.js"
+				"ui/tools/NewItemTool.js",
+				"ui/tools/OldRevisionNoticeTool.js"
+			],
+			"messages": [
+				"menueditor-ui-oldrevision-notice",
+				"menueditor-ui-notices"
+			],
+			"dependencies": [
+				"oojs-ui.styles.icons-alerts"
 			]
 		}
 	},

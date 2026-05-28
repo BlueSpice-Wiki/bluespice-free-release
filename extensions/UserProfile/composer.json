@@ -13,9 +13,14 @@
 	"extra": {
 		"installer-name": "UserProfile"
 	},
+	"autoload": {
+		"psr-4": {
+			"MediaWiki\\Extension\\UserProfile\\": "src/"
+		}
+	},
 	"require": {
 		"composer/installers": "~1.0|~2",
-		"mwstake/mediawiki-component-dynamicfiledispatcher": "~1",
+		"mwstake/mediawiki-component-dynamicfiledispatcher": "~2",
 		"mwstake/mediawiki-component-formengine": "~3.0",
 		"mwstake/mediawiki-component-inputprocessor": "~1"
 	},

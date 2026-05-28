@@ -3,6 +3,7 @@
 		"authors": [
 			"Hwangjy9",
 			"Namoroka",
+			"Tensama0415",
 			"Ykhwong",
 			"아라"
 		]
@@ -16,5 +17,7 @@
 	"bs-authors-navigation-link-title": "이 문서의 작성자",
 	"bs-authors-navigation-link-text": "작성자",
 	"bs-authors-info-dialog": "이 문서의 작성자",
-	"bs-authors-info-dialog-grid-column-author": "저자"
+	"bs-authors-info-dialog-grid-column-author": "저자",
+	"apihelp-bs-pageauthors-store-summary": "제공된 문서의 모든 저자를 나열합니다",
+	"bs-authors-info-dialog-grid-column-type": "저자 유형"
 }

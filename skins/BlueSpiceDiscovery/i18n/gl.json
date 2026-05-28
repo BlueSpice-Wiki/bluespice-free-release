@@ -202,5 +202,12 @@
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Desenvolvido por Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Editar",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Limpar",
-	"bs-discovery-breadcrumb-nav-root-node-title": "Mostrar todas as páxinas no espazo de nomes «$1»"
+	"bs-discovery-breadcrumb-nav-root-node-title": "Mostrar todas as páxinas no espazo de nomes «$1»",
+	"bs-discovery-personalurl-blog-text": "Blog",
+	"bs-discovery-menu-provider-namespace-tree-label": "Todas as páxinas",
+	"bs-discovery-menu-provider-namespace-tree-desc": "Todas as páxinas do espazo de nomes actual como árbore",
+	"bs-discovery-namespace-tree-pnl-header-text": "Páxinas",
+	"bs-discovery-namespace-tree-search-btn-label": "Mostrar a procura",
+	"bs-discovery-namespace-tree-create-btn-label": "Crear unha páxina nova",
+	"bs-discovery-namespace-tree-search-label": "Procurar unha páxina"
 }

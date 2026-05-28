@@ -8,7 +8,6 @@ use MediaWiki\Config\ConfigException;
 use MediaWiki\Extension\OATHAuth\OATHUserRepository;
 use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\Logger\LoggerFactory;
-use MediaWiki\Message\Message;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\SpecialPage\FormSpecialPage;
 use MediaWiki\User\CentralId\CentralIdLookup;
@@ -79,13 +78,6 @@ class DisableOATHForUser extends FormSpecialPage {
 	}
 
 	/**
-	 * @return bool
-	 */
-	public function requiresUnblock() {
-		return false;
-	}
-
-	/**
 	 * @param User $user
 	 * @throws UserBlockedError
 	 * @throws UserNotLoggedIn
@@ -141,15 +133,14 @@ class DisableOATHForUser extends FormSpecialPage {
 			return [ 'oathauth-user-not-found' ];
 		}
 
+		if ( $this->getUser()->pingLimiter( 'disableoath' ) ) {
+			return [ 'oathauth-throttled' ];
+		}
+
 		$oathUser = $this->userRepo->findByUser( $user );
 
 		if ( !$oathUser->isTwoFactorAuthEnabled() ) {
 			return [ 'oathauth-user-not-does-not-have-oath-enabled' ];
-		}
-
-		if ( $this->getUser()->pingLimiter( 'disableoath', 0 ) ) {
-			// Arbitrary duration given here
-			return [ 'oathauth-throttled', Message::durationParam( 60 ) ];
 		}
 
 		$this->userRepo->removeAll( $oathUser, $this->getRequest()->getIP(), false );

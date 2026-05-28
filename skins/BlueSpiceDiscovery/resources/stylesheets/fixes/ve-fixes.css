@@ -37,3 +37,8 @@ body.mediawiki .ve-init-sa-target-toolbar > .oo-ui-toolbar-bar > .oo-ui-toolbar-
 .ve-ce-documentNode-codeEditor-webkit-hide::selection {
     color: transparent;
 }
+
+/* Fix VEForAll toolbar dropdowns - ERM47218 */
+.ve-area-wrapper .ve-ui-toolbar .oo-ui-listToolGroup-tools .oo-ui-tool-link .oo-ui-tool-title {
+	padding-left: 2.7em;
+}

@@ -3,6 +3,7 @@
 		"authors": [
 			"Hwangjy9",
 			"Revi",
+			"Tensama0415",
 			"Yearning",
 			"Ykhwong"
 		]
@@ -21,5 +22,10 @@
 	"bs-contextmenu-user-mail": "메일 보내기",
 	"bs-contextmenu-user-talk": "토론 문서에 메시지 남기기",
 	"bs-contextmenu-file-download": "파일 내려받기",
-	"bs-contextmenu-open-in-new-tab": "새 탭에서 열기"
+	"bs-contextmenu-open-in-new-tab": "새 탭에서 열기",
+	"bs-contextmenu-no-items": "이용 가능한 콘텐츠 항목이 없음",
+	"bs-contextmenu-pref-modus": "컨텍스트 메뉴를 여는 방법 (모바일용 아님):",
+	"bs-contextmenu-pref-modus-just-right-mouse": "마우스 오른쪽 버튼을 클릭 (CTRL 키를 누르면 기본 브라우저 컨텍스트 메뉴가 표시됨)",
+	"bs-contextmenu-pref-modus-ctrl-and-right-mouse": "CTRL 키를 누르면서 마우스 오른쪽 버튼을 클릭 (그냥 마우스 오른쪽 버튼을 클릭하면 기본 브라우저 컨텍스트 메뉴가 표시됨)",
+	"apihelp-bs-contextmenu-tasks-summary": "컨텍스트 메뉴 안에 있는 컨텍스트 메뉴 항목을 제공합니다"
 }

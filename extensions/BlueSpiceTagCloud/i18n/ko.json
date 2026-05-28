@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -19,12 +20,21 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "사용할 데이터를 선택하십시오",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "분류",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "검색어",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "너비",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "태그 클라우드의 너비",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "태그 클라우드의 너비 (단위: 퍼센트)",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "개수 표시",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "괄호 안의 항목 수를 표시합니다",
 	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "최소 글꼴 크기",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "최대 글꼴 크기",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "문서 제외",
-	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "태그 클라우드에 이 문서들을 표시하지 않습니다. 더 많은 문서의 경우 쉼표 구분 목록을 사용하십시오. (예: \"주 문서, 테스트, 내문서\")"
+	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "태그 클라우드에 이 문서들을 표시하지 않습니다. 더 많은 문서의 경우 쉼표 구분 목록을 사용하십시오. (예: \"주 문서, 테스트, 내문서\")",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "가장 적은 항목을 가진 항목의 글꼴 크기",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "가장 많은 항목을 가진 항목의 글꼴 크기",
+	"bs-tagcloud-droplet-name": "태그 클라우드",
+	"bs-tagcloud-droplet-description": "분류나 검색 쿼리를 기반으로 한 태그 클라우드",
+	"bs-tagcloud-tag-tagcloud-tab-common": "기본",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "고급",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "표시 모드",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "빈도 표시",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "사용된 분류나 검색 쿼리 수를 추가"
 }

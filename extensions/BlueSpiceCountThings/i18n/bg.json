@@ -6,5 +6,7 @@
 			"Termininja"
 		]
 	},
-	"bs-countthings-pages-label": "Страници"
+	"bs-countthings-pages-label": "Страници",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "страници",
+	"bs-countthings-ve-countcharacters-input-label": "Страници"
 }

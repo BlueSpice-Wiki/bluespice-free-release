@@ -13,6 +13,9 @@ class UtilityFactory {
 	/** @var MediaWikiServices */
 	protected $services;
 
+	/** @var array */
+	protected $instances = [];
+
 	/**
 	 * @param MediaWikiServices $services
 	 */
@@ -33,5 +36,47 @@ class UtilityFactory {
 		return new GroupHelper(
 			$groupManager, $additionalGroups, $groupTypes, $dbr, $this->services->getUserFactory()
 		);
+	}
+
+	/**
+	 * @return ReadableNamespaces
+	 */
+	public function getReadableNamespacesHelper(): ReadableNamespaces {
+		if ( !isset( $this->instances['readableNamespaces'] ) ) {
+			$this->instances['readableNamespaces'] = new ReadableNamespaces(
+				$this->services->getNamespaceInfo(),
+				$this->services->getMainConfig(),
+				$this->services->getHookContainer(),
+				$this->services->getUserGroupManager()
+			);
+		}
+		return $this->instances['readableNamespaces'];
+	}
+
+	/**
+	 * @return MessageHelper
+	 */
+	public function getMessageHelper(): MessageHelper {
+		if ( !isset( $this->instances['messageHelper'] ) ) {
+			$this->instances['messageHelper'] = new MessageHelper(
+				$this->services->getLocalisationCache(),
+				$this->services->getDBLoadBalancer(),
+				$this->services->getContentLanguageCode()
+			);
+		}
+		return $this->instances['messageHelper'];
+	}
+
+	/**
+	 * @return DisplayTitleHelper
+	 */
+	public function getDisplayTitleHelper(): DisplayTitleHelper {
+		if ( !isset( $this->instances['displayTitleHelper'] ) ) {
+			$this->instances['displayTitleHelper'] = new DisplayTitleHelper(
+				$this->services->getObjectCacheFactory(),
+				$this->services->getDBLoadBalancer()
+			);
+		}
+		return $this->instances['displayTitleHelper'];
 	}
 }

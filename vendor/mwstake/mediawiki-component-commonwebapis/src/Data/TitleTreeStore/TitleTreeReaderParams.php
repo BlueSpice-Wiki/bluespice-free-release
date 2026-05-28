@@ -34,4 +34,14 @@ class TitleTreeReaderParams extends \MWStake\MediaWiki\Component\DataStore\Reade
 		}
 		return [];
 	}
+
+	/**
+	 * @return string
+	 */
+	public function getHash(): string {
+		return md5( parent::getHash() . json_encode( [
+			'node' => $this->node,
+			'expand-paths' => $this->expandPaths,
+		] ) );
+	}
 }

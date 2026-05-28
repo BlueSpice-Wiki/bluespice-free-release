@@ -4,17 +4,18 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
+class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
 {
     public static $files = array (
         'ef0a3cc8d59aacc0241af9c20bb29c47' => __DIR__ . '/..' . '/mwstake/mediawiki-componentloader/bootstrap.php',
         'aee3df8238f2131f3ed1cf1c93bae858' => __DIR__ . '/..' . '/mwstake/mediawiki-component-manifestregistry/bootstrap.php',
-        '10a542061c80b3639afb5868667e9583' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/bootstrap.php',
         '23c5449715806cf29062abde4a042613' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/bootstrap.php',
+        '10a542061c80b3639afb5868667e9583' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/bootstrap.php',
         '54b5b4fa498e570138b0c96a5a5c74f1' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonuserinterface/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'e88301dfa829b6392faf3213d53f4383' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/bootstrap.php',
         '26f133245c878f6605653c89cf062385' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicfiledispatcher/bootstrap.php',
+        'dae04644524c022968e8c324b8249118' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/bootstrap.php',
         'fd32baaacc8f079f552c4fc0d06dffcc' => __DIR__ . '/..' . '/mwstake/mediawiki-component-processmanager/bootstrap.php',
         'e4a0598898f7bd76d21a3cd42977d6a2' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikitext/bootstrap.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -27,7 +28,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '1983c13b69e495399f39e129bef37a19' => __DIR__ . '/..' . '/mwstake/mediawiki-component-alertbanners/bootstrap.php',
         'ba2d8993296fb4095ebfbf8931e43e31' => __DIR__ . '/..' . '/mwstake/mediawiki-component-events/bootstrap.php',
-        'dae04644524c022968e8c324b8249118' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/bootstrap.php',
+        '234c4508ff8b2cc46193bc5644dec00a' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/bootstrap.php',
         '12fe04ad8360e80fbade3a62e3ad67a2' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/bootstrap.php',
         'af3cc937b8a54e5b4209c82d6cfe8889' => __DIR__ . '/..' . '/param-processor/param-processor/DefaultConfig.php',
         'c50606d667a3fde2b80a955639479d3d' => __DIR__ . '/..' . '/wikimedia/timestamp/src/defines.php',
@@ -106,12 +107,13 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'M' => 
         array (
             'Monolog\\' => 8,
+            'MediaWiki\\Extension\\UserProfile\\' => 32,
             'MediaWiki\\Composer\\' => 19,
             'MWStake\\MediaWiki\\Lib\\Nodes\\' => 28,
             'MWStake\\MediaWiki\\Component\\Wikitext\\' => 37,
             'MWStake\\MediaWiki\\Component\\WikiCron\\Tests\\' => 43,
             'MWStake\\MediaWiki\\Component\\WikiCron\\' => 37,
-            'MWStake\\MediaWiki\\Component\\Utils\\Tests\\' => 40,
+            'MWStake\\MediaWiki\\Component\\Utils\\Tests\\Unit\\' => 45,
             'MWStake\\MediaWiki\\Component\\Utils\\' => 34,
             'MWStake\\MediaWiki\\Component\\RunJobsTrigger\\Tests\\' => 49,
             'MWStake\\MediaWiki\\Component\\RunJobsTrigger\\' => 43,
@@ -122,6 +124,8 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
             'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Unit\\' => 54,
             'MWStake\\MediaWiki\\Component\\InputProcessor\\Tests\\Integration\\' => 61,
             'MWStake\\MediaWiki\\Component\\InputProcessor\\' => 43,
+            'MWStake\\MediaWiki\\Component\\GenericTagHandler\\Tests\\' => 52,
+            'MWStake\\MediaWiki\\Component\\GenericTagHandler\\' => 46,
             'MWStake\\MediaWiki\\Component\\FormEngine\\Tests\\' => 45,
             'MWStake\\MediaWiki\\Component\\FormEngine\\' => 39,
             'MWStake\\MediaWiki\\Component\\Events\\Tests\\Unit\\' => 46,
@@ -394,6 +398,10 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'MediaWiki\\Extension\\UserProfile\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/extensions/UserProfile/src',
+        ),
         'MediaWiki\\Composer\\' => 
         array (
             0 => __DIR__ . '/../..' . '/includes/composer',
@@ -414,9 +422,9 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         array (
             0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/src',
         ),
-        'MWStake\\MediaWiki\\Component\\Utils\\Tests\\' => 
+        'MWStake\\MediaWiki\\Component\\Utils\\Tests\\Unit\\' => 
         array (
-            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/tests/phpunit',
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/tests/phpunit/unit',
         ),
         'MWStake\\MediaWiki\\Component\\Utils\\' => 
         array (
@@ -457,6 +465,14 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\InputProcessor\\' => 
         array (
             0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/src',
+        ),
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/tests',
+        ),
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src',
         ),
         'MWStake\\MediaWiki\\Component\\FormEngine\\Tests\\' => 
         array (
@@ -848,11 +864,9 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseAutocompleteSourceFields' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseAutocompleteSourceFields.php',
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseConvertTypeFilter' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseConvertTypeFilter.php',
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseExtensionAggregation' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseExtensionAggregation.php',
-        'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseMTimeBoost' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseMTimeBoost.php',
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseSimpleQSFields' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseSimpleQSFields.php',
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseSortByID' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseSortByID.php',
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseTagsAggregation' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseTagsAggregation.php',
-        'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseTitleSecurityTrimmings' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseTitleSecurityTrimmings.php',
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseTypeSecurityTrimming' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseTypeSecurityTrimming.php',
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseUserRelevance' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseUserRelevance.php',
         'BS\\ExtendedSearch\\Source\\LookupModifier\\BaseWildcarder' => __DIR__ . '/../..' . '/extensions/BlueSpiceExtendedSearch/src/Source/LookupModifier/BaseWildcarder.php',
@@ -1101,7 +1115,6 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'BlueSpice\\Discovery\\Hook\\BlueSpiceDiscoveryAfterGetFooterPlaces' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Hook/BlueSpiceDiscoveryAfterGetFooterPlaces.php',
         'BlueSpice\\Discovery\\Hook\\BlueSpiceDiscoveryTemplateDataProviderAfterInit' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Hook/BlueSpiceDiscoveryTemplateDataProviderAfterInit.php',
         'BlueSpice\\Discovery\\Hook\\BsAdapterAjaxPingResult\\CheckAttentionIndicator' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Hook/BsAdapterAjaxPingResult/CheckAttentionIndicator.php',
-        'BlueSpice\\Discovery\\Hook\\InvalidateEnhancedSidebarCache' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Hook/InvalidateEnhancedSidebarCache.php',
         'BlueSpice\\Discovery\\Hook\\LastEditInfoHook' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Hook/LastEditInfoHook.php',
         'BlueSpice\\Discovery\\Hook\\SetPageLanguage' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/Hook/SetPageLanguage.php',
         'BlueSpice\\Discovery\\IAttentionIndicator' => __DIR__ . '/../..' . '/skins/BlueSpiceDiscovery/src/IAttentionIndicator.php',
@@ -1329,6 +1342,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'BlueSpice\\PermissionManager\\Hook\\BSPermissionManagerGroupDeletedHook' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/BSPermissionManagerGroupDeletedHook.php',
         'BlueSpice\\PermissionManager\\Hook\\BSPermissionManagerGroupEditedHook' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/BSPermissionManagerGroupEditedHook.php',
         'BlueSpice\\PermissionManager\\Hook\\MigrateSettings' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/MigrateSettings.php',
+        'BlueSpice\\PermissionManager\\Hook\\ProvideReadableNamespaces' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/ProvideReadableNamespaces.php',
         'BlueSpice\\PermissionManager\\Hook\\ReactToGroupChanges' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/ReactToGroupChanges.php',
         'BlueSpice\\PermissionManager\\Hook\\RegisterDynamicConfig' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Hook/RegisterDynamicConfig.php',
         'BlueSpice\\PermissionManager\\IPreset' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/IPreset.php',
@@ -1615,6 +1629,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'DateMalformedStringException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateMalformedStringException.php',
         'DateObjectError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateObjectError.php',
         'DateRangeError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateRangeError.php',
+        'DelayedTargetValidation' => __DIR__ . '/..' . '/symfony/polyfill-php85/Resources/stubs/DelayedTargetValidation.php',
         'Deprecated' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Deprecated.php',
         'Endroid\\QrCode\\Bacon\\ErrorCorrectionLevelConverter' => __DIR__ . '/..' . '/endroid/qr-code/src/Bacon/ErrorCorrectionLevelConverter.php',
         'Endroid\\QrCode\\Bacon\\MatrixFactory' => __DIR__ . '/..' . '/endroid/qr-code/src/Bacon/MatrixFactory.php',
@@ -1671,6 +1686,8 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'Endroid\\QrCode\\Writer\\ValidatingWriterInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/ValidatingWriterInterface.php',
         'Endroid\\QrCode\\Writer\\WebPWriter' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/WebPWriter.php',
         'Endroid\\QrCode\\Writer\\WriterInterface' => __DIR__ . '/..' . '/endroid/qr-code/src/Writer/WriterInterface.php',
+        'Filter\\FilterException' => __DIR__ . '/..' . '/symfony/polyfill-php85/Resources/stubs/Filter/FilterException.php',
+        'Filter\\FilterFailedException' => __DIR__ . '/..' . '/symfony/polyfill-php85/Resources/stubs/Filter/FilterFailedException.php',
         'GuzzleHttp\\BodySummarizer' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/BodySummarizer.php',
         'GuzzleHttp\\BodySummarizerInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/BodySummarizerInterface.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
@@ -2135,6 +2152,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\TitleTreeStore\\PrimaryDataProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/TitleTreeStore/PrimaryDataProvider.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\TitleTreeStore\\Reader' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/TitleTreeStore/Reader.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\TitleTreeStore\\SecondaryDataProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/TitleTreeStore/SecondaryDataProvider.php',
+        'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\TitleTreeStore\\SortkeyBucketProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/TitleTreeStore/SortkeyBucketProvider.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\TitleTreeStore\\Store' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/TitleTreeStore/Store.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\TitleTreeStore\\TitleTreeReaderParams' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/TitleTreeStore/TitleTreeReaderParams.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\TitleTreeStore\\TitleTreeRecord' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/TitleTreeStore/TitleTreeRecord.php',
@@ -2206,6 +2224,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\DataStore\\Filter\\Title' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/Filter/Title.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\Filterer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/Filterer.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\IBucketProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/IBucketProvider.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\IContinueAwareRecord' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/IContinueAwareRecord.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\IPrimaryDataProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/IPrimaryDataProvider.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\IReader' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/IReader.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\IRecord' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/IRecord.php',
@@ -2213,10 +2232,12 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\DataStore\\IStore' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/IStore.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\ITrimmer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/ITrimmer.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\IWriter' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/IWriter.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\LimitContinueTrimmer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/LimitContinueTrimmer.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\LimitOffsetTrimmer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/LimitOffsetTrimmer.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\NoWriterException' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/NoWriterException.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\NullSorter' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/NullSorter.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\NullTrimmer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/NullTrimmer.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\PermissionTrimmer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/PermissionTrimmer.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\PrimaryDatabaseDataProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/PrimaryDatabaseDataProvider.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\Reader' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/Reader.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\ReaderParams' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/ReaderParams.php',
@@ -2239,6 +2260,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\LimitOffsetTrimmerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/LimitOffsetTrimmerTest.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\ReaderParamsTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/ReaderParamsTest.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\Tests\\Unit\\SorterTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/tests/phpunit/unit/SorterTest.php',
+        'MWStake\\MediaWiki\\Component\\DataStore\\TitleAwareReader' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/TitleAwareReader.php',
         'MWStake\\MediaWiki\\Component\\DataStore\\Writer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/src/Writer.php',
         'MWStake\\MediaWiki\\Component\\DynamicConfig\\DynamicConfigManager' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/src/DynamicConfigManager.php',
         'MWStake\\MediaWiki\\Component\\DynamicConfig\\GlobalsAwareDynamicConfig' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/src/GlobalsAwareDynamicConfig.php',
@@ -2246,6 +2268,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\DynamicConfig\\Hook\\MWStakeDynamicConfigRegisterConfigsHook' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/src/Hook/MWStakeDynamicConfigRegisterConfigsHook.php',
         'MWStake\\MediaWiki\\Component\\DynamicConfig\\IDynamicConfig' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/src/IDynamicConfig.php',
         'MWStake\\MediaWiki\\Component\\DynamicConfig\\Tests\\DynamicConfigManagerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicconfig/tests/phpunit/DynamicConfigManagerTest.php',
+        'MWStake\\MediaWiki\\Component\\DynamicFileDispatcher\\CacheableFile' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicfiledispatcher/src/CacheableFile.php',
         'MWStake\\MediaWiki\\Component\\DynamicFileDispatcher\\DynamicFileDispatcherFactory' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicfiledispatcher/src/DynamicFileDispatcherFactory.php',
         'MWStake\\MediaWiki\\Component\\DynamicFileDispatcher\\File\\AnonImage' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicfiledispatcher/src/File/AnonImage.php',
         'MWStake\\MediaWiki\\Component\\DynamicFileDispatcher\\File\\DefaultArticlePreviewImage' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicfiledispatcher/src/File/DefaultArticlePreviewImage.php',
@@ -2282,6 +2305,19 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\FormEngine\\FormLoaderSpecification' => __DIR__ . '/..' . '/mwstake/mediawiki-component-formengine/src/FormLoaderSpecification.php',
         'MWStake\\MediaWiki\\Component\\FormEngine\\IFormSpecification' => __DIR__ . '/..' . '/mwstake/mediawiki-component-formengine/src/IFormSpecification.php',
         'MWStake\\MediaWiki\\Component\\FormEngine\\StandaloneFormSpecification' => __DIR__ . '/..' . '/mwstake/mediawiki-component-formengine/src/StandaloneFormSpecification.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\ClientTagSpecification' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/ClientTagSpecification.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\GenericTag' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/GenericTag.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\Hook\\MWStakeGenericTagHandlerInitTagsHook' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/Hook/MWStakeGenericTagHandlerInitTagsHook.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\ITag' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/ITag.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\ITagHandler' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/ITagHandler.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\MarkerType' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/MarkerType.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\MarkerType\\General' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/MarkerType/General.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\MarkerType\\NoWiki' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/MarkerType/NoWiki.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\MarkerType\\None' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/MarkerType/None.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\Rest\\ListTagsHandler' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/Rest/ListTagsHandler.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\Rest\\RenderTagHandler' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/Rest/RenderTagHandler.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\TagFactory' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/TagFactory.php',
+        'MWStake\\MediaWiki\\Component\\GenericTagHandler\\TagRenderer' => __DIR__ . '/..' . '/mwstake/mediawiki-component-generictaghandler/src/TagRenderer.php',
         'MWStake\\MediaWiki\\Component\\InputProcessor\\GenericProcessor' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/src/GenericProcessor.php',
         'MWStake\\MediaWiki\\Component\\InputProcessor\\IProcessor' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/src/IProcessor.php',
         'MWStake\\MediaWiki\\Component\\InputProcessor\\MWStakeInputProcessorRegisterProcessorsHook' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/src/MWStakeInputProcessorRegisterProcessorsHook.php',
@@ -2330,6 +2366,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\ProcessManager\\ManagedProcess' => __DIR__ . '/..' . '/mwstake/mediawiki-component-processmanager/src/ManagedProcess.php',
         'MWStake\\MediaWiki\\Component\\ProcessManager\\ProcessInfo' => __DIR__ . '/..' . '/mwstake/mediawiki-component-processmanager/src/ProcessInfo.php',
         'MWStake\\MediaWiki\\Component\\ProcessManager\\ProcessManager' => __DIR__ . '/..' . '/mwstake/mediawiki-component-processmanager/src/ProcessManager.php',
+        'MWStake\\MediaWiki\\Component\\ProcessManager\\ProcessQueue\\RedisQueue' => __DIR__ . '/..' . '/mwstake/mediawiki-component-processmanager/src/ProcessQueue/RedisQueue.php',
         'MWStake\\MediaWiki\\Component\\ProcessManager\\ProcessQueue\\SimpleDatabaseQueue' => __DIR__ . '/..' . '/mwstake/mediawiki-component-processmanager/src/ProcessQueue/SimpleDatabaseQueue.php',
         'MWStake\\MediaWiki\\Component\\ProcessManager\\StepExecutor' => __DIR__ . '/..' . '/mwstake/mediawiki-component-processmanager/src/StepExecutor.php',
         'MWStake\\MediaWiki\\Component\\RunJobsTrigger\\Handler' => __DIR__ . '/..' . '/mwstake/mediawiki-component-runjobstrigger/src/Handler.php',
@@ -2353,12 +2390,17 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MWStake\\MediaWiki\\Component\\RunJobsTrigger\\Tests\\Interval\\OnceADayTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-runjobstrigger/tests/phpunit/Interval/OnceADayTest.php',
         'MWStake\\MediaWiki\\Component\\RunJobsTrigger\\Tests\\Interval\\OnceAWeekTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-runjobstrigger/tests/phpunit/Interval/OnceAWeekTest.php',
         'MWStake\\MediaWiki\\Component\\RunJobsTrigger\\Tests\\JSONFileStatusManagerTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-runjobstrigger/tests/phpunit/JSONFileStatusManagerTest.php',
-        'MWStake\\MediaWiki\\Component\\Utils\\Tests\\GroupHelperTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/tests/phpunit/GroupHelperTest.php',
+        'MWStake\\MediaWiki\\Component\\Utils\\DisplayTitleHelper' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/src/DisplayTitleHelper.php',
+        'MWStake\\MediaWiki\\Component\\Utils\\Hook\\MWStakeUtilsGetReadableNamespacesHook' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/src/Hook/MWStakeUtilsGetReadableNamespacesHook.php',
+        'MWStake\\MediaWiki\\Component\\Utils\\MessageHelper' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/src/MessageHelper.php',
+        'MWStake\\MediaWiki\\Component\\Utils\\ReadableNamespaces' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/src/ReadableNamespaces.php',
+        'MWStake\\MediaWiki\\Component\\Utils\\Tests\\Unit\\GroupHelperTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/tests/phpunit/unit/GroupHelperTest.php',
         'MWStake\\MediaWiki\\Component\\Utils\\UtilityFactory' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/src/UtilityFactory.php',
         'MWStake\\MediaWiki\\Component\\Utils\\Utility\\GroupHelper' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/src/Utility/GroupHelper.php',
         'MWStake\\MediaWiki\\Component\\WikiCron\\ICronStore' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/src/ICronStore.php',
-        'MWStake\\MediaWiki\\Component\\WikiCron\\LocalDatabaseStore' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/src/LocalDatabaseStore.php',
         'MWStake\\MediaWiki\\Component\\WikiCron\\Maintenance\\ClearDB' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/src/Maintenance/ClearDB.php',
+        'MWStake\\MediaWiki\\Component\\WikiCron\\Store\\LocalDatabaseStore' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/src/Store/LocalDatabaseStore.php',
+        'MWStake\\MediaWiki\\Component\\WikiCron\\Store\\RedisStore' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/src/Store/RedisStore.php',
         'MWStake\\MediaWiki\\Component\\WikiCron\\WikiCronManager' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/src/WikiCronManager.php',
         'MWStake\\MediaWiki\\Component\\WikiCron\\WikiCronPlugin' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikicron/src/WikiCronPlugin.php',
         'MWStake\\MediaWiki\\Component\\Wikitext\\IParsoidNodeProcessor' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikitext/src/IParsoidNodeProcessor.php',
@@ -2408,6 +2450,47 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'MediaWiki\\Composer\\PhpUnitSplitter\\TestSuiteBuilder' => __DIR__ . '/../..' . '/includes/composer/PhpUnitSplitter/TestSuiteBuilder.php',
         'MediaWiki\\Composer\\PhpUnitSplitter\\UnlocatedTestException' => __DIR__ . '/../..' . '/includes/composer/PhpUnitSplitter/UnlocatedTestException.php',
         'MediaWiki\\Composer\\VersionChecker' => __DIR__ . '/../..' . '/includes/composer/VersionChecker.php',
+        'MediaWiki\\Extension\\UserProfile\\Action\\EditProfileData' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Action/EditProfileData.php',
+        'MediaWiki\\Extension\\UserProfile\\CommentStreamsAvatarProvider' => __DIR__ . '/../..' . '/extensions/UserProfile/src/CommentStreamsAvatarProvider.php',
+        'MediaWiki\\Extension\\UserProfile\\ContentDroplets\\ProfileDroplet' => __DIR__ . '/../..' . '/extensions/UserProfile/src/ContentDroplets/ProfileDroplet.php',
+        'MediaWiki\\Extension\\UserProfile\\Content\\Profile' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Content/Profile.php',
+        'MediaWiki\\Extension\\UserProfile\\Content\\ProfileContentHandler' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Content/ProfileContentHandler.php',
+        'MediaWiki\\Extension\\UserProfile\\DynamicFileDispatcher\\DirectPathDynamicFile' => __DIR__ . '/../..' . '/extensions/UserProfile/src/DynamicFileDispatcher/DirectPathDynamicFile.php',
+        'MediaWiki\\Extension\\UserProfile\\DynamicFileDispatcher\\UserProfileImage' => __DIR__ . '/../..' . '/extensions/UserProfile/src/DynamicFileDispatcher/UserProfileImage.php',
+        'MediaWiki\\Extension\\UserProfile\\Extension' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Extension.php',
+        'MediaWiki\\Extension\\UserProfile\\Field\\EmailField' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Field/EmailField.php',
+        'MediaWiki\\Extension\\UserProfile\\Field\\LinkField' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Field/LinkField.php',
+        'MediaWiki\\Extension\\UserProfile\\Field\\MetaField' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Field/MetaField.php',
+        'MediaWiki\\Extension\\UserProfile\\Field\\ProfileField' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Field/ProfileField.php',
+        'MediaWiki\\Extension\\UserProfile\\Field\\ReadOnlyField' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Field/ReadOnlyField.php',
+        'MediaWiki\\Extension\\UserProfile\\Field\\SystemField' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Field/SystemField.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\AddModules' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/AddModules.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\AddPreferences' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/AddPreferences.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\AddProfileSlot' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/AddProfileSlot.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\AddTag' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/AddTag.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\CommentStreamsAvatar' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/CommentStreamsAvatar.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\HandleExternalProfileData' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/HandleExternalProfileData.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\Interface\\UserProfileAfterSetProfileDataHook' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/Interface/UserProfileAfterSetProfileDataHook.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\Interface\\UserProfileBeforeSetProfileDataHook' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/Interface/UserProfileBeforeSetProfileDataHook.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\Interface\\UserProfileGetProfileDataHook' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/Interface/UserProfileGetProfileDataHook.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\RegisterDynamicFileModule' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/RegisterDynamicFileModule.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\RegisterUsageTracker' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/RegisterUsageTracker.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\RenderProfileSlot' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/RenderProfileSlot.php',
+        'MediaWiki\\Extension\\UserProfile\\Hooks\\RunMigration' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Hooks/RunMigration.php',
+        'MediaWiki\\Extension\\UserProfile\\Html\\FormField\\UserImageHtmlField' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Html/FormField/UserImageHtmlField.php',
+        'MediaWiki\\Extension\\UserProfile\\Maintenance\\MigrateSocialProfiles' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Maintenance/MigrateSocialProfiles.php',
+        'MediaWiki\\Extension\\UserProfile\\Privacy\\Handler' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Privacy/Handler.php',
+        'MediaWiki\\Extension\\UserProfile\\ProfileFieldRegistry' => __DIR__ . '/../..' . '/extensions/UserProfile/src/ProfileFieldRegistry.php',
+        'MediaWiki\\Extension\\UserProfile\\ProfileImage\\IProfileImageProvider' => __DIR__ . '/../..' . '/extensions/UserProfile/src/ProfileImage/IProfileImageProvider.php',
+        'MediaWiki\\Extension\\UserProfile\\ProfileImage\\ProfileImageInfo' => __DIR__ . '/../..' . '/extensions/UserProfile/src/ProfileImage/ProfileImageInfo.php',
+        'MediaWiki\\Extension\\UserProfile\\ProfileImage\\ProfileImageProviderFactory' => __DIR__ . '/../..' . '/extensions/UserProfile/src/ProfileImage/ProfileImageProviderFactory.php',
+        'MediaWiki\\Extension\\UserProfile\\ProfileManager' => __DIR__ . '/../..' . '/extensions/UserProfile/src/ProfileManager.php',
+        'MediaWiki\\Extension\\UserProfile\\ResourceModule\\BSVECModule' => __DIR__ . '/../..' . '/extensions/UserProfile/src/ResourceModule/BSVECModule.php',
+        'MediaWiki\\Extension\\UserProfile\\Rest\\RetrieveProfileDataHandler' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Rest/RetrieveProfileDataHandler.php',
+        'MediaWiki\\Extension\\UserProfile\\Rest\\SaveProfileDataHandler' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Rest/SaveProfileDataHandler.php',
+        'MediaWiki\\Extension\\UserProfile\\UsageTracker\\UsersWithProfileData' => __DIR__ . '/../..' . '/extensions/UserProfile/src/UsageTracker/UsersWithProfileData.php',
+        'MediaWiki\\Extension\\UserProfile\\UserProfilePropertyValueProvider' => __DIR__ . '/../..' . '/extensions/UserProfile/src/UserProfilePropertyValueProvider.php',
+        'MediaWiki\\Extension\\UserProfile\\Widget\\UserProfile' => __DIR__ . '/../..' . '/extensions/UserProfile/src/Widget/UserProfile.php',
         'Monolog\\Attribute\\AsMonologProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/AsMonologProcessor.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
         'Monolog\\ErrorHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ErrorHandler.php',
@@ -3029,6 +3112,12 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'ParamProcessor\\Processor' => __DIR__ . '/..' . '/param-processor/param-processor/src/Processor.php',
         'ParamProcessor\\Settings' => __DIR__ . '/..' . '/param-processor/param-processor/src/Settings.php',
         'ParamProcessor\\TopologicalSort' => __DIR__ . '/..' . '/param-processor/param-processor/src/TopologicalSort.php',
+        'Pdo\\Dblib' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Dblib.php',
+        'Pdo\\Firebird' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Firebird.php',
+        'Pdo\\Mysql' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Mysql.php',
+        'Pdo\\Odbc' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Odbc.php',
+        'Pdo\\Pgsql' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Pgsql.php',
+        'Pdo\\Sqlite' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/Pdo/Sqlite.php',
         'Peast\\Formatter\\Base' => __DIR__ . '/..' . '/mck89/peast/lib/Peast/Formatter/Base.php',
         'Peast\\Formatter\\Compact' => __DIR__ . '/..' . '/mck89/peast/lib/Peast/Formatter/Compact.php',
         'Peast\\Formatter\\Expanded' => __DIR__ . '/..' . '/mck89/peast/lib/Peast/Formatter/Expanded.php',
@@ -3229,6 +3318,8 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'React\\Promise\\Internal\\RejectedPromise' => __DIR__ . '/..' . '/react/promise/src/Internal/RejectedPromise.php',
         'React\\Promise\\Promise' => __DIR__ . '/..' . '/react/promise/src/Promise.php',
         'React\\Promise\\PromiseInterface' => __DIR__ . '/..' . '/react/promise/src/PromiseInterface.php',
+        'ReflectionConstant' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/ReflectionConstant.php',
+        'RoundingMode' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/RoundingMode.php',
         'SQLite3Exception' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/SQLite3Exception.php',
         'SensitiveParameter' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/SensitiveParameter.php',
         'SensitiveParameterValue' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/SensitiveParameterValue.php',
@@ -3330,6 +3421,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'Symfony\\Component\\Yaml\\Exception\\RuntimeException' => __DIR__ . '/..' . '/symfony/yaml/Exception/RuntimeException.php',
         'Symfony\\Component\\Yaml\\Inline' => __DIR__ . '/..' . '/symfony/yaml/Inline.php',
         'Symfony\\Component\\Yaml\\Parser' => __DIR__ . '/..' . '/symfony/yaml/Parser.php',
+        'Symfony\\Component\\Yaml\\ParserState' => __DIR__ . '/..' . '/symfony/yaml/ParserState.php',
         'Symfony\\Component\\Yaml\\Tag\\TaggedValue' => __DIR__ . '/..' . '/symfony/yaml/Tag/TaggedValue.php',
         'Symfony\\Component\\Yaml\\Unescaper' => __DIR__ . '/..' . '/symfony/yaml/Unescaper.php',
         'Symfony\\Component\\Yaml\\Yaml' => __DIR__ . '/..' . '/symfony/yaml/Yaml.php',
@@ -3385,6 +3477,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'Wikimedia\\AtEase\\AtEase' => __DIR__ . '/..' . '/wikimedia/at-ease/src/AtEase.php',
         'Wikimedia\\Bcp47Code\\Bcp47Code' => __DIR__ . '/..' . '/wikimedia/bcp-47-code/src/Bcp47Code.php',
         'Wikimedia\\Bcp47Code\\Bcp47CodeValue' => __DIR__ . '/..' . '/wikimedia/bcp-47-code/src/Bcp47CodeValue.php',
+        'Wikimedia\\CSS\\Exception\\ParseException' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Exception/ParseException.php',
         'Wikimedia\\CSS\\Grammar\\Alternative' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Grammar/Alternative.php',
         'Wikimedia\\CSS\\Grammar\\AnythingMatcher' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Grammar/AnythingMatcher.php',
         'Wikimedia\\CSS\\Grammar\\BlockMatcher' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Grammar/BlockMatcher.php',
@@ -3430,6 +3523,7 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
         'Wikimedia\\CSS\\Parser\\StringDataSource' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Parser/StringDataSource.php',
         'Wikimedia\\CSS\\Parser\\TokenListTokenizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Parser/TokenListTokenizer.php',
         'Wikimedia\\CSS\\Parser\\Tokenizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Parser/Tokenizer.php',
+        'Wikimedia\\CSS\\Sanitizer\\CounterStyleAtRuleSanitizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Sanitizer/CounterStyleAtRuleSanitizer.php',
         'Wikimedia\\CSS\\Sanitizer\\FontFaceAtRuleSanitizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Sanitizer/FontFaceAtRuleSanitizer.php',
         'Wikimedia\\CSS\\Sanitizer\\ImportAtRuleSanitizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Sanitizer/ImportAtRuleSanitizer.php',
         'Wikimedia\\CSS\\Sanitizer\\KeyframesAtRuleSanitizer' => __DIR__ . '/..' . '/wikimedia/css-sanitizer/src/Sanitizer/KeyframesAtRuleSanitizer.php',
@@ -4482,11 +4576,11 @@ class ComposerStaticInite275a23f9c456d499358a2a20d1b7800
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInite275a23f9c456d499358a2a20d1b7800::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Repakr",
 			"Ата"
 		]
 	},
-	"visualeditorplus-desc": "Додає різні функції до візуального редактора"
+	"visualeditorplus-desc": "Додає різні функції до візуального редактора",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Вилучити таблицю",
+	"visualeditorplus-table-contextitem-properties-label": "Властивості таблиці",
+	"visualeditorplus-table-contextitem-additional-options-label": "Додаткові опції комірки",
+	"visualeditorplus-table-cell-actions-dialog-title": "Опції комірки",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Готово",
+	"visualeditorplus-ui-label-unwrap": "Вуличити (залишивши вміст)",
+	"visualeditorplus-ui-label-delete": "Вилучити"
 }

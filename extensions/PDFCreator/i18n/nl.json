@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
 	"pdfcreator-name": "PDF-maker",
@@ -154,5 +155,6 @@
 	"pdfcreator-tag-no-export-start-ve-label": "PDF-uitsluiting - begin",
 	"pdfcreator-tag-no-export-end-ve-label": "PDF-uitsluiting - einde",
 	"pdfcreator-global-action-overview": "PDF-sjablonen",
-	"pdfcreator-global-action-overview-desc": "Overzicht van alle PDF-sjablonen in de wiki"
+	"pdfcreator-global-action-overview-desc": "Overzicht van alle PDF-sjablonen in de wiki",
+	"pdfcreator-export-action-text": "Exporteren als PDF"
 }
