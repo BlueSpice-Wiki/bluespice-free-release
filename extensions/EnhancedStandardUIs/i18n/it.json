@@ -55,5 +55,10 @@
 	"enhanced-standard-uis-preferences-date-label": "Seleziona il formato di visualizzazione",
 	"enhanced-standard-uis-prefs-panel-search-label": "Cerca",
 	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Informazioni sul file",
-	"enhanced-standard-uis-prefs-reset-dlg-action-label": "Reimposta"
+	"enhanced-standard-uis-prefs-reset-dlg-action-label": "Reimposta",
+	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "Tutte le pagine nel namespace",
+	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Indice alfabetico delle pagine",
+	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "Mostro $1 di ~ $2 {{PLURAL:$2|pagina|pagine}}",
+	"enhanced-standard-uis-allpages-panel-counter-label": "Mostro $1 di $2 {{PLURAL:$2|pagina|pagine}}",
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Carica altre pagine"
 }

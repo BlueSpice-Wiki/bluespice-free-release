@@ -46,9 +46,6 @@ class TitleQueryStore extends QueryStore {
 		$this->nsInfo = $nsInfo;
 		$this->pageProps = $pageProps;
 		$this->permissionManager = $permissionManager;
-		if ( $this->permissionManager === null ) {
-			$this->permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
-		}
 	}
 
 	/**

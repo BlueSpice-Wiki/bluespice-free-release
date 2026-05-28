@@ -44,10 +44,15 @@ class ProgressHandler implements ITagHandler {
 			$base = $params['basecount'];
 		}
 
-		$percent = $fraction / $base;
-		if ( $percent < 0 ) {
+		if ( $base === 0 ) {
 			$percent = 0;
+		} else {
+			$percent = $fraction / $base;
+			if ( $percent < 0 ) {
+				$percent = 0;
+			}
 		}
+
 		$percent = sprintf( "%0.1f", $percent * 100 );
 		$bar = Html::rawElement(
 			'div',

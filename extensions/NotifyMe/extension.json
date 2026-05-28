@@ -1,6 +1,6 @@
 {
 	"name": "NotifyMe",
-	"version": "2.1.2",
+	"version": "2.1.4",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
@@ -204,7 +204,7 @@
 			"dependencies": [
 				"oojs-ui",
 				"ext.oOJSPlus.widgets",
-				"spark-md5"
+				"ext.visualEditor.base"
 			]
 		},
 		"ext.notifyme.subscription.set": {
@@ -365,7 +365,7 @@
 		"ContentHandlerDefaultModelFor": "setMailContentModel",
 		"MediaWikiServices": [ "setMailContentModel", "registerCrons" ],
 		"CodeEditorGetPageLanguage": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\SetMailContentModel::onCodeEditorGetPageLanguage",
-		"UserMailerTransformMessage": "handleNonNotificationMails",
+		"UserMailerTransformMessage": [ "replaceCID", "handleNonNotificationMails" ],
 		"PageSaveComplete": "triggerEvents",
 		"PageMoveComplete": "triggerEvents",
 		"PageDeleteComplete": "triggerEvents",
@@ -408,6 +408,10 @@
 		},
 		"registerCrons": {
 			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\Hook\\RegisterCrons"
+		},
+		"replaceCID": {
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\Channel\\Email\\ReplaceCID",
+			"services": [ "NotifyMe.MailContentProvider" ]
 		}
 	},
 	"RestRoutes": [

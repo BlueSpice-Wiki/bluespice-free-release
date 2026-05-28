@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Piramidion",
+			"Repakr",
 			"Samflint",
 			"Ата",
 			"Пан Хаунд"
@@ -12,5 +13,7 @@
 	"bs-edit-user-mm-link-title": "Редагувати меню користувача",
 	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Редагувати ключове слово",
 	"menueditor-ui-menu-keyword-usersidebar-label": "Ключове слово",
-	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Редагувати ключове слово"
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Редагувати ключове слово",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Ключове слово",
+	"bs-usersidebar-empty-menu-label": "Немає доступних записів"
 }

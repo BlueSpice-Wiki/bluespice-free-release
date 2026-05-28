@@ -4,7 +4,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '3.1.0' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '3.1.2' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', static function () {

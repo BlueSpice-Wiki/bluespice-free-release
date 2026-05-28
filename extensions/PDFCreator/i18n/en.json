@@ -153,5 +153,6 @@
 	"pdfcreator-tag-no-export-start-ve-label": "PDF exclude - start",
 	"pdfcreator-tag-no-export-end-ve-label": "PDF exclude - end",
 	"pdfcreator-global-action-overview": "PDF templates",
-	"pdfcreator-global-action-overview-desc": "Overview of all PDF templates in the wiki"
+	"pdfcreator-global-action-overview-desc": "Overview of all PDF templates in the wiki",
+	"pdfcreator-export-action-text": "Export as PDF"
 }

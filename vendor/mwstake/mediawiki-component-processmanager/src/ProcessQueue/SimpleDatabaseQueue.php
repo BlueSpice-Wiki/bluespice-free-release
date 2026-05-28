@@ -5,6 +5,7 @@ namespace MWStake\MediaWiki\Component\ProcessManager\ProcessQueue;
 use DateInterval;
 use DateTime;
 use MWStake\MediaWiki\Component\ProcessManager\InterruptingProcessStep;
+use MWStake\MediaWiki\Component\ProcessManager\IProcessManagerPlugin;
 use MWStake\MediaWiki\Component\ProcessManager\IProcessQueue;
 use MWStake\MediaWiki\Component\ProcessManager\ManagedProcess;
 use MWStake\MediaWiki\Component\ProcessManager\ProcessInfo;
@@ -149,11 +150,11 @@ class SimpleDatabaseQueue implements IProcessQueue {
 	/**
 	 * @inheritDoc
 	 */
-	public function getEnqueuedProcesses(): array {
+	public function pluckOneFromQueue( string $runnerUUID ): ?ProcessInfo {
 		$db = $this->getDB();
-		$res = $db->select(
-			'processes',
-			[
+
+		$row = $db->newSelectQueryBuilder()
+			->select( [
 				'p_pid',
 				'p_state',
 				'p_exitcode',
@@ -164,19 +165,98 @@ class SimpleDatabaseQueue implements IProcessQueue {
 				'p_steps',
 				'p_last_completed_step',
 				'p_additional_script_args'
+			] )
+			->from( 'processes' )
+			->where( [
+				'p_state' => Process::STATUS_READY,
+				$db->makeList( [
+					'p_claimed_by IS NULL',
+					'p_claimed_by = ' . $db->addQuotes( $runnerUUID )
+				], LIST_OR ),
+			] )
+			->caller( __METHOD__ )
+			->fetchRow();
+
+		if ( !$row ) {
+			$this->tryClose( $db, __METHOD__ );
+			return null;
+		}
+
+		// Claim job
+		$db->newUpdateQueryBuilder()
+			->update( 'processes' )
+			->set( [ 'p_claimed_by' => $runnerUUID ] )
+			->andSet( [ 'p_state' => 'claimed' ] )
+			->where( [ 'p_pid' => $row->p_pid ] )
+			->caller( __METHOD__ )
+			->execute();
+		$this->tryClose( $db, __METHOD__ );
+
+		return ProcessInfo::newFromRow( $row );
+	}
+
+	/**
+	 * @param IProcessManagerPlugin $plugin
+	 * @param string $requester
+	 * @return bool
+	 */
+	public function claimPlugin( IProcessManagerPlugin $plugin, string $requester ): bool {
+		$db = $this->getDB();
+		$db->startAtomic( __METHOD__ );
+
+		$threshold = ( new DateTime() )->sub( new DateInterval( 'PT1M' ) );
+		$claim = $db->newSelectQueryBuilder()
+			->from( 'process_plugin_lock' )
+			->select( [ 'ppl_claimed_by', 'ppl_locked_at' ] )
+			->where( [
+				'ppl_plugin_name' => $plugin->getKey()
+			] )
+			->caller( __METHOD__ )
+			->fetchRow();
+
+		if ( !$claim ) {
+			$db->insert(
+				'process_plugin_lock',
+				[
+					'ppl_plugin_name' => $plugin->getKey(),
+					'ppl_claimed_by' => $requester,
+					'ppl_locked_at' => $db->timestamp( ( new DateTime() )->format( 'YmdHis' ) )
+				],
+				__METHOD__
+			);
+			$db->endAtomic( __METHOD__ );
+			$this->tryClose( $db, __METHOD__ );
+			return true;
+		}
+		$claimedBy = $claim->ppl_claimed_by;
+		$claimedAt = DateTime::createFromFormat( 'YmdHis', $claim->ppl_locked_at );
+
+		if (
+			$claim &&
+			$claim->ppl_claimed_by !== $requester &&
+			$claimedAt > $threshold
+		) {
+			// Some other instance claimed it recently
+			$db->endAtomic( __METHOD__ );
+			$this->tryClose( $db, __METHOD__ );
+			return false;
+		}
+
+		// Take claim over
+		$db->update(
+			'process_plugin_lock',
+			[
+				'ppl_locked_at' => $db->timestamp( ( new DateTime() )->format( 'YmdHis' ) ),
+				'ppl_claimed_by' => $requester,
 			],
 			[
-				'p_state' => Process::STATUS_READY
+				'ppl_plugin_name' => $plugin->getKey(),
 			],
 			__METHOD__
 		);
+		$db->endAtomic( __METHOD__ );
 		$this->tryClose( $db, __METHOD__ );
-
-		$processes = [];
-		foreach ( $res as $row ) {
-			$processes[] = ProcessInfo::newFromRow( $row );
-		}
-		return $processes;
+		return true;
 	}
 
 	/**

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "Dhammaan bogagga ku jira magaca bannaan",
+	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Tusmada bogagga sida alifbeetada",
+	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "La soo bandhigay $1 oo ku dhow $2 {{PLURAL:$2|bog|bogag}}",
+	"enhanced-standard-uis-allpages-panel-counter-label": "La soo bandhigay $1 oo ka mid ah $2 {{PLURAL:$2|bog|bogag}}",
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Soo rar bogag dheeraad ah"
+}

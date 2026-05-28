@@ -42,6 +42,7 @@ class ShareOptions implements SkinTemplateNavigation__UniversalHook {
 			$sktemplate->getConfig()->get( 'Sitename' ),
 			$title->getFullText()
 		);
+
 		$body = rawurlencode( $subject->text() );
 		$body = $sktemplate->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-body' );
 		$body->params(
@@ -52,8 +53,8 @@ class ShareOptions implements SkinTemplateNavigation__UniversalHook {
 
 		$body = rawurlencode( $body->text() );
 		$links['actions']['sharebymail'] = [
-			'text' => $sktemplate->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-text' ),
-			'title' => $sktemplate->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-title' ),
+			'text' => $sktemplate->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-text' )->text(),
+			'title' => $sktemplate->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-title' )->text(),
 			'href' => "mailto:?subject=$subject&body=$body",
 			'class' => 'sharebymail'
 		];

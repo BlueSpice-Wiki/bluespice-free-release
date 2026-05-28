@@ -52,8 +52,8 @@ class CreateContentOptions implements SkinTemplateNavigation__UniversalHook {
 
 		if ( $this->permissionManager->userCan( 'edit', $user, $title ) ) {
 			$links['namespaces']['new-section'] = [
-				'text' => $sktemplate->msg( 'bs-discovery-create-button-new-section-text' ),
-				'title' => $sktemplate->msg( 'bs-discovery-create-button-new-section-title' ),
+				'text' => $sktemplate->msg( 'bs-discovery-create-button-new-section-text' )->text(),
+				'title' => $sktemplate->msg( 'bs-discovery-create-button-new-section-title' )->text(),
 				'href' => $sktemplate->getTitle()->getLocalURL( [
 					'action' => 'edit',
 					'section' => 'new'

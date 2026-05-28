@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -15,9 +16,24 @@
 	"apihelp-bs-readers-data-store-summary": "특정 페이지의 독자 정보를 가져옵니다.",
 	"apihelp-bs-readers-users-store-summary": "특정 페이지의 모든 독자 정보를 가져옵니다.",
 	"apihelp-bs-readers-page-readers-store-summary": "모든 문서의 모든 독자를 가져옵니다",
-	"right-viewreaders": "문서의 열람자를 봅니다",
+	"right-viewreaders": "문서의 열람자를 보기",
 	"bs-readers-header-revision-id": "판 ID",
 	"bs-readers-header-revision-date": "판 날짜",
 	"bs-readers-info-dialog-column-readers": "독자",
-	"bs-readers-permission-error": "권한 오류"
+	"bs-readers-permission-error": "권한 오류",
+	"action-viewreaders": "문서의 열람자를 보기",
+	"action-viewrevisionreaders": "단일 문서 판의 독자 보기",
+	"bs-readers-info-dialog": "이 문서의 독자",
+	"right-viewrevisionreaders": "단일 문서 판의 독자 보기",
+	"readers-user": "문서 읽은 사람: $1",
+	"readers": "\"$1\"의 독자",
+	"bs-readers-contentactions-label": "독자를 표시",
+	"bs-readers-pref-active": "독자 활성화",
+	"bs-readers-emptyinput": "문서가 제공되지 않았습니다.",
+	"apihelp-bs-readers-revision-readers-store-summary": "문서의 모든 판의 모든 독자를 가져옵니다",
+	"apihelp-bs-readers-tasks-summary": "Readers를 위한 일반 작업을 제공합니다",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|당신}}은 $2에 $1 문서를 읽었습니다",
+	"bs-readers-header-read-by": "읽은 사람",
+	"bs-readers-header-read-on": "읽은 날짜:",
+	"revisionreaders": "\"$1\" 판의 독자"
 }

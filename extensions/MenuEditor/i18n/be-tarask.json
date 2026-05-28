@@ -6,5 +6,7 @@
 	},
 	"menueditor-action-menueditsource": "Рэдагаваць код",
 	"menueditor-action-menuedit": "Рэдагаваць",
-	"menueditor-ui-edit-label": "Рэдагаваць"
+	"menueditor-ui-edit-label": "Рэдагаваць",
+	"menueditor-ui-dialog-action-cancel": "Скасаваць",
+	"menueditor-ui-cancel": "Скасаваць"
 }

@@ -123,11 +123,11 @@ class BsPageContentProvider {
 	 * Returns content form a given Title
 	 * @param Title $oTitle Title object
 	 * @param int $iAudience One of the `RevisionRecord::FOR_*` values
-	 * @param User $oUser
+	 * @param User|null $oUser
 	 * @param bool $bHTML
 	 * @return String Content
 	 */
-	public function getContentFromTitle( Title $oTitle, $iAudience = RevisionRecord::FOR_PUBLIC, User $oUser = null, $bHTML = false ) {
+	public function getContentFromTitle( Title $oTitle, $iAudience = RevisionRecord::FOR_PUBLIC, ?User $oUser = null, $bHTML = false ) {
 		$cacheKey = md5( $oTitle->getPrefixedDBkey() . $iAudience . $bHTML . ( $oUser ? $oUser->getId() : '' ) );
 		if ( isset( static::$contents[$cacheKey] ) ) {
 			return static::$contents[$cacheKey];
@@ -152,11 +152,11 @@ class BsPageContentProvider {
 	 * Returns content form a given Revision ID
 	 * @param int $iRevId Revision ID
 	 * @param int $iAudience One of the `RevisionRecord::FOR_*` values
-	 * @param User $oUser
+	 * @param User|null $oUser
 	 * @param bool $bHTML
 	 * @return String Content
 	 */
-	public function getContentFromID( $iRevId, $iAudience = RevisionRecord::FOR_PUBLIC, User $oUser = null, $bHTML = false ) {
+	public function getContentFromID( $iRevId, $iAudience = RevisionRecord::FOR_PUBLIC, ?User $oUser = null, $bHTML = false ) {
 		$cacheKey = md5( $iRevId . $iAudience . $bHTML . ( $oUser ? $oUser->getId() : '' ) );
 		if ( isset( static::$contents[$cacheKey] ) ) {
 			return static::$contents[$cacheKey];
@@ -176,12 +176,12 @@ class BsPageContentProvider {
 	 * Gets content form a given Revision object
 	 * @param RevisionRecord $oRevision
 	 * @param int $iAudience One of the `RevisionRecord::FOR_*` values
-	 * @param User $oUser
+	 * @param User|null $oUser
 	 * @param bool $bHTML
 	 * @return String Content
 	 */
 	public function getContentFromRevision( $oRevision, $iAudience = RevisionRecord::FOR_PUBLIC,
-			User $oUser = null, $bHTML = false ) {
+			?User $oUser = null, $bHTML = false ) {
 		$cacheKey = md5( $oRevision->getId() . $iAudience . $bHTML . ( $oUser ? $oUser->getId() : '' ) );
 		if ( isset( self::$contents[$cacheKey] ) ) {
 			return self::$contents[$cacheKey];
@@ -566,9 +566,7 @@ class BsPageContentProvider {
 		$globalParser = MediaWikiServices::getInstance()->getParser();
 		$globalParser->setOptions( $wgParser->getOptions() );
 		$globalParser->setPage( $wgParser->getPage() );
-		if ( $globalParser->getOutput() === null ) {
-			$globalParser->resetOutput();
-		}
+		$globalParser->resetOutput();
 
 		$wgOut = new OutputPage( $context );
 

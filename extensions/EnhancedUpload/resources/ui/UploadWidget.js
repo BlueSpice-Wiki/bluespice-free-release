@@ -288,9 +288,12 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 			let params = {
 				filename: items[ i ].data.name,
 				format: items[ i ].data.type,
-				ignorewarnings: true,
-				comment: descText
+				ignorewarnings: true
 			};
+
+			if ( descText.length > 0 ) {
+				params.comment = descText;
+			}
 			if ( me.destFilename ) {
 				params.filename = me.destFilename;
 			}
@@ -310,20 +313,37 @@ enhancedUpload.ui.UploadWidget.prototype.startUpload = function () {
 			const maxUpload = items.length;
 
 			uploadDfd.done( () => {
-				let replaceText = params.comment;
+				if ( descText.length > 0 || categories.length > 0 ) {
+					const fileTitle = 'File:' + params.filename;
 
-				if ( categories.length > 0 ) {
-					replaceText += '\n' + categories;
+					me.fetchExistingPageContent( fileTitle ).done( ( pageData ) => {
+						let replaceText = '';
+
+						if ( params.comment ) {
+							replaceText = params.comment;
+						} else if ( pageData.exists ) {
+							replaceText = me.stripCategoriesFromContent( pageData.content );
+						}
+
+						if ( categories.length > 0 ) {
+							replaceText += '\n' + categories;
+						} else if ( pageData.exists ) {
+							const existingCats = me.extractCategoriesFromContent( pageData.content );
+							if ( existingCats.length > 0 ) {
+								replaceText += '\n' + existingCats;
+							}
+						}
+
+						const catEditParams = {
+							action: 'edit',
+							title: fileTitle,
+							text: replaceText
+						};
+
+						const editCategoriesDfd = me.doCategoriesEdit( catEditParams );
+						uploadDfds.push( editCategoriesDfd );
+					} );
 				}
-
-				const catEditParams = {
-					action: 'edit',
-					title: 'File:' + params.filename,
-					text: replaceText
-				};
-
-				const editCategoriesDfd = me.doCategoriesEdit( catEditParams );
-				uploadDfds.push( editCategoriesDfd );
 
 				me.uploadProgressBar.setProgress( ( progress / ( maxUpload - 1 ) ) * 100 );
 			} ).fail( () => {
@@ -466,6 +486,56 @@ enhancedUpload.ui.UploadWidget.prototype.doCategoriesEdit = function ( params ) 
 		dfd.reject( error );
 	} );
 	return dfd.promise();
+};
+
+enhancedUpload.ui.UploadWidget.prototype.fetchExistingPageContent = function ( title ) {
+	const api = new mw.Api();
+	const dfd = new $.Deferred();
+	api.get( {
+		action: 'query',
+		titles: title,
+		prop: 'revisions',
+		rvprop: 'content',
+		rvslots: 'main',
+		formatversion: 2
+	} ).done( ( data ) => {
+		const pages = data.query.pages;
+		if ( pages && pages.length > 0 && !pages[ 0 ].missing ) {
+			const revisions = pages[ 0 ].revisions;
+			if ( revisions && revisions.length > 0 ) {
+				dfd.resolve( {
+					exists: true,
+					content: revisions[ 0 ].slots.main.content || ''
+				} );
+			} else {
+				dfd.resolve( { exists: true, content: '' } );
+			}
+		} else {
+			dfd.resolve( { exists: false, content: '' } );
+		}
+	} ).fail( () => {
+		dfd.resolve( { exists: false, content: '' } );
+	} );
+	return dfd.promise();
+};
+
+enhancedUpload.ui.UploadWidget.prototype.extractCategoriesFromContent = function ( content ) {
+	const catNs = this.namespaces[ 14 ] || 'Category';
+	const escapedCatNs = catNs.replace( /[.*+?^${}()|[\]\\]/g, '\\$&' );
+	const regex = new RegExp(
+		'\\[\\[(?:' + escapedCatNs + '|Category):[^\\]]+\\]\\]', 'gi'
+	);
+	const matches = content.match( regex );
+	return matches ? matches.join( ' ' ) : '';
+};
+
+enhancedUpload.ui.UploadWidget.prototype.stripCategoriesFromContent = function ( content ) {
+	const catNs = this.namespaces[ 14 ] || 'Category';
+	const escapedCatNs = catNs.replace( /[.*+?^${}()|[\]\\]/g, '\\$&' );
+	const regex = new RegExp(
+		'\\[\\[(?:' + escapedCatNs + '|Category):[^\\]]+\\]\\]\\s*', 'gi'
+	);
+	return content.replace( regex, '' ).trim();
 };
 
 enhancedUpload.ui.UploadWidget.prototype.startQuickUpload = function ( items ) {

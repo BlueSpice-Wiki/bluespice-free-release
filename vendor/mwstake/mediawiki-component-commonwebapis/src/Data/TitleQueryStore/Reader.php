@@ -4,7 +4,6 @@ namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore;
 
 use MediaWiki\Language\Language;
 use MediaWiki\Page\PageProps;
-use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
@@ -13,7 +12,7 @@ use Wikimedia\Rdbms\ILoadBalancer;
 /*
  * @stable to extend
  */
-class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
+class Reader extends \MWStake\MediaWiki\Component\DataStore\TitleAwareReader {
 	/** @var ILoadBalancer */
 	protected $lb;
 	/** @var TitleFactory */
@@ -24,8 +23,6 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	protected $nsInfo;
 	/** @var PageProps */
 	protected $pageProps;
-	/** @var PermissionManager */
-	protected $permissionManager;
 
 	/**
 	 * @param ILoadBalancer $lb
@@ -33,11 +30,10 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	 * @param Language $language
 	 * @param NamespaceInfo $nsInfo
 	 * @param PageProps $pageProps
-	 * @param PermissionManager|null $permissionManager
 	 */
 	public function __construct(
 		ILoadBalancer $lb, TitleFactory $titleFactory, Language $language,
-		NamespaceInfo $nsInfo, PageProps $pageProps, ?PermissionManager $permissionManager = null
+		NamespaceInfo $nsInfo, PageProps $pageProps
 	) {
 		parent::__construct();
 		$this->lb = $lb;
@@ -45,10 +41,6 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 		$this->language = $language;
 		$this->nsInfo = $nsInfo;
 		$this->pageProps = $pageProps;
-		$this->permissionManager = $permissionManager;
-		if ( $this->permissionManager === null ) {
-			$this->permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
-		}
 	}
 
 	/**
@@ -65,8 +57,7 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	 */
 	public function makePrimaryDataProvider( $params ) {
 		return new PrimaryDataProvider(
-			$this->lb->getConnection( DB_REPLICA ), $this->getSchema(), $this->language,
-			$this->nsInfo, $this->permissionManager
+			$this->lb->getConnection( DB_REPLICA ), $this->getSchema(), $this->language, $this->nsInfo
 		);
 	}
 

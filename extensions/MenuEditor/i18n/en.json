@@ -38,5 +38,7 @@
 	"menueditor-ui-add-sub-element-label": "Add sub element",
 	"menueditor-footerlinks-banner-text": "Some links may be added automatically by extensions. Please check the extension's configuration to learn more.",
 	"menueditor-toolbar-save": "Save",
-	"menueditor-ui-cancel-confirmation": "Are you sure you want to cancel the edit? All unsaved changes will be lost."
+	"menueditor-ui-cancel-confirmation": "Are you sure you want to cancel the edit? All unsaved changes will be lost.",
+	"menueditor-ui-notices": "Notices",
+	"menueditor-ui-oldrevision-notice": "You are editing an old revision of this page. If you save it, any changes made since this revision will be lost."
 }

@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong",
 			"Yunbj"
 		]
 	},
 	"bs-visualeditorconnector-desc": "시각편집기로 블루스파이스에 연결합니다",
-	"bs-visualeditorconnector-enable-visualeditor": "블루스파이스 확장기능을 위해 시각편집기를 활성화합니다",
+	"bs-visualeditorconnector-enable-visualeditor": "블루스파이스 확장 기능을 위해 시각편집기를 활성화합니다",
 	"bs-visualeditorconnector-upload-type-one-click": "한 번 클릭",
 	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "편집 취소",
 	"bs-visualeditorconnector-cancel-edit": "편집을 취소합니다. 저장되지 않은 변경사항은 전부 버려집니다",
@@ -68,5 +69,24 @@
 	"bs-vec-insert-softhyphen-title": "소프트 하이픈",
 	"bs-visualeditor-save-label": "저장",
 	"bs-visualeditorconnector-dialog-table-title": "표",
-	"bs-visualeditorconnector-dialog-action-insert": "넣기"
+	"bs-visualeditorconnector-dialog-action-insert": "넣기",
+	"bs-visualeditorconnector-upload-type-original": "원본",
+	"bs-visualeditorconnector-upload-type-simple": "간단",
+	"bs-visualeditorconnector-upload-type": "업로드 유형",
+	"bs-vec-table-border-solid": "실선",
+	"bs-vec-table-border-dashed": "파선",
+	"bs-vec-insert-line-break-title": "줄바꿈 (<br />)",
+	"bs-visualeditorconnector-text-style-tool-align-center-label": "가운데 정렬",
+	"bs-visualeditorconnector-text-style-indent-label": "들여쓰기",
+	"bs-visualeditor-request-entity-too-large": "파일 크기가 너무 커서 업로드할 수 없습니다.",
+	"bs-vec-table-border-round": "둥근 모서리",
+	"bs-vec-table-border-horizontal": "수평",
+	"bs-vec-table-border-roundhorizontal": "둥근 모서리 및 수평",
+	"bs-vec-table-border-roundvertical": "둥근 모서리 및 수직",
+	"bs-visualeditorconnector-upload-dialog-type": "MediaDialog에서의 파일 업로드를 위한 워크플로",
+	"bs-vec-row-duplicate-has-merged": "선택한 행에는 여러 행에 걸쳐 있는 셀이 포함되어 있으므로 복제할 수 없습니다.",
+	"bs-visualeditorconnector-upload-type-help": "원본: 업로드 권한이 확인됩니다. 파일 이름, 이름공간 및 분류를 편집할 수 있습니다. 설명은 필수입니다.\n간단: 업로드 권한이 확인되지 않습니다. 파일 이름, 이름공간 및 분류를 편집할 수 있습니다. 설명은 선택 사항입니다.\n한 번 클릭: 업로드 권한이 확인되지 않습니다. 파일 이름과 분류는 편집할 수 없습니다. 이름공간은 편집할 수 있습니다.",
+	"bs-visualeditorconnector-align-center-annotation-desc": "선택된 텍스트 가운데 정렬",
+	"bs-visualeditorconnector-indent-annotation-desc": "선택된 텍스트 들여쓰기",
+	"bs-visualeditorconnector-tab-file": "파일의 링크"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hwangjy9",
+			"Tensama0415",
 			"YeBoy371",
 			"Ykhwong"
 		]
@@ -20,5 +21,17 @@
 	"bs-whoisonline-statistics-report-login-number": "로그인",
 	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "링크 텍스트",
 	"bs-whoisonline-statistics-report-login-duration": "로그인 시간",
-	"bs-whoisonline-statistics-report-login-duration-axis-value": "로그인 시간 (초)"
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "로그인 시간 (초)",
+	"bs-whoisonline-desc": "현재 접속 중인 사용자를 모두 나열합니다",
+	"bs-whoisonline-pref-limitcount": "표시할 최대 사용자 수:",
+	"bs-whoisonline-tag-whoisonlinecount-description": "지난 10분 이내로 로그인한 사용자의 수를 표시합니다",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "접속한 사용자 수",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "지난 10분 이내로 로그인한 모든 사용자를 표시합니다. 이 목록은 사용자가 관련 링크에 마우스를 올렸을 때 표시됩니다.",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "접속한 사용자 수 팝업",
+	"bs-whoisonline-statistics-report-login-number-desc": "선택한 기간 동안의 일일 로그인",
+	"bs-whoisonline-droplet-count-name": "로그인한 사용자 수",
+	"bs-whoisonline-droplet-count-description": "현재 로그인한 사용자 수",
+	"bs-whoisonline-droplet-popup-name": "로그인한 사용자 목록",
+	"bs-whoisonline-droplet-popup-description": "현재 로그인한 모든 사용자 목록이 포함된 팝업창",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "사용자 목록을 여는 링크에 표시되는 텍스트"
 }

@@ -41,6 +41,15 @@
 					"length": 255,
 					"notnull": true
 				}
+			},
+			{
+				"name": "mti_first_letter",
+				"type": "binary",
+				"options": {
+					"length": 32,
+					"notnull": true,
+					"default": ""
+				}
 			}
 		],
 		"indexes": [
@@ -57,6 +66,11 @@
 			{
 				"name": "mws_title_index_leaftitle_index",
 				"columns": [ "mti_leaf_title" ],
+				"unique": false
+			},
+			{
+				"name": "mws_title_index_first_letter_index",
+				"columns": [ "mti_first_letter", "mti_namespace" ],
 				"unique": false
 			}
 		],

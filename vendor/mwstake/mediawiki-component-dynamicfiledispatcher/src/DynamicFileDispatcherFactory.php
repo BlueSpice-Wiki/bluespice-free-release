@@ -69,6 +69,7 @@ class DynamicFileDispatcherFactory {
 		$url = $this->urlUtils->getServer( PROTO_CURRENT ) .
 			wfScript( 'rest' ) .
 			'/mws/v1/dynamic-file-dispatcher/' . $module;
+
 		if ( !empty( $params ) ) {
 			$url .= '?' . http_build_query( $params );
 		}

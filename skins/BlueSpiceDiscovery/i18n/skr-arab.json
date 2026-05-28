@@ -40,5 +40,7 @@
 	"bs-discovery-page-version-pager-next": "اڳلا",
 	"bs-discovery-footerlinks-termsofservice-link-desc": "خدمت شرطاں",
 	"bs-discovery-breadcrumb-label-diff": "فرق",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "صاف"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "صاف",
+	"bs-discovery-menu-provider-namespace-tree-label": "سارے ورقے",
+	"bs-discovery-namespace-tree-pnl-header-text": "ورقے"
 }

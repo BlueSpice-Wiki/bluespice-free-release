@@ -69,6 +69,15 @@
 					"length": 128,
 					"notnull": false
 				}
+			},
+			{
+				"name": "p_claimed_by",
+				"type": "binary",
+				"options": {
+					"length": 128,
+					"notnull": false,
+					"default": null
+				}
 			}
 		],
 		"indexes": [],

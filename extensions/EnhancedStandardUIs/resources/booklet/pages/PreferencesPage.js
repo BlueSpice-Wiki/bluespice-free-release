@@ -99,7 +99,7 @@ ext.enhancedUI.booklet.PreferencesPage.prototype.findByKey = function ( obj, pre
 	if ( obj.pref && preference === obj.pref ) {
 		return obj;
 	}
-	// eslint-disable-next-line es-x/no-object-values
+
 	for ( const n of Object.values( obj ).filter( Boolean ).filter( ( v ) => typeof v === 'object' ) ) {
 		const found = this.findByKey( n, preference );
 		if ( found ) {

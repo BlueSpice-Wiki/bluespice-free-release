@@ -5,7 +5,6 @@ namespace MWStake\MediaWiki\Component\CommonWebAPIs\Rest;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Rest\Handler;
 use MediaWiki\Rest\Response;
-use MWStake\MediaWiki\Component\DataStore\BucketedResultSet;
 use MWStake\MediaWiki\Component\DataStore\IStore;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\ResultSet;
@@ -61,13 +60,25 @@ abstract class QueryStore extends Handler {
 	 * @return ReaderParams
 	 */
 	protected function getReaderParams(): ReaderParams {
-		return new ReaderParams( [
+		return new ReaderParams( $this->getReaderParamsData() );
+	}
+
+	/**
+	 * @return array
+	 */
+	protected function getReaderParamsData(): array {
+		$data = [
 			'query' => $this->getQuery(),
 			'start' => $this->getOffset(),
 			'limit' => $this->getLimit(),
 			'filter' => $this->getFilter(),
-			'sort' => $this->getSort()
-		] );
+			'sort' => $this->getSort(),
+			'no-cache' => $this->getValidatedParams()['no-cache'],
+		];
+		if ( $this->getValidatedParams()['continue'] ) {
+			$data['continue'] = $this->getJson( 'continue' );
+		}
+		return $data;
 	}
 
 	/**
@@ -91,8 +102,11 @@ abstract class QueryStore extends Handler {
 		$responseData = [
 			'results' => $result->getRecords(),
 			'total' => $result->getTotal(),
+			'continue' => $result->getContinue(),
+			'total_approximate' => $result->isTotalApproximate(),
+			'query_id' => $result->getQueryId(),
 		];
-		if ( $result instanceof BucketedResultSet ) {
+		if ( $result->getBuckets() ) {
 			$responseData['buckets'] = $result->getBuckets();
 		}
 		$response = new Response( $this->encodeJson( $responseData ) );
@@ -148,6 +162,17 @@ abstract class QueryStore extends Handler {
 				ParamValidator::PARAM_DEFAULT => '',
 				ParamValidator::PARAM_TYPE => 'string',
 			],
+			'continue' => [
+				static::PARAM_SOURCE => 'query',
+				ParamValidator::PARAM_REQUIRED => false,
+				ParamValidator::PARAM_TYPE => 'string',
+			],
+			'no-cache' => [
+				static::PARAM_SOURCE => 'query',
+				ParamValidator::PARAM_REQUIRED => false,
+				ParamValidator::PARAM_TYPE => 'boolean',
+				ParamValidator::PARAM_DEFAULT => false
+			]
 		], $this->getStoreSpecificParams() );
 	}
 
@@ -169,20 +194,20 @@ abstract class QueryStore extends Handler {
 	 * @return array
 	 */
 	protected function getFilter(): array {
-		$validated = $this->getValidatedParams();
-		if ( is_array( $validated ) && isset( $validated['filter'] ) ) {
-			return json_decode( $validated['filter'], 1 );
-		}
-		return [];
+		return $this->getJson( 'filter' );
 	}
 
 	/**
 	 * @return array
 	 */
 	protected function getSort(): array {
+		return $this->getJson( 'sort' );
+	}
+
+	protected function getJson( string $field ): array {
 		$validated = $this->getValidatedParams();
-		if ( is_array( $validated ) && isset( $validated['sort'] ) ) {
-			return json_decode( $validated['sort'], 1 );
+		if ( is_array( $validated ) && isset( $validated[$field] ) ) {
+			return json_decode( $validated[$field], 1 );
 		}
 		return [];
 	}

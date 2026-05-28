@@ -156,5 +156,6 @@
 	"pdfcreator-tag-no-export-start-ve-label": "PDF-Ausschluss - Start",
 	"pdfcreator-tag-no-export-end-ve-label": "PDF-Ausschluss - Ende",
 	"pdfcreator-global-action-overview": "PDF-Vorlagen",
-	"pdfcreator-global-action-overview-desc": "Übersicht über alle PDF-Vorlagen im Wiki"
+	"pdfcreator-global-action-overview-desc": "Übersicht über alle PDF-Vorlagen im Wiki",
+	"pdfcreator-export-action-text": "Als PDF exportieren"
 }

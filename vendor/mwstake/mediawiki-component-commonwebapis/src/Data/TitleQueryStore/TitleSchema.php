@@ -81,7 +81,12 @@ class TitleSchema extends Schema {
 				self::FILTERABLE => false,
 				self::SORTABLE => false,
 				self::TYPE => FieldType::STRING
-			]
+			],
+			TitleRecord::SORTKEY => [
+				self::FILTERABLE => false,
+				self::SORTABLE => false,
+				self::TYPE => FieldType::STRING
+			],
 		], $fields ) );
 	}
 }

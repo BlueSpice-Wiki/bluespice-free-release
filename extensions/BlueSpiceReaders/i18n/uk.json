@@ -6,6 +6,7 @@
 			"Dars",
 			"Ice bulldog",
 			"Piramidion",
+			"Repakr",
 			"Ата"
 		]
 	},
@@ -37,5 +38,7 @@
 	"bs-readers-header-revision-date": "Дата перегляду",
 	"bs-readers-header-read-on": "Читайте далі",
 	"revisionreaders": "Читачі шляхом перегляду \"$1\"",
-	"bs-readers-info-dialog": "Читачі цієї сторінки"
+	"bs-readers-info-dialog": "Читачі цієї сторінки",
+	"bs-readers-info-dialog-column-readers": "Читачі",
+	"bs-readers-permission-error": "Помилка доступу"
 }

@@ -2,8 +2,6 @@
 
 namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\FileQueryStore;
 
-use MediaWiki\Context\RequestContext;
-use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\PrimaryDataProvider as TitlePrimaryDataProvider;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\TitleRecord;
 use MWStake\MediaWiki\Component\DataStore\Filter;
@@ -172,10 +170,6 @@ class PrimaryDataProvider extends TitlePrimaryDataProvider {
 	 * @return void
 	 */
 	protected function appendRowToData( \stdClass $row ) {
-		$user = RequestContext::getMain()->getUser();
-		if ( !$this->permissionManager->userCan( 'read', $user, Title::newFromRow( $row ) ) ) {
-			return;
-		}
 		$this->data[] = new TitleRecord( (object)[
 			TitleRecord::PAGE_ID => (int)$row->mti_page_id,
 			TitleRecord::PAGE_NAMESPACE => NS_FILE,

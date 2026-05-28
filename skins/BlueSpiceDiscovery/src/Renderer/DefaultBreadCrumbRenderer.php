@@ -161,9 +161,9 @@ class DefaultBreadCrumbRenderer extends TemplateRendererBase {
 				'button-text' => new RawMessage( trim( $nodeText ) ),
 				'button-classes' => $node['classes'],
 				'split-button-title' => $this->messageLocalizer
-					->msg( 'bs-discovery-breadcrumb-nav-node-split-button-title' ),
+					->msg( 'bs-discovery-breadcrumb-nav-node-split-button-title' )->text(),
 				'split-button-aria-label' => $this->messageLocalizer
-					->msg( 'bs-discovery-breadcrumb-nav-node-split-button-aria-label' ),
+					->msg( 'bs-discovery-breadcrumb-nav-node-split-button-aria-label' )->text(),
 				'nodes-class' => [],
 				'split-button-classes' => [ 'breadcrumb-nav-subpages', $node['splitBtnClass'] ],
 				'path' => $node['path']

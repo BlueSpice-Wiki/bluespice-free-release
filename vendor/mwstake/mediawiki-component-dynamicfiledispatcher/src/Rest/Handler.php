@@ -4,8 +4,11 @@ namespace MWStake\MediaWiki\Component\DynamicFileDispatcher\Rest;
 
 use MediaWiki\Permissions\Authority;
 use MediaWiki\Rest\HttpException;
+use MediaWiki\Rest\ResponseInterface;
 use MediaWiki\Rest\SimpleHandler;
+use MWStake\MediaWiki\Component\DynamicFileDispatcher\CacheableFile;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\DynamicFileDispatcherFactory;
+use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFile;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFileModule;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -15,6 +18,9 @@ class Handler extends SimpleHandler {
 	 * @var DynamicFileDispatcherFactory
 	 */
 	private $moduleFactory;
+
+	/** @var IDynamicFile|null|false */
+	private $resolvedFile = false;
 
 	/**
 	 * @param DynamicFileDispatcherFactory $factory
@@ -31,19 +37,7 @@ class Handler extends SimpleHandler {
 	 * @return \MediaWiki\Rest\Response
 	 */
 	public function execute() {
-		$module = $this->getDynamicModule();
-		if ( !$module ) {
-			throw new HttpException( 'Module not found', 404 );
-		}
-		$queryParams = $this->getRequest()->getQueryParams();
-		$authority = \RequestContext::getMain()->getUser();
-		if ( !( $authority instanceof Authority ) ) {
-			throw new HttpException( 'Unauthorized', 403 );
-		}
-		if ( !$module->isAuthorized( $authority, $queryParams ) ) {
-			throw new HttpException( 'Unauthorized', 403 );
-		}
-		$file = $module->getFile( $queryParams );
+		$file = $this->resolveFile();
 		if ( !$file ) {
 			throw new HttpException( 'File not found', 404 );
 		}
@@ -58,6 +52,36 @@ class Handler extends SimpleHandler {
 		$response->setBody( $file->getStream() );
 
 		return $response;
+	}
+
+	/**
+	 * Resolve module and file, caching the result for reuse between
+	 * getETag() and execute().
+	 *
+	 * @return IDynamicFile|null
+	 */
+	private function resolveFile(): ?IDynamicFile {
+		if ( $this->resolvedFile !== false ) {
+			return $this->resolvedFile;
+		}
+
+		$module = $this->getDynamicModule();
+		if ( !$module ) {
+			$this->resolvedFile = null;
+			return null;
+		}
+		$queryParams = $this->getRequest()->getQueryParams();
+		$authority = \RequestContext::getMain()->getUser();
+		if ( !( $authority instanceof Authority ) ) {
+			$this->resolvedFile = null;
+			return null;
+		}
+		if ( !$module->isAuthorized( $authority, $queryParams ) ) {
+			$this->resolvedFile = null;
+			return null;
+		}
+		$this->resolvedFile = $module->getFile( $queryParams );
+		return $this->resolvedFile;
 	}
 
 	/**
@@ -79,5 +103,26 @@ class Handler extends SimpleHandler {
 				ParamValidator::PARAM_REQUIRED => true
 			]
 		];
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function applyCacheControl( ResponseInterface $response ) {
+		$file = $this->resolveFile();
+		if ( $file instanceof CacheableFile ) {
+			$response->setHeader( 'Cache-Control', 'public, must-revalidate, max-age=300' );
+		}
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function getETag() {
+		$file = $this->resolveFile();
+		if ( $file instanceof CacheableFile ) {
+			return $file->getETag();
+		}
+		return null;
 	}
 }

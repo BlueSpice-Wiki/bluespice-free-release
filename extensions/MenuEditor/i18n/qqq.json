@@ -40,5 +40,7 @@
 	"menueditor-ui-add-sub-element-label": "Label for action add sub element",
 	"menueditor-footerlinks-banner-text": "Label for banner on [MediaWiki:FooterLinks]",
 	"menueditor-toolbar-save": "Title for toolbar action save\n{{Identical|Save}}",
-	"menueditor-ui-cancel-confirmation": "Confirmation message for cancel action"
+	"menueditor-ui-cancel-confirmation": "Confirmation message for cancel action",
+	"menueditor-ui-notices": "Title for toolbar notices",
+	"menueditor-ui-oldrevision-notice": "Warning notice shown when editing an old revision of a menu page"
 }

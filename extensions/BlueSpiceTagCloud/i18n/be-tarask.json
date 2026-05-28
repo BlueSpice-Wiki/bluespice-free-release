@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
@@ -8,5 +9,23 @@
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-text": "Тэкст",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-option-list": "Сьпіс",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Катэгорыі",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Шырыня"
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Шырыня воблака тэґаў",
+	"bs-tagcloud-desc": "Паказвае розныя воблакі тэґаў",
+	"bs-tagcloud-tag-tagcloud-name": "Воблака тэґаў",
+	"bs-tagcloud-tag-tagcloud-title": "Воблака тэґаў",
+	"bs-tagcloud-tag-tagcloud-desc": "Адмалёўвае воблака тэґаў паводле катэґорыяў альбо пошукавых запытаў",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-help": "Выберыце, як адмалёўваць воблака тэґаў",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-option-canvas3d": "3D",
+	"bs-tagcloud-tag-tagcloud-attr-store-help": "Выбраць якія зьвесткі ўжываць",
+	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Пошукавыя запыты",
+	"bs-tagcloud-tag-tagcloud-attr-width-help": "Шырыня воблака тэґаў у працэнтах",
+	"bs-tagcloud-tag-tagcloud-attr-minsize-label": "Мінімальны памер шрыфту",
+	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Максымальны памер шрыфту",
+	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Выняць старонкі",
+	"bs-tagcloud-droplet-name": "Воблака тэґаў",
+	"bs-tagcloud-droplet-description": "Воблака тэґаў паводле катэґорыяў ці пошукавых запытаў",
+	"bs-tagcloud-tag-tagcloud-tab-common": "Звычайны",
+	"bs-tagcloud-tag-tagcloud-tab-advanced": "Пашыраны",
+	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Рэжым прагляду",
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Паказаць частотнасьць"
 }

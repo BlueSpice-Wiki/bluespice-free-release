@@ -251,7 +251,6 @@ ext.enhancedUI.panel.PreferencesPanel.prototype.searchForValue = function ( sear
 					labelMatch = entry[ 'label-message' ].toLowerCase().includes( lowerSearch );
 				}
 
-				// eslint-disable-next-line no-prototype-builtins
 				const defaultMatch = entry.hasOwnProperty( 'default' ) &&
 				// eslint-disable-next-line es-x/no-array-prototype-includes
 					String( entry.default ).toLowerCase().includes( lowerSearch );
@@ -261,7 +260,6 @@ ext.enhancedUI.panel.PreferencesPanel.prototype.searchForValue = function ( sear
 					( optKey ) => optKey.toLowerCase().includes( lowerSearch )
 				);
 
-				// eslint-disable-next-line es-x/no-object-values
 				const optionValueMatch = Object.values( entry.options || {} ).some(
 					// eslint-disable-next-line es-x/no-array-prototype-includes
 					( optVal ) => typeof optVal === 'string' && optVal.toLowerCase().includes( lowerSearch )

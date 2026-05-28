@@ -9,5 +9,7 @@
 	"visualeditorplus-table-contextitem-properties-label": "Proprietates del tabella",
 	"visualeditorplus-table-contextitem-additional-options-label": "Optiones additional de cellulas",
 	"visualeditorplus-table-cell-actions-dialog-title": "Optiones de cellulas",
-	"visualeditorplus-table-cell-actions-dialog-done-label": "Facite"
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Facite",
+	"visualeditorplus-ui-label-unwrap": "Remover (conservar contento)",
+	"visualeditorplus-ui-label-delete": "Remover"
 }

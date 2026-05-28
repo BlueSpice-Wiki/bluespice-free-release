@@ -6,12 +6,10 @@ use MediaWiki\Config\GlobalVarConfig;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
-use MediaWiki\Rest\Response;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserFactory;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore\Store;
 use MWStake\MediaWiki\Component\DataStore\IStore;
-use MWStake\MediaWiki\Component\DataStore\ResultSet;
 use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
@@ -41,40 +39,9 @@ class UserQueryStore extends QueryStore {
 	}
 
 	/**
-	 * @param ResultSet $result
-	 *
-	 * @return Response
-	 */
-	protected function returnResult( ResultSet $result ): Response {
-		$this->hookContainer->run( 'MWStakeCommonWebAPIsQueryStoreResult', [ $this, &$result ] );
-		$contentType = $contentType ?? 'application/json';
-		$response = new Response( $this->encodeJson( [
-			'buckets' => $this->getBuckets(),
-			'results' => $result->getRecords(),
-			'total' => $result->getTotal(),
-		] ) );
-		$response->setHeader( 'Content-Type', $contentType );
-		return $response;
-	}
-
-	/**
 	 * @return IStore
 	 */
 	protected function getStore(): IStore {
 		return $this->store;
-	}
-
-	/**
-	 * @return array
-	 */
-	private function getBuckets(): array {
-		$groups = $this->getStore()
-			->getReader()
-			->makePrimaryDataProvider( $this->getReaderParams() )
-			->getGroupBuckets();
-
-		return [
-			'groups' => $groups
-		];
 	}
 }

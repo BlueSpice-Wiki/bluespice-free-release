@@ -41,7 +41,7 @@ ext.enhancedUI.panel.FilelistPanel = function ( cfg ) {
 				}
 				visibleData[ item ] = data[ item ];
 			}
-			// eslint-disable-next-line es-x/no-object-values
+
 			this.setItems( Object.values( visibleData ) );
 		}
 	} );

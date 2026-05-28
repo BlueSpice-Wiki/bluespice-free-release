@@ -65,6 +65,9 @@ class DumpNamespaces extends Maintenance {
 	/** @var array */
 	private $titleLog = [];
 
+	/** @var bool */
+	private $doLog = false;
+
 	/**
 	 *
 	 */
@@ -86,6 +89,11 @@ class DumpNamespaces extends Maintenance {
 		$this->addOption( 'verbose', 'Verbose output', false, false, 'v' );
 		$this->addOption( 'mail-recipient', 'E-mail recipient for notification email', false, true, 'r' );
 		$this->addOption( 'mail-subject', 'E-mail subject for notification email', false, true, 's' );
+		$this->addOption(
+			'log',
+			'Log the page titles for each pdf',
+			false, true
+		);
 	}
 
 	/**
@@ -100,6 +108,7 @@ class DumpNamespaces extends Maintenance {
 		$this->setLimit();
 		$this->setNamespaceIds();
 		$this->setVerboseState();
+		$this->setLogState();
 		$this->setEmailRecipient();
 		$this->setEmailSubject();
 
@@ -115,15 +124,6 @@ class DumpNamespaces extends Maintenance {
 
 		if ( $this->mailRecipient instanceof MailAddress ) {
 			$this->sendMail();
-		}
-
-		if ( $this->verbose ) {
-			foreach ( $this->titleLog as $namespace => $titles ) {
-				$this->output( "\n{$namespace}:\n" );
-				foreach ( $titles as $title ) {
-					$this->output( "\t- {$title}\n" );
-				}
-			}
 		}
 
 		if ( $this->verbose ) {
@@ -220,6 +220,19 @@ class DumpNamespaces extends Maintenance {
 	/**
 	 * @return void
 	 */
+	private function setLogState(): void {
+		$log = $this->getOption( 'log', false );
+
+		if ( !$log ) {
+			$this->doLog = false;
+		} else {
+			$this->doLog = true;
+		}
+	}
+
+	/**
+	 * @return void
+	 */
 	private function setEmailRecipient(): void {
 		$mail = $this->getOption( 'mail-recipient', null );
 
@@ -268,6 +281,8 @@ class DumpNamespaces extends Maintenance {
 			$pageSpecData = $this->makePageSpecData( $result );
 			$specs = $this->prepareExportSpecifications( $pageSpecData );
 
+			// Write log before pdf export is triggered. This might be helpful if something went wrong.
+			$this->writeLog();
 			$this->doExport( $specs );
 		}
 	}
@@ -279,7 +294,7 @@ class DumpNamespaces extends Maintenance {
 	private function makePageSpecData( array $result ): array {
 		$data = [];
 		$splitData = [];
-		$namespaceName = '';
+		$pdfName = '';
 		$counter = 1;
 		foreach ( $result as $page ) {
 			$title = $this->titleFactory->makeTitle( $page->page_namespace, $page->page_title );
@@ -290,32 +305,32 @@ class DumpNamespaces extends Maintenance {
 			if ( $this->verbose ) {
 				$this->output( "\nAdd title \"{$title->getPrefixedDBKey()}\"" );
 			}
-			if ( $namespaceName === '' ) {
-				$namespaceName = $this->getNamespaceName( $title->getNsText() );
+			if ( $pdfName === '' ) {
+				$pdfName = $this->getPdfName( $title->getNsText() );
 			}
 			if ( is_int( $this->limit ) && count( $splitData ) >= $this->limit ) {
-				$data[$namespaceName] = $splitData;
+				$data[$pdfName] = $splitData;
 				$splitData = [];
 				$counter++;
 				$counterString = (string)$counter;
-				$namespaceName = $this->getNamespaceName( $title->getNsText(), $counterString );
+				$pdfName = $this->getPdfName( $title->getNsText(), $counterString );
 			}
-			if ( !isset( $data[$namespaceName] ) ) {
-				$data[$namespaceName] = [];
+			if ( !isset( $data[$pdfName] ) ) {
+				$data[$pdfName] = [];
 			}
 			$splitData[] = [
 				'type' => 'page',
 				'target' => $title->getPrefixedDBkey(),
 				'label' => $title->getText()
 			];
-			if ( !isset( $titleLog[$namespaceName] ) ) {
-				$titleLog[$namespaceName] = [];
+			if ( !isset( $this->titleLog[$pdfName] ) ) {
+				$this->titleLog[$pdfName] = [];
 			}
-			$titleLog[$namespaceName][] = $title->getPrefixedDBkey();
+			$this->titleLog[$pdfName][] = $title->getPrefixedDBkey();
 		}
 		// Adding remaining pages afer last split
 		if ( !empty( $splitData ) ) {
-			$data[$namespaceName] = $splitData;
+			$data[$pdfName] = $splitData;
 		}
 
 		return $data;
@@ -326,12 +341,12 @@ class DumpNamespaces extends Maintenance {
 	 * @param string $counter
 	 * @return string
 	 */
-	private function getNamespaceName( string $nsText, string $counter = '' ): string {
-		$namespaceName = ( $nsText === '' ) ? 'Main namespace' : $nsText;
+	private function getPdfName( string $nsText, string $counter = '' ): string {
+		$pdfName = ( $nsText === '' ) ? 'Main namespace' : $nsText;
 		if ( $counter !== '' ) {
-			$namespaceName .= " ($counter)";
+			$pdfName .= " ($counter)";
 		}
-		return $namespaceName;
+		return $pdfName;
 	}
 
 	/**
@@ -340,11 +355,11 @@ class DumpNamespaces extends Maintenance {
 	 */
 	private function prepareExportSpecifications( array $data ): array {
 		$specs = [];
-		foreach ( $data as $namespaceName => $pageSpecs ) {
+		foreach ( $data as $pdfName => $pageSpecs ) {
 			$params = [
-				"title" => str_replace( "_", " ", $namespaceName ),
+				"title" => str_replace( "_", " ", $pdfName ),
 				"filesystem-path" => $this->dest,
-				"filename" => str_replace( " ", "_", "{$namespaceName}.pdf" )
+				"filename" => str_replace( " ", "_", "{$pdfName}.pdf" )
 			];
 			if ( $this->template !== '' ) {
 				$params["template"] = $this->template;
@@ -485,6 +500,27 @@ class DumpNamespaces extends Maintenance {
 		}
 
 		return $body;
+	}
+
+	/**
+	 * Log which titles are set in each pdf file
+	 *
+	 * @return void
+	 */
+	private function writeLog(): void {
+		if ( $this->doLog === false ) {
+			return;
+		}
+
+		foreach ( $this->titleLog as $pdfName => $wikiTitles ) {
+			$content = implode( "\n", $wikiTitles );
+			$name = str_replace( ' ', '_', $pdfName );
+			$dest = str_replace( '//', '/', $this->dest . "/$name.log" );
+			file_put_contents( $dest, $content );
+		}
+
+		// Reset log for the next namespace
+		$this->titleLog = [];
 	}
 }
 

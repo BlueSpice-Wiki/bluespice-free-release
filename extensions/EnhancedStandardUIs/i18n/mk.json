@@ -86,5 +86,14 @@
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "Изберете режим на преглед",
 	"enhanced-standard-uis-paginator-page-aria-label": "Страница $1",
 	"enhanced-standard-uis-allpages-section-heading-aria-label": "Страници што почнуваат со $1",
-	"enhanced-standard-uis-filelist-panel-search-aria-label": "Пребарај податотека"
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "Пребарај податотека",
+	"enhanced-standard-uis-allpages-create-new-page-title": "Создај нова страница",
+	"enhanced-standard-uis-allpages-create-new-page-aria-label": "Создај нова страница",
+	"enhanced-standard-uis-filelist-upload-new-file-title": "Подигни нова податотека",
+	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Подигни нова податотека",
+	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "Сите страници во именскиот простор",
+	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Азбучен индекс на страници",
+	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "{{PLURAL:$1|Прикажана|Прикажани}} $1 од ~ $2 {{PLURAL:$2|страница|страници}}",
+	"enhanced-standard-uis-allpages-panel-counter-label": "{{PLURAL:$1|Прикажана|Прикажани}} $1 од $2 {{PLURAL:$2|страница|страници}}",
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Вчитај уште страници"
 }

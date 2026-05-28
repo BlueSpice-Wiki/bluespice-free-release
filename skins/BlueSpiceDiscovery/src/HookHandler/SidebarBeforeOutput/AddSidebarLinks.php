@@ -33,7 +33,7 @@ class AddSidebarLinks implements SidebarBeforeOutputHook {
 	 */
 	public function onSidebarBeforeOutput( $skin, &$sidebar ): void {
 		if ( !empty( $sidebar['TOOLBOX']['permalink'] ) ) {
-			$sidebar['TOOLBOX']['permalink']['text'] = $skin->msg( 'bs-discovery-permalink-copy-text' );
+			$sidebar['TOOLBOX']['permalink']['text'] = $skin->msg( 'bs-discovery-permalink-copy-text' )->text();
 		}
 
 		$user = $skin->getUser();
@@ -67,8 +67,8 @@ class AddSidebarLinks implements SidebarBeforeOutputHook {
 
 		$sidebar['TOOLBOX']['sharebymail'] = [
 			'id' => 't-sharebymail',
-			'text' => $skin->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-text' ),
-			'title' => $skin->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-title' ),
+			'text' => $skin->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-text' )->text(),
+			'title' => $skin->msg( 'bs-discovery-sidebar-secondary-share-sharebymail-title' )->text(),
 			'href' => "mailto:?subject=$subject&body=$body",
 			'class' => 'sharebymail'
 		];
@@ -76,8 +76,8 @@ class AddSidebarLinks implements SidebarBeforeOutputHook {
 		if ( $this->permissionManager->userHasRight( $user, 'createpage' ) ) {
 			$sidebar['TOOLBOX']['new-file'] = [
 				'id' => 't-new-file',
-				'text' => $skin->msg( 'bs-discovery-create-button-new-file-text' ),
-				'title' => $skin->msg( 'bs-discovery-create-button-new-file-title' ),
+				'text' => $skin->msg( 'bs-discovery-create-button-new-file-text' )->text(),
+				'title' => $skin->msg( 'bs-discovery-create-button-new-file-title' )->text(),
 				'href' => SpecialPage::getTitleFor( 'Upload' )->getLocalURL(),
 				'class' => 'new-file'
 			];

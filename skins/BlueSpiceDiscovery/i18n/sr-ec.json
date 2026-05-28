@@ -131,5 +131,8 @@
 	"bs-discovery-back-to-page-title": "Назад на страницу $1",
 	"bs-toc-hide-button-aria-label": "Сакриј табелу са садржајем",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Уреди",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Очисти"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Очисти",
+	"bs-discovery-menu-provider-namespace-tree-label": "Све странице",
+	"bs-discovery-namespace-tree-pnl-header-text": "Странице",
+	"bs-discovery-namespace-tree-create-btn-label": "Направи нову страницу"
 }

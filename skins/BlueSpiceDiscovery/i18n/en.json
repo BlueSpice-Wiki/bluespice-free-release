@@ -196,5 +196,12 @@
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Powered by Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Edit",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Clear",
-	"bs-discovery-breadcrumb-nav-root-node-title": "Show all pages in namespace $1"
+	"bs-discovery-breadcrumb-nav-root-node-title": "Show all pages in namespace $1",
+	"bs-discovery-personalurl-blog-text": "Blog",
+	"bs-discovery-menu-provider-namespace-tree-label": "All pages",
+	"bs-discovery-menu-provider-namespace-tree-desc": "All pages of the current namespace as tree",
+	"bs-discovery-namespace-tree-pnl-header-text": "Pages",
+	"bs-discovery-namespace-tree-search-btn-label": "Show search",
+	"bs-discovery-namespace-tree-create-btn-label": "Create a new page",
+	"bs-discovery-namespace-tree-search-label": "Search for a page"
 }

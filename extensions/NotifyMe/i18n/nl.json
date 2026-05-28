@@ -32,7 +32,7 @@
 	"notifyme-bucket-personal": "Persoonlijke paginagebeurtenissen",
 	"notifyme-bucket-personal-desc": "Paginagebeurtenissen die alleen voor u relevant zijn (toewijzingen, herinneringen…)",
 	"notifyme-channel-email": "E-mail",
-	"notifyme-channel-web": "In de applicatie",
+	"notifyme-channel-web": "In de toepassing",
 	"notifyme-ui-dialog-set-editor-title": "Abonnementenlijst bewerken",
 	"notifyme-ui-dialog-set-editor-type": "Meldingen ontvangen voor",
 	"notifyme-ui-dialog-set-editor-bucket": "Soort meldingen",
@@ -210,5 +210,8 @@
 	"notifyme-notification-center-filter-label-source": "Wiki",
 	"notifyme-notification-center-filter-label-source-local": "Deze wiki",
 	"notifyme-arbitrary-event-default-subject": "Automatische melding",
-	"notifyme-arbitrary-event-action-subject-label": "Onderwerp van de melding"
+	"notifyme-arbitrary-event-action-subject-label": "Onderwerp van de melding",
+	"notifyme-arbitrary-event-action-subject-help": "Wordt gebruikt als onderwerp voor e-mailmeldingen. De waarde kan platte tekst of een berichtsleutel zijn",
+	"notifyme-arbitrary-event-action-message-help": "De waarde kan platte tekst zijn of een berichtsleutel",
+	"notifyme-arbitrary-event-action-with-title-message-help": "De waarde kan platte tekst zijn of een berichtsleutel. Het titelanker van de betreffende pagina wordt als eerste parameter doorgegeven. Voorbeeld: \"Pagina $1 is bewerkt\" resulteert in \"<a href=\"...\">Mijn pagina</a> is bewerkt\", wat correct wordt verwerkt bij het weergeven van de melding om de koppeling naar de pagina weer te geven. Als een berichtsleutel is opgegeven, wordt verwacht dat deze de parameter $1 verwerkt."
 }

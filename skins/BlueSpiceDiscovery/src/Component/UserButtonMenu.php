@@ -269,11 +269,8 @@ class UserButtonMenu extends SimpleDropdown {
 		}
 
 		$imgBaseSize = 28;
-		$realsize = $imgBaseSize * 1.4;
 		$userImageParams = [
 			'username' => $user->getName(),
-			'height' => $realsize,
-			'width' => $realsize,
 		];
 		/** @var DynamicFileDispatcherFactory $dynamicFileFactory */
 		$dynamicFileFactory = MediaWikiServices::getInstance()->getService(

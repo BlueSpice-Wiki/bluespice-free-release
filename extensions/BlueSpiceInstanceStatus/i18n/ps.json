@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-instancestatus-desc": "د ويکي نمونې دريځ ته ټول‌کتنه ورگډوي",
+	"instancestatus": "د نمونې دريځ",
+	"bs-instancestatus-instance-status-bs-version-label": "شين‌تشيال بلبڼه",
+	"bs-instancestatus-instance-status-user-quota-label": "کارن برخه",
+	"bs-instancestatus-instance-status-last-update-label": "وروستۍ هم‌مهالېدنه په",
+	"bs-instancestatus-instance-status-created-label": "نمونه جوړه شوې په",
+	"bs-instancestatus-instance-status-no-info": "د لاسرسي وړ نه دی",
+	"bs-instancestatus-instance-status-sales-contact-label": "شين‌تشيال اړيکه",
+	"bs-instancestatus-instance-status-sales-contact": "دلته اړيکه ونيسئ: [$1 شين‌تشيال اړيکه]",
+	"bs-instancestatus-overview-loader": "ويکي مالومات راټولوي...",
+	"bs-instancestatus-instance-status-main-label": "ټولواله"
+}

@@ -150,4 +150,12 @@ class Skin extends SkinTemplate {
 		}
 		parent::addToSidebar( $bar, $message );
 	}
+
+	/**
+	 * @return string
+	 */
+	public function getCategories() {
+		// This adds `catlinks` div, which we dont use
+		return '';
+	}
 }

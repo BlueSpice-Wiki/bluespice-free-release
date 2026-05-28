@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceFoundation",
 	"license-name": "GPL-3.0-only",
-	"version": "5.2.2",
+	"version": "5.2.4",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
@@ -168,6 +168,11 @@
 		"wikiadmin",
 		"editor"
 	],
+	"GrantPermissions": {
+		"editprotected": {
+			"wikiadmin": true
+		}
+	},
 	"ResourceModules": {
 		"ext.bluespice": {
 			"localBasePath": "resources",
@@ -414,7 +419,6 @@
 		"LinkerMakeMediaLinkFile": "\\BlueSpice\\Hook\\LinkerMakeMediaLinkFile\\AddDataAttributes::callback",
 		"ThumbnailBeforeProduceHTML": "\\BlueSpice\\Hook\\ThumbnailBeforeProduceHTML\\AddDataAttributes::callback",
 		"MakeGlobalVariablesScript": [
-			"\\BlueSpice\\Hook\\MakeGlobalVariablesScript\\AddTaskAPIPermissions::callback",
 			"\\BlueSpice\\Hook\\MakeGlobalVariablesScript\\AddDeferredNotifications::callback"
 		],
 		"LoadExtensionSchemaUpdates": [

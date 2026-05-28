@@ -4,7 +4,6 @@ namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleTreeStore;
 
 use MediaWiki\Language\Language;
 use MediaWiki\Page\PageProps;
-use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
@@ -18,16 +17,12 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryS
 	 * @param Language $language
 	 * @param NamespaceInfo $nsInfo
 	 * @param PageProps $pageProps
-	 * @param PermissionManager|null $permissionManager
 	 */
 	public function __construct(
 		ILoadBalancer $lb, TitleFactory $titleFactory, Language $language,
-		NamespaceInfo $nsInfo, PageProps $pageProps, ?PermissionManager $permissionManager = null
+		NamespaceInfo $nsInfo, PageProps $pageProps
 	) {
-		if ( $permissionManager === null ) {
-			$permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
-		}
-		parent::__construct( $lb, $titleFactory, $language, $nsInfo, $pageProps, $permissionManager );
+		parent::__construct( $lb, $titleFactory, $language, $nsInfo, $pageProps );
 	}
 
 	/**
@@ -47,8 +42,7 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryS
 			$this->lb->getConnection( DB_REPLICA ),
 			$this->getSchema(),
 			$this->language,
-			$this->nsInfo,
-			$this->permissionManager
+			$this->nsInfo
 		);
 	}
 

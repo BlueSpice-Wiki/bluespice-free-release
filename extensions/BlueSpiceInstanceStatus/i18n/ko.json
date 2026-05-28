@@ -1,11 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
 	"instancestatus": "인스턴스 상태",
-	"bs-instancestatus-instance-status-bs-version-label": "BlueSpice 버전",
+	"bs-instancestatus-instance-status-bs-version-label": "블루스파이스 버전",
 	"bs-instancestatus-instance-status-no-info": "사용할 수 없음",
-	"bs-instancestatus-instance-status-main-label": "일반"
+	"bs-instancestatus-instance-status-main-label": "일반",
+	"bs-instancestatus-instance-status-last-update-label": "마지막 업데이트",
+	"bs-instancestatus-instance-status-created-label": "인스턴스 생성일자",
+	"bs-instancestatus-instance-status-sales-contact-label": "블루스파이스 문의처",
+	"bs-instancestatus-instance-status-sales-contact": "여기로 연락하세요: [$1 블루스파이스 문의처]",
+	"bs-instancestatus-overview-loader": "위키 정보 수집 중 ...",
+	"bs-instancestatus-desc": "위키 인스턴스의 상태 개요를 추가합니다",
+	"bs-instancestatus-instance-status-user-quota-label": "사용자 할당량"
 }

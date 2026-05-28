@@ -56,8 +56,6 @@ class ProfileImageHandler implements ITagHandler {
 	protected function handleRaw( array $params ) {
 		$url = $this->dfdFactory->getUrl( 'userprofileimage', [
 			'username' => $params['username'],
-			'width' => $params['width'],
-			'height' => $params['height']
 		] );
 
 		return Html::element( 'img', [

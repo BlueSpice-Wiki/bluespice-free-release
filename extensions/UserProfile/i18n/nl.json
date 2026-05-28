@@ -37,7 +37,7 @@
 	"userprofile-profile-panel-aria-label": "Gebruikersprofielpaneel voor $1",
 	"userprofile-editor-aria-label": "Gebruikersprofiel-editor voor $1",
 	"userprofile-droplet-name": "Gebruikersprofiel",
-	"userprofile-droplet-name-description": "Toont profielinformatie van een gebruiker",
+	"userprofile-droplet-name-description": "Profielinformatie van een gebruiker weergeven",
 	"userprofile-ve-attr-user-label": "Gebruiker",
 	"userprofile-ve-attr-user-help": "Naam van de gebruiker wiens profiel moet worden weergegeven",
 	"userprofile-set-userimage-failed": "Deze afbeelding kan niet worden gebruikt als profielafbeelding",

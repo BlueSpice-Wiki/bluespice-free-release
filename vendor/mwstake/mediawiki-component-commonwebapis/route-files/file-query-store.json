@@ -9,8 +9,7 @@
 			"ContentLanguage",
 			"NamespaceInfo",
 			"PageProps",
-			"RepoGroup",
-			"PermissionManager"
+			"RepoGroup"
 		]
 	}
 ]

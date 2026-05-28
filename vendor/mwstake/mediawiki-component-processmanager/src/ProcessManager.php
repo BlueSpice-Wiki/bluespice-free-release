@@ -110,10 +110,11 @@ class ProcessManager {
 	}
 
 	/**
-	 * @return array
+	 * @param string $runnerUUID
+	 * @return ProcessInfo|null
 	 */
-	public function getEnqueuedProcesses(): array {
-		return $this->processQueue->getEnqueuedProcesses();
+	public function pluckOneFromQueue( string $runnerUUID ): ?ProcessInfo {
+		return $this->processQueue->pluckOneFromQueue( $runnerUUID );
 	}
 
 	/**
@@ -121,5 +122,14 @@ class ProcessManager {
 	 */
 	public function getPlugins(): array {
 		return $this->plugins;
+	}
+
+	/**
+	 * @param IProcessManagerPlugin $plugin
+	 * @param string $requester
+	 * @return bool
+	 */
+	public function claimPlugin( IProcessManagerPlugin $plugin, string $requester ): bool {
+		return $this->processQueue->claimPlugin( $plugin, $requester );
 	}
 }

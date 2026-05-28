@@ -32,6 +32,7 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	public function __construct(
 		GroupHelper $groupHelper, GlobalVarConfig $mwsgConfig, HookContainer $hookContainer, bool $allowEveryone = false
 	) {
+		parent::__construct();
 		$this->groupHelper = $groupHelper;
 		$this->mwsgConfig = $mwsgConfig;
 		$this->hookContainer = $hookContainer;

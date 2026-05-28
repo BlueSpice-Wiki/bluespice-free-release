@@ -24,7 +24,7 @@
 
 	mw.ext.forms.mixin.DefinitionParser.static.reservedKeywords = [
 		'type', 'label', 'name', 'help', 'listeners', 'widget_listeners',
-		'showOn', 'editableOn', 'noLayout', 'style', 'level', 'labelAlign'
+		'showOn', 'editableOn', 'noLayout', 'style', 'level', 'labelAlign', 'helpInline'
 	];
 
 	mw.ext.forms.mixin.DefinitionParser.prototype.parseDefinition = function () {
@@ -345,6 +345,7 @@
 				classes: [ 'forms-form-edit-layout', 'control-wrap', 'auto-wrap' ],
 				label: config.label || config.name,
 				help: config.help || '',
+				helpInline: config.helpInline || false,
 				align: config.labelAlign || this.fieldLabelAlign
 			} );
 			if ( config.style ) {

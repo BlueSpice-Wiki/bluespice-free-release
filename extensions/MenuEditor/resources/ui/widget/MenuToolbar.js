@@ -1,6 +1,9 @@
 ext.menueditor.ui.widget.MenuToolbar = function ( cfg ) {
 	const toolConfig = require( './tools.json' );
 	this.toolbarItems = [ 'newItem', 'cancel', 'save' ].concat( cfg.toolbarItems );
+	if ( mw.util.getParamValue( 'oldid' ) ) {
+		this.toolbarItems.push( 'oldRevisionNotice' );
+	}
 	this.tools = this.getTools( toolConfig.tools );
 	this.modules = this.getToolsModules( toolConfig.modules );
 

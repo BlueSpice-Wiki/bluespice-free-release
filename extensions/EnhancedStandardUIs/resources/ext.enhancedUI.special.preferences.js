@@ -13,7 +13,6 @@
 		const sections = JSON.parse( sectionJson );
 		const isMobile = $( window ).width() < 767;
 
-		// eslint-disable-next-line es-x/no-object-values
 		mw.loader.using( Object.values( modules ) ).done( () => {
 			const preferencesPanel = new ext.enhancedUI.panel.PreferencesPanel( {
 				sections: sections,

@@ -219,5 +219,8 @@
 	"notifyme-notification-center-filter-label-source": "Filter bucket label for selection of which wiki to show notifications from",
 	"notifyme-notification-center-filter-label-source-local": "Filter bucket option label that shows notifications from the local wiki only",
 	"notifyme-arbitrary-event-default-subject": "Label/subject for arbitrary notification when no subject is provided",
-	"notifyme-arbitrary-event-action-subject-label": "Field label"
+	"notifyme-arbitrary-event-action-subject-label": "Field label",
+	"notifyme-arbitrary-event-action-subject-help": "Help text for the subject field of an arbitrary notification action.",
+	"notifyme-arbitrary-event-action-message-help": "Help text for the message field of an arbitrary notification action.",
+	"notifyme-arbitrary-event-action-with-title-message-help": "Help text for the message field of an arbitrary notification action when the title is included."
 }

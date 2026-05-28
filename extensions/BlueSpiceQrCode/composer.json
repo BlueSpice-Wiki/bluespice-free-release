@@ -16,7 +16,7 @@
 	"require": {
 		"composer/installers": "~1.0|~2",
 		"endroid/qr-code": "5.1.*",
-		"mwstake/mediawiki-component-dynamicfiledispatcher": "~1",
+		"mwstake/mediawiki-component-dynamicfiledispatcher": "~2",
 		"mwstake/mediawiki-component-generictaghandler": "~1"
 	},
 	"require-dev": {

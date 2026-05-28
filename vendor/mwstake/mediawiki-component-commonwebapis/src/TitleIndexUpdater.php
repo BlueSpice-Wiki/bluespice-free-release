@@ -3,8 +3,10 @@
 namespace MWStake\MediaWiki\Component\CommonWebAPIs;
 
 use ManualLogEntry;
+use MediaWiki\Collation\CollationFactory;
 use MediaWiki\Hook\AfterImportPageHook;
 use MediaWiki\Hook\PageMoveCompleteHook;
+use MediaWiki\Language\Language;
 use MediaWiki\Page\Hook\PageDeleteCompleteHook;
 use MediaWiki\Page\Hook\PageUndeleteCompleteHook;
 use MediaWiki\Page\PageIdentity;
@@ -36,12 +38,29 @@ class TitleIndexUpdater implements
 	private $pageProps;
 
 	/**
+	 * @var CollationFactory
+	 */
+	private $collationFactory;
+
+	/**
+	 * @var Language
+	 */
+	private $contentLanguage;
+
+	/**
 	 * @param ILoadBalancer $lb
 	 * @param PageProps $pageProps
+	 * @param CollationFactory $collationFactory
+	 * @param Language $contentLanguage
 	 */
-	public function __construct( ILoadBalancer $lb, PageProps $pageProps ) {
+	public function __construct(
+		ILoadBalancer $lb, PageProps $pageProps,
+		CollationFactory $collationFactory, Language $contentLanguage
+	) {
 		$this->lb = $lb;
 		$this->pageProps = $pageProps;
+		$this->collationFactory = $collationFactory;
+		$this->contentLanguage = $contentLanguage;
 	}
 
 	/**
@@ -136,6 +155,7 @@ class TitleIndexUpdater implements
 				'mti_title' => mb_strtolower( str_replace( '_', ' ', $page->getDBkey() ) ),
 				'mti_displaytitle' => $this->getDisplayTitle( $page ),
 				'mti_leaf_title' => mb_strtolower( str_replace( '_', ' ', $leaf ) ),
+				'mti_first_letter' => $this->getFirstLetter( $page->getDBkey() ),
 			],
 			__METHOD__,
 			[ 'OVERWRITE' ]
@@ -175,5 +195,27 @@ class TitleIndexUpdater implements
 			return mb_strtolower( str_replace( '_', ' ', $display[$page->getId()] ) );
 		}
 		return '';
+	}
+
+	/**
+	 * Compute the first-letter bucket for a given page dbkey.
+	 * Uses root page name (before first '/') for subpages.
+	 * Digits are grouped as "0-9", special chars as "#".
+	 *
+	 * @param string $dbkey
+	 * @return string
+	 */
+	private function getFirstLetter( string $dbkey ): string {
+		$title = str_replace( '_', ' ', explode( '/', $dbkey )[0] );
+		$collation = $this->collationFactory->makeCollation( 'uca-' . $this->contentLanguage->getCode() );
+		$letter = $collation->getFirstLetter( $title );
+
+		if ( $letter === '' ) {
+			return '#';
+		}
+		if ( ctype_digit( $letter ) ) {
+			return '0-9';
+		}
+		return $letter;
 	}
 }

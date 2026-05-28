@@ -119,5 +119,16 @@
 	"oojsplus-data-grid-filter-number-operator-eq-label": "Gelijk aan",
 	"oojsplus-data-grid-filter-number-operator-gt-label": "Groter dan",
 	"oojsplus-data-grid-filter-number-operator-lt-label": "Kleiner dan",
-	"oojsplus-data-grid-toolbar-show-widgets-label": "Kolommen weergeven"
+	"oojsplus-data-grid-toolbar-show-widgets-label": "Kolommen weergeven",
+	"oojsplus-group-widget-type-label": "Groep",
+	"oojsplus-usergroupmultiselect-group-tag-type-group": "Groep",
+	"oojsplus-usergroupmultiselect-user-section-label": "Gebruikers",
+	"oojsplus-usergroupmultiselect-group-section-label": "Groepen",
+	"oojsplus-ui-dialog-confirm-with-opt-out-opt-out-label": "Vraag het me niet nog een keer",
+	"oojsplus-ui-dialog-confirm-with-opt-out-save-error": "Het opslaan van uw voorkeur is mislukt, probeer het opnieuw.",
+	"oojsplus-formelement-type-user-group-multiselect": "Meerdere groepen of gebruikers kiezen",
+	"oojsplus-data-paginator-page-total-count-label-approximate": "~ $1 {{PLURAL:$1|item|items}}",
+	"oojsplus-data-grid-toolbar-page-size-25": "25 rijen",
+	"oojsplus-data-grid-toolbar-page-size-50": "50 rijen",
+	"oojsplus-data-grid-toolbar-page-size-100": "100 rijen"
 }

@@ -200,5 +200,12 @@
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Unterstützt durch Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Bearbeiten",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Leeren",
-	"bs-discovery-breadcrumb-nav-root-node-title": "Alle Seiten im Namensraum $1 anzeigen"
+	"bs-discovery-breadcrumb-nav-root-node-title": "Alle Seiten im Namensraum $1 anzeigen",
+	"bs-discovery-personalurl-blog-text": "Blog",
+	"bs-discovery-menu-provider-namespace-tree-label": "Alle Seiten",
+	"bs-discovery-menu-provider-namespace-tree-desc": "Alle Seiten im aktuellen Namensraum als Baum",
+	"bs-discovery-namespace-tree-pnl-header-text": "Seiten",
+	"bs-discovery-namespace-tree-search-btn-label": "Suche anzeigen",
+	"bs-discovery-namespace-tree-create-btn-label": "Eine neue Seite erstellen",
+	"bs-discovery-namespace-tree-search-label": "Nach einer Seite suchen"
 }

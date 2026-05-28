@@ -202,5 +202,12 @@
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Alt text for powered by Semantic MediaWiki footer link image",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Label for mode raw in breadcrumbs on [[Special:EditWatchlist]]",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Label for mode clear in breadcrumbs on [[Special:EditWatchlist]]",
-	"bs-discovery-breadcrumb-nav-root-node-title": "Title label for namespace root node\nParameters:\n* - $1 name of namespace"
+	"bs-discovery-breadcrumb-nav-root-node-title": "Title label for namespace root node\nParameters:\n* - $1 name of namespace",
+	"bs-discovery-personalurl-blog-text": "Label for personal menu entry",
+	"bs-discovery-menu-provider-namespace-tree-label": "Label for a dropdown entry in configuration manager to set menu",
+	"bs-discovery-menu-provider-namespace-tree-desc": "Description for a dropdown entry in configuration manager",
+	"bs-discovery-namespace-tree-pnl-header-text": "Label for menu header",
+	"bs-discovery-namespace-tree-search-btn-label": "Label for button to search for a page",
+	"bs-discovery-namespace-tree-create-btn-label": "Label for button to create a page",
+	"bs-discovery-namespace-tree-search-label": "Label for search input field"
 }

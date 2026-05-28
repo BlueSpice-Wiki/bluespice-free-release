@@ -1,0 +1,163 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd"
+           version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Test</sitename>
+    <dbname>test</dbname>
+    <base>http://localhost/wiki/Main_Page</base>
+    <generator>ManualExport</generator>
+    <namespaces>
+      <namespace key="0" case="first-letter" />
+    </namespaces>
+  </siteinfo>
+
+  <!-- Special chars → # bucket -->
+  <page>
+    <title>!Important notice</title>
+    <ns>0</ns>
+    <revision><text bytes="22" xml:space="preserve">Testing special chars.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>@mentions guide</title>
+    <ns>0</ns>
+    <revision><text bytes="22" xml:space="preserve">Testing special chars.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>~config</title>
+    <ns>0</ns>
+    <revision><text bytes="22" xml:space="preserve">Testing special chars.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+  <!-- Digits → 0-9 bucket -->
+  <page>
+    <title>3D Printing</title>
+    <ns>0</ns>
+    <revision><text bytes="15" xml:space="preserve">Testing digits.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>7 habits</title>
+    <ns>0</ns>
+    <revision><text bytes="15" xml:space="preserve">Testing digits.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>99 problems</title>
+    <ns>0</ns>
+    <revision><text bytes="15" xml:space="preserve">Testing digits.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+  <!-- Standard Latin -->
+  <page>
+    <title>Alpha test</title>
+    <ns>0</ns>
+    <revision><text bytes="14" xml:space="preserve">Testing Latin.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Banana split</title>
+    <ns>0</ns>
+    <revision><text bytes="14" xml:space="preserve">Testing Latin.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Zebra crossing</title>
+    <ns>0</ns>
+    <revision><text bytes="14" xml:space="preserve">Testing Latin.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+  <!-- German extended -->
+  <page>
+    <title>Ärzte ohne Grenzen</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing German.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Österreich</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing German.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Über uns</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing German.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+  <!-- Nordic -->
+  <page>
+    <title>Ångström unit</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing Nordic.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Ælling</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing Nordic.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Øresund</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing Nordic.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+  <!-- Eastern European -->
+  <page>
+    <title>Červená karkulka</title>
+    <ns>0</ns>
+    <revision><text bytes="23" xml:space="preserve">Testing East European.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Šiauliai</title>
+    <ns>0</ns>
+    <revision><text bytes="23" xml:space="preserve">Testing East European.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Żółty ptak</title>
+    <ns>0</ns>
+    <revision><text bytes="23" xml:space="preserve">Testing East European.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Łódź</title>
+    <ns>0</ns>
+    <revision><text bytes="23" xml:space="preserve">Testing East European.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+  <!-- Cyrillic -->
+  <page>
+    <title>Борщ</title>
+    <ns>0</ns>
+    <revision><text bytes="18" xml:space="preserve">Testing Cyrillic.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Кваркуш</title>
+    <ns>0</ns>
+    <revision><text bytes="18" xml:space="preserve">Testing Cyrillic.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>Яблоко</title>
+    <ns>0</ns>
+    <revision><text bytes="18" xml:space="preserve">Testing Cyrillic.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+  <!-- Arabic / Hebrew -->
+  <page>
+    <title>بيت</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing Arabic.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>שלום</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing Hebrew.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+  <!-- CJK / Korean -->
+  <page>
+    <title>東京タワー</title>
+    <ns>0</ns>
+    <revision><text bytes="13" xml:space="preserve">Testing CJK.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+  <page>
+    <title>한국어</title>
+    <ns>0</ns>
+    <revision><text bytes="16" xml:space="preserve">Testing Korean.</text><model>wikitext</model><format>text/x-wiki</format></revision>
+  </page>
+
+</mediawiki>

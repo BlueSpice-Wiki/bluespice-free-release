@@ -52,7 +52,7 @@ class DisableCollabPadsContentAction implements CollabPadsAfterAddContentActionH
 			->where( [
 				'se_page_title' => $title->getDBkey(),
 				'se_page_namespace' => $title->getNamespace(),
-				'se_timestamp > ' . $dbr->addQuotes( $thresholdTS )
+				'se_timestamp > ' . $dbr->addQuotes( $dbr->timestamp( $thresholdTS ) )
 			] )
 			->caller( __METHOD__ )
 			->fetchRowCount();

@@ -16,7 +16,8 @@ return [
 		$context = RequestContext::getMain();
 		$registry = new ExtensionAttributeBasedRegistry( 'BlueSpiceSaferEditEnvironmentCheckers' );
 		$wireMessenger = $services->getService( 'MWStake.Wire.Messenger' );
-		return new SaferEditManager( $lb, $context, $config, $registry, $wireMessenger );
+		$permissionManager = $services->getPermissionManager();
+		return new SaferEditManager( $lb, $context, $config, $registry, $wireMessenger, $permissionManager );
 	},
 ];
 

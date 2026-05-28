@@ -152,5 +152,6 @@
 	"pdfcreator-tag-no-export-start-ve-label": "Exclusión do PDF - inicio",
 	"pdfcreator-tag-no-export-end-ve-label": "Exclusión do PDF - fin",
 	"pdfcreator-global-action-overview": "Modelos de PDF",
-	"pdfcreator-global-action-overview-desc": "Vista xeral de todos os modelos de PDF do wiki"
+	"pdfcreator-global-action-overview-desc": "Vista xeral de todos os modelos de PDF do wiki",
+	"pdfcreator-export-action-text": "Exportar a PDF"
 }

@@ -96,6 +96,8 @@ class Tag implements ParserFirstCallInitHook {
 			$tagShowCategories = $args[ 'showcategories' ];
 		}
 
+		$html = $parser->recursiveTagParse( $input );
+
 		foreach ( $this->getFilesFromWikiText( $input ) as $title ) {
 			$files[] = $title->getDBkey();
 		}

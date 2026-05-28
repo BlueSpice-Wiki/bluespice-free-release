@@ -4,13 +4,13 @@ namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\FileQueryStore;
 
 use MediaWiki\Language\Language;
 use MediaWiki\Page\PageProps;
-use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\NamespaceInfo;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use RepoGroup;
 use Wikimedia\Rdbms\ILoadBalancer;
 
-class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
+class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\Reader {
 	/** @var ILoadBalancer */
 	protected $lb;
 	/** @var TitleFactory */
@@ -21,10 +21,8 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	protected $nsInfo;
 	/** @var PageProps */
 	protected $pageProps;
-	/** @var \RepoGroup */
+	/** @var RepoGroup */
 	protected $repoGroup;
-	/** @var PermissionManager */
-	protected $permissionManager;
 
 	/**
 	 * @param ILoadBalancer $lb
@@ -32,25 +30,14 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	 * @param Language $language
 	 * @param NamespaceInfo $nsInfo
 	 * @param PageProps $pageProps
-	 * @param \RepoGroup $repoGroup
-	 * @param PermissionManager|null $permissionManager
+	 * @param RepoGroup $repoGroup
 	 */
 	public function __construct(
 		ILoadBalancer $lb, TitleFactory $titleFactory, Language $language,
-		NamespaceInfo $nsInfo, PageProps $pageProps, \RepoGroup $repoGroup,
-		?PermissionManager $permissionManager = null
+		NamespaceInfo $nsInfo, PageProps $pageProps, RepoGroup $repoGroup
 	) {
-		parent::__construct();
-		$this->lb = $lb;
-		$this->titleFactory = $titleFactory;
-		$this->language = $language;
-		$this->nsInfo = $nsInfo;
-		$this->pageProps = $pageProps;
+		parent::__construct( $lb, $titleFactory, $language, $nsInfo, $pageProps );
 		$this->repoGroup = $repoGroup;
-		$this->permissionManager = $permissionManager;
-		if ( $this->permissionManager === null ) {
-			$this->permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
-		}
 	}
 
 	/**
@@ -68,7 +55,7 @@ class Reader extends \MWStake\MediaWiki\Component\DataStore\Reader {
 	public function makePrimaryDataProvider( $params ) {
 		return new PrimaryDataProvider(
 			$this->lb->getConnection( DB_REPLICA ), $this->getSchema(), $this->language,
-			$this->nsInfo, $this->permissionManager
+			$this->nsInfo
 		);
 	}
 

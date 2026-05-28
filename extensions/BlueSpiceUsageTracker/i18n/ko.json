@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tensama0415"
+		]
+	},
+	"bs-usagetracker-desc": "확장 기능 사용에 대한 통계 데이터를 보유합니다",
+	"apihelp-bs-usagetracker-store-summary": "확장 기능 사용에 대한 통계 데이터를 보유합니다"
+}

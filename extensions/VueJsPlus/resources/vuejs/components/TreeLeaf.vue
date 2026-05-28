@@ -3,28 +3,32 @@
 		role="treeitem"
 		class="vuejsplus-data-tree-item">
 		<div>
-			<input
-				type="checkbox"
-				class="vuejsplus-data-tree-item-checkbox"
-				:aria-labelledby="itemId"
-				:name="name"
-				v-model="internalSelected"
-				@change="handleCheckboxChange"
-			><a :id="itemId" :href="href" :class="nodeClass">{{ label }}</a>
+			<span class="vuejsplus-data-tree-expand-btn-spacer"></span><div style="display: inline-block; position: relative;">
+				<input
+					type="checkbox"
+					class="vuejsplus-data-tree-item-checkbox"
+					:aria-labelledby="itemId"
+					:name="name"
+					v-model="internalSelected"
+					@change="handleCheckboxChange"
+				><a :id="itemId" :href="href" :class="nodeClass">{{ label }}</a>
+			</div>
 		</div>
 	</li>
 	<li v-else-if="selectableTextNode"
 		role="treeitem"
 		class="vuejsplus-data-tree-item">
 		<div>
-			<input
-				type="checkbox"
-				class="vuejsplus-data-tree-item-checkbox"
-				:aria-labelledby="itemId"
-				:name="name"
-				v-model="internalSelected"
-				@change="handleCheckboxChange"
-			><span :id="itemId" :class="nodeClass">{{ label }}</span>
+			<span class="vuejsplus-data-tree-expand-btn-spacer"></span><div style="display: inline-block; position: relative;">
+				<input
+					type="checkbox"
+					class="vuejsplus-data-tree-item-checkbox"
+					:aria-labelledby="itemId"
+					:name="name"
+					v-model="internalSelected"
+					@change="handleCheckboxChange"
+				><span :id="itemId" :class="nodeClass">{{ label }}</span>
+			</div>
 		</div>
 	</li>
 	<li v-else-if="linkNode"
@@ -131,3 +135,15 @@ module.exports = exports = {
 };
 
 </script>
+
+<style lang="css">
+.vuejsplus-data-tree-expand-btn-spacer {
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+}
+
+ul.vuejsplus-data-tree > li:has( > div > .vuejsplus-data-tree-expand-btn-spacer )::before {
+	width: calc( 0.75em + 30px );
+}
+</style>

@@ -4,6 +4,7 @@
 			"DDPAT",
 			"Ice bulldog",
 			"Piramidion",
+			"Repakr",
 			"Samflint",
 			"Vlad5250",
 			"Пан Хаунд"
@@ -18,5 +19,15 @@
 	"apihelp-bs-qr-code-summary": "Отримати QR-код як URI даних base64 для сторінки",
 	"apihelp-bs-qr-code-param-revid": "Ідентифікатор редакції сторінки для створення постійного посилання",
 	"apihelp-bs-qr-code-param-page": "Назва сторінки для створення URI даних base64",
-	"apihelp-bs-qr-code-param-size": "Розмір QR-коду"
+	"apihelp-bs-qr-code-param-size": "Розмір QR-коду",
+	"bs-qr-code-alt-text": "QR-код для $1",
+	"bs-qr-code-tag-qrcode-title": "QR-код",
+	"bs-qr-code-tag-attr-page-label": "Сторінка",
+	"bs-qr-code-tag-attr-query-label": "Параметр",
+	"bs-qr-code-tag-attr-desc-label": "Опис",
+	"bs-qr-code-tag-attr-size-label": "Розмір",
+	"bs-qr-code-droplet-name": "QR-код",
+	"bs-qr-code-tag-attr-size-option-small": "маленький",
+	"bs-qr-code-tag-attr-size-option-medium": "середній",
+	"bs-qr-code-tag-attr-size-option-large": "великий"
 }

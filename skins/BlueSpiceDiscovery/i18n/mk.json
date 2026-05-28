@@ -193,5 +193,6 @@
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Овозможено од Семантички МедијаВики",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Уреди",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Исчисти",
-	"bs-discovery-breadcrumb-nav-root-node-title": "Прикажи ги сите страници во именскиот простор $1"
+	"bs-discovery-breadcrumb-nav-root-node-title": "Прикажи ги сите страници во именскиот простор $1",
+	"bs-discovery-personalurl-blog-text": "Блог"
 }

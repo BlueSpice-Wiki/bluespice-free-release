@@ -8,8 +8,10 @@ CREATE TABLE /*_*/mws_title_index (
   mti_title VARBINARY(255) NOT NULL,
   mti_displaytitle VARBINARY(255) NOT NULL,
   mti_leaf_title VARBINARY(255) NOT NULL,
+  mti_first_letter VARBINARY(32) NOT NULL DEFAULT '',
   INDEX mws_title_index_title_index (mti_title),
   INDEX mws_title_index_displaytitle_index (mti_displaytitle),
   INDEX mws_title_index_leaftitle_index (mti_leaf_title),
+  INDEX mws_title_index_first_letter_index (mti_first_letter, mti_namespace),
   PRIMARY KEY(mti_page_id)
 ) /*$wgDBTableOptions*/;

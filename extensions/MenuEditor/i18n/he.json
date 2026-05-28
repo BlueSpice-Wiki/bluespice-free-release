@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Neriah"
 		]
 	},
 	"menueditor-desc": "עורך גרפי לדפי תפריט",
@@ -37,5 +38,6 @@
 	"menueditor-ui-add-sub-element-label": "הוסף רכיב־משנה",
 	"menueditor-footerlinks-banner-text": "חלק מהקישורים עשויים להתווסף באופן אוטומטי על־ידי הרחבות. נא לבדוק את תצורת ההרחבה למידע נוסף.",
 	"menueditor-toolbar-save": "שמירה",
-	"menueditor-ui-cancel-confirmation": "האם ברצונך באמת לבטל את העריכה? כל השינויים שלא נשמרו יאבדו."
+	"menueditor-ui-cancel-confirmation": "האם ברצונך באמת לבטל את העריכה? כל השינויים שלא נשמרו יאבדו.",
+	"menueditor-ui-notices": "הודעות"
 }

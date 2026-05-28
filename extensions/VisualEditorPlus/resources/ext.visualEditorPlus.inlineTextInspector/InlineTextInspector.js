@@ -100,6 +100,12 @@ ext.visualEditorPlus.ui.InlineTextInspector.prototype.onMouseUp = function ( e )
 		x: e.pageX,
 		y: e.pageY
 	};
+
+	const target = e.target;
+	// If target is an input, skip
+	if ( target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' ) {
+		return;
+	}
 	if ( !this.selection || ( this.selectedNode && !( this.selectedNode instanceof ve.dm.TextNode ) ) ) {
 		// If some particular node is selected, we don't want to show the inspector, just on plain text
 		return;

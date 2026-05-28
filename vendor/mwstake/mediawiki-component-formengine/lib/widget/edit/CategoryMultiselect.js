@@ -15,6 +15,11 @@
 				mw.widgets.CategoryMultiselectWidget.SearchType.InternalSearch
 			]
 		} );
+		this.categoryMultiselectWidget.connect( this, {
+			change: () => {
+				this.emit( 'change' );
+			}
+		} );
 
 		mw.ext.forms.widget.edit.CategoryMultiselect.parent.call( this, cfg );
 

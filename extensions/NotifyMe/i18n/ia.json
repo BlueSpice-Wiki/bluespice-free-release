@@ -208,5 +208,8 @@
 	"notifyme-notification-center-filter-label-source": "Wiki",
 	"notifyme-notification-center-filter-label-source-local": "Iste wiki",
 	"notifyme-arbitrary-event-default-subject": "Notification automatic",
-	"notifyme-arbitrary-event-action-subject-label": "Topico del notification"
+	"notifyme-arbitrary-event-action-subject-label": "Topico del notification",
+	"notifyme-arbitrary-event-action-subject-help": "Essera usate como le subjecto pro le notification in e-mail. Le valor pote esser texto simple o un clave de message",
+	"notifyme-arbitrary-event-action-message-help": "Le valor pote esser texto simple o un clave de message",
+	"notifyme-arbitrary-event-action-with-title-message-help": "Le valor pote esser texto simple o un clave de message. Le ancora de titulo del pagina relevante se passa como le prime parametro. Exemplo: Le pagina $1 ha essite modificate, se resolvera a “Le pagina <a href=\"...\">Mi pagina</a> ha essite modificate”, que essera processate correctemente quando se rende le notification pro monstrar le ligamine al pagina. Si le clave del message es specificate, se expecta que illo gere le parametro $1."
 }

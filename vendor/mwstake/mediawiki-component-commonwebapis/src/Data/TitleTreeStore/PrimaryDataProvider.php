@@ -2,16 +2,12 @@
 
 namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleTreeStore;
 
-use MediaWiki\Context\RequestContext;
-use MediaWiki\Language\Language;
-use MediaWiki\Permissions\PermissionManager;
-use MediaWiki\Title\NamespaceInfo;
-use MediaWiki\Title\Title;
+use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\PrimaryDataProvider as TitlePrimaryDataProvider;
+use MWStake\MediaWiki\Component\DataStore\IBucketProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
-use MWStake\MediaWiki\Component\DataStore\Schema;
-use Wikimedia\Rdbms\IDatabase;
 
-class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\PrimaryDataProvider {
+class PrimaryDataProvider extends TitlePrimaryDataProvider implements IBucketProvider {
 	/** @var string|null */
 	private $query = null;
 	/** @var array|null */
@@ -20,17 +16,8 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	private $subpageData = [];
 	/** @var array */
 	private $nodeCache = [];
-
-	/**
-	 * @inheritDoc
-	 */
-	public function __construct( IDatabase $db, Schema $schema, Language $language,
-		NamespaceInfo $nsInfo, ?PermissionManager $permissionManager = null ) {
-		if ( $permissionManager === null ) {
-			$permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
-		}
-		parent::__construct( $db, $schema, $language, $nsInfo, $permissionManager );
-	}
+	/** @var array */
+	protected $buckets = [];
 
 	/**
 	 * @param TitleTreeReaderParams $params
@@ -50,6 +37,8 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 			}
 		}
 
+		$this->buckets = [];
+
 		$this->data = [];
 		$res = $this->db->select(
 			$this->getTableNames(),
@@ -67,6 +56,12 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 		foreach ( $res as $row ) {
 			$this->appendRowToData( $row );
 		}
+
+		$sortkeyIndex = new SortkeyBucketProvider(
+			MediaWikiServices::getInstance()->getCollationFactory(),
+			MediaWikiServices::getInstance()->getContentLanguage()
+		);
+		$this->buckets = $sortkeyIndex->getBuckets( $this->data );
 
 		return array_values( $this->data );
 	}
@@ -91,11 +86,6 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	protected function appendRowToData( \stdClass $row ) {
 		$indexTitle = $row->mti_title;
 		$uniqueId = $this->getUniqueId( $row );
-
-		$user = RequestContext::getMain()->getUser();
-		if ( !$this->permissionManager->userCan( 'read', $user, Title::newFromRow( $row ) ) ) {
-			return;
-		}
 
 		if ( $this->isSubpage( $indexTitle ) &&
 			$this->nsInfo->hasSubpages( (int)$row->page_namespace ) ) {
@@ -168,7 +158,8 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 			TitleTreeRecord::LEAF => false,
 			TitleTreeRecord::EXPANDED => $expanded,
 			TitleTreeRecord::LOADED => $loaded,
-			TitleTreeRecord::CHILDREN => property_exists( $row, 'children' ) ? $row->children : []
+			TitleTreeRecord::CHILDREN => property_exists( $row, 'children' ) ? $row->children : [],
+			TitleTreeRecord::SORTKEY => $row->mti_first_letter,
 		] );
 	}
 
@@ -495,5 +486,12 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 		$nonExistingNode->page_title = $nonExistingPageName;
 
 		return $nonExistingNode;
+	}
+
+	/**
+	 * @return array
+	 */
+	public function getBuckets(): array {
+		return [ 'sortkey' => $this->buckets ];
 	}
 }

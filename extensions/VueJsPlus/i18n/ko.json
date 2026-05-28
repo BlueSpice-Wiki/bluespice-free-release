@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tensama0415"
+		]
+	},
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "접기",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "펼치기",
+	"vuejsplus-data-grid-option-sort-string-asc": "오름차순 정렬",
+	"vuejsplus-data-grid-option-sort-string-desc": "내림차순 정렬",
+	"vuejsplus-data-grid-option-filter-string": "찾기",
+	"vuejsplus-desc": "VueJs 구성 요소 모음",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "({{PLURAL:$1|열 1개|열 $1개}}) 찾음",
+	"vuejsplus-data-grid-option-button-aria-label": "열 $1 옵션",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "체크됨",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "체크되지 않음",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "중립",
+	"vuejsplus-data-grid-option-filter-date-from-label": "시작 날짜",
+	"vuejsplus-data-grid-option-filter-date-to-label": "끝 날짜"
+}

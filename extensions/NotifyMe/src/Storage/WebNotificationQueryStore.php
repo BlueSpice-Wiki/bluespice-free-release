@@ -39,6 +39,9 @@ class WebNotificationQueryStore {
 	/** @var HookContainer */
 	private $hookContainer;
 
+	/** @var ?array */
+	private ?array $cacheTotalCount = null;
+
 	/**
 	 * @param ILoadBalancer $loadBalancer
 	 * @param WikiPageFactory $wikiPageFactory
@@ -228,12 +231,17 @@ class WebNotificationQueryStore {
 	 * @return int
 	 */
 	public function getTotalCount( string $status, UserIdentity $user ): int {
-		$res = $this->rawQuery( $user, $status, [ 'COUNT( nwqs_notification_id ) as count' ] );
-		if ( !$res->numRows() ) {
-			return 0;
+		$userId = $user->getId();
+		if ( !isset( $this->cacheTotalCount[$userId][$status] ) ) {
+			$res = $this->rawQuery( $user, $status, [ 'COUNT( nwqs_notification_id ) as count' ] );
+			if ( !$res->numRows() ) {
+				$this->cacheTotalCount[$userId][$status] = 0;
+				return 0;
+			}
+			$row = $res->fetchObject();
+			$this->cacheTotalCount[$userId][$status] = (int)$row->count;
 		}
-		$row = $res->fetchObject();
-		return (int)$row->count;
+		return $this->cacheTotalCount[$userId][$status];
 	}
 
 	/**

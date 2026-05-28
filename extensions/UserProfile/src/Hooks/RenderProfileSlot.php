@@ -2,7 +2,6 @@
 
 namespace MediaWiki\Extension\UserProfile\Hooks;
 
-use BlueSpice\Discovery\Hook\BlueSpiceDiscoveryTemplateDataProviderAfterInit;
 use MediaWiki\Extension\UserProfile\ProfileManager;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\Html\Html;
@@ -17,7 +16,6 @@ use MediaWiki\User\UserFactory;
 class RenderProfileSlot implements
 	OutputPageBeforeHTMLHook,
 	SkinTemplateNavigation__UniversalHook,
-	BlueSpiceDiscoveryTemplateDataProviderAfterInit,
 	BeforePageDisplayHook
 {
 
@@ -110,7 +108,8 @@ class RenderProfileSlot implements
 	}
 
 	/**
-	 * @inheritDoc
+	 * @param \BlueSpice\Discovery\ITemplateDataProvider $registry
+	 * @return void
 	 */
 	public function onBlueSpiceDiscoveryTemplateDataProviderAfterInit( $registry ): void {
 		$registry->register( 'panel/edit', 'ca-editprofiledata' );

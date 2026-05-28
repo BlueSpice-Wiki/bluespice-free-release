@@ -22,7 +22,7 @@
 	"autoload": {
 		"psr-4": {
 			"MWStake\\MediaWiki\\Component\\Utils\\": "src/",
-			"MWStake\\MediaWiki\\Component\\Utils\\Tests\\": "tests/phpunit/"
+			"MWStake\\MediaWiki\\Component\\Utils\\Tests\\Unit\\": "tests/phpunit/unit/"
 		},
 		"files": [
 			"bootstrap.php"

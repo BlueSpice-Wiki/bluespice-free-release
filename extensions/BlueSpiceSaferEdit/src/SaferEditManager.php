@@ -5,6 +5,7 @@ namespace BlueSpice\SaferEdit;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use Config;
 use MediaWiki\Context\IContextSource;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -14,30 +15,24 @@ use MWStake\MediaWiki\Component\Wire\WireMessenger;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class SaferEditManager {
-	/**
-	 * @var ILoadBalancer
-	 */
+
+	/** @var ILoadBalancer */
 	protected $lb;
 
-	/**
-	 * @var Config
-	 */
+	/** @var Config */
 	private $config;
 
-	/**
-	 * @var IContextSource
-	 */
+	/** @var IContextSource */
 	protected $context;
 
-	/**
-	 * @var ExtensionAttributeBasedRegistry
-	 */
+	/** @var ExtensionAttributeBasedRegistry */
 	protected $checkerRegistry;
 
-	/**
-	 * @var WireMessenger
-	 */
+	/** @var WireMessenger */
 	protected $wireMessenger;
+
+	/** @var PermissionManager */
+	protected $permissionManager;
 
 	/**
 	 * @param ILoadBalancer $lb
@@ -45,16 +40,19 @@ class SaferEditManager {
 	 * @param Config $config
 	 * @param ExtensionAttributeBasedRegistry $checkerRegistry
 	 * @param WireMessenger $wireMessenger
+	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct(
 		ILoadBalancer $lb, IContextSource $context, Config $config,
-		ExtensionAttributeBasedRegistry $checkerRegistry, WireMessenger $wireMessenger
+		ExtensionAttributeBasedRegistry $checkerRegistry, WireMessenger $wireMessenger,
+		PermissionManager $permissionManager
 	) {
 		$this->context = $context;
 		$this->lb = $lb;
 		$this->config = $config;
 		$this->checkerRegistry = $checkerRegistry;
 		$this->wireMessenger = $wireMessenger;
+		$this->permissionManager = $permissionManager;
 	}
 
 	/**
@@ -64,16 +62,14 @@ class SaferEditManager {
 	 * @return Status
 	 */
 	public function saveUserEditing( User $user, Title $title, $section = -1 ) {
-		if ( !\MediaWiki\MediaWikiServices::getInstance()
-			->getPermissionManager()
-			->userCan( 'edit', $user, $title )
-		) {
+		if ( !$this->permissionManager->userCan( 'edit', $user, $title ) ) {
 			return Status::newFatal( "User cannot edit the page" );
 		}
 
+		$dbr = $this->lb->getConnection( DB_REPLICA );
 		$table = 'bs_saferedit';
 		$fields = [
-			"se_timestamp" => wfTimestamp( TS_MW, time() )
+			"se_timestamp" => $dbr->timestamp( wfTimestamp( TS_MW, time() ) )
 		];
 		$conditions = [
 			"se_user_name" => $user->getName(),
@@ -87,7 +83,7 @@ class SaferEditManager {
 			'LIMIT' => 1,
 		];
 
-		$row = $this->lb->getConnection( DB_REPLICA )->selectRow(
+		$row = $dbr->selectRow(
 			$table,
 			[ 'se_id' ],
 			$conditions,

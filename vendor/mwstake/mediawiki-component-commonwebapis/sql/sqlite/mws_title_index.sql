@@ -8,6 +8,7 @@ CREATE TABLE /*_*/mws_title_index (
   mti_title BLOB NOT NULL,
   mti_displaytitle BLOB NOT NULL,
   mti_leaf_title BLOB NOT NULL,
+  mti_first_letter BLOB NOT NULL DEFAULT '',
   PRIMARY KEY(mti_page_id)
 );
 
@@ -16,3 +17,5 @@ CREATE INDEX mws_title_index_title_index ON /*_*/mws_title_index (mti_title);
 CREATE INDEX mws_title_index_displaytitle_index ON /*_*/mws_title_index (mti_displaytitle);
 
 CREATE INDEX mws_title_index_leaftitle_index ON /*_*/mws_title_index (mti_leaf_title);
+
+CREATE INDEX mws_title_index_first_letter_index ON /*_*/mws_title_index (mti_first_letter, mti_namespace);

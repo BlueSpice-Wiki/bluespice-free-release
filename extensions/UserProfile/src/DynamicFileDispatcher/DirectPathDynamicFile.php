@@ -3,10 +3,11 @@
 namespace MediaWiki\Extension\UserProfile\DynamicFileDispatcher;
 
 use MediaWiki\Rest\Stream;
+use MWStake\MediaWiki\Component\DynamicFileDispatcher\CacheableFile;
 use MWStake\MediaWiki\Component\DynamicFileDispatcher\IDynamicFile;
 use Psr\Http\Message\StreamInterface;
 
-class DirectPathDynamicFile implements IDynamicFile {
+class DirectPathDynamicFile implements IDynamicFile, CacheableFile {
 
 	/** @var string */
 	protected string $path;
@@ -36,5 +37,12 @@ class DirectPathDynamicFile implements IDynamicFile {
 	 */
 	public function getStream(): StreamInterface {
 		return new Stream( fopen( $this->path, 'rb' ) );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getETag(): ?string {
+		return '"' . md5_file( $this->path ) . '"';
 	}
 }
