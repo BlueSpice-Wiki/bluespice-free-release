@@ -95,5 +95,8 @@
 	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Indice alphabetic de paginas",
 	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "Appare $1 de ~ $2 pagina{{PLURAL:$2||s}}",
 	"enhanced-standard-uis-allpages-panel-counter-label": "Appare $1 de $2 pagina{{PLURAL:$2||s}}",
-	"enhanced-standard-uis-allpages-panel-more-button-label": "Cargar plus paginas"
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Cargar plus paginas",
+	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "Aperir le dialogo de previsualisation pro le file $1",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 – $2 de $3",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 – $2 de ± $3"
 }

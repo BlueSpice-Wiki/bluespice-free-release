@@ -10,5 +10,7 @@
 	"visualeditorplus-table-contextitem-properties-label": "表格属性",
 	"visualeditorplus-table-contextitem-additional-options-label": "额外单元格选项",
 	"visualeditorplus-table-cell-actions-dialog-title": "单元格选项",
-	"visualeditorplus-table-cell-actions-dialog-done-label": "完成"
+	"visualeditorplus-table-cell-actions-dialog-done-label": "完成",
+	"visualeditorplus-ui-label-unwrap": "移除（保留内容）",
+	"visualeditorplus-ui-label-delete": "移除"
 }

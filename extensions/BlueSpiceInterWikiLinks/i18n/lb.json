@@ -24,5 +24,6 @@
 	"bs-interwikilinks-confirmdeleteinterwikilink": "Sidd Dir sécher, datt Dir dësen Interwiki-Link läsche wëllt?",
 	"bs-interwikilinks-link-edited": "Den Interwiki Link gouf geännert",
 	"action-interwikilinks-viewspecialpage": "d'Spezialsäit \"{{int:bs-interwikilinks-label}}\" weisen",
-	"interwikilinks": "Interwiki-Linken"
+	"interwikilinks": "Interwiki-Linken",
+	"bs-interwikilinks-url-validate-fail": "D'URL konnt net validéiert ginn."
 }

@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceInstanceStatus",
-	"version": "5.2.4",
+	"version": "5.2.5",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
@@ -114,6 +114,9 @@
 		},
 		"InstanceStatusCheckAllowedIP": {
 			"value": null
+		},
+		"InstanceStatusCheckAllowedIPs": {
+			"value": []
 		}
 	},
 	"Hooks": {

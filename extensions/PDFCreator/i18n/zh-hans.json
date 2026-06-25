@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"GuoPC",
+			"Peterxy",
 			"Peterxy12"
 		]
 	},
@@ -153,5 +154,6 @@
 	"pdfcreator-edit-template-values-footer-error": "页脚不匹配表格和类结构",
 	"pdfcreator-edit-template-values-intro-error": "文档前言未包含“pdfcreator-intro”类",
 	"pdfcreator-edit-template-values-outro-error": "文档附录未包含“pdfcreator-outro”类",
-	"pdfcreator-global-action-overview-desc": "Wiki中所有PDF模板概览"
+	"pdfcreator-global-action-overview-desc": "Wiki中所有PDF模板概览",
+	"pdfcreator-export-action-text": "导出为PDF"
 }

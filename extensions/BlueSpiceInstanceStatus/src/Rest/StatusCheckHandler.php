@@ -29,10 +29,22 @@ class StatusCheckHandler extends SimpleHandler {
 	public function execute() {
 		$config = $this->configFactory->makeConfig( 'bsg' );
 		$clientIP = $this->getClientIP();
-		if (
-			!IPUtils::isValidRange( $config->get( 'InstanceStatusCheckAllowedIP' ) ) ||
-			!IPUtils::isInRange( $clientIP, $config->get( 'InstanceStatusCheckAllowedIP' ) )
-		) {
+		$ipRestrictionsLegacy = explode( ',', $config->get( 'InstanceStatusCheckAllowedIP' ) ?? '' );
+		$ipRestrictions = array_merge(
+			$ipRestrictionsLegacy,
+			$config->get( 'InstanceStatusCheckAllowedIPs' )
+		);
+		$isAllowed = false;
+		foreach ( $ipRestrictions as $ipRestriction ) {
+			if (
+				IPUtils::isValidRange( $ipRestriction ) &&
+				IPUtils::isInRange( $clientIP, $ipRestriction )
+			) {
+				$isAllowed = true;
+				break;
+			}
+		}
+		if ( !$isAllowed ) {
 			throw new HttpException( 'permissiondenied', 401 );
 		}
 		return $this->getResponseFactory()->createJson(
@@ -43,7 +55,7 @@ class StatusCheckHandler extends SimpleHandler {
 	/**
 	 * @return string
 	 */
-	private function getClientIP() {
+	protected function getClientIP() {
 		return RequestContext::getMain()->getRequest()->getIP();
 	}
 

@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceTagCloud",
 	"license-name": "GPL-3.0-only",
-	"version": "5.2.4",
+	"version": "5.2.5",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceTagCloud",
 	"author": [
 		"Patric Wirth"
@@ -79,7 +79,7 @@
 		},
 		"ext.bluespice.tagcloud.canvas3d": {
 			"scripts": [
-				"jQuery.tagCanvas/jQuery.tagcanvas.2.9.min.js",
+				"lib/jquery-tagcanvas/jquery.tagcanvas.min.js",
 				"bluespice.canvas3DTagCloud.js"
 			],
 			"dependencies": [
@@ -102,5 +102,6 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceTagCloud/resources"
 	},
+	"ForeignResourcesDir": "resources/lib",
 	"manifest_version": 2
 }

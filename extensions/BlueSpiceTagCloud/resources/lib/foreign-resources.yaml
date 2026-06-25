@@ -1,0 +1,13 @@
+jquery-tagcanvas:
+  license: LGPL-3.0-or-later
+  homepage: http://www.goat1000.com/tagcanvas.php
+  authors: Graham Breach
+  version: 2.9.0
+  purl: pkg:npm/jquery-tagcanvas@2.9.0
+  type: tar
+  src: https://registry.npmjs.org/jquery-tagcanvas/-/jquery-tagcanvas-2.9.0.tgz
+  integrity: sha384-MkyMA9p1jwdS84E7XkJUyw/yK63Frbk/m6JQcAlv8fHDfkfCCR9/i0hNhwehbK1E
+  dest:
+    package/jquery.tagcanvas.js:
+    package/jquery.tagcanvas.min.js:
+    package/README.md:

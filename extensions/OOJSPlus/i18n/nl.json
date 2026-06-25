@@ -47,7 +47,7 @@
 	"oojsplus-data-paginator-previous": "Vorige pagina",
 	"oojsplus-data-paginator-first": "Eerste pagina",
 	"oojsplus-data-paginator-last": "Laatste pagina",
-	"oojsplus-data-grid-toolbar-reload-label": "Herladen",
+	"oojsplus-data-grid-toolbar-reload-label": "Vernieuwen",
 	"oojsplus-data-paginator-page-number-switch-hint": "Navigeer naar links en rechts op dit element om het paginanummer te selecteren",
 	"oojsplus-data-paginator-page-number-button-title": "Pagina $1",
 	"oojsplus-data-paginator-page-showed-single-entry": "Vermelding $1 wordt weergegeven.",
@@ -130,5 +130,9 @@
 	"oojsplus-data-paginator-page-total-count-label-approximate": "~ $1 {{PLURAL:$1|item|items}}",
 	"oojsplus-data-grid-toolbar-page-size-25": "25 rijen",
 	"oojsplus-data-grid-toolbar-page-size-50": "50 rijen",
-	"oojsplus-data-grid-toolbar-page-size-100": "100 rijen"
+	"oojsplus-data-grid-toolbar-page-size-100": "100 rijen",
+	"oojsplus-widget-filterbar-search-input-label": "Naar filterelement zoeken",
+	"oojsplus-widget-filterbar-search-placeholder-label": "Zoeken",
+	"oojsplus-widget-filterbar-show-all": "Alles weergeven",
+	"oojsplus-chip-title-label": "Alle items in $1 weergeven"
 }

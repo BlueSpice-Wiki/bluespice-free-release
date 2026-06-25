@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby"
 		]
 	},
@@ -193,5 +194,12 @@
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Drevet av Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Rediger",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Tøm",
-	"bs-discovery-breadcrumb-nav-root-node-title": "Vis alle sider i navnerommet $1"
+	"bs-discovery-breadcrumb-nav-root-node-title": "Vis alle sider i navnerommet $1",
+	"bs-discovery-personalurl-blog-text": "Blogg",
+	"bs-discovery-menu-provider-namespace-tree-label": "Alle sider",
+	"bs-discovery-menu-provider-namespace-tree-desc": "Alle sider i det gjeldende navnerommet som et tre",
+	"bs-discovery-namespace-tree-pnl-header-text": "Sider",
+	"bs-discovery-namespace-tree-search-btn-label": "Vis søk",
+	"bs-discovery-namespace-tree-create-btn-label": "Opprett en ny side",
+	"bs-discovery-namespace-tree-search-label": "Søk etter en side"
 }

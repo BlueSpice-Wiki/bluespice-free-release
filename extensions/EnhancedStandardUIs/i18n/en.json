@@ -57,6 +57,7 @@
 	"enhanced-standard-uis-allpages-pageinfo-label": "Show page info for $1",
 	"enhanced-standard-uis-allpages-filter-results-label": "$1 {{PLURAL:$1|result|results}} found",
 	"enhanced-standard-uis-filelist-grid-preview-title": "Preview",
+	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "Open file preview dialog for $1",
 	"enhanced-standard-uis-filelist-ga-title": "Files",
 	"enhanced-standard-uis-filelist-ga-aria": "File list",
 	"enhanced-standard-uis-filter-results-label": "$1 {{PLURAL:$1|result|results}} found",
@@ -93,7 +94,6 @@
 	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Upload a new file",
 	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "All pages in namespace",
 	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Alphabetical page index",
-	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "Showing $1 of ~ $2 {{PLURAL:$2|page|pages}}",
-	"enhanced-standard-uis-allpages-panel-counter-label": "Showing $1 of $2 {{PLURAL:$2|page|pages}}",
-	"enhanced-standard-uis-allpages-panel-more-button-label": "Load more pages"
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 - $2 of $3",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 of ~ $3"
 }

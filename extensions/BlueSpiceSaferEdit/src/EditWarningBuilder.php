@@ -68,6 +68,10 @@ class EditWarningBuilder {
 	 * @return array
 	 */
 	public function getData() {
+		if ( $this->title->isSpecialPage() ) {
+			return [];
+		}
+
 		$this->loadFromDB();
 		$this->findIntermediateEdit();
 
@@ -108,6 +112,9 @@ class EditWarningBuilder {
 	 * @return string
 	 */
 	public function getMessage(): string {
+		if ( $this->title->isSpecialPage() ) {
+			return '';
+		}
 		$data = $this->getData();
 		if ( !$data ) {
 			return '';

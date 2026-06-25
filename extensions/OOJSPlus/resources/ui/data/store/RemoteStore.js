@@ -18,6 +18,10 @@ OOJSPlus.ui.data.store.RemoteStore = function ( cfg ) {
 	this.action = cfg.action || {};
 	this.total = 0;
 	this.api = new mw.Api();
+	this.totalApproximated = false;
+	this.continue = null;
+	this.nextContinue = null;
+	this.noCache = !!cfg.noCache;
 
 	OOJSPlus.ui.data.store.RemoteStore.parent.call( this, cfg );
 };
@@ -27,21 +31,10 @@ OO.inheritClass( OOJSPlus.ui.data.store.RemoteStore, OOJSPlus.ui.data.store.Stor
 OOJSPlus.ui.data.store.RemoteStore.prototype.doLoadData = function () {
 	const dfd = $.Deferred();
 	this.api.abort();
-	const data = {
-		action: this.action,
-		start: this.offset,
-		limit: this.limit,
-		filter: this.getFiltersForRemote(),
-		query: this.getQuery(),
-		sort: this.getSortForRemote()
-	};
-	if ( this.groupField ) {
-		data.group = JSON.stringify( { property: this.groupField, direction: 'ASC' } );
-	}
-	this.api.get( data ).done( ( response ) => {
+
+	this.api.get( this.getRequestData() ).done( ( response ) => {
 		if ( response.hasOwnProperty( 'results' ) ) {
-			this.total = response.total;
-			dfd.resolve( this.indexData( response.results ) );
+			dfd.resolve( this.processResponse( response ) );
 		}
 	} ).fail( ( e ) => {
 		dfd.reject( e );
@@ -50,7 +43,43 @@ OOJSPlus.ui.data.store.RemoteStore.prototype.doLoadData = function () {
 	return dfd.promise();
 };
 
-OOJSPlus.ui.data.store.RemoteStore.prototype.setData = function ( data ) { // eslint-disable-line no-unused-vars
+OOJSPlus.ui.data.store.RemoteStore.prototype.getRequestData = function () {
+	const data = {
+		action: this.action,
+		start: this.offset,
+		limit: this.limit,
+		filter: this.getFiltersForRemote(),
+		query: this.getQuery(),
+		sort: this.getSortForRemote()
+	};
+	if ( this.continue ) {
+		data.continue = JSON.stringify( this.continue );
+	}
+	if ( this.groupField ) {
+		data.group = JSON.stringify( { property: this.groupField, direction: 'ASC' } );
+	}
+	if ( this.noCache ) {
+		data[ 'no-cache' ] = 1;
+	}
+	return data;
+};
+
+OOJSPlus.ui.data.store.RemoteStore.prototype.processResponse = function ( response ) {
+	this.total = response.total;
+	this.totalApproximated = !!response.total_approximate;
+	this.nextContinue = response.continue || null;
+	if ( !this.suppressEvents ) {
+		this.emit( 'metadataChange', {
+			total: this.total,
+			continue: response.continue || null,
+			totalApproximated: this.totalApproximated,
+			pageSize: this.limit
+		} );
+	}
+	return this.indexData( response.results );
+};
+
+OOJSPlus.ui.data.store.RemoteStore.prototype.setData = function () {
 	throw new Error( 'Cannot set data of a remote store' );
 };
 
@@ -86,36 +115,50 @@ OOJSPlus.ui.data.store.RemoteStore.prototype.getTotal = function () {
 	return this.total;
 };
 
-OOJSPlus.ui.data.store.RemoteStore.prototype.loadAll = function( chunk ) {
+OOJSPlus.ui.data.store.RemoteStore.prototype.loadAll = function ( chunk ) {
 	chunk = chunk || 50;
 
-	var oldLimit = this.limit;
-	var oldOffset = this.offset;
+	const oldLimit = this.limit;
+	const oldOffset = this.offset;
+	const oldContinue = this.continue || null;
+
+	this.suppressEvents = true;
 	this.limit = chunk;
 	this.offset = 0;
+	this.continue = [];
 
-	var dfd = $.Deferred();
+	const dfd = $.Deferred();
 	// Load recursively until all data is loaded
-	this.loadRecursively( dfd ).done( function( data ) {
+	this.loadRecursively( dfd ).done( ( data ) => {
 		this.limit = oldLimit;
 		this.offset = oldOffset;
+		this.continue = oldContinue;
+		this.suppressEvents = false;
 		dfd.resolve( data );
-	}.bind( this ) );
+	} ).fail( () => {
+		this.suppressEvents = false;
+	} );
 
 	return dfd.promise();
 };
 
-OOJSPlus.ui.data.store.RemoteStore.prototype.loadRecursively = function( dfd, prevLength ) {
-	this.load().done( function( data ) {
-		var resCount = Object.keys( data ).length;
+OOJSPlus.ui.data.store.RemoteStore.prototype.loadRecursively = function ( dfd, prevLength ) {
+	this.load().done( ( data ) => {
+		const resCount = Object.keys( data ).length;
 		if ( resCount < this.limit || ( prevLength && resCount === prevLength ) ) {
 			dfd.resolve( data );
 		} else {
 			this.offset += this.limit;
+			this.continue = this.nextContinue;
 			this.loadRecursively( dfd, resCount );
 		}
-	}.bind( this ) ).fail( function( e ) {
+	} ).fail( ( e ) => {
 		dfd.reject( e );
 	} );
 	return dfd.promise();
+};
+
+OOJSPlus.ui.data.store.RemoteStore.prototype.setLimit = function ( limit ) {
+	this.continue = null;
+	OOJSPlus.ui.data.store.RemoteStore.parent.prototype.setLimit.call( this, limit );
 };

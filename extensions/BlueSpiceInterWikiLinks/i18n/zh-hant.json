@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"LowensteinYang"
 		]
 	},
 	"bs-interwikilinks-desc": "用於添加、編輯，以及刪除跨 wiki 連結的管理者介面",
@@ -27,5 +28,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "提供用於 InterWikiLinks 擴充的任務。",
 	"action-interwikilinks-viewspecialpage": "檢視特定頁面「{{int:bs-interwikilinks-label}}」",
 	"interwikilinks": "跨 wiki 連結",
-	"right-interwikilinks-viewspecialpage": "存取特殊頁面 [[Special:InterWikiLinks]] 的權限。"
+	"right-interwikilinks-viewspecialpage": "存取特殊頁面 [[Special:InterWikiLinks]] 的權限。",
+	"bs-interwikilinks-url-validate-fail": "無法驗證該網址。"
 }

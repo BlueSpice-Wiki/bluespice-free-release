@@ -74,6 +74,7 @@ abstract class QueryStore extends Handler {
 			'filter' => $this->getFilter(),
 			'sort' => $this->getSort(),
 			'no-cache' => $this->getValidatedParams()['no-cache'],
+			'query-id' => $this->getValidatedParams()['query-id'],
 		];
 		if ( $this->getValidatedParams()['continue'] ) {
 			$data['continue'] = $this->getJson( 'continue' );
@@ -172,6 +173,12 @@ abstract class QueryStore extends Handler {
 				ParamValidator::PARAM_REQUIRED => false,
 				ParamValidator::PARAM_TYPE => 'boolean',
 				ParamValidator::PARAM_DEFAULT => false
+			],
+			'query-id' => [
+				static::PARAM_SOURCE => 'query',
+				ParamValidator::PARAM_REQUIRED => false,
+				ParamValidator::PARAM_TYPE => 'string',
+				ParamValidator::PARAM_DEFAULT => null
 			]
 		], $this->getStoreSpecificParams() );
 	}

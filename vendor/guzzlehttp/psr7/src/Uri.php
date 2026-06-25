@@ -38,19 +38,6 @@ class Uri implements UriInterface, \JsonSerializable
         'ldap' => 389,
     ];
 
-    /**
-     * Unreserved characters for use in a regex.
-     *
-     * @see https://datatracker.ietf.org/doc/html/rfc3986#section-2.3
-     */
-    private const CHAR_UNRESERVED = 'a-zA-Z0-9_\-\.~';
-
-    /**
-     * Sub-delims for use in a regex.
-     *
-     * @see https://datatracker.ietf.org/doc/html/rfc3986#section-2.2
-     */
-    private const CHAR_SUB_DELIMS = '!\$&\'\(\)\*\+,;=';
     private const QUERY_SEPARATORS_REPLACEMENT = ['=' => '%3D', '&' => '%26', '+' => '%2B'];
 
     /** @var string Uri scheme. */
@@ -81,7 +68,13 @@ class Uri implements UriInterface, \JsonSerializable
             if ($parts === false) {
                 throw new MalformedUriException("Unable to parse URI: $uri");
             }
-            $this->applyParts($parts);
+            try {
+                $this->applyParts($parts);
+            } catch (MalformedUriException $e) {
+                throw $e;
+            } catch (\InvalidArgumentException $e) {
+                throw new MalformedUriException($e->getMessage(), 0, $e);
+            }
         }
     }
 
@@ -106,15 +99,15 @@ class Uri implements UriInterface, \JsonSerializable
             return self::parsePathNoSchemeReference($url);
         }
 
-        // If IPv6
+        // Preserve bracketed IPv6 literals before encoding, including dotted IPv4 tails.
         $prefix = '';
-        if (preg_match('%^(.*://\[[0-9:a-fA-F]+\])(.*?)$%', $url, $matches)) {
+        if (preg_match('%^([0-9A-Za-z+.-]+://\[[0-9:.a-fA-F]+\])(.*?)$%', $url, $matches)) {
             /** @var array{0:string, 1:string, 2:string} $matches */
             $prefix = $matches[1];
             $url = $matches[2];
         }
 
-        /** @var string */
+        /** @var string|null */
         $encodedUrl = preg_replace_callback(
             '%[^:/@?&=#]+%usD',
             static function ($matches) {
@@ -122,6 +115,10 @@ class Uri implements UriInterface, \JsonSerializable
             },
             $url
         );
+
+        if ($encodedUrl === null) {
+            return false;
+        }
 
         $result = parse_url($prefix.$encodedUrl);
 
@@ -374,10 +371,36 @@ class Uri implements UriInterface, \JsonSerializable
         $result = self::getFilteredQueryString($uri, array_keys($keyValueArray));
 
         foreach ($keyValueArray as $key => $value) {
-            $result[] = self::generateQueryString((string) $key, $value !== null ? (string) $value : null);
+            $result[] = self::generateQueryString((string) $key, $value !== null ? self::stringifyQueryValue($value) : null);
         }
 
         return $uri->withQuery(implode('&', $result));
+    }
+
+    /**
+     * Stringifies a non-null query value, deprecating non-string values that
+     * guzzlehttp/psr7 3.0 will reject. Non-finite floats are normalized to the
+     * strings PHP coerces them to, as implicit coercion of NAN emits a warning
+     * on PHP 8.5.
+     *
+     * @param mixed $value
+     */
+    private static function stringifyQueryValue($value): string
+    {
+        if (!is_string($value)) {
+            \trigger_deprecation(
+                'guzzlehttp/psr7',
+                '2.12',
+                'Passing %s to Uri::withQueryValues() is deprecated; cast it to a string. guzzlehttp/psr7 3.0 will only accept string or null query values.',
+                \gettype($value)
+            );
+
+            if (is_float($value) && !is_finite($value)) {
+                return is_nan($value) ? 'NAN' : ($value > 0 ? 'INF' : '-INF');
+            }
+        }
+
+        return (string) $value;
     }
 
     /**
@@ -390,10 +413,32 @@ class Uri implements UriInterface, \JsonSerializable
     public static function fromParts(array $parts): UriInterface
     {
         $uri = new self();
-        $uri->applyParts($parts);
-        $uri->validateState();
+        try {
+            $uri->applyParts($parts);
+            $uri->validateState();
+        } catch (MalformedUriException $e) {
+            throw $e;
+        } catch (\InvalidArgumentException $e) {
+            throw new MalformedUriException($e->getMessage(), 0, $e);
+        }
 
         return $uri;
+    }
+
+    /**
+     * @throws \InvalidArgumentException If the host is invalid.
+     *
+     * @internal
+     */
+    public static function assertValidHost(string $host): void
+    {
+        if ($host === '') {
+            return;
+        }
+
+        if (preg_match('/[\x00-\x20\x7F]/', $host)) {
+            throw new \InvalidArgumentException(sprintf('Invalid host: "%s"', $host));
+        }
     }
 
     public function getScheme(): string
@@ -496,6 +541,15 @@ class Uri implements UriInterface, \JsonSerializable
 
     public function withPort($port): UriInterface
     {
+        if ($port !== null && !\is_int($port)) {
+            \trigger_deprecation(
+                'guzzlehttp/psr7',
+                '2.11',
+                'Passing %s to UriInterface::withPort() is deprecated; guzzlehttp/psr7 3.0 requires int|null.',
+                \get_debug_type($port)
+            );
+        }
+
         $port = $this->filterPort($port);
 
         if ($this->port === $port) {
@@ -604,7 +658,18 @@ class Uri implements UriInterface, \JsonSerializable
             throw new \InvalidArgumentException('Scheme must be a string');
         }
 
-        return \strtr($scheme, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz');
+        $scheme = \strtr($scheme, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz');
+
+        if ($scheme !== '' && !preg_match('/^[a-z][a-z0-9.+-]*$/D', $scheme)) {
+            \trigger_deprecation(
+                'guzzlehttp/psr7',
+                '2.11',
+                'Passing "%s" as a URI scheme is deprecated; guzzlehttp/psr7 3.0 requires URI schemes to match RFC 3986 syntax and begin with a letter.',
+                $scheme
+            );
+        }
+
+        return $scheme;
     }
 
     /**
@@ -619,7 +684,7 @@ class Uri implements UriInterface, \JsonSerializable
         }
 
         return preg_replace_callback(
-            '/(?:[^%'.self::CHAR_UNRESERVED.self::CHAR_SUB_DELIMS.']+|%(?![A-Fa-f0-9]{2}))/',
+            '/(?:[^%'.Rfc3986::CHAR_UNRESERVED.Rfc3986::CHAR_SUB_DELIMS.']+|%(?![A-Fa-f0-9]{2}))/',
             [$this, 'rawurlencodeMatchZero'],
             $component
         );
@@ -636,7 +701,10 @@ class Uri implements UriInterface, \JsonSerializable
             throw new \InvalidArgumentException('Host must be a string');
         }
 
-        return \strtr($host, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz');
+        $host = \strtr($host, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz');
+        self::assertValidHost($host);
+
+        return $host;
     }
 
     /**
@@ -718,7 +786,7 @@ class Uri implements UriInterface, \JsonSerializable
         }
 
         return preg_replace_callback(
-            '/(?:[^'.self::CHAR_UNRESERVED.self::CHAR_SUB_DELIMS.'%:@\/]++|%(?![A-Fa-f0-9]{2}))/',
+            '/(?:[^'.Rfc3986::CHAR_UNRESERVED.Rfc3986::CHAR_SUB_DELIMS.'%:@\/]++|%(?![A-Fa-f0-9]{2}))/',
             [$this, 'rawurlencodeMatchZero'],
             $path
         );
@@ -738,7 +806,7 @@ class Uri implements UriInterface, \JsonSerializable
         }
 
         return preg_replace_callback(
-            '/(?:[^'.self::CHAR_UNRESERVED.self::CHAR_SUB_DELIMS.'%:@\/\?]++|%(?![A-Fa-f0-9]{2}))/',
+            '/(?:[^'.Rfc3986::CHAR_UNRESERVED.Rfc3986::CHAR_SUB_DELIMS.'%:@\/\?]++|%(?![A-Fa-f0-9]{2}))/',
             [$this, 'rawurlencodeMatchZero'],
             $str
         );

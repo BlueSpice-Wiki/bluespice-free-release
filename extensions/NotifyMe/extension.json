@@ -1,6 +1,6 @@
 {
 	"name": "NotifyMe",
-	"version": "2.1.4",
+	"version": "2.1.5",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
@@ -429,7 +429,8 @@
 	],
 	"ContentHandlers": {
 		"mail_template": {
-			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\ContentHandler\\MailTemplateHandler"
+			"class": "\\MediaWiki\\Extension\\NotifyMe\\MediaWiki\\ContentHandler\\MailTemplateHandler",
+			"services": [ "RevisionLookup", "NotifyMe.MailContentProvider" ]
 		}
 	},
 	"manifest_version": 2

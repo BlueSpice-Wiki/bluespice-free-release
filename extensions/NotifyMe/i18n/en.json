@@ -213,7 +213,7 @@
 	"notifyme-arbitrary-event-action-message-label": "Message",
 	"notifyme-arbitrary-event-action-event-target-user-label": "Target user(s)",
 	"notifyme-arbitrary-event-action-send-as-bot-label": "Send as bot user",
-	"notifyme-notification-center-filter-label-source": "Wiki",
+	"notifyme-notification-center-filter-label-source": "Wikis",
 	"notifyme-notification-center-filter-label-source-local": "This wiki",
 	"notifyme-arbitrary-event-default-subject": "Automatic notification",
 	"notifyme-arbitrary-event-action-subject-label": "Topic of notification",

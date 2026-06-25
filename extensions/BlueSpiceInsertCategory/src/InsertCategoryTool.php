@@ -57,7 +57,7 @@ class InsertCategoryTool extends Literal {
 			$manipulatorFactory = $this->services->getService( 'BlueSpiceInsertCategory.CategoryManipulatorFactory' );
 			$content = $this->wikiPageFactory->newFromTitle( $title )->getContent();
 
-			if ( !$manipulatorFactory->getManipulatorForContent( $content, $title ) ) {
+			if ( !$content || !$manipulatorFactory->getManipulatorForContent( $content, $title ) ) {
 				$this->btnDisabled = true;
 			}
 		}

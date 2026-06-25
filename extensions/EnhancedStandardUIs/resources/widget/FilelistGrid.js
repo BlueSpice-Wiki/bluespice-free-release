@@ -1,4 +1,4 @@
-ext = ext || {};
+ext = ext || { };
 ext.enhancedUI = ext.enhancedUI || {};
 ext.enhancedUI.widget = ext.enhancedUI.widget || {};
 
@@ -11,7 +11,15 @@ ext.enhancedUI.widget.FilelistGrid = function ( cfg ) {
 	this.allowFileInfoDialog = typeof cfg.allowFileInfoDialog === 'undefined' ? true : cfg.allowFileInfoDialog;
 	this.mediaDialog = cfg.mediaDialog || false;
 	cfg.columns = this.getColumnDefinitions();
+
+	this.currentData = [];
+	this.mode = 'grid';
+
 	ext.enhancedUI.widget.FilelistGrid.super.call( this, cfg );
+
+	this.$tileContainer = $( '<div>' ).attr( 'id', 'tileview' );
+	this.$tileContainer.insertAfter( this.$wrapper );
+	this.$tileContainer.hide();
 };
 
 OO.inheritClass( ext.enhancedUI.widget.FilelistGrid, OOJSPlus.ui.data.GridWidget );
@@ -128,10 +136,67 @@ ext.enhancedUI.widget.FilelistGrid.prototype.getColumnDefinitions = function () 
 	return columnCfg;
 };
 
+ext.enhancedUI.widget.FilelistGrid.prototype.setMode = function ( mode ) {
+	if ( this.mode === mode ) {
+		return;
+	}
+	this.mode = mode;
+	if ( this.mode === 'grid' ) {
+		this.$wrapper.show();
+		this.$tileContainer.hide();
+	} else {
+		this.$wrapper.hide();
+		this.renderTiles();
+		this.$tileContainer.show();
+	}
+};
+
+ext.enhancedUI.widget.FilelistGrid.prototype.renderTiles = function () {
+	const Vue = require( 'vue' ),
+		FileCard = require( './../vue/Card.vue' );
+	this.$tileContainer.empty();
+	const tileData = this.currentData.concat( [] );
+	for ( const item in tileData ) {
+		tileData[ item ].thumbnail = {
+			width: 200,
+			height: 180,
+			url: tileData[ item ].preview_url
+		};
+	}
+	const vm = Vue.createMwApp( FileCard, {
+		cards: tileData
+	} );
+	vm.mount( '#tileview' );
+};
+
 ext.enhancedUI.widget.FilelistGrid.prototype.setItems = function ( data ) {
 	data = this.prepareCategories( data );
 	mw.hook( 'enhanced.filelist.setdata' ).fire( data );
+	this.currentData = data;
+	if ( this.mode === 'tiles' ) {
+		this.renderTiles();
+	}
 	ext.enhancedUI.widget.FilelistGrid.parent.prototype.setItems.call( this, data );
+	this.applyPreviewA11y();
+};
+
+ext.enhancedUI.widget.FilelistGrid.prototype.applyPreviewA11y = function () {
+	this.$wrapper
+		.find( '.oojsplus-data-gridWidget-cell[data-field="preview"] img.oojsplus-image' )
+		.each( function () {
+			const $image = $( this );
+			const fileName = $image.attr( 'alt' ) || '';
+			const ariaLabel = mw.message(
+				'enhanced-standard-uis-filelist-grid-preview-control-aria-label',
+				fileName
+			).text();
+
+			$image.attr( {
+				role: 'button',
+				'aria-haspopup': 'dialog',
+				'aria-label': ariaLabel
+			} );
+		} );
 };
 
 ext.enhancedUI.widget.FilelistGrid.prototype.prepareCategories = function ( data ) {

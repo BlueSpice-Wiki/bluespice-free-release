@@ -264,8 +264,7 @@ class MailContentProvider {
 	 */
 	private function processWikitext( string &$html, User $user, RevisionRecord $revision ) {
 		$parser = $this->parserFactory->create();
-		$pageRef = $parser->getPage();
-		$parser->setPage( $pageRef );
+		$parser->setPage( $revision->getPage() );
 		$parser->setUser( $user );
 		$options = ParserOptions::newFromUser( $user );
 
@@ -276,7 +275,7 @@ class MailContentProvider {
 		$options->setUserLang( $userLanguage );
 
 		$parser->setOptions( $options );
-		$html = $parser->preprocess( $html, $pageRef, $options, $revision->getId() );
+		$html = $parser->preprocess( $html, $revision->getPage(), $options, $revision->getId() );
 	}
 
 	/**

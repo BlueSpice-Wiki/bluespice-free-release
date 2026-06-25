@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"urlgetparameters-desc": "Umožňuje používať a/alebo zobrazovať parametre „GET“ z URL na wiki stránke"
+}

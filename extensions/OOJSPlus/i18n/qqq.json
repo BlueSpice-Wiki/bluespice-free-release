@@ -21,6 +21,7 @@
 	"oojsplus-color-picker-label": "Default label of a color-picker widget",
 	"oojsplus-data-delete-row-prompt": "Prompt text before user deletes a row in a grid",
 	"oojsplus-data-paginator-page-total-count-label": "Label for the total number of rows in a grid data source. \n $1 = Number of rows",
+	"oojsplus-data-paginator-page-total-count-label-approximate": "Label for the total number of rows in a grid data source, when total number is an approximation \n $1 = Number of rows",
 	"oojsplusdemos": "Title for OOJSPlusDemos special page",
 	"oojsplus-data-tree-item-remove-label": "Tree label for the button in item options that removed the selected node\n{{Identical|Remove}}",
 	"oojsplus-data-tree-item-add-label": "Tree label for the button in item options that adds new subnode to the selected node",
@@ -126,8 +127,14 @@
 	"oojsplus-ui-dialog-confirm-with-opt-out-opt-out-label": "Generic label for opt-out checkbox in confirmation dialogs\n{{Identical|Don't ask again}}",
 	"oojsplus-ui-dialog-confirm-with-opt-out-save-error": "Error message shown when user tries to save their choice in confirmation dialog with opt-out checkbox, but an error occurs",
 	"oojsplus-formelement-type-user-group-multiselect": "Label for the form element",
-	"oojsplus-data-paginator-page-total-count-label-approximate": "Label for the total number of rows in a grid data source, when total number is an approximation \n $1 = Number of rows",
 	"oojsplus-data-grid-toolbar-page-size-25": "Label for page size 25 in page size selection in data grid toolbar",
 	"oojsplus-data-grid-toolbar-page-size-50": "Label for page size 50 in page size selection in data grid toolbar",
-	"oojsplus-data-grid-toolbar-page-size-100": "Label for page size 100 in page size selection in data grid toolbar"
+	"oojsplus-data-grid-toolbar-page-size-100": "Label for page size 100 in page size selection in data grid toolbar",
+	"oojsplus-widget-filterbar-show-number-label": "Button label to show all filter options\nParameter:\n* $1 - number of all filters",
+	"oojsplus-widget-filterbar-search-input-label": "Label for search input",
+	"oojsplus-widget-filterbar-search-placeholder-label": "Placeholder label for search input",
+	"oojsplus-widget-filterbar-show-all": "Label for selector button to show all elements",
+	"oojsplus-chip-title-label": "Title label for filter pill\nParameter:\n* $1 - name of filter",
+	"oojsplus-filter-widget-aria-label": "Aria label for the filter select widget",
+	"oojsplus-filter-widget-count-aria-label": "Aria label for the filter option counter\n\nParameters:\n* $1 - number of entries in this filter option"
 }

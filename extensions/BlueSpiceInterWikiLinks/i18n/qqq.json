@@ -33,5 +33,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Describes the API endpoint that provides tasks for the InterWikiLinks extension.\n{{doc-apihelp-summary|bs-interwikilinks-tasks}}",
 	"action-interwikilinks-viewspecialpage": "Placeholder to describe that view of special page \"{{int:bs-interwikilinks-label}}\" is restricted for the current user\n{{doc-action|interwikilinks-viewspecialpage}}",
 	"interwikilinks": "Anchor text in special page overview for interwiki links.\n{{Identical|Interwiki link}}",
-	"right-interwikilinks-viewspecialpage": "Grants access to the special page [[Special:InterWikiLinks]].\n{{doc-right|interwikilinks-viewspecialpage}}"
+	"right-interwikilinks-viewspecialpage": "Grants access to the special page [[Special:InterWikiLinks]].\n{{doc-right|interwikilinks-viewspecialpage}}",
+	"bs-interwikilinks-url-validate-fail": "Error message shown in dialogs if the URL given contains syntax errors"
 }

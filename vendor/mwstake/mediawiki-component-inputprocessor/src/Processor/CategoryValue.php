@@ -3,8 +3,8 @@
 namespace MWStake\MediaWiki\Component\InputProcessor\Processor;
 
 use MediaWiki\Permissions\PermissionManager;
-use Title;
-use TitleFactory;
+use MediaWiki\Title\Title;
+use MediaWiki\Title\TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class CategoryValue extends TitleValue {

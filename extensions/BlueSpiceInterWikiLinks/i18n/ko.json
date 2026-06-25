@@ -3,6 +3,7 @@
 		"authors": [
 			"HDNua",
 			"Hwangjy9",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -28,5 +29,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "확장 기능 InterWikiLinks의 태스크를 제공합니다.",
 	"action-interwikilinks-viewspecialpage": "특수문서 \"{{int:bs-interwikilinks-label}}\" 보기",
 	"interwikilinks": "인터위키 링크",
-	"right-interwikilinks-viewspecialpage": "[[Special:InterWikiLinks]] 특수 문서로 접근"
+	"right-interwikilinks-viewspecialpage": "[[Special:InterWikiLinks]] 특수 문서로 접근",
+	"bs-interwikilinks-url-validate-fail": "URL을 검증할 수 없습니다."
 }

@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
 	"bs-pagesvisited-pref-sort-time": "Час",
-	"bs-pagesvisited-pref-sort-pagename": "Загаловак"
+	"bs-pagesvisited-pref-sort-pagename": "Загаловак",
+	"bs-pagesvisited-pref-widgetsortodr": "Сартаваць паводле:",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "Час",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "Сартаваць паводле"
 }

@@ -127,7 +127,7 @@
 			this.externalFilter.connect( this, {
 				columnSort: ( column, direction ) => {
 					const selector = 'th[data-field="' + column + '"]';
-					if ( this.columns[column].grid.$table.find( selector ).length < 1 ) {
+					if ( this.columns[ column ].grid.$table.find( selector ).length < 1 ) {
 						return;
 					}
 					const $columnHeader = this.columns[ column ].grid.$table.find( selector )[ 0 ];
@@ -168,9 +168,7 @@
 			}
 		} );
 		this.store.load().done( ( data ) => {
-			if ( this.paginator instanceof OOJSPlus.ui.data.grid.Paginator ) {
-				this.paginator.init();
-			} else {
+			if ( !( this.paginator instanceof OOJSPlus.ui.data.grid.Paginator ) ) {
 				this.setItems( Object.values( data ) );
 			}
 		} );
@@ -367,7 +365,7 @@
 			if ( !this.columns.hasOwnProperty( field ) ) {
 				continue;
 			}
-			if ( this.alwaysVisibleColumns.indexOf( field ) !== -1 ) {
+			if ( this.alwaysVisibleColumns.includes( field ) ) {
 				continue;
 			}
 			if ( this.columns[ field ].type === 'action' || this.columns[ field ].type === 'selection' ) {
@@ -419,7 +417,7 @@
 			if ( !this.columns.hasOwnProperty( field ) ) {
 				continue;
 			}
-			this.doSetColumnVisibility( field, visible.indexOf( field ) !== -1 );
+			this.doSetColumnVisibility( field, visible.includes( field ) );
 		}
 		this.emit( 'stateChange', { columns: this.visibleColumns } );
 	};

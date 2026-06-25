@@ -102,3 +102,7 @@ a full-access session.
 
 Note that this will authenticate as user `mwsgTokenAuthenticatorServiceUser`. It will give this user `sysop` group,
 to ensure it can execute all APIs. If another user is assigned to this, make sure it is ok that this user gets sysop group.
+
+# Logging
+
+Component logs into `MWStake.TokenAuthenticator` channel for token verification and to `session` for session providing.

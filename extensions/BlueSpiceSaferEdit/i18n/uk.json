@@ -4,6 +4,7 @@
 			"Andriykopanytsia",
 			"DDPAT",
 			"Ice bulldog",
+			"Movses",
 			"Vlad5250",
 			"Ата"
 		]
@@ -11,5 +12,6 @@
 	"bs-saferedit-desc": "Видає попередження, якщо інші користувачі редагують сторінку",
 	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|редагує|редагують}} сторінку",
 	"bs-saferedit-someone-editing": "Сторінка редагується",
-	"bs-saferedit-anonymous-editor": "Анонімний користувач"
+	"bs-saferedit-anonymous-editor": "Анонімний користувач",
+	"bs-saferedit-pref-show-editinguser": "Показати поточного редактора"
 }

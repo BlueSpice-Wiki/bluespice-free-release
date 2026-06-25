@@ -9,12 +9,12 @@
 {{links_intro}}<br>
 <div style="margin-top: 10px">
     {{#links}}
-        {{#primary}}<a style="color: #ffffff;background-color: #0073e6;padding: 5px 20px;text-decoration: none;border-radius: 5px;display: inline-block;margin: 5px;" href="{{url}}">{{label}}</a>{{/primary}}
+        {{#primary}}<a style="color: #ffffff;background-color: #0073e6;padding: 5px 20px;text-decoration: none;border-radius: 5px;display: inline-block;margin: 5px 5px 5px 0;" href="{{url}}">{{label}}</a>{{/primary}}
         {{^primary}}<a style="text-decoration: none;padding: 5px;border-radius: 5px;display: inline-block;margin: 5px;" href="{{url}}">{{label}}</a>{{/primary}}
     {{/links}}
 </div>
 
-<div style="margin-top: 60px;padding: 20px;background-color:@notifications-mail-color-background;font-size: 0.8rem;">
+<div style="margin-top: 60px;padding: 20px 0;background-color:@notifications-mail-color-background;font-size: 0.8rem;">
     <span>{{int:notifyme-mail-reception-reason}}</span>
     <ul>
         {{#source_providers}}

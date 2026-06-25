@@ -201,13 +201,13 @@ abstract class Reader implements IReader {
 		// But we keep it for improvement in the next release
 		return null;
 
-		$cache = $this->cacheFactory->getLocalServerInstance();
+/* 		$cache = $this->cacheFactory->getLocalServerInstance();
 		$key = $cache->makeKey( 'datastore', 'reader', 'query', $queryId );
 		$data = $cache->get( $key );
 		if ( !is_array( $data ) ) {
 			return null;
 		}
-		return $data;
+		return $data; */
 	}
 
 	/**
@@ -215,7 +215,7 @@ abstract class Reader implements IReader {
 	 * @param array $dataSets
 	 * @return void
 	 */
-	private function cacheResults( string $hash, array $dataSets ): void {
+	protected function cacheResults( string $hash, array $dataSets ): void {
 		$cache = $this->cacheFactory->getLocalServerInstance();
 		$key = $cache->makeKey( 'datastore', 'reader', 'query', $hash );
 		$cache->set( $key, $dataSets, static::CACHE_TTL );
@@ -225,7 +225,7 @@ abstract class Reader implements IReader {
 	 * @param ReaderParams $params
 	 * @return string
 	 */
-	private function getQueryId( ReaderParams $params ): string {
+	protected function getQueryId( ReaderParams $params ): string {
 		return md5( get_class( $this ) . $params->getHash() );
 	}
 
@@ -234,7 +234,7 @@ abstract class Reader implements IReader {
 	 * @param array $buckets
 	 * @return void
 	 */
-	private function cacheBuckets( string $queryId, array $buckets ) {
+	protected function cacheBuckets( string $queryId, array $buckets ) {
 		$cache = $this->cacheFactory->getLocalServerInstance();
 		$key = $cache->makeKey( 'datastore', 'reader', 'buckets', $queryId );
 		$cache->set( $key, $buckets, static::CACHE_TTL );
@@ -244,18 +244,18 @@ abstract class Reader implements IReader {
 	 * @param string $queryId
 	 * @return array|null
 	 */
-	private function tryGetBucketsFromCache( string $queryId ) {
+	protected function tryGetBucketsFromCache( string $queryId ) {
 		// Due to issues with the cache invalidation, we disable this code
 		// But we keep it for improvement in the next release
 		return null;
 
-		$cache = $this->cacheFactory->getLocalServerInstance();
+/* 		$cache = $this->cacheFactory->getLocalServerInstance();
 		$key = $cache->makeKey( 'datastore', 'reader', 'buckets', $queryId );
 		$data = $cache->get( $key );
 		if ( !is_array( $data ) ) {
 			return null;
 		}
-		return $data;
+		return $data; */
 	}
 
 }

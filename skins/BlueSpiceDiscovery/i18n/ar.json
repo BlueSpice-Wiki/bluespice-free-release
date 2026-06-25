@@ -202,5 +202,12 @@
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "مدعوم من Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "عدل",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "مسح",
-	"bs-discovery-breadcrumb-nav-root-node-title": "عرض جميع الصفحات في مساحة الاسم $1"
+	"bs-discovery-breadcrumb-nav-root-node-title": "عرض جميع الصفحات في مساحة الاسم $1",
+	"bs-discovery-personalurl-blog-text": "مدونة",
+	"bs-discovery-menu-provider-namespace-tree-label": "جميع الصفحات",
+	"bs-discovery-menu-provider-namespace-tree-desc": "جميع صفحات مساحة الاسم الحالية كشجرة",
+	"bs-discovery-namespace-tree-pnl-header-text": "الصفحات",
+	"bs-discovery-namespace-tree-search-btn-label": "عرض البحث",
+	"bs-discovery-namespace-tree-create-btn-label": "أنشئ صفحة جديدة",
+	"bs-discovery-namespace-tree-search-label": "ابحث عن صفحة"
 }

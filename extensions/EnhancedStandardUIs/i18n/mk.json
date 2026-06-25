@@ -95,5 +95,8 @@
 	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Азбучен индекс на страници",
 	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "{{PLURAL:$1|Прикажана|Прикажани}} $1 од ~ $2 {{PLURAL:$2|страница|страници}}",
 	"enhanced-standard-uis-allpages-panel-counter-label": "{{PLURAL:$1|Прикажана|Прикажани}} $1 од $2 {{PLURAL:$2|страница|страници}}",
-	"enhanced-standard-uis-allpages-panel-more-button-label": "Вчитај уште страници"
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Вчитај уште страници",
+	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "Отвори прегледен дијалог за $1",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 - $2 од $3",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 од ~ $3"
 }

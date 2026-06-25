@@ -40,5 +40,7 @@
 	"menueditor-ui-add-sub-element-label": "添加子元素",
 	"menueditor-footerlinks-banner-text": "某些链接可能会由扩展程序自动添加。请检查扩展程序配置以了解更多信息。",
 	"menueditor-toolbar-save": "保存",
-	"menueditor-ui-cancel-confirmation": "您确定要取消编辑吗？所有未保存的更改都将丢失。"
+	"menueditor-ui-cancel-confirmation": "您确定要取消编辑吗？所有未保存的更改都将丢失。",
+	"menueditor-ui-notices": "常规通知",
+	"menueditor-ui-oldrevision-notice": "您正在编辑此页面的旧版本。如果您保存更改，此版本后的所有更改都会丢失。"
 }

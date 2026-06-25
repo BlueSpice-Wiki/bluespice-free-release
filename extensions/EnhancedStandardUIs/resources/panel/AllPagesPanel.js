@@ -2,7 +2,8 @@ ext = ext || {};
 ext.enhancedUI = ext.enhancedUI || {};
 ext.enhancedUI.panel = ext.enhancedUI.panel || {};
 
-require( '../widget/Paginator.js' );
+require( '../widget/IndexPaginator.js' );
+require( '../widget/PagePaginator.js' );
 require( '../widget/NamespacesMenu.js' );
 require( '../data/PagesTree.js' );
 require( '../data/store/Store.js' );
@@ -13,6 +14,8 @@ ext.enhancedUI.panel.AllPagesPanel = function ( cfg ) {
 	this.selectedNamespaceId = cfg.namespaceId;
 	this.pageSize = 50;
 	this.store = new ext.enhancedUI.data.store.Store();
+	this.subpageStore = new ext.enhancedUI.data.store.Store();
+	this.rawData = [];
 	this.$element = $( '<div>' ).addClass( 'enhanced-ui-allpages-panel' );
 
 	this.searchWidget = OO.ui.infuse( '#enhanced-ui-allpages-filter' );
@@ -29,25 +32,26 @@ OO.inheritClass( ext.enhancedUI.panel.AllPagesPanel, OO.ui.PanelLayout );
 ext.enhancedUI.panel.AllPagesPanel.prototype.setupWidgets = function () {
 	this.setupMenu();
 	this.$contentCnt = $( '<div>' ).addClass( 'enhanced-ui-allpages-panel-content' );
-	this.setupPaginator();
+	this.setupIndex();
 	this.setupTree();
+	this.setupPaginator();
 	this.$resultCounter = $( '<div>' ).attr( 'aria-live', 'polite' ).addClass( 'visually-hidden' );
 	this.$contentCnt.append( this.$resultCounter );
 	this.$element.append( this.$contentCnt );
 };
 
 ext.enhancedUI.panel.AllPagesPanel.prototype.setupMenu = function () {
-	const $menuCnt = $( '<div>' ).addClass( 'enhanced-ui-allpages-panel-menu' );
+	this.$menuCnt = $( '<div>' ).addClass( 'enhanced-ui-allpages-panel-menu' );
 	// eslint-disable-next-line no-jquery/no-global-selector
 	this.$menuPlaceholder = $( '#skeleton-namespaces' ).clone();
-	$menuCnt.append( this.$menuPlaceholder );
+	this.$menuCnt.append( this.$menuPlaceholder );
 	this.$menuPlaceholder.attr( 'id', 'enhanced-allpages-skeleton-namespaces' );
 	// eslint-disable-next-line no-jquery/no-global-selector
 	$( '#skeleton-namespaces' ).empty();
 	if ( this.mobileView ) {
-		$menuCnt.addClass( 'collapsed' );
-		$menuCnt.addClass( 'oo-ui-icon-next' );
-		$( $menuCnt ).on( 'click', function () {
+		this.$menuCnt.addClass( 'collapsed' );
+		this.$menuCnt.addClass( 'oo-ui-icon-next' );
+		$( this.$menuCnt ).on( 'click', function () {
 			// eslint-disable-next-line no-jquery/no-class-state
 			if ( $( this ).hasClass( 'collapsed' ) ) {
 				$( this ).removeClass( 'collapsed' );
@@ -70,23 +74,30 @@ ext.enhancedUI.panel.AllPagesPanel.prototype.setupMenu = function () {
 			this.$menuPlaceholder.empty();
 		}
 	} );
-	$menuCnt.append( this.namespaceMenu.$element );
-	this.$element.append( $menuCnt );
+	this.$menuCnt.append( this.namespaceMenu.$element );
+	this.$element.append( this.$menuCnt );
+};
+
+ext.enhancedUI.panel.AllPagesPanel.prototype.setupIndex = function () {
+	this.$indexPaginator = $( '<div>' ).addClass( 'enhanced-ui-allpages-panel-index-paginator' );
+	this.index = new ext.enhancedUI.widget.IndexPaginator( { store: this.store, panel: this } );
+	this.$indexPaginator.append( this.index.$element );
+	this.$contentCnt.append( this.$indexPaginator );
 };
 
 ext.enhancedUI.panel.AllPagesPanel.prototype.setupPaginator = function () {
-	const $paginatorCnt = $( '<div>' ).addClass( 'enhanced-ui-allpages-panel-paginator' );
-	this.paginator = new ext.enhancedUI.widget.Paginator();
-	this.paginator.connect( this, {
-		selectPage: function ( nextPage ) {
-			this.changeFromPaginator = true;
-			this.showPlaceholder();
-			this.$treeCnt.children().remove();
-			this.getPages( nextPage * this.pageSize );
-		}
+	this.paginator = new ext.enhancedUI.widget.PagePaginator( {
+		store: this.store
 	} );
-	$paginatorCnt.append( this.paginator.$element );
-	this.$contentCnt.append( $paginatorCnt );
+	this.paginator.connect( this, {
+		datasetChange: 'onPageChange'
+	} );
+	this.$contentCnt.append( this.paginator.$element );
+};
+
+ext.enhancedUI.panel.AllPagesPanel.prototype.onPageChange = function ( set ) {
+	this.rawData = set;
+	this.setPages();
 };
 
 ext.enhancedUI.panel.AllPagesPanel.prototype.setupTree = function () {
@@ -124,17 +135,19 @@ ext.enhancedUI.panel.AllPagesPanel.prototype.updateRedirect = function ( redirec
 	this.getPages();
 };
 
-ext.enhancedUI.panel.AllPagesPanel.prototype.getPages = function ( start ) {
-	start = start || 0;
-	this.store.loadNS( this.selectedNS, start ).done( ( data ) => {
-		const sortedData = this.sortData( data );
-		this.pages = sortedData;
-		if ( this.changeFromPaginator !== true ) {
-			this.paginator.init( Math.ceil( this.store.getTotal() / this.pageSize ) );
-		}
-		this.changeFromPaginator = false;
-		this.updatePages();
+ext.enhancedUI.panel.AllPagesPanel.prototype.getPages = function () {
+	this.store.loadNS( this.selectedNS ).done( ( data ) => {
+		this.setPages( data );
 	} );
+};
+
+ext.enhancedUI.panel.AllPagesPanel.prototype.setPages = function ( data ) {
+	if ( data ) {
+		this.rawData = Object.values( data );
+	}
+	this.pages = this.groupData( this.rawData );
+	this.updateResults( data );
+	this.updatePages();
 };
 
 ext.enhancedUI.panel.AllPagesPanel.prototype.showPlaceholder = function () {
@@ -180,7 +193,7 @@ ext.enhancedUI.panel.AllPagesPanel.prototype.updatePages = function () {
 				IconCollapse: 'expand'
 			},
 			pages: this.pages[ i ],
-			store: this.store,
+			store: this.subpageStore,
 			includeRedirect: this.includeRedirect,
 			id: 'tree-' + this.alphabetIndex[ i ]
 		} );
@@ -196,11 +209,7 @@ ext.enhancedUI.panel.AllPagesPanel.prototype.onFilterInput = function () {
 	this.searchWidget.$input.addClass( 'oo-ui-pendingElement-pending' );
 	const searchString = this.searchWidget.getValue();
 	this.store.loadPages( this.selectedNS, searchString ).done( ( data ) => {
-		const sortedData = this.sortData( data );
-		this.pages = sortedData;
-		this.updateResults( data );
-		this.paginator.init( Math.ceil( this.store.getTotal() / this.pageSize ) );
-		this.updatePages();
+		this.setPages( data );
 		this.searchWidget.$input.removeClass( 'oo-ui-pendingElement-pending' );
 	} );
 };
@@ -229,19 +238,20 @@ ext.enhancedUI.panel.AllPagesPanel.prototype.calculateResultNumber = function ( 
 	return resultNumber;
 };
 
-ext.enhancedUI.panel.AllPagesPanel.prototype.sortData = function ( data ) {
+ext.enhancedUI.panel.AllPagesPanel.prototype.groupData = function ( data ) {
 	this.alphabetIndex = [];
 	if ( Object.keys( data ).length === 0 ) {
 		return [];
 	}
 	let alphabetValue = [];
 	const sortedData = [];
-	let lastLetter = data[ 0 ].dbkey.slice( 0, 1 );
-	for ( const i in data ) {
+	let lastLetter = data[ 0 ].sortkey;
+
+	for ( let i = 0; i < data.length; i++ ) {
 		if ( !this.includeRedirect && data[ i ].redirect === true ) {
 			continue;
 		}
-		const startLetter = data[ i ].dbkey.slice( 0, 1 );
+		const startLetter = data[ i ].sortkey;
 		if ( lastLetter !== startLetter ) {
 			sortedData.push( alphabetValue );
 			alphabetValue = [];

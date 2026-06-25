@@ -39,6 +39,18 @@ body.mediawiki .ve-init-sa-target-toolbar > .oo-ui-toolbar-bar > .oo-ui-toolbar-
 }
 
 /* Fix VEForAll toolbar dropdowns - ERM47218 */
+.ve-area-wrapper .oo-ui-toolGroup-tools {
+	height: auto !important;
+}
+
+.ve-area-wrapper .oo-ui-toolGroup-tools a {
+	display: block;
+}
+
+.ve-area-wrapper .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
+	padding: 5px;
+}
+
 .ve-area-wrapper .ve-ui-toolbar .oo-ui-listToolGroup-tools .oo-ui-tool-link .oo-ui-tool-title {
-	padding-left: 2.7em;
+	padding-left: 0.5em;
 }

@@ -4,11 +4,17 @@ namespace MWStake\MediaWiki\Component\TokenAuthenticator;
 
 use InvalidArgumentException;
 use MediaWiki\WikiMap\WikiMap;
+use Psr\Log\LoggerAwareInterface;
+use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use Random\RandomException;
 use Wikimedia\ObjectCache\BagOStuff;
 
-class TokenAuthenticator {
+class TokenAuthenticator implements LoggerAwareInterface {
 	protected const TTL = 10;
+
+	/** @var LoggerInterface|NullLogger */
+	protected LoggerInterface $logger;
 
 	/**
 	 * @param BagOStuff $sessionCache
@@ -18,6 +24,11 @@ class TokenAuthenticator {
 		private readonly BagOStuff $sessionCache,
 		private readonly string $salt = ''
 	) {
+		$this->logger = new NullLogger();
+	}
+
+	public function setLogger( LoggerInterface $logger ): void {
+		$this->logger = $logger;
 	}
 
 	/**
@@ -68,6 +79,7 @@ class TokenAuthenticator {
 		$key = $this->sessionCache->makeKey( $token );
 		$value = $this->sessionCache->get( $key );
 		if ( !$value ) {
+			$this->logger->warning( "Token verification failed for token: $token - not found is session" );
 			return null;
 		}
 		return $value;

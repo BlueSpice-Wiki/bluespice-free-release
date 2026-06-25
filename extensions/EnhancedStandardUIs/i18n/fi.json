@@ -12,5 +12,6 @@
 	"enhanced-standard-uis-allpages-create-new-page-title": "Luo uusi sivu",
 	"enhanced-standard-uis-allpages-create-new-page-aria-label": "Luo uusi sivu",
 	"enhanced-standard-uis-filelist-upload-new-file-title": "Lataa uusi tiedosto",
-	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Lataa uusi tiedosto"
+	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Lataa uusi tiedosto",
+	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "Avaa tiedoston esikatselun valintaikkuna kohteelle $1"
 }

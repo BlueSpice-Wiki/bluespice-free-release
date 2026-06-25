@@ -96,7 +96,10 @@ class Tag implements ParserFirstCallInitHook {
 			$tagShowCategories = $args[ 'showcategories' ];
 		}
 
-		$html = $parser->recursiveTagParse( $input );
+		// We invoke parser to make sure that "imagelinks" table will be updated.
+		// That's one of side effects of using parser,
+		// but it is needed to make sure that file links in "<attachments>" tag are properly tracked.
+		$parser->recursiveTagParse( $input );
 
 		foreach ( $this->getFilesFromWikiText( $input ) as $title ) {
 			$files[] = $title->getDBkey();

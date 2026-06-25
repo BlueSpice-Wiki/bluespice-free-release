@@ -100,5 +100,8 @@
 	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "알파벳순 문서 색인",
 	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "~ $2개 중 $1개 {{PLURAL:$1|문서}}를 표시중입니다",
 	"enhanced-standard-uis-allpages-panel-counter-label": "$2개 중 $1개 {{PLURAL:$1|문서}}를 표시중입니다",
-	"enhanced-standard-uis-allpages-panel-more-button-label": "더 많은 문서 불러오기"
+	"enhanced-standard-uis-allpages-panel-more-button-label": "더 많은 문서 불러오기",
+	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "$1에 대한 미리 보기 대화 상자를 열기",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$3 중 $1 - $2",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "~ $3 중 $1 - $2"
 }

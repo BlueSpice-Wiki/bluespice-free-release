@@ -26,6 +26,7 @@ class TitleIndexUpdater implements
 	PageUndeleteCompleteHook,
 	AfterImportPageHook
 {
+	use ContentLanguageCollationTrait;
 
 	/**
 	 * @var ILoadBalancer
@@ -132,14 +133,6 @@ class TitleIndexUpdater implements
 		if ( !$page->exists() ) {
 			return false;
 		}
-		// Cheaper to delete and insert, then to check if it exists
-		$db->delete(
-			'mws_title_index',
-			[
-				'mti_page_id' => $forceId ?? $page->getId()
-			],
-			__METHOD__
-		);
 
 		$leaf = '';
 		if ( strpos( $page->getDBkey(), '/' ) !== false ) {
@@ -147,18 +140,21 @@ class TitleIndexUpdater implements
 			$leaf = array_pop( $bits );
 		}
 
-		return $db->insert(
+		$data = [
+			'mti_page_id' => $forceId ?? $page->getId(),
+			'mti_namespace' => $page->getNamespace(),
+			'mti_title' => mb_strtolower( str_replace( '_', ' ', $page->getDBkey() ) ),
+			'mti_displaytitle' => $this->getDisplayTitle( $page ),
+			'mti_leaf_title' => mb_strtolower( str_replace( '_', ' ', $leaf ) ),
+			'mti_first_letter' => $this->getFirstLetter( $page->getDBkey() )
+		];
+
+		return $db->upsert(
 			'mws_title_index',
-			[
-				'mti_page_id' => $forceId ?? $page->getId(),
-				'mti_namespace' => $page->getNamespace(),
-				'mti_title' => mb_strtolower( str_replace( '_', ' ', $page->getDBkey() ) ),
-				'mti_displaytitle' => $this->getDisplayTitle( $page ),
-				'mti_leaf_title' => mb_strtolower( str_replace( '_', ' ', $leaf ) ),
-				'mti_first_letter' => $this->getFirstLetter( $page->getDBkey() ),
-			],
-			__METHOD__,
-			[ 'OVERWRITE' ]
+			$data,
+			[ [ 'mti_page_id' ] ],
+			$data,
+			__METHOD__
 		);
 	}
 
@@ -207,7 +203,7 @@ class TitleIndexUpdater implements
 	 */
 	private function getFirstLetter( string $dbkey ): string {
 		$title = str_replace( '_', ' ', explode( '/', $dbkey )[0] );
-		$collation = $this->collationFactory->makeCollation( 'uca-' . $this->contentLanguage->getCode() );
+		$collation = $this->resolveCollation( $this->collationFactory, $this->contentLanguage );
 		$letter = $collation->getFirstLetter( $title );
 
 		if ( $letter === '' ) {

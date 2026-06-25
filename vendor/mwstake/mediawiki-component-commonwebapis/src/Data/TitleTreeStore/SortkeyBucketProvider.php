@@ -5,9 +5,11 @@ namespace MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleTreeStore;
 use Collation;
 use MediaWiki\Collation\CollationFactory;
 use MediaWiki\Language\Language;
+use MWStake\MediaWiki\Component\CommonWebAPIs\ContentLanguageCollationTrait;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Data\TitleQueryStore\TitleRecord;
 
 class SortkeyBucketProvider {
+	use ContentLanguageCollationTrait;
 
 	/** @var Collation */
 	private $collation;
@@ -17,7 +19,7 @@ class SortkeyBucketProvider {
 	 * @param Language $contentLanguage
 	 */
 	public function __construct( CollationFactory $collationFactory, Language $contentLanguage ) {
-		$this->collation = $collationFactory->makeCollation( 'uca-' . $contentLanguage->getCode() );
+		$this->collation = $this->resolveCollation( $collationFactory, $contentLanguage );
 	}
 
 	/**

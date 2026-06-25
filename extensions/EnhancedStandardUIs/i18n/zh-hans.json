@@ -89,5 +89,14 @@
 	"enhanced-standard-uis-filelist-panel-select-view-aria-label": "选择查看模式",
 	"enhanced-standard-uis-paginator-page-aria-label": "第$1页",
 	"enhanced-standard-uis-allpages-section-heading-aria-label": "从第$1页开始",
-	"enhanced-standard-uis-filelist-panel-search-aria-label": "搜索文件"
+	"enhanced-standard-uis-filelist-panel-search-aria-label": "搜索文件",
+	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "打开$1的文件预览对话框",
+	"enhanced-standard-uis-allpages-create-new-page-title": "创建新页面",
+	"enhanced-standard-uis-allpages-create-new-page-aria-label": "创建新页面",
+	"enhanced-standard-uis-filelist-upload-new-file-title": "上传新文件",
+	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "上传新文件",
+	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "命名空间下的所有页面",
+	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "按字母顺序的页面索引",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "第$1 - $2页，共$3页",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "第$1 - $2页，共约$3页"
 }

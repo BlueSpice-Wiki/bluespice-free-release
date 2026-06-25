@@ -4,7 +4,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '3.1.2' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_FORMENGINE_VERSION', '3.1.3' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'formengine', static function () {
@@ -141,7 +141,9 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"widget/view/HorizontalRule.js",
 			"formElement/HorizontalRule.js",
 			"widget/edit/TitleOrWikitextInputWidget.js",
-			"formElement/EnhancedTitle.js"
+			"formElement/EnhancedTitle.js",
+			"widget/edit/NumberOrWikitextInputWidget.js",
+			"formElement/EnhancedNumber.js"
 		],
 		'styles' => [ "ext.forms.form.less" ],
 		'dependencies' => [
@@ -180,7 +182,9 @@ MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 			"mwstake-formengine-edit-password-error-mismatch",
 			"mwstake-formengine-type-message",
 			"mwstake-formengine-edit-title-wikitext-input-toggle-btn-label",
-			"mwstake-formengine-edit-title-wikitext-no-valid-title-error"
+			"mwstake-formengine-edit-title-wikitext-no-valid-title-error",
+			"mwstake-formengine-edit-number-wikitext-input-toggle-btn-label",
+			"mwstake-formengine-edit-number-wikitext-no-valid-number-error"
 		]
 	];
 

@@ -5,7 +5,6 @@ namespace MediaWiki\Extension\EnhancedStandardUIs\HookHandler;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Hook\MWStakeCommonWebAPIsQueryStoreResultHook;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Rest\FileQueryStore;
-use MWStake\MediaWiki\Component\DataStore\ResultSet;
 use RepoGroup;
 
 class AddFileImagePath implements MWStakeCommonWebAPIsQueryStoreResultHook {
@@ -33,14 +32,12 @@ class AddFileImagePath implements MWStakeCommonWebAPIsQueryStoreResultHook {
 			return;
 		}
 		$data = $result->getRecords();
-		foreach ( $data as $record ) {
+		foreach ( $data as &$record ) {
 			$title = $this->titleFactory->newFromText( 'File:' . $record->get( 'title' ) );
 			$file = $this->repoGroup->getLocalRepo()->newFile( $title );
 			if ( $file ) {
 				$record->set( 'fileUrl', $file->getUrl() );
 			}
 		}
-
-		$result = new ResultSet( $data, $result->getTotal() );
 	}
 }

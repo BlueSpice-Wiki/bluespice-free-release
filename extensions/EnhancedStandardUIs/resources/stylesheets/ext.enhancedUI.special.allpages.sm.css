@@ -23,7 +23,7 @@
 
 .enhanced-ui-allpages-panel-menu.collapsed + .enhanced-ui-allpages-panel-content {
 	width: 100%;
-	display: block;
+	display: flex;
 }
 
 .enhanced-ui-allpages-panel-menu.collapsed > div {

@@ -93,7 +93,7 @@ class TitleActionLanguage extends SimpleDropdownIcon {
 		$this->init();
 		return [
 			new SimpleDropdownItemlistFromArray( [
-				'id' => 'new-content-itms',
+				'id' => 'ta-language-itms',
 				'classes' => [],
 				'links' => $this->languageLinks
 			] )

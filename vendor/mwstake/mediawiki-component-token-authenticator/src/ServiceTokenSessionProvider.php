@@ -72,24 +72,37 @@ implements ApiCheckCanExecuteHook {
 			return null;
 		}
 		$clientIP = RequestContext::getMain()->getRequest()->getIP();
-		if ( !$this->CIDRValidator->validateIP( $clientIP ) ) {
-			 return null;
-		}
 		$authHeaders = $request->getHeader( 'Authorization' );
 		if ( !$authHeaders ) {
+			$this->logger->debug( 'ServiceTokenSessionProvider: No Authorization header present - bailing out' );
 			return null;
 		}
+		if ( !$this->CIDRValidator->validateIP( $clientIP ) ) {
+			$this->logger->info(
+				'ServiceTokenSessionProvider: Rejecting request from IP {clientIP} - not in allowed CIDR ranges',
+				[ 'clientIP' => $clientIP ]
+			);
+			return null;
+		}
+
 		$authHeaders = is_array( $authHeaders ) ? $authHeaders : [ $authHeaders ];
 		$allowed = false;
 		foreach ( $authHeaders as $authHeader ) {
 			$authType = $this->extractAuthType( $authHeader );
 			if ( $authType === 'ApiKey' && $this->token && $authHeader === 'ApiKey ' . $this->token ) {
+				$this->logger->info(
+					'ServiceTokenSessionProvider: Valid ApiKey token provided - allowing access to configured APIs'
+				);
 				$allowed = true;
 				$this->accessType = 'limited';
 			} elseif ( $authType === 'AppToken' || $authType === 'Bearer' ) {
 				$token = $this->stripTokenType( $authHeader );
 				$verification = $this->appTokenAuthenticator->doVerifyToken( $token );
 				if ( $verification && $verification['wiki'] === WikiMap::getCurrentWikiId() ) {
+					$this->logger->info(
+						'ServiceTokenSessionProvider: Valid AppToken provided - allowing full access',
+						[ 'wiki' => $verification['wiki'] ]
+					);
 					$allowed = true;
 					$this->accessType = 'full';
 				}
@@ -97,6 +110,10 @@ implements ApiCheckCanExecuteHook {
 		}
 
 		if ( !$allowed ) {
+			$this->logger->info(
+				'ServiceTokenSessionProvider: No valid token provided in Authorization header - bailing out',
+				[ 'authHeaders' => $authHeaders ]
+			);
 			return null;
 		}
 		if ( defined( 'MW_REST_API' ) ) {
@@ -106,6 +123,10 @@ implements ApiCheckCanExecuteHook {
 				// Remove /scriptPath/rest.php from the path
 				$path = substr( $path, strlen( $restPath ) );
 				if ( !$this->isAllowedRestPath( $path ) ) {
+					$this->logger->info(
+						'ServiceTokenSessionProvider: Access to REST path {path} is denied for limited token',
+						[ 'path' => $path ]
+					);
 					return null;
 				}
 			}
@@ -113,6 +134,7 @@ implements ApiCheckCanExecuteHook {
 
 		$user = $this->initUser();
 		if ( !$user ) {
+			$this->logger->error( 'ServiceTokenSessionProvider: Failed to initialize user for service token' );
 			return null;
 		}
 
@@ -203,6 +225,10 @@ implements ApiCheckCanExecuteHook {
 			}
 		}
 		$message = 'apierror-service-token-not-allowed';
+		$this->logger->info(
+			'ServiceTokenSessionProvider: API module {module} is not allowed for limited token',
+			[ 'module' => get_class( $module ) ]
+		);
 		return false;
 	}
 

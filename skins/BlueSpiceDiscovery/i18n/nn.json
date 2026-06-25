@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ranveig"
+		]
+	},
+	"bs-discovery-config-meta-items-header-help": "Utvalde element er viste under sidetittelen",
+	"bs-discovery-config-meta-items-footer-label": "Element under sideinnhaldet",
+	"bs-discovery-config-meta-items-footer-help": "Utvalde element er viste under sideinnhaldet"
+}

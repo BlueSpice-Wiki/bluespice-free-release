@@ -6,6 +6,7 @@ use MediaWiki\Extension\MenuEditor\IMenuNodeProcessor;
 use MediaWiki\Extension\MenuEditor\Node\MenuNode;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
+use MWException;
 use MWStake\MediaWiki\Component\Wikitext\NodeSource\WikitextSource;
 use MWStake\MediaWiki\Component\Wikitext\Parser\MutableWikitextParser;
 use MWStake\MediaWiki\Lib\Nodes\INode;
@@ -38,6 +39,7 @@ class WikitextMenuParser extends MutableWikitextParser implements IParser, IMenu
 	 * @return INode[]
 	 */
 	public function parse(): array {
+		$this->nodes = [];
 		$content = $this->getRevision()->getContent( SlotRecord::MAIN );
 		$text = $content->getText();
 		$this->setRawData( $text );
@@ -59,19 +61,64 @@ class WikitextMenuParser extends MutableWikitextParser implements IParser, IMenu
 			$this->setRawData( '' );
 		}
 		foreach ( $nodes as $nodeData ) {
-			if ( !isset( $nodeData['type'] ) ) {
-				continue;
-			}
-			foreach ( $this->nodeProcessors as $processor ) {
-				if ( $processor->supportsNodeType( $nodeData['type'] ) ) {
-					$node = $processor->getNodeFromData( $nodeData );
-					if ( !( $node instanceof MenuNode ) ) {
-						continue;
-					}
-					$this->addNode( $node );
-				}
+			$node = $this->getNodeFromData( $nodeData );
+			if ( $node ) {
+				$this->addNode( $node );
 			}
 		}
+	}
+
+	/**
+	 * @param INode $node
+	 * @param mixed|null $afterNode
+	 * @param bool $newline
+	 * @return void
+	 * @throws MWException
+	 */
+	public function addNodeAfter( INode $node, mixed $afterNode, bool $newline = true ): void {
+		if ( $afterNode === null ) {
+			$this->addNode( $node, 'prepend', $newline );
+			return;
+		}
+		$this->parse();
+		if ( !( $afterNode instanceof MenuNode ) ) {
+			$afterNode = $this->getNodeFromData( $afterNode );
+			if ( !$afterNode ) {
+				return;
+			}
+		}
+		$afterNodeText = preg_quote( $afterNode->getOriginalData(), '/' );
+		$newNodeText = $node->getOriginalData();
+		if ( $newline ) {
+			$newNodeText = "\n" . $newNodeText;
+		}
+		$this->rawData = preg_replace(
+			'/' . $afterNodeText . '/',
+			$afterNode->getOriginalData() . $newNodeText,
+			$this->rawData,
+			1
+		);
+		$this->setRevisionContent();
+	}
+
+	/**
+	 * @param array $nodeData
+	 * @return MenuNode|null
+	 */
+	public function getNodeFromData( array $nodeData ): ?MenuNode {
+		if ( !isset( $nodeData['type'] ) ) {
+			return null;
+		}
+		foreach ( $this->nodeProcessors as $processor ) {
+			if ( $processor->supportsNodeType( $nodeData['type'] ) ) {
+				$node = $processor->getNodeFromData( $nodeData );
+				if ( !( $node instanceof MenuNode ) ) {
+					continue;
+				}
+				return $node;
+			}
+		}
+		return null;
 	}
 
 	/**
