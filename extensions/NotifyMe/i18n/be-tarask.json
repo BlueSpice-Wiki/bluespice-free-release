@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Red Winged Duck",
 			"Ucukor"
 		]
 	},
 	"prefs-notifications": "Абвесткі",
 	"notifyme-ui-dialog-set-editor-cancel": "Скасаваць",
 	"notifyme-ui-edit": "Рэдагаваць",
-	"notifyme-ui-subscriptionset-editor-category-label": "Катэґорыя",
-	"notifyme-ui-subscriptionset-category-label": "Катэґорыя"
+	"notifyme-ui-subscriptionset-editor-category-label": "Катэгорыя",
+	"notifyme-ui-subscriptionset-category-label": "Катэгорыя"
 }

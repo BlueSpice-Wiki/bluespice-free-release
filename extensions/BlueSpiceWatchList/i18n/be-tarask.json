@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
 	"bs-watchlist-pref-sort-time": "Час",
-	"bs-watchlist-pref-sort-title": "Загаловак"
+	"bs-watchlist-pref-sort-title": "Загаловак",
+	"bs-watchlist-ve-watchlist-attr-time-label": "Час",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "Сартаваць паводле"
 }

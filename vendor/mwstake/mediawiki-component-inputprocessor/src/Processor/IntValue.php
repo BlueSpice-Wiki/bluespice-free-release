@@ -54,7 +54,7 @@ class IntValue extends GenericProcessor {
 			return StatusValue::newGood( $this->getDefaultValue() );
 		}
 		$number = $this->getNumeric( $value );
-		if ( !$number ) {
+		if ( $number === null ) {
 			return StatusValue::newFatal( 'inputprocessor-error-int-not-number', $fieldKey, $value );
 		}
 

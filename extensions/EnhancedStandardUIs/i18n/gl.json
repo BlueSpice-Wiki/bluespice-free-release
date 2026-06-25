@@ -95,5 +95,8 @@
 	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "Índice alfabético de páxinas",
 	"enhanced-standard-uis-allpages-panel-counter-approximate-label": "{{PLURAL:$1|Móstrase unha páxina|Móstranse $1 páxinas}} de aproximadamente {{PLURAL:$2|unha páxina|$2 páxinas}}",
 	"enhanced-standard-uis-allpages-panel-counter-label": "{{PLURAL:$1|Móstrase unha páxina|Móstranse $1 páxinas}} {{PLURAL:$2|dunha páxina|de $2 páxinas}}",
-	"enhanced-standard-uis-allpages-panel-more-button-label": "Cargar máis páxinas"
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Cargar máis páxinas",
+	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "Abre o diálogo de vista previa do ficheiro «$1»",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 - $2 de $3",
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 de aproximadamente $3"
 }

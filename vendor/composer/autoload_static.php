@@ -8,11 +8,11 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
 {
     public static $files = array (
         'ef0a3cc8d59aacc0241af9c20bb29c47' => __DIR__ . '/..' . '/mwstake/mediawiki-componentloader/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'aee3df8238f2131f3ed1cf1c93bae858' => __DIR__ . '/..' . '/mwstake/mediawiki-component-manifestregistry/bootstrap.php',
         '23c5449715806cf29062abde4a042613' => __DIR__ . '/..' . '/mwstake/mediawiki-component-utils/bootstrap.php',
         '10a542061c80b3639afb5868667e9583' => __DIR__ . '/..' . '/mwstake/mediawiki-component-datastore/bootstrap.php',
         '54b5b4fa498e570138b0c96a5a5c74f1' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonuserinterface/bootstrap.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'e88301dfa829b6392faf3213d53f4383' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/bootstrap.php',
         '26f133245c878f6605653c89cf062385' => __DIR__ . '/..' . '/mwstake/mediawiki-component-dynamicfiledispatcher/bootstrap.php',
         'dae04644524c022968e8c324b8249118' => __DIR__ . '/..' . '/mwstake/mediawiki-component-inputprocessor/bootstrap.php',
@@ -82,7 +82,6 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
             'Symfony\\Polyfill\\Php82\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Process\\' => 26,
-            'Symfony\\Component\\Filesystem\\' => 29,
             'Shellbox\\' => 9,
         ),
         'R' => 
@@ -110,6 +109,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
             'MediaWiki\\Extension\\UserProfile\\' => 32,
             'MediaWiki\\Composer\\' => 19,
             'MWStake\\MediaWiki\\Lib\\Nodes\\' => 28,
+            'MWStake\\MediaWiki\\Component\\Wikitext\\Tests\\Unit\\' => 48,
             'MWStake\\MediaWiki\\Component\\Wikitext\\' => 37,
             'MWStake\\MediaWiki\\Component\\WikiCron\\Tests\\' => 43,
             'MWStake\\MediaWiki\\Component\\WikiCron\\' => 37,
@@ -345,10 +345,6 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
         ),
-        'Symfony\\Component\\Filesystem\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/filesystem',
-        ),
         'Shellbox\\' => 
         array (
             0 => __DIR__ . '/..' . '/wikimedia/shellbox/src',
@@ -409,6 +405,10 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'MWStake\\MediaWiki\\Lib\\Nodes\\' => 
         array (
             0 => __DIR__ . '/..' . '/mwstake/mediawiki-lib-nodes/src',
+        ),
+        'MWStake\\MediaWiki\\Component\\Wikitext\\Tests\\Unit\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikitext/tests/phpunit/unit',
         ),
         'MWStake\\MediaWiki\\Component\\Wikitext\\' => 
         array (
@@ -1226,6 +1226,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'BlueSpice\\DistributionConnector\\Data\\Page\\HitCounter\\Record' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Data/Page/HitCounter/Record.php',
         'BlueSpice\\DistributionConnector\\Data\\Page\\HitCounter\\Schema' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Data/Page/HitCounter/Schema.php',
         'BlueSpice\\DistributionConnector\\Data\\Page\\HitCounter\\Store' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Data/Page/HitCounter/Store.php',
+        'BlueSpice\\DistributionConnector\\EditionProvider' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/EditionProvider.php',
         'BlueSpice\\DistributionConnector\\Extension' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Extension.php',
         'BlueSpice\\DistributionConnector\\HookHandler\\AddVariablesPageProperty' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/HookHandler/AddVariablesPageProperty.php',
         'BlueSpice\\DistributionConnector\\Hook\\AddGlobalAction' => __DIR__ . '/../..' . '/extensions/BlueSpiceDistributionConnector/src/Hook/AddGlobalAction.php',
@@ -1758,6 +1759,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'GuzzleHttp\\Psr7\\Query' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Query.php',
         'GuzzleHttp\\Psr7\\Request' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Request.php',
         'GuzzleHttp\\Psr7\\Response' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Response.php',
+        'GuzzleHttp\\Psr7\\Rfc3986' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Rfc3986.php',
         'GuzzleHttp\\Psr7\\Rfc7230' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Rfc7230.php',
         'GuzzleHttp\\Psr7\\ServerRequest' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/ServerRequest.php',
         'GuzzleHttp\\Psr7\\Stream' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/Stream.php',
@@ -2127,6 +2129,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'MWStake\\MediaWiki\\Component\\CommonUserInterface\\Tests\\Unit\\LinkConverterTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonuserinterface/tests/phpunit/unit/LinkConverterTest.php',
         'MWStake\\MediaWiki\\Component\\CommonUserInterface\\TreeDataGenerator' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonuserinterface/src/TreeDataGenerator.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\CategoryIndexUpdater' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/CategoryIndexUpdater.php',
+        'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\ContentLanguageCollationTrait' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/ContentLanguageCollationTrait.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\CategoryQueryStore\\CategoryReaderParams' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/CategoryQueryStore/CategoryReaderParams.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\CategoryQueryStore\\PrimaryDataProvider' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/CategoryQueryStore/PrimaryDataProvider.php',
         'MWStake\\MediaWiki\\Component\\CommonWebAPIs\\Data\\CategoryQueryStore\\Reader' => __DIR__ . '/..' . '/mwstake/mediawiki-component-commonwebapis/src/Data/CategoryQueryStore/Reader.php',
@@ -2415,6 +2418,8 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'MWStake\\MediaWiki\\Component\\Wikitext\\ParserFactory' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikitext/src/ParserFactory.php',
         'MWStake\\MediaWiki\\Component\\Wikitext\\Parser\\MutableWikitextParser' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikitext/src/Parser/MutableWikitextParser.php',
         'MWStake\\MediaWiki\\Component\\Wikitext\\Parser\\WikitextParser' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikitext/src/Parser/WikitextParser.php',
+        'MWStake\\MediaWiki\\Component\\Wikitext\\Tests\\Unit\\Node\\HeaderTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikitext/tests/phpunit/unit/Node/HeaderTest.php',
+        'MWStake\\MediaWiki\\Component\\Wikitext\\Tests\\Unit\\Node\\TransclusionTest' => __DIR__ . '/..' . '/mwstake/mediawiki-component-wikitext/tests/phpunit/unit/Node/TransclusionTest.php',
         'MWStake\\MediaWiki\\Lib\\Nodes\\IMutableNode' => __DIR__ . '/..' . '/mwstake/mediawiki-lib-nodes/src/IMutableNode.php',
         'MWStake\\MediaWiki\\Lib\\Nodes\\IMutator' => __DIR__ . '/..' . '/mwstake/mediawiki-lib-nodes/src/IMutator.php',
         'MWStake\\MediaWiki\\Lib\\Nodes\\INode' => __DIR__ . '/..' . '/mwstake/mediawiki-lib-nodes/src/INode.php',
@@ -3384,12 +3389,6 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'Shellbox\\Shellbox' => __DIR__ . '/..' . '/wikimedia/shellbox/src/Shellbox.php',
         'Shellbox\\ShellboxError' => __DIR__ . '/..' . '/wikimedia/shellbox/src/ShellboxError.php',
         'Shellbox\\TempDirManager' => __DIR__ . '/..' . '/wikimedia/shellbox/src/TempDirManager.php',
-        'Symfony\\Component\\Filesystem\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/symfony/filesystem/Exception/ExceptionInterface.php',
-        'Symfony\\Component\\Filesystem\\Exception\\FileNotFoundException' => __DIR__ . '/..' . '/symfony/filesystem/Exception/FileNotFoundException.php',
-        'Symfony\\Component\\Filesystem\\Exception\\IOException' => __DIR__ . '/..' . '/symfony/filesystem/Exception/IOException.php',
-        'Symfony\\Component\\Filesystem\\Exception\\IOExceptionInterface' => __DIR__ . '/..' . '/symfony/filesystem/Exception/IOExceptionInterface.php',
-        'Symfony\\Component\\Filesystem\\Filesystem' => __DIR__ . '/..' . '/symfony/filesystem/Filesystem.php',
-        'Symfony\\Component\\Filesystem\\LockHandler' => __DIR__ . '/..' . '/symfony/filesystem/LockHandler.php',
         'Symfony\\Component\\Process\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/symfony/process/Exception/ExceptionInterface.php',
         'Symfony\\Component\\Process\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/symfony/process/Exception/InvalidArgumentException.php',
         'Symfony\\Component\\Process\\Exception\\LogicException' => __DIR__ . '/..' . '/symfony/process/Exception/LogicException.php',
@@ -4568,6 +4567,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'Wikimedia\\Zest\\Zest' => __DIR__ . '/..' . '/wikimedia/zest-css/src/Zest.php',
         'Wikimedia\\Zest\\ZestFunc' => __DIR__ . '/..' . '/wikimedia/zest-css/src/ZestFunc.php',
         'Wikimedia\\Zest\\ZestInst' => __DIR__ . '/..' . '/wikimedia/zest-css/src/ZestInst.php',
+        'Wikimedia\\Zest\\ZestJQ' => __DIR__ . '/..' . '/wikimedia/zest-css/src/ZestJQ.php',
         'jakobo\\HOTP\\HOTP' => __DIR__ . '/..' . '/jakobo/hotp-php/src/HOTP.php',
         'jakobo\\HOTP\\HOTPResult' => __DIR__ . '/..' . '/jakobo/hotp-php/src/HOTPResult.php',
         'lessc' => __DIR__ . '/..' . '/wikimedia/less.php/lessc.inc.php',

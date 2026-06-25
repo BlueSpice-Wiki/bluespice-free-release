@@ -68,6 +68,10 @@ class EditWarningBuilder {
 	 * @return string
 	 */
 	public function getMessage() {
+		if ( $this->title->isSpecialPage() ) {
+			return '';
+		}
+
 		$this->loadFromDB();
 		$this->findIntermediateEdit();
 		$this->message = $this->makeMessage();

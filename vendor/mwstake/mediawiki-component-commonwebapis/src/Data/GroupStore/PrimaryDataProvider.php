@@ -54,12 +54,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 		$query = strtolower( $params->getQuery() );
 
 		$data = [];
-		$typeFilter = $this->getGroupTypeFilter( $params );
-		$this->hookContainer->run( 'MWStakeGroupStoreGroupTypeFilter', [ &$typeFilter ] );
-		$explicitGroups = $this->groupHelper->getAvailableGroups( [
-			'filter' => $typeFilter,
-			'blacklist' => $this->mwsgConfig->get( 'CommonWebAPIsComponentGroupStoreExcludeGroups' ),
-		] );
+		$explicitGroups = $this->getGroupNames( $params );
 		if ( $this->allowEveryone ) {
 			array_unshift( $explicitGroups, 'user' );
 		}
@@ -85,6 +80,20 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 			] );
 		}
 		return $data;
+	}
+
+	/**
+	 * @param ReaderParams $params
+	 * @return array
+	 */
+	protected function getGroupNames( ReaderParams $params ): array {
+		$typeFilter = $this->getGroupTypeFilter( $params );
+		$this->hookContainer->run( 'MWStakeGroupStoreGroupTypeFilter', [ &$typeFilter ] );
+
+		return $this->groupHelper->getAvailableGroups( [
+			'filter' => $typeFilter,
+			'blacklist' => $this->mwsgConfig->get( 'CommonWebAPIsComponentGroupStoreExcludeGroups' ),
+		] );
 	}
 
 	/**

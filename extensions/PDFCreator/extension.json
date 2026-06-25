@@ -1,6 +1,6 @@
 {
 	"name": "PDFCreator",
-	"version": "1.1.8",
+	"version": "1.1.9",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Daniel Vogel",
@@ -205,6 +205,10 @@
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\PDFCreator\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\PDFCreator\\Tests\\Unit\\": "tests/phpunit/unit/",
+		"MediaWiki\\Extension\\PDFCreator\\Tests\\Integration\\": "tests/phpunit/integration/"
 	},
 	"ExtensionMessagesFiles": {
 		"PDFTemplatesOverviewAlias": "languages/SpecialPDFTemplatesOverview.alias.php"

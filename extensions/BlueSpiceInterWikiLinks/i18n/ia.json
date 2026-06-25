@@ -26,5 +26,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Forni le actiones pro le extension InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "vider le pagina special \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Ligamines interwiki",
-	"right-interwikilinks-viewspecialpage": "Accesso al pagina special [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "Accesso al pagina special [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-url-validate-fail": "Le URL non pote esser validate."
 }

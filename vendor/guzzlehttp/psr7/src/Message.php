@@ -234,6 +234,23 @@ final class Message
      */
     public static function parseRequestUri(string $path, array $headers): string
     {
+        $host = self::getHostFromHeaders($headers);
+
+        // If no host is found, then a full URI cannot be constructed.
+        if ($host === null) {
+            return $path;
+        }
+
+        $scheme = substr($host, -4) === ':443' ? 'https' : 'http';
+
+        return $scheme.'://'.$host.'/'.ltrim($path, '/');
+    }
+
+    /**
+     * @param array $headers Array of headers (each value an array).
+     */
+    private static function getHostFromHeaders(array $headers): ?string
+    {
         $hostKey = array_filter(array_keys($headers), function ($k) {
             // Numeric array keys are converted to int by PHP.
             $k = (string) $k;
@@ -241,15 +258,16 @@ final class Message
             return strtolower($k) === 'host';
         });
 
-        // If no host is found, then a full URI cannot be constructed.
         if (!$hostKey) {
-            return $path;
+            return null;
         }
 
         $host = $headers[reset($hostKey)][0];
-        $scheme = substr($host, -4) === ':443' ? 'https' : 'http';
+        if (!is_string($host) || Rfc7230::parseHostHeader($host) === null) {
+            throw new \InvalidArgumentException('Invalid request string');
+        }
 
-        return $scheme.'://'.$host.'/'.ltrim($path, '/');
+        return $host;
     }
 
     /**
@@ -260,6 +278,10 @@ final class Message
     public static function parseRequest(string $message): RequestInterface
     {
         $data = self::parseMessage($message);
+        if (strpbrk($data['start-line'], "\r\n") !== false) {
+            throw new \InvalidArgumentException('Invalid request string');
+        }
+
         $matches = [];
         if (!preg_match('/^[\S]+\s+([a-zA-Z]+:\/\/|\/).*/', $data['start-line'], $matches)) {
             throw new \InvalidArgumentException('Invalid request string');
@@ -286,6 +308,10 @@ final class Message
     public static function parseResponse(string $message): ResponseInterface
     {
         $data = self::parseMessage($message);
+        if (strpbrk($data['start-line'], "\r\n") !== false) {
+            throw new \InvalidArgumentException('Invalid response string');
+        }
+
         // According to https://datatracker.ietf.org/doc/html/rfc7230#section-3.1.2
         // the space between status-code and reason-phrase is required. But
         // browsers accept responses without space and reason as well.

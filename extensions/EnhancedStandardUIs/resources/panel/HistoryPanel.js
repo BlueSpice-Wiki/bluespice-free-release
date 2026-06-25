@@ -82,17 +82,18 @@ ext.enhancedUI.panel.HistoryPanel.prototype.setupGrid = function () {
 		this.grid.toolbar.staticControls.removeItems( [ reloadItem ] );
 	}
 
-	for ( let i = 1; i < $( this.grid.$table ).children().length; i++ ) {
-		const $row = $( this.grid.$table ).children()[ i ];
-		// First entry of grid is table header, so grid and data is not aligned with selector
-		const classSelector = i - 1;
-		/* eslint-disable-next-line no-jquery/no-class-state */
-		if ( $( $row ).hasClass( 'oojsplus-data-gridWidget-row' ) &&
-			this.historyData[ classSelector ].classes.length > 0 ) {
+	const $rows = $( this.grid.$table ).find( 'tbody.oojsplus-data-gridWidget-tbody > tr.oojsplus-data-gridWidget-row' );
+	for ( let i = 0; i < $rows.length; i++ ) {
+		const $row = $( $rows[ i ] );
+		const rowData = this.historyData[ i ];
+		if ( !rowData ) {
+			continue;
+		}
 
-			this.historyData[ classSelector ].classes.forEach( ( rowClass ) => {
+		if ( rowData.classes.length > 0 ) {
+			rowData.classes.forEach( ( rowClass ) => {
 				/* eslint-disable-next-line mediawiki/class-doc */
-				$( $row ).addClass( rowClass );
+				$row.addClass( rowClass );
 			} );
 		}
 	}
@@ -101,6 +102,10 @@ ext.enhancedUI.panel.HistoryPanel.prototype.setupGrid = function () {
 };
 
 ext.enhancedUI.panel.HistoryPanel.prototype.doActionOnRow = function ( action, row ) {
+	if ( action === 'hide' && this.historyData.length > 0 && row.id === this.historyData[ 0 ].id ) {
+		return;
+	}
+
 	if ( action === 'undo' ) {
 		let undoAfterIndex = 0;
 		for ( let i = 0; i < this.historyData.length; i++ ) {
@@ -191,6 +196,8 @@ ext.enhancedUI.panel.HistoryPanel.prototype.setupGridConfig = function () {
 	};
 
 	mw.hook( 'enhanced.versionhistory' ).fire( gridCfg );
+	const hasHistoryData = this.historyData.length > 0;
+	const firstEntry = hasHistoryData ? this.historyData[ 0 ] : null;
 
 	if ( this.rights.indexOf( 'rollback' ) !== -1 ) {
 		gridCfg.columns.undo = {
@@ -205,7 +212,10 @@ ext.enhancedUI.panel.HistoryPanel.prototype.setupGridConfig = function () {
 			type: 'action',
 			title: mw.message( 'enhanced-standard-uis-history-grid-header-hide-revision-title' ).text(),
 			actionId: 'hide',
-			icon: 'trash'
+			icon: 'trash',
+			shouldShow: function ( row ) {
+				return hasHistoryData && row.id !== firstEntry.id;
+			}
 		};
 	}
 

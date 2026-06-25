@@ -24,6 +24,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
+use MediaWiki\Message\Message;
+
 /**
  * InterWikiLinksManager Api class
  * @package BlueSpice_Extensions
@@ -145,15 +147,11 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 			];
 		}
 		if ( !empty( $url ) ) {
-			$validationResult = BsValidator::isValid(
-				'Url',
-				$url,
-				[ 'fullResponse' => true ]
-				);
-			if ( $validationResult->getErrorCode() ) {
+			$validationResult = filter_var( $url, FILTER_VALIDATE_URL );
+			if ( $validationResult === false ) {
 				$return->errors[] = [
 					'id' => 'iwediturl',
-					'message' => $validationResult->getI18N()
+					'message' => Message::newFromKey( 'bs-interwikilinks-url-validate-fail' )->text()
 				];
 			}
 			if ( strpos( $url, ' ' ) ) {

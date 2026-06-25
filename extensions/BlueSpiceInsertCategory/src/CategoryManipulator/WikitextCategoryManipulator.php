@@ -56,11 +56,11 @@ class WikitextCategoryManipulator implements ICategoryManipulator, LoggerAwareIn
 	 */
 	public function setCategories( PageIdentity $pageIdentity, array $categoryTitles, Authority $actor ): bool {
 		$content = $this->getContent( $pageIdentity );
-		$wikitext = $content?->getText();
-		if ( !$wikitext ) {
-			$this->logger->warning( 'No wikitext found for page', [ 'page' => $pageIdentity->getFullText() ] );
+		if ( !$content ) {
+			$this->logger->warning( 'No wikitext found for page', [ 'page' => $pageIdentity->getDBkey() ] );
 			return false;
 		}
+		$wikitext = $content->getText();
 
 		$current = $this->getCategoriesFromWikitext( $wikitext );
 		$toRemove = array_merge( [], $current );
@@ -164,7 +164,7 @@ class WikitextCategoryManipulator implements ICategoryManipulator, LoggerAwareIn
 		preg_match_all( $pattern, $wikitext, $matches );
 		foreach ( $matches[2] as $index => $categoryName ) {
 			$title = $this->titleFactory->newFromText( $categoryName );
-			if ( $title->getNamespace() !== NS_CATEGORY ) {
+			if ( !$title || $title->getNamespace() !== NS_CATEGORY ) {
 				continue;
 			}
 			if ( !isset( $categories[$title->getText()] ) ) {

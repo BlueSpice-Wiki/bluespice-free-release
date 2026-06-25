@@ -4,5 +4,12 @@
 			"Eduardoaddad"
 		]
 	},
-	"visualeditorplus-desc": "Adiciona várias funcionalidades ao editor visual"
+	"visualeditorplus-desc": "Adiciona várias funcionalidades ao editor visual",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Remover tabela",
+	"visualeditorplus-table-contextitem-properties-label": "Propriedades da página",
+	"visualeditorplus-table-contextitem-additional-options-label": "Opções adicionais de células",
+	"visualeditorplus-table-cell-actions-dialog-title": "Opções da célula",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Feito",
+	"visualeditorplus-ui-label-unwrap": "Remover (manter o conteúdo)",
+	"visualeditorplus-ui-label-delete": "Remover"
 }

@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Renessaince"
+			"Renessaince",
+			"Ucukor"
 		]
 	},
-	"enhanced-standard-uis-filter-results-label": "{{PLURAL:$1|Знойдзены $1 вынік|Знойдзеныя $1 вынікі|Знойдзеныя $1 вынікаў}}"
+	"enhanced-standard-uis-filter-results-label": "{{PLURAL:$1|Знойдзены $1 вынік|Знойдзеныя $1 вынікі|Знойдзеныя $1 вынікаў}}",
+	"enhanced-standard-uis-allpages-filter-pages-label": "Фільтар"
 }

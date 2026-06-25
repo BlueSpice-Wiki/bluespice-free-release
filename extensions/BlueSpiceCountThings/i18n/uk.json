@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Marvire",
+			"Movses",
 			"Mykola Swarnyk",
 			"Piramidion",
 			"Ата"
@@ -38,5 +39,7 @@
 	"bs-countthings-droplet-files-name": "Кількість файлів",
 	"bs-countthings-droplet-files-description": "Показує кількість завантажених файлів",
 	"bs-countthings-droplet-user-name": "Кількість користувачів",
-	"bs-countthings-droplet-user-description": "Показує кількість користувачів"
+	"bs-countthings-droplet-user-description": "Показує кількість користувачів",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Підрахувати дублікати",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Вкажіть, що слід враховувати: все, символи, слова, символи та слова чи сторінки"
 }

@@ -7,11 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'ef0a3cc8d59aacc0241af9c20bb29c47' => $vendorDir . '/mwstake/mediawiki-componentloader/bootstrap.php',
+    '6e3fae29631ef280660b3cdad06f25a8' => $vendorDir . '/symfony/deprecation-contracts/function.php',
     'aee3df8238f2131f3ed1cf1c93bae858' => $vendorDir . '/mwstake/mediawiki-component-manifestregistry/bootstrap.php',
     '23c5449715806cf29062abde4a042613' => $vendorDir . '/mwstake/mediawiki-component-utils/bootstrap.php',
     '10a542061c80b3639afb5868667e9583' => $vendorDir . '/mwstake/mediawiki-component-datastore/bootstrap.php',
     '54b5b4fa498e570138b0c96a5a5c74f1' => $vendorDir . '/mwstake/mediawiki-component-commonuserinterface/bootstrap.php',
-    '6e3fae29631ef280660b3cdad06f25a8' => $vendorDir . '/symfony/deprecation-contracts/function.php',
     'e88301dfa829b6392faf3213d53f4383' => $vendorDir . '/mwstake/mediawiki-component-commonwebapis/bootstrap.php',
     '26f133245c878f6605653c89cf062385' => $vendorDir . '/mwstake/mediawiki-component-dynamicfiledispatcher/bootstrap.php',
     'dae04644524c022968e8c324b8249118' => $vendorDir . '/mwstake/mediawiki-component-inputprocessor/bootstrap.php',

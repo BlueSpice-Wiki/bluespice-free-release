@@ -26,9 +26,33 @@ class PopulateTitleIndex extends LoggedUpdateMaintenance {
 			[ 'pp' => [ 'LEFT OUTER JOIN', [ 'p.page_id = pp.pp_page', 'pp.pp_propname' => 'displaytitle' ] ] ]
 		);
 
+		// Same as logic of ContentLanguageCollationTrait, added in this way
+		// because a maintenance script does not always run well with traits,
+		// especially when not called using run.php + class name
 		$collationFactory = $this->getServiceContainer()->getCollationFactory();
-		$contentLanguage = $this->getServiceContainer()->getContentLanguage();
-		$collation = $collationFactory->makeCollation( 'uca-' . $contentLanguage->getCode() );
+		$languageFallback = $this->getServiceContainer()->getLanguageFallback();
+		$code = $this->getServiceContainer()->getContentLanguage()->getCode();
+		$normalized = preg_replace( '/-(formal|informal)$/i', '', $code ) ?: $code;
+		$candidates = array_values( array_unique(
+			array_merge( [ $normalized ], $languageFallback->getAll( $normalized ) )
+		) );
+		$collation = null;
+		foreach ( $candidates as $candidate ) {
+			try {
+				$c = $collationFactory->makeCollation( 'uca-' . $candidate );
+				// triggers fetchFirstLetterData() to validate the locale
+				$c->getFirstLetter( 'a' );
+				$collation = $c;
+				break;
+			} catch ( \RuntimeException $e ) {
+				// locale not in TAILORING_FIRST_LETTERS, try next fallback
+				continue;
+			}
+		}
+		if ( $collation === null ) {
+			$collation = $collationFactory->makeCollation( 'uca-en' );
+			$collation->getFirstLetter( 'a' );
+		}
 
 		$toInsert = [];
 		$cnt = 0;

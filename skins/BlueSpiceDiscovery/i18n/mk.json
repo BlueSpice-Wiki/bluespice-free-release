@@ -202,5 +202,11 @@
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Уреди",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Исчисти",
 	"bs-discovery-breadcrumb-nav-root-node-title": "Прикажи ги сите страници во именскиот простор $1",
-	"bs-discovery-personalurl-blog-text": "Блог"
+	"bs-discovery-personalurl-blog-text": "Блог",
+	"bs-discovery-menu-provider-namespace-tree-label": "Сите страници",
+	"bs-discovery-menu-provider-namespace-tree-desc": "Сите страници од тековниот именски простор како дрво",
+	"bs-discovery-namespace-tree-pnl-header-text": "Страници",
+	"bs-discovery-namespace-tree-search-btn-label": "Покажи пребарување",
+	"bs-discovery-namespace-tree-create-btn-label": "Создај нова страница",
+	"bs-discovery-namespace-tree-search-label": "Пребарај страница"
 }

@@ -4,10 +4,10 @@ namespace MediaWiki\Extension\EnhancedStandardUIs\HookHandler;
 
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Title\TitleFactory;
+use MediaWiki\Watchlist\WatchedItemStoreInterface;
 use MediaWiki\Watchlist\WatchlistManager;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Hook\MWStakeCommonWebAPIsQueryStoreResultHook;
 use MWStake\MediaWiki\Component\CommonWebAPIs\Rest\TitleTreeStore;
-use MWStake\MediaWiki\Component\DataStore\ResultSet;
 
 class AddTitleWatchInfo implements MWStakeCommonWebAPIsQueryStoreResultHook {
 
@@ -17,13 +17,22 @@ class AddTitleWatchInfo implements MWStakeCommonWebAPIsQueryStoreResultHook {
 	/** @var TitleFactory */
 	private $titleFactory;
 
+	/** @var WatchedItemStoreInterface */
+	private $watchedItemStore;
+
 	/**
 	 * @param WatchlistManager $watchlistManager
 	 * @param TitleFactory $titleFactory
+	 * @param WatchedItemStoreInterface $watchedItemStore
 	 */
-	public function __construct( WatchlistManager $watchlistManager, TitleFactory $titleFactory ) {
+	public function __construct(
+		WatchlistManager $watchlistManager,
+		TitleFactory $titleFactory,
+		WatchedItemStoreInterface $watchedItemStore
+	) {
 		$this->watchlistManager = $watchlistManager;
 		$this->titleFactory = $titleFactory;
+		$this->watchedItemStore = $watchedItemStore;
 	}
 
 	/**
@@ -38,15 +47,33 @@ class AddTitleWatchInfo implements MWStakeCommonWebAPIsQueryStoreResultHook {
 			return;
 		}
 		$data = $result->getRecords();
-		foreach ( $data as $record ) {
+		$watchableTitles = [];
+		foreach ( $data as &$record ) {
 			$title = $this->titleFactory->newFromText( $record->get( 'prefixed' ) );
-			$isWatchable = $this->watchlistManager->isWatchable( $title );
-			if ( !$isWatchable ) {
+			if ( $title !== null && $this->watchlistManager->isWatchable( $title ) ) {
+				$watchableTitles[$record->get( 'id' )] = $title;
+			}
+		}
+
+		$watchedSet = [];
+		if ( $watchableTitles ) {
+			$watchedItems = $this->watchedItemStore->loadWatchedItemsBatch( $user, array_values( $watchableTitles ) );
+			if ( $watchedItems ) {
+				foreach ( $watchedItems as $item ) {
+					$target = $item->getTarget();
+					$watchedSet[$target->getNamespace() . ':' . $target->getDBkey()] = true;
+				}
+			}
+		}
+
+		foreach ( $data as &$record ) {
+			if ( !isset( $watchableTitles[$record->get( 'id' )] ) ) {
 				continue;
 			}
-			$isWatched = $this->watchlistManager->isWatched( $user, $title );
-			$record->set( 'watch', $isWatched );
+			$title = $watchableTitles[$record->get( 'id' )];
+			$record->set( 'watch', isset( $watchedSet[$title->getNamespace() . ':' . $title->getDBkey()] ) );
 		}
-		$result = new ResultSet( $data, $result->getTotal() );
+
+		unset( $record );
 	}
 }

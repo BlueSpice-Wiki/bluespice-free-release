@@ -23,7 +23,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"MWStake\\MediaWiki\\Component\\Wikitext\\": "src/"
+			"MWStake\\MediaWiki\\Component\\Wikitext\\": "src/",
+			"MWStake\\MediaWiki\\Component\\Wikitext\\Tests\\Unit\\": "tests/phpunit/unit/"
 		},
 		"files": [
 			"bootstrap.php"

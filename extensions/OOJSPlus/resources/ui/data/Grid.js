@@ -129,9 +129,7 @@
 			}
 		} );
 		this.store.load().done( ( data ) => {
-			if ( this.paginator instanceof OOJSPlus.ui.data.grid.Paginator ) {
-				this.paginator.init();
-			} else {
+			if ( !( this.paginator instanceof OOJSPlus.ui.data.grid.Paginator ) ) {
 				this.setItems( Object.values( data ) );
 			}
 			const filterAnnouncement = mw.message( 'oojsplus-data-grid-filter-update-results', this.store.getTotal() ).text();
@@ -337,7 +335,7 @@
 			if ( !this.columns.hasOwnProperty( field ) ) {
 				continue;
 			}
-			if ( this.alwaysVisibleColumns.indexOf( field ) !== -1 ) {
+			if ( this.alwaysVisibleColumns.includes( field ) ) {
 				continue;
 			}
 			if ( this.columns[ field ].type === 'action' || this.columns[ field ].type === 'selection' ) {
@@ -390,7 +388,7 @@
 			if ( !this.columns.hasOwnProperty( field ) ) {
 				continue;
 			}
-			this.doSetColumnVisibility( field, visible.indexOf( field ) !== -1 );
+			this.doSetColumnVisibility( field, visible.includes( field ) );
 		}
 		this.emit( 'stateChange', { columns: this.visibleColumns } );
 	};

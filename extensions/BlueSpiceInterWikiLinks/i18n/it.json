@@ -24,5 +24,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Fornisce le attività per l'estensione InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "visualizzare la pagina speciale \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "Collegamenti interwiki",
-	"right-interwikilinks-viewspecialpage": "Accede alla pagina speciale [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "Accede alla pagina speciale [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-url-validate-fail": "L'URL non può essere convalidato."
 }

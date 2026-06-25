@@ -3,7 +3,6 @@ ext.enhancedUI = ext.enhancedUI || {};
 ext.enhancedUI.panel = ext.enhancedUI.panel || {};
 
 require( './../widget/FilelistGrid.js' );
-require( './../widget/Paginator.js' );
 require( './../dialog/FileInfoDialog.js' );
 
 ext.enhancedUI.panel.FilelistPanel = function ( cfg ) {
@@ -29,31 +28,12 @@ ext.enhancedUI.panel.FilelistPanel = function ( cfg ) {
 	} );
 
 	this.setupWidgets();
-	this.store.connect( this, {
-		loaded: function ( data ) {
-			const visibleData = {};
-			for ( const item in data ) {
-				if ( item < this.page ) {
-					continue;
-				}
-				if ( item > this.page + this.pageSize ) {
-					continue;
-				}
-				visibleData[ item ] = data[ item ];
-			}
-
-			this.setItems( Object.values( visibleData ) );
-		}
-	} );
-	this.page = 0;
-	this.paginatorChange = false;
 };
 
 OO.inheritClass( ext.enhancedUI.panel.FilelistPanel, OO.ui.PanelLayout );
 
 ext.enhancedUI.panel.FilelistPanel.prototype.setupWidgets = function () {
 	this.setupTools();
-	this.setupTilesView();
 
 	mw.loader.using( this.pluginModules, () => {
 		this.grid = new ext.enhancedUI.widget.FilelistGrid( {
@@ -138,27 +118,6 @@ ext.enhancedUI.panel.FilelistPanel.prototype.setupTools = function () {
 	this.$element.append( this.toolsLayout.$element );
 };
 
-ext.enhancedUI.panel.FilelistPanel.prototype.setupTilesView = function () {
-	this.$tileContainer = $( '<div>' ).attr( 'id', 'tileview' );
-	this.$element.append( this.$tileContainer );
-	this.$tileContainer.hide();
-	this.paginator = new ext.enhancedUI.widget.Paginator( {
-		pageSize: this.pageSize
-	} );
-	this.paginator.connect( this, {
-		selectPage: function ( nextPage ) {
-			this.paginatorChange = true;
-			this.store.start = this.pageSize;
-			this.store.offset = nextPage * this.pageSize;
-			this.store.data = {};
-			this.page = nextPage;
-			this.store.load();
-		}
-	} );
-	this.$element.append( this.paginator.$element );
-	this.paginator.$element.hide();
-};
-
 ext.enhancedUI.panel.FilelistPanel.prototype.onGridAction = function ( action, row ) {
 	const data = {
 		action: action,
@@ -215,46 +174,9 @@ ext.enhancedUI.panel.FilelistPanel.prototype.onTypeSwitchChange = function ( sel
 	}
 	this.mode = selected.getData();
 	if ( this.mode === 'tiles' ) {
-		this.grid.$element.hide();
-		this.$tileContainer.show();
-		this.paginator.$element.show();
+		this.grid.setMode( 'tiles' );
 	} else {
-		this.$tileContainer.hide();
-		this.paginator.$element.hide();
-		this.grid.$element.show();
-	}
-	this.store.reload();
-};
-
-ext.enhancedUI.panel.FilelistPanel.prototype.setItems = function ( data ) {
-	if ( this.mode === 'tiles' ) {
-		if ( data.length <= 0 ) {
-			return;
-		}
-		this.grid.$element.hide();
-		const Vue = require( 'vue' ),
-			FileCard = require( './../vue/Card.vue' );
-		this.$tileContainer.empty();
-		for ( const item in data ) {
-			data[ item ].thumbnail = {
-				width: 200,
-				height: 180,
-				url: data[ item ].preview_url
-			};
-		}
-		const vm = Vue.createMwApp( FileCard, {
-			cards: data
-		} );
-		vm.mount( '#tileview' );
-
-		this.$tileContainer.show();
-		if ( !this.paginatorChange ) {
-			this.paginator.init( Math.ceil( this.store.getTotal() / this.pageSize ) );
-		}
-		this.paginatorChange = false;
-		this.paginator.$element.show();
-	} else {
-		this.grid.setItems( data );
+		this.grid.setMode( 'grid' );
 	}
 };
 

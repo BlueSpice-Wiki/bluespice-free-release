@@ -24,7 +24,7 @@
 	"bs-watchlist-ve-watchlist-attr-count-label": "Aantal",
 	"bs-watchlist-tag-watchlist-attr-count-help": "Het aantal vermeldingen op de volglijst moet worden weergegeven",
 	"bs-watchlist-ve-watchlist-attr-maxtitlelength-label": "Maximale titellengte",
-	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Aantal letters dat getoond moet worden van de titel. Kan een getal zijn tussen 5 en 500.",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "Aantal letters dat weergegeven moet worden van de titel. Kan een getal zijn tussen 5 en 500.",
 	"bs-watchlist-ve-watchlist-attr-order-label": "Volgorde",
 	"bs-watchlist-tag-watchlist-attr-order-help": "Sorteert de lijst op tijd of paginanaam",
 	"bs-watchlist-ve-watchlist-attr-pagename-label": "Paginanaam",

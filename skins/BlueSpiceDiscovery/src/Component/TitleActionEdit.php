@@ -204,7 +204,7 @@ class TitleActionEdit extends SimpleDropdownIconSplitButton {
 		}
 		return [
 			new SimpleDropdownItemlistFromArray( [
-				'id' => 'new-content-itms',
+				'id' => 'ta-edit-itms',
 				'classes' => [],
 				'links' => $this->getEditActions()
 			] )

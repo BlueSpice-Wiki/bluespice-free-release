@@ -1,6 +1,6 @@
 {
 	"name": "EnhancedStandardUIs",
-	"version": "2.0.8",
+	"version": "2.0.9",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
@@ -71,14 +71,6 @@
 		"EnhancedSpecialPages": "MediaWiki\\Extension\\EnhancedStandardUIs\\Special\\EnhancedSpecialPages"
 	},
 	"config": {
-		"EnhancedUIsVersionHistoryToolbarOffset": {
-			"value": 0,
-			"public": true
-		},
-		"EnhancedUIsAllPagesPaginatorOffset": {
-			"value": 0,
-			"public": true
-		},
 		"EnhancedUIsAllPagesOverride": {
 			"value": false
 		},
@@ -108,7 +100,7 @@
 		},
 		"addTitleWatchInfo": {
 			"class": "\\MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\AddTitleWatchInfo",
-			"services": [ "WatchlistManager", "TitleFactory" ]
+			"services": [ "WatchlistManager", "TitleFactory", "WatchedItemStore" ]
 		},
 		"addFilePath": {
 			"class": "\\MediaWiki\\Extension\\EnhancedStandardUIs\\HookHandler\\AddFileImagePath",
@@ -145,10 +137,6 @@
 		"ext.enhancedstandarduis.history": {
 			"packageFiles": [
 				"ext.enhancedUI.historyAction.js",
-				{
-					"name": "addToolbarOffset.json",
-					"callback": "MediaWiki\\Extension\\EnhancedStandardUIs\\AddVersionHistoryToolbarOffset::makeConfigJson"
-				},
 				"panel/HistoryPanel.js",
 				{
 					"name": "panel/viewmode.json",
@@ -181,14 +169,11 @@
 		"ext.enhancedstandarduis.special.allpages": {
 			"packageFiles": [
 				"ext.enhancedUI.special.allpages.js",
-				{
-					"name": "addOffset.json",
-					"callback": "MediaWiki\\Extension\\EnhancedStandardUIs\\AddAllPagesPaginatorOffset::makeConfigJson"
-				},
 				"panel/AllPagesPanel.js",
 				"widget/NamespacesMenu.js",
 				"widget/NamespaceOptionWidget.js",
-				"widget/Paginator.js",
+				"widget/IndexPaginator.js",
+				"widget/PagePaginator.js",
 				"data/PagesTree.js",
 				"data/PagesTreeItem.js",
 				"data/store/Store.js"
@@ -221,11 +206,16 @@
 				"enhanced-standard-uis-allpages-empty-namespaces-text",
 				"enhanced-standard-uis-allpages-empty-pages-text",
 				"enhanced-standard-uis-allpages-namespace-badge-aria-label",
-				"enhanced-standard-uis-allpages-page-tree-item-expander-label"
+				"enhanced-standard-uis-allpages-page-tree-item-expander-label",
+				"enhanced-standard-uis-allpages-panel-index-paginator-all-label",
+				"enhanced-standard-uis-allpages-panel-index-paginator-aria-label",
+				"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages",
+				"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate"
 			],
 			"dependencies": [
 				"oojs-ui",
-				"ext.oOJSPlus.data"
+				"ext.oOJSPlus.data",
+				"oojs-ui.styles.icons-content"
 			]
 		},
 		"ext.enhancedstandarduis.filelist.panel": {
@@ -233,7 +223,6 @@
 			"packageFiles": [
 				"panel/FilelistPanel.js",
 				"widget/FilelistGrid.js",
-				"widget/Paginator.js",
 				"vue/Card.vue",
 				{
 					"name": "vue/icons.json",

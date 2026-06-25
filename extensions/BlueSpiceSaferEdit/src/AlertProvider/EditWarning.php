@@ -6,6 +6,7 @@ use BlueSpice\AlertProviderBase;
 use BlueSpice\IAlertProvider;
 use BlueSpice\SaferEdit\EditWarningBuilder;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Title\Title;
 
 class EditWarning extends AlertProviderBase {
 
@@ -13,28 +14,32 @@ class EditWarning extends AlertProviderBase {
 	 * @inheritDoc
 	 */
 	public function getHTML() {
-		$currentTitle = $this->skin->getTitle();
-		if ( $currentTitle === null ) {
+		$title = $this->skin->getTitle();
+		if ( !$this->shouldShow( $title ) ) {
 			return '';
 		}
 
-		/**
-		 * Fix for collab banner also shown for unauthorized users
-		 */
-		$authority = RequestContext::getMain()->getAuthority();
-		$userCanEdit = $authority->probablyCan( 'edit', $currentTitle );
+		$editWarningBuilder = new EditWarningBuilder(
+			$this->loadBalancer,
+			$this->getConfig(),
+			$this->getUser(),
+			$title
+		);
 
-		if ( $userCanEdit ) {
-			$editWarningBuilder = new EditWarningBuilder(
-				$this->loadBalancer,
-				$this->getConfig(),
-				$this->getUser(),
-				$currentTitle
-			);
+		return $editWarningBuilder->getMessage();
+	}
 
-			return $editWarningBuilder->getMessage();
+	/**
+	 * @param Title|null $title
+	 * @return bool
+	 */
+	private function shouldShow( $title ) {
+		if ( !$title ) {
+			return false;
 		}
-		return '';
+
+		$authority = RequestContext::getMain()->getAuthority();
+		return $authority->probablyCan( 'edit', $title );
 	}
 
 	/**

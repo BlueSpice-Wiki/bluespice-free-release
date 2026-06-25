@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kokage si",
-			"Shirayuki"
+			"Shirayuki",
+			"Tensama0415"
 		]
 	},
 	"notifyme-desc": "通知",
@@ -100,6 +101,6 @@
 	"notifyme-notification-center-timestamp-ago": "$1前",
 	"notifyme-notification-center-no-new-notifications-label": "新しい通知はありません",
 	"notifyme-navbar-button-aria-label-unread-notifications": "$1件の未読の{{PLURAL:$1|通知}}があります",
-	"notifyme-notification-center-pagination-aria-next": "次へ",
-	"notifyme-notification-center-pagination-aria-previous": "前へ"
+	"notifyme-notification-center-pagination-aria-next": "次のページ",
+	"notifyme-notification-center-pagination-aria-previous": "前のページ"
 }

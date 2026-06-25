@@ -67,5 +67,7 @@
 	"standarddialogs-new-page-btn-label": "创建",
 	"standarddialogs-new-subpage-btn-label": "创建",
 	"standarddialogs-protect-btn-label": "保护",
-	"standarddialogs-purge-btn-label": "刷新"
+	"standarddialogs-purge-btn-label": "刷新",
+	"standarddialogs-create-subpage-btn-label": "创建子页面",
+	"standarddialogs-create-subpage-btn-title": "创建$1的子页面"
 }

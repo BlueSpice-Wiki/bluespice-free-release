@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"GuoPC",
+			"Peterxy",
 			"Peterxy12"
 		]
 	},
@@ -153,5 +154,6 @@
 	"pdfcreator-tag-no-export-start-ve-label": "PDF排除 - 开始",
 	"pdfcreator-tag-no-export-end-ve-label": "PDF排除 - 结束",
 	"pdfcreator-global-action-overview": "PDF模板",
-	"pdfcreator-global-action-overview-desc": "Wiki中所有PDF模板概览"
+	"pdfcreator-global-action-overview-desc": "Wiki中所有PDF模板概览",
+	"pdfcreator-export-action-text": "导出为PDF"
 }

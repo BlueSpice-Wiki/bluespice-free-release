@@ -277,7 +277,7 @@ class PrimaryDataProvider extends TitlePrimaryDataProvider implements IBucketPro
 	 * @return bool
 	 */
 	private function compareTitleMatchQuery( $title ) {
-		$title = mb_strtolower( $title );
+		$title = mb_strtolower( str_replace( '_', ' ', $title ) );
 		$query = mb_strtolower( $this->query );
 		return str_contains( $title, $query );
 	}
@@ -295,7 +295,7 @@ class PrimaryDataProvider extends TitlePrimaryDataProvider implements IBucketPro
 				if ( str_contains( $subpage, '/' ) ) {
 					continue;
 				}
-				if ( (int)$subpageRow->page_namespace !== $row->page_namespace ) {
+				if ( (int)$subpageRow->page_namespace !== (int)$row->page_namespace ) {
 					continue;
 				}
 				$pages[] = $subpageRow;

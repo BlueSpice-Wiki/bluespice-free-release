@@ -246,6 +246,8 @@ class EnhancedHistoryAction extends HistoryAction {
 		$fields = $info['fields'];
 		$conds = $info['conds'] ?? [];
 		$options = $info['options'] ?? [];
+		// Ensure correct order of entries
+		$options['ORDER BY'] = 'rev_id';
 		$join_conds = $info['join_conds'] ?? [];
 		[ $tables, $fields, $conds, $fname, $options, $join_conds ] =
 			[ $tables, $fields, $conds, $fname, $options, $join_conds ];

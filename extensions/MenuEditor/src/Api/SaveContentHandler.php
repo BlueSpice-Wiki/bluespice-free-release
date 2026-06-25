@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\MenuEditor\Api;
 
 use MediaWiki\Context\RequestContext;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Rest\HttpException;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -17,7 +18,9 @@ class SaveContentHandler extends MenuHandler {
 		$page = $this->makeTitle( $params['pagename'] );
 		$body = $this->getValidatedBody();
 
-		$parser = $this->getParserForRevision( $page );
+		$revision = MediaWikiServices::getInstance()->getRevisionLookup()->getRevisionByTitle( $page );
+		$parser = $this->getParserForRevision( $page, $revision );
+
 		$parser->addNodesFromData( $body['data'] );
 
 		$rev = $parser->saveRevision( RequestContext::getMain()->getUser() );

@@ -38,5 +38,7 @@
 	"bs-countthings-droplet-files-name": "Número de arquivos",
 	"bs-countthings-droplet-files-description": "Mostra o número de todos os arquivos carregados",
 	"bs-countthings-droplet-user-name": "Número de usuários",
-	"bs-countthings-droplet-user-description": "Mostra o número de todos os usuários"
+	"bs-countthings-droplet-user-description": "Mostra o número de todos os usuários",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Contar duplicatas",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Especifique o que deve ser contado: tudo, caracteres, palavras, caracteres e palavras ou páginas"
 }

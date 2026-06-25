@@ -11,6 +11,17 @@
 
 .enhanced-ui-allpages-panel-content {
 	width: 70%;
+	display: flex;
+}
+
+.enhanced-ui-allpages-panel-content .oojsplus-data-paginator {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.enhanced-ui-allpages-panel-content .oojsplus-data-paginator .shown-pages-label {
+	color: var( --color-subtle, #54595d );
 }
 
 .enhancedUI-allpages-paginator {
@@ -27,7 +38,7 @@
 }
 
 .enhanced-namespace-option-badge {
-	background-color: #747474;
+	background-color: var( --color-subtle, #54595d );
 	color: #fff;
 	padding: 5px 10px;
 	border-radius: 5px;
@@ -35,13 +46,6 @@
 	right: 5px;
 	top: 50%;
 	transform: translateY( -50% );
-}
-
-.enhanced-ui-allpages-panel-paginator {
-	position: absolute;
-	right: 0;
-	z-index: 2;
-	padding: 5px 0;
 }
 
 .enhanced-ui-allpages-panel-paginator .oo-ui-buttonWidget {
@@ -88,15 +92,57 @@
 .enhanced-ui-allpages-columns {
 	columns: 2;
 	column-gap: 20px;
+	margin-top: 50px;
+}
+
+.enhanced-ui-allpages-columns section:first-of-type h2 {
+	padding-top: 0;
+}
+
+.enhanced-ui-allpages-panel-tree-cnt {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	border-left: 1px solid #a2a9b1;
 }
 
 .enhanced-ui-allpages-panel-tree {
-	margin-top: 75px;
+	flex-grow: 1;
+}
+
+.enhanced-ui-index-paginator {
+	width: 40px;
+	min-height: inherit;
+}
+
+.enhanced-ui-index-paginator .oo-ui-buttonSelectWidget {
+	min-width: 40px;
+	width: 40px;
+}
+
+.enhanced-ui-allpages-panel-index-paginator.hidden {
+	display: none;
+}
+
+.enhanced-ui-index-paginator .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget {
+	width: 100%;
+	margin-left: 0 !important;
+}
+
+.enhanced-ui-index-paginator .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget.oo-ui-optionWidget-selected {
+	color: #36c;
+	background-color: #eaf3ff;
+}
+
+.enhanced-ui-index-paginator .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget a {
+	width: 100%;
+	text-align: center;
+	font-size: 1.1em;
 }
 
 .enhanced-ui-allpages-panel-tree h2 {
 	font-size: 21px;
-	color: #747474;
+	color: var( --color-subtle, #54595d );
 }
 
 .enhanced-ui-allpages-panel-tree h2:not( :first-child ) {
@@ -181,10 +227,6 @@
 	margin-left: 30px;
 	columns: 2;
 	column-gap: 20px;
-}
-
-#enhanced-allpages-skeleton-tree {
-	margin-top: 75px;
 }
 
 #enhanced-allpages-skeleton-tree.hidden {

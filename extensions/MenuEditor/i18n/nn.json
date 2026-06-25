@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ranveig"
+		]
+	},
+	"menueditor-ui-dialog-title": "Endra element",
+	"menueditor-toolbar-add-label": "Legg til element",
+	"menueditor-ui-add-sub-element-label": "Legg til underelement"
+}

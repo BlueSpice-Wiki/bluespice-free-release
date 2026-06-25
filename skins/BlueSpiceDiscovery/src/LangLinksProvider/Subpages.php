@@ -57,12 +57,16 @@ class Subpages implements ILangLinksProvider {
 	 */
 	private function getAvailableLanguages( Title $titleObject ) {
 		$available = [];
-		$currentLangCode = $this->toLangCode( $titleObject->getSubpageText() );
-		// Check if already on the language-subpage, if yes, get the parent to evaluate available langs
-		if ( $currentLangCode ) {
-			$parentTitle = $titleObject->getBaseTitle();
-			$available[$parentTitle->getPageLanguage()->getCode()] = $parentTitle;
-			$titleObject = $parentTitle;
+
+		$currentLangCode = null;
+		if ( $titleObject->isSubpage() ) {
+			$currentLangCode = $this->toLangCode( $titleObject->getSubpageText() );
+			// Check if already on the language-subpage, if yes, get the parent to evaluate available langs
+			if ( $currentLangCode ) {
+				$parentTitle = $titleObject->getBaseTitle();
+				$available[$parentTitle->getPageLanguage()->getCode()] = $parentTitle;
+				$titleObject = $parentTitle;
+			}
 		}
 
 		if ( $titleObject->hasSubpages() ) {

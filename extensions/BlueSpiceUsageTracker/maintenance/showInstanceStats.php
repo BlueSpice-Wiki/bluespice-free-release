@@ -93,7 +93,7 @@ class ShowInstanceStats extends Maintenance {
 		}
 		$instanceStats = [
 			"instance" => sha1( WikiMap::getCurrentWikiId() ),
-			"timestamp" => date( DATE_ISO8601 ),
+			"timestamp" => date( DateTime::ATOM ),
 			"bluespice-version" => $this->getVersion(),
 			"bluespice-edition" => $this->getEdition(),
 			"mediawiki-version" => MW_VERSION,

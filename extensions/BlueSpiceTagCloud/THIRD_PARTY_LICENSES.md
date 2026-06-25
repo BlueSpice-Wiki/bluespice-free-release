@@ -7,7 +7,7 @@ Software
 
 | Software | Author | Version | License |
 |:--------|:-------|:--------|:-------|
-| [TagCanvas](http://www.goat1000.com/tagcanvas.php) | Graham Breach | 2.9 | [LGPL 3](https://www.gnu.org/licenses/lgpl-3.0.txt) |
+| [TagCanvas](http://www.goat1000.com/tagcanvas.php) | Graham Breach | 2.9.0 | [LGPL-3.0-or-later](https://www.gnu.org/licenses/lgpl-3.0.txt) |
 
 License texts
 =============

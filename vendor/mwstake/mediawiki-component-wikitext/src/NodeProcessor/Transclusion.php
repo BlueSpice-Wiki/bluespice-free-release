@@ -12,7 +12,7 @@ class Transclusion implements IParsoidNodeProcessor {
 	 * @inheritDoc
 	 */
 	public function matchTag(): array {
-		return [ 'span', 'p', 'div' ];
+		return [];
 	}
 
 	/**
@@ -26,17 +26,16 @@ class Transclusion implements IParsoidNodeProcessor {
 	 * @inheritDoc
 	 */
 	public function matchAttributes(): array {
-		return [
-			'typeof' => 'mw:Transclusion',
-			'data-mw' => '*'
-		];
+		return [];
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function matchCallback( \DOMNode $domNode, $attributes ): ?bool {
-		return null;
+		return isset( $attributes['typeof'] )
+			&& isset( $attributes['data-mw'] )
+			&& str_contains( $attributes['typeof'], 'mw:Transclusion' );
 	}
 
 	/**

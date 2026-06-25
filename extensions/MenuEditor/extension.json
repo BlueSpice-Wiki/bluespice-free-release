@@ -1,6 +1,6 @@
 {
 	"name": "MenuEditor",
-	"version": "3.1.10",
+	"version": "3.1.11",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
@@ -326,6 +326,12 @@
 			"path": "/menueditor/{pagename}",
 			"class": "MediaWiki\\Extension\\MenuEditor\\Api\\SaveContentHandler",
 			"services": [ "TitleFactory", "MenuEditorMenuFactory", "MWStakeWikitextParserFactory" ]
+		},
+		{
+			"method": "POST",
+			"path": "/menueditor/append/{pagename}",
+			"class": "MediaWiki\\Extension\\MenuEditor\\Api\\AppendNodeHandler",
+			"services": [ "TitleFactory", "MenuEditorMenuFactory", "MWStakeWikitextParserFactory", "RevisionLookup" ]
 		}
 	],
 	"load_composer_autoloader": true,

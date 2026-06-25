@@ -27,5 +27,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Proporciona as tarefas para a extensión InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "ver a páxina especial «{{int:bs-interwikilinks-label}}»",
 	"interwikilinks": "Ligazóns interwiki",
-	"right-interwikilinks-viewspecialpage": "Acceso á páxina especial [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "Acceso á páxina especial [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-url-validate-fail": "No se puido validar o URL."
 }

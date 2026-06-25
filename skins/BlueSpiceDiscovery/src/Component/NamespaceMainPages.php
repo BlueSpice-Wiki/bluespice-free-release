@@ -86,7 +86,7 @@ class NamespaceMainPages extends SimpleCard {
 		$mainpages = [];
 		foreach ( $namespaces as $namespace ) {
 			$title = Title::makeTitleSafe( $namespace, $mainPageText );
-			if ( !$title->exists() ) {
+			if ( !$title || !$title->exists() ) {
 				continue;
 			}
 
@@ -98,7 +98,8 @@ class NamespaceMainPages extends SimpleCard {
 				'href' => $title->getLinkURL()
 			];
 
-			if ( $context->getTitle()->equals( $title ) ) {
+			$contextTitle = $context->getTitle();
+			if ( $contextTitle && $contextTitle->equals( $title ) ) {
 				$mainpages[$nsText]['class'] = 'active';
 			}
 		}

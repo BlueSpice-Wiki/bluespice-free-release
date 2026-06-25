@@ -1,4 +1,4 @@
-<span style="margin-bottom: 10px">{{int:notifyme-mail-greeting}} {{target_user}},</span>
+<span style="margin-bottom: 10px">{{int:notifyme-mail-greeting}} {{#target_user}}{{display_name}}{{/target_user}},</span>
 
 <p>{{digestHeader}}</p>
 
@@ -34,6 +34,6 @@
     {{/notifications}}
 </ul>
 
-<div class="source" style="margin-top: 60px;padding: 20px;background-color: @notifications-mail-color-background;font-size: 0.8rem;">
+<div class="source" style="margin-top: 60px;padding: 20px 0;background-color: @notifications-mail-color-background;font-size: 0.8rem;">
     {{int:notifyme-mail-manage-notifications}}: <a href="{{subscription_center_link}}">{{int:notifyme-mail-manage-notifications-link}}</a>
 </div>

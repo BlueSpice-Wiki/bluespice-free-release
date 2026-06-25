@@ -8,9 +8,7 @@
 		]
 	},
 	"apihelp-bs-filebackend-store-summary": "{{doc-apihelp-summary|bs-filebackend-store}}",
-	"apihelp-bs-user-store-summary": "{{doc-apihelp-summary|bs-user-store}}",
 	"apihelp-bs-category-store-summary": "{{doc-apihelp-summary|bs-category-store}}",
-	"apihelp-bs-adminuser-store-summary": "{{doc-apihelp-summary|bs-adminuser-store}}",
 	"apihelp-bs-group-store-summary": "{{doc-apihelp-summary|bs-group-store}}",
 	"apihelp-bs-interwiki-store-summary": "{{doc-apihelp-summary|bs-interwiki-store}}",
 	"apihelp-bs-titlequery-store-summary": "{{doc-apihelp-summary|bs-titlequery-store}}",
@@ -67,5 +65,7 @@
 	"apihelp-bs-templatelinks-store-summary": "{{doc-apihelp-summary|bs-templatelinks-store}}",
 	"apihelp-bs-templatelinks-store-param-page-id": "{{doc-apihelp-param|bs-templatelinks-store|page-id}}",
 	"apihelp-bs-linker-summary": "{{doc-apihelp-summary|bs-linker}}",
-	"apihelp-bs-linker-param-linkdescs": "{{doc-apihelp-param|bs-linker|linkdescs}}"
+	"apihelp-bs-linker-param-linkdescs": "{{doc-apihelp-param|bs-linker|linkdescs}}",
+	"apihelp-bs-user-store-summary": "{{doc-apihelp-summary|bs-user-store}}",
+	"apihelp-bs-adminuser-store-summary": "{{doc-apihelp-summary|bs-adminuser-store}}"
 }

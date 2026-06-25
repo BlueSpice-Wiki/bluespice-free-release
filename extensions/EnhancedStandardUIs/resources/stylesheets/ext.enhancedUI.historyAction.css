@@ -24,27 +24,27 @@
 	position: relative;
 }
 
-#enhanced-history-cnt .static-controls:nth-child( 1 ) {
+#enhanced-history-cnt .static-controls .reload-button {
 	display: none;
 }
 
 /* strikethrough & itlaic */
 .enhanced-history-revision-strikethrough .url-cell[ data-column='revision' ] .oojsplus-ui-widget-linkwidget-label,
 .enhanced-history-author-strikethrough .user-cell[ data-column='author' ] .user-display,
-.enhanced-history-summary-strikethrough .text-cell[ data-column='summary' ] .oo-ui-labelElement-label {
+.enhanced-history-summary-strikethrough .text-cell[ data-column='summary' ] {
 	text-decoration: line-through;
 	font-style: italic;
 }
 
 /* greyed-out text */
 .enhanced-history-revision-grey .url-cell[ data-column='revision' ] .oojsplus-ui-widget-linkwidget-label,
-.enhanced-history-author-grey .user-cell[ data-column='author' ] .user-display,
-.enhanced-history-summary-grey .text-cell[ data-column='summary' ] .oo-ui-labelElement-label {
+.enhanced-history-author-grey .user-cell[ data-column='author' ],
+.enhanced-history-summary-grey .text-cell[ data-column='summary' ] {
 	color: #a5a5a5;
 }
 
 /* prevent interaction on greyed-out revision links */
-.enhanced-history-revision-grey .url-cell[ data-column='revision' ] .oojsplus-ui-widget-linkwidget-label {
+.enhanced-history-revision-grey .url-cell[ data-column='revision' ] {
 	cursor: default;
 	pointer-events: none;
 }

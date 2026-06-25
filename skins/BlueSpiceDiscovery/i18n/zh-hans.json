@@ -9,6 +9,7 @@
 			"Lakejason0",
 			"LittlePaw365",
 			"MangoFanFanw",
+			"Peterxy",
 			"Peterxy12",
 			"SolidBlock",
 			"StarrySky",
@@ -212,5 +213,13 @@
 	"bs-discovery-footer-places-alt-text-bluespice": "由BlueSpice提供驱动",
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "由Semantic MediaWiki提供驱动",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "编辑",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "清空"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "清空",
+	"bs-discovery-breadcrumb-nav-root-node-title": "显示命名空间$1下的所有页面",
+	"bs-discovery-personalurl-blog-text": "博客",
+	"bs-discovery-menu-provider-namespace-tree-label": "所有页面",
+	"bs-discovery-menu-provider-namespace-tree-desc": "以树形式展示的当前命名空间下的所有页面",
+	"bs-discovery-namespace-tree-pnl-header-text": "页面",
+	"bs-discovery-namespace-tree-search-btn-label": "显示搜索",
+	"bs-discovery-namespace-tree-create-btn-label": "创建新页面",
+	"bs-discovery-namespace-tree-search-label": "搜索页面"
 }
