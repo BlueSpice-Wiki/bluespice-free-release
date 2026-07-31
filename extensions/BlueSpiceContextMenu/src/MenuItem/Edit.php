@@ -8,7 +8,6 @@ use MediaWiki\Message\Message;
 class Edit extends Base {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIconClass() {
@@ -20,7 +19,6 @@ class Edit extends Base {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -28,7 +26,6 @@ class Edit extends Base {
 	}
 
 	/**
-	 *
 	 * @return string String of the URL.
 	 */
 	public function getUrl() {
@@ -36,7 +33,6 @@ class Edit extends Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -44,7 +40,6 @@ class Edit extends Base {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getPosition() {
@@ -59,7 +54,6 @@ class Edit extends Base {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

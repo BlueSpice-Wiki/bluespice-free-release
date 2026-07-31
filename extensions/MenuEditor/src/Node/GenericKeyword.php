@@ -5,7 +5,6 @@ namespace MediaWiki\Extension\MenuEditor\Node;
 class GenericKeyword extends Keyword {
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $type = '';

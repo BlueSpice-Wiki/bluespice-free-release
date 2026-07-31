@@ -137,6 +137,8 @@ class WikiPage extends Base {
 			'page_id' => $this->title->getArticleID(),
 			'suggestions' => $this->title->getPrefixedText(),
 			'suggestions_extra' => $this->getDisplayTitle(),
+			'creator' => $wikiPage->getCreator()?->getName() ?? "",
+			'author' => $this->revision->getUser()?->getName() ?? "",
 		] );
 
 		return $aDC;
@@ -164,7 +166,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getCategories() {
@@ -180,7 +181,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getTextContent() {
@@ -193,7 +193,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getHTMLContent() {
@@ -205,7 +204,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getSections() {
@@ -218,7 +216,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @param string $sText
 	 * @return string
 	 */
@@ -255,7 +252,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function parseWikipageForTags() {
@@ -276,7 +272,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getRedirectsTo() {
@@ -293,7 +288,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	protected function getRedirects() {
@@ -307,7 +301,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @param Title|null $title
 	 * @return string
 	 */
@@ -332,7 +325,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getUsedFiles() {
@@ -344,6 +336,9 @@ class WikiPage extends Base {
 	 */
 	protected function getRevision() {
 		$revision = $this->revisionLookup->getRevisionByTitle( $this->title );
+		if ( !$revision ) {
+			return null;
+		}
 		$this->hookContainer->run(
 			'BSExtendedSearchWikipageFetchRevision',
 			[ $this->title, &$revision ]
@@ -360,7 +355,6 @@ class WikiPage extends Base {
 	}
 
 	/**
-	 *
 	 * @param Title|null $title
 	 * @return string
 	 */

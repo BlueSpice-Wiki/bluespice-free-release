@@ -9,13 +9,11 @@ use SMW\DIWikiPage;
 class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 
 	/**
-	 *
 	 * @var AssignmentFactory
 	 */
 	private $assignmentFactory = null;
 
 	/**
-	 *
 	 * @param AssignmentFactory|null $assignmentFactory
 	 */
 	public function __construct( $assignmentFactory = null ) {
@@ -23,7 +21,6 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @param AssignmentFactory|null $factory
 	 * @return \BlueSpice\SMWConnector\IPropertyValueProvider[]
 	 */
@@ -44,7 +41,6 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getAliasMessageKey() {
@@ -52,7 +48,6 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getDescriptionMessageKey() {
@@ -60,7 +55,6 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -68,7 +62,6 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabel() {
@@ -76,7 +69,6 @@ class PageAssignmentsPropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @param \SESP\AppFactory $appFactory
 	 * @param \SMW\DIProperty $property
 	 * @param \SMW\SemanticData $semanticData

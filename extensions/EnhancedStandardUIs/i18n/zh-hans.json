@@ -98,5 +98,11 @@
 	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "命名空间下的所有页面",
 	"enhanced-standard-uis-allpages-panel-index-paginator-aria-label": "按字母顺序的页面索引",
 	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "第$1 - $2页，共$3页",
-	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "第$1 - $2页，共约$3页"
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "第$1 - $2页，共约$3页",
+	"enhanced-standard-uis-allpages-namespace-watch-label": "监视命名空间$1",
+	"enhanced-standard-uis-allpages-namespace-unwatch-label": "取消监视命名空间$1",
+	"enhanced-standard-uis-allpages-namespace-watched": "已将命名空间“$1”添加到您的监视列表",
+	"enhanced-standard-uis-allpages-namespace-unwatched": "已从您的监视列表中移除命名空间“$1”",
+	"enhanced-standard-uis-allpages-namespace-watch-error": "无法更新此命名空间的监视状态。",
+	"enhanced-standard-uis-history-grid-header-major-label": "是否为重大编辑"
 }

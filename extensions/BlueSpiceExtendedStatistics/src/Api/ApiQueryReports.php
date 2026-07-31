@@ -155,6 +155,9 @@ class ApiQueryReports extends ApiQueryBase {
 		];
 	}
 
+	/**
+	 * @return bool
+	 */
 	private function shouldAggregate() {
 		return (bool)$this->getParameter( 'aggregate' );
 	}

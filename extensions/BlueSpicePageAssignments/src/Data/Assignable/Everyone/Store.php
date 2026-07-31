@@ -5,7 +5,6 @@ namespace BlueSpice\PageAssignments\Data\Assignable\Everyone;
 class Store extends \BlueSpice\PageAssignments\Data\Assignable\Store {
 
 	/**
-	 *
 	 * @return Reader
 	 */
 	public function getReader() {

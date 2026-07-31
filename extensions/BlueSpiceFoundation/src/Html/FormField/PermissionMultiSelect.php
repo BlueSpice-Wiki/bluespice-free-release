@@ -6,10 +6,10 @@ use MediaWiki\MediaWikiServices;
 
 class PermissionMultiSelect extends \HTMLMultiSelectEx {
 
+	/** @var array */
 	private $params;
 
 	/**
-	 *
 	 * @param array $params
 	 */
 	public function __construct( $params ) {
@@ -34,7 +34,6 @@ class PermissionMultiSelect extends \HTMLMultiSelectEx {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 */
 	protected function makeOptions( $type ) {

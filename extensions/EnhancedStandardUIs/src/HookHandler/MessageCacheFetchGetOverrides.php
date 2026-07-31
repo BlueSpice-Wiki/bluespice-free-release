@@ -7,7 +7,6 @@ use MediaWiki\Cache\Hook\MessageCacheFetchOverridesHook;
 class MessageCacheFetchGetOverrides implements MessageCacheFetchOverridesHook {
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function onMessageCacheFetchOverrides( array &$keys ): void {

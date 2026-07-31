@@ -1,6 +1,6 @@
 {
 	"name": "PDFCreator",
-	"version": "1.2.5",
+	"version": "1.2.6",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"Daniel Vogel",
@@ -162,11 +162,11 @@
 			"ExportModeConfig": {
 				"page": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\ExportMode\\Page",
-					"services": [ "MainConfig", "TitleFactory" ]
+					"services": [ "MainConfig", "TitleFactory", "PermissionManager" ]
 				},
 				"pageWithSubpages": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\ExportMode\\PageWithSubpages",
-					"services": [ "MainConfig", "TitleFactory" ]
+					"services": [ "MainConfig", "TitleFactory", "PermissionManager" ]
 				},
 				"pageWithLinkedPages": {
 					"class": "MediaWiki\\Extension\\PDFCreator\\ExportMode\\PageWithLinkedPages",

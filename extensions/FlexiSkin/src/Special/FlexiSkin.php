@@ -22,7 +22,6 @@ class FlexiSkin extends SpecialPage {
 	}
 
 	/**
-	 *
 	 * @param string $par
 	 * @return void
 	 */
@@ -63,7 +62,6 @@ class FlexiSkin extends SpecialPage {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	protected function buildSkeleton() {

@@ -9,6 +9,10 @@ $extDir = dirname( dirname( __DIR__ ) );
 require_once "$extDir/BlueSpiceFoundation/maintenance/BSMaintenance.php";
 
 class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
+
+	/**
+	 * @inheritDoc
+	 */
 	protected function doDBUpdates() {
 		$aRespEditors = $this->getResponsibleEditors();
 		$this->output( "BSPageAssignments: Migrate Responsible Editors..." );
@@ -35,7 +39,6 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getUpdateKey() {
@@ -43,7 +46,6 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 	}
 
 	/**
-	 *
 	 * @param array $aReturn
 	 * @return array
 	 */
@@ -85,7 +87,6 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 	}
 
 	/**
-	 *
 	 * @param array $aRespEditor
 	 * @return true
 	 */
@@ -100,7 +101,6 @@ class BSPageAssignmentsMigrateRespEditors extends LoggedUpdateMaintenance {
 	}
 
 	/**
-	 *
 	 * @param array $conds
 	 * @return bool
 	 */

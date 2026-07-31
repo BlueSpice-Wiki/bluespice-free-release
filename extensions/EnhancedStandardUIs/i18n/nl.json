@@ -99,5 +99,11 @@
 	"enhanced-standard-uis-allpages-panel-more-button-label": "Meer pagina's laden",
 	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "Het dialoogvenster openen voor bestandsvoorbeeld voor $1",
 	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 - $2 van $3",
-	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 van ~ $3"
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 van ~ $3",
+	"enhanced-standard-uis-allpages-namespace-watch-label": "Naamruimte $1 volgen",
+	"enhanced-standard-uis-allpages-namespace-unwatch-label": "Naamruimte $1 niet langer volgen",
+	"enhanced-standard-uis-allpages-namespace-watched": "Naamruimte \"$1\" is toegevoegd aan uw volglijst",
+	"enhanced-standard-uis-allpages-namespace-unwatched": "Naamruimte \"$1\" is verwijderd van uw volglijst",
+	"enhanced-standard-uis-allpages-namespace-watch-error": "De volgstatus voor deze naamruimte kon niet worden bijgewerkt.",
+	"enhanced-standard-uis-history-grid-header-major-label": "Is een grote bewerking"
 }

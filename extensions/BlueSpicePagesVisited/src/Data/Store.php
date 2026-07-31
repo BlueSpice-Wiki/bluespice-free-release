@@ -8,7 +8,6 @@ use MWStake\MediaWiki\Component\DataStore\NoWriterException;
 class Store extends \BlueSpice\WhoIsOnline\Data\Store {
 
 	/**
-	 *
 	 * @return Reader
 	 */
 	public function getReader() {
@@ -18,7 +17,6 @@ class Store extends \BlueSpice\WhoIsOnline\Data\Store {
 	}
 
 	/**
-	 *
 	 * @throws NoWriterException
 	 */
 	public function getWriter() {

@@ -30,13 +30,16 @@ use MediaWiki\Registration\ExtensionRegistry;
 /**
  * @package BlueSpiceFoundation
  */
-class BSTemplateHelper {
+class BSTemplateHelper { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
+
+	/** @var string */
 	protected static $sTemplatePath = 'resources/templates';
+	/** @var string */
 	protected static $sSeparator = '.';
+	/** @var string */
 	protected static $sFileExt = '.mustache';
 
 	/**
-	 *
 	 * @param string $sExtName
 	 * @param string $sFullPath
 	 * @return string

@@ -6,6 +6,9 @@ use MediaWiki\User\User;
 
 class PreventUserImageOverwrite extends \BlueSpice\Hook\UploadVerifyFile {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function skipProcessing() {
 		$file = $this->upload->getLocalFile();
 		if ( $file === null ) {
@@ -32,6 +35,9 @@ class PreventUserImageOverwrite extends \BlueSpice\Hook\UploadVerifyFile {
 		return false;
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->error = 'bs-imageofotheruser';
 		return false;

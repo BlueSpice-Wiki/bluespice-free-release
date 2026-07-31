@@ -21,5 +21,7 @@
 	"bs-avatars-upload-button": "Subir",
 	"bs-avatars-generate-button": "Xerar",
 	"bs-avatars-generic-cancel": "Cancelar",
-	"bs-avatars-generate-description": "Xerar unha nova imaxe de perfil automática. Isto substituirá permanentemente calquera imaxe de perfil subida (se está configurada)"
+	"bs-avatars-generate-description": "Xerar unha nova imaxe de perfil automática. Isto substituirá permanentemente calquera imaxe de perfil subida (se está configurada)",
+	"bs-avatars-upload-unsupported-type": "Non se admite este tipo de ficheiro.",
+	"bs-avatars-upload-tempfile-missing": "Non se recuperou o ficheiro temporal"
 }

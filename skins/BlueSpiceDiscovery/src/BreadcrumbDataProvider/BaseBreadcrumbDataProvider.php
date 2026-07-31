@@ -13,37 +13,31 @@ use MessageLocalizer;
 class BaseBreadcrumbDataProvider implements IBreadcrumbDataProvider {
 
 	/**
-	 *
 	 * @var Title
 	 */
 	private $relevantTitle = null;
 
 	/**
-	 *
 	 * @var TitleFactory
 	 */
 	protected $titleFactory;
 
 	/**
-	 *
 	 * @var bool
 	 */
 	protected $talkName = false;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $webRequestValues;
 
 	/**
-	 *
 	 * @var MessageLocalizer
 	 */
 	protected $messageLocalizer;
 
 	/**
-	 *
 	 * @var NamespaceInfo
 	 */
 	protected $namespaceInfo = null;
@@ -186,7 +180,6 @@ class BaseBreadcrumbDataProvider implements IBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool
 	 */
@@ -195,7 +188,6 @@ class BaseBreadcrumbDataProvider implements IBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function isSelfLink( $node ): bool {

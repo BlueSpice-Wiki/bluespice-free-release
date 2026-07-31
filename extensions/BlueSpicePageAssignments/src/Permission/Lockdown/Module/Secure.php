@@ -13,13 +13,11 @@ use MediaWiki\User\User;
 class Secure extends \BlueSpice\Permission\Lockdown\Module {
 
 	/**
-	 *
 	 * @var AssignmentFactory
 	 */
 	protected $assignmentFactory = null;
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param IContextSource $context
 	 * @param MediaWikiServices $services
@@ -32,7 +30,6 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 	}
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param IContextSource $context
 	 * @param MediaWikiServices $services
@@ -50,7 +47,6 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param User $user
 	 * @return bool
@@ -82,7 +78,6 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param User $user
 	 * @param string $action
@@ -108,7 +103,6 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param User $user
 	 * @param string $action
@@ -130,7 +124,6 @@ class Secure extends \BlueSpice\Permission\Lockdown\Module {
 	}
 
 	/**
-	 *
 	 * @return AssignmentFactory
 	 */
 	protected function getPageAssignmentsFactory() {

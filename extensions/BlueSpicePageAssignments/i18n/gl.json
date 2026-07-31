@@ -89,5 +89,6 @@
 	"bs-pageassignments-header-action-delete": "Eliminar",
 	"bs-pageassignments-title-edit": "Editar asignacións",
 	"bs-pageassignments-title-delete": "Eliminar asignacións",
-	"bs-pageassignments-show-unassigned-pages": "Mostrar as páxinas non asignadas"
+	"bs-pageassignments-show-unassigned-pages": "Mostrar as páxinas non asignadas",
+	"bs-pageassignments-notifications-watchlist-description": "Tes asignada esta páxina"
 }

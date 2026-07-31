@@ -8,19 +8,16 @@ use MediaWiki\Title\Title;
 abstract class BaseFileAction extends Base {
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @var \File
 	 */
 	protected $file = null;
 
 	/**
-	 *
 	 * @param Title $title
 	 */
 	public function __construct( $title ) {

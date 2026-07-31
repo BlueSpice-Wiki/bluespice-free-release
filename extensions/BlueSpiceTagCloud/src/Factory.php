@@ -14,25 +14,21 @@ use MediaWiki\Message\Message;
 class Factory {
 
 	/**
-	 *
 	 * @var ExtensionAttributeBasedRegistry
 	 */
 	protected $storeRegistry = null;
 
 	/**
-	 *
 	 * @var ExtensionAttributeBasedRegistry
 	 */
 	protected $rendererRegistry = null;
 
 	/**
-	 *
 	 * @var RendererFactory
 	 */
 	protected $rendererFactory = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
@@ -51,7 +47,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @param Context $context
 	 * @return IStore
@@ -72,7 +67,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getDefaultStoreType() {
@@ -80,7 +74,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @param array $data
 	 * @return Renderer
@@ -99,7 +92,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getDefaultRendererType() {

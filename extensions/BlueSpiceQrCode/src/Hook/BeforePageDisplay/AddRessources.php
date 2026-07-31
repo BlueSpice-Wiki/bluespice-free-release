@@ -4,6 +4,9 @@ namespace BlueSpice\QrCode\Hook\BeforePageDisplay;
 
 class AddRessources extends \BlueSpice\Hook\BeforePageDisplay {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->out->addModules( 'ext.qrcode.dialog' );
 

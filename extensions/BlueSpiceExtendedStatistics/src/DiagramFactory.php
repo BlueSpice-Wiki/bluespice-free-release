@@ -14,19 +14,16 @@ class DiagramFactory {
 	protected $registry = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var BsDiagram[]
 	 */
 	protected $diagrams = [];
 
 	/**
-	 *
 	 * @param ExtensionAttributeBasedRegistry $registry
 	 * @param Config $config
 	 */
@@ -37,7 +34,6 @@ class DiagramFactory {
 	}
 
 	/**
-	 *
 	 * @return BsDiagram[]
 	 */
 	public function getDiagrams() {
@@ -53,7 +49,6 @@ class DiagramFactory {
 	}
 
 	/**
-	 *
 	 * @param string $name
 	 * @return BsDiagram
 	 */

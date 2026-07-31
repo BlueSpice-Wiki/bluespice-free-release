@@ -7,25 +7,21 @@ use MediaWiki\Context\IContextSource;
 abstract class Assignable implements IAssignable {
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var stirng
 	 */
 	protected $type = 'base';
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 * @param string $type
@@ -37,7 +33,6 @@ abstract class Assignable implements IAssignable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getType() {
@@ -45,7 +40,6 @@ abstract class Assignable implements IAssignable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getRendererKey() {

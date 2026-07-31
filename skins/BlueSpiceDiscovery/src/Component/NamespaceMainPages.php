@@ -62,7 +62,6 @@ class NamespaceMainPages extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 *
 	 * @return bool

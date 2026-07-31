@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mschlindwein"
+		]
+	},
+	"vuejsplus-desc": "Sammlung von VueJs-Komponenten",
+	"vuejsplus-data-tree-expand-btn-expanded-aria-label": "Einklappen",
+	"vuejsplus-data-tree-expand-btn-collapsed-aria-label": "Ausklappen",
+	"vuejsplus-data-grid-option-sort-string-asc": "Aufsteigend sortieren",
+	"vuejsplus-data-grid-option-sort-string-desc": "Absteigend sortieren",
+	"vuejsplus-data-grid-option-filter-string": "Finde",
+	"vuejsplus-data-grid-aria-live-filtered-rows": "{{PLURAL:$1| Eine Zeile| $1 Zeilen}} gefunden",
+	"vuejsplus-data-grid-option-button-aria-label": "Optionen in Spalte $1",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-checked": "Ausgewählt",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-unchecked": "Nicht ausgewählt",
+	"vuejsplus-data-grid-boolean-cell-image-alt-text-neutral": "Neutral",
+	"vuejsplus-data-grid-option-filter-date-from-label": "Ab Datum",
+	"vuejsplus-data-grid-option-filter-date-to-label": "Bis Datum"
+}

@@ -44,7 +44,6 @@ class SubpageTree extends SimpleTreeContainer {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

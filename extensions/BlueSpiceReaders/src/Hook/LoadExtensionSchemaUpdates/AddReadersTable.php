@@ -21,7 +21,6 @@ class AddReadersTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getExtensionPath() {

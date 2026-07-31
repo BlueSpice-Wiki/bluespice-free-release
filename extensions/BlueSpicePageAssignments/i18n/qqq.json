@@ -97,5 +97,6 @@
 	"bs-pageassignments-header-action-delete": "Header text for the column that allows deleting assignments\n{{Identical|Delete}}",
 	"bs-pageassignments-title-edit": "Title for “Edit assignments” icon. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
 	"bs-pageassignments-title-delete": "Title for “Delete assignments” icon. For the context in which to translate “assignment”, see: https://en.wiki.bluespice.com/wiki/Manual:Extension/BlueSpicePageAssignments",
-	"bs-pageassignments-show-unassigned-pages": "Label for \"Show unassigned pages\" button"
+	"bs-pageassignments-show-unassigned-pages": "Label for \"Show unassigned pages\" button",
+	"bs-pageassignments-notifications-watchlist-description": "Reason user receives a notification - assigned to the page"
 }

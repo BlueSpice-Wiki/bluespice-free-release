@@ -10,9 +10,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\IRestrictedComponent;
 
 class ToolbarPanel extends SimpleCard implements IRestrictedComponent {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -47,7 +44,6 @@ class ToolbarPanel extends SimpleCard implements IRestrictedComponent {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPermissions(): array {
@@ -55,7 +51,6 @@ class ToolbarPanel extends SimpleCard implements IRestrictedComponent {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	private function getSkinSlotHtml(): string {

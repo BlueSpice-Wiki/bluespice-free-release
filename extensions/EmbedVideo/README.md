@@ -113,6 +113,13 @@ When `$wgEmbedVideoUseEmbedStyleForLocalVideos` is enabled two additional option
 * description
   * Description shown below the video
 
+### Refreshing local metadata
+If stored metadata for a local audio or video file needs to be rebuilt, users with the
+`embedvideo-refreshmetadata` right can use the `Refresh metadata` action on the `File:` page.
+
+This runs an explicit metadata refresh for local EmbedVideo-managed files and is intended for
+admin use on installations where running maintenance scripts is not practical.
+
 ## Tags
 
 The EmbedVideo parser function expects to be called in any of the following ways:
@@ -273,6 +280,12 @@ As of version 3.x, EmbedVideo supports embedding video content from the followin
 
 | Site                                                     | Service Name(s)                     | ID Example                                             | URL Example(s)                                                                                                            |
 |----------------------------------------------------------|-------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| [Alugha](https://alugha.com/)                            | `alugha`                            | 6f004160-3cce-11ec-8710-7becc6db1c83                   | https://alugha.com/embed/web-player?v=6f004160-3cce-11ec-8710-7becc6db1c83                                                |
+| [Amazon Music](https://music.amazon.com)                 | `amazonmusic`                       | B00A9SD43S                                             | https://music.amazon.com/tracks/B00A9SD43S                                                                                |
+| [Apple Music](https://music.apple.com)                   | `applemusicalbum` - Album embed     | 1758766090                                             | https://music.apple.com/us/album/kids/1758766090                                                                          |
+| [Apple Music](https://music.apple.com)                   | `applemusicartist` - Artist embed   | 925515043                                              | https://music.apple.com/us/artist/the-midnight/925515043                                                                  |
+| [Apple Music](https://music.apple.com)                   | `applemusicplaylist` - Playlist embed | pl.f4d106fed2bd41149aaacabb233eb5eb                  | https://music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb                                       |
+| [Apple Music](https://music.apple.com)                   | `applemusictrack` - Song embed      | 1758766097                                             | https://music.apple.com/us/song/america-2/1758766097                                                                      |
 | [Archive.org Videos](https://archive.org/details/movies) | `archiveorg`                        | electricsheep-flock-244-80000-6                        | https://archive.org/details/electricsheep-flock-244-80000-6<br/>https://archive.org/embed/electricsheep-flock-244-80000-6 |
 | [Bandcamp](https://bandcamp.com/)                        | `bandcamp`                          | 1003592798                                             | https://emptyhousesmusic.bandcamp.com/album/empty-houses (Click on share/embed, and copy the id after `album=`)           |
 | [Bilibili](https://www.bilibili.com/)                    | `bilibili`                          | BV1Hz4y1k7ae                                           | https://player.bilibili.com/player.html?bvid=1Hz4y1k7ae&amp;page=1                                                        |
@@ -288,6 +301,8 @@ As of version 3.x, EmbedVideo supports embedding video content from the followin
 | [Loom](https://www.loom.com/)                            | `loom`                              | e5b8c04bca094dd8a5507925ab887002                       | https://www.loom.com/share/e5b8c04bca094dd8a5507925ab887002                                                               |
 | [NaverTV](https://tv.naver.com/)                         | `navertv`                           | 27831593                                               | https://tv.naver.com/embed/27831593                                                                                       |
 | [Niconico](http://nicovideo.jp/)                         | `niconico`                          | sm40807360                                             | https://embed.nicovideo.jp/watch/sm40807360                                                                               |
+| [Qobuz](https://qobuz.com)                               | `qobuzalbum` - Album embed          | a1nkwok5snthb                                          | https://open.qobuz.com/album/a1nkwok5snthb                                                                                |
+| [Qobuz](https://qobuz.com)                               | `qobuztrack` - Song embed           | 359452978                                              | https://open.qobuz.com/track/359452978                                                                                    |
 | SharePoint                                               | `sharepoint`                        | Not Applicable                                         | https://[SUB].sharepoint.com/sites/[PATH]/_layouts/15/embed.aspx?UniqueId=[ID]&embed=[...]                                |
 | [SoundCloud](http://soundcloud.com/)                     | `soundcloud`                        |                                                        | https://soundcloud.com/skrillex/skrillex-rick-ross-purple-lamborghini                                                     |
 | [Podbean](https://www.podbean.com/)                      | `podbean`                           | re9b6-13cbd09-pb                                       | https://www.podbean.com/player-v2/?i=re9b6-13cbd09-pb                                                                     |

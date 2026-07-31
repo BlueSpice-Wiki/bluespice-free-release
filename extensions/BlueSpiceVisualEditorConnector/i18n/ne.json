@@ -7,5 +7,7 @@
 	},
 	"bs-visualeditorconnector-inspector-tab-common-name": "कमन्स",
 	"bs-visualeditorconnector-inspector-tab-advanced-name": "उन्नत",
-	"bs-vec-dialog-action-safe": "रद्द गर्नुहोस्"
+	"bs-vec-dialog-action-safe": "रद्द गर्नुहोस्",
+	"bs-vec-table-style-cell-text-vert-align-top": "शीर्ष",
+	"bs-vec-table-border-top": "शीर्ष"
 }

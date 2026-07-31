@@ -8,7 +8,6 @@ use MediaWiki\Output\OutputPage;
 class AddModules implements BeforePageDisplayHook {
 
 	/**
-	 *
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 * @return void

@@ -9,7 +9,6 @@ require_once "$extDir/BlueSpiceFoundation/maintenance/BSMaintenance.php";
 class ClearWhoIsOnlineTableAfterUpgradeTimestamp extends LoggedUpdateMaintenance {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doDBUpdates() {
@@ -25,7 +24,6 @@ class ClearWhoIsOnlineTableAfterUpgradeTimestamp extends LoggedUpdateMaintenance
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getUpdateKey() {

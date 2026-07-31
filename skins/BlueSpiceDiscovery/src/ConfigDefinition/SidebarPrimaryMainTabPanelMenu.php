@@ -9,7 +9,6 @@ use MediaWiki\HTMLForm\Field\HTMLSelectField;
 class SidebarPrimaryMainTabPanelMenu extends ArraySetting {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {
@@ -35,7 +34,6 @@ class SidebarPrimaryMainTabPanelMenu extends ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getVariableName() {
@@ -43,7 +41,6 @@ class SidebarPrimaryMainTabPanelMenu extends ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return HTMLSelectField
 	 */
 	public function getHtmlFormField() {
@@ -51,7 +48,6 @@ class SidebarPrimaryMainTabPanelMenu extends ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getOptions() {

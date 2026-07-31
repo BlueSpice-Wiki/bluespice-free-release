@@ -9,7 +9,6 @@ use MWStake\MediaWiki\Component\DataStore\DatabaseReader;
 
 class Reader extends DatabaseReader {
 	/**
-	 *
 	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
 	 * @param IContextSource|null $context
 	 */
@@ -27,7 +26,6 @@ class Reader extends DatabaseReader {
 	}
 
 	/**
-	 *
 	 * @return SecondaryDataProvider
 	 */
 	protected function makeSecondaryDataProvider() {
@@ -38,7 +36,6 @@ class Reader extends DatabaseReader {
 	}
 
 	/**
-	 *
 	 * @return Schema
 	 */
 	public function getSchema() {

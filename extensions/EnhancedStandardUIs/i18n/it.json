@@ -62,5 +62,6 @@
 	"enhanced-standard-uis-allpages-panel-counter-label": "Mostro $1 di $2 {{PLURAL:$2|pagina|pagine}}",
 	"enhanced-standard-uis-allpages-panel-more-button-label": "Carica altre pagine",
 	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 - $2 di $3",
-	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 di circa $3"
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 di circa $3",
+	"enhanced-standard-uis-allpages-namespace-watch-error": "Impossibile aggiornare lo stato di monitoraggio per questo namespace."
 }

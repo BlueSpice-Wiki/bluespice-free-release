@@ -10,13 +10,11 @@ use SkinTemplate;
 class CreateContentOptions implements SkinTemplateNavigation__UniversalHook {
 
 	/**
-	 *
 	 * @var PermissionManager
 	 */
 	private $permissionManager = null;
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct( PermissionManager $permissionManager ) {

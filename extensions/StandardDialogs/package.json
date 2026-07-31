@@ -11,5 +11,8 @@
 		"grunt-eslint": "24.3.0",
 		"grunt-stylelint": "0.20.1",
 		"stylelint-config-wikimedia": "0.17.2"
-	}
+	},
+	"eslintIgnore": [
+		"vendor/**"
+	]
 }

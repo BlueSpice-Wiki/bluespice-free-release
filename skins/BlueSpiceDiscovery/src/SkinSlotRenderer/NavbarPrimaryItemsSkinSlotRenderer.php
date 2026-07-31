@@ -7,7 +7,6 @@ class NavbarPrimaryItemsSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	public const REG_KEY = 'NavbarPrimaryItems';
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getItemWrapperTag(): string {
@@ -15,7 +14,6 @@ class NavbarPrimaryItemsSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getItemWrapperClasses(): array {

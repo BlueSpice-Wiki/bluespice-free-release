@@ -6,7 +6,6 @@ use MWStake\MediaWiki\Component\ManifestRegistry\ManifestAttributeBasedRegistry;
 
 class InstanceStatusPluginModules {
 	/**
-	 *
 	 * @return array
 	 */
 	public static function getPluginModules() {

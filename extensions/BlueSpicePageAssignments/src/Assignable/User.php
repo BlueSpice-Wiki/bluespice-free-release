@@ -8,7 +8,6 @@ use MediaWiki\MediaWikiServices;
 class User extends \BlueSpice\PageAssignments\Assignable {
 
 	/**
-	 *
 	 * @return Store
 	 */
 	public function getStore() {
@@ -24,7 +23,6 @@ class User extends \BlueSpice\PageAssignments\Assignable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getAssignmentClass() {
@@ -32,7 +30,6 @@ class User extends \BlueSpice\PageAssignments\Assignable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getRendererKey() {
@@ -40,7 +37,6 @@ class User extends \BlueSpice\PageAssignments\Assignable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getTypeMessageKey() {

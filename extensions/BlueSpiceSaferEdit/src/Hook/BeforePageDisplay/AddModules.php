@@ -12,6 +12,9 @@ class AddModules extends BeforePageDisplay {
 	 */
 	protected $seManager;
 
+	/**
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$this->seManager = $this->getServices()->getService( 'BSSaferEditManager' );
 

@@ -8,7 +8,6 @@ use MediaWiki\User\User as MediaWikiUser;
 class User extends \BlueSpice\PageAssignments\Assignment {
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function makeAnchor() {
@@ -19,7 +18,6 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getText() {
@@ -28,7 +26,6 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	}
 
 	/**
-	 *
 	 * @return int[]
 	 */
 	public function getUserIds() {
@@ -39,7 +36,6 @@ class User extends \BlueSpice\PageAssignments\Assignment {
 	}
 
 	/**
-	 *
 	 * @return MediaWikiUser
 	 */
 	protected function getUser() {

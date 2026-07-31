@@ -9,7 +9,6 @@ use MediaWiki\MediaWikiServices;
 class AvatarsGenerator extends \BlueSpice\ConfigDefinition\ArraySetting {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -21,7 +20,6 @@ class AvatarsGenerator extends \BlueSpice\ConfigDefinition\ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return HTMLFormField
 	 */
 	public function getHtmlFormField() {
@@ -29,7 +27,6 @@ class AvatarsGenerator extends \BlueSpice\ConfigDefinition\ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -37,7 +34,6 @@ class AvatarsGenerator extends \BlueSpice\ConfigDefinition\ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getOptions() {
@@ -53,7 +49,6 @@ class AvatarsGenerator extends \BlueSpice\ConfigDefinition\ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

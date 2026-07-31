@@ -47,15 +47,6 @@ class InstantAvatar {
 		}
 	}
 
-	public function __destruct() {
-		if ( $this->avatar ) {
-			imageDestroy( $this->avatar );
-		}
-		if ( $this->overlay ) {
-			imageDestroy( $this->overlay );
-		}
-	}
-
 	public function generate( $name, $colorScheme, $backgroundStyle ) {
 		list( $bgColor1, $bgColor2, $textColor ) = self::$colorSchemes[$colorScheme];
 

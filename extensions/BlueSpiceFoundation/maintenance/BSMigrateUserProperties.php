@@ -8,6 +8,7 @@ use MediaWiki\MediaWikiServices;
 
 class BSMigrateUserProperties extends LoggedUpdateMaintenance {
 
+	/** @var array */
 	protected $oldData = [];
 
 	protected function readOldData() {
@@ -28,6 +29,7 @@ class BSMigrateUserProperties extends LoggedUpdateMaintenance {
 		}
 	}
 
+	/** @var array */
 	protected $newData = [];
 
 	protected function convertData() {
@@ -38,7 +40,6 @@ class BSMigrateUserProperties extends LoggedUpdateMaintenance {
 	}
 
 	/**
-	 *
 	 * @param string $oldName
 	 * @return string
 	 * @throws Exception
@@ -65,7 +66,6 @@ class BSMigrateUserProperties extends LoggedUpdateMaintenance {
 	}
 
 	/**
-	 *
 	 * @param string $oldName
 	 * @return string|false
 	 */
@@ -160,7 +160,6 @@ class BSMigrateUserProperties extends LoggedUpdateMaintenance {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doDBUpdates() {
@@ -172,7 +171,6 @@ class BSMigrateUserProperties extends LoggedUpdateMaintenance {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getUpdateKey() {

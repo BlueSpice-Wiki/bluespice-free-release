@@ -37,13 +37,11 @@ use Profiler;
 abstract class Hook implements MessageLocalizer {
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	private $context = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	private $config = null;
@@ -61,7 +59,6 @@ abstract class Hook implements MessageLocalizer {
 	}
 
 	/**
-	 *
 	 * @return IContextSource
 	 */
 	protected function getContext() {
@@ -72,13 +69,11 @@ abstract class Hook implements MessageLocalizer {
 	}
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected static $configName = 'bsg';
 
 	/**
-	 *
 	 * @return Config
 	 */
 	protected function getConfig() {
@@ -92,7 +87,6 @@ abstract class Hook implements MessageLocalizer {
 	}
 
 	/**
-	 *
 	 * @return MediaWikiServices
 	 */
 	public function getServices() {
@@ -109,6 +103,9 @@ abstract class Hook implements MessageLocalizer {
 		return $this->getContext()->msg( $key, ...$params );
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function process() {
 		if ( $this->skipProcessingForAnon() ) {
 			if ( !$this->getContext()->getUser()->isRegistered() ) {
@@ -131,6 +128,9 @@ abstract class Hook implements MessageLocalizer {
 		return $result;
 	}
 
+	/**
+	 * @return bool
+	 */
 	abstract protected function doProcess();
 
 	/**

@@ -3,7 +3,7 @@
 }
 
 .upload-dialog .enhancedUpload-widget .thumbnail-items {
-	border: 0.05px solid #00000020;
+	border: 0.05px solid #00000020; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	border-radius: 5px;
 	padding: 2px;
 	margin: 5px 15px;

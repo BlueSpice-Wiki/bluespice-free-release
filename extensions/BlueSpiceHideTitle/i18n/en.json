@@ -8,5 +8,5 @@
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Show",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Hide",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Title visibility",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "You can define here whether the title will be shown or not."
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help": "You can specify if page title should be visible."
 }

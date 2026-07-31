@@ -11,5 +11,7 @@
 	"bs-saferedit-someone-editing": "A páxina está a ser editada",
 	"bs-saferedit-pref-show-editinguser": "Mostrar o editor actual",
 	"bs-saferedit-pref-show-editinguser-help": "Engade o nome do usuario que está a editar a páxina actualmente na parte superior da páxina",
-	"bs-saferedit-anonymous-editor": "Usuario anónimo"
+	"bs-saferedit-anonymous-editor": "Usuario anónimo",
+	"bs-saferedit-pref-edit-interval": "Intervalo no cal buscar edicións concorrentes",
+	"bs-saferedit-pref-edit-interval-help": "Establece a frecuencia, en segundos, coa que se debe comprobar se outro usuario está a editar a páxina"
 }

@@ -13,7 +13,7 @@ class PdfExportHandler {
 	 *
 	 * @param array &$template
 	 * @param array &$contents
-	 * @param ExportSpecification $specs
+	 * @param ExportSpecification $specification
 	 * @param array &$page
 	 * @return bool
 	 */

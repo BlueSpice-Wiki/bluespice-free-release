@@ -15,31 +15,26 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\Literal;
 class DefaultBreadcrumbNav extends Literal {
 
 	/**
-	 *
 	 * @var Title
 	 */
 	private $title = null;
 
 	/**
-	 *
 	 * @var User
 	 */
 	private $user = null;
 
 	/**
-	 *
 	 * @var MessageLocalizer
 	 */
 	private $messageLocalizer = null;
 
 	/**
-	 *
 	 * @var SpecialPageFactory
 	 */
 	private $specialPageFactory = null;
 
 	/**
-	 *
 	 * @var NamespaceInfo
 	 */
 	private $namespaceInfo = null;
@@ -50,7 +45,6 @@ class DefaultBreadcrumbNav extends Literal {
 	private $breadcrumbFactory = null;
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param User $user
 	 * @param MessageLocalizer $messageLocalizer
@@ -85,7 +79,6 @@ class DefaultBreadcrumbNav extends Literal {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

@@ -10,13 +10,11 @@ use MediaWiki\User\User;
 class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\SecondaryDataProvider {
 
 	/**
-	 *
 	 * @var RendererFactory
 	 */
 	protected $rendererfactory = null;
 
 	/**
-	 *
 	 * @param RendererFactory $rendererfactory
 	 */
 	public function __construct( $rendererfactory ) {
@@ -24,7 +22,6 @@ class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\Secon
 	}
 
 	/**
-	 *
 	 * @param Record &$dataSet
 	 */
 	protected function doExtend( &$dataSet ) {
@@ -34,7 +31,6 @@ class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\Secon
 	}
 
 	/**
-	 *
 	 * @param User $user
 	 * @return string
 	 */

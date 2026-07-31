@@ -7,7 +7,6 @@ use MWStake\MediaWiki\Component\DataStore\ResultSet as DataStoreResultSet;
 class ResultSet extends DataStoreResultSet {
 
 	/**
-	 *
 	 * @param DataStoreResultSet[] $result
 	 */
 	public function __construct( DataStoreResultSet $result ) {
@@ -15,7 +14,6 @@ class ResultSet extends DataStoreResultSet {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getHighestCount() {
@@ -35,7 +33,6 @@ class ResultSet extends DataStoreResultSet {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getLowestCount() {

@@ -50,7 +50,7 @@
 	"apihelp-query+statistics-reports-example": "2021-09-14 및 2021-09-15 날짜의 \"mytype\" 유형에 대한 모든 보고서를 제공합니다",
 	"apihelp-query+statistics-reports-param-type": "통계의 유형 (보고서 키)",
 	"bs-statistics-aggregated-report-no-date": "현재 필터 세트에 대한 데이터가 없습니다. 필터 값을 변경하시기 바랍니다",
-	"bs-statistics-aggregated-filter-category-namespace-notice": "분류 또는 이름 공간에 따른 필터링",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "분류 또는 이름공간에 따른 필터링",
 	"bs-statistics-pref-excludeusers-help": "관리자 권한을 가진 사용자 등 일부 사용자는 Special:ExtendedStatistics 문서의 통계를 왜곡할 수 있습니다. 이러한 사용자는 통계 결과에서 제외될 수 있습니다.",
 	"bs-statistics-tag-progress-desc": "진행 표시줄을 생성합니다. 값은 본문에 있는 특정 텍스트의 출현 여부와 사용자가 정의한 상한값에 따라 달라집니다.",
 	"bs-statistics-tag-progress-label-text": "<span class='visually-hidden'>진행 표시줄 현재</span> $1",

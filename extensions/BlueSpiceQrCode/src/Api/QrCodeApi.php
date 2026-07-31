@@ -12,7 +12,6 @@ use Wikimedia\ParamValidator\ParamValidator;
 class QrCodeApi extends ApiBase {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getAllowedParams() {
@@ -35,7 +34,6 @@ class QrCodeApi extends ApiBase {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	public function execute() {
@@ -74,7 +72,6 @@ class QrCodeApi extends ApiBase {
 	}
 
 	/**
-	 *
 	 * @param string $url
 	 * @param int $size
 	 * @return string
@@ -88,7 +85,6 @@ class QrCodeApi extends ApiBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getExamplesMessages() {

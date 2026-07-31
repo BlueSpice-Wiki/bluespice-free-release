@@ -1,0 +1,7 @@
+{
+    "advisories": [],
+    "abandoned": {
+        "doctrine/cache": null,
+        "pear/net_socket": null
+    }
+}

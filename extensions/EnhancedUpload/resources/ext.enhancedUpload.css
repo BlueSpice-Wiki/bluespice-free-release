@@ -25,7 +25,7 @@
 	height: auto;
 	max-height: 180px;
 	overflow-x: auto;
-	border: 0.05px solid #00000020;
+	border: 0.05px solid #00000020; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	border-radius: 5px;
 	background-color: #f8f9fa;
 	display: flex;
@@ -41,7 +41,7 @@
 }
 
 .enhancedUpload-widget .thumbnail-items {
-	border: 0.05px solid #00000020;
+	border: 0.05px solid #00000020; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	border-radius: 5px;
 	padding: 2px;
 	margin: 5px 15px;
@@ -87,7 +87,7 @@
 	background-color: transparent;
 }
 
-.enhancedUpload-widget .thumbnail-items a.oo-ui-buttonElement-button:focus-visible {
+.enhancedUpload-widget .thumbnail-items a.oo-ui-buttonElement-button:focus-visible { /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	opacity: 1;
 }
 

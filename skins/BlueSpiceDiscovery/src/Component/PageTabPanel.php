@@ -12,7 +12,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\ITabPanel;
 class PageTabPanel extends ComponentBase implements ITabPanel, IRestrictedComponent {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId(): string {
@@ -20,7 +19,6 @@ class PageTabPanel extends ComponentBase implements ITabPanel, IRestrictedCompon
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getText(): Message {
@@ -28,7 +26,6 @@ class PageTabPanel extends ComponentBase implements ITabPanel, IRestrictedCompon
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getTitle(): Message {
@@ -36,7 +33,6 @@ class PageTabPanel extends ComponentBase implements ITabPanel, IRestrictedCompon
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {
@@ -44,7 +40,6 @@ class PageTabPanel extends ComponentBase implements ITabPanel, IRestrictedCompon
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getAriaDesc(): Message {
@@ -52,7 +47,6 @@ class PageTabPanel extends ComponentBase implements ITabPanel, IRestrictedCompon
 	}
 
 	/**
-	 *
 	 * @return IComponent[]
 	 */
 	public function getSubComponents(): array {
@@ -64,7 +58,6 @@ class PageTabPanel extends ComponentBase implements ITabPanel, IRestrictedCompon
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -73,7 +66,6 @@ class PageTabPanel extends ComponentBase implements ITabPanel, IRestrictedCompon
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPermissions(): array {

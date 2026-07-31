@@ -6,16 +6,22 @@ use LogicException;
 
 class Database extends Base {
 
+	/** @var string */
 	protected $table;
+	/** @var array */
 	protected $uniqueColumns;
+	/** @var array */
 	protected $condition;
+	/** @var array */
 	protected $data;
+	/** @var array */
 	protected $multipledata;
+	/** @var array */
 	protected $column;
+	/** @var string */
 	protected $description = 'bs-usagetracker-db-collector-desc';
 
 	/**
-	 *
 	 * @param array $config
 	 */
 	public function __construct( $config = [] ) {
@@ -52,7 +58,6 @@ class Database extends Base {
 	}
 
 	/**
-	 *
 	 * @return \BS\UsageTracker\CollectorResult
 	 * @throws LogicException
 	 */

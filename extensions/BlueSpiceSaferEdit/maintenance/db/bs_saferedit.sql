@@ -1,15 +1,3 @@
--- Database definition for SaferEdit
---
--- Part of BlueSpice MediaWiki
---
--- @author     Markus Glaser <glaser@hallowelt.com>
-
--- @package    BlueSpice_Extensions
--- @subpackage SaferEdit
--- @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
--- @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
--- @filesource
-
 CREATE TABLE IF NOT EXISTS /*$wgDBprefix*/bs_saferedit (
   se_id             int(10) unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT,
   se_user_name      varchar(255)     default NULL,             /* foreign key to user.user_name */

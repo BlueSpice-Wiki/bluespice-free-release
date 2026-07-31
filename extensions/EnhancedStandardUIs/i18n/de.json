@@ -93,5 +93,7 @@
 	"enhanced-standard-uis-allpages-create-new-page-title": "Eine neue Seite erstellen",
 	"enhanced-standard-uis-allpages-create-new-page-aria-label": "Eine neue Seite erstellen",
 	"enhanced-standard-uis-filelist-upload-new-file-title": "Eine neue Datei hochladen",
-	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Eine neue Datei hochladen"
+	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Eine neue Datei hochladen",
+	"enhanced-standard-uis-allpages-namespace-watch-label": "Namensraum $1 beobachten",
+	"enhanced-standard-uis-allpages-namespace-unwatch-label": "Namensraum $1 nicht mehr beobachten"
 }

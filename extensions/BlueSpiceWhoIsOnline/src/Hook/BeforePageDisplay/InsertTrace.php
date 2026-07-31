@@ -7,7 +7,6 @@ use MediaWiki\Deferred\DeferredUpdates;
 class InsertTrace extends \BlueSpice\Hook\BeforePageDisplay {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doProcess() {

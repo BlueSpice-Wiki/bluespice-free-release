@@ -16,9 +16,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\LinkFormatter;
 
 class MediaWikiLinksPanel extends SimpleCard {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -45,7 +42,6 @@ class MediaWikiLinksPanel extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -54,7 +50,6 @@ class MediaWikiLinksPanel extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function buildPanels(): array {
@@ -84,7 +79,6 @@ class MediaWikiLinksPanel extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @param string $section
 	 * @param array $links
 	 * @param LinkFormatter $linkFormatter
@@ -137,7 +131,6 @@ class MediaWikiLinksPanel extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @return IComponent
 	 */
 	private function buildEditLink(): IComponent {
@@ -158,7 +151,6 @@ class MediaWikiLinksPanel extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @param arry &$links
 	 * @return void
 	 */

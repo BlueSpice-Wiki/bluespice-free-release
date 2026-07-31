@@ -6,7 +6,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_WIRE_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_WIRE_VERSION', '1.0.9' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_WIRE_VERSION', '1.0.10' );
 
 MWStake\MediaWiki\ComponentLoader\Bootstrapper::getInstance()
 ->register( 'wire', static function () {

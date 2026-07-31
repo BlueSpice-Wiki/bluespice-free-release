@@ -37,7 +37,6 @@ class AddSaferEditTable extends LoadExtensionSchemaUpdates {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getExtensionPath() {

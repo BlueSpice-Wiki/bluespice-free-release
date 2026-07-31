@@ -1,6 +1,6 @@
 {
 	"name": "EnhancedStandardUIs",
-	"version": "2.1.5",
+	"version": "2.1.6",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
@@ -181,7 +181,8 @@
 				"enhanced-standard-uis-history-grid-header-undo-title",
 				"enhanced-standard-uis-history-grid-header-hide-revision-title",
 				"enhanced-standard-uis-history-compare-tool-title",
-				"enhanced-standard-uis-history-grid-header-diff-label"
+				"enhanced-standard-uis-history-grid-header-diff-label",
+				"enhanced-standard-uis-history-grid-header-major-label"
 			],
 			"dependencies": [
 				"oojs-ui",
@@ -239,11 +240,11 @@
 			"dependencies": [
 				"oojs-ui",
 				"ext.oOJSPlus.data",
-				"oojs-ui.styles.icons-content"
+				"oojs-ui.styles.icons-content",
+				"ext.enhancedstandarduis.styles.common"
 			]
 		},
 		"ext.enhancedstandarduis.filelist.panel": {
-			"es6": true,
 			"packageFiles": [
 				"panel/FilelistPanel.js",
 				"widget/FilelistGrid.js",
@@ -312,7 +313,6 @@
 			]
 		},
 		"ext.enhancedstandarduis.special.filelist": {
-			"es6": true,
 			"packageFiles": [
 				"ext.enhancedUI.special.filelist.js"
 			]
@@ -338,7 +338,6 @@
 			]
 		},
 		"ext.enhancedstandarduis.special.preferences": {
-			"es6": true,
 			"packageFiles": [
 				"ext.enhancedUI.special.preferences.js",
 				"panel/PreferencesPanel.js",
@@ -375,6 +374,11 @@
 				"ext.oOJSPlus.widgets",
 				"mediawiki.widgets.SelectWithInputWidget",
 				"mediawiki.confirmCloseWindow"
+			]
+		},
+		"ext.enhancedstandarduis.styles.common": {
+			"styles": [
+				"stylesheets/ext.enhancedUI.common.css"
 			]
 		}
 	},

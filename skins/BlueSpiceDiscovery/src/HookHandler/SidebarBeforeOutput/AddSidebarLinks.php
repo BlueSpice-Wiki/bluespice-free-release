@@ -12,13 +12,11 @@ use Throwable;
 class AddSidebarLinks implements SidebarBeforeOutputHook {
 
 	/**
-	 *
 	 * @var PermissionManager
 	 */
 	private $permissionManager = null;
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct( PermissionManager $permissionManager ) {
@@ -26,7 +24,6 @@ class AddSidebarLinks implements SidebarBeforeOutputHook {
 	}
 
 	/**
-	 *
 	 * @param Skin $skin
 	 * @param array &$sidebar
 	 * @return void

@@ -6,6 +6,9 @@ use BlueSpice\Hook\BeforePageDisplay;
 
 class AddModules extends BeforePageDisplay {
 
+	/**
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$this->out->addModules( 'ext.bluespice.articleinfo.general' );
 		return true;

@@ -50,5 +50,8 @@ interface IAssignment {
 	 */
 	public function getPosition();
 
+	/**
+	 * @return \StdClass
+	 */
 	public function toStdClass();
 }

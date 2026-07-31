@@ -6,6 +6,9 @@ use BlueSpice\PageAssignments\Data\Page\Store;
 
 class Page extends \BlueSpice\Api\Store {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function makeDataStore() {
 		return new Store(
 			new Context( $this->getContext(), $this->getConfig() ),

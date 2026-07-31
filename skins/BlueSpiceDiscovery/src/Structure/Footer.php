@@ -30,7 +30,6 @@ class Footer extends SkinStructureBase implements IBaseTemplateAware {
 	private $services;
 
 	/**
-	 *
 	 * @param ITemplateDataProvider $templateDataProvider
 	 * @param ComponentRenderer $componentRenderer
 	 * @param SkinSlotRenderer $skinSlotRenderer
@@ -50,7 +49,6 @@ class Footer extends SkinStructureBase implements IBaseTemplateAware {
 	}
 
 	/**
-	 *
 	 * @param ITemplateDataProvider $templateDataProvider
 	 * @param ComponentRenderer $componentRenderer
 	 * @param SkinSlotRenderer $skinSlotRenderer
@@ -70,7 +68,6 @@ class Footer extends SkinStructureBase implements IBaseTemplateAware {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName(): string {

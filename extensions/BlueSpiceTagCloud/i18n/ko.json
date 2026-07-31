@@ -36,5 +36,7 @@
 	"bs-tagcloud-tag-tagcloud-tab-advanced": "고급",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "표시 모드",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "빈도 표시",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "사용된 분류나 검색 쿼리 수를 추가"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "사용된 분류나 검색 쿼리 수를 추가",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "개수",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "태그 클라우드에서 표시할 수 있는 최대 태그 수. 설정되지 않으면 기본값인 40이 사용됨"
 }

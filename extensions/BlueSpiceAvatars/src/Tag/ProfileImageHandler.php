@@ -50,7 +50,6 @@ class ProfileImageHandler implements ITagHandler {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function handleRaw( array $params ) {

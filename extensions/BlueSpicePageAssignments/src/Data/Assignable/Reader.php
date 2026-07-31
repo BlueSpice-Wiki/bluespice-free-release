@@ -9,7 +9,6 @@ use MWStake\MediaWiki\Component\DataStore\Tests\ReaderParamsTest;
 class Reader extends DatabaseReader {
 
 	/**
-	 *
 	 * @param ReaderParamsTest $params
 	 * @return PrimaryDataProvider
 	 */
@@ -18,7 +17,6 @@ class Reader extends DatabaseReader {
 	}
 
 	/**
-	 *
 	 * @return Schema
 	 */
 	public function getSchema() {
@@ -26,7 +24,6 @@ class Reader extends DatabaseReader {
 	}
 
 	/**
-	 *
 	 * @return null
 	 */
 	public function makeSecondaryDataProvider() {

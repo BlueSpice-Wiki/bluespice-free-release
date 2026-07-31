@@ -25,6 +25,7 @@ class ModifyExportXML extends BSMaintenance {
 		$this->requireExtension( 'BlueSpiceFoundation' );
 	}
 
+	/** @var array */
 	protected $aTitles = [];
 
 	/** @var array */
@@ -103,6 +104,10 @@ class ModifyExportXML extends BSMaintenance {
 		}
 	}
 
+	/**
+	 * @param array $aMatches
+	 * @return string
+	 */
 	private function modifyWikiLink( $aMatches ) {
 		$aLinkParts = explode( '|', $aMatches[1], 2 );
 		$sLinkPart  = trim( $aLinkParts[0] );

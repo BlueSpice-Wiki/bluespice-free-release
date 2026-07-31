@@ -74,7 +74,6 @@ class PagesVisitedHandler implements ITagHandler {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function makeParams( array $params, UserIdentity $userIdentity ) {

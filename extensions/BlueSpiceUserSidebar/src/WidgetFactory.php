@@ -9,19 +9,16 @@ use MWStake\MediaWiki\Component\ManifestRegistry\IRegistry;
 class WidgetFactory {
 
 	/**
-	 *
 	 * @var IRegistry
 	 */
 	private $registry = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	private $config = null;
 
 	/**
-	 *
 	 * @param IRegistry $registry
 	 * @param Config $config
 	 */
@@ -56,7 +53,6 @@ class WidgetFactory {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @param IContextSource $context
 	 * @param array $params
@@ -68,7 +64,6 @@ class WidgetFactory {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getAllKeys(): array {

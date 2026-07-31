@@ -37,5 +37,7 @@
 	"bs-tagcloud-tag-tagcloud-tab-advanced": "متقدم",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "وضع العرض",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "إظهار التكرار",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "يضيف عدد الفئات المستخدمة أو استعلامات البحث"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "يضيف عدد الفئات المستخدمة أو استعلامات البحث",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "عدد",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "الحد الأقصى لعدد الوسوم المراد عرضها في سحابة الوسوم. في حال عدم تحديده، سيتم استخدام القيمة الافتراضية 40."
 }

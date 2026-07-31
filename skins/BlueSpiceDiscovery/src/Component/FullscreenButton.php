@@ -11,13 +11,11 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleLink;
 class FullscreenButton extends SimpleLink {
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $fullscreenMode = '';
 
 	/**
-	 *
 	 * @param CookieHandler $cookieHandler
 	 */
 	public function __construct( $cookieHandler ) {
@@ -68,7 +66,6 @@ class FullscreenButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	private function buildTitle(): Message {
@@ -80,7 +77,6 @@ class FullscreenButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	private function buildAriaLabel(): Message {
@@ -92,7 +88,6 @@ class FullscreenButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function buildClasses(): array {
@@ -109,7 +104,6 @@ class FullscreenButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

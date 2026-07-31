@@ -34,7 +34,6 @@ use MediaWiki\Title\Title;
 class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @return \stdClass[]
 	 */

@@ -11,7 +11,7 @@
 	color: #202122;
 }
 
-.oojsplus-data-gridWidget-row:hover .oojsplus-data-gridWidget-cell.action-cell > span,
+.oojsplus-data-gridWidget-row:hover .oojsplus-data-gridWidget-cell.action-cell > span, /* stylelint-disable-line plugin/no-unsupported-browser-features */
 .oojsplus-data-gridWidget-row .oojsplus-data-gridWidget-cell.action-cell > span:has( a:focus-visible ) {
 	opacity: 1;
 }

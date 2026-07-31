@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-qr-code-extension-description": "په توکپټه کې د اوسني مخ تړوني سره کيوار کوډ ښکاره کوي.",
+	"bs-qr-code-action-qr-code-title": "کيوار کوډ سره خبربکس پرانېستل",
+	"bs-qr-code-action-qr-code-text": "کيوار کوډ",
+	"bs-qr-code-action-qr-code-dialog-title": "کيوار کوډ",
+	"bs-qr-code-action-qr-code-dialog-alt": "$1 لپاره کيوار کوډ",
+	"bs-qr-code-api-no-page": "پاراميتر 'مخ' تش دی",
+	"apihelp-bs-qr-code-summary": "د يو مخ لپاره کيوار کوډ د base64 اومتوک URI په توگه ترلاسه کول",
+	"apihelp-bs-qr-code-param-revid": "د هغه مخ د بياليدنې پېژند چې تلپاتې‌تړونی زېږوي",
+	"apihelp-bs-qr-code-param-page": "د هغه مخ مخنوم چې د base64 اومتوک URI زېږوي",
+	"apihelp-bs-qr-code-param-size": "د کيوار کوډ کچه",
+	"apihelp-bs-qr-code-example-bs-qr-code": "تلواله ای‌پي‌آی راغوښتل",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "د ځانگړې بیاکتنې‌پېژند لپاره ای‌پي‌آی غوښتنه",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "دوديزې کچې سره ای‌پي‌آی غوښتنه",
+	"bs-qr-code-alt-text": "$1 لپاره کيوار کوډ",
+	"bs-qr-code-tag-qrcode-desc": "ويکي‌مخ کې تړل‌شوی کيوار کوډ ځای‌پرځای کوي",
+	"bs-qr-code-tag-qrcode-title": "کيوار کوډ",
+	"bs-qr-code-tag-attr-page-label": "مخ",
+	"bs-qr-code-tag-attr-page-help": "مخ نوم بايد په کيوار کوډ تړوني کې راونغاړل شي. د اوسني مخ کارولو لپاره دا ډگر تش پرېږدئ",
+	"bs-qr-code-tag-attr-query-label": "ارزښت",
+	"bs-qr-code-tag-attr-query-help": "زياتي ارزښتونه چې بايد د کيوار کوډ وېبتړ ته ورگډ شي. په دې کې د \"action=edit\" يا \"oldid=1\" په څېر ارزښتونه شامل دي.",
+	"bs-qr-code-tag-attr-desc-label": "څرگنداوی",
+	"bs-qr-code-tag-attr-desc-help": "د کيوار کوډ اړوند څرگنداوی. يوازې د کيوار کوډ ښودلو لپاره دا ډگر تش پرېږدئ",
+	"bs-qr-code-tag-attr-size-label": "کچه",
+	"bs-qr-code-tag-attr-size-help": "د ځای‌پرځای‌شوي کيوار کوډ کچه بدلول",
+	"bs-qr-code-droplet-name": "کيوار کوډ",
+	"bs-qr-code-droplet-desc": "ويکي مخ کې کيوار کوډ ورټومبي",
+	"bs-qr-code-tag-attr-size-option-small": "کوچنی",
+	"bs-qr-code-tag-attr-size-option-medium": "منځالی",
+	"bs-qr-code-tag-attr-size-option-large": "لوی"
+}

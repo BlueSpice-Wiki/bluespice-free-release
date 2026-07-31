@@ -18,9 +18,6 @@ class BackTo extends SimpleLink {
 	/** @var BackLinkProviderFactory */
 	private $backLinkProviderFactory;
 
-	/**
-	 *
-	 */
 	public function __construct( BackLinkProviderFactory $backLinkProviderFactory ) {
 		parent::__construct( [] );
 
@@ -80,7 +77,6 @@ class BackTo extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

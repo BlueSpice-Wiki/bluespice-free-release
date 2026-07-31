@@ -9,7 +9,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\IComponent;
 class Categories implements IMetaItemProvider {
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getName(): string {
@@ -17,7 +16,6 @@ class Categories implements IMetaItemProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getComponent(): IComponent {

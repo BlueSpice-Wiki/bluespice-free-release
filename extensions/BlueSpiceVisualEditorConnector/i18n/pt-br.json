@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EGobi",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Juan90264",
@@ -86,5 +87,5 @@
 	"bs-visualeditorconnector-text-style-indent-label": "Indentar",
 	"bs-visualeditorconnector-indent-annotation-desc": "Recua o texto selecionado",
 	"bs-visualeditorconnector-upload-type": "Tipo de carregamento",
-	"bs-visualeditorconnector-upload-type-help": "Original: o direito de upload foi verificado. O nome do arquivo, o namespace e a categoria são editáveis. A descrição é obrigatória. Simples: o upload-right não é verificado. O nome do arquivo, o namespace e a categoria são editáveis. A descrição é opcional. Um clique: Upload-right não é verificado. O nome e a categoria do arquivo não são editáveis. O namespace é editável."
+	"bs-visualeditorconnector-upload-type-help": "Original: o direito de envio é verificado. O nome do arquivo, o espaço nominal e a categoria são editáveis. A descrição é obrigatória.\nSimples: o direito de envio não é verificado. O nome do arquivo, o espaço nominal e a categoria são editáveis. A descrição é opcional.\nUm clique: o direito de envio não é verificado. O nome do arquivo e a categoria não são editáveis. O espaço nominal é editável."
 }

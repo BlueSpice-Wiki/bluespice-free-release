@@ -6,6 +6,9 @@ use BlueSpice\NamespaceManager\Hook\BSApiNamespaceStoreMakeData;
 
 class AddData extends BSApiNamespaceStoreMakeData {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$enabledNamespaces = $this->getConfig()->get(
 			'PageAssignmentsSecureEnabledNamespaces'

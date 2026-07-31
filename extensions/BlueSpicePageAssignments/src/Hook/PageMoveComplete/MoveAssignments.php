@@ -11,7 +11,6 @@ use MediaWiki\Title\Title;
 class MoveAssignments extends PageMoveComplete {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {
@@ -19,7 +18,6 @@ class MoveAssignments extends PageMoveComplete {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doProcess() {

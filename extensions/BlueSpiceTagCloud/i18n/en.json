@@ -24,6 +24,8 @@
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Font size for the entry with the fewest items",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Max font size",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Font size for the entry with the most items",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Count",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Maximum amount of tags to display in the tag cloud. If not set, default value 40 will be used",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Exclude pages",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Do not show these pages in the tag cloud. For more pages, use a comma-separated list, e.g. \"Main Page, Test, MyPage\"",
 	"bs-tagcloud-droplet-name": "Tag cloud",

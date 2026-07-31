@@ -1,4 +1,4 @@
-.assignments-widgets {
+.assignments-widgets { /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	display: inline-flex;
 	gap: 15px;
 	flex-flow: wrap;

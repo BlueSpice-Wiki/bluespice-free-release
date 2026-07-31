@@ -12,7 +12,6 @@ class HookRunner implements SkinAddFooterLinksHook {
 	private $hookContainer;
 
 	/**
-	 *
 	 * @param HookContainer $hookContainer
 	 */
 	public function __construct( HookContainer $hookContainer ) {
@@ -20,7 +19,6 @@ class HookRunner implements SkinAddFooterLinksHook {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function onSkinAddFooterLinks( Skin $skin, string $key, array &$footerItems ) {

@@ -6,6 +6,9 @@ use BlueSpice\NamespaceManager\Hook\NamespaceManagerEditNamespace;
 
 class SetVisualEditorValues extends NamespaceManagerEditNamespace {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		if ( !$this->useInternalDefaults && isset( $this->additionalSettings['visualeditor'] ) ) {
 			$this->namespaceDefinition[$this->nsId][ 'visualeditor' ] =

@@ -14,19 +14,16 @@ abstract class TabPanelSkinSlotRendererBase extends ExtendedSkinSlotRendererBase
 	private $params = [];
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $templatePath = '';
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $templateName = '';
 
 	/**
-	 *
 	 * @param array $data
 	 * @return string
 	 */
@@ -61,7 +58,6 @@ abstract class TabPanelSkinSlotRendererBase extends ExtendedSkinSlotRendererBase
 	}
 
 	/**
-	 *
 	 * @param ITabPanel[] $tabPanels
 	 * @return void
 	 */
@@ -82,7 +78,6 @@ abstract class TabPanelSkinSlotRendererBase extends ExtendedSkinSlotRendererBase
 	}
 
 	/**
-	 *
 	 * @param array $tabPanels
 	 * @return array
 	 */
@@ -168,7 +163,6 @@ abstract class TabPanelSkinSlotRendererBase extends ExtendedSkinSlotRendererBase
 	}
 
 	/**
-	 *
 	 * @param IComponent $component
 	 * @return string
 	 */

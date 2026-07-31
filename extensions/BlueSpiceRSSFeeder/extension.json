@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceRSSFeeder",
 	"license-name": "GPL-3.0-only",
-	"version": "5.2.5",
+	"version": "5.2.6",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceRSSFeeder",
 	"author": "Sebastian Ulbricht",
 	"descriptionmsg": "bs-rssfeeder-desc",
@@ -37,7 +37,10 @@
 		}
 	},
 	"SpecialPages": {
-		"RSSFeeder": "BlueSpice\\RSSFeeder\\Special\\RSSFeeder"
+		"RSSFeeder": {
+			"class": "BlueSpice\\RSSFeeder\\Special\\RSSFeeder",
+			"services": [ "BSRSSFeederTokenProvider" ]
+		}
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"

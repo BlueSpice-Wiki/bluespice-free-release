@@ -11,7 +11,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegister
 class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $sidebarItems = null;
@@ -65,7 +64,6 @@ class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 	}
 
 	/**
-	 *
 	 * @return MediaWikiServices
 	 */
 	private function getServices() {

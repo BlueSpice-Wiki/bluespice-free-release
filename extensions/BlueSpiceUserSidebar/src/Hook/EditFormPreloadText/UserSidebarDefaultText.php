@@ -8,7 +8,6 @@ use MediaWiki\Title\Title;
 class UserSidebarDefaultText extends EditFormPreloadText {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {
@@ -21,7 +20,6 @@ class UserSidebarDefaultText extends EditFormPreloadText {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doProcess() {
@@ -30,7 +28,6 @@ class UserSidebarDefaultText extends EditFormPreloadText {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getWidgetLinks() {

@@ -11,25 +11,21 @@ use MWStake\MediaWiki\Component\DataStore\RecordSet;
 class TitleTarget implements ITarget {
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var IAssignment[]
 	 */
 	protected $assignments = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param array $assignments
 	 * @param Title $title
@@ -41,7 +37,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param array $assignments
 	 * @param Title $title
@@ -52,7 +47,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @return AssignmentFactory
 	 */
 	public function getFactory() {
@@ -62,7 +56,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @return IAssignment[]
 	 */
 	public function getAssignments() {
@@ -70,7 +63,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @return Title
 	 */
 	public function getTitle() {
@@ -78,7 +70,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @param User $user
 	 * @return bool
 	 */
@@ -90,7 +81,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @return array - of user ids
 	 */
 	public function getAssignedUserIDs() {
@@ -102,7 +92,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @param User $user
 	 * @return IAssignment[]
 	 */
@@ -119,7 +108,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @param IAssignments[] $assignments1
 	 * @param IAssignments[] $assignments2
 	 * @return IAssignments[]
@@ -139,7 +127,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @param IAssignment[] $assignments
 	 * @return Status
 	 */
@@ -187,7 +174,6 @@ class TitleTarget implements ITarget {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function invalidate() {

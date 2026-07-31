@@ -5,6 +5,10 @@ namespace BlueSpice\Discovery\FlexiSkin;
 use MediaWiki\Extension\FlexiSkin\IFlexiSkinSubscriber;
 
 class Subscriber implements IFlexiSkinSubscriber {
+
+	/**
+	 * @return static
+	 */
 	public static function factory() {
 		return new static();
 	}

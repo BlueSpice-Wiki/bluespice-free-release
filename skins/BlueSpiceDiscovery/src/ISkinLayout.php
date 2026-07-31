@@ -5,7 +5,6 @@ namespace BlueSpice\Discovery;
 interface ISkinLayout {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName(): string;

@@ -27,7 +27,6 @@ class SkinSlots {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	public function init(): void {
@@ -103,7 +102,6 @@ class SkinSlots {
 	}
 
 	/**
-	 *
 	 * @param string $skinSlotRendererKey
 	 * @param ISkinSlotRenderer $skinSlotRendererClass
 	 */

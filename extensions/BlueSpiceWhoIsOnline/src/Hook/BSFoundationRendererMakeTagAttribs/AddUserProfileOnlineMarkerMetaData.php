@@ -8,7 +8,6 @@ use BlueSpice\WhoIsOnline\Tracer;
 
 class AddUserProfileOnlineMarkerMetaData extends BSFoundationRendererMakeTagAttribs {
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {
@@ -19,7 +18,6 @@ class AddUserProfileOnlineMarkerMetaData extends BSFoundationRendererMakeTagAttr
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doProcess() {
@@ -31,7 +29,6 @@ class AddUserProfileOnlineMarkerMetaData extends BSFoundationRendererMakeTagAttr
 	}
 
 	/**
-	 *
 	 * @return Tracer
 	 */
 	private function getTracer() {

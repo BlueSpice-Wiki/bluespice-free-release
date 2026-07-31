@@ -111,6 +111,7 @@
 	"bs-pageassignments-header-action-edit": "编辑",
 	"bs-pageassignments-header-action-delete": "删除",
 	"bs-pageassignments-title-edit": "编辑分配",
-	"bs-pageassignments-title-delete": "刪除分配",
-	"bs-pageassignments-show-unassigned-pages": "显示未分配的页面"
+	"bs-pageassignments-title-delete": "删除分配",
+	"bs-pageassignments-show-unassigned-pages": "显示未分配的页面",
+	"bs-pageassignments-notifications-watchlist-description": "您被分配到此页面"
 }

@@ -20,25 +20,21 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	protected $skinSlotRegistry;
 
 	/**
-	 *
 	 * @var HtmlIdRegistry
 	 */
 	protected $htmlIdRegistry = null;
 
 	/**
-	 *
 	 * @var CookieHandler
 	 */
 	protected $cookieHandler = null;
 
 	/**
-	 *
 	 * @var PermissionManager
 	 */
 	protected $permissionManager = null;
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
@@ -50,7 +46,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	protected $ariaAttributesBuilder;
 
 	/**
-	 *
 	 * @param SkinSlotRegistry $skinSlotRegistry
 	 * @param ComponentManager $componentManager
 	 * @param RendererDataTreeBuilder $rendererDataTreeBuilder
@@ -77,7 +72,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param array $data
 	 * @return string
 	 */
@@ -127,7 +121,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param array &$items
 	 * @return void
 	 */
@@ -136,7 +129,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getContainerWrapperTag(): string {
@@ -144,7 +136,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getContainerWrapperClasses(): array {
@@ -152,7 +143,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getContainerWrapperId(): string {
@@ -160,7 +150,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getContainerWrapperDataAttributes(): array {
@@ -168,7 +157,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getContainerWrapperAriaAttributes(): array {
@@ -176,7 +164,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getItemWrapperTag(): string {
@@ -184,7 +171,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getItemWrapperClasses(): array {
@@ -192,7 +178,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param string $id
 	 * @return string
 	 */
@@ -201,7 +186,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getItemWrapperDataAttributes(): array {
@@ -209,7 +193,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getItemWrapperAriaAttributes(): array {
@@ -217,7 +200,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function buildOpeningConainerWrapperHtml(): string {
@@ -233,7 +215,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function buildClosingConainerWrapperHtml(): string {
@@ -245,7 +226,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param string $id
 	 * @return string
 	 */
@@ -262,7 +242,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function buildClosingItemWrapperHtml(): string {
@@ -274,7 +253,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param string $tag
 	 * @param string $id
 	 * @param array $classes
@@ -327,7 +305,6 @@ abstract class ExtendedSkinSlotRendererBase extends SkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param string $tag
 	 * @return string
 	 */

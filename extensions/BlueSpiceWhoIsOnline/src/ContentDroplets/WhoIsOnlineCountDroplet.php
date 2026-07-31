@@ -43,7 +43,6 @@ class WhoIsOnlineCountDroplet extends TagDroplet {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getTagName(): string {

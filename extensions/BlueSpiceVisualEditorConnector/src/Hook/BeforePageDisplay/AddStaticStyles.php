@@ -5,6 +5,10 @@ namespace BlueSpice\VisualEditorConnector\Hook\BeforePageDisplay;
 use BlueSpice\Hook\BeforePageDisplay;
 
 class AddStaticStyles extends BeforePageDisplay {
+
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		// These are the styles used in view mode, for text/background color classes set by
 		// the inspectors in VisualEditor - should be loaded on every page load

@@ -7,7 +7,6 @@ use BlueSpice\ConfigDefinition\BooleanSetting;
 class MainLinksRecentChanges extends BooleanSetting {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {

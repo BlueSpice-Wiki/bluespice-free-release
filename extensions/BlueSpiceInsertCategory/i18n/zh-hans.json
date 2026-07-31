@@ -4,6 +4,7 @@
 			"A Chinese Wikipedian",
 			"D41D8CD98F",
 			"Diskdance",
+			"GuoPC",
 			"Liuxinyu970226",
 			"Ouclie",
 			"Peterxy",
@@ -32,5 +33,6 @@
 	"bs-insertcategory-edit-dialog-tree-view": "显示所有分类",
 	"bs-insertcategory-pref-uploadintegration": "在上传对话框中使用页面分类",
 	"bs-insertcategory-pref-uploadintegration-help": "将页面分类设置成上传对话框中的默认选项",
-	"bs-insertcategory-set-categories-error": "设置分类失败"
+	"bs-insertcategory-set-categories-error": "设置分类失败",
+	"bs-insertcategory-set-categories-summary": "已更新的页面分类"
 }

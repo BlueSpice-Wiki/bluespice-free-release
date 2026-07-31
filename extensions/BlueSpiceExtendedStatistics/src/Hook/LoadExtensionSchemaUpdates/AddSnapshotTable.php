@@ -46,7 +46,6 @@ class AddSnapshotTable extends LoadExtensionSchemaUpdates {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getExtensionPath() {

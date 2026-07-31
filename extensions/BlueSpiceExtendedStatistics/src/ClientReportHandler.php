@@ -30,8 +30,6 @@ class ClientReportHandler {
 	}
 
 	/**
-	 *
-	 *
 	 * @return string JS class name
 	 */
 	public function getClass() {

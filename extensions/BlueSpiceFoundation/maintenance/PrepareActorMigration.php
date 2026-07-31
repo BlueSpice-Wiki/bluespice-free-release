@@ -17,15 +17,18 @@ class PrepareActorMigration extends Maintenance {
 	}
 
 	/**
-	 *
 	 * @var IDatabase
 	 */
 	private $db = null;
 
+	/** @var array */
 	private $userIds = [];
+	/** @var array */
 	private $userNames = [];
 
+	/** @var int */
 	private $unknownUserId = 1;
+	/** @var string */
 	private $unknownUserName = 'WikiSysop';
 
 	public function execute() {
@@ -58,6 +61,7 @@ class PrepareActorMigration extends Maintenance {
 		$this->output( "User names to be replaced: $userNameList\n" );
 	}
 
+	/** @var array */
 	private $tablesToFix = [
 		'revision' => [ 'rev_user', 'rev_user_text' ],
 		'archive' => [ 'ar_user', 'ar_user_text' ],
@@ -84,8 +88,13 @@ class PrepareActorMigration extends Maintenance {
 		sort( $this->orphanedUserNames );
 	}
 
+	/** @var array */
 	private $orphanedUserIds = [];
 
+	/**
+	 * @param string $tableName
+	 * @param string $fieldName
+	 */
 	private function checkUserId( $tableName, $fieldName ) {
 		$res = $this->db->select(
 			$tableName,
@@ -103,8 +112,13 @@ class PrepareActorMigration extends Maintenance {
 		$this->orphanedUserIds = array_merge( $this->orphanedUserIds, $orphanedUserIds );
 	}
 
+	/** @var array */
 	private $orphanedUserNames = [];
 
+	/**
+	 * @param string $tableName
+	 * @param string $fieldName
+	 */
 	private function checkUserText( $tableName, $fieldName ) {
 		$res = $this->db->select(
 			$tableName, "DISTINCT ($fieldName) AS username",

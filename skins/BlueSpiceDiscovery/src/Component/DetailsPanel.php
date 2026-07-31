@@ -14,9 +14,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\LinkFormatter;
 
 class DetailsPanel extends SimpleCard implements IRestrictedComponent {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -36,7 +33,6 @@ class DetailsPanel extends SimpleCard implements IRestrictedComponent {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getRequiredRLModules(): array {
@@ -105,7 +101,6 @@ class DetailsPanel extends SimpleCard implements IRestrictedComponent {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPermissions(): array {
@@ -150,7 +145,6 @@ class DetailsPanel extends SimpleCard implements IRestrictedComponent {
 	}
 
 	/**
-	 *
 	 * @param array &$panels
 	 * @return void
 	 */
@@ -164,7 +158,6 @@ class DetailsPanel extends SimpleCard implements IRestrictedComponent {
 	}
 
 	/**
-	 *
 	 * @param array &$targetPanel
 	 * @param array &$sourcePanel
 	 * @param string $key

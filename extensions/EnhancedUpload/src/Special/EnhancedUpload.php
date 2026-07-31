@@ -20,7 +20,6 @@ class EnhancedUpload extends SpecialPage {
 	}
 
 	/**
-	 *
 	 * @param string $par
 	 */
 	public function execute( $par ) {
@@ -39,7 +38,6 @@ class EnhancedUpload extends SpecialPage {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	protected function buildSkeleton() {

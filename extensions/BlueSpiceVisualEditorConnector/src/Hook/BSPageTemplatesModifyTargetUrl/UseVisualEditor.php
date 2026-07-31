@@ -4,6 +4,10 @@ namespace BlueSpice\VisualEditorConnector\Hook\BSPageTemplatesModifyTargetUrl;
 use BlueSpice\PageTemplates\Hook\BSPageTemplatesModifyTargetUrl;
 
 class UseVisualEditor extends BSPageTemplatesModifyTargetUrl {
+
+	/**
+	 * @inheritDoc
+	 */
 	protected function skipProcessing() {
 		if ( $this->targetTitle->getContentModel() !== CONTENT_MODEL_WIKITEXT ) {
 			// Only apply page templates to wikitext content model
@@ -26,6 +30,9 @@ class UseVisualEditor extends BSPageTemplatesModifyTargetUrl {
 		return true;
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->targetUrl = $this->targetTitle->getLinkURL(
 			[

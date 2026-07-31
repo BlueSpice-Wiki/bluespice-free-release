@@ -5,7 +5,6 @@ namespace BlueSpice\WhoIsOnline\Data;
 class PrimaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\PrimaryDatabaseDataProvider {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	protected function getTableNames() {
@@ -13,7 +12,6 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\Primary
 	}
 
 	/**
-	 *
 	 * @param \stdClass $row
 	 */
 	protected function appendRowToData( \stdClass $row ) {

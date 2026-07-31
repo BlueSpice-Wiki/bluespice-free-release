@@ -7,7 +7,6 @@ use BlueSpice\WhoIsOnline\Data\Record;
 class PrimaryDataProvider extends \BlueSpice\WhoIsOnline\Data\PrimaryDataProvider {
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getDefaultOptions() {

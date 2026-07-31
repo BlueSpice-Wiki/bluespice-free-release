@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mohammad ebz"
+		]
+	},
+	"standarddialogs-page-info-history": "آخرین ویرایش",
+	"standarddialogs-page-info-page-title": "عنوان",
+	"standarddialogs-page-info-page-contributors": "مشارکت‌کنندگان",
+	"standarddialogs-page-info-page-last-edit": "آخرین ویرایش",
+	"standarddialogs-page-info-page-last-editor": "آخرین ویرایشگر",
+	"standarddialogs-page-info-page-templates": "الگوها",
+	"standarddialogs-page-info-page-categories": "رده‌ها",
+	"standarddialogs-page-info-page-internal": "پیوندهای داخلی",
+	"standarddialogs-page-info-page-external": "پیوندهای خارجی",
+	"standarddialogs-page-info-page-images": "تصاویر",
+	"standarddialogs-new-page-title": "ایجاد صفحهٔ جدید",
+	"standarddialogs-new-page-label": "نام صفحه",
+	"standarddialogs-new-page-not-exist-label": "صفحه وجود ندارد",
+	"standarddialogs-create-button-new-page-text": "صفحهٔ جدید",
+	"standarddialogs-create-button-new-page-title": "ایجاد یک صفحهٔ جدید",
+	"standarddialogs-delete-btn": "حذف",
+	"standarddialogs-move-btn": "انتقال",
+	"standarddialogs-protect-btn": "محافظت"
+}

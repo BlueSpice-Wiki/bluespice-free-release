@@ -25,43 +25,36 @@ class Tracer {
 	public const ONLINE_STATUS_ONLINE = 'online';
 
 	/**
-	 *
 	 * @var RecordSet[]
 	 */
 	protected $trancedRecords = [];
 
 	/**
-	 *
 	 * @var LoadBalancer
 	 */
 	protected $lb = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var ReadOnlyMode
 	 */
 	protected $readOnly = null;
 
 	/**
-	 *
 	 * @var UtilityFactory
 	 */
 	protected $util = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $hash = '';
 
 	/**
-	 *
 	 * @param LoadBalancer $lb
 	 * @param Config $config
 	 * @param ReadOnlyMode $readOnly
@@ -76,7 +69,6 @@ class Tracer {
 	}
 
 	/**
-	 *
 	 * @param int|false $maxIdleSeconds
 	 * @return RecordSet
 	 */
@@ -111,7 +103,6 @@ class Tracer {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -167,7 +158,6 @@ class Tracer {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return string
 	 */
@@ -180,7 +170,6 @@ class Tracer {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

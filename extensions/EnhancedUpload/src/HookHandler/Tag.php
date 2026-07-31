@@ -41,14 +41,15 @@ class Tag implements ParserFirstCallInitHook {
 	}
 
 	/**
-	 * @param string $input
+	 * @param string|null $input
 	 * @param array $args
 	 * @param Parser $parser
 	 * @param PPFrame $frame
 	 * @return string
 	 */
-	public function onFilelist( string $input, array $args, Parser $parser,
+	public function onFilelist( ?string $input, array $args, Parser $parser,
 		PPFrame $frame ) {
+		$input = $input ?? '';
 		if ( isset( static::$counter[spl_object_id( $parser )] ) ) {
 			static::$counter[spl_object_id( $parser )]++;
 		} else {

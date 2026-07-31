@@ -20,10 +20,6 @@
 	right: 0;
 }
 
-.enhanced-ui-allpages-panel-content .oojsplus-data-paginator .shown-pages-label {
-	color: var( --color-subtle, #54595d );
-}
-
 .enhancedUI-allpages-paginator {
 	float: right;
 }
@@ -192,7 +188,7 @@
 	border-color: transparent;
 }
 
-.enhanced-pages-tree .oojsplus-data-tree-items .oojs-ui-data-tree-item .oojsplus-data-tree-expander a:focus-visible {
+.enhanced-pages-tree .oojsplus-data-tree-items .oojs-ui-data-tree-item .oojsplus-data-tree-expander a:focus-visible { /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	outline: 1px solid #36c;
 }
 

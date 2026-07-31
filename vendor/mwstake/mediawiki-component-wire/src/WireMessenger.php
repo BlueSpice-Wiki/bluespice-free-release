@@ -37,6 +37,10 @@ class WireMessenger {
 	 * @return void
 	 */
 	private function sendToWire( WireMessage $message ) {
+		if ( defined( 'MW_PHPUNIT_TEST' ) && MW_PHPUNIT_TEST ) {
+			return;
+		}
+
 		$data = $message->jsonSerialize();
 		$data['_wiki'] = WikiMap::getCurrentWikiId();
 		$body = json_encode( $data );

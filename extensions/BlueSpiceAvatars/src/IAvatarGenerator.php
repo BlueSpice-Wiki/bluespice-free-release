@@ -11,7 +11,6 @@ interface IAvatarGenerator {
 	public function getName();
 
 	/**
-	 *
 	 * @param User $user
 	 * @param int $size
 	 * @param array $params

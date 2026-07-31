@@ -5,10 +5,11 @@ use MediaWiki\Title\Title;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class BSApiWikiSubPageTreeStore extends BSApiExtJSStoreBase {
+
+	/** @var string */
 	protected $root = 'children';
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @return stdClass[]
 	 */
@@ -30,7 +31,6 @@ class BSApiWikiSubPageTreeStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getAllowedParams() {
@@ -50,7 +50,6 @@ class BSApiWikiSubPageTreeStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @param array $aOptions
 	 * @return stdClass[]
@@ -91,7 +90,6 @@ class BSApiWikiSubPageTreeStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param string $sNamespacePrefix
 	 * @param string $sQuery
 	 * @param array $aOptions
@@ -125,7 +123,6 @@ class BSApiWikiSubPageTreeStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param Title $oParent
 	 * @param string $sQuery
 	 * @param array $aOptions
@@ -161,13 +158,11 @@ class BSApiWikiSubPageTreeStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $currentLevelIds = [];
 
 	/**
-	 *
 	 * @param stdClass[] &$aDataSets
 	 * @param stdClass $row
 	 * @param Title|null $oParent

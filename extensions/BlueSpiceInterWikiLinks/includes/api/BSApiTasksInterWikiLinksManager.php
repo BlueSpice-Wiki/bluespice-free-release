@@ -102,7 +102,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 	 * @param stdClass $taskData
 	 * @return stdClass Standard tasks API return
 	 */
-	protected function task_editInterWikiLink( $taskData ) {
+	protected function task_editInterWikiLink( $taskData ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$return = $this->makeStandardReturn();
 		$oPrefix = null;
 
@@ -241,7 +241,7 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 	 * @param stdClass $taskData
 	 * @return stdClass Standard tasks API return
 	 */
-	protected function task_removeInterWikiLink( $taskData ) {
+	protected function task_removeInterWikiLink( $taskData ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$return = $this->makeStandardReturn();
 
 		$prefix = isset( $taskData->prefix )
@@ -283,7 +283,6 @@ class BSApiTasksInterWikiLinksManager extends BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param string $prefix
 	 * @return bool
 	 */

@@ -8,13 +8,11 @@ class ListSorter {
 	public const DESC = 'DESC';
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $direction = 'ASC';
 
 	/**
-	 *
 	 * @param array $listItems
 	 * @param string $direction
 	 * @return array
@@ -29,6 +27,11 @@ class ListSorter {
 		return $listItems;
 	}
 
+	/**
+	 * @param mixed $itemA
+	 * @param mixed $itemB
+	 * @return int
+	 */
 	private function doSort( $itemA, $itemB ) {
 		$posA = 0;
 		$posB = 0;

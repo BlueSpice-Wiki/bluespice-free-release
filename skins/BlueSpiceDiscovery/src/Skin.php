@@ -11,19 +11,16 @@ use SkinTemplate;
 
 class Skin extends SkinTemplate {
 	/**
-	 *
 	 * @var string
 	 */
 	public $skinname = 'discovery';
 
 	/**
-	 *
 	 * @var string
 	 */
 	public $template = Template::class;
 
 	/**
-	 *
 	 * @param OutputPage $out
 	 */
 	private function addStaticResourceModuleStyles( $out ) {
@@ -125,7 +122,6 @@ class Skin extends SkinTemplate {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function isViewMode() {

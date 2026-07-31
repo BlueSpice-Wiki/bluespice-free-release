@@ -66,9 +66,6 @@ class ImportDummyData extends Maintenance {
 	/** @var SnapshotFactory */
 	private SnapshotFactory $snapshotFactory;
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct();
 		$this->requireExtension( 'BlueSpiceExtendedStatistics' );

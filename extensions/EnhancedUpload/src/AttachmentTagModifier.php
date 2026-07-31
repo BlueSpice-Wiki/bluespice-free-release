@@ -35,7 +35,6 @@ class AttachmentTagModifier {
 	}
 
 	/**
-	 *
 	 * @param string $wikiText
 	 * @param int $count
 	 * @param array $files
@@ -57,7 +56,6 @@ class AttachmentTagModifier {
 	}
 
 	/**
-	 *
 	 * @param array $matches
 	 * @return string
 	 */
@@ -161,7 +159,6 @@ class AttachmentTagModifier {
 	}
 
 	/**
-	 *
 	 * @param string $wikiText
 	 * @param int $count
 	 * @param array $files
@@ -180,7 +177,6 @@ class AttachmentTagModifier {
 	}
 
 	/**
-	 *
 	 * @param array $matches
 	 * @return string
 	 */

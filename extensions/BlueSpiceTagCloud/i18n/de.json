@@ -31,6 +31,8 @@
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Schriftgröße für den Eintrag mit den wenigsten Elementen",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Max. Schriftgröße",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Schriftgröße für den Eintrag mit den meisten Elementen",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Anzahl",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Maximale Anzahl der Wörter, die in der Wortwolke angezeigt werden sollen. Wenn nicht angegeben, wird der Standardwert 40 verwendet",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Seiten ausnehmen",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Zeigt diese Seiten nicht in der Tag Cloud an. Für mehrere Seiten kann eine kommasepartierte Liste verwendet werden, z.B. \"Hauptseite, Test, MeineSeite\"",
 	"bs-tagcloud-droplet-name": "Wortwolke",

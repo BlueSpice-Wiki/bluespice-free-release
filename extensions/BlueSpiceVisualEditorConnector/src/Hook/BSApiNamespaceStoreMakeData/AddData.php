@@ -6,6 +6,9 @@ use BlueSpice\NamespaceManager\Hook\BSApiNamespaceStoreMakeData;
 
 class AddData extends BSApiNamespaceStoreMakeData {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		foreach ( $this->results as $key => &$result ) {
 
@@ -20,7 +23,6 @@ class AddData extends BSApiNamespaceStoreMakeData {
 	}
 
 	/**
-	 *
 	 * @param array $nsInfo
 	 * @return bool
 	 */

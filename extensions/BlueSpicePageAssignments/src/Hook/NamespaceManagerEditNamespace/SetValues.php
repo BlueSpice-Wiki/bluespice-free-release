@@ -6,6 +6,9 @@ use BlueSpice\NamespaceManager\Hook\NamespaceManagerEditNamespace;
 
 class SetValues extends NamespaceManagerEditNamespace {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->namespaceDefinition[$this->nsId]['pageassignments-secure']
 			= false;

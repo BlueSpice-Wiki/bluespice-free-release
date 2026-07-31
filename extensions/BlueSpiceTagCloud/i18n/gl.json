@@ -35,5 +35,7 @@
 	"bs-tagcloud-tag-tagcloud-tab-advanced": "Avanzado",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Modo de visualización",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Mostrar a frecuencia",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Engade o número de categorías ou consultas de procura empregadas"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Engade o número de categorías ou consultas de procura empregadas",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Cantidade",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Cantidade máxima de etiquetas para mostrar na nube de etiquetas. Se non se define, usarase 40 como valor predeterminado."
 }

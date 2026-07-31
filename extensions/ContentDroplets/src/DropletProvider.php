@@ -53,7 +53,7 @@ class DropletProvider {
 
 		$this->droplets = array_filter(
 			$this->droplets,
-			fn ( IDropletDescription $droplet ) => $droplet->listDroplet()
+			static fn ( IDropletDescription $droplet ) => $droplet->listDroplet()
 		);
 	}
 }

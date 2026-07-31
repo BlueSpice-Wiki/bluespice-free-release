@@ -25,6 +25,8 @@
 	"bs-tagcloud-tag-tagcloud-attr-minsize-help": "Help message for the \"minsize\" attribute input field  in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-label": "Label of the \"maxsize\" attribute input field in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-maxsize-help": "Help message for the \"maxsize\" attribute input field  in the VisualEditor tag inspector",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Label of the \"count\" attribute input field in the VisualEditor tag inspector",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Help message for the \"count\" attribute input field  in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-label": "Label of the \"exclude\" attribute input field in the VisualEditor tag inspector",
 	"bs-tagcloud-tag-tagcloud-attr-exclude-help": "Help message for the \"exclude\" attribute input field  in the VisualEditor tag inspector",
 	"bs-tagcloud-droplet-name": "Title of droplet for tag TagCloud",

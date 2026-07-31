@@ -13,5 +13,6 @@
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Weergeven",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Verbergen",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Zichtbaarheid van de titel",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Hier kunt u aangeven of de titel al dan niet getoond moet worden."
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Hier kunt u aangeven of de titel al dan niet getoond moet worden.",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help": "U kunt aangeven of de paginatitel zichtbaar moet zijn."
 }

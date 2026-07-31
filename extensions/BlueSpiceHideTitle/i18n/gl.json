@@ -11,5 +11,6 @@
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Amosar",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Agochar",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Visibilidade do título",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Aquí podes definir se o título se amosará ou non."
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Aquí podes definir se o título se amosará ou non.",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help": "Podes especificar se o título da páxina debe ser visible."
 }

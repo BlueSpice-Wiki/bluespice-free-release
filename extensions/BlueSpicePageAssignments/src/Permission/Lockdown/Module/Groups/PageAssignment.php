@@ -10,7 +10,6 @@ use MediaWiki\User\User;
 class PageAssignment extends SubModule {
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param User $user
 	 * @return bool
@@ -23,7 +22,6 @@ class PageAssignment extends SubModule {
 	}
 
 	/**
-	 *
 	 * @param User $user
 	 * @return string[]
 	 */
@@ -32,7 +30,6 @@ class PageAssignment extends SubModule {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param User $user
 	 * @param string $action
@@ -54,7 +51,6 @@ class PageAssignment extends SubModule {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param User $user
 	 * @param string $action

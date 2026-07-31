@@ -6,19 +6,28 @@ class MenuSelectWidget extends SelectWidget {
 	use ClippableElement;
 	use FloatableElement;
 
+	/** @var string */
 	protected $originalVerticalPosition;
+	/** @var bool */
 	protected $autoHide;
+	/** @var bool */
 	protected $hideOnChoose;
+	/** @var bool */
 	protected $filterFromInput;
+	/** @var mixed */
 	protected $input;
+	/** @var mixed */
 	protected $widget;
+	/** @var mixed */
 	protected $autoCloseIgnore;
+	/** @var bool */
 	protected $hightlightOnFilter;
+	/** @var mixed */
 	protected $width;
+	/** @var bool */
 	protected $visible;
 
 	/**
-	 *
 	 * @param array $config
 	 */
 	public function __construct( array $config = [] ) {
@@ -81,7 +90,6 @@ class MenuSelectWidget extends SelectWidget {
 	}
 
 	/**
-	 *
 	 * @param array &$config
 	 * @return array
 	 */
@@ -90,7 +98,6 @@ class MenuSelectWidget extends SelectWidget {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getJavaScriptClassName() {

@@ -125,7 +125,7 @@ class PagesVisited extends GenericTag {
 			[
 				'type' => 'text',
 				'name' => 'namespaces',
-				'label' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label' )->text(),
+				'label' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label' )->text(), // phpcs:ignore Generic.Files.LineLength.TooLong
 				'help' => Message::newFromKey( 'bs-pagesvisited-ve-pagesvisited-attr-namespaces-help' )->text(),
 			]
 		] );

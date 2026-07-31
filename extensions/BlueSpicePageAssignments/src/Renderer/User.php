@@ -8,13 +8,11 @@ class User extends Assignment {
 	public const PARAM_ASSIGNMENT = 'assignment';
 
 	/**
-	 *
 	 * @var IAssignment
 	 */
 	protected $assignment = null;
 
 	/**
-	 *
 	 * @param mixed $val
 	 * @return mixed
 	 */

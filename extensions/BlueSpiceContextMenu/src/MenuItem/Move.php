@@ -9,7 +9,6 @@ use MediaWiki\SpecialPage\SpecialPage;
 class Move extends Base {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIconClass() {
@@ -17,7 +16,6 @@ class Move extends Base {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -25,7 +23,6 @@ class Move extends Base {
 	}
 
 	/**
-	 *
 	 * @return string String of the URL.
 	 */
 	public function getUrl() {
@@ -33,7 +30,6 @@ class Move extends Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {

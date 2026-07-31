@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"COMISSIONTOPOC",
 			"Cedric31"
 		]
 	},
-	"log-description-bs-pageassignments": "Jornal de las modificacions sus las afectacions de la pagina"
+	"log-description-bs-pageassignments": "Jornal de las modificacions sus las afectacions de la pagina",
+	"bs-pageassignments-notifications-watchlist-description": "Siatz assignat a aquesta pagina"
 }

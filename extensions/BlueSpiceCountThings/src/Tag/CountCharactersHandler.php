@@ -52,7 +52,6 @@ class CountCharactersHandler implements ITagHandler {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function magicWordBsCountCharacters( string $input, array $params ) {

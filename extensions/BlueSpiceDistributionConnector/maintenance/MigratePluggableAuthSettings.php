@@ -28,7 +28,9 @@ class MigratePluggableAuthSettings extends Maintenance {
 		$res = $dbr->newSelectQueryBuilder()
 			->table( 'bs_settings3' )
 			->fields( [ 's_name', 's_value' ] )
-			->where( [ 's_name' => [ 'DistributionConnectorPluggableAuthConfig', 'DistributionConnectorEnableAutoLogin' ] ] )
+			->where( [
+				's_name' => [ 'DistributionConnectorPluggableAuthConfig', 'DistributionConnectorEnableAutoLogin' ]
+			] )
 			->caller( __METHOD__ )
 			->fetchResultSet();
 
@@ -45,8 +47,9 @@ class MigratePluggableAuthSettings extends Maintenance {
 		$this->output( 'Found settings. Copying to instance ... ' );
 		$newDbw = $this->getServiceContainer()->getConnectionProvider()->getPrimaryDatabase();
 		foreach ( $settings as $name => $value ) {
-			$newDbw->newInsertQueryBuilder()
-				->table( 'bs_settings3' )
+			$newDbw->newReplaceQueryBuilder()
+				->replaceInto( 'bs_settings3' )
+				->uniqueIndexFields( [ 's_name' ] )
 				->row( [
 					's_name' => $name,
 					's_value' => $value
@@ -56,6 +59,10 @@ class MigratePluggableAuthSettings extends Maintenance {
 
 			$this->output( "Copied '$name'." );
 		}
+
+		$cache = $this->getServiceContainer()->getMainWANObjectCache();
+		$key = $cache->makeKey( 'BlueSpiceFoundation', 'bs_settings3' );
+		$cache->delete( $key );
 	}
 
 }

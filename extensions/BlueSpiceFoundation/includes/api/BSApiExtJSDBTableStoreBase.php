@@ -113,7 +113,6 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 	abstract public function makeTables( $sQuery, $aFilter );
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @param array $aFilter
 	 * @return array
@@ -125,7 +124,6 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @param array $aFilter
 	 * @return array
@@ -151,7 +149,6 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @param array $aFilter
 	 * @return array
@@ -163,7 +160,6 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @param array $aFilter
 	 * @return array
@@ -176,7 +172,7 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 
 	/**
 	 * Returns a single data set
-	 * @param type $row
+	 * @param mixed $row
 	 * @return stdClass or null
 	 */
 	public function makeDataSet( $row ) {
@@ -184,7 +180,6 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $oFilter
 	 * @param array $aReturn
 	 * @return array
@@ -214,7 +209,6 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $oFilter
 	 * @param array $aReturn
 	 * @return array

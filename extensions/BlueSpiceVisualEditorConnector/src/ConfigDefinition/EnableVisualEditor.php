@@ -5,7 +5,6 @@ namespace BlueSpice\VisualEditorConnector\ConfigDefinition;
 class EnableVisualEditor extends \BlueSpice\ConfigDefinition\BooleanSetting {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {
@@ -17,7 +16,6 @@ class EnableVisualEditor extends \BlueSpice\ConfigDefinition\BooleanSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -25,7 +23,6 @@ class EnableVisualEditor extends \BlueSpice\ConfigDefinition\BooleanSetting {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function isRLConfigVar() {

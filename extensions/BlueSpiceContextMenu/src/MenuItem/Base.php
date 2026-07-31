@@ -9,13 +9,11 @@ use MediaWiki\Title\Title;
 abstract class Base implements IMenuItem {
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @param Title $title
 	 */
 	public function __construct( $title ) {
@@ -23,7 +21,6 @@ abstract class Base implements IMenuItem {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return IMenuItem
 	 */
@@ -32,7 +29,6 @@ abstract class Base implements IMenuItem {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getJSHandler() {
@@ -40,7 +36,6 @@ abstract class Base implements IMenuItem {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -49,7 +44,6 @@ abstract class Base implements IMenuItem {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getChildren() {
@@ -57,7 +51,6 @@ abstract class Base implements IMenuItem {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getPosition() {

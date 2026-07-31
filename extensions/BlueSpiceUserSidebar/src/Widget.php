@@ -8,25 +8,21 @@ use MediaWiki\Context\IContextSource;
 abstract class Widget implements IWidget {
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $key = '';
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $params = [];
@@ -58,7 +54,6 @@ abstract class Widget implements IWidget {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getKey(): string {

@@ -13,7 +13,6 @@ use SpecialEmailUser;
 class MailUser extends BaseUserAction {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIconClass() {
@@ -21,7 +20,6 @@ class MailUser extends BaseUserAction {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -29,7 +27,6 @@ class MailUser extends BaseUserAction {
 	}
 
 	/**
-	 *
 	 * @return string String of the URL.
 	 */
 	public function getUrl() {
@@ -37,7 +34,6 @@ class MailUser extends BaseUserAction {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -45,7 +41,6 @@ class MailUser extends BaseUserAction {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -71,7 +66,6 @@ class MailUser extends BaseUserAction {
 	}
 
 	/**
-	 *
 	 * @return User
 	 */
 	public function getUser() {

@@ -10,7 +10,6 @@ use Wikimedia\Rdbms\ILoadBalancer;
 class Store implements ITagCloudStore {
 
 	/**
-	 *
 	 * @var Context
 	 */
 	protected $context = null;
@@ -19,7 +18,6 @@ class Store implements ITagCloudStore {
 	protected $loadBalancer;
 
 	/**
-	 *
 	 * @param Context $context
 	 */
 	public function __construct( Context $context ) {
@@ -28,7 +26,6 @@ class Store implements ITagCloudStore {
 	}
 
 	/**
-	 *
 	 * @return Reader
 	 */
 	public function getReader() {
@@ -36,7 +33,6 @@ class Store implements ITagCloudStore {
 	}
 
 	/**
-	 *
 	 * @return Writer
 	 */
 	public function getWriter() {
@@ -48,7 +44,6 @@ class Store implements ITagCloudStore {
 	}
 
 	/**
-	 *
 	 * @param array $params
 	 * @return ReaderParams
 	 */

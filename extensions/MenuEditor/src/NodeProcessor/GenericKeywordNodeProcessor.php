@@ -10,13 +10,11 @@ use MWStake\MediaWiki\Lib\Nodes\INodeSource;
 class GenericKeywordNodeProcessor extends KeywordNodeProcessor {
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $type = '';
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $keywords = [];

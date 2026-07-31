@@ -3,10 +3,15 @@
 namespace MediaWiki\Extension\PDFCreator\ExportMode;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
+use MediaWiki\Extension\PDFCreator\IContextSourceAware;
 use MediaWiki\Extension\PDFCreator\IExportMode;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 
-class Page implements IExportMode {
+class Page implements IExportMode, IContextSourceAware {
 
 	/** @var Config */
 	protected $config;
@@ -14,13 +19,33 @@ class Page implements IExportMode {
 	/** @var TitleFactory */
 	protected $titleFactory;
 
+	/** @var PermissionManager */
+	protected $permissionManager;
+
+	/** @var IContextSource */
+	protected $context;
+
 	/**
 	 * @param Config $config
 	 * @param TitleFactory $titleFactory
+	 * @param PermissionManager|null $permissionManager
 	 */
-	public function __construct( Config $config, TitleFactory $titleFactory ) {
+	public function __construct( Config $config, TitleFactory $titleFactory,
+		?PermissionManager $permissionManager = null ) {
 		$this->config = $config;
 		$this->titleFactory = $titleFactory;
+		if ( !$permissionManager ) {
+			$permissionManager = MediaWikiServices::getInstance()->getPermissionManager();
+		}
+		$this->permissionManager = $permissionManager;
+	}
+
+	/**
+	 * @param IContextSource $context
+	 * @return void
+	 */
+	public function setContext( IContextSource $context ): void {
+		$this->context = $context;
 	}
 
 	/**
@@ -66,6 +91,9 @@ class Page implements IExportMode {
 		if ( isset( $params['revId'] ) ) {
 			unset( $params['revId'] );
 		}
+		if ( !$this->userCanReadPage( $title ) ) {
+			return [];
+		}
 
 		$pages[] = [
 			'type' => 'page',
@@ -97,6 +125,18 @@ class Page implements IExportMode {
 			return '';
 		}
 		return $template;
+	}
+
+	/**
+	 * @param Title $title
+	 * @return bool
+	 */
+	protected function userCanReadPage( $title ) {
+		$user = $this->context->getUser();
+		if ( $this->permissionManager->userCan( 'read', $user, $title ) ) {
+			return true;
+		}
+		return false;
 	}
 
 }

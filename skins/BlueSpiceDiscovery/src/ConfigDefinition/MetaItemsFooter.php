@@ -9,7 +9,6 @@ use MediaWiki\MediaWikiServices;
 class MetaItemsFooter extends ArraySetting {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {
@@ -35,7 +34,6 @@ class MetaItemsFooter extends ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getVariableName() {
@@ -43,7 +41,6 @@ class MetaItemsFooter extends ArraySetting {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getOptions() {

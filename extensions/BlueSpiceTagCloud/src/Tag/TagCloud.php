@@ -79,6 +79,7 @@ class TagCloud extends GenericTag {
 		$minSize = ( new IntValue() )->setDefaultValue( 5 )->setMin( 1 );
 		$maxSize = ( new IntValue() )->setDefaultValue( 30 )->setMin( 1 );
 		$exclude = new StringValue();
+		$count = ( new IntValue() )->setMin( 1 );
 
 		return [
 			'renderer' => $renderer,
@@ -88,6 +89,7 @@ class TagCloud extends GenericTag {
 			'minsize' => $minSize,
 			'maxsize' => $maxSize,
 			'exclude' => $exclude,
+			'count' => $count,
 			// B/C
 			'type' => ( clone $store )->setDefaultValue( '' ),
 			'viewtype' => ( clone $renderer )->setDefaultValue( '' ),
@@ -207,6 +209,15 @@ class TagCloud extends GenericTag {
 									'bs-tagcloud-tag-tagcloud-attr-maxsize-label'
 								)->text(),
 								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-maxsize-help' )->text(),
+								'labelAlign' => 'top'
+							],
+							[
+								'type' => 'number',
+								'name' => 'count',
+								'label' => Message::newFromKey(
+									'bs-tagcloud-tag-tagcloud-attr-count-label'
+								)->text(),
+								'help' => Message::newFromKey( 'bs-tagcloud-tag-tagcloud-attr-count-help' )->text(),
 								'labelAlign' => 'top'
 							],
 							[

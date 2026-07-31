@@ -7,7 +7,6 @@ use MediaWiki\Output\Hook\BeforePageDisplayHook;
 class AddBacklink implements BeforePageDisplayHook {
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {

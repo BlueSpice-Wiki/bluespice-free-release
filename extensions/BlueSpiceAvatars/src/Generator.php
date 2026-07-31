@@ -15,19 +15,16 @@ class Generator {
 	public const PARAM_WIDTH = 'width';
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var AvatarGeneratorFactory
 	 */
 	protected $factory = null;
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param AvatarGeneratorFactory|null $factory
 	 */

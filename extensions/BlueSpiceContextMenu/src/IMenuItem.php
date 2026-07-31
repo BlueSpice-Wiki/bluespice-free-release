@@ -18,7 +18,6 @@ interface IMenuItem {
 	public function getUrl();
 
 	/**
-	 *
 	 * e.g. "bs.pageassignments.contextmenu.handler"
 	 *
 	 * @return string

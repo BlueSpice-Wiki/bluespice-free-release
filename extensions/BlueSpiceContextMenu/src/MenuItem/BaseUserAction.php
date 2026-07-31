@@ -9,19 +9,16 @@ use MediaWiki\User\User;
 abstract class BaseUserAction extends Base {
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @var User
 	 */
 	protected $targetUser = null;
 
 	/**
-	 *
 	 * @param Title $title
 	 */
 	public function __construct( $title ) {

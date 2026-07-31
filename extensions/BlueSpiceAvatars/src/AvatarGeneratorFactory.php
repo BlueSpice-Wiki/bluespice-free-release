@@ -8,19 +8,16 @@ use MediaWiki\Config\Config;
 class AvatarGeneratorFactory {
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var ExtensionAttributeBasedRegistry
 	 */
 	protected $registry = null;
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param ExtensionAttributeBasedRegistry $registry
 	 */
@@ -30,7 +27,6 @@ class AvatarGeneratorFactory {
 	}
 
 	/**
-	 *
 	 * @param string $name
 	 * @return IAvatarGenerator
 	 */
@@ -47,7 +43,6 @@ class AvatarGeneratorFactory {
 	}
 
 	/**
-	 *
 	 * @return IAvatarGenerator[]
 	 */
 	public function getAllGenerators() {

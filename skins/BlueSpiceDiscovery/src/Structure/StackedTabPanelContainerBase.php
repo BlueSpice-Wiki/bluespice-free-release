@@ -55,7 +55,6 @@ abstract class StackedTabPanelContainerBase
 	protected $objectFactory = null;
 
 	/**
-	 *
 	 * @param ITemplateDataProvider $templateDataProvider
 	 * @param ComponentRenderer $componentRenderer
 	 * @param SkinSlotRegistry $skinSlotRegistry
@@ -74,7 +73,6 @@ abstract class StackedTabPanelContainerBase
 	}
 
 	/**
-	 *
 	 * @param ITemplateDataProvider $templateDataProvider
 	 * @param ComponentRenderer $componentRenderer
 	 * @param SkinSlotRegistry $skinSlotRegistry
@@ -93,7 +91,6 @@ abstract class StackedTabPanelContainerBase
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function getTabPanels(): array {
@@ -226,7 +223,6 @@ abstract class StackedTabPanelContainerBase
 	}
 
 	/**
-	 *
 	 * @param ITabPanel[] $tabPanels
 	 * @return void
 	 */
@@ -248,7 +244,6 @@ abstract class StackedTabPanelContainerBase
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getParams(): array {
@@ -297,7 +292,6 @@ abstract class StackedTabPanelContainerBase
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getClasses(): array {
@@ -305,7 +299,6 @@ abstract class StackedTabPanelContainerBase
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

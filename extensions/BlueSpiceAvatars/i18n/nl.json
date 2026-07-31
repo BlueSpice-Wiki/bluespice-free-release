@@ -28,5 +28,7 @@
 	"bs-avatars-upload-button": "Uploaden",
 	"bs-avatars-generate-button": "Aanmaken",
 	"bs-avatars-generic-cancel": "Annuleren",
-	"bs-avatars-generate-description": "Een nieuwe automatische avatar genereren. Hierdoor wordt een eventueel al geüploade profielafbeelding definitief vervangen (indien ingesteld)."
+	"bs-avatars-generate-description": "Een nieuwe automatische avatar genereren. Hierdoor wordt een eventueel al geüploade profielafbeelding definitief vervangen (indien ingesteld).",
+	"bs-avatars-upload-unsupported-type": "Dit bestandstype wordt niet ondersteund.",
+	"bs-avatars-upload-tempfile-missing": "Het ophalen van het tijdelijke bestand is mislukt"
 }

@@ -45,7 +45,7 @@
 	"bs-pageassignments-dlg-fldlabel": "할당",
 	"bs-pageassignments-menu-label": "문서 할당 설정",
 	"bs-pageassignments-column-assignments": "할당",
-	"bs-pageassignments-column-assignedto": "할당자",
+	"bs-pageassignments-column-assignedto": "담당자",
 	"bs-pageassignments-action-log": "할당 로그",
 	"bs-pageassignments-action-delete-confirm": "할당을 제거합니까?",
 	"bs-pageassignments-api-error-insert": "\"$2\"에 대한 \"$1\" 할당을 저장할 수 없습니다",
@@ -89,8 +89,9 @@
 	"echo-pref-tooltip-bs-pageassignments-action-cat": "당신(또는 당신이 속한 그룹)이 문서에 할당되거나 할당 해제될 때 알림",
 	"bs-pageassignments-pref-lockdowngroups": "사용자가 할당되지 않은 경우 문서에 대한 접근이 차단되는 그룹",
 	"apihelp-bs-pageassignment-tasks-summary": "특정 문서의 할당 목록을 가져오거나 편집",
-	"bs-pageassignments-secure-lockdown-reason": "\"$1\" 작업은 $3 {{PLURAL:$2|할당자}}에만 사용할 수 있습니다",
+	"bs-pageassignments-secure-lockdown-reason": "\"$1\" 작업은 $3 {{PLURAL:$2|담당자}}에만 사용할 수 있습니다",
 	"bs-pageassignments-privacy-transparency-working-assignments": "BlueSpicePageAssignments - 다음 {{PLURAL:$2|문서|문서들}}에 할당됨: $1",
 	"bs-pageassignments-statistics-report-assigned-pages-desc": "분류 및 이름공간별로 필터링된, 선택한 기간 내의 할당된 문서와 할당되지 않은 문서",
-	"bs-pageassignments-event-assignment-links-intro": "할당 확인을 위해 다음 링크의 문서를 방문해 주세요"
+	"bs-pageassignments-event-assignment-links-intro": "할당 확인을 위해 다음 링크의 문서를 방문해 주세요",
+	"bs-pageassignments-notifications-watchlist-description": "이 문서에 할당되었습니다"
 }

@@ -65,7 +65,6 @@ class GenericSource implements ISearchSource {
 	}
 
 	/**
-	 *
 	 * @return Config
 	 */
 	public function getConfig() {
@@ -128,7 +127,6 @@ class GenericSource implements ISearchSource {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getIndexSettings(): array {
@@ -154,12 +152,26 @@ class GenericSource implements ISearchSource {
 							"tokenizer" => "substring",
 							"filter" => [ "lowercase", "asciifolding" ]
 						],
+						"autocomplete_index_analyzer" => [
+							"tokenizer" => "autocomplete",
+							"filter" => [ "lowercase", "asciifolding" ]
+						],
+						"autocomplete_search_analyzer" => [
+							"tokenizer" => "whitespace",
+							"filter" => [ "lowercase", "asciifolding" ]
+						],
 						"content_analyzer" => [
 							"tokenizer" => "whitespace",
 							"filter" => [ "lowercase", "asciifolding" ]
 						],
 					],
 					"tokenizer" => [
+						"autocomplete" => [
+							"type" => "ngram",
+							"min_gram" => 1,
+							"max_gram" => 20,
+							"token_chars" => [ "letter", "digit", "punctuation", "symbol" ]
+						],
 						"substring" => [
 							"type" => "ngram",
 							"min_gram" => 3,
@@ -173,7 +185,6 @@ class GenericSource implements ISearchSource {
 	}
 
 	/**
-	 *
 	 * @param Client $client
 	 *
 	 * @return bool
@@ -183,7 +194,6 @@ class GenericSource implements ISearchSource {
 	}
 
 	/**
-	 *
 	 * @param array $document
 	 * @return bool
 	 */
@@ -207,7 +217,6 @@ class GenericSource implements ISearchSource {
 	}
 
 	/**
-	 *
 	 * @param string $documentId
 	 *
 	 * @return bool
@@ -236,7 +245,6 @@ class GenericSource implements ISearchSource {
 	}
 
 	/**
-	 *
 	 * @return Formatter\Base
 	 */
 	public function getFormatter(): ISearchResultFormatter {
@@ -244,7 +252,6 @@ class GenericSource implements ISearchSource {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getSearchPermission(): string {

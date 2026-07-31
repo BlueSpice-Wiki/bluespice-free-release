@@ -100,7 +100,6 @@ class VueJsPlusModule extends FileModule {
 	}
 
 	/**
-	 *
 	 * @param Context $context
 	 */
 	private function setup( $context ) {
@@ -164,7 +163,6 @@ class VueJsPlusModule extends FileModule {
 	}
 
 	/**
-	 *
 	 * @param array $requestedFiles
 	 * @param array $files
 	 * @return void
@@ -193,7 +191,6 @@ class VueJsPlusModule extends FileModule {
 	}
 
 	/**
-	 *
 	 * @param string $file
 	 * @return FilePath
 	 */
@@ -212,7 +209,6 @@ class VueJsPlusModule extends FileModule {
 	}
 
 	/**
-	 *
 	 * @param Context $context
 	 * @return array
 	 */

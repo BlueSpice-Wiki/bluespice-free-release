@@ -6,6 +6,9 @@ use BlueSpice\Hook\LoadExtensionSchemaUpdates;
 
 class AddMigrateRespEditorsUpdateMaintenance extends LoadExtensionSchemaUpdates {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function skipProcessing() {
 		if ( !$this->updater->tableExists( 'bs_responsible_editors' ) ) {
 			return true;

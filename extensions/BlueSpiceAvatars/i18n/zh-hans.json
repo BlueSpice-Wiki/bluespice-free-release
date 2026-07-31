@@ -26,5 +26,7 @@
 	"bs-avatars-upload-button": "上传",
 	"bs-avatars-generate-button": "生成",
 	"bs-avatars-generic-cancel": "取消",
-	"bs-avatars-generate-description": "生成新的自动化头像。此操作将永久替换任何已上传的个人文件图片（若是已设置）。"
+	"bs-avatars-generate-description": "生成新的自动化头像。此操作将永久替换任何已上传的个人文件图片（若是已设置）。",
+	"bs-avatars-upload-unsupported-type": "不支持此文件类型。",
+	"bs-avatars-upload-tempfile-missing": "获取临时文件失败"
 }

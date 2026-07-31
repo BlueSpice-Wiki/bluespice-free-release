@@ -1,4 +1,6 @@
 <?php
+// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+
 /**
  * Provides common tasks that can pe performed on a WikiPage.
  *
@@ -40,7 +42,6 @@ use MediaWiki\Title\Title;
  */
 class BSApiWikiPageTasks extends BSApiTasksBase {
 	/**
-	 *
 	 * @var array
 	 */
 	protected $aTasks = [

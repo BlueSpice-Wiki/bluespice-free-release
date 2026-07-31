@@ -33,14 +33,22 @@ use MediaWiki\Context\IContextSource;
 
 abstract class Extension extends Context implements JsonSerializable {
 
+	/** @var string */
 	protected $extPath;
+	/** @var array */
 	protected $author;
+	/** @var string */
 	protected $package;
+	/** @var string */
 	protected $status;
+	/** @var string */
 	protected $name;
+	/** @var string */
 	protected $url;
+	/** @var string */
 	protected $version;
 
+	/** @var array */
 	protected $allowedInfoKeys = [
 		'extPath' => '',
 		'author' => [],
@@ -56,7 +64,6 @@ abstract class Extension extends Context implements JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @param array $definition
 	 * @param IContextSource $context
 	 * @param Config $config
@@ -186,6 +193,10 @@ abstract class Extension extends Context implements JsonSerializable {
 		return false;
 	}
 
+	/**
+	 * @param mixed $value
+	 * @return bool
+	 */
 	private function setAuthors( $value ) {
 		$var = 'author';
 		if ( !is_array( $value ) ) {
@@ -198,6 +209,9 @@ abstract class Extension extends Context implements JsonSerializable {
 		return true;
 	}
 
+	/**
+	 * @param array $def
+	 */
 	private function initDataFromDefinition( $def ) {
 		foreach ( $this->allowedInfoKeys as $name => $defVal ) {
 			$value = $def;

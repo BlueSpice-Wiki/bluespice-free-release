@@ -30,7 +30,6 @@ class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\Secon
 	}
 
 	/**
-	 *
 	 * @param Record &$dataSet
 	 */
 	protected function doExtend( &$dataSet ) {

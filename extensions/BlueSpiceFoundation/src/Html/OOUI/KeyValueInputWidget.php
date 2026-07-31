@@ -9,21 +9,32 @@ use OOUI\Tag;
 use OOUI\TextInputWidget;
 
 class KeyValueInputWidget extends \OOUI\Widget {
+
+	/** @var string */
 	protected $keyLabel;
+	/** @var string */
 	protected $valueLabel;
+	/** @var string */
 	protected $addNewFormLabel;
+	/** @var bool */
 	protected $keyReadOnly;
+	/** @var bool */
 	protected $allowAdditions;
+	/** @var bool */
 	protected $labelsOnlyOnFirst;
+	/** @var bool */
 	protected $valueRequired;
+	/** @var array */
 	protected $value;
 
+	/** @var Tag */
 	protected $separator;
+	/** @var Tag */
 	protected $valueContainer;
+	/** @var Tag */
 	protected $addContainer;
 
 	/**
-	 *
 	 * @param array $config
 	 */
 	public function __construct( array $config = [] ) {
@@ -88,7 +99,6 @@ class KeyValueInputWidget extends \OOUI\Widget {
 	}
 
 	/**
-	 *
 	 * @param array $config
 	 * @return null
 	 */
@@ -104,7 +114,6 @@ class KeyValueInputWidget extends \OOUI\Widget {
 	}
 
 	/**
-	 *
 	 * @param array $values
 	 * @return KeyValueInputWidget
 	 */
@@ -233,7 +242,6 @@ class KeyValueInputWidget extends \OOUI\Widget {
 	}
 
 	/**
-	 *
 	 * @param array &$config
 	 * @return array
 	 */
@@ -264,7 +272,6 @@ class KeyValueInputWidget extends \OOUI\Widget {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getJavaScriptClassName() {

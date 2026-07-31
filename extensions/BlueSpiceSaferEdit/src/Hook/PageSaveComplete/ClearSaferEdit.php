@@ -6,6 +6,9 @@ use BlueSpice\Hook\PageSaveComplete;
 
 class ClearSaferEdit extends PageSaveComplete {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$seManager = $this->getServices()->getService( 'BSSaferEditManager' );
 		$title = $this->wikiPage->getTitle();

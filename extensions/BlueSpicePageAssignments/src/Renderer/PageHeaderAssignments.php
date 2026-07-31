@@ -19,7 +19,6 @@ class PageHeaderAssignments extends Renderer {
 
 	public const SKIN_TEMPLATE = 'skintemplate';
 	/**
-	 *
 	 * @var PageHeaderBeforeContentFactory
 	 */
 	protected $factory = null;
@@ -43,7 +42,6 @@ class PageHeaderAssignments extends Renderer {
 	}
 
 	/**
-	 *
 	 * @param string $name
 	 * @param MediaWikiServices $services
 	 * @param Config $config
@@ -157,7 +155,6 @@ class PageHeaderAssignments extends Renderer {
 	}
 
 	/**
-	 *
 	 * @param IAssignment $assignment
 	 * @return \stdClass
 	 */
@@ -189,7 +186,6 @@ class PageHeaderAssignments extends Renderer {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {

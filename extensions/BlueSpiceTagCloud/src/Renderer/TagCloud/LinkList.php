@@ -5,7 +5,6 @@ namespace BlueSpice\TagCloud\Renderer\TagCloud;
 class LinkList extends \BlueSpice\TagCloud\Renderer {
 
 	/**
-	 *
 	 * @param mixed $val
 	 * @return mixed
 	 */

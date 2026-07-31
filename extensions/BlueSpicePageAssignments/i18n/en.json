@@ -87,5 +87,6 @@
 	"bs-pageassignments-header-action-delete": "Delete",
 	"bs-pageassignments-title-edit": "Edit assignments",
 	"bs-pageassignments-title-delete": "Delete assignments",
-	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages"
+	"bs-pageassignments-show-unassigned-pages": "Show unassigned pages",
+	"bs-pageassignments-notifications-watchlist-description": "You are assigned to this page"
 }

@@ -34,13 +34,11 @@ use MediaWiki\Title\Title;
 abstract class BsContextMenuGetItems extends \BlueSpice\Hook {
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $items = null;
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;

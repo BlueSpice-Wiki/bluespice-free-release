@@ -9,9 +9,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\Literal;
 
 class DefaultSearchForm extends Literal {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct(
 			'a-default-search-form',
@@ -20,7 +17,6 @@ class DefaultSearchForm extends Literal {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHtml(): string {
@@ -29,7 +25,6 @@ class DefaultSearchForm extends Literal {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPermissions(): array {
@@ -37,7 +32,6 @@ class DefaultSearchForm extends Literal {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function getParams(): array {

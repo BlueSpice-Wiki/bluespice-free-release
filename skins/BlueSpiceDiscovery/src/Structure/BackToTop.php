@@ -8,7 +8,6 @@ use MediaWiki\Context\IContextSource;
 class BackToTop extends SkinStructureBase {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName(): string {
@@ -16,7 +15,6 @@ class BackToTop extends SkinStructureBase {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

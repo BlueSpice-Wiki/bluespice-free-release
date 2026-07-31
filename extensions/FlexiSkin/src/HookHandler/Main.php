@@ -47,7 +47,6 @@ class Main implements MediaWikiServicesHook, BeforePageDisplayHook, UserLoadAfte
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function onMediaWikiServices( $container ) {
@@ -67,7 +66,6 @@ class Main implements MediaWikiServicesHook, BeforePageDisplayHook, UserLoadAfte
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {

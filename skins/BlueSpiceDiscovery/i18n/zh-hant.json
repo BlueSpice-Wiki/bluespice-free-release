@@ -196,5 +196,13 @@
 	"bs-discovery-footer-places-alt-text-bluespice": "由 BlueSpice 提供支援",
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "由 Semantic MediaWiki 提供支援",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "編輯",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "清除"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "清除",
+	"bs-discovery-breadcrumb-nav-root-node-title": "顯示命名空間$1裡的所有頁面",
+	"bs-discovery-personalurl-blog-text": "部落格",
+	"bs-discovery-menu-provider-namespace-tree-label": "所有頁面",
+	"bs-discovery-menu-provider-namespace-tree-desc": "以樹狀結構顯示目前命名空間的所有頁面",
+	"bs-discovery-namespace-tree-pnl-header-text": "頁面",
+	"bs-discovery-namespace-tree-search-btn-label": "顯示搜尋",
+	"bs-discovery-namespace-tree-create-btn-label": "新增頁面",
+	"bs-discovery-namespace-tree-search-label": "搜尋頁面"
 }

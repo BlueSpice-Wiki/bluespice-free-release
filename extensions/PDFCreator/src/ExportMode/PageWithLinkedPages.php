@@ -4,8 +4,6 @@ namespace MediaWiki\Extension\PDFCreator\ExportMode;
 
 use DOMDocument;
 use MediaWiki\Config\Config;
-use MediaWiki\Context\IContextSource;
-use MediaWiki\Extension\PDFCreator\IContextSourceAware;
 use MediaWiki\Extension\PDFCreator\Utility\UrlHelper;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Permissions\PermissionManager;
@@ -15,19 +13,13 @@ use MediaWiki\Revision\RevisionRenderer;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 
-class PageWithLinkedPages extends Page implements IContextSourceAware {
-
-	/** @var IContextSource */
-	private $context;
+class PageWithLinkedPages extends Page {
 
 	/** @var RevisionLookup */
 	private $revisionLookup;
 
 	/** @var RevisionRenderer */
 	private $revisionRenderer;
-
-	/** @var PermissionManager */
-	private $permissionManager;
 
 	/**
 	 * @param Config $config
@@ -41,18 +33,9 @@ class PageWithLinkedPages extends Page implements IContextSourceAware {
 		RevisionLookup $revisionLookup, RevisionRenderer $revisionRenderer,
 		PermissionManager $permissionManager
 	) {
-		parent::__construct( $config, $titleFactory );
+		parent::__construct( $config, $titleFactory, $permissionManager );
 		$this->revisionLookup = $revisionLookup;
 		$this->revisionRenderer = $revisionRenderer;
-		$this->permissionManager = $permissionManager;
-	}
-
-	/**
-	 * @param IContextSource $context
-	 * @return void
-	 */
-	public function setContext( IContextSource $context ): void {
-		$this->context = $context;
 	}
 
 	/**

@@ -14,7 +14,6 @@ class DiscoverySkin implements MWStakeCommonUIRegisterSkinSlotComponents, MWStak
 	private $flexiSkinManager;
 
 	/**
-	 *
 	 * @param FlexiSkinManager $flexiSkinManager
 	 */
 	public function __construct( FlexiSkinManager $flexiSkinManager ) {

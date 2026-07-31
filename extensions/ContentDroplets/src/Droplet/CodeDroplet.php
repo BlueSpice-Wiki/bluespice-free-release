@@ -8,8 +8,6 @@ use MediaWiki\Message\Message;
 
 class CodeDroplet extends GenericDroplet {
 
-	/**
-	 */
 	public function __construct() {
 	}
 

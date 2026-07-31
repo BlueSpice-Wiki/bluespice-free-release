@@ -14,7 +14,6 @@ use Wikimedia\Rdbms\IDatabase;
 class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQueryStore\PrimaryDataProvider {
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;
@@ -66,7 +65,6 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	}
 
 	/**
-	 *
 	 * @param \stdClass $row
 	 */
 	protected function appendRowToData( $row ) {

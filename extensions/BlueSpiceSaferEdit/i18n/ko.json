@@ -10,5 +10,7 @@
 	"bs-saferedit-desc": "다른 사용자가 문서를 편집 중인 경우 경고를 표시합니다",
 	"bs-saferedit-user-editing": "$1님{{PLURAL:$2|이|들이}} 문서를 {{GENDER:$1|편집하고}} 있습니다",
 	"bs-saferedit-pref-show-editinguser-help": "현재 문서를 편집 중인 사용자의 이름을 페이지 상단에 추가합니다",
-	"bs-saferedit-anonymous-editor": "익명 사용자"
+	"bs-saferedit-anonymous-editor": "익명 사용자",
+	"bs-saferedit-pref-edit-interval": "동시 편집을 위한 조회 간격",
+	"bs-saferedit-pref-edit-interval-help": "다른 사람이 문서를 편집 중인지를 확인하는 시간을 초 단위로 설정합니다."
 }

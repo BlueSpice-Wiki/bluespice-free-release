@@ -13,7 +13,6 @@ class Assignment extends \BlueSpice\TemplateRenderer {
 	public const PARAM_ASSIGNMENT = 'assignment';
 
 	/**
-	 *
 	 * @var IAssignment
 	 */
 	protected $assignment = null;
@@ -51,7 +50,6 @@ class Assignment extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @param mixed $val
 	 * @return mixed
 	 */

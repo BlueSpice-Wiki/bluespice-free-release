@@ -7,7 +7,6 @@ class ToolsAfterContentSkinSlotRenderer extends DataAfterTitleSkinSlotRenderer {
 	public const REG_KEY = 'ToolsAfterContent';
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getContainerWrapperId(): string {
@@ -15,7 +14,6 @@ class ToolsAfterContentSkinSlotRenderer extends DataAfterTitleSkinSlotRenderer {
 	}
 
 	/**
-	 *
 	 * @param MetaItemsManager $metaItemsManager
 	 * @return array
 	 */
@@ -24,7 +22,6 @@ class ToolsAfterContentSkinSlotRenderer extends DataAfterTitleSkinSlotRenderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function buildOpeningConainerWrapperHtml(): string {

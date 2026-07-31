@@ -11,31 +11,26 @@ use MWStake\MediaWiki\Component\DataStore\Record;
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
-	 *
 	 * @var Record[]
 	 */
 	protected $data = [];
 
 	/**
-	 *
 	 * @var \Wikimedia\Rdbms\IDatabase
 	 */
 	protected $db = null;
 
 	/**
-	 *
 	 * @var ReaderParams
 	 */
 	protected $params = null;
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
-	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
 	 * @param IContextSource $context
 	 */
@@ -45,7 +40,6 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	}
 
 	/**
-	 *
 	 * @param ReaderParams $params
 	 * @return array
 	 */

@@ -9,7 +9,6 @@ use MediaWiki\User\User;
 class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\SecondaryDataProvider {
 
 	/**
-	 *
 	 * @param Record &$dataSet
 	 */
 	protected function doExtend( &$dataSet ) {

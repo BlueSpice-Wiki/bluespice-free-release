@@ -12,5 +12,6 @@
 	"bs-avatars-upload-label": "Bild",
 	"bs-avatars-file-upload-fieldset-title": "En neit Bild eroplueden",
 	"bs-avatars-upload-button": "Eroplueden",
-	"bs-avatars-generic-cancel": "Ofbriechen"
+	"bs-avatars-generic-cancel": "Ofbriechen",
+	"bs-avatars-upload-unsupported-type": "Dësen Typ vu Fichier gëtt net ënnerstëtzt."
 }

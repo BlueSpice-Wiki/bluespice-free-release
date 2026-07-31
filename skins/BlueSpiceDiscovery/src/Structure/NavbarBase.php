@@ -39,8 +39,9 @@ abstract class NavbarBase implements ISkinStructure, ITemplateProvider, IResourc
 	protected $cookieHandler = null;
 
 	/**
-	 *
 	 * @param ITemplateDataProvider $templateDataProvider
+	 * @param ComponentRenderer $componentRenderer
+	 * @param SkinSlotRenderer $skinSlotRenderer
 	 * @param CookieHandler $cookieHandler
 	 * @param PermissionManager $permissionManager
 	 */
@@ -49,7 +50,8 @@ abstract class NavbarBase implements ISkinStructure, ITemplateProvider, IResourc
 		ComponentRenderer $componentRenderer,
 		SkinSlotRenderer $skinSlotRenderer,
 		CookieHandler $cookieHandler,
-		PermissionManager $permissionManager ) {
+		PermissionManager $permissionManager
+	) {
 		$this->componentProcessData = $templateDataProvider->getAll();
 		$this->componentRenderer = $componentRenderer;
 		$this->skinSlotRenderer = $skinSlotRenderer;
@@ -58,9 +60,9 @@ abstract class NavbarBase implements ISkinStructure, ITemplateProvider, IResourc
 	}
 
 	/**
-	 *
 	 * @param ITemplateDataProvider $templateDataProvider
 	 * @param ComponentRenderer $componentRenderer
+	 * @param SkinSlotRenderer $skinSlotRenderer
 	 * @param CookieHandler $cookieHandler
 	 * @param PermissionManager $permissionManager
 	 * @return void
@@ -70,7 +72,8 @@ abstract class NavbarBase implements ISkinStructure, ITemplateProvider, IResourc
 		ComponentRenderer $componentRenderer,
 		SkinSlotRenderer $skinSlotRenderer,
 		CookieHandler $cookieHandler,
-		PermissionManager $permissionManager ) {
+		PermissionManager $permissionManager
+	) {
 		return new static(
 			$templateDataProvider, $componentRenderer, $skinSlotRenderer, $cookieHandler, $permissionManager
 		);
@@ -101,7 +104,6 @@ abstract class NavbarBase implements ISkinStructure, ITemplateProvider, IResourc
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -110,7 +112,6 @@ abstract class NavbarBase implements ISkinStructure, ITemplateProvider, IResourc
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getParams(): array {

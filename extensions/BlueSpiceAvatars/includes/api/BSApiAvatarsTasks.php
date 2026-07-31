@@ -6,7 +6,6 @@ use BlueSpice\Avatars\Generator;
 class BSApiAvatarsTasks extends BSApiTasksBase {
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $aTasks = [
@@ -21,7 +20,6 @@ class BSApiAvatarsTasks extends BSApiTasksBase {
 	];
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {

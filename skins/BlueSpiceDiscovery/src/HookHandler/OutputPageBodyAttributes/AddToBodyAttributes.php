@@ -9,7 +9,6 @@ use Skin;
 class AddToBodyAttributes {
 
 	/**
-	 *
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 * @param array &$bodyAttrs

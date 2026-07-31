@@ -7,7 +7,6 @@ use MediaWiki\Config\GlobalVarConfig;
 class Config extends GlobalVarConfig {
 
 	/**
-	 *
 	 * Default builder function
 	 * @return Config
 	 */

@@ -10,9 +10,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\LinkFormatter;
 
 class ShareOptions extends SimpleDropdownIcon {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -68,7 +65,6 @@ class ShareOptions extends SimpleDropdownIcon {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getRequiredRLModules(): array {

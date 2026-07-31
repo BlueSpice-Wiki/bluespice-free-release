@@ -16,7 +16,6 @@ class SkipTo extends SkinStructureBase implements ISkinLayoutAware {
 	private $layout = null;
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName(): string {
@@ -24,7 +23,6 @@ class SkipTo extends SkinStructureBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -42,7 +40,6 @@ class SkipTo extends SkinStructureBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getParams(): array {
@@ -53,7 +50,6 @@ class SkipTo extends SkinStructureBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	private function buildList(): string {

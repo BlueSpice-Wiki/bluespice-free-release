@@ -7,13 +7,11 @@ use BlueSpice\TagCloud\Context;
 interface IStore extends \MWStake\MediaWiki\Component\DataStore\IStore {
 
 	/**
-	 *
 	 * @param Context $context
 	 */
 	public function __construct( Context $context );
 
 	/**
-	 *
 	 * @param array $params
 	 * @return ReaderParams
 	 */

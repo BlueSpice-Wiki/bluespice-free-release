@@ -9,9 +9,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleDropdownItem
 
 class CreateContentSplitButton extends SimpleDropdownIconSplitButton {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -100,7 +97,6 @@ class CreateContentSplitButton extends SimpleDropdownIconSplitButton {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function buttonIsDisabled(): bool {
@@ -114,7 +110,6 @@ class CreateContentSplitButton extends SimpleDropdownIconSplitButton {
 	}
 
 		/**
-		 *
 		 * @return bool
 		 */
 	public function splitButtonIsDisabled(): bool {
@@ -127,7 +122,6 @@ class CreateContentSplitButton extends SimpleDropdownIconSplitButton {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function getMenuLinks(): array {
