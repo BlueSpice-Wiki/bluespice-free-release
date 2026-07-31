@@ -9,7 +9,7 @@ use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Status\Status;
 use MediaWiki\User\User;
 
-class BsFileSystemHelper {
+class BsFileSystemHelper { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
 
 	/**
 	 * Checks if given directory within BS_CACHE_DIR exists and creates it if not
@@ -179,8 +179,8 @@ class BsFileSystemHelper {
 		}
 		$rDir = opendir( $sSource );
 		wfMkdirParents( $sDestination );
-		// phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
-		while ( ( $sFileName = readdir( $rDir ) ) !== false ) {
+
+		while ( ( $sFileName = readdir( $rDir ) ) !== false ) { // phpcs:ignore Generic.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition, Generic.Files.LineLength.TooLong
 			if ( ( $sFileName != '.' ) && ( $sFileName != '..' ) ) {
 				if ( is_dir( "$sSource/$sFileName" ) ) {
 					self::copyRecursive(
@@ -604,7 +604,6 @@ class BsFileSystemHelper {
 		imagefilledrectangle( $rNewImage, 0, 0, $iNewWidth, $iNewHeight, $iTransparent );
 		imagecopyresampled( $rNewImage, $rImage, 0, 0, 0, 0, $iNewWidth, $iNewHeight, $iWidth, $iHeight );
 		imagepng( $rNewImage, $sTmpName );
-		imagedestroy( $rNewImage );
 
 		# move_uploaded_file($oWebRequestUpload->getTempName(), $sTmpName);
 		return Status::newGood( $oWebRequestUpload->getName() );
@@ -681,7 +680,6 @@ class BsFileSystemHelper {
 	];
 
 	/**
-	 *
 	 * @param string $sFileName
 	 * @return string
 	 */
@@ -694,7 +692,6 @@ class BsFileSystemHelper {
 	}
 
 	/**
-	 *
 	 * @param string $sTmpFileName
 	 * @return string
 	 */

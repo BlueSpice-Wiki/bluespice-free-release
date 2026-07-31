@@ -35,22 +35,21 @@ use MediaWiki\Registration\ExtensionRegistry as MediaWikiExtensionRegistry;
  * @package BlueSpiceFoundation
  */
 class ExtensionRegistry {
+
+	/** @var array|null */
 	protected $extensionDefinitions = null;
 
 	/**
-	 *
 	 * @var MediaWikiExtensionRegistry
 	 */
 	protected $extensionRegistry = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @param MediaWikiExtensionRegistry $extensionRegistry
 	 * @param Config $config
 	 */
@@ -59,6 +58,9 @@ class ExtensionRegistry {
 		$this->config = $config;
 	}
 
+	/**
+	 * @return bool
+	 */
 	protected function runRegister() {
 		if ( $this->extensionDefinitions ) {
 			return true;
@@ -99,7 +101,6 @@ class ExtensionRegistry {
 	}
 
 	/**
-	 *
 	 * @param string $name
 	 * @param array $definition
 	 * @return array

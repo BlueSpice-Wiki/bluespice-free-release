@@ -49,7 +49,6 @@ class PagesVisitedHandler extends Handler {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function makeParams() {

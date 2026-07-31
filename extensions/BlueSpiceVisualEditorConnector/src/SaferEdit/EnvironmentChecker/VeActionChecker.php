@@ -7,7 +7,6 @@ use BlueSpice\SaferEdit\EnvironmentChecker\Base;
 class VeActionChecker extends Base {
 
 	/**
-	 *
 	 * @param bool &$result
 	 * @return bool
 	 */
@@ -22,7 +21,6 @@ class VeActionChecker extends Base {
 	}
 
 	/**
-	 *
 	 * @param bool &$result
 	 * @return bool
 	 */

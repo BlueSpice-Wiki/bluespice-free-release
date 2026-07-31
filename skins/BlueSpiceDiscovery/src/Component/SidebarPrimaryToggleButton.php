@@ -8,7 +8,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleLink;
 
 class SidebarPrimaryToggleButton extends SimpleLink {
 	/**
-	 *
 	 * @param CookieHandler $cookieHandler
 	 */
 	public function __construct( $cookieHandler ) {
@@ -86,7 +85,6 @@ class SidebarPrimaryToggleButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	private function getButtonTitle(): Message {
@@ -98,7 +96,6 @@ class SidebarPrimaryToggleButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	private function getButtonAriaLabel(): Message {
@@ -110,7 +107,6 @@ class SidebarPrimaryToggleButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	private function getExpandedState(): string {

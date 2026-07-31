@@ -29,7 +29,6 @@ class SidebarSecondary extends StackedTabPanelContainerBase implements IBaseTemp
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId(): string {
@@ -37,7 +36,6 @@ class SidebarSecondary extends StackedTabPanelContainerBase implements IBaseTemp
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getTabPanelRegistryKey(): string {
@@ -45,7 +43,6 @@ class SidebarSecondary extends StackedTabPanelContainerBase implements IBaseTemp
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getClasses(): array {
@@ -61,7 +58,6 @@ class SidebarSecondary extends StackedTabPanelContainerBase implements IBaseTemp
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

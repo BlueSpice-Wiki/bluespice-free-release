@@ -27,7 +27,6 @@ class SpecialUpload extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId(): string {
@@ -35,7 +34,6 @@ class SpecialUpload extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHref(): string {
@@ -43,7 +41,6 @@ class SpecialUpload extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPermissions(): array {
@@ -51,7 +48,6 @@ class SpecialUpload extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getText(): Message {
@@ -59,7 +55,6 @@ class SpecialUpload extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getTitle(): Message {
@@ -67,7 +62,6 @@ class SpecialUpload extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {

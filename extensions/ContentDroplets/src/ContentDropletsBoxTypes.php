@@ -7,7 +7,6 @@ use MWStake\MediaWiki\Component\ManifestRegistry\ManifestAttributeBasedRegistry;
 class ContentDropletsBoxTypes {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public static function getRegisteredBoxTypes() {

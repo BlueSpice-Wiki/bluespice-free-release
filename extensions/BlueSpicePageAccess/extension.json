@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpicePageAccess",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.9",
+	"version": "5.1.10",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpicePageAccess",
 	"author": "Marc Reymann",
 	"descriptionmsg": "bs-pageaccess-desc",
@@ -105,12 +105,17 @@
 	"Hooks": {
 		"PageContentSave": "\\BlueSpice\\PageAccess\\Hook\\PageContentSave\\EditPageAccess::callback",
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageAccess\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageAccessTag::callback",
-		"SpecialPageBeforeExecute": "checkBrowsePagePermission"
+		"SpecialPageBeforeExecute": "checkBrowsePagePermission",
+		"ChangesListSpecialPageQuery": "filterChangesListQuery"
 	},
 	"HookHandlers": {
 		"checkBrowsePagePermission": {
 			"class": "\\BlueSpice\\PageAccess\\Hook\\SpecialPageBeforeExecute\\CheckBrowsePagePermission",
 			"services": [ "TitleFactory", "PermissionManager" ]
+		},
+		"filterChangesListQuery": {
+			"class": "\\BlueSpice\\PageAccess\\Hook\\ChangesListSpecialPageQuery\\FilterRestrictedPages",
+			"services": [ "BSPageAccessCheckAccess", "ConnectionProvider" ]
 		}
 	},
 	"ResourceModules": {

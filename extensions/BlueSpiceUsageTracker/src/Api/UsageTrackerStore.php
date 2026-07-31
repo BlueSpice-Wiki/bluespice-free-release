@@ -19,7 +19,6 @@ class UsageTrackerStore extends \BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param \BS\UsageTracker\CollectorResult $oCollectorResult
 	 * @return \stdClass
 	 */

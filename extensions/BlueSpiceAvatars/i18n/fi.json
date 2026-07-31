@@ -4,8 +4,11 @@
 			"MITO",
 			"Markus Mikkonen",
 			"Pyscowicz",
-			"Stryn"
+			"Stryn",
+			"Wikipeedikko"
 		]
 	},
-	"bs-avatars-upload-label": "Kuva"
+	"bs-avatars-upload-label": "Kuva",
+	"bs-avatars-upload-unsupported-type": "Tätä tiedostotyyppiä ei tueta.",
+	"bs-avatars-upload-tempfile-missing": "Väliaikaistiedoston noutaminen epäonnistui"
 }

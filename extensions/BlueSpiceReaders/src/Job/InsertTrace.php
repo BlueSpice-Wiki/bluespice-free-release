@@ -22,7 +22,6 @@ class InsertTrace extends Job {
 	protected $services = null;
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param array $params
 	 */
@@ -53,7 +52,6 @@ class InsertTrace extends Job {
 	}
 
 	/**
-	 *
 	 * @return Store
 	 */
 	protected function getStore() {
@@ -64,7 +62,6 @@ class InsertTrace extends Job {
 	}
 
 	/**
-	 *
 	 * @return Context
 	 */
 	protected function getContext() {

@@ -17,7 +17,6 @@ use Wikimedia\ObjectFactory\ObjectFactory;
 class TitleActionEdit extends SimpleDropdownIconSplitButton {
 
 	/**
-	 *
 	 * @var PermissionManager
 	 */
 	private $permissionManager = null;
@@ -28,15 +27,14 @@ class TitleActionEdit extends SimpleDropdownIconSplitButton {
 	private $objectFactory = null;
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $editActions = [];
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 * @param array $componentProcessData
+	 * @param ObjectFactory $objectFactory
 	 */
 	public function __construct( $permissionManager, $componentProcessData, $objectFactory ) {
 		parent::__construct( [] );
@@ -58,7 +56,6 @@ class TitleActionEdit extends SimpleDropdownIconSplitButton {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	private function getPrimaryActionId() {
@@ -183,7 +180,6 @@ class TitleActionEdit extends SimpleDropdownIconSplitButton {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function splitButtonIsDisabled(): bool {
@@ -212,7 +208,6 @@ class TitleActionEdit extends SimpleDropdownIconSplitButton {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -231,7 +226,6 @@ class TitleActionEdit extends SimpleDropdownIconSplitButton {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function getEditActions(): array {

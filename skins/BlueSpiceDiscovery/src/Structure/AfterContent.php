@@ -18,7 +18,6 @@ class AfterContent extends SkinStructureBase implements IBaseTemplateAware {
 	private $template = null;
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName(): string {
@@ -52,7 +51,6 @@ class AfterContent extends SkinStructureBase implements IBaseTemplateAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchSkinSlotDataAfterContent() {
@@ -67,7 +65,6 @@ class AfterContent extends SkinStructureBase implements IBaseTemplateAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchSkinSlotToolsAfterContent() {

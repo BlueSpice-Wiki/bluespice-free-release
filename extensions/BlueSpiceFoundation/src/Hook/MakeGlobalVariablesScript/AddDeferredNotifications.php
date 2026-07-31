@@ -4,6 +4,9 @@ namespace BlueSpice\Hook\MakeGlobalVariablesScript;
 
 class AddDeferredNotifications extends \BlueSpice\Hook\MakeGlobalVariablesScript {
 
+	/**
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$deferredNotifications = $this->getDeferredNotifications();
 
@@ -21,7 +24,6 @@ class AddDeferredNotifications extends \BlueSpice\Hook\MakeGlobalVariablesScript
 	}
 
 	/**
-	 *
 	 * @return \BlueSpice\IDeferredNotification[]
 	 */
 	private function getDeferredNotifications() {

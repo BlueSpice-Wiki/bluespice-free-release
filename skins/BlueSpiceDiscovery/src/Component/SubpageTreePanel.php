@@ -9,9 +9,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleCardHeader;
 
 class SubpageTreePanel extends SimpleCard {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -59,7 +56,6 @@ class SubpageTreePanel extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

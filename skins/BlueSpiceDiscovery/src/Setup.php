@@ -6,9 +6,6 @@ use MediaWiki\Registration\ExtensionRegistry;
 
 class Setup {
 
-	/**
-	 *
-	 */
 	public static function onCallback() {
 		self::addBootstrapAssetsToSpecialVersion();
 

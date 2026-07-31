@@ -8,7 +8,6 @@ use MediaWiki\Message\Message;
 class PageAssignmentsWikiExplorerHooks {
 
 	/**
-	 *
 	 * @param array $aFilters
 	 * @param array &$aTables
 	 * @param array &$aFields
@@ -32,7 +31,6 @@ class PageAssignmentsWikiExplorerHooks {
 	}
 
 	/**
-	 *
 	 * @param array &$aRows
 	 * @return bool
 	 */

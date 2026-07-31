@@ -4,7 +4,6 @@ namespace BS\UsageTracker\Collectors;
 class Property extends Base {
 
 	/**
-	 *
 	 * @param array $aConfig
 	 */
 	public function __construct( $aConfig = [] ) {
@@ -12,7 +11,6 @@ class Property extends Base {
 	}
 
 	/**
-	 *
 	 * @return \BS\UsageTracker\CollectorResult
 	 */
 	public function getUsageData() {

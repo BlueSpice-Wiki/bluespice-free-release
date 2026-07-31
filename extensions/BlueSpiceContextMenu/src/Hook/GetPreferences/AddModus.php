@@ -5,6 +5,10 @@ namespace BlueSpice\ContextMenu\Hook\GetPreferences;
 use BlueSpice\Hook\GetPreferences;
 
 class AddModus extends GetPreferences {
+
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->preferences['bs-contextmenu-modus'] = [
 			'type' => 'radio',

@@ -24,7 +24,6 @@ use Wikimedia\ObjectCache\WANObjectCache;
  * This parser's implementation could be confusing. It is a parser for the
  * both the MenuEditor and the EnhancedSidebar output. So, depending on the context
  * it will do different things
- *
  */
 class Parser extends MutableParser implements IParser, IMenuParser {
 

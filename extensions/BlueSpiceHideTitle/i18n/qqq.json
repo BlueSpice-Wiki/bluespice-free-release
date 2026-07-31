@@ -9,5 +9,5 @@
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Label for toggle button option to show the title\n{{Identical|Show}}",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Label for toggle button option to hide the title\n{{Identical|Hide}}",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Label for title visibility toggle button",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "Help text for title visibility toggle button"
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help": "Help text for title visibility toggle button"
 }

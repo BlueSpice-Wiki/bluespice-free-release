@@ -8,7 +8,6 @@ use MediaWiki\SpecialPage\SpecialPage;
 class SpecialLogin implements BeforePageDisplayHook {
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {

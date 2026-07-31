@@ -39,5 +39,7 @@
 	"bs-tagcloud-tag-tagcloud-tab-common": "Allgemein",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Anzeigemodus",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Häufigkeit anzeigen",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Fügt die Anzahl der verwendeten Kategorien oder Suchanfragen ein"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Fügt die Anzahl der verwendeten Kategorien oder Suchanfragen ein",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Anzahl",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Maximale Anzahl der Wörter, die in der Wortwolke angezeigt werden sollen. Wenn nicht angegeben, wird der Standardwert 40 verwendet"
 }

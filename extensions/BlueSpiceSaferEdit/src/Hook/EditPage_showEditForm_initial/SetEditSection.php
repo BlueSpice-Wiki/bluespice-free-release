@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueSpice\SaferEdit\Hook\EditPage_showEditForm_initial;
+namespace BlueSpice\SaferEdit\Hook\EditPage_showEditForm_initial; // phpcs:ignore MediaWiki.NamingConventions.NamespaceName.NamespaceUnderscore, Generic.Files.LineLength.TooLong
 
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Output\OutputPage;

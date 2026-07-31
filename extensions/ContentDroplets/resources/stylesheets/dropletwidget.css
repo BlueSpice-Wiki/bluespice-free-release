@@ -17,7 +17,7 @@
 }
 
 .droplet .droplet-text {
-	font-size: 11px;
+	font-size: 11px; /* stylelint-disable-line declaration-property-unit-disallowed-list */
 	color: #696969;
 }
 
@@ -44,7 +44,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 50px;
-	background-image: url('./../images/contentdroplets-icon.svg' );
+	background-image: url( ./../images/contentdroplets-icon.svg );
 	height: 50px;
 	flex: 0 0 3rem;
 }

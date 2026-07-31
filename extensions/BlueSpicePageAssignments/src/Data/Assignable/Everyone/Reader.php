@@ -7,7 +7,6 @@ use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 class Reader extends \BlueSpice\PageAssignments\Data\Assignable\Reader {
 
 	/**
-	 *
 	 * @param ReaderParams $params
 	 * @return PrimaryDataProvider
 	 */
@@ -16,7 +15,6 @@ class Reader extends \BlueSpice\PageAssignments\Data\Assignable\Reader {
 	}
 
 	/**
-	 *
 	 * @return null
 	 */
 	public function makeSecondaryDataProvider() {

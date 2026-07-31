@@ -8,13 +8,11 @@ use MWStake\MediaWiki\Component\DataStore\IStore;
 
 class Store implements IStore {
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
 	 */
@@ -24,7 +22,6 @@ class Store implements IStore {
 	}
 
 	/**
-	 *
 	 * @return Reader
 	 */
 	public function getReader() {
@@ -32,7 +29,6 @@ class Store implements IStore {
 	}
 
 	/**
-	 *
 	 * @throws Exception
 	 */
 	public function getWriter() {

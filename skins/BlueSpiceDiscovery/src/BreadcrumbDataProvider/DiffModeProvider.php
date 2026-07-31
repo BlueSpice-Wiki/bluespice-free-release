@@ -14,7 +14,6 @@ class DiffModeProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool
 	 */
@@ -27,7 +26,6 @@ class DiffModeProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function isSelfLink( $node ): bool {

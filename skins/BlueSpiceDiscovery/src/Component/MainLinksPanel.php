@@ -19,9 +19,6 @@ class MainLinksPanel extends SimpleCard {
 	 */
 	private $services;
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		$this->services = MediaWikiServices::getInstance();
 
@@ -72,7 +69,6 @@ class MainLinksPanel extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -87,7 +83,6 @@ class MainLinksPanel extends SimpleCard {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	private function getSkinSlotHtml(): string {

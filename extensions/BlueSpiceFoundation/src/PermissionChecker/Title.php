@@ -9,9 +9,8 @@ use MediaWiki\User\User;
 class Title implements \BlueSpice\IPermissionChecker {
 
 	/**
-	 *
 	 * @param User $user
-	 * @param type $permission
+	 * @param mixed $permission
 	 * @param IContextSource|null $context
 	 * @return bool
 	 */

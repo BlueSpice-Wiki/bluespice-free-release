@@ -10,31 +10,26 @@ use Wikimedia\Rdbms\SelectQueryBuilder;
 class AuthorsList {
 
 	/**
-	 *
 	 * @var \Wikimedia\Rdbms\LoadBalancer
 	 */
 	protected $loadBalancer = null;
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @var string[]
 	 */
 	protected $blacklist = [];
 
 	/**
-	 *
 	 * @var int
 	 */
 	protected $limit = 1;
 
 	/**
-	 *
 	 * @var bool
 	 */
 	protected $more = false;
@@ -43,7 +38,6 @@ class AuthorsList {
 	protected $services = null;
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param array $blacklist
 	 * @param int $limit
@@ -65,7 +59,6 @@ class AuthorsList {
 	 * Find first editor. If editor is on blacklist return empty string.
 	 * @param RevisionRecord $revision
 	 * @return string The originators username
-	 *
 	 */
 	public function getOriginator( $revision ) {
 		if ( $revision instanceof RevisionRecord === false ) {
@@ -131,7 +124,6 @@ class AuthorsList {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function moreEditors() {

@@ -87,7 +87,6 @@ class ProfileImageHandler extends Handler {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function handleRaw() {

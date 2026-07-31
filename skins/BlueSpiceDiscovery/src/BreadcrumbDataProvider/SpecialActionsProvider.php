@@ -8,7 +8,6 @@ use MediaWiki\Title\Title;
 class SpecialActionsProvider extends BaseBreadcrumbDataProvider {
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $action = '';
@@ -82,7 +81,6 @@ class SpecialActionsProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool
 	 */
@@ -102,7 +100,6 @@ class SpecialActionsProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function isSelfLink( $node ): bool {

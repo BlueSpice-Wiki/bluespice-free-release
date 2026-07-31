@@ -54,7 +54,6 @@ class PrimaryDataProvider extends \MWStake\MediaWiki\Component\CommonWebAPIs\Dat
 	}
 
 	/**
-	 *
 	 * @param string $groupname
 	 */
 	protected function appendRowToData( $groupname ) {

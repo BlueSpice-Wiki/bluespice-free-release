@@ -14,7 +14,6 @@ class SkinStructureRenderer implements ISkinStructureRenderer {
 	private $skinStructureElement = null;
 
 	/**
-	 *
 	 * @param SkinStructureElement $skinStructureElement
 	 */
 	public function __construct( $skinStructureElement ) {
@@ -28,7 +27,6 @@ class SkinStructureRenderer implements ISkinStructureRenderer {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return string
 	 */
@@ -36,9 +34,7 @@ class SkinStructureRenderer implements ISkinStructureRenderer {
 		if ( !$this->skinStructureElement->shouldRender( $context ) ) {
 			return '';
 		}
-		$params = array_merge(
-			$this->skinStructureElement->getParams()
-		);
+		$params = $this->skinStructureElement->getParams();
 		$templateParser = new TemplateParser(
 			$this->skinStructureElement->getTemplatePath()
 		);

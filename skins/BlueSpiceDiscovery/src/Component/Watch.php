@@ -10,9 +10,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\LinkFormatter;
 
 class Watch extends SimpleLink {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -82,7 +79,6 @@ class Watch extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @param string $return
 	 * @return array
@@ -102,7 +98,6 @@ class Watch extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

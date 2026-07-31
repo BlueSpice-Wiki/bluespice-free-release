@@ -8,7 +8,6 @@ use MediaWiki\SpecialPage\SpecialPage;
 class Reupload extends BaseFileAction {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIconClass() {
@@ -16,7 +15,6 @@ class Reupload extends BaseFileAction {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -24,7 +22,6 @@ class Reupload extends BaseFileAction {
 	}
 
 	/**
-	 *
 	 * @return string String of the URL.
 	 */
 	public function getUrl() {
@@ -33,7 +30,6 @@ class Reupload extends BaseFileAction {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -41,7 +37,6 @@ class Reupload extends BaseFileAction {
 	}
 
 	/**
-	 *
 	 * @param \Context $context
 	 * @return bool
 	 */

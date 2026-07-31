@@ -11,7 +11,6 @@ class ReaderParams extends \MWStake\MediaWiki\Component\DataStore\ReaderParams {
 	protected $limit = 40;
 
 	/**
-	 *
 	 * @param array $params
 	 */
 	public function __construct( $params = [] ) {

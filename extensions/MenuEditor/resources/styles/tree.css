@@ -118,7 +118,7 @@ li > ul.tree-node-list li:last-child::before {
 }
 
 #menuEditor-container li:hover > :not( ul ) {
-	cursor: grabbing;
+	cursor: grabbing; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 }
 
 #menuEditor-container .oojsplus-data-tree-label .oo-ui-labelElement-label {

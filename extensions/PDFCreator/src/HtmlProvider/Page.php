@@ -279,6 +279,7 @@ class Page extends Raw {
 		// as well like EditPage in mediawiki core but also in other extensions -
 		// thats why we decided to use it as well for now
 		$text = $parserOutput->runOutputPipeline( $parserOptions )->getContentHolderText();
+		$text = $this->sanitizeHtml( $text );
 		$htmlText = "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"></head><body>" . $text . "</body></html>";
 		$html->loadHTML( $htmlText );
 		$html->documentElement->setAttribute( 'xmlns', 'http://www.w3.org/1999/xhtml' );
@@ -341,5 +342,20 @@ class Page extends Raw {
 			],
 			'&nbsp;'
 		);
+	}
+
+	/**
+	 * Remove all occurrences of family-font
+	 * Remove <tt> tags
+	 *
+	 * @param string $htmlContent
+	 *
+	 * @return string
+	 */
+	private function sanitizeHtml( string $htmlContent ): string {
+		$htmlContent = preg_replace( '/font-family:\s*[^;]+;/i', '', $htmlContent );
+		$htmlContent = preg_replace( '/<tt>(.*?)<\/tt>/is', '$1', $htmlContent );
+
+		return $htmlContent;
 	}
 }

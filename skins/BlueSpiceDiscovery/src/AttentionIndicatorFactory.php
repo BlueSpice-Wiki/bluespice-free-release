@@ -86,7 +86,6 @@ class AttentionIndicatorFactory {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getNUllIndicatorCallback(): string {

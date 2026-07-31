@@ -9,7 +9,7 @@
 			"아라"
 		]
 	},
-	"bs-avatars-pref-generator": "생성자:",
+	"bs-avatars-pref-generator": "생성기:",
 	"bs-avatars-pref-userimage-img-alt": "현재 사용자 그림",
 	"bs-avatars-upload-complete": "사진이 업로드되었습니다.",
 	"bs-avatars-generate-complete": "새 아바타가 만들어졌습니다.",
@@ -24,5 +24,7 @@
 	"bs-avatars-generic-cancel": "취소",
 	"bs-avatars-desc": "일반 및 개별 사용자 사진을 제공합니다",
 	"bs-avatars-pref-generator-help": "아바타 이미지는 사용자가 프로필 사진을 업로드하지 않은 경우 생성됩니다. InstantAvatar: 실명의 이니셜 또는 사용자 이름 필드를 기반으로 아바타 이미지를 생성합니다. Identicon: 사용자 ID의 일부를 기반으로 아바타 이미지를 생성합니다",
-	"bs-avatars-generate-description": "자동 아바타를 새롭게 생성합니다. 이렇게 하면 기존에 업로드된 프로필 이미지(설정된 경우)가 영구적으로 교체됩니다"
+	"bs-avatars-generate-description": "자동 아바타를 새롭게 생성합니다. 이렇게 하면 기존에 업로드된 프로필 이미지(설정된 경우)가 영구적으로 교체됩니다",
+	"bs-avatars-upload-unsupported-type": "이 파일 형식은 지원되지 않습니다.",
+	"bs-avatars-upload-tempfile-missing": "임시 파일을 가져오는 데 실패했습니다"
 }

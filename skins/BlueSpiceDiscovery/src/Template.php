@@ -15,14 +15,10 @@ use Wikimedia\ObjectFactory\ObjectFactory;
  */
 class Template extends BaseTemplate {
 	/**
-	 *
 	 * @var ISkinLayoutRenderer
 	 */
 	public $skinLayoutRenderer = null;
 
-	/**
-	 *
-	 */
 	public function execute() {
 		if ( $this->processSkinLayout() ) {
 			/* Output */
@@ -32,7 +28,6 @@ class Template extends BaseTemplate {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	private function processSkinLayout(): bool {

@@ -36,9 +36,10 @@ use MediaWiki\MediaWikiServices;
  * DEPRECATED! You may want to use a \BlueSpice\Renderer or a
  * \BlueSpice\TemplateRenderer instead
  */
-class ViewBaseElement {
-	// phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
-	protected static $_prAutoId = 0;
+class ViewBaseElement { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
+
+	/** @var int */
+	protected static $_prAutoId = 0; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
 
 	/**
 	 * Return an autoincremented number to use as element id.
@@ -48,26 +49,26 @@ class ViewBaseElement {
 		return ++self::$_prAutoId;
 	}
 
-	// TODO MRG20100816: Bitte kurzen Kommentar zum Zweck der Variablen
-	// phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
-	protected $_mAutoElement = 'div';
-	// phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
-	protected $_mData = [];
-	// phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
-	protected $_mId = null;
-	// phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
-	protected $_mItems = [];
-	// phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
-	protected $_mTemplate = '';
-	// phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
-	protected $_mAutoWrap = false;
-	// phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
-	protected $_mPresentDataset = null;
+	/** @var string */
+	protected $_mAutoElement = 'div'; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
+	/** @var array */
+	protected $_mData = []; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
+	/** @var string|null */
+	protected $_mId = null; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
+	/** @var array */
+	protected $_mItems = []; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
+	/** @var string */
+	protected $_mTemplate = ''; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
+	/** @var bool */
+	protected $_mAutoWrap = false; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
+	/** @var mixed */
+	protected $_mPresentDataset = null; // phpcs:ignore PSR2.Classes.PropertyDeclaration.Underscore
+	/** @var mixed */
 	protected $mI18N = null;
+	/** @var array */
 	protected $mOptions = [];
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
@@ -170,7 +171,6 @@ class ViewBaseElement {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @param mixed $value
 	 * @return ViewBaseElement
@@ -197,7 +197,6 @@ class ViewBaseElement {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @return mixed|false
 	 */
@@ -225,7 +224,6 @@ class ViewBaseElement {
 	}
 
 	/**
-	 *
 	 * @param array $dataSet
 	 * @return ViewBaseElement
 	 */
@@ -259,6 +257,9 @@ class ViewBaseElement {
 		return $item;
 	}
 
+	/**
+	 * @return int
+	 */
 	public function hasItems() {
 		return count( $this->_mItems );
 	}
@@ -305,7 +306,6 @@ class ViewBaseElement {
 	}
 
 	/**
-	 *
 	 * @param array $dataSet
 	 * @return string
 	 */
@@ -334,7 +334,6 @@ class ViewBaseElement {
 	}
 
 	/**
-	 *
 	 * @param array $matches
 	 * @return string
 	 */
@@ -365,7 +364,6 @@ class ViewBaseElement {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getAutoElementOpener() {
@@ -378,7 +376,6 @@ class ViewBaseElement {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getAutoElementCloser() {
@@ -389,7 +386,6 @@ class ViewBaseElement {
 	}
 
 	/**
-	 *
 	 * @param array $options
 	 * @param string $content
 	 * @return string

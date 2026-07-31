@@ -23,7 +23,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getContainerWrapperTag(): string {
@@ -31,7 +30,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getContainerWrapperClasses(): array {
@@ -39,7 +37,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getContainerWrapperAriaAttributes(): array {
@@ -49,7 +46,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getItemWrapperTag(): string {
@@ -57,7 +53,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getItemWrapperClasses(): array {
@@ -65,7 +60,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param array &$rendererDataTree
 	 * @return void
 	 */
@@ -87,7 +81,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function buildOpeningConainerWrapperHtml(): string {
@@ -104,7 +97,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param string $id
 	 * @return string
 	 */
@@ -122,7 +114,6 @@ class MainPanelSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param string $tag
 	 * @param string $id
 	 * @param array $classes

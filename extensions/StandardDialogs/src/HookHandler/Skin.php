@@ -12,7 +12,6 @@ use SkinTemplate;
 class Skin implements SkinTemplateNavigation__UniversalHook {
 
 	/**
-	 *
 	 * @var PermissionManager
 	 */
 	private $permissionManager = null;
@@ -21,7 +20,6 @@ class Skin implements SkinTemplateNavigation__UniversalHook {
 	private $namespaceInfo = null;
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 * @param NamespaceInfo $namespaceInfo
 	 */
@@ -31,7 +29,6 @@ class Skin implements SkinTemplateNavigation__UniversalHook {
 	}
 
 	/**
-	 *
 	 * @param SkinTemplate $sktemplate
 	 * @param array &$links
 	 * @return void

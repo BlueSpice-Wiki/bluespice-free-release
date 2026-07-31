@@ -7,7 +7,6 @@ use BlueSpice\ConfigDefinition\IntSetting;
 class MaxIdleTime extends IntSetting {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -19,7 +18,6 @@ class MaxIdleTime extends IntSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -27,7 +25,6 @@ class MaxIdleTime extends IntSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

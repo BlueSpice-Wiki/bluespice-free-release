@@ -26,7 +26,6 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	public const PARAM_MAXSIZE = 'maxsize';
 
 	/**
-	 *
 	 * @var ResultSet
 	 */
 	protected $result = null;
@@ -126,7 +125,6 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getTemplateName() {
@@ -134,7 +132,6 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @param int $count
 	 * @param int $mincount
 	 * @param int $maxcount
@@ -158,7 +155,6 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function makeTagAttribs() {
@@ -171,7 +167,6 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @param array $styles
 	 * @return array
 	 */
@@ -181,7 +176,6 @@ abstract class Renderer extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @param mixed $val
 	 * @return mixed
 	 */

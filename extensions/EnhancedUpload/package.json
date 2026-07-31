@@ -2,8 +2,7 @@
 	"name": "EnhancedUpload",
 	"private": true,
 	"scripts": {
-		"test": "grunt test",
-		"fix": "eslint --fix resources/"
+		"test": "grunt test"
 	},
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.28.2",

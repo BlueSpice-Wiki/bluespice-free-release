@@ -13,9 +13,7 @@ use MediaWiki\SpecialPage\UnlistedSpecialPage;
  *
  * Introduced to hide some special pages for users of pure reader role,
  * and can be extended to add more customizations in the future.
- *
  */
-
 class EnhancedSpecialPages extends UnlistedSpecialPage {
 
 	// Uncategorised/Unused/New/Most images
@@ -216,7 +214,7 @@ class EnhancedSpecialPages extends UnlistedSpecialPage {
 
 		foreach ( $groups as $group => $sortedPages ) {
 			if ( strpos( $group, '/' ) !== false ) {
-				list( $group, $subGroup ) = explode( '/', $group, 2 );
+				[ $group, $subGroup ] = explode( '/', $group, 2 );
 				$out->wrapWikiMsg(
 					"<h3 class=\"mw-specialpagessubgroup\">$1</h3>\n",
 					"specialpages-group-$group-$subGroup"

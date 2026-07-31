@@ -13,32 +13,26 @@ use Wikimedia\Rdbms\LoadBalancer;
 class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
-	 *
 	 * @var Record[]
 	 */
 	protected $data = [];
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @var string[]
 	 */
 	protected $authorsBlacklist = [];
 
 	/**
-	 *
 	 * @var LoadBalancer
 	 */
 	protected $loadBalancer = null;
 
 	/**
-	 *
-	 *
 	 * @param Title $title
 	 * @param string[] $blacklist
 	 * @param LoadBalancer $loadBalancer
@@ -50,7 +44,6 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	}
 
 	/**
-	 *
 	 * @param ReaderParams $params
 	 * @return Record[]
 	 */
@@ -91,7 +84,6 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 	}
 
 	/**
-	 *
 	 * @param array $data
 	 */
 	protected function appendRowToData( $data ) {

@@ -8,6 +8,7 @@ require_once 'Maintenance.php';
 
 class PrepareActorMigration2 extends Maintenance {
 
+	/** @var array */
 	private $tablesToFix = [
 		'revision' => [ 'rev_user', 'rev_user_text' ],
 		'archive' => [ 'ar_user', 'ar_user_text' ],
@@ -28,18 +29,19 @@ class PrepareActorMigration2 extends Maintenance {
 	}
 
 	/**
-	 *
 	 * @var IDatabase
 	 */
 	private $db = null;
 
 	/**
-	 *
 	 * @var \MediaWiki\User\UserNameUtils
 	 */
 	private $userNameUtils = null;
 
+	/** @var bool */
 	private $dry = true;
+
+	/** @var array */
 	private $userNames = [];
 
 	public function execute() {
@@ -66,6 +68,11 @@ class PrepareActorMigration2 extends Maintenance {
 		}
 	}
 
+	/**
+	 * @param string $table
+	 * @param string $userIDField
+	 * @param string $userNameField
+	 */
 	private function fixTable( $table, $userIDField, $userNameField ) {
 		$this->output( "Replacing user names in $table\n" );
 

@@ -37,5 +37,7 @@
 	"menueditor-ui-add-sub-element-label": "څېرمه عنصر ورگډول",
 	"menueditor-footerlinks-banner-text": "ځينې تړوني ښايي د شاتاړو له خوا په خپلکاري ډول ورگډ شي. مهرباني وکړئ د نورو مالوماتو لپاره د شاتاړي ترتيب وگورئ.",
 	"menueditor-toolbar-save": "خوندي‌کول",
-	"menueditor-ui-cancel-confirmation": "ايا تاسو ډاډه ياست چې سمون ناگارل غواړئ؟\nټول ناخوندي شوي بدلونونه به له لاسه ورکړئ."
+	"menueditor-ui-cancel-confirmation": "ايا تاسو ډاډه ياست چې سمون ناگارل غواړئ؟\nټول ناخوندي شوي بدلونونه به له لاسه ورکړئ.",
+	"menueditor-ui-notices": "يادگېرنې",
+	"menueditor-ui-oldrevision-notice": "تاسو د دې مخ زړه بلبڼه سموئ. که تاسو يې خوندي کړئ؛ نو له دې بياليدنې دمخه بدلونونه به ورک شي."
 }

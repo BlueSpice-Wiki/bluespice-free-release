@@ -9,19 +9,16 @@ use MediaWiki\Context\RequestContext;
 class AssignableFactory {
 
 	/**
-	 *
 	 * @var BlueSpice\IRegistry
 	 */
 	protected $registry = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @param \BlueSpice\IRegistry $registry
 	 * @param Config $config
 	 */
@@ -31,7 +28,6 @@ class AssignableFactory {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @param IContextSource|null $context
 	 * @return IAssignable|null
@@ -55,7 +51,6 @@ class AssignableFactory {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getRegisteredTypes() {

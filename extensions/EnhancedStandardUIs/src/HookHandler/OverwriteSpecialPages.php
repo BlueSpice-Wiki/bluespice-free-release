@@ -16,7 +16,6 @@ class OverwriteSpecialPages implements SpecialPage_initListHook {
 	private $config;
 
 	/**
-	 *
 	 * @param Config $config
 	 */
 	public function __construct( Config $config ) {
@@ -24,7 +23,6 @@ class OverwriteSpecialPages implements SpecialPage_initListHook {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function onSpecialPage_initList( &$list ) {

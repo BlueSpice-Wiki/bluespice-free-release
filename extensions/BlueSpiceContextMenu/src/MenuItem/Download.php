@@ -7,7 +7,6 @@ use MediaWiki\Message\Message;
 class Download extends BaseFileAction {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIconClass() {
@@ -15,7 +14,6 @@ class Download extends BaseFileAction {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -23,7 +21,6 @@ class Download extends BaseFileAction {
 	}
 
 	/**
-	 *
 	 * @return string String of the URL.
 	 */
 	public function getUrl() {
@@ -32,7 +29,6 @@ class Download extends BaseFileAction {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -40,7 +36,6 @@ class Download extends BaseFileAction {
 	}
 
 	/**
-	 *
 	 * @param \Context $context
 	 * @return bool
 	 */

@@ -38,7 +38,6 @@ abstract class FlexiSkinOperation extends FlexiSkinApiBase {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 * @throws ApiUsageException
 	 */

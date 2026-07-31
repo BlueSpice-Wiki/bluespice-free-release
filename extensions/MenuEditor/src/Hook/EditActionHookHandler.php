@@ -34,7 +34,6 @@ class EditActionHookHandler implements
 	 * @param HookContainer $hookContainer
 	 * @param MenuFactory $menuFactory
 	 * @param PermissionManager $permissionManager
-	 *
 	 */
 	public function __construct(
 		HookContainer $hookContainer,

@@ -8,7 +8,9 @@ use Wikimedia\Rdbms\ILoadBalancer;
 
 abstract class Base {
 
+	/** @var string */
 	protected $identifier = '';
+	/** @var string */
 	protected $description = 'bs-usagetracker-base-collector-desc';
 
 	/**
@@ -27,7 +29,6 @@ abstract class Base {
 	protected $loadBalancer;
 
 	/**
-	 *
 	 * @param array $config
 	 */
 	public function __construct( $config = [] ) {
@@ -46,7 +47,6 @@ abstract class Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getDescription() {
@@ -54,7 +54,6 @@ abstract class Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIdentifier() {
@@ -62,7 +61,6 @@ abstract class Base {
 	}
 
 	/**
-	 *
 	 * @return \BS\UsageTracker\CollectorResult
 	 */
 	abstract public function getUsageData();

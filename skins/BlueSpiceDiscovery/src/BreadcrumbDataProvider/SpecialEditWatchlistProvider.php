@@ -68,7 +68,6 @@ class SpecialEditWatchlistProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool
 	 */
@@ -77,7 +76,6 @@ class SpecialEditWatchlistProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function isSelfLink( $node ): bool {

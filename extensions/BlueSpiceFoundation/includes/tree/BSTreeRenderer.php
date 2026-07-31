@@ -13,7 +13,6 @@ class BSTreeRenderer {
 	public const CONFIG_ROOT_VISIBLE = 'rootVisible';
 
 	/**
-	 *
 	 * @var BSTreeNode
 	 */
 	protected $root = null;
@@ -30,7 +29,6 @@ class BSTreeRenderer {
 	protected $html = '';
 
 	/**
-	 *
 	 * @param BSTreeNode $root
 	 * @param Config|null $config
 	 */
@@ -50,6 +48,9 @@ class BSTreeRenderer {
 		$this->config = new MultiConfig( $configs );
 	}
 
+	/**
+	 * @return string
+	 */
 	public function render() {
 		$this->clearBuffer();
 		$nodes = $this->root->getChildNodes();
@@ -65,7 +66,6 @@ class BSTreeRenderer {
 	}
 
 	/**
-	 *
 	 * @param BSTreeNode[] $nodes
 	 * @param int $level
 	 */
@@ -76,7 +76,6 @@ class BSTreeRenderer {
 	}
 
 	/**
-	 *
 	 * @param string $path
 	 */
 	public function expandPath( $path ) {
@@ -91,7 +90,6 @@ class BSTreeRenderer {
 	}
 
 	/**
-	 *
 	 * @param array $path
 	 * @param BSTreeNode $node
 	 */
@@ -125,7 +123,6 @@ class BSTreeRenderer {
 	}
 
 	/**
-	 *
 	 * @param BSTreeNode $node
 	 * @param int $level
 	 */
@@ -160,7 +157,6 @@ class BSTreeRenderer {
 	}
 
 	/**
-	 *
 	 * @param int $level
 	 */
 	protected function renderIndent( $level ) {
@@ -170,7 +166,6 @@ class BSTreeRenderer {
 	}
 
 	/**
-	 *
 	 * @param BSTreeNode $node
 	 */
 	public function renderNode( $node ) {
@@ -180,7 +175,6 @@ class BSTreeRenderer {
 	}
 
 	/**
-	 *
 	 * @param BSTreeNode $node
 	 * @param int $level
 	 * @return string
@@ -196,7 +190,6 @@ class BSTreeRenderer {
 	}
 
 	/**
-	 *
 	 * @param BSTreeNode $node
 	 * @return string
 	 */

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bodhisattwa",
 			"Nokib Sarkar",
 			"Sibabrata Banerjee",
 			"আফতাবুজ্জামান"
@@ -11,7 +12,7 @@
 	"bs-visualeditorconnector-cancel-edit-confirm-message": "আপনি কি সত্যিই সম্পাদনা বাতিল করতে চান? আপনার অসংরক্ষিত সম্পাদনগুলি পরিত্যাগ করা হবে।",
 	"bs-visualeditor-nsm-label": "দৃশ্যমান সম্পাদনা",
 	"bs-visualeditorconnector-inspector-tab-common-name": "সাধারণ",
-	"bs-visualeditorconnector-inspector-tab-advanced-name": "উচ্চতর",
+	"bs-visualeditorconnector-inspector-tab-advanced-name": "উন্নত",
 	"bs-vec-dialog-action-safe": "বাতিল",
 	"bs-visualeditor-linkcontext-label-change": "নামাঙ্কন পরিবর্তন করুন",
 	"bs-visualeditor-linkcontext-label-label": "নামাঙ্ককন",

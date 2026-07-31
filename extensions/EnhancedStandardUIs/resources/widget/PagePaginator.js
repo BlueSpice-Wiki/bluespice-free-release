@@ -10,7 +10,11 @@ ext.enhancedUI.widget.PagePaginator = function ( cfg ) {
 	this.currentEnd = 0;
 
 	this.shownPagesLabel = new OO.ui.LabelWidget( {
-		classes: [ 'shown-pages-label' ]
+		classes: [ 'shown-pages-label', 'visually-hidden' ]
+	} );
+	this.shownPagesLabel.$element.attr( {
+		'aria-live': 'polite',
+		'aria-atomic': 'true'
 	} );
 	this.navigation.$element.prepend( this.shownPagesLabel.$element );
 };
@@ -34,10 +38,9 @@ ext.enhancedUI.widget.PagePaginator.prototype.updateTotal = function ( total, is
 
 ext.enhancedUI.widget.PagePaginator.prototype.updateShownPagesLabel = function () {
 	if ( this.currentStart === this.currentEnd && this.currentStart === 0 ) {
-		this.shownPagesLabel.$element.hide();
+		this.shownPagesLabel.setLabel( '' );
 		return;
 	}
-	this.shownPagesLabel.$element.show();
 	let msg = 'enhanced-standard-uis-allpages-panel-index-paginator-shown-pages';
 	if ( this.totalIsApproximate ) {
 		msg += '-approximate';

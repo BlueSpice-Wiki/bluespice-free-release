@@ -8,7 +8,6 @@ use MediaWiki\SpecialPage\SpecialPage;
 class Whatlinkshere extends Base {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIconClass() {
@@ -16,7 +15,6 @@ class Whatlinkshere extends Base {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -24,7 +22,6 @@ class Whatlinkshere extends Base {
 	}
 
 	/**
-	 *
 	 * @return string String of the URL.
 	 */
 	public function getUrl() {
@@ -33,7 +30,6 @@ class Whatlinkshere extends Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -41,7 +37,6 @@ class Whatlinkshere extends Base {
 	}
 
 	/**
-	 *
 	 * @param \Context $context
 	 * @return bool
 	 */

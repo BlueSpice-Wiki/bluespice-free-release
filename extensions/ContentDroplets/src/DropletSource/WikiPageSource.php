@@ -85,7 +85,6 @@ class WikiPageSource implements IDropletSource {
 	}
 
 	/**
-	 *
 	 * @param array $params
 	 * @return array
 	 */

@@ -8,7 +8,6 @@ use OOJSPlus\Special\OOJSGridSpecialPage;
 class EnhancedFilelist extends OOJSGridSpecialPage {
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function __construct() {
@@ -16,7 +15,6 @@ class EnhancedFilelist extends OOJSGridSpecialPage {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function doExecute( $subPage ) {

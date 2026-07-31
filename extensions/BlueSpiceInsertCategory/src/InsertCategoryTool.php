@@ -13,19 +13,16 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\Literal;
 class InsertCategoryTool extends Literal {
 
 	/**
-	 *
 	 * @var MediaWikiServices
 	 */
 	private $services = null;
 
 	/**
-	 *
 	 * @var bool
 	 */
 	private $btnDisabled = false;
 
 	/**
-	 *
 	 * @var PermissionManger
 	 */
 	private $permissionManager = null;
@@ -33,9 +30,6 @@ class InsertCategoryTool extends Literal {
 	/** @var WikiPageFactory */
 	private $wikiPageFactory = null;
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		$this->services = MediaWikiServices::getInstance();
 		$this->permissionManager = $this->services->getPermissionManager();
@@ -69,7 +63,6 @@ class InsertCategoryTool extends Literal {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -83,7 +76,6 @@ class InsertCategoryTool extends Literal {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	private function getCategoryEditorHtml(): string {
@@ -104,7 +96,6 @@ class InsertCategoryTool extends Literal {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param Context $context
 	 * @return string
@@ -125,7 +116,6 @@ class InsertCategoryTool extends Literal {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param Context $context
 	 * @return string
@@ -174,7 +164,6 @@ class InsertCategoryTool extends Literal {
 	}
 
 	/**
-	 *
 	 * @param RequestContext $context
 	 * @return array
 	 */
@@ -194,7 +183,6 @@ class InsertCategoryTool extends Literal {
 	}
 
 	/**
-	 *
 	 * @param Context $context
 	 * @return string
 	 */
@@ -220,7 +208,6 @@ class InsertCategoryTool extends Literal {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getRequiredRLStyles(): array {

@@ -13,9 +13,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\LinkFormatter;
 
 class ToolboxPanel extends SimpleCard implements IRestrictedComponent {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -74,7 +71,6 @@ class ToolboxPanel extends SimpleCard implements IRestrictedComponent {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPermissions(): array {

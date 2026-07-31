@@ -115,6 +115,7 @@ class EnhancedHistoryAction extends HistoryAction {
 		$oldSize = 0;
 		$firstRevision = true;
 		foreach ( $res as $row ) {
+			$entry = [ 'minor' => false ];
 			$classes = [];
 			$deletedFields = $this->bitsToDeletedFields( $row->rev_deleted );
 
@@ -137,6 +138,11 @@ class EnhancedHistoryAction extends HistoryAction {
 						$classes[] = "{$baseClass}-grey";
 					}
 				}
+			}
+
+			if ( $row->rev_minor_edit ) {
+				$classes[] = 'enhanced-history-minor';
+				$entry['minor'] = true;
 			}
 
 			$sizeDiff = $row->rev_len - $oldSize;
@@ -233,7 +239,6 @@ class EnhancedHistoryAction extends HistoryAction {
 	}
 
 	/**
-	 *
 	 * @param MediaWikiServices $services
 	 * @param array $conds
 	 * @param string|null $tagFilter

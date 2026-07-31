@@ -25,7 +25,6 @@ interface IBreadcrumbDataProvider {
 	public function getLabels( Title $title ): array;
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool
 	 */

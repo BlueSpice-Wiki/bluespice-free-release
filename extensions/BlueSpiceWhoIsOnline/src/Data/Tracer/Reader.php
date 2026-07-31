@@ -7,7 +7,6 @@ use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 class Reader extends \BlueSpice\WhoIsOnline\Data\Reader {
 
 	/**
-	 *
 	 * @param ReaderParams $params
 	 * @return PrimaryDataProvider
 	 */

@@ -19,19 +19,16 @@ use Wikimedia\ObjectFactory\ObjectFactory;
 class LastEditInfo extends Literal {
 
 	/**
-	 *
 	 * @var RequestContext
 	 */
 	private $requestContext = null;
 
 	/**
-	 *
 	 * @var LinkRenderer
 	 */
 	private $linkRenderer = null;
 
 	/**
-	 *
 	 * @var RevisionStore
 	 */
 	private $revisionStore = null;
@@ -45,10 +42,10 @@ class LastEditInfo extends Literal {
 	private $services = null;
 
 	/**
-	 *
 	 * @param RequestContext $requestContext
 	 * @param LinkRenderer $linkRenderer
 	 * @param RevisionStore $revisionStore
+	 * @param ObjectFactory $objectFactory
 	 */
 	public function __construct( $requestContext, $linkRenderer, $revisionStore, $objectFactory ) {
 		parent::__construct(
@@ -74,7 +71,6 @@ class LastEditInfo extends Literal {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	private function buildHtml(): string {
@@ -134,7 +130,6 @@ class LastEditInfo extends Literal {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param RevisionRecord|null $revision
 	 * @return string
@@ -173,7 +168,6 @@ class LastEditInfo extends Literal {
 	}
 
 	/**
-	 *
 	 * @param RevisionRecord|null $revision
 	 * @return string
 	 */

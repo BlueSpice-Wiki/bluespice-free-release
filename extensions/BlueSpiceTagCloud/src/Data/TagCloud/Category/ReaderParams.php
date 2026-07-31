@@ -15,7 +15,6 @@ class ReaderParams extends \BlueSpice\TagCloud\Data\TagCloud\ReaderParams {
 	protected $limit = 40;
 
 	/**
-	 *
 	 * @param array $params
 	 */
 	public function __construct( $params = [] ) {

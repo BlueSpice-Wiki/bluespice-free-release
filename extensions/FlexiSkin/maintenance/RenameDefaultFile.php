@@ -12,6 +12,9 @@ class RenameDefaultFile extends LoggedUpdateMaintenance {
 		$this->requireExtension( 'FlexiSkin' );
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doDBUpdates() {
 		$this->output( 'FlexiSkin - update config file...' );
 		$directory = $this->getConfig()->get( 'UploadDirectory' ) . '/flexiskin/';

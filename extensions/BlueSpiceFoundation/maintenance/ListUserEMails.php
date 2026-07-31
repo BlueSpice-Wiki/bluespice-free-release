@@ -10,7 +10,7 @@
 
 require_once 'BSMaintenance.php';
 
-class ListUserEmails extends BSMaintenance {
+class ListUserEmails extends BSMaintenance { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.WrongCase
 
 	public function __construct() {
 		parent::__construct();
@@ -42,6 +42,9 @@ class ListUserEmails extends BSMaintenance {
 		$this->output( implode( $sDelimiter, $aUserMails ) );
 	}
 
+	/**
+	 * @return array
+	 */
 	private function getUserData() {
 		$dbr = $this->getDB( DB_REPLICA );
 		$rRes = $dbr->select(

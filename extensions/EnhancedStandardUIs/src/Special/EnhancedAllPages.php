@@ -20,7 +20,6 @@ class EnhancedAllPages extends OOJSTreeSpecialPage {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function doExecute( $subPage ) {
@@ -51,7 +50,6 @@ class EnhancedAllPages extends OOJSTreeSpecialPage {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	private function getSearchWidget() {

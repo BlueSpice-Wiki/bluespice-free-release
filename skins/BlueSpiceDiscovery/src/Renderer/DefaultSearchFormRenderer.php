@@ -5,7 +5,6 @@ namespace BlueSpice\Discovery\Renderer;
 class DefaultSearchFormRenderer extends TemplateRendererBase {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getTemplatePath(): string {

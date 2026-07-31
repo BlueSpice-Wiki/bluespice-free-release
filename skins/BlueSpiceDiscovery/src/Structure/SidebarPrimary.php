@@ -28,7 +28,6 @@ class SidebarPrimary extends StackedTabPanelContainerBase implements IBaseTempla
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId(): string {
@@ -36,7 +35,6 @@ class SidebarPrimary extends StackedTabPanelContainerBase implements IBaseTempla
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getTabPanelRegistryKey(): string {
@@ -44,7 +42,6 @@ class SidebarPrimary extends StackedTabPanelContainerBase implements IBaseTempla
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getClasses(): array {
@@ -59,7 +56,6 @@ class SidebarPrimary extends StackedTabPanelContainerBase implements IBaseTempla
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

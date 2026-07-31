@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"HitomiAkane",
+			"Meno25",
 			"ديفيد"
 		]
 	},
@@ -9,5 +10,6 @@
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "عرض",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "إخفاء",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "رؤية العنوان",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "يمكنك هنا تحديد ما إذا كان العنوان سيظهر أم لا."
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "يمكنك هنا تحديد ما إذا كان العنوان سيظهر أم لا.",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help": "يمكنك تحديد ما إذا كان يجب أن يكون عنوان الصفحة مرئيًا."
 }

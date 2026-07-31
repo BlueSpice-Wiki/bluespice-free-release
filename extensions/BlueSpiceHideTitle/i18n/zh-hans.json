@@ -3,6 +3,7 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"A Retired User",
+			"GuoPC",
 			"Liuxinyu970226",
 			"Viztor",
 			"予弦",
@@ -13,5 +14,6 @@
 	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "显示",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "隐藏",
 	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "标题可见性",
-	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "您可以在此定义是否显示标题。"
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help": "您可以在此定义是否显示标题。",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help": "您可以指定页面标题是否可见。"
 }

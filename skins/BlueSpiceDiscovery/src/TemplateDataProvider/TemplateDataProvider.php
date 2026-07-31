@@ -11,19 +11,16 @@ use MediaWiki\Page\PageProps;
 class TemplateDataProvider implements ITemplateDataProvider {
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $sidebar = [];
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $content_navigation = [];
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $managedLinks = [];
@@ -49,7 +46,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @param BaseTemplate $template
 	 */
 	public function init( $template ): void {
@@ -66,7 +62,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @param string $group
 	 * @param string $id
 	 * @return void
@@ -92,7 +87,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @param string $group
 	 * @param string $id
 	 * @return void
@@ -117,7 +111,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @param string $group
 	 * @param string $id
 	 * @return void
@@ -137,7 +130,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getAll(): array {
@@ -153,7 +145,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function manageLinks(): void {
@@ -174,7 +165,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function collectTemplateLinks(): array {
@@ -190,7 +180,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function collectPanelLinks(): array {
@@ -218,7 +207,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function collectActionLinks(): array {
@@ -253,7 +241,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @param string $group
 	 * @return void
 	 */
@@ -276,7 +263,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @param array &$array
 	 * @return void
@@ -293,7 +279,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @param mixed $groupPath
 	 * @param mixed $groupName
 	 * @return void
@@ -305,7 +290,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @param string $groupPath
 	 * @param array $idList
 	 * @return void
@@ -317,7 +301,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelWatch(): void {
@@ -326,7 +309,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelShare(): void {
@@ -335,7 +317,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelPrint(): void {
@@ -344,7 +325,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelEdit(): void {
@@ -361,7 +341,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelViews(): void {
@@ -370,7 +349,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelActionsPrimary(): void {
@@ -379,7 +357,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelActionsSecondary(): void {
@@ -388,7 +365,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelDetails(): void {
@@ -397,7 +373,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelVariants(): void {
@@ -406,7 +381,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelCreate(): void {
@@ -415,7 +389,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makePanelNamespaces(): void {
@@ -425,7 +398,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makeActionsCollectionViews(): void {
@@ -435,7 +407,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makeActionsCollectionNamespaces(): void {
@@ -446,7 +417,6 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function makeActionsCollectionContentActions(): void {

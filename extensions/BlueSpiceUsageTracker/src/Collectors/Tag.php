@@ -4,13 +4,11 @@ namespace BS\UsageTracker\Collectors;
 class Tag extends Base {
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $descKey = '';
 
 	/**
-	 *
 	 * @param array $aConfig
 	 */
 	public function __construct( $aConfig = [] ) {
@@ -18,7 +16,6 @@ class Tag extends Base {
 	}
 
 	/**
-	 *
 	 * @return \BS\UsageTracker\CollectorResult
 	 */
 	public function getUsageData() {

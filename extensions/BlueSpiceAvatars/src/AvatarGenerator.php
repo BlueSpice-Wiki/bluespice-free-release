@@ -6,18 +6,15 @@ use MediaWiki\Config\Config;
 
 abstract class AvatarGenerator implements IAvatarGenerator {
 	/**
-	 *
 	 * @var string
 	 */
 	protected $name = '';
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @param string $name
 	 * @param Config $config
 	 */
@@ -27,7 +24,6 @@ abstract class AvatarGenerator implements IAvatarGenerator {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName() {
@@ -35,7 +31,6 @@ abstract class AvatarGenerator implements IAvatarGenerator {
 	}
 
 	/**
-	 *
 	 * @param string $name
 	 * @param Config $config
 	 * @return IAvatarGenerator

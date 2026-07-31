@@ -172,7 +172,6 @@ class EnhancedSidebarContainer extends Container implements LoggerAwareInterface
 	}
 
 	/**
-	 *
 	 * @return IComponent
 	 */
 	private function buildEditLink(): IComponent {

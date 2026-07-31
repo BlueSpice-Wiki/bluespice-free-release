@@ -228,5 +228,10 @@
 	"bs-extendedsearch-tagsearch-ve-tagsearch-cat-label": "按分类筛选",
 	"bs-extendedsearch-tagsearch-ve-tagsearch-operator-label": "筛选分类组合",
 	"bs-extendedsearch-tagsearch-ve-tagsearch-operator-and-label": "所有分类必须被分配（且）",
-	"bs-extendedsearch-tagsearch-ve-tagsearch-operator-or-label": "一个分类即可（或）"
+	"bs-extendedsearch-tagsearch-ve-tagsearch-operator-or-label": "一个分类即可（或）",
+	"bs-extendedsearch-search-center-filter-document-type-special-page-label": "特殊页面",
+	"bs-extendedsearch-search-center-filter-document-type-wikitext-label": "页面",
+	"bs-extendedsearch-search-center-filter-document-type-file-label": "文件",
+	"bs-extendedsearch-search-center-filter-document-type-user-profile-label": "用户资料",
+	"bs-extendedsearch-save-as-collection-button-label": "另存为页面收藏"
 }

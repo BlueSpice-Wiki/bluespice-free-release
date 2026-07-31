@@ -48,7 +48,6 @@ class Text extends \BlueSpice\TagCloud\Renderer {
 	}
 
 	/**
-	 *
 	 * @param mixed $val
 	 * @return mixed
 	 */
@@ -65,7 +64,6 @@ class Text extends \BlueSpice\TagCloud\Renderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getTemplateName() {

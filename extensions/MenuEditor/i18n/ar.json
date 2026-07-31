@@ -40,5 +40,7 @@
 	"menueditor-ui-add-sub-element-label": "أضف عنصرًا فرعيًا",
 	"menueditor-footerlinks-banner-text": "قد تتم إضافة بعض الروابط تلقائيًا بواسطة الامتدادات. يرجى التحقق من تكوين الامتداد لمعرفة المزيد.",
 	"menueditor-toolbar-save": "حفظ",
-	"menueditor-ui-cancel-confirmation": "هل أنت متأكد من إلغاء التعديل؟ سيتم فقدان جميع التغييرات غير المحفوظة."
+	"menueditor-ui-cancel-confirmation": "هل أنت متأكد من إلغاء التعديل؟ سيتم فقدان جميع التغييرات غير المحفوظة.",
+	"menueditor-ui-notices": "إشعارات",
+	"menueditor-ui-oldrevision-notice": "أنت تقوم بتعديل نسخة قديمة من هذه الصفحة. إذا قمت بحفظها، فستفقد أي تغييرات أجريتها منذ تلك النسخة."
 }

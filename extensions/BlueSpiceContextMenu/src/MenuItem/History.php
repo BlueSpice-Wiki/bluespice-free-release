@@ -7,7 +7,6 @@ use MediaWiki\Message\Message;
 class History extends Base {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIconClass() {
@@ -15,7 +14,6 @@ class History extends Base {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -23,7 +21,6 @@ class History extends Base {
 	}
 
 	/**
-	 *
 	 * @return string String of the URL.
 	 */
 	public function getUrl() {
@@ -31,7 +28,6 @@ class History extends Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -39,7 +35,6 @@ class History extends Base {
 	}
 
 	/**
-	 *
 	 * @param \Context $context
 	 * @return bool
 	 */

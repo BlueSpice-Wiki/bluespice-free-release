@@ -36,5 +36,7 @@
 	"bs-tagcloud-tag-tagcloud-tab-advanced": "Label for the VE inspector tab",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Label for dropdown field to select view mode",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Label for checkbox",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Help text for checkbox"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Help text for checkbox",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Label of the \"count\" attribute input field in the VisualEditor tag inspector",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Help message for the \"count\" attribute input field  in the VisualEditor tag inspector"
 }

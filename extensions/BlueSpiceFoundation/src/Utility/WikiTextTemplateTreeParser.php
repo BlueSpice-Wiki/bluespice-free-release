@@ -5,31 +5,26 @@ namespace BlueSpice\Utility;
 class WikiTextTemplateTreeParser {
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $wikiText = '';
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $currentWikiText = '';
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $result = [];
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $templateMap = [];
 
 	/**
-	 *
 	 * @param string $wikiText
 	 */
 	public function __construct( $wikiText ) {
@@ -51,11 +46,15 @@ class WikiTextTemplateTreeParser {
 		return $this->result;
 	}
 
+	/**
+	 * @return bool
+	 */
 	protected function currentWikiTextContainsLeafTemplates() {
 		return preg_match( "/{{([^{]*?)}}/", $this->currentWikiText )
 			!== 0;
 	}
 
+	/** @var int */
 	protected $counter = 0;
 
 	protected function findAndReplaceLeafTemplates() {
@@ -73,7 +72,6 @@ class WikiTextTemplateTreeParser {
 	}
 
 	/**
-	 *
 	 * @param string $wikiText
 	 * @return array
 	 */
@@ -91,7 +89,6 @@ class WikiTextTemplateTreeParser {
 	}
 
 	/**
-	 *
 	 * @param array $markers
 	 * @param array &$result
 	 */

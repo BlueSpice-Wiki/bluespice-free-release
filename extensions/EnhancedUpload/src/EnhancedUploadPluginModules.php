@@ -7,7 +7,6 @@ use MWStake\MediaWiki\Component\ManifestRegistry\ManifestAttributeBasedRegistry;
 class EnhancedUploadPluginModules {
 
 	/**
-	 *
 	 * @return void
 	 */
 	public static function getPluginModules() {

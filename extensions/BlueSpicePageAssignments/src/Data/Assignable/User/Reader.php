@@ -33,7 +33,6 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQuerySt
 	}
 
 	/**
-	 *
 	 * @param ReaderParams $params
 	 * @return PrimaryDataProvider
 	 */
@@ -51,7 +50,6 @@ class Reader extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\UserQuerySt
 	}
 
 	/**
-	 *
 	 * @return null
 	 */
 	public function makeSecondaryDataProvider() {

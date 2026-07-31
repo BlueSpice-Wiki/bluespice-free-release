@@ -5,31 +5,26 @@ namespace BlueSpice\Discovery;
 class SubTitleProcessor {
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $subtitle = "";
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $subpages = "";
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $backlink = "";
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $redirect = "";
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $revision = "";
@@ -73,7 +68,6 @@ class SubTitleProcessor {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function checkRedirect() {
@@ -104,7 +98,6 @@ class SubTitleProcessor {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function checkSubpages() {
@@ -123,7 +116,6 @@ class SubTitleProcessor {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function checkBacklink() {
@@ -142,7 +134,6 @@ class SubTitleProcessor {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function checkRevision() {

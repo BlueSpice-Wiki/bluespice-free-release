@@ -4,6 +4,9 @@ namespace BlueSpice\Readers\Hook\BeforePageDisplay;
 
 class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function skipProcessing() {
 		if ( !$this->out->getTitle() || !$this->out->getTitle()->exists() ) {
 			return true;
@@ -30,6 +33,9 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 		return false;
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->out->addModules( [ 'ext.bluespice.readers.insertTrace' ] );
 

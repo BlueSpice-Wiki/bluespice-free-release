@@ -3,6 +3,7 @@
 		"authors": [
 			"A Chinese Wikipedian",
 			"Anterdc99",
+			"GuoPC",
 			"Key0121",
 			"Liuxinyu970226",
 			"Peterxy",
@@ -41,5 +42,7 @@
 	"bs-tagcloud-tag-tagcloud-tab-advanced": "高级",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "显示模式",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "显示频率",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "增加已使用分类或是搜索查询的数目"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "增加已使用分类或是搜索查询的数目",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "数量",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "标签云中显示标签的最大数量。如果未设置，则使用默认值40"
 }

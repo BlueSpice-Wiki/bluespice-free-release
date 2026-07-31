@@ -4,6 +4,7 @@
 			"2nd-player",
 			"Shirayuki",
 			"Suyama",
+			"Tensama0415",
 			"もなー(偽物)"
 		]
 	},
@@ -29,5 +30,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "拡張機能 InterWikiLinks のタスクを提供します。",
 	"action-interwikilinks-viewspecialpage": "特別ページ「{{int:bs-interwikilinks-label}}」の閲覧",
 	"interwikilinks": "ウィキ間リンク",
-	"right-interwikilinks-viewspecialpage": "特別ページ [[Special:InterWikiLinks]] を利用"
+	"right-interwikilinks-viewspecialpage": "特別ページ [[Special:InterWikiLinks]] を利用",
+	"bs-interwikilinks-url-validate-fail": "URL を検証できませんでした。"
 }

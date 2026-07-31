@@ -82,7 +82,6 @@ class ManageAssignments extends BSMaintenance {
 	}
 
 	/**
-	 *
 	 * @return \BlueSpice\PageAssignments\AssignmentFactory
 	 */
 	private function getFactory() {

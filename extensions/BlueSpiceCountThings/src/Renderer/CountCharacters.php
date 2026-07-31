@@ -41,7 +41,6 @@ class CountCharacters extends TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getTemplateName() {

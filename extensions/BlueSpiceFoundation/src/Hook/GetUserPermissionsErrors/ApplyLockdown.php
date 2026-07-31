@@ -6,6 +6,9 @@ use BlueSpice\Permission\Lockdown;
 
 class ApplyLockdown extends \BlueSpice\Hook\GetUserPermissionsErrors {
 
+	/**
+	 * @return bool
+	 */
 	protected function skipProcessing() {
 		return !$this->getLockdown()->isLockedDown( $this->action );
 	}
@@ -23,7 +26,6 @@ class ApplyLockdown extends \BlueSpice\Hook\GetUserPermissionsErrors {
 	}
 
 	/**
-	 *
 	 * @return Lockdown
 	 */
 	protected function getLockdown() {

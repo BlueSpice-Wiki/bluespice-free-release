@@ -36,8 +36,7 @@ class AutoExtensionHandler {
 	 *
 	 * @var string
 	 */
-	// phpcs:ignore Generic.Files.LineLength.TooLong
-	private $requireSetupFileRegex = "#require_once\(*\s*.*?['|\"].*?\/(extensions|skins)\/(.*?)\/(.*?)\.php['|\"]\s*\)*#";
+	private $requireSetupFileRegex = "#require_once\(*\s*.*?['|\"].*?\/(extensions|skins)\/(.*?)\/(.*?)\.php['|\"]\s*\)*#"; // phpcs:ignore Generic.Files.LineLength.TooLong
 
 	/**
 	 * RegEx for SemainicMediaWiki
@@ -48,7 +47,6 @@ class AutoExtensionHandler {
 	private $enableSemanticsRegex = "#(enableSemantics)\(\s*['|\"](.*?)['|\"]\s*\)#";
 
 	/**
-	 *
 	 * @param string $installPath
 	 */
 	public function __construct( $installPath ) {
@@ -75,8 +73,7 @@ class AutoExtensionHandler {
 	private function findFiles() {
 		$dir = dir( $this->path );
 
-		// phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
-		while ( ( $entry = $dir->read() ) !== false ) {
+		while ( ( $entry = $dir->read() ) !== false ) { // phpcs:ignore Generic.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition, Generic.Files.LineLength.TooLong
 			if ( $entry === '.' || $entry === '..' ) {
 				continue;
 			}

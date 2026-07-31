@@ -33,5 +33,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "يقدم المهام لامتداد InterWikiLinks.",
 	"action-interwikilinks-viewspecialpage": "عرض الصفحة الخاصة \"{{int:bs-interwikilinks-label}}\"",
 	"interwikilinks": "وصلات الإنترويكي",
-	"right-interwikilinks-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:InterWikiLinks]]."
+	"right-interwikilinks-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:InterWikiLinks]].",
+	"bs-interwikilinks-url-validate-fail": "تعذر التحقق من صحة عنوان URL."
 }

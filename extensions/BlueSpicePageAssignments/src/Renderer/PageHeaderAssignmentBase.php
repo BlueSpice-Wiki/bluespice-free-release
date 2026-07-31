@@ -12,7 +12,6 @@ class PageHeaderAssignmentBase extends Assignment {
 	public const PARAM_ASSIGNMENT = 'assignment';
 
 	/**
-	 *
 	 * @var IAssignment
 	 */
 	protected $assignment = null;

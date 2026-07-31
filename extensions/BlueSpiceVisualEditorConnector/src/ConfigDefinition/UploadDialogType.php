@@ -9,7 +9,6 @@ use MediaWiki\HTMLForm\HTMLFormField;
 class UploadDialogType extends ConfigDefinition {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {
@@ -27,6 +26,9 @@ class UploadDialogType extends ConfigDefinition {
 		return new HTMLSelectField( $this->makeFormFieldParams() );
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function makeFormFieldParams() {
 		$params = parent::makeFormFieldParams();
 		$params['options-messages'] = [
@@ -43,7 +45,6 @@ class UploadDialogType extends ConfigDefinition {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -51,7 +52,6 @@ class UploadDialogType extends ConfigDefinition {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

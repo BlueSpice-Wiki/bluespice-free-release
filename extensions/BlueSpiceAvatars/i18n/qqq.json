@@ -20,5 +20,7 @@
 	"bs-avatars-upload-button": "Label for the upload button",
 	"bs-avatars-generate-button": "Label for the button to generate an avatar",
 	"bs-avatars-generic-cancel": "Generic cancel button{{Identical|Cancel}}",
-	"bs-avatars-generate-description": "Description for the action to generate an avatar"
+	"bs-avatars-generate-description": "Description for the action to generate an avatar",
+	"bs-avatars-upload-unsupported-type": "Error message given when an uploaded file has a file type that is not supported",
+	"bs-avatars-upload-tempfile-missing": "Error message given when no file was uploaded"
 }

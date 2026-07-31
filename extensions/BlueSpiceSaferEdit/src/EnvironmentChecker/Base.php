@@ -27,7 +27,6 @@ abstract class Base implements IEnvironmentChecker {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function userCanEdit() {
@@ -50,13 +49,11 @@ abstract class Base implements IEnvironmentChecker {
 	}
 
 	/**
-	 *
 	 * @param bool &$result
 	 */
 	abstract public function isEditMode( &$result );
 
 	/**
-	 *
 	 * @param bool &$result
 	 */
 	abstract public function shouldShowWarning( &$result );

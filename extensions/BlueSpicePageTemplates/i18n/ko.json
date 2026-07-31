@@ -3,6 +3,7 @@
 		"authors": [
 			"Hwangjy9",
 			"Tensama0415",
+			"YeBoy371",
 			"Ykhwong"
 		]
 	},
@@ -23,8 +24,8 @@
 	"bs-pagetemplates-dberror": "데이터베이스 오류가 발생했습니다.",
 	"bs-pagetemplates-tpl-deleted": "틀이 삭제되었습니다.",
 	"bs-pagetemplates-general-section": "일반",
-	"bs-pagetemplates-choose-template": "이 문서는 아직 존재하지 않습니다. 새 문서를 만들 수 있습니다. 그렇지 않으면 브라우저의 뒤로 버튼을 클릭하여 마지막으로 방문한 페이지로 돌아가십시오.\n\n다음 {{PLURAL:$1|틀}}{{PLURAL:$1|을| 중 하나를}} 선택할 수 있습니다.",
-	"bs-pagetemplates-choose-template-empty": "이 문서는 아직 존재하지 않습니다. 새 문서를 만들 수 있습니다. 그러고 싶지 않으시다면 브라우저의 뒤로 버튼을 클릭하여 마지막으로 방문한 페이지로 돌아가십시오.",
+	"bs-pagetemplates-choose-template": "이 문서는 아직 존재하지 않습니다. 새 문서를 만들 수 있습니다. 그렇지 않으면 브라우저의 뒤로 버튼을 클릭하여 마지막으로 방문한 페이지로 돌아가십시오.\n\n다음 {{PLURAL:$1|틀을|틀 중 하나를}} 선택할 수 있습니다.",
+	"bs-pagetemplates-choose-template-empty": "이 문서는 아직 존재하지 않습니다. 새 문서를 만들 수 있습니다. 그러고 싶지 않으시다면 브라우저의 뒤로 가기 버튼을 클릭하여 마지막으로 방문한 페이지로 돌아가십시오.",
 	"bs-pagetemplates-pref-excludens": "이 이름공간에 틀을 표시하지 않습니다:",
 	"bs-pagetemplates-config-hidedefaults": "표준 틀 숨기기",
 	"bs-pagetemplates-headerlabel": "레이블",
@@ -62,5 +63,7 @@
 	"apihelp-bs-pagetemplate-tags-store-summary": "모든 문서 틀 태그를 나열합니다. 정렬, 필터링, 쪽 번호 매기기를 허용합니다. ExtJS Store 매개변수를 구현합니다.",
 	"bs-pagetemplates-config-hidedefaults-help": "문서 생성 시 사용 가능한 문서 틀 목록에서 표준 틀 \"Empty Page\"를 제거",
 	"bs-pagetemplates-search-template-placeholder": "문서 틀 찾기",
-	"bs-pagetemplates-tag-untagged": "태그되지 않음"
+	"bs-pagetemplates-tag-untagged": "태그되지 않음",
+	"bs-pagetemplates-ns-setting-label": "문서 틀",
+	"bs-pagetemplates-ns-setting-help": "문서를 만들 때 문서 틀을 표시"
 }

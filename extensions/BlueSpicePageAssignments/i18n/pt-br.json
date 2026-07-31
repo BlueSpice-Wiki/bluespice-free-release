@@ -6,6 +6,7 @@
 			"Eduardoaddad",
 			"Felipe L. Ewald",
 			"Juan90264",
+			"NenhumaFênix",
 			"Re demz"
 		]
 	},
@@ -28,8 +29,8 @@
 	"log-description-bs-pageassignments": "Registo das alterações de atribuições de páginas",
 	"log-show-hide-bs-pageassignments": "$1 o registo de atribuições de páginas",
 	"logeventslist-bs-pageassignments-log": "Registo de atribuições de páginas",
-	"logentry-bs-pageassignments-add-user": "{{GENDER:$2|O usuário|A usuária}} $1 atribuiu a página \"$3\" {{GENDER:$4|ao usuário|à usuária}} \"$4\"",
-	"logentry-bs-pageassignments-remove-user": "{{GENDER:$2|O usuário|A usuária}} $1 removeu a atribuição da página \"$3\" {{GENDER:$4|ao usuário|à usuária}} \"$4\"",
+	"logentry-bs-pageassignments-add-user": "{{GENDER:$2|O usuário|A usuária|Usuário(a)}} $1 atribuiu a página \"$3\" {{GENDER:$4|ao usuário|à usuária|a usuário(a)}} \"$4\"",
+	"logentry-bs-pageassignments-remove-user": "{{GENDER:$2|O usuário|A usuária|Usuário(a)}} $1 removeu a atribuição da página \"$3\" {{GENDER:$4|ao usuário|à usuária|a usuário(a)}} \"$4\"",
 	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|atribuído}} a página \"$3\" ao grupo \"$4\"",
 	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|removeu}} a atribuição da página \"$3\" ao grupo \"$4\"",
 	"logentry-bs-pageassignments-add-specialeveryone": "$1 atribuiu a página \"$3\" ao grupo \"Todos\"",

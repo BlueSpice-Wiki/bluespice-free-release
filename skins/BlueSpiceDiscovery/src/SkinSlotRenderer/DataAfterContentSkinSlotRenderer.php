@@ -7,7 +7,6 @@ class DataAfterContentSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	public const REG_KEY = 'DataAfterContent';
 
 	/**
-	 *
 	 * @param array &$items
 	 * @return void
 	 */
@@ -22,7 +21,6 @@ class DataAfterContentSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getContainerWrapperTag(): string {
@@ -30,7 +28,6 @@ class DataAfterContentSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getContainerWrapperId(): string {
@@ -38,7 +35,6 @@ class DataAfterContentSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getItemWrapperTag(): string {
@@ -46,7 +42,6 @@ class DataAfterContentSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @param string $id
 	 * @return string
 	 */
@@ -55,7 +50,6 @@ class DataAfterContentSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function buildOpeningConainerWrapperHtml(): string {

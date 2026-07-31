@@ -29,7 +29,6 @@ class Store extends \MWStake\MediaWiki\Component\CommonWebAPIs\Data\GroupStore\S
 	}
 
 	/**
-	 *
 	 * @return Reader
 	 */
 	public function getReader() {

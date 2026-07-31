@@ -50,7 +50,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -64,7 +63,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchSkinSlotNavbarPrimarySearchFormHtml(): void {
@@ -77,7 +75,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchSkinSlotNavbarPrimaryItemsHtml(): void {
@@ -90,7 +87,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchNewContentButtonHtml() {
@@ -101,7 +97,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchSidebarPrimaryToggleButtonHtml() {
@@ -118,7 +113,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchSidebarPrimaryToggleButtonMobileHtml() {
@@ -135,7 +129,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchSidebarSecondaryToggleButtonHtml() {
@@ -152,7 +145,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchGlobalActionsButtonHtml() {
@@ -163,7 +155,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchLoginButtonHtml() {
@@ -174,7 +165,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	private function fetchUserMenuButtonHtml() {
@@ -185,7 +175,6 @@ class NavbarPrimary extends NavbarBase implements ISkinLayoutAware {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getParams(): array {

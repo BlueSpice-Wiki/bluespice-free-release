@@ -5,13 +5,11 @@ namespace BlueSpice\Discovery;
 interface ITabPanelRegistry {
 
 	/**
-	 *
 	 * @return TabPanelRegistry
 	 */
 	public static function singleton(): TabPanelRegistry;
 
 	/**
-	 *
 	 * @param string $key
 	 * @param array $panel
 	 */

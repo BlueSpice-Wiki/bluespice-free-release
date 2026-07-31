@@ -22,5 +22,7 @@
 	"bs-avatars-upload-button": "رفع",
 	"bs-avatars-generate-button": "إنشاء",
 	"bs-avatars-generic-cancel": "إلغاء",
-	"bs-avatars-generate-description": "إنشاء صورة رمزية جديدة تلقائيًا. سيؤدي هذا إلى استبدال أي صورة شخصية تم تحميلها بشكل دائم (إذا تم ضبطها)"
+	"bs-avatars-generate-description": "إنشاء صورة رمزية جديدة تلقائيًا. سيؤدي هذا إلى استبدال أي صورة شخصية تم تحميلها بشكل دائم (إذا تم ضبطها)",
+	"bs-avatars-upload-unsupported-type": "هذا النوع من الملفات غير مدعوم.",
+	"bs-avatars-upload-tempfile-missing": "فشل استرداد الملف المؤقت"
 }

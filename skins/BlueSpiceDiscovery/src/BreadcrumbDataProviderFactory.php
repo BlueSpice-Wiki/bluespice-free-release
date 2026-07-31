@@ -13,19 +13,16 @@ use Wikimedia\ObjectFactory\ObjectFactory;
 class BreadcrumbDataProviderFactory {
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $webRequestValues;
 
 	/**
-	 *
 	 * @var MessageLocalizer
 	 */
 	private $messageLocalizer;
 
 	/**
-	 *
 	 * @var TitleFactory
 	 */
 	private $titleFactory;
@@ -34,13 +31,11 @@ class BreadcrumbDataProviderFactory {
 	private $objectFactory;
 
 	/**
-	 *
 	 * @var NamespaceInfo
 	 */
 	private $namespaceInfo = null;
 
 	/**
-	 *
 	 * @param MessageLocalizer $messageLocalizer
 	 * @param array $webRequestValues
 	 * @param TitleFactory $titleFactory

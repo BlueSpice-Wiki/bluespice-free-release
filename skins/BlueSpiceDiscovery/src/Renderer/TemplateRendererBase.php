@@ -15,7 +15,6 @@ abstract class TemplateRendererBase implements ITemplateRenderer {
 	private $templatePath = '';
 
 	/**
-	 *
 	 * @param array|null $options
 	 */
 	public function __construct( $options = [] ) {
@@ -49,7 +48,6 @@ abstract class TemplateRendererBase implements ITemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getParams(): array {

@@ -50,7 +50,10 @@ class EnhancedSidebarPanel extends SimpleCard implements LoggerAwareInterface {
 	/**
 	 * @param string $id
 	 * @param string $heading
+	 * @param array $classes
 	 * @param array $items
+	 * @param TreeDataGenerator $treeDataGenerator
+	 * @param CookieHandler $cookieHandler
 	 */
 	public function __construct( string $id, string $heading, array $classes, array $items,
 		TreeDataGenerator $treeDataGenerator, CookieHandler $cookieHandler

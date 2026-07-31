@@ -4,6 +4,9 @@ namespace BlueSpice\PageAssignments\Hook\BeforePageDisplay;
 
 class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		if ( $this->out->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;

@@ -7,15 +7,11 @@ use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\RestrictedTextLink;
 
 class SpecialMainPage extends RestrictedTextLink {
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId(): string {
@@ -23,7 +19,6 @@ class SpecialMainPage extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHref(): string {
@@ -33,7 +28,6 @@ class SpecialMainPage extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPermissions(): array {
@@ -41,7 +35,6 @@ class SpecialMainPage extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getText(): Message {
@@ -49,7 +42,6 @@ class SpecialMainPage extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getTitle(): Message {
@@ -57,7 +49,6 @@ class SpecialMainPage extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {

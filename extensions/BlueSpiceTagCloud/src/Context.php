@@ -9,13 +9,11 @@ use MediaWiki\User\User;
 class Context extends \BlueSpice\Context {
 
 	/**
-	 *
 	 * @var User
 	 */
 	protected $user = null;
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 * @param User|null $user | null
@@ -26,7 +24,6 @@ class Context extends \BlueSpice\Context {
 	}
 
 	/**
-	 *
 	 * @return User
 	 */
 	public function getUser() {

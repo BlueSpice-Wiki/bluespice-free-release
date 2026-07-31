@@ -12,13 +12,11 @@ use MediaWiki\Revision\RevisionRecord;
 class PageVersionPagerAlert extends AlertProviderBase {
 
 	/**
-	 *
 	 * @var RevisionRecord|null
 	 */
 	protected $oldRevisionRecord = null;
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHTML() {
@@ -43,7 +41,6 @@ class PageVersionPagerAlert extends AlertProviderBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getType() {
@@ -51,7 +48,6 @@ class PageVersionPagerAlert extends AlertProviderBase {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	private function isOldVersion() {

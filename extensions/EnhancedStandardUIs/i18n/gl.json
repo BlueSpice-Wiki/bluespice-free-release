@@ -98,5 +98,11 @@
 	"enhanced-standard-uis-allpages-panel-more-button-label": "Cargar máis páxinas",
 	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "Abre o diálogo de vista previa do ficheiro «$1»",
 	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 - $2 de $3",
-	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 de aproximadamente $3"
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 de aproximadamente $3",
+	"enhanced-standard-uis-allpages-namespace-watch-label": "Vixiar o espazo de nomes «$1»",
+	"enhanced-standard-uis-allpages-namespace-unwatch-label": "Deixar de vixiar o espazo de nomes «$1»",
+	"enhanced-standard-uis-allpages-namespace-watched": "Engadiuse o espazo de nomes «$1» á túa lista de vixilancia",
+	"enhanced-standard-uis-allpages-namespace-unwatched": "Eliminouse o espazo de nomes «$1» da túa lista de vixilancia",
+	"enhanced-standard-uis-allpages-namespace-watch-error": "Non se puido actualizar o estado de vixilancia para este espazo de nomes.",
+	"enhanced-standard-uis-history-grid-header-major-label": "É unha edición grande"
 }

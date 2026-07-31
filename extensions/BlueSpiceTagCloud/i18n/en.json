@@ -35,5 +35,7 @@
 	"bs-tagcloud-tag-tagcloud-tab-advanced": "Advanced",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Display mode",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Show frequency",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Adds the number of used categories or search queries"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Adds the number of used categories or search queries",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Count",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Maximum amount of tags to display in the tag cloud. If not set, default value 40 will be used"
 }

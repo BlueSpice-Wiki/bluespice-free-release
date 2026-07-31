@@ -23,31 +23,26 @@ abstract class SkinLayoutBase implements
 {
 
 	/**
-	 *
 	 * @var RequestContext
 	 */
 	public $context;
 
 	/**
-	 *
 	 * @var BaseTemplate
 	 */
 	public $template;
 
 	/**
-	 *
 	 * @var array
 	 */
 	public $skinStructureElements = [];
 
 	/**
-	 *
 	 * @var ObjectFactory
 	 */
 	private $objectFactory = null;
 
 	/**
-	 *
 	 * @param ObjectFactory $objectFactory
 	 */
 	public function __construct( ObjectFactory $objectFactory ) {
@@ -55,7 +50,6 @@ abstract class SkinLayoutBase implements
 	}
 
 	/**
-	 *
 	 * @param ObjectFactory $objectFactory
 	 * @return ISkinLayout
 	 */
@@ -64,7 +58,6 @@ abstract class SkinLayoutBase implements
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function findUsedStructureElements(): array {
@@ -124,7 +117,6 @@ abstract class SkinLayoutBase implements
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getSkinStructureElements(): array {

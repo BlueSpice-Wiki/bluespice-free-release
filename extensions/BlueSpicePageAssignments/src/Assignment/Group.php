@@ -8,13 +8,11 @@ use MediaWiki\Title\Title;
 class Group extends \BlueSpice\PageAssignments\Assignment {
 
 	/**
-	 *
 	 * @var int[]
 	 */
 	protected static $userIdCache = [];
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function makeAnchor() {
@@ -25,7 +23,6 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getText() {
@@ -35,7 +32,6 @@ class Group extends \BlueSpice\PageAssignments\Assignment {
 	}
 
 	/**
-	 *
 	 * @return int[]
 	 */
 	public function getUserIds() {

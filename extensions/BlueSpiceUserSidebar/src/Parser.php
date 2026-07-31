@@ -10,25 +10,21 @@ use MediaWiki\Title\TitleFactory;
 
 class Parser {
 	/**
-	 *
 	 * @var array[]
 	 */
 	protected $parsed = [];
 
 	/**
-	 *
 	 * @var WidgetFactory
 	 */
 	protected $widgetFactory = null;
 
 	/**
-	 *
 	 * @var TitleFactory
 	 */
 	protected $titleFactory = null;
 
 	/**
-	 *
 	 * @param WidgetFactory $widgetFactory
 	 * @param TitleFactory $titleFactory
 	 */
@@ -72,7 +68,6 @@ class Parser {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return string
 	 */
@@ -147,7 +142,6 @@ class Parser {
 	}
 
 	/**
-	 *
 	 * @param string $line
 	 * @return array
 	 */
@@ -181,7 +175,6 @@ class Parser {
 	}
 
 	/**
-	 *
 	 * @param string $line
 	 * @return array|false
 	 */

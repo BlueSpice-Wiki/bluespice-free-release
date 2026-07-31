@@ -8,9 +8,8 @@
  * $LastChangedDate: 2013-06-12 15:58:22 +0200 (Mi, 12 Jun 2013) $
  * $LastChangedBy: rvogel $
  * $Rev: 9700 $
- *
  */
-class BsStringHelper {
+class BsStringHelper { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
 
 	/**
 	 * Reduces the length of a string in a smart way.
@@ -131,7 +130,7 @@ class BsStringHelper {
 	 * Source: http://stackoverflow.com/questions/1369936/check-to-see-if-a-string-is-serialized
 	 * Verifies if a variable is potentially serialized (stumbled upon this in wordpress)
 	 * -- seems to work
-	 * @param type $data
+	 * @param mixed $data
 	 * @return bool
 	 */
 	public static function isSerialized( $data ) {

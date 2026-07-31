@@ -7,13 +7,11 @@ use MWStake\MediaWiki\Component\CommonUserInterface\ITabPanel;
 class TabPanelRegistry {
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $panels = [];
 
 	/**
-	 *
 	 * @param array $panels
 	 */
 	public function __construct( $panels ) {
@@ -21,7 +19,6 @@ class TabPanelRegistry {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @param ITabPanel[] $panel
 	 */

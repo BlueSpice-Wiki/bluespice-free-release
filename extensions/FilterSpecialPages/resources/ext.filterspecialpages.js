@@ -1,29 +1,28 @@
 ( function ( $, mw ) {
-	$.extend( $.expr[':'], {
-		'containsi': function ( elem, i, match, array )
-		{
+	$.extend( $.expr[ ':' ], { // eslint-disable-line no-jquery/no-extend
+		containsi: function ( elem, i, match ) {
 			return ( elem.textContent || elem.innerText || '' ).toLowerCase()
-					.indexOf( ( match[3] || "" ).toLowerCase() ) >= 0;
+				.indexOf( ( match[ 3 ] || '' ).toLowerCase() ) >= 0;
 		}
 	} );
-	var filterInput = new OO.ui.SearchInputWidget( {
-		"placeholder": mw.message( 'filterspecialpages-hint-label' ).text(),
-		"id": "filterspecialpages",
-		"name": "filterspecialpages"
+	const filterInput = new OO.ui.SearchInputWidget( {
+		placeholder: mw.message( 'filterspecialpages-hint-label' ).text(),
+		id: 'filterspecialpages',
+		name: 'filterspecialpages'
 	} );
 	$( '#content' ).prepend( filterInput.$element );
 	filterInput.focus();
-	filterInput.on( 'change', function ( value ) {
+	filterInput.on( 'change', ( value ) => {
 		if ( value.length === 0 ) {
 			$( '#content li' ).show();
 		} else {
-			//display hide all li's where text not in
+			// display hide all li's where text not in
 			$( '#content li:not(:containsi(' + value + '))' ).hide();
 			$( '#content li:containsi(' + value + ')' ).show();
 		}
-		//hide empty sections, show non empty sections
+		// hide empty sections, show non empty sections
 		$( '.mw-specialpages-list ul, .mw-specialpages-notes ul' ).each( function () {
-			if ( $( this ).children( ':visible' ).length === 0 ) {
+			if ( $( this ).children( ':visible' ).length === 0 ) { // eslint-disable-line no-jquery/no-sizzle
 				$( this ).parent().prev().hide();
 			} else {
 				$( this ).parent().prev().show();
@@ -32,26 +31,27 @@
 
 	} );
 
-	filterInput.$element.find("input").keyup( function ( e ) {
-		if ( e.keyCode == 27 ) { // escape key maps to keycode `27`
-			var selection = window.getSelection().toString();
+	filterInput.$element.find( 'input' ).on( 'keyup', ( e ) => {
+		// escape key
+		if ( e.keyCode == 27 ) { // eslint-disable-line eqeqeq
+			const selection = window.getSelection().toString();
 			if ( selection === filterInput.getValue() ) {
-				//Cursor to end
+				// Cursor to end
 				filterInput.focus();
-				var tmpStr = filterInput.getValue();
+				const tmpStr = filterInput.getValue();
 				filterInput.setValue( '' );
 				filterInput.setValue( tmpStr );
 			} else {
-				//select all text
+				// select all text
 				filterInput.select();
 			}
 		}
 	} );
 
-	filterInput.on( 'enter', function ( e ) {
-		var visibleLinks = $( '#content li:containsi(' + filterInput.getValue() + ')' );
+	filterInput.on( 'enter', () => {
+		const visibleLinks = $( '#content li:containsi(' + filterInput.getValue() + ')' ); // eslint-disable-line no-jquery/variable-pattern
 		if ( visibleLinks.size() === 1 ) {
-			window.location.href = visibleLinks.find( "a" ).attr( "href" );
+			window.location.href = visibleLinks.find( 'a' ).attr( 'href' );
 		}
 	} );
 

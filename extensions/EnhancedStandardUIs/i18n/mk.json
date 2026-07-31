@@ -99,5 +99,10 @@
 	"enhanced-standard-uis-allpages-panel-more-button-label": "Вчитај уште страници",
 	"enhanced-standard-uis-filelist-grid-preview-control-aria-label": "Отвори прегледен дијалог за $1",
 	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 - $2 од $3",
-	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 од ~ $3"
+	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 од ~ $3",
+	"enhanced-standard-uis-allpages-namespace-watch-label": "Набљудувај го именскиот простор $1",
+	"enhanced-standard-uis-allpages-namespace-unwatch-label": "Тргни го именскиот простор $1 од набљудуваните",
+	"enhanced-standard-uis-allpages-namespace-watched": "Додаден именскиот простор „$1“ во набљудуваните",
+	"enhanced-standard-uis-allpages-namespace-unwatched": "Отстранет именскиот простор „$1“ во набљудуваните",
+	"enhanced-standard-uis-allpages-namespace-watch-error": "Не можев да го изменам статусот на набљудуваност за овој именски простор."
 }

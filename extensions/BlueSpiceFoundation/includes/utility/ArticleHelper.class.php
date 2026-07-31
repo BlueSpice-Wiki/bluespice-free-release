@@ -3,17 +3,14 @@
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 
-/**
- * This class provides functions for common tasks while working with MediaWiki
- * Article/Title objects.
- * @package BlueSpice_AdapterMW
- * @subpackage Utility
- */
-class BsArticleHelper {
+class BsArticleHelper { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
 
+	/** @var Title */
 	protected $oTitle = null;
+	/** @var bool */
 	protected $bIsLoaded = false;
 
+	/** @var array */
 	protected static $aInstances = [];
 
 	/** @var MediaWikiServices */
@@ -76,7 +73,7 @@ class BsArticleHelper {
 	 * DEPRECATED
 	 * @deprecated since version 3.1 - Use \BlueSpice\Services::getInstance()
 	 * ->getService( 'BSUtilityFactory' )->getPagePropHelper( Title )->getPageProps instead
-	 * @param type $bDoLoad
+	 * @param mixed $bDoLoad
 	 * @return array
 	 */
 	public function getPageProps( $bDoLoad = false ) {
@@ -101,6 +98,9 @@ class BsArticleHelper {
 		return Title::castFromLinkTarget( $redirTarget );
 	}
 
+	/**
+	 * @return bool|void
+	 */
 	public function invalidate() {
 		$this->bIsLoaded = false;
 

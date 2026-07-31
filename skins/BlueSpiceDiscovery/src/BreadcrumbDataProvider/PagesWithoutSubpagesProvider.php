@@ -27,7 +27,6 @@ class PagesWithoutSubpagesProvider extends BaseBreadcrumbDataProvider {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool
 	 */

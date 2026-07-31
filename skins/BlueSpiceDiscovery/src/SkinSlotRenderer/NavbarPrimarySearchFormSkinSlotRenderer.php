@@ -7,7 +7,6 @@ class NavbarPrimarySearchFormSkinSlotRenderer extends ExtendedSkinSlotRendererBa
 	public const REG_KEY = 'NavbarPrimarySearchForm';
 
 	/**
-	 *
 	 * @param array $data
 	 * @return string
 	 */

@@ -37,18 +37,15 @@
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules",
-			"minus-x check .",
-			"@phpcs"
+			"@phpcs",
+			"minus-x check ."
 		],
 		"fix": [
 			"minus-x fix .",
 			"phpcbf"
 		],
-		"lint": [
-			"phan --no-progress-bar -m text | sed 's, ,:,'"
-		],
 		"phan": "phan -d . --long-progress-bar",
-		"phpcs": "phpcs -sp"
+		"phpcs": "phpcs -sp --cache"
 	},
 	"autoload": {
 		"psr-4": {

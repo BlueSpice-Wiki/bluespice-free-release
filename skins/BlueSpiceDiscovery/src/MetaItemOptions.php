@@ -5,13 +5,11 @@ namespace BlueSpice\Discovery;
 class MetaItemOptions {
 
 	/**
-	 *
 	 * @var MetaItemsProviderFactory
 	 */
 	private $metaItemFactory = null;
 
 	/**
-	 *
 	 * @param MetaItemsProviderFactory $metaItemFactory
 	 */
 	public function __construct( $metaItemFactory ) {
@@ -19,7 +17,6 @@ class MetaItemOptions {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getOptions() {

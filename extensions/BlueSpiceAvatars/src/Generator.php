@@ -14,19 +14,16 @@ class Generator {
 	public const PARAM_WIDTH = 'width';
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var AvatarGeneratorFactory
 	 */
 	protected $factory = null;
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param AvatarGeneratorFactory|null $factory
 	 */
@@ -44,7 +41,6 @@ class Generator {
 	}
 
 	/**
-	 *
 	 * @param User $user
 	 * @param array $params
 	 * @return string

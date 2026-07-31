@@ -11,15 +11,11 @@ class DiffBackLinkProvider implements IBackLinkProvider {
 	/** @var Title */
 	private $backToTitle = null;
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		$this->backToTitle = null;
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function applies( $context ): bool {
@@ -37,7 +33,6 @@ class DiffBackLinkProvider implements IBackLinkProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getHref(): string {
@@ -45,7 +40,6 @@ class DiffBackLinkProvider implements IBackLinkProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getLabel(): Message {
@@ -53,7 +47,6 @@ class DiffBackLinkProvider implements IBackLinkProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getTitle(): Message {
@@ -61,7 +54,6 @@ class DiffBackLinkProvider implements IBackLinkProvider {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getAriaLabel(): Message {

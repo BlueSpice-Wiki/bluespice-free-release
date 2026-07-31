@@ -7,7 +7,6 @@ use MediaWiki\Message\Message;
 class Delete extends Base {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIconClass() {
@@ -22,7 +21,6 @@ class Delete extends Base {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage() {
@@ -30,7 +28,6 @@ class Delete extends Base {
 	}
 
 	/**
-	 *
 	 * @return string String of the URL.
 	 */
 	public function getUrl() {
@@ -38,7 +35,6 @@ class Delete extends Base {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -46,7 +42,6 @@ class Delete extends Base {
 	}
 
 	/**
-	 *
 	 * @param \Context $context
 	 * @return bool
 	 */

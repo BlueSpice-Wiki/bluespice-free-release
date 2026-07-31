@@ -11,7 +11,6 @@ class Lookup extends \ArrayObject {
 	public const SORT_DESC = 'desc';
 
 	/**
-	 *
 	 * @param array $aConfig
 	 */
 	public function __construct( $aConfig = [] ) {
@@ -24,7 +23,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $sPath
 	 * @param mixed $mDefault
 	 * @param null &$aBase - deprecated
@@ -46,7 +44,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getQueryDSL() {
@@ -103,7 +100,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getQueryString() {
@@ -118,7 +114,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return Lookup
 	 */
 	public function clearQueryString() {
@@ -132,7 +127,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string $value
 	 * @return Lookup
@@ -149,7 +143,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return Lookup
 	 */
 	public function removeMatchQuery() {
@@ -160,7 +153,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param int $fuzziness
 	 * @param array|null $options
@@ -199,7 +191,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string|array $value
 	 * @return Lookup
@@ -249,7 +240,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @return Lookup
 	 */
@@ -376,7 +366,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string|array $value
 	 * @return Lookup
@@ -419,7 +408,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string $value
 	 * @return Lookup
@@ -541,7 +529,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string|null $sFieldName If null, all sorts will be removed
 	 * @return Lookup
 	 */
@@ -572,7 +559,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getSort() {
@@ -581,7 +567,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param array|string $value
 	 * @return Lookup
 	 */
@@ -622,7 +607,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return Lookup
 	 */
 	public function removeSearchAfter() {
@@ -669,7 +653,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param array|string $value
 	 * @param int $boost
@@ -713,7 +696,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string $value
 	 * @param int|null $boost
@@ -777,7 +759,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string $value
 	 * @return Lookup
@@ -787,7 +768,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string|array|null $value If not supplied, entire field will be removed
 	 * @return Lookup
@@ -819,7 +799,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @return Lookup
 	 */
@@ -839,7 +818,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getShould() {
@@ -894,7 +872,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $sFieldName e.g. "extension" or even "_type/extension"
 	 * @return Lookup
 	 */
@@ -925,7 +902,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $sFieldName e.g. "extension" or even "_type/extension"
 	 * @return Lookup
 	 */
@@ -983,7 +959,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getSize() {
@@ -1068,7 +1043,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getFrom() {
@@ -1079,7 +1053,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string $value
 	 * @return Lookup
@@ -1099,7 +1072,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @param string $value
 	 * @return \BS\ExtendedSearch\Lookup
@@ -1119,7 +1091,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $field
 	 * @return \BS\ExtendedSearch\Lookup
 	 */
@@ -1144,7 +1115,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getAutocompleteSuggest() {
@@ -1162,14 +1132,11 @@ class Lookup extends \ArrayObject {
 		$this->ensurePropertyPath( 'query.bool.must', [] );
 		$this['query']['bool']['must']['multi_match'] = [
 			'query' => $value,
-			'type' => 'bool_prefix',
+			'type' => 'best_fields',
+			'operator' => 'and',
 			'fields' => [
 				$field,
-				$field . '._2gram',
-				$field . '._3gram',
 				$field . '_extra',
-				$field . '_extra._2gram',
-				$field . '_extra._3gram',
 			]
 		];
 
@@ -1206,7 +1173,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $acField
 	 * @param string $contextField
 	 * @return \BS\ExtendedSearch\Lookup
@@ -1288,7 +1254,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param string $acField
 	 * @return \BS\ExtendedSearch\Lookup
 	 */
@@ -1345,7 +1310,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return Lookup
 	 */
 	public function setForceTerm() {
@@ -1354,7 +1318,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return Lookup
 	 */
 	public function removeForceTerm() {
@@ -1365,7 +1328,6 @@ class Lookup extends \ArrayObject {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function getForceTerm() {

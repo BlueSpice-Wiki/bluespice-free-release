@@ -14,7 +14,6 @@ class AddModules extends \BlueSpice\Hook\BeforePageDisplay {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doProcess() {

@@ -21,7 +21,6 @@ class AddModules extends BeforePageDisplay {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doProcess() {

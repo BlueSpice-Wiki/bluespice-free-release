@@ -8,9 +8,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleLink;
 
 class BackToTopButton extends SimpleLink {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -58,7 +55,6 @@ class BackToTopButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getSubComponents(): array {

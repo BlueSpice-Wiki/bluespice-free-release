@@ -22,7 +22,6 @@ class AddContentActions implements SkinTemplateNavigation__UniversalHook {
 	}
 
 	/**
-	 *
 	 * @param \SkinTemplate $skinTemplate
 	 * @param array &$links
 	 */

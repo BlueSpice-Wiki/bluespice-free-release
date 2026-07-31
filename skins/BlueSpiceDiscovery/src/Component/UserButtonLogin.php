@@ -14,13 +14,11 @@ use MWStake\MediaWiki\Component\CommonUserInterface\Component\SimpleLink;
 class UserButtonLogin extends SimpleLink {
 
 	/**
-	 *
 	 * @var RequestContext
 	 */
 	private $requestContext = null;
 
 	/**
-	 *
 	 * @param RequestContext $requestContext
 	 */
 	public function __construct( $requestContext ) {
@@ -79,7 +77,6 @@ class UserButtonLogin extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -94,7 +91,6 @@ class UserButtonLogin extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @return Title
 	 */
 	private function getReturnToPage(): Title {

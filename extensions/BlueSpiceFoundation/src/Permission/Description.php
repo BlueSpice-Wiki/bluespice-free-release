@@ -3,20 +3,25 @@
 namespace BlueSpice\Permission;
 
 /**
- *
  * This class contains description
  * of a single permission
  */
 class Description implements IDescription {
+
+	/** @var string */
 	protected $name;
+	/** @var string */
 	protected $type = 'namespace';
+	/** @var bool */
 	protected $preventLockout = false;
+	/** @var array */
 	protected $dependencies = [];
+	/** @var array */
 	protected $roles = [];
+	/** @var array */
 	protected $configArray = [];
 
 	/**
-	 *
 	 * @param string $name
 	 * @param array $config
 	 * @return void

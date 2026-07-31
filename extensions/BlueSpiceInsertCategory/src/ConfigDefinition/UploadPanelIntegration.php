@@ -5,7 +5,6 @@ namespace BlueSpice\InsertCategory\ConfigDefinition;
 class UploadPanelIntegration extends \BlueSpice\ConfigDefinition\BooleanSetting {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -18,7 +17,6 @@ class UploadPanelIntegration extends \BlueSpice\ConfigDefinition\BooleanSetting 
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -26,7 +24,6 @@ class UploadPanelIntegration extends \BlueSpice\ConfigDefinition\BooleanSetting 
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function isRLConfigVar() {
@@ -34,7 +31,6 @@ class UploadPanelIntegration extends \BlueSpice\ConfigDefinition\BooleanSetting 
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

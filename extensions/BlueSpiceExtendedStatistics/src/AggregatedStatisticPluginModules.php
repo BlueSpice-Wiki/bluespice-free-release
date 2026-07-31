@@ -7,7 +7,6 @@ use MWStake\MediaWiki\Component\ManifestRegistry\ManifestAttributeBasedRegistry;
 class AggregatedStatisticPluginModules {
 
 	/**
-	 *
 	 * @return void
 	 */
 	public static function getPluginModules() {

@@ -34,7 +34,6 @@ abstract class SkinStructureBase implements ISkinStructure, ITemplateProvider, I
 	protected $permissionManager = null;
 
 	/**
-	 *
 	 * @param ITemplateDataProvider $templateDataProvider
 	 * @param ComponentRenderer $componentRenderer
 	 * @param SkinSlotRenderer $skinSlotRenderer
@@ -52,7 +51,6 @@ abstract class SkinStructureBase implements ISkinStructure, ITemplateProvider, I
 	}
 
 	/**
-	 *
 	 * @param ITemplateDataProvider $templateDataProvider
 	 * @param ComponentRenderer $componentRenderer
 	 * @param SkinSlotRenderer $skinSlotRenderer
@@ -94,7 +92,6 @@ abstract class SkinStructureBase implements ISkinStructure, ITemplateProvider, I
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -103,7 +100,6 @@ abstract class SkinStructureBase implements ISkinStructure, ITemplateProvider, I
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getParams(): array {

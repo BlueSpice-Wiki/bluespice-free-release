@@ -7,7 +7,6 @@ class BreadcrumbSkinSlotRenderer extends ExtendedSkinSlotRendererBase {
 	public const REG_KEY = 'Breadcrumb';
 
 	/**
-	 *
 	 * @param array $data
 	 * @return string
 	 */

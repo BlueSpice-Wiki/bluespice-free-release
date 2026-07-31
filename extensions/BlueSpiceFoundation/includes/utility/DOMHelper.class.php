@@ -1,11 +1,6 @@
 <?php
-/**
- * This class provides functions for common tasks while working with MediaWiki
- * Article/Title objects.
- * @package BlueSpice_AdapterMW
- * @subpackage Utility
- */
-class BsDOMHelper {
+
+class BsDOMHelper { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
 
 	/**
 	 * Finds the previous DOMElement starting from $oNode in the DOM tree

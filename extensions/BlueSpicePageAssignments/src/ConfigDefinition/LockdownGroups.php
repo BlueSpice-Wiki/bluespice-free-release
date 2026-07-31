@@ -5,7 +5,6 @@ namespace BlueSpice\PageAssignments\ConfigDefinition;
 class LockdownGroups extends \BlueSpice\ConfigDefinition\GroupList {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {
@@ -17,7 +16,6 @@ class LockdownGroups extends \BlueSpice\ConfigDefinition\GroupList {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -25,7 +23,6 @@ class LockdownGroups extends \BlueSpice\ConfigDefinition\GroupList {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function isHidden() {

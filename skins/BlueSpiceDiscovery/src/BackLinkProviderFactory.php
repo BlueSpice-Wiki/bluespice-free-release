@@ -12,7 +12,6 @@ class BackLinkProviderFactory {
 	private $objectFactory;
 
 	/**
-	 *
 	 * @param ObjectFactory $objectFactory
 	 */
 	public function __construct( ObjectFactory $objectFactory ) {
@@ -20,7 +19,6 @@ class BackLinkProviderFactory {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return IBackLinkProvider|null
 	 */

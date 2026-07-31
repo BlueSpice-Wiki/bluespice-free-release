@@ -4,8 +4,9 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 
-class BsNamespaceHelper {
+class BsNamespaceHelper { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
 
+	/** @var array */
 	protected static $namespaceConstants = null;
 
 	/**
@@ -172,7 +173,6 @@ class BsNamespaceHelper {
 	}
 
 	/**
-	 *
 	 * @param array $aNamespaces Array of namespaces i.e. array( 3, 5, 'SomeNamespace', 4 )
 	 * @return array Array of integer Namespaces, i.e. array( 4, 14, 100, 7 );
 	 * @throws BsInvalidNamespaceException In case a invalid namespace is given

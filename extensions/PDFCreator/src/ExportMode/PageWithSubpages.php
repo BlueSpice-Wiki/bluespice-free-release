@@ -43,13 +43,19 @@ class PageWithSubpages extends Page {
 			unset( $data['revId'] );
 		}
 
-		$pages[] = [
-			'type' => 'page',
-			'target' => $title->getPrefixedDBkey(),
-			'params' => $params
-		];
+		$pages = [];
+		if ( $this->userCanReadPage( $title ) ) {
+			$pages[] = [
+				'type' => 'page',
+				'target' => $title->getPrefixedDBkey(),
+				'params' => $params
+			];
+		}
 		$subModulePages = $title->getSubpages();
 		foreach ( $subModulePages as $subPage ) {
+			if ( !$this->userCanReadPage( $subPage ) ) {
+				continue;
+			}
 			$pages[] = [
 				'type' => 'page',
 				'target' => $subPage->getPrefixedDBkey(),

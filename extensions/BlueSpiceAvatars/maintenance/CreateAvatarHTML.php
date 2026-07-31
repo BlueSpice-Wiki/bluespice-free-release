@@ -12,9 +12,6 @@ require_once __DIR__ . '/Maintenance.php';
  */
 class CreateAvatarHTML extends Maintenance {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct();
 		$this->addDescription( "Create HTML with links to Avatars" );
@@ -23,9 +20,6 @@ class CreateAvatarHTML extends Maintenance {
 		$this->requireExtension( 'BlueSpiceAvatars' );
 	}
 
-	/**
-	 *
-	 */
 	public function execute() {
 		$this->output( "<html>\n" );
 

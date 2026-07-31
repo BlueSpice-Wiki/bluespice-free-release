@@ -17,7 +17,6 @@ class MetaItemsManager {
 	protected $configFactory = null;
 
 	/**
-	 *
 	 * @param MetaItemsProviderFactory $metaItemsFactory
 	 * @param ConfigFactory $configFactory
 	 */

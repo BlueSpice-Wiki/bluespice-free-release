@@ -23,5 +23,6 @@
 	"bs-avatars-upload-button": "העלאה",
 	"bs-avatars-generate-button": "חילול",
 	"bs-avatars-generic-cancel": "ביטול",
-	"bs-avatars-generate-description": "יצירת תמונה מייצגת אוטומטית חדשה. זה יחליף לצמיתות כל תמונת פרופיל שהועלתה (אם הוגדרה)"
+	"bs-avatars-generate-description": "יצירת תמונה מייצגת אוטומטית חדשה. זה יחליף לצמיתות כל תמונת פרופיל שהועלתה (אם הוגדרה)",
+	"bs-avatars-upload-unsupported-type": "סוג הקובץ הזה אינו נתמך."
 }

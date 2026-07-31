@@ -9,7 +9,6 @@ class GlobalActionsEditingSkinSlotRenderer extends ExtendedSkinSlotRendererBase 
 	public const REG_KEY = 'GlobalActionsEditing';
 
 	/**
-	 *
 	 * @param array &$items
 	 * @return void
 	 */
@@ -31,7 +30,6 @@ class GlobalActionsEditingSkinSlotRenderer extends ExtendedSkinSlotRendererBase 
 	}
 
 	/**
-	 *
 	 * @param array $data
 	 * @return string
 	 */

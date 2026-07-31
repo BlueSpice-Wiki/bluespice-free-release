@@ -22,7 +22,6 @@ class EditPersonalMenu extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId(): string {
@@ -37,7 +36,6 @@ class EditPersonalMenu extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getRequiredRLStyles(): array {
@@ -45,7 +43,6 @@ class EditPersonalMenu extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPermissions(): array {

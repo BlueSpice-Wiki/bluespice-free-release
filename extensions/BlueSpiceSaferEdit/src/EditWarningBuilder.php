@@ -12,37 +12,31 @@ use Wikimedia\Rdbms\LoadBalancer;
 class EditWarningBuilder {
 
 	/**
-	 *
 	 * @var LoadBalancer
 	 */
 	protected $loadBalancer = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var User
 	 */
 	protected $user = null;
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $intermediateEditUsernames = [];
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $message = '';

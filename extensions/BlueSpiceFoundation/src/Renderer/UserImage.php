@@ -15,13 +15,11 @@ class UserImage extends \BlueSpice\TemplateRenderer {
 	public const PARAM_IMAGE_ALT = 'imagealt';
 
 	/**
-	 *
 	 * @var User
 	 */
 	protected $user = null;
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param Params $params
 	 * @param LinkRenderer|null $linkRenderer
@@ -78,7 +76,6 @@ class UserImage extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @return User
 	 */
 	public function getUser() {
@@ -94,11 +91,10 @@ class UserImage extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @param mixed $val
 	 * @return string
 	 */
-	protected function render_imagesrc( $val ) {
+	protected function render_imagesrc( $val ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		return $this->services->getService( 'MWStake.DynamicFileDispatcher.Factory' )->getUrl(
 			'userprofileimage',
 			[
@@ -110,7 +106,6 @@ class UserImage extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getCacheKey() {

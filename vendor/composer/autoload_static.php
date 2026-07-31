@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
+class ComposerStaticInit4060c975f5c2dec445bc4b21f117b77f
 {
     public static $files = array (
         'ef0a3cc8d59aacc0241af9c20bb29c47' => __DIR__ . '/..' . '/mwstake/mediawiki-componentloader/bootstrap.php',
@@ -1293,6 +1293,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'BlueSpice\\PageAccess\\ContentDroplets\\AccessDroplet' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/ContentDroplets/AccessDroplet.php',
         'BlueSpice\\PageAccess\\Extension' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Extension.php',
         'BlueSpice\\PageAccess\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageAccessTag' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Hook/BSUsageTrackerRegisterCollectors/AddPageAccessTag.php',
+        'BlueSpice\\PageAccess\\Hook\\ChangesListSpecialPageQuery\\FilterRestrictedPages' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Hook/ChangesListSpecialPageQuery/FilterRestrictedPages.php',
         'BlueSpice\\PageAccess\\Hook\\PageContentSave\\EditPageAccess' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Hook/PageContentSave/EditPageAccess.php',
         'BlueSpice\\PageAccess\\Hook\\SpecialPageBeforeExecute\\CheckBrowsePagePermission' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Hook/SpecialPageBeforeExecute/CheckBrowsePagePermission.php',
         'BlueSpice\\PageAccess\\Permission\\Lockdown\\Module\\BlockActionsOnTagPageAccess' => __DIR__ . '/../..' . '/extensions/BlueSpicePageAccess/src/Permission/Lockdown/Module/BlockActionsOnTagPageAccess.php',
@@ -1349,6 +1350,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'BlueSpice\\PermissionManager\\IPreset' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/IPreset.php',
         'BlueSpice\\PermissionManager\\Lockdown\\SpecialPages' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Lockdown/SpecialPages.php',
         'BlueSpice\\PermissionManager\\Logging\\GroupManagerSpecialLogLogger' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Logging/GroupManagerSpecialLogLogger.php',
+        'BlueSpice\\PermissionManager\\Maintenance\\FixInvalidGroupsInConfig' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Maintenance/FixInvalidGroupsInConfig.php',
         'BlueSpice\\PermissionManager\\Maintenance\\MigrateGmSettings' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Maintenance/MigrateGmSettings.php',
         'BlueSpice\\PermissionManager\\Maintenance\\MigratePmSettings' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/Maintenance/MigratePmSettings.php',
         'BlueSpice\\PermissionManager\\PermissionManager' => __DIR__ . '/../..' . '/extensions/BlueSpicePermissionManager/src/PermissionManager.php',
@@ -1382,6 +1384,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'BlueSpice\\RSSFeeder\\RSSFeed\\RecentChanges' => __DIR__ . '/../..' . '/extensions/BlueSpiceRSSFeeder/src/RSSFeed/RecentChanges.php',
         'BlueSpice\\RSSFeeder\\RSSFeed\\TitleBasedFeed' => __DIR__ . '/../..' . '/extensions/BlueSpiceRSSFeeder/src/RSSFeed/TitleBasedFeed.php',
         'BlueSpice\\RSSFeeder\\RSSFeed\\Watchlist' => __DIR__ . '/../..' . '/extensions/BlueSpiceRSSFeeder/src/RSSFeed/Watchlist.php',
+        'BlueSpice\\RSSFeeder\\RSSTokenProvider' => __DIR__ . '/../..' . '/extensions/BlueSpiceRSSFeeder/src/RSSTokenProvider.php',
         'BlueSpice\\RSSFeeder\\Special\\RSSFeeder' => __DIR__ . '/../..' . '/extensions/BlueSpiceRSSFeeder/src/Special/RSSFeeder.php',
         'BlueSpice\\Readers\\Api\\Store\\PageReaders' => __DIR__ . '/../..' . '/extensions/BlueSpiceReaders/src/Api/Store/PageReaders.php',
         'BlueSpice\\Readers\\Api\\Store\\RevisionReaders' => __DIR__ . '/../..' . '/extensions/BlueSpiceReaders/src/Api/Store/RevisionReaders.php',
@@ -1713,14 +1716,19 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'GuzzleHttp\\Handler\\CurlFactoryInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/CurlFactoryInterface.php',
         'GuzzleHttp\\Handler\\CurlHandler' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/CurlHandler.php',
         'GuzzleHttp\\Handler\\CurlMultiHandler' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php',
+        'GuzzleHttp\\Handler\\CurlShareHandleState' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/CurlShareHandleState.php',
+        'GuzzleHttp\\Handler\\CurlVersion' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/CurlVersion.php',
         'GuzzleHttp\\Handler\\EasyHandle' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/EasyHandle.php',
         'GuzzleHttp\\Handler\\HeaderProcessor' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/HeaderProcessor.php',
         'GuzzleHttp\\Handler\\MockHandler' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/MockHandler.php',
         'GuzzleHttp\\Handler\\Proxy' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/Proxy.php',
+        'GuzzleHttp\\Handler\\ProxyEnvironment' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/ProxyEnvironment.php',
         'GuzzleHttp\\Handler\\StreamHandler' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/StreamHandler.php',
+        'GuzzleHttp\\Handler\\TlsVersion' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Handler/TlsVersion.php',
         'GuzzleHttp\\MessageFormatter' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/MessageFormatter.php',
         'GuzzleHttp\\MessageFormatterInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/MessageFormatterInterface.php',
         'GuzzleHttp\\Middleware' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Middleware.php',
+        'GuzzleHttp\\Multiplexing' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Multiplexing.php',
         'GuzzleHttp\\Pool' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Pool.php',
         'GuzzleHttp\\PrepareBodyMiddleware' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php',
         'GuzzleHttp\\Promise\\AggregateException' => __DIR__ . '/..' . '/guzzlehttp/promises/src/AggregateException.php',
@@ -1815,6 +1823,7 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
         'GuzzleHttp\\Stream\\StreamInterface' => __DIR__ . '/..' . '/ezimuel/guzzlestreams/src/StreamInterface.php',
         'GuzzleHttp\\Stream\\Utils' => __DIR__ . '/..' . '/ezimuel/guzzlestreams/src/Utils.php',
         'GuzzleHttp\\TransferStats' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/TransferStats.php',
+        'GuzzleHttp\\TransportSharing' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/TransportSharing.php',
         'GuzzleHttp\\Utils' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Utils.php',
         'HtmlFormatter\\HtmlFormatter' => __DIR__ . '/..' . '/wikimedia/html-formatter/src/HtmlFormatter.php',
         'JsonSchema\\Constraints\\BaseConstraint' => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema/Constraints/BaseConstraint.php',
@@ -4576,11 +4585,11 @@ class ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInita4c92cdab22b38af364bcd35d3ae76b5::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4060c975f5c2dec445bc4b21f117b77f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4060c975f5c2dec445bc4b21f117b77f::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit4060c975f5c2dec445bc4b21f117b77f::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit4060c975f5c2dec445bc4b21f117b77f::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit4060c975f5c2dec445bc4b21f117b77f::$classMap;
 
         }, null, ClassLoader::class);
     }

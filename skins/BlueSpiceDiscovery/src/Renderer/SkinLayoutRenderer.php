@@ -18,7 +18,6 @@ class SkinLayoutRenderer implements ISkinLayoutRenderer {
 	private $skinLayout = null;
 
 	/**
-	 *
 	 * @param SkinLayout $skinLayout
 	 */
 	public function __construct( $skinLayout ) {
@@ -32,7 +31,6 @@ class SkinLayoutRenderer implements ISkinLayoutRenderer {
 	}
 
 	/**
-	 *
 	 * @param SkinLayout $skinLayout
 	 * @return SkinLayoutRenderer
 	 */
@@ -41,7 +39,6 @@ class SkinLayoutRenderer implements ISkinLayoutRenderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHtml(): string {
@@ -62,7 +59,6 @@ class SkinLayoutRenderer implements ISkinLayoutRenderer {
 	}
 
 	/**
-	 *
 	 * Use this if comonent is called with {{{myStructure}}} in the layout template
 	 *
 	 * @return array

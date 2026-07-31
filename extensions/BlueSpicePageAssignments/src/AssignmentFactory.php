@@ -16,19 +16,16 @@ use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 class AssignmentFactory {
 
 	/**
-	 *
 	 * @var IAssignment[]
 	 */
 	protected $targetCache = [];
 
 	/**
-	 *
 	 * @var AssignableFactory
 	 */
 	protected $assignableFactory = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
@@ -39,7 +36,6 @@ class AssignmentFactory {
 	protected $targetRegistry;
 
 	/**
-	 *
 	 * @param AssignableFactory $assignableFactory
 	 * @param Config $config
 	 * @param ExtensionAttributeBasedRegistry $targetRegistry
@@ -52,7 +48,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool|ITarget
 	 * @throws \MWException
@@ -83,7 +78,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @return string|null
 	 */
 	protected function getTargetClass() {
@@ -97,7 +91,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @param ITarget $instance
 	 */
 	protected function appendCache( ITarget $instance ) {
@@ -106,7 +99,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return ITarget|false
 	 */
@@ -118,7 +110,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @param Title|null $title
 	 * @return IAssignment[]
 	 */
@@ -154,7 +145,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @return Store
 	 */
 	public function getStore() {
@@ -165,7 +155,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @param ITarget $target
 	 * @return true
 	 */
@@ -177,7 +166,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @param string $key
 	 * @param Title $title
@@ -200,7 +188,6 @@ class AssignmentFactory {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getRegisteredTypes() {

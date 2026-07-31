@@ -6,6 +6,9 @@ use BlueSpice\Hook\BeforePageDisplay;
 
 class AddModules extends BeforePageDisplay {
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->out->addmodules( 'ext.bluespice.contextmenu' );
 		return true;

@@ -8,7 +8,6 @@ use MediaWiki\User\User;
 class Identicon extends AvatarGenerator {
 
 	/**
-	 *
 	 * @param User $user
 	 * @param int $size
 	 * @param array $params

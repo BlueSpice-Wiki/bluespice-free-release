@@ -359,6 +359,9 @@ enhancedUpload.ui.dialog.VEInsertMediaDialog.prototype.preprocessParams = functi
 		}
 	}
 
+	// Sanitize multiple underscores connecting together
+	params.filename = params.filename.replace( /_+/g, '_' );
+
 	return params;
 };
 

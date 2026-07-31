@@ -13,9 +13,6 @@ use MWStake\MediaWiki\Component\CommonUserInterface\LinkFormatter;
 
 class ActionsPanel extends SimpleCard implements IRestrictedComponent {
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct( [] );
 	}
@@ -106,7 +103,6 @@ class ActionsPanel extends SimpleCard implements IRestrictedComponent {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPermissions(): array {

@@ -7,8 +7,12 @@ use MediaWiki\SpecialPage\SpecialPage;
 
 class AddBlueSpice extends \BlueSpice\Hook\SoftwareInfo {
 
+	/** @var string */
 	protected static $configName = 'bsg';
 
+	/**
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$version = '';
 		$versionFile = $GLOBALS['IP'] . '/BLUESPICE-VERSION';

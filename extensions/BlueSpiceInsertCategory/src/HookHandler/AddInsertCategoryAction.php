@@ -17,7 +17,6 @@ class AddInsertCategoryAction implements SkinTemplateNavigation__UniversalHook {
 	private $wikiPageFactory;
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 * @param WikiPageFactory $wikiPageFactory
 	 */

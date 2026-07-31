@@ -14,7 +14,6 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	public const PARAM_CANVAS_ID_TAGS = 'canvasidtags';
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected static $canvasIDs = [];
@@ -52,7 +51,6 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	}
 
 	/**
-	 *
 	 * @param mixed $val
 	 * @return mixed
 	 */
@@ -68,7 +66,6 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	}
 
 	/**
-	 *
 	 * @param mixed $val
 	 * @return mixed
 	 */
@@ -80,7 +77,6 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getTemplateName() {
@@ -88,7 +84,6 @@ class Canvas3D extends \BlueSpice\TagCloud\Renderer {
 	}
 
 	/**
-	 *
 	 * @param string $prefix
 	 * @return string
 	 */

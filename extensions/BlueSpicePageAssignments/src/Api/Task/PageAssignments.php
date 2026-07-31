@@ -15,13 +15,11 @@ use MWStake\MediaWiki\Component\Events\Notifier;
 class PageAssignments extends \BSApiTasksBase {
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $sTaskLogType = 'bs-pageassignments';
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $aTasks = [
@@ -73,7 +71,6 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {
@@ -91,7 +88,6 @@ class PageAssignments extends \BSApiTasksBase {
 	protected $aReadTasks = [ 'getForPage' ];
 
 	/**
-	 *
 	 * @param \stdClass $taskData
 	 * @param array $params
 	 * @return \BlueSpice\Api\Response\Standard
@@ -210,7 +206,6 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $assignment
 	 * @return string
 	 */
@@ -238,7 +233,6 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $assignment
 	 * @return string
 	 */
@@ -252,7 +246,6 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param IAssignment[] $addedAssignments
 	 * @param IAssignment[] $removedAssignments
@@ -275,7 +268,6 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param array $addedAssignments
 	 * @param array $removedAssignments
@@ -328,7 +320,6 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @return \BlueSpice\PageAssignments\AssignmentFactory
 	 */
 	protected function getFactory() {
@@ -336,7 +327,6 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param int $pageId
 	 * @return Status
 	 */
@@ -349,7 +339,6 @@ class PageAssignments extends \BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return Status
 	 */

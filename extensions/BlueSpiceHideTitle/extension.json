@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceHideTitle",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.9",
+	"version": "5.1.10",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceHideTitle",
 	"author": [
 		"Markus Glaser",
@@ -62,7 +62,7 @@
 				"bs-hidetitle-ve-dialog-meta-settings-showtitle",
 				"bs-hidetitle-ve-dialog-meta-settings-hidetitle",
 				"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label",
-				"bs-hidetitle-ve-dialog-meta-settings-hidetitle-help"
+				"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help"
 			]
 		}
 	},

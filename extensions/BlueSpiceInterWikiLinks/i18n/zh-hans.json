@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A Retired User",
+			"GuoPC",
 			"Liuxingy",
 			"Liuxinyu970226",
 			"予弦",
@@ -30,5 +31,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "提供用于扩展InterWikiLinks的任务。",
 	"action-interwikilinks-viewspecialpage": "查看特殊页面“{{int:bs-interwikilinks-label}}”",
 	"interwikilinks": "跨wiki连接",
-	"right-interwikilinks-viewspecialpage": "访问特殊页面[[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "访问特殊页面[[Special:InterWikiLinks]]",
+	"bs-interwikilinks-url-validate-fail": "无法验证URL。"
 }

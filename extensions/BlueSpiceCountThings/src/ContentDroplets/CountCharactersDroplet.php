@@ -43,7 +43,6 @@ class CountCharactersDroplet extends TagDroplet {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getTagName(): string {

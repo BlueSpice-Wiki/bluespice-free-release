@@ -3,37 +3,31 @@ namespace BS\UsageTracker;
 
 class CollectorResult {
 	/**
-	 *
 	 * @var int
 	 */
 	public $count = 0;
 
 	/**
-	 *
 	 * @var string
 	 */
 	public $description = '';
 
 	/**
-	 *
 	 * @var string
 	 */
 	public $identifier = '';
 
 	/**
-	 *
 	 * @var string
 	 */
 	public $type = '';
 
 	/**
-	 *
 	 * @var string
 	 */
 	public $updateDate = '';
 
 	/**
-	 *
 	 * @param \BS\UsageTracker\Collectors\Base|null $oCollector
 	 */
 	public function __construct( $oCollector = null ) {
@@ -46,7 +40,6 @@ class CollectorResult {
 	}
 
 	/**
-	 *
 	 * @param \Wikimedia\Rdbms\ResultWrapper $oRow
 	 * @return CollectorResult
 	 */
@@ -64,7 +57,6 @@ class CollectorResult {
 	}
 
 	/**
-	 *
 	 * @return string|bool
 	 */
 	public function getUpdateDate() {
@@ -72,7 +64,6 @@ class CollectorResult {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getDescription() {

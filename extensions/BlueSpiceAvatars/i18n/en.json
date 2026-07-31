@@ -20,5 +20,7 @@
 	"bs-avatars-upload-button": "Upload",
 	"bs-avatars-generate-button": "Generate",
 	"bs-avatars-generic-cancel": "Cancel",
-	"bs-avatars-generate-description": "Generate new automatic avatar. This will permanently replace any uploaded profile image (if set)"
+	"bs-avatars-generate-description": "Generate new automatic avatar. This will permanently replace any uploaded profile image (if set)",
+	"bs-avatars-upload-unsupported-type": "This file type is not supported.",
+	"bs-avatars-upload-tempfile-missing": "Failed to retrieve temporary file"
 }

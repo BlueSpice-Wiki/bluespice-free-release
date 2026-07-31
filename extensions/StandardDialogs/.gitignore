@@ -1,21 +1,5 @@
-# Editors
-*~
-*.kate-swp
-.*.swp
-sublime-*
-.project
-.settings
-\#*#
-.#*
-/.idea
-
-# Install and build artifacts
-/docs
-node_modules
-composer.lock
-vendor
-screenshots/*.png
+/composer.lock
+/vendor
+/node_modules
 .eslintcache
-
-# OS
-.DS_Store
+/.stylelintcache

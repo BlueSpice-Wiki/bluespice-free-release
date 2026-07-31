@@ -10,13 +10,15 @@ class TagItemWidget extends Widget {
 	use LabelElement;
 	use FlaggedElement;
 
+	/** @var \OOUI\ButtonWidget */
 	protected $closeButton;
 
+	/** @var bool */
 	protected $valid;
+	/** @var bool */
 	protected $fixed;
 
 	/**
-	 *
 	 * @param array $config
 	 */
 	public function __construct( array $config = [] ) {
@@ -42,7 +44,6 @@ class TagItemWidget extends Widget {
 	}
 
 	/**
-	 *
 	 * @param array $config
 	 * @return null
 	 */
@@ -51,7 +52,6 @@ class TagItemWidget extends Widget {
 	}
 
 	/**
-	 *
 	 * @param array &$config
 	 * @return array
 	 */
@@ -66,7 +66,6 @@ class TagItemWidget extends Widget {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getJavaScriptClassName() {

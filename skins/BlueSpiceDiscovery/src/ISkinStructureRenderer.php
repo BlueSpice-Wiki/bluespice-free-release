@@ -7,7 +7,6 @@ use MediaWiki\Context\IContextSource;
 interface ISkinStructureRenderer {
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return string
 	 */

@@ -34,7 +34,6 @@ class CountCharactersHandler extends Handler {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function magicWordBsCountCharacters() {

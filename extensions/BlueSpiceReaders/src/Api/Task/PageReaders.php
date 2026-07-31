@@ -14,7 +14,6 @@ class PageReaders extends \BSApiTasksBase {
 	];
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {

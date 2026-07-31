@@ -1,12 +1,6 @@
 <?php
-// Last review MRG (21.09.10 10:42)
-// TODO MRG (21.09.10 10:42): Kommentar fehlt
-/**
- * This class provides functions for different format conversions.
- * @package BlueSpice_Core
- * @subpackage Utility
- */
-class BsFormatConverter {
+
+class BsFormatConverter { // phpcs:ignore MediaWiki.Files.ClassMatchesFilename.NotMatch
 
 	/**
 	 * DEPRECATED
@@ -24,7 +18,7 @@ class BsFormatConverter {
 	 * DEPRECATED
 	 * Converts a typical UNIX timestamp String into an age string, e.g. "2 minutes ago".
 	 * @deprecated since version 3.1 - Use \BlueSpice\Timestamp->getAgeString instead
-	 * @param type $sTimestamp a UNIX timestamp
+	 * @param mixed $sTimestamp a UNIX timestamp
 	 * @return type A internationalized age string.
 	 */
 	public static function timestampToAgeString( $sTimestamp ) {

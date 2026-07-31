@@ -4,7 +4,6 @@ declare( strict_types=1 );
 
 namespace MediaWiki\Extension\EmbedVideo;
 
-use InvalidArgumentException;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigException;
 use MediaWiki\Extension\EmbedVideo\EmbedService\AbstractEmbedService;
@@ -126,7 +125,18 @@ class EmbedVideo {
 			}
 		}
 
-		return ( new EmbedVideo( $parser, $expandedArgs, $fromTag ) )->output();
+		$output = ( new EmbedVideo( $parser, $expandedArgs, $fromTag ) )->output();
+		if ( ( $output['isRawHTML'] ?? false ) ) {
+			// Use a nowiki strip marker as isRawHTML requires MW 1.44+ and Scribunto does not properly support
+			// isRawHTML yet (T428670)
+			unset( $output['isRawHTML'] );
+			$marker = Parser::MARKER_PREFIX .
+				'-ev-' . sprintf( '%08X', $parser->mMarkerIndex++ ) .
+				Parser::MARKER_SUFFIX;
+			$parser->getStripState()->addNoWiki( $marker, $output[0] );
+			$output[0] = $marker;
+		}
+		return $output;
 	}
 
 	/**
@@ -172,11 +182,11 @@ class EmbedVideo {
 			$ev->addModules();
 
 			if ( empty( $ev->args['text'] ) ) {
-				throw new InvalidArgumentException( $ev->error( 'missingparams', $ev->args['service'] )[0] );
+				throw EmbedVideoException::newWithHtml( $ev->errorBoxHtml( 'missingparams', $ev->args['service'] ) );
 			}
-		} catch ( InvalidArgumentException $e ) {
+		} catch ( EmbedVideoException $e ) {
 			return [
-				$e->getMessage(),
+				$e->getHtml(),
 				'noparse' => true,
 				'isHTML' => true
 			];
@@ -302,9 +312,9 @@ class EmbedVideo {
 
 		try {
 			$this->init();
-		} catch ( InvalidArgumentException $e ) {
+		} catch ( EmbedVideoException $e ) {
 			return [
-				$e->getMessage(),
+				$e->getHtml(),
 				'noparse' => true,
 				'isHTML' => true
 			];
@@ -320,7 +330,7 @@ class EmbedVideo {
 				$this->args
 			),
 			'noparse' => true,
-			'isHTML' => true
+			'isRawHTML' => true
 		];
 	}
 
@@ -409,18 +419,33 @@ class EmbedVideo {
 		$arguments = func_get_args();
 		array_shift( $arguments );
 
-		$message = wfMessage( 'embedvideo-error-' . $type, $arguments )->escaped();
-
 		return [
-			"<div class='errorbox'>{$message}</div>",
+			$this->errorBoxHtml( $type, ...$arguments ),
 			'noparse' => true,
-			'isHTML' => true
+			'isHTML' => true,
 		];
 	}
 
 	/**
+	 * Build the HTML markup for an error box.
+	 *
+	 * @param string $type
+	 * @param mixed ...$arguments
+	 * @return string
+	 */
+	private function errorBoxHtml( string $type = 'unknown', mixed ...$arguments ): string {
+		return Html::element(
+			'div',
+			[
+				'class' => 'errorbox',
+			],
+			wfMessage( "embedvideo-error-$type", ...$arguments )->text(),
+		);
+	}
+
+	/**
 	 * Initializes the service and checks for errors
-	 * @throws InvalidArgumentException
+	 * @throws EmbedVideoException
 	 */
 	private function init(): void {
 		[
@@ -452,7 +477,7 @@ class EmbedVideo {
 		}
 
 		if ( !$service || !$id ) {
-			throw new InvalidArgumentException( $this->error( 'missingparams', $service, $id )[0] );
+			throw EmbedVideoException::newWithHtml( $this->errorBoxHtml( 'missingparams', $service, $id ) );
 		}
 
 		$this->service = EmbedServiceFactory::newFromName( $service, $id );
@@ -466,7 +491,7 @@ class EmbedVideo {
 		}
 
 		if ( !$this->service->setUrlArgs( $urlArgs ) ) {
-			throw new InvalidArgumentException( $this->error( 'urlargs', $service, $urlArgs )[0] );
+			throw EmbedVideoException::newWithHtml( $this->errorBoxHtml( 'urlargs', $service, $urlArgs ) );
 		}
 
 		if ( $this->parser !== null ) {
@@ -476,21 +501,21 @@ class EmbedVideo {
 		}
 
 		if ( !$this->setContainer( $container ) ) {
-			throw new InvalidArgumentException( $this->error( 'container', $container )[0] );
+			throw EmbedVideoException::newWithHtml( $this->errorBoxHtml( 'container', $container ) );
 		}
 
 		if ( !$this->setAlignment( $alignment ) ) {
-			throw new InvalidArgumentException( $this->error( 'alignment', $alignment )[0] );
+			throw EmbedVideoException::newWithHtml( $this->errorBoxHtml( 'alignment', $alignment ) );
 		}
 
 		if ( !$this->setVerticalAlignment( $vAlignment ) ) {
-			throw new InvalidArgumentException( $this->error( 'valignment', $vAlignment )[0] );
+			throw EmbedVideoException::newWithHtml( $this->errorBoxHtml( 'valignment', $vAlignment ) );
 		}
 
 		if ( !empty( $cover ?? $poster ?? '' ) ) {
 			try {
 				$this->service->setLocalThumb( $cover ?? $poster );
-			} catch ( InvalidArgumentException | RuntimeException $e ) {
+			} catch ( EmbedVideoException | RuntimeException $e ) {
 				wfLogWarning( $e->getMessage() );
 			}
 		}
@@ -531,7 +556,7 @@ class EmbedVideo {
 	 * @param string $description Description
 	 */
 	private function setDescriptionNoParse( $description ): void {
-		$this->description = ( !$description ? false : $description );
+		$this->description = ( !$description ? false : htmlspecialchars( $description ) );
 	}
 
 	/**

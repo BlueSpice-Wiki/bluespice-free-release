@@ -13,7 +13,6 @@ class GroupImage extends \BlueSpice\TemplateRenderer {
 	public const PARAM_GROUP = 'group';
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $group = '';
@@ -60,7 +59,6 @@ class GroupImage extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getGroup() {
@@ -76,11 +74,10 @@ class GroupImage extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @param string $val
 	 * @return string
 	 */
-	protected function render_imagesrc( $val ) {
+	protected function render_imagesrc( $val ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		return $this->services->getService( 'MWStake.DynamicFileDispatcher.Factory' )->getUrl(
 			'groupimage',
 			[
@@ -92,7 +89,6 @@ class GroupImage extends \BlueSpice\TemplateRenderer {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getCacheKey() {

@@ -10,25 +10,21 @@ use MessageLocalizer;
 abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocalizer {
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $name = '';
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 * @param string $name
@@ -40,7 +36,6 @@ abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocal
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 * @param string $name
@@ -57,7 +52,6 @@ abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocal
 	}
 
 	/**
-	 *
 	 * @return mixed
 	 */
 	public function getValue() {
@@ -65,7 +59,6 @@ abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocal
 	}
 
 	/**
-	 *
 	 * @return Config
 	 */
 	public function getConfig() {
@@ -73,7 +66,6 @@ abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocal
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName() {
@@ -81,7 +73,6 @@ abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocal
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getVariableName() {
@@ -89,7 +80,6 @@ abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocal
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {
@@ -109,13 +99,15 @@ abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocal
 	}
 
 	/**
-	 *
 	 * @return string|null
 	 */
 	public function getHelpMessageKey() {
 		return null;
 	}
 
+	/**
+	 * @return array
+	 */
 	protected function makeFormFieldParams() {
 		return [
 			'name' => $this->getName(),
@@ -130,19 +122,20 @@ abstract class ConfigDefinition implements ISetting, ISettingPaths, MessageLocal
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function isDisabled() {
 		return $this->config->getOverrides()->has( $this->getName() );
 	}
 
+	/**
+	 * @return string
+	 */
 	protected function makeID() {
 		return $this->getVariableName();
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function isHidden() {

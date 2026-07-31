@@ -7,7 +7,6 @@ use MediaWiki\Context\IContextSource;
 interface ISkinStructure {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName(): string;
@@ -18,7 +17,6 @@ interface ISkinStructure {
 	public function getTemplatePath(): string;
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -32,7 +30,6 @@ interface ISkinStructure {
 	public function enableRecursivePartials(): bool;
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getParams(): array;

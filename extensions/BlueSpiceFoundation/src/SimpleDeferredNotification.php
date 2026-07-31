@@ -7,8 +7,10 @@ use MWException;
 
 class SimpleDeferredNotification implements IDeferredNotification {
 
+	/** @var Message */
 	private $message = null;
 
+	/** @var array */
 	private $options = null;
 
 	/**
@@ -30,7 +32,6 @@ class SimpleDeferredNotification implements IDeferredNotification {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getMessage() {
@@ -38,7 +39,6 @@ class SimpleDeferredNotification implements IDeferredNotification {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getOptions() {

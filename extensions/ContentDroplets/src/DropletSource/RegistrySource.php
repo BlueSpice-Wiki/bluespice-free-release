@@ -51,7 +51,6 @@ class RegistrySource implements IDropletSource {
 	}
 
 	/**
-	 *
 	 * @param array $requirements
 	 * @return bool
 	 */

@@ -29,7 +29,6 @@ class BSApiMyPageAssignmentStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @return array
 	 */

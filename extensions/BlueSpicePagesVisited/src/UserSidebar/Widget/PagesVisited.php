@@ -21,7 +21,6 @@ class PagesVisited extends Widget {
 	public const PARAM_COUNT = 'count';
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function shouldRender(): bool {
@@ -29,7 +28,6 @@ class PagesVisited extends Widget {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getHeaderMessage(): Message {
@@ -37,7 +35,6 @@ class PagesVisited extends Widget {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getLinks(): array {
@@ -80,7 +77,6 @@ class PagesVisited extends Widget {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function makeReaderParams() {

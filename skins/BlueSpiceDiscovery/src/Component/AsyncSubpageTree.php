@@ -25,7 +25,6 @@ class AsyncSubpageTree extends Literal {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

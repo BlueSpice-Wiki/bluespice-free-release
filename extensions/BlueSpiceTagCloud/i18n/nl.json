@@ -38,5 +38,7 @@
 	"bs-tagcloud-tag-tagcloud-tab-advanced": "Geavanceerd",
 	"bs-tagcloud-tag-tagcloud-attr-renderer-dropdown-label": "Weergavemodus",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-label": "Frequentie weergeven",
-	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Voegt het aantal gebruikte categorieën of zoekopdrachten toe"
+	"bs-tagcloud-tag-tagcloud-attr-showcount-checkbox-help": "Voegt het aantal gebruikte categorieën of zoekopdrachten toe",
+	"bs-tagcloud-tag-tagcloud-attr-count-label": "Aantal",
+	"bs-tagcloud-tag-tagcloud-attr-count-help": "Het maximale aantal tags dat in de tagwolk wordt weergegeven. Bij weglating wordt de standaardwaarde 40 gebruikt."
 }

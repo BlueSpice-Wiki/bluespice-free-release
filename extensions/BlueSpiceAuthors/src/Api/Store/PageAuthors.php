@@ -8,7 +8,6 @@ use BlueSpice\Authors\Data\PageAuthors\Store;
 class PageAuthors extends StoreBase {
 
 	/**
-	 *
 	 * @return Store
 	 */
 	protected function makeDataStore() {

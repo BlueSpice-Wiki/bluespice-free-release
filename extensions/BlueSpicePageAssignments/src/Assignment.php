@@ -10,43 +10,36 @@ use MediaWiki\Title\Title;
 abstract class Assignment implements IAssignment, \JsonSerializable {
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $type = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $key = null;
 
 	/**
-	 *
 	 * @var LinkRenderer
 	 */
 	protected $linkRenderer = null;
 
 	/**
-	 *
 	 * @var HTML rendered anchor tag for this assignment
 	 */
 	protected $anchor = null;
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param null $linkRenderer - Deprecated since 3.1.2. LinkRenderer should not
 	 * be initialized that early, rather when it is actually needed
@@ -63,7 +56,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function jsonSerialize(): array {
@@ -71,7 +63,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return \stdClass
 	 */
 	public function toStdClass() {
@@ -85,7 +76,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	abstract protected function makeAnchor();
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getType() {
@@ -93,7 +83,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getKey() {
@@ -101,7 +90,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getAnchor() {
@@ -116,7 +104,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return Record
 	 */
 	public function getRecord() {
@@ -132,7 +119,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return Title
 	 */
 	public function getTitle() {
@@ -140,7 +126,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getPosition() {
@@ -148,7 +133,6 @@ abstract class Assignment implements IAssignment, \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {
