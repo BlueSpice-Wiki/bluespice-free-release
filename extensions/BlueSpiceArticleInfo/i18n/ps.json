@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"prefs-articleinfo": "د مخ مالومات"
+	"prefs-articleinfo": "د مخ مالومات",
+	"bs-articleinfo-desc": "په دريځ پټه کې د يو مخ په اړه مالومات چمتو کوي",
+	"bs-articleinfo-newrevision-info-text-reload": "د دې مخ يوه نوې بلبڼه شتون لري. مهرباني وکړئ د اوسنۍ منځپانگې کتلو لپاره مخ [[:$1|بيا بار کړئ]]"
 }

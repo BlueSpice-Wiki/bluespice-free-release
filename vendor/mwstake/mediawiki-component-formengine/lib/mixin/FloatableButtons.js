@@ -43,16 +43,16 @@
 		if ( this.enableProgressSave ) {
 			items.push( this.progressSaveButton );
 		}
-		if ( this.buttonsToShow.indexOf( 'submit' ) !== -1 ) {
+		if ( this.buttonsToShow.indexOf( 'submit' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 			items.push( this.submitButton );
 		}
-		if ( this.buttonsToShow.indexOf( 'reset' ) !== -1 ) {
+		if ( this.buttonsToShow.indexOf( 'reset' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 			items.push( this.resetButton );
 		}
-		if ( this.buttonsToShow.indexOf( 'cancel' ) !== -1 ) {
+		if ( this.buttonsToShow.indexOf( 'cancel' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 			items.push( this.cancelButton );
 		}
-		this.buttonsLayout = new OO.ui.HorizontalLayout( { // eslint-disable-line mediawiki/class-doc
+		this.buttonsLayout = new OO.ui.HorizontalLayout( {
 			classes: classes,
 			items: items
 		} );

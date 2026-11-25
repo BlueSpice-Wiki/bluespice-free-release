@@ -1,4 +1,5 @@
 /* eslint-disable no-underscore-dangle */
+window.ext = window.ext || {};
 window.ext.userProfile = {
 	ui: {},
 	form: {},

@@ -3,6 +3,7 @@
 namespace MWStake\MediaWiki\Component\CommonUserInterface;
 
 use MediaWiki\Linker\Linker;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 
 class LinkFormatter {
@@ -107,7 +108,7 @@ class LinkFormatter {
 				&& ( $link['href'] !== '' )
 				&& ( strpos( $link['href'], '#' ) !== 0 );
 			if ( $validHref ) {
-				$parsedUrl = wfParseUrl( $link['href'] );
+				$parsedUrl = MediaWikiServices::getInstance()->getUrlUtils()->parse( $link['href'] );
 				if ( $parsedUrl && $this->externalLinkTarget ) {
 					if ( !isset( $link['target'] ) ) {
 						$link['target'] = $this->externalLinkTarget;

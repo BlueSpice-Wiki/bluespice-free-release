@@ -5,9 +5,9 @@
 		]
 	},
 	"contentdroplets-desc": "VisualEditor integration for inserting predefined content snippets",
-	"contentdroplets-droplet-text-box-success": "Success Message",
-	"contentdroplets-droplet-text-box-warning": "Warning Message",
-	"contentdroplets-droplet-text-box-important": "Important Message",
+	"contentdroplets-droplet-text-box-success": "Success message",
+	"contentdroplets-droplet-text-box-warning": "Warning message",
+	"contentdroplets-droplet-text-box-important": "Important message",
 	"contentdroplets-droplet-text-box-note": "Note",
 	"contentdroplets-droplet-text-box-tip": "Tip",
 	"contentdroplets-droplet-text-box-neutral": "Message",

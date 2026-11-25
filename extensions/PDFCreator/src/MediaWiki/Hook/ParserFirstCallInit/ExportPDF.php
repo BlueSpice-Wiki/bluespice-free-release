@@ -23,7 +23,6 @@ class ExportPDF implements ParserFirstCallInitHook {
 	private $titleFactory;
 
 	/**
-	 *
 	 * @param TitleFactory $titleFactory
 	 */
 	public function __construct( TitleFactory $titleFactory ) {

@@ -10,7 +10,6 @@ use PageHeader\Component\Literal\PageInfoSentence;
 class PageSentence implements IMetaItemProvider {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName(): string {
@@ -18,7 +17,6 @@ class PageSentence implements IMetaItemProvider {
 	}
 
 	/**
-	 *
 	 * @return IComponent
 	 */
 	public function getComponent(): IComponent {

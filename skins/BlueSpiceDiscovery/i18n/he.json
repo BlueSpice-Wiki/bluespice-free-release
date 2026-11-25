@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"Neriah"
+			"Neriah",
+			"YaronSh",
+			"ערן"
 		]
 	},
 	"bs-discovery-desc": "עיצוב BlueSpice",
@@ -201,5 +203,15 @@
 	"bs-discovery-footer-places-alt-text-bluespice": "מופעל על ידי BlueSpice",
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "מופעל על־ידי Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "עריכה",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "ניקוי"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "ניקוי",
+	"bs-discovery-breadcrumb-nav-root-node-title": "הצגת כל הדפים במרחב השם $1",
+	"bs-discovery-personalurl-blog-text": "בלוג",
+	"bs-discovery-menu-provider-namespace-tree-label": "כל הדפים",
+	"bs-discovery-menu-provider-namespace-tree-desc": "כל הדפים של מרחב השם הנוכחי כעץ",
+	"bs-discovery-namespace-tree-pnl-header-text": "דפים",
+	"bs-discovery-namespace-tree-search-btn-label": "הצגת חיפוש",
+	"bs-discovery-namespace-tree-create-btn-label": "יצירת דף חדש",
+	"bs-discovery-namespace-tree-search-label": "חיפוש דף",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "שימוש במטמון עבור \"סרגל צד משופר של מדיה־ויקי\"",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "אחסון במטמון משפר את ביצועי סרגל הצד. משתני הקשר אינם זמינים כאשר אחסון במטמון מופעל. יש לבטל את המטמון כדי להשתמש במשתני הקשר."
 }

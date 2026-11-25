@@ -3,6 +3,7 @@
 namespace MWStake\MediaWiki\Component\CommonUserInterface\Renderer;
 
 use Exception;
+use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\CommonUserInterface\AriaAttributesBuilder;
 use MWStake\MediaWiki\Component\CommonUserInterface\DataAttributesBuilder;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponent;
@@ -83,7 +84,7 @@ class TextLink extends RendererBase {
 				]
 			);
 			// Is target external?
-			$parsedUrl = wfParseUrl( $component->getHref() );
+			$parsedUrl = MediaWikiServices::getInstance()->getUrlUtils()->parse( $component->getHref() );
 			// MediaWiki global $wgExternalLinkTarget
 			$externalLinkTarget = $this->mainConfig->get( 'ExternalLinkTarget' );
 			if ( $parsedUrl && $externalLinkTarget ) {

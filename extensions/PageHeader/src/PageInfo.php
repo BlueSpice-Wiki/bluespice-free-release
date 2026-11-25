@@ -8,19 +8,16 @@ use MediaWiki\Context\IContextSource;
 abstract class PageInfo implements IPageInfo {
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 */
@@ -30,7 +27,6 @@ abstract class PageInfo implements IPageInfo {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 * @return IPageHeader
@@ -40,7 +36,6 @@ abstract class PageInfo implements IPageInfo {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getUrl() {
@@ -48,7 +43,6 @@ abstract class PageInfo implements IPageInfo {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getPosition() {
@@ -56,7 +50,6 @@ abstract class PageInfo implements IPageInfo {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getType() {
@@ -64,7 +57,6 @@ abstract class PageInfo implements IPageInfo {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHtmlClass() {
@@ -72,7 +64,6 @@ abstract class PageInfo implements IPageInfo {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHtmlId() {
@@ -95,7 +86,6 @@ abstract class PageInfo implements IPageInfo {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getTypeData(): array {

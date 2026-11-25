@@ -51,8 +51,8 @@ ext.pdfcreator.ui.booklet.pages.General.prototype.getElements = function () {
 		]
 	} );
 
-	this.nsPrefixInput = new OO.ui.CheckboxInputWidget( {
-		selected: this.data.options.nsPrefix ?? true
+	this.showNamespaceInput = new OO.ui.CheckboxInputWidget( {
+		selected: this.data.options[ 'show-namespace' ] ?? true
 	} );
 	this.TOCSelectInput = new OO.ui.CheckboxInputWidget( {
 		selected: this.data.options[ 'embed-page-toc' ] ?? true
@@ -107,7 +107,7 @@ ext.pdfcreator.ui.booklet.pages.General.prototype.getElements = function () {
 			classes: [ 'pdfcreator-general-properties' ],
 			label: mw.message( 'pdfcreator-template-edit-dlg-general-properties-label' ).text(),
 			items: [
-				new OO.ui.FieldLayout( this.nsPrefixInput, {
+				new OO.ui.FieldLayout( this.showNamespaceInput, {
 					label: mw.message( 'pdfcreator-template-edit-dlg-general-ns-prefix-label' ).text(),
 					align: 'inline'
 				} ),
@@ -146,7 +146,7 @@ ext.pdfcreator.ui.booklet.pages.General.prototype.getData = function () {
 		size: this.sizeButtonsInput.findSelectedItem().data,
 		options: {
 			'embed-page-toc': this.TOCSelectInput.isSelected(),
-			nsPrefix: this.nsPrefixInput.isSelected(),
+			'show-namespace': this.showNamespaceInput.isSelected(),
 			attachments: this.attachmentInput.isSelected(),
 			'suppress-links': this.disableLinksInput.isSelected(),
 			'no-redirect': this.noRedirect.isSelected()

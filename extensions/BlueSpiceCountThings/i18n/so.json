@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"bs-countthings-desc": "Waxay bixisaa tirakoobyo ku salaysan nuxurka",
+	"bs-countthings-chars-label": "Xarfo",
+	"bs-countthings-words-label": "Erayada",
+	"bs-countthings-files-label": "Faylasha",
+	"bs-countthings-pages-label": "Bogagga",
+	"bs-countthings-ve-countcharacters-title": "Tiri xarfaha",
+	"bs-countthings-ve-countarticles-title": "Tiri maqaallada",
+	"bs-countthings-ve-countfiles-title": "Tiri faylasha",
+	"bs-countthings-ve-countusers-title": "Tirinta isticmaalayaasha",
+	"bs-countthings-ve-countthingsinspector-mode": "Qaabka",
+	"bs-countthings-ve-countcharacters-mode-all": "dhamaan",
+	"bs-countthings-ve-countcharacters-mode-charsonly": "Xarfo",
+	"bs-countthings-ve-countcharacters-mode-wordsonly": "erayo",
+	"bs-countthings-ve-countcharacters-mode-wordsandchars": "Xarfaha iyo ereyada",
+	"bs-countthings-ve-countcharacters-mode-pagesonly": "bogagga",
+	"bs-countthings-ve-countcharacters-input-label": "Bogagga",
+	"bs-countthings-error-no-input": "Bog lama bixin.",
+	"bs-countthings-error-invalid-mode": "Qaabka \"$1\" waa mid aan sax ahayn. Fadlan isticmaal \"chars\", \"words\", ama \"pages\".",
+	"bs-countthings-error-not-exist": "Bogga \"$1\" ma jiro.",
+	"bs-countthings-tag-countarticles-desc": "Waxay soo bandhigtaa tirada maqaallada ku jira wiki-ga.",
+	"bs-countthings-tag-countusers-desc": "Waxay muujisaa tirada isticmaalayaasha diiwaangashan.",
+	"bs-countthings-tag-countfiles-desc": "Waxay soo bandhigtaa tirada faylasha ku jira wiki-ga.",
+	"bs-countthings-tag-countcharacters-desc": "Waxay soo saartaa xogta qeexaysa nuxurka maqaalka la tilmaamay. Soo saarku waa sanduuq xogeed oo lagu dhex dari karo maqaal. Iyada oo la adeegsanayo xuduudda \"mode\", waxaa la soo bandhigi karaa noocyo kala duwan oo macluumaad ah.",
+	"bs-countthings-droplet-articles-name": "Tirada boggaga",
+	"bs-countthings-droplet-articles-description": "Waxay muujisaa tirada bogagga.",
+	"bs-countthings-droplet-characters-name": "Tirada xarfaha",
+	"bs-countthings-droplet-characters-description": "Waxay muujisaa tirada xarfaha ama ereyada ku jira bogga wiki-ga",
+	"bs-countthings-droplet-files-name": "Tirada faylasha",
+	"bs-countthings-droplet-files-description": "Waxay muujisaa tirada dhammaan faylasha la soo geliyey",
+	"bs-countthings-droplet-user-name": "Tirada isticmaalayaasha",
+	"bs-countthings-droplet-user-description": "Waxay muujisaa tirada dhammaan isticmaalayaasha",
+	"bs-countthings-tag-countfiles-count-duplicates-label": "Tiri nuqullada",
+	"bs-countthings-tag-countcharacters-desc-mode-help": "Sheeg waxa la tirinayo: wax kasta, xarfaha, ereyada, xarfaha iyo ereyada, ama bogagga"
+}

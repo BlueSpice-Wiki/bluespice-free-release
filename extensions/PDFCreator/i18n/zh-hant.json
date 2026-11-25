@@ -152,5 +152,6 @@
 	"pdfcreator-tag-no-export-start-ve-label": "PDF 排除 - 開始",
 	"pdfcreator-tag-no-export-end-ve-label": "PDF 排除 - 結束",
 	"pdfcreator-global-action-overview": "PDF 範本",
-	"pdfcreator-global-action-overview-desc": "Wiki 中所有 PDF 範本概要"
+	"pdfcreator-global-action-overview-desc": "Wiki 中所有 PDF 範本概要",
+	"pdfcreator-export-action-text": "匯出成 PDF"
 }

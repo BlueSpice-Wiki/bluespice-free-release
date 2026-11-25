@@ -20,7 +20,7 @@ return [
 		);
 	},
 	'MWStakeWikitextNodeProcessorRegistryFactory' => static function ( MediaWikiServices $services ) {
-		$globalVar = $GLOBALS['mwsgWikitextNodeProcessorRegistry'];
+		$globalVar = $GLOBALS['mwsgWikitextNodeProcessorRegistry'] ?? [];
 
 		/** @var ManifestRegistryFactory $manifestAttributeFactory */
 		$manifestAttributeFactory = $services->getService( 'MWStakeManifestRegistryFactory' );

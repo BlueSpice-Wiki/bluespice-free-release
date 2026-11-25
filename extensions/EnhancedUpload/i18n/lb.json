@@ -77,5 +77,6 @@
 	"enhancedupload-preview-widget-remove-label": "$1 ewechhuelen",
 	"enhancedupload-reset-button-label": "Zerécksetzen",
 	"enhancedupload-ve-file-dialog-title": "Fichier",
-	"enhancedupload-ve-file-dialog-filename-label": "Numm vum Fichier"
+	"enhancedupload-ve-file-dialog-filename-label": "Numm vum Fichier",
+	"enhancedupload-upload-error-badfilename": "Am Numm vum Fichier $1 kommen ongülteg Zeeche vir."
 }

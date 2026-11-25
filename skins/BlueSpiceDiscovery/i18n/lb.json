@@ -14,7 +14,7 @@
 	"bs-discovery-navbar-user-login-text": "Aloggen",
 	"bs-discovery-navbar-user-login-title": "Aloggen",
 	"bs-discovery-navbar-user-login-aria-label": "Aloggen",
-	"bs-discovery-logo-return-to-aria-label": "{{SITENAME}}-Logo - Zréck op $1",
+	"bs-discovery-logo-return-to-aria-label": "{{SITENAME}}-Logo – Zeréck op $1",
 	"bs-discovery-searchform-button-title": "Elo sichen",
 	"bs-discovery-searchform-button-aria-label": "Elo sichen",
 	"bs-discovery-searchform-input-placeholder": "Äre Sichbegrëff",
@@ -105,7 +105,7 @@
 	"bs-discovery-page-version-pager-previous": "Vireg",
 	"bs-discovery-page-version-pager-next": "Nächst",
 	"bs-discovery-back-to-page": "Zréck op $1",
-	"bs-discovery-back-to-page-title": "Zréck op d'Säit $1",
+	"bs-discovery-back-to-page-title": "Zeréck op d'Säit $1",
 	"bs-discovery-config-meta-items-header-label": "Elementer ënner dem Säitentitel",
 	"bs-discovery-skip-links-nav-aria-label": "Linken iwwersprangen",
 	"bs-discovery-sidebar-primary-cnt-aria-label": "Haaptnavigatioun",
@@ -117,5 +117,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "Säiten",
 	"bs-discovery-namespace-tree-search-btn-label": "Sich weisen",
 	"bs-discovery-namespace-tree-create-btn-label": "Eng nei Säit uleeën",
-	"bs-discovery-namespace-tree-search-label": "No enger Säit sichen"
+	"bs-discovery-namespace-tree-search-label": "No enger Säit sichen",
+	"bs-discovery-footerlinks-imprint-link-desc": "Impressum",
+	"bs-toc-hide-button-aria-label": "Inhaltsverzeechnes verstoppen"
 }

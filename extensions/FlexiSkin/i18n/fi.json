@@ -3,7 +3,8 @@
 		"authors": [
 			"MITO",
 			"Pyscowicz",
-			"Rönttönen"
+			"Rönttönen",
+			"Wikipeedikko"
 		]
 	},
 	"flexiskin-label": "Ulkoasu",
@@ -17,5 +18,6 @@
 	"flexiskin-ui-plugin-colors-foreground-sidebar-primary-label": "Sivupalkin etuala",
 	"flexiskin-ui-plugin-footer-colors-label": "Alapalkin värit",
 	"flexiskin-ui-plugin-colors-background-footer-label": "Alaviitteen tausta",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "Alaviitteen etuala"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Alaviitteen etuala",
+	"flexiskin-ui-configurator-notice-inherited-styling": "Tämä wiki saa tyylinsä pääwikistä, mutta voit mukauttaa sitä mieleiseksesi. Tässä tekemiäsi muutoksia käytetään vain tässä wikissä."
 }

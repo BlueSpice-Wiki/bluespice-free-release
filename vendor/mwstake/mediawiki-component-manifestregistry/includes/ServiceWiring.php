@@ -9,7 +9,7 @@ use MWStake\MediaWiki\Component\ManifestRegistry\ManifestRegistryFactory;
 return [
 	'MWStakeManifestRegistryFactory' => static function ( MediaWikiServices $services ) {
 		$extensionRegistry = ExtensionRegistry::getInstance();
-		$overrides = $GLOBALS['mwsgManifestRegistryOverrides'];
+		$overrides = $GLOBALS['mwsgManifestRegistryOverrides'] ?? [];
 		return new ManifestRegistryFactory( $extensionRegistry, $overrides );
 	},
 	'MWStakeManifestObjectFactory' => static function ( MediaWikiServices $services ) {

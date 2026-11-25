@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Aue Nai",
 			"McDutchie",
 			"Miriam Schlindwein",
 			"Patric Wirth",
@@ -24,7 +25,7 @@
 	"standarddialogs-page-info-page-title": "Label for page title.\n{{Identical|Title}}",
 	"standarddialogs-page-info-page-length": "Label for page length in bytes.\n{{Identical|Page length (in bytes)}}",
 	"standarddialogs-page-info-page-id": "Label for the page id.\n{{Identical|Page ID}}",
-	"standarddialogs-page-info-page-language": "Label for page language language.\n{{Identical|Language}}",
+	"standarddialogs-page-info-page-language": "အရေဝ်ဘာသာ",
 	"standarddialogs-page-info-page-model": "Label for the page content model.\n{{Identical|Content model}}",
 	"standarddialogs-page-info-page-watch": "Label for the number of watchers of the page.\n{{Identical|Number of watchers}}",
 	"standarddialogs-page-info-page-redirects": "Label for the page redirects.\n{{Identical|Redirect}}",

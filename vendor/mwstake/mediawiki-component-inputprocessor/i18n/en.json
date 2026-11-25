@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Hallo Welt! GmbH"
+		]
 	},
 	"inputprocessor-error-processor-not-registered": "Processor type \"$1\" not registered",
 	"inputprocessor-error-invalid-processor-object": "Processor type \"$1\" not instance of IProcessor",

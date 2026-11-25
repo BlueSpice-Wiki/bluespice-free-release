@@ -10,13 +10,11 @@ use Wikimedia\Rdbms\LoadBalancer;
 abstract class DatabaseReader extends Reader {
 
 	/**
-	 *
 	 * @var IDatabase
 	 */
 	protected $db = null;
 
 	/**
-	 *
 	 * @param LoadBalancer $loadBalancer
 	 * @param IContextSource|null $context
 	 * @param Config|null $config

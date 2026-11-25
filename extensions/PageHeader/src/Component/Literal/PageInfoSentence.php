@@ -2,32 +2,28 @@
 
 namespace PageHeader\Component\Literal;
 
-use HTML;
 use MediaWiki\Context\IContextSource;
+use MediaWiki\Html\Html;
 use MWStake\MediaWiki\Component\CommonUserInterface\Component\Literal;
 use PageHeader\PageInfoSentenceBuilder;
 
 class PageInfoSentence extends Literal {
 	/**
-	 *
 	 * @var PageInfoSentenceBuilder
 	 */
 	protected $builder = null;
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $sentence = '';
 
 	/**
-	 *
 	 * @param PageInfoSentenceBuilder $builder
 	 */
 	public function __construct( $builder ) {
@@ -39,7 +35,6 @@ class PageInfoSentence extends Literal {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
@@ -82,11 +77,10 @@ class PageInfoSentence extends Literal {
 	 * @return string
 	 */
 	public function getHtml(): string {
-		return HTML::rawElement( 'span', [ 'role' => 'alert' ], $this->getSentence() );
+		return Html::rawElement( 'span', [ 'role' => 'alert' ], $this->getSentence() );
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getRequiredRLStyles(): array {

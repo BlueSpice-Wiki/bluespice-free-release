@@ -9,19 +9,16 @@ use stdClass;
 class Record implements IRecord, JsonSerializable {
 
 	/**
-	 *
 	 * @var stdClass
 	 */
 	protected $dataSet = null;
 
 	/**
-	 *
 	 * @var Status
 	 */
 	protected $status = null;
 
 	/**
-	 *
 	 * @param stdClass $dataSet
 	 * @param Status|null $status
 	 */
@@ -31,7 +28,6 @@ class Record implements IRecord, JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @param string $fieldName
 	 * @param mixed|null $default
 	 * @return mixed
@@ -44,7 +40,6 @@ class Record implements IRecord, JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @param string $fieldName
 	 * @param mixed $value
 	 */
@@ -53,7 +48,6 @@ class Record implements IRecord, JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function jsonSerialize(): array {
@@ -61,7 +55,6 @@ class Record implements IRecord, JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return stdClass
 	 */
 	public function getData() {
@@ -69,7 +62,6 @@ class Record implements IRecord, JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return Status
 	 */
 	public function getStatus() {

@@ -7,7 +7,6 @@ use Throwable;
 
 class NoWriterException extends Exception {
 	/**
-	 *
 	 * @param int $code
 	 * @param Throwable|null $previous
 	 */

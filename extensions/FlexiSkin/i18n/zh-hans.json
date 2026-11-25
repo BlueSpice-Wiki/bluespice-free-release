@@ -104,5 +104,13 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "侧边栏强调效果",
 	"flexiskin-ui-plugin-footer-colors-label": "页脚颜色",
 	"flexiskin-ui-plugin-colors-background-footer-label": "页脚背景",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "页脚前景"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "页脚前景",
+	"flexiskin-special-title": "皮肤管理器",
+	"flexiskin-ui-configurator-button-reset-label": "重置",
+	"flexiskin-ui-error-reset-fail": "重置皮肤失败",
+	"flexiskin-configurator-prompt-on-reset": "本wiki的所有设置将会被清除，并应用BlueSpice默认样式。此操作会影响本wiki的所有用户且无法撤销。您是否要继续？",
+	"flexiskin-configurator-prompt-on-reset-to-main-wiki": "本wiki的所有设置将会被清除，并应用主wiki的样式。此操作会影响本wiki的所有用户且无法撤销。您是否要继续？",
+	"flexiskin-ui-configurator-notice-inherited-styling": "本wiki的样式继承自主wiki。您可以进一步自定义本wiki。您在此处做出的更改只会应用于本wiki。",
+	"flexiskin-ui-configurator-notice-inherited-styling-default": "本wiki的样式继承自主wiki。主wiki目前使用BlueSpice默认样式，因此所有您未在此处自定义的设置都会与其保持一致。",
+	"apihelp-flexiskin-reset-summary": "重置模块"
 }

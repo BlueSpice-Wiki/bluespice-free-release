@@ -41,7 +41,6 @@ class Title extends Range {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	protected function getDefaultTitleNamespace() {

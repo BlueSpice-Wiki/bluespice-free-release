@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-hidetitle-desc": "د مخ سرليک پټولو لپاره <code><nowiki>__HIDETITLE__</nowiki></code> کوډگر ويی ورگډوي",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "ښودل",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "پټول",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "د سرليک ليدوړتيا",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help": "تاسو کولی شئ مشخص کړې چې ايا د مخ سرليک بايد څرگند شي."
+}

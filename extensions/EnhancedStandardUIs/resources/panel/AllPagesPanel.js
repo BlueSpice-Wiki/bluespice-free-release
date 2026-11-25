@@ -12,7 +12,6 @@ ext.enhancedUI.panel.AllPagesPanel = function ( cfg ) {
 	ext.enhancedUI.panel.AllPagesPanel.super.apply( this, cfg );
 	this.mobileView = cfg.mobileView;
 	this.selectedNamespaceId = cfg.namespaceId;
-	this.pageSize = 50;
 	this.store = new ext.enhancedUI.data.store.Store();
 	this.subpageStore = new ext.enhancedUI.data.store.Store();
 	this.rawData = [];

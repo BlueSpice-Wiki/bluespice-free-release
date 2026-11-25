@@ -208,5 +208,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "Страници",
 	"bs-discovery-namespace-tree-search-btn-label": "Покажи пребарување",
 	"bs-discovery-namespace-tree-create-btn-label": "Создај нова страница",
-	"bs-discovery-namespace-tree-search-label": "Пребарај страница"
+	"bs-discovery-namespace-tree-search-label": "Пребарај страница",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "Користи меѓускладирање за \"Подобрен страничник на МедијаВики\"",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "Меѓускладирањето ја подобрува работата на страничникот. Контекстните променливи не се достапни кога е овозможено меѓускладирањето. Оневозможете го за да користите контекстни променливи."
 }

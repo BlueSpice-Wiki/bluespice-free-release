@@ -12,7 +12,6 @@ class LimitContinueTrimmer implements ITrimmer {
 	protected ?array $nextContinue = null;
 
 	/**
-	 *
 	 * @param int $limit
 	 * @param array|null $continueFrom
 	 * @param int $offset
@@ -25,7 +24,6 @@ class LimitContinueTrimmer implements ITrimmer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\Record[] $dataSets
 	 * @return \MWStake\MediaWiki\Component\DataStore\Record[]
 	 */

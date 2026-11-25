@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\PDFCreator\Rest;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\PDFCreator\Factory\PageParamsFactory;
 use MediaWiki\Extension\PDFCreator\Utility\TemplateValueExtractor;
+use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -25,6 +26,9 @@ class GetEditTemplateValues extends SimpleHandler {
 		$this->pageParamsFactory = $pageparamsFactory;
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function run() {
 		$validated = $this->getValidatedParams();
 		$templateName = $validated['templatename'];

@@ -30,7 +30,7 @@ enhancedUpload.ui.AttachmentsWidget.prototype.init = function () {
 
 	if ( this.editRight ) {
 		this.addUploadWidget();
-		const addNewFileInput = new OO.ui.SelectFileWidget( {
+		const addNewFileInput = new OO.ui.SelectFileInputWidget( {
 			title: mw.message( 'enhancedupload-attachments-add-new-media-button-title' ).plain(),
 			button: {
 				icon: 'upload',

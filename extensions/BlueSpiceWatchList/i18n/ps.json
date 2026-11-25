@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-watchlist-desc": "د کتنلړ ويجيټ او نښلن ورگډوي",
+	"bs-watchlist-pref-sort-time": "وخت",
+	"bs-watchlist-pref-sort-title": "سرليک",
+	"bs-watchlist-tag-watchlist-desc": "ستاسو د کتنلړ هغه ليکنې ښيي چې ډېر وروستي بدلونونه لري.",
+	"bs-watchlist-ve-watchlistinspector-title": "کتنلړ",
+	"bs-watchlist-tag-watchlist-attr-count-help": "په کتنلړ کې د ننوتنو شمېر بايد وښودل شي",
+	"bs-watchlist-tag-watchlist-attr-maxtitlelength-help": "د هغه تورو شمېر چې بايد د سرليک څخه وښودل شي. کېداشي د ۵ او ۵۰۰ ترمنځ شمېره وي.",
+	"bs-watchlist-tag-watchlist-attr-order-help": "د وخت يا مخ نوم له مخې اوډل شوی لړليک ښيي",
+	"bs-watchlist-ve-watchlist-attr-pagename-label": "مخنوم",
+	"bs-watchlist-ve-watchlist-attr-time-label": "وخت",
+	"bs-watchlist-tag-watchlist-no-user": "کتنلړ نشي ښودل کېدای؛ ځکه هېڅ کارن ننوتلی نه دی",
+	"bs-watchlist-tag-watchlist-no-entries": "مخونو کې هېڅ بدلون نه دی شوی، چې کتنلړ کې وښودل شي",
+	"bs-watchlist-tag-watchlist-attr-pagename-help": "مخنوم لارښود",
+	"bs-watchlist-tag-watchlist-attr-time-help": "وخت لارښود",
+	"bs-watchlist-droplet-name": "کتنلړ",
+	"bs-watchlist-droplet-description": "په کتنلړ کې د رانغاړل‌شويو مخونو وروستي بدلونونه",
+	"bs-watchlist-usersidebar-title": "کتنلړ",
+	"bs-watchlist-ve-watchlist-attr-number-result-label": "د ښودل شويو مخونو شمېر",
+	"bs-watchlist-ve-watchlist-attr-titlelength-label": "د مخ سرليکونو ډېر اوږدوالی",
+	"bs-watchlist-ve-watchlist-attr-sort-by-label": "اوډنه له مخې د"
+}

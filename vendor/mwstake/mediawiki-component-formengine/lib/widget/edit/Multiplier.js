@@ -82,7 +82,7 @@
 		if ( parseInt( this.max ) === this.timesAdded ) {
 			this.addButton.setDisabled( true );
 		}
-		const removeButton = new OO.ui.ButtonWidget( {
+		const removeButton = new OO.ui.ButtonWidget( { // eslint-disable-line mediawiki/no-unlabeled-buttonwidget
 			icon: 'trash',
 			framed: false,
 			title: mw.message( 'mwstake-formengine-title-remove' ).text(),

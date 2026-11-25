@@ -191,13 +191,25 @@ ext.enhancedUI.panel.HistoryPanel.prototype.setupGridConfig = function () {
 				urlProperty: 'tagUrl',
 				hidden: !mw.user.options.get( 'history-show-tags' )
 			},
-			minor: {
-				headerText: mw.message( 'enhanced-standard-uis-history-grid-header-major-label' ).text(),
+			edittype: {
+				headerText: mw.message( 'enhanced-standard-uis-history-grid-header-edit-type-label' ).text(),
 				valueParser: function ( v ) {
-					return !v;
+					return 'edit-type-' + v;
+				},
+				ariaLabel: function ( value, row ) {
+					// The following messages are used here:
+					// * enhanced-standard-uis-history-grid-edittype-minor-label
+					// * enhanced-standard-uis-history-grid-edittype-major-label
+					return mw.message( 'enhanced-standard-uis-history-grid-edittype-' + row.edittype + '-label' ).text();
+				},
+				title: function ( value, row ) {
+					// The following messages are used here:
+					// * enhanced-standard-uis-history-grid-edittype-minor-label
+					// * enhanced-standard-uis-history-grid-edittype-major-label
+					return mw.message( 'enhanced-standard-uis-history-grid-edittype-' + row.edittype + '-label' ).text();
 				},
 				sortable: false,
-				type: 'boolean',
+				type: 'icon',
 				hidden: true
 			}
 		},

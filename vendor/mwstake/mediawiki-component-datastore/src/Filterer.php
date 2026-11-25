@@ -7,13 +7,11 @@ use stdClass;
 class Filterer {
 
 	/**
-	 *
 	 * @var Filter[]
 	 */
 	protected $filters = null;
 
 	/**
-	 *
 	 * @param Filter $filters
 	 */
 	public function __construct( $filters ) {
@@ -21,7 +19,6 @@ class Filterer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\Record[] $data
 	 * @return \MWStake\MediaWiki\Component\DataStore\Record[]
 	 */
@@ -35,7 +32,6 @@ class Filterer {
 	}
 
 	/**
-	 *
 	 * @param stdClass $dataSet
 	 * @return bool
 	 */

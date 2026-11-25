@@ -10,9 +10,9 @@
 	"bs-discovery-breadcrumb-label-talk": "वार्तालाप",
 	"bs-discovery-back-to-top-text": "सिरानमा जानुहोस्",
 	"bs-discovery-back-to-top-aria-label": "सिरानमा जानुहोस्",
-	"bs-discovery-navbar-user-login-text": "प्रवेश",
-	"bs-discovery-navbar-user-login-title": "प्रवेश",
-	"bs-discovery-navbar-user-login-aria-label": "प्रवेश",
+	"bs-discovery-navbar-user-login-text": "प्रवेश गर्नुहोस्",
+	"bs-discovery-navbar-user-login-title": "प्रवेश गर्नुहोस्",
+	"bs-discovery-navbar-user-login-aria-label": "प्रवेश गर्नुहोस्",
 	"bs-discovery-searchform-button-title": "अहिले नै खोज्नुहोस्",
 	"bs-discovery-searchform-button-aria-label": "अहिले नै खोज्नुहोस्",
 	"bs-discovery-searchform-input-placeholder": "तपाईँको खोजी शब्द",
@@ -45,5 +45,7 @@
 	"bs-discovery-footer-places-alt-text-mediawiki": "मिडियाविकि द्वारा संचालित",
 	"bs-discovery-footer-places-alt-text-bluespice": "ब्लुस्पाइस द्वारा संचालित",
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "सिमान्टिक मिडियाविकि द्वारा संचालित",
-	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "सम्पादन"
+	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "सम्पादन",
+	"bs-discovery-navbar-global-actions-overview-text": "अवलोकन",
+	"bs-discovery-navbar-global-actions-editing-text": "सम्पादन गर्दै"
 }

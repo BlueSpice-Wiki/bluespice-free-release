@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"bs-interwikilinks-desc": "Isku xirka maamulka ee lagu daro, wax looga beddelo, laguna tirtiro xiriirrada interwiki",
+	"bs-interwikilinks-invalid-pfx-spc": "Horgaluhu waa mid aan sax ahayn. Fadlan ha isticmaalin firaaqooyin.",
+	"bs-interwikilinks-invalid-url-spc": "URL-ku waa mid aan sax ahayn. Fadlan ha isticmaalin firaaqooyin.",
+	"bs-interwikilinks-label": "Xiriirrada interwiki",
+	"bs-interwikilinks-link-created": "Xiriirka interwiki waa la abuuray.",
+	"bs-interwikilinks-link-added": "Xiriirka interwiki waa lagu daray.",
+	"bs-interwikilinks-link-deleted": "Xiriirka interwiki waa la tirtiray.",
+	"bs-interwikilinks-nooldpfx": "Horgalihii hore lama helin.",
+	"bs-interwikilinks-nopfx": "Fadlan bixi horgale.",
+	"bs-interwikilinks-nourl": "Fadlan bixi URL.",
+	"bs-interwikilinks-pfxtoolong": "Horgaluhu aad buu u dheer yahay. Fadlan isticmaal ugu badnaan 32 xaraf.",
+	"bs-interwikilinks-pfxexists": "Horgalahani hore ayuu u jiray.",
+	"bs-interwikilinks-headerprefix": "Horgale",
+	"bs-interwikilinks-titleaddinterwikilink": "Ku dar xiriirka interwiki",
+	"bs-interwikilinks-titleeditinterwikilink": "Wax ka beddel xiriirka interwiki",
+	"bs-interwikilinks-labelprefix": "Horgale",
+	"bs-interwikilinks-titledeleteinterwikilink": "Tirtir xiriirka interwiki",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "Ma hubtaa inaad rabto inaad tirtirto xiriirkan interwiki?",
+	"bs-interwikilinks-link-edited": "Xiriirka interwiki waa wax laga beddelay.",
+	"apihelp-bs-interwikilinks-tasks-summary": "Waxay bixisaa hawlaha kordhinta InterWikiLinks.",
+	"action-interwikilinks-viewspecialpage": "arag bogga gaarka ah \"{{int:bs-interwikilinks-label}}\"",
+	"interwikilinks": "Xiriirrada interwiki",
+	"right-interwikilinks-viewspecialpage": "Helitaanka bogga gaarka ah [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-url-validate-fail": "URL-ka lama xaqiijin karin."
+}

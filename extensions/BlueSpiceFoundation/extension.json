@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceFoundation",
 	"license-name": "GPL-3.0-only",
-	"version": "5.1.10",
+	"version": "5.1.12",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
@@ -171,8 +171,6 @@
 	},
 	"ResourceModules": {
 		"ext.bluespice": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"scripts": [
 				"bluespice/bluespice.js",
 				"bluespice/bluespice.extensionManager.js",
@@ -212,8 +210,6 @@
 			]
 		},
 		"ext.bluespice.oojs": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"scripts": [
 				"bluespice.oojs/bluespice.ui.js",
 				"bluespice.oojs/ui/widget/StoreComboBoxInput.js",
@@ -255,8 +251,6 @@
 			]
 		},
 		"ext.bluespice.oojs.exportDialog": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"scripts": [
 				"bluespice.oojs/ui/dialog/ExportPagesDialog.js"
 			],
@@ -280,8 +274,6 @@
 			]
 		},
 		"ext.bluespice.styles": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"styles": [
 				"bluespice/bluespice.css",
 				"bluespice/bluespice.icons.css",
@@ -293,8 +285,6 @@
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		},
 		"ext.bluespice.html.formfields.sortable": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"scripts": [
 				"bluespice/bluespice.html.formfields.sortable.js"
 			],
@@ -306,8 +296,6 @@
 			]
 		},
 		"ext.bluespice.html.formfields": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"scripts": [
 				"bluespice/bluespice.html.formfields.namespacemultiselect.js"
 			],
@@ -319,8 +307,6 @@
 			]
 		},
 		"ext.bluespice.html.formfields.multiselect": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"scripts": [
 				"bluespice/bluespice.html.formfields.multiselect.js"
 			],
@@ -329,18 +315,19 @@
 			]
 		},
 		"ext.bluespice.compat.vector.styles": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"styles": [
 				"bluespice.compat/bluespice.compat.vector.fixes.css"
 			]
 		},
 		"ext.bluespice.testsystem": {
-			"localBasePath": "resources",
-			"remoteExtPath": "BlueSpiceFoundation/resources",
 			"scripts": "bluespice/bluespice.testsystem.js"
 		}
 	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceFoundation/resources"
+	},
+	"ForeignResourcesDir": "resources/lib",
 	"MessagesDirs": {
 		"BlueSpice": [
 			"i18n/core"
@@ -395,8 +382,12 @@
 		"permissionLockdown": {
 			"class": "\\BlueSpice\\HookHandler\\PermissionLockdown",
 			"services": [
-				"MainConfig", "PermissionManager", "TitleFactory", "RevisionLookup", "BSUtilityFactory"
+				"MainConfig", "PermissionManager", "TitleFactory", "RevisionLookup"
 			]
+		},
+		"applyLockdown": {
+			"class": "\\BlueSpice\\Hook\\GetUserPermissionsErrors\\ApplyLockdown",
+			"services": [ "BSPermissionLockdownFactory" ]
 		}
 	},
 	"Hooks": {
@@ -440,7 +431,7 @@
 			"\\BlueSpice\\Hook\\ResourceLoaderGetConfigVars\\AddPingVars::callback"
 		],
 		"getUserPermissionsErrors": [
-			"\\BlueSpice\\Hook\\GetUserPermissionsErrors\\ApplyLockdown::callback"
+			"applyLockdown"
 		],
 		"SearchableNamespaces": [
 			"BlueSpice\\Hook\\SearchableNamespaces\\ApplySearchableNamespacesLockdown::callback"
@@ -453,6 +444,9 @@
 		],
 		"BeforeParserFetchFileAndTitle": "permissionLockdown",
 		"ApiBeforeMain": [
+			"permissionLockdown"
+		],
+		"APIAfterExecute": [
 			"permissionLockdown"
 		],
 		"TitleReadWhitelist": "\\BlueSpice\\Hook\\TitleReadWhitelist\\AddFooterLinks::callback",
@@ -474,9 +468,6 @@
 				"ipblock-exempt", "blockemail", "purge", "emailconfirmed",
 				"nominornewtalk"
 			]
-		},
-		"MaintenanceUserName": {
-			"value": "BSMaintenance"
 		},
 		"RunJobsTriggerHandlerOptions": {
 			"value": {
@@ -756,7 +747,6 @@
 		"BlueSpice\\": "src/"
 	},
 	"AutoloadClasses": {
-		"BsCore": "includes/Core.class.php",
 		"BSTreeNode": "includes/tree/BSTreeNode.php",
 		"BSTreeRenderer": "includes/tree/BSTreeRenderer.php",
 		"BsException": "includes/Exception.class.php",
@@ -807,9 +797,6 @@
 		"BsTagFinder": "includes/utility/TagFinder.class.php",
 		"ViewBaseElement": "includes/outputhandler/views/view.BaseElement.php",
 		"SpecialWikiAdmin": "includes/specials/SpecialWikiAdmin.class.php",
-		"BsPARAM": "includes/common/BsPARAM.php",
-		"BsPARAMTYPE": "includes/common/BsPARAMTYPE.php",
-		"BsPARAMOPTION": "includes/common/BsPARAMOPTION.php",
 		"BSTemplateHelper": "includes/TemplateHelper.php",
 		"BSTasksApiSpec": "includes/utility/BSTasksApiSpec.php",
 		"BSMigrateSettings": "maintenance/BSMigrateSettings.php",

@@ -16,7 +16,6 @@ class Logo implements IPageParamsProvider {
 	private $config;
 
 	/**
-	 *
 	 * @param Config $config
 	 */
 	public function __construct( Config $config ) {

@@ -18,7 +18,9 @@
 			"Veracious",
 			"William Surya Permana",
 			"NikolasKHF",
-			"Penyuwangi"
+			"Penyuwangi",
+			"Hidayatsrf",
+			"Exploraz"
 		]
 	},
 	"skinname-vector": "Vektor",
@@ -60,6 +62,7 @@
 	"vector-feature-custom-font-size-1-label": "Standar",
 	"vector-feature-custom-font-size-2-label": "Besar",
 	"skin-theme-name": "Warna",
+	"skin-theme-description": "[Versi eksperimental, kemungkinan besar akan mengalami masalah] Mengurangi cahaya yang dipancarkan oleh layar perangkat.",
 	"skin-theme-day-label": "Terang",
 	"skin-theme-night-label": "Gelap",
 	"skin-theme-os-label": "Otomatis",

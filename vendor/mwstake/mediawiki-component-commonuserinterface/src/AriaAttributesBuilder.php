@@ -2,6 +2,7 @@
 
 namespace MWStake\MediaWiki\Component\CommonUserInterface;
 
+use MediaWiki\Message\Message;
 use MediaWiki\Parser\Sanitizer;
 
 class AriaAttributesBuilder {
@@ -24,6 +25,11 @@ class AriaAttributesBuilder {
 			if ( $value === '' ) {
 				continue;
 			}
+
+			if ( $value instanceof Message ) {
+				$value = $value->text();
+			}
+
 			$attrib = Sanitizer::safeEncodeTagAttributes( [
 				"aria-$key" => $value
 			] );

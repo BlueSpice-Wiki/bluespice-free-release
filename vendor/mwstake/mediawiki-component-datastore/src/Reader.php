@@ -20,24 +20,20 @@ abstract class Reader implements IReader {
 	protected const CACHE_TTL = ExpirationAwareness::TTL_MINUTE * 2;
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @var \ObjectCacheFactory
 	 */
 	protected $cacheFactory = null;
 
 	/**
-	 *
 	 * @param IContextSource|null $context
 	 * @param Config|null $config
 	 * @param \ObjectCacheFactory|null $cacheFactory
@@ -63,7 +59,6 @@ abstract class Reader implements IReader {
 	}
 
 	/**
-	 *
 	 * @return User
 	 */
 	protected function getUser() {
@@ -71,7 +66,6 @@ abstract class Reader implements IReader {
 	}
 
 	/**
-	 *
 	 * @return Title
 	 */
 	protected function getTitle() {
@@ -79,7 +73,6 @@ abstract class Reader implements IReader {
 	}
 
 	/**
-	 *
 	 * @param ReaderParams $params
 	 * @return ResultSet
 	 */

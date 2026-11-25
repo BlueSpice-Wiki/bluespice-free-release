@@ -31,7 +31,7 @@ class EditPDFTemplateAction extends EditAction {
 		$out = $this->getOutput();
 		$out->setRobotPolicy( 'noindex,nofollow' );
 		$out->setPageTitle(
-			$this->getTitle()
+			$this->getTitle()->getPrefixedText()
 		);
 		// The editor should always see the latest content when starting their edit.
 		// Also to ensure cookie blocks can be set (T152462).

@@ -209,5 +209,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "Páxinas",
 	"bs-discovery-namespace-tree-search-btn-label": "Mostrar a procura",
 	"bs-discovery-namespace-tree-create-btn-label": "Crear unha páxina nova",
-	"bs-discovery-namespace-tree-search-label": "Procurar unha páxina"
+	"bs-discovery-namespace-tree-search-label": "Procurar unha páxina",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "Usar a caché para a «Barra lateral de MediaWiki mellorada»",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "O almacenamento na caché mellora o rendemento da barra lateral. As variables de contexto non están dispoñibles cando o almacenamento na caché está activado. Desactiva o almacenamento na caché para usar as variables de contexto."
 }

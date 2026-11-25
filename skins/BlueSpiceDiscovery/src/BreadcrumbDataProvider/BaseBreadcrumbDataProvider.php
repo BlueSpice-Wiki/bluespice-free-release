@@ -168,18 +168,35 @@ class BaseBreadcrumbDataProvider implements IBreadcrumbDataProvider {
 				'text' => $this->messageLocalizer->msg( 'bs-discovery-breadcrumb-label-talk' )
 			];
 		}
-		if ( isset( $this->webRequestValues['action'] ) ) {
-			$msgKey = 'bs-discovery-breadcrumb-label-action-' . $this->webRequestValues['action'];
-			$msgText = $this->messageLocalizer->msg( $msgKey );
-			if ( !$msgText->exists() ) {
-				$msgText = new RawMessage( $this->webRequestValues['action'] );
-			}
-			$labels[] = [ 'text' => $msgText ];
+		$actionLabel = $this->getActionLabel();
+		if ( $actionLabel ) {
+			$labels[] = $actionLabel;
 		}
 		return $labels;
 	}
 
 	/**
+	 * @return RawMessage[]|null
+	 */
+	protected function getActionLabel(): ?array {
+		$action = $this->webRequestValues['action'] ?? '';
+		if ( !is_string( $action ) ) {
+			$action = '';
+		}
+		if ( $action ) {
+			$msgKey = 'bs-discovery-breadcrumb-label-action-' . $action;
+			$msgText = $this->messageLocalizer->msg( $msgKey );
+			if ( !$msgText->exists() ) {
+				$msgText = new RawMessage( $action );
+			}
+			return [ 'text' => $msgText ];
+		}
+
+		return null;
+	}
+
+	/**
+	 *
 	 * @param Title $title
 	 * @return bool
 	 */

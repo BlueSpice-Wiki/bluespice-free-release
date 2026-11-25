@@ -8,14 +8,12 @@ use stdClass;
 interface IRecord {
 
 	/**
-	 *
 	 * @param string $fieldName
 	 * @param mixed|null $default
 	 */
 	public function get( $fieldName, $default = null );
 
 	/**
-	 *
 	 * @param string $fieldName
 	 * @param mixed $value
 	 */

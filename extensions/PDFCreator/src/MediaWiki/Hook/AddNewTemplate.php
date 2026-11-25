@@ -16,7 +16,6 @@ class AddNewTemplate implements SkinTemplateNavigation__UniversalHook {
 	private $titleFactory;
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 * @param TitleFactory $titleFactory
 	 */

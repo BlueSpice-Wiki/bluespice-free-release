@@ -32,13 +32,11 @@ class ReaderParams {
 	protected $limit = 25;
 
 	/**
-	 *
 	 * @var Sort[]
 	 */
 	protected $sort = [];
 
 	/**
-	 *
 	 * @var Filter[]
 	 */
 	protected $filter = [];
@@ -54,7 +52,6 @@ class ReaderParams {
 	protected $noCache = false;
 
 	/**
-	 *
 	 * @param array $params
 	 */
 	public function __construct( $params = [] ) {
@@ -68,7 +65,6 @@ class ReaderParams {
 	}
 
 	/**
-	 *
 	 * @param mixed &$property
 	 * @param array $source
 	 * @param string $field
@@ -149,7 +145,6 @@ class ReaderParams {
 	}
 
 	/**
-	 *
 	 * @param array $params
 	 * @return void
 	 */
@@ -163,7 +158,6 @@ class ReaderParams {
 	}
 
 	/**
-	 *
 	 * @param array $params
 	 * @return void
 	 */

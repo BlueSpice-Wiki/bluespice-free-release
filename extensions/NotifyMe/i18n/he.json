@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A100Star",
 			"Amire80",
 			"Neriah"
 		]
@@ -32,7 +33,7 @@
 	"notifyme-ui-dialog-set-editor-title": "עריכת ערכת מינויים",
 	"notifyme-ui-dialog-set-editor-type": "קבלת התראות עבור",
 	"notifyme-ui-dialog-set-editor-bucket": "סוג ההתראות",
-	"notifyme-ui-dialog-set-editor-channels-hint": "כל ההתראות תימסרנה דרך ממשק הווב",
+	"notifyme-ui-dialog-set-editor-channels-hint": "כל ההתראות יימסרו דרך ממשק האינטרנט",
 	"notifyme-ui-dialog-set-editor-channels-prefixed": "למסור גם לערוץ $1",
 	"notifyme-ui-subscription-set-add": "הוספה",
 	"notifyme-ui-subscription-set-duplicate": "כבר יש לך מינוי לערכת ההתראות הזאת",
@@ -195,19 +196,31 @@
 	"notifyme-notification-center-navigation-hint": "עצה: ניתן להשתמש במקשי החיצים הימני והשמאלי כדי לנווט בין הלשוניות ברשימת הלשוניות.",
 	"notifyme-notification-center-filter-item-aria-label": "מסנן $1",
 	"notifyme-bucket-content-low-freq-label": "אירועים שקורים בתדירות נמוכה יותר",
-	"notifyme-bucket-content-high-freq-label": "אירועים שקורים בתדירות גבוהה יותר",
-	"notifyme-bucket-qm-label": "אירועים שקשורים לאיכות הדף",
+	"notifyme-bucket-content-high-freq-label": "אירועים שמתרחשים בתדירות גבוהה יותר",
+	"notifyme-bucket-qm-label": "אירועים הקשורים לאיכות הדף",
 	"notifyme-event-page-missing-desc": "''עדיין אין תיאור של האירוע הזה''",
-	"notifyme-event-page-create-desc": "דף נוצר על־ידי משתמש אחר",
-	"notifyme-event-page-delete-desc": "דף נמחק על־ידי משתמש אחר",
-	"notifyme-event-page-move-desc": "דף הועבר על־ידי משתמש אחר",
+	"notifyme-event-page-create-desc": "משתמש אחר יצר דף",
+	"notifyme-event-page-delete-desc": "משתמש אחר מחק דף",
+	"notifyme-event-page-move-desc": "משתמש אחר העביר דף",
 	"notifyme-ui-dialog-popup-table-event-label": "אירוע",
 	"notifyme-ui-dialog-popup-table-desc-label": "תיאור",
 	"notifyme-ui-dialog-popup-header-label": "האירועים האלה מפעילים התראות:",
-	"notifyme-event-page-edit-desc": "דף נערך על־ידי משתמש אחר",
-	"notifyme-ui-delivery-label": "שיטת מסירה",
+	"notifyme-event-page-edit-desc": "משתמש אחר ערך דף",
+	"notifyme-ui-delivery-label": "אופן קבלת ההתראות",
 	"prefs-subs": "מינויים להתראות",
 	"notifyme-notification-filter-count-aria-label": "מכיל {{PLURAL:$1|התראה אחת|$1 התראות}}",
 	"notifyme-notification-filter-aria-label": "סינון התראות",
-	"notifyme-notification-center-pagination-number-aria-label": "הודעות $1 עד $2 מוצגות"
+	"notifyme-notification-center-pagination-number-aria-label": "הודעות $1 עד $2 מוצגות",
+	"notifyme-bucket-page-lifecycle-label": "אירועים במחזור החיים של הדף",
+	"notifyme-bucket-recent-events-label": "פעילות אחרונה",
+	"notifyme-bucket-qm-short-label": "איכות הדף",
+	"notifyme-ui-subscription-set-watchlist-label": "הגדרת ההתראות עבור כל הפריטים ברשימת המעקב שלך",
+	"notifyme-event-page-create-short-desc": "יצירת דף",
+	"notifyme-event-page-delete-short-desc": "מחיקת דף",
+	"notifyme-event-page-move-short-desc": "העברת דף",
+	"notifyme-event-page-edit-short-desc": "עריכת דף",
+	"notifyme-ui-delivery-channels-label": "ערוצי התראות",
+	"notifyme-automation-arbitrary-notification-action": "שליחת התראה",
+	"notifyme-automation-arbitrary-title-notification-action": "שליחת התראה הקשורה לדף",
+	"notifyme-arbitrary-event-action-message-label": "הודעה"
 }

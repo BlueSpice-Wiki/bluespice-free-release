@@ -95,5 +95,6 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Markering zijbalk",
 	"flexiskin-ui-plugin-footer-colors-label": "Kleuren voettekst",
 	"flexiskin-ui-plugin-colors-background-footer-label": "Achtergrond voettekst",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "Voorgrond voettekst"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Voorgrond voettekst",
+	"flexiskin-special-title": "Vormgevingsmanager"
 }

@@ -1,8 +1,32 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"interwikilinks": "ويکي خپلمنځي تړنې"
+	"interwikilinks": "ويکي‌خپلمنځي تړوني",
+	"bs-interwikilinks-desc": "د ويکي‌خپلمنځي تړونو ورگډولو، سمولو او ړنگولو پازواله مخبڼه",
+	"bs-interwikilinks-invalid-pfx-spc": "مختاړی ناسم دی. مهرباني وکړئ واټن مه ورکوئ.",
+	"bs-interwikilinks-invalid-url-spc": "وېبتړ ناسم دی. مهرباني وکړئ واټن مه ورکوئ.",
+	"bs-interwikilinks-label": "ويکي‌خپلمنځي تړوني",
+	"bs-interwikilinks-link-created": "ويکي‌خپلمنځي تړونی جوړ شو.",
+	"bs-interwikilinks-link-added": "ويکي‌خپلمنځي تړونی ورگډ شو.",
+	"bs-interwikilinks-link-deleted": "ويکي‌خپلمنځي تړونی ړنگ شو.",
+	"bs-interwikilinks-nooldpfx": "مخکېنی مختاړی ونه موندل شو.",
+	"bs-interwikilinks-nopfx": "مهرباني وکړئ يو مختاړی ورکړئ.",
+	"bs-interwikilinks-nourl": "مهرباني وکړئ يو وېبتړ ورکړئ.",
+	"bs-interwikilinks-pfxtoolong": "مختاړی ډېر اوږد دی. مهرباني وکړئ ډېر تر ډېره ۳۲ لوښو پورې وکاروئ.",
+	"bs-interwikilinks-pfxexists": "دا مختاړی لادمخه شتون لري.",
+	"bs-interwikilinks-headerprefix": "مختاړی",
+	"bs-interwikilinks-titleaddinterwikilink": "ويکي‌خپلمنځي تړونی ورگډول",
+	"bs-interwikilinks-titleeditinterwikilink": "ويکي‌خپلمنځي تړونی سمول",
+	"bs-interwikilinks-labelprefix": "مختاړی",
+	"bs-interwikilinks-titledeleteinterwikilink": "ويکي‌خپلمنځي تړونی ړنگول",
+	"bs-interwikilinks-confirmdeleteinterwikilink": "ايا تاسو ډاده ياست چې دا ويکي‌خپلمنځي تړونی ړنگول غواړئ؟",
+	"bs-interwikilinks-link-edited": "ويکي‌خپلمنځي تړونی سم شو",
+	"apihelp-bs-interwikilinks-tasks-summary": "ويکي‌خپلمنځي‌تړونو شاتاړي لپاره کاردندې چمتو کوي.",
+	"action-interwikilinks-viewspecialpage": "\"{{int:bs-interwikilinks-label}}\" ځانگړی مخ کتل",
+	"right-interwikilinks-viewspecialpage": "[[Special:InterWikiLinks]] ځانگړي مخ ته لاسرسی",
+	"bs-interwikilinks-url-validate-fail": "وېبتړ نشي تاييدېدای."
 }

@@ -40,6 +40,10 @@ class RSSTokenProvider {
 	 * @return bool
 	 */
 	public function isValidToken( string $token, User $user ): bool {
-		return $this->getRSSToken( $user ) === $token;
+		$storedToken = $this->userOptionsLookup->getOption( $user, 'watchlisttoken' );
+		if ( !is_string( $storedToken ) || $storedToken === '' || $token === '' ) {
+			return false;
+		}
+		return hash_equals( $storedToken, $token );
 	}
 }

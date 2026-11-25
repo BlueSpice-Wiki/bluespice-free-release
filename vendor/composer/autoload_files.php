@@ -7,16 +7,16 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'ef0a3cc8d59aacc0241af9c20bb29c47' => $vendorDir . '/mwstake/mediawiki-componentloader/bootstrap.php',
-    '6e3fae29631ef280660b3cdad06f25a8' => $vendorDir . '/symfony/deprecation-contracts/function.php',
     'aee3df8238f2131f3ed1cf1c93bae858' => $vendorDir . '/mwstake/mediawiki-component-manifestregistry/bootstrap.php',
+    '6e3fae29631ef280660b3cdad06f25a8' => $vendorDir . '/symfony/deprecation-contracts/function.php',
     '23c5449715806cf29062abde4a042613' => $vendorDir . '/mwstake/mediawiki-component-utils/bootstrap.php',
     '10a542061c80b3639afb5868667e9583' => $vendorDir . '/mwstake/mediawiki-component-datastore/bootstrap.php',
     '54b5b4fa498e570138b0c96a5a5c74f1' => $vendorDir . '/mwstake/mediawiki-component-commonuserinterface/bootstrap.php',
+    'e4a0598898f7bd76d21a3cd42977d6a2' => $vendorDir . '/mwstake/mediawiki-component-wikitext/bootstrap.php',
     'e88301dfa829b6392faf3213d53f4383' => $vendorDir . '/mwstake/mediawiki-component-commonwebapis/bootstrap.php',
     '26f133245c878f6605653c89cf062385' => $vendorDir . '/mwstake/mediawiki-component-dynamicfiledispatcher/bootstrap.php',
     'dae04644524c022968e8c324b8249118' => $vendorDir . '/mwstake/mediawiki-component-inputprocessor/bootstrap.php',
     'fd32baaacc8f079f552c4fc0d06dffcc' => $vendorDir . '/mwstake/mediawiki-component-processmanager/bootstrap.php',
-    'e4a0598898f7bd76d21a3cd42977d6a2' => $vendorDir . '/mwstake/mediawiki-component-wikitext/bootstrap.php',
     '7b11c4dc42b3b3023073cb14e519683c' => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php',
     'ad155f8f1cf0d418fe49e248db8c661b' => $vendorDir . '/react/promise/src/functions_include.php',
     'c3f7f0e81464740a933532e81fa26cc7' => $vendorDir . '/wikimedia/base-convert/src/Functions.php',

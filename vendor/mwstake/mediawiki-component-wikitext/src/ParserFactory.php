@@ -14,6 +14,7 @@ use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\RevisionStore;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Revision\SlotRoleHandler;
+use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\Wikitext\Parser\WikitextParser;
 use MWStake\MediaWiki\Lib\Nodes\INodeProcessor;
@@ -93,7 +94,7 @@ class ParserFactory {
 
 	/**
 	 * @param string $text
-	 * @param \Title $title
+	 * @param Title $title
 	 * @return RevisionRecord
 	 */
 	public function getRevisionForText( $text, $title ): RevisionRecord {

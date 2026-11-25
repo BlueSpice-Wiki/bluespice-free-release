@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
 	"bs-bluespiceabout-desc": "د بلوسپايس په اړه مالومات",
 	"bs-bluespiceabout-about-bluespice": "د بلوسپايس په اړه",
-	"bluespiceabout": "د بلوسپايس په اړه"
+	"bluespiceabout": "د بلوسپايس په اړه",
+	"action-bluespiceabout-viewspecialpage": "\"{{int:bs-bluespiceabout-about-bluespice}}\" ځانگړی مخ کتل",
+	"right-bluespiceabout-viewspecialpage": "[[Special:BlueSpiceAbout]] ځانگړي مخ ته لاسرسی"
 }

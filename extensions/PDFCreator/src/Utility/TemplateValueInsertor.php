@@ -384,7 +384,7 @@ class TemplateValueInsertor {
 	 */
 	private function extractHtmlBodyContent( DOMDocument $doc ) {
 		$htmlBody = $doc->getElementsByTagName( 'body' )->item( 0 );
-		return implode( '', array_map( fn ( $node ) => $doc->saveHTML( $node ),
+		return implode( '', array_map( static fn ( $node ) => $doc->saveHTML( $node ),
 			iterator_to_array( $htmlBody->childNodes ) ) );
 	}
 

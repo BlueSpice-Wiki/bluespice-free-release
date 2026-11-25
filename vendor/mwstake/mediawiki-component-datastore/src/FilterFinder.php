@@ -5,13 +5,11 @@ namespace MWStake\MediaWiki\Component\DataStore;
 class FilterFinder {
 
 	/**
-	 *
 	 * @var Filter[]
 	 */
 	protected $filters = [];
 
 	/**
-	 *
 	 * @param Filter[] $filters
 	 */
 	public function __construct( $filters ) {
@@ -19,7 +17,6 @@ class FilterFinder {
 	}
 
 	/**
-	 *
 	 * @param string $fieldName
 	 * @return Filter|null
 	 */
@@ -33,7 +30,6 @@ class FilterFinder {
 	}
 
 	/**
-	 *
 	 * @param string $fieldName
 	 * @return Filter[]
 	 */

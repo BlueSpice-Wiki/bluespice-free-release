@@ -23,7 +23,7 @@
 	"bs-tagcloud-tag-tagcloud-attr-store-help": "Legt fest, aus welchen Daten die Tag Cloud erstellt werden soll",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-category": "Kategorien",
 	"bs-tagcloud-tag-tagcloud-attr-store-option-searchstats": "Suchanfragen",
-	"bs-tagcloud-tag-tagcloud-attr-width-label": "Breite",
+	"bs-tagcloud-tag-tagcloud-attr-width-label": "Breite der Tag-Cloud",
 	"bs-tagcloud-tag-tagcloud-attr-width-help": "Breite der Tag Cloud in Prozent",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-label": "Anzahl zeigen",
 	"bs-tagcloud-tag-tagcloud-attr-showcount-help": "Zeigt die Anzahl der Elemente in Klammern",

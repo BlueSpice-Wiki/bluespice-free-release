@@ -75,7 +75,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 					$filter->setApplied();
 					break;
 				case Filter::COMPARISON_NOT_EQUALS:
-					$conds[] = "{$filter->getValue()} != $fieldName";
+					$conds[] = $this->db->addQuotes( $filter->getValue() ) . " != $fieldName";
 					$filter->setApplied();
 					break;
 				case StringValue::COMPARISON_CONTAINS:
@@ -109,11 +109,11 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 					$filter->setApplied();
 					break;
 				case Numeric::COMPARISON_GREATER_THAN:
-					$conds[] = "{$filter->getValue()} > $fieldName";
+					$conds[] = $this->db->addQuotes( $filter->getValue() ) . " > $fieldName";
 					$filter->setApplied();
 					break;
 				case Numeric::COMPARISON_LOWER_THAN:
-					$conds[] = "{$filter->getValue()} < $fieldName";
+					$conds[] = $this->db->addQuotes( $filter->getValue() ) . " < $fieldName";
 					$filter->setApplied();
 					break;
 			}

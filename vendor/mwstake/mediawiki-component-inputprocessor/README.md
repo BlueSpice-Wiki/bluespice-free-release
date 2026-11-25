@@ -131,7 +131,7 @@ if ( $status->isGood() ) {
 } else {
     $errors = $status->getErrors();
     foreach ( $errors as $error ) {
-        $msg = \Message::newFromKey( $error['message'] )->params( ...$error['params'] );
+        $msg = Message::newFromKey( $error['message'] )->params( ...$error['params'] );
         $errorText = $msg->plain();
         // Display error
     }

@@ -2,7 +2,7 @@
 
 namespace MWStake\MediaWiki\Component\Utils;
 
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Permissions\Authority;
 use MediaWiki\Title\NamespaceInfo;

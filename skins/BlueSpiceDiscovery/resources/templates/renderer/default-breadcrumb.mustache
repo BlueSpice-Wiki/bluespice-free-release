@@ -8,7 +8,7 @@
 
 		{{#nodes}}
 		<li class="breadcrumb-item{{#nodes-class}} {{.}}{{/nodes-class}}" {{#aria-current}}aria-current="{{.}}"{{/aria-current}}>
-			<{{tag}} {{#id}}id="{{.}}"{{/id}} {{#button-classes}}class="{{.}}"{{/button-classes}} title="{{button-title}}" {{#btn-data}}{{{.}}}{{/btn-data}}{{#button-aria-label}} aria-label="{{{.}}}"{{/button-aria-label}}{{#btn-disabled}} disabled{{/btn-disabled}} {{#button-href}}href="{{{.}}}"{{/button-href}}>
+			<{{tag}} {{#id}}id="{{.}}"{{/id}} {{#button-classes}}class="{{.}}"{{/button-classes}} title="{{button-title}}" {{#btn-data}}{{{.}}}{{/btn-data}}{{#button-aria-label}} aria-label="{{.}}"{{/button-aria-label}}{{#btn-disabled}} disabled{{/btn-disabled}} {{#button-href}}href="{{{.}}}"{{/button-href}}>
 			{{{button-text}}}
 			</{{tag}}>
 			{{#hasItems}}
@@ -23,7 +23,7 @@
 	</ul>
 	<ul class="breadcrumb-labels breadcrumb">
 		{{#labels}}
-		<li class="badge bg-secondary breadcrumb-label {{#label-class}} {{.}}{{/label-class}}" {{#aria-current}}aria-current="{{.}}"{{/aria-current}}>{{{text}}}</li>
+		<li class="badge bg-secondary breadcrumb-label {{#label-class}} {{.}}{{/label-class}}" {{#aria-current}}aria-current="{{.}}"{{/aria-current}}>{{text}}</li>
 		{{/labels}}
 	</ul>
 </nav>

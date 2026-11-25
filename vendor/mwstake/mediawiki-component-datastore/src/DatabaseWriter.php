@@ -11,13 +11,11 @@ use Wikimedia\Rdbms\LoadBalancer;
 abstract class DatabaseWriter extends Writer {
 
 	/**
-	 *
 	 * @var IDatabase
 	 */
 	protected $db = null;
 
 	/**
-	 *
 	 * @var IReader
 	 */
 	protected $reader = null;
@@ -33,7 +31,6 @@ abstract class DatabaseWriter extends Writer {
 	abstract protected function getTableName();
 
 	/**
-	 *
 	 * @param IReader $reader
 	 * @param LoadBalancer $loadBalancer
 	 * @param IContextSource|null $context
@@ -89,7 +86,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $record
 	 * @return void
 	 */
@@ -113,7 +109,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $existingRecord
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $record
 	 * @return void
@@ -139,7 +134,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $existingRecord
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $record
 	 * @return void
@@ -164,7 +158,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $record
 	 * @return array
 	 */
@@ -173,7 +166,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $existingRecord
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $record
 	 * @return array
@@ -190,7 +182,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $existingRecord
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $record
 	 * @return array
@@ -204,7 +195,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $existingRecord
 	 * @param \MWStake\MediaWiki\Component\DataStore\IRecord $record
 	 * @return array
@@ -218,7 +208,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param MWStake\MediaWiki\Component\DataStore\Record $record
 	 * @return MWStake\MediaWiki\Component\DataStore\Record
 	 */
@@ -235,7 +224,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param MWStake\MediaWiki\Component\DataStore\Record $record
 	 * @return array
 	 */
@@ -251,7 +239,6 @@ abstract class DatabaseWriter extends Writer {
 	}
 
 	/**
-	 *
 	 * @param MWStake\MediaWiki\Component\DataStore\Record $record
 	 * @param string $fieldName
 	 * @return array

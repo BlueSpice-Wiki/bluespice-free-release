@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-usersidebar-desc": "Prispôsobiteľná osobná navigačná ponuka",
+	"bs-edit-user-mm-link-text": "Upraviť používateľskú ponuku",
+	"bs-edit-user-mm-link-title": "Upraviť používateľskú ponuku",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "Upraviť kľúčové slovo",
+	"menueditor-ui-menu-keyword-usersidebar-label": "Kľúčové slovo",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "Upraviť kľúčové slovo",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "Kľúčové slovo",
+	"bs-usersidebar-empty-menu-label": "Nie sú dostupné žiadne položky"
+}

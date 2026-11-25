@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Upwinxp"
 		]
 	},
 	"bs-visualeditorconnector-desc": "Poveže BlueSpice z Vizualnim urejevalnikom",
@@ -83,5 +84,10 @@
 	"bs-visualeditorconnector-text-style-indent-label": "Zamik",
 	"bs-visualeditorconnector-indent-annotation-desc": "Zamakne izbrano besedilo",
 	"bs-visualeditorconnector-upload-type": "Vrsta nalaganja",
-	"bs-visualeditorconnector-upload-type-help": "Originalno: Preveri se pravica do nalaganja. Ime datoteke, imenski prostor in kategorijo je mogoče urejati. Opis je obvezen.\nPreprosto: Pravica do nalaganja se ne preveri. Ime datoteke, imenski prostor in kategorijo je mogoče urejati. Opis je izbiren.\nEn klik: Pravica do nalaganja se ne preveri. Imena datoteke in kategorije ni mogoče urejati. Imenski prostor je mogoče urejati."
+	"bs-visualeditorconnector-upload-type-help": "Originalno: Preveri se pravica do nalaganja. Ime datoteke, imenski prostor in kategorijo je mogoče urejati. Opis je obvezen.\nPreprosto: Pravica do nalaganja se ne preveri. Ime datoteke, imenski prostor in kategorijo je mogoče urejati. Opis je izbiren.\nEn klik: Pravica do nalaganja se ne preveri. Imena datoteke in kategorije ni mogoče urejati. Imenski prostor je mogoče urejati.",
+	"bs-visualeditor-save-label": "Shrani",
+	"bs-visualeditorconnector-tab-file": "Povezava na datoteko",
+	"bs-visualeditor-request-entity-too-large": "Datoteka je prevelika, da bi jo lahko naložili.",
+	"bs-visualeditorconnector-dialog-table-title": "Preglednica",
+	"bs-visualeditorconnector-dialog-action-insert": "Vstavi"
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"LowensteinYang"
 		]
 	},
 	"userprofile-desc": "使用者個人檔案的 UI 和附加資料",
@@ -38,7 +39,7 @@
 	"userprofile-droplet-name": "使用者個人檔案",
 	"userprofile-droplet-name-description": "顯示使用者的個人檔案資訊",
 	"userprofile-ve-attr-user-label": "使用者",
-	"userprofile-ve-attr-user-help": "使用者名稱",
+	"userprofile-ve-attr-user-help": "應顯示其個人資料的使用者名稱",
 	"userprofile-set-userimage-failed": "此圖片不能作為個人檔案圖片",
 	"userprofile-changeuserimage-title": "更改個人檔案圖片",
 	"userprofile-userimage-choose-title": "從 wiki 中的圖片裡選擇一張圖片",

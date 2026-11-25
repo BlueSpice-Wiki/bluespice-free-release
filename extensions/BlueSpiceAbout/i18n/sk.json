@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-bluespiceabout-desc": "Informácie o BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "O BlueSpice",
+	"bluespiceabout": "O BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "zobraziť špeciálnu stránku „{{int:bs-bluespiceabout-about-bluespice}}“",
+	"right-bluespiceabout-viewspecialpage": "Prístup k špeciálnej stránke [[Special:BlueSpiceAbout]]"
+}

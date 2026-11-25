@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-articleinfo-desc": "Poskytuje informácie o stránke v stavovom riadku",
+	"prefs-articleinfo": "Informácie o stránke",
+	"bs-articleinfo-newrevision-info-text-reload": "K dispozícii je nová verzia tejto stránky. [[:$1|Znovu načítajte]] stránku, ak si chcete pozrieť aktuálny obsah."
+}

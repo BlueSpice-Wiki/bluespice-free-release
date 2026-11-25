@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\PDFCreator\Factory;
 
 use MediaWiki\Config\Config;
 use MediaWiki\Extension\PDFCreator\Utility\BoolValueGet;
+use MediaWiki\Extension\PDFCreator\Utility\PageLabelHelper;
 use MediaWiki\Extension\PDFCreator\Utility\PageSpec;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\Page\PageIdentity;
@@ -144,10 +145,12 @@ class PageSpecFactory implements LoggerAwareInterface {
 	 * @return string
 	 */
 	private function getLabelFromTitle( Title $title, array $options ): string {
-		if ( $this->showNamespace( $options ) ) {
-			return $title->getPrefixedText();
-		}
-		return $title->getText();
+		$labelHelper = new PageLabelHelper();
+		return $labelHelper->getTitleText(
+			$title,
+			$title->getPrefixedText(),
+			$this->showNamespace( $options )
+		);
 	}
 
 	/**
@@ -155,6 +158,11 @@ class PageSpecFactory implements LoggerAwareInterface {
 	 * @return bool
 	 */
 	private function showNamespace( array $options ): bool {
+		if ( isset( $options['show-namespace'] ) ) {
+			return BoolValueGet::from( $options['show-namespace'] );
+		}
+
+		// Fallback for nsPrefix, which is deprecated and replaced by show-namespace
 		if ( isset( $options['nsPrefix'] ) ) {
 			return BoolValueGet::from( $options['nsPrefix'] );
 		}

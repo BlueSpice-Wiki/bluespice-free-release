@@ -22,3 +22,18 @@ $specialPageAliases['en'] = [
 $specialPageAliases['de'] = [
 	'BlueSpiceAbout' => [ 'Über BlueSpice' ],
 ];
+
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'BlueSpiceAbout' => [ 'BlueSpiceAbout', 'About BlueSpice', 'AboutBlueSpice' ],
+];
+
+/** Simplified Chinese (中文（简体）) */
+$specialPageAliases['zh-hans'] = [
+	'BlueSpiceAbout' => [ '关于BlueSpice' ],
+];
+
+/** Traditional Chinese (中文（繁體）) */
+$specialPageAliases['zh-hant'] = [
+	'BlueSpiceAbout' => [ '關於BlueSpice' ],
+];

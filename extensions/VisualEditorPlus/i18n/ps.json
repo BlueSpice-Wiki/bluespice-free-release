@@ -4,5 +4,12 @@
 			"شاه زمان پټان"
 		]
 	},
-	"visualeditorplus-desc": "د ليدنيز سمونگر لپاره گڼې چارې ورگډوي"
+	"visualeditorplus-desc": "د ليدنيز سمونگر لپاره گڼې کړنچارې ورگډوي",
+	"visualeditorplus-table-contextitemwidget-label-remove": "لښتيال لرې‌کول",
+	"visualeditorplus-table-contextitem-properties-label": "د لښتيال ځانتياوې",
+	"visualeditorplus-table-contextitem-additional-options-label": "د خانو زياتي خوښنې",
+	"visualeditorplus-table-cell-actions-dialog-title": "د خانې خوښنې",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "وشو",
+	"visualeditorplus-ui-label-unwrap": "لرې يې کړئ  (منځپانگه وساتئ)",
+	"visualeditorplus-ui-label-delete": "لرې‌کول"
 }

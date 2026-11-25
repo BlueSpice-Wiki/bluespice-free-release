@@ -26,7 +26,6 @@ class ExportSpecificationFactory {
 	}
 
 	/**
-	 *
 	 * @param array $spec
 	 * @return ExportSpecification
 	 */

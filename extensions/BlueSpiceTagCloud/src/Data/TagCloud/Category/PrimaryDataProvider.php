@@ -102,7 +102,6 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 				continue;
 			}
 			if ( $filter instanceof ListValue ) {
-				$values = implode( "','", $filter->getValue() );
 				$name = $this->aliasToFieldName( $fieldName );
 				if ( $filter->getComparison() === ListValue::COMPARISON_CONTAINS ) {
 					$conds[$name] = $fieldName;
@@ -110,17 +109,17 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 					continue;
 				}
 				if ( $filter->getComparison() === ListValue::COMPARISON_NOT_CONTAINS ) {
-					$conds[] = "$name NOT IN ('$values')";
+					$conds[] = "$name NOT IN (" . $this->db->makeList( $filter->getValue() ?: [ '' ] ) . ")";
 					$filter->setApplied();
 					continue;
 				}
 			}
 			switch ( $filter->getComparison() ) {
 				case Numeric::COMPARISON_GREATER_THAN:
-					$conds[] = "$fieldName > {$filter->getValue()}";
+					$conds[] = "$fieldName > " . $this->db->addQuotes( $filter->getValue() );
 					break;
 				case Numeric::COMPARISON_LOWER_THAN:
-					$conds[] = "$fieldName < {$filter->getValue()}";
+					$conds[] = "$fieldName < " . $this->db->addQuotes( $filter->getValue() );
 					break;
 				case StringValue::COMPARISON_CONTAINS:
 					$conds[] = $this->db->buildLike(
@@ -131,7 +130,7 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 					break;
 				case StringValue::COMPARISON_NOT_EQUALS:
 				case Numeric::COMPARISON_NOT_EQUALS:
-					$conds[] = "$fieldName != {$filter->getValue()}";
+					$conds[] = "$fieldName != " . $this->db->addQuotes( $filter->getValue() );
 					break;
 				case StringValue::COMPARISON_EQUALS:
 				case Numeric::COMPARISON_EQUALS:

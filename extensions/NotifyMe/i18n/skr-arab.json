@@ -60,5 +60,6 @@
 	"notifyme-ui-dialog-popup-table-event-label": "ایونٹ",
 	"notifyme-ui-dialog-popup-table-desc-label": "تفصیل",
 	"notifyme-arbitrary-event-action-message-label": "سنیہا",
-	"notifyme-notification-center-filter-label-source": "وکی"
+	"notifyme-notification-center-filter-label-source": "وکی",
+	"notifyme-bucket-recent-events-label": "حالیہ سرگرمی"
 }

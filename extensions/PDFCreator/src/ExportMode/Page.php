@@ -49,7 +49,6 @@ class Page implements IExportMode, IContextSourceAware {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getKey(): string {
@@ -57,7 +56,6 @@ class Page implements IExportMode, IContextSourceAware {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getLabel(): string {
@@ -65,7 +63,6 @@ class Page implements IExportMode, IContextSourceAware {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
@@ -73,7 +70,6 @@ class Page implements IExportMode, IContextSourceAware {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function applies( $format ): bool {
@@ -81,7 +77,6 @@ class Page implements IExportMode, IContextSourceAware {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getExportPages( $title, $data ): array {
@@ -104,7 +99,6 @@ class Page implements IExportMode, IContextSourceAware {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function isRelevantExportMode( $title ): bool {
@@ -115,7 +109,6 @@ class Page implements IExportMode, IContextSourceAware {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getDefaultTemplate(): string {

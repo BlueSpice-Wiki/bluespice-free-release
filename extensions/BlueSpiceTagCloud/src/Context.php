@@ -2,7 +2,7 @@
 
 namespace BlueSpice\TagCloud;
 
-use BlueSpice\Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\User\User;
 

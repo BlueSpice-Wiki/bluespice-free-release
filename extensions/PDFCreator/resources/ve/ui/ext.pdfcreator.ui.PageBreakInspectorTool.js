@@ -18,7 +18,7 @@ ext.pdfcreator.ve.ui.PageBreakInspectorTool.static.autoAddToCatchall = false;
 ext.pdfcreator.ve.ui.PageBreakInspectorTool.static.icon = '';
 ext.pdfcreator.ve.ui.PageBreakInspectorTool.static.title = mw.message( 'pdfcreator-page-break-tool-title' ).text();
 ext.pdfcreator.ve.ui.PageBreakInspectorTool.static.modelClasses = [
-	ext.pdfcreator.ve.dm.PagebreakNode
+	ext.pdfcreator.ve.dm.PageBreakNode
 ];
 ext.pdfcreator.ve.ui.PageBreakInspectorTool.static.commandName = 'pagebreakCommand';
 

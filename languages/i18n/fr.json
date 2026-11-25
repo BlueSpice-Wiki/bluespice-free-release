@@ -236,7 +236,11 @@
 			"Alkmen-Alesia",
 			"AhmedG612",
 			"Maxime2024",
-			"Crowwhailord"
+			"Crowwhailord",
+			"NClara",
+			"Disturbingthepeaaaaace",
+			"Allylly",
+			"Antguy1213"
 		]
 	},
 	"sunday": "dimanche",
@@ -2664,7 +2668,7 @@
 	"year": "Datant de l’année (et précédentes) :",
 	"date": "À partir du (et antérieurement) :",
 	"sp-contributions-blocklog": "journal des blocages",
-	"sp-contributions-suppresslog": "contributions de l’utilisat{{GENDER:$1|eur|rice}} supprimées",
+	"sp-contributions-suppresslog": "contributions de l’utilisat{{GENDER:$1|eur|rice}} masquées",
 	"sp-contributions-deleted": "contributions de l’utilisat{{GENDER:$1|eur|rice}} supprimées",
 	"sp-contributions-uploads": "téléversements",
 	"sp-contributions-logs": "journaux",
@@ -4000,7 +4004,7 @@
 	"duration-millennia": "$1 {{PLURAL:$1|millénaire|millénaires}}",
 	"rotate-comment": "Image pivotée de $1 degré{{PLURAL:$1||s}} dans le sens des aiguilles d'une montre",
 	"limitreport-title": "Données d’optimisation de l’analyseur :",
-	"limitreport-cputime": "Temps d‘utilisation du processeur",
+	"limitreport-cputime": "Temps d’utilisation du processeur",
 	"limitreport-cputime-value": "$1 {{PLURAL:$1|seconde|secondes}}",
 	"limitreport-walltime": "Temps réel d’utilisation",
 	"limitreport-walltime-value": "$1 {{PLURAL:$1|seconde|secondes}}",
@@ -4407,5 +4411,6 @@
 	"benefit-3-description": "Préférences qui vous permettent de personnaliser votre expérience.",
 	"temp-user-unable-to-acquire": "Impossible d'acquérir un nom d'utilisateur temporaire. S'il vous plaît, réessayez.",
 	"table-of-contents-show-button-aria-label": "Afficher le sommaire",
-	"table-of-contents-hide-button-aria-label": "Masquer la table des matières"
+	"table-of-contents-hide-button-aria-label": "Masquer la table des matières",
+	"mypage-disallowed-action": "Pour des raisons de sécurité, l'action « $1 » ne peut pas être utilisé sur la page Special:MyPage"
 }

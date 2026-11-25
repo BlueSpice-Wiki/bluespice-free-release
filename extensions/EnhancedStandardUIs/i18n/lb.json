@@ -71,5 +71,22 @@
 	"enhanced-standard-uis-filelist-upload-new-file-title": "En neie Fichier eroplueden",
 	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "En neie Fichier eroplueden",
 	"enhanced-standard-uis-allpages-panel-index-paginator-all-label": "All d'Säiten am Nummraum",
-	"enhanced-standard-uis-allpages-panel-more-button-label": "Méi Säite lueden"
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Méi Säite lueden",
+	"enhanced-standard-uis-paginator-aria-label": "Paginatioun",
+	"enhanced-standard-uis-watchlist-tab-pages": "Säiten",
+	"enhanced-standard-uis-watchlist-tab-categories": "Kategorien",
+	"enhanced-standard-uis-watchlist-tab-books": "Bicher",
+	"enhanced-standard-uis-watchlist-tab-namespaces": "Nummraim",
+	"enhanced-standard-uis-watchlist-view-changes": "Ännerungen op der Iwwerwaachungslëscht weisen",
+	"enhanced-standard-uis-watchlist-remove-tooltip": "Vun der Iwwerwaachungslëscht erofhuelen",
+	"enhanced-standard-uis-watchlist-empty-pages": "Dir hutt nach keng Säiten op Ärer Iwwerwaachungslëscht.",
+	"enhanced-standard-uis-watchlist-empty-categories": "Dir hutt nach keng Kategorien op Ärer Iwwerwaachungslëscht.",
+	"enhanced-standard-uis-watchlist-empty-books": "Dir hutt nach keng Bicher op Ärer Iwwerwaachungslëscht.",
+	"enhanced-standard-uis-watchlist-empty-namespaces": "Dir hutt nach keng Nummraim op Ärer Iwwerwaachungslëscht.",
+	"enhanced-standard-uis-watchlist-retry": "Nach eng Kéier probéieren",
+	"enhanced-standard-uis-watchlist-main-namespace-label": "Haapt",
+	"enhanced-standard-uis-history-grid-header-edit-type-label": "Ännerungstyp",
+	"enhanced-standard-uis-history-grid-edittype-minor-label": "Kleng Ännerung",
+	"enhanced-standard-uis-watchlist-clear-confirm-pages": "Sidd Dir sécher, datt Dir all iwwerwaachte Säite vun Ärer Iwwerwaachungslëscht erofhuele wëllt?",
+	"enhanced-standard-uis-watchlist-clear-confirm-categories": "Sidd Dir sécher, datt Dir all iwwerwaachte Kategorië vun Ärer Iwwerwaachungslëscht erofhuele wëllt?"
 }

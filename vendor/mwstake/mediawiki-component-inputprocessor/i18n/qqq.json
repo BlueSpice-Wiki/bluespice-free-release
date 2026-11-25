@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Hallo Welt! GmbH"
+		]
 	},
 	"inputprocessor-error-processor-not-registered": "Error message processor not registered",
 	"inputprocessor-error-invalid-processor-object": "Error message invalid processor object",

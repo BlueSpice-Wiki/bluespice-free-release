@@ -33,7 +33,6 @@ class BsEdition {
 	private $path = '';
 
 	/**
-	 *
 	 * @param string $path
 	 */
 	public function __construct( string $path = '' ) {
@@ -67,7 +66,6 @@ class BsEdition {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getEdition() {

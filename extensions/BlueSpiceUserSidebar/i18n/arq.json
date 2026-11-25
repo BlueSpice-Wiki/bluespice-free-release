@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bachounda"
+		]
+	},
+	"bs-usersidebar-desc": "قائمة التصفح الشخصية القابلة للتخصيص",
+	"bs-edit-user-mm-link-text": "تحرير قائمة المستخدم",
+	"bs-edit-user-mm-link-title": "تحرير قائمة المستخدم",
+	"menueditor-ui-menu-keyword-usersidebar-label-edit": "تحرير الكلمة الأساسية",
+	"menueditor-ui-menu-keyword-usersidebar-label": "الكلمات المفتاحيه",
+	"menueditor-ui-menu-user-sidebar-keyword-label-edit": "تحرير الكلمة الأساسية",
+	"menueditor-ui-menu-user-sidebar-keyword-label": "الكلمات المفتاحيه",
+	"bs-usersidebar-empty-menu-label": "ما كانش إدخالات متاحة"
+}

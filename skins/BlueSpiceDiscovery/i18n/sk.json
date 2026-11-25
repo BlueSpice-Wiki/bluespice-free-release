@@ -200,5 +200,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "Stránky",
 	"bs-discovery-namespace-tree-search-btn-label": "Zobraziť vyhľadávanie",
 	"bs-discovery-namespace-tree-create-btn-label": "Vytvoriť novú stránku",
-	"bs-discovery-namespace-tree-search-label": "Hľadať stránku"
+	"bs-discovery-namespace-tree-search-label": "Hľadať stránku",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "Použiť vyrovnávaciu pamäť pre „Rozšírený bočný panel MediaWiki“",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "Vyrovnávacia pamäť zrýchľuje bočný panel. Keď je zapnutá, kontextové premenné nie sú dostupné. Ak chcete používať kontextové premenné, vyrovnávaciu pamäť vypnite."
 }

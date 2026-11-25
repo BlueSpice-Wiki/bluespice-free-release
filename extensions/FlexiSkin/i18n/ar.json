@@ -94,5 +94,12 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "تسليط الضوء على الشريط الجانبي",
 	"flexiskin-ui-plugin-footer-colors-label": "ألوان التذييل",
 	"flexiskin-ui-plugin-colors-background-footer-label": "خلفية التذييل",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "مقدمة التذييل"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "مقدمة التذييل",
+	"flexiskin-special-title": "مدير البشرة",
+	"flexiskin-ui-configurator-button-reset-label": "إعادة ضبط",
+	"flexiskin-ui-error-reset-fail": "فشلت عملية إعادة ضبط المظهر",
+	"flexiskin-configurator-prompt-on-reset": "سيتم تجاهل جميع إعدادات هذه الويكي، وسيتم تطبيق تصميم BlueSpice الافتراضي بدلاً منها. هذا التغيير يؤثر على جميع مستخدمي هذه الويكي ولا يمكن التراجع عنه. هل تريد المتابعة؟",
+	"flexiskin-configurator-prompt-on-reset-to-main-wiki": "سيتم تجاهل جميع إعدادات هذه الويكي، وسيتم تطبيق تصميم الويكي الرئيسي بدلاً منها. هذا التغيير يؤثر على جميع مستخدمي هذه الويكي ولا يمكن التراجع عنه. هل تريد المتابعة؟",
+	"flexiskin-ui-configurator-notice-inherited-styling": "تستوحي هذه الويكي تصميمها من الويكي الرئيسية. يمكنك تخصيصها بشكل أكبر. التغييرات التي تُجريها هنا ستُطبق على هذه الويكي فقط.",
+	"apihelp-flexiskin-reset-summary": "وحدة إعادة الضبط"
 }

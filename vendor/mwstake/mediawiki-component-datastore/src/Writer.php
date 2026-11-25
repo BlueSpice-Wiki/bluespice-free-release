@@ -12,19 +12,16 @@ use MediaWiki\User\User;
 abstract class Writer implements IWriter {
 
 	/**
-	 *
 	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @param IContextSource|null $context
 	 * @param Config|null $config
 	 */
@@ -41,7 +38,6 @@ abstract class Writer implements IWriter {
 	}
 
 	/**
-	 *
 	 * @return User
 	 */
 	protected function getUser() {
@@ -49,7 +45,6 @@ abstract class Writer implements IWriter {
 	}
 
 	/**
-	 *
 	 * @return Title
 	 */
 	protected function getTitle() {

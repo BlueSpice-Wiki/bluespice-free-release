@@ -9,7 +9,6 @@ use PageHeader\PageInfoSentence\Type;
 class Menu extends Type {
 
 	/**
-	 *
 	 * @param IPageInfo $pageInfo
 	 * @return string
 	 */
@@ -51,7 +50,6 @@ class Menu extends Type {
 	}
 
 	/**
-	 *
 	 * @param IPageInfo $pageInfo
 	 * @return string
 	 */

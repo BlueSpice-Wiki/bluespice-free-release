@@ -23,5 +23,8 @@
 	"imagemapedit-topright": "uewe riets",
 	"imagemapedit-imagedisplaytype-thumbnail": "Miniaturbild",
 	"imagemapedit-notspecified": "net uginn",
-	"imagemapedit-imagealttext": "Alternativtext"
+	"imagemapedit-imagealttext": "Alternativtext",
+	"imagemapedit-circle": "Krees",
+	"imagemapedit-hidetextbox": "Textkëscht verstoppen",
+	"imagemapedit-showtextbox": "Textkëscht weisen"
 }

@@ -20,7 +20,6 @@ class ModeFactory {
 	private $modes = null;
 
 	/**
-	 *
 	 * @param ObjectFactory $objectFactory
 	 */
 	public function __construct( ObjectFactory $objectFactory, IContextSource $context ) {
@@ -31,7 +30,6 @@ class ModeFactory {
 	}
 
 	/**
-	 *
 	 * @param string $mode
 	 * @return IExportMode|null
 	 */
@@ -46,7 +44,6 @@ class ModeFactory {
 	}
 
 	/**
-	 *
 	 * @return IExportMode[]
 	 */
 	public function getAllProviders() {

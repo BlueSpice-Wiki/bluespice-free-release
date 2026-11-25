@@ -20,5 +20,18 @@
 	"notifyme-notification-center-filter-label-source": "Wiki",
 	"notifyme-notification-center-filter-label-source-local": "Questo wiki",
 	"notifyme-arbitrary-event-default-subject": "Notifica automatica",
-	"notifyme-arbitrary-event-action-subject-label": "Tema della notifica"
+	"notifyme-arbitrary-event-action-subject-label": "Tema della notifica",
+	"notifyme-bucket-content-low-freq-label": "Eventi che si verificano meno frequentemente",
+	"notifyme-bucket-content-high-freq-label": "Eventi che si verificano più frequentemente",
+	"notifyme-bucket-qm-label": "Eventi relativi alla qualità della pagina",
+	"notifyme-bucket-qm-short-label": "Qualità della pagina",
+	"notifyme-ui-subscription-manager-configuration": "Configura la frequenza delle tue notifiche",
+	"notifyme-event-page-create-short-desc": "Crea pagina",
+	"notifyme-event-page-delete-short-desc": "Cancella pagina",
+	"notifyme-event-page-move-short-desc": "Sposta pagina",
+	"notifyme-event-page-edit-desc": "Una pagina è stata modificata da un altro utente",
+	"notifyme-event-page-edit-short-desc": "Modifica pagina",
+	"notifyme-category-subscription-description": "Stai guardando una categoria a cui appartiene questa pagina",
+	"notifyme-subscriber-provider-personal-desc": "Sei stato esplicitamente selezionato come destinatario",
+	"notifyme-arbitrary-event-action-event-target-user-help": "Elenco di nomi utente separati da virgole a cui inviare la notifica. Sono supportate le espressioni wikitesto."
 }

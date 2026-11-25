@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bachounda"
+		]
+	},
+	"bs-bluespiceabout-desc": "معلومات عن BlueSpice",
+	"bs-bluespiceabout-about-bluespice": "عن BlueSpice",
+	"bluespiceabout": "حول BlueSpice",
+	"action-bluespiceabout-viewspecialpage": "اعرض الصفحة الخاصة \"{{int:bs-bluespiceabout-about-bluespice}}\"",
+	"right-bluespiceabout-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:BlueSpiceAbout]]."
+}

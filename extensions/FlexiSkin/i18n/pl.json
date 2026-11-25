@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
+			"PanWor",
 			"Pietrasagh",
 			"Rail"
 		]
@@ -29,7 +30,7 @@
 	"flexiskin-ui-configurator-button-preview-label": "Podgląd",
 	"flexiskin-ui-configurator-button-save-label": "Zapisz i aktywuj",
 	"flexiskin-ui-configurator-button-disable-label": "Wyłącz",
-	"flexiskin-configurator-prompt-on-disable": "Wyłączenie niestandardowej skórki zresetuje ustawienia wszystkich użytkowników do domyślnych. Dokonane przez ciebie zmiany nie zostaną utracone i będzie można zaaplikować je ponownie w dowolnym momencie. Czy chcesz kontynuować?",
+	"flexiskin-configurator-prompt-on-disable": "Wyłączenie niestandardowej skórki zresetuje ustawienia wszystkich użytkowników do domyślnych. Dokonane przez Ciebie zmiany nie zostaną utracone i będzie można zaaplikować je ponownie w dowolnym momencie. Czy chcesz kontynuować?",
 	"flexiskin-ui-error-disable-fail": "Nie udało się wyłączyć skórki",
 	"flexiskin-ui-plugin-content-label": "Zawartość",
 	"flexiskin-ui-plugin-content-header-label": "Nagłówki",

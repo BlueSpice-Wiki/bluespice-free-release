@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Upwinxp"
 		]
 	},
 	"menueditor-desc": "Grafični urejevalnik strani menijev",
@@ -35,5 +36,9 @@
 	"menueditor-toolbar-add-label": "Dodaj element",
 	"menueditor-ui-edit-label": "Uredi",
 	"menueditor-ui-add-sub-element-label": "Dodaj podelement",
-	"menueditor-footerlinks-banner-text": "Nekatere povzave lahko samodejno dodajo razširitve. Prosimo, preverite konfiguracijo razširitve, da izveste več."
+	"menueditor-footerlinks-banner-text": "Nekatere povzave lahko samodejno dodajo razširitve. Prosimo, preverite konfiguracijo razširitve, da izveste več.",
+	"menueditor-toolbar-save": "Shrani",
+	"menueditor-ui-cancel-confirmation": "Ali ste prepričani, da želite preklicati urejanje? Vse neshranjene spremembe se bodo izgubile.",
+	"menueditor-ui-notices": "Obvestila",
+	"menueditor-ui-oldrevision-notice": "Urejate staro redakcijo strani. Če jo boste shranili, bodo izgubljene vse poznejše spremembe."
 }

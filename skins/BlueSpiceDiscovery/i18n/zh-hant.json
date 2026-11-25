@@ -212,5 +212,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "頁面",
 	"bs-discovery-namespace-tree-search-btn-label": "顯示搜尋",
 	"bs-discovery-namespace-tree-create-btn-label": "新增頁面",
-	"bs-discovery-namespace-tree-search-label": "搜尋頁面"
+	"bs-discovery-namespace-tree-search-label": "搜尋頁面",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "為「增強型 Mediawiki 側邊欄」啟用快取",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "快取可提升側邊欄效能。啟用快取後，上下文變數會不可使用。若要使用上下文變數，請停用快取。"
 }

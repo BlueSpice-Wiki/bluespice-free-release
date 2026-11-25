@@ -13,7 +13,7 @@
 				this.silent = !!asConfig.silent;
 			}
 		}
-		if ( mw.ext.forms.mixin.Autosave.static.types.indexOf( this.type ) === -1 ) {
+		if ( mw.ext.forms.mixin.Autosave.static.types.indexOf( this.type ) === -1 ) { // eslint-disable-line unicorn/prefer-includes
 			this.type = mw.ext.forms.mixin.Autosave.static.types[ 0 ];
 		}
 

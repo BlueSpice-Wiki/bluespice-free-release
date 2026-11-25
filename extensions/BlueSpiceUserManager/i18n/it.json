@@ -33,8 +33,8 @@
 	"bs-usermanager-headerenabled": "Attivo",
 	"bs-usermanager-log-user-disabled": "{{GENDER:$1|L'utente}} $1 è stato disattivato tramite UserManager",
 	"bs-usermanager-endisable": "Attiva/disattiva",
-	"bs-usermanager-confirmdisableuser": "Vuoi davvero disattivare {{PLURAL:$1|questo utente|questi $1 utenti}}?",
-	"bs-usermanager-confirmenableuser": "Vuoi davvero attivare {{PLURAL:$1|questo utente|questi $1 utenti}}?",
+	"bs-usermanager-confirmdisableuser": "Sei sicuro di voler disattivare {{PLURAL:$1|questo utente|questi $1 utenti}}?",
+	"bs-usermanager-confirmenableuser": "Sei sicuro di voler attivare {{PLURAL:$1|questo utente|questi $1 utenti}}?",
 	"bs-usermanager-titledisableuser": "Disattiva utente",
 	"bs-usermanager-titleenableuser": "Attiva utente",
 	"usermanager": "Gestione utente",
@@ -89,5 +89,8 @@
 	"bs-usermanager-group-invalid-name-length": "Il nome del gruppo non può essere più lungo di 255 caratteri",
 	"bs-usermanager-group-invalid-name-numeric": "Il nome del gruppo deve avere almeno un carattere",
 	"bs-usermanager-group-invalid-name": "Il nome del gruppo contiene {{PLURAL:$1|un carattere|caratteri}} non {{PLURAL:$1|valido|validi}}: $2",
-	"bs-usermanager-action-not-allowed": "Questa azione non è consentita"
+	"bs-usermanager-action-not-allowed": "Questa azione non è consentita",
+	"bs-usermanager-invalid-pwd-empty": "La password non può essere vuota",
+	"bs-usermanager-invalid-pwd-repass": "Le password non corrispondono",
+	"bs-usermanager-invalid-pwd-username-match": "La password non deve contenere il nome utente"
 }

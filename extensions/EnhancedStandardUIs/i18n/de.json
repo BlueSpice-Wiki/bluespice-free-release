@@ -4,7 +4,8 @@
 			"Justman10000",
 			"Miriam Schlindwein",
 			"Mschlindwein",
-			"PretzelRocky"
+			"PretzelRocky",
+			"Vhoesl"
 		]
 	},
 	"enhanced-standard-uis-desc": "Stellt Benutzeroberflächen für die Standard-Benutzeroberflächen von MediaWiki zur Verfügung",
@@ -96,5 +97,21 @@
 	"enhanced-standard-uis-filelist-upload-new-file-title": "Eine neue Datei hochladen",
 	"enhanced-standard-uis-filelist-upload-new-file-aria-label": "Eine neue Datei hochladen",
 	"enhanced-standard-uis-allpages-namespace-watch-label": "Namensraum $1 beobachten",
-	"enhanced-standard-uis-allpages-namespace-unwatch-label": "Namensraum $1 nicht mehr beobachten"
+	"enhanced-standard-uis-allpages-namespace-unwatch-label": "Namensraum $1 nicht mehr beobachten",
+	"enhanced-standard-uis-history-grid-header-edit-type-label": "Bearbeitungstyp",
+	"enhanced-standard-uis-history-grid-edittype-minor-label": "Kleine Änderung",
+	"enhanced-standard-uis-history-grid-edittype-major-label": "Umfassende Änderung",
+	"right-viewoldrevisions": "Versionen anzeigen, deren Datum das festgelegte maximale Datum überschreitet",
+	"action-viewoldrevisions": "Versionen anzeigen, deren Datum das festgelegte maximale Versionsdatum überschreitet",
+	"enhanced-standard-uis-error-revision-too-old": "Diese Version ist aus Compliance-Gründen nicht mehr verfügbar. Für weitere Informationen {{#FORMAL:kontaktiere|kontakieren Sie}} die Wiki-Administration.",
+	"enhanced-standard-uis-watchlist-empty-pages": "{{#FORMAL:Du hast|Sie haben}} noch keine Seiten auf {{#FORMAL:deiner|Ihrer}} Beobachtungsliste.",
+	"enhanced-standard-uis-watchlist-empty-categories": "{{#FORMAL:Du hast|Sie haben}} noch keine Kategorien auf {{#FORMAL:deiner|Ihrer}} Beobachtungsliste.",
+	"enhanced-standard-uis-watchlist-empty-books": "{{#FORMAL:Du hast|Sie haben}} noch keine Bücher auf {{#FORMAL:deiner|Ihrer}} Beobachtungsliste.",
+	"enhanced-standard-uis-watchlist-empty-namespaces": "{{#FORMAL:Du hast|Sie haben}} noch keine Namensräume auf {{#FORMAL:deiner|Ihrer}} Beobachtungsliste.",
+	"enhanced-standard-uis-watchlist-empty-hint": "[$2 Elemente für {{#FORMAL:deine|Ihre}} Beobachtungsliste finden]",
+	"enhanced-standard-uis-watchlist-empty-hint-pages": "{{#FORMAL:Füge|Fügen Sie}} Seiten über [$1 Alle Seiten] zu {{#FORMAL:deiner|Ihrer}} Beobachtungsliste hinzu.",
+	"enhanced-standard-uis-watchlist-empty-hint-categories": "{{#FORMAL:Füge|Fügen Sie}} Kategorien über [$1 Alle Seiten] zu {{#FORMAL:deiner|Ihrer}} Beobachtungsliste hinzu.",
+	"enhanced-standard-uis-watchlist-empty-hint-books": "{{#FORMAL:Füge|Fügen Sie}} Bücher über [$1 Bücher] zu {{#FORMAL:deiner|Ihrer}} Beobachtungsliste hinzu.",
+	"enhanced-standard-uis-watchlist-empty-hint-namespaces": "{{#FORMAL:Füge|Fügen Sie}} Namensräume über [$1 Alle Seiten] zu {{#FORMAL:deiner|Ihrer}} Beobachtungsliste hinzu.",
+	"enhanced-standard-uis-allpages-exclude-namespaces-label": "Namensräume von „Alle Seiten“ ausschließen"
 }

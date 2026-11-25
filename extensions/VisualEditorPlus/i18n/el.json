@@ -5,5 +5,11 @@
 		]
 	},
 	"visualeditorplus-table-contextitemwidget-label-remove": "Αφαίρεση πίνακα",
-	"visualeditorplus-table-cell-actions-dialog-done-label": "Έγινε"
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Έγινε",
+	"visualeditorplus-desc": "Προσθέτει διάφορες λειτουργίες στον οπτικό επεξεργαστή",
+	"visualeditorplus-table-contextitem-properties-label": "Ιδιότητες πίνακα",
+	"visualeditorplus-table-contextitem-additional-options-label": "Πρόσθετες επιλογές κελιών",
+	"visualeditorplus-table-cell-actions-dialog-title": "Επιλογές κελιού",
+	"visualeditorplus-ui-label-unwrap": "Αφαίρεση (διατήρηση περιεχομένου)",
+	"visualeditorplus-ui-label-delete": "Αφαίρεση"
 }

@@ -44,7 +44,6 @@ class BsWebInstallerOutput extends WebInstallerOutput {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	public function getCSS() {
@@ -54,7 +53,6 @@ class BsWebInstallerOutput extends WebInstallerOutput {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	public function outputFooter() {

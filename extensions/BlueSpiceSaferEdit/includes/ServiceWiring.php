@@ -2,6 +2,7 @@
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\SaferEdit\SaferEditManager;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 
 // PHP unit does not understand code coverage for this file

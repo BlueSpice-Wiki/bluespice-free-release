@@ -230,6 +230,7 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	 */
 	protected function makeCategoriesFilterCondition( &$conditions, $pageIdFileName, $args ) {
 		if ( $args['categories'] != '-' && $args['categories'] != '' ) {
+			$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			$categories = explode( ',', $args['categories'] );
 			$cnt = count( $categories );
 			for ( $i = 0; $i < $cnt; $i++ ) {
@@ -238,11 +239,10 @@ class GenericSmartlistMode extends SmartListBaseMode {
 					unset( $categories[$i] );
 					continue;
 				}
-				$categories[$i] = "'" . $category->getName() . "'";
+				$categories[$i] = $dbr->addQuotes( $category->getName() );
 			}
 			$args['categories'] = implode( ',', $categories );
 
-			$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			if ( $args['categoryMode'] == 'OR' ) {
 				$conditions[] = $pageIdFileName
 					. ' IN ( SELECT cl_from FROM '

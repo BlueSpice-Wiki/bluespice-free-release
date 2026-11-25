@@ -16,7 +16,6 @@ class UsersWithProfileData extends UsageTrackerBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getIdentifier() {
@@ -24,7 +23,6 @@ class UsersWithProfileData extends UsageTrackerBase {
 	}
 
 	/**
-	 *
 	 * @return CollectorResult
 	 */
 	public function getUsageData() {

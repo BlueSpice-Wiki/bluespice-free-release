@@ -4,44 +4,63 @@
 		setResponsive();
 	} );
 
-	window.onresize = setResponsive;
+	window.addEventListener( 'resize', setResponsive );
+
+	function isTableTooWide( table ) {
+		// Temporarily remove responsive classes so we measure the natural table width
+		const hadResponsive = table.classList.contains( 'responsive-table' );
+		const hadGallery = table.classList.contains( 'responsive-gallery-table' );
+		table.classList.remove( 'responsive-table', 'responsive-gallery-table' );
+
+		const $table = $( table );
+		const wasWrapped = $table.parent().hasClass( 'responsive-table-scrollable' );
+		if ( wasWrapped ) {
+			$table.unwrap();
+		}
+
+		const tableWidth = table.scrollWidth;
+		const containerWidth = table.parentElement ? table.parentElement.clientWidth : window.innerWidth;
+
+		// Restore state
+		if ( wasWrapped ) {
+			$table.wrap( '<div class="responsive-table-scrollable"></div>' );
+		}
+		if ( hadResponsive ) {
+			table.classList.add( 'responsive-table' );
+		}
+		if ( hadGallery ) {
+			table.classList.add( 'responsive-gallery-table' );
+		}
+
+		return tableWidth > containerWidth;
+	}
 
 	function setResponsive() {
 		const doctables = document.getElementsByTagName( 'table' );
-		let headers;
-		if ( window.innerWidth < 1400 ) {
-			for ( let i = 0; i < doctables.length; i++ ) {
-				headers = doctables[ i ].getElementsByTagName( 'th' );
 
-				if ( headers.length > 0 ) {
-					if ( doctables[ i ].classList.contains( 'responsive-table' ) ) {
-						continue;
-					}
-					doctables[ i ].className += ' responsive-table';
-				} else {
-					if ( doctables[ i ].classList.contains( 'responsive-gallery-table' ) ) {
-						continue;
-					}
-					doctables[ i ].className += ' responsive-gallery-table';
-				}
-			}
+		for ( let i = 0; i < doctables.length; i++ ) {
+			const table = doctables[ i ];
+			const headers = table.getElementsByTagName( 'th' );
+			const hasHeaders = headers.length > 0;
+			const responsiveClass = hasHeaders ? 'responsive-table' : 'responsive-gallery-table';
+			const $table = $( table );
 
-			if ( !$( 'div.responsive-table-scrollable' ).length ) {
-				$( 'table.responsive-table' ).wrap( '<div class="responsive-table-scrollable"></div>' );
-				$( 'table.responsive-gallery-table' ).wrap( '<div class="responsive-table-scrollable"></div>' );
-			}
-		} else {
-			if ( $( 'div.responsive-table-scrollable' ).length ) {
-				$( 'table.responsive-table' ).unwrap();
-				$( 'table.responsive-gallery-table' ).unwrap();
-			}
-			for ( let i = 0; i < doctables.length; i++ ) {
-				headers = doctables[ i ].getElementsByTagName( 'th' );
-				if ( headers.length > 0 ) {
-					$( doctables[ i ] ).removeClass( 'responsive-table' ).filter( '[class=""]' ).removeAttr( 'class' );
-				} else {
-					$( doctables[ i ] ).removeClass( 'responsive-gallery-table' ).filter( '[class=""]' ).removeAttr( 'class' );
+			if ( isTableTooWide( table ) ) {
+				if ( !table.classList.contains( responsiveClass ) ) {
+					// * responsive-table
+					// * responsive-gallery-table
+					table.classList.add( responsiveClass );
 				}
+				if ( !$table.parent().hasClass( 'responsive-table-scrollable' ) ) {
+					$table.wrap( '<div class="responsive-table-scrollable"></div>' );
+				}
+			} else {
+				if ( $table.parent().hasClass( 'responsive-table-scrollable' ) ) {
+					$table.unwrap();
+				}
+				// * responsive-table
+				// * responsive-gallery-table
+				$table.removeClass( responsiveClass ).filter( '[class=""]' ).removeAttr( 'class' );
 			}
 		}
 	}

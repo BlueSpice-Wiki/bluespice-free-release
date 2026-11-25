@@ -62,9 +62,19 @@ class PrimaryDataProvider extends TitlePrimaryDataProvider {
 				if ( !is_array( $extensions ) ) {
 					$extensions = [ $extensions ];
 				}
-				$conds[] = $this->db->makeList( array_map( static function ( $extension ) {
-					return 'mti_title LIKE "%.' . trim( strtolower( $extension ) ) . '"';
-				}, $extensions ), LIST_OR );
+				$extensionConds = [];
+				foreach ( $extensions as $extension ) {
+					if ( !is_scalar( $extension ) ) {
+						continue;
+					}
+					$extensionConds[] = 'mti_title' . $this->db->buildLike(
+						$this->db->anyString(),
+						'.' . trim( strtolower( (string)$extension ) )
+					);
+				}
+				if ( $extensionConds ) {
+					$conds[] = $this->db->makeList( $extensionConds, LIST_OR );
+				}
 				$filter->setApplied( true );
 			}
 			if ( $filter->getField() === FileRecord::FILE_SIZE ) {

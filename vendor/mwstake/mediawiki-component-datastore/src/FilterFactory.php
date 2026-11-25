@@ -6,7 +6,6 @@ use UnexpectedValueException;
 
 class FilterFactory {
 	/**
-	 *
 	 * @return array
 	 */
 	public static function getTypeMap() {
@@ -23,7 +22,6 @@ class FilterFactory {
 	}
 
 	/**
-	 *
 	 * @param array $filter
 	 * @return \MWStake\MediaWiki\Component\DataStore\Filter
 	 * @throws UnexpectedValueException

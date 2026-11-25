@@ -40,31 +40,26 @@ abstract class Filter implements \JsonSerializable {
 	public const KEY_VALUE = 'value';
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $field = '';
 
 	/**
-	 *
 	 * @var mixed
 	 */
 	protected $value = null;
 
 	/**
-	 *
 	 * @var string
 	 */
 	protected $comparison = '';
 
 	/**
-	 *
 	 * @var bool
 	 */
 	protected $applied = false;
 
 	/**
-	 *
 	 * @param array $params
 	 */
 	public function __construct( $params ) {
@@ -89,7 +84,6 @@ abstract class Filter implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getField() {
@@ -97,7 +91,6 @@ abstract class Filter implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return mixed
 	 */
 	public function getValue() {
@@ -105,7 +98,6 @@ abstract class Filter implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getComparison() {
@@ -113,7 +105,6 @@ abstract class Filter implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\Record $dataSet
 	 * @return bool
 	 */
@@ -125,7 +116,6 @@ abstract class Filter implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @param bool $applied
 	 */
 	public function setApplied( $applied = true ) {
@@ -140,7 +130,6 @@ abstract class Filter implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @param stdClass[]|array[] $filters
 	 * @return Filter[]
 	 */
@@ -157,7 +146,6 @@ abstract class Filter implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @param stdClass|array $filter
 	 * @return Filter
 	 */

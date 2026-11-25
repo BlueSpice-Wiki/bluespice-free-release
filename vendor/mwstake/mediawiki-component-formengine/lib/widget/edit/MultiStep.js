@@ -76,7 +76,7 @@
 
 	mw.ext.forms.widget.edit.MultiStep.prototype.renderFooter = function () {
 		this.$footer = $( '<div>' ).addClass( 'step-footer' );
-		this.nextStepButton = new OO.ui.ButtonWidget( {
+		this.nextStepButton = new OO.ui.ButtonWidget( { // eslint-disable-line mediawiki/no-unlabeled-buttonwidget
 			label: '',
 			flags: [
 				'primary',

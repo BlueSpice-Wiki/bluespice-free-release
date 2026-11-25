@@ -10,25 +10,21 @@ use MWStake\MediaWiki\Component\ManifestRegistry\IRegistry;
 class PageInfoFactory {
 
 	/**
-	 *
 	 * @var IPageInfo[]
 	 */
 	private $instances = [];
 
 	/**
-	 *
 	 * @var IRegistry
 	 */
 	private $registry = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	private $config = null;
 
 	/**
-	 *
 	 * @param IRegistry $registry
 	 * @param Config $config
 	 */
@@ -77,7 +73,6 @@ class PageInfoFactory {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @param IContextSource $context
 	 * @return IPageInfo|null

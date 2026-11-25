@@ -8,7 +8,7 @@ if ( defined( 'MWSTAKE_MEDIAWIKI_COMPONENT_DYNAMICCONFIG_VERSION' ) ) {
 	return;
 }
 
-define( 'MWSTAKE_MEDIAWIKI_COMPONENT_DYNAMICCONFIG_VERSION', '2.0.2' );
+define( 'MWSTAKE_MEDIAWIKI_COMPONENT_DYNAMICCONFIG_VERSION', '2.1.4' );
 
 Bootstrapper::getInstance()
 	->register( 'dynamicconfig', static function () {
@@ -18,6 +18,7 @@ Bootstrapper::getInstance()
 		$GLOBALS['wgHooks']['SetupAfterCache'][] = static function () {
 			$manager = MediaWikiServices::getInstance()->getService( 'MWStakeDynamicConfigManager' );
 			$manager->loadConfigs();
+			MediaWikiServices::getInstance()->getHookContainer()->run( 'MWStakeDynamicConfigManagerLoaded' );
 		};
 
 		$GLOBALS['wgExtensionFunctions'][] = static function () {
@@ -31,6 +32,11 @@ Bootstrapper::getInstance()
 					'mwstake_dynamic_config',
 					'mwdc_serialized',
 					__DIR__ . "/db/$dbType/mwstake_dynamic_config_serialized_patch.sql"
+				);
+				$updater->addExtensionField(
+					'mwstake_dynamic_config',
+					'mwdc_wiki_id',
+					__DIR__ . "/db/$dbType/mwstake_dynamic_config_wiki_id_patch.sql"
 				);
 			} );
 		};

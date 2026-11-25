@@ -19,7 +19,6 @@ class Sort implements \JsonSerializable {
 	protected $direction = '';
 
 	/**
-	 *
 	 * @param string $property
 	 * @param string $direction
 	 * @throws UnexpectedValueException
@@ -36,7 +35,6 @@ class Sort implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getProperty() {
@@ -44,7 +42,6 @@ class Sort implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @return string One of Sort::ASCENDING or Sort::DESCENDING
 	 */
 	public function getDirection() {
@@ -60,7 +57,6 @@ class Sort implements \JsonSerializable {
 	}
 
 	/**
-	 *
 	 * @param stdClass[]|array[] $sorts
 	 * @return Sort[]
 	 */

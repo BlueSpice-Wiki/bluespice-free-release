@@ -8,7 +8,7 @@
 	};
 
 	mw.ext.forms.formElement.FormElement.prototype.getElementConfigInternal = function () {
-		return { // eslint-disable-line mediawiki/class-doc
+		return {
 			// Its not a very good idea to allow changing types
 			// at least not without rigid rules
 			/* type: {

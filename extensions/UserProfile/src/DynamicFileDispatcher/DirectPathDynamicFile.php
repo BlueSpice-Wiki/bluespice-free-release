@@ -25,7 +25,6 @@ class DirectPathDynamicFile implements IDynamicFile, CacheableFile {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getMimeType(): string {

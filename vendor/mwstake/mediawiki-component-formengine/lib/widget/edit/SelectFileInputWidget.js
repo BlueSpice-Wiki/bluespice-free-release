@@ -1,6 +1,6 @@
 ( function ( mw, $ ) {
 	mw.ext.forms.widget.edit.SelectFileInput = function ( cfg ) {
-		this.fileWidget = new OO.ui.SelectFileWidget( Object.assign( {
+		this.fileWidget = new OO.ui.SelectFileInputWidget( Object.assign( {
 			accept: [
 				'image/png',
 				'image/jpeg'

@@ -34,5 +34,6 @@
 	"flexiskin-ui-plugin-content-font-weight-label": "Gewiicht",
 	"flexiskin-ui-widget-border-double": "Duebel",
 	"flexiskin-ui-plugin-content-colors-link-label": "Valabele Link",
-	"flexiskin-ui-plugin-content-colors-new-link-label": "Futtisse Link"
+	"flexiskin-ui-plugin-content-colors-new-link-label": "Futtisse Link",
+	"flexiskin-ui-error-save-fail": "D'Benotzeruewerfläch konnt net gespäichert ginn!"
 }

@@ -211,10 +211,10 @@ class TemplateDataProvider implements ITemplateDataProvider {
 	 */
 	private function collectActionLinks(): array {
 		$actionLinks = array_merge(
-			$this->content_navigation['views'],
-			$this->content_navigation['actions'],
-			$this->content_navigation['variants'],
-			$this->content_navigation['namespaces']
+			$this->content_navigation['views'] ?? [],
+			$this->content_navigation['actions'] ?? [],
+			$this->content_navigation['variants'] ?? [],
+			$this->content_navigation['namespaces'] ?? []
 		);
 
 		if ( array_key_exists( 'TOOLBOX', $this->sidebar ) ) {

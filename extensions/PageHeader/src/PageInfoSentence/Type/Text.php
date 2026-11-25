@@ -9,7 +9,6 @@ use PageHeader\PageInfoSentence\Type;
 class Text extends Type {
 
 	/**
-	 *
 	 * @param IPageInfo $pageInfo
 	 * @return string
 	 */

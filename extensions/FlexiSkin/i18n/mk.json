@@ -93,5 +93,15 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Истакнато на страничникот",
 	"flexiskin-ui-plugin-footer-colors-label": "Бои на подножјето",
 	"flexiskin-ui-plugin-colors-background-footer-label": "Заднина на подножјето",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "Преднина на подножјето"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Преднина на подножјето",
+	"flexiskin-special-title": "Управување со рува",
+	"flexiskin-ui-configurator-button-reset-label": "Врати одново",
+	"flexiskin-ui-error-reset-fail": "Враќањето одново на рувото не успеа",
+	"flexiskin-extension-name": "FlexiSkin",
+	"flexiskin": "FlexiSkin",
+	"flexiskin-configurator-prompt-on-reset": "Сите поставки на ова вики ќе бидат отфрлени и наместо тоа ќе се примени стандардниот стил на BlueSpice. Ова ги засега сите корисници на ова вики и не може да се отповика. Дали сакате да продолжите?",
+	"flexiskin-configurator-prompt-on-reset-to-main-wiki": "Сите поставки на ова вики ќе бидат отфрлени и наместо тоа ќе се примени стилот на главното вики. Ова ги засега сите корисници на ова вики и не може да се отповика. Дали сакате да продолжите?",
+	"flexiskin-ui-configurator-notice-inherited-styling": "Ова вики го наследува стилот од главното вики. Можете понатаму да го прилагодувате ова вики. Тука направените промени ќе важат само за ова вики.",
+	"flexiskin-ui-configurator-notice-inherited-styling-default": "Ова вики го наследува својот стил од главното вики. Главното вики моментално го користи стандардниот стил на BlueSpice, така што тоа е стилот кој го следи по секоја поставка што нема да ја прилагодите овде.",
+	"apihelp-flexiskin-reset-summary": "Модулот за враќање одново"
 }

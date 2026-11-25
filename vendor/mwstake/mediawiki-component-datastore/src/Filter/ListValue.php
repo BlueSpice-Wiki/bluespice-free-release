@@ -10,7 +10,6 @@ class ListValue extends Filter {
 	public const COMPARISON_NOT_CONTAINS = 'nct';
 
 	/**
-	 *
 	 * @param array $params
 	 */
 	public function __construct( $params ) {

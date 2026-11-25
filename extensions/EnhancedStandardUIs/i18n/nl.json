@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mainframe98",
 			"McDutchie",
 			"Siebrand"
 		]
@@ -106,5 +107,22 @@
 	"enhanced-standard-uis-allpages-namespace-watched": "Naamruimte \"$1\" is toegevoegd aan uw volglijst",
 	"enhanced-standard-uis-allpages-namespace-unwatched": "Naamruimte \"$1\" is verwijderd van uw volglijst",
 	"enhanced-standard-uis-allpages-namespace-watch-error": "De volgstatus voor deze naamruimte kon niet worden bijgewerkt.",
-	"enhanced-standard-uis-history-grid-header-major-label": "Is een grote bewerking"
+	"enhanced-standard-uis-history-grid-header-major-label": "Is een grote bewerking",
+	"enhanced-standard-uis-watchlist-tab-pages": "Pagina's",
+	"enhanced-standard-uis-watchlist-tab-categories": "Categorieën",
+	"enhanced-standard-uis-watchlist-tab-books": "Boeken",
+	"enhanced-standard-uis-watchlist-tab-namespaces": "Naamruimten",
+	"enhanced-standard-uis-watchlist-search-label": "Zoeken naar gevolgde items",
+	"enhanced-standard-uis-watchlist-view-changes": "Wijzigingen op de volglijst bekijken",
+	"enhanced-standard-uis-watchlist-clear-all": "Alle gevolgde $1 wissen",
+	"enhanced-standard-uis-watchlist-clear-confirm": "Wilt u echt alle gevolgde $1 uit uw volglijst verwijderen?",
+	"enhanced-standard-uis-watchlist-clear-confirm-action": "Alles wissen",
+	"enhanced-standard-uis-watchlist-remove-tooltip": "Verwijderen uit volglijst",
+	"enhanced-standard-uis-watchlist-empty": "Er zijn hier geen gevolgde items.",
+	"enhanced-standard-uis-watchlist-no-results": "Er zijn geen resultaten gevonden die overeenkomen met uw zoekopdracht.",
+	"enhanced-standard-uis-watchlist-load-error": "De gevolgde items konden niet worden geladen.",
+	"enhanced-standard-uis-watchlist-retry": "Opnieuw proberen",
+	"enhanced-standard-uis-watchlist-main-namespace-label": "Hoofdnaamruimte",
+	"enhanced-standard-uis-history-grid-edittype-minor-label": "Kleine bewerking",
+	"enhanced-standard-uis-history-grid-edittype-major-label": "Grote bewerking"
 }

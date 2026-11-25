@@ -14,7 +14,6 @@ use SMWDIBlob;
 class UserProfilePropertyValueProvider extends PropertyValueProvider {
 
 	/**
-	 *
 	 * @return \BlueSpice\SMWConnector\IPropertyValueProvider[]
 	 */
 	public static function factory() {
@@ -44,25 +43,21 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $name;
 
 	/**
-	 *
 	 * @var string
 	 */
 	private $smwName;
 
 	/**
-	 *
 	 * @var ProfileField
 	 */
 	private $field;
 
 	/**
-	 *
 	 * @var ProfileManager
 	 */
 	private $profileManager;
@@ -73,7 +68,6 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 	private $user = null;
 
 	/**
-	 *
 	 * @param string $name
 	 * @param string $smwName
 	 * @param ProfileField $field
@@ -87,7 +81,6 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @param \SESP\AppFactory $appFactory
 	 * @param \SMW\DIProperty $property
 	 * @param \SMW\SemanticData $semanticData
@@ -111,7 +104,6 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @param Title|null $title
 	 * @return bool
 	 */
@@ -130,7 +122,6 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getType() {
@@ -138,7 +129,6 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getAliasMessageKey() {
@@ -146,7 +136,6 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getDescriptionMessageKey() {
@@ -154,7 +143,6 @@ class UserProfilePropertyValueProvider extends PropertyValueProvider {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId() {

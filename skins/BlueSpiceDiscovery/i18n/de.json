@@ -215,5 +215,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "Seiten",
 	"bs-discovery-namespace-tree-search-btn-label": "Suche anzeigen",
 	"bs-discovery-namespace-tree-create-btn-label": "Eine neue Seite erstellen",
-	"bs-discovery-namespace-tree-search-label": "Nach einer Seite suchen"
+	"bs-discovery-namespace-tree-search-label": "Nach einer Seite suchen",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "Caching für \"Erweiterte Mediawiki Seitenleiste\" verwenden",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "Das Caching verbessert die Performance der Seitenleiste. Bei aktiviertem Caching stehen keine Kontextvariablen zur Verfügung. Um Kontextvariablen zu verwenden, muss das Caching deaktiviert sein."
 }

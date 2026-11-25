@@ -69,13 +69,9 @@ class SpecialActionsProvider extends BaseBreadcrumbDataProvider {
 		$labels[] = [
 			'text' => $msgSpecialText
 		];
-		if ( isset( $this->webRequestValues['action'] ) ) {
-			$msgActionKey = 'bs-discovery-breadcrumb-label-action-' . $this->webRequestValues['action'];
-			$msgActionText = $this->messageLocalizer->msg( $msgActionKey );
-			if ( !$msgActionText->exists() ) {
-				$msgActionText = new RawMessage( $this->webRequestValues['action'] );
-			}
-			$labels[] = [ 'text' => $msgActionText ];
+		$actionLabel = $this->getActionLabel();
+		if ( $actionLabel ) {
+			$labels[] = $actionLabel;
 		}
 		return $labels;
 	}

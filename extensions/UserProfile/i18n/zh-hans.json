@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"GuoPC"
+			"GuoPC",
+			"Ouclie"
 		]
 	},
 	"userprofile-desc": "用户个人资料的UI和附加数据",
@@ -38,7 +39,7 @@
 	"userprofile-droplet-name": "用户个人资料",
 	"userprofile-droplet-name-description": "显示用户的个人资料信息",
 	"userprofile-ve-attr-user-label": "用户",
-	"userprofile-ve-attr-user-help": "用户名",
+	"userprofile-ve-attr-user-help": "要显示的个人资料的用户的名称",
 	"userprofile-set-userimage-failed": "此图像不能用作个人资料图像",
 	"userprofile-changeuserimage-title": "更改个人资料图像",
 	"userprofile-userimage-choose-title": "从wiki中的图像中选择一个图像",
