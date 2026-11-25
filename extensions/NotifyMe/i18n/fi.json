@@ -19,5 +19,11 @@
 	"notifyme-ui-subscriptionset-editor-category-label": "Luokka",
 	"notifyme-ui-subscriptionset-category-label": "Luokka",
 	"notifyme-arbitrary-event-action-subject-help": "Käytetään sähköposti-ilmoituksen aiheena. Arvo voi olla pelkkää tekstiä tai viestiavain.",
-	"notifyme-arbitrary-event-action-message-help": "Arvo voi olla pelkkää tekstiä tai viestiavain"
+	"notifyme-arbitrary-event-action-message-help": "Arvo voi olla pelkkää tekstiä tai viestiavain",
+	"notifyme-event-page-create-short-desc": "Luo sivu",
+	"notifyme-event-page-delete-short-desc": "Poista sivu",
+	"notifyme-event-page-move-short-desc": "Siirrä sivu",
+	"notifyme-event-page-edit-short-desc": "Muokkaa sivua",
+	"notifyme-notification-center-filter-label-source": "Wikit",
+	"notifyme-subscriber-provider-personal-desc": "Sinut on erikseen valittu vastaanottajaksi"
 }

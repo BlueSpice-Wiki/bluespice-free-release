@@ -1,6 +1,6 @@
 {
 	"name": "NotifyMe",
-	"version": "2.1.6",
+	"version": "2.1.8",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[http://www.hallowelt.com Hallo Welt! GmbH]"
@@ -126,7 +126,7 @@
 				},
 				"watchlist": {
 					"class": "\\MediaWiki\\Extension\\NotifyMe\\SubscriberProvider\\ManualProvider\\SubscriptionSet\\WatchlistSet",
-					"services": [ "WatchedItemStore" ]
+					"services": [ "DBLoadBalancer" ]
 				}
 			}
 		}

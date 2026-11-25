@@ -35,7 +35,7 @@ bs.avatars.ui.UploadImageDialog.prototype.getReadyProcess = function () {
 
 bs.avatars.ui.UploadImageDialog.prototype.initialize = function () {
 	bs.avatars.ui.UploadImageDialog.parent.prototype.initialize.call( this );
-	this.selector = new OO.ui.SelectFileWidget( {
+	this.selector = new OO.ui.SelectFileInputWidget( {
 		multiple: false,
 		droppable: true,
 		accept: [ 'image/*' ],

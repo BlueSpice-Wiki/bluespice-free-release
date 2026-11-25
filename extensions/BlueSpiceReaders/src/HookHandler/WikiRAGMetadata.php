@@ -22,7 +22,7 @@ class WikiRAGMetadata implements WikiRAGMetadataHook {
 	 */
 	public function onWikiRAGMetadata( PageIdentity $page, RevisionRecord $revision, array &$meta ): void {
 		$threeMonthsAgo = wfTimestamp( TS_MW, strtotime( '-3 months' ) );
-		$db = $this->lb->getConnectionRef( DB_REPLICA );
+		$db = $this->lb->getConnection( DB_REPLICA );
 		$row = $db->newSelectQueryBuilder()
 			->select( [ 'COUNT(*) as recent_visits', 'MAX(readers_ts) as latest_visit' ] )
 			->from( 'bs_readers' )

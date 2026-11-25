@@ -92,7 +92,7 @@ final class NotificationEventConsumer implements INotificationEventConsumer {
 					'NotifyMe.SubscriberManager', 'NotifyMe.ChannelFactory', 'HookContainer'
 				]
 			]
-		] );
+		], 60 * 5 );
 
 		$pid = $this->processManager->startProcess( $process );
 		if ( !$pid ) {

@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Hallo Welt! GmbH"
+		]
 	},
 	"mwstake-formengine-error-invalid-form": "Error message",
 	"mwstake-formengine-form-loading-label": "Input field label",

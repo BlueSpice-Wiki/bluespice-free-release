@@ -17,7 +17,6 @@ class TocBuilder {
 	protected $titleFactory;
 
 	/**
-	 *
 	 * @param TitleFactory $titleFactory
 	 */
 	public function __construct( TitleFactory $titleFactory ) {
@@ -129,7 +128,6 @@ class TocBuilder {
 	}
 
 	/**
-	 *
 	 * @param DOMElement $li
 	 * @param string $dbkey
 	 * @return void

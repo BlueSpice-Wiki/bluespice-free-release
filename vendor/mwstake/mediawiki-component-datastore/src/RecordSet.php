@@ -5,13 +5,11 @@ namespace MWStake\MediaWiki\Component\DataStore;
 class RecordSet {
 
 	/**
-	 *
 	 * @var \MWStake\MediaWiki\Component\DataStore\Record[]
 	 */
 	protected $records = [];
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\Record[] $records
 	 */
 	public function __construct( $records ) {
@@ -19,7 +17,6 @@ class RecordSet {
 	}
 
 	/**
-	 *
 	 * @return \MWStake\MediaWiki\Component\DataStore\Record[]
 	 */
 	public function getRecords() {

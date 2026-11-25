@@ -77,8 +77,7 @@ ext.enhancedUI.ve.MediaDialogFileGrid.prototype.initFileRepoGrid = function () {
 	this.fileRepoGrid.connect( this, {
 		gridLoaded: () => {
 			this.fileRepoGrid.grid.connect( this, {
-				rowSelected: 'onFileRepoGridSelect',
-				datasetChange: 'onFileRepoGridLoaded'
+				rowSelected: 'onFileRepoGridSelect'
 			} );
 		}
 	} );

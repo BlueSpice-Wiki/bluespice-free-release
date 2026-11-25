@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-hidetitle-desc": "Pridáva magické slovo <code><nowiki>__HIDETITLE__</nowiki></code> na skrytie názvu stránky",
+	"bs-hidetitle-ve-dialog-meta-settings-showtitle": "Zobraziť",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle": "Skryť",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label": "Viditeľnosť názvu",
+	"bs-hidetitle-ve-dialog-meta-settings-hidetitle-label-help": "Môžete určiť, či má byť názov stránky viditeľný."
+}

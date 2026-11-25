@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-saferedit-desc": "Zobrazuje upozornenia, ak stránku upravujú iní používatelia",
+	"bs-saferedit-user-editing": "$1 {{PLURAL:$2|{{GENDER:$1|upravuje}}|upravujú}} stránku",
+	"bs-saferedit-someone-editing": "Stránka sa práve upravuje",
+	"bs-saferedit-pref-edit-interval": "Interval kontroly súbežných úprav",
+	"bs-saferedit-pref-edit-interval-help": "Nastavte čas v sekundách na kontrolu, či stránku neupravuje iný používateľ",
+	"bs-saferedit-pref-show-editinguser": "Zobrazovať aktuálneho redaktora",
+	"bs-saferedit-pref-show-editinguser-help": "Pridá na začiatok stránky meno používateľa, ktorý ju práve upravuje",
+	"bs-saferedit-anonymous-editor": "Anonymný používateľ"
+}

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"KormiSK"
+		]
+	},
+	"enhanced-standard-uis-watchlist-empty-pages": "V zozname sledovaných stránok nemáte žiadne stránky.",
+	"enhanced-standard-uis-watchlist-empty-categories": "V zozname sledovaných stránok nemáte žiadne kategórie.",
+	"enhanced-standard-uis-watchlist-empty-books": "V zozname sledovaných stránok nemáte žiadne knihy.",
+	"enhanced-standard-uis-watchlist-empty-namespaces": "Zatiaľ nemáte žiadne menné priestory na zozname sledovaných stránok.",
+	"enhanced-standard-uis-watchlist-empty-hint-books": "Pridať knihy z [$1 Knihy]."
+}

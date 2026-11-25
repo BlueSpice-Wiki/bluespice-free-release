@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceUserManager",
 	"license-name": "GPL-3.0-only",
-	"version": "5.2.6",
+	"version": "5.2.8",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceUserManager",
 	"author": [
 		"Sebastian Ulbricht",
@@ -130,6 +130,9 @@
 	"HookHandlers": {
 		"common-user-interface": {
 			"class": "\\BlueSpice\\UserManager\\HookHandler\\CommonUserInterface"
+		},
+		"removeSpecialBlock": {
+			"class": "\\BlueSpice\\UserManager\\Hook\\RemoveSpecialBlock"
 		}
 	},
 	"ServiceWiringFiles": [
@@ -175,7 +178,8 @@
 	],
 	"Hooks": {
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"BeforePageDisplay": "\\BlueSpice\\UserManager\\Hook\\BeforePageDisplay\\AddModules::callback"
+		"BeforePageDisplay": "\\BlueSpice\\UserManager\\Hook\\BeforePageDisplay\\AddModules::callback",
+		"SpecialPage_initList": "removeSpecialBlock"
 	},
 	"config_prefix": "bsg",
 	"config": {

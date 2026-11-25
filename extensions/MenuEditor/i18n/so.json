@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"menueditor-desc": "Tifaftiraha garaafyada ee bogagga liiska",
+	"menueditor-ui-menu-wiki-link-label": "Xiriirka wiki-ga",
+	"menueditor-ui-menu-wiki-link-label-edit": "Tafatir xiriirka wiki-ga",
+	"menueditor-ui-menu-wiki-link-help": "Xiriirka bog wiki",
+	"menueditor-ui-menu-two-fold-link-spec-label": "Xiriir",
+	"menueditor-ui-menu-two-fold-link-spec-label-edit": "Tafatir xiriirka",
+	"menueditor-ui-menu-two-fold-link-spec-help": "Faahfaahinta xiriirka.<br>Meesha loo jeeddo waxay noqon kartaa:<ul><li>furaha farriinta, kaas oo u beddelmaya magaca bogga</li><li>xiriir dibadeed</li><li>Magaca bogga ku jira wiki-ga</li><li>xiriir interwiki ah</li></ul>",
+	"menueditor-ui-menu-raw-text-label": "Qoraal ama furaha farriinta",
+	"menueditor-ui-menu-raw-text-label-edit": "Tafatir qoraalka ama furaha farriinta",
+	"menueditor-ui-menu-keyword-label": "Ereyga muhiimka ah",
+	"menueditor-ui-menu-keyword-label-edit": "Tafatir erayga muhiimka ah",
+	"menueditor-ui-menu-keyword-help": "Mid ka mid ah '''erayada muhiimka ah''' ee la heli karo, kaas oo muujin doona widget-ka ku habboon",
+	"menueditor-ui-form-field-keyword": "Ereyga muhiimka ah",
+	"menueditor-ui-form-field-text": "Qoraal ama furaha farriinta",
+	"menueditor-ui-form-field-target": "Bartilmaameedka xiriirka",
+	"menueditor-ui-form-field-label": "Calaamadda xiriirka",
+	"menueditor-ui-dialog-action-done": "La dhammeeyay",
+	"menueditor-ui-dialog-action-cancel": "Jooji",
+	"menueditor-ui-node-type-selector-label": "Nooca noodhka",
+	"menueditor-ui-submit": "Kaydi",
+	"menueditor-ui-cancel": "Jooji",
+	"menueditor-ui-redlink-notice": "Liiskani weli ma jiro!",
+	"menueditor-action-menueditsource": "Wax ka beddel isha",
+	"menueditor-action-menuedit": "Wax ka badal",
+	"menueditor-ui-dialog-title": "Tafatir curiyaha",
+	"menueditor-ui-mediawiki-sidebar-keyword-label-edit": "Tafatir erayga muhiimka ah",
+	"menueditor-ui-mediawiki-sidebar-keyword-label": "Ereyga muhiimka ah",
+	"menueditor-toolbar-cancel": "Jooji wax ka beddelka",
+	"menueditor-toolbar-add-label": "Ku dar curiye",
+	"menueditor-ui-edit-label": "Wax ka badal",
+	"menueditor-ui-add-sub-element-label": "Ku dar qayb hoosaad",
+	"menueditor-footerlinks-banner-text": "Qaar ka mid ah xiriiriyeyaasha waxaa si toos ah loogu dari karaa kordhiyeyaasha. Fadlan hubi qaabaynta kordhiyaha si aad wax badan uga ogaato.",
+	"menueditor-toolbar-save": "Kaydi",
+	"menueditor-ui-cancel-confirmation": "Ma hubtaa inaad rabto inaad joojiso wax ka beddelka? Dhammaan isbeddellada aan la kaydin way lumin doonaan.",
+	"menueditor-ui-notices": "Ogeysiiska",
+	"menueditor-ui-oldrevision-notice": "Waxaad wax ka beddelaysaa nooc hore oo boggan ah. Haddii aad kaydiso, dhammaan isbeddelladii la sameeyay tan iyo noocan way lumin doonaan."
+}

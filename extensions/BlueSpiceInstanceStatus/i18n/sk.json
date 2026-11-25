@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-instancestatus-desc": "Pridáva prehľad stavu inštancie wiki",
+	"instancestatus": "Stav inštancie",
+	"bs-instancestatus-instance-status-bs-version-label": "Verzia BlueSpice",
+	"bs-instancestatus-instance-status-user-quota-label": "Kvóta používateľov",
+	"bs-instancestatus-instance-status-last-update-label": "Posledná aktualizácia",
+	"bs-instancestatus-instance-status-created-label": "Inštancia vytvorená",
+	"bs-instancestatus-instance-status-no-info": "Nedostupné",
+	"bs-instancestatus-instance-status-sales-contact-label": "Kontakt BlueSpice",
+	"bs-instancestatus-instance-status-sales-contact": "Kontaktujte nás tu: [$1 kontakt BlueSpice]",
+	"bs-instancestatus-overview-loader": "Zbierajú sa informácie o wiki...",
+	"bs-instancestatus-instance-status-main-label": "Všeobecné"
+}

@@ -6,10 +6,12 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\PDFCreator\Factory\ExportSpecificationFactory;
 use MediaWiki\Extension\PDFCreator\Factory\ModeFactory;
 use MediaWiki\Extension\PDFCreator\Factory\TemplateProviderFactory;
+use MediaWiki\Extension\PDFCreator\IShowNamespaceAware;
 use MediaWiki\Extension\PDFCreator\ITargetResult;
 use MediaWiki\Extension\PDFCreator\PDFCreator;
 use MediaWiki\Extension\PDFCreator\Utility\BoolValueGet;
 use MediaWiki\Extension\PDFCreator\Utility\ExportContext;
+use MediaWiki\Extension\PDFCreator\Utility\PageLabelHelper;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\Title\Title;
@@ -99,44 +101,60 @@ class Export extends SimpleHandler {
 
 		$mode = isset( $data['mode'] ) ? $data['mode'] : 'page';
 
+		$allTemplateNames = $this->templateProviderFactory->getAvailableTemplateNames();
+		if ( empty( $allTemplateNames ) ) {
+			return $this->getResponseFactory()->createHttpError( 404, [ 'No templates available' ] );
+		}
+
 		$template = null;
 		$options = [];
 		if ( isset( $data['template'] ) && $data['template'] !== '' ) {
 			$templateProvider = $this->templateProviderFactory->getTemplateProviderFor( $data['template'] );
 			$template = $templateProvider->getTemplate( $context, $data['template'] );
-			if ( !$template ) {
-				return $this->getResponseFactory()->createHttpError( 404, [ 'Invalid template requested' ] );
-			}
-			$options = $template->getOptions();
 		} else {
-			$allTemplateNames = $this->templateProviderFactory->getAvailableTemplateNames();
-			if ( empty( $allTemplateNames ) ) {
-				return $this->getResponseFactory()->createHttpError( 404, [ 'No templates available' ] );
-			}
 			$templateProvider = $this->templateProviderFactory->getTemplateProviderFor( $allTemplateNames[0] );
-			if ( !$template ) {
-				return $this->getResponseFactory()->createHttpError( 404, [ 'Invalid template requested' ] );
-			}
-			$options = $template->getOptions();
+			$template = $templateProvider->getTemplate( $context );
+		}
+		if ( !$template ) {
+			return $this->getResponseFactory()->createHttpError( 404, [ 'Invalid template requested' ] );
+		}
+		$options = $template->getOptions();
+
+		// Fallback for nsPrefix, which is deprecated and replaced by show-namespace
+		if ( isset( $options['nsPrefix'] ) && !isset( $options['show-namespace'] ) ) {
+			$options['show-namespace'] = $options['nsPrefix'];
 		}
 
-		$title = $relevantTitle->getText();
-		if ( isset( $options['nsPrefix'] ) && BoolValueGet::from( $options['nsPrefix'] ) === true ) {
-			$title = $relevantTitle->getPrefixedText();
+		$showNamespace = false;
+		if ( isset( $options['show-namespace'] ) && BoolValueGet::from( $options['show-namespace'] ) === true ) {
+			$showNamespace = true;
 		}
+
+		$PageLabelHelper = new PageLabelHelper();
+		$title = $PageLabelHelper->getTitleText(
+			$relevantTitle,
+			$relevantTitle->getPrefixedText(),
+			$showNamespace
+		);
 
 		$params = [
 			'mode' => $mode,
 			'template' => $template ? $data['template'] : null,
 			'title' => $title,
-			'filename' => $relevantTitle->getPrefixedDBkey() . '.pdf'
+			'filename' => $title . '.pdf'
 		];
 
 		$modeProvider = $this->modeFactory->getModeProvider( $mode );
+		if ( $modeProvider instanceof IShowNamespaceAware ) {
+			$modeProvider->setShowNamespace( $showNamespace );
+		}
+
 		$pages = $modeProvider->getExportPages( $this->exportTitle, $data );
+
 		if ( $mode === 'page' || $mode === 'pageWithLinkedPages' || $mode === 'pageWithSubpages' ) {
 			$mode = 'batch';
 		}
+
 		$specParams = [
 			'params' => $params,
 			'pages' => $pages,

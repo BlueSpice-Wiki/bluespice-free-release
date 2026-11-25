@@ -37,7 +37,7 @@ class PopupHandler implements ITagHandler {
 
 		return Html::element( 'a', [
 			'class' => 'wo-link',
-			'title' => wfMessage( 'bs-whoisonline-widget-title' ),
+			'title' => wfMessage( 'bs-whoisonline-widget-title' )->text(),
 			'data-target-id' => $targetId,
 			'data-target' => empty( $users ) ? '' : implode( ',', $users ),
 			'tabindex' => '0',
@@ -47,7 +47,7 @@ class PopupHandler implements ITagHandler {
 			'role' => 'button'
 		],
 			( empty( $params['anchortext'] )
-				? wfMessage( 'bs-whoisonline-widget-title' )
+				? wfMessage( 'bs-whoisonline-widget-title' )->text()
 				: $params['anchortext'] )
 		);
 	}

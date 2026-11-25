@@ -12,7 +12,7 @@ flexiskin.ui.plugin.Images.prototype.provideControls = function () {
 			items: {
 				logo: {
 					label: mw.message( 'flexiskin-ui-plugin-images-logo-label' ).text(),
-					widget: new OO.ui.SelectFileWidget( {
+					widget: new OO.ui.SelectFileInputWidget( {
 						showDropTarget: true
 					} ),
 					actionCallback: {
@@ -23,7 +23,7 @@ flexiskin.ui.plugin.Images.prototype.provideControls = function () {
 				},
 				favicon: {
 					label: mw.message( 'flexiskin-ui-plugin-images-favicon-label' ).text(),
-					widget: new OO.ui.SelectFileWidget( {
+					widget: new OO.ui.SelectFileInputWidget( {
 						showDropTarget: true
 					} ),
 					actionCallback: {

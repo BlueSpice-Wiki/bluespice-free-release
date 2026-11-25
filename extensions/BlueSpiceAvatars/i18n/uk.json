@@ -3,6 +3,7 @@
 		"authors": [
 			"DDPAT",
 			"Ice bulldog",
+			"Movses",
 			"Piramidion",
 			"Repakr",
 			"Vlad5250",
@@ -24,5 +25,7 @@
 	"bs-avatars-upload-button": "Завантажити",
 	"bs-avatars-generic-cancel": "Скасувати",
 	"bs-avatars-generate-button": "Згенерувати",
-	"bs-avatars-generate-description": "Згенерувати новий автоматичний аватар. Це назавжди замінить будь-яке завантажене зображення профілю (якщо його встановлено)"
+	"bs-avatars-generate-description": "Згенерувати новий автоматичний аватар. Це назавжди замінить будь-яке завантажене зображення профілю (якщо його встановлено)",
+	"bs-avatars-upload-unsupported-type": "Цей тип файлу не підтримується.",
+	"bs-avatars-upload-tempfile-missing": "Не вдалося отримати тимчасовий файл"
 }

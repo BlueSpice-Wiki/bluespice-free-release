@@ -13,7 +13,6 @@ class PageInfoSentenceBuilder {
 	protected $factory = null;
 
 	/**
-	 *
 	 * @var PageInfoSentenceTypeFactory
 	 */
 	protected $typeFactory = null;
@@ -57,7 +56,6 @@ class PageInfoSentenceBuilder {
 	}
 
 	/**
-	 *
 	 * @param IPageInfo[] $items
 	 * @param IContextSource $context
 	 * @return array

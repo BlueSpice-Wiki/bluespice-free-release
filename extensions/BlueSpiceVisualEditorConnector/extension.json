@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceVisualEditorConnector",
 	"license-name": "GPL-3.0-only",
-	"version": "5.2.6",
+	"version": "5.2.8",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceVisualEditorConnector",
 	"author": [
 		"Markus Glaser"
@@ -600,8 +600,7 @@
 		"NamespaceManager::editNamespace": "\\BlueSpice\\VisualEditorConnector\\Hook\\NamespaceManagerEditNamespace\\SetVisualEditorValues::callback",
 		"NamespaceManagerBeforePersistSettings": "writeNamespaceConfiguration",
 		"MessagesPreLoad": "overrideMessage",
-		"MessageCacheFetchOverrides": "changeMessages",
-		"APIAfterExecute": "removeTocPlaceholder"
+		"MessageCacheFetchOverrides": "changeMessages"
 	},
 	"HookHandlers": {
 		"writeNamespaceConfiguration": {
@@ -613,9 +612,6 @@
 		},
 		"changeMessages": {
 			"class": "\\BlueSpice\\VisualEditorConnector\\Hook\\Messages\\MessageCacheFetchGetOverrides"
-		},
-		"removeTocPlaceholder": {
-			"class": "\\BlueSpice\\VisualEditorConnector\\Hook\\RemoveTocPlaceholder"
 		},
 		"removeSwitchEditor": {
 			"class": "\\BlueSpice\\VisualEditorConnector\\Hook\\BeforePageDisplay\\RemoveSwitchEditor"

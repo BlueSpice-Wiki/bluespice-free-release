@@ -9,7 +9,6 @@ use PageHeader\PageInfo;
 
 class NULLPageInfo extends PageInfo {
 	/**
-	 *
 	 * @return string
 	 */
 	public function getItemClass(): string {
@@ -17,7 +16,6 @@ class NULLPageInfo extends PageInfo {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage(): Message {
@@ -25,7 +23,6 @@ class NULLPageInfo extends PageInfo {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getTooltipMessage(): Message {
@@ -33,7 +30,6 @@ class NULLPageInfo extends PageInfo {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

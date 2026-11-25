@@ -70,5 +70,6 @@
 	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "Информације о датотеци",
 	"enhanced-standard-uis-paginator-page-aria-label": "Страница $1",
 	"enhanced-standard-uis-allpages-create-new-page-aria-label": "Направи нову страницу",
-	"enhanced-standard-uis-allpages-panel-more-button-label": "Учитај још страница"
+	"enhanced-standard-uis-allpages-panel-more-button-label": "Учитај још страница",
+	"enhanced-standard-uis-allpages-unwatch-label": "Прекини надгледање странице $1"
 }

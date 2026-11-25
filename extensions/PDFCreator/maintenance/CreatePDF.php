@@ -24,8 +24,6 @@ require_once "$IP/maintenance/Maintenance.php";
  */
 class CreatePDF extends Maintenance {
 
-	/**
-	 */
 	public function __construct() {
 		parent::__construct();
 		$this->addDescription( 'Exports a batch of pages.' );

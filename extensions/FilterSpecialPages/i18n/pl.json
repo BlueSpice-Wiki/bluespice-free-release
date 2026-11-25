@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"PanWor"
+		]
+	},
+	"filterspecialpages-desc": "Wstawia pole służące do filtrowania wpisów na stronie [{{canonicalurl:Special:SpecialPages}} Specjalna:Strony specjalne].",
+	"filterspecialpages-hint-label": "Znajdź stronę"
+}

@@ -6,5 +6,8 @@
 	},
 	"contentdroplets-droplet-icon-color-label": "रङ",
 	"contentdroplet-dialog-action-close": "रद्द गर्नुहोस्",
-	"contentdroplets-droplet-code-name": "कोड"
+	"contentdroplets-droplet-code-name": "कोड",
+	"contentdroplets-droplet-text-box-success": "सफलताको सन्देश",
+	"contentdroplets-droplet-text-box-warning": "चेतावनी सन्देश",
+	"contentdroplets-droplet-text-box-important": "महत्त्वपूर्ण सन्देश"
 }

@@ -16,7 +16,6 @@ class ResultSet extends RecordSet {
 	protected ?string $queryId = null;
 
 	/**
-	 *
 	 * @param Record[] $records
 	 * @param int $total
 	 * @param array|null $continueValue
@@ -34,7 +33,6 @@ class ResultSet extends RecordSet {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getTotal() {

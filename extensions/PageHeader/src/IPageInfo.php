@@ -14,31 +14,26 @@ interface IPageInfo {
 	public const ITEMCLASS_CONTRA = 'contra';
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getLabelMessage();
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getTooltipMessage();
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getName();
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getUrl();
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getPosition();
@@ -49,13 +44,11 @@ interface IPageInfo {
 	public function getType();
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHtmlClass();
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHtmlId();
@@ -72,7 +65,6 @@ interface IPageInfo {
 	public function getMenu();
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */

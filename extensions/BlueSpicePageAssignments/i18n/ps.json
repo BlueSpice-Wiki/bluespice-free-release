@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-pageassignments-desc": "تاسو ته اجازه درکوي چې کارنان يا ډلې د يو مخ لپاره وټاکئ",
+	"bs-pageassignments-column-title": "مخ‌سرليک",
+	"bs-pageassignments-column-assignee-type": "ډول",
+	"bs-pageassignments-api-error": "یوه تېروتنه رامنځته شوې"
+}

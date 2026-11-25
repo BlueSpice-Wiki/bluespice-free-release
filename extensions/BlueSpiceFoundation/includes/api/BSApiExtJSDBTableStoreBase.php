@@ -135,7 +135,10 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 		}
 
 		foreach ( $aFilter as $oFilter ) {
-			if ( !in_array( $oFilter->field, $this->aFields ) ) {
+			if (
+				!isset( $oFilter->field ) || !is_string( $oFilter->field ) ||
+				!in_array( $oFilter->field, $this->aFields, true )
+			) {
 				continue;
 			}
 			if ( $oFilter->type == 'numeric' ) {
@@ -238,7 +241,7 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 				$aReturn[$oFilter->field] = $sFilterValue;
 				break;
 			case 'neq':
-				$aReturn[] = "$oFilter->field != $sFilterValue";
+				$aReturn[] = $oFilter->field . ' != ' . $oDB->addQuotes( $sFilterValue );
 				break;
 			case 'ct':
 				$aReturn[] = $oFilter->field . " " . $oDB->buildLike(
@@ -248,9 +251,11 @@ abstract class BSApiExtJSDBTableStoreBase extends BSApiExtJSStoreBase {
 				);
 				break;
 			case 'nct':
-				$sAny = $oDB->anyString()->toString();
-				$aReturn[]
-					= "$oFilter->field NOT LIKE '$sAny{$sFilterValue}$sAny'";
+				$aReturn[] = $oFilter->field . " NOT " . $oDB->buildLike(
+					$oDB->anyString(),
+					$sFilterValue,
+					$oDB->anyString()
+				);
 		}
 
 		return $aReturn;

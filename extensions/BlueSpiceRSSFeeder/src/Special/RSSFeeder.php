@@ -4,7 +4,7 @@ namespace BlueSpice\RSSFeeder\Special;
 
 use BlueSpice\RSSFeeder\RSSFeedManager;
 use BlueSpice\RSSFeeder\RSSTokenProvider;
-use MediaWiki\Context\RequestContext;
+use MediaWiki\Context\DerivativeContext;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -26,24 +26,30 @@ class RSSFeeder extends SpecialPage {
 	 * @inheritDoc
 	 */
 	public function execute( $subpage ) {
-		if ( $this->getUser()->isAnon() ) {
-			// Try to log in user from request
+		$isRegistered = $this->getUser()->isRegistered();
+		$feedContext = $this->getContext();
+		if ( !$isRegistered ) {
+			// Feed readers identify the user by name and token. This only gives
+			// access to the requested feed, for this request. It does not log in
+			// the user.
 			$authenticator = new RSSAuthenticator(
-				$this->getRequest(), RequestContext::getMain(), $this->tokenProvider
+				$this->getRequest(), $this->getContext(), $this->tokenProvider
 			);
-			$userAuthenticated = $authenticator->logInUser();
-		} else {
-			$userAuthenticated = true;
+			$tokenUser = $authenticator->getUserFromRequest();
+			if ( $tokenUser ) {
+				$feedContext = new DerivativeContext( $this->getContext() );
+				$feedContext->setUser( $tokenUser );
+			}
 		}
 
 		parent::execute( $subpage );
 
 		$feedsManager = MediaWikiServices::getInstance()->getService( 'BSRSSFeederFeedManagerFactory' )
-			->makeManager( $this->getContext(), $this->getUser() );
+			->makeManager( $feedContext, $feedContext->getUser() );
 
 		$this->showFeed( $subpage, $feedsManager );
 
-		if ( $userAuthenticated ) {
+		if ( $isRegistered ) {
 			$this->showConfig();
 		}
 	}

@@ -63,5 +63,17 @@
 	"enhanced-standard-uis-allpages-panel-more-button-label": "Carica altre pagine",
 	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages": "$1 - $2 di $3",
 	"enhanced-standard-uis-allpages-panel-index-paginator-shown-pages-approximate": "$1 - $2 di circa $3",
-	"enhanced-standard-uis-allpages-namespace-watch-error": "Impossibile aggiornare lo stato di monitoraggio per questo namespace."
+	"enhanced-standard-uis-allpages-namespace-watch-error": "Impossibile aggiornare lo stato di monitoraggio per questo namespace.",
+	"right-viewoldrevisions": "Visualizza le versioni che superano la data massima di versione configurata",
+	"action-viewoldrevisions": "visualizzare le versioni che superano la data massima di versione configurata",
+	"enhanced-standard-uis-error-revision-too-old": "Questa versione non è più disponibile per motivi di conformità. Per ulteriori informazioni, contatta un amministratore del wiki.",
+	"enhanced-standard-uis-watchlist-tab-pages": "Pagine",
+	"enhanced-standard-uis-watchlist-tab-categories": "Categorie",
+	"enhanced-standard-uis-watchlist-tab-books": "Libri",
+	"enhanced-standard-uis-watchlist-tab-namespaces": "Namespace",
+	"enhanced-standard-uis-watchlist-clear-confirm-action": "Pulisci tutto",
+	"enhanced-standard-uis-watchlist-remove-tooltip": "Rimuovi dagli osservati speciali",
+	"enhanced-standard-uis-watchlist-empty-hint-books": "Aggiungi libri da [$1 Libri].",
+	"enhanced-standard-uis-watchlist-no-results": "Nessun elemento corrisponde alla tua ricerca.",
+	"enhanced-standard-uis-watchlist-retry": "Riprova"
 }

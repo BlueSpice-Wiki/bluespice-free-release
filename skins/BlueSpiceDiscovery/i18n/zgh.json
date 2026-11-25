@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daoudsfouli"
+		]
+	},
+	"bs-discovery-sidebar-actions-heading": "ⵜⵉⴳⴰⵡⵉⵏ",
+	"bs-discovery-dialog-details-action-cancel": "ⵙⵙⵔ",
+	"bs-discovery-sidebar-secondary-watch-link-aria-label": "ⵜⴰⵙⴰ ⵏ ⵓⵎⴰⵜⵔ",
+	"bs-discovery-breadcrumb-label-talk": "ⴰⵎⵙⴰⵡⴰⵍ",
+	"bs-discovery-breadcrumb-label-special-linkliste": "ⵉⵙⵖⵏⴰⵏ",
+	"bs-discovery-breadcrumb-label-action-history": "ⴰⵎⵣⵔⵓⵢ",
+	"bs-discovery-breadcrumb-label-action-edit": "ⵙⵏⴼⵍ",
+	"bs-discovery-first-heading-aria-label": "ⴰⵣⵡⵍ ⵏ ⵜⵙⵏⴰ",
+	"bs-discovery-mainlinks-allpages-label": "ⵜⴰⵙⵏⵉⵡⵉⵏ",
+	"bs-discovery-mainlinks-listfiles-label": "ⵉⴼⴰⵢⵍⵓⵜⵏ",
+	"bs-discovery-personalurl-mycontributions-text": "ⵜⵉⴱⵣⴰⵔⵉⵏ",
+	"bs-discovery-personalurl-userpage-text": "ⵉⴼⵔⵙ",
+	"bs-discovery-globalactionentry-templates-text": "ⴰⵍⴱⵓⴹⵏ",
+	"bs-discovery-globalactionentry-templates-title": "ⵢⴰⵍ ⴰⵍⴱⵓⴹⵏ",
+	"bs-discovery-menu-provider-subpage-tree-label": "ⵜⴰⵙⴽⵍⵓⵜ ⵏ ⵜⴷⵓⵙⵏⴰ",
+	"bs-discovery-subpage-tree-pnl-header-text": "ⵜⵉⴷⵓⵙⵏⵉⵡⵉⵏ",
+	"ns-main-label": "ⵜⴰⵙⵏⵉⵡⵉⵏ",
+	"bs-discovery-enhanced-mediawiki-sidebar-pnl-header-text": "ⵓⵎⵓⵖ ⴰⴷⵙⵍⴰⵏ",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-page": "ⵜⴰⵙⵏⴰ",
+	"bs-discovery-enhanced-mediawiki-sidebar-field-href": "URL",
+	"menueditor-ui-enhanced-sidebar-subpage-tree-label-edit": "ⵜⴰⵙⴽⵍⵓⵜ ⵏ ⵜⴷⵓⵙⵏⴰ",
+	"menueditor-ui-enhanced-sidebar-subpage-tree-label": "ⵜⴰⵙⴽⵍⵓⵜ ⵏ ⵜⴷⵓⵙⵏⴰ",
+	"bs-discovery-enhanced-mediawiki-sidebar-header-text": "ⴰⵙⵙⴰⵔⴰ",
+	"bs-discovery-sidebar-secondary-cnt-aria-label": "ⵉⵎⴰⵙⵙⵏ ⵏ ⵜⴰⵙⵏⴰ"
+}

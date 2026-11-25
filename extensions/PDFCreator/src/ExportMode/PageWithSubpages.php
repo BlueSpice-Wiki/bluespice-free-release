@@ -5,7 +5,6 @@ namespace MediaWiki\Extension\PDFCreator\ExportMode;
 class PageWithSubpages extends Page {
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getKey(): string {
@@ -13,7 +12,6 @@ class PageWithSubpages extends Page {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getLabel(): string {
@@ -21,7 +19,6 @@ class PageWithSubpages extends Page {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function applies( $format ): bool {
@@ -29,7 +26,6 @@ class PageWithSubpages extends Page {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getExportPages( $title, $data ): array {
@@ -66,7 +62,6 @@ class PageWithSubpages extends Page {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function isRelevantExportMode( $title ): bool {

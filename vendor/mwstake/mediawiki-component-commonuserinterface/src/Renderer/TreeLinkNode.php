@@ -3,6 +3,7 @@
 namespace MWStake\MediaWiki\Component\CommonUserInterface\Renderer;
 
 use Exception;
+use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\CommonUserInterface\DataAttributesBuilder;
 use MWStake\MediaWiki\Component\CommonUserInterface\IComponent;
 use MWStake\MediaWiki\Component\CommonUserInterface\ITreeLinkNode;
@@ -67,7 +68,7 @@ class TreeLinkNode extends TreeTextNode {
 			$this->getData( $component, $templateData );
 
 			// Is target external?
-			$parsedUrl = wfParseUrl( $component->getHref() );
+			$parsedUrl = MediaWikiServices::getInstance()->getUrlUtils()->parse( $component->getHref() );
 			// MediaWiki global $wgExternalLinkTarget
 			$externalLinkTarget = $this->mainConfig->get( 'ExternalLinkTarget' );
 			if ( $parsedUrl && $externalLinkTarget ) {

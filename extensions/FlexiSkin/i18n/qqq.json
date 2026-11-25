@@ -99,5 +99,13 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Field label",
 	"flexiskin-ui-plugin-footer-colors-label": "Label for \"Footer_colors\"",
 	"flexiskin-ui-plugin-colors-background-footer-label": "Field label",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "Field label"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Field label",
+	"flexiskin-special-title": "Title of [[Special:FlexiSkin]]",
+	"flexiskin-ui-configurator-button-reset-label": "Label of the button that discards this wikis settings. The wiki then uses the main wikis styling on a galaxy sub wiki and the BlueSpice default styling everywhere else.\n{{Identical|Reset}}",
+	"flexiskin-ui-error-reset-fail": "Error shown when resetting the skin failed",
+	"flexiskin-configurator-prompt-on-reset": "Confirmation prompt shown before resetting to the BlueSpice default styling",
+	"flexiskin-configurator-prompt-on-reset-to-main-wiki": "Confirmation prompt shown on a galaxy sub wiki before resetting to the main wikis styling",
+	"flexiskin-ui-configurator-notice-inherited-styling": "Notice shown on a galaxy sub wiki that inherits its styling from the main wiki, while the main wiki has a styling of its own",
+	"flexiskin-ui-configurator-notice-inherited-styling-default": "Notice shown on a galaxy sub wiki that inherits its styling from the main wiki, while the main wiki itself is not styled",
+	"apihelp-flexiskin-reset-summary": "{{doc-apihelp-summary|flexiskin-reset}}"
 }

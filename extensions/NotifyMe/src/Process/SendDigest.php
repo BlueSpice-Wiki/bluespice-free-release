@@ -13,6 +13,8 @@ use Psr\Log\LoggerInterface;
 
 abstract class SendDigest implements IProcessStep {
 
+	private const LIMIT_PER_USER = 1000;
+
 	/**
 	 * @var NotificationStore
 	 */
@@ -53,10 +55,20 @@ abstract class SendDigest implements IProcessStep {
 			->forChannel( $emailChannel )
 			->pending()
 			->query( $rangeCondition );
+
+		$this->logger->info( 'Retrieved {count} pending notifications for digest', [
+			'count' => count( $notifications ),
+		] );
+
 		$perUser = [];
+		$skipUsers = [];
 		foreach ( $notifications as $notification ) {
 			$targetUser = $notification->getTargetUser();
+			if ( in_array( $targetUser->getId(), $skipUsers ) ) {
+				continue;
+			}
 			if ( $emailChannel->getFrequencyPreference( $targetUser ) !== $this->getTargetDigestPeriod() ) {
+				$skipUsers[] = $targetUser->getId();
 				continue;
 			}
 			if ( !isset( $perUser[$targetUser->getId()] ) ) {
@@ -64,6 +76,9 @@ abstract class SendDigest implements IProcessStep {
 					'user' => $targetUser,
 					'notifications' => [],
 				];
+			}
+			if ( count( $perUser[$targetUser->getId()]['notifications'] ) >= self::LIMIT_PER_USER ) {
+				continue;
 			}
 			$perUser[$targetUser->getId()]['notifications'][] = $notification;
 		}
@@ -77,6 +92,13 @@ abstract class SendDigest implements IProcessStep {
 					'user' => $item['user']->getName(),
 				] );
 				$success++;
+				if (
+					!$this->store->forUser( $item['user'] )->pending()->forChannel( 'email' )->markAsComplete()
+				) {
+					$this->logger->error( 'Failed to mark digest as complete for user {user}', [
+						'user' => $item['user']->getName(),
+					] );
+				}
 			} catch ( Exception $ex ) {
 				$this->logger->error( 'Cannot send digest (period: {period}) to user {user}: {error}', [
 					'period' => $this->getTargetDigestPeriod(),
@@ -84,6 +106,13 @@ abstract class SendDigest implements IProcessStep {
 					'error' => $ex->getMessage(),
 				] );
 				$fail++;
+				if (
+					!$this->store->forUser( $item['user'] )->pending()->forChannel( 'email' )->markAsFailed()
+				) {
+					$this->logger->error( 'Failed to mark digest as failed for user {user}', [
+						'user' => $item['user']->getName(),
+					] );
+				}
 			}
 		}
 		return [ 'status' => 'done', 'success' => $success, 'fail' => $fail, 'range' => $rangeCondition ];

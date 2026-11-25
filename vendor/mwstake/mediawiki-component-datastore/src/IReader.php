@@ -5,7 +5,6 @@ namespace MWStake\MediaWiki\Component\DataStore;
 interface IReader {
 
 	/**
-	 *
 	 * @param ReaderParams $params
 	 * @return ResultSet
 	 */

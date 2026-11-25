@@ -3,7 +3,7 @@
 namespace BlueSpice\InstanceStatus\InstanceStatusProvider;
 
 use BlueSpice\InstanceStatus\IApiStatusProvider;
-use Config;
+use MediaWiki\Config\Config;
 use ObjectCacheFactory;
 use Wikimedia\ObjectCache\MemcachedBagOStuff;
 

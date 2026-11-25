@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"visualeditorplus-desc": "Pridáva do vizuálneho editora rôzne funkcie",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Odstrániť tabuľku",
+	"visualeditorplus-table-contextitem-properties-label": "Vlastnosti tabuľky",
+	"visualeditorplus-table-contextitem-additional-options-label": "Ďalšie možnosti bunky",
+	"visualeditorplus-table-cell-actions-dialog-title": "Možnosti bunky",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Hotovo",
+	"visualeditorplus-ui-label-unwrap": "Odstrániť (ponechať obsah)",
+	"visualeditorplus-ui-label-delete": "Odstrániť"
+}

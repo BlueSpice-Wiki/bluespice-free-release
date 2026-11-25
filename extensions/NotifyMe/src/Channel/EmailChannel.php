@@ -133,13 +133,6 @@ class EmailChannel implements IExternalChannel {
 
 		$this->send( $mail, $user );
 		$this->mailContentProvider->clearImages();
-
-		/** @var Notification $notification */
-		foreach ( $notifications as $notification ) {
-			// Mark all notifications as delivered
-			$notification->getStatus()->markAsCompleted();
-			$this->store->persist( $notification );
-		}
 	}
 
 	/**

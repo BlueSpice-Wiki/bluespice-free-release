@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Hallo Welt! GmbH"
+		]
 	},
 	"mwstake-formengine-error-invalid-form": "Formulardefinition ist ungültig!",
 	"mwstake-formengine-form-loading-label": "Das Formular wird geladen...",

@@ -2,9 +2,9 @@
 
 namespace MWStake\MediaWiki\Component\InputProcessor\Processor;
 
-use Language;
+use MediaWiki\Language\Language;
+use MediaWiki\Title\NamespaceInfo;
 use MWStake\MediaWiki\Component\InputProcessor\GenericProcessor;
-use NamespaceInfo;
 use StatusValue;
 
 class NamespaceValue extends GenericProcessor {
@@ -80,8 +80,12 @@ class NamespaceValue extends GenericProcessor {
 		if ( !$parentStatus->isGood() ) {
 			return $parentStatus;
 		}
+
 		$finalNsId = null;
 		$valid = $this->namespaceInfo->getValidNamespaces();
+		if ( ( $value === null || $value === '' ) && $this->defaultValue !== null ) {
+			$value = $this->defaultValue;
+		}
 		if ( is_numeric( $value ) ) {
 			$ns = (int)$value;
 			if ( in_array( $ns, $valid ) ) {

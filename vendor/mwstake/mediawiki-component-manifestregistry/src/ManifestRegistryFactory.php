@@ -7,19 +7,16 @@ use MediaWiki\Registration\ExtensionRegistry;
 class ManifestRegistryFactory {
 
 	/**
-	 *
 	 * @var ExtensionRegistry
 	 */
 	private $extensionRegistry = null;
 
 	/**
-	 *
 	 * @var array
 	 */
 	private $overrides = [];
 
 	/**
-	 *
 	 * @param ExtensionRegistry $extensionRegistry
 	 * @param array $overrides
 	 */
@@ -29,7 +26,6 @@ class ManifestRegistryFactory {
 	}
 
 	/**
-	 *
 	 * @param string $manifestAttributeKey
 	 * @return IRegistry
 	 */

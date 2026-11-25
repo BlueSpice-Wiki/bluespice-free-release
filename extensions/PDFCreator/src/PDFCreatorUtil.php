@@ -30,7 +30,6 @@ class PDFCreatorUtil {
 	private $templateProviderFactory;
 
 	/**
-	 *
 	 * @param TitleFactory $titleFactory
 	 */
 	public function __construct( TitleFactory $titleFactory, TemplateProviderFactory $templateProviderFactory ) {
@@ -39,7 +38,6 @@ class PDFCreatorUtil {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getAllWikiTemplates() {
@@ -74,7 +72,6 @@ class PDFCreatorUtil {
 	}
 
 	/**
-	 *
 	 * @param Title $title
 	 * @return bool
 	 */
@@ -94,7 +91,6 @@ class PDFCreatorUtil {
 	}
 
 	/**
-	 *
 	 * @param string $pageName
 	 * @return Title
 	 */
@@ -111,7 +107,6 @@ class PDFCreatorUtil {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function buildTabPanelSkeleton() {

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Metalhead64",
+			"Mschlindwein",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
@@ -32,5 +33,6 @@
 	"apihelp-bs-interwikilinks-tasks-summary": "Stellt die Aufgaben für die Erweiterung „InterWikiLinks“ bereit.",
 	"action-interwikilinks-viewspecialpage": "die Spezialseite „{{int:bs-interwikilinks-label}}“ anzusehen",
 	"interwikilinks": "Interwikilinks",
-	"right-interwikilinks-viewspecialpage": "Zugriff auf die Spezialseite [[Special:InterWikiLinks]]"
+	"right-interwikilinks-viewspecialpage": "Zugriff auf die Spezialseite [[Special:InterWikiLinks]]",
+	"bs-interwikilinks-url-validate-fail": "Die URL konnte nicht validiert werden."
 }

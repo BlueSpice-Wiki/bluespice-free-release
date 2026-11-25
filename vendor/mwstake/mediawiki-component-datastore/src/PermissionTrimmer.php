@@ -17,7 +17,6 @@ class PermissionTrimmer extends LimitContinueTrimmer {
 	private int $total = 0;
 
 	/**
-	 *
 	 * @param TitleFactory $titleFactory
 	 * @param PermissionManager $permissionManager
 	 * @param User $user
@@ -37,7 +36,6 @@ class PermissionTrimmer extends LimitContinueTrimmer {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\Record[] $dataSets
 	 * @return \MWStake\MediaWiki\Component\DataStore\Record[]
 	 */

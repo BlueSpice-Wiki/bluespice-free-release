@@ -148,6 +148,10 @@ class EnhancedSidebarContainer extends Container implements LoggerAwareInterface
 		}
 
 		$revision = $this->revisionStore->getRevisionByTitle( $this->title );
+		if ( $revision === null ) {
+			return [];
+		}
+
 		$parser = new EnhancedSidebarParser(
 			$revision,
 			$this->parserFactory->getNodeProcessors(),

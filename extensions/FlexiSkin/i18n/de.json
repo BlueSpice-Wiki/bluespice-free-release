@@ -103,5 +103,13 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Hervorhebung der Seitenleiste",
 	"flexiskin-ui-plugin-footer-colors-label": "Farben für die Fußzeile",
 	"flexiskin-ui-plugin-colors-background-footer-label": "Hintergrund der Fußzeile",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "Vordergrund der Fußzeile"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Vordergrund der Fußzeile",
+	"flexiskin-special-title": "Oberflächenverwaltung",
+	"flexiskin-ui-configurator-button-reset-label": "Zurücksetzen",
+	"flexiskin-ui-error-reset-fail": "Das Zurücksetzen des Skins ist fehlgeschlagen",
+	"flexiskin-configurator-prompt-on-reset": "Alle Einstellungen dieses Wikis werden verworfen und stattdessen wird das BlueSpice-Standarddesign angewendet. Dies betrifft alle Benutzer dieses Wikis und kann nicht rückgängig gemacht werden. {{#FORMAL:Möchtest du|Möchten Sie}} fortfahren?",
+	"flexiskin-configurator-prompt-on-reset-to-main-wiki": "Alle Einstellungen dieses Wikis werden verworfen und stattdessen wird das Design des Hauptwikis übernommen. Dies betrifft alle Benutzer dieses Wikis und kann nicht rückgängig gemacht werden. {{#FORMAL:Möchtest du|Möchten Sie}} fortfahren?",
+	"flexiskin-ui-configurator-notice-inherited-styling": "Dieses Wiki übernimmt das Design vom Haupt-Wiki. Alle Einstellungen, die {{#FORMAL:du|Sie}} hier nicht {{#FORMAL:anpasst|anpassen}}, richten sich weiterhin nach dem Haupt-Wiki.",
+	"flexiskin-ui-configurator-notice-inherited-styling-default": "Dieses Wiki übernimmt das Design vom Haupt-Wiki. Das Haupt-Wiki verwendet derzeit das BlueSpice-Standarddesign, sodass alle Einstellungen, die {{#FORMAL:du|Sie}} hier nicht individuell {{#FORMAL:anpasst|anpassen}}, diesem Design folgen.",
+	"apihelp-flexiskin-reset-summary": "Das Reset-Modul"
 }

@@ -57,12 +57,21 @@ class Wiki implements ITemplateProvider {
 	 * @return Template|null
 	 */
 	public function getTemplate( ExportContext $context, string $name = '' ): ?Template {
-		$template = null;
+		$allTemplateNames = $this->getTemplateNames();
+		if ( count( $allTemplateNames ) === 0 ) {
+			return null;
+		}
+		if ( !in_array( $name, $allTemplateNames ) ) {
+			$name = $allTemplateNames[0];
+		}
 
 		$templateTitle = $this->util->createPDFTemplateTitle( $name );
 		$revId = $templateTitle->getLatestRevID();
 
 		$revision = $this->revisionLookup->getRevisionByTitle( $templateTitle, $revId );
+		if ( $revision === null ) {
+			return null;
+		}
 		$this->templateContent = [];
 		foreach ( $this->util->slots as $slot ) {
 			$content = $revision->getContent( $this->util->templatePrefix . $slot );

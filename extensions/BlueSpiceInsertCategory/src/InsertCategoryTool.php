@@ -179,7 +179,9 @@ class InsertCategoryTool extends Literal {
 		}
 
 		$categories = $context->getSkin()->getOutput()->getCategories( $categoryRequestType );
-		return $categories;
+
+		// Tracking categories are technical markers, they must not be shown in the page footer
+		return $this->services->getService( 'BSTrackingCategoryHelper' )->filterOut( $categories );
 	}
 
 	/**

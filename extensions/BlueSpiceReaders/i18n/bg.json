@@ -6,5 +6,6 @@
 	},
 	"bs-readers-header-username": "Потребителско име",
 	"bs-readers-header-ts": "Дата",
-	"bs-readers-header-page": "Страница"
+	"bs-readers-header-page": "Страница",
+	"bs-readers-permission-error": "Грешка в правата за достъп"
 }

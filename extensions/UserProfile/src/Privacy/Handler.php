@@ -13,7 +13,6 @@ use Wikimedia\Rdbms\IDatabase;
 
 class Handler implements IPrivacyHandler {
 	/**
-	 *
 	 * @var User
 	 */
 	protected $user;
@@ -22,13 +21,11 @@ class Handler implements IPrivacyHandler {
 	private $profileManager;
 
 	/**
-	 *
 	 * @var UserFactory
 	 */
 	private $userFactory;
 
 	/**
-	 *
 	 * @param IDatabase $db
 	 */
 	public function __construct( IDatabase $db ) {
@@ -37,7 +34,6 @@ class Handler implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param string $oldUsername
 	 * @param string $newUsername
 	 * @return Status
@@ -47,7 +43,9 @@ class Handler implements IPrivacyHandler {
 		$this->user = $this->userFactory->newFromName( $newUsername );
 		try {
 			$this->profileManager->setProfileData(
-				[], $this->user, User::newSystemUser( 'MediaWiki default', [ 'steal' => true ] )
+				[],
+				$this->user,
+				User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] )
 			);
 		} catch ( \Throwable $ex ) {
 			return Status::newFatal( $ex->getMessage() );
@@ -57,7 +55,6 @@ class Handler implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param User $userToDelete
 	 * @param User $deletedUser
 	 * @return Status
@@ -68,7 +65,6 @@ class Handler implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param array $types
 	 * @param string $format
 	 * @param User $user
@@ -76,12 +72,13 @@ class Handler implements IPrivacyHandler {
 	 */
 	public function exportData( array $types, $format, User $user ) {
 		$fields = $this->profileManager->getFieldRegistry()->getSerializedFields(
-			$user, User::newSystemUser( 'MediaWiki default', [ 'steal' => true ] ),
+			$user,
+			User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] ),
 			RequestContext::getMain()->getLanguage()
 		);
 		$data = $this->profileManager->getProfileData(
 			$user,
-			User::newSystemUser( 'MediaWiki default', [ 'steal' => true ] )
+			User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] )
 		);
 		$finalData = [];
 		foreach ( $fields as $key => $value ) {

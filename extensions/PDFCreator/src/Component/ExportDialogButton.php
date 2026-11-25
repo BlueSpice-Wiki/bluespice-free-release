@@ -35,7 +35,6 @@ class ExportDialogButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function shouldRender( IContextSource $context ): bool {
@@ -57,7 +56,6 @@ class ExportDialogButton extends SimpleLink {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getRequiredRLModules(): array {

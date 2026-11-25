@@ -7,7 +7,7 @@ function getSpecifications() {
 		const definitions = [];
 		for ( const fullData of data ) {
 			const spec = fullData.clientSpecification;
-			if ( !spec ) {
+			if ( !spec || Object.keys( spec ).length === 0 ) {
 				continue;
 			}
 			for ( let i = 0; i < fullData.tags.length; i++ ) {

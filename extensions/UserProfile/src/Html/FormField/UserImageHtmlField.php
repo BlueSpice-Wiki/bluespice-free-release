@@ -11,7 +11,6 @@ use OOUI\Widget;
 
 class UserImageHtmlField extends HTMLFormField {
 	/**
-	 *
 	 * @param string $value
 	 * @return string
 	 */

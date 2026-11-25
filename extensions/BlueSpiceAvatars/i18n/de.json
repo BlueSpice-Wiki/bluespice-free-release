@@ -26,5 +26,7 @@
 	"bs-avatars-upload-button": "Hochladen",
 	"bs-avatars-generate-button": "Generieren",
 	"bs-avatars-generic-cancel": "Abbrechen",
-	"bs-avatars-generate-description": "Erstelle einen neuen automatischen Avatar. Dieser ersetzt dauerhaft jedes hochgeladene Profilbild (falls festgelegt)"
+	"bs-avatars-generate-description": "Erstelle einen neuen automatischen Avatar. Dieser ersetzt dauerhaft jedes hochgeladene Profilbild (falls festgelegt)",
+	"bs-avatars-upload-unsupported-type": "Dieser Dateityp wird nicht unterstützt.",
+	"bs-avatars-upload-tempfile-missing": "Die temporäre Datei konnte nicht abgerufen werden"
 }

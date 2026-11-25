@@ -93,5 +93,6 @@
 	"pdfcreator-template-edit-dlg-title-create": "PDF-Schabloun uleeën",
 	"pdfcreator-template-edit-dlg-general-page-heading-edit": "PDF-Schabloun änneren",
 	"pdfcreator-global-action-overview": "PDF-Schablounen",
-	"pdfcreator-export-action-text": "Als PDF exportéieren"
+	"pdfcreator-export-action-text": "Als PDF exportéieren",
+	"pdfcreator-desc": "PDF-Fichieren op Basis vu Wikisäiten uleeën"
 }

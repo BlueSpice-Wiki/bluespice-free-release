@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bachounda"
+		]
+	},
+	"bs-articleinfo-desc": "يوفر معلومات عن صفحة في شريط الحالة",
+	"prefs-articleinfo": "معلومات أساسيه",
+	"bs-articleinfo-newrevision-info-text-reload": "كاين نسخة جديدة من هاد الصفحة. من فضلك [[:$1|أعاود التحميل]] باش تشوف المحتوى الحالي."
+}

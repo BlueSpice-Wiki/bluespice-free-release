@@ -32,5 +32,6 @@
 	"bs-countthings-droplet-characters-description": "Weist d'Zuel vun den Zeechen oder Wierder op enger Wikisäit",
 	"bs-countthings-droplet-files-name": "Zuel vun de Fichieren",
 	"bs-countthings-droplet-user-name": "Zuel vun de Benotzer",
-	"bs-countthings-droplet-user-description": "Weist d'Zuel vun alle Benotzer"
+	"bs-countthings-droplet-user-description": "Weist d'Zuel vun alle Benotzer",
+	"bs-countthings-error-invalid-mode": "De Modus „$1“ ass ongülteg. Benotzt wgl. „chars“, „words“ oder „pages“."
 }

@@ -3,6 +3,7 @@
 		"authors": [
 			"Chrumps",
 			"Msz2001",
+			"PanWor",
 			"Rail",
 			"Railfail536",
 			"WaldiSt"
@@ -10,8 +11,8 @@
 	},
 	"bs-pageassignments-api-error": "Wystąpił błąd",
 	"bs-pageassignments-api-error-no-page": "Nie określono strony",
-	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|przypisał|przypisała}} stronę „$3” do {{GENDER:$4|użytkownika|użytkowniczki}} „$4”",
-	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|usunął|usunęła}} przypisanie strony „$3” do {{GENDER:$4|użytkownika|użytkowniczki}} „$4”",
+	"logentry-bs-pageassignments-add-user": "$1 {{GENDER:$2|przypisał|przypisała|przypisał(a)}} stronę „$3” do {{GENDER:$4|użytkownika|użytkowniczki}} „$4”",
+	"logentry-bs-pageassignments-remove-user": "$1 {{GENDER:$2|usunął|usunęła|usunął(-ęła)}} przypisanie strony „$3” do {{GENDER:$4|użytkownika|użytkowniczki}} „$4”",
 	"bs-pageassignments-notification-reason": "Powody tego powiadomienia:",
 	"bs-pageassignments-notification-reason-group": "Należysz do {{PLURAL:$1|tej grupy|tych grup}}: $2",
 	"bs-pageassignments-assignee-special-everyone-label": "Wszyscy",
@@ -22,5 +23,9 @@
 	"bs-pageassignments-collection-var-assignedpages": "Przypisane strony",
 	"bs-pageassignments-collection-var-unassignedpages": "Nieprzypisane strony",
 	"bs-pageassignments-statistics-report-assigned-pages-axis-label": "Liczba stron",
-	"bs-pageassignments-notification-pagereview-body": "$1 ocenił stronę $2 ."
+	"bs-pageassignments-notification-pagereview-body": "$1 ocenił stronę $2 .",
+	"logentry-bs-pageassignments-add-group": "$1 {{GENDER:$2|przypisał|przypisała|przypisał(a)}} grupę „$4” do strony „$3”",
+	"logentry-bs-pageassignments-remove-group": "$1 {{GENDER:$2|usunął|usunęła|usunął(-ęła)}} przypisanie grupy „$4” do strony „$3”",
+	"logentry-bs-pageassignments-add-specialeveryone": "$1 {{GENDER:$2|przypisał|przypisała|przypisał(a)}} stronę „$3” do grupy „wszyscy”",
+	"logentry-bs-pageassignments-remove-specialeveryone": "$1 {{GENDER:$2|usunął|usunęła|usunął(-ęła)}} przypisanie grupy „wszyscy” do strony „$3”"
 }

@@ -193,5 +193,10 @@
 	"bs-discovery-footer-places-alt-text-semanticmediawiki": "Desenvolvido por Semantic MediaWiki",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Editar",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Limpar",
-	"bs-discovery-breadcrumb-nav-root-node-title": "Mostrar todas as páginas no espaço nominal $1"
+	"bs-discovery-breadcrumb-nav-root-node-title": "Mostrar todas as páginas no espaço nominal $1",
+	"bs-discovery-personalurl-blog-text": "Blog",
+	"bs-discovery-menu-provider-namespace-tree-label": "Todas as páginas",
+	"bs-discovery-namespace-tree-pnl-header-text": "Páginas",
+	"bs-discovery-namespace-tree-create-btn-label": "Criar uma nova página",
+	"bs-discovery-namespace-tree-search-btn-label": "Mostrar pesquisa"
 }

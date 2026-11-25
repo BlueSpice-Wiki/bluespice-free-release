@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-authors-desc": "Zobrazuje profilový obrázok autorov stránky",
+	"prefs-authors": "Autori tejto stránky",
+	"bs-authors-title": "{{PLURAL:$1|{{GENDER:$2|Autor|Autorka}}|Autori}}",
+	"bs-authors-profileimage": "Profilový obrázok",
+	"bs-authors-profileimage-change": "Zmeniť profilový obrázok",
+	"bs-authors-show-all-authors": "K dispozícii sú ďalší autori",
+	"bs-authors-navigation-link-title": "Autori tejto stránky",
+	"bs-authors-navigation-link-text": "Autori",
+	"apihelp-bs-pageauthors-store-summary": "Zoznam všetkých autorov stránky zadanej v kontexte",
+	"bs-authors-info-dialog": "Autori tejto stránky",
+	"bs-authors-info-dialog-grid-column-author": "Autor",
+	"bs-authors-info-dialog-grid-column-type": "Typ autora"
+}

@@ -1,6 +1,6 @@
 {
 	"name": "UserProfile",
-	"version": "1.2.6",
+	"version": "1.2.8",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
@@ -204,7 +204,7 @@
 		},
 		"addTag": {
 			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\AddTag",
-			"services": [ "UserFactory", "UserProfile.FieldRegistry" ]
+			"services": [ "UserFactory", "UserProfile.FieldRegistry", "LanguageFactory" ]
 		},
 		"handleExternalProfileData": {
 			"class": "MediaWiki\\Extension\\UserProfile\\Hooks\\HandleExternalProfileData",

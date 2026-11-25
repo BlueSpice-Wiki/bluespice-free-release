@@ -1,6 +1,6 @@
 {
 	"name": "OOJSPlus",
-	"version": "3.2.6",
+	"version": "3.2.8",
 	"license-name": "GPL-3.0-only",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
@@ -287,7 +287,11 @@
 				"oojsplus-data-grid-toolbar-show-widgets-label",
 				"oojsplus-data-grid-toolbar-page-size-25",
 				"oojsplus-data-grid-toolbar-page-size-50",
-				"oojsplus-data-grid-toolbar-page-size-100"
+				"oojsplus-data-grid-toolbar-page-size-100",
+				"oojsplus-data-grid-toolbar-page-size-custom",
+				"oojsplus-data-tree-item-more-actions-title",
+				"oojsplus-data-tree-item-more-actions-label",
+				"oojsplus-data-gridwidget-header-checkbox-title"
 			]
 		},
 		"ext.oOJSPlus.icons": {

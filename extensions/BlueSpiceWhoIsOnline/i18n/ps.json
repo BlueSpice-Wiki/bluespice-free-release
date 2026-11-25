@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-whoisonline-desc": "د هغه کارنانو نوملړ ښيي چې وسمهال پرليکه دي",
+	"bs-whoisonline-nousers": "هېڅوک ننوتلی نه دی.",
+	"bs-whoisonline-widget-title": "څوک پرليکه دی؟",
+	"prefs-whoisonline": "څوک پرليکه دی؟",
+	"bs-whoisonline-pref-limitcount": "د ښودل‌شويو کارنانو ډېرشمېر:",
+	"bs-whoisonline-pref-orderby": "اوډون ډول:",
+	"bs-whoisonline-pref-maxidletime-label": "د بې‌ليکې کېدو پای‌وخت (ثانيې)",
+	"bs-whoisonline-pref-orderby-time": "کاروخت",
+	"bs-whoisonline-pref-orderby-name": "نوم",
+	"bs-whoisonline-collection-type-userlogin": "کارن ننوتل",
+	"bs-whoisonline-collection-var-login": "ننوتل",
+	"bs-whoisonline-statistics-report-login-duration": "ننوتلو موده",
+	"bs-whoisonline-statistics-report-login-duration-axis-value": "ننوتلو موده (ثانيې)",
+	"bs-whoisonline-ve-whoisonlinecountinspector-title": "څوک پرليکه دي شمېرل",
+	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "څوک پرليکه دي بړبوکيزه",
+	"bs-whoisonline-statistics-report-login-number-axis-value": "د ننوتلو شمېر",
+	"bs-whoisonline-statistics-report-login-number": "ننوتنې",
+	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "تړوني ليک"
+}

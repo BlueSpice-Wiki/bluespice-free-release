@@ -10,19 +10,16 @@ use PageHeader\PageInfoSentence\IType;
 class PageInfoSentenceTypeFactory {
 
 	/**
-	 *
 	 * @var IRegistry
 	 */
 	private $registry = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	private $config = null;
 
 	/**
-	 *
 	 * @param IRegistry $registry
 	 * @param Config $config
 	 */
@@ -32,7 +29,6 @@ class PageInfoSentenceTypeFactory {
 	}
 
 	/**
-	 *
 	 * @param string $key
 	 * @param IContextSource $context
 	 * @return IType

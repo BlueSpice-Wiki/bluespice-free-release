@@ -3,8 +3,8 @@
 namespace BlueSpice\Discovery\Rest;
 
 use BlueSpice\Discovery\AttentionIndicatorFactory;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Rest\SimpleHandler;
-use RequestContext;
 use Wikimedia\ParamValidator\ParamValidator;
 
 class AttentionIndicatorHandler extends SimpleHandler {

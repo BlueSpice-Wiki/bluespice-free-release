@@ -11,7 +11,6 @@ class Schema extends ArrayObject {
 	public const IS_BUCKET = 'is_bucket';
 
 	/**
-	 *
 	 * @param mixed $key
 	 * @param mixed $value
 	 * @return array
@@ -22,7 +21,6 @@ class Schema extends ArrayObject {
 	}
 
 	/**
-	 *
 	 * @param mixed $key
 	 * @param mixed $value
 	 * @return array

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"filterspecialpages-desc": "Vkladá pole na filtrovanie položiek na stránke [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages].",
+	"filterspecialpages-hint-label": "Nájsť stránku"
+}

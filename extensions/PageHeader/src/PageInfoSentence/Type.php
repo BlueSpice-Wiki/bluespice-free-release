@@ -13,13 +13,11 @@ abstract class Type implements IType {
 	protected $context = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 */
@@ -29,7 +27,6 @@ abstract class Type implements IType {
 	}
 
 	/**
-	 *
 	 * @param IContextSource $context
 	 * @param Config $config
 	 * @return IType

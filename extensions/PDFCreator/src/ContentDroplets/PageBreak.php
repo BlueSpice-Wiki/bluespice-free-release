@@ -43,7 +43,6 @@ class PageBreak extends TagDroplet {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	protected function getTagName(): string {

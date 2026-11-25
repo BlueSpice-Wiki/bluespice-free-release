@@ -4,3 +4,7 @@ mw.ext.forms.widget.view.MessageView = function ( cfg ) {
 };
 
 OO.inheritClass( mw.ext.forms.widget.view.MessageView, OO.ui.MessageWidget );
+
+mw.ext.forms.widget.view.MessageView.prototype.setValue = function ( value ) {
+	this.setLabel( value );
+};

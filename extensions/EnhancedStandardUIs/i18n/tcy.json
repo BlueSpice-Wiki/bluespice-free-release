@@ -3,10 +3,12 @@
 		"authors": [
 			"ChiK",
 			"Mahaveer Indra",
-			"Pragathi. BH"
+			"Pragathi. BH",
+			"Vishwanatha Badikana"
 		]
 	},
 	"enhanced-standard-uis-history-grid-header-summary-label": "ಸಾರಾಂಸೊ",
 	"enhanced-standard-uis-filter-results-label": "$1ದಾತ್ {{PLURAL:$1|result|ನಾಡಿನ ಫಲಿತಾಂಸೊ}}ಲು",
-	"enhanced-standard-uis-allpages-redirect-label": "$1 (ಮರುನಿರ್ದೇಶನ)"
+	"enhanced-standard-uis-allpages-redirect-label": "$1 (ಮರುನಿರ್ದೇಶನ)",
+	"enhanced-standard-uis-watchlist-no-results": "ನಿಕ್ಲೆನ ಸರ್ಚ್‌ಗ್ ಸರಿ ಆಪುನ ಒವ್ವೆ ವಿಸಯೊಲಾ ಇದ್ದಿ."
 }

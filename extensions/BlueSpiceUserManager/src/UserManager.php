@@ -106,9 +106,11 @@ class UserManager implements LoggerAwareInterface {
 		$this->assertActorCan( 'add', $user, $actor );
 		$data = $this->getValidatedData( $params, [ 'password' ] );
 
-		if ( !$user->isValidPassword( $data['password'] ) ) {
-			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-pwd' );
-		}
+		$this->verifyPassword(
+			$user,
+			$data['password'] ?? '',
+			$data['repassword'] ?? ''
+		);
 
 		$usernameReq = new UsernameAuthenticationRequest();
 		$usernameReq->username = $user->getName();
@@ -130,7 +132,7 @@ class UserManager implements LoggerAwareInterface {
 		], '' );
 
 		if ( $authResponse->status !== $authResponse::PASS ) {
-			$this->throw( RuntimeException::class, $authResponse->message->text() );
+			$this->throw( RuntimeException::class, $authResponse->message->parse() );
 		}
 
 		// Reload user
@@ -303,23 +305,7 @@ class UserManager implements LoggerAwareInterface {
 		}
 
 		$password = $params['password'] ?? '';
-		if ( empty( $params['password'] ) ) {
-			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-pwd' );
-		}
-		if ( empty( $params['repassword'] ) ) {
-			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-pwd' );
-		}
-
-		if ( !$user->isValidPassword( $password ) ) {
-			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-pwd' );
-		}
-		if ( mb_strtolower( $user->getName() ) === mb_strtolower( $password ) ) {
-			$this->throw( InvalidArgumentException::class, 'password-name-match' );
-		}
-		$rePassword = $params['repassword'];
-		if ( empty( $rePassword ) || $password !== $rePassword ) {
-			$this->throw( InvalidArgumentException::class, 'badretype' );
-		}
+		$this->verifyPassword( $user, $password, $params['repassword'] ?? '' );
 
 		$changeStatus = $user->changeAuthenticationData( [
 			'password' => $password,
@@ -371,6 +357,7 @@ class UserManager implements LoggerAwareInterface {
 		$permissions = [
 			'add' => [ 'wikiadmin' ],
 			'edit' => [ 'wikiadmin' ],
+			'block' => [ 'wikiadmin' ],
 			'setGroups' => [ 'userrights' ],
 			'editPassword' => [ 'userrights', 'usermanager-editpassword' ],
 		];
@@ -421,8 +408,10 @@ class UserManager implements LoggerAwareInterface {
 	 * @param User $user
 	 * @param Authority $actor
 	 * @return void
+	 * @throws PermissionsError
 	 */
 	public function unblockUser( DatabaseBlock $block, User $user, Authority $actor ) {
+		$this->assertActorCan( 'block', $user, $actor );
 		$reason = '';
 		if ( !$this->hookContainer->run( 'UnblockUser', [ $block, $actor->getUser(), &$reason ] ) ) {
 			$this->logger->warning( 'Unblocking user failed due to UnblockUser hook', [
@@ -449,8 +438,10 @@ class UserManager implements LoggerAwareInterface {
 	 * @param User $user
 	 * @param Authority $actor
 	 * @return void
+	 * @throws PermissionsError
 	 */
 	public function blockUser( User $user, Authority $actor ) {
+		$this->assertActorCan( 'block', $user, $actor );
 		if ( $user->getId() == $actor->getUser()->getId() ) {
 			$this->throw( RuntimeException::class, 'bs-usermanager-no-self-block' );
 		}
@@ -516,16 +507,20 @@ class UserManager implements LoggerAwareInterface {
 
 	/**
 	 * @param StatusValue $status
+	 * @param string $exceptionClass
 	 */
-	private function throwFromStatus( StatusValue $status ) {
+	private function throwFromStatus(
+		StatusValue $status,
+		string $exceptionClass = RuntimeException::class
+	) {
 		$messages = [];
 		foreach ( $status->getMessages() as $specifier ) {
-			$messages[] = Message::newFromSpecifier( $specifier );
+			$messages[] = Message::newFromSpecifier( $specifier )->parse();
 		}
 		$this->logger->error( 'Hook failure', [
 			'messages' => $messages
 		] );
-		throw new RuntimeException( implode( ", ", $messages ) );
+		throw new $exceptionClass( implode( " ", $messages ) );
 	}
 
 	/**
@@ -543,5 +538,28 @@ class UserManager implements LoggerAwareInterface {
 			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-realname' );
 		}
 		return $realName;
+	}
+
+	/**
+	 * @param User $user
+	 * @param string $password
+	 * @param string $rePassword
+	 * @return void
+	 */
+	private function verifyPassword( User $user, string $password, string $rePassword ): void {
+		if ( empty( $password ) ) {
+			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-pwd-empty' );
+		}
+		if ( empty( $rePassword ) || $password !== $rePassword ) {
+			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-pwd-repass' );
+		}
+		if ( str_contains( mb_strtolower( $password ), mb_strtolower( $user->getName() ) ) ) {
+			$this->throw( InvalidArgumentException::class, 'bs-usermanager-invalid-pwd-username-match' );
+		}
+
+		$validity = $user->checkPasswordValidity( $password );
+		if ( !$validity->isGood() ) {
+			$this->throwFromStatus( $validity, InvalidArgumentException::class );
+		}
 	}
 }

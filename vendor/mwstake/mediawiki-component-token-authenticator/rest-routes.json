@@ -10,7 +10,7 @@
 		"path": "/mws/v1/app-token/generate",
 		"class": "MWStake\\MediaWiki\\Component\\TokenAuthenticator\\Rest\\GenerateAppTokenHandler",
 		"services": [
-			"MWStake.TokenAuthenticator.AppAuthenticator", "MWStake.TokenAuthenticator._CIDRValidator"
+			"MWStake.TokenAuthenticator.AppAuthenticator"
 		]
 	},
 	{

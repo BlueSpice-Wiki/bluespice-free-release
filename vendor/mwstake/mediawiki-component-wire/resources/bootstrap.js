@@ -47,7 +47,7 @@ mws.wire = {
 		mw.loader.using( 'mediawiki.user' ).then( async () => {
 			try {
 				const token = await mws.tokenAuthenticator.generateToken( true );
-				mws.wire.socket = new WebSocket( mws.wire._url + '?token=' + encodeURIComponent( token ) ); // eslint-disable-line n/no-unsupported-features/node-builtins
+				mws.wire.socket = new WebSocket( mws.wire._url + '?token=' + encodeURIComponent( token ) );
 				mws.wire._initialiting = false;
 				mws.wire._connectionTimer = setTimeout( () => {
 					mws.wire.socket.close();
@@ -65,7 +65,7 @@ mws.wire = {
 						try {
 							callback( wireMessage.payload );
 						} catch ( e ) {
-							console.error( 'Error in wire message callback for channel:', channel, e );
+							console.error( 'Error in wire message callback for channel:', channel, e ); // eslint-disable-line no-console
 						}
 					}
 				};
@@ -74,7 +74,7 @@ mws.wire = {
 					mws.wire._reconnect();
 				};
 			} catch ( e ) {
-				console.error( 'Error during wire connection initialization', e );
+				console.error( 'Error during wire connection initialization', e ); // eslint-disable-line no-console
 			}
 		} );
 	},

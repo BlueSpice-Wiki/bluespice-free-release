@@ -12,5 +12,7 @@
 	"notifyme-ui-subscriptionset-editor-category-label": "Kategorija",
 	"notifyme-ui-subscriptionset-category-label": "Kategorija",
 	"notifyme-sample-data-link-1": "Ogled razlike",
-	"notifyme-notification-center-filter-label-categories-none": "Ni kategorij"
+	"notifyme-notification-center-filter-label-categories-none": "Ni kategorij",
+	"notifyme-notification-tester-field-event": "Dogodek",
+	"notifyme-ui-dialog-popup-table-event-label": "Dogodek"
 }

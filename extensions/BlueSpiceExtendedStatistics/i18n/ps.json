@@ -1,7 +1,45 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"شاه زمان پټان"
 		]
-	}
+	},
+	"action-extendedstatistics-viewspecialpage-aggregated": "[[Special:AggregatedStatistic]] ځانگړي مخ ته لاسرسی ومومئ",
+	"right-extendedstatistics-viewspecialpage-aggregated": "[[Special:AggregatedStatistic]] ځانگړي مخ ته لاسرسی ومومئ",
+	"bs-statistics-button-label-apply": "چاڼگر پلي‌کول",
+	"bs-statistics-label-bar-chart": "ولاړ چارت",
+	"bs-statistics-label-line-chart": "کرښې چارت",
+	"bs-statistics-datasource-label": "اومتوک سرچینه",
+	"bs-statistics-aggregationmode-label": "راټولېدنې ونگ‌ډول",
+	"bs-statistics-aggregationfield-label": "راټولېدنې ډگر",
+	"bs-statistics-aggregationtype-label": "راټولېدنې ډول",
+	"bs-statistics-targets-label": "موخې",
+	"bs-statistics-paging-page-size": "مخ کچه",
+	"apihelp-query+statistics-reports-summary": "د بېلابېلو شمارنو ډولونو لپاره د شمارنې راپورونه چمتو کوي",
+	"apihelp-query+statistics-reports-param-type": "د شمارنې ډول (راپور کونجي)",
+	"bs-statistics-aggregated-report-picker-label": "راپور ډول",
+	"bs-statistics-desc": "بلوسپايس لپاره د شمارنې چلنوال",
+	"aggregatedstatistic": "د سملاسي‌انځور شمارنې",
+	"extendedstatisticssnapshots": "سملاسي‌انځورونه",
+	"apihelp-query+statistics-reports-example": "د \"mytype\" ډول لپاره د ۲۰۱۹-۰۹-۱۴ او ۲۰۲۱-۰۹-۱۵ پورې ټول راپورنه چمتو کړئ",
+	"apihelp-query+statistics-reports-param-filter": "د جی‌او‌اېس‌اېن کوډ شو چاڼ اومتوکي",
+	"apihelp-query+statistics-reports-param-aggregate": "ايا شمارنې راټولې شي؟",
+	"bs-statistics-aggregated-report-no-date": "اوسنۍ چاڼ ټولگه کې  هېڅ اومتوکي نشته. مهرباني وکړئ د چاڼ ارزښتونه بدل کړئ.",
+	"bs-statistics-aggregated-report-filter-category-multi": "وېشنيزې",
+	"bs-statistics-aggregated-report-filter-date-start": "پيل نېټه",
+	"bs-statistics-aggregated-report-filter-date-end": "پای نېټه",
+	"bs-statistics-aggregated-report-filter-interval": "ځنډ",
+	"bs-statistics-aggregated-report-filter-interval-day": "ورځ",
+	"bs-statistics-aggregated-report-filter-interval-week": "اوونۍ",
+	"bs-statistics-aggregated-report-filter-interval-month": "مياشت",
+	"bs-statistics-aggregated-report-filter-interval-year": "کال",
+	"bs-statistics-aggregated-report-filter-namespace": "نوم‌تشيال",
+	"bs-statistics-aggregated-report-filter-namespaces": "نوم‌تشيالونه",
+	"bs-statistics-aggregated-report-filter-page": "مخ",
+	"bs-statistics-aggregated-report-filter-user": "کارن",
+	"bs-statistics-aggregated-report-filter-user-multi": "کارنان",
+	"bs-statistics-aggregated-filter-category-namespace-notice": "د وېشنيزو يا نوم‌تشيالونو له مخې چاڼول",
+	"bs-statistics-aggregated-report-error": "یوه تېروتنه رامنځته شوې!",
+	"bs-statistics-aggregated-report-loading": "اومتوک بارېږې...",
+	"bs-statistics-pref-excludeusers-help": "ځينې کارنان، د بېلگې په ډول هغه چې د پازوالۍ رښتې لري، کولی شي د ځانگړي:غځول‌شوې‌شمارنې کې شمارنې گډوډې کړي.  دوی د شمارنو د پايلو څخه ايستل کېدی شي."
 }

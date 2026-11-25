@@ -203,5 +203,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "Pages",
 	"bs-discovery-namespace-tree-search-btn-label": "Show search",
 	"bs-discovery-namespace-tree-create-btn-label": "Create a new page",
-	"bs-discovery-namespace-tree-search-label": "Search for a page"
+	"bs-discovery-namespace-tree-search-label": "Search for a page",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "Use caching for \"Enhanced Mediawiki sidebar\"",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "Caching improves sidebar performance. Context variables are not available when caching is enabled. Disable caching to use context variables."
 }

@@ -55,7 +55,6 @@ class UserProfileImage extends DefaultImageModule {
 	}
 
 	/**
-	 *
 	 * @param array $params
 	 * @return IDynamicFile|null
 	 */

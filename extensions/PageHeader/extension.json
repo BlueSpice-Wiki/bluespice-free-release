@@ -1,9 +1,9 @@
 {
 	"name": "PageHeader",
-	"version": "3.0.13",
+	"version": "3.0.15",
 	"license-name": "GPL-3.0-only",
 	"author": [
-		"[http://www.hallowelt.com Hallo Welt! GmbH]",
+		"[https://www.hallowelt.com Hallo Welt! GmbH]",
 		"Patric Wirth"
 	],
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:PageHeader",

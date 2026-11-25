@@ -7,7 +7,6 @@ use PageHeader\IPageInfo;
 interface IType {
 
 	/**
-	 *
 	 * @param IPageInfo $pageInfo
 	 * @return string
 	 */

@@ -2,26 +2,50 @@
 
 namespace MWStake\MediaWiki\Component\TokenAuthenticator;
 
+use InvalidArgumentException;
 use Wikimedia\IPUtils;
 
 class CIDRValidator {
 
 	/**
-	 * @param string|null $cidr
+	 * Fallback CIDR range, used if none is configured. Allows local access only.
 	 */
-	public function __construct(
-		private readonly ?string $cidr
-	) {
-		// If CIDR IS SET, validate it. If not set, it means there is no IP restriction, so we can skip validation.
-		if ( $this->cidr && !IPUtils::isValidRange( $this->cidr ) ) {
-			throw new \InvalidArgumentException( 'Invalid CIDR range provided' );
+	public const DEFAULT_CIDR = '127.0.0.1/32';
+
+	/**
+	 * Check if given value is a usable, non-empty CIDR range
+	 *
+	 * @param mixed $cidr
+	 * @return bool
+	 */
+	public static function isValidCIDR( $cidr ): bool {
+		return is_string( $cidr ) && $cidr !== '' && IPUtils::isValidRange( $cidr );
+	}
+
+	/**
+	 * @param string $cidr
+	 * @return void
+	 * @throws InvalidArgumentException If CIDR is empty or malformed
+	 */
+	public function assertValidCIDR( string $cidr ): void {
+		if ( $cidr === '' ) {
+			throw new InvalidArgumentException(
+				'CIDR range must not be empty - CIDR restriction cannot be disabled'
+			);
+		}
+		if ( !IPUtils::isValidRange( $cidr ) ) {
+			throw new InvalidArgumentException( 'Invalid CIDR range provided' );
 		}
 	}
 
-	public function validateIP( string $ip ): bool {
-		if ( !$this->cidr ) {
-			return true;
-		}
-		return IPUtils::isInRange( $ip, $this->cidr );
+	/**
+	 * @param string $ip
+	 * @param string $cidr Must be a valid, non-empty CIDR range
+	 * @return bool
+	 * @throws InvalidArgumentException If CIDR is empty or malformed
+	 */
+	public function validateIP( string $ip, string $cidr ): bool {
+		$this->assertValidCIDR( $cidr );
+		return IPUtils::isInRange( $ip, $cidr );
 	}
 }

@@ -131,8 +131,11 @@ StandardDialogs.ui.BaseDialog.prototype.validateTitleNotExist = function ( value
 		prop: 'pageprops',
 		titles: value
 	} ).done( ( data ) => {
-		// Check if there is data.query.pages.-1
-		if ( data.query && data.query.pages && data.query.pages[ -1 ] ) {
+		if ( !Object.hasOwn( data, 'query' ) || !Object.hasOwn( data.query, 'pages' ) ) {
+			// Cannot check, allow action and let that throw the error
+			this.actions.setAbilities( { done: true } );
+		} else if ( data.query.pages[ -1 ] ) {
+			// If we get here, it means page does not exist
 			// eslint-disable-next-line no-prototype-builtins
 			if ( data.query.pages[ -1 ].hasOwnProperty( 'invalid' ) ) {
 				this.actions.setAbilities( { done: false } );

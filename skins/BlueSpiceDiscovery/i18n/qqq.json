@@ -209,5 +209,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "Label for menu header",
 	"bs-discovery-namespace-tree-search-btn-label": "Label for button to search for a page",
 	"bs-discovery-namespace-tree-create-btn-label": "Label for button to create a page",
-	"bs-discovery-namespace-tree-search-label": "Label for search input field"
+	"bs-discovery-namespace-tree-search-label": "Label for search input field",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "Label for config to enable caching for enhanced Mediawiki sidebar",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "Help label for config to enable caching for enhanced Mediawiki sidebar"
 }

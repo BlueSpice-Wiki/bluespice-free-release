@@ -1,6 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
+			"A.jalate",
+			"Amitie 10g",
 			"Avengium",
 			"Fitoschido",
 			"JDíaz32",
@@ -31,5 +33,6 @@
 	"bs-discovery-footerlinks-termsofservice-link-page": "Site:Términos_de_servicio",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-raw": "Editar",
 	"bs-discovery-breadcrumb-label-special-editwatchlist-clear": "Limpiar",
-	"bs-discovery-title-action-language-button-aria-label": "Seleccionar un idioma"
+	"bs-discovery-title-action-language-button-aria-label": "Seleccionar un idioma",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "Utilice el almacenamiento en caché para la \"barra lateral de Mediawiki mejorada\""
 }

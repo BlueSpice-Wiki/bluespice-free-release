@@ -1,6 +1,6 @@
 {
 	"name": "EnhancedStandardUIs",
-	"version": "2.1.6",
+	"version": "2.1.8",
 	"author": [
 		"[https://www.hallowelt.com Hallo Welt! GmbH]"
 	],
@@ -39,6 +39,9 @@
 						"maintenanceadmin"
 					]
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"EnhancedUIsAllPagesExcludedNamespaces": "MediaWiki\\Extension\\EnhancedStandardUIs\\ConfigDefinition\\EnhancedUIsAllPagesExcludedNamespaces::getInstance"
 			}
 		},
 		"BlueSpiceVisualEditorConnector": {
@@ -102,6 +105,14 @@
 		},
 		"EnhancedUIsSpecialPreferencesOverride": {
 			"value": false
+		},
+		"EnhancedUIsVersionHistoryToolbarOffset": {
+			"value": 0,
+			"public": true
+		},
+		"EnhancedUIsAllPagesExcludedNamespaces": {
+			"value": [],
+			"description": "List of namespaces that will be excluded from Special:Pages"
 		}
 	},
 	"Hooks": {
@@ -160,6 +171,10 @@
 		"ext.enhancedstandarduis.history": {
 			"packageFiles": [
 				"ext.enhancedUI.historyAction.js",
+				{
+					"name": "addToolbarOffset.json",
+					"config": { "offsetHeight": "EnhancedUIsVersionHistoryToolbarOffset" }
+				},
 				"panel/HistoryPanel.js",
 				{
 					"name": "panel/viewmode.json",
@@ -182,7 +197,9 @@
 				"enhanced-standard-uis-history-grid-header-hide-revision-title",
 				"enhanced-standard-uis-history-compare-tool-title",
 				"enhanced-standard-uis-history-grid-header-diff-label",
-				"enhanced-standard-uis-history-grid-header-major-label"
+				"enhanced-standard-uis-history-grid-header-edit-type-label",
+				"enhanced-standard-uis-history-grid-edittype-minor-label",
+				"enhanced-standard-uis-history-grid-edittype-major-label"
 			],
 			"dependencies": [
 				"oojs-ui",
@@ -403,7 +420,8 @@
 				"PermissionManager",
 				"DBLoadBalancer",
 				"NamespaceInfo",
-				"LanguageFactory"
+				"LanguageFactory",
+				"MainConfig"
 			]
 		},
 		{

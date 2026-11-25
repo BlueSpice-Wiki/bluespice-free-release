@@ -3,10 +3,11 @@
 		"lang": "en",
 		"target_title": "Template:Textbox",
 		"content_path": "/pages/Template/Textbox.wiki",
-		"sha1": "2906908ee8cfb1eff6f1fb919fd2159f57ac8d87",
+		"sha1": "16cd573088150b5929d7a42dd48dcd0a621cf58b",
 		"old_sha1": [
 			"ef0c4f677f4040c2aca884e13bc13b619bcaba13",
-			"83565108195f6e6d11c5be0fac06a72ae2b8f029"
+			"83565108195f6e6d11c5be0fac06a72ae2b8f029",
+			"2906908ee8cfb1eff6f1fb919fd2159f57ac8d87"
 		]
 	},
 	"Template:Textbox/styles.css": {

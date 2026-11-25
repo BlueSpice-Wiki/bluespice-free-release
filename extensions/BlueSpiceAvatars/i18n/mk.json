@@ -12,7 +12,7 @@
 	"bs-avatars-generate-complete": "Создаден е нов аватар.",
 	"bs-avatars-upload-label": "Слика",
 	"bs-avatars-generate-new-label": "Создај нов аватар",
-	"bs-avatars-file-upload-fieldset-title": "Подигање на слика",
+	"bs-avatars-file-upload-fieldset-title": "Подигни нова слика",
 	"bs-avatars-auto-generate-fieldset-title": "Автосоздавање на аватар",
 	"apihelp-bs-avatars-tasks-summary": "Подигање, создавање и задавање на кориснички аватари",
 	"bs-avatars-tag-profileimage-error-invalidusername": "Параметарот „username“ е задолжителен и мора да содржи важечко корисничко име"

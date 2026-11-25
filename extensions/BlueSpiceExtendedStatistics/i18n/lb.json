@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-statistics-desc": "Statistik-Modul fir BlueSpice",
@@ -29,5 +30,6 @@
 	"bs-statistics-aggregated-report-error": "Et ass e Feeler geschitt!",
 	"bs-statistics-aggregated-report-loading": "Donnéeë gi gelueden...",
 	"bs-statistics-ve-progressinspector-title": "Fortschrëtt",
-	"bs-statistics-ve-progress-attr-width-label": "Breet"
+	"bs-statistics-ve-progress-attr-width-label": "Breet",
+	"bs-statistics-aggregationtype-label": "Aggregatiounstyp"
 }

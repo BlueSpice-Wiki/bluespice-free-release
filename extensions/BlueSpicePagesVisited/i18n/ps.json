@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-pagesvisited-desc": "د ورستيو ليدل شويو مخونو ځانواله لړليک چمتو کوي",
+	"prefs-pagesvisited": "ليدل‌شوي مخونه",
+	"bs-pagesvisited-widget-title": "ليدل‌شوي مخونه",
+	"bs-pagesvisited-error-nsnotvalid": "ورکړل {{PLURAL:$1|شوی|شوي}} <code>$2</code> {{PLURAL:$1|نوم‌تشيال باوري نه دی|نوم‌تشيالونه باوري نه دي}}",
+	"bs-pagesvisited-pref-widgetlimit": "د ننوتلو پای‌بريد:",
+	"bs-pagesvisited-pref-widgetns": "نوم‌تشيالونه:",
+	"bs-pagesvisited-pref-widgetsortodr": "اوډون ډول:",
+	"bs-pagesvisited-pref-sort-time": "وخت",
+	"bs-pagesvisited-pref-sort-pagename": "سرليک",
+	"bs-pagesvisited-tag-pagesvisited-desc": "د ورستيو ليدل‌شويو مخونو لړليک ښيي. دا لړليک د ارزښتونو له محې محدودېدی شي.",
+	"bs-pagesvisited-ve-pagesvisited-title": "ليدل‌شوي مخونه",
+	"bs-pagesvisited-ve-pagesvisited-attr-count-help": "په لړليک کې د ښودل شويو مخونو شمېر وټاکئ",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxtitlelength-help": "د سرليک له پرې کولو دمخه د لوښو ډېر شمېر وټاکئ",
+	"bs-pagesvisited-ve-pagesvisited-attr-order-help": "هغه ترتيب وټاکئ چې مخونه پکې ښودل کېږي",
+	"bs-pagesvisited-ve-pagesvisited-attr-namespaces-help": "يوازې د دې نوم‌تشيالونو مخونه وښاياست",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-time": "وخت",
+	"bs-pagesvisited-tag-pagesvisited-attr-order-option-pagename": "مخنوم",
+	"bs-pagesvisited-droplet-name": "ليدل شوي مخونه",
+	"bs-pagesvisited-droplet-description": "د ليدل شويو مخونو لړليک",
+	"bs-pagesvisited-label-anon-user": "د هغه مخونو ليدلو لپاره چې تاسو ليدلي دي، مهرباني وکړئ خپل گڼون ته ننوځئ",
+	"bs-pagesvisited-ve-pagesvisited-attr-number-label": "د ښودل شويو پايلو شمېر",
+	"bs-pagesvisited-ve-pagesvisited-attr-maxlength-label": "د مخ سرليکونو ډېر اوږدوالی",
+	"bs-pagesvisited-ve-pagesvisited-attr-orderby-label": "اوډون ډول",
+	"bs-pagesvisited-ve-pagesvisited-attr-filter-namespaces-label": "نوم‌تشيالونو له مخې چاڼول"
+}

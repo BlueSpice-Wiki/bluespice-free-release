@@ -100,5 +100,6 @@
 	"bs-pageassignments-header-action-delete": "Löschen",
 	"bs-pageassignments-title-edit": "Zuweisungen bearbeiten",
 	"bs-pageassignments-title-delete": "Zuweisungen löschen",
-	"bs-pageassignments-show-unassigned-pages": "Nicht zugewiesene Seiten anzeigen"
+	"bs-pageassignments-show-unassigned-pages": "Nicht zugewiesene Seiten anzeigen",
+	"bs-pageassignments-notifications-watchlist-description": "{{#FORMAL:Du bist|Sie sind}} dieser Seite zugewiesen."
 }

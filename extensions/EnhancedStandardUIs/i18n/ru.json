@@ -12,5 +12,6 @@
 	"enhanced-standard-uis-filelist-grid-preview-title": "Предпросмотр",
 	"enhanced-standard-uis-allpages-redirect-label": "$1 (перенаправление)",
 	"enhancedspecialpages": "Служебные страницы",
-	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "содержит {{PLURAL:$1|одну страницу|$1 страниц}}"
+	"enhanced-standard-uis-allpages-namespace-badge-aria-label": "содержит {{PLURAL:$1|одну страницу|$1 страниц}}",
+	"enhanced-standard-uis-allpages-unwatch-label": "Запретить просмотр страницы $1"
 }

@@ -35,7 +35,7 @@
 	"notifyme-ui-dialog-set-editor-title": "編輯訂閱集",
 	"notifyme-ui-dialog-set-editor-type": "接收通知：",
 	"notifyme-ui-dialog-set-editor-bucket": "通知類型",
-	"notifyme-ui-dialog-set-editor-channels-hint": "所有通知將透過 Web 介面發送",
+	"notifyme-ui-dialog-set-editor-channels-hint": "所有通知將透過web介面發送",
 	"notifyme-ui-dialog-set-editor-channels-prefixed": "另外傳遞給$1",
 	"notifyme-ui-subscription-set-add": "新增",
 	"notifyme-ui-subscription-set-duplicate": "您已訂閱此通知集",

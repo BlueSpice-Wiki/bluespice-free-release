@@ -418,7 +418,7 @@
 			cond = [ cond ];
 		}
 
-		if ( cond.indexOf( this.action ) !== -1 ) {
+		if ( cond.indexOf( this.action ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 			return true;
 		}
 
@@ -440,7 +440,7 @@
 			}
 			const value = item[ name ];
 
-			if ( mw.ext.forms.mixin.DefinitionParser.static.reservedKeywords.indexOf( name ) !== -1 ) {
+			if ( mw.ext.forms.mixin.DefinitionParser.static.reservedKeywords.indexOf( name ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 				itemConfig[ name ] = value;
 			} else {
 				// If a reserved keyword should actually go to the widget config

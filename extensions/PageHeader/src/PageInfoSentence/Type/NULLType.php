@@ -8,7 +8,6 @@ use PageHeader\PageInfoSentence\Type;
 class NULLType extends Type {
 
 	/**
-	 *
 	 * @param IPageInfo $pageInfo
 	 * @return string
 	 */

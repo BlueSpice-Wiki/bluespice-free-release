@@ -154,7 +154,9 @@ class MigrateSocialProfiles extends LoggedUpdateMaintenance {
 		$manager = $this->getServiceContainer()->getService( 'UserProfile.Manager' );
 		try {
 			$manager->setProfileData(
-				$data, $user, User::newSystemUser( 'MediaWiki default', [ 'steal' => true ] )
+				$data,
+				$user,
+				User::newSystemUser( User::MAINTENANCE_SCRIPT_USER, [ 'steal' => true ] )
 			);
 			$this->output( "done\n" );
 		} catch ( Throwable $ex ) {

@@ -5,7 +5,6 @@ namespace MWStake\MediaWiki\Component\DataStore;
 class NullSorter extends Sorter {
 
 	/**
-	 *
 	 * @param Record[] $dataSets
 	 * @param array $unsortableProps
 	 * @return Record[]

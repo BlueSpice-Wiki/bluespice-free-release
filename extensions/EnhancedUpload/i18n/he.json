@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A100Star",
 			"Amire80",
 			"YaronSh"
 		]
@@ -75,9 +76,9 @@
 	"enhancedupload-config-type-label": "סוג התמונה:",
 	"enhancedupload-config-type-help": "הגדרת סוג עבור גרירה ושחרור של תמונות בעורך החזותי",
 	"enhancedupload-config-height-label": "גובה התמונה:",
-	"enhancedupload-config-height-help": "הגדרת גובה לגרירה ושחרור של תמונות בעורך החזותי. יש להגדיר ל\"אוטומטי\" כדי לשנות את קנה המידה עם הרוחב. אם שניהם מוגדרים ל\"אוטומטי\", ישמש גודל ברירת המחדל.",
+	"enhancedupload-config-height-help": "הגדרת הגובה של תמונות שנוספות באמצעות גרירה ושחרור בעורך החזותי. יש להשאיר את השדה ריק כדי להתאים את הגובה לרוחב. אם שני השדות יישארו ריקים, ייעשה שימוש בגודל ברירת המחדל.",
 	"enhancedupload-config-width-label": "רוחב התמונה:",
-	"enhancedupload-config-width-help": "הגדרת רוחב לגרירה ושחרור של תמונות בעורך החזותי. יש להגדיר ל\"אוטומטי\" כדי לשנות את קנה המידה עם הגובה. אם שניהם מוגדרים ל\"אוטומטי\", ישמש גודל ברירת המחדל.",
+	"enhancedupload-config-width-help": "הגדרת הרוחב של תמונות שנוספות באמצעות גרירה ושחרור בעורך החזותי. יש להשאיר את השדה ריק כדי להתאים את הרוחב לגובה. אם שני השדות יישארו ריקים, ייעשה שימוש בגודל ברירת המחדל.",
 	"enhancedupload-config-extensions-label": "לאפשר סוגי MIME לא תואמים (סיכון אבטחה אפשרי)",
 	"enhancedupload-config-extensions-help": "לאפשר להעלות סיומות קבצים עם סוגי MIME לא תואמים. אזהרה: סיכון אבטחה אפשרי.",
 	"enhancedupload-droplet-attachments-name": "צרופות",

@@ -2,6 +2,7 @@
 
 namespace BlueSpice\Discovery\EnhancedSidebar;
 
+use BlueSpice\Discovery\Config;
 use BlueSpice\Discovery\EnhancedSidebar\Node\EnhancedSidebarNode;
 use BlueSpice\Discovery\EnhancedSidebar\NodeProcessor\EnhancedSidebarNodeProcessor;
 use Exception;
@@ -9,6 +10,7 @@ use MediaWiki\Content\Content;
 use MediaWiki\Content\JsonContent;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\MenuEditor\Parser\IMenuParser;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\User\User;
@@ -43,7 +45,10 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	public const CACHE_KEY = 'enhanced-sidebar-nodes-cache';
 
 	/** @var int Cache TTL in seconds */
-	private const CACHE_TTL = 0;
+	private const CACHE_TTL = 3600;
+
+	/** @var Config */
+	private $config;
 
 	/**
 	 * @param RevisionRecord $revision
@@ -64,6 +69,7 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 		);
 		$this->rawData = [];
 		$this->user = RequestContext::getMain()->getUser();
+		$this->config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$this->dataCacheUserKey = $objectCache->makeKey( self::CACHE_KEY, $this->user->getId(),
 			$revision->getId(), $this->user->getTouched() );
 	}
@@ -89,37 +95,43 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	 * @throws Exception
 	 */
 	public function parseForOutput(): array {
+		if ( !$this->config->get( 'DiscoveryEnableCachingEnhancedSidebar' ) ) {
+			return $this->getOutput();
+		}
 		return $this->objectCache->getWithSetCallback(
 			$this->dataCacheUserKey,
 			self::CACHE_TTL,
-			function () {
-				$data = [];
+			fn () => $this->getOutput()
+		);
+	}
 
-				$this->setUserOnProcessors( $this->user );
+	protected function getOutput(): array {
+		$data = [];
 
-				$this->setFullParse( true );
-				$nodes = $this->parse();
-				$this->setFullParse( false );
+		$this->setUserOnProcessors( $this->user );
 
-				foreach ( $nodes as $node ) {
-					// Convert usual flat list of nodes into a tree
-					if ( $node->getLevel() !== 1 ) {
-						continue;
-					}
-					if ( $this->isNodeHidden( $node ) ) {
-						continue;
-					}
-					$nodeData = $this->serializeNodeTree( $node ) + $this->getTreeChildren( $nodes, $node );
-					$isLeaf = empty( $nodeData['items'] );
-					if ( isset( $nodeData['isLeaf'] ) ) {
-						$isLeaf = $nodeData['isLeaf'];
-					}
-					$nodeData['leaf'] = $isLeaf;
-					$data[] = $nodeData;
-				}
+		$this->setFullParse( true );
+		$nodes = $this->parse();
+		$this->setFullParse( false );
 
-				return $data;
-			} );
+		foreach ( $nodes as $node ) {
+			// Convert usual flat list of nodes into a tree
+			if ( $node->getLevel() !== 1 ) {
+				continue;
+			}
+			if ( $this->isNodeHidden( $node ) ) {
+				continue;
+			}
+			$nodeData = $this->serializeNodeTree( $node ) + $this->getTreeChildren( $nodes, $node );
+			$isLeaf = empty( $nodeData['items'] );
+			if ( isset( $nodeData['isLeaf'] ) ) {
+				$isLeaf = $nodeData['isLeaf'];
+			}
+			$nodeData['leaf'] = $isLeaf;
+			$data[] = $nodeData;
+		}
+
+		return $data;
 	}
 
 	/**
@@ -263,7 +275,9 @@ class Parser extends MutableParser implements IParser, IMenuParser {
 	 * @return Content
 	 */
 	protected function getContentObject(): Content {
-		return new JsonContent( $this->getMutatedData() );
+		return new JsonContent(
+			json_encode( $this->rawData, JSON_PRETTY_PRINT )
+		);
 	}
 
 	/**

@@ -2,7 +2,7 @@
 
 namespace MWStake\MediaWiki\Component\Wire;
 
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Http\HttpRequestFactory;
 use MediaWiki\WikiMap\WikiMap;
 use Psr\Log\LoggerInterface;

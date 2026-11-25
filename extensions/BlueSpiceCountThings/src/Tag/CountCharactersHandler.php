@@ -7,10 +7,10 @@ use BlueSpice\Renderer\Params;
 use BlueSpice\RendererFactory;
 use BsPageContentProvider;
 use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Message\Message;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\PPFrame;
 use MediaWiki\Title\TitleFactory;
-use Message;
 use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
 class CountCharactersHandler implements ITagHandler {

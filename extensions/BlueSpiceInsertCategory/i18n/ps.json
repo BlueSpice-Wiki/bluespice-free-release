@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-insertcategory-desc": "د وېشنزي تړوني ته د ننوتلو لپاره خبرې اترې",
+	"bs-insertcategory-insertcat": "وېشنيزه ورټومبل",
+	"prefs-insertcategory": "وېشنيزه ورټومبل",
+	"bs-insertcategory-page-header-categories-edit-tooltip": "د دې مخ وېشنيزې سمول",
+	"bs-insertcategory-edit-dialog-button-tooltip": "د دې مخ وېشنيزې سمول",
+	"bs-insertcategory-edit-dialog-button-aria-label": "د دې مخ وېشنيزو سمولو لپاره خبرې اترې پرانېځئ",
+	"bs-insertcategory-edit-dialog-button-label": "سمول",
+	"bs-insertcategory-edit-dialog-title": "وېشنيزې سمول",
+	"bs-insertcategory-edit-dialog-button-submit": "وشو",
+	"bs-insertcategory-edit-dialog-button-cancel": "ناگارل",
+	"bs-insertcategory-edit-dialog-input-label": "ټاکل‌شوې وېشنيزې",
+	"bs-insertcategory-edit-dialog-implicit-categories-label": "تړاويزې وېشنيزې",
+	"bs-insertcategory-edit-dialog-implicit-categories-help": "دا وېشنيزې د مخ ويکي‌ليک منځپانگه کې نه دي تعريف شوې. ښايي دا د يوې کينډۍ دننه ترتيب شوې وي.",
+	"bs-insertcategory-edit-dialog-page-categories-get-error-message": "د مخ وېشنيزې نشي ترلاسه کولی",
+	"bs-insertcategory-no-categories": "هېڅ وېشنيزې ټاکل شوې نه دي",
+	"bs-insertcategory-edit-dialog-tree-view": "ټولې وېشنيزې ښودل",
+	"bs-insertcategory-pref-uploadintegration": "د راپورته‌کولو خبرو اترو کې د مخ وېشنيزې وکاروئ",
+	"bs-insertcategory-pref-uploadintegration-help": "د راپورته‌کولو خبرو اترو کې د مخ وېشنيزې د تلواله خوښنې په توگه ټاکي",
+	"bs-insertcategory-set-categories-summary": "د مخ هم‌مهاله شوې وېشنيزې",
+	"bs-insertcategory-set-categories-error": "د وېشنيزو ټاکلو کې پاتې راغی"
+}

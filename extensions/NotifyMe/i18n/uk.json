@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Movses",
 			"Ата"
 		]
 	},
@@ -19,9 +20,9 @@
 	"notifyme-digest-subject-daily": "Щоденний огляд сповіщень",
 	"notifyme-digest-subject-weekly": "Щотижневий огляд сповіщень",
 	"notifyme-bucket-content-low-freq": "Низькочастотне",
-	"notifyme-bucket-content-low-freq-label": "Події, що стаються не так часто",
+	"notifyme-bucket-content-low-freq-label": "Події, що трапляються рідше",
 	"notifyme-bucket-content-high-freq": "Високочастотне",
-	"notifyme-bucket-content-high-freq-label": "Події, що трапляються частіше",
+	"notifyme-bucket-content-high-freq-label": "Події, що трапляються рідше",
 	"notifyme-bucket-content-low-freq-desc": "Події сторінки, які стаються рідше (створення, вилучення, перейменування…)",
 	"notifyme-bucket-content-high-freq-desc": "Події сторінки, які стаються частіше (редагування, коментарі…)",
 	"notifyme-bucket-qm": "Моніторинг якості",
@@ -189,12 +190,12 @@
 	"notifyme-notification-center-navigation-hint": "Порада: Ви можете використовувати клавіші стрілок вліво і вправо для переходу між вкладками в списку вкладок.",
 	"notifyme-notification-center-filter-item-aria-label": "Фільтр $1",
 	"notifyme-event-page-missing-desc": "''Опису цієї події ще немає''",
-	"notifyme-event-page-create-desc": "Сторінку створив інший користувач",
-	"notifyme-event-page-delete-desc": "Сторінку вилучив інший користувач",
-	"notifyme-event-page-move-desc": "Сторінку перейменував інший користувач",
+	"notifyme-event-page-create-desc": "Сторінку створено іншим користувачем",
+	"notifyme-event-page-delete-desc": "Сторінку вилучено іншим користувачем",
+	"notifyme-event-page-move-desc": "Сторінку перейменовано іншим користувачем",
 	"notifyme-ui-dialog-popup-table-desc-label": "Опис",
 	"notifyme-ui-dialog-popup-header-label": "Ці події запускають сповіщення:",
-	"notifyme-event-page-edit-desc": "Сторінку відредагував інший користувач",
+	"notifyme-event-page-edit-desc": "Сторінку відредаговано іншим користувачем",
 	"notifyme-ui-delivery-label": "Доставка",
 	"prefs-subs": "Підписки на сповіщення",
 	"notifyme-notification-filter-count-aria-label": "містить $1 {{PLURAL:$1|сповіщення|сповіщення|сповіщень}}",
@@ -211,5 +212,20 @@
 	"notifyme-arbitrary-event-action-subject-label": "Тема сповіщення",
 	"notifyme-arbitrary-event-action-subject-help": "Буде використано як тема для сповіщення електронною поштою. Значенням може бути звичайний текст або ключ повідомлення.",
 	"notifyme-arbitrary-event-action-message-help": "Значення може бути звичайним текстом або ключем повідомлення",
-	"notifyme-arbitrary-event-action-with-title-message-help": "Значення може бути звичайним текстом або ключем повідомлення. Якір заголовка відповідної сторінки передається як перший параметр. Наприклад: Відредаговано сторінку $1 буде подано як Відредаговано сторінку <a href=\"...\">Моя сторінка</a>, що буде належно проаналізовано при видачі сповіщення з посиланням на сторінку. Якщо вказано ключ повідомлення, то очікується, що у нього є параметр $1."
+	"notifyme-arbitrary-event-action-with-title-message-help": "Значення може бути звичайним текстом або ключем повідомлення. Якір заголовка відповідної сторінки передається як перший параметр. Наприклад: Відредаговано сторінку $1 буде подано як Відредаговано сторінку <a href=\"...\">Моя сторінка</a>, що буде належно проаналізовано при видачі сповіщення з посиланням на сторінку. Якщо вказано ключ повідомлення, то очікується, що у нього є параметр $1.",
+	"notifyme-bucket-page-lifecycle-label": "Події життєвого циклу сторінки",
+	"notifyme-bucket-recent-events-label": "Нещодавня активність",
+	"notifyme-bucket-qm-short-label": "Якість сторінки",
+	"notifyme-ui-subscription-set-watchlist-label": "Налаштуйте параметри сповіщень для всіх елементів у вашому списку спостереження",
+	"notifyme-event-page-create-short-desc": "Створити сторінку",
+	"notifyme-event-page-delete-short-desc": "Вилучити сторінку",
+	"notifyme-event-page-move-short-desc": "Перейменувати сторінку",
+	"notifyme-event-page-edit-short-desc": "Редагувати сторінку",
+	"notifyme-ui-delivery-channels-label": "Канали сповіщень",
+	"notifyme-ui-subscription-delivery-help": "Сповіщення завжди надсилаються у вікі. Виберіть додаткові канали сповіщень.",
+	"notifyme-subscriber-provider-watched-source-desc": "Ви переглядаєте сторінку, пов'язану з цим сповіщенням",
+	"notifyme-category-subscription-description": "Ви переглядаєте категорію, до якої належить ця сторінка",
+	"notifyme-namespace-subscription-description": "Ви переглядаєте простір назв, до якого належить ця сторінка",
+	"notifyme-subscriber-provider-personal-desc": "Вас було явно вказано одержувачем",
+	"notifyme-arbitrary-event-action-event-target-user-help": "Список імен користувачів, розділених комами, яким потрібно надіслати сповіщення. Підтримується вікітекст."
 }

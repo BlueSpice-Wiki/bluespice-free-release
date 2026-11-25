@@ -2,7 +2,7 @@
 
 namespace BlueSpice\InstanceStatus\InstanceStatusProvider;
 
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Http\HttpRequestFactory;
 
 class Mathoid extends UrlReachableProvider {

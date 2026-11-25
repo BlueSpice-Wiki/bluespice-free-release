@@ -195,11 +195,11 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	 */
 	protected function makeCategoriesFilterCondition( &$conditions, $pageIdFileName, $args ) {
 		if ( count( $args['categories'] ) ) {
-			$categories = array_map( static function ( $category ) {
-				return "'" . $category->getDBkey() . "'";
+			$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+			$categories = array_map( static function ( $category ) use ( $dbr ) {
+				return $dbr->addQuotes( $category->getDBkey() );
 			}, $args['categories'] );
 
-			$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			if ( $args['categoryMode'] == 'OR' ) {
 				$conditions[] = $pageIdFileName
 					. ' IN ( SELECT cl_from FROM '

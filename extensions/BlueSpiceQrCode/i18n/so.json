@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"bs-qr-code-extension-description": "Waxay ku soo bandhigtaa koodka QR-ka oo leh xiriiriyaha bogga hadda jira barta aaladaha.",
+	"bs-qr-code-action-qr-code-title": "Fur sanduuqa wada-hadalka ee leh koodka QR-ka",
+	"bs-qr-code-action-qr-code-text": "Koodhka QR",
+	"bs-qr-code-action-qr-code-dialog-title": "Koodhka QR",
+	"bs-qr-code-action-qr-code-dialog-alt": "Koodka QR-ka ee $1",
+	"bs-qr-code-api-no-page": "Halbeegga 'page' waa madhan",
+	"apihelp-bs-qr-code-summary": "Hel koodka QR-ka ee bogga qaab URI xogeed oo base64 ah",
+	"apihelp-bs-qr-code-param-revid": "Aqoonsiga dib-u-eegista bogga ee loo adeegsanayo abuurista xiriiriye joogto ah",
+	"apihelp-bs-qr-code-param-page": "Magaca bogga loo adeegsanayo abuurista URI xogeed oo base64 ah",
+	"apihelp-bs-qr-code-param-size": "Cabbirka koodka QR-ka",
+	"apihelp-bs-qr-code-example-bs-qr-code": "Wicitaanka API-ga caadiga ah",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-revid": "Wicitaanka API-ga ee revid gaar ah",
+	"apihelp-bs-qr-code-example-bs-qr-code-with-param-size": "Wicitaanka API-ga oo leh cabbir gaar ah",
+	"bs-qr-code-alt-text": "Koodka QR-ka ee $1",
+	"bs-qr-code-tag-qrcode-desc": "Waxay ku dhex gelisaa koodka QR-ka ee xiriiriyaha leh bogga wiki-ga",
+	"bs-qr-code-tag-qrcode-title": "Koodhka QR",
+	"bs-qr-code-tag-attr-page-label": "Bog",
+	"bs-qr-code-tag-attr-page-help": "Magaca bogga lagu darayo xiriiriyaha koodka QR-ka. Si aad u isticmaasho magaca bogga hadda jira, goobtan ka tag iyadoo madhan",
+	"bs-qr-code-tag-attr-query-label": "Halbeegga",
+	"bs-qr-code-tag-attr-query-help": "Halbeegyo dheeraad ah oo lagu darayo URL-ka koodka QR-ka. Kuwaas waxaa ka mid ah halbeegyada sida \"action=edit\" ama \"oldid=1\"",
+	"bs-qr-code-tag-attr-desc-label": "Sharaxaad",
+	"bs-qr-code-tag-attr-desc-help": "Sharaxaad la xiriirta koodka QR-ka. Si aad u muujiso koodka QR-ka oo keliya, goobtan ka tag iyadoo madhan",
+	"bs-qr-code-tag-attr-size-label": "Cabbirka",
+	"bs-qr-code-tag-attr-size-help": "Beddel cabbirka koodka QR-ka ee lagu dhex geliyay",
+	"bs-qr-code-droplet-name": "Koodhka QR",
+	"bs-qr-code-droplet-desc": "Ku geli koodka QR-ka bogga wiki-ga",
+	"bs-qr-code-tag-attr-size-option-small": "Yar",
+	"bs-qr-code-tag-attr-size-option-medium": "dhexdhexaad",
+	"bs-qr-code-tag-attr-size-option-large": "Weyn"
+}

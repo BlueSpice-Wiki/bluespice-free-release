@@ -1,11 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"PanWor",
 			"Rail",
 			"Woytecr"
 		]
 	},
 	"visualeditorplus-desc": "Dodaje różne funkcjonalności do edytora wizualnego",
 	"visualeditorplus-ui-label-unwrap": "Usuń (zachowaj treść)",
-	"visualeditorplus-ui-label-delete": "Usuń"
+	"visualeditorplus-ui-label-delete": "Usuń",
+	"visualeditorplus-table-contextitemwidget-label-remove": "Usuń tabelę",
+	"visualeditorplus-table-contextitem-properties-label": "Właściwości tabeli",
+	"visualeditorplus-table-contextitem-additional-options-label": "Dodatkowe opcje komórki",
+	"visualeditorplus-table-cell-actions-dialog-title": "Opcji komórki",
+	"visualeditorplus-table-cell-actions-dialog-done-label": "Gotowe"
 }

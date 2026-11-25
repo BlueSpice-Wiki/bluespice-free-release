@@ -3,7 +3,6 @@
 use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\TokenAuthenticator\AppTokenAuthenticator;
-use MWStake\MediaWiki\Component\TokenAuthenticator\CIDRValidator;
 use MWStake\MediaWiki\Component\TokenAuthenticator\UserTokenAuthenticator;
 
 return [
@@ -29,9 +28,6 @@ return [
 		);
 		$instance->setLogger( $services->getService( 'MWStake.TokenAuthenticator._Logger' ) );
 		return $instance;
-	},
-	'MWStake.TokenAuthenticator._CIDRValidator' => static function () {
-		return new CIDRValidator( $GLOBALS['mwsgTokenAuthenticatorServiceCIDR'] );
 	},
 	'MWStake.TokenAuthenticator._Logger' => static function () {
 		return LoggerFactory::getInstance( 'MWStake.TokenAuthenticator' );

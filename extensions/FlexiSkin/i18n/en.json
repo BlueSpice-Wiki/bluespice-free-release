@@ -1,5 +1,5 @@
 {
-	"@metadata": {},
+	"@metadata": [],
 	"flexiskin-extension-desc": "Allows customizing of the skin",
 	"flexiskin-extension-name": "FlexiSkin",
 	"flexiskin-label": "Skin",
@@ -91,5 +91,13 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Sidebar highlight",
 	"flexiskin-ui-plugin-footer-colors-label": "Footer colors",
 	"flexiskin-ui-plugin-colors-background-footer-label": "Footer background",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "Footer foreground"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Footer foreground",
+	"flexiskin-special-title": "Skin manager",
+	"flexiskin-ui-configurator-button-reset-label": "Reset",
+	"flexiskin-ui-error-reset-fail": "Resetting the skin failed",
+	"flexiskin-configurator-prompt-on-reset": "All settings of this wiki will be discarded and the BlueSpice default styling will be applied instead. This affects all users on this wiki and cannot be undone. Do you want to proceed?",
+	"flexiskin-configurator-prompt-on-reset-to-main-wiki": "All settings of this wiki will be discarded and the styling of the main wiki will be applied instead. This affects all users on this wiki and cannot be undone. Do you want to proceed?",
+	"flexiskin-ui-configurator-notice-inherited-styling": "This wiki inherits its styling from the main wiki. You can further customize this wiki. Changes you make here will only be applied to this wiki.",
+	"flexiskin-ui-configurator-notice-inherited-styling-default": "This wiki inherits its styling from the main wiki. The main wiki currently uses the BlueSpice default styling, so that is what every setting you do not customize here follows.",
+	"apihelp-flexiskin-reset-summary": "The reset module"
 }

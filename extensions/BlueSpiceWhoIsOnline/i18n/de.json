@@ -32,7 +32,7 @@
 	"bs-whoisonline-pref-maxidletime-help-label": "Nach dieser Zeit in Sekunden ohne Aktivität gilt der Nutzer als offline.",
 	"bs-whoisonline-tag-whoisonlinecount-description": "Zeigt die Anzahl aller Benutzer an, die innerhalb der letzten 10 Minuten angemeldet waren",
 	"bs-whoisonline-ve-whoisonlinecountinspector-title": "Wer-ist-online-Zähler",
-	"bs-whoisonline-tag-whoisonlinepopup-description": "Zeigt alle Benutzer an, die innerhalb der letzten 10 Minuten angemeldet waren. Die Ausgabe ist eine Sprechblase, wenn ein Benutzer den Mauszeiger über den verknüpften Link bewegt",
+	"bs-whoisonline-tag-whoisonlinepopup-description": "Zeigt alle Benutzer an, die innerhalb der letzten 10 Minuten angemeldet waren. Die Liste wird sichtbar, wenn ein Benutzer mit der Maus über den entsprechenden Link fährt",
 	"bs-whoisonline-ve-whoisonlinepopupinspector-title": "Wer ist Online-Popup",
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Anzahl der Anmeldungen",
 	"bs-whoisonline-statistics-report-login-number": "Anmeldungen",

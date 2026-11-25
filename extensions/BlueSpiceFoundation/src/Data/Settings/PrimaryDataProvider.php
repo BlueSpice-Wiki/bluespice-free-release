@@ -5,7 +5,7 @@ namespace BlueSpice\Data\Settings;
 use MediaWiki\Json\FormatJson;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
-use WANObjectCache;
+use Wikimedia\ObjectCache\WANObjectCache;
 use Wikimedia\Rdbms\DBError;
 use Wikimedia\Rdbms\IDatabase;
 
@@ -48,34 +48,52 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 		$this->data = $this->cache->getWithSetCallback(
 			$key,
 			$this->cache::TTL_DAY,
-			static function ( $oldValue, &$ttl, array &$setOpts ) use ( $db ) {
-				$data = [];
-				try {
-					$res = $db->select( 'bs_settings3', '*', '', __CLASS__ );
-					foreach ( $res as $row ) {
-						$data[] = new Record( (object)[
-							Record::NAME => $row->s_name,
-							Record::VALUE => FormatJson::decode( $row->s_value, true )
-						] );
-					}
-				} catch ( DBError $e ) {
-					// At the first update run after installation, the table does not yet exist.
-					// As run.php calls Setup.php before running the actual maintenance script
-					// and triggers this current logic, we do not throw error here.
-					wfDebugLog( 'BlueSpiceFoundation', "Error fetching settings: {$e->getMessage()}" );
+			function ( $oldValue, &$ttl, array &$setOpts ) use ( $db ) {
+				$data = $this->buildDataArrayFromDBResults( $db );
+				if ( empty( $data ) ) {
 					// Don't cache the empty result, maybe the table will be created soon.
 					$ttl = 0;
-					return [];
 				}
 				return $data;
-			}
+			},
+			[
+				'touchedCallback' => function ( $oldValue ) use ( $db ) {
+					$data = $this->buildDataArrayFromDBResults( $db );
+					$oldValueHash = md5( json_encode( $oldValue, JSON_THROW_ON_ERROR ) );
+					$newValueHash = md5( json_encode( $data, JSON_THROW_ON_ERROR ) );
+
+					// A difference in the hash means something has changed, hence run the
+					// >getWithSetCallback() callback and recompute the cached value so that
+					// BlueSpice configuration settings reflect what is in the source (DB).
+					return $oldValueHash !== $newValueHash ? time() : null;
+				}
+			]
 		);
 
 		return $this->data;
 	}
 
+	private function buildDataArrayFromDBResults( $db ): array {
+		$data = [];
+		try {
+			$res = $db->select( 'bs_settings3', '*', '', __CLASS__ );
+			foreach ( $res as $row ) {
+				$data[] = new Record( (object)[
+					Record::NAME => $row->s_name,
+					Record::VALUE => FormatJson::decode( $row->s_value, true )
+				] );
+			}
+		} catch ( DBError $e ) {
+			// At the first update run after installation, the table does not yet exist.
+			// As run.php calls Setup.php before running the actual maintenance script
+			// and triggers this current logic, we do not throw error here.
+			wfDebugLog( 'BlueSpiceFoundation', "Error fetching settings: {$e->getMessage()}" );
+		}
+
+		return $data;
+	}
+
 	/**
-	 *
 	 * @param \stdClass $row
 	 */
 	protected function appendRowToData( \stdClass $row ) {

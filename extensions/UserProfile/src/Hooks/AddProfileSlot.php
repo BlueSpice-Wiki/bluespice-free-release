@@ -8,7 +8,6 @@ use MediaWiki\Revision\SlotRoleRegistry;
 class AddProfileSlot implements MediaWikiServicesHook {
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function onMediaWikiServices( $services ) {

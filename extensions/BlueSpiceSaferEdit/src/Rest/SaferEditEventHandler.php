@@ -3,13 +3,13 @@
 namespace BlueSpice\SaferEdit\Rest;
 
 use BlueSpice\SaferEdit\SaferEditManager;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserIdentity;
 use Psr\Log\LoggerInterface;
-use RequestContext;
 use Wikimedia\ParamValidator\ParamValidator;
 
 abstract class SaferEditEventHandler extends SimpleHandler {

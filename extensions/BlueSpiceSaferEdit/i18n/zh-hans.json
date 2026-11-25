@@ -13,5 +13,7 @@
 	"bs-saferedit-someone-editing": "此页面正在编辑",
 	"bs-saferedit-pref-show-editinguser": "显示目前编辑者",
 	"bs-saferedit-pref-show-editinguser-help": "在页面顶部新增目前做出编辑的用户名称。",
-	"bs-saferedit-anonymous-editor": "匿名用户"
+	"bs-saferedit-anonymous-editor": "匿名用户",
+	"bs-saferedit-pref-edit-interval": "并发编辑的查找间隔",
+	"bs-saferedit-pref-edit-interval-help": "设置检查是否有其他用户正在编辑页面的间隔时间（以秒为单位）"
 }

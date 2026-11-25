@@ -271,10 +271,9 @@ class EnhancedSpecialPages extends UnlistedSpecialPage {
 			$out->wrapWikiMsg(
 				"<h2 class=\"mw-specialpages-note-top\">$1</h2>", 'specialpages-note-top'
 			);
-			$out->wrapWikiTextAsInterface(
-				'mw-specialpages-notes',
-				implode( "\n", $notes )
-			);
+			$out->addHTML( Html::openElement( 'div', [ 'class' => 'mw-specialpages-notes' ] ) );
+			$out->addWikiTextAsInterface( implode( "\n", $notes ) );
+			$out->addHTML( Html::closeElement( 'div' ) );
 		}
 	}
 }

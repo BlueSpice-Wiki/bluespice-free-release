@@ -35,6 +35,9 @@ class ManualSubscriberProvider implements ISubscriberProvider {
 	/** @var array */
 	private $subscriptionSets;
 
+	/** @var array|null */
+	private ?array $allUsers = null;
+
 	/**
 	 * @param UserFactory $userFactory
 	 * @param LoadBalancer $lb
@@ -96,13 +99,16 @@ class ManualSubscriberProvider implements ISubscriberProvider {
 	 * @throws Exception
 	 */
 	public function getSubscribers( INotificationEvent $event, IChannel $channel ): array {
+		$buckets = $this->bucketProvider->getEventBuckets( $event );
+		if ( !$buckets ) {
+			return [];
+		}
+		if ( count( $buckets ) === 1 && $buckets[0] === 'personal' ) {
+			return $event->getPresetSubscribers() ?? [];
+		}
 		$allUsers = $this->getAllUsers();
 		$subscribers = [];
 		foreach ( $allUsers as $user ) {
-			if ( $user->getBlock() instanceof AbstractBlock ) {
-				continue;
-			}
-
 			if ( $this->isSubscribed( $user, $event, $channel ) ) {
 				$subscribers[] = $user;
 			}
@@ -119,7 +125,6 @@ class ManualSubscriberProvider implements ISubscriberProvider {
 	 * @throws Exception
 	 */
 	private function isSubscribed( UserIdentity $user, INotificationEvent $event, IChannel $channel ): bool {
-		$data = $this->subscriptionConfigurator->getConfiguration( $user );
 		if ( !( $event instanceof ITitleEvent ) ) {
 			// We cannot check for non-title events, allow all
 			return true;
@@ -128,6 +133,7 @@ class ManualSubscriberProvider implements ISubscriberProvider {
 			// Buckets user cannot opt out of
 			return true;
 		}
+		$data = $this->subscriptionConfigurator->getConfiguration( $user );
 		// User has not sets, no subscription
 		if ( !isset( $data['subscriptions'] ) ) {
 			return false;
@@ -173,19 +179,26 @@ class ManualSubscriberProvider implements ISubscriberProvider {
 	 * @return User[]
 	 */
 	private function getAllUsers() {
-		// TODO: Cache/improve
-		$dbr = $this->loadBalancer->getConnection( DB_REPLICA );
-		$res = $dbr->select(
-			'user',
-			'user_id',
-			[],
-			__METHOD__
-		);
-		$users = [];
-		foreach ( $res as $row ) {
-			$users[] = $this->userFactory->newFromId( $row->user_id );
+		if ( $this->allUsers !== null ) {
+			return $this->allUsers;
 		}
-		return $users;
+
+		$dbr = $this->loadBalancer->getConnection( DB_REPLICA );
+		$res = $dbr->newSelectQueryBuilder()
+			->select( '*' )
+			->from( 'user' )
+			->caller( __METHOD__ )
+			->fetchResultSet();
+
+		$this->allUsers = [];
+		foreach ( $res as $row ) {
+			$user = $this->userFactory->newFromRow( $row );
+			if ( $user->getBlock() instanceof AbstractBlock ) {
+				continue;
+			}
+			$this->allUsers[] = $user;
+		}
+		return $this->allUsers;
 	}
 
 	/**

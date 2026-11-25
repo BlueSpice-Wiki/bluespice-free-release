@@ -142,7 +142,10 @@ class EnhancedHistoryAction extends HistoryAction {
 
 			if ( $row->rev_minor_edit ) {
 				$classes[] = 'enhanced-history-minor';
-				$entry['minor'] = true;
+				$entry['edittype'] = 'minor';
+			} else {
+				$classes[] = 'enhanced-history-major';
+				$entry['edittype'] = 'major';
 			}
 
 			$sizeDiff = $row->rev_len - $oldSize;

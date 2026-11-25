@@ -7,13 +7,11 @@ use MediaWiki\Json\FormatJson;
 class Sorter {
 
 	/**
-	 *
 	 * @var Sort[]
 	 */
 	protected $sorts = null;
 
 	/**
-	 *
 	 * @param Sort[] $sorts
 	 */
 	public function __construct( $sorts ) {
@@ -21,7 +19,6 @@ class Sorter {
 	}
 
 	/**
-	 *
 	 * @param \MWStake\MediaWiki\Component\DataStore\Record[] $dataSets
 	 * @param array $unsortableProps
 	 * @return \MWStake\MediaWiki\Component\DataStore\Record[]
@@ -121,7 +118,6 @@ class Sorter {
 	}
 
 	/**
-	 *
 	 * @param Sort $sort
 	 * @return int Constant value of SORT_ASC or SORT_DESC
 	 */

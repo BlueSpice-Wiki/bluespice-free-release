@@ -26,7 +26,6 @@ class SaveTemplateEdit extends SimpleHandler {
 	private $formatterFactory;
 
 	/**
-	 *
 	 * @param PDFCreatorUtil $util
 	 * @param WikiPageFactory $wikiPageFactory
 	 * @param FormatterFactory $formatterFactory

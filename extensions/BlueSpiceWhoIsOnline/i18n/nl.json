@@ -31,9 +31,9 @@
 	"bs-whoisonline-statistics-report-login-number-axis-value": "Aantal aanmeldingen",
 	"bs-whoisonline-statistics-report-login-number": "Aanmeldingen",
 	"bs-whoisonline-statistics-report-login-number-desc": "Dagelijkse aanmeldingen gedurende de geselecteerde periode",
-	"bs-whoisonline-droplet-count-name": "Aantal ingelogde gebruikers",
-	"bs-whoisonline-droplet-count-description": "Aantal momenteel ingelogde gebruikers",
-	"bs-whoisonline-droplet-popup-name": "Lijst met ingelogde gebruikers",
+	"bs-whoisonline-droplet-count-name": "Aantal aangemelde gebruikers",
+	"bs-whoisonline-droplet-count-description": "Aantal momenteel aangemelde gebruikers",
+	"bs-whoisonline-droplet-popup-name": "Lijst met aangemelde gebruikers",
 	"bs-whoisonline-droplet-popup-description": "Pop-up met een lijst van alle gebruikers die momenteel zijn aangemeld",
 	"bs-whoisonline-tag-whoisonlinepopup-param-text-label": "Koppelingstekst",
 	"bs-whoisonline-tag-whoisonlinepopup-param-text-help": "De tekst die wordt weergegeven voor de koppeling waarmee de gebruikerslijst wordt geopend"

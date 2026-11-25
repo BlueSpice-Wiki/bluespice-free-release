@@ -17,9 +17,6 @@ class NoExportStart implements ParserFirstCallInitHook {
 	 */
 	private static $counter = [];
 
-	/**
-	 *
-	 */
 	public function __construct() {
 	}
 

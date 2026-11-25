@@ -54,6 +54,7 @@ class PagesVisitedHandler implements ITagHandler {
 					$record->get( Record::PAGE_NAMESPACE ),
 					$record->get( Record::PAGE_TITLE )
 				);
+
 				if ( !$title ) {
 					continue;
 				}
@@ -77,9 +78,8 @@ class PagesVisitedHandler implements ITagHandler {
 	 * @return array
 	 */
 	protected function makeParams( array $params, UserIdentity $userIdentity ) {
-		$params = [
+		$paramsForQuery = [
 			ReaderParams::PARAM_LIMIT => $params['count'] ?? ReaderParams::LIMIT_INFINITE,
-			ReaderParams::PARAM_FILTER => [],
 			ReaderParams::PARAM_FILTER => [ [
 				Filter::KEY_COMPARISON => StringValue::COMPARISON_EQUALS,
 				Filter::KEY_PROPERTY => Record::ACTION,
@@ -92,7 +92,7 @@ class PagesVisitedHandler implements ITagHandler {
 			] ]
 		];
 		if ( !empty( $params['namespaces'] ) ) {
-			$params[ReaderParams::PARAM_FILTER][] = [
+			$paramsForQuery[ReaderParams::PARAM_FILTER][] = [
 				Filter::KEY_COMPARISON => ListValue::COMPARISON_EQUALS,
 				Filter::KEY_PROPERTY => Record::PAGE_NAMESPACE,
 				Filter::KEY_VALUE => $params['namespaces'],
@@ -100,11 +100,11 @@ class PagesVisitedHandler implements ITagHandler {
 			];
 		}
 		if ( $params['order'] === 'pagename' ) {
-			$params[ReaderParams::PARAM_SORT][] = [
+			$paramsForQuery[ReaderParams::PARAM_SORT][] = [
 				'property' => Record::PAGE_TITLE,
 				'direction' => Sort::ASCENDING,
 			];
 		}
-		return $params;
+		return $paramsForQuery;
 	}
 }

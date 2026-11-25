@@ -48,7 +48,7 @@ class EditMailTemplateAction extends EditAction {
 			$editor->edit();
 		}
 
-		$this->getOutput()->setPageTitle(
+		$this->getOutput()->setPageTitleMsg(
 			$this->getContext()->msg( 'notifyme-mail-template-edit-title-' . $meta['type'] )
 		);
 	}

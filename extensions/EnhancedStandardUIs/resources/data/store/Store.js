@@ -7,8 +7,8 @@ ext.enhancedUI.data.store.Store = function () {
 	const cfg = {};
 	cfg.path = 'mws/v1/title-tree-store';
 	cfg.request = null;
+	cfg.limit = 100;
 	ext.enhancedUI.data.store.Store.parent.call( this, cfg );
-	this.limit = 100;
 	this.loadedCount = 0;
 	this.sortkeyFilterActive = null;
 };
@@ -133,16 +133,6 @@ ext.enhancedUI.data.store.Store.prototype.getSubpages = function ( pageName ) {
 	this.offset = 0;
 
 	return this.reload();
-};
-
-ext.enhancedUI.data.store.Store.prototype.reload = function () {
-	this.data = {};
-	const loadPromise = this.load();
-	loadPromise.done( ( data ) => {
-		this.emit( 'reload', data );
-	} );
-
-	return loadPromise;
 };
 
 ext.enhancedUI.data.store.Store.prototype.loadPages = function ( nsId, search ) {

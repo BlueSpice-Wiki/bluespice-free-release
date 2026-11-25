@@ -36,34 +36,49 @@ class RSSAuthenticator {
 	}
 
 	/**
-	 * Tries to log in user based on username and token
-	 * given in the request
+	 * Returns the user identified by the username and token given in the
+	 * request. Does not change the session.
 	 *
-	 * @return bool
+	 * @return User|null
 	 */
-	public function logInUser() {
+	public function getUserFromRequest(): ?User {
 		$userName = $this->request->getVal( 'u', '' );
-		if ( !$userName ) {
-			return false;
+		if ( !is_string( $userName ) || $userName === '' ) {
+			return null;
 		}
 
 		$requestToken = $this->request->getVal( 'h', '' );
-		if ( !$requestToken ) {
-			return false;
+		if ( !is_string( $requestToken ) || $requestToken === '' ) {
+			return null;
 		}
 
 		$user = MediaWikiServices::getInstance()->getUserFactory()
 			->newFromName( $userName );
 		if ( $user instanceof User == false || $user->getId() == 0 ) {
 			// User does not exist
-			return false;
+			return null;
 		}
 
 		if ( !$this->tokenProvider->isValidToken( $requestToken, $user ) ) {
+			return null;
+		}
+
+		return $user;
+	}
+
+	/**
+	 * Sets the user identified by the request as the user of the context,
+	 * for the current request only. It does not log in the user.
+	 *
+	 * @deprecated Use getUserFromRequest()
+	 * @return bool
+	 */
+	public function logInUser() {
+		$user = $this->getUserFromRequest();
+		if ( !$user ) {
 			return false;
 		}
 
-		$user->setCookies();
 		$this->context->setUser( $user );
 		return true;
 	}

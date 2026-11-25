@@ -132,13 +132,13 @@ class MediaWikiGadgetsDefinitionRepo extends GadgetRepo {
 			$key = $this->makeDefinitionCacheKey( $this->wanCache );
 			$this->definitions = $this->srvCache->getWithSetCallback(
 				$key,
-				// between 7 and 15 seconds to avoid memcached/lockTSE stampede (T203786)
-				mt_rand( 7, 15 ),
+				// Use jitter to avoid memcached/lockTSE stampede (T203786)
+				mt_rand( 60, 70 ),
 				function () use ( $key ) {
 					return $this->wanCache->getWithSetCallback(
 						$key,
 						// 1 day
-						Gadget::CACHE_TTL,
+						WANObjectCache::TTL_DAY,
 						function ( $old, &$ttl, &$setOpts ) {
 							// Reduce caching of known-stale data (T157210)
 							$setOpts += Database::getCacheSetOptions( $this->dbProvider->getReplicaDatabase() );
@@ -146,6 +146,7 @@ class MediaWikiGadgetsDefinitionRepo extends GadgetRepo {
 							return $this->fetchStructuredList();
 						},
 						[
+							// Bump when changing the listFromDefinition() parser
 							'version' => 2,
 							// Avoid database stampede
 							'lockTSE' => 300,

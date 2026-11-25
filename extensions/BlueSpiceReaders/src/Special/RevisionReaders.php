@@ -25,7 +25,7 @@ class RevisionReaders extends SpecialPage {
 		if ( isset( $requestParams['page'] ) ) {
 			$this->readersOfPage( $out, $requestParams['page'] );
 		} else {
-			$out->setPageTitle( $this->msg( 'bs-readers-emptyinput' ) );
+			$out->setPageTitleMsg( $this->msg( 'bs-readers-emptyinput' ) );
 			$out->addHTML( $this->msg( 'bs-readers-emptyinput' )->text() );
 		}
 	}
@@ -42,7 +42,7 @@ class RevisionReaders extends SpecialPage {
 		}
 
 		$out->addJsConfigVars( 'bsRevisionReadersPageId', $title->getArticleID() );
-		$out->setPageTitle(	$this->msg( 'revisionreaders', $page ) );
+		$out->setPageTitleMsg( $this->msg( 'revisionreaders', $page ) );
 		$out->addModules( [ 'ext.bluespice.readers.specialRevisionReaders' ] );
 		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-readers-special-revisionreaders-container' ] ) );
 	}
@@ -52,7 +52,7 @@ class RevisionReaders extends SpecialPage {
 	 * @return string
 	 */
 	private function pageNotExistError( OutputPage $out ) {
-		$out->setPageTitle( $this->msg( 'bs-readers-pagenotexists' ) );
+		$out->setPageTitleMsg( $this->msg( 'bs-readers-pagenotexists' ) );
 		$out->addHTML( $this->msg( 'bs-readers-pagenotexists' )->text() );
 	}
 }

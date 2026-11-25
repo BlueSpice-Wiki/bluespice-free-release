@@ -98,17 +98,18 @@ table.cuscosky {
 	border-collapse: collapse;
 	width: 100%;
 }
-table.cuscosky tbody th{
+table.cuscosky th{
 	color:#3C5093;
 	background-color: #E6EDF5;
+}
+table.cuscosky td,
+table.cuscosky th{
+	border: 1px solid #D4E0EE;
+	padding: 8px;
 }
 table.cuscosky tbody tr{
 	color: #190054;
 	background-color:#ffffff;
-}
-table.cuscosky td, table.cuscosky th{
-	border: 1px solid #D4E0EE;
-	padding: 8px;
 }
 table.cuscosky tbody tr:nth-child(odd){
 	background-color: #F7F9FC;
@@ -121,16 +122,17 @@ table.casablanca {
 	border-collapse: collapse;
 	width: 100%;
 }
-table.casablanca tbody th{
+table.casablanca th{
 	color:#FFFFFF;
 	background-color: #3C508C;
+}
+table.casablanca td,
+table.casablanca th{
+	padding: 8px;
 }
 table.casablanca tbody tr{
 	color: #180050;
 	background-color:#F1F1F1;
-}
-table.casablanca td, table.casablanca th{
-	padding: 8px;
 }
 table.casablanca tbody tr:nth-child(odd){
 	background-color: #FFFFFF;
@@ -146,20 +148,21 @@ table.greyscale {
 	border-collapse: collapse;
 	width: 100%;
 }
-table.greyscale tbody th{
-	color:#000000;
-	background-color: #FFFFFF;
-	border: 1px solid black;
-}
-table.greyscale tbody tr{
+table.greyscale tr{
 	color: #180050;
 	background-color: #F5F5F5;
 }
-table.greyscale td, table.greyscale th{
+table.greyscale td,
+table.greyscale th{
 	padding: 8px;
 }
 table.greyscale td{
 	border: 1px solid #DCDCDC;
+}
+table.greyscale tbody th{
+	color:#000000;
+	background-color: #FFFFFF;
+	border: 1px solid black;
 }
 table.greyscale tbody tr:nth-child(odd){
 	background-color: #FFFFFF;
@@ -172,20 +175,21 @@ table.greyscale-narrow {
 	border-collapse: collapse;
 	width: 100%;
 }
-table.greyscale-narrow tbody th{
+table.greyscale-narrow th{
 	color:#000000;
 	background-color: #C8C8C8;
 	border-bottom : 1px solid #000000;
 }
-table.greyscale-narrow tbody tr{
-	color: #180050;
-	background-color: #F5F5F5;
-}
-table.greyscale-narrow td, table.greyscale-narrow th{
+table.greyscale-narrow td,
+table.greyscale-narrow th{
 	padding: 8px;
 }
 table.greyscale-narrow td{
 	border: 1px solid #DCDCDC;
+}
+table.greyscale-narrow tbody tr{
+	color: #180050;
+	background-color: #F5F5F5;
 }
 table.greyscale-narrow tbody tr:nth-child(odd){
 	background-color: #FFFFFF;
@@ -195,21 +199,21 @@ table.greyscale-narrow tbody tr:hover{
 }
 
 /* fix to avoid cutting of table */
-table.bs-correct-table-width,
-table.bs-correct-table-width thead,
-table.bs-correct-table-width tbody,
-table.bs-correct-table-width thead tr,
-table.bs-correct-table-width tbody tr {
+table.pdf-correct-table-width,
+table.pdf-correct-table-width thead,
+table.pdf-correct-table-width tbody,
+table.pdf-correct-table-width thead tr,
+table.pdf-correct-table-width tbody tr {
         max-width: 100%!important;
 }
 
-.rotated table.bs-correct-table-width,
-.bs-rotated table.bs-correct-table-width,
-.rotated table.bs-correct-table-width thead,
-.bs-rotated table.bs-correct-table-width tbody,
-.rotated table.bs-correct-table-width thead tr,
-.bs-rotated table.bs-correct-table-width thead tr,
-.rotated table.bs-correct-table-width tbody tr,
-.bs-rotated table.bs-correct-table-width tbody tr {
+.rotated table.pdf-correct-table-width,
+.bs-rotated table.pdf-correct-table-width,
+.rotated table.pdf-correct-table-width thead,
+.bs-rotated table.pdf-correct-table-width tbody,
+.rotated table.pdf-correct-table-width thead tr,
+.bs-rotated table.pdf-correct-table-width thead tr,
+.rotated table.pdf-correct-table-width tbody tr,
+.bs-rotated table.pdf-correct-table-width tbody tr {
         max-width: 100%!important;
 }

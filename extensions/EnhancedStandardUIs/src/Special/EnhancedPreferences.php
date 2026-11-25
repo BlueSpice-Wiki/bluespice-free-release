@@ -51,7 +51,6 @@ class EnhancedPreferences extends OOJSBookletSpecialPage {
 	 * @inheritDoc
 	 */
 	public function doExecute( $par ) {
-		$s = microtime( true );
 		$this->setHeaders();
 		$this->outputHeader();
 		$out = $this->getOutput();
@@ -163,10 +162,6 @@ class EnhancedPreferences extends OOJSBookletSpecialPage {
 			'data-modules' => json_encode( array_unique( $rlModules ) )
 		] );
 		$out->addHTML( $html );
-		$e = microtime( true );
-		$took = $e - $s;
-
-		error_log( $took );
 	}
 
 	/**

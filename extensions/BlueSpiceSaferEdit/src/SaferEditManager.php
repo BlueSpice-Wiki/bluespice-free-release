@@ -3,7 +3,7 @@
 namespace BlueSpice\SaferEdit;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Status\Status;

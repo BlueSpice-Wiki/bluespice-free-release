@@ -58,7 +58,6 @@ class TableHeadsDuplicator {
 	}
 
 	/**
-	 *
 	 * @param DOMElement $table
 	 * @return array
 	 */
@@ -76,7 +75,6 @@ class TableHeadsDuplicator {
 	}
 
 	/**
-	 *
 	 * @param DOMElement $table
 	 * @return array
 	 */
@@ -94,30 +92,45 @@ class TableHeadsDuplicator {
 	}
 
 	/**
-	 *
 	 * @param DOMElement $table
 	 * @param array $rows
 	 * @param DOMElement $tableHead
 	 * @return array
 	 */
 	private function findTableHeads( $table, $rows, $tableHead ) {
-		$firstRow = true;
-		foreach ( $rows as $tableRow ) {
-			if ( $firstRow ) {
-				$ths = $tableRow->getElementsByTagName( 'th' );
-				// 'td' must be 0 if all columns are th
-				$tds = $tableRow->getElementsByTagName( 'td' );
+		$firstRow = $rows[0] ?? null;
+		if ( !$firstRow instanceof DOMElement ) {
+			return;
+		}
 
-				if ( ( $ths->length == 0 ) || ( $tds->length > 0 ) ) {
-					$firstRow = false;
-					continue;
-				}
-				$tableHead->appendChild( $tableRow );
-			} else {
-				if ( $tableHead->hasChildNodes() ) {
-					$table->appendChild( $tableHead );
-				}
+		$ths = $firstRow->getElementsByTagName( 'th' );
+		// 'td' must be 0 if all columns are th.
+		$tds = $firstRow->getElementsByTagName( 'td' );
+		if ( $ths->length === 0 || $tds->length > 0 ) {
+			return;
+		}
+
+		$headerRowCount = $this->getHeaderRowCount( $firstRow );
+		foreach ( array_slice( $rows, 0, $headerRowCount ) as $tableRow ) {
+			$tableHead->appendChild( $tableRow );
+		}
+		if ( $tableHead->hasChildNodes() ) {
+			$table->appendChild( $tableHead );
+		}
+	}
+
+	/**
+	 * @param DOMElement $row
+	 * @return int
+	 */
+	private function getHeaderRowCount( DOMElement $row ): int {
+		$rowCount = 1;
+		foreach ( $row->childNodes as $cell ) {
+			if ( $cell instanceof DOMElement &&
+				( $cell->tagName === 'td' || $cell->tagName === 'th' ) ) {
+				$rowCount = max( $rowCount, (int)$cell->getAttribute( 'rowspan' ) );
 			}
 		}
+		return $rowCount;
 	}
 }

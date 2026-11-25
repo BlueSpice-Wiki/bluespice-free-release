@@ -49,10 +49,14 @@
 	pointer-events: none;
 }
 
-#enhanced-history-cnt tbody .oojsplus-data-gridWidget-row {
-	border-left: 3px solid #a2a9b1;
+.oojsplus-data-gridWidget-cell.icon-cell[ data-column='edittype' ] .oo-ui-iconElement {
+	opacity: 0.65;
 }
 
-.enhanced-history-minor {
-	border-left-style: dotted !important;
+.oo-ui-icon-edit-type-major {
+	background-image: url( ./../images/edit-type-major.svg );
+}
+
+.oo-ui-icon-edit-type-minor {
+	background-image: url( ./../images/edit-type-minor.svg );
 }

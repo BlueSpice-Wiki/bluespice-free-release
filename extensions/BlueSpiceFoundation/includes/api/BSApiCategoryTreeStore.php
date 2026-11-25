@@ -92,14 +92,13 @@ class BSApiCategoryTreeStore extends BSApiExtJSStoreBase {
 		);
 
 		foreach ( $resSubCategories as $row ) {
-			$sCatTitle = preg_replace( '/\'/', "\'", $row->cat_title );
-			$aSubCategories[] = $sCatTitle;
+			$aSubCategories[] = $row->cat_title;
 		}
 
 		$resPageTable = $this->dbr->select(
 			[ 'page' ],
 			[ '*' ],
-			[ 'page_namespace' => NS_CATEGORY, 'page_title NOT IN (\'' . implode( '\', \'', $aSubCategories ) . '\')' ],
+			[ 'page_namespace' => NS_CATEGORY, 'page_title NOT IN (' . $this->dbr->makeList( $aSubCategories ?: [ '' ] ) . ')' ],
 			__METHOD__,
 			[ '' ],
 			[]
@@ -113,7 +112,7 @@ class BSApiCategoryTreeStore extends BSApiExtJSStoreBase {
 			[ 'category', 'categorylinks' ],
 			'cat_title',
 			[
-				'cat_title NOT IN (\'' . implode( '\', \'', $aSubCategories ) . '\')',
+				'cat_title NOT IN (' . $this->dbr->makeList( $aSubCategories ?: [ '' ] ) . ')',
 				'cat_title = cl_to'
 			],
 			__METHOD__,

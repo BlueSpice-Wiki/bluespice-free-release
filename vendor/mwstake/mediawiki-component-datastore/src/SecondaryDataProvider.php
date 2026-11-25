@@ -5,7 +5,6 @@ namespace MWStake\MediaWiki\Component\DataStore;
 abstract class SecondaryDataProvider implements ISecondaryDataProvider {
 
 	/**
-	 *
 	 * @param IRecord[] $dataSets
 	 * @return IRecord[]
 	 */

@@ -2,6 +2,7 @@
 
 namespace MWStake\MediaWiki\Component\InputProcessor\Processor;
 
+use MediaWiki\Message\Message;
 use MediaWiki\User\UserGroupManager;
 use StatusValue;
 
@@ -39,7 +40,7 @@ class UserGroupValue extends StringValue {
 		}
 		$labels = [];
 		foreach ( $lowercased as $lc => $group ) {
-			$msg = \Message::newFromKey( 'group-' . $group );
+			$msg = Message::newFromKey( 'group-' . $group );
 			if ( $msg->exists() ) {
 				$labels[$lc] = $msg->text();
 			}

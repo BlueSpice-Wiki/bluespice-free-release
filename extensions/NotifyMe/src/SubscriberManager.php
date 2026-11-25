@@ -103,16 +103,17 @@ final class SubscriberManager {
 			if ( !$user instanceof UserIdentity || !$user->isRegistered() ) {
 				continue;
 			}
-			foreach ( $a as $userId => &$userData ) {
-				if ( $user->getId() === $userId ) {
-					$userData['providers'][] = $providerName;
-					continue 2;
-				}
+
+			$userId = $user->getId();
+
+			if ( isset( $a[$userId] ) ) {
+				$a[$userId]['providers'][] = $providerName;
+			} else {
+				$a[$userId] = [
+					'user' => $user,
+					'providers' => [ $providerName ],
+				];
 			}
-			$a[$user->getId()] = [
-				'user' => $user,
-				'providers' => [ $providerName ],
-			];
 		}
 
 		return $a;

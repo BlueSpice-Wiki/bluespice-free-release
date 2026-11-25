@@ -208,5 +208,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "Pagina's",
 	"bs-discovery-namespace-tree-search-btn-label": "Zoekresultaten weergeven",
 	"bs-discovery-namespace-tree-create-btn-label": "Nieuwe pagina maken",
-	"bs-discovery-namespace-tree-search-label": "Zoeken naar een pagina"
+	"bs-discovery-namespace-tree-search-label": "Zoeken naar een pagina",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "Gebruik caching voor de \"Verbeterde Mediawiki-zijbalk\"",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "Cachen verbetert de prestaties van de zijbalk. Contextvariabelen zijn niet beschikbaar wanneer cachen is ingeschakeld. Schakel cachen uit om contextvariabelen te kunnen gebruiken."
 }

@@ -28,6 +28,9 @@ class RetrieveProfileDataHandler extends SimpleHandler {
 		$this->userFactory = $userFactory;
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function execute() {
 		$user = $this->getValidatedTargetUser();
 		$requester = $this->getValidatedRequester();

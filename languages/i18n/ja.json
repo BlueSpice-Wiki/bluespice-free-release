@@ -164,7 +164,12 @@
 			"YUMANEKO",
 			"Cookie4782",
 			"Tensama0415",
-			"Kanato Hinokuma"
+			"Kanato Hinokuma",
+			"Ska101~translate",
+			"Beta empire",
+			"Honoka55",
+			"Lakejason0",
+			"Niishiki"
 		]
 	},
 	"sunday": "日曜日",
@@ -581,7 +586,7 @@
 	"nosuchuser": "「$1」という名前の利用者は見つかりません。\n利用者名では大文字と小文字を区別します。\n綴りが正しいことを確認するか、[[Special:CreateAccount|新たにアカウントを作成]]してください。",
 	"nosuchusershort": "「$1」という名前の利用者は存在しません。\n綴りを確認してください。",
 	"nouserspecified": "利用者名を指定してください。",
-	"login-userblocked": "このユーザーはブロックされています。ログインは許可されていません。",
+	"login-userblocked": "この利用者はブロックされています。ログインは許可されていません。",
 	"fatalpassworderror": "$1\n\nセキュリティ上の理由から、このパスワードでログインできません。[$2 パスワードリセットメールを要求]してください。",
 	"wrongpassword": "利用者名またはパスワードが間違っています。 \nもう一度やり直してください。",
 	"wrongpasswordempty": "パスワードを空欄にはできません。\nもう一度やり直してください。",
@@ -1538,7 +1543,7 @@
 	"rcfilters-filter-user-experience-level-unregistered-description-temp": "ログインしていない編集者と仮アカウントを使用している編集者。",
 	"rcfilters-filter-user-experience-level-newcomer-label": "新規利用者",
 	"rcfilters-filter-user-experience-level-newcomer-description": "登録から4日以内、または編集回数が10回以下の利用者",
-	"rcfilters-filter-user-experience-level-learner-label": "初学者",
+	"rcfilters-filter-user-experience-level-learner-label": "初心者",
 	"rcfilters-filter-user-experience-level-learner-description": "編集経験が「新規利用者」と「経験者」の中間の登録利用者",
 	"rcfilters-filter-user-experience-level-experienced-label": "経験者",
 	"rcfilters-filter-user-experience-level-experienced-description": "500編集以上かつ30日以上の活動履歴がある登録利用者",
@@ -2381,7 +2386,7 @@
 	"enotif_body_intro_changed": "{{SITENAME}}のページ「$1」が$PAGEEDITDATEに、$2 によって{{GENDER:$2|変更}}されました。現在の版は $3 で閲覧できます。",
 	"enotif_lastvisited": "最終訪問以降のすべての変更は $1 をご覧ください。",
 	"enotif_lastdiff": "この変更内容を表示するには、 $1 をご覧ください。",
-	"enotif_pagelog": "このページの記録を表示するには、 $1を参照してください。",
+	"enotif_pagelog": "このページの記録を表示するには、 $1 を参照してください。",
 	"enotif_anon_editor": "匿名利用者 $1",
 	"enotif_temp_editor": "仮利用者$1",
 	"enotif_body": "$WATCHINGUSERNAMEさん\n\n$PAGEINTRO $NEWPAGE $PAGELOG\n\n編集内容の要約: $PAGESUMMARY ($PAGEMINOREDIT)\n\n投稿者の連絡先:\nメール: $PAGEEDITOR_EMAIL\nウィキ: $PAGEEDITOR_WIKI\n\nログインした状態でこのページを訪れない限り、これ以上の活動に対する通知は送信されません。ウォッチリスト内のすべてのページについて、通知を再設定することもできます。\n\n{{SITENAME}}通知システム\n\n--\nメール通知の設定は、以下のページで変更してください:\n{{canonicalurl:{{#special:Preferences}}}}\n\nウォッチリストの設定は、以下のページで変更してください:\n{{canonicalurl:{{#special:EditWatchlist}}}}\n\nこのページは、以下のページでウォッチリストから削除できます:\n$UNWATCHURL\n\nご意見、お問い合わせ:\n$HELPPAGE",
@@ -3348,6 +3353,7 @@
 	"semicolon-separator": "；",
 	"comma-separator": "、",
 	"colon-separator": ":&#32;",
+	"word-separator": "&#32;",
 	"ellipsis": "…",
 	"percent": "$1%",
 	"brackets": "[$1]",
@@ -3770,7 +3776,7 @@
 	"namespaceinfo-description-ns13": "ヘルプ名前空間ページのトークページ",
 	"namespaceinfo-description-ns14": "ページをグループ化するためのカテゴリ",
 	"namespaceinfo-description-ns15": "カテゴリ名前空間ページのトークページ",
-	"namespaceinfo-namespace-protection-right": "この名前空間は、<code>$1</code>の権限を持つユーザーのみ編集可能です。",
+	"namespaceinfo-namespace-protection-right": "この名前空間は、<code>$1</code> の権限を持つ利用者のみが編集できます。",
 	"namespaceinfo-namespace-immovable": "この名前空間内のページは移動できません。",
 	"namespaceinfo-namespace-iscontent": "この名前空間のページは「コンテンツ」ページと見なされます。",
 	"namespaceinfo-namespace-subpages": "この名前空間のページにはサブページを含めることができます。",
@@ -4335,6 +4341,7 @@
 	"right-renameuser": "利用者名を変更",
 	"renameuser-renamed-notice": "この利用者は利用者名を変更しました。\n参考のため、利用者名変更記録を以下に示します。",
 	"log-unknown-action": "[[$1]]に未知の操作「$2」を実行しました",
+	"log-unsafe-logentry": "(この記録項目は、パラメータに安全でないシリアル化データが含まれているため、表示できませんでした。)",
 	"createacct-benefit-heading-temp-user": "{{SITENAME}}への投稿ありがとうございます。\nアカウントを作成すると、さらに多くの機能を利用できます。",
 	"createacct-benefit-subheading-temp-user": "{{SITENAME}}はあなたのような人々によって作られています。アカウントがあれば、永続的かつ安全な自己同一性を保証でき、以下のような機能を利用できます:",
 	"benefit-1-description": "興味のあるページを追跡できるウォッチリスト。",
@@ -4342,5 +4349,6 @@
 	"benefit-3-description": "カスタマイズ可能な個人設定。",
 	"temp-user-unable-to-acquire": "仮アカウントの利用者名を取得できませんでした。もう一度お試しください。",
 	"table-of-contents-show-button-aria-label": "目次の表示",
-	"table-of-contents-hide-button-aria-label": "目次の非表示"
+	"table-of-contents-hide-button-aria-label": "目次の非表示",
+	"mypage-disallowed-action": "セキュリティ上の理由から、ページ Special:MyPage ではアクション「 $1 」を使用できません。"
 }

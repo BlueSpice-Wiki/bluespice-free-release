@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"PanWor"
+		]
+	},
+	"enhanced-standard-uis-watchlist-clear-all-pages": "Usuń wszystkie strony z obserwowanych",
+	"enhanced-standard-uis-watchlist-clear-all-categories": "Usuń wszystkie kategorie z obserwowanych",
+	"enhanced-standard-uis-watchlist-clear-all-namespaces": "Usuń wszystkie przestrzenie nazw z obserwowanych",
+	"enhanced-standard-uis-watchlist-clear-confirm-pages": "Czy na pewno chcesz usunąć wszystkie obserwowane strony z listy obserwowanych?",
+	"enhanced-standard-uis-watchlist-clear-confirm-categories": "Czy na pewno chcesz usunąć wszystkie obserwowane kategorie z listy obserwowanych?",
+	"enhanced-standard-uis-watchlist-clear-confirm-books": "Czy na pewno chcesz usunąć wszystkie obserwowane książki z listy obserwowanych?",
+	"enhanced-standard-uis-watchlist-section-expand-label": "Rozwiń tę sekcję",
+	"enhanced-standard-uis-watchlist-section-collapse-label": "Zwiń tę sekcję",
+	"enhanced-standard-uis-history-grid-header-edit-type-label": "Rodzaj edycji",
+	"enhanced-standard-uis-history-grid-edittype-minor-label": "Drobna zmiana"
+}

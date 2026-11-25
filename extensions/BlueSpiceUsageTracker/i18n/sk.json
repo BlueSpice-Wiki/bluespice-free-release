@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-usagetracker-desc": "Uchováva štatistické údaje o používaní rozšírení",
+	"apihelp-bs-usagetracker-store-summary": "Uchováva štatistické údaje o používaní rozšírení"
+}

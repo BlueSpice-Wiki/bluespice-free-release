@@ -146,29 +146,81 @@ class NotificationStore {
 
 	/**
 	 * @param array $conds
+	 * @return bool
+	 */
+	public function markAsComplete( array $conds = [] ): bool {
+		return $this->updateBatch( $conds, [ 'ni_status' => NotificationStatus::STATUS_COMPLETED ] );
+	}
+
+	/**
+	 * @param array $conds
+	 * @return bool
+	 */
+	public function markAsFailed( array $conds = [] ): bool {
+		return $this->updateBatch( $conds, [ 'ni_status' => NotificationStatus::STATUS_FAILED ] );
+	}
+
+	/**
+	 * @param array $conds
+	 * @param array $updates
+	 * @return bool
+	 */
+	private function updateBatch( array $conds = [], array $updates = [] ): bool {
+		$db = $this->loadBalancer->getConnection( DB_PRIMARY );
+		$db->newUpdateQueryBuilder()
+			->update( 'notifications_instance' )
+			->set( $updates )
+			->where( array_merge( $this->conditions, $conds ) )
+			->caller( __METHOD__ )
+			->execute();
+
+		$this->conditions = [];
+		return $db->affectedRows() > 0;
+	}
+
+	/**
+	 * @param array $conds
 	 *
 	 * @return Notification[]
 	 */
 	public function query( $conds = [] ): array {
 		$dbr = $this->loadBalancer->getConnection( ILoadBalancer::DB_REPLICA );
-		$res = $dbr->select(
-			[ 'notifications_instance', 'notifications_event' ],
-			[ 'ni_id', 'ni_event_type', 'ne_key', 'ne_id', 'ne_timestamp', 'ni_channel', 'ni_payload', 'ne_payload' ],
-			array_merge( $this->conditions, $conds ),
-			__METHOD__,
-			[], [
-				'notifications_event' => [
-					'LEFT JOIN', 'ni_event_id = ne_id'
+
+		$limit = 10 * 1000;
+		$mainRes = [];
+		do {
+			$res = $dbr->select(
+				[ 'notifications_instance', 'notifications_event' ],
+				[
+					'ni_id', 'ni_event_type', 'ne_key', 'ne_id',
+					'ne_timestamp', 'ni_channel', 'ni_payload', 'ne_payload'
+				],
+				array_merge( $this->conditions, $conds ),
+				__METHOD__,
+				[], [
+					'notifications_event' => [
+						'LEFT JOIN', 'ni_event_id = ne_id'
+					]
 				]
-			]
-		);
+			);
+			$count = $res->numRows();
+			foreach ( $res as $row ) {
+				$mainRes[] = $row;
+			}
+		} while ( $count === $limit );
+
+		$validEventTypes = [];
 
 		$notifications = [];
-		foreach ( $res as $row ) {
+		foreach ( $mainRes as $row ) {
 			try {
+				if ( isset( $validEventTypes[$row->ni_event_type] ) && !$validEventTypes[$row->ni_event_type] ) {
+					continue;
+				}
 				if ( !$this->isValidEventType( $row->ni_event_type ) ) {
 					continue;
 				}
+				$validEventTypes[$row->ni_event_type] = true;
 				$notifications[] = $this->serializer->unserialize( $row );
 			} catch ( Exception $e ) {
 				// Skip invalid notifications

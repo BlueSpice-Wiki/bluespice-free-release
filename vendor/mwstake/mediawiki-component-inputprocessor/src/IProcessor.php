@@ -8,7 +8,6 @@ use StatusValue;
 interface IProcessor extends JsonSerializable {
 
 	/**
-	 *
 	 * @param mixed $value
 	 * @param string $fieldKey
 	 * @return StatusValue

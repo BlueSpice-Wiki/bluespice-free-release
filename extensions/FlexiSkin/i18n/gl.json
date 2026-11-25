@@ -95,5 +95,13 @@
 	"flexiskin-ui-plugin-colors-highlight-sidebar-primary-label": "Resaltado da barra lateral",
 	"flexiskin-ui-plugin-footer-colors-label": "Cores do pé de páxina",
 	"flexiskin-ui-plugin-colors-background-footer-label": "Fondo do pé de páxina",
-	"flexiskin-ui-plugin-colors-foreground-footer-label": "Primeiro plano do pé de páxina"
+	"flexiskin-ui-plugin-colors-foreground-footer-label": "Primeiro plano do pé de páxina",
+	"flexiskin-special-title": "Xestor de aparencias",
+	"flexiskin-ui-configurator-button-reset-label": "Restablecer",
+	"flexiskin-ui-error-reset-fail": "Fallou o restablecemento da aparencia",
+	"flexiskin-configurator-prompt-on-reset": "Desbotaranse todas as configuracións deste wiki e aplicarase o estilo predeterminado de BlueSpice. Isto afecta a todos os usuarios do wiki e non se pode desfacer. Queres continuar?",
+	"flexiskin-configurator-prompt-on-reset-to-main-wiki": "Desbotaranse todas as configuracións deste wiki e aplicarase o estilo do wiki principal. Isto afecta a todos os usuarios do wiki e non se pode desfacer. Queres continuar?",
+	"flexiskin-ui-configurator-notice-inherited-styling": "Este wiki herda o estilo do wiki principal. Podes personalizar aínda máis o wiki. Os cambios que fagas aquí só se aplicarán a este wiki.",
+	"flexiskin-ui-configurator-notice-inherited-styling-default": "Este wiki herda o estilo do wiki principal. Nestes intres, o wiki principal emprega o estilo predeterminado de BlueSpice, así que é o estilo que copiarán as configuracións que non personalices aquí.",
+	"apihelp-flexiskin-reset-summary": "O módulo de restablecemento"
 }

@@ -68,9 +68,6 @@ class DumpNamespaces extends Maintenance {
 	/** @var bool */
 	private $doLog = false;
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		parent::__construct();
 
@@ -85,7 +82,8 @@ class DumpNamespaces extends Maintenance {
 		$this->addOption(
 			'namespaces',
 			"Comma segmented list of namespace id's. If not set all content namespaces will be used.",
-			false, true, 'n' );
+			false, true, 'n'
+		);
 		$this->addOption( 'verbose', 'Verbose output', false, false, 'v' );
 		$this->addOption( 'mail-recipient', 'E-mail recipient for notification email', false, true, 'r' );
 		$this->addOption( 'mail-subject', 'E-mail subject for notification email', false, true, 's' );

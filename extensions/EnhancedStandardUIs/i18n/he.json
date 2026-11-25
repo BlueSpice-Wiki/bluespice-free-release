@@ -79,5 +79,6 @@
 	"enhanced-standard-uis-filelist-dialog-booklet-page-select-aria-label": "מידע על הקובץ",
 	"enhanced-standard-uis-prefs-reset-dlg-action-label": "איפוס",
 	"enhanced-standard-uis-prefs-reset-dlg-title": "שחזור להעדפות ברירת המחדל",
-	"enhanced-standard-uis-prefs-reset-button-label": "שחזור להעדפות ברירת המחדל"
+	"enhanced-standard-uis-prefs-reset-button-label": "שחזור להעדפות ברירת המחדל",
+	"enhanced-standard-uis-allpages-unwatch-label": "להפסיק לעקוב אחר הדף $1"
 }

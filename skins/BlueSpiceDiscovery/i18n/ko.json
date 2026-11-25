@@ -204,5 +204,7 @@
 	"bs-discovery-namespace-tree-pnl-header-text": "문서",
 	"bs-discovery-namespace-tree-search-btn-label": "검색 결과 표시",
 	"bs-discovery-namespace-tree-create-btn-label": "새 문서 만들기",
-	"bs-discovery-namespace-tree-search-label": "문서 검색"
+	"bs-discovery-namespace-tree-search-label": "문서 검색",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-label": "\"향상된 미디어위키 사이드바\"에 캐싱을 사용",
+	"bs-discovery-config-enable-caching-enhanced-sidebar-help": "캐싱은 사이드바 성능을 향상시킵니다. 캐싱이 활성화된 경우 컨텍스트 변수를 사용할 수 없습니다. 컨텍스트 변수를 사용하려면 캐싱을 비활성화하세요."
 }

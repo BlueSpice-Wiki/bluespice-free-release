@@ -52,6 +52,9 @@ class AddAlerts {
 	/** @var array */
 	protected $alerts = [];
 
+	/**
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$this->collectAlerts();
 		$this->buildContainer();

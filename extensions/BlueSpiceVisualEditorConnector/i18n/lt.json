@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Babellini",
 			"Eitvys200",
 			"Nokeoo"
 		]
 	},
 	"bs-visualeditorconnector-desc": "Sujungia BlueSpice su VisualEditor",
 	"bs-visualeditorconnector-enable-visualeditor": "Įgalinti VisualEditor BlueSpice plėtiniams",
-	"bs-visualeditorconnector-upload-type-original": "Originalus",
+	"bs-visualeditorconnector-upload-type-original": "Originalas",
 	"bs-visualeditorconnector-upload-type-simple": "Paprastas",
 	"bs-visualeditorconnector-upload-type-one-click": "Vienas paspaudimas",
 	"bs-visualeditorconnector-cancel-edit-no-unsaved-changes": "Atšaukti redagavimą",
@@ -77,5 +78,15 @@
 	"bs-visualeditorconnector-align-center-annotation-desc": "Sucentruoja pasirinktą tekstą",
 	"bs-visualeditorconnector-text-style-indent-label": "Įtrauka",
 	"bs-visualeditorconnector-indent-annotation-desc": "Įtraukia pasirinktą tekstą",
-	"bs-visualeditorconnector-upload-type": "Įkėlimo tipas"
+	"bs-visualeditorconnector-upload-type": "Įkėlimo tipas",
+	"bs-visualeditorconnector-inspector-tab-common-name": "Bendri",
+	"bs-visualeditorconnector-upload-dialog-type": "Failų įkėlimo į „MediaDialog“ eiga",
+	"bs-visualeditorconnector-dialog-media-link": "Susieti šį failą",
+	"bs-visualeditorconnector-dialog-media-meta-link": "Susieti su aprašymo puslapiu",
+	"bs-visualeditorconnector-upload-type-help": "Originalus: Įkėlimo teisė patvirtinta. Failo pavadinimą, vardų sritis ir kategoriją galima redaguoti. Aprašymas būtinas.\nSupaprastintas: Įkėlimo teisė nepatvirtinta. Failo pavadinimą, vardų erdvę ir kategoriją galima redaguoti. Aprašymas nebūtinas.\nVieno spustelėjimo: Įkėlimo teisė nepatvirtinta. Failo pavadinimo ir kategorijos negalima redaguoti. Vardų sritį galima redaguoti.",
+	"bs-visualeditor-save-label": "Išsaugoti",
+	"bs-visualeditorconnector-tab-file": "Susieti šį failą",
+	"bs-visualeditor-request-entity-too-large": "Failas per didelis, kad būtų galima įkelti.",
+	"bs-visualeditorconnector-dialog-table-title": "Lentelė",
+	"bs-visualeditorconnector-dialog-action-insert": "Įterpti"
 }

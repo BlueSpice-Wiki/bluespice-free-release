@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceDiscovery",
-	"version": "5.2.6",
+	"version": "5.2.8",
 	"author": [
 		"Daniel Vogel"
 	],
@@ -243,6 +243,7 @@
 				"DiscoveryMainLinksCategories": "\\BlueSpice\\Discovery\\ConfigDefinition\\MainLinksCategories::getInstance",
 				"DiscoveryMainLinksRecentChanges": "\\BlueSpice\\Discovery\\ConfigDefinition\\MainLinksRecentChanges::getInstance",
 				"DiscoverySidebarPrimaryMainTabPanelMenu": "\\BlueSpice\\Discovery\\ConfigDefinition\\SidebarPrimaryMainTabPanelMenu::getInstance",
+				"DiscoveryEnableCachingEnhancedSidebar": "\\BlueSpice\\Discovery\\ConfigDefinition\\EnableCachingEnhancedSidebar::getInstance",
 				"DiscoveryMetaItemsHeader": "\\BlueSpice\\Discovery\\ConfigDefinition\\MetaItemsHeader::getInstance",
 				"DiscoveryMetaItemsFooter": "\\BlueSpice\\Discovery\\ConfigDefinition\\MetaItemsFooter::getInstance"
 			},
@@ -444,6 +445,9 @@
 		},
 		"DiscoveryTemplateDataProvider": {
 			"value": "bluespice"
+		},
+		"DiscoveryEnableCachingEnhancedSidebar": {
+			"value": true
 		}
 	},
 	"ResourceModules": {

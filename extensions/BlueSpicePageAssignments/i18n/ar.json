@@ -93,5 +93,6 @@
 	"bs-pageassignments-header-action-delete": "حذف",
 	"bs-pageassignments-title-edit": "تحرير الواجبات",
 	"bs-pageassignments-title-delete": "حذف المهام",
-	"bs-pageassignments-show-unassigned-pages": "عرض الصفحات غير المخصصة"
+	"bs-pageassignments-show-unassigned-pages": "عرض الصفحات غير المخصصة",
+	"bs-pageassignments-notifications-watchlist-description": "تم تعيينك لهذه الصفحة"
 }
